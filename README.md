@@ -9,6 +9,7 @@ Not yet written
  - SirRunner
 
 ## Special Thanks
+ - Middle Earth Project Team
 
 ## Credits to
  
