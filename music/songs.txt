@@ -1,148 +1,77 @@
 song = {
 	name = "adayatthecourt.mp3"
-	chance = {
-		modifier = {
-			factor = -1
-		}
-	}
+	chance = { factor = -1 }
 }
 song = {
 	name = "buckinghampalace.mp3"
-	chance = {
-		modifier = {
-			factor = -1
-		}
-	}
+	chance = { factor = -1 }
 }
 song = {
 	name = "countryside.mp3"
-	chance = {
-		modifier = {
-			factor = -1
-		}
-	}
+	chance = { factor = -1 }
 }
 song = {
 	name = "deathofprincealbert.mp3"
-	chance = {
-		modifier = {
-			factor = -1
-		}
-	}
+	chance = { factor = -1 }
 }
 song = {
 	name = "europeanno1850.mp3"
-	chance = {
-		modifier = {
-			factor = -1
-		}
-	}
+	chance = { factor = -1 }
 }
 song = {
 	name = "forgodandqueen.mp3"
-	chance = {
-		modifier = {
-			factor = -1
-		}
-	}
+	chance = { factor = -1 }
 }
 song = {
 	name = "handelthis.mp3"
-	chance = {
-		modifier = {
-			factor = -1
-		}
-	}
+	chance = { factor = -1 }
 }
 song = {
 	name = "inventions.mp3"
-	chance = {
-		modifier = {
-			factor = -1
-		}
-	}
+	chance = { factor = -1 }
 }
 song = {
 	name = "johanswaltz.mp3"
-	chance = {
-		modifier = {
-			factor = -1
-		}
-	}
+	chance = { factor = -1 }
 }
 song = {
 	name = "newworldanthem.mp3"
-	chance = {
-		modifier = {
-			factor = -1
-		}
-	}
+	chance = { factor = -1 }
 }
 song = {
 	name = "poverty.mp3"
-	chance = {
-		modifier = {
-			factor = -1
-		}
-	}
+	chance = { factor = -1 }
 }
 song = {
 	name = "queensscherzo.mp3"
-	chance = {
-		modifier = {
-			factor = -1
-		}
-	}
+	chance = { factor = -1 }
 }
 song = {
 	name = "russia1917.mp3"
-	chance = {
-		modifier = {
-			factor = -1
-		}
-	}
+	chance = { factor = -1 }
 }
 song = {
 	name = "thecoronation_titletheme.mp3"
-	chance = {
-		modifier = {
-			factor = 1
-		}
-	}
+	chance = { factor = -1 }
 }
 song = {
 	name = "theroyalmarch.mp3"
-	chance = {
-		modifier = {
-			factor = -1
-		}
-	}
+	chance = { factor = -1 }
 }
 song = {
 	name = "wehaveindependence.mp3"
-	chance = {
-		modifier = {
-			factor = -1
-		}
-	}
+	chance = { factor = -1 }
 }
 song = {
 	name = "winter.mp3"
-	chance = {
-		modifier = {
-			factor = -1
-		}
-	}
+	chance = { factor = -1 }
 }
 
 song = {
 	name = "Halls_of_Thranduil.mp3"
 	
 	chance = {
-		modifier = {
-			factor = 1
-		}
-
+		factor = 1
 	}
 }
 
@@ -151,10 +80,7 @@ song = {
 	name = "Out_of_the_Ashes.mp3"
 	
 	chance = {
-		modifier = {
-			factor = 1
-		}
-
+		factor = 1
 	}
 }
 
@@ -163,10 +89,7 @@ song = {
 	name = "Baruk_Khazad.mp3"
 	
 	chance = {
-		modifier = {
-			factor = 1
-		}
-
+		factor = 1
 	}
 }
 
@@ -174,10 +97,7 @@ song = {
 	name = "Battle_Under_the_Trees.mp3"
 	
 	chance = {
-		modifier = {
-			factor = 1
-		}
-
+		factor = 1
 	}
 }
 
@@ -185,10 +105,7 @@ song = {
 	name = "Engines_of_War.mp3"
 	
 	chance = {
-		modifier = {
-			factor = 1
-		}
-
+		factor = 1
 	}
 }
 
@@ -197,10 +114,7 @@ song = {
 	name = "Imladris_Unleashed.mp3"
 	
 	chance = {
-		modifier = {
-			factor = 1
-		}
-
+		factor = 1
 	}
 }
 
@@ -208,10 +122,7 @@ song = {
 	name = "In_the_Distance.mp3"
 	
 	chance = {
-		modifier = {
-			factor = 1
-		}
-
+		factor = 1
 	}
 }
 
@@ -219,10 +130,7 @@ song = {
 	name = "Muster_of_Rohan.mp3"
 	
 	chance = {
-		modifier = {
-			factor = 1
-		}
-
+		factor = 1
 	}
 }
 
@@ -230,10 +138,7 @@ song = {
 	name = "Of_Metal_and_Wheels.mp3"
 	
 	chance = {
-		modifier = {
-			factor = 1
-		}
-
+		factor = 1
 	}
 }
 
@@ -241,10 +146,7 @@ song = {
 	name = "Stand_Men_of_the_West.mp3"
 	
 	chance = {
-		modifier = {
-			factor = 1
-		}
-
+		factor = 1
 	}
 }
 
@@ -252,10 +154,7 @@ song = {
 	name = "The_Black_Arrow_Soars.mp3"
 	
 	chance = {
-		modifier = {
-			factor = 1
-		}
-
+		factor = 1
 	}
 }
 
@@ -263,10 +162,7 @@ song = {
 	name = "The_Black_Serpent.mp3"
 	
 	chance = {
-		modifier = {
-			factor = 1
-		}
-
+		factor = 1
 	}
 }
 
@@ -274,10 +170,7 @@ song = {
 	name = "The_Lonely_Mountain.mp3"
 	
 	chance = {
-		modifier = {
-			factor = 1
-		}
-
+		factor = 1
 	}
 }
 
@@ -285,10 +178,7 @@ song = {
 	name = "The_Red_Eye.mp3"
 	
 	chance = {
-		modifier = {
-			factor = 1
-		}
-
+		factor = 1
 	}
 }
 
@@ -296,10 +186,7 @@ song = {
 	name = "The_White_Hand_Grows_Long.mp3"
 	
 	chance = {
-		modifier = {
-			factor = 1
-		}
-
+		factor = 1
 	}
 }
 
@@ -307,10 +194,7 @@ song = {
 	name = "Tower_of_the_Setting_Sun.mp3"
 	
 	chance = {
-		modifier = {
-			factor = 1
-		}
-
+		factor = 1
 	}
 }
 
@@ -318,10 +202,23 @@ song = {
 	name = "Where_Now_Are_the_Horse_and_the_Rider.mp3"
 	
 	chance = {
-		modifier = {
-			factor = 1
-		}
+		factor = 1
+	}
+}
 
+song = {
+	name = "Elven_Flavor.mp3"
+	
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 10
+			OR = {
+				is_culture_group = eldar
+				is_culture_group = teleri
+				is_culture_group = avari
+			}
+		}
 	}
 }
 
