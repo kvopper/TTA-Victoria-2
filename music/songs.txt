@@ -1,3 +1,5 @@
+##### Make sure vanilla songs don't play #####
+
 song = {
 	name = "adayatthecourt.mp3"
 	chance = { factor = -1 }
@@ -67,158 +69,285 @@ song = {
 	chance = { factor = -1 }
 }
 
-song = {
-	name = "Halls_of_Thranduil.mp3"
-	
-	chance = {
-		factor = 1
-	}
-}
-
+##### Music sub-mod songs #####
 
 song = {
-	name = "Out_of_the_Ashes.mp3"
-	
-	chance = {
-		factor = 1
-	}
-}
-
-
-song = {
-	name = "Baruk_Khazad.mp3"
-	
-	chance = {
-		factor = 1
-	}
-}
-
-song = {
-	name = "Battle_Under_the_Trees.mp3"
-	
-	chance = {
-		factor = 1
-	}
-}
-
-song = {
-	name = "Engines_of_War.mp3"
-	
-	chance = {
-		factor = 1
-	}
-}
-
-
-song = {
-	name = "Imladris_Unleashed.mp3"
-	
-	chance = {
-		factor = 1
-	}
-}
-
-song = {
-	name = "In_the_Distance.mp3"
-	
-	chance = {
-		factor = 1
-	}
-}
-
-song = {
-	name = "Muster_of_Rohan.mp3"
-	
-	chance = {
-		factor = 1
-	}
-}
-
-song = {
-	name = "Of_Metal_and_Wheels.mp3"
-	
-	chance = {
-		factor = 1
-	}
-}
-
-song = {
-	name = "Stand_Men_of_the_West.mp3"
-	
-	chance = {
-		factor = 1
-	}
-}
-
-song = {
-	name = "The_Black_Arrow_Soars.mp3"
-	
-	chance = {
-		factor = 1
-	}
-}
-
-song = {
-	name = "The_Black_Serpent.mp3"
-	
-	chance = {
-		factor = 1
-	}
-}
-
-song = {
-	name = "The_Lonely_Mountain.mp3"
-	
-	chance = {
-		factor = 1
-	}
-}
-
-song = {
-	name = "The_Red_Eye.mp3"
-	
-	chance = {
-		factor = 1
-	}
-}
-
-song = {
-	name = "The_White_Hand_Grows_Long.mp3"
-	
-	chance = {
-		factor = 1
-	}
-}
-
-song = {
-	name = "Tower_of_the_Setting_Sun.mp3"
-	
-	chance = {
-		factor = 1
-	}
-}
-
-song = {
-	name = "Where_Now_Are_the_Horse_and_the_Rider.mp3"
-	
-	chance = {
-		factor = 1
-	}
-}
-
-song = {
-	name = "Elven_Flavor.mp3"
+	name = "dwarven_flavor.mp3"
 	
 	chance = {
 		factor = 1
 		modifier = {
-			factor = 10
+			factor = 25
+			accepted_culture = dwarven_culture
+		}
+	}
+}
+
+song = {
+	name = "dwarven_flavor_2.mp3"
+	
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 25
+			accepted_culture = dwarven_culture
+		}
+	}
+}
+
+song = {
+	name = "dwarven_flavor_3.mp3"
+	
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 25
+			accepted_culture = dwarven_culture
+		}
+	}
+}
+
+song = {
+	name = "dwarven_war_flavor.mp3"
+	
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 0
+			war = no
+		}
+		modifier = {
+			factor = 25
+			accepted_culture = dwarven_culture
+		}
+	}
+}
+
+song = {
+	name = "elven_flavor.mp3"
+	
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 25
+			accepted_culture = elven_culture
+		}
+	}
+}
+
+song = {
+	name = "elven_flavor_2.mp3"
+	
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 25
+			accepted_culture = elven_culture
+		}
+	}
+}
+
+song = {
+	name = "elven_war_flavor.mp3"
+	
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 0
+			war = no
+		}
+		modifier = {
+			factor = 25
+			accepted_culture = elven_culture
+			war = yes
+		}
+	}
+}
+
+song = {
+	name = "evil_flavor.mp3"
+	
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = { good_evil_alignment = evil_alignment }
+		}
+		modifier = {
+			factor = 25
+			good_evil_alignment = evil_alignment
+		}
+	}
+}
+
+song = {
+	name = "evil_flavor_2.mp3"
+	
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = { good_evil_alignment = evil_alignment }
+		}
+		modifier = {
+			factor = 25
+			good_evil_alignment = evil_alignment
+		}
+	}
+}
+
+song = {
+	name = "evil_men_flavor.mp3"
+	
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 0
 			OR = {
-				is_culture_group = eldar
-				is_culture_group = teleri
-				is_culture_group = avari
+				NOT = { good_evil_alignment = evil_alignment }
+				NOT = { accepted_culture = men_culture }
+			}
+		}
+		modifier = {
+			factor = 25
+			good_evil_alignment = evil_alignment
+			accepted_culture = men_culture
+		}
+	}
+}
+
+song = {
+	name = "haradrim_flavor.mp3"
+	
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 25
+			OR = {
+				is_culture_group = haradrim
+				accepted_culture = umbarrim
+				accepted_culture = harnendan
+				accepted_culture = haruzani
+				accepted_culture = pezarsani
+				accepted_culture = lurmsakuni
+				accepted_culture = arysian
 			}
 		}
 	}
 }
 
+song = {
+	name = "good_flavor.mp3"
+	
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = { good_evil_alignment = good_alignment }
+		}
+		modifier = {
+			factor = 25
+			good_evil_alignment = good_alignment
+		}
+	}
+}
+
+song = {
+	name = "good_war_flavor.mp3"
+	
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 0
+			OR = {
+				NOT = { good_evil_alignment = good_alignment }
+				war = no
+			}
+		}
+		modifier = {
+			factor = 25
+			good_evil_alignment = good_alignment
+			war = yes
+		}
+	}
+}
+
+song = {
+	name = "good_war_flavor_2.mp3"
+	
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 0
+			OR = {
+				NOT = { good_evil_alignment = good_alignment }
+				war = no
+			}
+		}
+		modifier = {
+			factor = 25
+			good_evil_alignment = good_alignment
+			war = yes
+		}
+	}
+}
+
+song = {
+	name = "northmen_flavor.mp3"
+	
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 25
+			OR = {
+				is_culture_group = northmen
+				accepted_culture = dorwinrim
+				accepted_culture = ehwathrim
+				accepted_culture = barding
+			}
+		}
+	}
+}
+
+song = {
+	name = "rohan_flavor.mp3"
+	
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 25
+			OR = {
+				primary_culture = rohirrim
+				accepted_culture = rohirrim
+			}
+		}
+	}
+}
+
+song = {
+	name = "orc_flavor.mp3"
+	
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 25
+			accepted_culture = orc_culture
+		}
+	}
+}
+
+song = {
+	name = "war_flavor.mp3"
+	
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 0
+			war = no
+		}
+		modifier = {
+			factor = 25
+			war = yes
+		}
+	}
+}
