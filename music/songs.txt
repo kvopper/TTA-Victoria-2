@@ -124,6 +124,75 @@ song = {
 }
 
 song = {
+	name = "easterling_flavor.mp3"
+	
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 25
+			OR = {
+				is_culture_group = easterling
+				is_culture_group = khandish
+				accepted_culture = sagath
+				accepted_culture = sekel
+				accepted_culture = urgath
+				accepted_culture = kuga
+				accepted_culture = logath
+				accepted_culture = variag
+				accepted_culture = chelkiag
+				accepted_culture = nurniag
+			}
+		}
+	}
+}
+
+song = {
+	name = "easterling_flavor_2.mp3"
+	
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 25
+			OR = {
+				is_culture_group = easterling
+				is_culture_group = khandish
+				accepted_culture = sagath
+				accepted_culture = sekel
+				accepted_culture = urgath
+				accepted_culture = kuga
+				accepted_culture = logath
+				accepted_culture = variag
+				accepted_culture = chelkiag
+				accepted_culture = nurniag
+			}
+		}
+	}
+}
+
+song = {
+	name = "easterling_flavor_3.mp3"
+	
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 25
+			OR = {
+				is_culture_group = easterling
+				is_culture_group = khandish
+				accepted_culture = sagath
+				accepted_culture = sekel
+				accepted_culture = urgath
+				accepted_culture = kuga
+				accepted_culture = logath
+				accepted_culture = variag
+				accepted_culture = chelkiag
+				accepted_culture = nurniag
+			}
+		}
+	}
+}
+
+song = {
 	name = "elven_flavor.mp3"
 	
 	chance = {
@@ -197,6 +266,70 @@ song = {
 }
 
 song = {
+	name = "evil_flavor_3.mp3"
+	
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = { good_evil_alignment = evil_alignment }
+		}
+		modifier = {
+			factor = 25
+			good_evil_alignment = evil_alignment
+		}
+	}
+}
+
+song = {
+	name = "evil_flavor_4.mp3"
+	
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = { good_evil_alignment = evil_alignment }
+		}
+		modifier = {
+			factor = 25
+			good_evil_alignment = evil_alignment
+		}
+	}
+}
+
+song = {
+	name = "evil_flavor_5.mp3"
+	
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = { good_evil_alignment = evil_alignment }
+		}
+		modifier = {
+			factor = 25
+			good_evil_alignment = evil_alignment
+		}
+	}
+}
+
+song = {
+	name = "evil_flavor_6.mp3"
+	
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = { good_evil_alignment = evil_alignment }
+		}
+		modifier = {
+			factor = 25
+			good_evil_alignment = evil_alignment
+		}
+	}
+}
+
+song = {
 	name = "evil_men_flavor.mp3"
 	
 	chance = {
@@ -212,26 +345,6 @@ song = {
 			factor = 25
 			good_evil_alignment = evil_alignment
 			accepted_culture = men_culture
-		}
-	}
-}
-
-song = {
-	name = "haradrim_flavor.mp3"
-	
-	chance = {
-		factor = 1
-		modifier = {
-			factor = 25
-			OR = {
-				is_culture_group = haradrim
-				accepted_culture = umbarrim
-				accepted_culture = harnendan
-				accepted_culture = haruzani
-				accepted_culture = pezarsani
-				accepted_culture = lurmsakuni
-				accepted_culture = arysian
-			}
 		}
 	}
 }
@@ -288,6 +401,54 @@ song = {
 			factor = 25
 			good_evil_alignment = good_alignment
 			war = yes
+		}
+	}
+}
+
+song = {
+	name = "haradrim_flavor.mp3"
+	
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 25
+			OR = {
+				is_culture_group = haradrim
+				is_culture_group = khandish
+				accepted_culture = umbarrim
+				accepted_culture = harnendan
+				accepted_culture = haruzani
+				accepted_culture = pezarsani
+				accepted_culture = lurmsakuni
+				accepted_culture = arysian
+				accepted_culture = variag
+				accepted_culture = chelkiag
+				accepted_culture = nurniag
+			}
+		}
+	}
+}
+
+song = {
+	name = "haradrim_flavor_2.mp3"
+	
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 25
+			OR = {
+				is_culture_group = haradrim
+				is_culture_group = khandish
+				accepted_culture = umbarrim
+				accepted_culture = harnendan
+				accepted_culture = haruzani
+				accepted_culture = pezarsani
+				accepted_culture = lurmsakuni
+				accepted_culture = arysian
+				accepted_culture = variag
+				accepted_culture = chelkiag
+				accepted_culture = nurniag
+			}
 		}
 	}
 }
