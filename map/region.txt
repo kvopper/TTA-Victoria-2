@@ -614,6 +614,9 @@ recent_raid_loc = { } # §REven if the tool tip only says that this event remove
 triggered_event_railroading_loc = { } # get the 'Railroading' event.
 empty_line_decisions_loc = { } # \n
 
+# Static Tooltip Locs - Random
+conversion_to_tribal_loc = { } # §RAny unaccepted soldier pop in the newly conquered lands will convert into tribals§!
+
 # Static Tooltops Locs - Alliance of Dwarves and Men
 triggered_event_alliance_of_dwarves_and_men_loc = { } # get the 'Alliance of Dwarves and Men' event.
 triggered_event_alliance_of_dwarves_and_men_core_dispute_loc = { } # get the 'Alliance of Dwarves and Men - Core Dispute' event.

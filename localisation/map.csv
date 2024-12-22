@@ -1494,6 +1494,7 @@ add_claim_RHO_535_loc;§WWe will gain claims over §!§YDeneral§!§I;x
 claim_status_owns_DND_1335_loc;§YForoménya§!: §GOwned§!§I;x
 claim_status_doesnt_own_HAR_286_loc;§YNînzayan§!: §RUnowned§!§I;x
 remove_claim_MOR_399_loc;§WWe will lose claims over §!§YKhandu Ûda§!§I;x
+conversion_to_tribal_loc;§RAny unaccepted soldier pop in the newly conquered lands will convert into tribals§!§I;x
 claim_status_owns_DAL_645_loc;§YNan Celduin§!: §GOwned§!§I;x
 claim_status_owns_ERE_686_loc;§YThe Narrows§!: §GOwned§!§I;x
 claim_status_doesnt_own_GMO_843_loc;§YDark of Moria§!: §RUnowned§!§I;x

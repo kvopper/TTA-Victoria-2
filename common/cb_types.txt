@@ -510,6 +510,10 @@ conquest_tiny = {
 		}
 	}
 	
+	on_po_accepted = {
+		THIS = { capital_scope = { province_event = { id = 70007 days = 0 } } }
+	}
+	
 	po_annex = yes
 	
 	war_name = WAR_CONQUEST_NAME
@@ -571,6 +575,10 @@ conquest_small = {
 			to = pro_military
 			value = 0.25
 		}
+	}
+	
+	on_po_accepted = {
+		THIS = { capital_scope = { province_event = { id = 70007 days = 0 } } }
 	}
 	
 	po_annex = yes
@@ -635,6 +643,10 @@ conquest = {
 		}
 	}
 	
+	on_po_accepted = {
+		THIS = { capital_scope = { province_event = { id = 70007 days = 0 } } }
+	}
+	
 	po_annex = yes
 	
 	war_name = WAR_CONQUEST_NAME
@@ -679,6 +691,10 @@ civil_war = {
 			to = pro_military
 			value = 0.25
 		}
+	}
+	
+	on_po_accepted = {
+		THIS = { capital_scope = { province_event = { id = 70007 days = 0 } } }
 	}
 }
 
@@ -1991,6 +2007,10 @@ acquire_claimed_state = {
 		
 		country_event = 2900
 	}
+	
+	on_po_accepted = {
+		THIS = { capital_scope = { province_event = { id = 70007 days = 0 } } }
+	}
 }
 
 acquire_core_state = {
@@ -2044,6 +2064,7 @@ acquire_core_state = {
 	
 	on_po_accepted = {
 		country_event = 2506
+		THIS = { capital_scope = { province_event = { id = 70007 days = 0 } } }
 	}
 }
 
@@ -2087,6 +2108,10 @@ annex_core_country = {
 			to = pro_military
 			value = 0.25
 		}
+	}
+	
+	on_po_accepted = {
+		THIS = { capital_scope = { province_event = { id = 70007 days = 0 } } }
 	}
 }
 
@@ -2159,6 +2184,10 @@ acquire_substate_region = {
 			value = 0.25
 		}
 	}
+	
+	on_po_accepted = {
+		THIS = { capital_scope = { province_event = { id = 70007 days = 0 } } }
+	}
 }
 
 acquire_substate_core_state = {
@@ -2206,6 +2235,10 @@ acquire_substate_core_state = {
 			to = pro_military
 			value = 0.25
 		}
+	}
+	
+	on_po_accepted = {
+		THIS = { capital_scope = { province_event = { id = 70007 days = 0 } } }
 	}
 }
 
@@ -2292,6 +2325,10 @@ acquire_state = {
 			value = 0.25
 		}
 	}
+	
+	on_po_accepted = {
+		THIS = { capital_scope = { province_event = { id = 70007 days = 0 } } }
+	}
 }
 
 demand_state_for_ally = {
@@ -2371,6 +2408,16 @@ demand_state_for_ally = {
 			value = 0.25
 		}
 	}
+	
+	on_po_accepted = {
+		any_country = {
+			limit = {
+				alliance_with = THIS
+				any_owned_province = { unemployment_by_type = { value = 1 type = labourers } }
+			}
+			capital_scope = { province_event = { id = 70007 days = 0 } }
+		}
+	}
 }
 
 place_in_the_sun = {
@@ -2437,6 +2484,10 @@ place_in_the_sun = {
 			value = 0.25
 		}
 	}
+	
+	on_po_accepted = {
+		THIS = { capital_scope = { province_event = { id = 70007 days = 0 } } }
+	}
 }
 
 colonial_competition = {
@@ -2470,6 +2521,10 @@ colonial_competition = {
 			to = pro_military
 			value = 0.25
 		}
+	}
+	
+	on_po_accepted = {
+		THIS = { capital_scope = { province_event = { id = 70007 days = 0 } } }
 	}
 }
 
@@ -2621,6 +2676,7 @@ free_peoples = {
 				has_country_flag = possible_free_peoples_target
 			}
 			country_event = 2509
+			capital_scope = { province_event = { id = 70007 days = 0 } }
 			create_alliance = THIS
 			clr_country_flag = possible_free_peoples_target
 		}
@@ -2736,6 +2792,7 @@ liberate_country = {
 				has_country_flag = possible_liberate_realm_target
 			}
 			country_event = 2509
+			capital_scope = { province_event = { id = 70007 days = 0 } }
 			create_alliance = THIS
 			clr_country_flag = possible_liberate_realm_target
 		}
@@ -2854,6 +2911,7 @@ liberate_and_puppet_country = {
 			}
 			country_event = 2509
 			country_event = 2510
+			capital_scope = { province_event = { id = 70007 days = 0 } }
 			clr_country_flag = possible_liberate_and_puppet_realm_target
 		}
 	}
@@ -2910,9 +2968,6 @@ free_allied_cores = {
 				vassal_of = THIS
 				alliance_with = THIS
 			}
-			#NOT = {
-			#	any_core = { owned_by = THIS }
-			#}
 		}
 	}
 
@@ -2938,6 +2993,18 @@ free_allied_cores = {
 
 	on_po_accepted = {
 		country_event = 2511
+		
+		any_country = {
+			limit = {
+				OR = {
+					in_sphere = THIS
+					vassal_of = THIS
+					alliance_with = THIS
+				}
+				any_owned_province = { unemployment_by_type = { value = 1 type = labourers } }
+			}
+			capital_scope = { province_event = { id = 70007 days = 0 } }
+		}
 	}
 }
 
@@ -3358,6 +3425,10 @@ demand_concession_casus_belli = {
 			value = 0.1
 		}
 	}
+	
+	on_po_accepted = {
+		THIS = { capital_scope = { province_event = { id = 70007 days = 0 } } }
+	}
 }
 
 establish_protectorate_casus_belli = {
@@ -3422,6 +3493,10 @@ establish_protectorate_casus_belli = {
 			to = pro_military
 			value = 0.1
 		}
+	}
+	
+	on_po_accepted = {
+		THIS = { capital_scope = { province_event = { id = 70007 days = 0 } } }
 	}
 }
 
@@ -3519,6 +3594,10 @@ take_capital = {
 			value = 0.25
 		}
 	}
+	
+	on_po_accepted = {
+		THIS = { capital_scope = { province_event = { id = 70007 days = 0 } } }
+	}
 }
 
 demand_concession_capital = {
@@ -3613,6 +3692,10 @@ demand_concession_capital = {
 			to = pro_military
 			value = 0.25
 		}
+	}
+	
+	on_po_accepted = {
+		THIS = { capital_scope = { province_event = { id = 70007 days = 0 } } }
 	}
 }
 
@@ -3743,8 +3826,6 @@ call_allies_cb = {
 
 ##### CBs Related to Flavor #####
 
-
-
 # Specific to Gondor's flavor
 andrast_war_cb = {
 	sprite_index = 15
@@ -3798,6 +3879,8 @@ andrast_war_cb = {
 			country_event = 2509
 			country_event = 2510
 		}
+		
+		ADR = { THIS = { capital_scope = { province_event = { id = 70007 days = 0 } } } }
 	}
 }
 
@@ -3845,6 +3928,7 @@ druwaith_iaur_war_cb = {
 	# THIS = country that applied wargoal
 	on_po_accepted = {
 		release = PUK
+		PUK = { THIS = { capital_scope = { province_event = { id = 70007 days = 0 } } } }
 	}
 }
 
@@ -3908,9 +3992,10 @@ conquer_gramavuld_cb = {
 			}
 			secede_province = THIS
 		}
+		
+		THIS = { capital_scope = { province_event = { id = 70007 days = 0 } } }
 	}
 }
-
 
 ##### THIS NEEDS TO COME LAST TO NOT BREAK INTERVENING IN WARS #####
 status_quo = {
