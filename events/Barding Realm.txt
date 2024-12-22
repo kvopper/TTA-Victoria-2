@@ -71,6 +71,11 @@ country_event = {
 					in_sphere = DAL
 				}
 			}
+			modifier = {
+				factor = 5
+				has_country_modifier = alliance_of_dwarves_and_men
+				DAL = { has_country_modifier = alliance_of_dwarves_and_men }
+			}
 		}
 	}
 	
@@ -2492,6 +2497,16 @@ country_event = {
 				}
 			}
 			owner = { 1475 = { add_core = THIS } }
+		}
+		
+		random_owned = {
+			limit = {
+				owner = {
+					tag = DAL
+					NOT = { is_core = 642 }
+				}
+			}
+			owner = { 642 = { add_core = THIS } }
 		}
 		
 		FROM = {

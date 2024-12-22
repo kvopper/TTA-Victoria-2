@@ -16209,7 +16209,10 @@ country_event = {
 				region = ERE_660 # Mountainlands
 				owner = { has_global_flag = hidden_effects }
 			}
-			owner = { FROM = { country_event = 110045 } }
+			owner = {
+				FROM = { country_event = 110045 }
+				set_global_flag = alliance_of_dwarves_and_men_settled_mountainlands
+			}
 		}
 		
 		# Doing this outside the random_country in case somehow one of the provinces in the region is not owned by the same owner

@@ -2340,7 +2340,10 @@ demand_state_for_ally = {
 	# FROM - country scope is possible match?
 	# war target country of goal is scope
 	allowed_countries = {
-		FROM = { alliance_with = THIS }
+		FROM = {
+			alliance_with = THIS
+			exists = yes # Seems like a waste, but the computer doesn't remove alliances when a country is annexed outside of a cb that has po_annex
+		}
 	}
 	
 	# THIS - us

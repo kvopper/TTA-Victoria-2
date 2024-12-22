@@ -40,7 +40,13 @@ political_decisions = {
 					OR = {
 						owner = { tag = THIS }
 						owner = { vassal_of = THIS }
-						owner = { in_sphere = THIS }
+						owner = {
+							in_sphere = THIS
+							OR = {
+								is_culture_group = northmen
+								is_culture_group = gramavuld_northmen
+							}
+						}
 						empty = yes
 					}
 				}
@@ -59,6 +65,20 @@ political_decisions = {
 			
 			RHO = { all_core = { remove_core = RHO } }
 			all_core = { remove_core = THIS add_core = RHO }
+			
+			random_owned = {
+				limit = {
+					owner = {
+						OR = {
+							nationalvalue = bard_i
+							nationalvalue = bain_i
+							nationalvalue = brand_i
+							nationalvalue = bard_ii
+						}
+					}
+				}
+				owner = { government = monarchy_2 }
+			}
 			
 			change_tag = RHO
 			
@@ -82,7 +102,11 @@ political_decisions = {
 						all_core = { owned_by = THIS }
 					}
 				}
-				country_event = 100003
+				annex_to = THIS
+				any_core = {
+					limit = { NOT = { is_core = THIS } }
+					add_province_modifier = { name = cultural_core_integration duration = -1 }
+				}
 			}
 			
 			random_owned = {

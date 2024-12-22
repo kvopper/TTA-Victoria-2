@@ -904,6 +904,17 @@ rebuilt_city = {
 }
 
 # Province Modifier
+rebuilt_city_5 = {
+	life_rating = 0.1
+	immigrant_attract = 0.25
+	pop_consciousness_modifier = -0.01
+	pop_militancy_modifier = -0.01
+	population_growth = 0.005
+	
+	icon = 19
+}
+
+# Province Modifier
 dome_of_stars = {
 	research_points_modifier = 0.01
 	

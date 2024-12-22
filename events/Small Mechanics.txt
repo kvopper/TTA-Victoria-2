@@ -706,7 +706,7 @@ province_event = {
 				}
 				owner = {
 					random_country = {
-						limit = { has_country_modifier = AMO_sent_out_raiders }
+						limit = { has_country_flag = AMO_sent_out_raiders }
 						relation = { who = THIS value = -50 }
 					}
 				}
