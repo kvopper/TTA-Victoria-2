@@ -244,10 +244,10 @@ gundabad_outskirts;§gGundabad Outskirts§!;x
 lothlorien;§gForest of Lothlórien§!;x
 misty_mountains;§gMisty Mountains§!\n\nAlso known as the Hithaeglir in Sindarin, the Misty Mountains are a great mountain range between Eriador in the west and the Anduin Valley of Rhovanion in the west. When the Valar greated the mountains long ago, they split the Elves between those that stayed west, the Eldar, and those that stayed east, the Teleri, a division that remains into the Third Age. Even now, the mountains act as a great barrier in Middle Earth, with few if any passes across, through, or under. At its southern most tip, the Misty Mountains start at Isengard, with the prominent peak of Methedras. At the northern end, the mountains meet the Mountains of Angmar and the Grey Mountains, forming a T-shape.;x
 misty_mountains_tunnels;§gMisty Mountain Tunnels§!\n\nDeep beneath the Misty Mountains are countless tunnels that snake themselves endless miles through the bedrock. Some have been inhabited by dwarves or goblins since time immemorial, ekeing out a miserable life in dark and crowded tunnels where few riches can be found. Other tunnels, those not yet seen by sentient eyes, are the home to nameless horrors.;x
-moria;§gMoria§!;x
-moria_east_gate;§gEast Gate of Moria§!;x
-moria_west_gate;§gDoors of Dúrin§!;x
-rhosgobel;§gRhosgobel§!;x
+moria;§gMoria§!\n\nKhazad-dûm, as it was known in Dwarvish, was the greatest and grandest of the Dwarf strongholds, and one of the few places in the world where the rare metal Mithril could be found. It was given the name Moria, The Black Pit in Sindarin, after the Balrog Durin's Bane was unleashed and Orcs began to inhabit the now abandoned halls.;x
+moria_east_gate;§gDimrill Gate§!\n\nThe East Gate of Moria, known as the Great Gate or Dimrill Gate, was the first entrance built for the stronghold of Khazad-dûm. Outside, the gate opens onto the Mirrormere, a lake which holds significance to the dwarves. Inside, the gate leads to Durin's Bridge, a narrow bridge over an endless chasm, so narrow that travellers must cross the bridge one-by-one.;x
+moria_west_gate;§gDoors of Dúrin§!\n\nThe West Gate of Moria, known as the Doors of Durin, were built to enhance the cooperation between the dwarves of Khazad-dûm and the Elves of Erebor. The doors are relatively modest, built flush into the cliffside, though enhanced with an inscription that can only be seen by moonlight - §YEnnyn Durin Aran Moria. Pedo Mellon a Minno. Im Narvi hain echant. Celebrimbor o Eregion teithant i thiw hin§!.;x
+rhosgobel;§gRhosgobel§!\n\nThe famed home of the Brown Wizard, Radagast, Rhosgobel is a small settlement built around a large oak tree on the edge of Mirkwood. The name comes from the Sindarin for russet or brown village.;x
 upper_anduin_vale_plains;§gPlains of the Upper Anduin Vale§!;x
 upper_anduin_vale_woods;§gForests of the Upper Anduin Vale§!;x
 upper_anduin_vale_marsh;§gMarshes of the Upper Anduin Vale§!;x

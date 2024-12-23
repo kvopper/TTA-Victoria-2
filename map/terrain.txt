@@ -2676,10 +2676,10 @@ categories = {
 		
 		color = { 117 108 119 }
 		
-		farm_rgo_size = -0.3
-		farm_rgo_eff = -0.3
-		mine_rgo_size = 0.2
-		mine_rgo_eff = 0.2
+		farm_rgo_size = -0.5
+		farm_rgo_eff = -0.5
+		mine_rgo_size = 0.75
+		mine_rgo_eff = 0.75
 		
 		supply_limit = 1
 		
@@ -2690,15 +2690,15 @@ categories = {
 	moria_east_gate = {
 		movement_cost = 1.4
 		
-		defence = 2
-		combat_width = -0.5
+		defence = 4
+		combat_width = -0.75
 		
 		color = { 117 108 119 }
 		
 		farm_rgo_size = -0.3
 		farm_rgo_eff = -0.3
-		mine_rgo_size = 0.2
-		mine_rgo_eff = 0.2
+		mine_rgo_size = 0.75
+		mine_rgo_eff = 0.75
 		
 		supply_limit = 1
 		
@@ -2709,15 +2709,15 @@ categories = {
 	moria_west_gate = {
 		movement_cost = 1.4
 		
-		defence = 2
+		defence = 3
 		combat_width = -0.5
 		
 		color = { 117 108 119 }
 		
 		farm_rgo_size = -0.3
 		farm_rgo_eff = -0.3
-		mine_rgo_size = 0.2
-		mine_rgo_eff = 0.2
+		mine_rgo_size = 0.75
+		mine_rgo_eff = 0.75
 		
 		supply_limit = 1
 		
