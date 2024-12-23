@@ -1,7 +1,7 @@
 # Changelog
 All notable changes will be documented in this file.
 
-## [v0.5 Bearers of the Black Arrow]() - In Development
+## [v0.5 Bearers of the Black Arrow](https://github.com/The-Third-Age/TTA-Victoria-2/releases/tag/v0.5) - In Development
 
 ### Highlights
  - Historical Barding Realm flavor
