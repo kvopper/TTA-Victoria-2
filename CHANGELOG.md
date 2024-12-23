@@ -1,8 +1,7 @@
 # Changelog
 All notable changes will be documented in this file.
 
-## [v0.5]() - In Development
-
+## [v0.5 Bearers of the Black Arrow]() - In Development
 
 ### Highlights
  - Historical Barding Realm flavor
