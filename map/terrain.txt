@@ -2621,10 +2621,10 @@ categories = {
 		
 		color = { 91 123 10 }
 		
-		farm_rgo_size = -0.2
-		farm_rgo_eff = -0.2
-		mine_rgo_size = 0.2
-		mine_rgo_eff = 0.2
+		farm_rgo_size = -0.1
+		farm_rgo_eff = 0.75
+		mine_rgo_size = 0
+		mine_rgo_eff = 0
 		
 		supply_limit = 3
 	}
