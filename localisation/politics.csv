@@ -6,36 +6,16 @@ NATIONALIST_UNION_MOVEMENT_DESC;Movement calling for the forming of §Y$COUNTRY$
 NATIONALIST_LIBERATION_MOVEMENT_DESC;Movement calling for the liberation of §Y$COUNTRY$§!;x
 political_reforms;Political Reforms;x
 POLITICS_NOBILITY_PRIVILEGE;Nobility Privilege;x
-good_evil_alignment;Alignment;x
-good_alignment;§GGood Alignment§!;x
-good_alignment_l;Good Alignment;x
-good_alignment_desc;We are considered a Good Realm;x
-movement_good_alignment;Movement to become a Good Realm;x
-neutral_alignment;§PNeutral Alignment§!;x
-neutral_alignment_l;Neutral Alignment;x
-neutral_alignment_desc;We are considered a Neutral Realm;x
-movement_neutral_alignment;Movement to become a Neutral Realm;x
-evil_alignment;§REvil Alignment§!;x
-evil_alignment_l;Evil Alignment;x
-evil_alignment_desc;We are considered an Evil Realm;x
-movement_evil_alignment;Movement to become an Evil Realm;x
-good_evil_alignment_fake;Alignment;x
-good_alignment_fake;§GGood Alignment§!;x
-good_alignment_fake_l;Good Alignment;x
-good_alignment_fake_desc;Our Leading Interest Group is Good.;x
-movement_good_alignment_fake;Movement to become a Good Realm;x
-neutral_alignment_fake;§PNeutral Alignment§!;x
-neutral_alignment_fake_l;Neutral Alignment;x
-neutral_alignment_fake_desc;Our Leading Interest Group is Neutral.;x
-movement_neutral_alignment_fake;Movement to become a Neutral Realm;x
-evil_alignment_fake;§REvil Alignment§!;x
-evil_alignment_fake_l;Evil Alignment;x
-evil_alignment_fake_desc;Our Leading Interest Group is Evil.;x
-movement_evil_alignment_fake;Movement to become an Evil Realm;x
-no_alignment;No Alignment;x
-no_alignment_l;No Alignment;x
-no_alignment_desc;Our Leading Interest Group doesn't have an alignment.;x
-movement_no_alignment;Movement to have no alignment;x
+guild_autonomy_policy;Guild Autonomy;x
+independent_guilds;Independent;x
+independent_guilds_desc;Guilds are completely independent of the ruler of the realm. The realm has no influence over guilds whatsoever.;x
+independent_guilds_l;Independent;x
+oversight_guilds;Oversight;x
+oversight_guilds_desc;Guilds are overseen by servants of the realm. The realm cannot tell guilds where they should be or what their economic goals should be. However, they can enforce rules and support important guilds as needed.;x
+oversight_guilds_l;Oversight;x
+controlled_guilds;Controlled;x
+controlled_guilds_desc;Guilds are completely controlled by the realm.;x
+controlled_guilds_l;Controlled;x
 border_policy;Borders;x
 closed_borders;Closed Borders;x
 closed_borders_l;Closed Borders;x
@@ -400,26 +380,26 @@ new_guilds_desc;Guilds are starting to gain traction among the upper class.;x
 ##### INTEREST GROUP ISSUES #####;x {
 #################################;x
 party_issues;Interest Group Issues;x
-guild_autonomy_policy;Guild Autonomy Policy;x
-independent_guilds;Independent;x
-independent_guilds_desc;Guilds are completely independent of the ruler of the realm. The realm has no influence over guilds whatsoever.;x
-independent_guilds_l;Independent;x
-oversight_guilds;Oversight;x
-oversight_guilds_desc;Guilds are overseen by servants of the realm. The realm cannot tell guilds where they should be or what their economic goals should be. However, they can enforce rules and support important guilds as needed.;x
-oversight_guilds_l;Oversight;x
-controlled_guilds;Controlled;x
-controlled_guilds_desc;Guilds are completely controlled by the realm.;x
-controlled_guilds_l;Controlled;x
-racial_policy;Racial Policy;x
-all_peoples;All Peoples;x
-all_peoples_desc;Every person, regardless of their race, is accepted by the realm.;x
-all_peoples_l;All Peoples;x
-alignment_acceptance;Alignment Acceptance;x
-alignment_acceptance_desc;Every person, as long as they follow our alignment, is accepted by the realm.;x
-alignment_acceptance_l;Alignment Acceptance;x
-racial_unity;Unity;x
-racial_unity_desc;Only those of the ruling race are accepted by the realm.;x
-racial_unity_l;Racial Unity;x
+trade_policy;Trade Policy;x
+protectionism;Protectionism;x
+protectionism_desc;Trade between realms is restricted.;x
+protectionism_l;Protectionism;x
+free_trade;Free Trade;x
+free_trade_desc;Traders are able to act and transact without interference from the realm.;x
+free_trade_l;Free Trade;x
+tax_policy;Tax Policy;x
+laissez_faire;Laissez Faire;x
+laissez_faire_desc;The realm reduces taxes as much as possible, even incurring debt if it serves the best interests of the people.;x
+laissez_faire_l;Laissez Faire;x
+interventionism;Interventionism;x
+interventionism_desc;The realm reduces taxes as much as possible, but will not go into debt unless at the utmost need.;x
+interventionism_l;Interventionism;x
+state_capitalism;State Capitalism;x
+state_capitalism_desc;The realm reduces taxes when possible, but places the economic health of the realm over that of its people.;x
+state_capitalism_l;State Capitalism;x
+planned_economy;Planned Economy;x
+planned_economy_desc;The realm spares no pity for its people - they are but another resource.;x
+planned_economy_l;Planned Economy;x
 language_policy;Language Policy;x
 official_only;Official Only;x
 official_only_desc;Only the official language of the realm is allowed in public settings.;x
@@ -456,6 +436,19 @@ anti_military_l;Anti Military;x
 pacifism;Pacifism;x
 pacifism_desc;The government is actively hostile to the interests of the military, feeling they are opposed to the government policies.;x
 pacifism_l;Pacifism;x
+good_evil_alignment;Alignment;x
+good_alignment;Good Alignment;x
+good_alignment_l;Good Alignment;x
+good_alignment_desc;We are considered a Good Realm;x
+movement_good_alignment;Movement to become a Good Realm;x
+neutral_alignment;Neutral Alignment;x
+neutral_alignment_l;Neutral Alignment;x
+neutral_alignment_desc;We are considered a Neutral Realm;x
+movement_neutral_alignment;Movement to become a Neutral Realm;x
+evil_alignment;Evil Alignment;x
+evil_alignment_l;Evil Alignment;x
+evil_alignment_desc;We are considered an Evil Realm;x
+movement_evil_alignment;Movement to become an Evil Realm;x
 ###############################;x }
 ##### INTEREST GROUP TEXT #####;x {
 ###############################;x
@@ -575,9 +568,9 @@ slave_ideology;Slaves;x
 slave_ideology_uh;Slave advisors will vote to follow whatever the realm wants.;x
 tribal_ideology;Tribal;x
 tribal_ideology_uh;Tribal advisors will vote against progress in the realm and active look to reverse it.;x
-prosauron_group;Servants;x
+servants_group;Servants;x
 servants;Servants;x
-servants_uh;Servants advisors will vote to follow whatever the realm wants.;x
+servants_uh;Servants advisors will never vote to reform the realm. They will only serve our overlord.;x
 nobility_group;Nobles;x
 high_nobility;High Nobility;x
 high_nobility_uh;High Nobility advisors will never vote for political reforms. Instead, they hope to repeal them. They will vote for burgher reforms with high enough militancy.;x

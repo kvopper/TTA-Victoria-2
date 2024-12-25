@@ -168,7 +168,7 @@ political_decisions = {
 	convert_to_good = {
 		potential = {
 			OR = {
-				good_alignment_fake = 30
+				good_alignment = 30
 				has_country_flag = attempting_to_good
 			}
 			NOT = { good_evil_alignment = good_alignment }
@@ -183,7 +183,7 @@ political_decisions = {
 		}
 		
 		allow = {
-			good_alignment_fake = 30
+			good_alignment = 30
 		}
 		
 		effect = {
@@ -208,14 +208,14 @@ political_decisions = {
 			clr_country_flag = attempting_to_neutral
 			clr_country_flag = attempting_to_evil
 			
-			any_pop = { dominant_issue = { value = good_alignment_fake factor = 0.1 } }
+			any_pop = { dominant_issue = { value = good_alignment factor = 0.1 } }
 		}
 	}
 	
 	convert_to_neutral = {
 		potential = {
 			OR = {
-				neutral_alignment_fake = 30
+				neutral_alignment = 30
 				has_country_flag = attempting_to_neutral
 			}
 			NOT = { good_evil_alignment = neutral_alignment }
@@ -230,7 +230,7 @@ political_decisions = {
 		}
 		
 		allow = {
-			neutral_alignment_fake = 30
+			neutral_alignment = 30
 		}
 		
 		effect = {
@@ -255,14 +255,14 @@ political_decisions = {
 			clr_country_flag = attempting_to_neutral
 			clr_country_flag = attempting_to_evil
 			
-			any_pop = { dominant_issue = { value = neutral_alignment_fake factor = 0.1 } }
+			any_pop = { dominant_issue = { value = neutral_alignment factor = 0.1 } }
 		}
 	}
 	
 	convert_to_evil = {
 		potential = {
 			OR = {
-				evil_alignment_fake = 30
+				evil_alignment = 30
 				has_country_flag = attempting_to_evil
 			}
 			NOT = { good_evil_alignment = evil_alignment }
@@ -277,7 +277,7 @@ political_decisions = {
 		}
 		
 		allow = {
-			evil_alignment_fake = 30
+			evil_alignment = 30
 		}
 		
 		effect = {
@@ -302,7 +302,7 @@ political_decisions = {
 			clr_country_flag = attempting_to_neutral
 			clr_country_flag = attempting_to_evil
 			
-			any_pop = { dominant_issue = { value = evil_alignment_fake factor = 0.1 } }
+			any_pop = { dominant_issue = { value = evil_alignment factor = 0.1 } }
 		}
 	}
 }
@@ -451,7 +451,7 @@ political_decisions = {
 		
 		effect = {
 			set_country_flag = attempting_to_good
-			dominant_issue = { value = good_alignment_fake factor = 0.1 }
+			dominant_issue = { value = good_alignment factor = 0.1 }
 		}
 	}
 	
@@ -476,7 +476,7 @@ political_decisions = {
 		
 		effect = {
 			set_country_flag = attempting_to_neutral
-			dominant_issue = { value = neutral_alignment_fake factor = 0.1 }
+			dominant_issue = { value = neutral_alignment factor = 0.1 }
 		}
 	}
 	
@@ -501,7 +501,7 @@ political_decisions = {
 		
 		effect = {
 			set_country_flag = attempting_to_evil
-			dominant_issue = { value = evil_alignment_fake factor = 0.1 }
+			dominant_issue = { value = evil_alignment factor = 0.1 }
 		}
 	}
 

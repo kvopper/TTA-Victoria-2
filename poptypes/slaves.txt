@@ -30,7 +30,7 @@ issues = {
 	#####################
 	##### ALIGNMENT #####
 	#####################
-	good_alignment_fake = {
+	good_alignment = {
 		factor = 5
 		modifier = {
 			factor = 1.25
@@ -63,7 +63,7 @@ issues = {
 			has_country_flag = remembered_sacrifice
 		}
 	}
-	neutral_alignment_fake = {
+	neutral_alignment = {
 		factor = 5
 		modifier = {
 			factor = 1.25
@@ -88,7 +88,7 @@ issues = {
 			}
 		}
 	}
-	evil_alignment_fake = {
+	evil_alignment = {
 		factor = 5
 		modifier = {
 			factor = 1.25

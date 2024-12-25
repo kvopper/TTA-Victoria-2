@@ -125,16 +125,11 @@ country_event = {
 	
 	trigger = {
 		is_greater_power = yes
-		guild_autonomy_policy = independent_guilds
 		OR = {
 			war_policy = jingoism
 			war_policy = pro_military
 		}
-		any_neighbor_country = {
-			NOT = {
-				guild_autonomy_policy = independent_guilds
-			}
-		}
+		any_neighbor_country = { trade_policy = protectionism }
 	}
 	
 	mean_time_to_happen = {
@@ -190,10 +185,8 @@ country_event = {
 		name = "Intolerable!"
 		random_country = {
 			limit = {
-				NOT = {
-					tag = THIS
-					guild_autonomy_policy = independent_guilds
-				}
+				neighbour = THIS
+				trade_policy = protectionism
 			}
 			add_casus_belli = {
 				target = THIS
@@ -524,7 +517,7 @@ country_event = {
 				clr_country_flag = attempting_to_neutral
 				clr_country_flag = attempting_to_evil
 					
-				any_pop = { dominant_issue = { value = good_alignment_fake factor = 0.2 } }
+				any_pop = { dominant_issue = { value = good_alignment factor = 0.2 } }
 			}
 		}
 		random_owned = {
@@ -541,7 +534,7 @@ country_event = {
 				clr_country_flag = attempting_to_neutral
 				clr_country_flag = attempting_to_evil
 					
-				any_pop = { dominant_issue = { value = neutral_alignment_fake factor = 0.2 } }
+				any_pop = { dominant_issue = { value = neutral_alignment factor = 0.2 } }
 			}
 		}
 		random_owned = {
@@ -558,7 +551,7 @@ country_event = {
 				clr_country_flag = attempting_to_neutral
 				clr_country_flag = attempting_to_evil
 					
-				any_pop = { dominant_issue = { value = evil_alignment_fake factor = 0.2 } }
+				any_pop = { dominant_issue = { value = evil_alignment factor = 0.2 } }
 				any_state = { is_slave = yes }
 			}
 		}
