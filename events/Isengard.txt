@@ -301,7 +301,8 @@ country_event = {
 				value = 200
 			}
 		}
-		political_reform = evil_alignment
+		# TODO: Political Rework Assign Evil Servants Ruling Party Ideology
+		# political_reform = evil_alignment
 		prestige = 2
 		ai_chance = { factor = 100 }
 	}

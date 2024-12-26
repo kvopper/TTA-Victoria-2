@@ -509,7 +509,8 @@ country_event = {
 				NOT = { owner = { good_evil_alignment = good_alignment } }
 			}
 			owner = {
-				political_reform = good_alignment
+				# TODO: Political Rework Assign Good Servants Ruling Party Ideology
+				# political_reform = good_alignment
 				add_accepted_culture = good_culture
 				remove_accepted_culture = neutral_culture
 				remove_accepted_culture = evil_culture
@@ -526,7 +527,8 @@ country_event = {
 				NOT = { owner = { good_evil_alignment = neutral_alignment } }
 			}
 			owner = {
-				political_reform = neutral_alignment
+				# TODO: Political Rework Assign Neutral Servants Ruling Party Ideology
+				# political_reform = neutral_alignment
 				remove_accepted_culture = good_culture
 				add_accepted_culture = neutral_culture
 				remove_accepted_culture = evil_culture
@@ -543,7 +545,8 @@ country_event = {
 				NOT = { owner = { good_evil_alignment = evil_alignment } }
 			}
 			owner = {
-				political_reform = evil_alignment
+				# TODO: Political Rework Assign Evil Servants Ruling Party Ideology
+				# political_reform = evil_alignment
 				remove_accepted_culture = good_culture
 				remove_accepted_culture = neutral_culture
 				add_accepted_culture = evil_culture

@@ -96,7 +96,8 @@ political_decisions = {
 				owner = {
 					remove_accepted_culture = good_culture
 					remove_accepted_culture = neutral_culture
-					political_reform = evil_alignment
+					# TODO: Political Rework Assign Evil Servants Ruling Party Ideology
+					# political_reform = evil_alignment
 					add_accepted_culture = evil_culture
 					any_state = { is_slave = yes }
 				}
@@ -109,7 +110,8 @@ political_decisions = {
 				owner = {
 					remove_accepted_culture = neutral_culture
 					remove_accepted_culture = evil_culture
-					political_reform = good_alignment
+					# TODO: Political Rework Assign Good Servants Ruling Party Ideology
+					# political_reform = good_alignment
 					add_accepted_culture = good_culture
 				}
 			}
@@ -121,7 +123,8 @@ political_decisions = {
 				owner = {
 					remove_accepted_culture = good_culture
 					remove_accepted_culture = evil_culture
-					political_reform = neutral_alignment
+					# TODO: Political Rework Assign Neutral Servants Ruling Party Ideology
+					# political_reform = neutral_alignment
 					add_accepted_culture = neutral_culture
 				}
 			}
@@ -187,7 +190,8 @@ political_decisions = {
 		}
 		
 		effect = {
-			political_reform = good_alignment
+			# TODO: Political Rework Assign Good Servants Ruling Party Ideology
+			# political_reform = good_alignment
 			add_accepted_culture = good_culture
 			
 			random_owned = {
@@ -234,7 +238,8 @@ political_decisions = {
 		}
 		
 		effect = {
-			political_reform = neutral_alignment
+			# TODO: Political Rework Assign Neutral Servants Ruling Party Ideology
+			# political_reform = neutral_alignment
 			add_accepted_culture = neutral_culture
 			
 			random_owned = {
@@ -281,7 +286,8 @@ political_decisions = {
 		}
 		
 		effect = {
-			political_reform = evil_alignment
+			# TODO: Political Rework Assign Evil Servants Ruling Party Ideology
+			# political_reform = evil_alignment
 			add_accepted_culture = evil_culture
 			
 			random_owned = {

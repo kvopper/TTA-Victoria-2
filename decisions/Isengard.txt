@@ -40,7 +40,8 @@ political_decisions = {
 				release_vassal = ISE
 				country_event = 50100
 			}
-			political_reform = neutral_alignment
+			# TODO: Political Rework Assign Neutral Servants Ruling Party Ideology
+			# political_reform = neutral_alignment
 			any_pop = { dominant_issue = { value = neutral_alignment factor = 0.4 } }
 		}
 	}
