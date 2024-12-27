@@ -1,3 +1,5 @@
+# When adding, removing, or renaming terrains, don't forget to update event 12057 in events/Work Place.txt
+
 terrain = 64
 
 categories = {
@@ -1130,6 +1132,41 @@ categories = {
 		mine_rgo_eff = 0.1
 		
 		supply_limit = 5
+	}
+	
+	# hills
+	umbarland_coast_hills = {
+		movement_cost = 1.2
+		
+		defence = 1
+		combat_width = -0.25
+		
+		color = { 135 70 0 }
+
+		farm_rgo_size = -0.1
+		farm_rgo_eff = -0.1
+		mine_rgo_size = 0.1
+		mine_rgo_eff = 0.1
+		
+		supply_limit = 3
+		min_build_railroad = 1
+	}
+	
+	# woods
+	umbarland_coast_woods = {
+		movement_cost = 1.2
+		
+		defence = 1
+		combat_width = -0.20
+		
+		color = { 91 123 10 }
+		
+		farm_rgo_size = -0.2
+		farm_rgo_eff = -0.2
+		mine_rgo_size = 0.2
+		mine_rgo_eff = 0.2
+		
+		supply_limit = 3
 	}
 	
 	# plains
@@ -2584,10 +2621,10 @@ categories = {
 		
 		color = { 91 123 10 }
 		
-		farm_rgo_size = -0.2
-		farm_rgo_eff = -0.2
-		mine_rgo_size = 0.2
-		mine_rgo_eff = 0.2
+		farm_rgo_size = -0.1
+		farm_rgo_eff = 0.75
+		mine_rgo_size = 0
+		mine_rgo_eff = 0
 		
 		supply_limit = 3
 	}
@@ -2610,6 +2647,25 @@ categories = {
 		
 		min_build_railroad = 2
 	}
+
+	# mountain
+	misty_mountains_tunnels = {
+		movement_cost = 2.0
+		
+		defence = 3
+		combat_width = -0.8
+		
+		color = { 117 108 119 }
+		
+		farm_rgo_size = -0.75
+		farm_rgo_eff = -0.5
+		mine_rgo_size = 0
+		mine_rgo_eff = 0
+		
+		supply_limit = 1
+		
+		min_build_railroad = 4
+	}
 	
 	# mountain
 	moria = {
@@ -2620,10 +2676,10 @@ categories = {
 		
 		color = { 117 108 119 }
 		
-		farm_rgo_size = -0.3
-		farm_rgo_eff = -0.3
-		mine_rgo_size = 0.2
-		mine_rgo_eff = 0.2
+		farm_rgo_size = -0.5
+		farm_rgo_eff = -0.5
+		mine_rgo_size = 0.75
+		mine_rgo_eff = 0.75
 		
 		supply_limit = 1
 		
@@ -2634,15 +2690,15 @@ categories = {
 	moria_east_gate = {
 		movement_cost = 1.4
 		
-		defence = 2
-		combat_width = -0.5
+		defence = 4
+		combat_width = -0.75
 		
 		color = { 117 108 119 }
 		
 		farm_rgo_size = -0.3
 		farm_rgo_eff = -0.3
-		mine_rgo_size = 0.2
-		mine_rgo_eff = 0.2
+		mine_rgo_size = 0.75
+		mine_rgo_eff = 0.75
 		
 		supply_limit = 1
 		
@@ -2653,15 +2709,15 @@ categories = {
 	moria_west_gate = {
 		movement_cost = 1.4
 		
-		defence = 2
+		defence = 3
 		combat_width = -0.5
 		
 		color = { 117 108 119 }
 		
 		farm_rgo_size = -0.3
 		farm_rgo_eff = -0.3
-		mine_rgo_size = 0.2
-		mine_rgo_eff = 0.2
+		mine_rgo_size = 0.75
+		mine_rgo_eff = 0.75
 		
 		supply_limit = 1
 		

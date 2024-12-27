@@ -195,14 +195,11 @@ political_decisions = {
 			primary_culture = rivermen
 			ai = yes
 		}
+		# Allowing the Rivermen minors to join DAL if both are part of the Alliance of Dwarves and Men is highly abuseable by both the player and the ai. This functionality has been moved to the ultimatum (50901) triggered by invite_the_rivermen
 		allow = {
 			OR = {
 				vassal_of = DAL
 				in_sphere = DAL
-				AND = {
-					has_country_modifier = alliance_of_dwarves_and_men
-					DAL = { has_country_modifier = alliance_of_dwarves_and_men }
-				}
 			}
 			NOT = { has_country_flag = DAL_accepted_bard_ultimatum }
 		}
@@ -217,6 +214,7 @@ political_decisions = {
 			modifier = {
 				factor = 0
 				tag = DA4
+				has_global_flag = railroading_enabled
 			}
 		}
 	}
@@ -392,14 +390,11 @@ political_decisions = {
 		
 		allow = {
 			OR = {
-				AND = {
-					ai = yes
-					total_amount_of_divisions = 1
-				}
 				642 = {
 					country_units_in_province = THIS
 					empty = yes # Repeated for the sake of the player
 				}
+				year = 2957
 			}
 			war = no
 		}
@@ -609,7 +604,7 @@ political_decisions = {
 		allow = {
 			accepted_culture = grammas
 			accepted_culture = rivermen
-			expansion_3 = 1
+			expansion_2 = 1
 		}
 		
 		effect = {
@@ -644,6 +639,7 @@ political_decisions = {
 					is_core = THIS
 					province_control_days = 3650
 					OR = {
+						is_colonial = no
 						culture = barding
 						culture = adhalling
 						culture = grammas
@@ -740,7 +736,7 @@ political_decisions = {
 						}
 						reduce_pop = 0
 					}
-					add_province_modifier = { name = rebuilt_city duration = 365 }
+					add_province_modifier = { name = rebuilt_city_5 duration = 1825 }
 				}
 			}
 			
@@ -1206,6 +1202,12 @@ political_decisions = {
 					owned_by = THIS
 				}
 			}
+			ESG = {
+				all_core = {
+					is_core = THIS
+					owned_by = THIS
+				}
+			}
 		}
 		
 		effect = {
@@ -1222,6 +1224,10 @@ political_decisions = {
 			any_owned = {
 				limit = { is_core = RIV is_core = THIS }
 				remove_core = RIV
+			}
+			any_owned = {
+				limit = { is_core = ESG is_core = THIS }
+				remove_core = ESG
 			}
 			
 			random_owned = {
@@ -1504,6 +1510,7 @@ political_decisions = {
 			has_country_flag = DAL_claimed_southern_rivermen
 			NOT = { has_country_flag = DAL_claimed_successor_vidugavia }
 			NOT = { exists = RHO }
+			NOT = { tag = FFN }
 		}
 		
 		allow = {

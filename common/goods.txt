@@ -35,6 +35,28 @@ raw_material_goods = {
 		money = yes
 		color = { 253 199 110 }
 	}
+	food = {
+		cost = 2
+		color = { 94 230 40 }
+	}
+	tobacco = {
+		cost = 1.1
+		color = { 100 69 30 }
+	} # Pipeweed
+	tea = {
+		cost = 2.6
+		color = { 201 135 15 }
+	}
+	horses = {
+		cost = 8
+		color = { 53 42 100 }
+	}
+	precious_goods = {
+		cost = 4
+		tradeable = no
+		money = yes
+		color = { 2 199 110 }
+	}
 }
 
 industrial_goods = {
@@ -58,27 +80,9 @@ industrial_goods = {
 		cost = 2.5
 		color = { 186 50 40 }
 	}
-	precious_goods = {
-		cost = 4
-		tradeable = no
-		money = yes
-		color = { 2 199 110 }
-	}
 }
 
 consumer_goods = {
-	food = {
-		cost = 2
-		color = { 94 230 40 }
-	}
-	tobacco = {
-		cost = 1.1
-		color = { 100 69 30 }
-	} # Pipeweed
-	tea = {
-		cost = 2.6
-		color = { 201 135 15 }
-	}
 	liquor = {
 		cost = 1
 		color = { 76 5 0 }
@@ -106,10 +110,6 @@ consumer_goods = {
 	luxury_clothes = {
 		cost = 6
 		color = { 216 16 18 }
-	}
-	horses = {
-		cost = 8
-		color = { 53 42 100 }
 	}
 }
 

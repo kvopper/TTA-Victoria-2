@@ -4,6 +4,8 @@
 # When adding new modifiers, don't forget to mark them as a country or province modifier
 # When adding new country modifiers, update the daily update event accordingly (99250 in World Bank.txt)
 
+# When adding new types of raiders, update the (Generic) Raid events in events/Small Mechanics.txt
+
 # Icon						Country Icon Number		Province Icon Number	Notes
 # Green Gavel				-1						1
 # Red Gavel					0						2
@@ -530,6 +532,14 @@ province_target_great_haul_modifier = {
 province_target_rgo_change_modifier = {
 	icon = 36
 }
+# Province Modifier
+province_target_looted_province_modifier = {
+	icon = 36
+}
+# Province Modifier
+province_target_raid_loot_modifier = {
+	icon = 36
+}
 
 # }
 ##### PROVINCE WEALTH MODIFIERS ##### {
@@ -593,7 +603,7 @@ summer_modifier_north = {
 	farm_rgo_eff = 0.05
 	pop_militancy_modifier = -0.01
 	pop_consciousness_modifier = -0.01
-	supply_limit = 1
+	max_attrition = -3
 	
 	icon = 37
 }
@@ -603,7 +613,7 @@ summer_modifier_south = {
 	farm_rgo_eff = 0.1
 	pop_militancy_modifier = -0.01
 	pop_consciousness_modifier = -0.01
-	supply_limit = 2
+	max_attrition = -5
 	
 	icon = 37
 }
@@ -626,7 +636,7 @@ autumn_modifier_rhun = {
 # Province Modifier
 autumn_modifier_south = {
 	farm_rgo_eff = 0.1
-	supply_limit = 1
+	max_attrition = -3
 	
 	icon = 38
 }
@@ -637,7 +647,7 @@ winter_modifier_north = {
 	pop_militancy_modifier = 0.01
 	pop_consciousness_modifier = 0.01
 	movement_cost = 0.1
-	supply_limit = -3.5 # Remove half of the starting supply
+	max_attrition = 10
 	
 	icon = 39
 }
@@ -647,7 +657,7 @@ winter_modifier_south = {
 	pop_militancy_modifier = 0.01
 	pop_consciousness_modifier = 0.01
 	movement_cost = 0.1
-	supply_limit = -2.5
+	max_attrition = 5
 	
 	icon = 39
 }
@@ -670,7 +680,7 @@ spring_modifier_rhun = {
 spring_modifier_south = {
 	farm_rgo_eff = 0.05
 	movement_cost = 0.05
-	supply_limit = 1
+	max_attrition = -3
 	
 	icon = 40
 }
@@ -680,7 +690,7 @@ dry_season_modifier = {
 	farm_rgo_eff = -0.1
 	pop_militancy_modifier = 0.01
 	pop_consciousness_modifier = 0.01
-	supply_limit = -2
+	max_attrition = -5
 	
 	icon = 37
 }
@@ -889,6 +899,17 @@ rebuilt_city = {
 	pop_consciousness_modifier = -0.01
 	pop_militancy_modifier = -0.01
 	population_growth = 0.001
+	
+	icon = 19
+}
+
+# Province Modifier
+rebuilt_city_5 = {
+	life_rating = 0.1
+	immigrant_attract = 0.25
+	pop_consciousness_modifier = -0.01
+	pop_militancy_modifier = -0.01
+	population_growth = 0.005
 	
 	icon = 19
 }
@@ -1606,6 +1627,13 @@ AMO_established_clan_guard = {
 
 # Province Modifier
 AMO_easterling_raiders = {
+	local_RGO_output = -0.1
+	local_artisan_throughput = -0.1
+	local_factory_throughput = -0.1
+	pop_militancy_modifier = 0.01
+	pop_consciousness_modifier = 0.01
+	population_growth = -0.001
+	
 	icon = 56
 }
 
@@ -2034,6 +2062,12 @@ hunting_marsh_wights = {
 
 # Province Modifier
 celduin_pirates = {
+	local_RGO_output = -0.1
+	local_artisan_throughput = -0.1
+	local_factory_throughput = -0.1
+	pop_militancy_modifier = 0.01
+	pop_consciousness_modifier = 0.01
+	
 	icon = 18
 }
 

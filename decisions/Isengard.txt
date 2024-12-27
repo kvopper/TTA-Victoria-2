@@ -89,6 +89,7 @@ political_decisions = {
 			is_vassal = no
 			nationalvalue = saruman
 			NOT = { has_country_modifier = breeding_uruk_hai }
+			NOT = { has_global_flag = bred_uruk_hai }
 		}
 		allow = {
 			magic_3 = 1

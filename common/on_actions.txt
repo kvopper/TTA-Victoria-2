@@ -63,8 +63,8 @@ on_colony_to_state = {
 	100 = 70001 # removal of cores (flavor)
 }
 
+# Fires only when conquering states -- colonies and lands taken from uncivs do not get affected by this on action
 on_state_conquest = {
-	100 = 70007
 }
 
 on_colony_to_state_free_slaves = {

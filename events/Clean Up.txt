@@ -125,32 +125,6 @@ country_event = {
 			}
 		}
 	}
-	
-	option = {
-		name = "Never!"
-		
-		FROM = {
-			diplomatic_influence = {
-				who = THIS
-				value = -400
-			}
-		}
-		
-		ai_chance = {
-			factor = 10
-			
-			modifier = {
-				factor = 0
-				OR = {
-					relation = {
-						who = FROM
-						value = 0
-					}
-					vassal_of = FROM
-				}
-			}
-		}
-	}
 }
 
 # Annex Country - Non-cultural Union

@@ -1,8 +1,9 @@
 owner = DAL
 controller = DAL
 add_core = DAL
+add_core = ESG
 trade_goods = food
-life_rating = 30
+life_rating = 33
 terrain = dale
 state_building = {
 	level = 2

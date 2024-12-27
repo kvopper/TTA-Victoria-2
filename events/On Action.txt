@@ -293,52 +293,2163 @@ country_event = {
 }
 
 # The Conquest of $STATE$
-country_event = {
+province_event = {
 	id = 70007
-	title = "The Conquest of $STATE$"
-	desc = "EVTDESC70000"
-	picture = "administration"
+	title = "Resistance in Newly Acquired Provinces"
+	desc = "EVTDESC70007"
 	
 	is_triggered_only = yes
-	allow_multiple_instances = yes
 	
 	option = {
-		name = "Another state for the realm!"
-		random_owned = {
-			limit = { owner = { slavery = non_accepted_slavery } }
-			owner = {
-				any_pop = {
-					limit = {
-						type = slaves
-						OR = {
-							is_primary_culture = yes
-							is_accepted_culture = yes
+		name = "They will not stop our advance!"
+		
+		owner = {
+			set_global_flag = hidden_effects
+			random_owned = {
+				limit = { owner = { has_global_flag = hidden_effects } }
+				owner = {
+					any_owned = {
+						limit = {
+							unemployment_by_type = { value = 1 type = labourers }
+							any_pop = {
+								type = soldiers
+								has_pop_culture = dunedain
+								country = {
+									NOT = { accepted_culture = dunedain }
+									NOT = { primary_culture = dunedain }
+								}
+							}
+						}
+						any_pop = {
+							limit = {
+								type = soldiers
+								has_pop_culture = dunedain
+							}
+							pop_type = tribals
+							ideology = {
+								factor = 99
+								value = tribal_ideology
+							}
 						}
 					}
-					pop_type = labourers
-				}
-			}
-		}
-		random_owned = {
-			limit = {
-				owner = {
-					OR = {
-						slavery = yes_slavery
-						slavery = non_accepted_slavery
+					any_owned = {
+						limit = {
+							unemployment_by_type = { value = 1 type = labourers }
+							any_pop = {
+								type = soldiers
+								has_pop_culture = gondorian
+								country = {
+									NOT = { accepted_culture = gondorian }
+									NOT = { primary_culture = gondorian }
+								}
+							}
+						}
+						any_pop = {
+							limit = {
+								type = soldiers
+								has_pop_culture = gondorian
+							}
+							pop_type = tribals
+							ideology = {
+								factor = 99
+								value = tribal_ideology
+							}
+						}
+					}
+					any_owned = {
+						limit = {
+							unemployment_by_type = { value = 1 type = labourers }
+							any_pop = {
+								type = soldiers
+								has_pop_culture = amrothian
+								country = {
+									NOT = { accepted_culture = amrothian }
+									NOT = { primary_culture = amrothian }
+								}
+							}
+						}
+						any_pop = {
+							limit = {
+								type = soldiers
+								has_pop_culture = amrothian
+							}
+							pop_type = tribals
+							ideology = {
+								factor = 99
+								value = tribal_ideology
+							}
+						}
+					}
+					any_owned = {
+						limit = {
+							unemployment_by_type = { value = 1 type = labourers }
+							any_pop = {
+								type = soldiers
+								has_pop_culture = arthedani
+								country = {
+									NOT = { accepted_culture = arthedani }
+									NOT = { primary_culture = arthedani }
+								}
+							}
+						}
+						any_pop = {
+							limit = {
+								type = soldiers
+								has_pop_culture = arthedani
+							}
+							pop_type = tribals
+							ideology = {
+								factor = 99
+								value = tribal_ideology
+							}
+						}
+					}
+					any_owned = {
+						limit = {
+							unemployment_by_type = { value = 1 type = labourers }
+							any_pop = {
+								type = soldiers
+								has_pop_culture = cardolandrim
+								country = {
+									NOT = { accepted_culture = cardolandrim }
+									NOT = { primary_culture = cardolandrim }
+								}
+							}
+						}
+						any_pop = {
+							limit = {
+								type = soldiers
+								has_pop_culture = cardolandrim
+							}
+							pop_type = tribals
+							ideology = {
+								factor = 99
+								value = tribal_ideology
+							}
+						}
+					}
+					any_owned = {
+						limit = {
+							unemployment_by_type = { value = 1 type = labourers }
+							any_pop = {
+								type = soldiers
+								has_pop_culture = haeranedain
+								country = {
+									NOT = { accepted_culture = haeranedain }
+									NOT = { primary_culture = haeranedain }
+								}
+							}
+						}
+						any_pop = {
+							limit = {
+								type = soldiers
+								has_pop_culture = haeranedain
+							}
+							pop_type = tribals
+							ideology = {
+								factor = 99
+								value = tribal_ideology
+							}
+						}
+					}
+					any_owned = {
+						limit = {
+							unemployment_by_type = { value = 1 type = labourers }
+							any_pop = {
+								type = soldiers
+								has_pop_culture = noldor
+								country = {
+									NOT = { accepted_culture = noldor }
+									NOT = { primary_culture = noldor }
+								}
+							}
+						}
+						any_pop = {
+							limit = {
+								type = soldiers
+								has_pop_culture = noldor
+							}
+							pop_type = tribals
+							ideology = {
+								factor = 99
+								value = tribal_ideology
+							}
+						}
+					}
+					any_owned = {
+						limit = {
+							unemployment_by_type = { value = 1 type = labourers }
+							any_pop = {
+								type = soldiers
+								has_pop_culture = falathrim
+								country = {
+									NOT = { accepted_culture = falathrim }
+									NOT = { primary_culture = falathrim }
+								}
+							}
+						}
+						any_pop = {
+							limit = {
+								type = soldiers
+								has_pop_culture = falathrim
+							}
+							pop_type = tribals
+							ideology = {
+								factor = 99
+								value = tribal_ideology
+							}
+						}
+					}
+					any_owned = {
+						limit = {
+							unemployment_by_type = { value = 1 type = labourers }
+							any_pop = {
+								type = soldiers
+								has_pop_culture = silvan
+								country = {
+									NOT = { accepted_culture = silvan }
+									NOT = { primary_culture = silvan }
+								}
+							}
+						}
+						any_pop = {
+							limit = {
+								type = soldiers
+								has_pop_culture = silvan
+							}
+							pop_type = tribals
+							ideology = {
+								factor = 99
+								value = tribal_ideology
+							}
+						}
+					}
+					any_owned = {
+						limit = {
+							unemployment_by_type = { value = 1 type = labourers }
+							any_pop = {
+								type = soldiers
+								has_pop_culture = galadhrim
+								country = {
+									NOT = { accepted_culture = galadhrim }
+									NOT = { primary_culture = galadhrim }
+								}
+							}
+						}
+						any_pop = {
+							limit = {
+								type = soldiers
+								has_pop_culture = galadhrim
+							}
+							pop_type = tribals
+							ideology = {
+								factor = 99
+								value = tribal_ideology
+							}
+						}
+					}
+					any_owned = {
+						limit = {
+							unemployment_by_type = { value = 1 type = labourers }
+							any_pop = {
+								type = soldiers
+								has_pop_culture = avari
+								country = {
+									NOT = { accepted_culture = avari }
+									NOT = { primary_culture = avari }
+								}
+							}
+						}
+						any_pop = {
+							limit = {
+								type = soldiers
+								has_pop_culture = avari
+							}
+							pop_type = tribals
+							ideology = {
+								factor = 99
+								value = tribal_ideology
+							}
+						}
+					}
+					any_owned = {
+						limit = {
+							unemployment_by_type = { value = 1 type = labourers }
+							any_pop = {
+								type = soldiers
+								has_pop_culture = umbarrim
+								country = {
+									NOT = { accepted_culture = umbarrim }
+									NOT = { primary_culture = umbarrim }
+								}
+							}
+						}
+						any_pop = {
+							limit = {
+								type = soldiers
+								has_pop_culture = umbarrim
+							}
+							pop_type = tribals
+							ideology = {
+								factor = 99
+								value = tribal_ideology
+							}
+						}
+					}
+					any_owned = {
+						limit = {
+							unemployment_by_type = { value = 1 type = labourers }
+							any_pop = {
+								type = soldiers
+								has_pop_culture = harnendan
+								country = {
+									NOT = { accepted_culture = harnendan }
+									NOT = { primary_culture = harnendan }
+								}
+							}
+						}
+						any_pop = {
+							limit = {
+								type = soldiers
+								has_pop_culture = harnendan
+							}
+							pop_type = tribals
+							ideology = {
+								factor = 99
+								value = tribal_ideology
+							}
+						}
+					}
+					any_owned = {
+						limit = {
+							unemployment_by_type = { value = 1 type = labourers }
+							any_pop = {
+								type = soldiers
+								has_pop_culture = haruzani
+								country = {
+									NOT = { accepted_culture = haruzani }
+									NOT = { primary_culture = haruzani }
+								}
+							}
+						}
+						any_pop = {
+							limit = {
+								type = soldiers
+								has_pop_culture = haruzani
+							}
+							pop_type = tribals
+							ideology = {
+								factor = 99
+								value = tribal_ideology
+							}
+						}
+					}
+					any_owned = {
+						limit = {
+							unemployment_by_type = { value = 1 type = labourers }
+							any_pop = {
+								type = soldiers
+								has_pop_culture = pezarsani
+								country = {
+									NOT = { accepted_culture = pezarsani }
+									NOT = { primary_culture = pezarsani }
+								}
+							}
+						}
+						any_pop = {
+							limit = {
+								type = soldiers
+								has_pop_culture = pezarsani
+							}
+							pop_type = tribals
+							ideology = {
+								factor = 99
+								value = tribal_ideology
+							}
+						}
+					}
+					any_owned = {
+						limit = {
+							unemployment_by_type = { value = 1 type = labourers }
+							any_pop = {
+								type = soldiers
+								has_pop_culture = lurmsakuni
+								country = {
+									NOT = { accepted_culture = lurmsakuni }
+									NOT = { primary_culture = lurmsakuni }
+								}
+							}
+						}
+						any_pop = {
+							limit = {
+								type = soldiers
+								has_pop_culture = lurmsakuni
+							}
+							pop_type = tribals
+							ideology = {
+								factor = 99
+								value = tribal_ideology
+							}
+						}
+					}
+					any_owned = {
+						limit = {
+							unemployment_by_type = { value = 1 type = labourers }
+							any_pop = {
+								type = soldiers
+								has_pop_culture = arysian
+								country = {
+									NOT = { accepted_culture = arysian }
+									NOT = { primary_culture = arysian }
+								}
+							}
+						}
+						any_pop = {
+							limit = {
+								type = soldiers
+								has_pop_culture = arysian
+							}
+							pop_type = tribals
+							ideology = {
+								factor = 99
+								value = tribal_ideology
+							}
+						}
+					}
+					any_owned = {
+						limit = {
+							unemployment_by_type = { value = 1 type = labourers }
+							any_pop = {
+								type = soldiers
+								has_pop_culture = kingsmen
+								country = {
+									NOT = { accepted_culture = kingsmen }
+									NOT = { primary_culture = kingsmen }
+								}
+							}
+						}
+						any_pop = {
+							limit = {
+								type = soldiers
+								has_pop_culture = kingsmen
+							}
+							pop_type = tribals
+							ideology = {
+								factor = 99
+								value = tribal_ideology
+							}
+						}
+					}
+					any_owned = {
+						limit = {
+							unemployment_by_type = { value = 1 type = labourers }
+							any_pop = {
+								type = soldiers
+								has_pop_culture = black_numenorean
+								country = {
+									NOT = { accepted_culture = black_numenorean }
+									NOT = { primary_culture = black_numenorean }
+								}
+							}
+						}
+						any_pop = {
+							limit = {
+								type = soldiers
+								has_pop_culture = black_numenorean
+							}
+							pop_type = tribals
+							ideology = {
+								factor = 99
+								value = tribal_ideology
+							}
+						}
+					}
+					any_owned = {
+						limit = {
+							unemployment_by_type = { value = 1 type = labourers }
+							any_pop = {
+								type = soldiers
+								has_pop_culture = variag
+								country = {
+									NOT = { accepted_culture = variag }
+									NOT = { primary_culture = variag }
+								}
+							}
+						}
+						any_pop = {
+							limit = {
+								type = soldiers
+								has_pop_culture = variag
+							}
+							pop_type = tribals
+							ideology = {
+								factor = 99
+								value = tribal_ideology
+							}
+						}
+					}
+					any_owned = {
+						limit = {
+							unemployment_by_type = { value = 1 type = labourers }
+							any_pop = {
+								type = soldiers
+								has_pop_culture = nurniag
+								country = {
+									NOT = { accepted_culture = nurniag }
+									NOT = { primary_culture = nurniag }
+								}
+							}
+						}
+						any_pop = {
+							limit = {
+								type = soldiers
+								has_pop_culture = nurniag
+							}
+							pop_type = tribals
+							ideology = {
+								factor = 99
+								value = tribal_ideology
+							}
+						}
+					}
+					any_owned = {
+						limit = {
+							unemployment_by_type = { value = 1 type = labourers }
+							any_pop = {
+								type = soldiers
+								has_pop_culture = chelkiag
+								country = {
+									NOT = { accepted_culture = chelkiag }
+									NOT = { primary_culture = chelkiag }
+								}
+							}
+						}
+						any_pop = {
+							limit = {
+								type = soldiers
+								has_pop_culture = chelkiag
+							}
+							pop_type = tribals
+							ideology = {
+								factor = 99
+								value = tribal_ideology
+							}
+						}
+					}
+					any_owned = {
+						limit = {
+							unemployment_by_type = { value = 1 type = labourers }
+							any_pop = {
+								type = soldiers
+								has_pop_culture = sagath
+								country = {
+									NOT = { accepted_culture = sagath }
+									NOT = { primary_culture = sagath }
+								}
+							}
+						}
+						any_pop = {
+							limit = {
+								type = soldiers
+								has_pop_culture = sagath
+							}
+							pop_type = tribals
+							ideology = {
+								factor = 99
+								value = tribal_ideology
+							}
+						}
+					}
+					any_owned = {
+						limit = {
+							unemployment_by_type = { value = 1 type = labourers }
+							any_pop = {
+								type = soldiers
+								has_pop_culture = sekel
+								country = {
+									NOT = { accepted_culture = sekel }
+									NOT = { primary_culture = sekel }
+								}
+							}
+						}
+						any_pop = {
+							limit = {
+								type = soldiers
+								has_pop_culture = sekel
+							}
+							pop_type = tribals
+							ideology = {
+								factor = 99
+								value = tribal_ideology
+							}
+						}
+					}
+					any_owned = {
+						limit = {
+							unemployment_by_type = { value = 1 type = labourers }
+							any_pop = {
+								type = soldiers
+								has_pop_culture = urgath
+								country = {
+									NOT = { accepted_culture = urgath }
+									NOT = { primary_culture = urgath }
+								}
+							}
+						}
+						any_pop = {
+							limit = {
+								type = soldiers
+								has_pop_culture = urgath
+							}
+							pop_type = tribals
+							ideology = {
+								factor = 99
+								value = tribal_ideology
+							}
+						}
+					}
+					any_owned = {
+						limit = {
+							unemployment_by_type = { value = 1 type = labourers }
+							any_pop = {
+								type = soldiers
+								has_pop_culture = kuga
+								country = {
+									NOT = { accepted_culture = kuga }
+									NOT = { primary_culture = kuga }
+								}
+							}
+						}
+						any_pop = {
+							limit = {
+								type = soldiers
+								has_pop_culture = kuga
+							}
+							pop_type = tribals
+							ideology = {
+								factor = 99
+								value = tribal_ideology
+							}
+						}
+					}
+					any_owned = {
+						limit = {
+							unemployment_by_type = { value = 1 type = labourers }
+							any_pop = {
+								type = soldiers
+								has_pop_culture = logath
+								country = {
+									NOT = { accepted_culture = logath }
+									NOT = { primary_culture = logath }
+								}
+							}
+						}
+						any_pop = {
+							limit = {
+								type = soldiers
+								has_pop_culture = logath
+							}
+							pop_type = tribals
+							ideology = {
+								factor = 99
+								value = tribal_ideology
+							}
+						}
+					}
+					any_owned = {
+						limit = {
+							unemployment_by_type = { value = 1 type = labourers }
+							any_pop = {
+								type = soldiers
+								has_pop_culture = barding
+								country = {
+									NOT = { accepted_culture = barding }
+									NOT = { primary_culture = barding }
+								}
+							}
+						}
+						any_pop = {
+							limit = {
+								type = soldiers
+								has_pop_culture = barding
+							}
+							pop_type = tribals
+							ideology = {
+								factor = 99
+								value = tribal_ideology
+							}
+						}
+					}
+					any_owned = {
+						limit = {
+							unemployment_by_type = { value = 1 type = labourers }
+							any_pop = {
+								type = soldiers
+								has_pop_culture = grammas
+								country = {
+									NOT = { accepted_culture = grammas }
+									NOT = { primary_culture = grammas }
+								}
+							}
+						}
+						any_pop = {
+							limit = {
+								type = soldiers
+								has_pop_culture = grammas
+							}
+							pop_type = tribals
+							ideology = {
+								factor = 99
+								value = tribal_ideology
+							}
+						}
+					}
+					any_owned = {
+						limit = {
+							unemployment_by_type = { value = 1 type = labourers }
+							any_pop = {
+								type = soldiers
+								has_pop_culture = rivermen
+								country = {
+									NOT = { accepted_culture = rivermen }
+									NOT = { primary_culture = rivermen }
+								}
+							}
+						}
+						any_pop = {
+							limit = {
+								type = soldiers
+								has_pop_culture = rivermen
+							}
+							pop_type = tribals
+							ideology = {
+								factor = 99
+								value = tribal_ideology
+							}
+						}
+					}
+					any_owned = {
+						limit = {
+							unemployment_by_type = { value = 1 type = labourers }
+							any_pop = {
+								type = soldiers
+								has_pop_culture = adhalling
+								country = {
+									NOT = { accepted_culture = adhalling }
+									NOT = { primary_culture = adhalling }
+								}
+							}
+						}
+						any_pop = {
+							limit = {
+								type = soldiers
+								has_pop_culture = adhalling
+							}
+							pop_type = tribals
+							ideology = {
+								factor = 99
+								value = tribal_ideology
+							}
+						}
+					}
+					any_owned = {
+						limit = {
+							unemployment_by_type = { value = 1 type = labourers }
+							any_pop = {
+								type = soldiers
+								has_pop_culture = dorwinrim
+								country = {
+									NOT = { accepted_culture = dorwinrim }
+									NOT = { primary_culture = dorwinrim }
+								}
+							}
+						}
+						any_pop = {
+							limit = {
+								type = soldiers
+								has_pop_culture = dorwinrim
+							}
+							pop_type = tribals
+							ideology = {
+								factor = 99
+								value = tribal_ideology
+							}
+						}
+					}
+					any_owned = {
+						limit = {
+							unemployment_by_type = { value = 1 type = labourers }
+							any_pop = {
+								type = soldiers
+								has_pop_culture = aivathiuda
+								country = {
+									NOT = { accepted_culture = aivathiuda }
+									NOT = { primary_culture = aivathiuda }
+								}
+							}
+						}
+						any_pop = {
+							limit = {
+								type = soldiers
+								has_pop_culture = aivathiuda
+							}
+							pop_type = tribals
+							ideology = {
+								factor = 99
+								value = tribal_ideology
+							}
+						}
+					}
+					any_owned = {
+						limit = {
+							unemployment_by_type = { value = 1 type = labourers }
+							any_pop = {
+								type = soldiers
+								has_pop_culture = anthar
+								country = {
+									NOT = { accepted_culture = anthar }
+									NOT = { primary_culture = anthar }
+								}
+							}
+						}
+						any_pop = {
+							limit = {
+								type = soldiers
+								has_pop_culture = anthar
+							}
+							pop_type = tribals
+							ideology = {
+								factor = 99
+								value = tribal_ideology
+							}
+						}
+					}
+					any_owned = {
+						limit = {
+							unemployment_by_type = { value = 1 type = labourers }
+							any_pop = {
+								type = soldiers
+								has_pop_culture = gadraught
+								country = {
+									NOT = { accepted_culture = gadraught }
+									NOT = { primary_culture = gadraught }
+								}
+							}
+						}
+						any_pop = {
+							limit = {
+								type = soldiers
+								has_pop_culture = gadraught
+							}
+							pop_type = tribals
+							ideology = {
+								factor = 99
+								value = tribal_ideology
+							}
+						}
+					}
+					any_owned = {
+						limit = {
+							unemployment_by_type = { value = 1 type = labourers }
+							any_pop = {
+								type = soldiers
+								has_pop_culture = longbeard
+								country = {
+									NOT = { accepted_culture = longbeard }
+									NOT = { primary_culture = longbeard }
+								}
+							}
+						}
+						any_pop = {
+							limit = {
+								type = soldiers
+								has_pop_culture = longbeard
+							}
+							pop_type = tribals
+							ideology = {
+								factor = 99
+								value = tribal_ideology
+							}
+						}
+					}
+					any_owned = {
+						limit = {
+							unemployment_by_type = { value = 1 type = labourers }
+							any_pop = {
+								type = soldiers
+								has_pop_culture = firebeard
+								country = {
+									NOT = { accepted_culture = firebeard }
+									NOT = { primary_culture = firebeard }
+								}
+							}
+						}
+						any_pop = {
+							limit = {
+								type = soldiers
+								has_pop_culture = firebeard
+							}
+							pop_type = tribals
+							ideology = {
+								factor = 99
+								value = tribal_ideology
+							}
+						}
+					}
+					any_owned = {
+						limit = {
+							unemployment_by_type = { value = 1 type = labourers }
+							any_pop = {
+								type = soldiers
+								has_pop_culture = broadbeam
+								country = {
+									NOT = { accepted_culture = broadbeam }
+									NOT = { primary_culture = broadbeam }
+								}
+							}
+						}
+						any_pop = {
+							limit = {
+								type = soldiers
+								has_pop_culture = broadbeam
+							}
+							pop_type = tribals
+							ideology = {
+								factor = 99
+								value = tribal_ideology
+							}
+						}
+					}
+					any_owned = {
+						limit = {
+							unemployment_by_type = { value = 1 type = labourers }
+							any_pop = {
+								type = soldiers
+								has_pop_culture = ironfist
+								country = {
+									NOT = { accepted_culture = ironfist }
+									NOT = { primary_culture = ironfist }
+								}
+							}
+						}
+						any_pop = {
+							limit = {
+								type = soldiers
+								has_pop_culture = ironfist
+							}
+							pop_type = tribals
+							ideology = {
+								factor = 99
+								value = tribal_ideology
+							}
+						}
+					}
+					any_owned = {
+						limit = {
+							unemployment_by_type = { value = 1 type = labourers }
+							any_pop = {
+								type = soldiers
+								has_pop_culture = dourhand
+								country = {
+									NOT = { accepted_culture = dourhand }
+									NOT = { primary_culture = dourhand }
+								}
+							}
+						}
+						any_pop = {
+							limit = {
+								type = soldiers
+								has_pop_culture = dourhand
+							}
+							pop_type = tribals
+							ideology = {
+								factor = 99
+								value = tribal_ideology
+							}
+						}
+					}
+					any_owned = {
+						limit = {
+							unemployment_by_type = { value = 1 type = labourers }
+							any_pop = {
+								type = soldiers
+								has_pop_culture = shornbeard
+								country = {
+									NOT = { accepted_culture = shornbeard }
+									NOT = { primary_culture = shornbeard }
+								}
+							}
+						}
+						any_pop = {
+							limit = {
+								type = soldiers
+								has_pop_culture = shornbeard
+							}
+							pop_type = tribals
+							ideology = {
+								factor = 99
+								value = tribal_ideology
+							}
+						}
+					}
+					any_owned = {
+						limit = {
+							unemployment_by_type = { value = 1 type = labourers }
+							any_pop = {
+								type = soldiers
+								has_pop_culture = woodsmen
+								country = {
+									NOT = { accepted_culture = woodsmen }
+									NOT = { primary_culture = woodsmen }
+								}
+							}
+						}
+						any_pop = {
+							limit = {
+								type = soldiers
+								has_pop_culture = woodsmen
+							}
+							pop_type = tribals
+							ideology = {
+								factor = 99
+								value = tribal_ideology
+							}
+						}
+					}
+					any_owned = {
+						limit = {
+							unemployment_by_type = { value = 1 type = labourers }
+							any_pop = {
+								type = soldiers
+								has_pop_culture = beorning
+								country = {
+									NOT = { accepted_culture = beorning }
+									NOT = { primary_culture = beorning }
+								}
+							}
+						}
+						any_pop = {
+							limit = {
+								type = soldiers
+								has_pop_culture = beorning
+							}
+							pop_type = tribals
+							ideology = {
+								factor = 99
+								value = tribal_ideology
+							}
+						}
+					}
+					any_owned = {
+						limit = {
+							unemployment_by_type = { value = 1 type = labourers }
+							any_pop = {
+								type = soldiers
+								has_pop_culture = beiabarnae
+								country = {
+									NOT = { accepted_culture = beiabarnae }
+									NOT = { primary_culture = beiabarnae }
+								}
+							}
+						}
+						any_pop = {
+							limit = {
+								type = soldiers
+								has_pop_culture = beiabarnae
+							}
+							pop_type = tribals
+							ideology = {
+								factor = 99
+								value = tribal_ideology
+							}
+						}
+					}
+					any_owned = {
+						limit = {
+							unemployment_by_type = { value = 1 type = labourers }
+							any_pop = {
+								type = soldiers
+								has_pop_culture = melburgi
+								country = {
+									NOT = { accepted_culture = melburgi }
+									NOT = { primary_culture = melburgi }
+								}
+							}
+						}
+						any_pop = {
+							limit = {
+								type = soldiers
+								has_pop_culture = melburgi
+							}
+							pop_type = tribals
+							ideology = {
+								factor = 99
+								value = tribal_ideology
+							}
+						}
+					}
+					any_owned = {
+						limit = {
+							unemployment_by_type = { value = 1 type = labourers }
+							any_pop = {
+								type = soldiers
+								has_pop_culture = herimundi
+								country = {
+									NOT = { accepted_culture = herimundi }
+									NOT = { primary_culture = herimundi }
+								}
+							}
+						}
+						any_pop = {
+							limit = {
+								type = soldiers
+								has_pop_culture = herimundi
+							}
+							pop_type = tribals
+							ideology = {
+								factor = 99
+								value = tribal_ideology
+							}
+						}
+					}
+					any_owned = {
+						limit = {
+							unemployment_by_type = { value = 1 type = labourers }
+							any_pop = {
+								type = soldiers
+								has_pop_culture = ent
+								country = {
+									NOT = { accepted_culture = ent }
+									NOT = { primary_culture = ent }
+								}
+							}
+						}
+						any_pop = {
+							limit = {
+								type = soldiers
+								has_pop_culture = ent
+							}
+							pop_type = tribals
+							ideology = {
+								factor = 99
+								value = tribal_ideology
+							}
+						}
+					}
+					any_owned = {
+						limit = {
+							unemployment_by_type = { value = 1 type = labourers }
+							any_pop = {
+								type = soldiers
+								has_pop_culture = huorn
+								country = {
+									NOT = { accepted_culture = huorn }
+									NOT = { primary_culture = huorn }
+								}
+							}
+						}
+						any_pop = {
+							limit = {
+								type = soldiers
+								has_pop_culture = huorn
+							}
+							pop_type = tribals
+							ideology = {
+								factor = 99
+								value = tribal_ideology
+							}
+						}
+					}
+					any_owned = {
+						limit = {
+							unemployment_by_type = { value = 1 type = labourers }
+							any_pop = {
+								type = soldiers
+								has_pop_culture = black_huorn
+								country = {
+									NOT = { accepted_culture = black_huorn }
+									NOT = { primary_culture = black_huorn }
+								}
+							}
+						}
+						any_pop = {
+							limit = {
+								type = soldiers
+								has_pop_culture = black_huorn
+							}
+							pop_type = tribals
+							ideology = {
+								factor = 99
+								value = tribal_ideology
+							}
+						}
+					}
+					any_owned = {
+						limit = {
+							unemployment_by_type = { value = 1 type = labourers }
+							any_pop = {
+								type = soldiers
+								has_pop_culture = druedain
+								country = {
+									NOT = { accepted_culture = druedain }
+									NOT = { primary_culture = druedain }
+								}
+							}
+						}
+						any_pop = {
+							limit = {
+								type = soldiers
+								has_pop_culture = druedain
+							}
+							pop_type = tribals
+							ideology = {
+								factor = 99
+								value = tribal_ideology
+							}
+						}
+					}
+					any_owned = {
+						limit = {
+							unemployment_by_type = { value = 1 type = labourers }
+							any_pop = {
+								type = soldiers
+								has_pop_culture = dunnish
+								country = {
+									NOT = { accepted_culture = dunnish }
+									NOT = { primary_culture = dunnish }
+								}
+							}
+						}
+						any_pop = {
+							limit = {
+								type = soldiers
+								has_pop_culture = dunnish
+							}
+							pop_type = tribals
+							ideology = {
+								factor = 99
+								value = tribal_ideology
+							}
+						}
+					}
+					any_owned = {
+						limit = {
+							unemployment_by_type = { value = 1 type = labourers }
+							any_pop = {
+								type = soldiers
+								has_pop_culture = hollin_folk
+								country = {
+									NOT = { accepted_culture = hollin_folk }
+									NOT = { primary_culture = hollin_folk }
+								}
+							}
+						}
+						any_pop = {
+							limit = {
+								type = soldiers
+								has_pop_culture = hollin_folk
+							}
+							pop_type = tribals
+							ideology = {
+								factor = 99
+								value = tribal_ideology
+							}
+						}
+					}
+					any_owned = {
+						limit = {
+							unemployment_by_type = { value = 1 type = labourers }
+							any_pop = {
+								type = soldiers
+								has_pop_culture = enedwaithrim
+								country = {
+									NOT = { accepted_culture = enedwaithrim }
+									NOT = { primary_culture = enedwaithrim }
+								}
+							}
+						}
+						any_pop = {
+							limit = {
+								type = soldiers
+								has_pop_culture = enedwaithrim
+							}
+							pop_type = tribals
+							ideology = {
+								factor = 99
+								value = tribal_ideology
+							}
+						}
+					}
+					any_owned = {
+						limit = {
+							unemployment_by_type = { value = 1 type = labourers }
+							any_pop = {
+								type = soldiers
+								has_pop_culture = saerlanner
+								country = {
+									NOT = { accepted_culture = saerlanner }
+									NOT = { primary_culture = saerlanner }
+								}
+							}
+						}
+						any_pop = {
+							limit = {
+								type = soldiers
+								has_pop_culture = saerlanner
+							}
+							pop_type = tribals
+							ideology = {
+								factor = 99
+								value = tribal_ideology
+							}
+						}
+					}
+					any_owned = {
+						limit = {
+							unemployment_by_type = { value = 1 type = labourers }
+							any_pop = {
+								type = soldiers
+								has_pop_culture = dunir
+								country = {
+									NOT = { accepted_culture = dunir }
+									NOT = { primary_culture = dunir }
+								}
+							}
+						}
+						any_pop = {
+							limit = {
+								type = soldiers
+								has_pop_culture = dunir
+							}
+							pop_type = tribals
+							ideology = {
+								factor = 99
+								value = tribal_ideology
+							}
+						}
+					}
+					any_owned = {
+						limit = {
+							unemployment_by_type = { value = 1 type = labourers }
+							any_pop = {
+								type = soldiers
+								has_pop_culture = marshmen
+								country = {
+									NOT = { accepted_culture = marshmen }
+									NOT = { primary_culture = marshmen }
+								}
+							}
+						}
+						any_pop = {
+							limit = {
+								type = soldiers
+								has_pop_culture = marshmen
+							}
+							pop_type = tribals
+							ideology = {
+								factor = 99
+								value = tribal_ideology
+							}
+						}
+					}
+					any_owned = {
+						limit = {
+							unemployment_by_type = { value = 1 type = labourers }
+							any_pop = {
+								type = soldiers
+								has_pop_culture = rohirrim
+								country = {
+									NOT = { accepted_culture = rohirrim }
+									NOT = { primary_culture = rohirrim }
+								}
+							}
+						}
+						any_pop = {
+							limit = {
+								type = soldiers
+								has_pop_culture = rohirrim
+							}
+							pop_type = tribals
+							ideology = {
+								factor = 99
+								value = tribal_ideology
+							}
+						}
+					}
+					any_owned = {
+						limit = {
+							unemployment_by_type = { value = 1 type = labourers }
+							any_pop = {
+								type = soldiers
+								has_pop_culture = anduinmen
+								country = {
+									NOT = { accepted_culture = anduinmen }
+									NOT = { primary_culture = anduinmen }
+								}
+							}
+						}
+						any_pop = {
+							limit = {
+								type = soldiers
+								has_pop_culture = anduinmen
+							}
+							pop_type = tribals
+							ideology = {
+								factor = 99
+								value = tribal_ideology
+							}
+						}
+					}
+					any_owned = {
+						limit = {
+							unemployment_by_type = { value = 1 type = labourers }
+							any_pop = {
+								type = soldiers
+								has_pop_culture = isenmen
+								country = {
+									NOT = { accepted_culture = isenmen }
+									NOT = { primary_culture = isenmen }
+								}
+							}
+						}
+						any_pop = {
+							limit = {
+								type = soldiers
+								has_pop_culture = isenmen
+							}
+							pop_type = tribals
+							ideology = {
+								factor = 99
+								value = tribal_ideology
+							}
+						}
+					}
+					any_owned = {
+						limit = {
+							unemployment_by_type = { value = 1 type = labourers }
+							any_pop = {
+								type = soldiers
+								has_pop_culture = uruk_hai
+								country = {
+									NOT = { accepted_culture = uruk_hai }
+									NOT = { primary_culture = uruk_hai }
+								}
+							}
+						}
+						any_pop = {
+							limit = {
+								type = soldiers
+								has_pop_culture = uruk_hai
+							}
+							pop_type = tribals
+							ideology = {
+								factor = 99
+								value = tribal_ideology
+							}
+						}
+					}
+					any_owned = {
+						limit = {
+							unemployment_by_type = { value = 1 type = labourers }
+							any_pop = {
+								type = soldiers
+								has_pop_culture = mordor_orc
+								country = {
+									NOT = { accepted_culture = mordor_orc }
+									NOT = { primary_culture = mordor_orc }
+								}
+							}
+						}
+						any_pop = {
+							limit = {
+								type = soldiers
+								has_pop_culture = mordor_orc
+							}
+							pop_type = tribals
+							ideology = {
+								factor = 99
+								value = tribal_ideology
+							}
+						}
+					}
+					any_owned = {
+						limit = {
+							unemployment_by_type = { value = 1 type = labourers }
+							any_pop = {
+								type = soldiers
+								has_pop_culture = mordor_uruk
+								country = {
+									NOT = { accepted_culture = mordor_uruk }
+									NOT = { primary_culture = mordor_uruk }
+								}
+							}
+						}
+						any_pop = {
+							limit = {
+								type = soldiers
+								has_pop_culture = mordor_uruk
+							}
+							pop_type = tribals
+							ideology = {
+								factor = 99
+								value = tribal_ideology
+							}
+						}
+					}
+					any_owned = {
+						limit = {
+							unemployment_by_type = { value = 1 type = labourers }
+							any_pop = {
+								type = soldiers
+								has_pop_culture = guldurrim
+								country = {
+									NOT = { accepted_culture = guldurrim }
+									NOT = { primary_culture = guldurrim }
+								}
+							}
+						}
+						any_pop = {
+							limit = {
+								type = soldiers
+								has_pop_culture = guldurrim
+							}
+							pop_type = tribals
+							ideology = {
+								factor = 99
+								value = tribal_ideology
+							}
+						}
+					}
+					any_owned = {
+						limit = {
+							unemployment_by_type = { value = 1 type = labourers }
+							any_pop = {
+								type = soldiers
+								has_pop_culture = white_mountain_goblin
+								country = {
+									NOT = { accepted_culture = white_mountain_goblin }
+									NOT = { primary_culture = white_mountain_goblin }
+								}
+							}
+						}
+						any_pop = {
+							limit = {
+								type = soldiers
+								has_pop_culture = white_mountain_goblin
+							}
+							pop_type = tribals
+							ideology = {
+								factor = 99
+								value = tribal_ideology
+							}
+						}
+					}
+					any_owned = {
+						limit = {
+							unemployment_by_type = { value = 1 type = labourers }
+							any_pop = {
+								type = soldiers
+								has_pop_culture = morian
+								country = {
+									NOT = { accepted_culture = morian }
+									NOT = { primary_culture = morian }
+								}
+							}
+						}
+						any_pop = {
+							limit = {
+								type = soldiers
+								has_pop_culture = morian
+							}
+							pop_type = tribals
+							ideology = {
+								factor = 99
+								value = tribal_ideology
+							}
+						}
+					}
+					any_owned = {
+						limit = {
+							unemployment_by_type = { value = 1 type = labourers }
+							any_pop = {
+								type = soldiers
+								has_pop_culture = goblin_towner
+								country = {
+									NOT = { accepted_culture = goblin_towner }
+									NOT = { primary_culture = goblin_towner }
+								}
+							}
+						}
+						any_pop = {
+							limit = {
+								type = soldiers
+								has_pop_culture = goblin_towner
+							}
+							pop_type = tribals
+							ideology = {
+								factor = 99
+								value = tribal_ideology
+							}
+						}
+					}
+					any_owned = {
+						limit = {
+							unemployment_by_type = { value = 1 type = labourers }
+							any_pop = {
+								type = soldiers
+								has_pop_culture = gundabad_orc
+								country = {
+									NOT = { accepted_culture = gundabad_orc }
+									NOT = { primary_culture = gundabad_orc }
+								}
+							}
+						}
+						any_pop = {
+							limit = {
+								type = soldiers
+								has_pop_culture = gundabad_orc
+							}
+							pop_type = tribals
+							ideology = {
+								factor = 99
+								value = tribal_ideology
+							}
+						}
+					}
+					any_owned = {
+						limit = {
+							unemployment_by_type = { value = 1 type = labourers }
+							any_pop = {
+								type = soldiers
+								has_pop_culture = snow_orc
+								country = {
+									NOT = { accepted_culture = snow_orc }
+									NOT = { primary_culture = snow_orc }
+								}
+							}
+						}
+						any_pop = {
+							limit = {
+								type = soldiers
+								has_pop_culture = snow_orc
+							}
+							pop_type = tribals
+							ideology = {
+								factor = 99
+								value = tribal_ideology
+							}
+						}
+					}
+					any_owned = {
+						limit = {
+							unemployment_by_type = { value = 1 type = labourers }
+							any_pop = {
+								type = soldiers
+								has_pop_culture = gram_goblin
+								country = {
+									NOT = { accepted_culture = gram_goblin }
+									NOT = { primary_culture = gram_goblin }
+								}
+							}
+						}
+						any_pop = {
+							limit = {
+								type = soldiers
+								has_pop_culture = gram_goblin
+							}
+							pop_type = tribals
+							ideology = {
+								factor = 99
+								value = tribal_ideology
+							}
+						}
+					}
+					any_owned = {
+						limit = {
+							unemployment_by_type = { value = 1 type = labourers }
+							any_pop = {
+								type = soldiers
+								has_pop_culture = blue_mountain_goblin
+								country = {
+									NOT = { accepted_culture = blue_mountain_goblin }
+									NOT = { primary_culture = blue_mountain_goblin }
+								}
+							}
+						}
+						any_pop = {
+							limit = {
+								type = soldiers
+								has_pop_culture = blue_mountain_goblin
+							}
+							pop_type = tribals
+							ideology = {
+								factor = 99
+								value = tribal_ideology
+							}
+						}
+					}
+					any_owned = {
+						limit = {
+							unemployment_by_type = { value = 1 type = labourers }
+							any_pop = {
+								type = soldiers
+								has_pop_culture = angmarrim
+								country = {
+									NOT = { accepted_culture = angmarrim }
+									NOT = { primary_culture = angmarrim }
+								}
+							}
+						}
+						any_pop = {
+							limit = {
+								type = soldiers
+								has_pop_culture = angmarrim
+							}
+							pop_type = tribals
+							ideology = {
+								factor = 99
+								value = tribal_ideology
+							}
+						}
+					}
+					any_owned = {
+						limit = {
+							unemployment_by_type = { value = 1 type = labourers }
+							any_pop = {
+								type = soldiers
+								has_pop_culture = hillmen
+								country = {
+									NOT = { accepted_culture = hillmen }
+									NOT = { primary_culture = hillmen }
+								}
+							}
+						}
+						any_pop = {
+							limit = {
+								type = soldiers
+								has_pop_culture = hillmen
+							}
+							pop_type = tribals
+							ideology = {
+								factor = 99
+								value = tribal_ideology
+							}
+						}
+					}
+					any_owned = {
+						limit = {
+							unemployment_by_type = { value = 1 type = labourers }
+							any_pop = {
+								type = soldiers
+								has_pop_culture = lossoth
+								country = {
+									NOT = { accepted_culture = lossoth }
+									NOT = { primary_culture = lossoth }
+								}
+							}
+						}
+						any_pop = {
+							limit = {
+								type = soldiers
+								has_pop_culture = lossoth
+							}
+							pop_type = tribals
+							ideology = {
+								factor = 99
+								value = tribal_ideology
+							}
+						}
+					}
+					any_owned = {
+						limit = {
+							unemployment_by_type = { value = 1 type = labourers }
+							any_pop = {
+								type = soldiers
+								has_pop_culture = breelander
+								country = {
+									NOT = { accepted_culture = breelander }
+									NOT = { primary_culture = breelander }
+								}
+							}
+						}
+						any_pop = {
+							limit = {
+								type = soldiers
+								has_pop_culture = breelander
+							}
+							pop_type = tribals
+							ideology = {
+								factor = 99
+								value = tribal_ideology
+							}
+						}
+					}
+					any_owned = {
+						limit = {
+							unemployment_by_type = { value = 1 type = labourers }
+							any_pop = {
+								type = soldiers
+								has_pop_culture = siredain
+								country = {
+									NOT = { accepted_culture = siredain }
+									NOT = { primary_culture = siredain }
+								}
+							}
+						}
+						any_pop = {
+							limit = {
+								type = soldiers
+								has_pop_culture = siredain
+							}
+							pop_type = tribals
+							ideology = {
+								factor = 99
+								value = tribal_ideology
+							}
+						}
+					}
+					any_owned = {
+						limit = {
+							unemployment_by_type = { value = 1 type = labourers }
+							any_pop = {
+								type = soldiers
+								has_pop_culture = stoor
+								country = {
+									NOT = { accepted_culture = stoor }
+									NOT = { primary_culture = stoor }
+								}
+							}
+						}
+						any_pop = {
+							limit = {
+								type = soldiers
+								has_pop_culture = stoor
+							}
+							pop_type = tribals
+							ideology = {
+								factor = 99
+								value = tribal_ideology
+							}
+						}
+					}
+					any_owned = {
+						limit = {
+							unemployment_by_type = { value = 1 type = labourers }
+							any_pop = {
+								type = soldiers
+								has_pop_culture = harfoot
+								country = {
+									NOT = { accepted_culture = harfoot }
+									NOT = { primary_culture = harfoot }
+								}
+							}
+						}
+						any_pop = {
+							limit = {
+								type = soldiers
+								has_pop_culture = harfoot
+							}
+							pop_type = tribals
+							ideology = {
+								factor = 99
+								value = tribal_ideology
+							}
+						}
+					}
+					any_owned = {
+						limit = {
+							unemployment_by_type = { value = 1 type = labourers }
+							any_pop = {
+								type = soldiers
+								has_pop_culture = fallohide
+								country = {
+									NOT = { accepted_culture = fallohide }
+									NOT = { primary_culture = fallohide }
+								}
+							}
+						}
+						any_pop = {
+							limit = {
+								type = soldiers
+								has_pop_culture = fallohide
+							}
+							pop_type = tribals
+							ideology = {
+								factor = 99
+								value = tribal_ideology
+							}
+						}
+					}
+					any_owned = {
+						limit = {
+							unemployment_by_type = { value = 1 type = labourers }
+							any_pop = {
+								type = soldiers
+								has_pop_culture = cave_trolls
+								country = {
+									NOT = { accepted_culture = cave_trolls }
+									NOT = { primary_culture = cave_trolls }
+								}
+							}
+						}
+						any_pop = {
+							limit = {
+								type = soldiers
+								has_pop_culture = cave_trolls
+							}
+							pop_type = tribals
+							ideology = {
+								factor = 99
+								value = tribal_ideology
+							}
+						}
+					}
+					any_owned = {
+						limit = {
+							unemployment_by_type = { value = 1 type = labourers }
+							any_pop = {
+								type = soldiers
+								has_pop_culture = hill_trolls
+								country = {
+									NOT = { accepted_culture = hill_trolls }
+									NOT = { primary_culture = hill_trolls }
+								}
+							}
+						}
+						any_pop = {
+							limit = {
+								type = soldiers
+								has_pop_culture = hill_trolls
+							}
+							pop_type = tribals
+							ideology = {
+								factor = 99
+								value = tribal_ideology
+							}
+						}
+					}
+					any_owned = {
+						limit = {
+							unemployment_by_type = { value = 1 type = labourers }
+							any_pop = {
+								type = soldiers
+								has_pop_culture = mountain_trolls
+								country = {
+									NOT = { accepted_culture = mountain_trolls }
+									NOT = { primary_culture = mountain_trolls }
+								}
+							}
+						}
+						any_pop = {
+							limit = {
+								type = soldiers
+								has_pop_culture = mountain_trolls
+							}
+							pop_type = tribals
+							ideology = {
+								factor = 99
+								value = tribal_ideology
+							}
+						}
+					}
+					any_owned = {
+						limit = {
+							unemployment_by_type = { value = 1 type = labourers }
+							any_pop = {
+								type = soldiers
+								has_pop_culture = snow_trolls
+								country = {
+									NOT = { accepted_culture = snow_trolls }
+									NOT = { primary_culture = snow_trolls }
+								}
+							}
+						}
+						any_pop = {
+							limit = {
+								type = soldiers
+								has_pop_culture = snow_trolls
+							}
+							pop_type = tribals
+							ideology = {
+								factor = 99
+								value = tribal_ideology
+							}
+						}
+					}
+					any_owned = {
+						limit = {
+							unemployment_by_type = { value = 1 type = labourers }
+							any_pop = {
+								type = soldiers
+								has_pop_culture = stone_trolls
+								country = {
+									NOT = { accepted_culture = stone_trolls }
+									NOT = { primary_culture = stone_trolls }
+								}
+							}
+						}
+						any_pop = {
+							limit = {
+								type = soldiers
+								has_pop_culture = stone_trolls
+							}
+							pop_type = tribals
+							ideology = {
+								factor = 99
+								value = tribal_ideology
+							}
+						}
+					}
+					any_owned = {
+						limit = {
+							unemployment_by_type = { value = 1 type = labourers }
+							any_pop = {
+								type = soldiers
+								has_pop_culture = olog_hai
+								country = {
+									NOT = { accepted_culture = olog_hai }
+									NOT = { primary_culture = olog_hai }
+								}
+							}
+						}
+						any_pop = {
+							limit = {
+								type = soldiers
+								has_pop_culture = olog_hai
+							}
+							pop_type = tribals
+							ideology = {
+								factor = 99
+								value = tribal_ideology
+							}
+						}
+					}
+					any_owned = {
+						limit = {
+							unemployment_by_type = { value = 1 type = labourers }
+							any_pop = {
+								type = soldiers
+								has_pop_culture = great_eagle
+								country = {
+									NOT = { accepted_culture = great_eagle }
+									NOT = { primary_culture = great_eagle }
+								}
+							}
+						}
+						any_pop = {
+							limit = {
+								type = soldiers
+								has_pop_culture = great_eagle
+							}
+							pop_type = tribals
+							ideology = {
+								factor = 99
+								value = tribal_ideology
+							}
+						}
+					}
+					any_owned = {
+						limit = {
+							unemployment_by_type = { value = 1 type = labourers }
+							any_pop = {
+								type = soldiers
+								has_pop_culture = raven
+								country = {
+									NOT = { accepted_culture = raven }
+									NOT = { primary_culture = raven }
+								}
+							}
+						}
+						any_pop = {
+							limit = {
+								type = soldiers
+								has_pop_culture = raven
+							}
+							pop_type = tribals
+							ideology = {
+								factor = 99
+								value = tribal_ideology
+							}
+						}
+					}
+					any_owned = {
+						limit = {
+							unemployment_by_type = { value = 1 type = labourers }
+							any_pop = {
+								type = soldiers
+								has_pop_culture = great_spider
+								country = {
+									NOT = { accepted_culture = great_spider }
+									NOT = { primary_culture = great_spider }
+								}
+							}
+						}
+						any_pop = {
+							limit = {
+								type = soldiers
+								has_pop_culture = great_spider
+							}
+							pop_type = tribals
+							ideology = {
+								factor = 99
+								value = tribal_ideology
+							}
+						}
+					}
+					any_owned = {
+						limit = {
+							unemployment_by_type = { value = 1 type = labourers }
+							any_pop = {
+								type = soldiers
+								has_pop_culture = wight
+								country = {
+									NOT = { accepted_culture = wight }
+									NOT = { primary_culture = wight }
+								}
+							}
+						}
+						any_pop = {
+							limit = {
+								type = soldiers
+								has_pop_culture = wight
+							}
+							pop_type = tribals
+							ideology = {
+								factor = 99
+								value = tribal_ideology
+							}
+						}
+					}
+					any_owned = {
+						limit = {
+							unemployment_by_type = { value = 1 type = labourers }
+							any_pop = {
+								type = soldiers
+								has_pop_culture = oathbreaker
+								country = {
+									NOT = { accepted_culture = oathbreaker }
+									NOT = { primary_culture = oathbreaker }
+								}
+							}
+						}
+						any_pop = {
+							limit = {
+								type = soldiers
+								has_pop_culture = oathbreaker
+							}
+							pop_type = tribals
+							ideology = {
+								factor = 99
+								value = tribal_ideology
+							}
+						}
 					}
 				}
 			}
-			state_scope = { is_slave = yes }
+			clr_global_flag = hidden_effects
 		}
 		
-		any_pop = {
-			limit = {
-				type = soldiers
-				is_primary_culture = no
-				is_accepted_culture = no
-			}
-			pop_type = tribals
-		}
+		conversion_to_tribal_loc = { }
 	}
 }
 

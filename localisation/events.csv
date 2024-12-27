@@ -87,6 +87,8 @@ EVTDESC5052;We have eliminated the Ravens of Erebor, and they can no longer pose
 EVTDESC5053;The Ravens of Erebor have incited rebellion in the Lonely Mountain;x
 EVTDESC5054;One of our merchant's caravans in $PROVINCENAME$ has been attacked by a band of outlaws!\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n;x
 EVTDESC5055;Local authorities and militia were able to successfully clear $PROVINCENAME$ of outlaws. As far as we know, none escaped their fate.;x
+EVTDESC5056;Marauders have raided $PROVINCENAME$! A small handful of our people were killed, and the local lord is calling for the realm's intervention.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n;x
+EVTDESC5057;Our raiders have returned with success -- what should we do with the loot?\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n;x
 #################################;x }
 ##### POP MANAGEMENT EVENTS #####;x {
 #################################;x
@@ -109,6 +111,8 @@ EVTDESC12055;$PROVINCENAME$ has recently been occupied by the enemy. To our dism
 EVTDESC12056;We have raided $FROMPROVINCE$! What shall we do with the spoils of war?\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n;x
 EVTDESC12057;The labourers of $PROVINCENAME$ have had a lack of work for quite some time now. Those who do have jobs languish away, making miniscule amounts compared to what they made in the past. There has been some talk of changing the production of the province. Should we allow this change to occur?\n\n§RThis event will calculate which options should be presented. If more than one event is fired from this event, please let the mod team know that, as well as what province is having troubles, as well as what RGO you had previously.§!\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n;x
 EVTDESC12058;What good should we change RGO production to?;x
+EVTDESC12067;Devastation stretches across $PROVINCENAME$. Crumbling buildings stand as skeletal remnants, their walls exposed and fractured. Broken streets are littered with debris, twisted metal, and collapsed structures. Inoperable carts sit at impossible angles, half-buried in rubble.\n\nIn the distance, a solitary wall remains—a stark memorial to the city's past, symbolizing the near-complete destruction.;x
+EVTDESC12068;Towering stone walls encircle a bustling metropolis of unprecedented wealth. Merchants from distant lands crowd the wide market squares, trading silks, spices, and precious metals. Intricate guild halls showcase masterful craftsmanship—fine textiles, metalwork, and ceramics line the carefully cobbled streets.\n\nWealth manifests in ornate merchant palaces, sophisticated trade agreements, and a population experiencing unprecedented success. This is a economic powerhouse at the center of the world;x.
 ###########################;x }
 ##### ELECTION EVENTS #####;x {
 ###########################;x
@@ -582,8 +586,6 @@ EVTDESC50911;A new Lord of Riding has been declared. This person is now tasked w
 EVTDESC50913;The Captain of Erland's Ferry has withstood many Easterling invasions in recent past. Our ruler has requested that their abilities get used commanding our armies now.;x
 EVTDESC50914;A member of the Royal Archers of Dale has risen through the ranks quickly due to their marksmanship and leadership.;x
 EVTDESC50915;The Celduin Pirates mechanic has been activated. Any province adjacent to the Celduin River (except those with their ports in Long Lake) will gain the Province Modifier §MPirates§! until the realm funding them is destroyed.;x
-EVTDESC50916;Filthy pirates have raided $PROVINCENAME$! A small handful of our people were killed, and the local lord is calling for the realm's intervention.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n;x
-EVTDESC50917;Our raiders have made a successful raid of $FROMPROVINCE$! We shall hold a small feast for them later tonight.;x
 EVTDESC50918;For some time, we have had an hegemony over the government of $FROMCOUNTRY$. Today, that control is officially recognized as $FROMCOUNTRY$ joins the realm.;x
 EVTDESC50919;The pesky Rivermen have united under one banner and proclaimed us to be warmongers. Today, they have declared war, citing claims that we, the Lakemen, stretch beyond our borders. This is blatantly false, and we must punish them!;x
 EVTDESC50920;The Rivermen overextended, and we have won! Now we must ensure that they never challenge us again.;x
@@ -602,7 +604,7 @@ EVTDESC50934;Today, Bard, son of Brand I, was coronated as $MONARCHTITLE$ Bard I
 EVTDESC50935;$MONARCHTITLE$ Bard II has died today! The whole realm mourns, and prepares for his heir's coronation.\n\n§MTechnically, Girion II should be coronated (assuming he has been born and is of age), but due to limited leader slots, the mod team has elected to not put Girion II into the mod. You will instead get a generic leader§!;x
 EVTDESC50936;Today, the whole realm celebrates as Bain, son of Bard I, marries Astrid, daughter of Braga.;x
 EVTDESC50937;Today, Brand, son of Bain, was born. The realm breathes a sign of relief knowing the succession has been secured.;x
-EVTDESC50938;Today, Girion, son of Bain, was born. Depiste not becoming king, Girion Bainson would go on to protect and rule the border-town of Austriborg. His leadership would elevate the town's status, making it one of the most important towns in the realm.;x
+EVTDESC50938;Today, Girion, son of Bain, was born. Despite not becoming king, Girion Bainson would go on to protect and rule the border-town of Austriborg. His leadership would elevate the town's status, making it one of the most important towns in the realm.;x
 EVTDESC50939;Today, the whole realm celebrates as Brand, son of Bain I, marries Erna of Dale.;x
 EVTDESC50940;Today, Bard, son of Brand, was born. He was named for Brand's grandfather, Bard I, the Dragonslayer and first King of Dale. The realm breathes a sign of relief knowing the succession has been secured.;x
 EVTDESC50941;Today, Bryn, son of Brand. He would go on to become a brilliant warrior, counseling his brother while defending their realm against Easterlings (after Brand I fell in the Battle of Dale).;x
@@ -617,8 +619,6 @@ EVTDESC50950;In $PROVINCENAME$, there has been a flare-up of tensions between th
 EVTDESC50951;When our clan relocated to the edge of Gramavuld and beat the weak Northmen, an invitation was sent out to the other Logath tribes, promising land and riches to those who supported our cause. Today, a new batch of volunteers have arrived in $PROVINCENAME$, ready to enrich themselves with the conquest of Gramavuld.;x
 EVTDESC50952;Whereas many of the migrants coming to our land are of their own accord, the newest batch are 5000 professional soldiers from the $FROMCOUNTRY$. With them comes wealth and supplies to be used for our continued progress.;x
 EVTDESC50953;Today, a messenger came stumbling into the Great Hall of $PROVINCENAME$. They clearly have been riding for days, with little food nor rest.\n\nMy Lord, I bring grave tidings. The $FROMCOUNTRY$ has dispatched a force to Burh Austris, occupying the region and establishing a semi-permanent camp there!;x
-EVTDESC50954;From Amov cretins did another hit and run raid in $PROVINCENAME$. A small amount of the population was killed, and the raiders did make off with some loot.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n;x
-EVTDESC50955;We had a successful raid in $FROMPROVINCE$ -- what should we do with the loot?\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n;x
 EVTDESC50956;With the end of the Amov Clan, their raids stop as well.;x
 EVTDESC50957;The hoofbeats of the rider were deafening. The day of reckoning has come.\n\nAfter months of raids by the $FROMCOUNTRY$, the conflict has finally escalated into all-out war. Undoubtedly the victor will decide not only the $FROMCOUNTRY$'s fate, but our own as well.;x
 EVTDESC50958;The call to war has been sounded! Today, the Khan's promises have been fulfilled| the armies of the $COUNTRY$ march to war on a glorious conquest of Gramavuld.;x
@@ -657,6 +657,7 @@ EVTDESC70001;Another astounding victory for $COUNTRY$ today, as it has now becom
 EVTDESC70002;$FROMCOUNTRY$ has gone bankrupt and claims that they owe us nothing! We must use our military might to safeguard our investors.;;;;;;;;;x
 EVTDESC70005;We have advanced enough technologically to start to be considered on par with the rest of Middle Earth. No longer are we the laughingstock of Middle Earth, but instead a Realm that has the potential to be a threat!;;;;;;;;;;x
 EVTDESC70006;The ungrateful government of $FROMCOUNTRY$ has sized our investments and claimed them as their own!;;;;;;;;;;;;x
+EVTDESC70007;With any land acquisition, there are many changes that need to be made as a result. When the populace does not recognize their new rulers as their own, some will choose to turn away from what they see as an illegitimate rule.;x
 EVTDESC70008;We finally have the support of the people to become a monarchy. What should our leader's title be?\n\n§RThe different titles are just cosmetic changes. They are all functionally the same.§!;x
 ################################;x }
 ##### CB GENERATION EVENTS #####;x {
@@ -684,6 +685,7 @@ EVTDESC98000;A nearby group of $COUNTRYCULTURE$ have petitioned to join us.;x
 EVTDESC99000;This is the monthly event to do any sort of generic cleanup;x
 EVTDESC99001;This is the monthly event to do any sort of cleanup related to DAL flavor.;x
 EVTDESC99003;This is the monthly event to do any sort of cleanup associated with the Alliance of Dwarves and Men;x
+EVTDESC99006;Your overlord no longer exists, but your connection to them was never severed.;x
 EVTDESC99250;This is the daily event to do any sort of generic cleanup;x
 EVTDESC90799;This is a function event called whenever a province has some Province Wealth changes queued up;x
 ###########################;x }
