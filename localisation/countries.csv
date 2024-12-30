@@ -44,7 +44,9 @@ cosmetic_2_govt_ruler;Cosmetic Government Ruler;x
 #############################;x }
 ##### POLITICAL PARTIES #####;x {
 #############################;x
-generic_servants;Servants;x
+generic_servants_good;Servants (Anti-Sauron);x
+generic_servants_neutral;Servants (Opportunistic);x
+generic_servants_evil;Servants (Sauronite);x
 generic_high_nobility;High Nobility;x
 generic_low_nobility;Low Nobility;x
 generic_burgher;Burgher;x
@@ -58,12 +60,10 @@ ANO_low_nobility;Lords of Anórien;x
 DAL_burgher;Edhfreirs;x
 DAL_high_nobility;Lords of Dale;x
 DAL_low_nobility;Northmen Thegens;x
-ESG_servants;Master's Cult;x
 GON_burgher;Merchant Guild;x
 GON_high_nobility;Council of Gondor;x
 GON_loremaster;Loremasters of Gondor;x
 GON_low_nobility;Lords of Gondor;x
-GON_servants;Steward's Cult;x
 HRD_high_nobility;Council of Harondor;x
 HRD_low_nobility;Lords of Harondor;x
 ITH_high_nobility;Council of Ithilien;x

@@ -568,9 +568,13 @@ slave_ideology;Slaves;x
 slave_ideology_uh;Slave advisors will vote to follow whatever the realm wants.;x
 tribal_ideology;Tribal;x
 tribal_ideology_uh;Tribal advisors will vote against progress in the realm and active look to reverse it.;x
-servants_group;Servants;x
-servants;Servants;x
-servants_uh;Servants advisors will never vote to reform the realm. They will only serve our overlord.;x
+vassal_group;Servants;x
+servants_good;Servants (Anti-Sauron);x
+servants_good_uh;Servants advisors will never vote to reform the realm. They will only serve our overlord.;x
+servants_neutral;Servants (Opportunistic);x
+servants_neutral_uh;Servants advisors will never vote to reform the realm. They will only serve our overlord.;x
+servants_evil;Servants (Sauronite);x
+servants_evil_uh;Servants advisors will never vote to reform the realm. They will only serve our overlord.;x
 nobility_group;Nobles;x
 high_nobility;High Nobility;x
 high_nobility_uh;High Nobility advisors will never vote for political reforms. Instead, they hope to repeal them. They will vote for burgher reforms with high enough militancy.;x

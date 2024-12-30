@@ -19,10 +19,6 @@ oob = "MOR_oob.txt"
 
 ruling_party = generic_servants
 
-upper_house = {
-	servants = 100
-}
-
 slavery = yes_slavery
 upper_house_composition = party_appointed
 
