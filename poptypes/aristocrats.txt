@@ -872,139 +872,75 @@ promote_to = {
 }
 
 ideologies = {
-	high_nobility = {
-		factor = 1.5
+	house_of_stewards = {
+		factor = 1
+		# Must be active in the realm or active in the province the pop resides
 		modifier = {
-			factor = 0.5
-			militancy = 6
-		}
-		modifier = {
-			factor = 1.2
-			social_reform_want = 0.75
+			factor = 0
+			NOT = { country = { has_country_flag = ideologies_house_of_stewards_active } }
+			NOT = { location = { any_core = { has_country_flag = ideologies_house_of_stewards_active } } }
 		}
 		modifier = {
 			factor = 2
-			ruling_party_ideology = high_nobility
+			is_culture_group = dunedain
 		}
 		modifier = {
-			factor = 1.5
-			NOT = { literacy = 0.5 }
-		}
-		modifier = {
-			factor = 1.3
-			NOT = { consciousness = 4 }
+			factor = 2
+			ruling_party_ideology = house_of_stewards
 		}
 	}
 	
-	low_nobility = {
-		factor = 2
+	house_of_dol_amroth = {
+		factor = 1
+		# Must be active in the realm or active in the province the pop resides
 		modifier = {
-			factor = 0.5
-			militancy = 6
-		}
-		modifier = {
-			factor = 1.2
-			political_reform_want = 0.75
-		}
-		modifier = {
-			factor = 1.2
-			social_reform_want = 0.75
+			factor = 0
+			NOT = { country = { has_country_flag = ideologies_house_of_dol_amroth_active } }
+			NOT = { location = { any_core = { has_country_flag = ideologies_house_of_dol_amroth_active } } }
 		}
 		modifier = {
 			factor = 2
-			ruling_party_ideology = low_nobility
+			is_culture_group = dunedain
 		}
 		modifier = {
-			factor = 1.3
-			NOT = { literacy = 0.5 }
-		}
-		modifier = {
-			factor = 1.1
-			NOT = { consciousness = 6 }
+			factor = 2
+			ruling_party_ideology = house_of_dol_amroth
 		}
 	}
 	
-	burgher = {
-		factor = 0.5
+	gondorian_nobles = {
+		factor = 1
+		# Must be active in the realm or active in the province the pop resides
 		modifier = {
-			factor = 0.5
-			militancy = 6
-		}
-		modifier = {
-			factor = 1.2
-			political_reform_want = 0.75
-		}
-		modifier = {
-			factor = 1.1
-			social_reform_want = 0.1
-		}
-		modifier = {
-			factor = 1.1
-			social_reform_want = 0.25
-		}
-		modifier = {
-			factor = 1.1
-			social_reform_want = 0.35
-		}
-		modifier = {
-			factor = 1.1
-			social_reform_want = 0.5
+			factor = 0
+			NOT = { country = { has_country_flag = ideologies_gondorian_nobles_active } }
+			NOT = { location = { any_core = { has_country_flag = ideologies_gondorian_nobles_active } } }
 		}
 		modifier = {
 			factor = 2
-			ruling_party_ideology = burgher
+			is_culture_group = dunedain
 		}
 		modifier = {
-			factor = 0.9
-			literacy = 0.5
+			factor = 2
+			ruling_party_ideology = gondorian_nobles
 		}
 	}
 	
-	loremaster = {
-		factor = 0.5
+	line_of_isildur = {
+		factor = 1
+		# Must be active in the realm or active in the province the pop resides
 		modifier = {
-			factor = 0.5
-			militancy = 6
-		}
-		modifier = {
-			factor = 1.1
-			political_reform_want = 0.1
-		}
-		modifier = {
-			factor = 1.1
-			political_reform_want = 0.25
-		}
-		modifier = {
-			factor = 1.1
-			political_reform_want = 0.35
-		}
-		modifier = {
-			factor = 1.1
-			political_reform_want = 0.5
-		}
-		modifier = {
-			factor = 1.1
-			social_reform_want = 0.1
-		}
-		modifier = {
-			factor = 1.1
-			social_reform_want = 0.25
-		}
-		modifier = {
-			factor = 1.1
-			social_reform_want = 0.35
-		}
-		modifier = {
-			factor = 1.1
-			social_reform_want = 0.5
+			factor = 0
+			NOT = { country = { has_country_flag = ideologies_line_of_isildur_active } }
+			NOT = { location = { any_core = { has_country_flag = ideologies_line_of_isildur_active } } }
 		}
 		modifier = {
 			factor = 2
-			ruling_party_ideology = loremaster
+			is_culture_group = dunedain
 		}
 		modifier = {
-			factor = 1.1
-			literacy = 0.5
+			factor = 2
+			ruling_party_ideology = line_of_isildur
 		}
 	}
 }

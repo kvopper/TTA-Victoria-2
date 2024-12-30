@@ -8,47 +8,23 @@ disenfranchised_group = {
 	slave_ideology = {
 		color = { 17 17 17 }
 		
-		add_political_reform = {
-			base = 1
-		}
-		remove_political_reform = {
-			base = 1
-		}
-		add_social_reform = {
-			base = 1
-		}
-		remove_social_reform = {
-			base = 1
-		}
-		add_military_reform = {
-			base = 1
-		}
-		add_economic_reform = {
-			base = 1
-		}
+		add_political_reform = { base = 0 }
+		remove_political_reform = { base = 0 }
+		add_social_reform = { base = 0 }
+		remove_social_reform = { base = 0 }
+		add_military_reform = { base = 0 }
+		add_economic_reform = { base = 0 }
 	}
 
 	tribal_ideology = {
 		color = { 88 68 147 }
 		
-		add_political_reform = {
-			base = 0
-		}
-		remove_political_reform = {
-			base = 1
-		}
-		add_social_reform = {
-			base = 0
-		}
-		remove_social_reform = {
-			base = 1
-		}
-		add_military_reform = {
-			base = 0
-		}
-		add_economic_reform = {
-			base = 0
-		}
+		add_political_reform = { base = 0 }
+		remove_political_reform = { base = 0 }
+		add_social_reform = { base = 0 }
+		remove_social_reform = { base = 0 }
+		add_military_reform = { base = 0 }
+		add_economic_reform = { base = 0 }
 	}
 }
 
@@ -56,68 +32,32 @@ vassal_group = {
 	servants_good = {
 		color = { 30 144 255 }
 		
-		add_political_reform = {
-			base = 0
-		}
-		remove_political_reform = {
-			base = 0
-		}
-		add_social_reform = {
-			base = 0
-		}
-		remove_social_reform = {
-			base = 0
-		}
-		add_military_reform = {
-			base = 0
-		}
-		add_economic_reform = {
-			base = 0
-		}
+		add_political_reform = { base = 0 }
+		remove_political_reform = { base = 0 }
+		add_social_reform = { base = 0 }
+		remove_social_reform = { base = 0 }
+		add_military_reform = { base = 0 }
+		add_economic_reform = { base = 0 }
 	}
 	servants_neutral = {
 		color = { 30 144 255 }
 		
-		add_political_reform = {
-			base = 0
-		}
-		remove_political_reform = {
-			base = 0
-		}
-		add_social_reform = {
-			base = 0
-		}
-		remove_social_reform = {
-			base = 0
-		}
-		add_military_reform = {
-			base = 0
-		}
-		add_economic_reform = {
-			base = 0
-		}
+		add_political_reform = { base = 0 }
+		remove_political_reform = { base = 0 }
+		add_social_reform = { base = 0 }
+		remove_social_reform = { base = 0 }
+		add_military_reform = { base = 0 }
+		add_economic_reform = { base = 0 }
 	}
 	servants_evil = {
 		color = { 30 144 255 }
 		
-		add_political_reform = {
-			base = 0
-		}
-		remove_political_reform = {
-			base = 0
-		}
-		add_social_reform = {
-			base = 0
-		}
-		remove_social_reform = {
-			base = 0
-		}
-		add_military_reform = {
-			base = 0
-		}
-		add_economic_reform = {
-			base = 0
-		}
+		add_political_reform = { base = 0 }
+		remove_political_reform = { base = 0 }
+		add_social_reform = { base = 0 }
+		remove_social_reform = { base = 0 }
+		add_military_reform = { base = 0 }
+		add_economic_reform = { base = 0 }
 	}
 }
 
@@ -208,8 +148,6 @@ nobility_group = {
 	# normally opposes social reform, supports with high militancy. Never want to remove them
 	low_nobility = {
 		color = { 147 112 219 }
-		
-		can_reduce_militancy = yes
 		
 		add_political_reform = {
 			base = 0
@@ -438,5 +376,51 @@ loremaster_group = {
 		add_economic_reform = {
 			base = 1
 		}
+	}
+}
+
+gondorian_nobility = {
+	house_of_stewards = {
+		color = { 10 15 65 }
+		
+		add_political_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = house_of_stewards } }
+		remove_political_reform = { base = 0 }
+		add_social_reform = { base = 1 }
+		remove_social_reform = { base = 0 }
+		add_military_reform = { base = 1 }
+		add_economic_reform = { base = 1 }
+	}
+	
+	house_of_dol_amroth = {
+		color = color = { 3 3 131 }
+		
+		add_political_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = house_of_dol_amroth } }
+		remove_political_reform = { base = 0 }
+		add_social_reform = { base = 1 }
+		remove_social_reform = { base = 0 }
+		add_military_reform = { base = 1 }
+		add_economic_reform = { base = 1 }
+	}
+	
+	gondorian_nobles = {
+		color = { 21 30 129 }
+		
+		add_political_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = gondorian_nobles } }
+		remove_political_reform = { base = 0 }
+		add_social_reform = { base = 1 }
+		remove_social_reform = { base = 0 }
+		add_military_reform = { base = 1 }
+		add_economic_reform = { base = 1 }
+	}
+	
+	line_of_isildur = {
+		color = { 240 238 227 }
+		
+		add_political_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = line_of_isildur } }
+		remove_political_reform = { base = 0 }
+		add_social_reform = { base = 1 }
+		remove_social_reform = { base = 0 }
+		add_military_reform = { base = 1 }
+		add_economic_reform = { base = 1 }
 	}
 }

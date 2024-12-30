@@ -688,3 +688,10 @@ DAL_united_gramavuld;Have taken decision §YThe United Northmen of Gramavuld§!;
 alliance_dwarves_men_voted_for;Voted for the current resolution;x
 alliance_dwarves_men_abstained;Abstained for the current resolution;x
 alliance_dwarves_men_voted_against;Voted against the current resolution;x
+##################################;x }
+##### IDEOLOGY COUNTRY FLAGS #####;x {
+##################################;x
+ideologies_house_of_stewards_active;House of Stewards Active;x
+ideologies_house_of_dol_amroth_active;House of Dol Amroth Active;x
+ideologies_gondorian_nobles_active;Gondorian Nobles Active;x
+ideologies_line_of_isildur_active;Line of Isildur Active;x

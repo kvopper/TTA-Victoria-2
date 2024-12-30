@@ -47,37 +47,27 @@ cosmetic_2_govt_ruler;Cosmetic Government Ruler;x
 generic_servants_good;Servants (Anti-Sauron);x
 generic_servants_neutral;Servants (Opportunistic);x
 generic_servants_evil;Servants (Sauronite);x
-generic_high_nobility;High Nobility;x
-generic_low_nobility;Low Nobility;x
-generic_burgher;Burgher;x
-generic_loremaster;Loremaster;x
-ADR_high_nobility;Council of Andrast;x
-ADR_low_nobility;Lords of Andrast;x
-ANF_high_nobility;Council of Anfalas;x
-ANF_low_nobility;Lords of Anfalas;x
-ANO_high_nobility;Council of Anórien;x
-ANO_low_nobility;Lords of Anórien;x
-DAL_burgher;Edhfreirs;x
-DAL_high_nobility;Lords of Dale;x
-DAL_low_nobility;Northmen Thegens;x
-GON_burgher;Merchant Guild;x
-GON_high_nobility;Council of Gondor;x
-GON_loremaster;Loremasters of Gondor;x
-GON_low_nobility;Lords of Gondor;x
-HRD_high_nobility;Council of Harondor;x
-HRD_low_nobility;Lords of Harondor;x
-ITH_high_nobility;Council of Ithilien;x
-ITH_low_nobility;Lords of Ithilien;x
-LAM_high_nobility;Council of Lamedon;x
-LAM_low_nobility;Lords of Lamedon;x
-LEB_high_nobility;Council of Lebennin;x
-LEB_low_nobility;Lords of Lebennin;x
-LOS_high_nobility;Council of Lossarnach;x
-LOS_low_nobility;Lords of Lossarnach;x
-MRN_high_nobility;Council of Mornan;x
-MRN_low_nobility;Lords of Mornan;x
-rivermen_high_nobility;Tribal Elders;x
-rivermen_low_nobility;River Lords;x
+ADR_nobles_of_andrast;Nobles of Andrast;x
+AMR_angelimir;Angelimir I;x
+AMR_adrahil;Adrahil II;x
+AMR_imrahil;Imrahil I;x
+ANF_gundor;Gundor, Lord of Anfalas;x
+ANF_golasgil;Golasgil, Lord of Anfalas;x
+ANO_nobles_of_anorien;Nobles of Anórien;x
+LOS_farlang;Farlang, Lord of Lossarnach;x
+LOS_forlong;Forlong, Lord of Lossarnach;x
+GON_ecthelion_ii;Ecthelion II;x
+GON_denethor_ii;Denethor II;x
+GON_council_of_gondor;Council of Gondor;x
+GON_aragorn_elessar;Aragorn II Elessar;x
+HRD_nobles_of_harondor;Nobles of Harondor;x
+ITH_nobles_of_ithilien;Nobles of Ithilien;x
+LAM_asgon;Asgon, Lord of Lamedon;x
+LAM_angbor;Angbar, Lord of Lamedon;x
+LEB_orodreth;Orodreth, Lord of Lebennin;x
+MRN_borhador;Borhador, Lord of the Blackroot Vale;x
+MRN_duinhir;Duinhir, Lord of the Blackroot Vale;x
+TOL_nobles_of_tolfalas;Nobles of Tolfalas;x
 #####################;x }
 ##### COUNTRIES #####;x {
 #####################;x

@@ -565,16 +565,16 @@ POLITICS_CAN_DO_SOCIAL_REFROMS;Can enact burgher reforms;x
 ######################;x
 disenfranchised_group;Disenfranchised;x
 slave_ideology;Slaves;x
-slave_ideology_uh;Slave advisors will vote to follow whatever the realm wants.;x
+slave_ideology_uh;Slave ideology supporters will vote to follow whatever the realm wants.;x
 tribal_ideology;Tribal;x
-tribal_ideology_uh;Tribal advisors will vote against progress in the realm and active look to reverse it.;x
+tribal_ideology_uh;Tribal ideology supporters will vote against progress in the realm and active look to reverse it.;x
 vassal_group;Servants;x
 servants_good;Servants (Anti-Sauron);x
-servants_good_uh;Servants advisors will never vote to reform the realm. They will only serve our overlord.;x
+servants_good_uh;Servants supporters will never vote to reform the realm. They only serve our overlord.;x
 servants_neutral;Servants (Opportunistic);x
-servants_neutral_uh;Servants advisors will never vote to reform the realm. They will only serve our overlord.;x
+servants_neutral_uh;Servants supporters will never vote to reform the realm. They only serve our overlord.;x
 servants_evil;Servants (Sauronite);x
-servants_evil_uh;Servants advisors will never vote to reform the realm. They will only serve our overlord.;x
+servants_evil_uh;Servants supporters will never vote to reform the realm. They only serve our overlord.;x
 nobility_group;Nobles;x
 high_nobility;High Nobility;x
 high_nobility_uh;High Nobility advisors will never vote for political reforms. Instead, they hope to repeal them. They will vote for burgher reforms with high enough militancy.;x
@@ -586,6 +586,15 @@ burgher_uh;Burgher advisors will vote for political reforms with high enough mil
 loremaster_group;Loremasters;x
 loremaster;Loremasters;x
 loremaster_uh;Loremaster advisors will always vote for political and burgher reforms.;x
+gondorian_nobility;Gondorian Nobility;x
+house_of_stewards;House of Stewards;x
+house_of_stewards_uh;House of Stewards supporters will vote for all reforms while in power.;x
+house_of_dol_amroth;House of Dol Amroth;x
+house_of_dol_amroth_uh;House of Dol Amroth supporters will vote for all reforms while in power.;x
+gondorian_nobles;Gondorian Nobles;x
+gondorian_nobles_uh;Gondorian Noble supporters will vote for all reforms while in power.;x
+line_of_isildur;Line of Isildur;x
+line_of_isildur_uh;Line of Isildur supporters will vote for all reforms while in power.;x
 #########################;x }
 ##### ADVISORS TEXT #####;x {
 #########################;x
