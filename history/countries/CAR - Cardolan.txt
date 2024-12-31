@@ -11,7 +11,7 @@ literacy = 0
 ruling_party = generic_cardolan_nobles
 
 upper_house = {
-	cardolan_nobles = 100
+	cardolandrim_nobles = 100
 }
 penal_reform = hard_labor
 slavery = no_slavery
