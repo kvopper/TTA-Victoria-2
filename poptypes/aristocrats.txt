@@ -1235,6 +1235,32 @@ ideologies = {
 			ruling_party_ideology = galadhrim_nobles
 		}
 	}
+	
+	avari_nobles = {
+		factor = 1
+		# Must be active in the realm or active in the province the pop resides
+		modifier = {
+			factor = 0
+			NOT = { country = { has_country_flag = ideologies_avari_nobles_active } }
+			NOT = { location = { state_scope = { any_owned_province = { any_core = { has_country_flag = ideologies_avari_nobles_active } } } } }
+		}
+		modifier = {
+			factor = 2
+			has_pop_religion = elven
+		}
+		modifier = {
+			factor = 2
+			is_culture_group = avari
+		}
+		modifier = {
+			factor = 2
+			has_pop_culture = avari
+		}
+		modifier = {
+			factor = 2
+			ruling_party_ideology = avari_nobles
+		}
+	}
 }
 
 issues = {

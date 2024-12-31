@@ -4,6 +4,14 @@
 # Originally grouping ideologies (ruling houses and interest groups) by the culture groups they are associated with
 # Change as needed to get the right "coalitions" for republics (speciifally related to how votes for ideologies of the same ideology_group can combine to become the plurality)
 
+# Note, when adding new ideologies (barring special cases like slave or tribal, the following updates are needed (outside of this file)
+#	Update localisation/modifiers and flavs.csv to define the ideologies_[ideology name]_active flag
+#	Update localisation/politics.csv with the ideology and the _uh
+#	Update each of the pops that can support the ideology in the poptypes folder
+#	Update the country definitions (coommon/countries folder) to define the parties as needed
+#	Update the country history files (history/countries) as needed to get the right ruling party, starting upper house and starting decision
+#	Update starting decisions (or whatever flavor unlocks the ideology) to set the ideologies_[ideology name]_active on the tags in question
+
 # cosmetic. Does nothing in game except define slaves for pop_types
 disenfranchised_group = {
 	slave_ideology = {
@@ -532,6 +540,19 @@ teleri_nobility = {
 		color = { 200 200 40 }
 		
 		add_political_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = galadhrim_nobles } }
+		remove_political_reform = { base = 0 }
+		add_social_reform = { base = 1 }
+		remove_social_reform = { base = 0 }
+		add_military_reform = { base = 1 }
+		add_economic_reform = { base = 1 }
+	}
+}
+
+avari_nobility ={
+	avari_nobles = {
+		color = { 40 0 40 }
+		
+		add_political_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = avari_nobles } }
 		remove_political_reform = { base = 0 }
 		add_social_reform = { base = 1 }
 		remove_social_reform = { base = 0 }

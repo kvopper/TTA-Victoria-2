@@ -9,6 +9,9 @@ political_decisions = {
 		effect = {
 			# Set allowed leaders
 			set_country_flag = ideologies_falathrim_nobles_active
+			
+			# Set allowed leaders for other realms owned by Lindon
+			WND = { set_country_flag = ideologies_avari_nobles_active }
 		}
 	}
 }
