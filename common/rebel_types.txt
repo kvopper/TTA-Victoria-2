@@ -671,10 +671,6 @@ democratic_rebels = {
 			factor = 1.015
 			political_reform_want = 0.3
 		}
-		modifier = {
-			factor = 0.75
-			country = { has_country_flag = attempting_to_democratic }
-		}
 	}
 
 	#This is checked for EACH province in the Area of Operations

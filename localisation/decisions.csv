@@ -579,10 +579,6 @@ end_war_FOR_title;End War;x
 end_war_FOR_desc;That is not allowed. Stop it.;x
 democratic_flag_clean_up_title;Democratic Flag Clean Up;x
 democratic_flag_clean_up_desc;Something has gone wrong with the democratic country flags. This decision will fix it.;x
-something_to_democracy_title;Change Government to Democracy;x
-something_to_democracy_desc;Some realm has converted themselves to a democracy. Let's make it official;x
-monarchize_flag_cleanup_title;Monarchy Flag Clean Up;x
-monarchize_flag_cleanup_desc;Some realm that was attempting to convert to a monarchy has become one. Let's get rid of some extra flags.;x
 noble_autonomy_flag_clean_up_title;Noble Autonomy Flag Clean Up;x
 noble_autonomy_flag_clean_up_desc;Something has gone wrong with the noble autonomy country flags. This decision will fix it.;x
 non_accepted_slavery_clean_up_title;Non-Accepted Slavery Clean Up;x
@@ -591,8 +587,6 @@ border_laws_clean_up_title;Border Laws Clean Up;x
 border_laws_clean_up_desc;A realm does not have the correct border policy. Let's fix that.;x
 set_initial_leader_title;Set Initial Leader;x
 set_initial_leader_desc;A realm has just spruing into existence. Let's set their initial leader traits.;x
-debug_research_flags_title;Debug Research Flags;x
-debug_research_flags_desc;This decision will only pop up if there are realms missing one of the research flags (infantry_focused, ranged_focused, cavalry_focused);x
 #################################################;x }
 ##### ORGANIZATIONS AND ALLIANCES DECISIONS #####;x {
 #################################################;x

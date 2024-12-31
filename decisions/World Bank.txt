@@ -7,8 +7,7 @@
 #	Leave FOR Alone
 #	Government Flags Clean Up
 #	Realm Leaders
-#	Debug
-#	Tech Clean Up }
+# }
 
 # Starting Decision
 political_decisions = {
@@ -715,105 +714,6 @@ political_decisions = {
 		}
 	}
 	
-	something_to_democracy = {
-		potential = {
-			tag = FOR
-			any_neighbor_country = {
-				has_country_flag = attempting_to_democratic
-				vote_franschise = landed_voting
-				NOT = {
-					OR = {
-						government = hobbit_realm
-						government = democracy
-						government = northmen_democracy
-					}
-				}
-			}
-		}
-		
-		allow = {}
-		
-		effect = {
-			any_neighbor_country = {
-				limit = {
-					has_country_flag = attempting_to_democratic
-					vote_franschise = landed_voting
-					is_culture_group = hobbits
-					NOT = { government = hobbit_realm }
-				}
-				clr_country_flag = attempting_to_democratic
-				set_country_flag = democratic
-				government = hobbit_realm
-				election = yes
-			}
-			any_neighbor_country = {
-				limit = {
-					has_country_flag = attempting_to_democratic
-					vote_franschise = landed_voting
-					OR = {
-						is_culture_group = northmen
-						is_culture_group = gramavuld_northmen
-					}
-					NOT = { government = northmen_democracy }
-				}
-				clr_country_flag = attempting_to_democratic
-				set_country_flag = democratic
-				government = northmen_democracy
-				election = yes
-			}
-			any_neighbor_country = {
-				limit = {
-					has_country_flag = attempting_to_democratic
-					vote_franschise = landed_voting
-					NOT = { is_culture_group = hobbits }
-					NOT = { is_culture_group = northmen }
-					NOT = { is_culture_group = gramavuld_northmen }
-					NOT = { government = democracy }
-				}
-				clr_country_flag = attempting_to_democratic
-				set_country_flag = democratic
-				government = democracy
-				election = yes
-			}
-		}
-	}
-	
-	monarchize_flag_cleanup = {
-		potential = {
-			tag = FOR
-			any_neighbor_country = {
-				has_country_flag = attempting_to_monarchize
-				OR = {
-					government = monarchy
-					government = principality
-					government = stewardship
-					government = fiefdom
-					government = galadhrim_monarchy
-					government = lord_monarchy
-				}
-			}
-		}
-		
-		allow = {}
-		
-		effect = {
-			any_neighbor_country = {
-				limit = {
-					has_country_flag = attempting_to_monarchize
-					OR = {
-						government = monarchy
-						government = principality
-						government = stewardship
-						government = fiefdom
-						government = galadhrim_monarchy
-						government = lord_monarchy
-					}
-				}
-				clr_country_flag = attempting_to_monarchize
-			}
-		}
-	}
-	
 	noble_autonomy_flag_clean_up = {
 		potential = {
 			tag = FOR
@@ -1024,34 +924,6 @@ political_decisions = {
 					NOT = { has_country_flag = existing_country }
 				}
 				set_country_flag = existing_country
-			}
-		}
-	}
-}
-
-# Debug
-political_decisions = {
-	debug_research_flags = {
-		potential = {
-			tag = FOR
-			ai = no
-			any_neighbor_country = {
-				NOT = { has_country_flag = infantry_focused }
-				NOT = { has_country_flag = ranged_focused }
-				NOT = { has_country_flag = cavalry_focused }
-			}
-		}
-		
-		allow = {}
-		
-		effect = {
-			any_neighbor_country = {
-				limit = {
-					NOT = { has_country_flag = infantry_focused }
-					NOT = { has_country_flag = ranged_focused }
-					NOT = { has_country_flag = cavalry_focused }
-				}
-				treasury = 1
 			}
 		}
 	}

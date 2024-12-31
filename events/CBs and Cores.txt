@@ -513,9 +513,6 @@ country_event = {
 				add_accepted_culture = good_culture
 				remove_accepted_culture = neutral_culture
 				remove_accepted_culture = evil_culture
-				clr_country_flag = attempting_to_good
-				clr_country_flag = attempting_to_neutral
-				clr_country_flag = attempting_to_evil
 					
 				any_pop = { dominant_issue = { value = good_alignment factor = 0.2 } }
 			}
@@ -530,9 +527,6 @@ country_event = {
 				remove_accepted_culture = good_culture
 				add_accepted_culture = neutral_culture
 				remove_accepted_culture = evil_culture
-				clr_country_flag = attempting_to_good
-				clr_country_flag = attempting_to_neutral
-				clr_country_flag = attempting_to_evil
 					
 				any_pop = { dominant_issue = { value = neutral_alignment factor = 0.2 } }
 			}
@@ -547,9 +541,6 @@ country_event = {
 				remove_accepted_culture = good_culture
 				remove_accepted_culture = neutral_culture
 				add_accepted_culture = evil_culture
-				clr_country_flag = attempting_to_good
-				clr_country_flag = attempting_to_neutral
-				clr_country_flag = attempting_to_evil
 					
 				any_pop = { dominant_issue = { value = evil_alignment factor = 0.2 } }
 				any_state = { is_slave = yes }

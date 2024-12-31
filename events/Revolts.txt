@@ -178,10 +178,6 @@ country_event = {
 		
 		any_pop = { dominant_issue = { value = good_alignment factor = 0.2 } }
 		
-		clr_country_flag = attempting_to_good
-		clr_country_flag = attempting_to_neutral
-		clr_country_flag = attempting_to_evil
-		
 		random_owned = {
 			limit = {
 				owner = {
@@ -234,10 +230,6 @@ country_event = {
 		
 		any_pop = { dominant_issue = { value = evil_alignment factor = 0.2 } }
 		
-		clr_country_flag = attempting_to_good
-		clr_country_flag = attempting_to_neutral
-		clr_country_flag = attempting_to_evil
-		
 		random_owned = {
 			limit = {
 				NOT = {
@@ -287,10 +279,6 @@ country_event = {
 		add_accepted_culture = neutral_culture
 		
 		any_pop = { dominant_issue = { value = neutral_alignment factor = 0.2 } }
-		
-		clr_country_flag = attempting_to_good
-		clr_country_flag = attempting_to_neutral
-		clr_country_flag = attempting_to_evil
 		
 		random_owned = {
 			limit = {

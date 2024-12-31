@@ -974,17 +974,6 @@ issues = {
 			country = { any_neighbor_country = { good_evil_alignment = good_alignment } }
 		}
 		modifier = {
-			factor = 25
-			country = { has_country_flag = attempting_to_good }
-		}
-		modifier = {
-			factor = 0.25
-			OR = {
-				country = { has_country_flag = attempting_to_neutral }
-				country = { has_country_flag = attempting_to_evil }
-			}
-		}
-		modifier = {
 			factor = 2
 			country = {
 				is_vassal = yes
@@ -1032,21 +1021,10 @@ issues = {
 			country = { any_neighbor_country = { good_evil_alignment = neutral_alignment } }
 		}
 		modifier = {
-			factor = 25
-			country = { has_country_flag = attempting_to_neutral }
-		}
-		modifier = {
 			factor = 2
 			country = {
 				is_vassal = yes
 				overlord = { good_evil_alignment = neutral_alignment }
-			}
-		}
-		modifier = {
-			factor = 0.25
-			OR = {
-				country = { has_country_flag = attempting_to_good }
-				country = { has_country_flag = attempting_to_evil }
 			}
 		}
 	}
@@ -1082,21 +1060,10 @@ issues = {
 			country = { any_neighbor_country = { good_evil_alignment = evil_alignment } }
 		}
 		modifier = {
-			factor = 25
-			country = { has_country_flag = attempting_to_evil }
-		}
-		modifier = {
 			factor = 2
 			country = {
 				is_vassal = yes
 				overlord = { good_evil_alignment = evil_alignment }
-			}
-		}
-		modifier = {
-			factor = 0.25
-			OR = {
-				country = { has_country_flag = attempting_to_good }
-				country = { has_country_flag = attempting_to_neutral }
 			}
 		}
 		modifier = {
