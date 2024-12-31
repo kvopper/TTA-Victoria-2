@@ -882,6 +882,10 @@ ideologies = {
 		}
 		modifier = {
 			factor = 2
+			has_pop_religion = men
+		}
+		modifier = {
+			factor = 2
 			is_culture_group = dunedain
 		}
 		modifier = {
@@ -901,6 +905,10 @@ ideologies = {
 			factor = 0
 			NOT = { country = { has_country_flag = ideologies_house_of_dol_amroth_active } }
 			NOT = { location = { state_scope = { any_owned_province = { any_core = { has_country_flag = ideologies_house_of_dol_amroth_active } } } } }
+		}
+		modifier = {
+			factor = 2
+			has_pop_religion = men
 		}
 		modifier = {
 			factor = 2
@@ -926,6 +934,10 @@ ideologies = {
 		}
 		modifier = {
 			factor = 2
+			has_pop_religion = men
+		}
+		modifier = {
+			factor = 2
 			is_culture_group = dunedain
 		}
 		modifier = {
@@ -945,6 +957,10 @@ ideologies = {
 			factor = 0
 			NOT = { country = { has_country_flag = ideologies_line_of_isildur_active } }
 			NOT = { location = { state_scope = { any_owned_province = { any_core = { has_country_flag = ideologies_line_of_isildur_active } } } } }
+		}
+		modifier = {
+			factor = 2
+			has_pop_religion = men
 		}
 		modifier = {
 			factor = 2
@@ -970,6 +986,10 @@ ideologies = {
 		}
 		modifier = {
 			factor = 2
+			has_pop_religion = men
+		}
+		modifier = {
+			factor = 2
 			is_culture_group = dunedain
 		}
 		modifier = {
@@ -989,6 +1009,10 @@ ideologies = {
 			factor = 0
 			NOT = { country = { has_country_flag = ideologies_cardolandrim_nobles_active } }
 			NOT = { location = { state_scope = { any_owned_province = { any_core = { has_country_flag = ideologies_cardolandrim_nobles_active } } } } }
+		}
+		modifier = {
+			factor = 2
+			has_pop_religion = men
 		}
 		modifier = {
 			factor = 2
@@ -1014,6 +1038,10 @@ ideologies = {
 		}
 		modifier = {
 			factor = 2
+			has_pop_religion = men
+		}
+		modifier = {
+			factor = 2
 			is_culture_group = dunedain
 		}
 		modifier = {
@@ -1033,6 +1061,10 @@ ideologies = {
 			factor = 0
 			NOT = { country = { has_country_flag = ideologies_house_half_elven_active } }
 			NOT = { location = { state_scope = { any_owned_province = { any_core = { has_country_flag = ideologies_house_half_elven_active } } } } }
+		}
+		modifier = {
+			factor = 2
+			has_pop_religion = elven
 		}
 		modifier = {
 			factor = 2
@@ -1058,6 +1090,10 @@ ideologies = {
 		}
 		modifier = {
 			factor = 2
+			has_pop_religion = elven
+		}
+		modifier = {
+			factor = 2
 			is_culture_group = eldar
 		}
 		modifier = {
@@ -1077,6 +1113,10 @@ ideologies = {
 			factor = 0
 			NOT = { country = { has_country_flag = ideologies_falathrim_nobles_active } }
 			NOT = { location = { state_scope = { any_owned_province = { any_core = { has_country_flag = ideologies_falathrim_nobles_active } } } } }
+		}
+		modifier = {
+			factor = 2
+			has_pop_religion = elven
 		}
 		modifier = {
 			factor = 2
@@ -1102,6 +1142,10 @@ ideologies = {
 		}
 		modifier = {
 			factor = 2
+			has_pop_religion = elven
+		}
+		modifier = {
+			factor = 2
 			is_culture_group = teleri
 		}
 		modifier = {
@@ -1121,6 +1165,10 @@ ideologies = {
 			factor = 0
 			NOT = { country = { has_country_flag = ideologies_silvan_nobles_active } }
 			NOT = { location = { state_scope = { any_owned_province = { any_core = { has_country_flag = ideologies_silvan_nobles_active } } } } }
+		}
+		modifier = {
+			factor = 2
+			has_pop_religion = elven
 		}
 		modifier = {
 			factor = 2
@@ -1146,6 +1194,10 @@ ideologies = {
 		}
 		modifier = {
 			factor = 2
+			has_pop_religion = elven
+		}
+		modifier = {
+			factor = 2
 			is_culture_group = teleri
 		}
 		modifier = {
@@ -1165,6 +1217,10 @@ ideologies = {
 			factor = 0
 			NOT = { country = { has_country_flag = ideologies_galadhrim_nobles_active } }
 			NOT = { location = { state_scope = { any_owned_province = { any_core = { has_country_flag = ideologies_galadhrim_nobles_active } } } } }
+		}
+		modifier = {
+			factor = 2
+			has_pop_religion = elven
 		}
 		modifier = {
 			factor = 2
