@@ -5101,8 +5101,8 @@ SM_SHORTCUT;Shortcut tooltip;x
 OL_REBEL_OCCUPATIONS;Rebel occupations;x
 OL_REBEL_OCCUPATIONS_TOOLTIP;Our province of §Y$PROVINCE$§W is being occupied by the rebels!;x
 OL_VIEW_REBEL_OCCUPATIONS;Toggles §YRebel Occupations§W view;x
-POP_MIL_CHANGE_REBEL;This pop is living in §Y$PROV$§W that is under §RRebels§W control.\nIt's militancy change cannot be estimated.;x
-POP_CON_CHANGE_REBEL;This pop is living in §Y$PROV$§W that is under §RRebels§W control.\nIt's consciousness change cannot be estimated.;x
+POP_MIL_CHANGE_REBEL;This pop is living in §Y$PROV$§W that is under §RRebels§W control.\nIts militancy change cannot be estimated.;x
+POP_CON_CHANGE_REBEL;This pop is living in §Y$PROV$§W that is under §RRebels§W control.\nIts consciousness change cannot be estimated.;x
 PROJECT_STATE_NAME_DESC;Planning to build in §Y$PROV$§W.;x
 MIL_FROM_TROOPS;Soldiers & Army;x
 MIL_FROM_CAP_SHIPS;Capital Ships;x
@@ -5318,7 +5318,7 @@ NATIONAL_FOCUS_PARTY_LOYALTY_DESC;Daily loyalty change by: §Y$VAL$§W.;x
 NATIONAL_FOCUS_PARTY_LOYALTY_EFFECT;From national focus, daily change $VAL$ towards $PARTY$.;x
 SUBSTATE_OF_NOCOLOR;Substate of:;x
 SUBSTATE;Substate;x
-SUBSTATE_JOIN_WAR_DESC;is a substate of §Y$COUNTRY$§W and will always join it's wars.;x
+SUBSTATE_JOIN_WAR_DESC;is a substate of §Y$COUNTRY$§W and will always join its wars.;x
 IS_NOT_SUBSTATE_OF;Is NOT a substate of ;x
 IS_SUBSTATE_OF;Is a substate of ;x
 IS_NOT_SUBSTATE;Is NOT a substate;x
