@@ -171,7 +171,7 @@ annex_andrast_desc;The land in the Fiefdom of Andrast has been hard fought for. 
 houses_of_healing_title;Houses of Healing;x
 houses_of_healing_desc;The houses of healing of Minas Tirith as famed in the realm for their ability to heal the sick and wounded - they have saved countless lives of our soldiers.;x
 restore_crossroads_fallen_king_title;Restore the Cross-roads of the Fallen King;x
-restore_crossroads_fallen_king_desc;It has been too long since Gondor truly controlled the crossing of the north-south Harad Road and the east-west road between Osgiliath and Minas Morgul. The statue of one of our king has been befouled by the Orcs of Mordor, it's head knocked off and replaced with a symbol of their darkness. With the Orc raids finally stopped, now we can restore the Crossroads to their former glory.;x
+restore_crossroads_fallen_king_desc;It has been too long since Gondor truly controlled the crossing of the north-south Harad Road and the east-west road between Osgiliath and Minas Morgul. The statue of one of our king has been befouled by the Orcs of Mordor, its head knocked off and replaced with a symbol of their darkness. With the Orc raids finally stopped, now we can restore the Crossroads to their former glory.;x
 destroy_crossroads_fallen_king_title;Destroy the Cross-roads of the Fallen King;x
 destroy_crossroads_fallen_king_desc;In the recent past, the Crossroads of the Fallen King had been restored. If we so choose, we can destroy the statue.;x
 stonewain_valley_desc;A road, four horses wide, had been made in ancient days by the Men of Gondor. Since then, the road had become overgrown as forgotten. Only the Drúedain remember of its existence. If the Drúedain of Druadan Forest are in our good graces, they may show us this path.;x
@@ -184,7 +184,7 @@ rebuild_osgiliath_desc;Osgiliath was once the Jewel of Gondor. Founded on both s
 rebuild_dome_of_stars_title;Rebuild the Dome of Stars;x
 rebuild_dome_of_stars_desc;At one point, Osgilaith held one of the palantíri in the Dome of Stars. However, this was not the only use of the building - it also served as an observatory. We may not have the Osgiliath-stone, but we can rebuild this wonder.;x
 repopulate_ithilien_title;Repopulate Ithilien;x
-repopulate_ithilien_desc;With the orc raids stopped, Harondor secured and Minas Ithil cleansed, we can finally restore the Land of the Moon to it's former glory.;x
+repopulate_ithilien_desc;With the orc raids stopped, Harondor secured and Minas Ithil cleansed, we can finally restore the Land of the Moon to its former glory.;x
 expand_the_mesta_title;Expand the Mesta;x
 expand_the_mesta_desc;With the recent success of the Mesta in Anfalas, it has been suggested that similar guilds be established across $COUNTRY$.\n\n§RFor every province that gets the modifier, you will lose 10k. 500k was arbitrarily chosen as the amount needed to take the decision - it has no effect on how much money you will actually spend!§!;x
 recognize_college_of_spoken_word_title;Recognize the College of the Spoken Word;x
@@ -212,7 +212,7 @@ druadan_forest_rebellion_end_GON_desc;The rebellious Drúedain have been defeate
 druadan_forest_rebellion_end_DRU_title;The End of the Drúadan Forest Rebellion;x
 druadan_forest_rebellion_end_DRU_desc;We are victorious! We have pushed our oppressors out of the forest, hopefully never to be seen again!;x
 gondorification_of_DRU_title;Gondorification of Drúadan Forest;x
-gondorification_of_DRU_desc;Since the Drúedain of Drúadan Forest rebelled, our grip on the region has strengthened. A national edict was administered, meant to increase Gondorian immigration and Drúedain assimilation in the region. It took some time, but the edict did it's job - the Drúedain's numbers have become small enough that their claim doesn't matter.;x
+gondorification_of_DRU_desc;Since the Drúedain of Drúadan Forest rebelled, our grip on the region has strengthened. A national edict was administered, meant to increase Gondorian immigration and Drúedain assimilation in the region. It took some time, but the edict did its job - the Drúedain's numbers have become small enough that their claim doesn't matter.;x
 stonewain_valley_title;Stonewain Valley;x
 return_to_south_gondor_title;Return to South Gondor;x
 return_to_south_gondor_desc;In the past, Gondorian armies marched through South Gondor, the region which other realms call "Harondor", as they would through Anórien - a friendly land filled with Gondorians. It has been hundreds of years since our armies were defeated and fled the lands. Now, all that remains of our presence in the region are some military outposts in the Ethir Anduin and Methir. It is time that we begin to extend back into South Gondor;x
@@ -221,7 +221,7 @@ reconquer_south_gondor_desc;We have reclaimed all of South Gondor that is otherw
 annex_south_gondor_title;Annex South Gondor;x
 annex_south_gondor_desc;Finally, we control all of South Gondor. It is time we abolish the fiefdom government, and merge it with the realm's government.;x
 claim_harnendor_title;Claim Harnendor;x
-claim_harnendor_desc;In the past, the territory south of the Harnen river known as Harnendor was Gondorian, and it's culture quite similar to that of Harondor. With our renewed presence in the area, we can reassert our claim to this land.;x
+claim_harnendor_desc;In the past, the territory south of the Harnen river known as Harnendor was Gondorian, and its culture quite similar to that of Harondor. With our renewed presence in the area, we can reassert our claim to this land.;x
 rekindle_the_kin_strife_GON_title;Rekindle the Kin-Strife;x
 rekindle_the_kin_strife_GON_desc;In the past, Umbar and the surrounding territories belonged to Gondor. However, they joined Castamir in his rebellion, and have since slipped away from our control. With our renewed presence in the South, we can reassert our control and bring an end to the Corsair raids once and for all!;x
 claim_umbar_GON_title;Claim Umbar;x
