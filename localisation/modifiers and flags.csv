@@ -685,6 +685,7 @@ DAL_united_gramavuld;Have taken decision §YThe United Northmen of Gramavuld§!;
 alliance_dwarves_men_voted_for;Voted for the current resolution;x
 alliance_dwarves_men_abstained;Abstained for the current resolution;x
 alliance_dwarves_men_voted_against;Voted against the current resolution;x
+IML_content;Original tag is IML (Realm of Imladris);x
 ##################################;x }
 ##### IDEOLOGY COUNTRY FLAGS #####;x {
 ##################################;x
@@ -695,3 +696,5 @@ ideologies_line_of_isildur_active;Line of Isildur Active;x
 ideologies_arthedani_nobles_active;Arthedani Nobles Active;x
 ideologies_cardolandrim_nobles_active;Cardolandrim Nobles Active;x
 ideologies_haeranedain_nobles_active;Haeranedain Nobles Active;x
+ideologies_house_half_elven_active;House Half-Elven Active;x
+ideologies_noldor_nobles_active;Haeranedain Ñoldor Nobles Active;x

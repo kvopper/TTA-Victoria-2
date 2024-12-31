@@ -1,7 +1,8 @@
 # Audax Validator "!" Ignore_1007
 # Audax Validator "!" Ignore_1009
 
-# If you add types, and use those tags, do not change them without changing everywhere they are used.
+# Originally grouping ideologies (ruling houses and interest groups) by the culture groups they are associated with
+# Change as needed to get the right "coalitions" for republics (speciifally related to how votes for ideologies of the same ideology_group can combine to become the plurality)
 
 # cosmetic. Does nothing in game except define slaves for pop_types
 disenfranchised_group = {
@@ -28,6 +29,7 @@ disenfranchised_group = {
 	}
 }
 
+# Only for puppets. TODO: Add pop support for these ideologies
 vassal_group = {
 	servants_good = {
 		color = { 30 144 255 }
@@ -449,6 +451,30 @@ dunedain_nobility = {
 		color = { 40 40 150 }
 		
 		add_political_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = haeranedain_nobles } }
+		remove_political_reform = { base = 0 }
+		add_social_reform = { base = 1 }
+		remove_social_reform = { base = 0 }
+		add_military_reform = { base = 1 }
+		add_economic_reform = { base = 1 }
+	}
+}
+
+noldor_nobility = {
+	house_half_elven = {
+		color = { 0 0 139 }
+		
+		add_political_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = house_half_elven } }
+		remove_political_reform = { base = 0 }
+		add_social_reform = { base = 1 }
+		remove_social_reform = { base = 0 }
+		add_military_reform = { base = 1 }
+		add_economic_reform = { base = 1 }
+	}
+	
+	noldor_nobles = {
+		color = { 0 0 100 }
+		
+		add_political_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = noldor_nobles } }
 		remove_political_reform = { base = 0 }
 		add_social_reform = { base = 1 }
 		remove_social_reform = { base = 0 }

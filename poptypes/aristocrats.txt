@@ -878,7 +878,7 @@ ideologies = {
 		modifier = {
 			factor = 0
 			NOT = { country = { has_country_flag = ideologies_house_of_stewards_active } }
-			NOT = { location = { any_core = { has_country_flag = ideologies_house_of_stewards_active } } }
+			NOT = { location = { state_scope = { any_owned_province = { any_core = { has_country_flag = ideologies_house_of_stewards_active } } } } }
 		}
 		modifier = {
 			factor = 2
@@ -900,7 +900,7 @@ ideologies = {
 		modifier = {
 			factor = 0
 			NOT = { country = { has_country_flag = ideologies_house_of_dol_amroth_active } }
-			NOT = { location = { any_core = { has_country_flag = ideologies_house_of_dol_amroth_active } } }
+			NOT = { location = { state_scope = { any_owned_province = { any_core = { has_country_flag = ideologies_house_of_dol_amroth_active } } } } }
 		}
 		modifier = {
 			factor = 2
@@ -922,7 +922,7 @@ ideologies = {
 		modifier = {
 			factor = 0
 			NOT = { country = { has_country_flag = ideologies_gondorian_nobles_active } }
-			NOT = { location = { any_core = { has_country_flag = ideologies_gondorian_nobles_active } } }
+			NOT = { location = { state_scope = { any_owned_province = { any_core = { has_country_flag = ideologies_gondorian_nobles_active } } } } }
 		}
 		modifier = {
 			factor = 2
@@ -944,7 +944,7 @@ ideologies = {
 		modifier = {
 			factor = 0
 			NOT = { country = { has_country_flag = ideologies_line_of_isildur_active } }
-			NOT = { location = { any_core = { has_country_flag = ideologies_line_of_isildur_active } } }
+			NOT = { location = { state_scope = { any_owned_province = { any_core = { has_country_flag = ideologies_line_of_isildur_active } } } } }
 		}
 		modifier = {
 			factor = 2
@@ -966,7 +966,7 @@ ideologies = {
 		modifier = {
 			factor = 0
 			NOT = { country = { has_country_flag = ideologies_arthedani_nobles_active } }
-			NOT = { location = { any_core = { has_country_flag = ideologies_arthedani_nobles_active } } }
+			NOT = { location = { state_scope = { any_owned_province = { any_core = { has_country_flag = ideologies_arthedani_nobles_active } } } } }
 		}
 		modifier = {
 			factor = 2
@@ -988,7 +988,7 @@ ideologies = {
 		modifier = {
 			factor = 0
 			NOT = { country = { has_country_flag = ideologies_cardolandrim_nobles_active } }
-			NOT = { location = { any_core = { has_country_flag = ideologies_cardolandrim_nobles_active } } }
+			NOT = { location = { state_scope = { any_owned_province = { any_core = { has_country_flag = ideologies_cardolandrim_nobles_active } } } } }
 		}
 		modifier = {
 			factor = 2
@@ -1010,7 +1010,7 @@ ideologies = {
 		modifier = {
 			factor = 0
 			NOT = { country = { has_country_flag = ideologies_haeranedain_nobles_active } }
-			NOT = { location = { any_core = { has_country_flag = ideologies_haeranedain_nobles_active } } }
+			NOT = { location = { state_scope = { any_owned_province = { any_core = { has_country_flag = ideologies_haeranedain_nobles_active } } } } }
 		}
 		modifier = {
 			factor = 2
@@ -1023,6 +1023,50 @@ ideologies = {
 		modifier = {
 			factor = 2
 			ruling_party_ideology = haeranedain_nobles
+		}
+	}
+	
+	house_half_elven = {
+		factor = 1
+		# Must be active in the realm or active in the province the pop resides
+		modifier = {
+			factor = 0
+			NOT = { country = { has_country_flag = ideologies_house_half_elven_active } }
+			NOT = { location = { state_scope = { any_owned_province = { any_core = { has_country_flag = ideologies_house_half_elven_active } } } } }
+		}
+		modifier = {
+			factor = 2
+			is_culture_group = eldar
+		}
+		modifier = {
+			factor = 2
+			country = { has_country_flag = IML_content }
+		}
+		modifier = {
+			factor = 2
+			ruling_party_ideology = house_half_elven
+		}
+	}
+	
+	noldor_nobles = {
+		factor = 1
+		# Must be active in the realm or active in the province the pop resides
+		modifier = {
+			factor = 0
+			NOT = { country = { has_country_flag = ideologies_noldor_nobles_active } }
+			NOT = { location = { state_scope = { any_owned_province = { any_core = { has_country_flag = ideologies_noldor_nobles_active } } } } }
+		}
+		modifier = {
+			factor = 2
+			is_culture_group = eldar
+		}
+		modifier = {
+			factor = 2
+			NOT = { country = { has_country_flag = IML_content } }
+		}
+		modifier = {
+			factor = 2
+			ruling_party_ideology = noldor_nobles
 		}
 	}
 }
