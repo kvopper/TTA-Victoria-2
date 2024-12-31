@@ -17,6 +17,9 @@ decision = mordor_start_decision
 
 oob = "MOR_oob.txt"
 
+upper_house = {
+}
+
 ruling_party = generic_servants
 
 slavery = yes_slavery

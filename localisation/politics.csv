@@ -586,7 +586,7 @@ burgher_uh;Burgher advisors will vote for political reforms with high enough mil
 loremaster_group;Loremasters;x
 loremaster;Loremasters;x
 loremaster_uh;Loremaster advisors will always vote for political and burgher reforms.;x
-gondorian_nobility;Gondorian Nobility;x
+dunedain_nobility;Dúnedain Nobility;x
 house_of_stewards;House of Stewards;x
 house_of_stewards_uh;House of Stewards supporters will vote for all reforms while in power.;x
 house_of_dol_amroth;House of Dol Amroth;x
@@ -595,6 +595,12 @@ gondorian_nobles;Gondorian Nobles;x
 gondorian_nobles_uh;Gondorian Noble supporters will vote for all reforms while in power.;x
 line_of_isildur;Line of Isildur;x
 line_of_isildur_uh;Line of Isildur supporters will vote for all reforms while in power.;x
+arthedani_nobles;Arthedani Nobles;x
+arthedani_nobles_uh;Arthedani Nobles supporters will vote for all reforms while in power.;x
+cardolandrim_nobles;Cardolandrim Nobles;x
+cardolandrim_nobles_uh;Cardolandrim Nobles supporters will vote for all reforms while in power.;x
+haeranedain_nobles;Haeranedain Nobles;x
+haeranedain_nobles_uh;Haeranedain Nobles supporters will vote for all reforms while in power.;x
 #########################;x }
 ##### ADVISORS TEXT #####;x {
 #########################;x

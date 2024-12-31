@@ -379,7 +379,7 @@ loremaster_group = {
 	}
 }
 
-gondorian_nobility = {
+dunedain_nobility = {
 	house_of_stewards = {
 		color = { 10 15 65 }
 		
@@ -412,11 +412,43 @@ gondorian_nobility = {
 		add_military_reform = { base = 1 }
 		add_economic_reform = { base = 1 }
 	}
-	
 	line_of_isildur = {
 		color = { 240 238 227 }
 		
 		add_political_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = line_of_isildur } }
+		remove_political_reform = { base = 0 }
+		add_social_reform = { base = 1 }
+		remove_social_reform = { base = 0 }
+		add_military_reform = { base = 1 }
+		add_economic_reform = { base = 1 }
+	}
+	
+	arthedani_nobles = {
+		color = { 20 60 60 }
+		
+		add_political_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = arthedani_nobles } }
+		remove_political_reform = { base = 0 }
+		add_social_reform = { base = 1 }
+		remove_social_reform = { base = 0 }
+		add_military_reform = { base = 1 }
+		add_economic_reform = { base = 1 }
+	}
+	
+	cardolandrim_nobles = {
+		color = { 20 60 20 }
+		
+		add_political_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = cardolandrim_nobles } }
+		remove_political_reform = { base = 0 }
+		add_social_reform = { base = 1 }
+		remove_social_reform = { base = 0 }
+		add_military_reform = { base = 1 }
+		add_economic_reform = { base = 1 }
+	}
+	
+	haeranedain_nobles = {
+		color = { 40 40 150 }
+		
+		add_political_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = haeranedain_nobles } }
 		remove_political_reform = { base = 0 }
 		add_social_reform = { base = 1 }
 		remove_social_reform = { base = 0 }

@@ -44,6 +44,9 @@ cosmetic_2_govt_ruler;Cosmetic Government Ruler;x
 #############################;x }
 ##### POLITICAL PARTIES #####;x {
 #############################;x
+generic_arthedani_nobles;Arthedani Nobles;x
+generic_cardolan_nobles;Cardolan Nobles;x
+generic_haeranedain_nobles;Haeranedain Nobles;x
 generic_servants_good;Servants (Anti-Sauron);x
 generic_servants_neutral;Servants (Opportunistic);x
 generic_servants_evil;Servants (Sauronite);x
@@ -54,6 +57,7 @@ AMR_imrahil;Imrahil I;x
 ANF_gundor;Gundor, Lord of Anfalas;x
 ANF_golasgil;Golasgil, Lord of Anfalas;x
 ANO_nobles_of_anorien;Nobles of Anórien;x
+DND_halbarad;Halbarad;x
 LOS_farlang;Farlang, Lord of Lossarnach;x
 LOS_forlong;Forlong, Lord of Lossarnach;x
 GON_ecthelion_ii;Ecthelion II;x

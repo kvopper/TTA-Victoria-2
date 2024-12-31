@@ -886,6 +886,10 @@ ideologies = {
 		}
 		modifier = {
 			factor = 2
+			location = { is_core = GON }
+		}
+		modifier = {
+			factor = 2
 			ruling_party_ideology = house_of_stewards
 		}
 	}
@@ -901,6 +905,10 @@ ideologies = {
 		modifier = {
 			factor = 2
 			is_culture_group = dunedain
+		}
+		modifier = {
+			factor = 2
+			has_pop_culture = amrothian
 		}
 		modifier = {
 			factor = 2
@@ -922,6 +930,10 @@ ideologies = {
 		}
 		modifier = {
 			factor = 2
+			has_pop_culture = gondorian
+		}
+		modifier = {
+			factor = 2
 			ruling_party_ideology = gondorian_nobles
 		}
 	}
@@ -940,7 +952,77 @@ ideologies = {
 		}
 		modifier = {
 			factor = 2
+			has_pop_culture = dunedain
+		}
+		modifier = {
+			factor = 2
 			ruling_party_ideology = line_of_isildur
+		}
+	}
+	
+	arthedani_nobles = {
+		factor = 1
+		# Must be active in the realm or active in the province the pop resides
+		modifier = {
+			factor = 0
+			NOT = { country = { has_country_flag = ideologies_arthedani_nobles_active } }
+			NOT = { location = { any_core = { has_country_flag = ideologies_arthedani_nobles_active } } }
+		}
+		modifier = {
+			factor = 2
+			is_culture_group = dunedain
+		}
+		modifier = {
+			factor = 2
+			has_pop_culture = arthedani
+		}
+		modifier = {
+			factor = 2
+			ruling_party_ideology = arthedani_nobles
+		}
+	}
+	
+	cardolandrim_nobles = {
+		factor = 1
+		# Must be active in the realm or active in the province the pop resides
+		modifier = {
+			factor = 0
+			NOT = { country = { has_country_flag = ideologies_cardolandrim_nobles_active } }
+			NOT = { location = { any_core = { has_country_flag = ideologies_cardolandrim_nobles_active } } }
+		}
+		modifier = {
+			factor = 2
+			is_culture_group = dunedain
+		}
+		modifier = {
+			factor = 2
+			has_pop_culture = cardolandrim
+		}
+		modifier = {
+			factor = 2
+			ruling_party_ideology = cardolandrim_nobles
+		}
+	}
+	
+	haeranedain_nobles = {
+		factor = 1
+		# Must be active in the realm or active in the province the pop resides
+		modifier = {
+			factor = 0
+			NOT = { country = { has_country_flag = ideologies_haeranedain_nobles_active } }
+			NOT = { location = { any_core = { has_country_flag = ideologies_haeranedain_nobles_active } } }
+		}
+		modifier = {
+			factor = 2
+			is_culture_group = dunedain
+		}
+		modifier = {
+			factor = 2
+			has_pop_culture = haeranedain
+		}
+		modifier = {
+			factor = 2
+			ruling_party_ideology = haeranedain_nobles
 		}
 	}
 }

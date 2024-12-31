@@ -9,6 +9,9 @@ literacy = 0
 
 ruling_party = generic_servants
 
+upper_house = {
+}
+
 decision = FOR_start_decision
 
 schools = traditional_academic

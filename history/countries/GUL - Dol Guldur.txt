@@ -14,6 +14,9 @@ oob = "GUL_oob.txt"
 
 prestige = 10
 
+upper_house = {
+}
+
 ruling_party = generic_high_nobility
 
 slavery = yes_slavery

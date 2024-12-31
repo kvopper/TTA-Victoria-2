@@ -64,6 +64,9 @@ political_decisions = {
 				set_country_flag = ideologies_gondorian_nobles_active
 			}
 			
+			# Ithilien isn't technically a substate
+			ITH = { set_country_flag = ideologies_gondorian_nobles_active }
+			
 			# Setting Orc Raids
 			any_owned = {
 				limit = {
@@ -85,6 +88,7 @@ political_decisions = {
 			
 			# Setting up starting leaders
 			set_country_flag = ideologies_house_of_stewards_active
+			set_country_flag = ideologies_gondorian_nobles_active
 		}
 	}
 	

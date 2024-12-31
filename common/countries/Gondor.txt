@@ -47,7 +47,7 @@ party = {
 }
 
 party = {
-	name = "aragorn_elessar"
+	name = "GON_aragorn_elessar"
 	start_date = 2954.1.1
 	end_date = 4000.1.1
 	
