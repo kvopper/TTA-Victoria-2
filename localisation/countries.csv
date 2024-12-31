@@ -46,11 +46,13 @@ cosmetic_2_govt_ruler;Cosmetic Government Ruler;x
 #############################;x
 generic_arthedani_nobles;Arthedani Nobles;x
 generic_cardolan_nobles;Cardolan Nobles;x
+generic_galadhrim_nobles;Galadhrim Nobles;x
 generic_haeranedain_nobles;Haeranedain Nobles;x
 generic_noldor_nobles;Ñoldor Nobles;x
 generic_servants_good;Servants (Anti-Sauron);x
 generic_servants_neutral;Servants (Opportunistic);x
 generic_servants_evil;Servants (Sauronite);x
+generic_silvan_nobles;Silvan Nobles;x
 ADR_nobles_of_andrast;Nobles of Andrast;x
 AMR_angelimir;Angelimir I;x
 AMR_adrahil;Adrahil II;x
@@ -60,6 +62,8 @@ ANF_golasgil;Golasgil, Lord of Anfalas;x
 ANO_nobles_of_anorien;Nobles of Anórien;x
 DND_halbarad;Halbarad;x
 IML_elrond;Elrond;x
+LIN_cirdan;Círdan the Shipwright;x
+LOR_galadriel_n_celeborn;Galadriel and Celeborn;x
 LOS_farlang;Farlang, Lord of Lossarnach;x
 LOS_forlong;Forlong, Lord of Lossarnach;x
 GON_ecthelion_ii;Ecthelion II;x
@@ -74,6 +78,7 @@ LEB_orodreth;Orodreth, Lord of Lebennin;x
 MRN_borhador;Borhador, Lord of the Blackroot Vale;x
 MRN_duinhir;Duinhir, Lord of the Blackroot Vale;x
 TOL_nobles_of_tolfalas;Nobles of Tolfalas;x
+WRM_thranduil;Thranduil;x
 #####################;x }
 ##### COUNTRIES #####;x {
 #####################;x

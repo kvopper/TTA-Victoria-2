@@ -482,3 +482,60 @@ noldor_nobility = {
 		add_economic_reform = { base = 1 }
 	}
 }
+
+teleri_nobility = {
+	falathrim_nobles = {
+		color = { 60 20 100 }
+		
+		add_political_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = falathrim_nobles } }
+		remove_political_reform = { base = 0 }
+		add_social_reform = { base = 1 }
+		remove_social_reform = { base = 0 }
+		add_military_reform = { base = 1 }
+		add_economic_reform = { base = 1 }
+	}
+	
+	house_of_oropher = {
+		color = { 0 102 51 }
+		
+		add_political_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = house_of_oropher } }
+		remove_political_reform = { base = 0 }
+		add_social_reform = { base = 1 }
+		remove_social_reform = { base = 0 }
+		add_military_reform = { base = 1 }
+		add_economic_reform = { base = 1 }
+	}
+	
+	silvan_nobles = {
+		color = { 0 80 40 }
+		
+		add_political_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = silvan_nobles } }
+		remove_political_reform = { base = 0 }
+		add_social_reform = { base = 1 }
+		remove_social_reform = { base = 0 }
+		add_military_reform = { base = 1 }
+		add_economic_reform = { base = 1 }
+	}
+	
+	house_of_finarfin = {
+		color = { 255 255 51 }
+		
+		add_political_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = house_of_finarfin } }
+		remove_political_reform = { base = 0 }
+		add_social_reform = { base = 1 }
+		remove_social_reform = { base = 0 }
+		add_military_reform = { base = 1 }
+		add_economic_reform = { base = 1 }
+	}
+	
+	galadhrim_nobles = {
+		color = { 200 200 40 }
+		
+		add_political_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = galadhrim_nobles } }
+		remove_political_reform = { base = 0 }
+		add_social_reform = { base = 1 }
+		remove_social_reform = { base = 0 }
+		add_military_reform = { base = 1 }
+		add_economic_reform = { base = 1 }
+	}
+}

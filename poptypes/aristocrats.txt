@@ -886,7 +886,7 @@ ideologies = {
 		}
 		modifier = {
 			factor = 2
-			location = { is_core = GON }
+			location = { any_core = { has_country_flag = GON_content } }
 		}
 		modifier = {
 			factor = 2
@@ -1040,7 +1040,7 @@ ideologies = {
 		}
 		modifier = {
 			factor = 2
-			country = { has_country_flag = IML_content }
+			location = { any_core = { has_country_flag = IML_content } }
 		}
 		modifier = {
 			factor = 2
@@ -1062,11 +1062,121 @@ ideologies = {
 		}
 		modifier = {
 			factor = 2
-			NOT = { country = { has_country_flag = IML_content } }
+			has_pop_culture = noldor
 		}
 		modifier = {
 			factor = 2
 			ruling_party_ideology = noldor_nobles
+		}
+	}
+	
+	falathrim_nobles = {
+		factor = 1
+		# Must be active in the realm or active in the province the pop resides
+		modifier = {
+			factor = 0
+			NOT = { country = { has_country_flag = ideologies_falathrim_nobles_active } }
+			NOT = { location = { state_scope = { any_owned_province = { any_core = { has_country_flag = ideologies_falathrim_nobles_active } } } } }
+		}
+		modifier = {
+			factor = 2
+			is_culture_group = teleri
+		}
+		modifier = {
+			factor = 2
+			has_pop_culture = falathrim
+		}
+		modifier = {
+			factor = 2
+			ruling_party_ideology = falathrim_nobles
+		}
+	}
+	
+	house_of_oropher = {
+		factor = 1
+		# Must be active in the realm or active in the province the pop resides
+		modifier = {
+			factor = 0
+			NOT = { country = { has_country_flag = ideologies_house_of_oropher_active } }
+			NOT = { location = { state_scope = { any_owned_province = { any_core = { has_country_flag = ideologies_house_of_oropher_active } } } } }
+		}
+		modifier = {
+			factor = 2
+			is_culture_group = teleri
+		}
+		modifier = {
+			factor = 2
+			location = { any_core = { has_country_flag = WRM_content } }
+		}
+		modifier = {
+			factor = 2
+			ruling_party_ideology = house_of_oropher
+		}
+	}
+	
+	silvan_nobles = {
+		factor = 1
+		# Must be active in the realm or active in the province the pop resides
+		modifier = {
+			factor = 0
+			NOT = { country = { has_country_flag = ideologies_silvan_nobles_active } }
+			NOT = { location = { state_scope = { any_owned_province = { any_core = { has_country_flag = ideologies_silvan_nobles_active } } } } }
+		}
+		modifier = {
+			factor = 2
+			is_culture_group = teleri
+		}
+		modifier = {
+			factor = 2
+			has_pop_culture = silvan
+		}
+		modifier = {
+			factor = 2
+			ruling_party_ideology = silvan_nobles
+		}
+	}
+	
+	house_of_finarfin = {
+		factor = 1
+		# Must be active in the realm or active in the province the pop resides
+		modifier = {
+			factor = 0
+			NOT = { country = { has_country_flag = ideologies_house_of_finarfin_active } }
+			NOT = { location = { state_scope = { any_owned_province = { any_core = { has_country_flag = ideologies_house_of_finarfin_active } } } } }
+		}
+		modifier = {
+			factor = 2
+			is_culture_group = teleri
+		}
+		modifier = {
+			factor = 2
+			location = { any_core = { has_country_flag = LOR_content } }
+		}
+		modifier = {
+			factor = 2
+			ruling_party_ideology = house_of_finarfin
+		}
+	}
+	
+	galadhrim_nobles = {
+		factor = 1
+		# Must be active in the realm or active in the province the pop resides
+		modifier = {
+			factor = 0
+			NOT = { country = { has_country_flag = ideologies_galadhrim_nobles_active } }
+			NOT = { location = { state_scope = { any_owned_province = { any_core = { has_country_flag = ideologies_galadhrim_nobles_active } } } } }
+		}
+		modifier = {
+			factor = 2
+			is_culture_group = teleri
+		}
+		modifier = {
+			factor = 2
+			has_pop_culture = galadhrim
+		}
+		modifier = {
+			factor = 2
+			ruling_party_ideology = galadhrim_nobles
 		}
 	}
 }

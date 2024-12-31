@@ -29,6 +29,8 @@ political_decisions = {
 		
 		effect = {
 			# Setting flags for flavor
+			set_country_flag = GON_flavor
+			
 			add_country_modifier = {
 				name = low_military_recruitment
 				duration = -1
@@ -117,6 +119,9 @@ political_decisions = {
 			
 			# Setting up starting leaders
 			set_country_flag = ideologies_house_of_dol_amroth_active
+			
+			# Setting up leaders of integrated realms
+			EDH = { set_country_flag = ideologies_galadhrim_nobles_active }
 		}
 	}
 }

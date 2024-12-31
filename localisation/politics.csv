@@ -596,16 +596,27 @@ gondorian_nobles_uh;Gondorian Noble supporters will vote for all reforms while i
 line_of_isildur;Line of Isildur;x
 line_of_isildur_uh;Line of Isildur supporters will vote for all reforms while in power.;x
 arthedani_nobles;Arthedani Nobles;x
-arthedani_nobles_uh;Arthedani Nobles supporters will vote for all reforms while in power.;x
+arthedani_nobles_uh;Arthedani Noble supporters will vote for all reforms while in power.;x
 cardolandrim_nobles;Cardolandrim Nobles;x
-cardolandrim_nobles_uh;Cardolandrim Nobles supporters will vote for all reforms while in power.;x
+cardolandrim_nobles_uh;Cardolandrim Noble supporters will vote for all reforms while in power.;x
 haeranedain_nobles;Haeranedain Nobles;x
-haeranedain_nobles_uh;Haeranedain Nobles supporters will vote for all reforms while in power.;x
+haeranedain_nobles_uh;Haeranedain Noble supporters will vote for all reforms while in power.;x
 noldor_nobility;Ñoldor Nobility;x
 house_half_elven;House Half-Elven;x
 house_half_elven_uh;House Half-Elven supporters will vote for all reforms while in power.;x
 noldor_nobles;Ñoldor Nobles;x
-noldor_nobles_uh;Ñoldor Nobles supporters will vote for all reforms while in power.;x
+noldor_nobles_uh;Ñoldor Noble supporters will vote for all reforms while in power.;x
+teleri_nobility;Teleri Nobility;x
+falathrim_nobles;Falathrim Nobles;x
+falathrim_nobles_uh;Falathrim Noble supporters will vote for all reforms while in power.;x
+house_of_oropher;House of Oropher;x
+house_of_oropher_uh;House of Oropher supporters will vote for all reforms while in power.;x
+silvan_nobles;Silvan Nobles;x
+silvan_nobles_uh;Silvan Noble supporters will vote for all reforms while in power.;x
+house_of_finarfin;House of Finarfin;x
+house_of_finarfin_uh;House of Finarfin supporters will vote for all reforms while in power.;x
+galadhrim_nobles;Galadhrim Nobles;x
+galadhrim_nobles_uh;Galadhrim Noble supporters will vote for all reforms while in power.;x
 #########################;x }
 ##### ADVISORS TEXT #####;x {
 #########################;x
