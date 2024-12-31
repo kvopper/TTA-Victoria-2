@@ -12,7 +12,7 @@ oob = "WRM_oob.txt"
 prestige = 15
 
 ruling_party = WRM_thranduil
-decision = WRM_starting_decision
+decision = WRM_start_decision
 
 upper_house = {
 	house_of_oropher = 100

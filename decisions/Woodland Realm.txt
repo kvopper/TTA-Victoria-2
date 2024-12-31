@@ -4,7 +4,7 @@
 
 # Starting Decisions (Unseen)
 political_decisions = {
-	WRM_starting_decision = {
+	WRM_start_decision = {
 		potential = { always = no }
 		effect = {
 			# Allow access to WRM flavor

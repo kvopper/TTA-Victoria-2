@@ -12,7 +12,7 @@ oob = "LIN_oob.txt"
 prestige = 55
 
 ruling_party = LIN_cirdan
-decision = LIN_starting_decision
+decision = LIN_start_decision
 
 upper_house = {
 	falathrim_nobles = 100

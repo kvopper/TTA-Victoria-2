@@ -4,7 +4,7 @@
 
 # Starting Decisions (Unseen)
 political_decisions = {
-	LIN_starting_decision = {
+	LIN_start_decision = {
 		potential = { always = no }
 		effect = {
 			# Set allowed leaders
