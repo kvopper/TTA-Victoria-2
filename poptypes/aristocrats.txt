@@ -1261,6 +1261,292 @@ ideologies = {
 			ruling_party_ideology = avari_nobles
 		}
 	}
+	
+	umbarrim_nobles = {
+		factor = 1
+		# Must be active in the realm or active in the province the pop resides
+		modifier = {
+			factor = 0
+			NOT = { country = { has_country_flag = ideologies_umbarrim_nobles_active } }
+			NOT = { location = { state_scope = { any_owned_province = { any_core = { has_country_flag = ideologies_umbarrim_nobles_active } } } } }
+		}
+		modifier = {
+			factor = 2
+			has_pop_religion = men
+		}
+		modifier = {
+			factor = 2
+			is_culture_group = haradrim
+		}
+		modifier = {
+			factor = 2
+			has_pop_culture = umbarrim
+		}
+		modifier = {
+			factor = 2
+			ruling_party_ideology = umbarrim_nobles
+		}
+	}
+	
+	harnendan_nobles = {
+		factor = 1
+		# Must be active in the realm or active in the province the pop resides
+		modifier = {
+			factor = 0
+			NOT = { country = { has_country_flag = ideologies_harnendan_nobles_active } }
+			NOT = { location = { state_scope = { any_owned_province = { any_core = { has_country_flag = ideologies_harnendan_nobles_active } } } } }
+		}
+		modifier = {
+			factor = 2
+			has_pop_religion = men
+		}
+		modifier = {
+			factor = 2
+			is_culture_group = haradrim
+		}
+		modifier = {
+			factor = 2
+			has_pop_culture = harnendan
+		}
+		modifier = {
+			factor = 2
+			ruling_party_ideology = harnendan_nobles
+		}
+	}
+	
+	haruzani_nobles = {
+		factor = 1
+		# Must be active in the realm or active in the province the pop resides
+		modifier = {
+			factor = 0
+			NOT = { country = { has_country_flag = ideologies_haruzani_nobles_active } }
+			NOT = { location = { state_scope = { any_owned_province = { any_core = { has_country_flag = ideologies_haruzani_nobles_active } } } } }
+		}
+		modifier = {
+			factor = 2
+			has_pop_religion = men
+		}
+		modifier = {
+			factor = 2
+			is_culture_group = haradrim
+		}
+		modifier = {
+			factor = 2
+			has_pop_culture = haruzani
+		}
+		modifier = {
+			factor = 2
+			ruling_party_ideology = haruzani_nobles
+		}
+	}
+	
+	pezarsani_nobles = {
+		factor = 1
+		# Must be active in the realm or active in the province the pop resides
+		modifier = {
+			factor = 0
+			NOT = { country = { has_country_flag = ideologies_pezarsani_nobles_active } }
+			NOT = { location = { state_scope = { any_owned_province = { any_core = { has_country_flag = ideologies_pezarsani_nobles_active } } } } }
+		}
+		modifier = {
+			factor = 2
+			has_pop_religion = men
+		}
+		modifier = {
+			factor = 2
+			is_culture_group = haradrim
+		}
+		modifier = {
+			factor = 2
+			has_pop_culture = pezarsani
+		}
+		modifier = {
+			factor = 2
+			ruling_party_ideology = pezarsani_nobles
+		}
+	}
+	
+	lurmsakuni_nobles = {
+		factor = 1
+		# Must be active in the realm or active in the province the pop resides
+		modifier = {
+			factor = 0
+			NOT = { country = { has_country_flag = ideologies_lurmsakuni_nobles_active } }
+			NOT = { location = { state_scope = { any_owned_province = { any_core = { has_country_flag = ideologies_lurmsakuni_nobles_active } } } } }
+		}
+		modifier = {
+			factor = 2
+			has_pop_religion = men
+		}
+		modifier = {
+			factor = 2
+			is_culture_group = haradrim
+		}
+		modifier = {
+			factor = 2
+			has_pop_culture = lurmsakuni
+		}
+		modifier = {
+			factor = 2
+			ruling_party_ideology = lurmsakuni_nobles
+		}
+	}
+	
+	arysian_nobles = {
+		factor = 1
+		# Must be active in the realm or active in the province the pop resides
+		modifier = {
+			factor = 0
+			NOT = { country = { has_country_flag = ideologies_arysian_nobles_active } }
+			NOT = { location = { state_scope = { any_owned_province = { any_core = { has_country_flag = ideologies_arysian_nobles_active } } } } }
+		}
+		modifier = {
+			factor = 2
+			has_pop_religion = men
+		}
+		modifier = {
+			factor = 2
+			is_culture_group = haradrim
+		}
+		modifier = {
+			factor = 2
+			has_pop_culture = arysian
+		}
+		modifier = {
+			factor = 2
+			ruling_party_ideology = arysian_nobles
+		}
+	}
+	
+	kingsmen_nobles = {
+		factor = 1
+		# Must be active in the realm or active in the province the pop resides
+		modifier = {
+			factor = 0
+			NOT = { country = { has_country_flag = ideologies_kingsmen_nobles_active } }
+			NOT = { location = { state_scope = { any_owned_province = { any_core = { has_country_flag = ideologies_kingsmen_nobles_active } } } } }
+		}
+		modifier = {
+			factor = 2
+			has_pop_religion = men
+		}
+		modifier = {
+			factor = 2
+			is_culture_group = kingsmen
+		}
+		modifier = {
+			factor = 2
+			has_pop_culture = kingsmen
+		}
+		modifier = {
+			factor = 2
+			ruling_party_ideology = kingsmen_nobles
+		}
+	}
+	
+	black_numenorean_nobles = {
+		factor = 1
+		# Must be active in the realm or active in the province the pop resides
+		modifier = {
+			factor = 0
+			NOT = { country = { has_country_flag = ideologies_black_numenorean_nobles_active } }
+			NOT = { location = { state_scope = { any_owned_province = { any_core = { has_country_flag = ideologies_black_numenorean_nobles_active } } } } }
+		}
+		modifier = {
+			factor = 2
+			has_pop_religion = men
+		}
+		modifier = {
+			factor = 2
+			is_culture_group = kingsmen
+		}
+		modifier = {
+			factor = 2
+			has_pop_culture = black_numenorean
+		}
+		modifier = {
+			factor = 2
+			ruling_party_ideology = black_numenorean_nobles
+		}
+	}
+	
+	variag_nobles = {
+		factor = 1
+		# Must be active in the realm or active in the province the pop resides
+		modifier = {
+			factor = 0
+			NOT = { country = { has_country_flag = ideologies_variag_nobles_active } }
+			NOT = { location = { state_scope = { any_owned_province = { any_core = { has_country_flag = ideologies_variag_nobles_active } } } } }
+		}
+		modifier = {
+			factor = 2
+			has_pop_religion = men
+		}
+		modifier = {
+			factor = 2
+			is_culture_group = khandish
+		}
+		modifier = {
+			factor = 2
+			has_pop_culture = variag
+		}
+		modifier = {
+			factor = 2
+			ruling_party_ideology = variag_nobles
+		}
+	}
+	
+	nurniag_nobles = {
+		factor = 1
+		# Must be active in the realm or active in the province the pop resides
+		modifier = {
+			factor = 0
+			NOT = { country = { has_country_flag = ideologies_nurniag_nobles_active } }
+			NOT = { location = { state_scope = { any_owned_province = { any_core = { has_country_flag = ideologies_nurniag_nobles_active } } } } }
+		}
+		modifier = {
+			factor = 2
+			has_pop_religion = men
+		}
+		modifier = {
+			factor = 2
+			is_culture_group = khandish
+		}
+		modifier = {
+			factor = 2
+			has_pop_culture = nurniag
+		}
+		modifier = {
+			factor = 2
+			ruling_party_ideology = nurniag_nobles
+		}
+	}
+	
+	chelkiag_nobles = {
+		factor = 1
+		# Must be active in the realm or active in the province the pop resides
+		modifier = {
+			factor = 0
+			NOT = { country = { has_country_flag = ideologies_chelkiag_nobles_active } }
+			NOT = { location = { state_scope = { any_owned_province = { any_core = { has_country_flag = ideologies_chelkiag_nobles_active } } } } }
+		}
+		modifier = {
+			factor = 2
+			has_pop_religion = men
+		}
+		modifier = {
+			factor = 2
+			is_culture_group = khandish
+		}
+		modifier = {
+			factor = 2
+			has_pop_culture = chelkiag
+		}
+		modifier = {
+			factor = 2
+			ruling_party_ideology = chelkiag_nobles
+		}
+	}
 }
 
 issues = {

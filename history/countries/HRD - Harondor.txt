@@ -9,10 +9,10 @@ literacy = 0
 
 slavery = yes_slavery
 upper_house_composition = appointed
-ruling_party = HRD_nobles_of_harondor
+ruling_party = generic_harnendan_nobles
 
 upper_house = {
-	gondorian_nobles = 100
+	harnendan_nobles = 100
 }
 
 schools = traditional_academic

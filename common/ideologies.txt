@@ -560,3 +560,130 @@ avari_nobility ={
 		add_economic_reform = { base = 1 }
 	}
 }
+
+haradrim_nobility ={
+	umbarrim_nobles = {
+		color = { 66 2 2 }
+		
+		add_political_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = umbarrim_nobles } }
+		remove_political_reform = { base = 0 }
+		add_social_reform = { base = 1 }
+		remove_social_reform = { base = 0 }
+		add_military_reform = { base = 1 }
+		add_economic_reform = { base = 1 }
+	}
+	
+	harnendan_nobles = {
+		color = { 163 125 125 }
+		
+		add_political_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = harnendan_nobles } }
+		remove_political_reform = { base = 0 }
+		add_social_reform = { base = 1 }
+		remove_social_reform = { base = 0 }
+		add_military_reform = { base = 1 }
+		add_economic_reform = { base = 1 }
+	}
+	
+	haruzani_nobles = {
+		color = { 127 0 0 }
+		
+		add_political_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = haruzani_nobles } }
+		remove_political_reform = { base = 0 }
+		add_social_reform = { base = 1 }
+		remove_social_reform = { base = 0 }
+		add_military_reform = { base = 1 }
+		add_economic_reform = { base = 1 }
+	}
+	
+	pezarsani_nobles = {
+		color = { 127 15 0 }
+		
+		add_political_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = pezarsani_nobles } }
+		remove_political_reform = { base = 0 }
+		add_social_reform = { base = 1 }
+		remove_social_reform = { base = 0 }
+		add_military_reform = { base = 1 }
+		add_economic_reform = { base = 1 }
+	}
+	
+	lurmsakuni_nobles = {
+		color = { 127 40 0 }
+		
+		add_political_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = lurmsakuni_nobles } }
+		remove_political_reform = { base = 0 }
+		add_social_reform = { base = 1 }
+		remove_social_reform = { base = 0 }
+		add_military_reform = { base = 1 }
+		add_economic_reform = { base = 1 }
+	}
+	
+	arysian_nobles = {
+		color = { 192 40 0 }
+		
+		add_political_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = arysian_nobles } }
+		remove_political_reform = { base = 0 }
+		add_social_reform = { base = 1 }
+		remove_social_reform = { base = 0 }
+		add_military_reform = { base = 1 }
+		add_economic_reform = { base = 1 }
+	}
+}
+
+kingsmen_nobility = {
+	kingsmen_nobles = {
+		color = { 10 10 25 }
+		
+		add_political_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = kingsmen_nobles } }
+		remove_political_reform = { base = 0 }
+		add_social_reform = { base = 1 }
+		remove_social_reform = { base = 0 }
+		add_military_reform = { base = 1 }
+		add_economic_reform = { base = 1 }
+	}
+	
+	black_numenorean_nobles = {
+		color = { 5 5 5 }
+		
+		add_political_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = black_numenorean_nobles } }
+		remove_political_reform = { base = 0 }
+		add_social_reform = { base = 1 }
+		remove_social_reform = { base = 0 }
+		add_military_reform = { base = 1 }
+		add_economic_reform = { base = 1 }
+	}
+}
+
+khandish_nobility = {
+	variag_nobles = {
+		color = { 192 70 0 }
+		
+		add_political_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = variag_nobles } }
+		remove_political_reform = { base = 0 }
+		add_social_reform = { base = 1 }
+		remove_social_reform = { base = 0 }
+		add_military_reform = { base = 1 }
+		add_economic_reform = { base = 1 }
+	}
+	
+	nurniag_nobles = {
+		color = { 116 36 5 }
+		
+		add_political_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = nurniag_nobles } }
+		remove_political_reform = { base = 0 }
+		add_social_reform = { base = 1 }
+		remove_social_reform = { base = 0 }
+		add_military_reform = { base = 1 }
+		add_economic_reform = { base = 1 }
+	}
+	
+	chelkiag_nobles = {
+		color = { 140 70 0 }
+		
+		add_political_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = chelkiag_nobles } }
+		remove_political_reform = { base = 0 }
+		add_social_reform = { base = 1 }
+		remove_social_reform = { base = 0 }
+		add_military_reform = { base = 1 }
+		add_economic_reform = { base = 1 }
+	}
+}

@@ -3,14 +3,14 @@ color = { 135 100 100 }
 fiefdom = { 41 57 82 }
 
 party = {
-	name = "HRD_nobles_of_harondor"
+	name = "generic_harnendan_nobles"
 	start_date = 2954.1.1
 	end_date = 4000.1.1
 	
-	ideology = gondorian_nobles
+	ideology = harnendan_nobles
 	
 	trade_policy = protectionism
-	tax_policy = interventionism
+	tax_policy = state_capitalism
 	language_policy = regional_autonomy
 	diplomatic_policy = reactive
 	war_policy = jingoism

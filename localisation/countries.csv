@@ -45,15 +45,26 @@ cosmetic_2_govt_ruler;Cosmetic Government Ruler;x
 ##### POLITICAL PARTIES #####;x {
 #############################;x
 generic_arthedani_nobles;Arthedani Nobles;x
+generic_arysian_nobles;Arysian Nobles;x
 generic_avari_nobles;Avari Nobles;x
+generic_black_numenorean_nobles;Black Númenorean Nobles;x
 generic_cardolan_nobles;Cardolan Nobles;x
+generic_chelkiag_nobles;Chelkiag Nobles;x
 generic_galadhrim_nobles;Galadhrim Nobles;x
 generic_haeranedain_nobles;Haeranedain Nobles;x
+generic_harnendan_nobles;Harnendan Nobles;x
+generic_haruzani_nobles;Haruzani Nobles;x
+generic_kingsmen_nobles;Kingsmen Nobles;x
+generic_lurmsakuni_nobles;Lurmsakuni Nobles;x
 generic_noldor_nobles;Ñoldor Nobles;x
+generic_nurniag_nobles;Nurniag Nobles;x
+generic_pezarsani_nobles;Pezarsani Nobles;x
 generic_servants_good;Servants (Anti-Sauron);x
 generic_servants_neutral;Servants (Opportunistic);x
 generic_servants_evil;Servants (Sauronite);x
 generic_silvan_nobles;Silvan Nobles;x
+generic_umbarrim_nobles;Umbarrim Nobles;x
+generic_variag_nobles;Variag Nobles;x
 ADR_nobles_of_andrast;Nobles of Andrast;x
 AMR_angelimir;Angelimir I;x
 AMR_adrahil;Adrahil II;x
