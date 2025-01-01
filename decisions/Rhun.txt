@@ -8,6 +8,27 @@
 
 # Forming Rhun
 political_decisions = {
+	RHU_start_decision = {
+		potential = { always = no }
+		effect = {
+			# Setting up dynasties for easterling minors
+			SAG = { set_country_flag = ideologies_sagath_nobles_active }
+			SEK = { set_country_flag = ideologies_sekel_nobles_active }
+			URG = { set_country_flag = ideologies_urgath_nobles_active }
+			PRI = { set_country_flag = ideologies_urgath_nobles_active }
+			GAT = { set_country_flag = ideologies_urgath_nobles_active }
+			ELG = { set_country_flag = ideologies_urgath_nobles_active }
+			KUG = { set_country_flag = ideologies_kuga_nobles_active }
+			AGA = { set_country_flag = ideologies_kuga_nobles_active }
+			IBR = { set_country_flag = ideologies_kuga_nobles_active }
+			UTA = { set_country_flag = ideologies_logath_nobles_active }
+			NAR = { set_country_flag = ideologies_logath_nobles_active }
+			LGV = { set_country_flag = ideologies_logath_nobles_active }
+			GOR = { set_country_flag = ideologies_logath_nobles_active }
+			BRC = { set_country_flag = ideologies_logath_nobles_active }
+			AMO = { set_country_flag = ideologies_logath_nobles_active }
+		}
+	}
 	form_rhun = {
 		potential = {
 			is_culture_group = easterlings

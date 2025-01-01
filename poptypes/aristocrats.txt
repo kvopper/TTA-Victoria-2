@@ -1547,6 +1547,136 @@ ideologies = {
 			ruling_party_ideology = chelkiag_nobles
 		}
 	}
+	
+	sagath_nobles = {
+		factor = 1
+		# Must be active in the realm or active in the province the pop resides
+		modifier = {
+			factor = 0
+			NOT = { country = { has_country_flag = ideologies_sagath_nobles_active } }
+			NOT = { location = { state_scope = { any_owned_province = { any_core = { has_country_flag = ideologies_sagath_nobles_active } } } } }
+		}
+		modifier = {
+			factor = 2
+			has_pop_religion = men
+		}
+		modifier = {
+			factor = 2
+			is_culture_group = easterlings
+		}
+		modifier = {
+			factor = 2
+			has_pop_culture = sagath
+		}
+		modifier = {
+			factor = 2
+			ruling_party_ideology = sagath_nobles
+		}
+	}
+	
+	sekel_nobles = {
+		factor = 1
+		# Must be active in the realm or active in the province the pop resides
+		modifier = {
+			factor = 0
+			NOT = { country = { has_country_flag = ideologies_sekel_nobles_active } }
+			NOT = { location = { state_scope = { any_owned_province = { any_core = { has_country_flag = ideologies_sekel_nobles_active } } } } }
+		}
+		modifier = {
+			factor = 2
+			has_pop_religion = men
+		}
+		modifier = {
+			factor = 2
+			is_culture_group = easterlings
+		}
+		modifier = {
+			factor = 2
+			has_pop_culture = sekel
+		}
+		modifier = {
+			factor = 2
+			ruling_party_ideology = sekel_nobles
+		}
+	}
+	
+	urgath_nobles = {
+		factor = 1
+		# Must be active in the realm or active in the province the pop resides
+		modifier = {
+			factor = 0
+			NOT = { country = { has_country_flag = ideologies_urgath_nobles_active } }
+			NOT = { location = { state_scope = { any_owned_province = { any_core = { has_country_flag = ideologies_urgath_nobles_active } } } } }
+		}
+		modifier = {
+			factor = 2
+			has_pop_religion = men
+		}
+		modifier = {
+			factor = 2
+			is_culture_group = easterlings
+		}
+		modifier = {
+			factor = 2
+			has_pop_culture = urgath
+		}
+		modifier = {
+			factor = 2
+			ruling_party_ideology = urgath_nobles
+		}
+	}
+	
+	kuga_nobles = {
+		factor = 1
+		# Must be active in the realm or active in the province the pop resides
+		modifier = {
+			factor = 0
+			NOT = { country = { has_country_flag = ideologies_kuga_nobles_active } }
+			NOT = { location = { state_scope = { any_owned_province = { any_core = { has_country_flag = ideologies_kuga_nobles_active } } } } }
+		}
+		modifier = {
+			factor = 2
+			has_pop_religion = men
+		}
+		modifier = {
+			factor = 2
+			is_culture_group = easterlings
+		}
+		modifier = {
+			factor = 2
+			has_pop_culture = kuga
+		}
+		modifier = {
+			factor = 2
+			ruling_party_ideology = kuga_nobles
+		}
+	}
+	
+	logath_nobles = {
+		factor = 1
+		# Must be active in the realm or active in the province the pop resides
+		modifier = {
+			factor = 0
+			NOT = { country = { has_country_flag = ideologies_logath_nobles_active } }
+			NOT = { location = { state_scope = { any_owned_province = { any_core = { has_country_flag = ideologies_logath_nobles_active } } } } }
+		}
+		modifier = {
+			factor = 2
+			has_pop_religion = men
+		}
+		modifier = {
+			factor = 2
+			is_culture_group = easterlings
+		}
+		modifier = {
+			factor = 2
+			has_pop_culture = logath
+		}
+		modifier = {
+			factor = 2
+			ruling_party_ideology = logath_nobles
+		}
+	}
 }
 
 issues = {

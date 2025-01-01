@@ -687,3 +687,61 @@ khandish_nobility = {
 		add_economic_reform = { base = 1 }
 	}
 }
+
+easterling_nobility = {
+	sagath_nobles = {
+		color = { 180 100 33 }
+		
+		add_political_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = sagath_nobles } }
+		remove_political_reform = { base = 0 }
+		add_social_reform = { base = 1 }
+		remove_social_reform = { base = 0 }
+		add_military_reform = { base = 1 }
+		add_economic_reform = { base = 1 }
+	}
+	
+	sekel_nobles = {
+		color = { 220 80 33 }
+		
+		add_political_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = sekel_nobles } }
+		remove_political_reform = { base = 0 }
+		add_social_reform = { base = 1 }
+		remove_social_reform = { base = 0 }
+		add_military_reform = { base = 1 }
+		add_economic_reform = { base = 1 }
+	}
+	
+	urgath_nobles = {
+		color = { 200 150 32 }
+		
+		add_political_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = urgath_nobles } }
+		remove_political_reform = { base = 0 }
+		add_social_reform = { base = 1 }
+		remove_social_reform = { base = 0 }
+		add_military_reform = { base = 1 }
+		add_economic_reform = { base = 1 }
+	}
+	
+	
+	kuga_nobles = {
+		color = { 220 150 60 }
+		
+		add_political_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = kuga_nobles } }
+		remove_political_reform = { base = 0 }
+		add_social_reform = { base = 1 }
+		remove_social_reform = { base = 0 }
+		add_military_reform = { base = 1 }
+		add_economic_reform = { base = 1 }
+	}
+	
+	logath_nobles = {
+		color = { 220 150 100 }
+		
+		add_political_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = logath_nobles } }
+		remove_political_reform = { base = 0 }
+		add_social_reform = { base = 1 }
+		remove_social_reform = { base = 0 }
+		add_military_reform = { base = 1 }
+		add_economic_reform = { base = 1 }
+	}
+}

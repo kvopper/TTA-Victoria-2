@@ -55,15 +55,20 @@ generic_haeranedain_nobles;Haeranedain Nobles;x
 generic_harnendan_nobles;Harnendan Nobles;x
 generic_haruzani_nobles;Haruzani Nobles;x
 generic_kingsmen_nobles;Kingsmen Nobles;x
+generic_kuga_nobles;Kuga Nobles;x
+generic_logath_nobles;Logath Nobles;x
 generic_lurmsakuni_nobles;Lurmsakuni Nobles;x
 generic_noldor_nobles;Ñoldor Nobles;x
 generic_nurniag_nobles;Nurniag Nobles;x
 generic_pezarsani_nobles;Pezarsani Nobles;x
+generic_sagath_nobles;Sagath Nobles;x
+generic_sekel_nobles;Sekel Nobles;x
 generic_servants_good;Servants (Anti-Sauron);x
 generic_servants_neutral;Servants (Opportunistic);x
 generic_servants_evil;Servants (Sauronite);x
 generic_silvan_nobles;Silvan Nobles;x
 generic_umbarrim_nobles;Umbarrim Nobles;x
+generic_urgath_nobles;Urgath Nobles;x
 generic_variag_nobles;Variag Nobles;x
 ADR_nobles_of_andrast;Nobles of Andrast;x
 AMR_angelimir;Angelimir I;x
