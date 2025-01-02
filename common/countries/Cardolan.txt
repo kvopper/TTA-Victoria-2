@@ -2,7 +2,7 @@ graphical_culture = UsGC
 color = { 10 41 10 }
 
 party = {
-	name = "generic_cardolan_nobles"
+	name = "generic_cardolandrim_nobles"
 	start_date = 2954.1.1
 	end_date = 4000.1.1
 	

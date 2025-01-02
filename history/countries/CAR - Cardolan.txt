@@ -8,7 +8,7 @@ government = man_tribe
 nationalvalue = generic_leader
 literacy = 0
 
-ruling_party = generic_cardolan_nobles
+ruling_party = generic_cardolandrim_nobles
 
 upper_house = {
 	cardolandrim_nobles = 100

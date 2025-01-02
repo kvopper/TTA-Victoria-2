@@ -9,7 +9,7 @@ nationalvalue = aragorn
 literacy = 0.2
 civilized = yes
 
-ruling_party = generic_cardolan_nobles
+ruling_party = generic_cardolandrim_nobles
 
 oob = "THA_oob.txt"
 

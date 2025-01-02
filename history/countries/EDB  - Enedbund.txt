@@ -9,7 +9,7 @@ literacy = 0
 
 oob = "EDB_oob.txt"
 
-ruling_party = generic_cardolan_nobles
+ruling_party = generic_cardolandrim_nobles
 
 upper_house = {
 	cardolandrim_nobles = 100
