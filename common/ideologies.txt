@@ -71,6 +71,7 @@ vassal_group = {
 	}
 }
 
+# TODO: Remove
 nobility_group = {
 	# always opposes political reform. Always want to remove them
 	# normally opposes social reform, supports with high militancy. Always want to remove them
@@ -283,6 +284,7 @@ nobility_group = {
 	}
 }
 
+# TODO: Remove
 burgher_group = {
 	# normally opposes political reform, supports with high militancy. Never want to remove them
 	# always supports social reform. Never want to remove them.
@@ -362,6 +364,7 @@ burgher_group = {
 	}
 }
 
+# TODO: Remove
 loremaster_group = {
 	# always supports political reform. Never want to remove them.
 	# always supports social reform. Never want to remove them.
