@@ -2484,19 +2484,19 @@ categories = {
 		supply_limit = 5
 	}
 	
-	# woods
+	# woods - lothlorien
 	caras_galadhon = {
 		movement_cost = 1.2
 		
-		defence = 1
+		defence = 2
 		combat_width = -0.20
 		
 		color = { 91 123 10 }
 		
-		farm_rgo_size = -0.2
-		farm_rgo_eff = -0.2
-		mine_rgo_size = 0.2
-		mine_rgo_eff = 0.2
+		farm_rgo_size = -0.1
+		farm_rgo_eff = 0.75
+		mine_rgo_size = 0
+		mine_rgo_eff = 0
 		
 		supply_limit = 3
 	}
@@ -2612,7 +2612,7 @@ categories = {
 		min_build_railroad = 1
 	}
 	
-	# woods
+	# woods - lothlorien
 	lothlorien = {
 		movement_cost = 1.2
 		
