@@ -2495,8 +2495,8 @@ categories = {
 		
 		farm_rgo_size = -0.1
 		farm_rgo_eff = 0.75
-		mine_rgo_size = 0
-		mine_rgo_eff = 0
+		mine_rgo_size = -0.1
+		mine_rgo_eff = 0.75
 		
 		supply_limit = 3
 	}
@@ -2623,8 +2623,8 @@ categories = {
 		
 		farm_rgo_size = -0.1
 		farm_rgo_eff = 0.75
-		mine_rgo_size = 0
-		mine_rgo_eff = 0
+		mine_rgo_size = -0.1
+		mine_rgo_eff = 0.75
 		
 		supply_limit = 3
 	}
