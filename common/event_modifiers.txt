@@ -705,14 +705,14 @@ wet_season_modifier = {
 
 # }
 ##### WEATHER MODIFIERS ##### {
-# Provinder Modifier
+# Province Modifier
 sunny_modifier_4_season = {
 	farm_rgo_eff = 0.02
 	
 	icon = 37
 }
 
-# Provinder Modifier
+# Province Modifier
 sunny_modifier_desert = {
 	farm_rgo_eff = -0.02
 	
