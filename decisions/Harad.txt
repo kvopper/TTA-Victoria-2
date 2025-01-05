@@ -14,18 +14,6 @@ political_decisions = {
 	HAR_start_decision = {
 		potential = { always = no }
 		effect = {
-			# Setting up Haradrim minors
-			HRD = { set_country_flag = ideologies_harnendan_nobles_active }
-			HRN = { set_country_flag = ideologies_harnendan_nobles_active }
-			HRU = { set_country_flag = ideologies_haruzani_nobles_active }
-			PEZ = { set_country_flag = ideologies_pezarsani_nobles_active }
-			LUR = { set_country_flag = ideologies_lurmsakuni_nobles_active }
-			ARY = { set_country_flag = ideologies_arysian_nobles_active }
-			UMB = { set_country_flag = ideologies_black_numenorean_nobles_active }
-			ALA = { set_country_flag = ideologies_variag_nobles_active }
-			KHA = { set_country_flag = ideologies_variag_nobles_active }
-			NUR = { set_country_flag = ideologies_nurniag_nobles_active }
-			CHE = { set_country_flag = ideologies_chelkiag_nobles_active }
 		}
 	}
 	form_harad = {

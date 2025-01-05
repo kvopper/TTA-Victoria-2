@@ -10,7 +10,6 @@ political_decisions = {
 			
 			# Set allowed leaders
 			set_country_flag = ideologies_house_of_finarfin_active
-			set_country_flag = ideologies_galadhrim_nobles_active
 		}
 	}
 	

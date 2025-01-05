@@ -183,6 +183,454 @@ political_decisions = {
 				any_state = { is_slave = yes }
 			}
 			
+			# Ideologies (primary/accepted cultures -- specific houses will need to be manually assigned)
+			# In here as well as the monthly cleanup to ensure that the starting ideologies actually apply correctly {
+			any_country = {
+				limit = { OR = { primary_culture = dunedain accepted_culture = dunedain } }
+				set_country_flag = ideologies_dunedain_nobles_active
+			}
+
+			any_country = {
+				limit = { OR = { primary_culture = gondorian accepted_culture = gondorian } }
+				set_country_flag = ideologies_gondorian_nobles_active
+			}
+
+			any_country = {
+				limit = { OR = { primary_culture = amrothian accepted_culture = amrothian } }
+				set_country_flag = ideologies_amrothian_nobles_active
+			}
+
+			any_country = {
+				limit = { OR = { primary_culture = arthedani accepted_culture = arthedani } }
+				set_country_flag = ideologies_arthedani_nobles_active
+			}
+
+			any_country = {
+				limit = { OR = { primary_culture = cardolandrim accepted_culture = cardolandrim } }
+				set_country_flag = ideologies_cardolandrim_nobles_active
+			}
+
+			any_country = {
+				limit = { OR = { primary_culture = haeranedain accepted_culture = haeranedain } }
+				set_country_flag = ideologies_haeranedain_nobles_active
+			}
+
+			any_country = {
+				limit = { OR = { primary_culture = noldor accepted_culture = noldor } }
+				set_country_flag = ideologies_noldor_nobles_active
+			}
+
+			any_country = {
+				limit = { OR = { primary_culture = falathrim accepted_culture = falathrim } }
+				set_country_flag = ideologies_falathrim_nobles_active
+			}
+
+			any_country = {
+				limit = { OR = { primary_culture = silvan accepted_culture = silvan } }
+				set_country_flag = ideologies_silvan_nobles_active
+			}
+
+			any_country = {
+				limit = { OR = { primary_culture = galadhrim accepted_culture = galadhrim } }
+				set_country_flag = ideologies_galadhrim_nobles_active
+			}
+
+			any_country = {
+				limit = { OR = { primary_culture = avari accepted_culture = avari } }
+				set_country_flag = ideologies_avari_nobles_active
+			}
+
+			any_country = {
+				limit = { OR = { primary_culture = umbarrim accepted_culture = umbarrim } }
+				set_country_flag = ideologies_umbarrim_nobles_active
+			}
+
+			any_country = {
+				limit = { OR = { primary_culture = harnendan accepted_culture = harnendan } }
+				set_country_flag = ideologies_harnendan_nobles_active
+			}
+
+			any_country = {
+				limit = { OR = { primary_culture = haruzani accepted_culture = haruzani } }
+				set_country_flag = ideologies_haruzani_nobles_active
+			}
+
+			any_country = {
+				limit = { OR = { primary_culture = pezarsani accepted_culture = pezarsani } }
+				set_country_flag = ideologies_pezarsani_nobles_active
+			}
+
+			any_country = {
+				limit = { OR = { primary_culture = lurmsakuni accepted_culture = lurmsakuni } }
+				set_country_flag = ideologies_lurmsakuni_nobles_active
+			}
+
+			any_country = {
+				limit = { OR = { primary_culture = arysian accepted_culture = arysian } }
+				set_country_flag = ideologies_arysian_nobles_active
+			}
+
+			any_country = {
+				limit = { OR = { primary_culture = kingsmen accepted_culture = kingsmen } }
+				set_country_flag = ideologies_kingsmen_nobles_active
+			}
+
+			any_country = {
+				limit = { OR = { primary_culture = black_numenorean accepted_culture = black_numenorean } }
+				set_country_flag = ideologies_black_numenorean_nobles_active
+			}
+
+			any_country = {
+				limit = { OR = { primary_culture = variag accepted_culture = variag } }
+				set_country_flag = ideologies_variag_nobles_active
+			}
+
+			any_country = {
+				limit = { OR = { primary_culture = nurniag accepted_culture = nurniag } }
+				set_country_flag = ideologies_nurniag_nobles_active
+			}
+
+			any_country = {
+				limit = { OR = { primary_culture = chelkiag accepted_culture = chelkiag } }
+				set_country_flag = ideologies_chelkiag_nobles_active
+			}
+
+			any_country = {
+				limit = { OR = { primary_culture = sagath accepted_culture = sagath } }
+				set_country_flag = ideologies_sagath_nobles_active
+			}
+
+			any_country = {
+				limit = { OR = { primary_culture = sekel accepted_culture = sekel } }
+				set_country_flag = ideologies_sekel_nobles_active
+			}
+
+			any_country = {
+				limit = { OR = { primary_culture = urgath accepted_culture = urgath } }
+				set_country_flag = ideologies_urgath_nobles_active
+			}
+
+			any_country = {
+				limit = { OR = { primary_culture = kuga accepted_culture = kuga } }
+				set_country_flag = ideologies_kuga_nobles_active
+			}
+
+			any_country = {
+				limit = { OR = { primary_culture = logath accepted_culture = logath } }
+				set_country_flag = ideologies_logath_nobles_active
+			}
+
+			any_country = {
+				limit = { OR = { primary_culture = barding accepted_culture = barding } }
+				set_country_flag = ideologies_barding_nobles_active
+			}
+
+			any_country = {
+				limit = { OR = { primary_culture = grammas accepted_culture = grammas } }
+				set_country_flag = ideologies_grammas_nobles_active
+			}
+
+			any_country = {
+				limit = { OR = { primary_culture = rivermen accepted_culture = rivermen } }
+				set_country_flag = ideologies_rivermen_nobles_active
+			}
+
+			any_country = {
+				limit = { OR = { primary_culture = adhalling accepted_culture = adhalling } }
+				set_country_flag = ideologies_adhalling_nobles_active
+			}
+
+			any_country = {
+				limit = { OR = { primary_culture = dorwinrim accepted_culture = dorwinrim } }
+				set_country_flag = ideologies_dorwinrim_nobles_active
+			}
+
+			any_country = {
+				limit = { OR = { primary_culture = aivathiuda accepted_culture = aivathiuda } }
+				set_country_flag = ideologies_aivathiuda_nobles_active
+			}
+
+			any_country = {
+				limit = { OR = { primary_culture = anthar accepted_culture = anthar } }
+				set_country_flag = ideologies_anthar_nobles_active
+			}
+
+			any_country = {
+				limit = { OR = { primary_culture = gadraught accepted_culture = gadraught } }
+				set_country_flag = ideologies_gadraught_nobles_active
+			}
+
+			any_country = {
+				limit = { OR = { primary_culture = longbeard accepted_culture = longbeard } }
+				set_country_flag = ideologies_longbeard_nobles_active
+			}
+
+			any_country = {
+				limit = { OR = { primary_culture = firebeard accepted_culture = firebeard } }
+				set_country_flag = ideologies_firebeard_nobles_active
+			}
+
+			any_country = {
+				limit = { OR = { primary_culture = broadbeam accepted_culture = broadbeam } }
+				set_country_flag = ideologies_broadbeam_nobles_active
+			}
+
+			any_country = {
+				limit = { OR = { primary_culture = ironfist accepted_culture = ironfist } }
+				set_country_flag = ideologies_ironfist_nobles_active
+			}
+
+			any_country = {
+				limit = { OR = { primary_culture = dourhand accepted_culture = dourhand } }
+				set_country_flag = ideologies_dourhand_nobles_active
+			}
+
+			any_country = {
+				limit = { OR = { primary_culture = shornbeard accepted_culture = shornbeard } }
+				set_country_flag = ideologies_shornbeard_nobles_active
+			}
+
+			any_country = {
+				limit = { OR = { primary_culture = woodsmen accepted_culture = woodsmen } }
+				set_country_flag = ideologies_woodsmen_nobles_active
+			}
+
+			any_country = {
+				limit = { OR = { primary_culture = beorning accepted_culture = beorning } }
+				set_country_flag = ideologies_beorning_nobles_active
+			}
+
+			any_country = {
+				limit = { OR = { primary_culture = beiabarnae accepted_culture = beiabarnae } }
+				set_country_flag = ideologies_beiabarnae_nobles_active
+			}
+
+			any_country = {
+				limit = { OR = { primary_culture = melburgi accepted_culture = melburgi } }
+				set_country_flag = ideologies_melburgi_nobles_active
+			}
+
+			any_country = {
+				limit = { OR = { primary_culture = herimundi accepted_culture = herimundi } }
+				set_country_flag = ideologies_herimundi_nobles_active
+			}
+
+			any_country = {
+				limit = { OR = { primary_culture = ent accepted_culture = ent } }
+				set_country_flag = ideologies_ent_nobles_active
+			}
+
+			any_country = {
+				limit = { OR = { primary_culture = huorn accepted_culture = huorn } }
+				set_country_flag = ideologies_huorn_nobles_active
+			}
+
+			any_country = {
+				limit = { OR = { primary_culture = black_huorn accepted_culture = black_huorn } }
+				set_country_flag = ideologies_black_huorn_nobles_active
+			}
+
+			any_country = {
+				limit = { OR = { primary_culture = druedain accepted_culture = druedain } }
+				set_country_flag = ideologies_druedain_nobles_active
+			}
+
+			any_country = {
+				limit = { OR = { primary_culture = dunnish accepted_culture = dunnish } }
+				set_country_flag = ideologies_dunnish_nobles_active
+			}
+
+			any_country = {
+				limit = { OR = { primary_culture = hollin_folk accepted_culture = hollin_folk } }
+				set_country_flag = ideologies_hollin_folk_nobles_active
+			}
+
+			any_country = {
+				limit = { OR = { primary_culture = enedwaithrim accepted_culture = enedwaithrim } }
+				set_country_flag = ideologies_enedwaithrim_nobles_active
+			}
+
+			any_country = {
+				limit = { OR = { primary_culture = saerlanner accepted_culture = saerlanner } }
+				set_country_flag = ideologies_saerlanner_nobles_active
+			}
+
+			any_country = {
+				limit = { OR = { primary_culture = dunir accepted_culture = dunir } }
+				set_country_flag = ideologies_dunir_nobles_active
+			}
+
+			any_country = {
+				limit = { OR = { primary_culture = marshmen accepted_culture = marshmen } }
+				set_country_flag = ideologies_marshmen_nobles_active
+			}
+
+			any_country = {
+				limit = { OR = { primary_culture = rohirrim accepted_culture = rohirrim } }
+				set_country_flag = ideologies_rohirrim_nobles_active
+			}
+
+			any_country = {
+				limit = { OR = { primary_culture = anduinmen accepted_culture = anduinmen } }
+				set_country_flag = ideologies_anduinmen_nobles_active
+			}
+
+			any_country = {
+				limit = { OR = { primary_culture = isenmen accepted_culture = isenmen } }
+				set_country_flag = ideologies_isenmen_nobles_active
+			}
+
+			any_country = {
+				limit = { OR = { primary_culture = uruk_hai accepted_culture = uruk_hai } }
+				set_country_flag = ideologies_uruk_hai_nobles_active
+			}
+
+			any_country = {
+				limit = { OR = { primary_culture = mordor_orc accepted_culture = mordor_orc } }
+				set_country_flag = ideologies_mordor_orc_nobles_active
+			}
+
+			any_country = {
+				limit = { OR = { primary_culture = mordor_uruk accepted_culture = mordor_uruk } }
+				set_country_flag = ideologies_mordor_uruk_nobles_active
+			}
+
+			any_country = {
+				limit = { OR = { primary_culture = guldurrim accepted_culture = guldurrim } }
+				set_country_flag = ideologies_guldurrim_nobles_active
+			}
+
+			any_country = {
+				limit = { OR = { primary_culture = white_mountain_goblin accepted_culture = white_mountain_goblin } }
+				set_country_flag = ideologies_white_mountain_goblin_nobles_active
+			}
+
+			any_country = {
+				limit = { OR = { primary_culture = morian accepted_culture = morian } }
+				set_country_flag = ideologies_morian_nobles_active
+			}
+
+			any_country = {
+				limit = { OR = { primary_culture = goblin_towner accepted_culture = goblin_towner } }
+				set_country_flag = ideologies_goblin_towner_nobles_active
+			}
+
+			any_country = {
+				limit = { OR = { primary_culture = gundabad_orc accepted_culture = gundabad_orc } }
+				set_country_flag = ideologies_gundabad_orc_nobles_active
+			}
+
+			any_country = {
+				limit = { OR = { primary_culture = snow_orc accepted_culture = snow_orc } }
+				set_country_flag = ideologies_snow_orc_nobles_active
+			}
+
+			any_country = {
+				limit = { OR = { primary_culture = gram_goblin accepted_culture = gram_goblin } }
+				set_country_flag = ideologies_gram_goblin_nobles_active
+			}
+
+			any_country = {
+				limit = { OR = { primary_culture = blue_mountain_goblin accepted_culture = blue_mountain_goblin } }
+				set_country_flag = ideologies_blue_mountain_goblin_nobles_active
+			}
+
+			any_country = {
+				limit = { OR = { primary_culture = angmarrim accepted_culture = angmarrim } }
+				set_country_flag = ideologies_angmarrim_nobles_active
+			}
+
+			any_country = {
+				limit = { OR = { primary_culture = hillmen accepted_culture = hillmen } }
+				set_country_flag = ideologies_hillmen_nobles_active
+			}
+
+			any_country = {
+				limit = { OR = { primary_culture = lossoth accepted_culture = lossoth } }
+				set_country_flag = ideologies_lossoth_nobles_active
+			}
+
+			any_country = {
+				limit = { OR = { primary_culture = breelander accepted_culture = breelander } }
+				set_country_flag = ideologies_breelander_nobles_active
+			}
+
+			any_country = {
+				limit = { OR = { primary_culture = siredain accepted_culture = siredain } }
+				set_country_flag = ideologies_siredain_nobles_active
+			}
+
+			any_country = {
+				limit = { OR = { primary_culture = stoor accepted_culture = stoor } }
+				set_country_flag = ideologies_stoor_nobles_active
+			}
+
+			any_country = {
+				limit = { OR = { primary_culture = harfoot accepted_culture = harfoot } }
+				set_country_flag = ideologies_harfoot_nobles_active
+			}
+
+			any_country = {
+				limit = { OR = { primary_culture = fallohide accepted_culture = fallohide } }
+				set_country_flag = ideologies_fallohide_nobles_active
+			}
+
+			any_country = {
+				limit = { OR = { primary_culture = cave_trolls accepted_culture = cave_trolls } }
+				set_country_flag = ideologies_cave_trolls_nobles_active
+			}
+
+			any_country = {
+				limit = { OR = { primary_culture = hill_trolls accepted_culture = hill_trolls } }
+				set_country_flag = ideologies_hill_trolls_nobles_active
+			}
+
+			any_country = {
+				limit = { OR = { primary_culture = mountain_trolls accepted_culture = mountain_trolls } }
+				set_country_flag = ideologies_mountain_trolls_nobles_active
+			}
+
+			any_country = {
+				limit = { OR = { primary_culture = snow_trolls accepted_culture = snow_trolls } }
+				set_country_flag = ideologies_snow_trolls_nobles_active
+			}
+
+			any_country = {
+				limit = { OR = { primary_culture = stone_trolls accepted_culture = stone_trolls } }
+				set_country_flag = ideologies_stone_trolls_nobles_active
+			}
+
+			any_country = {
+				limit = { OR = { primary_culture = olog_hai accepted_culture = olog_hai } }
+				set_country_flag = ideologies_olog_hai_nobles_active
+			}
+
+			any_country = {
+				limit = { OR = { primary_culture = great_eagle accepted_culture = great_eagle } }
+				set_country_flag = ideologies_great_eagle_nobles_active
+			}
+
+			any_country = {
+				limit = { OR = { primary_culture = raven accepted_culture = raven } }
+				set_country_flag = ideologies_raven_nobles_active
+			}
+
+			any_country = {
+				limit = { OR = { primary_culture = great_spider accepted_culture = great_spider } }
+				set_country_flag = ideologies_great_spider_nobles_active
+			}
+
+			any_country = {
+				limit = { OR = { primary_culture = wight accepted_culture = wight } }
+				set_country_flag = ideologies_wight_nobles_active
+			}
+
+			any_country = {
+				limit = { OR = { primary_culture = oathbreaker accepted_culture = oathbreaker } }
+				set_country_flag = ideologies_oathbreaker_nobles_active
+			}
+			# }
+			
 			# Start Monthly Generic Cleanup Event
 			country_event = 99000
 			
