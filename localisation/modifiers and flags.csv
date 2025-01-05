@@ -208,14 +208,18 @@ awaiting_economic_direction;Awaiting Economic Direction;x
 #############################;x
 summer_modifier_north;Summer;x
 summer_modifier_south;Summer;x
+summer_modifier_mordor;Summer;x
 autumn_modifier_north;Autumn;x
 autumn_modifier_rhun;Autumn;x
 autumn_modifier_south;Autumn;x
+autumn_modifier_mordor;Autumn;x
 winter_modifier_north;Winter;x
 winter_modifier_south;Winter;x
+winter_modifier_mordor;Winter;x
 spring_modifier_north;Spring;x
 spring_modifier_rhun;Spring;x
 spring_modifier_south;Spring;x
+spring_modifier_mordor;Spring;x
 dry_season_modifier;Dry Season;x
 wet_season_modifier;Wet Season;x
 #############################;x }
@@ -224,6 +228,7 @@ wet_season_modifier;Wet Season;x
 sunny_modifier_4_season;Sunny;x
 sunny_modifier_desert;Sunny;x
 cloudy_modifier;Cloudy;x
+ash_cloudy_modifier;Ash Cloudy;x
 rainy_modifier_4_season;Rainy;x
 rainy_modifier_desert;Rainy;x
 snowy_modifier;Snowy;x

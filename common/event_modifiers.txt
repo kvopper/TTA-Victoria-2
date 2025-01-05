@@ -619,6 +619,16 @@ summer_modifier_south = {
 }
 
 # Province Modifier
+summer_modifier_mordor = {
+	farm_rgo_eff = 0.1
+	pop_militancy_modifier = -0.01
+	pop_consciousness_modifier = -0.01
+	max_attrition = -5
+	
+	icon = 37
+}
+
+# Province Modifier
 autumn_modifier_north = {
 	farm_rgo_eff = 0.05
 	
@@ -635,6 +645,14 @@ autumn_modifier_rhun = {
 
 # Province Modifier
 autumn_modifier_south = {
+	farm_rgo_eff = 0.1
+	max_attrition = -3
+	
+	icon = 38
+}
+
+# Province Modifier
+autumn_modifier_mordor = {
 	farm_rgo_eff = 0.1
 	max_attrition = -3
 	
@@ -663,6 +681,16 @@ winter_modifier_south = {
 }
 
 # Province Modifier
+winter_modifier_mordor = {
+	pop_militancy_modifier = 0.01
+	pop_consciousness_modifier = 0.01
+	movement_cost = 0.1
+	max_attrition = 5
+	
+	icon = 39
+}
+
+# Province Modifier
 spring_modifier_north = {
 	movement_cost = 0.05
 	
@@ -678,6 +706,15 @@ spring_modifier_rhun = {
 
 # Province Modifier
 spring_modifier_south = {
+	farm_rgo_eff = 0.05
+	movement_cost = 0.05
+	max_attrition = -3
+	
+	icon = 40
+}
+
+# Province Modifier
+spring_modifier_mordor = {
 	farm_rgo_eff = 0.05
 	movement_cost = 0.05
 	max_attrition = -3
@@ -724,6 +761,13 @@ cloudy_modifier = {
 	# Purposefully no effects
 	
 	icon = 41
+}
+
+# Province Modifier
+ash_cloudy_modifier = {
+	movement_cost = 0.05
+	
+	icon = 59
 }
 
 # Province Modifier
