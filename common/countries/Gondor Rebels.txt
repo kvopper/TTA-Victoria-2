@@ -2,6 +2,21 @@ graphical_culture = UsGC
 color = { 0 51 124 }
 
 party = {
+	name = "GON_aragorn_elessar"
+	start_date = 2954.1.1
+	end_date = 4000.1.1
+	
+	ideology = line_of_isildur
+	
+	trade_policy = protectionism
+	tax_policy = state_capitalism
+	language_policy = regional_autonomy
+	diplomatic_policy = reactive
+	war_policy = jingoism
+	good_evil_alignment = good_alignment
+}
+
+party = {
 	name = "GON_ecthelion_ii"
 	start_date = 2954.1.1
 	end_date = 2984.1.1
@@ -32,6 +47,21 @@ party = {
 }
 
 party = {
+	name = "generic_dunedain_nobles"
+	start_date = 2954.1.1
+	end_date = 2984.1.1
+	
+	ideology = dunedain_nobles
+	
+	trade_policy = protectionism
+	tax_policy = interventionism
+	language_policy = regional_autonomy
+	diplomatic_policy = reactive
+	war_policy = jingoism
+	good_evil_alignment = good_alignment
+}
+
+party = {
 	name = "GON_council_of_gondor"
 	start_date = 2954.1.1
 	end_date = 4000.1.1
@@ -47,14 +77,14 @@ party = {
 }
 
 party = {
-	name = "GON_aragorn_elessar"
+	name = "generic_amrothian_nobles"
 	start_date = 2954.1.1
-	end_date = 4000.1.1
+	end_date = 2984.1.1
 	
-	ideology = line_of_isildur
+	ideology = amrothian_nobles
 	
 	trade_policy = protectionism
-	tax_policy = state_capitalism
+	tax_policy = interventionism
 	language_policy = regional_autonomy
 	diplomatic_policy = reactive
 	war_policy = jingoism

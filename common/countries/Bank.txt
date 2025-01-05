@@ -45,3 +45,9 @@ party = {
 	war_policy = pro_military
 	good_evil_alignment = evil_alignment
 }
+
+unit_names = {
+	#example = {
+	#	name "multi word name"
+	#}
+}

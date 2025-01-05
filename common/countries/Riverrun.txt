@@ -2,6 +2,36 @@ graphical_culture = UsGC
 color = { 100 129 255 }
 
 party = {
+	name = "generic_rivermen_nobles"
+	start_date = 2954.1.1
+	end_date = 2984.1.1
+	
+	ideology = rivermen_nobles
+	
+	trade_policy = protectionism
+	tax_policy = interventionism
+	language_policy = regional_autonomy
+	diplomatic_policy = reactive
+	war_policy = jingoism
+	good_evil_alignment = good_alignment
+}
+
+party = {
+	name = "generic_barding_nobles"
+	start_date = 2954.1.1
+	end_date = 2984.1.1
+	
+	ideology = barding_nobles
+	
+	trade_policy = protectionism
+	tax_policy = interventionism
+	language_policy = regional_autonomy
+	diplomatic_policy = reactive
+	war_policy = jingoism
+	good_evil_alignment = good_alignment
+}
+
+party = {
 	name = "generic_servants_good"
 	start_date = 2954.1.1
 	end_date = 4000.1.1
