@@ -16,13 +16,10 @@ decision = isengard_start_decision
 
 oob = "ISE_oob.txt"
 
-ruling_party = generic_high_nobility
+ruling_party = generic_gondorian_nobles
 
 upper_house = {
-	high_nobility = 60
-	low_nobility = 29
-	burgher = 6
-	loremaster = 5
+	gondorian_nobles = 100
 }
 
 slavery = no_slavery

@@ -8,10 +8,10 @@ nationalvalue = king_of_the_dead
 literacy = 0
 civilized = yes
 
-ruling_party = generic_high_nobility
+ruling_party = generic_oathbreaker_nobles
 
 upper_house = {
-	high_nobility = 100
+	oathbreaker_nobles = 100
 }
 
 upper_house_composition = appointed

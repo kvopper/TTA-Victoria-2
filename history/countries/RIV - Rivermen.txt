@@ -10,10 +10,10 @@ civilized = yes
 
 prestige = 10
 
-ruling_party = rivermen_high_nobility
+ruling_party = generic_rivermen_nobles
 
 upper_house = {
-	high_nobility = 100
+	rivermen_nobles = 100
 }
 
 govt_flag = { government = sauron_puppet flag = cosmetic_1_govt }

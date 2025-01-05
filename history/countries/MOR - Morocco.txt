@@ -18,9 +18,10 @@ decision = mordor_start_decision
 oob = "MOR_oob.txt"
 
 upper_house = {
+	mordor_orc_nobles = 100
 }
 
-ruling_party = generic_servants
+ruling_party = generic_mordor_orc_nobles
 
 slavery = yes_slavery
 upper_house_composition = party_appointed

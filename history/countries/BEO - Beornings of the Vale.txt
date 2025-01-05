@@ -12,10 +12,10 @@ oob = "BEO_oob.txt"
 
 prestige = 5
 
-ruling_party = generic_high_nobility
+ruling_party = generic_beiabarnae_nobles
 
 upper_house = {
-	high_nobility = 100
+	beiabarnae_nobles = 100
 }
 
 slavery = no_slavery

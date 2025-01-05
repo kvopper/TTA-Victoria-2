@@ -7,9 +7,10 @@ government = man_tribe
 nationalvalue = generic_leader
 literacy = 0
 
-ruling_party = generic_servants
+ruling_party = generic_servants_neutral
 
 upper_house = {
+	servants_neutral = 100
 }
 
 decision = FOR_start_decision

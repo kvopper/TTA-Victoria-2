@@ -14,13 +14,10 @@ oob = "DAL_oob.txt"
 
 prestige = 10
 
-ruling_party = DAL_burgher
+ruling_party = generic_barding_nobles
 
 upper_house = {
-	high_nobility = 22
-	low_nobility = 30
-	burgher = 40
-	loremaster = 8
+	barding_nobles = 100
 }
 
 govt_flag = { government = sauron_puppet flag = cosmetic_1_govt }

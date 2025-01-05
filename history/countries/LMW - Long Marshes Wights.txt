@@ -7,10 +7,10 @@ government = dark_realm
 nationalvalue = generic_leader
 literacy = 0
 
-ruling_party = generic_high_nobility
+ruling_party = generic_wight_nobles
 
 upper_house = {
-	high_nobility = 100
+	wight_nobles = 100
 }
 
 upper_house_composition = appointed

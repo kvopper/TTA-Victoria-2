@@ -7,10 +7,10 @@ government = man_tribe
 nationalvalue = generic_leader
 literacy = 0
 
-ruling_party = generic_high_nobility
+ruling_party = generic_dunir_nobles
 
 upper_house = {
-	high_nobility = 100
+	dunir_nobles = 100
 }
 
 slavery = no_slavery
