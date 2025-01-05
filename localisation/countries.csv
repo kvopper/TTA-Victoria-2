@@ -74,7 +74,7 @@ generic_sekel_nobles;Sekel Nobles;x
 generic_urgath_nobles;Urgath Nobles;x
 generic_kuga_nobles;Kuga Nobles;x
 generic_logath_nobles;Logath Nobles;x
-generic_barding_nobles;Barding Nobles;x
+generic_barding_nobles;Lakemen Nobles;x
 generic_grammas_nobles;Grammas Nobles;x
 generic_rivermen_nobles;Rivermen Nobles;x
 generic_adhalling_nobles;Adhalling Nobles;x
@@ -143,8 +143,18 @@ AMR_imrahil;Imrahil I;x
 ANF_gundor;Gundor, Lord of Anfalas;x
 ANF_golasgil;Golasgil, Lord of Anfalas;x
 ANO_nobles_of_anorien;Nobles of Anórien;x
+BEO_beorn;Beorn;x
+DAL_bain_i;Bain I;x
+DAL_bard_i;Bard I;x
+DAL_bard_ii;Bard II;x
+DAL_brand_i;Brand I;x
 DND_halbarad;Halbarad;x
+DOR_hegon;Hegon I;x
+EAG_gwaihir;Gwaihír;x
+ERE_dain_ii;Dain II;x
+FAN_treebeard;Treebeard;x
 IML_elrond;Elrond;x
+ISE_saruman;Saruman the White;x
 LIN_cirdan;Círdan the Shipwright;x
 LOR_galadriel_n_celeborn;Galadriel and Celeborn;x
 LOS_farlang;Farlang, Lord of Lossarnach;x
@@ -153,6 +163,7 @@ GON_ecthelion_ii;Ecthelion II;x
 GON_denethor_ii;Denethor II;x
 GON_council_of_gondor;Council of Gondor;x
 GON_aragorn_elessar;Aragorn II Elessar;x
+GUL_khamul;Khamûl the Easterling;x
 HRD_nobles_of_harondor;Nobles of Harondor;x
 ITH_nobles_of_ithilien;Nobles of Ithilien;x
 LAM_asgon;Asgon, Lord of Lamedon;x
@@ -160,6 +171,12 @@ LAM_angbor;Angbar, Lord of Lamedon;x
 LEB_orodreth;Orodreth, Lord of Lebennin;x
 MRN_borhador;Borhador, Lord of the Blackroot Vale;x
 MRN_duinhir;Duinhir, Lord of the Blackroot Vale;x
+OBS_king_of_the_dead;King of the Dead;x
+RAD_radagast;Radagast the Brown;x
+RAV_roac;Roäc;x
+ROH_thengel;Thengel;x
+MOR_sauron;Dark Lord Sauron the Great;x
+SHE_shelob;Shelob;x
 TOL_nobles_of_tolfalas;Nobles of Tolfalas;x
 WRM_thranduil;Thranduil;x
 #####################;x }

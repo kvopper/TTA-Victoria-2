@@ -8,13 +8,15 @@ nationalvalue = roac
 literacy = 0
 civilized = yes
 
-ruling_party = generic_raven_nobles
+ruling_party = RAV_roac
 
 upper_house = {
-	raven_nobles = 100
+	lords_of_ravens = 100
 }
 penal_reform = hard_labor
 slavery = no_slavery
 upper_house_composition = appointed
+
+decision = RAV_start_decision
 
 schools = traditional_academic

@@ -15,10 +15,10 @@ oob = "GUL_oob.txt"
 prestige = 10
 
 upper_house = {
-	guldurrim_nobles = 100
+	saurons_nine = 100
 }
 
-ruling_party = generic_guldurrim_nobles
+ruling_party = GUL_khamul
 
 slavery = yes_slavery
 upper_house_composition = appointed

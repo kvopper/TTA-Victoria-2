@@ -12,11 +12,14 @@ oob = "FAN_oob.txt"
 
 prestige = 5
 
-ruling_party = generic_ent_nobles
+ruling_party = FAN_treebeard
 
 upper_house = {
-	ent_nobles = 100
+	lords_of_fangorn = 100
 }
+
+decision = FAN_start_decision
+
 penal_reform = hard_labor
 slavery = no_slavery
 serfdom = banned_serfdom

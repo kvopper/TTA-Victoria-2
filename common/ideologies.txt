@@ -5,10 +5,11 @@
 # Change as needed to get the right "coalitions" for republics (speciifally related to how votes for ideologies of the same ideology_group can combine to become the plurality)
 
 # Note, when adding new ideologies (barring special cases like slave or tribal, the following updates are needed (outside of this file)
+#	Generally speaking, colors are either the color of the associated culture (for the generic nobles), or the color or the associated tag
 #	Update localisation/modifiers and flavs.csv to define the ideologies_[ideology name]_active flag
 #	Update localisation/politics.csv with the ideology and the _uh
 #	Update each of the pops that can support the ideology in the poptypes folder
-#	Update the country definitions (coommon/countries folder) to define the parties as needed
+#	Update the country definitions (common/countries folder) to define the parties as needed
 #	Update the country history files (history/countries) as needed to get the right ruling party, starting upper house and starting decision
 #	Update starting decisions (or whatever flavor unlocks the ideology) to set the ideologies_[ideology name]_active on the tags in question
 
@@ -517,6 +518,17 @@ noldor_nobility = {
 }
 
 teleri_nobility = {
+	lords_of_mithlond = {
+		color = { 54 17 89 }
+		
+		add_political_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = lords_of_mithlond } }
+		remove_political_reform = { base = 0 }
+		add_social_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = lords_of_mithlond } }
+		remove_social_reform = { base = 0 }
+		add_military_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = lords_of_mithlond } }
+		add_economic_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = lords_of_mithlond } }
+	}
+	
 	falathrim_nobles = {
 		color = { 60 20 100 }
 		
@@ -771,6 +783,17 @@ easterlings_nobility = {
 }
 
 gramavuld_northmen_nobility = {
+	house_of_bard = {
+		color = { 100 149 237 }
+		
+		add_political_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = house_of_bard } }
+		remove_political_reform = { base = 0 }
+		add_social_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = house_of_bard } }
+		remove_social_reform = { base = 0 }
+		add_military_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = house_of_bard } }
+		add_economic_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = house_of_bard } }
+	}
+	
 	barding_nobles = {
 		color = { 90 135 215 }
 		
@@ -817,6 +840,17 @@ gramavuld_northmen_nobility = {
 }
 
 northmen_nobility = {
+	house_of_koldana = {
+		color = { 128 0 128 }
+		
+		add_political_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = house_of_koldana } }
+		remove_political_reform = { base = 0 }
+		add_social_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = house_of_koldana } }
+		remove_social_reform = { base = 0 }
+		add_military_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = house_of_koldana } }
+		add_economic_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = house_of_koldana } }
+	}
+	
 	dorwinrim_nobles = {
 		color = { 110 0 110 }
 		
@@ -863,6 +897,17 @@ northmen_nobility = {
 }
 
 dwarves_nobility = {
+	line_of_durin = {
+		color = { 25 25 112 }
+		
+		add_political_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = line_of_durin } }
+		remove_political_reform = { base = 0 }
+		add_social_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = line_of_durin } }
+		remove_social_reform = { base = 0 }
+		add_military_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = line_of_durin } }
+		add_economic_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = line_of_durin } }
+	}
+	
 	longbeard_nobles = {
 		color = { 20 20 90 }
 		
@@ -955,6 +1000,17 @@ anduinrim_nobility = {
 		add_economic_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = beorning_nobles } }
 	}
 	
+	house_of_beorn = {
+		color = { 149 63 53 }
+		
+		add_political_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = house_of_beorn } }
+		remove_political_reform = { base = 0 }
+		add_social_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = house_of_beorn } }
+		remove_social_reform = { base = 0 }
+		add_military_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = house_of_beorn } }
+		add_economic_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = house_of_beorn } }
+	}
+	
 	beiabarnae_nobles = {
 		color = { 170 80 65 }
 		
@@ -990,6 +1046,17 @@ anduinrim_nobility = {
 }
 
 ents_nobility = {
+	lords_of_fangorn = {
+		color = { 0 75 0 }
+		
+		add_political_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = lords_of_fangorn } }
+		remove_political_reform = { base = 0 }
+		add_social_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = lords_of_fangorn } }
+		remove_social_reform = { base = 0 }
+		add_military_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = lords_of_fangorn } }
+		add_economic_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = lords_of_fangorn } }
+	}
+	
 	ent_nobles = {
 		color = { 0 50 0 }
 		
@@ -1104,6 +1171,17 @@ wildmen_nobility = {
 }
 
 rohirrim_nobility = {
+	house_of_eorl = {
+		color = { 90 110 30 }
+		
+		add_political_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = house_of_eorl } }
+		remove_political_reform = { base = 0 }
+		add_social_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = house_of_eorl } }
+		remove_social_reform = { base = 0 }
+		add_military_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = house_of_eorl } }
+		add_economic_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = house_of_eorl } }
+	}
+	
 	rohirrim_nobles = {
 		color = { 75 93 22 }
 		
@@ -1430,6 +1508,17 @@ trolls_nobility = {
 }
 
 eagles_nobility = {
+	flightlords_of_the_mountains = {
+		color = { 20 130 230 }
+		
+		add_political_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = flightlord_of_the_mountains } }
+		remove_political_reform = { base = 0 }
+		add_social_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = flightlord_of_the_mountains } }
+		remove_social_reform = { base = 0 }
+		add_military_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = flightlord_of_the_mountains } }
+		add_economic_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = flightlord_of_the_mountains } }
+	}
+	
 	great_eagle_nobles = {
 		color = { 19 137 226 }
 		
@@ -1439,6 +1528,17 @@ eagles_nobility = {
 		remove_social_reform = { base = 0 }
 		add_military_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = great_eagle_nobles } }
 		add_economic_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = great_eagle_nobles } }
+	}
+	
+	lords_of_ravens = {
+		color = { 20 40 180 }
+		
+		add_political_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = lords_of_ravens } }
+		remove_political_reform = { base = 0 }
+		add_social_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = lords_of_ravens } }
+		remove_social_reform = { base = 0 }
+		add_military_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = lords_of_ravens } }
+		add_economic_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = lords_of_ravens } }
 	}
 	
 	raven_nobles = {
@@ -1454,6 +1554,17 @@ eagles_nobility = {
 }
 
 spiders_nobility = {
+	great_brood_mothers = {
+		color = { 116 5 5 }
+		
+		add_political_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = great_brood_mothers } }
+		remove_political_reform = { base = 0 }
+		add_social_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = great_brood_mothers } }
+		remove_social_reform = { base = 0 }
+		add_military_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = great_brood_mothers } }
+		add_economic_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = great_brood_mothers } }
+	}
+	
 	great_spider_nobles = {
 		color = { 46 2 2 }
 		
@@ -1478,6 +1589,17 @@ undead_nobility = {
 		add_economic_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = wight_nobles } }
 	}
 	
+	kings_of_the_dead = {
+		color = { 20 45 15 }
+		
+		add_political_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = kings_of_the_dead } }
+		remove_political_reform = { base = 0 }
+		add_social_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = kings_of_the_dead } }
+		remove_social_reform = { base = 0 }
+		add_military_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = kings_of_the_dead } }
+		add_economic_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = kings_of_the_dead } }
+	}
+	
 	oathbreaker_nobles = {
 		color = { 15 30 11 }
 		
@@ -1487,5 +1609,51 @@ undead_nobility = {
 		remove_social_reform = { base = 0 }
 		add_military_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = oathbreaker_nobles } }
 		add_economic_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = oathbreaker_nobles } }
+	}
+}
+
+immortal_beings = {
+	lords_of_isengard = {
+		color = { 32 32 32 }
+		
+		add_political_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = lords_of_isengard } }
+		remove_political_reform = { base = 0 }
+		add_social_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = lords_of_isengard } }
+		remove_social_reform = { base = 0 }
+		add_military_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = lords_of_isengard } }
+		add_economic_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = lords_of_isengard } }
+	}
+	
+	lords_of_rhosgobel = {
+		color = { 86 46 19 }
+		
+		add_political_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = lords_of_rhosgobel } }
+		remove_political_reform = { base = 0 }
+		add_social_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = lords_of_rhosgobel } }
+		remove_social_reform = { base = 0 }
+		add_military_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = lords_of_rhosgobel } }
+		add_economic_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = lords_of_rhosgobel } }
+	}
+	
+	lords_of_mordor = {
+		color = { 110 10 30 }
+		
+		add_political_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = lords_of_mordor } }
+		remove_political_reform = { base = 0 }
+		add_social_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = lords_of_mordor } }
+		remove_social_reform = { base = 0 }
+		add_military_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = lords_of_mordor } }
+		add_economic_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = lords_of_mordor } }
+	}
+	
+	saurons_nine = {
+		color = { 38 24 24 }
+		
+		add_political_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = saurons_nine } }
+		remove_political_reform = { base = 0 }
+		add_social_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = saurons_nine } }
+		remove_social_reform = { base = 0 }
+		add_military_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = saurons_nine } }
+		add_economic_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = saurons_nine } }
 	}
 }

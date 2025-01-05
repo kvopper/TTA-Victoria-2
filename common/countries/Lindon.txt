@@ -6,6 +6,21 @@ party = {
 	start_date = 2954.1.1
 	end_date = 4000.1.1
 	
+	ideology = lords_of_mithlond
+	
+	trade_policy = protectionism
+	tax_policy = state_capitalism
+	language_policy = regional_autonomy
+	diplomatic_policy = reactive
+	war_policy = jingoism
+	good_evil_alignment = good_alignment
+}
+
+party = {
+	name = "generic_falathrim_nobles"
+	start_date = 2954.1.1
+	end_date = 4000.1.1
+	
 	ideology = falathrim_nobles
 	
 	trade_policy = protectionism

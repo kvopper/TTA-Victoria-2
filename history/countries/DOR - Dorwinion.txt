@@ -13,14 +13,16 @@ oob = "DOR_oob.txt"
 
 prestige = 5
 
-ruling_party = generic_dorwinrim_nobles
+ruling_party = DOR_hegon
 
 upper_house = {
-	dorwinrim_nobles = 100
+	house_of_koldana = 100
 }
 penal_reform = hard_labor
 slavery = no_slavery
 upper_house_composition = appointed
+
+decision = DOR_start_decision
 
 schools = traditional_academic
 #technologies

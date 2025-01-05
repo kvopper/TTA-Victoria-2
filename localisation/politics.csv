@@ -611,6 +611,8 @@ house_half_elven_uh;House Half-Elven supporters will vote for all reforms while 
 noldor_nobles;Ñoldor Nobles;x
 noldor_nobles_uh;Ñoldor Noble supporters will vote for all reforms while in power.;x
 teleri_nobility;Teleri Nobility;x
+lords_of_mithlond;Lords of Mithlond;x
+lords_of_mithlond_uh;Lords of Mithlond supporters will vote for all reforms while in power.;x
 falathrim_nobles;Falathrim Nobles;x
 falathrim_nobles_uh;Falathrim Noble supporters will vote for all reforms while in power.;x
 house_of_oropher;House of Oropher;x
@@ -661,8 +663,10 @@ kuga_nobles_uh;Kuga Noble supporters will vote for all reforms while in power.;x
 logath_nobles;Logath Nobles;x
 logath_nobles_uh;Logath Noble supporters will vote for all reforms while in power.;x
 gramavuld_northmen_nobility;Gramavuld Northmen Nobility;x
-barding_nobles;Barding Nobles;x
-barding_nobles_uh;Barding Noble supporters will vote for all reforms while in power.;x
+house_of_bard;House of Bard;x
+house_of_bard_uh;House of Bard supporters will vote for all reforms while in power.;x
+barding_nobles;Lakemen Nobles;x
+barding_nobles_uh;Lakemen Noble supporters will vote for all reforms while in power.;x
 grammas_nobles;Grammas Nobles;x
 grammas_nobles_uh;Grammas Noble supporters will vote for all reforms while in power.;x
 rivermen_nobles;Rivermen Nobles;x
@@ -670,6 +674,8 @@ rivermen_nobles_uh;Rivermen Noble supporters will vote for all reforms while in 
 adhalling_nobles;Adhalling Nobles;x
 adhalling_nobles_uh;Adhalling Noble supporters will vote for all reforms while in power.;x
 northmen_nobility;Northmen Nobility;x
+house_of_koldana;House of Koldana;x
+house_of_koldana_uh;House of Koldana supporters will vote for all reforms while in power.;x
 dorwinrim_nobles;Dorwinrim Nobles;x
 dorwinrim_nobles_uh;Dorwinrim Noble supporters will vote for all reforms while in power.;x
 aivathiuda_nobles;Aivathiuda Nobles;x
@@ -679,6 +685,8 @@ anthar_nobles_uh;Anthar Noble supporters will vote for all reforms while in powe
 gadraught_nobles;Gadraught Nobles;x
 gadraught_nobles_uh;Gadraught Noble supporters will vote for all reforms while in power.;x
 dwarves_nobility;Dwarves Nobility;x
+line_of_durin;Line of Durin;x
+line_of_durin_uh;Line of Durin supporters will vote for all reforms while in power.;x
 longbeard_nobles;Longbeard Nobles;x
 longbeard_nobles_uh;Longbeard Noble supporters will vote for all reforms while in power.;x
 firebeard_nobles;Firebeard Nobles;x
@@ -697,6 +705,8 @@ woodsmen_nobles;Woodsmen Nobles;x
 woodsmen_nobles_uh;Woodsmen Noble supporters will vote for all reforms while in power.;x
 beorning_nobles;Beorning Nobles;x
 beorning_nobles_uh;Beorning Noble supporters will vote for all reforms while in power.;x
+house_of_beorn;House of Beorn;x
+house_of_beorn_uh;House of Beorn supporters will vote for all reforms while in power.;x
 beiabarnae_nobles;Beiabarnae Nobles;x
 beiabarnae_nobles_uh;Beiabarnae Noble supporters will vote for all reforms while in power.;x
 melburgi_nobles;Melburgi Nobles;x
@@ -704,6 +714,8 @@ melburgi_nobles_uh;Melburgi Noble supporters will vote for all reforms while in 
 herimundi_nobles;Herimundi Nobles;x
 herimundi_nobles_uh;Herimundi Noble supporters will vote for all reforms while in power.;x
 ents_nobility;Ents Nobility;x
+lords_of_fangorn;Lords of Fangorn;x
+lords_of_fangorn_uh;Lords of Fangorn supporters will vote for all reforms while in power.;x
 ent_nobles;Ent Nobles;x
 ent_nobles_uh;Ent Noble supporters will vote for all reforms while in power.;x
 huorn_nobles;Huorn Nobles;x
@@ -726,6 +738,8 @@ dunir_nobles_uh;Dunir Noble supporters will vote for all reforms while in power.
 marshmen_nobles;Marshmen Nobles;x
 marshmen_nobles_uh;Marshmen Noble supporters will vote for all reforms while in power.;x
 rohirrim_nobility;Rohirrim Nobility;x
+house_of_eorl;House of Eorl;x
+house_of_eorl_uh;House of Eorl supporters will vote for all reforms while in power.;x
 rohirrim_nobles;Rohirrim Nobles;x
 rohirrim_nobles_uh;Rohirrim Noble supporters will vote for all reforms while in power.;x
 anduinmen_nobles;Anduinmen Nobles;x
@@ -791,18 +805,35 @@ stone_trolls_nobles_uh;Stone Troll Noble supporters will vote for all reforms wh
 olog_hai_nobles;Olog Hai Nobles;x
 olog_hai_nobles_uh;Olog Hai Noble supporters will vote for all reforms while in power.;x
 eagles_nobility;Eagles Nobility;x
+flightlords_of_the_mountains;Flightlords of the Mountains;x
+flightlords_of_the_mountains_uh;Flightlords of the Mountains supporters will vote for all reforms while in power.;x
 great_eagle_nobles;Great Eagle Nobles;x
 great_eagle_nobles_uh;Great Eagle Noble supporters will vote for all reforms while in power.;x
+lords_of_ravens;Lords of Ravens;x
+lords_of_ravens_uh;Lords of Ravens supporters will vote for all reforms while in power.;x
 raven_nobles;Raven Nobles;x
 raven_nobles_uh;Raven Noble supporters will vote for all reforms while in power.;x
 spiders_nobility;Spiders Nobility;x
+great_brood_mothers;Great Brood Mothers;x
+great_brood_mothers_uh;Great Brood Mothers supporters will vote for all reforms while in power.;x
 great_spider_nobles;Great Spider Nobles;x
 great_spider_nobles_uh;Great Spider Noble supporters will vote for all reforms while in power.;x
 undead_nobility;Undead Nobility;x
 wight_nobles;Wight Nobles;x
 wight_nobles_uh;Wight Noble supporters will vote for all reforms while in power.;x
+kings_of_the_dead;Kings of the Dead;x
+kings_of_the_dead_uh;Kinds of the Dead supporters will vote for all reforms while in power.;x
 oathbreaker_nobles;Oathbreaker Nobles;x
 oathbreaker_nobles_uh;Oathbreaker Noble supporters will vote for all reforms while in power.;x
+immortal_beings;Immortal Beings;x
+lords_of_isengard;Lords of Isengard;x
+lords_of_isengard_uh;Lords of Isengard supporters will vote for all reforms while in power.;x
+lords_of_rhosgobel;Lords of Rhosgobel;x
+lords_of_rhosgobel_uh;Lords of Rhosgobel supporters will vote for all reforms while in power.;x
+lords_of_mordor;Lords of Mordor;x
+lords_of_mordor_uh;Lords of Mordor supporters will vote for all reforms while in power.;x
+saurons_nine;Sauron's Nine;x
+saurons_nine_uh;Sauron's Nine supporters will vote for all reforms while in power.;x
 #########################;x }
 ##### ADVISORS TEXT #####;x {
 #########################;x

@@ -2,6 +2,21 @@ graphical_culture = UsGC
 color = { 25 25 112 }
 
 party = {
+	name = "ERE_dain_ii"
+	start_date = 2954.1.1
+	end_date = 2984.1.1
+	
+	ideology = line_of_durin
+	
+	trade_policy = protectionism
+	tax_policy = interventionism
+	language_policy = regional_autonomy
+	diplomatic_policy = reactive
+	war_policy = jingoism
+	good_evil_alignment = good_alignment
+}
+
+party = {
 	name = "generic_longbeard_nobles"
 	start_date = 2954.1.1
 	end_date = 2984.1.1

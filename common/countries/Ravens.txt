@@ -1,5 +1,20 @@
 graphical_culture = UsGC
-color = { 19 35 154 }
+color = { 20 40 180 }
+
+party = {
+	name = "RAV_roac"
+	start_date = 2954.1.1
+	end_date = 2984.1.1
+	
+	ideology = lords_of_ravens
+	
+	trade_policy = protectionism
+	tax_policy = interventionism
+	language_policy = regional_autonomy
+	diplomatic_policy = reactive
+	war_policy = jingoism
+	good_evil_alignment = good_alignment
+}
 
 party = {
 	name = "generic_raven_nobles"

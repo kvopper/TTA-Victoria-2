@@ -12,10 +12,10 @@ oob = "ERE_oob.txt"
 
 prestige = 60
 
-ruling_party = generic_longbeard_nobles
+ruling_party = ERE_dain_ii
 
 upper_house = {
-	longbeard_nobles = 100
+	line_of_durin = 100
 }
 penal_reform = hard_labor
 slavery = no_slavery

@@ -2,9 +2,24 @@ graphical_culture = UsGC
 color = { 128 0 128 }
 
 party = {
+	name = "DOR_hegon"
+	start_date = 2954.1.1
+	end_date = 4000.1.1
+	
+	ideology = house_of_koldana
+	
+	trade_policy = protectionism
+	tax_policy = interventionism
+	language_policy = regional_autonomy
+	diplomatic_policy = reactive
+	war_policy = jingoism
+	good_evil_alignment = good_alignment
+}
+
+party = {
 	name = "generic_dorwinrim_nobles"
 	start_date = 2954.1.1
-	end_date = 2984.1.1
+	end_date = 4000.1.1
 	
 	ideology = dorwinrim_nobles
 	
@@ -19,7 +34,7 @@ party = {
 party = {
 	name = "generic_avari_nobles"
 	start_date = 2954.1.1
-	end_date = 2984.1.1
+	end_date = 4000.1.1
 	
 	ideology = avari_nobles
 	

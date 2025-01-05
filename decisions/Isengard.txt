@@ -15,7 +15,12 @@ political_decisions = {
 			always = no
 		}
 		allow = {}
-		effect = {}
+		effect = {
+			# Set allowed leaders
+			set_country_flag = ideologies_lords_of_isengard_active
+			
+			set_country_flag = ISE_content
+		}
 	}
 	lord_of_isengard = {
 		picture = "lord_of_isengard"

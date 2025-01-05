@@ -12,11 +12,13 @@ oob = "BEO_oob.txt"
 
 prestige = 5
 
-ruling_party = generic_beiabarnae_nobles
+ruling_party = BEO_beorn
 
 upper_house = {
-	beiabarnae_nobles = 100
+	house_of_beorn = 100
 }
+
+decision = BEO_start_decision
 
 slavery = no_slavery
 upper_house_composition = appointed

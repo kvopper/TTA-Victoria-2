@@ -2,9 +2,24 @@ graphical_culture = UsGC
 color = { 0 75 0 }
 
 party = {
+	name = "FAN_treebeard"
+	start_date = 2954.1.1
+	end_date = 4000.1.1
+	
+	ideology = lords_of_fangorn
+	
+	trade_policy = protectionism
+	tax_policy = interventionism
+	language_policy = regional_autonomy
+	diplomatic_policy = reactive
+	war_policy = jingoism
+	good_evil_alignment = good_alignment
+}
+
+party = {
 	name = "generic_ent_nobles"
 	start_date = 2954.1.1
-	end_date = 2984.1.1
+	end_date = 4000.1.1
 	
 	ideology = ent_nobles
 	

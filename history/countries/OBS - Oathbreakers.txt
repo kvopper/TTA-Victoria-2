@@ -8,12 +8,13 @@ nationalvalue = king_of_the_dead
 literacy = 0
 civilized = yes
 
-ruling_party = generic_oathbreaker_nobles
+ruling_party = OBS_king_of_the_dead
 
 upper_house = {
-	oathbreaker_nobles = 100
+	kings_of_the_dead = 100
 }
 
 upper_house_composition = appointed
+decision = OBS_start_decision
 
 schools = traditional_academic

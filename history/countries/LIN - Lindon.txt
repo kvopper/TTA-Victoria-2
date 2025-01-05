@@ -15,7 +15,7 @@ ruling_party = LIN_cirdan
 decision = LIN_start_decision
 
 upper_house = {
-	falathrim_nobles = 100
+	lords_of_mithlond = 100
 }
 penal_reform = hard_labor
 slavery = no_slavery

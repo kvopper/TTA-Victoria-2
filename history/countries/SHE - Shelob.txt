@@ -9,10 +9,10 @@ literacy = 0
 
 prestige = 5
 
-ruling_party = generic_great_spider_nobles
+ruling_party = SHE_shelob
 
 upper_house = {
-	great_spider_nobles = 100
+	great_brood_mothers = 100
 }
 
 slavery = yes_slavery

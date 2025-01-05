@@ -2,6 +2,21 @@ graphical_culture = UsGC
 color = { 86 46 19 }
 
 party = {
+	name = "RAD_radagast"
+	start_date = 2954.1.1
+	end_date = 2984.1.1
+	
+	ideology = lords_of_rhosgobel
+	
+	trade_policy = protectionism
+	tax_policy = interventionism
+	language_policy = regional_autonomy
+	diplomatic_policy = reactive
+	war_policy = jingoism
+	good_evil_alignment = good_alignment
+}
+
+party = {
 	name = "generic_woodsmen_nobles"
 	start_date = 2954.1.1
 	end_date = 2984.1.1

@@ -1,5 +1,20 @@
 graphical_culture = UsGC
-color = { 19 137 226 }
+color = { 20 130 230 }
+
+party = {
+	name = "EAG_gwaihir"
+	start_date = 2954.1.1
+	end_date = 2984.1.1
+	
+	ideology = flightlords_of_the_mountains
+	
+	trade_policy = protectionism
+	tax_policy = interventionism
+	language_policy = regional_autonomy
+	diplomatic_policy = reactive
+	war_policy = jingoism
+	good_evil_alignment = good_alignment
+}
 
 party = {
 	name = "generic_great_eagle_nobles"

@@ -14,10 +14,10 @@ oob = "DAL_oob.txt"
 
 prestige = 10
 
-ruling_party = generic_barding_nobles
+ruling_party = DAL_bard_i
 
 upper_house = {
-	barding_nobles = 100
+	house_of_bard = 100
 }
 
 govt_flag = { government = sauron_puppet flag = cosmetic_1_govt }

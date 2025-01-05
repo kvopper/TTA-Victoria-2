@@ -9,15 +9,13 @@
 # Starting Decisions
 political_decisions = {
 	# Audax Validator "." Ignore_1004
-	dorwinion_start_decision = {
-		potential = {
-			tag = DOR
-			always = no
-		}
-		
-		allow = {}
-		
+	DOR_start_decision = {
+		potential = { always = no }
 		effect = {
+			# Set allowed leaders
+			set_country_flag = ideologies_house_of_koldana_active
+			
+			set_country_flag = DOR_content
 		}
 	}
 }
