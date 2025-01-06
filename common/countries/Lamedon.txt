@@ -4,7 +4,7 @@ color = { 64 64 159 }
 party = {
 	name = "generic_dunedain_nobles"
 	start_date = 2954.1.1
-	end_date = 2984.1.1
+	end_date = 4000.1.1
 	
 	ideology = dunedain_nobles
 	
@@ -49,7 +49,7 @@ party = {
 party = {
 	name = "generic_amrothian_nobles"
 	start_date = 2954.1.1
-	end_date = 2984.1.1
+	end_date = 4000.1.1
 	
 	ideology = amrothian_nobles
 	

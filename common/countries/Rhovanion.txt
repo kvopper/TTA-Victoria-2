@@ -6,7 +6,7 @@ monarchy_2 = { 100 100 180 }
 party = {
 	name = "generic_barding_nobles"
 	start_date = 2954.1.1
-	end_date = 2984.1.1
+	end_date = 4000.1.1
 	
 	ideology = barding_nobles
 	
@@ -21,7 +21,7 @@ party = {
 party = {
 	name = "generic_aivathiuda_nobles"
 	start_date = 2954.1.1
-	end_date = 2984.1.1
+	end_date = 4000.1.1
 	
 	ideology = aivathiuda_nobles
 	
@@ -36,7 +36,7 @@ party = {
 party = {
 	name = "generic_anthar_nobles"
 	start_date = 2954.1.1
-	end_date = 2984.1.1
+	end_date = 4000.1.1
 	
 	ideology = anthar_nobles
 	
@@ -51,7 +51,7 @@ party = {
 party = {
 	name = "generic_gadraught_nobles"
 	start_date = 2954.1.1
-	end_date = 2984.1.1
+	end_date = 4000.1.1
 	
 	ideology = gadraught_nobles
 	
@@ -66,7 +66,7 @@ party = {
 party = {
 	name = "generic_dorwinrim_nobles"
 	start_date = 2954.1.1
-	end_date = 2984.1.1
+	end_date = 4000.1.1
 	
 	ideology = dorwinrim_nobles
 	
@@ -81,7 +81,7 @@ party = {
 party = {
 	name = "generic_grammas_nobles"
 	start_date = 2954.1.1
-	end_date = 2984.1.1
+	end_date = 4000.1.1
 	
 	ideology = grammas_nobles
 	
@@ -96,7 +96,7 @@ party = {
 party = {
 	name = "generic_rivermen_nobles"
 	start_date = 2954.1.1
-	end_date = 2984.1.1
+	end_date = 4000.1.1
 	
 	ideology = rivermen_nobles
 	
@@ -111,7 +111,7 @@ party = {
 party = {
 	name = "generic_adhalling_nobles"
 	start_date = 2954.1.1
-	end_date = 2984.1.1
+	end_date = 4000.1.1
 	
 	ideology = adhalling_nobles
 	

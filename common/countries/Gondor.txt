@@ -4,7 +4,7 @@ color = { 240 238 227 }
 party = {
 	name = "GON_aragorn_elessar"
 	start_date = 2954.1.1
-	end_date = 4000.1.1
+	end_date = 2984.1.1
 	
 	ideology = line_of_isildur
 	
@@ -19,7 +19,7 @@ party = {
 party = {
 	name = "GON_ecthelion_ii"
 	start_date = 2954.1.1
-	end_date = 2984.1.1
+	end_date = 4000.1.1
 	
 	ideology = house_of_stewards
 	
@@ -49,7 +49,7 @@ party = {
 party = {
 	name = "generic_dunedain_nobles"
 	start_date = 2954.1.1
-	end_date = 2984.1.1
+	end_date = 4000.1.1
 	
 	ideology = dunedain_nobles
 	
@@ -79,7 +79,7 @@ party = {
 party = {
 	name = "generic_amrothian_nobles"
 	start_date = 2954.1.1
-	end_date = 2984.1.1
+	end_date = 4000.1.1
 	
 	ideology = amrothian_nobles
 	

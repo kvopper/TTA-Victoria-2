@@ -4,7 +4,7 @@ color = { 21 156 0 }
 party = {
 	name = "generic_breelander_nobles"
 	start_date = 2954.1.1
-	end_date = 2984.1.1
+	end_date = 4000.1.1
 	
 	ideology = breelander_nobles
 	
@@ -19,7 +19,7 @@ party = {
 party = {
 	name = "generic_harfoot_nobles"
 	start_date = 2954.1.1
-	end_date = 2984.1.1
+	end_date = 4000.1.1
 	
 	ideology = harfoot_nobles
 	
@@ -34,7 +34,7 @@ party = {
 party = {
 	name = "generic_fallohide_nobles"
 	start_date = 2954.1.1
-	end_date = 2984.1.1
+	end_date = 4000.1.1
 	
 	ideology = fallohide_nobles
 	

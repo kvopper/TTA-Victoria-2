@@ -4,7 +4,7 @@ color = { 20 40 180 }
 party = {
 	name = "RAV_roac"
 	start_date = 2954.1.1
-	end_date = 2984.1.1
+	end_date = 4000.1.1
 	
 	ideology = lords_of_ravens
 	
@@ -19,7 +19,7 @@ party = {
 party = {
 	name = "generic_raven_nobles"
 	start_date = 2954.1.1
-	end_date = 2984.1.1
+	end_date = 4000.1.1
 	
 	ideology = raven_nobles
 	

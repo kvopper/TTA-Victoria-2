@@ -34,7 +34,7 @@ party = {
 party = {
 	name = "generic_huorn_nobles"
 	start_date = 2954.1.1
-	end_date = 2984.1.1
+	end_date = 4000.1.1
 	
 	ideology = huorn_nobles
 	

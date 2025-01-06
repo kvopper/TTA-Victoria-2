@@ -4,7 +4,7 @@ color = { 8 0 8 }
 party = {
 	name = "generic_snow_orc_nobles"
 	start_date = 2954.1.1
-	end_date = 2984.1.1
+	end_date = 4000.1.1
 	
 	ideology = snow_orc_nobles
 	

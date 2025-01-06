@@ -4,7 +4,7 @@ color = { 90 110 30 }
 party = {
 	name = "ROH_thengel"
 	start_date = 2954.1.1
-	end_date = 2984.1.1
+	end_date = 4000.1.1
 	
 	ideology = house_of_eorl
 	
@@ -19,7 +19,7 @@ party = {
 party = {
 	name = "generic_rohirrim_nobles"
 	start_date = 2954.1.1
-	end_date = 2984.1.1
+	end_date = 4000.1.1
 	
 	ideology = rohirrim_nobles
 	
@@ -34,7 +34,7 @@ party = {
 party = {
 	name = "generic_isenmen_nobles"
 	start_date = 2954.1.1
-	end_date = 2984.1.1
+	end_date = 4000.1.1
 	
 	ideology = isenmen_nobles
 	

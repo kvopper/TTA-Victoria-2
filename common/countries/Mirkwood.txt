@@ -4,7 +4,7 @@ color = { 8 40 8 }
 party = {
 	name = "generic_great_spider_nobles"
 	start_date = 2954.1.1
-	end_date = 2984.1.1
+	end_date = 4000.1.1
 	
 	ideology = great_spider_nobles
 	
@@ -19,7 +19,7 @@ party = {
 party = {
 	name = "generic_guldurrim_nobles"
 	start_date = 2954.1.1
-	end_date = 2984.1.1
+	end_date = 4000.1.1
 	
 	ideology = guldurrim_nobles
 	

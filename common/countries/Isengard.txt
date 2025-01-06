@@ -19,7 +19,7 @@ party = {
 party = {
 	name = "generic_gondorian_nobles"
 	start_date = 2954.1.1
-	end_date = 2984.1.1
+	end_date = 4000.1.1
 	
 	ideology = gondorian_nobles
 	
@@ -34,7 +34,7 @@ party = {
 party = {
 	name = "generic_dunedain_nobles"
 	start_date = 2954.1.1
-	end_date = 2984.1.1
+	end_date = 4000.1.1
 	
 	ideology = dunedain_nobles
 	
@@ -49,7 +49,7 @@ party = {
 party = {
 	name = "generic_dunnish_nobles"
 	start_date = 2954.1.1
-	end_date = 2984.1.1
+	end_date = 4000.1.1
 	
 	ideology = dunnish_nobles
 	

@@ -4,7 +4,7 @@ color = { 76 87 88 }
 party = {
 	name = "generic_barding_nobles"
 	start_date = 2954.1.1
-	end_date = 2984.1.1
+	end_date = 4000.1.1
 	
 	ideology = barding_nobles
 	

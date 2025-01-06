@@ -4,7 +4,7 @@ color = { 44 48 160 }
 party = {
 	name = "generic_firebeard_nobles"
 	start_date = 2954.1.1
-	end_date = 2984.1.1
+	end_date = 4000.1.1
 	
 	ideology = firebeard_nobles
 	
@@ -19,7 +19,7 @@ party = {
 party = {
 	name = "generic_broadbeam_nobles"
 	start_date = 2954.1.1
-	end_date = 2984.1.1
+	end_date = 4000.1.1
 	
 	ideology = broadbeam_nobles
 	

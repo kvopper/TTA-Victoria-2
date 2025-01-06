@@ -4,7 +4,7 @@ color = { 97 160 97 }
 party = {
 	name = "generic_druedain_nobles"
 	start_date = 2954.1.1
-	end_date = 2984.1.1
+	end_date = 4000.1.1
 	
 	ideology = druedain_nobles
 	

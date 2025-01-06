@@ -4,7 +4,7 @@ color = { 20 45 15 }
 party = {
 	name = "OBS_king_of_the_dead"
 	start_date = 2954.1.1
-	end_date = 2984.1.1
+	end_date = 4000.1.1
 	
 	ideology = kings_of_the_dead
 	
@@ -19,7 +19,7 @@ party = {
 party = {
 	name = "generic_oathbreaker_nobles"
 	start_date = 2954.1.1
-	end_date = 2984.1.1
+	end_date = 4000.1.1
 	
 	ideology = oathbreaker_nobles
 	

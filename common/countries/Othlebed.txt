@@ -4,7 +4,7 @@ color = { 95 45 70 }
 party = {
 	name = "generic_gadraught_nobles"
 	start_date = 2954.1.1
-	end_date = 2984.1.1
+	end_date = 4000.1.1
 	
 	ideology = gadraught_nobles
 	

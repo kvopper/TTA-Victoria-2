@@ -4,7 +4,7 @@ color = { 200 150 150 }
 party = {
 	name = "generic_herimundi_nobles"
 	start_date = 2954.1.1
-	end_date = 2984.1.1
+	end_date = 4000.1.1
 	
 	ideology = herimundi_nobles
 	

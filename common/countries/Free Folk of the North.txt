@@ -4,7 +4,7 @@ color = { 80 40 0 }
 party = {
 	name = "generic_longbeard_nobles"
 	start_date = 2954.1.1
-	end_date = 2984.1.1
+	end_date = 4000.1.1
 	
 	ideology = longbeard_nobles
 	
@@ -19,7 +19,7 @@ party = {
 party = {
 	name = "generic_barding_nobles"
 	start_date = 2954.1.1
-	end_date = 2984.1.1
+	end_date = 4000.1.1
 	
 	ideology = barding_nobles
 	
@@ -34,7 +34,7 @@ party = {
 party = {
 	name = "generic_aivathiuda_nobles"
 	start_date = 2954.1.1
-	end_date = 2984.1.1
+	end_date = 4000.1.1
 	
 	ideology = aivathiuda_nobles
 	
@@ -49,7 +49,7 @@ party = {
 party = {
 	name = "generic_anthar_nobles"
 	start_date = 2954.1.1
-	end_date = 2984.1.1
+	end_date = 4000.1.1
 	
 	ideology = anthar_nobles
 	
@@ -64,7 +64,7 @@ party = {
 party = {
 	name = "generic_gadraught_nobles"
 	start_date = 2954.1.1
-	end_date = 2984.1.1
+	end_date = 4000.1.1
 	
 	ideology = gadraught_nobles
 	
@@ -79,7 +79,7 @@ party = {
 party = {
 	name = "generic_dorwinrim_nobles"
 	start_date = 2954.1.1
-	end_date = 2984.1.1
+	end_date = 4000.1.1
 	
 	ideology = dorwinrim_nobles
 	
@@ -94,7 +94,7 @@ party = {
 party = {
 	name = "generic_grammas_nobles"
 	start_date = 2954.1.1
-	end_date = 2984.1.1
+	end_date = 4000.1.1
 	
 	ideology = grammas_nobles
 	
@@ -109,7 +109,7 @@ party = {
 party = {
 	name = "generic_rivermen_nobles"
 	start_date = 2954.1.1
-	end_date = 2984.1.1
+	end_date = 4000.1.1
 	
 	ideology = rivermen_nobles
 	
@@ -124,7 +124,7 @@ party = {
 party = {
 	name = "generic_adhalling_nobles"
 	start_date = 2954.1.1
-	end_date = 2984.1.1
+	end_date = 4000.1.1
 	
 	ideology = adhalling_nobles
 	
@@ -139,7 +139,7 @@ party = {
 party = {
 	name = "generic_silvan_nobles"
 	start_date = 2954.1.1
-	end_date = 2984.1.1
+	end_date = 4000.1.1
 	
 	ideology = silvan_nobles
 	
@@ -154,7 +154,7 @@ party = {
 party = {
 	name = "generic_galadhrim_nobles"
 	start_date = 2954.1.1
-	end_date = 2984.1.1
+	end_date = 4000.1.1
 	
 	ideology = galadhrim_nobles
 	
@@ -169,7 +169,7 @@ party = {
 party = {
 	name = "generic_woodsmen_nobles"
 	start_date = 2954.1.1
-	end_date = 2984.1.1
+	end_date = 4000.1.1
 	
 	ideology = woodsmen_nobles
 	
@@ -184,7 +184,7 @@ party = {
 party = {
 	name = "generic_beorning_nobles"
 	start_date = 2954.1.1
-	end_date = 2984.1.1
+	end_date = 4000.1.1
 	
 	ideology = beorning_nobles
 	
@@ -199,7 +199,7 @@ party = {
 party = {
 	name = "generic_beiabarnae_nobles"
 	start_date = 2954.1.1
-	end_date = 2984.1.1
+	end_date = 4000.1.1
 	
 	ideology = beiabarnae_nobles
 	
@@ -214,7 +214,7 @@ party = {
 party = {
 	name = "generic_melburgi_nobles"
 	start_date = 2954.1.1
-	end_date = 2984.1.1
+	end_date = 4000.1.1
 	
 	ideology = melburgi_nobles
 	
@@ -229,7 +229,7 @@ party = {
 party = {
 	name = "generic_herimundi_nobles"
 	start_date = 2954.1.1
-	end_date = 2984.1.1
+	end_date = 4000.1.1
 	
 	ideology = herimundi_nobles
 	
@@ -244,7 +244,7 @@ party = {
 party = {
 	name = "generic_anduinmen_nobles"
 	start_date = 2954.1.1
-	end_date = 2984.1.1
+	end_date = 4000.1.1
 	
 	ideology = anduinmen_nobles
 	

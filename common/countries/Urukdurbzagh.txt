@@ -4,7 +4,7 @@ color = { 89 78 89 }
 party = {
 	name = "generic_morian_nobles"
 	start_date = 2954.1.1
-	end_date = 2984.1.1
+	end_date = 4000.1.1
 	
 	ideology = morian_nobles
 	
@@ -19,7 +19,7 @@ party = {
 party = {
 	name = "generic_goblin_towner_nobles"
 	start_date = 2954.1.1
-	end_date = 2984.1.1
+	end_date = 4000.1.1
 	
 	ideology = goblin_towner_nobles
 	
@@ -34,7 +34,7 @@ party = {
 party = {
 	name = "generic_gundabad_orc_nobles"
 	start_date = 2954.1.1
-	end_date = 2984.1.1
+	end_date = 4000.1.1
 	
 	ideology = gundabad_orc_nobles
 	
@@ -49,7 +49,7 @@ party = {
 party = {
 	name = "generic_gram_goblin_nobles"
 	start_date = 2954.1.1
-	end_date = 2984.1.1
+	end_date = 4000.1.1
 	
 	ideology = gram_goblin_nobles
 	

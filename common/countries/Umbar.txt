@@ -19,7 +19,7 @@ party = {
 party = {
 	name = "generic_umbarrim_nobles"
 	start_date = 2954.1.1
-	end_date = 2984.1.1
+	end_date = 4000.1.1
 	
 	ideology = umbarrim_nobles
 	

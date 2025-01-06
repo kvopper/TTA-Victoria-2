@@ -4,7 +4,7 @@ color = { 100 175 125 }
 party = {
 	name = "generic_saerlanner_nobles"
 	start_date = 2954.1.1
-	end_date = 2984.1.1
+	end_date = 4000.1.1
 	
 	ideology = saerlanner_nobles
 	

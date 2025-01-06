@@ -4,7 +4,7 @@ color = { 149 63 53 }
 party = {
 	name = "BEO_beorn"
 	start_date = 2954.1.1
-	end_date = 2984.1.1
+	end_date = 4000.1.1
 	
 	ideology = house_of_beorn
 	
@@ -19,7 +19,7 @@ party = {
 party = {
 	name = "generic_beiabarnae_nobles"
 	start_date = 2954.1.1
-	end_date = 2984.1.1
+	end_date = 4000.1.1
 	
 	ideology = beiabarnae_nobles
 	
@@ -34,7 +34,7 @@ party = {
 party = {
 	name = "generic_beorning_nobles"
 	start_date = 2954.1.1
-	end_date = 2984.1.1
+	end_date = 4000.1.1
 	
 	ideology = beorning_nobles
 	

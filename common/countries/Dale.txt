@@ -64,7 +64,7 @@ party = {
 party = {
 	name = "generic_barding_nobles"
 	start_date = 2954.1.1
-	end_date = 2984.1.1
+	end_date = 4000.1.1
 	
 	ideology = barding_nobles
 	
@@ -79,7 +79,7 @@ party = {
 party = {
 	name = "generic_adhalling_nobles"
 	start_date = 2954.1.1
-	end_date = 2984.1.1
+	end_date = 4000.1.1
 	
 	ideology = adhalling_nobles
 	
