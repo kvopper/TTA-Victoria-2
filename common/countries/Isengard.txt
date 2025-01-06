@@ -58,7 +58,7 @@ party = {
 	language_policy = regional_autonomy
 	diplomatic_policy = reactive
 	war_policy = jingoism
-	good_evil_alignment = good_alignment
+	good_evil_alignment = neutral_alignment
 }
 
 party = {
