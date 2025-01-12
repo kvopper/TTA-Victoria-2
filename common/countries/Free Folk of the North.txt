@@ -263,11 +263,11 @@ party = {
 	
 	ideology = servants_good
 	
-	trade_policy = protectionism
-	tax_policy = interventionism
-	language_policy = regional_autonomy
-	diplomatic_policy = reactive
-	war_policy = pro_military
+	trade_policy = vassal_protectionism
+	tax_policy = vassal_interventionism
+	language_policy = vassal_regional_autonomy
+	diplomatic_policy = vassal_reactive
+	war_policy = vassal_pro_military
 	good_evil_alignment = good_alignment
 }
 
@@ -278,11 +278,11 @@ party = {
 	
 	ideology = servants_neutral
 	
-	trade_policy = protectionism
-	tax_policy = interventionism
-	language_policy = regional_autonomy
-	diplomatic_policy = reactive
-	war_policy = pro_military
+	trade_policy = vassal_protectionism
+	tax_policy = vassal_interventionism
+	language_policy = vassal_regional_autonomy
+	diplomatic_policy = vassal_reactive
+	war_policy = vassal_pro_military
 	good_evil_alignment = neutral_alignment
 }
 
@@ -293,11 +293,11 @@ party = {
 	
 	ideology = servants_evil
 	
-	trade_policy = protectionism
-	tax_policy = interventionism
-	language_policy = regional_autonomy
-	diplomatic_policy = reactive
-	war_policy = pro_military
+	trade_policy = vassal_protectionism
+	tax_policy = vassal_interventionism
+	language_policy = vassal_regional_autonomy
+	diplomatic_policy = vassal_reactive
+	war_policy = vassal_pro_military
 	good_evil_alignment = evil_alignment
 }
 

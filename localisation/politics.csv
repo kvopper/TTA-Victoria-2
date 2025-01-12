@@ -381,6 +381,9 @@ new_guilds_desc;Guilds are starting to gain traction among the upper class.;x
 #################################;x
 party_issues;Interest Group Issues;x
 trade_policy;Trade Policy;x
+vassal_protectionism;Protectionism;x
+vassal_protectionism_desc;Trade between realms is restricted.;x
+vassal_protectionism_l;Protectionism;x
 protectionism;Protectionism;x
 protectionism_desc;Trade between realms is restricted.;x
 protectionism_l;Protectionism;x
@@ -391,6 +394,9 @@ tax_policy;Tax Policy;x
 laissez_faire;Laissez Faire;x
 laissez_faire_desc;The realm reduces taxes as much as possible, even incurring debt if it serves the best interests of the people.;x
 laissez_faire_l;Laissez Faire;x
+vassal_interventionism;Interventionism;x
+vassal_interventionism_desc;The realm reduces taxes as much as possible, but will not go into debt unless at the utmost need.;x
+vassal_interventionism_l;Interventionism;x
 interventionism;Interventionism;x
 interventionism_desc;The realm reduces taxes as much as possible, but will not go into debt unless at the utmost need.;x
 interventionism_l;Interventionism;x
@@ -407,6 +413,9 @@ official_only_l;Official Only;x
 minority_toleration;Minority Toleration;x
 minority_toleration_desc;Minority languages are allowed in public as long as it does not involve matters of realm.;x
 minority_toleration_l;Minority Toleration;x
+vassal_regional_autonomy;Regional Autonomy;x
+vassal_regional_autonomy_desc;All languages are allowed in every setting.;x
+vassal_regional_autonomy_l;Regional Autonomy;x
 regional_autonomy;Regional Autonomy;x
 regional_autonomy_desc;All languages are allowed in every setting.;x
 regional_autonomy_l;Regional Autonomy;x
@@ -414,6 +423,9 @@ diplomatic_policy;Diplomatic Policy;x
 isolationist;Isolationist;x
 isolationist_desc;Who cares what happens in the outside world? Our realm is great!;x
 isolationist_l;Isolationist;x
+vassal_reactive;Reactive;x
+vassal_reactive_desc;The ruler reacts to things that happens outside the realm after news of it arrives. No proactive actions occur.;x
+vassal_reactive_l;Reactive;x
 reactive;Reactive;x
 reactive_desc;The ruler reacts to things that happens outside the realm after news of it arrives. No proactive actions occur.;x
 reactive_l;Reactive;x
@@ -427,6 +439,9 @@ war_policy;War Policy;x
 jingoism;Jingoism;x
 jingoism_desc;The military is the centrepiece of the state and military spending is prioritised.;x
 jingoism_l;Jingoism;x
+vassal_pro_military;Pro Military;x
+vassal_pro_military_desc;The government is a strong supporter of the armed services.;x
+vassal_pro_military_l;Pro Military;x
 pro_military;Pro Military;x
 pro_military_desc;The government is a strong supporter of the armed services.;x
 pro_military_l;Pro Military;x

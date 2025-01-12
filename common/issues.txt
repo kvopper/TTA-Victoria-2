@@ -1,8 +1,13 @@
 ##########################################
 # Issues that parties have.
 ##########################################
+# Note that pops will never support the "vassal" variants. They exist purely to not skew election results (pops with low consciousness vote randomly on their highest party issue, not by their ideology, leading to some pops wanting to vote for a vassal party)
 party_issues = {
 	trade_policy = {
+		vassal_protectionism = {
+			max_tariff = 1
+			min_tariff = -0.25
+		}
 		protectionism = {
 			max_tariff = 1
 			min_tariff = -0.25
@@ -15,6 +20,10 @@ party_issues = {
 	tax_policy = {
 		laissez_faire = {
 			max_tax = 0.5
+		}
+		vassal_interventionism = {
+			min_tax = 0.15
+			max_tax = 0.65
 		}
 		interventionism = {
 			min_tax = 0.15
@@ -37,6 +46,10 @@ party_issues = {
 		minority_toleration = {
 			global_assimilation_rate = 0.10
 		}
+		vassal_regional_autonomy = {
+			non_accepted_pop_consciousness_modifier = -0.01
+			non_accepted_pop_militancy_modifier = -0.01
+		}
 		regional_autonomy = {
 			non_accepted_pop_consciousness_modifier = -0.01
 			non_accepted_pop_militancy_modifier = -0.01
@@ -49,6 +62,10 @@ party_issues = {
 			max_loan_modifier = -0.25
 			suppression_points_modifier = 0.25
 			influence_modifier = -0.25
+		}
+		vassal_reactive = {
+			suppression_points_modifier = 0.1
+			influence_modifier = -0.1
 		}
 		reactive = {
 			suppression_points_modifier = 0.1
@@ -77,6 +94,14 @@ party_issues = {
 			mobilization_impact = 4
 			org_regain = 0.5
 			reinforce_speed = 0.5
+		
+		vassal_pro_military = {
+			max_military_spending = 1.0
+			war_exhaustion_effect = 0.7
+			cb_generation_speed_modifier = 0.2
+			mobilization_impact = 3
+			org_regain = 0.25
+			reinforce_speed = 0.25
 		}
 		pro_military = {
 			max_military_spending = 1.0
