@@ -644,7 +644,6 @@ democratic_rebels = {
 				type = slaves
 				country = { civilized = no }
 				country = { vote_franschise = universal_voting }
-				pop_majority_ideology = servants
 			}
 		}
 		modifier = {
@@ -803,7 +802,6 @@ noble_rebels = {
 			OR = {
 				type = slaves
 				country = { civilized = no }
-				pop_majority_ideology = servants
 				pop_majority_ideology = loremaster
 				pop_majority_ideology = burgher
 				strata = poor
@@ -996,7 +994,6 @@ serf_rebels = {
 				NOT = { type = labourers }
 				country = { civilized = no }
 				country = { serfdom = enforced_serfdom }
-				pop_majority_ideology = servants
 				pop_majority_ideology = loremaster
 				pop_majority_ideology = burgher
 				strata = poor
@@ -1147,10 +1144,7 @@ good_rebels = {
 		
 		modifier = {
 			factor = 0
-			OR = {
-				pop_majority_ideology = servants
-				country = { good_evil_alignment = good_alignment }
-			}
+			country = { good_evil_alignment = good_alignment }
 		}
 		modifier = {
 			factor = 1.1
@@ -1340,10 +1334,7 @@ evil_rebels = {
 		
 		modifier = {
 			factor = 0
-			OR = {
-				pop_majority_ideology = servants
-				country = { good_evil_alignment = evil_alignment }
-			}
+			country = { good_evil_alignment = evil_alignment }
 		}
 		modifier = {
 			factor = 1.1
@@ -1533,10 +1524,7 @@ neutral_rebels = {
 		
 		modifier = {
 			factor = 0
-			OR = {
-				pop_majority_ideology = servants
-				country = { good_evil_alignment = neutral_alignment }
-			}
+			country = { good_evil_alignment = neutral_alignment }
 		}
 		modifier = {
 			factor = 1.1
