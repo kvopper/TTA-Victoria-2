@@ -24,6 +24,5 @@ upper_house = {
 
 slavery = yes_slavery
 upper_house_composition = appointed
-ruling_party = generic_high_nobility
 
 schools = traditional_academic

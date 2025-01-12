@@ -237,7 +237,6 @@ patriot_rebels = {
 	independence = none
 	defect_delay = 3		# Can spontaneously declare independence after X months (earliest)
 
-	ideology = loremaster
 	allow_all_cultures = no
 	allow_all_religions = yes
 	allow_all_ideologies = yes
@@ -651,14 +650,6 @@ democratic_rebels = {
 			country = { good_evil_alignment = evil_alignment }
 		}
 		modifier = {
-			factor = 1.5
-			pop_majority_ideology = loremaster
-		}
-		modifier = {
-			factor = 1.25
-			pop_majority_ideology = burgher
-		}
-		modifier = {
 			factor = 1.015
 			political_reform_want = 0.1
 		}
@@ -802,8 +793,6 @@ noble_rebels = {
 			OR = {
 				type = slaves
 				country = { civilized = no }
-				pop_majority_ideology = loremaster
-				pop_majority_ideology = burgher
 				strata = poor
 				AND = {
 					country = { nobility_autonomy = large_noble_autonomy }
@@ -812,14 +801,6 @@ noble_rebels = {
 					country = { knighting_rights = allowed_knighting_rights }
 				}
 			}
-		}
-		modifier = {
-			factor = 1.5
-			pop_majority_ideology = high_nobility
-		}
-		modifier = {
-			factor = 1.25
-			pop_majority_ideology = low_nobility
 		}
 		modifier = {
 			factor = 1.2
@@ -994,8 +975,6 @@ serf_rebels = {
 				NOT = { type = labourers }
 				country = { civilized = no }
 				country = { serfdom = enforced_serfdom }
-				pop_majority_ideology = loremaster
-				pop_majority_ideology = burgher
 				strata = poor
 			}
 		}

@@ -590,17 +590,6 @@ servants_neutral;Servants (Opportunistic);x
 servants_neutral_uh;Servants supporters will never vote to reform the realm. They only serve our overlord.;x
 servants_evil;Servants (Sauronite);x
 servants_evil_uh;Servants supporters will never vote to reform the realm. They only serve our overlord.;x
-nobility_group;Nobles;x
-high_nobility;High Nobility;x
-high_nobility_uh;High Nobility advisors will never vote for political reforms. Instead, they hope to repeal them. They will vote for burgher reforms with high enough militancy.;x
-low_nobility;Low Nobility;x
-low_nobility_uh;Low Nobility advisors will vote for political and burgher reforms with high enough militancy;x
-burgher_group;Burgers;x
-burgher;Burghers;x
-burgher_uh;Burgher advisors will vote for political reforms with high enough militancy. They will always vote for burgher reforms.;x
-loremaster_group;Loremasters;x
-loremaster;Loremasters;x
-loremaster_uh;Loremaster advisors will always vote for political and burgher reforms.;x
 dunedain_nobility;Dúnedain Nobility;x
 line_of_isildur;Line of Isildur;x
 line_of_isildur_uh;Line of Isildur supporters will vote for all reforms while in power.;x

@@ -3,11 +3,6 @@
 #######################
 # Lord (generic republic)
 democracy = {
-	high_nobility = yes
-	low_nobility = yes
-	burgher = yes
-	loremaster = yes
-	
 	election = yes
 	duration = 48
 	appoint_ruling_party = no
@@ -16,11 +11,6 @@ democracy = {
 
 # Mayor (Special republic for Hobbits)
 hobbit_realm = {
-	high_nobility = yes
-	low_nobility = yes
-	burgher = yes
-	loremaster = yes
-	
 	election = yes
 	duration = 48
 	appoint_ruling_party = no
@@ -29,11 +19,6 @@ hobbit_realm = {
 
 # Master (Special republic for Northmen)
 northmen_democracy = {
-	high_nobility = yes
-	low_nobility = yes
-	burgher = yes
-	loremaster = yes
-	
 	election = yes
 	duration = 48
 	appoint_ruling_party = no
@@ -45,11 +30,6 @@ northmen_democracy = {
 ######################
 # King (generic monarchy)
 monarchy = {
-	high_nobility = yes
-	low_nobility = yes
-	burgher = yes
-	loremaster = yes
-	
 	election = no
 	appoint_ruling_party = yes
 	flagType = monarchy
@@ -57,11 +37,6 @@ monarchy = {
 
 # King (generic monarchy)
 monarchy_2 = {
-	high_nobility = yes
-	low_nobility = yes
-	burgher = yes
-	loremaster = yes
-	
 	election = no
 	appoint_ruling_party = yes
 	flagType = monarchy
@@ -69,11 +44,6 @@ monarchy_2 = {
 
 # Prince (generic monarchy)
 principality = {
-	high_nobility = yes
-	low_nobility = yes
-	burgher = yes
-	loremaster = yes
-	
 	election = no
 	appoint_ruling_party = yes
 	flagType = monarchy
@@ -81,11 +51,6 @@ principality = {
 
 # Lord (generic monarchy)
 lord_monarchy = {
-	high_nobility = yes
-	low_nobility = yes
-	burgher = yes
-	loremaster = yes
-	
 	election = no
 	appoint_ruling_party = yes
 	flagType = monarchy
@@ -93,11 +58,6 @@ lord_monarchy = {
 
 # Steward (Special monarchy for Gondor)
 stewardship = {
-	high_nobility = yes
-	low_nobility = yes
-	burgher = yes
-	loremaster = yes
-	
 	election = no
 	appoint_ruling_party = yes
 	flagType = monarchy
@@ -105,11 +65,6 @@ stewardship = {
 
 # Lord (Gondor specific puppet)
 fiefdom = {
-	high_nobility = yes
-	low_nobility = yes
-	burgher = yes
-	loremaster = yes
-	
 	election = no
 	appoint_ruling_party = yes
 	flagType = monarchy
@@ -117,11 +72,6 @@ fiefdom = {
 
 # Lord and Lady (Special monarchy for Lothlorien)
 galadhrim_monarchy = {
-	high_nobility = yes
-	low_nobility = yes
-	burgher = yes
-	loremaster = yes
-	
 	election = no
 	appoint_ruling_party = yes
 	flagType = monarchy
@@ -132,11 +82,6 @@ galadhrim_monarchy = {
 #########################
 # Lord (generic evil realm)
 dark_realm = {
-	high_nobility = yes
-	low_nobility = yes
-	burgher = yes
-	loremaster = yes
-	
 	election = no
 	appoint_ruling_party = yes
 }
@@ -170,33 +115,18 @@ istari_kingdom = {
 ##################
 # Chieftain
 goblin_tribe = {
-	high_nobility = yes
-	low_nobility = yes
-	burgher = yes
-	loremaster = yes
-	
 	election = no
 	appoint_ruling_party = yes
 }
 
 # Chief
 man_tribe = {
-	high_nobility = yes
-	low_nobility = yes
-	burgher = yes
-	loremaster = yes
-	
 	election = no
 	appoint_ruling_party = yes
 }
 
 # Thegen
 northmen_tribe = {
-	high_nobility = yes
-	low_nobility = yes
-	burgher = yes
-	loremaster = yes
-	
 	election = no
 	appoint_ruling_party = yes
 }
@@ -207,22 +137,12 @@ northmen_tribe = {
 
 # These two government types should never show up in game -- they are used purely as placeholders to be able to use the "cosmetic" flag spots for tags
 cosmetic_1_govt = {
-	high_nobility = yes
-	low_nobility = yes
-	burgher = yes
-	loremaster = yes
-	
 	election = no
 	appoint_ruling_party = yes
 	flagType = cosmetic_1
 }
 
 cosmetic_2_govt = {
-	high_nobility = yes
-	low_nobility = yes
-	burgher = yes
-	loremaster = yes
-	
 	election = no
 	appoint_ruling_party = yes
 	flagType = cosmetic_2
