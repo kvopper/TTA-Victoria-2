@@ -115,7 +115,7 @@ political_decisions = {
 			}
 			
 			# Set allowed leaders
-			set_country_flag = ideologies_barding_nobles_active
+			set_country_flag = ideologies_house_of_bard_active
 		}
 	}
 	

@@ -14,7 +14,7 @@ political_decisions = {
 			DAL = { add_country_modifier = { name = alliance_of_dwarves_and_men duration = -1 } }
 			
 			# Set allowed leaders
-			set_country_flag = ideologies_line_of_durin_nobles_active
+			set_country_flag = ideologies_line_of_durin_active
 			
 			set_country_flag = ERE_content
 		}
