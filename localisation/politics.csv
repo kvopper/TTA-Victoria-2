@@ -452,18 +452,18 @@ pacifism;Pacifism;x
 pacifism_desc;The government is actively hostile to the interests of the military, feeling they are opposed to the government policies.;x
 pacifism_l;Pacifism;x
 good_evil_alignment;Alignment;x
-good_alignment;Good Alignment;x
-good_alignment_l;Good Alignment;x
-good_alignment_desc;We are considered a Good Realm;x
-movement_good_alignment;Movement to become a Good Realm;x
-neutral_alignment;Neutral Alignment;x
-neutral_alignment_l;Neutral Alignment;x
-neutral_alignment_desc;We are considered a Neutral Realm;x
-movement_neutral_alignment;Movement to become a Neutral Realm;x
-evil_alignment;Evil Alignment;x
-evil_alignment_l;Evil Alignment;x
-evil_alignment_desc;We are considered an Evil Realm;x
-movement_evil_alignment;Movement to become an Evil Realm;x
+good_alignment;Anti-Sauron;x
+good_alignment_l;Anti-Sauron;x
+good_alignment_desc;We are aligned against Sauron;x
+movement_good_alignment;Movement to become a realm aligned against Sauron;x
+neutral_alignment;Opportunistic;x
+neutral_alignment_l;Opportunistic;x
+neutral_alignment_desc;We are considered a realm indifferent to Sauron;x
+movement_neutral_alignment;Movement to become a realm indifferent to Sauron;x
+evil_alignment;Sauronite;x
+evil_alignment_l;Sauronite;x
+evil_alignment_desc;We are considered a realm aligned with Sauron;x
+movement_evil_alignment;Movement to become a realm aligned with Sauron;x
 ###############################;x }
 ##### INTEREST GROUP TEXT #####;x {
 ###############################;x

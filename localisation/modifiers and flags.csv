@@ -313,13 +313,13 @@ call_to_arms_cooldown_desc;We recently had some flavor that called our allies to
 ##### WAR OF THE RING MODIFIERS #####;x {
 #####################################;x
 one_ring;The One Ring;x
-one_ring_desc;We are in possession of the One Ring. §RThis powerful artefact makes our pops more evil, and gives all other realms free cbs on us.§!;x
+one_ring_desc;We are in possession of the One Ring. §RThis powerful artefact makes our pops more aligned with Sauron, and gives all other realms free cbs on us.§!;x
 ring_hunters;Ring Hunters;x
 ring_hunters_desc;We have sent a hunting party searching for the rumored One Ring near Hobbiton.;x
 fellowship_member;Fellowship Member;x
 fellowship_member_desc;A member of our realm is part of the Fellowship of the Ring!;x
 remembered_sacrifice;Remembered Sacrifice;x
-remembered_sacrifice_desc;Our member of the Fellowship of the Ring sacrified themselves in the Mines of Moria to save the Fellowship from certain doom. They single-handedly fought an unbeatable foe - a Balrog of Morgoth - to buy time for the rest to escape. §RThis modifier makes you pops slightly more good-aligned§!.;x
+remembered_sacrifice_desc;Our member of the Fellowship of the Ring sacrified themselves in the Mines of Moria to save the Fellowship from certain doom. They single-handedly fought an unbeatable foe - a Balrog of Morgoth - to buy time for the rest to escape. §RThis modifier makes you pops slightly more Anti-Sauron§!.;x
 dont_peace_out;Don't Peace Out;x
 dont_peace_out_desc;This prevents us from Utility Tag peacing out.;x
 wotr_countdown;War of the Ring Countdown;x
