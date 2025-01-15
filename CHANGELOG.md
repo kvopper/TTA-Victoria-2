@@ -15,6 +15,9 @@ All notable changes will be documented in this file.
  - Party issues updated
    - Guild Policy turned into a setting
    - Trade and Tax Policy re-added (from vanilla)
+ - Reforms rebalanced
+   - Reforms are always better the farther you go down
+     - This is done because pops cannot support reforms in the reverse (i.e., if you have wealth voting, pops will never want landed voting, even if it makes sense)
 
 ## [v0.5 Bearers of the Black Arrow](https://github.com/The-Third-Age/TTA-Victoria-2/releases/tag/v0.5) - 2024-12-23
 
