@@ -640,7 +640,7 @@ social_reforms = {
 			pension_level = 1
 		}
 	}
-	# Research Points
+	# Promotion Rate
 	apprenticeship = {
 		next_step_only = yes
 		administrative = yes
@@ -657,7 +657,6 @@ social_reforms = {
 				NOT = { has_country_flag = DAL_guild_supported_by_realm }
 			}
 			administrative_multiplier = 1
-			research_points = 0.05
 		}
 		guild_school = {
 			allow = {
@@ -665,7 +664,6 @@ social_reforms = {
 				NOT = { has_country_flag = DAL_guild_supported_by_realm }
 			}
 			administrative_multiplier = 2
-			research_points = 0.10
 		}
 	}
 }

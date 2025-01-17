@@ -113,6 +113,19 @@ promotion_chance = {
 			strata = poor
 		}
 	}
+	group = {
+		modifier = {
+			factor = 0.2
+			OR = {
+				country = { apprenticeship = appointment }
+				country = { apprenticeship = guild_school }
+			}
+		}
+		modifier = {
+			factor = 0.2
+			country = { apprenticeship = guild_school }
+		}
+	}
 	modifier = {
 		factor = -100
 		location = { NOT = { controlled_by = owner } }
