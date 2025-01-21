@@ -4,7 +4,7 @@ primary_culture = gundabad_orc
 culture = orc_culture
 culture = gram_goblin
 religion = orc
-government = goblin_tribe
+government = tribal
 nationalvalue = generic_leader
 literacy = 0
 

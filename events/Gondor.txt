@@ -616,7 +616,7 @@ country_event = {
 			add_core = GNR
 		}
 		
-		GNR = { government = stewardship }
+		GNR = { government = monarchy_2 }
 		
 		any_country = {
 			limit = {

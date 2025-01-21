@@ -3,7 +3,7 @@ capital = 993
 primary_culture = gundabad_orc
 culture = orc_culture
 religion = orc
-government = goblin_tribe
+government = tribal
 nationalvalue = generic_leader
 literacy = 0
 

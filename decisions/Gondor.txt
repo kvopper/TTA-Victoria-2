@@ -1646,7 +1646,7 @@ political_decisions = {
 			
 			HRD = {
 				country_event = 2509
-				government = fiefdom
+				government = dominion_2
 				capital = 226
 				political_reform = no_slavery
 			}
@@ -2074,7 +2074,7 @@ political_decisions = {
 		picture = "gondor_throne"
 		potential = {
 			tag = GON
-			government = stewardship
+			government = monarchy_2
 		}
 		
 		allow = {

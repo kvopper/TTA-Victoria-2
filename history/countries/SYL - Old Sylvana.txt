@@ -4,7 +4,7 @@ primary_culture = arthedani
 culture = men_culture
 culture = siredain
 religion = men
-government = man_tribe
+government = tribal
 nationalvalue = generic_leader
 literacy = 0
 

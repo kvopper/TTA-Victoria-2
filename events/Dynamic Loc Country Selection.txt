@@ -1445,10 +1445,7 @@ country_event = {
 				GON = {
 					has_country_flag = dynamic_loc_slot_selector
 					OR = {
-						government = dark_realm
-						government = sauron_puppet
 						government = sauron_dictatorship
-						government = nazgul_dictatorship
 					}
 				}
 			}
@@ -1461,18 +1458,8 @@ country_event = {
 					has_country_flag = dynamic_loc_slot_selector
 					OR = {
 						government = istari_kingdom
-						government = principality
-						government = lord_monarchy
 						government = monarchy
 						government = cosmetic_2_govt
-						government = stewardship
-						government = galadhrim_monarchy
-						government = hobbit_realm
-						government = northmen_democracy
-						government = goblin_tribe
-						government = man_tribe
-						government = northmen_tribe
-						government = fiefdom
 						government = cosmetic_1_govt
 					}
 				}
@@ -1487,19 +1474,8 @@ country_event = {
 					OR = {
 						government = istari_kingdom
 						government = democracy
-						government = principality
-						government = lord_monarchy
 						government = monarchy
 						government = cosmetic_2_govt
-						government = dark_realm
-						government = stewardship
-						government = galadhrim_monarchy
-						government = hobbit_realm
-						government = northmen_democracy
-						government = goblin_tribe
-						government = man_tribe
-						government = northmen_tribe
-						government = nazgul_dictatorship
 						government = cosmetic_1_govt
 					}
 				}
@@ -1512,7 +1488,6 @@ country_event = {
 				ITH = {
 					has_country_flag = dynamic_loc_slot_selector
 					OR = {
-						government = sauron_puppet
 						government = sauron_dictatorship
 					}
 				}
@@ -1524,7 +1499,7 @@ country_event = {
 				has_province_modifier = dynamic_loc_slot_selector
 				ITH = {
 					has_country_flag = dynamic_loc_slot_selector
-					government = fiefdom
+					government = dominion_2
 				}
 			}
 			state_scope = { change_region_name = "@ITH Fiefdom of Ithilien" }
@@ -1537,21 +1512,9 @@ country_event = {
 					OR = {
 						government = istari_kingdom
 						government = democracy
-						government = principality
-						government = lord_monarchy
 						government = monarchy
 						government = cosmetic_2_govt
-						government = dark_realm
-						government = stewardship
-						government = galadhrim_monarchy
-						government = sauron_puppet
-						government = hobbit_realm
-						government = northmen_democracy
-						government = goblin_tribe
-						government = man_tribe
 						government = sauron_dictatorship
-						government = northmen_tribe
-						government = nazgul_dictatorship
 						government = cosmetic_1_govt
 					}
 				}
@@ -1563,7 +1526,7 @@ country_event = {
 				has_province_modifier = dynamic_loc_slot_selector
 				LOS = {
 					has_country_flag = dynamic_loc_slot_selector
-					government = fiefdom
+					government = dominion_2
 				}
 			}
 			state_scope = { change_region_name = "@LOS Fiefdom of Lossarnach" }
@@ -1573,7 +1536,7 @@ country_event = {
 				has_province_modifier = dynamic_loc_slot_selector
 				LEB = {
 					has_country_flag = dynamic_loc_slot_selector
-					government = fiefdom
+					government = dominion_2
 				}
 			}
 			state_scope = { change_region_name = "@LEB Fiefdom of Lebennin" }
@@ -1586,21 +1549,9 @@ country_event = {
 					OR = {
 						government = istari_kingdom
 						government = democracy
-						government = principality
-						government = lord_monarchy
 						government = monarchy
 						government = cosmetic_2_govt
-						government = dark_realm
-						government = stewardship
-						government = galadhrim_monarchy
-						government = sauron_puppet
-						government = hobbit_realm
-						government = northmen_democracy
-						government = goblin_tribe
-						government = man_tribe
 						government = sauron_dictatorship
-						government = northmen_tribe
-						government = nazgul_dictatorship
 						government = cosmetic_1_govt
 					}
 				}
@@ -1612,7 +1563,7 @@ country_event = {
 				has_province_modifier = dynamic_loc_slot_selector
 				AMR = {
 					has_country_flag = dynamic_loc_slot_selector
-					government = fiefdom
+					government = dominion_2
 				}
 			}
 			state_scope = { change_region_name = "@AMR Fiefdom of Belfalas" }
@@ -1624,21 +1575,9 @@ country_event = {
 					has_country_flag = dynamic_loc_slot_selector
 					OR = {
 						government = istari_kingdom
-						government = principality
-						government = lord_monarchy
 						government = monarchy
 						government = cosmetic_2_govt
-						government = dark_realm
-						government = stewardship
-						government = galadhrim_monarchy
-						government = sauron_puppet
-						government = hobbit_realm
-						government = northmen_democracy
-						government = goblin_tribe
-						government = man_tribe
 						government = sauron_dictatorship
-						government = northmen_tribe
-						government = nazgul_dictatorship
 						government = cosmetic_1_govt
 					}
 				}
@@ -1663,21 +1602,9 @@ country_event = {
 					OR = {
 						government = istari_kingdom
 						government = democracy
-						government = principality
-						government = lord_monarchy
 						government = monarchy
 						government = cosmetic_2_govt
-						government = dark_realm
-						government = stewardship
-						government = galadhrim_monarchy
-						government = sauron_puppet
-						government = hobbit_realm
-						government = northmen_democracy
-						government = goblin_tribe
-						government = man_tribe
 						government = sauron_dictatorship
-						government = northmen_tribe
-						government = nazgul_dictatorship
 						government = cosmetic_1_govt
 					}
 				}
@@ -1689,7 +1616,7 @@ country_event = {
 				has_province_modifier = dynamic_loc_slot_selector
 				LAM = {
 					has_country_flag = dynamic_loc_slot_selector
-					government = fiefdom
+					government = dominion_2
 				}
 			}
 			state_scope = { change_region_name = "@LAM Fiefdom of Lamedon" }
@@ -1702,21 +1629,9 @@ country_event = {
 					OR = {
 						government = istari_kingdom
 						government = democracy
-						government = principality
-						government = lord_monarchy
 						government = monarchy
 						government = cosmetic_2_govt
-						government = dark_realm
-						government = stewardship
-						government = galadhrim_monarchy
-						government = sauron_puppet
-						government = hobbit_realm
-						government = northmen_democracy
-						government = goblin_tribe
-						government = man_tribe
 						government = sauron_dictatorship
-						government = northmen_tribe
-						government = nazgul_dictatorship
 						government = cosmetic_1_govt
 					}
 				}
@@ -1728,7 +1643,7 @@ country_event = {
 				has_province_modifier = dynamic_loc_slot_selector
 				ANF = {
 					has_country_flag = dynamic_loc_slot_selector
-					government = fiefdom
+					government = dominion_2
 				}
 			}
 			state_scope = { change_region_name = "@ANF Fiefdom of Anfalas" }
@@ -1741,21 +1656,9 @@ country_event = {
 					OR = {
 						government = istari_kingdom
 						government = democracy
-						government = principality
-						government = lord_monarchy
 						government = monarchy
 						government = cosmetic_2_govt
-						government = dark_realm
-						government = stewardship
-						government = galadhrim_monarchy
-						government = sauron_puppet
-						government = hobbit_realm
-						government = northmen_democracy
-						government = goblin_tribe
-						government = man_tribe
 						government = sauron_dictatorship
-						government = northmen_tribe
-						government = nazgul_dictatorship
 						government = cosmetic_1_govt
 					}
 				}
@@ -1767,7 +1670,7 @@ country_event = {
 				has_province_modifier = dynamic_loc_slot_selector
 				ANO = {
 					has_country_flag = dynamic_loc_slot_selector
-					government = fiefdom
+					government = dominion_2
 				}
 			}
 			state_scope = { change_region_name = "@ANO Fiefdom of Anórien" }
@@ -1780,21 +1683,9 @@ country_event = {
 					OR = {
 						government = istari_kingdom
 						government = democracy
-						government = principality
-						government = lord_monarchy
 						government = monarchy
 						government = cosmetic_2_govt
-						government = dark_realm
-						government = stewardship
-						government = galadhrim_monarchy
-						government = sauron_puppet
-						government = hobbit_realm
-						government = northmen_democracy
-						government = goblin_tribe
-						government = man_tribe
 						government = sauron_dictatorship
-						government = northmen_tribe
-						government = nazgul_dictatorship
 						government = cosmetic_1_govt
 					}
 				}
@@ -1806,7 +1697,7 @@ country_event = {
 				has_province_modifier = dynamic_loc_slot_selector
 				TOL = {
 					has_country_flag = dynamic_loc_slot_selector
-					government = fiefdom
+					government = dominion_2
 				}
 			}
 			state_scope = { change_region_name = "@TOL Fiefdom of Tolfalas" }
@@ -1816,7 +1707,7 @@ country_event = {
 				has_province_modifier = dynamic_loc_slot_selector
 				MRN = {
 					has_country_flag = dynamic_loc_slot_selector
-					government = fiefdom
+					government = dominion_2
 				}
 			}
 			state_scope = { change_region_name = "@MRN Fiefdom of Mornan" }
@@ -1829,21 +1720,9 @@ country_event = {
 					OR = {
 						government = istari_kingdom
 						government = democracy
-						government = principality
-						government = lord_monarchy
 						government = monarchy
 						government = cosmetic_2_govt
-						government = dark_realm
-						government = stewardship
-						government = galadhrim_monarchy
-						government = sauron_puppet
-						government = hobbit_realm
-						government = northmen_democracy
-						government = goblin_tribe
-						government = man_tribe
 						government = sauron_dictatorship
-						government = northmen_tribe
-						government = nazgul_dictatorship
 						government = cosmetic_1_govt
 					}
 				}
@@ -1865,21 +1744,9 @@ country_event = {
 					OR = {
 						government = istari_kingdom
 						government = democracy
-						government = principality
-						government = lord_monarchy
 						government = monarchy
 						government = cosmetic_2_govt
-						government = dark_realm
-						government = stewardship
-						government = galadhrim_monarchy
-						government = sauron_puppet
-						government = hobbit_realm
-						government = northmen_democracy
-						government = goblin_tribe
-						government = man_tribe
 						government = sauron_dictatorship
-						government = northmen_tribe
-						government = nazgul_dictatorship
 						government = cosmetic_1_govt
 					}
 				}
@@ -1891,7 +1758,7 @@ country_event = {
 				has_province_modifier = dynamic_loc_slot_selector
 				ADR = {
 					has_country_flag = dynamic_loc_slot_selector
-					government = fiefdom
+					government = dominion_2
 				}
 			}
 			state_scope = { change_region_name = "@ADR Fiefdom of Andrast" }
@@ -1912,10 +1779,7 @@ country_event = {
 				GNR = {
 					has_country_flag = dynamic_loc_slot_selector
 					OR = {
-						government = dark_realm
-						government = sauron_puppet
 						government = sauron_dictatorship
-						government = nazgul_dictatorship
 					}
 				}
 			}
@@ -1928,18 +1792,8 @@ country_event = {
 					has_country_flag = dynamic_loc_slot_selector
 					OR = {
 						government = istari_kingdom
-						government = principality
-						government = lord_monarchy
 						government = monarchy
 						government = cosmetic_2_govt
-						government = stewardship
-						government = galadhrim_monarchy
-						government = hobbit_realm
-						government = northmen_democracy
-						government = goblin_tribe
-						government = man_tribe
-						government = northmen_tribe
-						government = fiefdom
 						government = cosmetic_1_govt
 					}
 				}
@@ -1975,21 +1829,9 @@ country_event = {
 					OR = {
 						government = istari_kingdom
 						government = democracy
-						government = principality
-						government = lord_monarchy
 						government = monarchy
 						government = cosmetic_2_govt
-						government = dark_realm
-						government = stewardship
-						government = galadhrim_monarchy
-						government = sauron_puppet
-						government = hobbit_realm
-						government = northmen_democracy
-						government = goblin_tribe
-						government = man_tribe
 						government = sauron_dictatorship
-						government = northmen_tribe
-						government = nazgul_dictatorship
 						government = cosmetic_1_govt
 					}
 				}
@@ -2001,7 +1843,7 @@ country_event = {
 				has_province_modifier = dynamic_loc_slot_selector
 				PUK = {
 					has_country_flag = dynamic_loc_slot_selector
-					government = fiefdom
+					government = dominion_2
 				}
 			}
 			state_scope = { change_region_name = "@PUK Fiefdom of Drúwaith Iaur" }
@@ -2037,22 +1879,9 @@ country_event = {
 					has_country_flag = dynamic_loc_slot_selector
 					OR = {
 						government = istari_kingdom
-						government = principality
-						government = lord_monarchy
 						government = monarchy
 						government = cosmetic_2_govt
-						government = dark_realm
-						government = stewardship
-						government = galadhrim_monarchy
-						government = sauron_puppet
-						government = hobbit_realm
-						government = northmen_democracy
-						government = goblin_tribe
-						government = man_tribe
 						government = sauron_dictatorship
-						government = northmen_tribe
-						government = fiefdom
-						government = nazgul_dictatorship
 						government = cosmetic_1_govt
 					}
 				}
@@ -2066,22 +1895,9 @@ country_event = {
 					has_country_flag = dynamic_loc_slot_selector
 					OR = {
 						government = istari_kingdom
-						government = principality
-						government = lord_monarchy
 						government = monarchy
 						government = cosmetic_2_govt
-						government = dark_realm
-						government = stewardship
-						government = galadhrim_monarchy
-						government = sauron_puppet
-						government = hobbit_realm
-						government = northmen_democracy
-						government = goblin_tribe
-						government = man_tribe
 						government = sauron_dictatorship
-						government = northmen_tribe
-						government = fiefdom
-						government = nazgul_dictatorship
 						government = cosmetic_1_govt
 					}
 				}
@@ -2106,21 +1922,8 @@ country_event = {
 					OR = {
 						government = istari_kingdom
 						government = democracy
-						government = principality
-						government = lord_monarchy
 						government = monarchy
 						government = cosmetic_2_govt
-						government = dark_realm
-						government = stewardship
-						government = galadhrim_monarchy
-						government = sauron_puppet
-						government = hobbit_realm
-						government = northmen_democracy
-						government = goblin_tribe
-						government = man_tribe
-						government = northmen_tribe
-						government = fiefdom
-						government = nazgul_dictatorship
 						government = cosmetic_1_govt
 					}
 				}
@@ -2166,21 +1969,9 @@ country_event = {
 					OR = {
 						government = istari_kingdom
 						government = democracy
-						government = principality
-						government = lord_monarchy
 						government = monarchy
 						government = cosmetic_2_govt
-						government = dark_realm
-						government = stewardship
-						government = galadhrim_monarchy
-						government = sauron_puppet
-						government = hobbit_realm
-						government = northmen_democracy
-						government = goblin_tribe
-						government = man_tribe
 						government = sauron_dictatorship
-						government = northmen_tribe
-						government = nazgul_dictatorship
 						government = cosmetic_1_govt
 					}
 				}
@@ -2192,7 +1983,7 @@ country_event = {
 				has_province_modifier = dynamic_loc_slot_selector
 				HRD = {
 					has_country_flag = dynamic_loc_slot_selector
-					government = fiefdom
+					government = dominion_2
 				}
 			}
 			state_scope = { change_region_name = "@HRD South Gondor" }
@@ -2389,22 +2180,9 @@ country_event = {
 					has_country_flag = dynamic_loc_slot_selector
 					OR = {
 						government = istari_kingdom
-						government = principality
-						government = lord_monarchy
 						government = monarchy
 						government = cosmetic_2_govt
-						government = dark_realm
-						government = stewardship
-						government = galadhrim_monarchy
-						government = sauron_puppet
-						government = hobbit_realm
-						government = northmen_democracy
-						government = goblin_tribe
-						government = man_tribe
 						government = sauron_dictatorship
-						government = northmen_tribe
-						government = fiefdom
-						government = nazgul_dictatorship
 						government = cosmetic_1_govt
 					}
 				}
@@ -2495,22 +2273,9 @@ country_event = {
 					has_country_flag = dynamic_loc_slot_selector
 					OR = {
 						government = istari_kingdom
-						government = principality
-						government = lord_monarchy
 						government = monarchy
 						government = cosmetic_2_govt
-						government = dark_realm
-						government = stewardship
-						government = galadhrim_monarchy
-						government = sauron_puppet
-						government = hobbit_realm
-						government = northmen_democracy
-						government = goblin_tribe
-						government = man_tribe
 						government = sauron_dictatorship
-						government = northmen_tribe
-						government = fiefdom
-						government = nazgul_dictatorship
 						government = cosmetic_1_govt
 					}
 				}
@@ -2614,22 +2379,9 @@ country_event = {
 					has_country_flag = dynamic_loc_slot_selector
 					OR = {
 						government = istari_kingdom
-						government = principality
-						government = lord_monarchy
 						government = monarchy
 						government = cosmetic_2_govt
-						government = dark_realm
-						government = stewardship
-						government = galadhrim_monarchy
-						government = sauron_puppet
-						government = hobbit_realm
-						government = northmen_democracy
-						government = goblin_tribe
-						government = man_tribe
 						government = sauron_dictatorship
-						government = northmen_tribe
-						government = fiefdom
-						government = nazgul_dictatorship
 						government = cosmetic_1_govt
 					}
 				}
@@ -2718,7 +2470,7 @@ country_event = {
 				has_province_modifier = dynamic_loc_slot_selector
 				GUL = {
 					has_country_flag = dynamic_loc_slot_selector
-					government = nazgul_dictatorship
+					government = dominion_1
 				}
 			}
 			state_scope = { change_region_name = "@GUL Nazgûl Realm of Dol Guldur" }
@@ -2731,21 +2483,9 @@ country_event = {
 					OR = {
 						government = istari_kingdom
 						government = democracy
-						government = principality
-						government = lord_monarchy
 						government = monarchy
 						government = cosmetic_2_govt
-						government = dark_realm
-						government = stewardship
-						government = galadhrim_monarchy
-						government = sauron_puppet
-						government = hobbit_realm
-						government = northmen_democracy
-						government = goblin_tribe
-						government = man_tribe
 						government = sauron_dictatorship
-						government = northmen_tribe
-						government = fiefdom
 						government = cosmetic_1_govt
 					}
 				}
@@ -2848,7 +2588,7 @@ country_event = {
 				has_province_modifier = dynamic_loc_slot_selector
 				ROH = {
 					has_country_flag = dynamic_loc_slot_selector
-					government = fiefdom
+					government = dominion_2
 				}
 			}
 			state_scope = { change_region_name = "@ROH Fiefdom of Calenardhon" }
@@ -2861,21 +2601,9 @@ country_event = {
 					OR = {
 						government = istari_kingdom
 						government = democracy
-						government = principality
-						government = lord_monarchy
 						government = monarchy
 						government = cosmetic_2_govt
-						government = dark_realm
-						government = stewardship
-						government = galadhrim_monarchy
-						government = sauron_puppet
-						government = hobbit_realm
-						government = northmen_democracy
-						government = goblin_tribe
-						government = man_tribe
 						government = sauron_dictatorship
-						government = northmen_tribe
-						government = nazgul_dictatorship
 						government = cosmetic_1_govt
 					}
 				}
@@ -2890,21 +2618,9 @@ country_event = {
 					OR = {
 						government = istari_kingdom
 						government = democracy
-						government = principality
-						government = lord_monarchy
 						government = monarchy
 						government = cosmetic_2_govt
-						government = dark_realm
-						government = stewardship
-						government = galadhrim_monarchy
-						government = sauron_puppet
-						government = hobbit_realm
-						government = northmen_democracy
-						government = goblin_tribe
-						government = man_tribe
 						government = sauron_dictatorship
-						government = northmen_tribe
-						government = nazgul_dictatorship
 						government = cosmetic_1_govt
 					}
 				}
@@ -2916,7 +2632,7 @@ country_event = {
 				has_province_modifier = dynamic_loc_slot_selector
 				ISE = {
 					has_country_flag = dynamic_loc_slot_selector
-					government = fiefdom
+					government = dominion_2
 				}
 			}
 			state_scope = { change_region_name = "@ISE Fiefdom of Dunfearn" }
@@ -3020,21 +2736,9 @@ country_event = {
 					OR = {
 						government = istari_kingdom
 						government = democracy
-						government = principality
-						government = lord_monarchy
 						government = monarchy
 						government = cosmetic_2_govt
-						government = dark_realm
-						government = stewardship
-						government = galadhrim_monarchy
-						government = sauron_puppet
-						government = hobbit_realm
-						government = northmen_democracy
-						government = goblin_tribe
-						government = man_tribe
 						government = sauron_dictatorship
-						government = northmen_tribe
-						government = fiefdom
 						government = cosmetic_1_govt
 					}
 				}
@@ -3046,7 +2750,7 @@ country_event = {
 				has_province_modifier = dynamic_loc_slot_selector
 				MAN = {
 					has_country_flag = dynamic_loc_slot_selector
-					government = nazgul_dictatorship
+					government = dominion_1
 				}
 			}
 			state_scope = { change_region_name = "@MAN Witch-Kingdom of Angmar" }
@@ -3096,22 +2800,9 @@ country_event = {
 					has_country_flag = dynamic_loc_slot_selector
 					OR = {
 						government = istari_kingdom
-						government = principality
-						government = lord_monarchy
 						government = monarchy
 						government = cosmetic_2_govt
-						government = dark_realm
-						government = stewardship
-						government = galadhrim_monarchy
-						government = sauron_puppet
-						government = hobbit_realm
-						government = northmen_democracy
-						government = goblin_tribe
-						government = man_tribe
 						government = sauron_dictatorship
-						government = northmen_tribe
-						government = fiefdom
-						government = nazgul_dictatorship
 						government = cosmetic_1_govt
 					}
 				}
@@ -3139,22 +2830,9 @@ country_event = {
 					has_country_flag = dynamic_loc_slot_selector
 					OR = {
 						government = istari_kingdom
-						government = principality
-						government = lord_monarchy
 						government = monarchy
 						government = cosmetic_2_govt
-						government = dark_realm
-						government = stewardship
-						government = galadhrim_monarchy
-						government = sauron_puppet
-						government = hobbit_realm
-						government = northmen_democracy
-						government = goblin_tribe
-						government = man_tribe
 						government = sauron_dictatorship
-						government = northmen_tribe
-						government = fiefdom
-						government = nazgul_dictatorship
 						government = cosmetic_1_govt
 					}
 				}
@@ -3295,7 +2973,7 @@ country_event = {
 				has_province_modifier = dynamic_loc_slot_selector
 				WEA = {
 					has_country_flag = dynamic_loc_slot_selector
-					government = nazgul_dictatorship
+					government = dominion_1
 				}
 			}
 			state_scope = { change_region_name = "@WEA Nazgûl Realm of Weathertop" }
@@ -3308,21 +2986,9 @@ country_event = {
 					OR = {
 						government = istari_kingdom
 						government = democracy
-						government = principality
-						government = lord_monarchy
 						government = monarchy
 						government = cosmetic_2_govt
-						government = dark_realm
-						government = stewardship
-						government = galadhrim_monarchy
-						government = sauron_puppet
-						government = hobbit_realm
-						government = northmen_democracy
-						government = goblin_tribe
-						government = man_tribe
 						government = sauron_dictatorship
-						government = northmen_tribe
-						government = fiefdom
 						government = cosmetic_1_govt
 					}
 				}
@@ -3343,22 +3009,9 @@ country_event = {
 					has_country_flag = dynamic_loc_slot_selector
 					OR = {
 						government = istari_kingdom
-						government = principality
-						government = lord_monarchy
 						government = monarchy
 						government = cosmetic_2_govt
-						government = dark_realm
-						government = stewardship
-						government = galadhrim_monarchy
-						government = sauron_puppet
-						government = hobbit_realm
-						government = northmen_democracy
-						government = goblin_tribe
-						government = man_tribe
 						government = sauron_dictatorship
-						government = northmen_tribe
-						government = fiefdom
-						government = nazgul_dictatorship
 						government = cosmetic_1_govt
 					}
 				}
@@ -3428,21 +3081,8 @@ country_event = {
 					OR = {
 						government = istari_kingdom
 						government = democracy
-						government = principality
-						government = lord_monarchy
 						government = cosmetic_2_govt
-						government = dark_realm
-						government = stewardship
-						government = galadhrim_monarchy
-						government = sauron_puppet
-						government = hobbit_realm
-						government = northmen_democracy
-						government = goblin_tribe
-						government = man_tribe
 						government = sauron_dictatorship
-						government = northmen_tribe
-						government = fiefdom
-						government = nazgul_dictatorship
 						government = cosmetic_1_govt
 					}
 				}

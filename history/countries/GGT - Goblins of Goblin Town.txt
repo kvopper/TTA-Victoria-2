@@ -3,7 +3,7 @@ capital = 849
 primary_culture = goblin_towner
 culture = orc_culture
 religion = orc
-government = goblin_tribe
+government = tribal
 nationalvalue = generic_leader
 literacy = 0
 

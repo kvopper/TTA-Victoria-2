@@ -3,7 +3,7 @@ capital = 962
 primary_culture = great_spider
 culture = spider_culture
 religion = spider
-government = dark_realm
+government = tribal
 nationalvalue = generic_leader
 literacy = 0
 

@@ -3,7 +3,7 @@ capital = 936
 primary_culture = falathrim
 culture = elven_culture
 religion = elven
-government = lord_monarchy
+government = monarchy
 nationalvalue = cirdan
 civilized = yes
 

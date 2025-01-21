@@ -1324,11 +1324,7 @@ country_event = {
 					nationalvalue = bard_ii
 					nationalvalue = regency
 				}
-				OR = {
-					government = democracy
-					government = hobbit_realm
-					government = northmen_democracy
-				}
+				government = democracy
 			}
 			
 			country_event = 3508

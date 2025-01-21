@@ -6,7 +6,7 @@ culture = goblin_towner
 culture = gundabad_orc
 culture = gram_goblin
 religion = orc
-government = goblin_tribe
+government = tribal
 nationalvalue = generic_leader
 literacy = 0
 

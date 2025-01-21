@@ -3,7 +3,7 @@ capital = 709
 primary_culture = woodsmen
 culture = men_culture
 religion = men
-government = man_tribe
+government = tribal
 nationalvalue = generic_leader
 literacy = 0
 

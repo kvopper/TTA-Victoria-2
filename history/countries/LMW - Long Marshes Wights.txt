@@ -3,7 +3,7 @@ capital = 451
 primary_culture = wight
 culture = undead_culture
 religion = undead
-government = dark_realm
+government = tribal
 nationalvalue = generic_leader
 literacy = 0
 

@@ -3,40 +3,22 @@
 ############################;x
 democracy;Republic;x
 democracy_ruler;Lord;x
-hobbit_realm;Hobbit Realm;x
-hobbit_realm_ruler;Mayor;x
-northmen_democracy;Northman Republic;x
-northmen_democracy_ruler;Master;x
+merchant_republic;Merchant Republic;x
+merchant_republic_ruler;Lord;x
 monarchy;Monarchy;x
 monarchy_ruler;King;x
 monarchy_2;Monarchy;x
 monarchy_2_ruler;King;x
-stewardship;Monarchy;x
-stewardship_ruler;Steward;x
-principality;Principality;x
-principality_ruler;Prince;x
-fiefdom;Fiefdom;x
-fiefdom_ruler;Lord;x
-galadhrim_monarchy;Dual Monarchy;x
-galadhrim_monarchy_ruler;Lord and Lady;x
-lord_monarchy;Monarchy;x
-lord_monarchy_ruler;Lord;x
-dark_realm;Dark Realm;x
-dark_realm_ruler;Lord;x
+tribal;Tribal;x
+tribal_ruler;Chief;x
 sauron_dictatorship;Sauron's Domain;x
 sauron_dictatorship_ruler;Dark Lord;x
-sauron_puppet;Sauron's Domain;x
-sauron_puppet_ruler;Lord;x
-nazgul_dictatorship;Nazgul's Realm;x
-nazgul_dictatorship_ruler;Lord;x
 istari_kingdom;Wizard's Realm;x
 istari_kingdom_ruler;Lord;x
-goblin_tribe;Tribe;x
-goblin_tribe_ruler;Chieftain;x
-man_tribe;Chiefdom;x
-man_tribe_ruler;Chief;x
-northmen_tribe;Northmen Tribe;x
-northmen_tribe_ruler;Thegen;x
+dominion_1;Sauron's Dominion;x
+dominion_1_ruler;Lord;x
+dominion_2;Dominion;x
+dominion_2_ruler;Lord;x
 cosmetic_1_govt;Cosmetic Government -- Will Never Be Seen;x
 cosmetic_1_govt_ruler;Cosmetic Government Ruler;x
 cosmetic_2_govt;Cosmetic Government -- Will Never Be Seen;x
@@ -188,12 +170,10 @@ ADH;Adhallings of the Mirkwood Eaves;x
 ADH_ADJ;Adhalling;x
 ADB;Kingdom of Adûnabâr;x
 ADB_democracy;Republic of Adûnabâr;x
-ADB_sauron_dictatorship;Kingdom of Adûnabâr;x
-ADB_sauron_puppet;Kingdom of Adûnabâr;x
-ADB_nazgul_dictatorship;Kingdom of Adûnabâr;x
+ADB_dominion_1;Kingdom of Adûnabâr;x
 ADB_ADJ;Adûnabârian;x
 ADR;Andrast;x
-ADR_fiefdom;Fiefdom of Andrast;x
+ADR_dominion_2;Fiefdom of Andrast;x
 ADR_ADJ;Andrasthrim;x
 AGA;Agasha Clan;x
 AGA_ADJ;Kuga;x
@@ -208,15 +188,15 @@ ALN_ADJ;Aivathiuda;x
 AMO;Amov Clan;x
 AMO_ADJ;Logath;x
 AMR;Principality of Dol Amroth;x
-AMR_fiefdom;Fiefdom of Belfalas;x
+AMR_dominion_2;Fiefdom of Belfalas;x
 AMR_democracy;Republic of Belfalas;x
 AMR_ADJ;Amrothian;x
-AMR_fiefdom_ADJ;Belfalathrim;x
+AMR_dominion_2_ADJ;Belfalathrim;x
 ANF;Anfalas;x
-ANF_fiefdom;Fiefdom of Anfalas;x
+ANF_dominion_2;Fiefdom of Anfalas;x
 ANF_ADJ;Anfalathrim;x
 ANO;Anórien;x
-ANO_fiefdom;Fiefdom of Anórien;x
+ANO_dominion_2;Fiefdom of Anórien;x
 ANO_ADJ;Anórienrim;x
 ANT;Men of Antharsborg;x
 ANT_ADJ;Anthar;x
@@ -271,7 +251,6 @@ DND;Dúnedain of the North;x
 DND_ADJ;Dúnedain;x
 DOR;Kingdom of Dorwinion;x
 DOR_democracy;Republic of Dorwinion;x
-DOR_northmen_democracy;Republic of Dorwinion;x
 DOR_ADJ;Dorwinrim;x
 DRA;Dunir of Angast;x
 DRA_ADJ;Wildmen;x
@@ -346,17 +325,13 @@ GMO;Goblins of Moria;x
 GMO_ADJ;Moria Goblin;x
 GNR;Turmen Hyallondiéva;x
 GNR_democracy;Republic of Gondor;x
-GNR_dark_realm;Kingdom of Adûnabâr;x
-GNR_sauron_dictatorship;Kingdom of Adûnabâr;x
-GNR_sauron_puppet;Kingdom of Adûnabâr;x
-GNR_nazgul_dictatorship;Kingdom of Adûnabâr;x
+GNR_dominion_1;Kingdom of Adûnabâr;x
+GNR_monarchy_2;Stewardship of Gondir;x
 GNR_ADJ;Gondorian;x
 GON;Kingdom of Gondor;x
 GON_democracy;Republic of Gondor;x
-GON_dark_realm;Kingdom of Adûnabâr;x
-GON_sauron_dictatorship;Kingdom of Adûnabâr;x
-GON_sauron_puppet;Kingdom of Adûnabâr;x
-GON_nazgul_dictatorship;Kingdom of Adûnabâr;x
+GON_dominion_1;Kingdom of Adûnabâr;x
+GON_monarchy_2;Stewardship of Gondor;x
 GON_ADJ;Gondorian;x
 GOR;Gord Clan;x
 GOR_ADJ;Logath;x
@@ -366,7 +341,7 @@ GRM;Orcs of Mount Gram;x
 GRM_ADJ;Gram-goblin;x
 GUL;Dol Guldur;x
 GUL_ADJ;Guldurrim;x;
-GUL_nazgul_dictatorship;Nazgûl Realm of Dol Guldur;x
+GUL_dominion_1;Nazgûl Realm of Dol Guldur;x
 GUN;Orcs of Gundabad;x
 GUN_ADJ;Gundabad Orc;x
 GWA;Gwathirim;x
@@ -376,9 +351,9 @@ HAR_ADJ;Haradrim;x
 HEN;Tribes of Henlan;x
 HEN_ADJ;Helani;x
 HRD;Harondor;x
-HRD_fiefdom;South Gondor;x
+HRD_dominion_2;South Gondor;x
 HRD_ADJ;Harondan;x
-HRD_fiefdom_ADJ;South Gondorian;x
+HRD_dominion_2_ADJ;South Gondorian;x
 HRI;Herimundi of the Vale;x
 HRI_ADJ;Herimundi;x
 HRN;Harnendor;x
@@ -396,12 +371,11 @@ IML_ADJ;Half-Elven;x
 IRO;Lordship of the Iron Hills;x
 IRO_ADJ;Dwarvish;x
 ISE;Realm of Isengard;x
-ISE_fiefdom;Fiefdom of Dunfearn;x
+ISE_dominion_2;Fiefdom of Dunfearn;x
 ISE_ADJ;Isengardhrim;x
 ITH;Principality of Ithilien;x
-ITH_sauron_dictatorship;Occupied Ithilien;x
-ITH_sauron_puppet;Occupied Ithilien;x
-ITH_fiefdom;Fiefdom of Ithilien;x
+ITH_dominion_1;Occupied Ithilien;x
+ITH_dominion_2;Fiefdom of Ithilien;x
 ITH_ADJ;Ithilienrim;x
 KHA;Variags of Khand;x
 KHA_ADJ;Variag;x
@@ -416,12 +390,12 @@ KSH_ADJ;Koshrim;x
 KUG;Kug Clan;x
 KUG_ADJ;Kuga;x
 LAM;Lamedon;x
-LAM_fiefdom;Fiefdom of Lamedon;x
+LAM_dominion_2;Fiefdom of Lamedon;x
 LAM_ADJ;Lamedonrim;x
 LAR;Snow Orcs of Lar Huz;x
 LAR_ADJ;Snow Orc;x
 LEB;Lebennin;x
-LEB_fiefdom;Fiefdom of Lebennin;x
+LEB_dominion_2;Fiefdom of Lebennin;x
 LEB_ADJ;Lebenninrim;x
 LSF;Lossoth of Forochel;x
 LSF_ADJ;Losson;x
@@ -434,7 +408,7 @@ LMW_ADJ;Marsh-wight;x
 LOR;Realm of Lothlórien;x
 LOR_ADJ;Galadhrim;x
 LOS;Lossarnach;x
-LOS_fiefdom;Fiefdom of Lossarnach;x
+LOS_dominion_2;Fiefdom of Lossarnach;x
 LOS_ADJ;Lossarnachrim;x
 LUR;Lûrmsakûn;x
 LUR_ADJ;Lûrmsakûni;x
@@ -444,7 +418,7 @@ MAG;Tribes of Magur;x
 MAG_ADJ;Enedwaithrim;x
 MAN;Men of Angmar;x
 MAN_ADJ;Angmarrim;x
-MAN_nazgul_dictatorship;Witch-Kingdom of Angmar;x
+MAN_dominion_1;Witch-Kingdom of Angmar;x
 MAU;Stoors of Maur Tulhau;x
 MAU_ADJ;Stoor;x
 MEL;Mathleisbuarg;x
@@ -459,7 +433,7 @@ MOR_ADJ;Mordorim;x
 MRB;Dunlendings of Mirobel;x
 MRB_ADJ;Hollin-folk;x
 MRN;Mornan;x
-MRN_fiefdom;Fiefdom of Mornan;x
+MRN_dominion_2;Fiefdom of Mornan;x
 MRN_ADJ;Mornathrim;x
 MTN;Urukdurbzagh;x
 MTN_ADJ;Urukdurbzaghian;x
@@ -484,7 +458,7 @@ PEZ_ADJ;Pezarsani;x
 PRI;Pris Clan;x
 PRI_ADJ;Urgath;x
 PUK;Drúedain of Drúwaith Iaur;x
-PUK_fiefdom;Fiefdom of Drúwaith Iaur;x
+PUK_dominion_2;Fiefdom of Drúwaith Iaur;x
 PUK_ADJ;Drúedain;x
 RAD;Radagast of Rhosgobel;x
 RAD_ADJ;Rhosgobelean;x
@@ -495,13 +469,13 @@ RHO_ADJ;Rhovanrim;x
 RHO_monarchy;Kingdom of Rhovanion;x
 RHO_monarchy_2;Barding Kingdom of Rhovanion;x
 RHO_monarchy_2_ADJ;Barding;x
-RHO_fiefdom;Fiefdom of Dor Rhúnen;x
+RHO_dominion_2;Fiefdom of Dor Rhúnen;x
 RIV;Rivermen of the Celduin;x
 RIV_ADJ;Rivermen;x
 ROF;Royal Fold;x
 ROF_ADJ;Foldian;x
 ROH;Kingdom of Rohan;x
-ROH_fiefdom;Fiefdom of Calenardhon;x
+ROH_dominion_2;Fiefdom of Calenardhon;x
 ROH_ADJ;Rohirrim;x
 RME;Rómenost;x
 RME_ADJ;Anthar;x
@@ -548,7 +522,7 @@ TNR_ADJ;Tinerebhrim;x
 TRO;Trollshaws;x
 TRO_ADJ;Troll;x
 TOL;Isle of Tolfalas;x
-TOL_fiefdom;Fiefdom of Tolfalas;x
+TOL_dominion_2;Fiefdom of Tolfalas;x
 TOL_ADJ;Tolfalathrim;x
 TRE;Men of Tretoborg;x
 TRE_ADJ;Aivathiuda;x
@@ -562,7 +536,7 @@ VID;Men of Vidusborg;x
 VID_ADJ;Aivathiuda;x
 WEA;Weathertop;x
 WEA_ADJ;Weathertop;x
-WEA_nazgul_dictatorship;Nazgûl Realm of Weathertop;x
+WEA_dominion_1;Nazgûl Realm of Weathertop;x
 WND;Windan Elves of Harlindon;x
 WND_ADJ;Windan;x
 WOO;Woodsmen of Mirkwood;x

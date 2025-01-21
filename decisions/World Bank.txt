@@ -139,11 +139,7 @@ political_decisions = {
 			# Democratic country flag for democracies
 			any_country = {
 				limit = {
-					OR = {
-						government = democracy
-						government = hobbit_realm
-						government = northmen_democracy
-					}
+					government = democracy
 				}
 				set_country_flag = democratic
 			}
@@ -448,20 +444,12 @@ political_decisions = {
 				# Has democratic flag but not a democracy
 				any_neighbor_country = {
 					has_country_flag = democratic
-					NOT = {
-						government = hobbit_realm
-						government = democracy
-						government = northmen_democracy
-					}
+					NOT = { government = democracy }
 				}
 				# A democracy without democratic flag
 				any_neighbor_country = {
 					NOT = { has_country_flag = democratic }
-					OR = {
-						government = hobbit_realm
-						government = democracy
-						government = northmen_democracy
-					}
+					government = democracy
 				}
 			}
 		}
@@ -472,36 +460,14 @@ political_decisions = {
 			any_neighbor_country = {
 				limit = {
 					has_country_flag = democratic
-					OR = {
-						AND = {
-							NOT = { government = hobbit_realm }
-							is_culture_group = hobbits
-						}
-						AND = {
-							NOT = { government = northmen_democracy }
-							OR = {
-								is_culture_group = northmen
-								is_culture_group = gramavuld_northmen
-							}
-						}
-						AND = {
-							NOT = { government = democracy }
-							NOT = { is_culture_group = hobbits }
-							NOT = { is_culture_group = northmen }
-							NOT = { is_culture_group = gramavuld_northmen }
-						}
-					}
+					NOT = { government = democracy }
 				}
 				clr_country_flag = democratic
 			}
 			any_neighbor_country = {
 				limit = {
 					NOT = { has_country_flag = democratic }
-					OR = {
-						government = hobbit_realm
-						government = democracy
-						government = northmen_democracy
-					}
+					government = democracy
 				}
 				set_country_flag = democratic
 			}

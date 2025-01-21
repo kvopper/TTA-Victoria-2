@@ -3,7 +3,7 @@ capital = 165
 primary_culture = dunir
 culture = men_culture
 religion = men
-government = man_tribe
+government = tribal
 nationalvalue = generic_leader
 literacy = 0
 

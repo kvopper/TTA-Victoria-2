@@ -580,18 +580,6 @@ country_event = {
 				value = 400
 			}
 		}
-		
-		random_country = {
-			limit = {
-				is_our_vassal = THIS
-				OR = {
-					tag = GON
-					tag = RUN
-					tag = GNR
-				}
-			}
-			THIS = { government = fiefdom }
-		}
 	}
 }
 

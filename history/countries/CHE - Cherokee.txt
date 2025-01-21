@@ -4,7 +4,7 @@ capital = 376
 primary_culture = chelkiag
 culture = men_culture
 religion = men
-government = man_tribe
+government = tribal
 nationalvalue = generic_leader
 literacy = 0
 

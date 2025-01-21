@@ -4,7 +4,7 @@ primary_culture = aivathiuda
 culture = men_culture
 culture = rivermen
 religion = men
-government = northmen_tribe
+government = tribal
 nationalvalue = generic_leader
 literacy = 0.2
 

@@ -6,7 +6,7 @@ culture = gondorian
 culture = amrothian
 culture = dunir
 religion = men
-government = fiefdom
+government = dominion_2
 nationalvalue = ecthelion_ii
 literacy = 0.2
 civilized = yes
@@ -27,7 +27,7 @@ schools = traditional_academic
 
 # cosmetic_2 flag is a Pinnath Gelin specific fiefdom flag. Since they are not their own tag, they have been put in as an optional backup
 govt_flag = {
-	government = fiefdom
+	government = dominion_2
 	flag = cosmetic_1_govt
 }
 #technologies

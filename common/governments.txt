@@ -1,7 +1,6 @@
 #######################
 ##### DEMOCRACIES #####
 #######################
-# Lord (generic republic)
 democracy = {
 	election = yes
 	duration = 48
@@ -9,16 +8,7 @@ democracy = {
 	flagType = republic
 }
 
-# Mayor (Special republic for Hobbits)
-hobbit_realm = {
-	election = yes
-	duration = 48
-	appoint_ruling_party = no
-	flagType = republic
-}
-
-# Master (Special republic for Northmen)
-northmen_democracy = {
+merchant_republic = {
 	election = yes
 	duration = 48
 	appoint_ruling_party = no
@@ -28,105 +18,43 @@ northmen_democracy = {
 ######################
 ##### MONARCHIES #####
 ######################
-# King (generic monarchy)
 monarchy = {
 	election = no
 	appoint_ruling_party = yes
 	flagType = monarchy
 }
 
-# King (generic monarchy)
 monarchy_2 = {
 	election = no
 	appoint_ruling_party = yes
 	flagType = monarchy
 }
 
-# Prince (generic monarchy)
-principality = {
+tribal = {
 	election = no
 	appoint_ruling_party = yes
-	flagType = monarchy
-}
-
-# Lord (generic monarchy)
-lord_monarchy = {
-	election = no
-	appoint_ruling_party = yes
-	flagType = monarchy
-}
-
-# Steward (Special monarchy for Gondor)
-stewardship = {
-	election = no
-	appoint_ruling_party = yes
-	flagType = monarchy
-}
-
-# Lord (Gondor specific puppet)
-fiefdom = {
-	election = no
-	appoint_ruling_party = yes
-	flagType = monarchy
-}
-
-# Lord and Lady (Special monarchy for Lothlorien)
-galadhrim_monarchy = {
-	election = no
-	appoint_ruling_party = yes
-	flagType = monarchy
 }
 
 #########################
 ##### DICTATORSHIPS #####
 #########################
-# Lord (generic evil realm)
-dark_realm = {
-	election = no
-	appoint_ruling_party = yes
-}
-
-# Dark Lord (Special government for realms lead by Sauron)
 sauron_dictatorship = {
 	election = no
 	appoint_ruling_party = yes
 }
 
-# Dark Lord (Generic puppets of Sauron)
-sauron_puppet = {
-	election = no
-	appoint_ruling_party = yes
-}
-
-# Lord (Special government for realms lead by a Nazgul)
-nazgul_dictatorship = {
-	election = no
-	appoint_ruling_party = yes
-}
-
-# Lord (Special government for realms lead by a Wizard)
 istari_kingdom = {
 	election = no
 	appoint_ruling_party = yes
 }
 
-##################
-##### TRIBAL #####
-##################
-# Chieftain
-goblin_tribe = {
+# Specifically puppets of Sauron
+dominion_1 = {
 	election = no
 	appoint_ruling_party = yes
 }
 
-# Chief
-man_tribe = {
-	election = no
-	appoint_ruling_party = yes
-}
-
-# Thegen
-northmen_tribe = {
+dominion_2 = {
 	election = no
 	appoint_ruling_party = yes
 }
@@ -134,7 +62,7 @@ northmen_tribe = {
 ################
 ##### FAKE #####
 ################
-
+# TODO: Figure out how to remove these. They can definitely be absorbed into the dominion tags
 # These two government types should never show up in game -- they are used purely as placeholders to be able to use the "cosmetic" flag spots for tags
 cosmetic_1_govt = {
 	election = no

@@ -3,7 +3,7 @@ capital = 644
 primary_culture = rivermen
 culture = men_culture
 religion = men
-government = northmen_tribe
+government = tribal
 nationalvalue = generic_leader
 literacy = 0.2
 civilized = yes
@@ -18,7 +18,7 @@ upper_house = {
 	rivermen_nobles = 100
 }
 
-govt_flag = { government = sauron_puppet flag = cosmetic_1_govt }
+govt_flag = { government = dominion_1 flag = cosmetic_1_govt }
 penal_reform = hard_labor
 slavery = no_slavery
 upper_house_composition = appointed

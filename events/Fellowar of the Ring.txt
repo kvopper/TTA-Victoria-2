@@ -1633,7 +1633,7 @@ country_event = {
 		# Death to Nazguls
 		any_country = {
 			limit = {
-				government = nazgul_dictatorship
+				always = false # TODO: Get updated targetting of Nazgul
 			}
 			country_event = 50331
 		}
@@ -1782,7 +1782,7 @@ country_event = {
 			limit = {
 				owner = { government = sauron_dictatorship }
 			}
-			owner = { government = goblin_tribe }
+			owner = { government = tribal }
 		}
 		any_pop = {
 			militancy = 4
@@ -1837,7 +1837,7 @@ country_event = {
 				}
 			}
 			owner = {
-				government = goblin_tribe
+				government = tribal
 			}
 		}
 		# Mannish Nazgul realms: Angmar
@@ -1848,7 +1848,7 @@ country_event = {
 				}
 			}
 			owner = {
-				government = man_tribe
+				government = tribal
 			}
 		}
 		prestige = -25

@@ -3,7 +3,7 @@ capital = 865
 primary_culture = noldor
 culture = elven_culture
 religion = elven
-government = lord_monarchy
+government = monarchy
 nationalvalue = elrond
 civilized = yes
 

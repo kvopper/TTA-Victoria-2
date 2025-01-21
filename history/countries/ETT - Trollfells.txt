@@ -3,7 +3,7 @@ capital = 853
 primary_culture = hill_trolls
 culture = troll_culture
 religion = troll
-government = goblin_tribe
+government = tribal
 nationalvalue = generic_leader
 literacy = 0
 

@@ -565,8 +565,8 @@ political_decisions = {
 		allow = {
 			OR = {
 				militancy = 3
-				government = northmen_democracy
-				government = northmen_tribe
+				government = democracy
+				government = tribal
 			}
 		}
 		

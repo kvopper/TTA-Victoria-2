@@ -4,7 +4,7 @@ primary_culture = dunedain
 culture = men_culture
 culture = cardolandrim
 religion = men
-government = man_tribe
+government = tribal
 nationalvalue = generic_leader
 literacy = 0
 

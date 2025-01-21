@@ -3,7 +3,7 @@ capital = 412
 primary_culture = nurniag
 culture = men_culture
 religion = men
-government = man_tribe
+government = tribal
 nationalvalue = generic_leader
 literacy = 0
 

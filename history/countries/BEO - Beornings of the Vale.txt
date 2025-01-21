@@ -4,7 +4,7 @@ primary_culture = beiabarnae
 culture = beorning
 culture = men_culture
 religion = men
-government = man_tribe
+government = tribal
 nationalvalue = beorn
 literacy = 0
 

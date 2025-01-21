@@ -28,6 +28,6 @@ naval_construction_1 = 1
 infrastructure_tech_1 = 1
 
 govt_flag = {
-	government = fiefdom
+	government = dominion_2
 	flag = cosmetic_1_govt
 }

@@ -6,7 +6,7 @@ culture = amrothian
 culture = gondorian
 culture = galadhrim
 religion = men
-government = fiefdom
+government = dominion_2
 nationalvalue = angelimir
 literacy = 0.2
 civilized = yes
@@ -27,7 +27,7 @@ upper_house_composition = appointed
 schools = traditional_academic
 
 govt_flag = {
-	government = fiefdom
+	government = dominion_2
 	flag = cosmetic_1_govt
 }
 

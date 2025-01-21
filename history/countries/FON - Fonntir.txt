@@ -3,7 +3,7 @@ capital = 907
 primary_culture = saerlanner
 culture = men_culture
 religion = men
-government = man_tribe
+government = tribal
 nationalvalue = generic_leader
 literacy = 0
 

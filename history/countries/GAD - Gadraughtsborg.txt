@@ -3,7 +3,7 @@ capital = 500
 primary_culture = gadraught
 culture = men_culture
 religion = men
-government = northmen_tribe
+government = tribal
 nationalvalue = generic_leader
 literacy = 0.2
 

@@ -5,7 +5,7 @@ primary_culture = cardolandrim
 culture = men_culture
 culture = saerlanner
 religion = men
-government = man_tribe
+government = tribal
 nationalvalue = generic_leader
 literacy = 0
 
