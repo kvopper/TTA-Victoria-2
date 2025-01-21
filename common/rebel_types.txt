@@ -1188,7 +1188,7 @@ evil_rebels = {
 		merchant_republic = merchant_republic
 		monarchy = monarchy
 		monarchy_2 = monarchy_2
-		tribal = tribal=
+		tribal = tribal
 		sauron_dictatorship = sauron_dictatorship
 		istari_kingdom = istari_kingdom
 		dominion_1 = dominion_1
