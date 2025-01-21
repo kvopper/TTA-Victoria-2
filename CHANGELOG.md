@@ -17,7 +17,9 @@ All notable changes will be documented in this file.
    - Trade and Tax Policy re-added (from vanilla)
  - Reforms rebalanced
    - Reforms are always better the farther you go down
-     - This is done because pops cannot support reforms in the reverse (i.e., if you have wealth voting, pops will never want landed voting, even if it makes sense)
+     - This is done because pops cannot support reforms in the reverse (i.e., if you have wealth voting, pops will never want landed voting, even if it makes sense for them to want it)
+ - Government Type consolidation
+   - Governments used only by 1 or 2 tags have been removed and replaced by the standard generic type
 
 ## [v0.5 Bearers of the Black Arrow](https://github.com/The-Third-Age/TTA-Victoria-2/releases/tag/v0.5) - 2024-12-23
 
