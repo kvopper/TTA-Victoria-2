@@ -52,25 +52,10 @@ istari_kingdom = {
 dominion_1 = {
 	election = no
 	appoint_ruling_party = yes
-}
-
-dominion_2 = {
-	election = no
-	appoint_ruling_party = yes
-}
-
-################
-##### FAKE #####
-################
-# TODO: Figure out how to remove these. They can definitely be absorbed into the dominion tags
-# These two government types should never show up in game -- they are used purely as placeholders to be able to use the "cosmetic" flag spots for tags
-cosmetic_1_govt = {
-	election = no
-	appoint_ruling_party = yes
 	flagType = cosmetic_1
 }
 
-cosmetic_2_govt = {
+dominion_2 = {
 	election = no
 	appoint_ruling_party = yes
 	flagType = cosmetic_2

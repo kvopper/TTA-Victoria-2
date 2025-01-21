@@ -1459,8 +1459,6 @@ country_event = {
 					OR = {
 						government = istari_kingdom
 						government = monarchy
-						government = cosmetic_2_govt
-						government = cosmetic_1_govt
 					}
 				}
 			}
@@ -1475,8 +1473,6 @@ country_event = {
 						government = istari_kingdom
 						government = democracy
 						government = monarchy
-						government = cosmetic_2_govt
-						government = cosmetic_1_govt
 					}
 				}
 			}
@@ -1513,9 +1509,7 @@ country_event = {
 						government = istari_kingdom
 						government = democracy
 						government = monarchy
-						government = cosmetic_2_govt
 						government = sauron_dictatorship
-						government = cosmetic_1_govt
 					}
 				}
 			}
@@ -1550,9 +1544,7 @@ country_event = {
 						government = istari_kingdom
 						government = democracy
 						government = monarchy
-						government = cosmetic_2_govt
 						government = sauron_dictatorship
-						government = cosmetic_1_govt
 					}
 				}
 			}
@@ -1576,9 +1568,7 @@ country_event = {
 					OR = {
 						government = istari_kingdom
 						government = monarchy
-						government = cosmetic_2_govt
 						government = sauron_dictatorship
-						government = cosmetic_1_govt
 					}
 				}
 			}
@@ -1603,9 +1593,7 @@ country_event = {
 						government = istari_kingdom
 						government = democracy
 						government = monarchy
-						government = cosmetic_2_govt
 						government = sauron_dictatorship
-						government = cosmetic_1_govt
 					}
 				}
 			}
@@ -1630,9 +1618,7 @@ country_event = {
 						government = istari_kingdom
 						government = democracy
 						government = monarchy
-						government = cosmetic_2_govt
 						government = sauron_dictatorship
-						government = cosmetic_1_govt
 					}
 				}
 			}
@@ -1657,9 +1643,7 @@ country_event = {
 						government = istari_kingdom
 						government = democracy
 						government = monarchy
-						government = cosmetic_2_govt
 						government = sauron_dictatorship
-						government = cosmetic_1_govt
 					}
 				}
 			}
@@ -1684,9 +1668,7 @@ country_event = {
 						government = istari_kingdom
 						government = democracy
 						government = monarchy
-						government = cosmetic_2_govt
 						government = sauron_dictatorship
-						government = cosmetic_1_govt
 					}
 				}
 			}
@@ -1721,9 +1703,7 @@ country_event = {
 						government = istari_kingdom
 						government = democracy
 						government = monarchy
-						government = cosmetic_2_govt
 						government = sauron_dictatorship
-						government = cosmetic_1_govt
 					}
 				}
 			}
@@ -1745,9 +1725,7 @@ country_event = {
 						government = istari_kingdom
 						government = democracy
 						government = monarchy
-						government = cosmetic_2_govt
 						government = sauron_dictatorship
-						government = cosmetic_1_govt
 					}
 				}
 			}
@@ -1793,8 +1771,6 @@ country_event = {
 					OR = {
 						government = istari_kingdom
 						government = monarchy
-						government = cosmetic_2_govt
-						government = cosmetic_1_govt
 					}
 				}
 			}
@@ -1830,9 +1806,7 @@ country_event = {
 						government = istari_kingdom
 						government = democracy
 						government = monarchy
-						government = cosmetic_2_govt
 						government = sauron_dictatorship
-						government = cosmetic_1_govt
 					}
 				}
 			}
@@ -1880,9 +1854,7 @@ country_event = {
 					OR = {
 						government = istari_kingdom
 						government = monarchy
-						government = cosmetic_2_govt
 						government = sauron_dictatorship
-						government = cosmetic_1_govt
 					}
 				}
 			}
@@ -1896,9 +1868,7 @@ country_event = {
 					OR = {
 						government = istari_kingdom
 						government = monarchy
-						government = cosmetic_2_govt
 						government = sauron_dictatorship
-						government = cosmetic_1_govt
 					}
 				}
 			}
@@ -1923,8 +1893,6 @@ country_event = {
 						government = istari_kingdom
 						government = democracy
 						government = monarchy
-						government = cosmetic_2_govt
-						government = cosmetic_1_govt
 					}
 				}
 			}
@@ -1970,9 +1938,7 @@ country_event = {
 						government = istari_kingdom
 						government = democracy
 						government = monarchy
-						government = cosmetic_2_govt
 						government = sauron_dictatorship
-						government = cosmetic_1_govt
 					}
 				}
 			}
@@ -2181,9 +2147,7 @@ country_event = {
 					OR = {
 						government = istari_kingdom
 						government = monarchy
-						government = cosmetic_2_govt
 						government = sauron_dictatorship
-						government = cosmetic_1_govt
 					}
 				}
 			}
@@ -2274,9 +2238,7 @@ country_event = {
 					OR = {
 						government = istari_kingdom
 						government = monarchy
-						government = cosmetic_2_govt
 						government = sauron_dictatorship
-						government = cosmetic_1_govt
 					}
 				}
 			}
@@ -2380,9 +2342,7 @@ country_event = {
 					OR = {
 						government = istari_kingdom
 						government = monarchy
-						government = cosmetic_2_govt
 						government = sauron_dictatorship
-						government = cosmetic_1_govt
 					}
 				}
 			}
@@ -2484,9 +2444,7 @@ country_event = {
 						government = istari_kingdom
 						government = democracy
 						government = monarchy
-						government = cosmetic_2_govt
 						government = sauron_dictatorship
-						government = cosmetic_1_govt
 					}
 				}
 			}
@@ -2602,9 +2560,7 @@ country_event = {
 						government = istari_kingdom
 						government = democracy
 						government = monarchy
-						government = cosmetic_2_govt
 						government = sauron_dictatorship
-						government = cosmetic_1_govt
 					}
 				}
 			}
@@ -2619,9 +2575,7 @@ country_event = {
 						government = istari_kingdom
 						government = democracy
 						government = monarchy
-						government = cosmetic_2_govt
 						government = sauron_dictatorship
-						government = cosmetic_1_govt
 					}
 				}
 			}
@@ -2737,9 +2691,7 @@ country_event = {
 						government = istari_kingdom
 						government = democracy
 						government = monarchy
-						government = cosmetic_2_govt
 						government = sauron_dictatorship
-						government = cosmetic_1_govt
 					}
 				}
 			}
@@ -2801,9 +2753,7 @@ country_event = {
 					OR = {
 						government = istari_kingdom
 						government = monarchy
-						government = cosmetic_2_govt
 						government = sauron_dictatorship
-						government = cosmetic_1_govt
 					}
 				}
 			}
@@ -2831,9 +2781,7 @@ country_event = {
 					OR = {
 						government = istari_kingdom
 						government = monarchy
-						government = cosmetic_2_govt
 						government = sauron_dictatorship
-						government = cosmetic_1_govt
 					}
 				}
 			}
@@ -2987,9 +2935,7 @@ country_event = {
 						government = istari_kingdom
 						government = democracy
 						government = monarchy
-						government = cosmetic_2_govt
 						government = sauron_dictatorship
-						government = cosmetic_1_govt
 					}
 				}
 			}
@@ -3010,9 +2956,7 @@ country_event = {
 					OR = {
 						government = istari_kingdom
 						government = monarchy
-						government = cosmetic_2_govt
 						government = sauron_dictatorship
-						government = cosmetic_1_govt
 					}
 				}
 			}
@@ -3081,9 +3025,7 @@ country_event = {
 					OR = {
 						government = istari_kingdom
 						government = democracy
-						government = cosmetic_2_govt
 						government = sauron_dictatorship
-						government = cosmetic_1_govt
 					}
 				}
 			}

@@ -16,8 +16,3 @@ upper_house = {
 }
 
 schools = traditional_academic
-
-govt_flag = {
-	government = dominion_2
-	flag = cosmetic_1_govt
-}

@@ -29,8 +29,6 @@ nationalist_rebels = {
 		istari_kingdom = istari_kingdom
 		dominion_1 = dominion_1
 		dominion_2 = dominion_2
-		cosmetic_1_govt = cosmetic_1_govt
-		cosmetic_2_govt = cosmetic_2_govt
 	}
 	
 	defection = culture			# If the country seeks independence, defection specifies what type of provinces it wants.
@@ -211,8 +209,6 @@ patriot_rebels = {
 		istari_kingdom = istari_kingdom
 		dominion_1 = dominion_1
 		dominion_2 = dominion_2
-		cosmetic_1_govt = cosmetic_1_govt
-		cosmetic_2_govt = cosmetic_2_govt
 	}
 
 	defection = none		# If the country seeks independence, defection specifies what type of provinces it wants.
@@ -407,8 +403,6 @@ slave_revolt = {
 		istari_kingdom = istari_kingdom
 		dominion_1 = dominion_1
 		dominion_2 = dominion_2
-		cosmetic_1_govt = cosmetic_1_govt
-		cosmetic_2_govt = cosmetic_2_govt
 	}
 
 	defection = none				# Will defect to the "best" alternative.
@@ -555,8 +549,6 @@ democratic_rebels = {
 		istari_kingdom = merchant_republic
 		dominion_1 = merchant_republic
 		dominion_2 = merchant_republic
-		cosmetic_1_govt = merchant_republic
-		cosmetic_2_govt = merchant_republic
 	}
 	
 	defection = none				# Will defect to the "best" alternative.
@@ -697,8 +689,6 @@ noble_rebels = {
 		istari_kingdom = istari_kingdom
 		dominion_1 = dominion_1
 		dominion_2 = dominion_2
-		cosmetic_1_govt = cosmetic_1_govt
-		cosmetic_2_govt = cosmetic_2_govt
 	}
 	
 	defection = none				# Will defect to the "best" alternative.
@@ -869,8 +859,6 @@ serf_rebels = {
 		istari_kingdom = istari_kingdom
 		dominion_1 = dominion_1
 		dominion_2 = dominion_2
-		cosmetic_1_govt = cosmetic_1_govt
-		cosmetic_2_govt = cosmetic_2_govt
 	}
 	
 	defection = none				# Will defect to the "best" alternative.
@@ -1012,8 +1000,6 @@ good_rebels = {
 		istari_kingdom = istari_kingdom
 		dominion_1 = dominion_1
 		dominion_2 = dominion_2
-		cosmetic_1_govt = cosmetic_1_govt
-		cosmetic_2_govt = cosmetic_2_govt
 	}
 	
 	defection = none				# Will defect to the "best" alternative.
@@ -1193,8 +1179,6 @@ evil_rebels = {
 		istari_kingdom = istari_kingdom
 		dominion_1 = dominion_1
 		dominion_2 = dominion_2
-		cosmetic_1_govt = cosmetic_1_govt
-		cosmetic_2_govt = cosmetic_2_govt
 	}
 	
 	defection = none				# Will defect to the "best" alternative.
@@ -1374,8 +1358,6 @@ neutral_rebels = {
 		istari_kingdom = istari_kingdom
 		dominion_1 = dominion_1
 		dominion_2 = dominion_2
-		cosmetic_1_govt = cosmetic_1_govt
-		cosmetic_2_govt = cosmetic_2_govt
 	}
 	
 	defection = none				# Will defect to the "best" alternative.

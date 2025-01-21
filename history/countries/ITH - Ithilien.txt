@@ -26,8 +26,3 @@ light_ships_1 = 1
 heavy_ships_1 = 1
 naval_construction_1 = 1
 infrastructure_tech_1 = 1
-
-govt_flag = {
-	government = dominion_2
-	flag = cosmetic_1_govt
-}

@@ -18,7 +18,6 @@ upper_house = {
 	rivermen_nobles = 100
 }
 
-govt_flag = { government = dominion_1 flag = cosmetic_1_govt }
 penal_reform = hard_labor
 slavery = no_slavery
 upper_house_composition = appointed
