@@ -521,11 +521,11 @@ Ideology;Interest Group;x
 ######################################;x }
 ##### National Value Descriptors #####;x {
 ######################################;x
-NOT_HAS_NATIONAL_VALUE;Leader is NOT §Y$NATIONALVALUE$§!.;x
-HAS_NATIONAL_VALUE;Leader is §Y$NATIONALVALUE$§!.;x
-CHANGE_NATIONALVALUE;Leader changes to §Y$NATIONALVALUE$§!.\n;x
-POLITICS_NATIONALVALUE_TOOLTIP;Our leader is §Y$NATIONALVALUE$§!.\n;x
-LEDGER_COUNTRY_NATIONALVALUE;Leader;x
+NOT_HAS_NATIONAL_VALUE;Heirloom is NOT §Y$NATIONALVALUE$§!.;x
+HAS_NATIONAL_VALUE;Heirloom is §Y$NATIONALVALUE$§!.;x
+CHANGE_NATIONALVALUE;Heirloom changes to §Y$NATIONALVALUE$§!.\n;x
+POLITICS_NATIONALVALUE_TOOLTIP;Our heirloom is §Y$NATIONALVALUE$§!.\n;x
+LEDGER_COUNTRY_NATIONALVALUE;Heirloom;x
 ###########################;x }
 ##### National Values #####;x {
 ###########################;x
