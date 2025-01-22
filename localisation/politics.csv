@@ -193,7 +193,7 @@ POLITICS_OTHER_POLITICAL_REFORMS;Other Political Reforms;x
 government_type;Government Type;x
 dictatorship;Dictatorship;x
 dictatorship_l;Dictatorship Government Type;x
-dictatorship_desc;Only members of the leading interest group can be appointed to the ruler's advisors.;x
+dictatorship_desc;Only members of the ruler's interest group can be appointed to the ruler's advisors.;x
 movement_dictatorship;Movement to change Advisor composition;x
 monarchal;Monarchal;x
 monarchal_l;Monarchal Government Type;x
@@ -463,39 +463,39 @@ movement_evil_alignment;Movement to become a realm aligned with Sauron;x
 ###############################;x }
 ##### INTEREST GROUP TEXT #####;x {
 ###############################;x
-LEDGER_COUNTRY_RULINGPARTY;Leading Interest Group;x
+LEDGER_COUNTRY_RULINGPARTY;Ruler;x
 LEDGER_COUNTRY_RULINGIDEOLOGY;Interest Group;x
-BE_PARTY;Leading Interest Group:;x
-POLITICS_VIEW_ALL_PARTIES_TOOLTIP;View all interest groups\n;x
-POLITICS_CURRENT_RULING_PARTY_TOOLTIP;Current leading interest group: $PARTY$\n;x
+BE_PARTY;Ruler:;x
+POLITICS_VIEW_ALL_PARTIES_TOOLTIP;View all allowed rulers\n;x
+POLITICS_CURRENT_RULING_PARTY_TOOLTIP;Current ruler: $PARTY$\n;x
 POLITICS_VOTERS_CHART_TOOLTIP;$PERCENT$% of the voters are part of $IDEOLOGY$\n;x
 POLITICS_PEOPLE_CHART_TOOLTIP;$PERCENT$% of our population are part of $IDEOLOGY$\n;x
-POLITICS_SET_RULING_PARTY_TOOLTIP;Select $PARTY$ as our leading interest group\n;x
-POLITICS_CANNOT_SET_RULING_PARTY_TOOLTIP;We cannot select $PARTY$ as our leading interest group because:\n;x
-POLITICS_HOLD_ELECTION_TOOLTIP;Hold election to appoint a new leading interest group.\n;x
-POLITICS_SELECT_NEW_RULER_PARTY;Select New Leading Interest Group;x
-RIP_EFFECT;$NAME$ will become the new leading interest group.\n;x
-MODIFIER_RULING_PARTY_SUPPORT;Leading Interest Group Support;x
-CAN_APPOINT_RULING_PARTY;Can appoint leading interest group.;x
-ELECTIONDONE_3;$WINNER$ is now the new leading interest group.;x
+POLITICS_SET_RULING_PARTY_TOOLTIP;Select $PARTY$ as our ruler\n;x
+POLITICS_CANNOT_SET_RULING_PARTY_TOOLTIP;We cannot select $PARTY$ as our ruler because:\n;x
+POLITICS_HOLD_ELECTION_TOOLTIP;Hold election to appoint a new ruler.\n;x
+POLITICS_SELECT_NEW_RULER_PARTY;Select New Ruler;x
+RIP_EFFECT;$NAME$ will become the new ruler.\n;x
+MODIFIER_RULING_PARTY_SUPPORT;Ruler Support;x
+CAN_APPOINT_RULING_PARTY;Can appoint ruler.;x
+ELECTIONDONE_3;$WINNER$ is now the new ruler.;x
 SETPARTY_SETUP;When changing leading interset group.;x
-SETPARTY_1;New Leading Interest Group in $COUNTRY$;x
-SETPARTY_2;$MONARCHTITLE$, we have now changed leading interest group to;x
+SETPARTY_1;New ruler in $COUNTRY$;x
+SETPARTY_2;$MONARCHTITLE$, we have now changed ruler to;x
 SETPARTY_4;They are a $IDEOLOGY$ interest group and have the following policies.;x
-POP_MIL_RULING;Agrees with Leading Interest Group;x
-RULE_SAME_AS_RULING_PARTY;Same As Leading Interest Group;x
-IS_NOT_RULING_PARTY;is NOT the Leading Interest Group.;x
-IS_RULING_PARTY;is the Leading Interest Group.;x
-RUL_PARTY_IS_NOT;Current Leading Interest Group is NOT;x
-RUL_PARTY_IS;Current Leading Interest Group is;x
-AGREE_RP_TR;At least §Y$VAL$%§! is of the same interest group as the leading interest group.;x
-NOT_AGREE_RP_TR;Less than §Y$VAL$%§! is of the same interest group as the leading interest group.;x
-POLITICS_CANNOT_SET_RULING_PARTY_IN_ELECTION;It is not possible to switch leading interest groups in the middle of an election.;x
-TOPBAR_RULING_PARTY;Our current leading interest group is $CURR$;x
-COUNTRYALERT_IsInElection;There's currently an election being held in our country. By $DATE$, a new leading interest group will be elected.;x
-POLITICS_ALREADY_RULING_PARTY;$PARTY$ is already the leading interest group.;x
-POLITICS_CANNOT_SET_RULING_PARTY_RULE;Our government form does not allow us to appoint leading interest groups;x
-AI_LOVES_OTHER_DESC2_SHORT;Prosperity for the Future with our $TAG_0_1_ADJ$ brothers!' is $TAG_0_0_ADJ$ leading interest group's newest slogan. Many say this is an indication of a future military alliance.;x
+POP_MIL_RULING;Supports ruler;x
+RULE_SAME_AS_RULING_PARTY;Same As ruler;x
+IS_NOT_RULING_PARTY;is NOT the ruler.;x
+IS_RULING_PARTY;is the ruler.;x
+RUL_PARTY_IS_NOT;Current ruler is NOT;x
+RUL_PARTY_IS;Current ruler is;x
+AGREE_RP_TR;At least §Y$VAL$%§! is of the same interest group as the ruler.;x
+NOT_AGREE_RP_TR;Less than §Y$VAL$%§! is of the same interest group as the ruler.;x
+POLITICS_CANNOT_SET_RULING_PARTY_IN_ELECTION;It is not possible to switch rules in the middle of an election.;x
+TOPBAR_RULING_PARTY;Our current ruler is $CURR$;x
+COUNTRYALERT_IsInElection;There's currently an election being held in our country. By $DATE$, a new ruler will be elected.;x
+POLITICS_ALREADY_RULING_PARTY;$PARTY$ is already the ruler.;x
+POLITICS_CANNOT_SET_RULING_PARTY_RULE;Our government form does not allow us to appoint ruler;x
+AI_LOVES_OTHER_DESC2_SHORT;Prosperity for the Future with our $TAG_0_1_ADJ$ brothers!' is $TAG_0_0_ADJ$ ruler's newest slogan. Many say this is an indication of a future military alliance.;x
 PARTY_NEWS_TITLE_LARGE;NEW INTEREST GROUP IN $TAG_0_0_UPPER$;x
 PARTY_NEWS_LARGE;A new $STRING_0_2$ interest group, the $STRING_0_0$, has been formed in $TAG_0_0$. 'We're currently in the process of recruiting new members and organizing the support structure every modern political unit requires', a party official commented. Uniting disgruntled activists and disillusioned members of other outfits, the new party announced to have scheduled a national convention, where they plan to elect their representatives and agree on the platform. They claim to remain optimistic about ever coming to power despite all odds.;x
 PARTY_NEWS_TITLE_MEDIUM;NEW INTEREST GROUP IN $TAG_0_0_UPPER$;x
@@ -512,8 +512,8 @@ PARTY_UNAVAIL_SETUP;Interest group defunct;x
 PARTY_UNAVAIL_HEADER;Interest group defunct;x
 NEW_PARTY_AVAIL_SETUP;New interest group;x
 NEW_PARTY_AVAIL_HEADER;New interest group formed;x
-POLITICS_NOT_BEFORE;We can not change leading interest group again before §Y$DATE$§!.;x
-POLITICS_NOT_ACCEPTED;Our form of government does not allow §Y$WHICH$§! interest groups.;x
+POLITICS_NOT_BEFORE;We can not change ruler again before §Y$DATE$§!.;x
+POLITICS_NOT_ACCEPTED;Our form of government does not allow §Y$WHICH$§! rulers.;x
 LEDGER_PROVINCE_IDEOLOGY;Interest Group;x
 IDEOLOGY_LABEL;Interest Group;x
 IDEOLOGY_DISTTITLE;Interest Group;x
