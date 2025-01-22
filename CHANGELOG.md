@@ -18,6 +18,7 @@ All notable changes will be documented in this file.
  - Reforms rebalanced
    - Reforms are always better the farther you go down
      - This is done because pops cannot support reforms in the reverse (i.e., if you have wealth voting, pops will never want landed voting, even if it makes sense for them to want it)
+   - Upper house reforms removed in favor of your government type dictating how the UH populates
  - Government Type consolidation
    - Governments used only by 1 or 2 tags have been removed and replaced by the standard generic type
 
