@@ -306,18 +306,14 @@ political_reforms = {
 		}
 	}
 	# Advisor Breakdown
-	upper_house_composition = {
-		party_appointed = {
+	government_type = {
+		dictatorship = {
 			rules = { same_as_ruling_party = yes }
 		}
-		appointed = {
+		monarchal = {
 			rules = { rich_only = yes }
 		}
-		state_equal_weight = {
-			rules = { state_vote = yes }
-			allow = { NOT = { vote_franschise = none_voting } }
-		}
-		population_equal_weight = {
+		republican = {
 			rules = { population_vote = yes }
 			allow = { NOT = { vote_franschise = none_voting } }
 		}

@@ -10,7 +10,6 @@ literacy = 0
 oob = "LUR_oob.txt"
 
 slavery = yes_slavery
-upper_house_composition = appointed
 ruling_party = generic_lurmsakuni_nobles
 upper_house = {
 	lurmsakuni_nobles = 100

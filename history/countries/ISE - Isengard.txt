@@ -23,7 +23,6 @@ upper_house = {
 }
 
 slavery = no_slavery
-upper_house_composition = appointed
 penal_reform = hard_labor
 
 schools = traditional_academic

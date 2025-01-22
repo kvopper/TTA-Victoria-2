@@ -10,7 +10,6 @@ literacy = 0
 oob = "HRN_oob.txt"
 
 slavery = yes_slavery
-upper_house_composition = appointed
 ruling_party = generic_harnendan_nobles
 upper_house = {
 	harnendan_nobles = 100

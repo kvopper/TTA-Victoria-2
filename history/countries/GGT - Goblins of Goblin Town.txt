@@ -8,7 +8,6 @@ nationalvalue = generic_leader
 literacy = 0
 
 slavery = yes_slavery
-upper_house_composition = appointed
 ruling_party = generic_goblin_towner_nobles
 
 oob = "GGT_oob.txt"

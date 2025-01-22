@@ -1227,6 +1227,39 @@ country_event = {
 		}
 		# }
 		
+		# Upper House Reform Assignment {
+		any_country = {
+			limit = {
+				OR = {
+					government = republic
+					government = merchant_republic
+				}
+			}
+			political_reform = republican
+		}
+		any_country = {
+			limit = {
+				OR = {
+					government = monarchy
+					government = monarchy_2
+					government = tribal
+				}
+			}
+			political_reform = monarchal
+		}
+		any_country = {
+			limit = {
+				OR = {
+					government = sauron_dictatorship
+					government = istari_kingdom
+					government = dominion_1
+					government = dominion_2
+				}
+			}
+			political_reform = dictatorship
+		}
+		# }
+		
 		# Realm attempting to do stuff with the ai {
 		any_country = {
 			leave_alliance = FOR

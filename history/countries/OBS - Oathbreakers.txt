@@ -14,7 +14,6 @@ upper_house = {
 	kings_of_the_dead = 100
 }
 
-upper_house_composition = appointed
 decision = OBS_start_decision
 
 schools = traditional_academic

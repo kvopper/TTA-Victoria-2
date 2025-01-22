@@ -190,23 +190,19 @@ proportional_representation_l;Proportional Representation;x
 proportional_representation_desc;The percentage of votes that groups of candidates obtain in elections equals the percentage of seats they receive;x
 movement_proportional_representation;Movement to change the voting system;x
 POLITICS_OTHER_POLITICAL_REFORMS;Other Political Reforms;x
-upper_house_composition;Advisors;x
-appointed;Appointed;x
-appointed_l;Appointed UH;x
-appointed_desc;Aristocrats or guild masters have been assigned advising positions by the leader of the realm.;x
-movement_appionted;Movement to change Advisor composition;x
-party_appointed;Leading Interest Group Only;x
-party_appointed_l;UH same as Ruling Party;x
-party_appointed_desc;Only members of the leading interest group can be appointed to the ruler's advisors.;x
-movement_party_appointed;Movement to change Advisor composition;x
-state_equal_weight;Two per State;x
-state_equal_weight_l;Two per state in UH;x
-state_equal_weight_desc;Each state has two votes to appoint advisors.;x
-movement_state_equal_weight;Movement to change Advisor composition;x
-population_equal_weight;Based on Population;x
-population_equal_weight_l;Population equal in UH;x
-population_equal_weight_desc;Advisors are determined by the collected interest groups of the population.;x
-movement_population_equal_weight;Movement to change Advisor composition;x
+government_type;Government Type;x
+dictatorship;Dictatorship;x
+dictatorship_l;Dictatorship Government Type;x
+dictatorship_desc;Only members of the leading interest group can be appointed to the ruler's advisors.;x
+movement_dictatorship;Movement to change Advisor composition;x
+monarchal;Monarchal;x
+monarchal_l;Monarchal Government Type;x
+monarchal_desc;Aristocrats or guild masters have been assigned advising positions by the leader of the realm.;x
+movement_monarchal;Movement to change Advisor composition;x
+republican;Republican;x
+republican_l;Republican Government Type;x
+republican_desc;Advisors are determined by the collected interest groups of the population.;x
+movement_republican;Movement to change Advisor composition;x
 penal_reform;Punishments;x
 capital_punishment;Capital Punishment;x
 capital_punishment_l;Capital Punishment;x

@@ -24,7 +24,6 @@ upper_house = {
 ruling_party = MOR_sauron
 
 slavery = yes_slavery
-upper_house_composition = party_appointed
 
 schools = traditional_academic
 

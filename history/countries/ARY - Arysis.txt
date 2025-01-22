@@ -10,7 +10,6 @@ literacy = 0
 oob = "ARY_oob.txt"
 
 slavery = yes_slavery
-upper_house_composition = appointed
 ruling_party = generic_arysian_nobles
 
 upper_house = {
