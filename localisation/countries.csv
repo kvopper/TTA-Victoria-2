@@ -1,8 +1,8 @@
 ############################;x
 ##### GOVERNMENT TYPES #####;x {
 ############################;x
-democracy;Republic;x
-democracy_ruler;Lord;x
+republic;Republic;x
+republic_ruler;Lord;x
 merchant_republic;Merchant Republic;x
 merchant_republic_ruler;Lord;x
 monarchy;Monarchy;x
@@ -165,7 +165,7 @@ REB_ADJ;Rebel;Rebelle;Rebellisch;;Partisanos;x
 ADH;Adhallings of the Mirkwood Eaves;x
 ADH_ADJ;Adhalling;x
 ADB;Kingdom of Adûnabâr;x
-ADB_democracy;Republic of Adûnabâr;x
+ADB_republic;Republic of Adûnabâr;x
 ADB_dominion_1;Kingdom of Adûnabâr;x
 ADB_ADJ;Adûnabârian;x
 ADR;Andrast;x
@@ -185,7 +185,7 @@ AMO;Amov Clan;x
 AMO_ADJ;Logath;x
 AMR;Principality of Dol Amroth;x
 AMR_dominion_2;Fiefdom of Belfalas;x
-AMR_democracy;Republic of Belfalas;x
+AMR_republic;Republic of Belfalas;x
 AMR_ADJ;Amrothian;x
 AMR_dominion_2_ADJ;Belfalathrim;x
 ANF;Anfalas;x
@@ -197,10 +197,10 @@ ANO_ADJ;Anórienrim;x
 ANT;Men of Antharsborg;x
 ANT_ADJ;Anthar;x
 ARN;Kingdom of Arnor;x
-ARN_democracy;Republic of Arnor;x
+ARN_republic;Republic of Arnor;x
 ARN_ADJ;Arnorian;x
 ART;Kingdom of Arthedain;x
-ART_democracy;Republic of Arthedain;x
+ART_republic;Republic of Arthedain;x
 ART_ADJ;Arthedain;x
 ARY;Arysis;x
 ARY_ADJ;Arysian;x
@@ -227,7 +227,7 @@ BSH_ADJ;Ironfist;x
 CAL;Men of Caladir;x
 CAL_ADJ;Caladirim;x
 CAR;Kingdom of Cardolan;x
-CAR_democracy;Republic of Cardolan;x
+CAR_republic;Republic of Cardolan;x
 CAR_ADJ;Cardolani;x
 CHE;Chelkar;x
 CHE_ADJ;Chelkiag;x
@@ -241,12 +241,12 @@ DA4;Realm of Naertheiaborg;x
 DA4_ADJ;Rivermen;x
 DAL;Kingdom of Dale;x
 DAL_monarchy;Barding Realm;x
-DAL_democracy;Republic of Dale;x
+DAL_republic;Republic of Dale;x
 DAL_ADJ;Dalish;x
 DND;Dúnedain of the North;x
 DND_ADJ;Dúnedain;x
 DOR;Kingdom of Dorwinion;x
-DOR_democracy;Republic of Dorwinion;x
+DOR_republic;Republic of Dorwinion;x
 DOR_ADJ;Dorwinrim;x
 DRA;Dunir of Angast;x
 DRA_ADJ;Wildmen;x
@@ -291,7 +291,7 @@ EMB_ADJ;Beriadhrim;x
 ENE;Enedwaithrim;x
 ENE_ADJ;Enedwaithrim;x;
 ERE;Kingdom of Erebor;x
-ERE_democracy;Republic of Erebor;x
+ERE_republic;Republic of Erebor;x
 ERE_ADJ;Dwarvish;x
 ESG;Esgaroth-upon-the-Long-Lake;x
 ESG_ADJ;Lake-towner;x;
@@ -320,12 +320,12 @@ GMG_ADJ;Grey Goblin;x
 GMO;Goblins of Moria;x
 GMO_ADJ;Moria Goblin;x
 GNR;Turmen Hyallondiéva;x
-GNR_democracy;Republic of Gondor;x
+GNR_republic;Republic of Gondor;x
 GNR_dominion_1;Kingdom of Adûnabâr;x
 GNR_monarchy_2;Stewardship of Gondir;x
 GNR_ADJ;Gondorian;x
 GON;Kingdom of Gondor;x
-GON_democracy;Republic of Gondor;x
+GON_republic;Republic of Gondor;x
 GON_dominion_1;Kingdom of Adûnabâr;x
 GON_monarchy_2;Stewardship of Gondor;x
 GON_ADJ;Gondorian;x
@@ -480,7 +480,7 @@ RHU_ADJ;Easterling;x
 RHR;Hillmen of Rhudaur;x
 RHR_ADJ;Hillmen;x
 RUN;Reunited Kingdom;x
-RUN_democracy;Reunited Republic;x
+RUN_republic;Reunited Republic;x
 RUN_ADJ;Reunited Kingdom;x
 SAE;Tribes of Saerlann;x
 SAE_ADJ;Saelanner;x

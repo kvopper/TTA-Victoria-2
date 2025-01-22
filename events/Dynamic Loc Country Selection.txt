@@ -1434,7 +1434,7 @@ country_event = {
 				has_province_modifier = dynamic_loc_slot_selector
 				GON = {
 					has_country_flag = dynamic_loc_slot_selector
-					government = democracy
+					government = republic
 				}
 			}
 			state_scope = { change_region_name = "@GON Republic of Gondor" }
@@ -1471,7 +1471,7 @@ country_event = {
 					has_country_flag = dynamic_loc_slot_selector
 					OR = {
 						government = istari_kingdom
-						government = democracy
+						government = republic
 						government = monarchy
 					}
 				}
@@ -1507,7 +1507,7 @@ country_event = {
 					has_country_flag = dynamic_loc_slot_selector
 					OR = {
 						government = istari_kingdom
-						government = democracy
+						government = republic
 						government = monarchy
 						government = sauron_dictatorship
 					}
@@ -1542,7 +1542,7 @@ country_event = {
 					has_country_flag = dynamic_loc_slot_selector
 					OR = {
 						government = istari_kingdom
-						government = democracy
+						government = republic
 						government = monarchy
 						government = sauron_dictatorship
 					}
@@ -1579,7 +1579,7 @@ country_event = {
 				has_province_modifier = dynamic_loc_slot_selector
 				AMR = {
 					has_country_flag = dynamic_loc_slot_selector
-					government = democracy
+					government = republic
 				}
 			}
 			state_scope = { change_region_name = "@AMR Republic of Belfalas" }
@@ -1591,7 +1591,7 @@ country_event = {
 					has_country_flag = dynamic_loc_slot_selector
 					OR = {
 						government = istari_kingdom
-						government = democracy
+						government = republic
 						government = monarchy
 						government = sauron_dictatorship
 					}
@@ -1616,7 +1616,7 @@ country_event = {
 					has_country_flag = dynamic_loc_slot_selector
 					OR = {
 						government = istari_kingdom
-						government = democracy
+						government = republic
 						government = monarchy
 						government = sauron_dictatorship
 					}
@@ -1641,7 +1641,7 @@ country_event = {
 					has_country_flag = dynamic_loc_slot_selector
 					OR = {
 						government = istari_kingdom
-						government = democracy
+						government = republic
 						government = monarchy
 						government = sauron_dictatorship
 					}
@@ -1666,7 +1666,7 @@ country_event = {
 					has_country_flag = dynamic_loc_slot_selector
 					OR = {
 						government = istari_kingdom
-						government = democracy
+						government = republic
 						government = monarchy
 						government = sauron_dictatorship
 					}
@@ -1701,7 +1701,7 @@ country_event = {
 					has_country_flag = dynamic_loc_slot_selector
 					OR = {
 						government = istari_kingdom
-						government = democracy
+						government = republic
 						government = monarchy
 						government = sauron_dictatorship
 					}
@@ -1723,7 +1723,7 @@ country_event = {
 					has_country_flag = dynamic_loc_slot_selector
 					OR = {
 						government = istari_kingdom
-						government = democracy
+						government = republic
 						government = monarchy
 						government = sauron_dictatorship
 					}
@@ -1746,7 +1746,7 @@ country_event = {
 				has_province_modifier = dynamic_loc_slot_selector
 				GNR = {
 					has_country_flag = dynamic_loc_slot_selector
-					government = democracy
+					government = republic
 				}
 			}
 			state_scope = { change_region_name = "@GNR Republic of Gondor" }
@@ -1804,7 +1804,7 @@ country_event = {
 					has_country_flag = dynamic_loc_slot_selector
 					OR = {
 						government = istari_kingdom
-						government = democracy
+						government = republic
 						government = monarchy
 						government = sauron_dictatorship
 					}
@@ -1841,7 +1841,7 @@ country_event = {
 				has_province_modifier = dynamic_loc_slot_selector
 				RUN = {
 					has_country_flag = dynamic_loc_slot_selector
-					government = democracy
+					government = republic
 				}
 			}
 			state_scope = { change_region_name = "@RUN Reunited Republic" }
@@ -1879,7 +1879,7 @@ country_event = {
 				has_province_modifier = dynamic_loc_slot_selector
 				ADB = {
 					has_country_flag = dynamic_loc_slot_selector
-					government = democracy
+					government = republic
 				}
 			}
 			state_scope = { change_region_name = "@ADB Republic of Adûnabâr" }
@@ -1891,7 +1891,7 @@ country_event = {
 					has_country_flag = dynamic_loc_slot_selector
 					OR = {
 						government = istari_kingdom
-						government = democracy
+						government = republic
 						government = monarchy
 					}
 				}
@@ -1936,7 +1936,7 @@ country_event = {
 					has_country_flag = dynamic_loc_slot_selector
 					OR = {
 						government = istari_kingdom
-						government = democracy
+						government = republic
 						government = monarchy
 						government = sauron_dictatorship
 					}
@@ -2134,7 +2134,7 @@ country_event = {
 				has_province_modifier = dynamic_loc_slot_selector
 				DOR = {
 					has_country_flag = dynamic_loc_slot_selector
-					government = democracy
+					government = republic
 				}
 			}
 			state_scope = { change_region_name = "@DOR Republic of Dorwinion" }
@@ -2249,7 +2249,7 @@ country_event = {
 				has_province_modifier = dynamic_loc_slot_selector
 				DAL = {
 					has_country_flag = dynamic_loc_slot_selector
-					government = democracy
+					government = republic
 				}
 			}
 			state_scope = { change_region_name = "@DAL Republic of Dale" }
@@ -2329,7 +2329,7 @@ country_event = {
 				has_province_modifier = dynamic_loc_slot_selector
 				ERE = {
 					has_country_flag = dynamic_loc_slot_selector
-					government = democracy
+					government = republic
 				}
 			}
 			state_scope = { change_region_name = "@ERE Republic of Erebor" }
@@ -2442,7 +2442,7 @@ country_event = {
 					has_country_flag = dynamic_loc_slot_selector
 					OR = {
 						government = istari_kingdom
-						government = democracy
+						government = republic
 						government = monarchy
 						government = sauron_dictatorship
 					}
@@ -2558,7 +2558,7 @@ country_event = {
 					has_country_flag = dynamic_loc_slot_selector
 					OR = {
 						government = istari_kingdom
-						government = democracy
+						government = republic
 						government = monarchy
 						government = sauron_dictatorship
 					}
@@ -2573,7 +2573,7 @@ country_event = {
 					has_country_flag = dynamic_loc_slot_selector
 					OR = {
 						government = istari_kingdom
-						government = democracy
+						government = republic
 						government = monarchy
 						government = sauron_dictatorship
 					}
@@ -2689,7 +2689,7 @@ country_event = {
 					has_country_flag = dynamic_loc_slot_selector
 					OR = {
 						government = istari_kingdom
-						government = democracy
+						government = republic
 						government = monarchy
 						government = sauron_dictatorship
 					}
@@ -2740,7 +2740,7 @@ country_event = {
 				has_province_modifier = dynamic_loc_slot_selector
 				ARN = {
 					has_country_flag = dynamic_loc_slot_selector
-					government = democracy
+					government = republic
 				}
 			}
 			state_scope = { change_region_name = "@ARN Republic of Arnor" }
@@ -2792,7 +2792,7 @@ country_event = {
 				has_province_modifier = dynamic_loc_slot_selector
 				CAR = {
 					has_country_flag = dynamic_loc_slot_selector
-					government = democracy
+					government = republic
 				}
 			}
 			state_scope = { change_region_name = "@CAR Republic of Cardolan" }
@@ -2933,7 +2933,7 @@ country_event = {
 					has_country_flag = dynamic_loc_slot_selector
 					OR = {
 						government = istari_kingdom
-						government = democracy
+						government = republic
 						government = monarchy
 						government = sauron_dictatorship
 					}
@@ -2967,7 +2967,7 @@ country_event = {
 				has_province_modifier = dynamic_loc_slot_selector
 				ART = {
 					has_country_flag = dynamic_loc_slot_selector
-					government = democracy
+					government = republic
 				}
 			}
 			state_scope = { change_region_name = "@ART Republic of Arthedain" }
@@ -3024,7 +3024,7 @@ country_event = {
 					has_country_flag = dynamic_loc_slot_selector
 					OR = {
 						government = istari_kingdom
-						government = democracy
+						government = republic
 						government = sauron_dictatorship
 					}
 				}

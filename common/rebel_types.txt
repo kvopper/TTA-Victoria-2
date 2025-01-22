@@ -20,7 +20,7 @@ nationalist_rebels = {
 	
 	# <this is the governement in the country> = <this is what the rebels want>
 	government = {
-		democracy = democracy
+		republic = republic
 		merchant_republic = merchant_republic
 		monarchy = monarchy
 		monarchy_2 = monarchy_2
@@ -200,7 +200,7 @@ patriot_rebels = {
 
 	# <this is the governement in the country> = <this is what the rebels want>
 	government = {
-		democracy = democracy
+		republic = republic
 		merchant_republic = merchant_republic
 		monarchy = monarchy
 		monarchy_2 = monarchy_2
@@ -394,7 +394,7 @@ slave_revolt = {
 
 	# <this is the government in the country> = <this is what the rebels want>
 	government = {
-		democracy = democracy
+		republic = republic
 		merchant_republic = merchant_republic
 		monarchy = monarchy
 		monarchy_2 = monarchy_2
@@ -540,8 +540,8 @@ democratic_rebels = {
 	
 	# <this is the governement in the country> = <this is what the rebels want>
 	government = {
-		democracy = democracy
-		merchant_republic = democracy
+		republic = republic
+		merchant_republic = republic
 		monarchy = merchant_republic
 		monarchy_2 = merchant_republic
 		tribal = merchant_republic
@@ -680,7 +680,7 @@ noble_rebels = {
 	
 	# <this is the governement in the country> = <this is what the rebels want>
 	government = {
-		democracy = monarchy
+		republic = monarchy
 		merchant_republic = monarchy
 		monarchy = monarchy
 		monarchy_2 = monarchy_2
@@ -850,7 +850,7 @@ serf_rebels = {
 	
 	# <this is the governement in the country> = <this is what the rebels want>
 	government = {
-		democracy = democracy
+		republic = republic
 		merchant_republic = merchant_republic
 		monarchy = monarchy
 		monarchy_2 = monarchy_2
@@ -991,7 +991,7 @@ good_rebels = {
 	
 	# <this is the governement in the country> = <this is what the rebels want>
 	government = {
-		democracy = democracy
+		republic = republic
 		merchant_republic = merchant_republic
 		monarchy = monarchy
 		monarchy_2 = monarchy_2
@@ -1170,7 +1170,7 @@ evil_rebels = {
 	
 	# <this is the governement in the country> = <this is what the rebels want>
 	government = {
-		democracy = democracy
+		republic = republic
 		merchant_republic = merchant_republic
 		monarchy = monarchy
 		monarchy_2 = monarchy_2
@@ -1349,7 +1349,7 @@ neutral_rebels = {
 	
 	# <this is the governement in the country> = <this is what the rebels want>
 	government = {
-		democracy = democracy
+		republic = republic
 		merchant_republic = merchant_republic
 		monarchy = monarchy
 		monarchy_2 = monarchy_2

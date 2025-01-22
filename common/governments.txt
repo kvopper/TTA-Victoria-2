@@ -1,7 +1,14 @@
+# Flag Overview
+# TAG -> Dictatorship
+# TAG_republic -> Democracies
+# TAG_monarchy -> Monarchies
+# TAG_cosmetic_1 -> Puppet of Sauron
+# TAG_cosmetic_2 -> Alternate 1
+
 #######################
 ##### DEMOCRACIES #####
 #######################
-democracy = {
+republic = {
 	election = yes
 	duration = 48
 	appoint_ruling_party = no
@@ -33,6 +40,7 @@ monarchy_2 = {
 tribal = {
 	election = no
 	appoint_ruling_party = yes
+	flagType = monarchy
 }
 
 #########################

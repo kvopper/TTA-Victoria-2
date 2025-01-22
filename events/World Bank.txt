@@ -1324,7 +1324,7 @@ country_event = {
 					nationalvalue = bard_ii
 					nationalvalue = regency
 				}
-				government = democracy
+				government = republic
 			}
 			
 			country_event = 3508

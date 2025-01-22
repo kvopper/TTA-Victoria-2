@@ -139,7 +139,7 @@ political_decisions = {
 			# Democratic country flag for democracies
 			any_country = {
 				limit = {
-					government = democracy
+					government = republic
 				}
 				set_country_flag = democratic
 			}
@@ -417,15 +417,15 @@ political_decisions = {
 		potential = {
 			tag = FOR
 			OR = {
-				# Has democratic flag but not a democracy
+				# Has democratic flag but not a republic
 				any_neighbor_country = {
 					has_country_flag = democratic
-					NOT = { government = democracy }
+					NOT = { government = republic }
 				}
-				# A democracy without democratic flag
+				# A republic without democratic flag
 				any_neighbor_country = {
 					NOT = { has_country_flag = democratic }
-					government = democracy
+					government = republic
 				}
 			}
 		}
@@ -436,14 +436,14 @@ political_decisions = {
 			any_neighbor_country = {
 				limit = {
 					has_country_flag = democratic
-					NOT = { government = democracy }
+					NOT = { government = republic }
 				}
 				clr_country_flag = democratic
 			}
 			any_neighbor_country = {
 				limit = {
 					NOT = { has_country_flag = democratic }
-					government = democracy
+					government = republic
 				}
 				set_country_flag = democratic
 			}

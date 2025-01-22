@@ -4,7 +4,7 @@ primary_culture = ent
 culture = ent_culture
 culture = huorn
 religion = ent
-government = democracy
+government = republic
 nationalvalue = treebeard
 civilized = yes
 

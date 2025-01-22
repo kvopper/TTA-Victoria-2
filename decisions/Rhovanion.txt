@@ -565,7 +565,7 @@ political_decisions = {
 		allow = {
 			OR = {
 				militancy = 3
-				government = democracy
+				government = republic
 				government = tribal
 			}
 		}

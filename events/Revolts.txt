@@ -19,7 +19,7 @@ country_event = {
 		random_owned = {
 			limit = {
 				owner = {
-					government = democracy
+					government = republic
 					vote_franschise = universal_weighted_voting
 				}
 			}
@@ -28,7 +28,7 @@ country_event = {
 		random_owned = {
 			limit = {
 				owner = {
-					government = democracy
+					government = republic
 					vote_franschise = wealth_voting
 				}
 			}
@@ -38,7 +38,7 @@ country_event = {
 		random_owned = {
 			limit = {
 				owner = {
-					government = democracy
+					government = republic
 					vote_franschise = wealth_weighted_voting
 				}
 			}
@@ -48,7 +48,7 @@ country_event = {
 		random_owned = {
 			limit = {
 				owner = {
-					government = democracy
+					government = republic
 					vote_franschise = landed_voting
 				}
 			}
@@ -61,11 +61,11 @@ country_event = {
 					NOT = { is_culture_group = hobbits }
 					NOT = { is_culture_group = northmen }
 					NOT = { is_culture_group = gramavuld_northmen }
-					NOT = { government = democracy }
+					NOT = { government = republic }
 				}
 			}
 			owner = {
-				government = democracy
+				government = republic
 				political_reform = landed_voting
 				set_country_flag = democratic
 				election = yes
