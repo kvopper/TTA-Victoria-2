@@ -144,30 +144,6 @@ political_decisions = {
 				set_country_flag = democratic
 			}
 			
-			# Noble Autonomy flags for noble militancy
-			any_country = {
-				limit = {
-					nobility_autonomy = large_noble_autonomy
-				}
-				set_country_flag = na_large
-			}
-			
-			# Noble Autonomy flags for noble militancy
-			any_country = {
-				limit = {
-					nobility_autonomy = medium_noble_autonomy
-				}
-				set_country_flag = na_medium
-			}
-			
-			# Noble Autonomy flags for noble militancy
-			any_country = {
-				limit = {
-					nobility_autonomy = small_noble_autonomy
-				}
-				set_country_flag = na_small
-			}
-			
 			# Slavery flags for yes_slavery
 			any_country = {
 				limit = {
@@ -470,101 +446,6 @@ political_decisions = {
 					government = democracy
 				}
 				set_country_flag = democratic
-			}
-		}
-	}
-	
-	noble_autonomy_flag_clean_up = {
-		potential = {
-			tag = FOR
-			OR = {
-				# Has large_noble_autonomy but not the country flag
-				any_neighbor_country = {
-					nobility_autonomy = large_noble_autonomy
-					NOT = { has_country_flag = na_large }
-				}
-				# Has medium_noble_autonomy but not the country flag
-				any_neighbor_country = {
-					nobility_autonomy = medium_noble_autonomy
-					NOT = { has_country_flag = na_medium }
-				}
-				# Has small_noble_autonomy but not the country flag
-				any_neighbor_country = {
-					nobility_autonomy = small_noble_autonomy
-					NOT = { has_country_flag = na_small }
-				}
-			}
-		}
-		
-		allow = {}
-		
-		effect = {
-			any_neighbor_country = {
-				limit = {
-					nobility_autonomy = large_noble_autonomy
-					NOT = { has_country_flag = na_large }
-					OR = {
-						has_country_flag = na_small
-						has_country_flag = na_medium
-					}
-				}
-				country_event = 100001
-				set_country_flag = na_large
-				clr_country_flag = na_medium
-				clr_country_flag = na_small
-			}
-			any_neighbor_country = {
-				limit = {
-					nobility_autonomy = medium_noble_autonomy
-					has_country_flag = na_large
-				}
-				country_event = 100000
-				clr_country_flag = na_large
-				set_country_flag = na_medium
-			}
-			any_neighbor_country = {
-				limit = {
-					nobility_autonomy = medium_noble_autonomy
-					has_country_flag = na_small
-				}
-				country_event = 100001
-				set_country_flag = na_medium
-				clr_country_flag = na_small
-			}
-			any_neighbor_country = {
-				limit = {
-					nobility_autonomy = small_noble_autonomy
-					NOT = { has_country_flag = na_small }
-					OR = {
-						has_country_flag = na_medium
-						has_country_flag = na_large
-					}
-				}
-				country_event = 100000
-				clr_country_flag = na_large
-				clr_country_flag = na_medium
-				set_country_flag = na_small
-			}
-			any_neighbor_country = {
-				limit = {
-					nobility_autonomy = large_noble_autonomy
-					NOT = { has_country_flag = na_large }
-				}
-				set_country_flag = na_large
-			}
-			any_neighbor_country = {
-				limit = {
-					nobility_autonomy = medium_noble_autonomy
-					NOT = { has_country_flag = na_medium }
-				}
-				set_country_flag = na_medium
-			}
-			any_neighbor_country = {
-				limit = {
-					nobility_autonomy = small_noble_autonomy
-					NOT = { has_country_flag = na_small }
-				}
-				set_country_flag = na_small
 			}
 		}
 	}

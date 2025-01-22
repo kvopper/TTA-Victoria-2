@@ -86,10 +86,6 @@ country_event = {
 	option = {
 		name = "Damn"
 		
-		set_country_flag = na_large
-		clr_country_flag = na_medium
-		clr_country_flag = na_small
-		
 		political_reform = large_noble_autonomy
 		political_reform = large_levy_contribution
 		political_reform = small_tax_contribution
