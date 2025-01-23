@@ -26,7 +26,10 @@ political_decisions = {
 			SHE = { set_country_flag = ideologies_great_brood_mothers_active }
 			
 			GUL = { set_country_flag = GUL_content }
-			SHE = { set_country_flag = SHE_content }
+			SHE = {
+				set_country_flag = SHE_content
+				set_country_flag = vassal_can_have_own_ruler
+			}
 		}
 	}
 }

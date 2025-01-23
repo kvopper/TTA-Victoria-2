@@ -3,7 +3,6 @@
 
 # World Bank Decisions: {
 #	Starting Decision (unseen)
-#	Government Flags Clean Up
 #	Realm Leaders
 # }
 
@@ -161,9 +160,6 @@ political_decisions = {
 
 			# Start Shire Reckoning event loop
 			country_event = 99903
-			
-			# Start Government Type Cleanup event loop
-			country_event = 100100
 			
 			# Start Daily Generic Cleanup Event
 			country_event = 99250
@@ -407,136 +403,6 @@ political_decisions = {
 			set_variable = { which = tyrn_harn_name value = 1 }
 			set_variable = { which = parth_celebrant_name value = 4 }
 			set_variable = { which = eraguk_name value = 0 }
-		}
-	}
-}
-
-# Government Flags Clean Up
-political_decisions = {
-	democratic_flag_clean_up = {
-		potential = {
-			tag = FOR
-			OR = {
-				# Has democratic flag but not a republic
-				any_neighbor_country = {
-					has_country_flag = democratic
-					NOT = { government = republic }
-				}
-				# A republic without democratic flag
-				any_neighbor_country = {
-					NOT = { has_country_flag = democratic }
-					government = republic
-				}
-			}
-		}
-		
-		allow = {}
-		
-		effect = {
-			any_neighbor_country = {
-				limit = {
-					has_country_flag = democratic
-					NOT = { government = republic }
-				}
-				clr_country_flag = democratic
-			}
-			any_neighbor_country = {
-				limit = {
-					NOT = { has_country_flag = democratic }
-					government = republic
-				}
-				set_country_flag = democratic
-			}
-		}
-	}
-	
-	non_accepted_slavery_clean_up = {
-		potential = {
-			tag = FOR
-			OR = {
-				# Has has_all_slavery flag but doesn't have yes_slavery
-				any_neighbor_country = {
-					has_country_flag = has_all_slavery
-					NOT = { slavery = yes_slavery }
-				}
-				# Has yes_slavery but not has_all_slavery
-				any_neighbor_country = {
-					NOT = { has_country_flag = has_all_slavery }
-					slavery = yes_slavery
-				}
-			}
-		}
-		
-		allow = {}
-		
-		effect = {
-			any_neighbor_country = {
-				limit = {
-					has_country_flag = has_all_slavery
-					slavery = non_accepted_slavery
-				}
-				clr_country_flag = has_all_slavery
-				country_event = 100002
-			}
-			any_neighbor_country = {
-				limit = {
-					has_country_flag = has_all_slavery
-					slavery = no_slavery
-				}
-				clr_country_flag = has_all_slavery
-			}
-			any_neighbor_country = {
-				limit = {
-					NOT = { has_country_flag = has_all_slavery }
-					slavery = yes_slavery
-				}
-				set_country_flag = has_all_slavery
-			}
-		}
-	}
-	
-	border_laws_clean_up = {
-		potential = {
-			tag = FOR
-			OR = {
-				AND = {
-					has_global_flag = borders_closed
-					any_neighbor_country = { NOT = { border_policy = closed_borders } }
-				}
-				AND = {
-					has_global_flag = borders_alignment
-					any_neighbor_country = { NOT = { border_policy = alignment_borders } }
-				}
-				AND = {
-					has_global_flag = borders_race
-					any_neighbor_country = { NOT = { border_policy = race_borders } }
-				}
-				AND = {
-					has_global_flag = borders_open
-					any_neighbor_country = { NOT = { border_policy = open_borders } }
-				}
-			}
-		}
-		
-		allow = {}
-		
-		effect = {
-			any_neighbor_country = {
-				limit = { has_global_flag = borders_closed }
-				political_reform = closed_borders
-			}
-			any_neighbor_country = {
-				limit = { has_global_flag = borders_alignment }
-				political_reform = alignment_borders
-			}
-			any_neighbor_country = {
-				limit = { has_global_flag = borders_race }
-				political_reform = race_borders
-			}
-			any_neighbor_country = {
-				limit = { has_global_flag = borders_open }
-				political_reform = open_borders
-			}
 		}
 	}
 }

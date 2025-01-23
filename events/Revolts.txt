@@ -67,7 +67,6 @@ country_event = {
 			owner = {
 				government = republic
 				political_reform = landed_voting
-				set_country_flag = democratic
 				election = yes
 			}
 		}
@@ -106,7 +105,6 @@ country_event = {
 		name = "Damn"
 		
 		political_reform = no_slavery
-		clr_country_flag = has_all_slavery
 		
 		random_owned = {
 			limit = {
@@ -146,7 +144,6 @@ country_event = {
 		name = "Damn"
 		
 		political_reform = yes_slavery
-		set_country_flag = has_all_slavery
 		
 		any_state = {
 			is_slave = yes

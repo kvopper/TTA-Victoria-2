@@ -4976,7 +4976,6 @@ issues = {
 				NOT = { consciousness = 6 }
 				luxury_needs = 1
 				NOT = { life_needs = 0.7 }
-				NOT = { country = { has_country_flag = democratic } }
 			}
 		}
 		modifier = {
@@ -5045,7 +5044,6 @@ issues = {
 				NOT = { consciousness = 6 }
 				luxury_needs = 1
 				NOT = { life_needs = 0.7 }
-				NOT = { country = { has_country_flag = democratic } }
 			}
 		}
 		modifier = {
@@ -5114,7 +5112,6 @@ issues = {
 				NOT = { consciousness = 6 }
 				luxury_needs = 1
 				NOT = { life_needs = 0.7 }
-				NOT = { country = { has_country_flag = democratic } }
 			}
 		}
 		modifier = {
@@ -5183,7 +5180,6 @@ issues = {
 				NOT = { consciousness = 6 }
 				luxury_needs = 1
 				NOT = { life_needs = 0.7 }
-				NOT = { country = { has_country_flag = democratic } }
 			}
 		}
 		modifier = {

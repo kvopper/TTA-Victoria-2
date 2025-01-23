@@ -12,7 +12,7 @@ oob = "MIR_oob.txt"
 
 prestige = 5
 
-ruling_party = generic_great_spider_nobles
+ruling_party = generic_servants_evil
 
 upper_house = {
 	great_spider_nobles = 100

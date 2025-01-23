@@ -5,6 +5,7 @@
 #		Also don't forget to update event 70007 in events/On Action.txt
 #		Also add an associated ideology (culture_noble)
 #		Also add the ideology flag in event 99000 events/World Bank.txt (# Ideologies (primary/accepted cultures) and FOR's starting decision (decisions/World Bank.txt)
+#		Also update the cleanup in event 99000 events/World Bank.txt (# Dominions that are now free)
 
 # Banker culture. Cosmetic, doesn't need names
 banker = {

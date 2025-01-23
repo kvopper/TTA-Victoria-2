@@ -10,7 +10,7 @@ civilized = yes
 
 oob = "IRO_oob.txt"
 
-ruling_party = generic_longbeard_nobles
+ruling_party = generic_servants_good
 
 upper_house = {
 	longbeard_nobles = 100

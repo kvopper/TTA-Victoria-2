@@ -693,21 +693,11 @@ EVTDESC90799;This is a function event called whenever a province has some Provin
 ###########################;x }
 ##### CLEAN UP EVENTS #####;x {
 ###########################;x
-EVTDESC100000;Our realm's policy on the noble's autonomy has changed recently. The nobles are upset at having their freedoms curtailed.;x
-EVTDESC100001;Our realm's policy on the noble's autonomy has changed recently. The nobles are enjoying their newfound freedoms.;x
-EVTDESC100002;Our realm's policy on slavery has recently changed to Non-Accetped Slavery. There may currently be some of our cultural brethren that are still slaves. We ought to emancipate them.;x
 EVTDESC100003;One group within our cultural union has claimed sovereignty over our culture. They have proposed a union of all part of our culture. Should we accept?;x
 EVTDESC100005;A more well recognized realm of our cultural brethren have invited us to a council. Undoubtedly, they will want us to recognize them as a stronger realm, formally making us subservient to them. Should we attend?;x
 EVTDESC100006;Our overlord has acquired some land that they do not claim, but we do. They are willing to give it to us.;x
-EVTDESC100007;No longer are we a puppet of Gondor or the Reunited Kingdom. As such, we should reorganize our government.\n\n§RThe choice you make is purely cosmetic and will not affect your gameplay§!;x
 EVTDESC100008;We have a generic leader when there is a unique leader that we can be using. Let's use that leader.;x
 EVTDESC100009;Thorongil has left our court, and so has his wisdom.;x
-EVTDESC100010;No longer are we a puppet of Sauron. As such, we should reorganize our government.;x
-EVTDESC100100;Standard government type cleanup event loop;x
-EVTDESC100101;Your democracy doesn't fit the democracy that was meant for you. The following are the democracies in the game|\n\nName -- Ruler Title -- Notes\nRepublic -- Lord -- Generic\nHobbit Realm -- Mayor -- Hobbits\nNorthmen Democracy -- Master -- Northmen;x
-EVTDESC100102;Your monarchy doesn't fit the monarchy that was meant for you. The following are the monarchies in the game|\n\nName -- Ruler Title -- Notes\nMonarchy -- King -- Generic\nPrincipality -- Prince -- Generic\nMonarchy -- Lord -- Generic\nStewardship -- Steward -- Gondor without a King\nFiefdom -- Lord -- Puppets of Gondor\nDual Monarchy -- Lord and Lady -- Lothlórien;x
-EVTDESC100103;Your dictatorship doesn't fit the dictatorship that was meant for you. The following are the dictatorships in the game|\n\nName -- Ruler Title -- Notes\nDark Realm -- Lord -- Generic\nSauron's Domain -- Dark Lord -- Realms ruled by Sauron\nSauron's Domain -- Lord -- Puppets of Sauron that are not Nazgul\nNazgul Realm -- Lord -- Realms ruled by a Nazgul\nIstari Kingdom -- Lord -- Realms ruled by a Wizard;x
-EVTDESC100104;Your tribe doesn't fit the tribe that was meant foryou. The following are the tribes in the game|\n\nName -- Ruler Title -- Notes\nTribe -- Chieftain -- Orc Realms\nTribe -- Thegen -- Northmen\nTribe -- Chief -- Generic;x
 ##############################################;x }
 ##### ALLIANCE OF DWARVES AND MEN EVENTS #####;x {
 ##############################################;x

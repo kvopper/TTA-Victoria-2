@@ -64,6 +64,12 @@ political_decisions = {
 				}
 			}
 			
+			# Setting flag for rulers
+			any_country = {
+				limit = { vassal_of = THIS }
+				set_country_flag = vassal_can_have_own_ruler
+			}
+			
 			# Setting Orc Raids
 			any_owned = {
 				limit = {

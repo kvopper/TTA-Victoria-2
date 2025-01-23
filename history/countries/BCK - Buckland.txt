@@ -11,7 +11,7 @@ civilized = yes
 
 oob = "BCK_oob.txt"
 
-ruling_party = generic_fallohide_nobles
+ruling_party = generic_servants_neutral
 
 upper_house = {
 	fallohide_nobles = 100
