@@ -195,10 +195,10 @@ dictatorship;Dictatorship;x
 dictatorship_l;Dictatorship Government Type;x
 dictatorship_desc;Only members of the ruler's interest group can be appointed to the ruler's advisors.;x
 movement_dictatorship;Movement to change Advisor composition;x
-monarchal;Monarchal;x
-monarchal_l;Monarchal Government Type;x
-monarchal_desc;Aristocrats or guild masters have been assigned advising positions by the leader of the realm.;x
-movement_monarchal;Movement to change Advisor composition;x
+monarchist;Monarchist;x
+monarchist_l;Monarchist Government Type;x
+monarchist_desc;Aristocrats or guild masters have been assigned advising positions by the leader of the realm.;x
+movement_monarchist;Movement to change Advisor composition;x
 republican;Republican;x
 republican_l;Republican Government Type;x
 republican_desc;Advisors are determined by the collected interest groups of the population.;x

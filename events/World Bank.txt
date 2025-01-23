@@ -1245,7 +1245,7 @@ country_event = {
 					government = tribal
 				}
 			}
-			political_reform = monarchal
+			political_reform = monarchist
 		}
 		any_country = {
 			limit = {
