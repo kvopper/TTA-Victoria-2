@@ -5073,7 +5073,6 @@ issues = {
 				luxury_needs = 1
 				NOT = { life_needs = 0.7 }
 				AND = {
-					NOT = { country = { has_country_flag = attempting_to_democratic } }
 					country = { vote_franschise = none_voting }
 					NOT = { militancy = 6 }
 				}
