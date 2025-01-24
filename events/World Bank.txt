@@ -1344,26 +1344,36 @@ country_event = {
 			government = dominion_1
 			ruling_party_ideology = servants_evil
 		}
-		# Vassals of Gondor become fiefdoms
+		# dominion_2
 		any_country = {
 			limit = {
-				OR = {
-					vassal_of = GON
-					vassal_of = RUN
-				}
-				OR = {
-					tag = ITH
-					tag = LOS
-					tag = LEB
-					tag = AMR
-					tag = LAM
-					tag = ANF
-					tag = ANO
-					tag = TOL
-					tag = MRN
-					tag = ADR
-				}
 				NOT = { government = dominion_2 }
+				OR = {
+					# Fiefdoms of Gondor
+					AND = {
+						OR = {
+							vassal_of = GON
+							vassal_of = RUN
+						}
+						OR = {
+							tag = ITH
+							tag = LOS
+							tag = LEB
+							tag = AMR
+							tag = LAM
+							tag = ANF
+							tag = ANO
+							tag = TOL
+							tag = MRN
+							tag = ADR
+						}
+					}
+					# Rohan
+					AND = {
+						vassal_of = ROH
+						tag = FRA
+					}
+				}
 			}
 			government = dominion_2
 		}
