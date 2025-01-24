@@ -619,6 +619,16 @@ summer_modifier_south = {
 }
 
 # Province Modifier
+summer_modifier_mordor = {
+	farm_rgo_eff = 0.1
+	pop_militancy_modifier = -0.01
+	pop_consciousness_modifier = -0.01
+	max_attrition = -5
+	
+	icon = 37
+}
+
+# Province Modifier
 autumn_modifier_north = {
 	farm_rgo_eff = 0.05
 	
@@ -642,6 +652,14 @@ autumn_modifier_south = {
 }
 
 # Province Modifier
+autumn_modifier_mordor = {
+	farm_rgo_eff = 0.1
+	max_attrition = -3
+	
+	icon = 38
+}
+
+# Province Modifier
 winter_modifier_north = {
 	farm_rgo_eff = -0.05
 	pop_militancy_modifier = 0.01
@@ -654,6 +672,16 @@ winter_modifier_north = {
 
 # Province Modifier
 winter_modifier_south = {
+	pop_militancy_modifier = 0.01
+	pop_consciousness_modifier = 0.01
+	movement_cost = 0.1
+	max_attrition = 5
+	
+	icon = 39
+}
+
+# Province Modifier
+winter_modifier_mordor = {
 	pop_militancy_modifier = 0.01
 	pop_consciousness_modifier = 0.01
 	movement_cost = 0.1
@@ -686,6 +714,15 @@ spring_modifier_south = {
 }
 
 # Province Modifier
+spring_modifier_mordor = {
+	farm_rgo_eff = 0.05
+	movement_cost = 0.05
+	max_attrition = -3
+	
+	icon = 40
+}
+
+# Province Modifier
 dry_season_modifier = {
 	farm_rgo_eff = -0.1
 	pop_militancy_modifier = 0.01
@@ -705,14 +742,14 @@ wet_season_modifier = {
 
 # }
 ##### WEATHER MODIFIERS ##### {
-# Provinder Modifier
+# Province Modifier
 sunny_modifier_4_season = {
 	farm_rgo_eff = 0.02
 	
 	icon = 37
 }
 
-# Provinder Modifier
+# Province Modifier
 sunny_modifier_desert = {
 	farm_rgo_eff = -0.02
 	
@@ -724,6 +761,13 @@ cloudy_modifier = {
 	# Purposefully no effects
 	
 	icon = 41
+}
+
+# Province Modifier
+ash_cloudy_modifier = {
+	movement_cost = 0.05
+	
+	icon = 59
 }
 
 # Province Modifier

@@ -445,7 +445,7 @@ country_event = {
 		
 		# Seasons
 		random_owned = {
-			# December, January, February
+			# December, January, February - Eriador, Rhovanion, Rhun
 			any_neighbor_province = {
 				limit = {
 					OR = {
@@ -465,7 +465,7 @@ country_event = {
 				remove_province_modifier = autumn_modifier_north
 				remove_province_modifier = autumn_modifier_rhun
 			}
-			# March, April, May
+			# March, April, May - Eriador, Rhovanion
 			any_neighbor_province = {
 				limit = {
 					month = 2
@@ -482,7 +482,7 @@ country_event = {
 				remove_province_modifier = autumn_modifier_north
 				remove_province_modifier = autumn_modifier_rhun
 			}
-			# March, April, May
+			# March, April, May - Rhun
 			any_neighbor_province = {
 				limit = {
 					month = 2
@@ -496,7 +496,7 @@ country_event = {
 				remove_province_modifier = autumn_modifier_north
 				remove_province_modifier = autumn_modifier_rhun
 			}
-			# June, July, August
+			# June, July, August - Eriador, Rhovanion, Rhun
 			any_neighbor_province = {
 				limit = {
 					month = 5
@@ -514,7 +514,7 @@ country_event = {
 				remove_province_modifier = autumn_modifier_north
 				remove_province_modifier = autumn_modifier_rhun
 			}
-			# September October, November
+			# September October, November - Eriador, Rhovanion
 			any_neighbor_province = {
 				limit = {
 					month = 8
@@ -531,7 +531,7 @@ country_event = {
 				add_province_modifier = { name = autumn_modifier_north duration = -1 }
 				remove_province_modifier = autumn_modifier_rhun
 			}
-			# September October, November
+			# September October, November - Rhun
 			any_neighbor_province = {
 				limit = {
 					month = 8
@@ -545,7 +545,7 @@ country_event = {
 				remove_province_modifier = autumn_modifier_north
 				add_province_modifier = { name = autumn_modifier_rhun duration = -1 }
 			}
-			# December, January, February
+			# December, January, February - Gondor/Rohan, calm Mordor
 			any_neighbor_province = {
 				limit = {
 					OR = {
@@ -554,60 +554,166 @@ country_event = {
 					}
 					OR = {
 						continent = south_america # Gondor/Rohan
-						continent = africa # Mordor
+						AND = {
+							continent = africa # Mordor
+							NOT = { has_global_flag = mount_doom_erupting }
+						}
 					}
 				}
 				add_province_modifier = { name = winter_modifier_south duration = -1 }
 				remove_province_modifier = spring_modifier_south
 				remove_province_modifier = summer_modifier_south
 				remove_province_modifier = autumn_modifier_south
+				
+				remove_province_modifier = winter_modifier_mordor
+				remove_province_modifier = spring_modifier_mordor
+				remove_province_modifier = summer_modifier_mordor
+				remove_province_modifier = autumn_modifier_mordor
 			}
-			# March, April, May
+			# March, April, May - Gondor/Rohan, calm Mordor
 			any_neighbor_province = {
 				limit = {
 					month = 2
 					NOT = { month = 5 }
 					OR = {
 						continent = south_america # Gondor/Rohan
-						continent = africa # Mordor
+						AND = {
+							continent = africa # Mordor
+							NOT = { has_global_flag = mount_doom_erupting }
+						}
 					}
 				}
 				remove_province_modifier = winter_modifier_south
 				add_province_modifier = { name = spring_modifier_south duration = -1 }
 				remove_province_modifier = summer_modifier_south
 				remove_province_modifier = autumn_modifier_south
+				
+				remove_province_modifier = winter_modifier_mordor
+				remove_province_modifier = spring_modifier_mordor
+				remove_province_modifier = summer_modifier_mordor
+				remove_province_modifier = autumn_modifier_mordor
 			}
-			# June, July, August
+			# June, July, August - Gondor/Rohan, calm Mordor
 			any_neighbor_province = {
 				limit = {
 					month = 5
 					NOT = { month = 8 }
 					OR = {
 						continent = south_america # Gondor/Rohan
-						continent = africa # Mordor
+						AND = {
+							continent = africa # Mordor
+							NOT = { has_global_flag = mount_doom_erupting }
+						}
 					}
 				}
 				remove_province_modifier = winter_modifier_south
 				remove_province_modifier = spring_modifier_south
 				add_province_modifier = { name = summer_modifier_south duration = -1 }
 				remove_province_modifier = autumn_modifier_south
+				
+				remove_province_modifier = winter_modifier_mordor
+				remove_province_modifier = spring_modifier_mordor
+				remove_province_modifier = summer_modifier_mordor
+				remove_province_modifier = autumn_modifier_mordor
 			}
-			# September October, November
+			# September October, November - Gondor/Rohan, calm Mordor
 			any_neighbor_province = {
 				limit = {
 					month = 8
 					NOT = { month = 11 }
 					OR = {
 						continent = south_america # Gondor/Rohan
-						continent = africa # Mordor
+						AND = {
+							continent = africa # Mordor
+							NOT = { has_global_flag = mount_doom_erupting }
+						}
 					}
 				}
 				remove_province_modifier = winter_modifier_south
 				remove_province_modifier = spring_modifier_south
 				remove_province_modifier = summer_modifier_south
 				add_province_modifier = { name = autumn_modifier_south duration = -1 }
+				
+				remove_province_modifier = winter_modifier_mordor
+				remove_province_modifier = spring_modifier_mordor
+				remove_province_modifier = summer_modifier_mordor
+				remove_province_modifier = autumn_modifier_mordor
 			}
-			# October, November, December, January, February, March
+			# December, January, February - Mordor
+			any_neighbor_province = {
+				limit = {
+					OR = {
+						month = 11
+						NOT = { month = 2 }
+					}
+					continent = africa # Mordor
+					has_global_flag = mount_doom_erupting
+				}
+				add_province_modifier = { name = winter_modifier_mordor duration = -1 }
+				remove_province_modifier = spring_modifier_mordor
+				remove_province_modifier = summer_modifier_mordor
+				remove_province_modifier = autumn_modifier_mordor
+				
+				remove_province_modifier = winter_modifier_south
+				remove_province_modifier = spring_modifier_south
+				remove_province_modifier = summer_modifier_south
+				remove_province_modifier = autumn_modifier_south
+			}
+			# March, April, May - Mordor
+			any_neighbor_province = {
+				limit = {
+					month = 2
+					NOT = { month = 5 }
+					continent = africa # Mordor
+					has_global_flag = mount_doom_erupting
+				}
+				remove_province_modifier = winter_modifier_mordor
+				add_province_modifier = { name = spring_modifier_mordor duration = -1 }
+				remove_province_modifier = summer_modifier_mordor
+				remove_province_modifier = autumn_modifier_mordor
+				
+				remove_province_modifier = winter_modifier_south
+				remove_province_modifier = spring_modifier_south
+				remove_province_modifier = summer_modifier_south
+				remove_province_modifier = autumn_modifier_south
+			}
+			# June, July, August - Mordor
+			any_neighbor_province = {
+				limit = {
+					month = 5
+					NOT = { month = 8 }
+					continent = africa # Mordor
+					has_global_flag = mount_doom_erupting
+				}
+				remove_province_modifier = winter_modifier_mordor
+				remove_province_modifier = spring_modifier_mordor
+				add_province_modifier = { name = summer_modifier_mordor duration = -1 }
+				remove_province_modifier = autumn_modifier_mordor
+				
+				remove_province_modifier = winter_modifier_south
+				remove_province_modifier = spring_modifier_south
+				remove_province_modifier = summer_modifier_south
+				remove_province_modifier = autumn_modifier_south
+			}
+			# September October, November - Mordor
+			any_neighbor_province = {
+				limit = {
+					month = 8
+					NOT = { month = 11 }
+					continent = africa # Mordor
+					has_global_flag = mount_doom_erupting
+				}
+				remove_province_modifier = winter_modifier_mordor
+				remove_province_modifier = spring_modifier_mordor
+				remove_province_modifier = summer_modifier_mordor
+				add_province_modifier = { name = autumn_modifier_mordor duration = -1 }
+				
+				remove_province_modifier = winter_modifier_south
+				remove_province_modifier = spring_modifier_south
+				remove_province_modifier = summer_modifier_south
+				remove_province_modifier = autumn_modifier_south
+			}
+			# October, November, December, January, February, March - Harad
 			any_neighbor_province = {
 				limit = {
 					OR = {
@@ -619,7 +725,7 @@ country_event = {
 				add_province_modifier = { name = dry_season_modifier duration = -1 }
 				remove_province_modifier = wet_season_modifier
 			}
-			# April, May, June, July, August, September
+			# April, May, June, July, August, September - Harad
 			any_neighbor_province = {
 				limit = {
 					month = 3
@@ -3365,6 +3471,20 @@ country_event = {
 					5 = { add_province_modifier = { name = windy_modifier duration = 7 } }
 				}
 			}
+
+			# Summer - Mordor
+			any_neighbor_province = {
+				limit = {
+					has_province_modifier = summer_modifier_mordor
+				}
+				random_list = {
+					10 = { add_province_modifier = { name = sunny_modifier_4_season duration = 7 } }
+					35 = { add_province_modifier = { name = cloudy_modifier duration = 7 } }
+					5 = { add_province_modifier = { name = rainy_modifier_4_season duration = 7 } }
+					5 = { add_province_modifier = { name = windy_modifier duration = 7 } }
+					45 = { add_province_modifier = { name = ash_cloudy_modifier duration = 7 } }
+				}
+			}
 			
 			# Autumn/Spring - North
 			any_neighbor_province = {
@@ -3400,6 +3520,23 @@ country_event = {
 					45 = { add_province_modifier = { name = windy_modifier duration = 7 } }
 				}
 			}
+
+			# Autumn/Spring - Mordor
+			any_neighbor_province = {
+				limit = {
+					OR = {
+						has_province_modifier = autumn_modifier_mordor
+						has_province_modifier = spring_modifier_mordor
+					}
+				}
+				random_list = {
+					5 = { add_province_modifier = { name = sunny_modifier_4_season duration = 7 } }
+					30 = { add_province_modifier = { name = cloudy_modifier duration = 7 } }
+					10 = { add_province_modifier = { name = rainy_modifier_4_season duration = 7 } }
+					10 = { add_province_modifier = { name = windy_modifier duration = 7 } }
+					45 = { add_province_modifier = { name = ash_cloudy_modifier duration = 7 } }
+				}
+			}
 			
 			# Winter - North
 			any_neighbor_province = {
@@ -3426,6 +3563,20 @@ country_event = {
 					25 = { add_province_modifier = { name = rainy_modifier_4_season duration = 7 } }
 					10 = { add_province_modifier = { name = snowy_modifier duration = 7 } }
 					25 = { add_province_modifier = { name = windy_modifier duration = 7 } }
+				}
+			}
+
+			# Winter - Mordor
+			any_neighbor_province = {
+				limit = {
+					has_province_modifier = winter_modifier_mordor
+				}
+				random_list = {
+					35 = { add_province_modifier = { name = cloudy_modifier duration = 7 } }
+					5 = { add_province_modifier = { name = rainy_modifier_4_season duration = 7 } }
+					5 = { add_province_modifier = { name = windy_modifier duration = 7 } }
+					10 = { add_province_modifier = { name = snowy_modifier duration = 7 } }
+					45 = { add_province_modifier = { name = ash_cloudy_modifier duration = 7 } }
 				}
 			}
 			
@@ -3485,23 +3636,18 @@ country_event = {
 				# DO NOT REMOVE THESE RANDOMS - THEY ARE WHAT MAKE THE RESULTS DIFFERENT IN EACH RANDOM_OWNED
 				random = { chance = 1 }
 			}
-			
-			# Autumn/Spring - North
+
+			# Summer - Mordor
 			any_neighbor_province = {
 				limit = {
-					OR = {
-						has_province_modifier = autumn_modifier_north
-						has_province_modifier = autumn_modifier_rhun
-						has_province_modifier = spring_modifier_north
-						has_province_modifier = spring_modifier_rhun
-					}
+					has_province_modifier = summer_modifier_mordor
 				}
 				random_list = {
-					20 = { add_province_modifier = { name = sunny_modifier_4_season duration = 7 } }
-					10 = { add_province_modifier = { name = cloudy_modifier duration = 7 } }
-					20 = { add_province_modifier = { name = rainy_modifier_4_season duration = 7 } }
-					5 = { add_province_modifier = { name = snowy_modifier duration = 7 } }
-					45 = { add_province_modifier = { name = windy_modifier duration = 7 } }
+					10 = { add_province_modifier = { name = sunny_modifier_4_season duration = 7 } }
+					35 = { add_province_modifier = { name = cloudy_modifier duration = 7 } }
+					5 = { add_province_modifier = { name = rainy_modifier_4_season duration = 7 } }
+					5 = { add_province_modifier = { name = windy_modifier duration = 7 } }
+					45 = { add_province_modifier = { name = ash_cloudy_modifier duration = 7 } }
 				}
 				
 				# DO NOT REMOVE THESE RANDOMS - THEY ARE WHAT MAKE THE RESULTS DIFFERENT IN EACH RANDOM_OWNED
@@ -3548,6 +3694,26 @@ country_event = {
 				# DO NOT REMOVE THESE RANDOMS - THEY ARE WHAT MAKE THE RESULTS DIFFERENT IN EACH RANDOM_OWNED
 				random = { chance = 1 }
 			}
+
+			# Autumn/Spring - Mordor
+			any_neighbor_province = {
+				limit = {
+					OR = {
+						has_province_modifier = autumn_modifier_mordor
+						has_province_modifier = spring_modifier_mordor
+					}
+				}
+				random_list = {
+					5 = { add_province_modifier = { name = sunny_modifier_4_season duration = 7 } }
+					30 = { add_province_modifier = { name = cloudy_modifier duration = 7 } }
+					10 = { add_province_modifier = { name = rainy_modifier_4_season duration = 7 } }
+					10 = { add_province_modifier = { name = windy_modifier duration = 7 } }
+					45 = { add_province_modifier = { name = ash_cloudy_modifier duration = 7 } }
+				}
+				
+				# DO NOT REMOVE THESE RANDOMS - THEY ARE WHAT MAKE THE RESULTS DIFFERENT IN EACH RANDOM_OWNED
+				random = { chance = 1 }
+			}
 			
 			# Winter - North
 			any_neighbor_province = {
@@ -3577,6 +3743,23 @@ country_event = {
 					25 = { add_province_modifier = { name = rainy_modifier_4_season duration = 7 } }
 					10 = { add_province_modifier = { name = snowy_modifier duration = 7 } }
 					25 = { add_province_modifier = { name = windy_modifier duration = 7 } }
+				}
+				
+				# DO NOT REMOVE THESE RANDOMS - THEY ARE WHAT MAKE THE RESULTS DIFFERENT IN EACH RANDOM_OWNED
+				random = { chance = 1 }
+			}
+
+			# Winter - Mordor
+			any_neighbor_province = {
+				limit = {
+					has_province_modifier = winter_modifier_mordor
+				}
+				random_list = {
+					35 = { add_province_modifier = { name = cloudy_modifier duration = 7 } }
+					5 = { add_province_modifier = { name = rainy_modifier_4_season duration = 7 } }
+					5 = { add_province_modifier = { name = windy_modifier duration = 7 } }
+					10 = { add_province_modifier = { name = snowy_modifier duration = 7 } }
+					45 = { add_province_modifier = { name = ash_cloudy_modifier duration = 7 } }
 				}
 				
 				# DO NOT REMOVE THESE RANDOMS - THEY ARE WHAT MAKE THE RESULTS DIFFERENT IN EACH RANDOM_OWNED
@@ -3646,6 +3829,24 @@ country_event = {
 				random = { chance = 2 }
 				random = { chance = 2 }
 			}
+
+			# Summer - Mordor
+			any_neighbor_province = {
+				limit = {
+					has_province_modifier = summer_modifier_mordor
+				}
+				random_list = {
+					10 = { add_province_modifier = { name = sunny_modifier_4_season duration = 7 } }
+					35 = { add_province_modifier = { name = cloudy_modifier duration = 7 } }
+					5 = { add_province_modifier = { name = rainy_modifier_4_season duration = 7 } }
+					5 = { add_province_modifier = { name = windy_modifier duration = 7 } }
+					45 = { add_province_modifier = { name = ash_cloudy_modifier duration = 7 } }
+				}
+				
+				# DO NOT REMOVE THESE RANDOMS - THEY ARE WHAT MAKE THE RESULTS DIFFERENT IN EACH RANDOM_OWNED
+				random = { chance = 2 }
+				random = { chance = 2 }
+			}
 			
 			# Autumn/Spring - North
 			any_neighbor_province = {
@@ -3689,6 +3890,27 @@ country_event = {
 				random = { chance = 2 }
 				random = { chance = 2 }
 			}
+
+			# Autumn/Spring - Mordor
+			any_neighbor_province = {
+				limit = {
+					OR = {
+						has_province_modifier = autumn_modifier_mordor
+						has_province_modifier = spring_modifier_mordor
+					}
+				}
+				random_list = {
+					5 = { add_province_modifier = { name = sunny_modifier_4_season duration = 7 } }
+					30 = { add_province_modifier = { name = cloudy_modifier duration = 7 } }
+					10 = { add_province_modifier = { name = rainy_modifier_4_season duration = 7 } }
+					10 = { add_province_modifier = { name = windy_modifier duration = 7 } }
+					45 = { add_province_modifier = { name = ash_cloudy_modifier duration = 7 } }
+				}
+				
+				# DO NOT REMOVE THESE RANDOMS - THEY ARE WHAT MAKE THE RESULTS DIFFERENT IN EACH RANDOM_OWNED
+				random = { chance = 2 }
+				random = { chance = 2 }
+			}
 			
 			# Winter - North
 			any_neighbor_province = {
@@ -3719,6 +3941,24 @@ country_event = {
 					25 = { add_province_modifier = { name = rainy_modifier_4_season duration = 7 } }
 					10 = { add_province_modifier = { name = snowy_modifier duration = 7 } }
 					25 = { add_province_modifier = { name = windy_modifier duration = 7 } }
+				}
+				
+				# DO NOT REMOVE THESE RANDOMS - THEY ARE WHAT MAKE THE RESULTS DIFFERENT IN EACH RANDOM_OWNED
+				random = { chance = 2 }
+				random = { chance = 2 }
+			}
+
+			# Winter - Mordor
+			any_neighbor_province = {
+				limit = {
+					has_province_modifier = winter_modifier_mordor
+				}
+				random_list = {
+					35 = { add_province_modifier = { name = cloudy_modifier duration = 7 } }
+					5 = { add_province_modifier = { name = rainy_modifier_4_season duration = 7 } }
+					5 = { add_province_modifier = { name = windy_modifier duration = 7 } }
+					10 = { add_province_modifier = { name = snowy_modifier duration = 7 } }
+					45 = { add_province_modifier = { name = ash_cloudy_modifier duration = 7 } }
 				}
 				
 				# DO NOT REMOVE THESE RANDOMS - THEY ARE WHAT MAKE THE RESULTS DIFFERENT IN EACH RANDOM_OWNED
@@ -3792,6 +4032,25 @@ country_event = {
 				random = { chance = 3 }
 				random = { chance = 3 }
 			}
+
+			# Summer - Mordor
+			any_neighbor_province = {
+				limit = {
+					has_province_modifier = summer_modifier_mordor
+				}
+				random_list = {
+					10 = { add_province_modifier = { name = sunny_modifier_4_season duration = 7 } }
+					35 = { add_province_modifier = { name = cloudy_modifier duration = 7 } }
+					5 = { add_province_modifier = { name = rainy_modifier_4_season duration = 7 } }
+					5 = { add_province_modifier = { name = windy_modifier duration = 7 } }
+					45 = { add_province_modifier = { name = ash_cloudy_modifier duration = 7 } }
+				}
+				
+				# DO NOT REMOVE THESE RANDOMS - THEY ARE WHAT MAKE THE RESULTS DIFFERENT IN EACH RANDOM_OWNED
+				random = { chance = 3 }
+				random = { chance = 3 }
+				random = { chance = 3 }
+			}
 			
 			# Autumn/Spring - North
 			any_neighbor_province = {
@@ -3837,6 +4096,28 @@ country_event = {
 				random = { chance = 3 }
 				random = { chance = 3 }
 			}
+
+			# Autumn/Spring - Mordor
+			any_neighbor_province = {
+				limit = {
+					OR = {
+						has_province_modifier = autumn_modifier_mordor
+						has_province_modifier = spring_modifier_mordor
+					}
+				}
+				random_list = {
+					5 = { add_province_modifier = { name = sunny_modifier_4_season duration = 7 } }
+					30 = { add_province_modifier = { name = cloudy_modifier duration = 7 } }
+					10 = { add_province_modifier = { name = rainy_modifier_4_season duration = 7 } }
+					10 = { add_province_modifier = { name = windy_modifier duration = 7 } }
+					45 = { add_province_modifier = { name = ash_cloudy_modifier duration = 7 } }
+				}
+				
+				# DO NOT REMOVE THESE RANDOMS - THEY ARE WHAT MAKE THE RESULTS DIFFERENT IN EACH RANDOM_OWNED
+				random = { chance = 3 }
+				random = { chance = 3 }
+				random = { chance = 3 }
+			}
 			
 			# Winter - North
 			any_neighbor_province = {
@@ -3868,6 +4149,25 @@ country_event = {
 					25 = { add_province_modifier = { name = rainy_modifier_4_season duration = 7 } }
 					10 = { add_province_modifier = { name = snowy_modifier duration = 7 } }
 					25 = { add_province_modifier = { name = windy_modifier duration = 7 } }
+				}
+				
+				# DO NOT REMOVE THESE RANDOMS - THEY ARE WHAT MAKE THE RESULTS DIFFERENT IN EACH RANDOM_OWNED
+				random = { chance = 3 }
+				random = { chance = 3 }
+				random = { chance = 3 }
+			}
+
+			# Winter - Mordor
+			any_neighbor_province = {
+				limit = {
+					has_province_modifier = winter_modifier_mordor
+				}
+				random_list = {
+					35 = { add_province_modifier = { name = cloudy_modifier duration = 7 } }
+					5 = { add_province_modifier = { name = rainy_modifier_4_season duration = 7 } }
+					5 = { add_province_modifier = { name = windy_modifier duration = 7 } }
+					10 = { add_province_modifier = { name = snowy_modifier duration = 7 } }
+					45 = { add_province_modifier = { name = ash_cloudy_modifier duration = 7 } }
 				}
 				
 				# DO NOT REMOVE THESE RANDOMS - THEY ARE WHAT MAKE THE RESULTS DIFFERENT IN EACH RANDOM_OWNED
@@ -3945,6 +4245,26 @@ country_event = {
 				random = { chance = 4 }
 				random = { chance = 4 }
 			}
+
+			# Summer - Mordor
+			any_neighbor_province = {
+				limit = {
+					has_province_modifier = summer_modifier_mordor
+				}
+				random_list = {
+					10 = { add_province_modifier = { name = sunny_modifier_4_season duration = 7 } }
+					35 = { add_province_modifier = { name = cloudy_modifier duration = 7 } }
+					5 = { add_province_modifier = { name = rainy_modifier_4_season duration = 7 } }
+					5 = { add_province_modifier = { name = windy_modifier duration = 7 } }
+					45 = { add_province_modifier = { name = ash_cloudy_modifier duration = 7 } }
+				}
+				
+				# DO NOT REMOVE THESE RANDOMS - THEY ARE WHAT MAKE THE RESULTS DIFFERENT IN EACH RANDOM_OWNED
+				random = { chance = 4 }
+				random = { chance = 4 }
+				random = { chance = 4 }
+				random = { chance = 4 }
+			}
 			
 			# Autumn/Spring - North
 			any_neighbor_province = {
@@ -3992,6 +4312,29 @@ country_event = {
 				random = { chance = 4 }
 				random = { chance = 4 }
 			}
+
+			# Autumn/Spring - Mordor
+			any_neighbor_province = {
+				limit = {
+					OR = {
+						has_province_modifier = autumn_modifier_mordor
+						has_province_modifier = spring_modifier_mordor
+					}
+				}
+				random_list = {
+					5 = { add_province_modifier = { name = sunny_modifier_4_season duration = 7 } }
+					30 = { add_province_modifier = { name = cloudy_modifier duration = 7 } }
+					10 = { add_province_modifier = { name = rainy_modifier_4_season duration = 7 } }
+					10 = { add_province_modifier = { name = windy_modifier duration = 7 } }
+					45 = { add_province_modifier = { name = ash_cloudy_modifier duration = 7 } }
+				}
+				
+				# DO NOT REMOVE THESE RANDOMS - THEY ARE WHAT MAKE THE RESULTS DIFFERENT IN EACH RANDOM_OWNED
+				random = { chance = 4 }
+				random = { chance = 4 }
+				random = { chance = 4 }
+				random = { chance = 4 }
+			}
 			
 			# Winter - North
 			any_neighbor_province = {
@@ -4024,6 +4367,26 @@ country_event = {
 					25 = { add_province_modifier = { name = rainy_modifier_4_season duration = 7 } }
 					10 = { add_province_modifier = { name = snowy_modifier duration = 7 } }
 					25 = { add_province_modifier = { name = windy_modifier duration = 7 } }
+				}
+				
+				# DO NOT REMOVE THESE RANDOMS - THEY ARE WHAT MAKE THE RESULTS DIFFERENT IN EACH RANDOM_OWNED
+				random = { chance = 4 }
+				random = { chance = 4 }
+				random = { chance = 4 }
+				random = { chance = 4 }
+			}
+
+			# Winter - Mordor
+			any_neighbor_province = {
+				limit = {
+					has_province_modifier = winter_modifier_mordor
+				}
+				random_list = {
+					35 = { add_province_modifier = { name = cloudy_modifier duration = 7 } }
+					5 = { add_province_modifier = { name = rainy_modifier_4_season duration = 7 } }
+					5 = { add_province_modifier = { name = windy_modifier duration = 7 } }
+					10 = { add_province_modifier = { name = snowy_modifier duration = 7 } }
+					45 = { add_province_modifier = { name = ash_cloudy_modifier duration = 7 } }
 				}
 				
 				# DO NOT REMOVE THESE RANDOMS - THEY ARE WHAT MAKE THE RESULTS DIFFERENT IN EACH RANDOM_OWNED
@@ -4105,6 +4468,27 @@ country_event = {
 				random = { chance = 5 }
 				random = { chance = 5 }
 			}
+
+			# Summer - Mordor
+			any_neighbor_province = {
+				limit = {
+					has_province_modifier = summer_modifier_mordor
+				}
+				random_list = {
+					10 = { add_province_modifier = { name = sunny_modifier_4_season duration = 7 } }
+					35 = { add_province_modifier = { name = cloudy_modifier duration = 7 } }
+					5 = { add_province_modifier = { name = rainy_modifier_4_season duration = 7 } }
+					5 = { add_province_modifier = { name = windy_modifier duration = 7 } }
+					45 = { add_province_modifier = { name = ash_cloudy_modifier duration = 7 } }
+				}
+				
+				# DO NOT REMOVE THESE RANDOMS - THEY ARE WHAT MAKE THE RESULTS DIFFERENT IN EACH RANDOM_OWNED
+				random = { chance = 5 }
+				random = { chance = 5 }
+				random = { chance = 5 }
+				random = { chance = 5 }
+				random = { chance = 5 }
+			}
 			
 			# Autumn/Spring - North
 			any_neighbor_province = {
@@ -4154,6 +4538,30 @@ country_event = {
 				random = { chance = 5 }
 				random = { chance = 5 }
 			}
+
+			# Autumn/Spring - Mordor
+			any_neighbor_province = {
+				limit = {
+					OR = {
+						has_province_modifier = autumn_modifier_mordor
+						has_province_modifier = spring_modifier_mordor
+					}
+				}
+				random_list = {
+					5 = { add_province_modifier = { name = sunny_modifier_4_season duration = 7 } }
+					30 = { add_province_modifier = { name = cloudy_modifier duration = 7 } }
+					10 = { add_province_modifier = { name = rainy_modifier_4_season duration = 7 } }
+					10 = { add_province_modifier = { name = windy_modifier duration = 7 } }
+					45 = { add_province_modifier = { name = ash_cloudy_modifier duration = 7 } }
+				}
+				
+				# DO NOT REMOVE THESE RANDOMS - THEY ARE WHAT MAKE THE RESULTS DIFFERENT IN EACH RANDOM_OWNED
+				random = { chance = 5 }
+				random = { chance = 5 }
+				random = { chance = 5 }
+				random = { chance = 5 }
+				random = { chance = 5 }
+			}
 			
 			# Winter - North
 			any_neighbor_province = {
@@ -4187,6 +4595,27 @@ country_event = {
 					25 = { add_province_modifier = { name = rainy_modifier_4_season duration = 7 } }
 					10 = { add_province_modifier = { name = snowy_modifier duration = 7 } }
 					25 = { add_province_modifier = { name = windy_modifier duration = 7 } }
+				}
+				
+				# DO NOT REMOVE THESE RANDOMS - THEY ARE WHAT MAKE THE RESULTS DIFFERENT IN EACH RANDOM_OWNED
+				random = { chance = 5 }
+				random = { chance = 5 }
+				random = { chance = 5 }
+				random = { chance = 5 }
+				random = { chance = 5 }
+			}
+
+			# Winter - Mordor
+			any_neighbor_province = {
+				limit = {
+					has_province_modifier = winter_modifier_mordor
+				}
+				random_list = {
+					35 = { add_province_modifier = { name = cloudy_modifier duration = 7 } }
+					5 = { add_province_modifier = { name = rainy_modifier_4_season duration = 7 } }
+					5 = { add_province_modifier = { name = windy_modifier duration = 7 } }
+					10 = { add_province_modifier = { name = snowy_modifier duration = 7 } }
+					45 = { add_province_modifier = { name = ash_cloudy_modifier duration = 7 } }
 				}
 				
 				# DO NOT REMOVE THESE RANDOMS - THEY ARE WHAT MAKE THE RESULTS DIFFERENT IN EACH RANDOM_OWNED
@@ -4272,6 +4701,28 @@ country_event = {
 				random = { chance = 6 }
 				random = { chance = 6 }
 			}
+
+			# Summer - Mordor
+			any_neighbor_province = {
+				limit = {
+					has_province_modifier = summer_modifier_mordor
+				}
+				random_list = {
+					10 = { add_province_modifier = { name = sunny_modifier_4_season duration = 7 } }
+					35 = { add_province_modifier = { name = cloudy_modifier duration = 7 } }
+					5 = { add_province_modifier = { name = rainy_modifier_4_season duration = 7 } }
+					5 = { add_province_modifier = { name = windy_modifier duration = 7 } }
+					45 = { add_province_modifier = { name = ash_cloudy_modifier duration = 7 } }
+				}
+				
+				# DO NOT REMOVE THESE RANDOMS - THEY ARE WHAT MAKE THE RESULTS DIFFERENT IN EACH RANDOM_OWNED
+				random = { chance = 6 }
+				random = { chance = 6 }
+				random = { chance = 6 }
+				random = { chance = 6 }
+				random = { chance = 6 }
+				random = { chance = 6 }
+			}
 			
 			# Autumn/Spring - North
 			any_neighbor_province = {
@@ -4323,6 +4774,31 @@ country_event = {
 				random = { chance = 6 }
 				random = { chance = 6 }
 			}
+
+			# Autumn/Spring - Mordor
+			any_neighbor_province = {
+				limit = {
+					OR = {
+						has_province_modifier = autumn_modifier_mordor
+						has_province_modifier = spring_modifier_mordor
+					}
+				}
+				random_list = {
+					5 = { add_province_modifier = { name = sunny_modifier_4_season duration = 7 } }
+					30 = { add_province_modifier = { name = cloudy_modifier duration = 7 } }
+					10 = { add_province_modifier = { name = rainy_modifier_4_season duration = 7 } }
+					10 = { add_province_modifier = { name = windy_modifier duration = 7 } }
+					45 = { add_province_modifier = { name = ash_cloudy_modifier duration = 7 } }
+				}
+				
+				# DO NOT REMOVE THESE RANDOMS - THEY ARE WHAT MAKE THE RESULTS DIFFERENT IN EACH RANDOM_OWNED
+				random = { chance = 6 }
+				random = { chance = 6 }
+				random = { chance = 6 }
+				random = { chance = 6 }
+				random = { chance = 6 }
+				random = { chance = 6 }
+			}
 			
 			# Winter - North
 			any_neighbor_province = {
@@ -4357,6 +4833,28 @@ country_event = {
 					25 = { add_province_modifier = { name = rainy_modifier_4_season duration = 7 } }
 					10 = { add_province_modifier = { name = snowy_modifier duration = 7 } }
 					25 = { add_province_modifier = { name = windy_modifier duration = 7 } }
+				}
+				
+				# DO NOT REMOVE THESE RANDOMS - THEY ARE WHAT MAKE THE RESULTS DIFFERENT IN EACH RANDOM_OWNED
+				random = { chance = 6 }
+				random = { chance = 6 }
+				random = { chance = 6 }
+				random = { chance = 6 }
+				random = { chance = 6 }
+				random = { chance = 6 }
+			}
+
+			# Winter - Mordor
+			any_neighbor_province = {
+				limit = {
+					has_province_modifier = winter_modifier_mordor
+				}
+				random_list = {
+					35 = { add_province_modifier = { name = cloudy_modifier duration = 7 } }
+					5 = { add_province_modifier = { name = rainy_modifier_4_season duration = 7 } }
+					5 = { add_province_modifier = { name = windy_modifier duration = 7 } }
+					10 = { add_province_modifier = { name = snowy_modifier duration = 7 } }
+					45 = { add_province_modifier = { name = ash_cloudy_modifier duration = 7 } }
 				}
 				
 				# DO NOT REMOVE THESE RANDOMS - THEY ARE WHAT MAKE THE RESULTS DIFFERENT IN EACH RANDOM_OWNED
@@ -4446,6 +4944,29 @@ country_event = {
 				random = { chance = 7 }
 				random = { chance = 7 }
 			}
+
+			# Summer - Mordor
+			any_neighbor_province = {
+				limit = {
+					has_province_modifier = summer_modifier_mordor
+				}
+				random_list = {
+					10 = { add_province_modifier = { name = sunny_modifier_4_season duration = 7 } }
+					35 = { add_province_modifier = { name = cloudy_modifier duration = 7 } }
+					5 = { add_province_modifier = { name = rainy_modifier_4_season duration = 7 } }
+					5 = { add_province_modifier = { name = windy_modifier duration = 7 } }
+					45 = { add_province_modifier = { name = ash_cloudy_modifier duration = 7 } }
+				}
+				
+				# DO NOT REMOVE THESE RANDOMS - THEY ARE WHAT MAKE THE RESULTS DIFFERENT IN EACH RANDOM_OWNED
+				random = { chance = 7 }
+				random = { chance = 7 }
+				random = { chance = 7 }
+				random = { chance = 7 }
+				random = { chance = 7 }
+				random = { chance = 7 }
+				random = { chance = 7 }
+			}
 			
 			# Autumn/Spring - North
 			any_neighbor_province = {
@@ -4499,6 +5020,32 @@ country_event = {
 				random = { chance = 7 }
 				random = { chance = 7 }
 			}
+
+			# Autumn/Spring - Mordor
+			any_neighbor_province = {
+				limit = {
+					OR = {
+						has_province_modifier = autumn_modifier_mordor
+						has_province_modifier = spring_modifier_mordor
+					}
+				}
+				random_list = {
+					5 = { add_province_modifier = { name = sunny_modifier_4_season duration = 7 } }
+					30 = { add_province_modifier = { name = cloudy_modifier duration = 7 } }
+					10 = { add_province_modifier = { name = rainy_modifier_4_season duration = 7 } }
+					10 = { add_province_modifier = { name = windy_modifier duration = 7 } }
+					45 = { add_province_modifier = { name = ash_cloudy_modifier duration = 7 } }
+				}
+				
+				# DO NOT REMOVE THESE RANDOMS - THEY ARE WHAT MAKE THE RESULTS DIFFERENT IN EACH RANDOM_OWNED
+				random = { chance = 7 }
+				random = { chance = 7 }
+				random = { chance = 7 }
+				random = { chance = 7 }
+				random = { chance = 7 }
+				random = { chance = 7 }
+				random = { chance = 7 }
+			}
 			
 			# Winter - North
 			any_neighbor_province = {
@@ -4534,6 +5081,29 @@ country_event = {
 					25 = { add_province_modifier = { name = rainy_modifier_4_season duration = 7 } }
 					10 = { add_province_modifier = { name = snowy_modifier duration = 7 } }
 					25 = { add_province_modifier = { name = windy_modifier duration = 7 } }
+				}
+				
+				# DO NOT REMOVE THESE RANDOMS - THEY ARE WHAT MAKE THE RESULTS DIFFERENT IN EACH RANDOM_OWNED
+				random = { chance = 7 }
+				random = { chance = 7 }
+				random = { chance = 7 }
+				random = { chance = 7 }
+				random = { chance = 7 }
+				random = { chance = 7 }
+				random = { chance = 7 }
+			}
+
+			# Winter - Mordor
+			any_neighbor_province = {
+				limit = {
+					has_province_modifier = winter_modifier_mordor
+				}
+				random_list = {
+					35 = { add_province_modifier = { name = cloudy_modifier duration = 7 } }
+					5 = { add_province_modifier = { name = rainy_modifier_4_season duration = 7 } }
+					5 = { add_province_modifier = { name = windy_modifier duration = 7 } }
+					10 = { add_province_modifier = { name = snowy_modifier duration = 7 } }
+					45 = { add_province_modifier = { name = ash_cloudy_modifier duration = 7 } }
 				}
 				
 				# DO NOT REMOVE THESE RANDOMS - THEY ARE WHAT MAKE THE RESULTS DIFFERENT IN EACH RANDOM_OWNED
@@ -4627,6 +5197,30 @@ country_event = {
 				random = { chance = 8 }
 				random = { chance = 8 }
 			}
+
+			# Summer - Mordor
+			any_neighbor_province = {
+				limit = {
+					has_province_modifier = summer_modifier_mordor
+				}
+				random_list = {
+					10 = { add_province_modifier = { name = sunny_modifier_4_season duration = 7 } }
+					35 = { add_province_modifier = { name = cloudy_modifier duration = 7 } }
+					5 = { add_province_modifier = { name = rainy_modifier_4_season duration = 7 } }
+					5 = { add_province_modifier = { name = windy_modifier duration = 7 } }
+					45 = { add_province_modifier = { name = ash_cloudy_modifier duration = 7 } }
+				}
+				
+				# DO NOT REMOVE THESE RANDOMS - THEY ARE WHAT MAKE THE RESULTS DIFFERENT IN EACH RANDOM_OWNED
+				random = { chance = 8 }
+				random = { chance = 8 }
+				random = { chance = 8 }
+				random = { chance = 8 }
+				random = { chance = 8 }
+				random = { chance = 8 }
+				random = { chance = 8 }
+				random = { chance = 8 }
+			}
 			
 			# Autumn/Spring - North
 			any_neighbor_province = {
@@ -4682,6 +5276,33 @@ country_event = {
 				random = { chance = 8 }
 				random = { chance = 8 }
 			}
+
+			# Autumn/Spring - Mordor
+			any_neighbor_province = {
+				limit = {
+					OR = {
+						has_province_modifier = autumn_modifier_mordor
+						has_province_modifier = spring_modifier_mordor
+					}
+				}
+				random_list = {
+					5 = { add_province_modifier = { name = sunny_modifier_4_season duration = 7 } }
+					30 = { add_province_modifier = { name = cloudy_modifier duration = 7 } }
+					10 = { add_province_modifier = { name = rainy_modifier_4_season duration = 7 } }
+					10 = { add_province_modifier = { name = windy_modifier duration = 7 } }
+					45 = { add_province_modifier = { name = ash_cloudy_modifier duration = 7 } }
+				}
+				
+				# DO NOT REMOVE THESE RANDOMS - THEY ARE WHAT MAKE THE RESULTS DIFFERENT IN EACH RANDOM_OWNED
+				random = { chance = 8 }
+				random = { chance = 8 }
+				random = { chance = 8 }
+				random = { chance = 8 }
+				random = { chance = 8 }
+				random = { chance = 8 }
+				random = { chance = 8 }
+				random = { chance = 8 }
+			}
 			
 			# Winter - North
 			any_neighbor_province = {
@@ -4718,6 +5339,30 @@ country_event = {
 					25 = { add_province_modifier = { name = rainy_modifier_4_season duration = 7 } }
 					10 = { add_province_modifier = { name = snowy_modifier duration = 7 } }
 					25 = { add_province_modifier = { name = windy_modifier duration = 7 } }
+				}
+				
+				# DO NOT REMOVE THESE RANDOMS - THEY ARE WHAT MAKE THE RESULTS DIFFERENT IN EACH RANDOM_OWNED
+				random = { chance = 8 }
+				random = { chance = 8 }
+				random = { chance = 8 }
+				random = { chance = 8 }
+				random = { chance = 8 }
+				random = { chance = 8 }
+				random = { chance = 8 }
+				random = { chance = 8 }
+			}
+
+			# Winter - Mordor
+			any_neighbor_province = {
+				limit = {
+					has_province_modifier = winter_modifier_mordor
+				}
+				random_list = {
+					35 = { add_province_modifier = { name = cloudy_modifier duration = 7 } }
+					5 = { add_province_modifier = { name = rainy_modifier_4_season duration = 7 } }
+					5 = { add_province_modifier = { name = windy_modifier duration = 7 } }
+					10 = { add_province_modifier = { name = snowy_modifier duration = 7 } }
+					45 = { add_province_modifier = { name = ash_cloudy_modifier duration = 7 } }
 				}
 				
 				# DO NOT REMOVE THESE RANDOMS - THEY ARE WHAT MAKE THE RESULTS DIFFERENT IN EACH RANDOM_OWNED
@@ -4815,6 +5460,31 @@ country_event = {
 				random = { chance = 9 }
 				random = { chance = 9 }
 			}
+
+			# Summer - Mordor
+			any_neighbor_province = {
+				limit = {
+					has_province_modifier = summer_modifier_mordor
+				}
+				random_list = {
+					10 = { add_province_modifier = { name = sunny_modifier_4_season duration = 7 } }
+					35 = { add_province_modifier = { name = cloudy_modifier duration = 7 } }
+					5 = { add_province_modifier = { name = rainy_modifier_4_season duration = 7 } }
+					5 = { add_province_modifier = { name = windy_modifier duration = 7 } }
+					45 = { add_province_modifier = { name = ash_cloudy_modifier duration = 7 } }
+				}
+				
+				# DO NOT REMOVE THESE RANDOMS - THEY ARE WHAT MAKE THE RESULTS DIFFERENT IN EACH RANDOM_OWNED
+				random = { chance = 9 }
+				random = { chance = 9 }
+				random = { chance = 9 }
+				random = { chance = 9 }
+				random = { chance = 9 }
+				random = { chance = 9 }
+				random = { chance = 9 }
+				random = { chance = 9 }
+				random = { chance = 9 }
+			}
 			
 			# Autumn/Spring - North
 			any_neighbor_province = {
@@ -4872,6 +5542,34 @@ country_event = {
 				random = { chance = 9 }
 				random = { chance = 9 }
 			}
+
+			# Autumn/Spring - Mordor
+			any_neighbor_province = {
+				limit = {
+					OR = {
+						has_province_modifier = autumn_modifier_mordor
+						has_province_modifier = spring_modifier_mordor
+					}
+				}
+				random_list = {
+					5 = { add_province_modifier = { name = sunny_modifier_4_season duration = 7 } }
+					30 = { add_province_modifier = { name = cloudy_modifier duration = 7 } }
+					10 = { add_province_modifier = { name = rainy_modifier_4_season duration = 7 } }
+					10 = { add_province_modifier = { name = windy_modifier duration = 7 } }
+					45 = { add_province_modifier = { name = ash_cloudy_modifier duration = 7 } }
+				}
+				
+				# DO NOT REMOVE THESE RANDOMS - THEY ARE WHAT MAKE THE RESULTS DIFFERENT IN EACH RANDOM_OWNED
+				random = { chance = 9 }
+				random = { chance = 9 }
+				random = { chance = 9 }
+				random = { chance = 9 }
+				random = { chance = 9 }
+				random = { chance = 9 }
+				random = { chance = 9 }
+				random = { chance = 9 }
+				random = { chance = 9 }
+			}
 			
 			# Winter - North
 			any_neighbor_province = {
@@ -4909,6 +5607,31 @@ country_event = {
 					25 = { add_province_modifier = { name = rainy_modifier_4_season duration = 7 } }
 					10 = { add_province_modifier = { name = snowy_modifier duration = 7 } }
 					25 = { add_province_modifier = { name = windy_modifier duration = 7 } }
+				}
+				
+				# DO NOT REMOVE THESE RANDOMS - THEY ARE WHAT MAKE THE RESULTS DIFFERENT IN EACH RANDOM_OWNED
+				random = { chance = 9 }
+				random = { chance = 9 }
+				random = { chance = 9 }
+				random = { chance = 9 }
+				random = { chance = 9 }
+				random = { chance = 9 }
+				random = { chance = 9 }
+				random = { chance = 9 }
+				random = { chance = 9 }
+			}
+
+			# Winter - Mordor
+			any_neighbor_province = {
+				limit = {
+					has_province_modifier = winter_modifier_mordor
+				}
+				random_list = {
+					35 = { add_province_modifier = { name = cloudy_modifier duration = 7 } }
+					5 = { add_province_modifier = { name = rainy_modifier_4_season duration = 7 } }
+					5 = { add_province_modifier = { name = windy_modifier duration = 7 } }
+					10 = { add_province_modifier = { name = snowy_modifier duration = 7 } }
+					45 = { add_province_modifier = { name = ash_cloudy_modifier duration = 7 } }
 				}
 				
 				# DO NOT REMOVE THESE RANDOMS - THEY ARE WHAT MAKE THE RESULTS DIFFERENT IN EACH RANDOM_OWNED
@@ -5009,6 +5732,20 @@ country_event = {
 				random = { chance = 10 }
 				random = { chance = 10 }
 			}
+
+			# Summer - Mordor
+			any_neighbor_province = {
+				limit = {
+					has_province_modifier = summer_modifier_mordor
+				}
+				random_list = {
+					10 = { add_province_modifier = { name = sunny_modifier_4_season duration = 7 } }
+					35 = { add_province_modifier = { name = cloudy_modifier duration = 7 } }
+					5 = { add_province_modifier = { name = rainy_modifier_4_season duration = 7 } }
+					5 = { add_province_modifier = { name = windy_modifier duration = 7 } }
+					45 = { add_province_modifier = { name = ash_cloudy_modifier duration = 7 } }
+				}
+			}
 			
 			# Autumn/Spring - North
 			any_neighbor_province = {
@@ -5068,6 +5805,23 @@ country_event = {
 				random = { chance = 10 }
 				random = { chance = 10 }
 			}
+
+			# Autumn/Spring - Mordor
+			any_neighbor_province = {
+				limit = {
+					OR = {
+						has_province_modifier = autumn_modifier_mordor
+						has_province_modifier = spring_modifier_mordor
+					}
+				}
+				random_list = {
+					5 = { add_province_modifier = { name = sunny_modifier_4_season duration = 7 } }
+					30 = { add_province_modifier = { name = cloudy_modifier duration = 7 } }
+					10 = { add_province_modifier = { name = rainy_modifier_4_season duration = 7 } }
+					10 = { add_province_modifier = { name = windy_modifier duration = 7 } }
+					45 = { add_province_modifier = { name = ash_cloudy_modifier duration = 7 } }
+				}
+			}
 			
 			# Winter - North
 			any_neighbor_province = {
@@ -5119,6 +5873,20 @@ country_event = {
 				random = { chance = 10 }
 				random = { chance = 10 }
 				random = { chance = 10 }
+			}
+
+			# Winter - Mordor
+			any_neighbor_province = {
+				limit = {
+					has_province_modifier = winter_modifier_mordor
+				}
+				random_list = {
+					35 = { add_province_modifier = { name = cloudy_modifier duration = 7 } }
+					5 = { add_province_modifier = { name = rainy_modifier_4_season duration = 7 } }
+					5 = { add_province_modifier = { name = windy_modifier duration = 7 } }
+					10 = { add_province_modifier = { name = snowy_modifier duration = 7 } }
+					45 = { add_province_modifier = { name = ash_cloudy_modifier duration = 7 } }
+				}
 			}
 			
 			# Dry

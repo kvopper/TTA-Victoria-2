@@ -88,6 +88,7 @@ country_event = {
 			add_province_modifier = { name = ithilien_immigrants duration = 3650 }
 		}
 		set_global_flag = ithilien_depopulating
+		set_global_flag = mount_doom_erupting
 	}
 }
 
