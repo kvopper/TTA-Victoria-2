@@ -22,6 +22,8 @@ Modders:
 
 Loremasters (researchers and contributers):
  - Jorde
+ - SneakyDeer
+ - Argelia4president
 
 ### Special Thanks To
  - Radsterman
