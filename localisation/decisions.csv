@@ -457,6 +457,11 @@ alliance_with_draig_luth_title;Ally with the Dunnish;x
 alliance_with_draig_luth_desc;Having now secured our independence from Gondor, it is wise to seek allies closer to Isengard. The Dunnish of Isendale will make a fine puppet.;x
 breed_uruk_hai_title;Breed Uruk Hai;x
 breed_uruk_hai_desc;A dark lord of Isengard cannot hope to subjagate those who refuse to submit without an army to enforce their will. By cross-breeding half-orcs and goblin-men, a new race of stronger and more intelligent orcs can birth themselves from the ground and submit themselves to the Lord of Isengard. This program may take many months to bear fruit.;x
+############################;x }
+#### LINDON DECISIONS #####;x {
+############################;x
+restore_himring_fortress_title;Restore the Fortress of Himring;x
+restore_himring_fortress_desc;Now that we have settled the island of Tom Himring, we should set about the restoration of the Fortress of Himring. Now a ruin, it was once the chief fortress of the March of Maedhros, being garrisoned by the forces of Fingolfin in the Wars of Beleriand. Its half-collapsed walls now dot the landscape of Tol Himring, but they can now be restored.;x
 ###############################;x }
 #### LOTHLORIEN DECISIONS #####;x {
 ###############################;x
