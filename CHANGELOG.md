@@ -11,7 +11,6 @@ All notable changes will be documented in this file.
    - Neutral Alignment --> Opportunistic
    - Evil Alignment --> Sauronite
  - Change Alignment cb removed
- - More terrain descriptions and tweaks added
  - Party issues updated
    - Guild Policy turned into a setting
    - Trade and Tax Policy re-added (from vanilla)
@@ -21,6 +20,8 @@ All notable changes will be documented in this file.
    - Upper house reforms removed in favor of your government type dictating how the UH populates
  - Government Type consolidation
    - Governments used only by 1 or 2 tags have been removed and replaced by the standard generic type
+ - More terrain descriptions and tweaks added
+ - Some minor extra flavour
 
 ## [v0.5 Bearers of the Black Arrow](https://github.com/The-Third-Age/TTA-Victoria-2/releases/tag/v0.5) - 2024-12-23
 
