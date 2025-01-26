@@ -1,4 +1,4 @@
-graphical_culture = Generic
+graphical_culture = VariagGC
 color = { 140 50 10 }
 
 party = {

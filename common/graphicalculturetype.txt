@@ -1,2 +1,17 @@
 Generic
 RohanGC
+TreeGC
+DwarfGC
+HobbitGC
+NumenorGC
+HaradGC
+VariagGC
+EasterlingGC
+NorthmenGC
+OrcGC
+GondorGC
+ElfGC
+PukelGC
+EagleGC
+TrollGC
+LossothGC

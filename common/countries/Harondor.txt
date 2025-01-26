@@ -1,4 +1,4 @@
-graphical_culture = Generic
+graphical_culture = NumenorGC
 color = { 135 100 100 }
 fiefdom = { 41 57 82 }
 

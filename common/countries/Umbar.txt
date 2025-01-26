@@ -1,4 +1,4 @@
-graphical_culture = Generic
+graphical_culture = NumenorGC
 color = { 5 5 5 }
 
 party = {

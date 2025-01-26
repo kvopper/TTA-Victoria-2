@@ -1,4 +1,4 @@
-graphical_culture = Generic
+graphical_culture = EasterlingGC
 color = { 190 195 32 }
 
 party = {
