@@ -629,18 +629,9 @@ money_hoarder_7_desc;This modifier is put in place to prevent the late-game liqu
 #########################;x }
 ##### NATIONAL FOCI #####;x {
 #########################;x
-building_focus;Constructions;x
-military_goods_focus;Military Goods Production;x
-shipping_focus;Ship Production;x
-basic_industry_focus;Construction Goods Production;x
-textile_focus;Textile Production;x
-consumer_goods_focus;Everyday Goods Focus;x
 production_focus;Production;x
-artisan_prod_focus;Artisan Output;x
-artisan_prod_colony_focus;Territorial Artisan Output;x
 factory_prod_focus;Guild Output;x
 rgo_prod_focus;RGO Output;x
-rgo_prod_colony_focus;Territorial RGO Output;x
 ship_focus;Naval Construction;x
 diplomatic_focus;Diplomacy;x
 increase_tension;Increase Tension;x
@@ -654,7 +645,6 @@ assimilation_increase;Increase Assimilation;x
 immigration_increase;Increase Immigration;x
 immigration_focus_desc;Migrants §Y$VAL$§!% more likely to choose region.;x
 colonial_immigration;Increase Territorial Immigration;x
-social_programs;Improve Amenity Access;x
 promotion_focus;Promotion;x
 promote_aristocrats;Promote Nobles;x
 promote_artisans;Promote Independent Artisans;x
@@ -664,8 +654,6 @@ promote_clergymen;Promote Loremasters;x
 promote_craftsmen;Promote Guild Artisans;x
 promote_labourers;Promote Labourers;x
 promote_soldiers;Promote Soldiers;x
-party_loyalty_focus;Interest Group Loyalty;x
-ruling_party_focus;Promote Leading Interesting Group Loyalty;x
 #########################;x }
 ##### COUNTRY FLAGS #####;x {
 #########################;x
