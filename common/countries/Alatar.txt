@@ -1,4 +1,4 @@
-graphical_culture = UsGC
+graphical_culture = Generic
 color = { 36 48 143 }
 
 party = {
