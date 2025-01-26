@@ -267,6 +267,7 @@ political_reforms = {
 			rich_vote = 1
 			middle_vote = 0
 			poor_vote = 0
+			allow = { ai = no }
 		}
 		wealth_weighted_voting = {
 			rich_vote = 2

@@ -31,6 +31,7 @@
 # 60100 - 60199: Umbar
 # 60200 - 60299: Harad
 # 70000 - 71999: On Action
+# 72000 - 72999: Government
 # 90000 - 90999: CB Generation
 # 91000 - 91999: Railroading
 # 98000 - 98999: Colonization

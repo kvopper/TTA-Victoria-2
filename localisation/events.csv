@@ -662,6 +662,11 @@ EVTDESC70005;We have advanced enough technologically to start to be considered o
 EVTDESC70006;The ungrateful government of $FROMCOUNTRY$ has sized our investments and claimed them as their own!;;;;;;;;;;;;x
 EVTDESC70007;With any land acquisition, there are many changes that need to be made as a result. When the populace does not recognize their new rulers as their own, some will choose to turn away from what they see as an illegitimate rule.;x
 EVTDESC70008;We finally have the support of the people to become a monarchy. What should our leader's title be?\n\n§RThe different titles are just cosmetic changes. They are all functionally the same.§!;x
+#############################;x }
+##### GOVERNMENT EVENTS #####;x {
+#############################;x
+EVTDESC72000;With the recent change to our voting reform, citizens with the right to vote have started a movement for an election to be ran. We have little choice but to allow this election to happen.;x
+EVTDESC72001;With the poor recently being allowed to vote, the masses have begun to demand a new election be run. They claim that the current government is illegitimate as does not represent the realm now that more people can vote;x
 ################################;x }
 ##### CB GENERATION EVENTS #####;x {
 ################################;x
