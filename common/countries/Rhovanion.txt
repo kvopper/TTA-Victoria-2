@@ -1,4 +1,4 @@
-graphical_culture = UsGC
+graphical_culture = Generic
 color = { 100 50 0 }
 monarchy = { 100 50 0 }
 monarchy_2 = { 100 100 180 }

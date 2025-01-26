@@ -2,7 +2,7 @@ archers = {
 	icon = 3
 	
 	type = land
-	sprite = Infantry
+	sprite = Archers
 	active = yes
 	unit_type = support
 	floating_flag = no

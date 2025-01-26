@@ -2,13 +2,13 @@ scouts = {
 	icon = 2
 	
 	type = land
-	sprite = Cavalry
+	sprite = Scouts
 	active = yes
 	unit_type = cavalry
 	primary_culture = yes
 	
 	#Avatar
-	sprite_override = Cavalry
+	sprite_override = Scouts
 	sprite_mount = GenericMount
 	sprite_mount_attach_node = Saddle_Node
 	floating_flag = yes
