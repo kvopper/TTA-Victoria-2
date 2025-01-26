@@ -2,7 +2,7 @@ pikemen = {
 	icon = 13
 	
 	type = land
-	sprite = Infantry
+	sprite = Pikemen
 	active = yes
 	unit_type = infantry
 	floating_flag = no

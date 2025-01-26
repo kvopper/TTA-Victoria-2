@@ -1,4 +1,4 @@
-graphical_culture = UsGC
+graphical_culture = Generic
 color = { 244 241 201 }
 sauron_dictatorship = { 179 125 115 }
 

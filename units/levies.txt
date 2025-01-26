@@ -2,7 +2,7 @@ infantry = {
 	icon = 14
 	
 	type = land
-	sprite = Infantry
+	sprite = Levies
 	active = yes
 	unit_type = infantry
 	floating_flag = no
