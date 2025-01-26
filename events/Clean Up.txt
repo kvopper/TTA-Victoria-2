@@ -317,14 +317,14 @@ country_event = {
 				owner = { has_global_flag = ecthelion_ii_alive }
 			}
 			owner = {
-				nationalvalue = ecthelion_ii
+				ruling_party = GON_ecthelion_ii
 		
 				any_country = {
 					limit = {
 						exists = yes
 						substate_of = THIS
 					}
-					nationalvalue = ecthelion_ii
+					ruling_party = GON_ecthelion_ii
 				}
 			}
 		}

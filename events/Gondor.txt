@@ -287,7 +287,7 @@ country_event = {
 	trigger = {
 		tag = GON
 		year = 2976
-		nationalvalue = ecthelion_ii
+		ruling_party = GON_ecthelion_ii
 		OR = {
 			AND = {
 				owns = 71
@@ -416,7 +416,7 @@ country_event = {
 	trigger = {
 		tag = GON
 		has_country_modifier = encouraging_outside_military_recruitment
-		nationalvalue = ecthelion_ii
+		ruling_party = GON_ecthelion_ii
 	}
 	
 	mean_time_to_happen = {
@@ -830,7 +830,7 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
-		nationalvalue = ecthelion_ii
+		ruling_party = GON_ecthelion_ii
 		year = 2980
 		NOT = { is_substate = yes }
 	}
@@ -872,7 +872,7 @@ country_event = {
 				any_country = {
 					limit = {
 						exists = yes
-						nationalvalue = ecthelion_ii
+						ruling_party = GON_ecthelion_ii
 					}
 					set_country_flag = knows_next_leader
 				}
@@ -885,7 +885,7 @@ country_event = {
 		any_country = {
 			limit = {
 				exists = yes
-				nationalvalue = ecthelion_ii
+				ruling_party = GON_ecthelion_ii
 			}
 			country_event = 3501
 		}
@@ -900,7 +900,7 @@ country_event = {
 				any_country = {
 					limit = {
 						exists = yes
-						nationalvalue = ecthelion_ii
+						ruling_party = GON_ecthelion_ii
 					}
 					nationalvalue = denethor_ii
 				}
