@@ -2,7 +2,7 @@ swordsmen = {
 	icon = 1
 	
 	type = land
-	sprite = Infantry
+	sprite = Swordsmen
 	active = yes
 	unit_type = infantry
 	floating_flag = no

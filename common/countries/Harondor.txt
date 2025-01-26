@@ -1,4 +1,4 @@
-graphical_culture = UsGC
+graphical_culture = Generic
 color = { 135 100 100 }
 dominion_2 = { 41 57 82 }
 

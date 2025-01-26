@@ -6,7 +6,7 @@ galiot = {
 	sail = yes
 	
 	type = naval
-	sprite = Frigate
+	sprite = Galiot
 	unit_type = light_ship
 	floating_flag = yes
 	active = no

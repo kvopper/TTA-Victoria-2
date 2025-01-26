@@ -6,7 +6,7 @@ brigantine = {
 	sail = yes
 	
 	type = naval
-	sprite = Manowar
+	sprite = Brigantine
 	unit_type = big_ship
 	capital = yes
 	floating_flag = yes
