@@ -23,6 +23,7 @@ All notable changes will be documented in this file.
  - More terrain descriptions and tweaks added
  - Some minor extra flavour
  - New flags by SneakyDeer and Argelia4president
+ - Imported models from CK2 by Trigori
 
 ## [v0.5 Bearers of the Black Arrow](https://github.com/The-Third-Age/TTA-Victoria-2/releases/tag/v0.5) - 2024-12-23
 
