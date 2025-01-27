@@ -1,4 +1,4 @@
-graphical_culture = Generic
+graphical_culture = TreeGC
 color = { 0 75 0 }
 
 party = {

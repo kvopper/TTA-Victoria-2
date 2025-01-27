@@ -1,4 +1,4 @@
-graphical_culture = Generic
+graphical_culture = DwarfGC
 color = { 19 58 107 }
 
 party = {
