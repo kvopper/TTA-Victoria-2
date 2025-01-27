@@ -2240,7 +2240,7 @@ political_decisions = {
 	encourage_outside_military_recruitment = {
 		picture = "travellers"
 		potential = {
-			nationalvalue = ecthelion_ii
+			ruling_party = GON_ecthelion_ii
 			tag = GON
 			NOT = { has_country_modifier = encouraging_outside_military_recruitment }
 		}
@@ -2264,8 +2264,8 @@ political_decisions = {
 		potential = {
 			tag = GON
 			OR = {
-				nationalvalue = ecthelion_ii
-				nationalvalue = denethor_ii
+				ruling_party = GON_ecthelion_ii
+				ruling_party = GON_denethor_ii
 			}
 			NOT = { has_global_flag = GON_strengthened_river_crossings }
 			OR = {
@@ -2304,8 +2304,8 @@ political_decisions = {
 		potential = {
 			tag = GON
 			OR = {
-				nationalvalue = ecthelion_ii
-				nationalvalue = denethor_ii
+				ruling_party = GON_ecthelion_ii
+				ruling_party = GON_denethor_ii
 			}
 			NOT = { has_global_flag = GON_built_rammas_echor }
 			has_global_flag = GON_strengthened_river_crossings
@@ -2329,8 +2329,8 @@ political_decisions = {
 		potential = {
 			tag = GON
 			OR = {
-				nationalvalue = ecthelion_ii
-				nationalvalue = denethor_ii
+				ruling_party = GON_ecthelion_ii
+				ruling_party = GON_denethor_ii
 			}
 			OR = {
 				owns = 44
@@ -2354,7 +2354,7 @@ political_decisions = {
 		picture = "coastal_fortifications"
 		potential = {
 			tag = GON
-			nationalvalue = ecthelion_ii
+			ruling_party = GON_ecthelion_ii
 			has_country_modifier = thorongil
 			NOT = { has_global_flag = GON_took_thorongils_advice }
 			OR = {
@@ -2394,7 +2394,7 @@ political_decisions = {
 	fund_ithilien_rangers = {
 		picture = "fund_ithilien_rangers"
 		potential = {
-			nationalvalue = ecthelion_ii
+			ruling_party = GON_ecthelion_ii
 			NOT = { has_country_modifier = ithilien_rangers }
 			OR = {
 				any_owned_province = {

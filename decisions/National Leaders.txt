@@ -21,7 +21,7 @@ political_decisions = {
 		picture = "steward_ecthelion_ii"
 		potential = {
 			ai = no
-			nationalvalue = ecthelion_ii
+			ruling_party = GON_ecthelion_ii
 			NOT = { has_global_flag = fluff_disabled }
 		}
 		allow = {}
