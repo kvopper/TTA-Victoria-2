@@ -171,3 +171,21 @@ country_event = {
 		country_event = 402000
 	}
 }
+
+# Reset Names (not variables)
+country_event = {
+	id = 402002
+	title = "Dynamic Loc Reset Names"
+	desc = ""
+	# picture = ""
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		dynamic_loc_slots = { state_scope = { change_region_name = "" } }
+	}
+	
+	option = {
+		name = "Clean up"
+	}
+}
