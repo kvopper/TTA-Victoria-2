@@ -1,4 +1,4 @@
-graphical_culture = Generic
+graphical_culture = HaradGC
 color = { 180 140 140 }
 
 party = {

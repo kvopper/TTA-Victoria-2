@@ -200,7 +200,7 @@ objectTypes = {
 			attachId = 3
 		}
 		
-		scale = 0.98
+		scale = 1.0
 	}
 	
 	EMFXActorType = {
@@ -227,14 +227,14 @@ objectTypes = {
 	}
 	
 	EMFXActorType = {
-		name = "GenericHeavyMount"
-		actorfile = "gfx\anims\Western_Heavy_Horse_01.xac"
+		name = "HeavyMount"
+		actorfile = "gfx\anims\Horse.xac"
 		
 		idle   = "gfx\anims\Horse_Idle.xsm"
 		move   = "gfx\anims\Horse_Moving.xsm"
-		attack = "gfx\anims\Horse_Attack.xsm"
+		attack = "gfx\anims\Horse_Idle.xsm"
 		
-		scale = 0.62
+		scale = 0.55
 	}
 	
 	EMFXActorType = {
@@ -337,8 +337,8 @@ objectTypes = {
 		name = "GenericArtillery"
 		actorfile = "gfx\anims\Trebuchet.xac"
 		
-		idle   = "gfx\anims\Trebuchet_anim.xsm"
-		move   = "gfx\anims\Trebuchet_anim.xsm"
+		idle   = 
+		move   = 
 		attack = "gfx\anims\Trebuchet_anim.xsm"
 		
 		scale = 1.5
@@ -449,12 +449,12 @@ objectTypes = {
 		name = "RohanGCHeavyCavalry"
 		actorfile = "gfx\anims\saxon_heavy_cavalry.xac"
 		
-		idle   = "gfx\anims\saxon_heavy_cavalry_2_idle.xsm"
-		move   = "gfx\anims\saxon_heavy_cavalry_2_moving.xsm"
-		attack = "gfx\anims\saxon_heavy_cavalry_2_attack.xsm"
+		idle   = "gfx\anims\Cavalry_Sword_and_Shield_Idle.xsm"
+		move   = "gfx\anims\Cavalry_Sword_and_Shield_Moving.xsm"
+		attack = "gfx\anims\Cavalry_Sword_and_Shield_Attack.xsm"
 		
 		attach = {
-			name = "RohanGCHCSpear"
+			name = "GenericBannerSword"
 			node = "Right_hand_node"
 			attachId = 1
 		}
@@ -469,16 +469,9 @@ objectTypes = {
 	}
 	
 	EMFXActorType = {
-		name = "RohanGCHCSpear"
-		actorfile = "gfx\anims\Attachments\Spear_02.xac"
-		
-		scale = 1.0
-	}
-	
-	EMFXActorType = {
 		name = "RohanGCHCShield"
 		actorfile = "gfx\anims\Attachments\saxon_shield_cavalry.xac"
-		scale = 1.0
+		scale = 0.7
 	}
 	
 	EMFXActorType = {
@@ -491,4 +484,2367 @@ objectTypes = {
 		
 		scale = 1.0
 	}
+	
+	EMFXActorType = {
+		name = "RohanGCScouts"
+		actorfile = "gfx\anims\saxon_light_cavalry.xac"
+		
+		 idle   = "gfx\anims\saxon_light_cavalry_2_idle.xsm"
+		 move   = "gfx\anims\saxon_light_cavalry_2_moving.xsm"
+		 attack = "gfx\anims\saxon_light_cavalry_2_attack.xsm"
+		
+		attach = {
+			name = "RohanScoutSpear"
+			node = "Right_hand_node"
+			attachId = 1
+		}
+		
+		scale = 1.0
+	}
+	
+	EMFXActorType = {
+		name = "RohanScoutSpear"
+		actorfile = "gfx\anims\Attachments\Spear_01.xac"
+		scale = 1.0
+	}
+	
+	EMFXActorType = {
+		name = "RohanGCSwordsmen"
+		actorfile = "gfx\anims\saxon_heavy_infantry.xac"
+		
+		idle   = "gfx\anims\saxon_infantry_2_idle.xsm"
+		move   = "gfx\anims\saxon_infantry_2_moving.xsm"
+		attack = "gfx\anims\saxon_infantry_2_attack.xsm"
+		
+		attach = {
+			name = "RohanSword"
+			node = "Right_hand_node"
+			attachId = 1
+		}
+		
+		attach = {
+			name = "RohanHIShield"
+			node = "Left_hand_node"
+			attachId = 2
+		}
+		
+		scale = 0.6
+	}
+	
+	EMFXActorType = {
+		name = "RohanSword"
+		actorfile = "gfx\anims\Attachments\saxon_sword.xac"
+		scale = 1.0
+	}
+	
+	EMFXActorType = {
+		name = "RohanHIShield"
+		actorfile = "gfx\anims\Attachments\saxon_shield_heavy_infantry.xac"
+		scale = 1.0
+	}
+	
+	EMFXActorType = {
+		name = "RohanGCArchers"
+		actorfile = "gfx\anims\saxon_archer.xac"
+		
+		
+		idle   = "gfx\anims\saxon_archer_2_idle.xsm"
+		move   = "gfx\anims\saxon_archer_2_moving.xsm"
+		attack = "gfx\anims\saxon_archer_2_attack.xsm"
+		
+		attach = {
+			name = "GenericArrow"
+			node = "Right_hand_node"
+			attachId = 1
+		}
+		
+		attach = {
+			name = "RohanBow"
+			node = "Left_hand_node"
+			attachId = 2
+		}
+		
+		scale = 0.6
+	}
+	
+	EMFXActorType = {
+		name = "RohanBow"
+		actorfile = "gfx\anims\attachments\saxon_bow.xac"
+		
+		idle   = "gfx\anims\Attachments\Bow_idle.xsm"
+		move   = "gfx\anims\Attachments\Bow_idle.xsm"
+		attack  = "gfx\anims\Attachments\Bow_attack.xsm"
+		scale = 1.0
+	}
+	
+	EMFXActorType = {
+		name = "RohanGCPikemen"
+		actorfile = "gfx\anims\saxon_pikeman.xac"
+		
+		
+		idle   = "gfx\anims\saxon_pikeman_2_idle.xsm"
+		move   = "gfx\anims\saxon_pikeman_2_moving.xsm"
+		attack = "gfx\anims\saxon_pikeman_2_attack.xsm"
+		
+		attach = {
+			name = "RohanScoutSpear"
+			node = "Right_hand_node"
+			attachId = 1
+		}
+		
+		attach = {
+			name = "RohanPikeShield"
+			node = "Left_hand_node"
+			attachId = 2
+		}
+		
+		scale = 0.6
+	}
+	
+	EMFXActorType = {
+		name = "RohanPikeShield"
+		actorfile = "gfx\anims\Attachments\saxon_shield_pikemen.xac"
+		scale = 1.0
+	}
+	
+	EMFXActorType = {
+		name = "RohanGCLevies"
+		actorfile = "gfx\anims\saxon_light_infantry.xac"
+		
+		idle   = "gfx\anims\saxon_infantry_2_idle.xsm"
+		move   = "gfx\anims\saxon_infantry_2_moving.xsm"
+		attack = "gfx\anims\saxon_infantry_2_attack.xsm"
+		
+		attach = {
+			name = "RohanAxe"
+			node = "Right_hand_node"
+			attachId = 1
+		}
+		
+		attach = {
+			name = "RohanLightShield"
+			node = "Left_hand_node"
+			attachId = 2
+		}
+		
+		scale = 0.6
+	}
+	
+	EMFXActorType = {
+		name = "RohanAxe"
+		actorfile = "gfx\anims\Attachments\saxon_axe.xac"
+		scale = 0.6
+	}
+	
+	EMFXActorType = {
+		name = "RohanLightShield"
+		actorfile = "gfx\anims\Attachments\saxon_shield_light.xac"
+		scale = 0.8
+	}
+	
+	EMFXActorType = {
+		name = "RohanGCHorseArchers"
+		actorfile = "gfx\anims\saxon_archer.xac"
+		
+		idle   = "gfx\anims\saxon_mounted_archer_2_idle.xsm"
+		move   = "gfx\anims\saxon_mounted_archer_2_moving.xsm"
+		attack = "gfx\anims\saxon_mounted_archer_2_attack.xsm"
+		
+		attach = {
+			name = "GenericArrow"
+			node = "Right_hand_node"
+			attachId = 1
+		}
+		
+		attach = {
+			name = "RohanBow"
+			node = "Left_hand_node"
+			attachId = 2
+		}
+		
+		scale = 0.6
+	}
+	
+	# Fangorn
+	
+	EMFXActorType = {
+		name = "TreeGCSwordsmen"
+		actorfile = "gfx\anims\tree.xac"
+		
+		scale = 5.0
+	}
+	EMFXActorType = {
+		name = "TreeGCArchers"
+		actorfile = "gfx\anims\tree.xac"
+		
+		scale = 5.0
+	}
+	EMFXActorType = {
+		name = "TreeGCPikemen"
+		actorfile = "gfx\anims\tree.xac"
+		
+		scale = 5.0
+	}
+	EMFXActorType = {
+		name = "TreeGCLevies"
+		actorfile = "gfx\anims\tree.xac"
+		
+		scale = 5.0
+	}
+	EMFXActorType = {
+		name = "TreeGCHeavyCavalry"
+		actorfile = "gfx\anims\tree.xac"
+		
+		scale = 5.0
+	}
+	EMFXActorType = {
+		name = "TreeGCScouts"
+		actorfile = "gfx\anims\tree.xac"
+		
+		scale = 5.0
+	}
+	EMFXActorType = {
+		name = "TreeGCHorseArchers"
+		actorfile = "gfx\anims\tree.xac"
+		
+		scale = 5.0
+	}
+	EMFXActorType = {
+		name = "TreeGCInfantry"
+		actorfile = "gfx\anims\tree.xac"
+		
+		scale = 5.0
+	}
+	
+	# Dwarves
+	
+	EMFXActorType = {
+		name = "DwarfGCSwordsmen"
+		actorfile = "gfx\anims\Norse_Heavy_Infantry.xac"
+		
+		idle   = "gfx\anims\Norse_Infantry_2_Idle.xsm"
+		move   = "gfx\anims\Norse_Infantry_2_Moving.xsm"
+		attack = "gfx\anims\Norse_Infantry_2_Attack.xsm"
+		
+		attach = {
+			name = "DwarfAxe"
+			node = "Right_hand_node"
+			attachId = 1
+		}
+		
+		attach = {
+			name = "DwarfShieldBig"
+			node = "Left_hand_node"
+			attachId = 2
+		}
+		
+		scale = 0.5
+	}
+	
+	EMFXActorType = {
+		name = "DwarfAxe"
+		actorfile = "gfx\anims\Attachments\norse_axe.xac"
+		scale = 1.0
+	}
+	
+	EMFXActorType = {
+		name = "DwarfShieldBig"
+		actorfile = "gfx\anims\Attachments\Norse_ShieldBig.xac"
+		scale = 1.0
+	}
+	
+	EMFXActorType = {
+		name = "DwarfGCPikemen"
+		actorfile = "gfx\anims\holy_order_baltic.xac"
+		
+		idle   = "gfx\anims\holy_order_pikeman_idle.xsm"
+		move   = "gfx\anims\holy_order_pikeman_moving.xsm"
+		attack = "gfx\anims\holy_order_pikeman_attack.xsm"
+		
+		attach = {
+			name = "DwarfPike"
+			node = "Right_hand_node"
+			attachId = 1
+		}
+		
+		attach = {
+			name = "DwarfShieldBig"
+			node = "Left_hand_node"
+			attachId = 2
+		}
+		
+		scale = 0.5
+	}
+	
+	EMFXActorType = {
+		name = "DwarfPike"
+		actorfile = "gfx\anims\Attachments\norse_pike.xac"
+		scale = 1.1
+	}
+	
+	EMFXActorType = {
+		name = "DwarfGCArchers"
+		actorfile = "gfx\anims\Norse_Mounted_Archer.xac"
+		
+		idle   = "gfx\anims\Norse_Archer_2_Idle.xsm"
+		move   = "gfx\anims\Norse_Archer_2_Moving.xsm"
+		attack = "gfx\anims\Norse_Archer_2_Attack.xsm"
+		
+		attach = {
+			name = "DwarfArrow"
+			node = "Right_hand_node"
+			attachId = 1
+		}
+		
+		attach = {
+			name = "DwarfBow"
+			node = "Left_hand_node"
+			attachId = 2
+		}
+		
+		attach = {
+			name = "DwarfHelmet"
+			node = "Head"
+			attachId = 3
+		}
+		
+		scale = 0.5
+	}
+	
+	EMFXActorType = {
+		name = "DwarfArrow"
+		actorfile = "gfx\anims\Attachments\norse_arrow.xac"
+		
+		idle   = "gfx\anims\Attachments\Norse_Arrow_idle.xsm"
+		move   = "gfx\anims\Attachments\Norse_Arrow_idle.xsm"
+		attack = "gfx\anims\Attachments\Norse_Arrow_attack.xsm"
+		
+		scale = 1.0
+	}
+	
+	EMFXActorType = {
+		name = "DwarfBow"
+		actorfile = "gfx\anims\Attachments\norse_bow.xac"
+		
+		idle   = "gfx\anims\Attachments\Norse_Bow_idle.xsm"
+		move   = "gfx\anims\Attachments\Norse_Bow_idle.xsm"
+		attack = "gfx\anims\Attachments\Norse_Bow_attack.xsm"
+		
+		scale = 1.0
+	}
+	
+	EMFXActorType = {
+		name = "DwarfHelmet"
+		actorfile = "gfx\anims\Attachments\helmet_14.xac"
+		scale = 1.3
+	}
+	
+	EMFXActorType = {
+		name = "DwarfGCLevies"
+		actorfile = "gfx\anims\fu_light_infantry.xac"
+		
+		idle   = "gfx\anims\fu_infantry_2_idle.xsm"
+		move   = "gfx\anims\fu_infantry_2_moving.xsm"
+		attack = "gfx\anims\fu_infantry_2_attack.xsm"
+		
+		attach = {
+			name = "DwarfAxeSmaller"
+			node = "Right_hand_node"
+			attachId = 1
+		}
+		
+		attach = {
+			name = "DwarfShieldSmall"
+			node = "Left_hand_node"
+			attachId = 2
+		}
+		
+		scale = 0.5
+	}
+	
+	EMFXActorType = {
+		name = "DwarfAxeSmaller"
+		actorfile = "gfx\anims\Attachments\norse_axe.xac"
+		scale = 0.7
+	}
+	
+	EMFXActorType = {
+		name = "DwarfShieldSmall"
+		actorfile = "gfx\anims\Attachments\Norse_ShieldSmall.xac"
+		scale = 1.0
+	}
+	
+	EMFXActorType = {
+		name = "DwarfGCHeavyCavalry"
+		actorfile = "gfx\anims\Norse_Heavy_Cavalry.xac"
+		
+		idle   = "gfx\anims\Norse_Knight_Idle.xsm"
+		move   = "gfx\anims\Norse_Knight_Moving.xsm"
+		attack = "gfx\anims\Norse_Knight_Attack.xsm"
+		
+		attach = {
+			name = "DwarfSword"
+			node = "Right_hand_node"
+			attachId = 1
+		}
+		
+		attach = {
+			name = "DwarfShieldCav"
+			node = "Left_hand_node"
+			attachId = 2
+		}
+		
+		scale = 0.9
+	}
+	
+	EMFXActorType = {
+		name = "DwarfSword"
+		actorfile = "gfx\anims\Attachments\Norse_sword.xac"
+		scale = 1.0
+	}
+	
+	EMFXActorType = {
+		name = "DwarfShieldCav"
+		actorfile = "gfx\anims\Attachments\Norse_HeavyCavalry_Shield.xac"
+		scale = 1.0
+	}
+	
+	EMFXActorType = {
+		name = "DwarfGCScouts"
+		actorfile = "gfx\anims\Norse_Pikeman.xac"
+		
+		idle   = "gfx\anims\Norse_Light_Cavalry_2_Idle.xsm"
+		move   = "gfx\anims\Norse_Light_Cavalry_2_Moving.xsm"
+		attack = "gfx\anims\Norse_Light_Cavalry_2_Attack.xsm"
+		
+		attach = {
+			name = "DwarfPike"
+			node = "Right_hand_node"
+			attachId = 1
+		}
+		
+		scale = 0.8
+	}
+	
+	EMFXActorType = {
+		name = "DwarfGCHorseArchers"
+		actorfile = "gfx\anims\Norse_Mounted_Archer.xac"
+		
+		idle   = "gfx\anims\Norse_Mounted_Archer_Idle.xsm"
+		move   = "gfx\anims\Norse_Mounted_Archer_Moving.xsm"
+		attack = "gfx\anims\Norse_Mounted_Archer_Attack.xsm"
+		
+		attach = {
+			name = "DwarfArrow"
+			node = "Right_hand_node"
+			attachId = 1
+		}
+		
+		attach = {
+			name = "DwarfBow"
+			node = "Left_hand_node"
+			attachId = 2
+		}
+		
+		attach = {
+			name = "DwarfHelmet"
+			node = "Head"
+			attachId = 3
+		}
+		
+		scale = 0.8
+	}
+	
+	# Hobbits
+	
+	EMFXActorType = {
+		name = "HobbitGCArchers"
+		actorfile = "gfx\anims\celtic_archer.xac"
+		
+		idle   = "gfx\anims\celtic_archer_2_idle.xsm"
+		move   = "gfx\anims\celtic_archer_2_moving.xsm"
+		attack = "gfx\anims\celtic_archer_2_attack.xsm"
+		
+		attach = {
+			name = "GenericArrow"
+			node = "Right_hand_node"
+			attachId = 1
+		}
+		
+		attach = {
+			name = "GenericBow"
+			node = "Left_hand_node"
+			attachId = 2
+		}
+		
+		scale = 0.44
+	}
+	
+	EMFXActorType = {
+		name = "HobbitGCSwordsmen"
+		actorfile = "gfx\anims\celtic_light_infantry.xac"
+		
+		idle   = "gfx\anims\celtic_infantry_2_idle.xsm"
+		move   = "gfx\anims\celtic_infantry_2_moving.xsm"
+		attack = "gfx\anims\celtic_infantry_2_attack.xsm"
+		
+		attach = {
+			name = "GenericAxe"
+			node = "Right_hand_node"
+			attachId = 1
+		}
+		
+		attach = {
+			name = "DwarfShieldSmall"
+			node = "Left_hand_node"
+			attachId = 2
+		}
+		
+		scale = 0.44
+	}
+	
+	EMFXActorType = {
+		name = "HobbitGCInfantry"
+		actorfile = "gfx\anims\celtic_light_infantry.xac"
+		
+		idle   = "gfx\anims\celtic_infantry_2_idle.xsm"
+		move   = "gfx\anims\celtic_infantry_2_moving.xsm"
+		attack = "gfx\anims\celtic_infantry_2_attack.xsm"
+		
+		attach = {
+			name = "GenericAxe"
+			node = "Right_hand_node"
+			attachId = 1
+		}
+		
+		scale = 0.44
+	}
+	
+	EMFXActorType = {
+		name = "HobbitGCLevies"
+		actorfile = "gfx\anims\celtic_light_infantry.xac"
+		
+		idle   = "gfx\anims\celtic_infantry_2_idle.xsm"
+		move   = "gfx\anims\celtic_infantry_2_moving.xsm"
+		attack = "gfx\anims\celtic_infantry_2_attack.xsm"
+		
+		attach = {
+			name = "GenericAxe"
+			node = "Right_hand_node"
+			attachId = 1
+		}
+		
+		scale = 0.44
+	}
+	
+	EMFXActorType = {
+		name = "HobbitGCPikemen"
+		actorfile = "gfx\anims\celtic_light_infantry.xac"
+		
+		idle   = "gfx\anims\celtic_pikeman_2_idle.xsm"
+		move   = "gfx\anims\celtic_pikeman_2_moving.xsm"
+		attack = "gfx\anims\celtic_pikeman_2_attack.xsm"
+		
+		attach = {
+			name = "GenericPike"
+			node = "Right_hand_node"
+			attachId = 1
+		}
+		
+		scale = 0.44
+	}
+	
+	EMFXActorType = {
+		name = "HobbitGCScouts"
+		actorfile = "gfx\anims\celtic_light_cavalry.xac"
+		
+		idle   = "gfx\anims\celtic_light_cavalry_2_idle.xsm"
+		move   = "gfx\anims\celtic_light_cavalry_2_moving.xsm"
+		attack = "gfx\anims\celtic_light_cavalry_2_attack.xsm"
+		
+		attach = {
+			name = "GenericPike"
+			node = "Right_hand_node"
+			attachId = 1
+		}
+		
+		scale = 0.74
+	}
+	
+	EMFXActorType = {
+		name = "HobbitGCHeavyCavalry"
+		actorfile = "gfx\anims\Western_Heavy_Cavalry.xac"
+		
+		idle   = "gfx\anims\Cavalry_Sword_and_Shield_Idle.xsm"
+		move   = "gfx\anims\Cavalry_Sword_and_Shield_Moving.xsm"
+		attack = "gfx\anims\Cavalry_Sword_and_Shield_Attack.xsm"
+		
+		attach = {
+			name = "GenericBannerSword"
+			node = "Right_hand_node"
+			attachId = 1
+		}
+		
+		attach = {
+			name = "GenericHCShield"
+			node = "Left_hand_node"
+			attachId = 2
+		}
+		
+		attach = {
+			name = "GenericHCHelmet"
+			node = "Head"
+			attachId = 3
+		}
+		
+		scale = 0.74
+	}
+	
+	EMFXActorType = {
+		name = "HobbitGCHorseArchers"
+		actorfile = "gfx\anims\celtic_archer.xac"
+		
+		idle   = "gfx\anims\Mounted_Archer_Idle.xsm"
+		move   = "gfx\anims\Mounted_Archer_Moving.xsm"
+		attack = "gfx\anims\Mounted_Archer_Attack.xsm"
+		
+		attach = {
+			name = "GenericArrow"
+			node = "Right_hand_node"
+			attachId = 1
+		}
+		
+		attach = {
+			name = "GenericBow"
+			node = "Left_hand_node"
+			attachId = 2
+		}
+		
+		scale = 0.74
+	}
+	
+	# Numenor and Umbar
+	
+	EMFXActorType = {
+		name = "NumenorGCSwordsmen"
+		actorfile = "gfx\anims\Byzantine_Heavy_Infantry.xac"
+		
+		idle   = "gfx\anims\Byzantine_Heavy_Infantry_idle.xsm"
+		move   = "gfx\anims\Byzantine_Heavy_Infantry_moving.xsm"
+		attack = "gfx\anims\Byzantine_Heavy_Infantry_attack.xsm"
+		
+		attach = {
+			name = "NumSword"
+			node = "Right_hand_node"
+			attachId = 1
+		}
+		
+		attach = {
+			name = "NumShieldHeavy"
+			node = "Left_hand_node"
+			attachId = 2
+		}
+		
+		scale = 0.61
+	}
+	
+	EMFXActorType = {
+		name = "NumSword"
+		actorfile = "gfx\anims\Attachments\byzantine_sword.xac"
+		scale = 1.0
+	}
+	
+	EMFXActorType = {
+		name = "NumShieldHeavy"
+		actorfile = "gfx\anims\Attachments\byzantine_heavy_infantry_shield.xac"
+		scale = 1.0
+	}
+	
+	EMFXActorType = {
+		name = "NumenorGCPikemen"
+		actorfile = "gfx\anims\Byzantine_Pikeman.xac"
+		
+		idle   = "gfx\anims\Byzantine_Pikeman_idle.xsm"
+		move   = "gfx\anims\Byzantine_Pikeman_moving.xsm"
+		attack = "gfx\anims\Byzantine_Pikeman_attack.xsm"
+		
+		attach = {
+			name = "NumGuis"
+			node = "Right_hand_node"
+			attachId = 1
+		}
+		
+		attach = {
+			name = "NumShieldPike"
+			node = "Left_hand_node"
+			attachId = 2
+		}
+		
+		scale = 0.6
+	}
+	
+	EMFXActorType = {
+		name = "NumGuis"
+		actorfile = "gfx\anims\Attachments\byzantine_guisarme.xac"
+		scale = 1.0
+	}
+	
+	EMFXActorType = {
+		name = "NumShieldPike"
+		actorfile = "gfx\anims\Attachments\byzantine_pikeman_shield.xac"
+		scale = 1.0
+	}
+	
+	EMFXActorType = {
+		name = "NumenorGCArchers"
+		actorfile = "gfx\anims\Byzantine_Archer.xac"
+		
+		idle   = "gfx\anims\archer_idle.xsm"
+		move   = "gfx\anims\archer_moving.xsm"
+		attack = "gfx\anims\archer_attack.xsm"
+		
+		attach = {
+			name = "GenericArrow"
+			node = "Right_hand_node"
+			attachId = 1
+		}
+		
+		attach = {
+			name = "NumBow"
+			node = "Left_hand_node"
+			attachId = 2
+		}
+		
+		scale = 0.57
+	}
+	
+	EMFXActorType = {
+		name = "NumBow"
+		actorfile = "gfx\anims\Attachments\byzantine_bow.xac"
+		
+		idle   = "gfx\anims\Attachments\Bow_idle.xsm"
+		move   = "gfx\anims\Attachments\Bow_idle.xsm"
+		attack = "gfx\anims\Attachments\byzantine_bow_attack.xsm"
+		
+		scale = 1.0
+	}
+	
+	EMFXActorType = {
+		name = "NumenorGCInfantry"
+		actorfile = "gfx\anims\Byzantine_Light_Infantry.xac"
+		
+		idle   = "gfx\anims\Byzantine_Light_Infantry_idle.xsm"
+		move   = "gfx\anims\Byzantine_Light_Infantry_moving.xsm"
+		attack = "gfx\anims\Byzantine_Light_Infantry_attack.xsm"
+		
+		attach = {
+			name = "NumSword"
+			node = "Right_hand_node"
+			attachId = 1
+		}
+		
+		attach = {
+			name = "NumShieldLight"
+			node = "Left_hand_node"
+			attachId = 2
+		}
+		
+		scale = 0.6
+	}
+	
+	EMFXActorType = {
+		name = "NumenorGCLevies"
+		actorfile = "gfx\anims\Byzantine_Light_Infantry.xac"
+		
+		idle   = "gfx\anims\Byzantine_Light_Infantry_idle.xsm"
+		move   = "gfx\anims\Byzantine_Light_Infantry_moving.xsm"
+		attack = "gfx\anims\Byzantine_Light_Infantry_attack.xsm"
+		
+		attach = {
+			name = "NumSword"
+			node = "Right_hand_node"
+			attachId = 1
+		}
+		
+		attach = {
+			name = "NumShieldLight"
+			node = "Left_hand_node"
+			attachId = 2
+		}
+		
+		scale = 0.6
+	}
+	
+	EMFXActorType = {
+		name = "NumShieldLight"
+		actorfile = "gfx\anims\Attachments\byzantine_pikeman_shield.xac"
+		scale = 1.0
+	}
+	
+	EMFXActorType = {
+		name = "NumenorGCHeavyCavalry"
+		actorfile = "gfx\anims\Byzantine_Heavy_Cavalry_Rider.xac"
+		
+		idle   = "gfx\anims\Byzantine_Heavy_Cavalry_Rider_idle.xsm"
+		move   = "gfx\anims\Byzantine_Heavy_Cavalry_Rider_moving.xsm"
+		attack = "gfx\anims\Byzantine_Heavy_Cavalry_Rider_attack.xsm"
+		
+		attach = {
+			name = "GenericBannerSword"
+			node = "Right_hand_node"
+			attachId = 1
+		}
+		
+		attach = {
+			name = "NumShieldCav"
+			node = "Left_hand_node"
+			attachId = 2
+		}
+		
+		scale = 1.0
+	}
+	
+	EMFXActorType = {
+		name = "NumShieldCav"
+		actorfile = "gfx\anims\Attachments\byzantine_heavy_cavalry_shield.xac"
+		scale = 1.0
+	}
+	
+	EMFXActorType = {
+		name = "NumenorGCScouts"
+		actorfile = "gfx\anims\Byzantine_Light_Cavalry.xac"
+		
+		idle   = "gfx\anims\Byzantine_Light_Cavalry_idle.xsm"
+		move   = "gfx\anims\Byzantine_Light_Cavalry_moving.xsm"
+		attack = "gfx\anims\Byzantine_Light_Cavalry_attack.xsm"
+		
+		attach = {
+			name = "NumSpear"
+			node = "Right_hand_node"
+			attachId = 1
+		}
+		
+		scale = 0.8
+	}
+	
+	EMFXActorType = {
+		name = "NumSpear"
+		actorfile = "gfx\anims\Attachments\byzantine_pike.xac"
+		scale = 1.0
+	}
+	
+	EMFXActorType = {
+		name = "NumenorGCHorseArchers"
+		actorfile = "gfx\anims\Byzantine_Mounted_Archer.xac"
+		
+		idle   = "gfx\models\Mounted_Archer_Idle.xsm"
+		move   = "gfx\models\Mounted_Archer_Moving.xsm"
+		attack = "gfx\models\Mounted_Archer_Attack.xsm"
+		
+		attach = {
+			name = "GenericArrow"
+			node = "Right_hand_node"
+			attachId = 1
+		}
+		
+		attach = {
+			name = "NumBow"
+			node = "Left_hand_node"
+			attachId = 2
+		}
+		
+		scale = 1.0
+	}
+	
+	# Harad
+	
+	EMFXActorType = {
+		name = "HaradGCSwordsmen"
+		actorfile = "gfx\anims\Muslim_Heavy_Infantry.xac"
+		
+		idle   = "gfx\anims\Infantry_Sword_and_Shield_Idle.xsm"
+		move   = "gfx\anims\Infantry_Sword_and_Shield_Moving.xsm"
+		attack = "gfx\anims\Infantry_Sword_and_Shield_Attack.xsm"
+		
+		attach = {
+			name = "HaradSword"
+			node = "Right_hand_node"
+			attachId = 1
+		}
+		
+		attach = {
+			name = "HaradShieldHeavy"
+			node = "Left_hand_node"
+			attachId = 2
+		}
+		
+		attach = {
+			name = "HaradHelmetHeavy"
+			node = "Head"
+			attachId = 3
+		}
+		
+		scale = 0.6
+	}
+	
+	EMFXActorType = {
+		name = "HaradSword"
+		actorfile = "gfx\anims\Attachments\Sword_03.xac"
+		scale = 1.0
+	}
+	
+	EMFXActorType = {
+		name = "HaradShieldHeavy"
+		actorfile = "gfx\anims\Attachments\Shield_Arab_03.xac"
+		scale = 1.0
+	}
+	
+	EMFXActorType = {
+		name = "HaradHelmetHeavy"
+		actorfile = "gfx\anims\Attachments\Helmet_01.xac"
+		scale = 1.0
+	}
+	
+	EMFXActorType = {
+		name = "HaradGCPikemen"
+		actorfile = "gfx\anims\Muslim_pikeman.xac"
+		
+		idle   = "gfx\anims\Spear_and_Shield_Idle.xsm"
+		move   = "gfx\anims\Spear_and_Shield_Moving.xsm"
+		attack = "gfx\anims\Spear_and_Shield_Attack.xsm"
+		
+		attach = {
+			name = "HaradSpear"
+			node = "Right_hand_node"
+			attachId = 1
+		}
+		
+		attach = {
+			name = "HaradShieldSpear"
+			node = "Left_hand_node"
+			attachId = 2
+		}
+		
+		attach = {
+			name = "HaradHelmetSpear"
+			node = "Head"
+			attachId = 3
+		}
+		
+		scale = 0.6
+	}
+	
+	EMFXActorType = {
+		name = "HaradSpear"
+		actorfile = "gfx\anims\Attachments\Spear_02.xac"
+		scale = 1.0
+	}
+	
+	EMFXActorType = {
+		name = "HaradShieldSpear"
+		actorfile = "gfx\anims\Attachments\Shield_Arab_02.xac"
+		scale = 1.0
+	}
+	
+	EMFXActorType = {
+		name = "HaradHelmetSpear"
+		actorfile = "gfx\anims\Attachments\Helmet_04_Arab.xac"
+		scale = 1.0
+	}
+	
+	EMFXActorType = {
+		name = "HaradGCArchers"
+		actorfile = "gfx\anims\Muslim_Archer.xac"
+		
+		idle   = "gfx\anims\Archer_Idle.xsm"
+		move   = "gfx\anims\Archer_Moving.xsm"
+		attack = "gfx\anims\Archer_Attack.xsm"
+		
+		attach = {
+			name = "GenericArrow"
+			node = "Right_hand_node"
+			attachId = 1
+		}
+		
+		attach = {
+			name = "HaradBow"
+			node = "Left_hand_node"
+			attachId = 2
+		}
+		
+		attach = {
+			name = "HaradHelmetArcher"
+			node = "Head"
+			attachId = 3
+		}
+		
+		scale = 0.6
+	}
+	
+	EMFXActorType = {
+		name = "HaradBow"
+		actorfile = "gfx\anims\Attachments\Bow_02.xac"
+		
+		idle   = "gfx\anims\Attachments\Bow_idle.xsm"
+		move   = "gfx\anims\Attachments\Bow_idle.xsm"
+		attack = "gfx\anims\Attachments\Bow_attack.xsm"
+		
+		scale = 1.0
+	}
+	
+	EMFXActorType = {
+		name = "HaradHelmetArcher"
+		actorfile = "gfx\anims\Attachments\Helmet_05_Arab.xac"
+		scale = 1.0
+	}
+	
+	EMFXActorType = {
+		name = "HaradGCInfantry"
+		actorfile = "gfx\anims\Muslim_Light_Infantry.xac"
+		
+		idle   = "gfx\anims\Infantry_Sword_and_Shield_Idle.xsm"
+		move   = "gfx\anims\Infantry_Sword_and_Shield_Moving.xsm"
+		attack = "gfx\anims\Infantry_Sword_and_Shield_Attack.xsm"
+		
+		attach = {
+			name = "HaradSaberLight"
+			node = "Right_hand_node"
+			attachId = 1
+		}
+		
+		attach = {
+			name = "HaradShieldLight"
+			node = "Left_hand_node"
+			attachId = 2
+		}
+		
+		attach = {
+			name = "HaradHelmetSpear"
+			node = "Head"
+			attachId = 3
+		}
+		
+		scale = 0.6
+	}
+	
+	EMFXActorType = {
+		name = "HaradGCLevies"
+		actorfile = "gfx\anims\Muslim_Light_Infantry.xac"
+		
+		idle   = "gfx\anims\Infantry_Sword_and_Shield_Idle.xsm"
+		move   = "gfx\anims\Infantry_Sword_and_Shield_Moving.xsm"
+		attack = "gfx\anims\Infantry_Sword_and_Shield_Attack.xsm"
+		
+		attach = {
+			name = "HaradSaberLight"
+			node = "Right_hand_node"
+			attachId = 1
+		}
+		
+		attach = {
+			name = "HaradShieldLight"
+			node = "Left_hand_node"
+			attachId = 2
+		}
+		
+		attach = {
+			name = "HaradHelmetSpear"
+			node = "Head"
+			attachId = 3
+		}
+		
+		scale = 0.6
+	}
+	
+	EMFXActorType = {
+		name = "HaradSaberLight"
+		actorfile = "gfx\anims\Attachments\Sword_02_Saber.xac"
+		scale = 1.0
+	}
+	
+	EMFXActorType = {
+		name = "HaradShieldLight"
+		actorfile = "gfx\anims\Attachments\Shield_Arab_01.xac"
+		scale = 1.0
+	}
+	
+	EMFXActorType = {
+		name = "HaradGCScouts"
+		actorfile = "gfx\anims\Muslim_Light_Cavalry.xac"
+		
+		idle   = "gfx\anims\Light_Cavalry_Idle.xsm"
+		move   = "gfx\anims\Light_Cavalry_Moving.xsm"
+		attack = "gfx\anims\Light_Cavalry_Attack.xsm"
+		
+		attach = {
+			name = "HaradSpear"
+			node = "Right_hand_node"
+			attachId = 1
+		}
+		
+		attach = {
+			name = "HaradHelmetSpear"
+			node = "Head"
+			attachId = 3
+		}
+		
+		scale = 0.9
+	}
+	
+	EMFXActorType = {
+		name = "HaradGCHeavyCavalry"
+		actorfile = "gfx\anims\Muslim_Heavy_Cavalry.xac"
+		
+		idle   = "gfx\anims\Cavalry_Sword_and_Shield_Idle.xsm"
+		move   = "gfx\anims\Cavalry_Sword_and_Shield_Moving.xsm"
+		attack = "gfx\anims\Cavalry_Sword_and_Shield_Attack.xsm"
+		
+		attach = {
+			name = "HaradBanner"
+			node = "Right_hand_node"
+			attachId = 1
+		}
+		
+		attach = {
+			name = "HaradShieldLight"
+			node = "Left_hand_node"
+			attachId = 2
+		}
+		
+		attach = {
+			name = "HaradHelmetSpear"
+			node = "Head"
+			attachId = 3
+		}
+		
+		scale = 0.9
+	}
+	
+	EMFXActorType = {
+		name = "HaradBanner"
+		actorfile = "gfx\anims\Attachments\Banner_Saber.xac"
+		
+		idle   = "gfx\anims\Attachments\Banner_Saber_idle.xsm"
+		move   = "gfx\anims\Attachments\Banner_Saber_idle.xsm"
+		attack = "gfx\anims\Attachments\Banner_Saber_attack.xsm"
+		
+		scale = 1.0
+	}
+	
+	EMFXActorType = {
+		name = "HaradGCHorseArchers"
+		actorfile = "gfx\anims\Muslim_Mounted_Archer.xac"
+		
+		idle   = "gfx\anims\Mounted_Archer_Idle.xsm"
+		move   = "gfx\anims\Mounted_Archer_Moving.xsm"
+		attack = "gfx\anims\Mounted_Archer_Attack.xsm"
+		
+		attach = {
+			name = "GenericArrow"
+			node = "Right_hand_node"
+			attachId = 1
+		}
+		
+		attach = {
+			name = "GenericBow"
+			node = "Left_hand_node"
+			attachId = 2
+		}
+		
+		attach = {
+			name = "HaradHelmetSpear"
+			node = "Head"
+			attachId = 3
+		}
+		
+		scale = 0.9
+	}
+	
+	# Variags
+	
+	EMFXActorType = {
+		name = "VariagGCSwordsmen"
+		actorfile = "gfx\anims\persian_heavy_infantry.xac"
+		
+		idle   = "gfx\anims\persian_infantry_2_idle.xsm"
+		move   = "gfx\anims\persian_infantry_2_moving.xsm"
+		attack = "gfx\anims\persian_infantry_2_attack.xsm"
+		
+		attach = {
+			name = "VariagSword"
+			node = "Right_hand_node"
+			attachId = 1
+		}
+		
+		attach = {
+			name = "VariagShield"
+			node = "Left_hand_node"
+			attachId = 2
+		}
+		
+		scale = 0.6
+	}
+	
+	EMFXActorType = {
+		name = "VariagSword"
+		actorfile = "gfx\anims\Attachments\persian_sword.xac"
+		scale = 1.0
+	}
+	
+	EMFXActorType = {
+		name = "VariagShield"
+		actorfile = "gfx\anims\Attachments\persian_shield_heavy.xac"
+		scale = 1.0
+	}
+	
+	EMFXActorType = {
+		name = "VariagGCPikemen"
+		actorfile = "gfx\anims\persian_pikeman.xac"
+		
+		idle   = "gfx\anims\persian_pikeman_2_idle.xsm"
+		move   = "gfx\anims\persian_pikeman_2_moving.xsm"
+		attack = "gfx\anims\persian_pikeman_2_attack.xsm"
+		
+		attach = {
+			name = "VariagSpear"
+			node = "Right_hand_node"
+			attachId = 1
+		}
+		
+		attach = {
+			name = "VariagSpearShield"
+			node = "Left_hand_node"
+			attachId = 2
+		}
+		
+		scale = 0.6
+	}
+	
+	EMFXActorType = {
+		name = "VariagSpear"
+		actorfile = "gfx\anims\Attachments\persian_spear.xac"
+		scale = 1.0
+	}
+	
+	EMFXActorType = {
+		name = "VariagSpearShield"
+		actorfile = "gfx\anims\Attachments\persian_pikeman_shield.xac"
+		scale = 1.0
+	}
+	
+	EMFXActorType = {
+		name = "VariagGCLevies"
+		actorfile = "gfx\anims\persian_light_infantry.xac"
+		
+		idle   = "gfx\anims\persian_infantry_2_idle.xsm"
+		move   = "gfx\anims\persian_infantry_2_moving.xsm"
+		attack = "gfx\anims\persian_infantry_2_attack.xsm"
+		
+		attach = {
+			name = "VariagSword"
+			node = "Right_hand_node"
+			attachId = 1
+		}
+		
+		attach = {
+			name = "VariagShield"
+			node = "Left_hand_node"
+			attachId = 2
+		}
+		
+		scale = 0.6
+	}
+	
+	EMFXActorType = {
+		name = "VariagGCInfantry"
+		actorfile = "gfx\anims\persian_light_infantry.xac"
+		
+		idle   = "gfx\anims\persian_infantry_2_idle.xsm"
+		move   = "gfx\anims\persian_infantry_2_moving.xsm"
+		attack = "gfx\anims\persian_infantry_2_attack.xsm"
+		
+		attach = {
+			name = "VariagSword"
+			node = "Right_hand_node"
+			attachId = 1
+		}
+		
+		attach = {
+			name = "VariagShield"
+			node = "Left_hand_node"
+			attachId = 2
+		}
+		
+		scale = 0.6
+	}
+	
+	EMFXActorType = {
+		name = "VariagGCArchers"
+		actorfile = "gfx\anims\persian_archer.xac"
+		
+		idle   = "gfx\anims\persian_archer_2_idle.xsm"
+		move   = "gfx\anims\persian_archer_2_moving.xsm"
+		attack = "gfx\anims\persian_archer_2_attack.xsm"
+		
+		attach = {
+			name = "GenericArrow"
+			node = "Right_hand_node"
+			attachId = 1
+		}
+		
+		attach = {
+			name = "HaradBow"
+			node = "Left_hand_node"
+			attachId = 2
+		}
+		
+		scale = 0.6
+	}
+	
+	EMFXActorType = {
+		name = "VariagGCHeavyCavalry"
+		actorfile = "gfx\anims\persian_heavy_cavalry.xac"
+		
+		idle   = "gfx\anims\persian_heavy_cavalry_2_idle.xsm"
+		move   = "gfx\anims\persian_heavy_cavalry_2_moving.xsm"
+		attack = "gfx\anims\persian_heavy_cavalry_2_attack.xsm"
+		
+		attach = {
+			name = "VariagSword"
+			node = "Right_hand_node"
+			attachId = 1
+		}
+		
+		attach = {
+			name = "VariagShieldCav"
+			node = "Left_hand_node"
+			attachId = 2
+		}
+		
+		scale = 0.9
+	}
+	
+	EMFXActorType = {
+		name = "VariagShieldCav"
+		actorfile = "gfx\anims\Attachments\persian_shield_heavy_cav.xac"
+		scale = 1.0
+	}
+	
+	EMFXActorType = {
+		name = "VariagGCScouts"
+		actorfile = "gfx\anims\persian_light_cavalry.xac"
+		
+		idle   = "gfx\anims\persian_light_cavalry_2_idle.xsm"
+		move   = "gfx\anims\persian_light_cavalry_2_moving.xsm"
+		attack = "gfx\anims\persian_light_cavalry_2_attack.xsm"
+		
+		attach = {
+			name = "VariagSpear"
+			node = "Right_hand_node"
+			attachId = 1
+		}
+		
+		attach = {
+			name = "VariagShield"
+			node = "Left_hand_node"
+			attachId = 2
+		}
+		
+		scale = 0.9
+	}
+	
+	EMFXActorType = {
+		name = "VariagGCHorseArchers"
+		actorfile = "gfx\anims\persian_archer.xac"
+		
+		idle   = "gfx\anims\persian_mounted_archer_2_idle.xsm"
+		move   = "gfx\anims\persian_mounted_archer_2_moving.xsm"
+		attack = "gfx\anims\persian_mounted_archer_2_attack.xsm"
+		
+		attach = {
+			name = "GenericArrow"
+			node = "Right_hand_node"
+			attachId = 1
+		}
+		
+		attach = {
+			name = "HaradBow"
+			node = "Left_hand_node"
+			attachId = 2
+		}
+		
+		scale = 0.9
+	}
+	
+	# Easterlings
+	
+	EMFXActorType = {
+		name = "EasterlingGCSwordsmen"
+		actorfile = "gfx\anims\holy_order_immortals.xac"
+		
+		idle   = "gfx\anims\holy_order_infantry_idle.xsm"
+		move   = "gfx\anims\holy_order_infantry_moving.xsm"
+		attack = "gfx\anims\holy_order_infantry_attack.xsm"
+		
+		attach = {
+			name = "VariagSword"
+			node = "Right_hand_node"
+			attachId = 1
+		}
+		
+		attach = {
+			name = "EasterShieldSmall"
+			node = "Left_hand_node"
+			attachId = 2
+		}
+		
+		scale = 0.6
+	}
+	
+	EMFXActorType = {
+		name = "EasterShield"
+		actorfile = "gfx\anims\Attachments\indian_heavy_infantry_shield.xac"
+		scale = 1.0
+	}
+	
+	EMFXActorType = {
+		name = "EasterlingGCPikemen"
+		actorfile = "gfx\anims\holy_order_immortals.xac"
+		
+		idle   = "gfx\anims\holy_order_pikeman_idle.xsm"
+		move   = "gfx\anims\holy_order_pikeman_moving.xsm"
+		attack = "gfx\anims\holy_order_pikeman_attack.xsm"
+		
+		attach = {
+			name = "NorthSpear"
+			node = "Right_hand_node"
+			attachId = 1
+		}
+		
+		attach = {
+			name = "EasterShieldPike"
+			node = "Left_hand_node"
+			attachId = 2
+		}
+		
+		scale = 0.6
+	}
+	
+	EMFXActorType = {
+		name = "EasterShieldPike"
+		actorfile = "gfx\anims\Attachments\holy_order_finnish_shield.xac"
+		scale = 1.5
+	}
+	
+	EMFXActorType = {
+		name = "EasterShieldSmall"
+		actorfile = "gfx\anims\Attachments\indian_shield_small.xac"
+		scale = 1.0
+	}
+	
+	EMFXActorType = {
+		name = "EasterlingGCLevies"
+		actorfile = "gfx\anims\ashigaru.xac"
+		
+		idle   = "gfx\anims\ashigaru_idle.xsm"
+		move   = "gfx\anims\ashigaru_moving.xsm"
+		attack = "gfx\anims\ashigaru_attack.xsm"
+		
+		attach = {
+			name = "EasterlingSpearLevy"
+			node = "Right_hand_node"
+			attachId = 1
+		}
+		
+		scale = 1.1
+	}
+	
+	EMFXActorType = {
+		name = "EasterlingSpearLevy"
+		actorfile = "gfx\anims\naginata.xac"
+		scale = 1.0
+	}
+
+	EMFXActorType = {
+		name = "EasterlingGCLevies"
+		actorfile = "gfx\anims\ashigaru.xac"
+		
+		idle   = "gfx\anims\ashigaru_idle.xsm"
+		move   = "gfx\anims\ashigaru_moving.xsm"
+		attack = "gfx\anims\ashigaru_attack.xsm"
+		
+		attach = {
+			name = "EasterlingSpearLevy"
+			node = "Right_hand_node"
+			attachId = 1
+		}
+		
+		scale = 1.1
+	}
+	
+	EMFXActorType = {
+		name = "EasterMace"
+		actorfile = "gfx\anims\Attachments\indian_mace.xac"
+		scale = 1.0
+	}
+	
+	EMFXActorType = {
+		name = "EasterlingGCArchers"
+		actorfile = "gfx\anims\aztec_archer.xac"
+		
+		idle   = "gfx\anims\aztec_archer_idle.xsm"
+		move   = "gfx\anims\aztec_archer_moving.xsm"
+		attack = "gfx\anims\aztec_archer_attack.xsm"
+		
+		attach = {
+			name = "EasterArrow"
+			node = "Right_hand_node"
+			attachId = 1
+		}
+		
+		attach = {
+			name = "EasterBow"
+			node = "Left_hand_node"
+			attachId = 2
+		}
+		
+		scale = 0.6
+	}
+	
+	EMFXActorType = {
+		name = "EasterArrow"
+		actorfile = "gfx\anims\Attachments\Arrow.xac"
+		
+		idle   = "gfx\anims\indian_arrow_idle.xsm"
+		move   = "gfx\anims\indian_arrow_idle.xsm"
+		attack = "gfx\anims\indian_arrow_attack.xsm"
+		
+		scale = 1.0
+	}
+	
+	EMFXActorType = {
+		name = "EasterBow"
+		actorfile = "gfx\anims\Attachments\Bow.xac"
+		
+		idle   = "gfx\anims\indian_bow_idle.xsm"
+		move   = "gfx\anims\indian_bow_idle.xsm"
+		attack = "gfx\anims\indian_bow_attack.xsm"
+		
+		scale = 1.0
+	}
+	
+	EMFXActorType = {
+		name = "EasterlingGCHeavyCavalry"
+		actorfile = "gfx\anims\indian_heavy_cavalry.xac"
+		
+		idle   = "gfx\anims\indian_heavy_cavalry_idle.xsm"
+		move   = "gfx\anims\indian_heavy_cavalry_moving.xsm"
+		attack = "gfx\anims\indian_heavy_cavalry_attack.xsm"
+		
+		attach = {
+			name = "EasterShieldCav"
+			node = "Left_hand_node"
+			attachId = 2
+		}
+		
+		scale = 0.9
+	}
+	
+	EMFXActorType = {
+		name = "EasterShieldCav"
+		actorfile = "gfx\anims\Attachments\indian_heavy_cavalry_shield.xac"
+		scale = 1.0
+	}
+	
+	EMFXActorType = {
+		name = "EasterlingGCScouts"
+		actorfile = "gfx\anims\African_Light_Cavalry.xac"
+		
+		idle   = "gfx\anims\African_Light_Cavalry_Idle.xsm"
+		move   = "gfx\anims\African_Light_Cavalry_Moving.xsm"
+		attack = "gfx\anims\African_Light_Cavalry_Attack.xsm"
+		
+		attach = {
+			name = "EasterLance"
+			node = "Right_hand_node"
+			attachId = 1
+		}
+		
+		scale = 0.9
+	}
+	
+	EMFXActorType = {
+		name = "EasterLance"
+		actorfile = "gfx\anims\Attachments\indian_lance.xac"
+		scale = 1.0
+	}
+	
+	EMFXActorType = {
+		name = "EasterlingGCHorseArchers"
+		actorfile = "gfx\anims\aztec_mounted_archer.xac"
+		
+		idle   = "gfx\anims\aztec_Mounted_Archer_Idle.xsm"
+		move   = "gfx\anims\aztec_Mounted_Archer_Moving.xsm"
+		attack = "gfx\anims\aztec_Mounted_Archer_Attack.xsm"
+		
+		attach = {
+			name = "EasterArrow"
+			node = "Right_hand_node"
+			attachId = 1
+		}
+		
+		attach = {
+			name = "EasterBow"
+			node = "Left_hand_node"
+			attachId = 2
+		}
+		
+		scale = 0.9
+	}
+	
+	# Northmen
+	
+	EMFXActorType = {
+		name = "NorthmenGCSwordsmen"
+		actorfile = "gfx\anims\Russian_Heavy_Infantry.xac"
+		
+		idle   = "gfx\anims\Russian_Infantry_2_Idle.xsm"
+		move   = "gfx\anims\Russian_Infantry_2_Moving.xsm"
+		attack = "gfx\anims\Russian_Infantry_2_Attack.xsm"
+		
+		attach = {
+			name = "NorthSword"
+			node = "Right_hand_node"
+			attachId = 1
+		}
+		
+		attach = {
+			name = "NorthShieldHeavy"
+			node = "Left_hand_node"
+			attachId = 2
+		}
+		
+		scale = 0.6
+	}
+	
+	EMFXActorType = {
+		name = "NorthSword"
+		actorfile = "gfx\anims\Attachments\Russian_sword.xac"
+		scale = 1.0
+	}
+	
+	EMFXActorType = {
+		name = "NorthShieldHeavy"
+		actorfile = "gfx\anims\Attachments\Russian_Heavy_Infantry_Shield.xac"
+		scale = 1.4
+	}
+	
+	EMFXActorType = {
+		name = "NorthmenGCPikemen"
+		actorfile = "gfx\anims\Russian_Pikeman.xac"
+		
+		idle   = "gfx\anims\pikeman_idle.xsm"
+		move   = "gfx\anims\Pikeman_Moving.xsm"
+		attack = "gfx\anims\Pikeman_Attack.xsm"
+		
+		attach = {
+			name = "NorthSpear"
+			node = "Right_hand_node"
+			attachId = 1
+		}
+		
+		scale = 0.6
+	}
+	
+	EMFXActorType = {
+		name = "NorthSpear"
+		actorfile = "gfx\anims\Attachments\Russian_guisarme.xac"
+		scale = 1.0
+	}
+	
+	EMFXActorType = {
+		name = "NorthShieldSpear"
+		actorfile = "gfx\anims\Attachments\Russian_Pikeman_Shield.xac" # In CK2 this shield is disabled
+		scale = 1.0
+	}
+	
+	EMFXActorType = {
+		name = "NorthmenGCLevies"
+		actorfile = "gfx\anims\Russian_Light_Infantry.xac"
+		
+		idle   = "gfx\anims\Russian_Infantry_2_Idle.xsm"
+		move   = "gfx\anims\Russian_Infantry_2_Moving.xsm"
+		attack = "gfx\anims\Russian_Infantry_2_Attack.xsm"
+		
+		attach = {
+			name = "NorthAxe"
+			node = "Right_hand_node"
+			attachId = 1
+		}
+		
+		attach = {
+			name = "NorthShieldLight"
+			node = "Left_hand_node"
+			attachId = 2
+		}
+		
+		scale = 0.6
+	}
+	
+	EMFXActorType = {
+		name = "NorthmenGCInfantry"
+		actorfile = "gfx\anims\Russian_Light_Infantry.xac"
+		
+		idle   = "gfx\anims\Russian_Infantry_2_Idle.xsm"
+		move   = "gfx\anims\Russian_Infantry_2_Moving.xsm"
+		attack = "gfx\anims\Russian_Infantry_2_Attack.xsm"
+		
+		attach = {
+			name = "NorthAxe"
+			node = "Right_hand_node"
+			attachId = 1
+		}
+		
+		attach = {
+			name = "NorthShieldLight"
+			node = "Left_hand_node"
+			attachId = 2
+		}
+		
+		scale = 0.6
+	}
+	
+	EMFXActorType = {
+		name = "NorthAxe"
+		actorfile = "gfx\anims\Attachments\Russian_Axe_01.xac"
+		scale = 1.0
+	}
+	
+	EMFXActorType = {
+		name = "NorthShieldLight"
+		actorfile = "gfx\anims\Attachments\Russian_Light_Infantry_Shield.xac"
+		scale = 1.0
+	}
+	
+	EMFXActorType = {
+		name = "NorthmenGCArchers"
+		actorfile = "gfx\anims\Russian_Archer.xac"
+		
+		idle   = "gfx\anims\Russian_Archer_2_Idle.xsm"
+		move   = "gfx\anims\Russian_Archer_2_Moving.xsm"
+		attack = "gfx\anims\Russian_Archer_2_Attack.xsm"
+		
+		attach = {
+			name = "NorthArrow"
+			node = "Right_hand_node"
+			attachId = 1
+		}
+		
+		attach = {
+			name = "NorthBow"
+			node = "Left_hand_node"
+			attachId = 2
+		}
+		
+		scale = 0.6
+	}
+	
+	EMFXActorType = {
+		name = "NorthArrow"
+		actorfile = "gfx\anims\Attachments\Russian_Arrow.xac"
+		
+		idle   = "gfx\anims\Attachments\Russian_Arrow_idle.xsm"
+		move   = "gfx\anims\Attachments\Russian_Arrow_idle.xsm"
+		attack = "gfx\anims\Attachments\Russian_Arrow_attack.xsm"
+		
+		scale = 1.0
+	}
+	
+	EMFXActorType = {
+		name = "NorthBow"
+		actorfile = "gfx\anims\Attachments\Russian_Bow_02.xac"
+		
+		idle   = "gfx\anims\Attachments\Russian_Bow_idle.xsm"
+		move   = "gfx\anims\Attachments\Russian_Bow_idle.xsm"
+		attack  = "gfx\anims\Attachments\Russian_Bow_attack.xsm"
+		
+		scale = 1.0
+	}	
+	
+	EMFXActorType = {
+		name = "NorthmenGCHeavyCavalry"
+		actorfile = "gfx\anims\Russian_Heavy_Cavalry.xac"
+		
+		idle   = "gfx\anims\Russian_Knight_Idle.xsm"
+		move   = "gfx\anims\Russian_Knight_Moving.xsm"
+		attack = "gfx\anims\Russian_Knight_Attack.xsm"
+		
+		attach = {
+			name = "NorthSword"
+			node = "Right_hand_node"
+			attachId = 1
+		}
+		
+		attach = {
+			name = "NorthShieldCav"
+			node = "Left_hand_node"
+			attachId = 2
+		}
+		
+		scale = 0.9
+	}
+	
+	EMFXActorType = {
+		name = "NorthShieldCav"
+		actorfile = "gfx\anims\Attachments\Russian_Heavy_Cavalry_Shield.xac"
+		scale = 1.0
+	}
+	
+	EMFXActorType = {
+		name = "NorthmenGCScouts"
+		actorfile = "gfx\anims\Russian_Light_Cavalry.xac"
+		
+		idle   = "gfx\anims\Russian_Light_Cavalry_2_Idle.xsm"
+	 	move   = "gfx\anims\Russian_Light_Cavalry_2_Moving.xsm"
+		attack = "gfx\anims\Russian_Light_Cavalry_2_Attack.xsm"
+		
+		attach = {
+			name = "NorthSpearCav"
+			node = "Right_hand_node"
+			attachId = 1
+		}
+		
+		scale = 0.9
+	}
+	
+	EMFXActorType = {
+		name = "NorthSpearCav"
+		actorfile = "gfx\anims\Attachments\Russian_pike.xac"
+		scale = 1.0
+	}
+	
+	EMFXActorType = {
+		name = "NorthmenGCHorseArchers"
+		actorfile = "gfx\anims\Russian_Archer.xac"
+		
+		idle   = "gfx\anims\Russian_Mounted_Archer_Idle.xsm"
+		move   = "gfx\anims\Russian_Mounted_Archer_Moving.xsm"
+		attack = "gfx\anims\Russian_Mounted_Archer_Attack.xsm"
+		
+		attach = {
+			name = "NorthArrow"
+			node = "Right_hand_node"
+			attachId = 1
+		}
+		
+		attach = {
+			name = "NorthBow"
+			node = "Left_hand_node"
+			attachId = 2
+		}
+		
+		scale = 0.9
+	}
+	
+	# Wildmen - Dunlendings and some more
+	
+	EMFXActorType = {
+		name = "WildmenGCLevies"
+		actorfile = "gfx\anims\holy_order_jomsviking.xac"
+		
+		idle   = "gfx\anims\holy_order_infantry_idle.xsm"
+		move   = "gfx\anims\holy_order_infantry_moving.xsm"
+		attack = "gfx\anims\holy_order_infantry_attack.xsm"
+		
+		attach = {
+			name = "WildAxe"
+			node = "Right_hand_node"
+			attachId = 1
+		}
+		
+		attach = {
+			name = "WildShieldLight"
+			node = "Left_hand_node"
+			attachId = 2
+		}
+		
+		scale = 0.6
+	}
+	
+	EMFXActorType = {
+		name = "WildmenGCInfantry"
+		actorfile = "gfx\anims\holy_order_jomsviking.xac"
+		
+		idle   = "gfx\anims\holy_order_infantry_idle.xsm"
+		move   = "gfx\anims\holy_order_infantry_moving.xsm"
+		attack = "gfx\anims\holy_order_infantry_attack.xsm"
+		
+		attach = {
+			name = "WildAxe"
+			node = "Right_hand_node"
+			attachId = 1
+		}
+		
+		attach = {
+			name = "WildShieldLight"
+			node = "Left_hand_node"
+			attachId = 2
+		}
+		
+		scale = 0.6
+	}
+	
+	EMFXActorType = {
+		name = "WildAxe"
+		actorfile = "gfx\anims\Attachments\Russian_Axe_01.xac"
+		scale = 0.7
+	}
+	
+	EMFXActorType = {
+		name = "WildShieldLight"
+		actorfile = "gfx\anims\Attachments\Russian_Light_Infantry_Shield.xac"
+		scale = 1.3
+	}
+	
+	EMFXActorType = {
+		name = "WildmenGCPikemen"
+		actorfile = "gfx\anims\Norse_Pikeman.xac"
+		
+		idle   = "gfx\anims\Norse_Pikeman_2_Idle.xsm"
+		move   = "gfx\anims\Norse_Pikeman_2_Moving.xsm"
+		attack = "gfx\anims\Norse_Pikeman_2_Attack.xsm"
+		
+		attach = {
+			name = "NorthSpearCav"
+			node = "Right_hand_node"
+			attachId = 1
+		}
+		
+		attach = {
+			name = "WildShield"
+			node = "Left_hand_node"
+			attachId = 2
+		}
+		
+		scale = 0.6
+	}
+	
+	EMFXActorType = {
+		name = "WildmenGCSwordsmen"
+		actorfile = "gfx\anims\holy_order_jomsviking.xac"
+		
+		idle   = "gfx\anims\holy_order_infantry_idle.xsm"
+		move   = "gfx\anims\holy_order_infantry_moving.xsm"
+		attack = "gfx\anims\holy_order_infantry_attack.xsm"
+		
+		attach = {
+			name = "WildSword"
+			node = "Right_hand_node"
+			attachId = 1
+		}
+		
+		attach = {
+			name = "WildShield"
+			node = "Left_hand_node"
+			attachId = 2
+		}
+		
+		attach = {
+			name = "WildHelmet"
+			node = "Head"
+			attachId = 3
+		}
+		
+		scale = 0.6
+	}
+	
+	EMFXActorType = {
+		name = "WildSword"
+		actorfile = "gfx\anims\Attachments\holy_order_jomsviking_sword.xac"
+		scale = 1.0
+	}
+	
+	EMFXActorType = {
+		name = "WildShield"
+		actorfile = "gfx\anims\Attachments\holy_order_jomsviking_shield.xac"
+		scale = 1.0
+	}
+	
+	EMFXActorType = {
+		name = "WildHelmet"
+		actorfile = "gfx\anims\Attachments\helmet_14.xac"
+		scale = 1.2
+	}
+	
+	EMFXActorType = {
+		name = "WildmenGCArchers"
+		actorfile = "gfx\anims\Norse_Mounted_Archer.xac"
+		
+		idle   = "gfx\anims\Norse_Archer_2_Idle.xsm"
+		move   = "gfx\anims\Norse_Archer_2_Moving.xsm"
+		attack = "gfx\anims\Norse_Archer_2_Attack.xsm"
+		
+		attach = {
+			name = "WildArrow"
+			node = "Right_hand_node"
+			attachId = 1
+		}
+		
+		attach = {
+			name = "WildBow"
+			node = "Left_hand_node"
+			attachId = 2
+		}
+		
+		scale = 0.6
+	}
+	
+	EMFXActorType = {
+		name = "WildArrow"
+		actorfile = "gfx\anims\Attachments\Norse_Arrow.xac"
+		
+		idle   = "gfx\anims\Attachments\Norse_Arrow_idle.xsm"
+		move   = "gfx\anims\Attachments\Norse_Arrow_idle.xsm"
+		attack = "gfx\anims\Attachments\Norse_Arrow_attack.xsm"
+		
+		scale = 1.0
+	}
+	
+	EMFXActorType = {
+		name = "WildBow"
+		actorfile = "gfx\anims\Attachments\Norse_Bow.xac"
+		
+		idle   = "gfx\anims\Attachments\Norse_Bow_idle.xsm"
+		move   = "gfx\anims\Attachments\Norse_Bow_idle.xsm"
+		attack = "gfx\anims\Attachments\Norse_Bow_attack.xsm"
+		
+		scale = 1.0
+	}
+	
+	EMFXActorType = {
+		name = "WildmenGCHorseArchers"
+		actorfile = "gfx\anims\Norse_Mounted_Archer.xac"
+		
+		idle   = "gfx\anims\Mounted_Archer_Idle.xsm"
+		move   = "gfx\anims\Mounted_Archer_Moving.xsm"
+		attack = "gfx\anims\Mounted_Archer_Attack.xsm"
+		
+		attach = {
+			name = "WildArrow"
+			node = "Right_hand_node"
+			attachId = 1
+		}
+		
+		attach = {
+			name = "WildBow"
+			node = "Left_hand_node"
+			attachId = 2
+		}
+		
+		scale = 0.9
+	}
+	
+	EMFXActorType = {
+		name = "WildmenGCScouts"
+		actorfile = "gfx\anims\Norse_Light_Cavalry.xac"
+		
+		idle   = "gfx\anims\Norse_Light_Cavalry_2_Idle.xsm"
+		move   = "gfx\anims\Norse_Light_Cavalry_2_Moving.xsm"
+		attack = "gfx\anims\Norse_Light_Cavalry_2_Attack.xsm"
+		
+		attach = {
+			name = "NorthSpearCav"
+			node = "Right_hand_node"
+			attachId = 1
+		}
+		
+		scale = 0.9
+	}
+	
+	EMFXActorType = {
+		name = "WildmenGCHeavyCavalry"
+		actorfile = "gfx\anims\holy_order_finnish.xac"
+		
+		idle   = "gfx\anims\Norse_Knight_Idle.xsm"
+		move   = "gfx\anims\Norse_Knight_Moving.xsm"
+		attack = "gfx\anims\Norse_Knight_Attack.xsm"
+		
+		attach = {
+			name = "WildSword"
+			node = "Right_hand_node"
+			attachId = 1
+		}
+		
+		attach = {
+			name = "DwarfShieldCav"
+			node = "Left_hand_node"
+			attachId = 2
+		}
+		
+		scale = 1.0
+	}
+	
+	# Dunedain
+	
+	EMFXActorType = {
+		name = "DunedainGCSwordsmen"
+		actorfile = "gfx\anims\celtic_heavy_infantry.xac"
+		
+		idle   = "gfx\anims\celtic_infantry_2_idle.xsm"
+		move   = "gfx\anims\celtic_infantry_2_moving.xsm"
+		attack = "gfx\anims\celtic_infantry_2_attack.xsm"
+		
+		attach = {
+			name = "DunSword"
+			node = "Right_hand_node"
+			attachId = 1
+		}
+		
+		attach = {
+			name = "DunShield"
+			node = "Left_hand_node"
+			attachId = 2
+		}
+		
+		scale = 0.6
+	}
+	
+	EMFXActorType = {
+		name = "DunSword"
+		actorfile = "gfx\anims\Attachments\celtic_sword.xac"
+		scale = 1.0
+	}
+	
+	EMFXActorType = {
+		name = "DunShield"
+		actorfile = "gfx\anims\Attachments\celtic_heavy_infantry_shield.xac"
+		scale = 1.0
+	}
+	
+	EMFXActorType = {
+		name = "DunedainGCPikemen"
+		actorfile = "gfx\anims\celtic_pikeman.xac"
+		
+		idle   = "gfx\anims\celtic_pikeman_2_idle.xsm"
+		move   = "gfx\anims\celtic_pikeman_2_moving.xsm"
+		attack = "gfx\anims\celtic_pikeman_2_attack.xsm"
+		
+		attach = {
+			name = "DunSpear"
+			node = "Right_hand_node"
+			attachId = 1
+		}
+		
+		attach = {
+			name = "DunShieldSpear"
+			node = "Left_hand_node"
+			attachId = 2
+		}
+		
+		scale = 0.6
+	}
+	
+	EMFXActorType = {
+		name = "DunSpear"
+		actorfile = "gfx\anims\Attachments\celtic_pike.xac"
+		scale = 1.0
+	}
+	
+	EMFXActorType = {
+		name = "DunShieldSpear"
+		actorfile = "gfx\anims\Attachments\celtic_pikeman_shield.xac"
+		scale = 1.0
+	}
+	
+	EMFXActorType = {
+		name = "DunedainGCLevies"
+		actorfile = "gfx\anims\celtic_light_infantry.xac"
+		
+		idle   = "gfx\anims\celtic_infantry_2_idle.xsm"
+		move   = "gfx\anims\celtic_infantry_2_moving.xsm"
+		attack = "gfx\anims\celtic_infantry_2_attack.xsm"
+		
+		attach = {
+			name = "DunSword"
+			node = "Right_hand_node"
+			attachId = 1
+		}
+		
+		attach = {
+			name = "DunShieldLight"
+			node = "Left_hand_node"
+			attachId = 2
+		}
+		
+		scale = 0.6
+	}
+	
+	EMFXActorType = {
+		name = "DunedainGCInfantry"
+		actorfile = "gfx\anims\celtic_light_infantry.xac"
+		
+		idle   = "gfx\anims\celtic_infantry_2_idle.xsm"
+		move   = "gfx\anims\celtic_infantry_2_moving.xsm"
+		attack = "gfx\anims\celtic_infantry_2_attack.xsm"
+		
+		attach = {
+			name = "DunSword"
+			node = "Right_hand_node"
+			attachId = 1
+		}
+		
+		attach = {
+			name = "DunShieldLight"
+			node = "Left_hand_node"
+			attachId = 2
+		}
+		
+		scale = 0.6
+	}
+	
+	EMFXActorType = {
+		name = "DunShieldLight"
+		actorfile = "gfx\anims\Attachments\celtic_light_infantry_shield.xac"
+		scale = 1.0
+	}
+	
+	EMFXActorType = {
+		name = "DunedainGCArchers"
+		actorfile = "gfx\anims\celtic_archer.xac"
+		
+		idle   = "gfx\anims\celtic_archer_2_idle.xsm"
+		move   = "gfx\anims\celtic_archer_2_moving.xsm"
+		attack = "gfx\anims\celtic_archer_2_attack.xsm"
+		
+		attach = {
+			name = "DunArrow"
+			node = "Right_hand_node"
+			attachId = 1
+		}
+		
+		attach = {
+			name = "DunBow"
+			node = "Left_hand_node"
+			attachId = 2
+		}
+		
+		scale = 0.6
+	}
+	
+	EMFXActorType = {
+		name = "DunArrow"
+		actorfile = "gfx\anims\Attachments\celtic_arrow.xac"
+		
+		idle   = "gfx\anims\Attachments\celtic_arrow_idle.xsm"
+		move   = "gfx\anims\Attachments\celtic_arrow_idle.xsm"
+		attack = "gfx\anims\Attachments\celtic_arrow_attack.xsm"
+		
+		scale = 1.0
+	}
+	
+	EMFXActorType = {
+		name = "DunBow"
+		actorfile = "gfx\anims\Attachments\celtic_bow.xac"
+		
+		idle   = "gfx\anims\Attachments\celtic_bow_idle.xsm"
+		move   = "gfx\anims\Attachments\celtic_bow_idle.xsm"
+		attack  = "gfx\anims\Attachments\celtic_bow_attack.xsm"
+		
+		scale = 1.0
+	}	
+	
+	EMFXActorType = {
+		name = "DunedainGCScouts"
+		actorfile = "gfx\anims\celtic_light_cavalry.xac"
+		
+		idle   = "gfx\anims\celtic_light_cavalry_2_idle.xsm"
+	 	move   = "gfx\anims\celtic_light_cavalry_2_moving.xsm"
+		attack = "gfx\anims\celtic_light_cavalry_2_attack.xsm"
+		
+		attach = {
+			name = "DunSpear"
+			node = "Right_hand_node"
+			attachId = 1
+		}
+		
+		scale = 0.9
+	}
+	
+	EMFXActorType = {
+		name = "DunedainGCHeavyCavalry"
+		actorfile = "gfx\anims\celtic_heavy_cavalry.xac"
+		
+		idle   = "gfx\anims\celtic_heavy_cavalry_2_idle.xsm"
+		move   = "gfx\anims\celtic_heavy_cavalry_2_moving.xsm"
+		attack = "gfx\anims\celtic_heavy_cavalry_2_attack.xsm"
+		
+		attach = {
+			name = "DunSword"
+			node = "Right_hand_node"
+			attachId = 1
+		}
+		
+		attach = {
+			name = "DunShieldCav"
+			node = "Left_hand_node"
+			attachId = 2
+		}
+		
+		scale = 0.9
+	}
+	
+	EMFXActorType = {
+		name = "DunShieldCav"
+		actorfile = "gfx\anims\Attachments\celtic_heavy_cavalry_shield.xac"
+		scale = 1.0
+	}
+	
+	EMFXActorType = {
+		name = "DunedainGCHorseArchers"
+		actorfile = "gfx\anims\celtic_mounted_archer.xac"
+		
+		idle   = "gfx\anims\celtic_mounted_archer_2_idle.xsm"
+		move   = "gfx\anims\celtic_mounted_archer_2_moving.xsm"
+		attack = "gfx\anims\celtic_mounted_archer_2_attack.xsm"
+		
+		attach = {
+			name = "DunArrow"
+			node = "Right_hand_node"
+			attachId = 1
+		}
+		
+		attach = {
+			name = "DunBow"
+			node = "Left_hand_node"
+			attachId = 2
+		}
+		
+		scale = 0.9
+	}
+	
+	# Druedain
+
+	EMFXActorType = {
+		name = "PukelGCSwordsmen"
+		actorfile = "gfx\anims\indian_heavy_infantry.xac"
+		
+		idle   = "gfx\anims\indian_infantry_idle.xsm"
+		move   = "gfx\anims\indian_infantry_moving.xsm"
+		attack = "gfx\anims\indian_infantry_attack.xsm"
+		
+		attach = {
+			name = "EasterMace"
+			node = "Right_hand_node"
+			attachId = 1
+		}
+		
+		attach = {
+			name = "EasterShield"
+			node = "Left_hand_node"
+			attachId = 2
+		}
+		
+		scale = 0.6
+	}
+	
 }

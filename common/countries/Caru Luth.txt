@@ -1,4 +1,4 @@
-graphical_culture = Generic
+graphical_culture = WildmenGC
 color = { 57 38 27 }
 
 party = {

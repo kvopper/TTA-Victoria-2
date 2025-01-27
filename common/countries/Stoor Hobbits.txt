@@ -1,4 +1,4 @@
-graphical_culture = Generic
+graphical_culture = HobbitGC
 color = { 218 165 32 }
 
 party = {

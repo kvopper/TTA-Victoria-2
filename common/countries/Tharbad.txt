@@ -1,4 +1,4 @@
-graphical_culture = Generic
+graphical_culture = DunedainGC
 color = { 45 45 202 }
 
 party = {

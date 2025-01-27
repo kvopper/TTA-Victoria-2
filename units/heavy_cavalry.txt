@@ -9,7 +9,7 @@ heavy_cavalry = {
 	
 	#Avatar
 	sprite_override = HeavyCavalry
-	sprite_mount = GenericHeavyMount
+	sprite_mount = HeavyMount
 	sprite_mount_attach_node = Saddle_Node
 	floating_flag = yes
 
