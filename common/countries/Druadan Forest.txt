@@ -1,4 +1,4 @@
-graphical_culture = Generic
+graphical_culture = PukelGC
 color = { 117 129 107 }
 
 party = {

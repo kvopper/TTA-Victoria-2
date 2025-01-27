@@ -8,6 +8,9 @@ HaradGC
 VariagGC
 EasterlingGC
 NorthmenGC
+WildmenGC
+DunedainGC
+EnedGC
 OrcGC
 GondorGC
 ElfGC

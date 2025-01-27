@@ -1,4 +1,4 @@
-graphical_culture = Generic
+graphical_culture = NorthmenGC
 color = { 120 169 237 }
 
 party = {
