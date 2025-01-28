@@ -4,7 +4,7 @@ primary_culture = raven
 culture = eagle_culture
 religion = eagle
 government = monarchy
-nationalvalue = roac
+nationalvalue = generic_leader
 literacy = 0
 civilized = yes
 

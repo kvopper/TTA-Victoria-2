@@ -1096,7 +1096,7 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
-		nationalvalue = bard_i
+		ruling_party = DAL_bard_i
 		OR = {
 			AND = {
 				has_global_flag = railroading_enabled
@@ -1248,7 +1248,6 @@ country_event = {
 	
 	trigger = {
 		has_country_flag = DAL_content
-		nationalvalue = regency
 		FOR = { check_variable = { which = bain_i_age value = 15.9 } }
 	}
 	
@@ -1256,7 +1255,6 @@ country_event = {
 		name = "Long live the King!"
 		
 		prestige = 5
-		nationalvalue = bain_i
 		
 		plurality = -3
 	}
@@ -1272,7 +1270,7 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
-		nationalvalue = bain_i
+		ruling_party = DAL_bain_i
 		OR = {
 			AND = {
 				has_global_flag = railroading_enabled
@@ -1393,7 +1391,6 @@ country_event = {
 	
 	trigger = {
 		has_country_flag = DAL_content
-		nationalvalue = regency
 		FOR = { check_variable = { which = brand_i_age value = 15.9 } }
 	}
 	
@@ -1401,7 +1398,6 @@ country_event = {
 		name = "Long live the King!"
 		
 		prestige = 5
-		nationalvalue = brand_i
 		
 		plurality = -3
 	}
@@ -1417,7 +1413,7 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
-		nationalvalue = bain_i
+		ruling_party = DAL_brand_i
 		OR = {
 			AND = {
 				has_global_flag = railroading_enabled
@@ -1525,7 +1521,6 @@ country_event = {
 	
 	trigger = {
 		has_country_flag = DAL_content
-		nationalvalue = regency
 		FOR = { check_variable = { which = bard_ii_age value = 15.9 } }
 	}
 	
@@ -1533,7 +1528,6 @@ country_event = {
 		name = "Long live the King!"
 		
 		prestige = 5
-		nationalvalue = bard_ii
 		
 		plurality = -3
 	}
@@ -1549,7 +1543,7 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
-		nationalvalue = bard_ii
+		ruling_party = DAL_bard_ii
 		OR = {
 			AND = {
 				has_global_flag = railroading_enabled
@@ -1946,7 +1940,6 @@ country_event = {
 		name = "At least we have an heir"
 		
 		prestige = -5
-		nationalvalue = regency
 		
 		plurality = -2
 	}

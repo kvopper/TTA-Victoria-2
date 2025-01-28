@@ -238,8 +238,6 @@ country_event = {
 		OR = {
 			has_global_flag = ecthelion_ii_alive
 			has_global_flag = denethor_ii_alive
-			has_global_flag = boromir_ii_alive
-			has_global_flag = faramir_i_alive
 		}
 	}
 	
@@ -259,55 +257,20 @@ country_event = {
 			country_event = 3501
 		}
 		
-		# Do the checks in reverse order of priority to reduce the number of checks in the limits
-		random_owned = {
-			limit = {
-				owner = { has_global_flag = faramir_i_alive }
-			}
-			owner = {
-				nationalvalue = faramir_i
-		
-				any_country = {
-					limit = {
-						exists = yes
-						substate_of = THIS
-					}
-					nationalvalue = faramir_i
-				}
-			}
-		}
-		
-		random_owned = {
-			limit = {
-				owner = { has_global_flag = boromir_ii_alive }
-			}
-			owner = {
-				nationalvalue = boromir_ii
-		
-				any_country = {
-					limit = {
-						exists = yes
-						substate_of = THIS
-					}
-					nationalvalue = boromir_ii
-				}
-			}
-		}
-		
 		random_owned = {
 			limit = {
 				owner = {
 					has_global_flag = denethor_ii_alive }
 			}
 			owner = {
-				nationalvalue = denethor_ii
+				ruling_party = GON_denethor_ii
 		
 				any_country = {
 					limit = {
 						exists = yes
 						substate_of = THIS
 					}
-					nationalvalue = denethor_ii
+					ruling_party = GON_denethor_ii
 				}
 			}
 		}

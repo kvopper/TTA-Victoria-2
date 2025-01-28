@@ -895,14 +895,14 @@ country_event = {
 				owner = { has_global_flag = denethor_ii_alive }
 			}
 			owner = {
-				nationalvalue = denethor_ii
+				ruling_party = GON_denethor_ii
 				
 				any_country = {
 					limit = {
 						exists = yes
 						ruling_party = GON_ecthelion_ii
 					}
-					nationalvalue = denethor_ii
+					ruling_party = GON_denethor_ii
 				}
 			}
 		}
@@ -2111,7 +2111,7 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
-		nationalvalue = denethor_ii
+		ruling_party = GON_denethor_ii
 		has_country_modifier = palantir_madness
 		NOT = { controls = 16 }
 		OR = {
@@ -2143,7 +2143,7 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
-		nationalvalue = denethor_ii
+		ruling_party = GON_denethor_ii
 		year = 3025
 		NOT = { is_substate = yes }
 	}
@@ -2174,77 +2174,15 @@ country_event = {
 	option = {
 		name = "He will be missed"
 		
-		# If one of Denethor II's successors is alive, we know the next leader
-		random_owned = {
-			limit = {
-				owner = {
-					OR = {
-						has_global_flag = boromir_ii_alive
-						has_global_flag = faramir_i_alive
-					}
-				}
-			}
-			owner = {
-				set_country_flag = knows_next_leader
-				
-				any_country = {
-					limit = {
-						exists = yes
-						nationalvalue = denethor_ii
-					}
-					set_country_flag = knows_next_leader
-				}
-			}
-		}
-		
 		# Kills Denethor II and coronates the new leader
 		country_event = 3501
 		
 		any_country = {
 			limit = {
 				exists = yes
-				nationalvalue = denethor_ii
+				ruling_party = GON_denethor_ii
 			}
 			country_event = 3501
-		}
-		
-		# Boromir II highest priority
-		random_owned = {
-			limit = {
-				owner = { has_global_flag = boromir_ii_alive }
-			}
-			owner = {
-				nationalvalue = boromir_ii
-				
-				any_country = {
-					limit = {
-						exists = yes
-						nationalvalue = denethor_ii
-					}
-					nationalvalue = boromir_ii
-				}
-			}
-		}
-		
-		# Faramir I next
-		random_owned = {
-			limit = {
-				owner = {
-					NOT = { has_global_flag = boromir_ii_alive }
-					has_global_flag = faramir_i_alive
-				}
-			}
-			owner = {
-				nationalvalue = faramir_i
-				
-				any_country = {
-					limit = {
-						exists = yes
-						nationalvalue = denethor_ii
-					}
-					nationalvalue = faramir_i
-				}
-			}
 		}
 		
 		clr_country_flag = denethor_ii_alive
@@ -2337,8 +2275,6 @@ country_event = {
 			personality = heroic
 		}
 		primary_culture = dunedain
-		
-		set_global_flag = boromir_ii_alive
 	}
 }
 
@@ -2364,8 +2300,6 @@ country_event = {
 			personality = heroic
 		}
 		primary_culture = dunedain
-		
-		set_global_flag = faramir_i_alive
 	}
 }
 
@@ -2387,7 +2321,6 @@ country_event = {
 			background = prince_of_belfalas
 			personality = tactical
 		}
-		set_global_flag = imrahil_i_alive
 	}
 }
 

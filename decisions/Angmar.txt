@@ -20,7 +20,7 @@ political_decisions = {
 		
 		effect = {
 			prestige = 5
-			nationalvalue = witch_king_of_angmar
+			ruling_party_ideology = saurons_nine
 
 			any_country = {
 				limit = {

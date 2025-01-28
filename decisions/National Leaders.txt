@@ -34,7 +34,7 @@ political_decisions = {
 		picture = "prince_angelimir"
 		potential = {
 			ai = no
-			nationalvalue = angelimir
+			ruling_party = AMR_angelimir
 			NOT = { has_global_flag = fluff_disabled }
 		}
 		allow = {}
@@ -47,7 +47,7 @@ political_decisions = {
 		picture = "dark_lord_sauron"
 		potential = {
 			ai = no
-			nationalvalue = sauron
+			ruling_party = MOR_sauron
 			NOT = { has_global_flag = fluff_disabled }
 		}
 		allow = {}
@@ -60,7 +60,7 @@ political_decisions = {
 		picture = "king_hegon_koldana"
 		potential = {
 			ai = no
-			nationalvalue = hegon_koldana
+			ruling_party = DOR_hegon
 			NOT = { has_global_flag = fluff_disabled }
 		}
 		allow = {}
@@ -73,7 +73,7 @@ political_decisions = {
 		picture = "king_dain_ironfoot_ii"
 		potential = {
 			ai = no
-			nationalvalue = dain_ironfoot_ii
+			ruling_party = ERE_dain_ii
 			NOT = { has_global_flag = fluff_disabled }
 		}
 		allow = {}
@@ -86,7 +86,7 @@ political_decisions = {
 		picture = "king_thranduil"
 		potential = {
 			ai = no
-			nationalvalue = thranduil
+			ruling_party = WRM_thranduil
 			NOT = { has_global_flag = fluff_disabled }
 		}
 		allow = {}
@@ -99,7 +99,7 @@ political_decisions = {
 		picture = "lord_khamul_the_easterling"
 		potential = {
 			ai = no
-			nationalvalue = khamul
+			ruling_party = GUL_khamul
 			NOT = { has_global_flag = fluff_disabled }
 		}
 		allow = {}
@@ -112,7 +112,7 @@ political_decisions = {
 		picture = "chief_beorn"
 		potential = {
 			ai = no
-			nationalvalue = beorn
+			ruling_party = BEO_beorn
 			NOT = { has_global_flag = fluff_disabled }
 		}
 		allow = {}
@@ -125,7 +125,7 @@ political_decisions = {
 		picture = "lord_celeborn_n_lady_galadriel"
 		potential = {
 			ai = no
-			nationalvalue = celeborn_n_galadriel
+			ruling_party = LOR_galadriel_n_celeborn
 			NOT = { has_global_flag = fluff_disabled }
 		}
 		allow = {}
@@ -138,7 +138,7 @@ political_decisions = {
 		picture = "lord_treebeard"
 		potential = {
 			ai = no
-			nationalvalue = treebeard
+			ruling_party = FAN_treebeard
 			NOT = { has_global_flag = fluff_disabled }
 		}
 		allow = {}
@@ -151,7 +151,7 @@ political_decisions = {
 		picture = "king_thengel"
 		potential = {
 			ai = no
-			nationalvalue = thengel
+			ruling_party = ROH_thengel
 			NOT = { has_global_flag = fluff_disabled }
 		}
 		allow = {}
@@ -164,7 +164,7 @@ political_decisions = {
 		picture = "lord_saruman"
 		potential = {
 			ai = no
-			nationalvalue = saruman
+			ruling_party = ISE_saruman
 			NOT = { has_global_flag = fluff_disabled }
 		}
 		allow = {}
@@ -177,7 +177,7 @@ political_decisions = {
 		picture = "chief_aragorn"
 		potential = {
 			ai = no
-			nationalvalue = aragorn
+			ruling_party = GON_aragorn_elessar
 			NOT = { has_global_flag = fluff_disabled }
 		}
 		allow = {}
@@ -190,7 +190,7 @@ political_decisions = {
 		picture = "lord_elrond"
 		potential = {
 			ai = no
-			nationalvalue = elrond
+			ruling_party = IML_elrond
 			NOT = { has_global_flag = fluff_disabled }
 		}
 		allow = {}
@@ -203,7 +203,7 @@ political_decisions = {
 		picture = "lord_cirdan"
 		potential = {
 			ai = no
-			nationalvalue = cirdan
+			ruling_party = LIN_cirdan
 			NOT = { has_global_flag = fluff_disabled }
 		}
 		allow = {}

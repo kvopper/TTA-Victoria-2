@@ -66,14 +66,7 @@ political_decisions = {
 			
 			random_owned = {
 				limit = {
-					owner = {
-						OR = {
-							nationalvalue = bard_i
-							nationalvalue = bain_i
-							nationalvalue = brand_i
-							nationalvalue = bard_ii
-						}
-					}
+					owner = { ruling_party_ideology = house_of_bard }
 				}
 				owner = { government = monarchy_2 }
 			}

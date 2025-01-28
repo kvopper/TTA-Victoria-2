@@ -7,7 +7,7 @@ culture = amrothian
 religion = men
 government = monarchy_2
 plurality = 5
-nationalvalue = ecthelion_ii
+nationalvalue = generic_leader
 literacy = 0.2
 civilized = yes
 

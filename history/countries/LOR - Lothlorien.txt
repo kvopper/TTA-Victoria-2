@@ -4,7 +4,7 @@ primary_culture = galadhrim
 culture = elven_culture
 religion = elven
 government = monarchy
-nationalvalue = celeborn_n_galadriel
+nationalvalue = generic_leader
 literacy = 0.5
 civilized = yes
 

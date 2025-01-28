@@ -5,7 +5,7 @@ culture = men_culture
 culture = adhalling
 religion = men
 government = monarchy
-nationalvalue = bard_i
+nationalvalue = generic_leader
 literacy = 0.2
 civilized = yes
 

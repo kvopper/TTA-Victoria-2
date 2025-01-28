@@ -5,7 +5,7 @@ culture = men_culture
 culture = cardolandrim
 religion = men
 government = tribal
-nationalvalue = aragorn
+nationalvalue = generic_leader
 literacy = 0.2
 civilized = yes
 

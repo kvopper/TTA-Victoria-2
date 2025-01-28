@@ -7,7 +7,7 @@ culture = gondorian
 culture = galadhrim
 religion = men
 government = dominion_2
-nationalvalue = angelimir
+nationalvalue = generic_leader
 literacy = 0.2
 civilized = yes
 

@@ -133,7 +133,7 @@ country_event = {
 
 	trigger = {
 		tag = ISE
-		nationalvalue = saruman
+		ruling_party = ISE_saruman
 		good_evil_alignment = evil_alignment
 		has_country_modifier = breeding_uruk_hai
 		NOT = { has_global_flag = bred_uruk_hai }
@@ -191,7 +191,7 @@ country_event = {
 	picture = "palantir_saruman"
 
 	trigger = {
-		nationalvalue = saruman
+		ruling_party = ISE_saruman
 		has_country_modifier = orthanc_palantir
 		MOR = {
 			has_country_modifier = ithil_palantir

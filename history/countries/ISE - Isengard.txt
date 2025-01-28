@@ -6,7 +6,7 @@ culture = dunedain
 culture = dunnish
 religion = men
 government = istari_kingdom
-nationalvalue = saruman
+nationalvalue = generic_leader
 literacy = 0.2
 civilized = yes
 

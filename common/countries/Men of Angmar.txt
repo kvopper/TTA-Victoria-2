@@ -2,6 +2,21 @@ graphical_culture = Generic
 color = { 0 76 153 }
 
 party = {
+	name = "ANG_witch_king"
+	start_date = 2954.1.1
+	end_date = 4000.1.1
+	
+	ideology = saurons_nine
+	
+	trade_policy = protectionism
+	tax_policy = interventionism
+	language_policy = regional_autonomy
+	diplomatic_policy = reactive
+	war_policy = jingoism
+	good_evil_alignment = evil_alignment
+}
+
+party = {
 	name = "generic_angmarrim_nobles"
 	start_date = 2954.1.1
 	end_date = 4000.1.1

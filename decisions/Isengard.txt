@@ -27,7 +27,7 @@ political_decisions = {
 		potential = {
 			tag = ISE
 			vassal_of = GON
-			nationalvalue = saruman
+			ruling_party = ISE_saruman
 		}
 		allow = {
 			NOT = { year = 2955 }
@@ -57,7 +57,7 @@ political_decisions = {
 		potential = {
 			tag = ISE
 			is_vassal = no
-			nationalvalue = saruman
+			ruling_party = ISE_saruman
 			814 = {
 				owner = {
 					is_vassal = no
@@ -92,7 +92,7 @@ political_decisions = {
 		potential = {
 			tag = ISE
 			is_vassal = no
-			nationalvalue = saruman
+			ruling_party = ISE_saruman
 			NOT = { has_country_modifier = breeding_uruk_hai }
 			NOT = { has_global_flag = bred_uruk_hai }
 		}

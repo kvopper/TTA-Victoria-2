@@ -2195,13 +2195,7 @@ country_event = {
 		# If turned in a Republic of some kind, Bard's line no longer rules
 		random_country = {
 			limit = {
-				OR = {
-					nationalvalue = bard_i
-					nationalvalue = bain_i
-					nationalvalue = brand_i
-					nationalvalue = bard_ii
-					nationalvalue = regency
-				}
+				ruling_party_ideology = house_of_bard
 				government = republic
 			}
 			
@@ -3319,12 +3313,7 @@ country_event = {
 			limit = {
 				tag = DAL
 				government = monarchy_2
-				OR = {
-					nationalvalue = bard_i
-					nationalvalue = bain_i
-					nationalvalue = brand_i
-					nationalvalue = bard_ii
-				}
+				ruling_party_ideology = house_of_bard
 			}
 			government = monarchy
 		}
@@ -3332,10 +3321,7 @@ country_event = {
 			limit = {
 				tag = DAL
 				government = monarchy
-				NOT = { nationalvalue = bard_i }
-				NOT = { nationalvalue = bain_i }
-				NOT = { nationalvalue = brand_i }
-				NOT = { nationalvalue = bard_ii }
+				NOT = { ruling_party_ideology = house_of_bard }
 			}
 			government = monarchy_2
 		}
@@ -3343,12 +3329,7 @@ country_event = {
 			limit = {
 				tag = RHO
 				government = monarchy
-				OR = {
-					nationalvalue = bard_i
-					nationalvalue = bain_i
-					nationalvalue = brand_i
-					nationalvalue = bard_ii
-				}
+				ruling_party_ideology = house_of_bard
 			}
 			government = monarchy_2
 		}
@@ -3356,10 +3337,7 @@ country_event = {
 			limit = {
 				tag = RHO
 				government = monarchy_2
-				NOT = { nationalvalue = bard_i }
-				NOT = { nationalvalue = bain_i }
-				NOT = { nationalvalue = brand_i }
-				NOT = { nationalvalue = bard_ii }
+				NOT = { ruling_party_ideology = house_of_bard }
 			}
 			government = monarchy
 		}

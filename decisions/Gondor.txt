@@ -566,11 +566,7 @@ political_decisions = {
 			}
 			owns = 133
 			NOT = { has_global_flag = da_independence_war }
-			OR = {
-				nationalvalue = denethor_ii
-				nationalvalue = boromir_ii
-				nationalvalue = faramir_i
-			}
+			ruling_party = GON_denethor_ii
 		}
 		
 		allow = {
@@ -2461,9 +2457,9 @@ political_decisions = {
 			}
 			NOT = { has_global_flag = bar_iaur_dinen_restored }
 			OR = {
-				nationalvalue = aragorn_elessar
+				ruling_party = GON_aragorn_elessar
 				# # Audax Validator "." Ignore_NEXT
-				# nationalvalue = imrahil_1 # Has not yet been created
+				# ruling_party = AMR_imrahil_1 # Has not yet been created
 			}
 			OR = {
 				is_vassal = no

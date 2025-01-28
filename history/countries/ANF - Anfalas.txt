@@ -8,7 +8,7 @@ culture = amrothian
 culture = dunir
 religion = men
 government = dominion_2
-nationalvalue = ecthelion_ii
+nationalvalue = generic_leader
 literacy = 0.2
 civilized = yes
 

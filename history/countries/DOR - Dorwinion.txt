@@ -5,7 +5,7 @@ culture = men_culture
 culture = avari
 religion = men
 government = monarchy
-nationalvalue = hegon_koldana
+nationalvalue = generic_leader
 literacy = 0.2
 civilized = yes
 
