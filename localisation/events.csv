@@ -134,6 +134,8 @@ EVTDESC14004;The question of war policy have come around this election cycle. Th
 EVTNAME14005;$COUNTRY_ADJ$ Alignment;;;;;;;;;;x
 EVTNAME14005_sub;A Heated Debate in $COUNTRY$;;;;;;;;;x
 EVTDESC14005;The question of our alignment has come around this election cycle. There are stauch supporters across the spectrum, with major proponents for denouncing Sauron, aligning with no one, and aligning with Sauron. What is the current leadership's stance?;;;;;;;;;x
+EVTDESC14006;One by one, the people of $PROVINCENAME$ leave their homes and join the ever growing crowd. People have come from far and wide, proclaiming support for our leader and their rule. The town guard look on, uncertain if they should disperse the crowd.;x
+EVTDESC14007;One by one, the people of $PROVINCENAME$ leave their homes and join the ever growing crowd. People have come from far and wide, critizing our leader and their rule. The town guard look on, uncertain if they should disperse the crowd.;x
 ########################################;x }
 ##### NATIONALIST MOVEMENTS EVENTS #####;x {
 ########################################;x
