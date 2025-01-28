@@ -21,7 +21,7 @@ culture = herimundi
 culture = anduinmen
 religion = men
 government = monarchy
-nationalvalue = generic_leader
+nationalvalue = no_heirloom
 literacy = 0.2
 civilized = yes
 

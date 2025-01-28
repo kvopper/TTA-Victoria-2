@@ -7,7 +7,7 @@ culture = gundabad_orc
 culture = gram_goblin
 religion = orc
 government = tribal
-nationalvalue = generic_leader
+nationalvalue = no_heirloom
 literacy = 0
 
 slavery = yes_slavery

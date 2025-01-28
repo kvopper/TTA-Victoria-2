@@ -5,7 +5,7 @@ culture = ent_culture
 culture = huorn
 religion = ent
 government = republic
-nationalvalue = generic_leader
+nationalvalue = no_heirloom
 civilized = yes
 
 oob = "FAN_oob.txt"

@@ -6,7 +6,7 @@ culture = gondorian
 culture = amrothian
 religion = men
 government = dominion_2
-nationalvalue = generic_leader
+nationalvalue = no_heirloom
 literacy = 0.2
 civilized = yes
 

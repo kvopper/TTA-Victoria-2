@@ -4,7 +4,7 @@ primary_culture = snow_orc
 culture = orc_culture
 religion = orc
 government = tribal
-nationalvalue = generic_leader
+nationalvalue = no_heirloom
 literacy = 0
 
 oob = "SNO_oob.txt"

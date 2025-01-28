@@ -4,7 +4,7 @@ culture = fallohide
 culture = harfoot
 culture = stoor
 government = republic
-nationalvalue = generic_leader
+nationalvalue = no_heirloom
 civilized = yes
 
 prestige = 1

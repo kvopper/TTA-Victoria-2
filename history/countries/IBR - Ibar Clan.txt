@@ -4,7 +4,7 @@ primary_culture = kuga
 culture = men_culture
 religion = men
 government = monarchy
-nationalvalue = generic_leader
+nationalvalue = no_heirloom
 literacy = 0
 
 oob = "IBR_oob.txt"

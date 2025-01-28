@@ -4,7 +4,7 @@ primary_culture = sagath
 culture = men_culture
 religion = men
 government = monarchy
-nationalvalue = generic_leader
+nationalvalue = no_heirloom
 literacy = 0
 
 oob = "SAG_oob.txt"

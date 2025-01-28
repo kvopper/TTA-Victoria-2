@@ -7,7 +7,7 @@ culture = harfoot
 culture = fallohide
 religion = men
 government = republic
-nationalvalue = generic_leader
+nationalvalue = no_heirloom
 literacy = 0.2
 civilized = yes
 

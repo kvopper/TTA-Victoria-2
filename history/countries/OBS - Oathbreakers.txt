@@ -4,7 +4,7 @@ primary_culture = oathbreaker
 culture = undead_culture
 religion = undead
 government = tribal
-nationalvalue = generic_leader
+nationalvalue = no_heirloom
 literacy = 0
 civilized = yes
 

@@ -1774,7 +1774,7 @@ country_event = {
 				owner = { ruling_party = MOR_sauron }
 			}
 			owner = {
-				nationalvalue = generic_leader
+				ruling_party_ideology = mordor_orc_nobles
 			}
 		}
 		
@@ -1852,7 +1852,6 @@ country_event = {
 			}
 		}
 		prestige = -25
-		nationalvalue = generic_leader
 		any_pop = {
 			militancy = 4
 			consciousness = 4

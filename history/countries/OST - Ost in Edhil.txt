@@ -4,7 +4,7 @@ primary_culture = morian
 culture = orc_culture
 religion = orc
 government = tribal
-nationalvalue = generic_leader
+nationalvalue = no_heirloom
 literacy = 0
 
 oob = "OST_oob.txt"

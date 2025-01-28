@@ -4,7 +4,7 @@ primary_culture = stoor
 culture = hobbit_culture
 religion = hobbit
 government = republic
-nationalvalue = generic_leader
+nationalvalue = no_heirloom
 literacy = 0
 civilized = yes
 

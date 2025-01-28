@@ -4,7 +4,7 @@ primary_culture = aivathiuda
 culture = men_culture
 religion = men
 government = tribal
-nationalvalue = generic_leader
+nationalvalue = no_heirloom
 literacy = 0.2
 
 oob = "VID_oob.txt"

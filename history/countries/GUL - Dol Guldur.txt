@@ -6,7 +6,7 @@ culture = great_spider
 culture = black_numenorean
 religion = orc
 government = dominion_1
-nationalvalue = generic_leader
+nationalvalue = no_heirloom
 literacy = 0
 civilized = yes
 

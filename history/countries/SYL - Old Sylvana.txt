@@ -5,7 +5,7 @@ culture = men_culture
 culture = siredain
 religion = men
 government = tribal
-nationalvalue = generic_leader
+nationalvalue = no_heirloom
 literacy = 0
 
 oob = "SYL_oob.txt"

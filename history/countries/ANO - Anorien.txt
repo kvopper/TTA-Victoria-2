@@ -6,7 +6,7 @@ culture = gondorian
 culture = amrothian
 religion = men
 government = monarchy
-nationalvalue = generic_leader
+nationalvalue = no_heirloom
 civilized = yes
 
 ruling_party = ANO_nobles_of_anorien

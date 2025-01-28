@@ -46,8 +46,6 @@ clear_cores_from_DWM_desc;If you wish to make it as if Dwarves of the White Moun
 #####################################;x }
 ##### NATIONAL LEADER DECISIONS #####;x {
 #####################################;x
-generic_leader_decision_title;§O$MONARCHTITLE$ Generic Leader§!;x
-generic_leader_decision_desc;Learn about §Y$MONARCHTITLE$ Generic Leader§!!;x
 steward_ecthelion_ii_title;§O$MONARCHTITLE$ Ecthelion II§!;x
 steward_ecthelion_ii_desc;Learn about §Y$MONARCHTITLE$ Ecthelion II§!!;x
 prince_angelimir_title;§O$MONARCHTITLE$ Angelimir§!;x
@@ -569,11 +567,6 @@ give_ring_to_mordor_title;Give the One Ring to Mordor;x
 give_ring_to_mordor_desc;The One Ring is rightfully owned by Sauron. As such, Mordor should have the Ring. If we were to do this, they would undoubtedly protect us.;x
 mordor_start_war_of_the_ring_title;The Gondor Assault;x
 mordor_start_war_of_the_ring_desc;To the West lies the Land of Stone. Long have we fought them, and long have they stood against us. No more - the Time of the Orc has come!;x
-################################;x }
-##### WORLD BANK DECISIONS #####;x {
-################################;x
-set_initial_leader_title;Set Initial Leader;x
-set_initial_leader_desc;A realm has just spruing into existence. Let's set their initial leader traits.;x
 #################################################;x }
 ##### ORGANIZATIONS AND ALLIANCES DECISIONS #####;x {
 #################################################;x

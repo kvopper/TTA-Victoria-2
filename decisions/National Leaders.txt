@@ -3,19 +3,6 @@
 
 # Leaders
 political_decisions = {
-	### WILL BE REMOVED EVENTUALLY
-	generic_leader_decision = {
-		alert = no
-		potential = {
-			ai = no
-			nationalvalue = generic_leader
-			NOT = { has_global_flag = fluff_disabled }
-		}
-		allow = {}
-		effect = {
-			country_event = 34999
-		}
-	}
 	steward_ecthelion_ii = {
 		alert = no
 		picture = "steward_ecthelion_ii"

@@ -8,7 +8,7 @@ culture = kuga
 culture = logath
 religion = men
 government = monarchy
-nationalvalue = generic_leader
+nationalvalue = no_heirloom
 literacy = 0
 civilized = yes
 

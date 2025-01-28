@@ -6,7 +6,7 @@ culture = men_culture
 culture = saerlanner
 religion = men
 government = tribal
-nationalvalue = generic_leader
+nationalvalue = no_heirloom
 literacy = 0
 
 oob = "CAL_oob.txt"

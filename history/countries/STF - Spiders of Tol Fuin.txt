@@ -4,7 +4,7 @@ primary_culture = great_spider
 culture = spider_culture
 religion = spider
 government = tribal
-nationalvalue = generic_leader
+nationalvalue = no_heirloom
 literacy = 0
 
 ruling_party = generic_great_spider_nobles

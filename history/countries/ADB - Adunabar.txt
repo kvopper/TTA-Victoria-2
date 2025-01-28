@@ -11,7 +11,7 @@ culture = kingsmen
 culture = umbarrim
 culture = harnendan
 government = monarchy
-nationalvalue = generic_leader
+nationalvalue = no_heirloom
 civilized = yes
 
 prestige = 1

@@ -4,7 +4,7 @@ primary_culture = great_eagle
 culture = eagle_culture
 religion = eagle
 government = monarchy
-nationalvalue = generic_leader
+nationalvalue = no_heirloom
 literacy = 0
 civilized = yes
 

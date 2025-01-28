@@ -4,7 +4,7 @@ primary_culture = great_spider
 culture = spider_culture
 religion = spider
 government = dominion_1
-nationalvalue = generic_leader
+nationalvalue = no_heirloom
 literacy = 0
 
 prestige = 5

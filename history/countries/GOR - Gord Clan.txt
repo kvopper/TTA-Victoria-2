@@ -4,7 +4,7 @@ primary_culture = logath
 culture = men_culture
 religion = men
 government = monarchy
-nationalvalue = generic_leader
+nationalvalue = no_heirloom
 literacy = 0
 
 oob = "GOR_oob.txt"

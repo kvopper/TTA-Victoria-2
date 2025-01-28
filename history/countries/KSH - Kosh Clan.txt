@@ -5,7 +5,7 @@ culture = orc_culture
 culture = gram_goblin
 religion = orc
 government = tribal
-nationalvalue = generic_leader
+nationalvalue = no_heirloom
 literacy = 0
 
 prestige = 5

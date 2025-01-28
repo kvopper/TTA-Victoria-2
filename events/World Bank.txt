@@ -7513,6 +7513,22 @@ country_event = {
 			# }
 		}
 		
+		any_country = {
+			limit = {
+				exists = yes
+				NOT = { has_country_flag = existing_country }
+			}
+			set_country_flag = existing_country
+		}
+		
+		any_country = {
+			limit = {
+				exists = no
+				has_country_flag = existing_country
+			}
+			clr_country_flag = existing_country
+		}
+		
 		# Refire the cleanup event tomorrow
 		country_event = { id = 99250 days = 1 }
 	}

@@ -4,7 +4,7 @@ primary_culture = hill_trolls
 culture = troll_culture
 religion = troll
 government = tribal
-nationalvalue = generic_leader
+nationalvalue = no_heirloom
 literacy = 0
 
 oob = "ETT_oob.txt"

@@ -6,7 +6,7 @@ culture = men_culture
 religion = men
 culture = rivermen
 government = tribal
-nationalvalue = generic_leader
+nationalvalue = no_heirloom
 literacy = 0.2
 
 oob = "TRE_oob.txt"

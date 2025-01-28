@@ -234,7 +234,6 @@ country_event = {
 	
 	trigger = {
 		tag = GON
-		nationalvalue = generic_leader
 		OR = {
 			has_global_flag = ecthelion_ii_alive
 			has_global_flag = denethor_ii_alive

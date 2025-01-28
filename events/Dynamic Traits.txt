@@ -19,8 +19,6 @@ country_event = {
 	option = {
 		name = "Let's see what our new leader has..."
 		
-		nationalvalue = generic_leader
-		
 		random = {
 			chance = 20
 			add_country_modifier = { name = kind duration = -1 }
@@ -69,7 +67,7 @@ country_event = {
 	desc = "EVTDESC3501"
 	picture = administration
 	
-	trigger = { nationalvalue = generic_leader }
+	is_triggered_only = yes
 	
 	mean_time_to_happen = {
 		months = 360
