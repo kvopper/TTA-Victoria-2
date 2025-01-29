@@ -120,7 +120,7 @@ political_decisions = {
 						tag = ARY
 					}
 				}
-				country_event = 100003
+				country_event = 3502
 				
 				all_core = { add_core = HAR }
 			}
@@ -214,7 +214,7 @@ political_decisions = {
 					}
 					NOT = { tag = THIS }
 				}
-				country_event = 100005
+				country_event = 3504
 			}
 			
 			prestige = 5
@@ -329,7 +329,7 @@ political_decisions = {
 						tag = ARY
 					}
 				}
-				country_event = 100003
+				country_event = 3502
 				
 				all_core = { add_core = HAR }
 			}
@@ -1070,7 +1070,7 @@ political_decisions = {
 		
 		effect = {
 			CHE = {
-				country_event = 100004
+				country_event = 3503
 				all_core = { add_core = HAR }
 			}
 			
@@ -1101,7 +1101,7 @@ political_decisions = {
 		
 		effect = {
 			KHA = {
-				country_event = 100004
+				country_event = 3503
 				all_core = { add_core = HAR }
 			}
 			
@@ -1132,7 +1132,7 @@ political_decisions = {
 		
 		effect = {
 			KHA = {
-				country_event = 100004
+				country_event = 3503
 				all_core = { add_core = HAR }
 			}
 			
@@ -1163,7 +1163,7 @@ political_decisions = {
 		
 		effect = {
 			UMB = {
-				country_event = 100004
+				country_event = 3503
 				all_core = { add_core = HAR }
 			}
 			

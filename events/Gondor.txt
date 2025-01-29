@@ -1417,7 +1417,7 @@ country_event = {
 	option = {
 		name = "We are reclaiming what is rightfully ours"
 		
-		HRD = { country_event = 100006 }
+		HRD = { country_event = 3501 }
 	}
 }
 # }
@@ -2347,5 +2347,27 @@ country_event = {
 			name = harondor_lost
 			duration = -1
 		}
+	}
+}
+
+# Bonuses from Thorongil go away after he has left
+country_event = {
+	id = 50059
+	title = "The Thorongil Departs"
+	desc = "EVTDESC50059"
+	picture = "gondor/thorongil"
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = GON
+		has_country_modifier = GON_increased_naval_concern
+		NOT = { has_country_modifier = thorongil }
+	}
+	
+	option = {
+		name = "Drat"
+		
+		remove_country_modifier = GON_increased_naval_concern
 	}
 }

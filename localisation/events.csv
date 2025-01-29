@@ -28,6 +28,12 @@ EVTDESC3004;To our leadership's dismay, the army was overwhelmed by the Sauronit
 EVTDESC3005;To our leadership's dismay, the army was overwhelmed by the Oppotunistic Rebels that plagued $CAPITAL$. They have been able to for their demands, removing all influences of Anti-Sauron and Sauronite from the government.;x
 EVTDESC3006;$COUNTRY_ADJ$ patriots have risen up in a neighboring realm, and have gained sufficient control that they have sent word they wish to bring the province back to $COUNTRY$. Agreeing would mean risking war, but refusing would mean angering our people.;x
 EVTDESC3008;With the patriot rebellion now over, our provinces have now been brought under control and $COUNTRY_ADJ$ nobility are once again in command.;;;;;;;;;;;;;
+######################################;x }
+##### TRIGGERED FUNCTIONS EVENTS #####;x {
+######################################;x
+EVTDESC3501;Our overlord has acquired some land that they do not claim, but we do. They are willing to give it to us.;x
+EVTDESC3502;One group within our cultural union has claimed sovereignty over our culture. They have proposed a union of all part of our culture. Should we accept?;x
+EVTDESC3504;A more well recognized realm of our cultural brethren have invited us to a council. Undoubtedly, they will want us to recognize them as a stronger realm, formally making us subservient to them. Should we attend?;x
 #########################;x }
 ##### RANDOM EVENTS #####;x {
 #########################;x
@@ -417,6 +423,7 @@ EVTDESC50055;A ranger has quickly risen through the ranks due to their leadershi
 EVTDESC50056;Beregond was a member of the Third Company of the Citadel, tasked with protecting the 7th level of Minas Tirith. Their most sacred duty was to guard the White Tree of Gondor.\n\nDuring the War of the Ring, Beregond saved Faramir from Denethor, killing two of his guards in the process. Afterwards, he was exiled from Minas Tirith by King Aragorn Elessar, and was made Captain of the White Company - the gaurds of Faramir.;x
 EVTDESC50057;The Captain of Ships is the highest naval title in Gondor. The only official person to hold this title was Castamir during the Kin-Strife. It's possible that after the Kin-Strife, that the title was removed given that it gave Castamir the military backing that led to the Kin-Strife. TTA has decided to take the approach that this title was instead changed from being hereditary, to instead an appointed position.;x
 EVTDESC50058;Harondor had been a contested area since the Kin-Strife, and our forces were completely driven out of it in 2885 TA. However, today, worse news have reached us - $FROMCOUNTRY$ has taken over Harondor!;x
+EVTDESC50059;Thorongil has left our court, and so has his wisdom.;x
 ###########################;x }
 ##### ISENGARD EVENTS #####;x {
 ###########################;x
@@ -683,13 +690,6 @@ EVTDESC99003;This is the monthly event to do any sort of cleanup associated with
 EVTDESC99006;Your overlord no longer exists, but your connection to them was never severed.;x
 EVTDESC99250;This is the daily event to do any sort of generic cleanup;x
 EVTDESC90799;This is a function event called whenever a province has some Province Wealth changes queued up;x
-###########################;x }
-##### CLEAN UP EVENTS #####;x {
-###########################;x
-EVTDESC100003;One group within our cultural union has claimed sovereignty over our culture. They have proposed a union of all part of our culture. Should we accept?;x
-EVTDESC100005;A more well recognized realm of our cultural brethren have invited us to a council. Undoubtedly, they will want us to recognize them as a stronger realm, formally making us subservient to them. Should we attend?;x
-EVTDESC100006;Our overlord has acquired some land that they do not claim, but we do. They are willing to give it to us.;x
-EVTDESC100009;Thorongil has left our court, and so has his wisdom.;x
 ##############################################;x }
 ##### ALLIANCE OF DWARVES AND MEN EVENTS #####;x {
 ##############################################;x

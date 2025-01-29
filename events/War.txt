@@ -1,6 +1,8 @@
 # Remove this line to have the validator check for strings in localisation
 # Audax Validator "!" Ignore_1004
 
+# TODO: Remove this file with Gondor Rework
+
 # War Events: {
 # 150000 - 199999 }
 

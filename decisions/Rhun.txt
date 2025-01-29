@@ -43,7 +43,7 @@ political_decisions = {
 				limit = {
 					is_culture_group = easterlings
 				}
-				country_event = 100003
+				country_event = 3502
 				
 				all_core = { add_core = RHU }
 			}
@@ -128,7 +128,7 @@ political_decisions = {
 					is_culture_group = easterlings
 					NOT = { tag = THIS }
 				}
-				country_event = 100005
+				country_event = 3504
 			}
 			
 			prestige = 5

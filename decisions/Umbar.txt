@@ -118,7 +118,7 @@ political_decisions = {
 						tag = ARY
 					}
 				}
-				country_event = 100003
+				country_event = 3502
 				
 				all_core = { add_core = HAR }
 			}
