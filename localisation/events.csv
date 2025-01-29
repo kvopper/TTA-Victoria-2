@@ -28,17 +28,6 @@ EVTDESC3004;To our leadership's dismay, the army was overwhelmed by the Sauronit
 EVTDESC3005;To our leadership's dismay, the army was overwhelmed by the Oppotunistic Rebels that plagued $CAPITAL$. They have been able to for their demands, removing all influences of Anti-Sauron and Sauronite from the government.;x
 EVTDESC3006;$COUNTRY_ADJ$ patriots have risen up in a neighboring realm, and have gained sufficient control that they have sent word they wish to bring the province back to $COUNTRY$. Agreeing would mean risking war, but refusing would mean angering our people.;x
 EVTDESC3008;With the patriot rebellion now over, our provinces have now been brought under control and $COUNTRY_ADJ$ nobility are once again in command.;;;;;;;;;;;;;
-#################################;x }
-##### DYNAMIC TRAITS EVENTS #####;x {
-#################################;x
-EVTDESC3500;We have a new leader! With this, comes a potential for different traits...;x
-EVTDESC3501;It is a sad day for the $COUNTRY$. Our leader has died!;x
-EVTDESC3502;Our ruler's decisions has given/taken away a trait!;x
-EVTDESC3503;Our ruler's decisions has given/taken away a trait!;x
-EVTDESC3504;Our ruler's decisions has given/taken away a trait!;x
-EVTDESC3505;Our ruler's decisions has given/taken away a trait!;x
-EVTDESC3506;Our ruler's decisions has given/taken away a trait!;x
-EVTDESC3508;The monarchy has ended! As such, we will no longer have access to our realm-specific leaders and a new generic leader will be assigned instead. Due to the complexity involved with tracking leaders, the mod team has opted to not allow players to "get back on track". §RIn other words, you will not be able to access the standard leader line for the rest of the game, and will only have access to generic leaders\n\nNote that the "Our Leader has Died" event will fire in order to clean up any leader-specific modifiers that you may have. Your leader may not have died, but the event is needed to ensure that the mod functions as intended§!;x
 #########################;x }
 ##### RANDOM EVENTS #####;x {
 #########################;x
@@ -398,7 +387,6 @@ EVTDESC50018;Every year, an expedition of the healers from Minas Tirith's Houses
 EVTDESC50019;We have neighbors who are of the same alignment as us. It has been suggested that we host a diplomatic feast in the Merethrond, the Great Hall of Feasts in Minas Tirith.;x
 EVTDESC50020;*Casually eating stew. Sees something flicking in the distance. Look at it and see a large flame burning. Stand up and stare at it just to be certain. Accidentally pour out all of your stew. Completely forget about your stew and run to tell the king that...*\n\nThe Beacons of Minas Tirith! The Beacons are lit! Gondor calls for aid.;x
 EVTDESC50021;It is a sad day in $COUNTRY$. The bells of $CAPITAL$ rang at dawn, and it was announce that our leader, Ecthelion II has moved from this world. A day of mourning has been declared.;x
-EVTDESC50022;Our ally $FROMCOUNTRY$ has invited us to the coronation of their next leader. Should we attend?;x
 EVTDESC50023;It has been 7 days since the death of Ecthelion II. The preparations have been completed, and our guests have arrived. Let the coronation commence!;x
 EVTDESC50024;The Lord of Lossarnach, Farlong, has died. His son, Forlong, is expected to become the new Lord of Lossarnach.;x
 EVTDESC50026;The Lord of Lamedon, Asgon, has died. His son, Angbor, is expected to become the new Lord of Lamedon.;x
@@ -615,7 +603,6 @@ EVTDESC50941;Today, Bryn, son of Brand. He would go on to become a brilliant war
 EVTDESC50942;Today, the whole realm celebrates as Bard, son of Brand I, marries Esgreld of Dale.;x
 EVTDESC50943;Today, Girion, son of Bard, was born. He was named for Girion I, the Lord of Dale when Smaug took the Lonely Mountain. The realm breathes a sign of relief knowing the succession has been secured.;x;x
 EVTDESC50944;Today, Girloth, son of Bard, was born. He would go on to become a tactician and general for the Barding Realm, commanding beside his brother-King.;x
-EVTDESC50945;An heir of the line of Bard exists, but they are not old enough to assume the throne. Until this happens, the realm will be ruled by a regency council, usually consisting of the previous ruler's wife and inner council.;x
 EVTDESC50946;Today, Bryn, second son of Brand I, comes of age. Raised in the royal halls of $CAPITAL$, he has been training to be a warrior and general since he was a child. When he was still a young man, the Easterings invaded during the War of the Ring and killed his father in the Siege of Dale. Distraught, he and his brother, Bard II, worked and fought together to free their home from invaders. Afterwards, he commanded the Barding Realm's armies in their conquests against the Easterlings.;x
 EVTDESC50947;Today, Girloth, second son of Bard II, comes of age. Born just after the War of the Ring, he grew up in a time of great rebuilding an expansion for the kingdom -- Dale has been rebuilt, and his father, Bard II, with the help of his brother Bryn, had taken the fight to the Easterlings. Their success left a lasting impression on Girloth. He devoted his studies to military tactics, and become of the best generals the kingdom had to offer while he lived.;x
 EVTDESC50948;With the dust settled and Erebor officially under our control, the Longbeards still remaining in Erebor have come to us asking that they at least retain control over Erebor. They propose to recognize our claim to the land surrounding the Lonely Mountain, and in return, we will relinquish control and claim over Erebor itself.;x
@@ -702,7 +689,6 @@ EVTDESC90799;This is a function event called whenever a province has some Provin
 EVTDESC100003;One group within our cultural union has claimed sovereignty over our culture. They have proposed a union of all part of our culture. Should we accept?;x
 EVTDESC100005;A more well recognized realm of our cultural brethren have invited us to a council. Undoubtedly, they will want us to recognize them as a stronger realm, formally making us subservient to them. Should we attend?;x
 EVTDESC100006;Our overlord has acquired some land that they do not claim, but we do. They are willing to give it to us.;x
-EVTDESC100008;We have a generic leader when there is a unique leader that we can be using. Let's use that leader.;x
 EVTDESC100009;Thorongil has left our court, and so has his wisdom.;x
 ##############################################;x }
 ##### ALLIANCE OF DWARVES AND MEN EVENTS #####;x {

@@ -1,0 +1,32 @@
+# Remove this line to have the validator check for strings in localisation
+# Audax Validator "!" Ignore_1004
+
+# Triggered Functions Events: {
+# 3500 - 3599 }
+
+# Generic Leader Died Cleanup
+country_event = {
+	id = 3500
+	title = "Generic Leader Cleanup"
+	desc = "This event cleans up items when a leader dies"
+	picture = administration
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Drat"
+		
+		FROM = {
+			# Reset flavor specific modifiers
+			remove_country_modifier = council_of_gondor
+			
+			# Reset flavor specific flags
+			clr_country_flag = leader_visited_tomb_of_elendil
+			
+			# Reset Palantir usage
+			clr_country_flag = using_palantiri
+			clr_country_flag = lost_contest_of_wills_to_sauron
+			remove_country_modifier = palantir_madness
+		}
+	}
+}

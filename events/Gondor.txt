@@ -861,62 +861,13 @@ country_event = {
 	option = {
 		name = "He will be missed"
 		
-		# If Denethor II is alive, we know the next leader
-		random_owned = {
-			limit = {
-				owner = { has_global_flag = denethor_ii_alive }
-			}
-			owner = {
-				set_country_flag = knows_next_leader
-				
-				any_country = {
-					limit = {
-						exists = yes
-						ruling_party = GON_ecthelion_ii
-					}
-					set_country_flag = knows_next_leader
-				}
-			}
-		}
+		plurality = 5
 		
-		# Kills Ecthelion II and coronates the new leader
-		country_event = 3501
+		FOR = { country_event = 3500 } # Generic Leader Died Cleanup
 		
-		any_country = {
-			limit = {
-				exists = yes
-				ruling_party = GON_ecthelion_ii
-			}
-			country_event = 3501
-		}
-		
-		random_owned = {
-			limit = {
-				owner = { has_global_flag = denethor_ii_alive }
-			}
-			owner = {
-				ruling_party = GON_denethor_ii
-				
-				any_country = {
-					limit = {
-						exists = yes
-						ruling_party = GON_ecthelion_ii
-					}
-					ruling_party = GON_denethor_ii
-				}
-			}
-		}
+		ruling_party_ideology = house_of_stewards
 		
 		clr_global_flag = ecthelion_ii_alive
-		
-		# Invites non-puppet allies to the coronation
-		any_country = {
-			limit = {
-				alliance_with = THIS
-				NOT = { is_substate = yes }
-			}
-			country_event = 3507
-		}
 		
 		# Denethor hated and was jealous of Thorongil. If Thorongil was still an advisor when Ecthelion II died, he would have left/been expelled from the court
 		remove_country_modifier = thorongil
@@ -2174,27 +2125,11 @@ country_event = {
 	option = {
 		name = "He will be missed"
 		
-		# Kills Denethor II and coronates the new leader
-		country_event = 3501
+		plurality = 5
 		
-		any_country = {
-			limit = {
-				exists = yes
-				ruling_party = GON_denethor_ii
-			}
-			country_event = 3501
-		}
+		FOR = { country_event = 3500 } # Generic Leader Died Cleanup
 		
 		clr_country_flag = denethor_ii_alive
-		
-		# Invites non-puppet allies to the coronation
-		any_country = {
-			limit = {
-				alliance_with = THIS
-				NOT = { is_substate = yes }
-			}
-			country_event = 3507
-		}
 	}
 }
 # }

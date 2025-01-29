@@ -3,7 +3,7 @@
 # 2500 - 2899: CBs and Cores
 # 2900 - 2999: Claim CBs
 # 3000 - 3499: Revolt Events
-# 3500 - 3599: Dynamic Traits
+# 3500 - 3599: Triggered Functions
 # 3600 - 3999: Random Events
 # 5000 - 5999: Small Mechanics
 # 9500 - 9999: Pop Management

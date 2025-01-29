@@ -18,13 +18,12 @@ country_event = {
 		NOT = {
 			has_country_modifier = observer_mode
 		}
-		money = 10000
 	}
 	
 	option = {
 		name = "Of Course!"
 		
-		treasury = -10000
+		add_tax_relative_income = -30
 		
 		any_pop = {
 			limit = {
@@ -32,7 +31,6 @@ country_event = {
 			}
 			militancy = -1
 		}
-		change_variable = { which = strata_support value = 1 }
 	}
 	
 	option = {
@@ -44,7 +42,6 @@ country_event = {
 			}
 			militancy = -1
 		}
-		change_variable = { which = strata_support value = -1 }
 	}
 }
 
@@ -61,44 +58,40 @@ country_event = {
 		NOT = {
 			has_country_modifier = observer_mode
 		}
-		money = 15000
+		money = 51000
 	}
 	
 	option = {
 		name = "Show them the door"
 
-		prestige = 1
-		change_variable = { which = wisdom value = 1 }
+		prestige = -5
 	}
 	
 	option = {
 		name = "Let them have the aid"
 		
-		treasury = -10000
+		treasury = -50000
 		random_country = {
 			limit = {
-				THIS = { good_evil_alignment = good_alignment }
-				NOT = { good_evil_alignment = good_alignment }
-				NOT = { alliance_with = THIS }
+				exists = yes
+				OR = {
+					alliance_with = THIS
+					AND = {
+						THIS = { good_evil_alignment = good_alignment }
+						good_evil_alignment = good_alignment
+					}
+					AND = {
+						THIS = { good_evil_alignment = neutral_alignment }
+						good_evil_alignment = neutral_alignment
+					}
+					AND = {
+						THIS = { good_evil_alignment = evil_alignment }
+						good_evil_alignment = evil_alignment
+					}
+				}
 			}
-			treasury = 10000
+			treasury = 50000
 		}
-		random_country = {
-			limit = {
-				THIS = { good_evil_alignment = neutral_alignment }
-				NOT = { alliance_with = THIS }
-			}
-			treasury = 10000
-		}
-		random_country = {
-			limit = {
-				THIS = { good_evil_alignment = evil_alignment }
-				NOT = { good_evil_alignment = evil_alignment }
-				NOT = { alliance_with = THIS }
-			}
-			treasury = 10000
-		}
-		change_variable = { which = wisdom value = -1 }
 	}
 }
 
@@ -121,7 +114,6 @@ country_event = {
 		name = "I've better things to do than play golf!"
 		
 		prestige = 1
-		change_variable = { which = work_ethic value = 1 }
 	}
 	
 	option = {
@@ -133,7 +125,6 @@ country_event = {
 			}
 			consciousness = 1
 		}
-		change_variable = { which = work_ethic value = -1 }
 	}
 }
 
@@ -150,13 +141,13 @@ country_event = {
 		NOT = {
 			has_country_modifier = observer_mode
 		}
-		money = 15000
 	}
 	
 	option = {
 		name = "Of Course!"
 		
-		treasury = -10000
+		add_tax_relative_income = -30
+		plurality = -3
 		
 		any_pop = {
 			limit = {
@@ -164,7 +155,6 @@ country_event = {
 			}
 			militancy = -1
 		}
-		change_variable = { which = generosity value = 1 }
 	}
 	
 	option = {
@@ -178,7 +168,6 @@ country_event = {
 			}
 			consciousness = 1
 		}
-		change_variable = { which = generosity value = -1 }
 	}
 }
 
@@ -200,15 +189,14 @@ country_event = {
 	option = {
 		name = "No. This court does not take bribes."
 
-		prestige = 5
-		change_variable = { which = corruption value = 1 }
+		prestige = 2
 	}
 	
 	option = {
 		name = "I mean, a little money can't hurt..."
 		
-		treasury = 2000
-		change_variable = { which = corruption value = -1 }
+		add_tax_relative_income = 30
+		plurality = 0.5
 	}
 }
 
@@ -283,16 +271,15 @@ country_event = {
 	option = {
 		name = "Surround myself with wise counsel."
 
-		prestige = -1
+		prestige = -3
 
 		any_pop = {
 			limit = {
 				strata = rich
 			}
-			consciousness = -1
-			militancy = -1
+			consciousness = -3
+			militancy = -3
 		}
-		change_variable = { which = wisdom value = 1 }
 	}
 	
 	option = {
@@ -306,7 +293,6 @@ country_event = {
 			}
 			consciousness = 1
 		}
-		change_variable = { which = wisdom value = -1 }
 	}
 }
 
@@ -440,10 +426,12 @@ country_event = {
 			}
 			consciousness = -1
 		}
-		change_variable = { which = corruption value = -1 }
+		plurality = 1
 	}
 	option = {
 		name = "Try to eradicate the problems."
+		add_tax_relative_income = -180
+		plurality = -1
 		any_pop = {
 			limit = {
 				strata = poor
@@ -456,7 +444,6 @@ country_event = {
 			}
 			consciousness = 1
 		}
-		change_variable = { which = corruption value = 1 }
 	}
 }
 
@@ -473,19 +460,17 @@ country_event = {
 		NOT = {
 			has_country_modifier = observer_mode
 		}
-		money = 1500
 	}
 	
 	option = {
 		name = "Grant aid."
-		treasury = -1000
+		add_tax_relative_income = -60
 		any_pop = {
 			limit = {
 				strata = rich
 			}
 			consciousness = -1
 		}
-		change_variable = { which = strata_support value = -1 }
 	}
 	option = {
 		name = "Deny aid."
@@ -495,7 +480,6 @@ country_event = {
 			}
 			consciousness = 1
 		}
-		change_variable = { which = strata_support value = 1 }
 	}
 }
 
@@ -530,7 +514,7 @@ country_event = {
 			}
 			consciousness = 1
 		}
-		change_variable = { which = strata_support value = 1 }
+		plurality = -0.5
 	}
 	option = {
 		name = "Deny petition."
@@ -546,7 +530,7 @@ country_event = {
 			}
 			consciousness = -1
 		}
-		change_variable = { which = strata_support value = -1 }
+		plurality = 0.5
 	}
 }
 
@@ -588,7 +572,6 @@ country_event = {
 		name = "It's time for permanent change."
 		prestige = -15
 		political_reform = discouraged_serfdom
-		change_variable = { which = strata_support value = 1 }
 		ai_chance = { factor = 5 }
 	}
 	option = {
@@ -605,7 +588,7 @@ country_event = {
 			}
 			militancy = 1
 		}
-		change_variable = { which = strata_support value = -1 }
+		plurality = 0.5
 		ai_chance = { factor = 50 }
 	}
 }
@@ -633,13 +616,12 @@ country_event = {
 	
 	option = {
 		name = "Hire them."
-		treasury = -500
+		add_tax_relative_income = -15
 		prestige = 3
 	}
 	option = {
 		name = "Decline their services."
-		prestige = -1
-		change_variable = { which = strata_support value = -1 }
+		prestige = -5
 	}
 }
 
@@ -698,8 +680,7 @@ country_event = {
 		random_state = {
 			poor_strata = { reduce_pop = 0.96 }
 		}
-		add_tax_relative_income	= -90
-		change_variable = { which = strata_support value = 1 }
+		add_tax_relative_income = -90
 	}
 	
 	option = {
@@ -710,7 +691,6 @@ country_event = {
 				militancy = 1
 			}
 		}
-		change_variable = { which = strata_support value = -1 }
 	}
 }
 
@@ -778,13 +758,11 @@ country_event = {
 	option = {
 		name = "Search high!"
 		rich_strata = { militancy = 2 }
-		change_variable = { which = strata_support value = 1 }
 	}
 	
 	option = {
 		name = "Search low!"
 		poor_strata = { militancy = 1 }
-		change_variable = { which = strata_support value = -1 }
 	}
 }
 
@@ -804,14 +782,12 @@ country_event = {
 		any_owned_province = {
 			port = yes
 		}
-		money = 1000
 	}
 	
 	option = {
 		name = "Put together a naval force to seek out and quell this monster"
-		money = -500
+		add_tax_relative_income = -30
 		plurality = -0.2
-		change_variable = { which = work_ethic value = 1 }
 	}
 	
 	option = {
@@ -822,7 +798,6 @@ country_event = {
 			name = national_economic_downturn
 			duration = 180
 		}
-		change_variable = { which = work_ethic value = -1 }
 	}
 }
 
@@ -842,14 +817,12 @@ country_event = {
 		any_owned_province = {
 			is_capital = no
 		}
-		money = 1000
 	}
 	
 	option = {
 		name = "Send some men to root out any wolves' dens"
-		money = -500
-		plurality = -0.2
-		change_variable = { which = work_ethic value = 1 }
+		add_tax_relative_income = -25
+		plurality = -0.25
 	}
 	
 	option = {
@@ -860,7 +833,6 @@ country_event = {
 			name = national_economic_downturn
 			duration = 180
 		}
-		change_variable = { which = work_ethic value = -1 }
 	}
 }
 
@@ -883,7 +855,7 @@ country_event = {
 
 	option = {
 		name = "Improve their conditions."
-		treasury = -500
+		add_tax_relative_income = -45
 		any_pop = {
 			limit = {
 				strata = poor
@@ -912,7 +884,7 @@ country_event = {
 			}
 			militancy = 1
 		}
-		change_variable = { which = strata_support value = -1 }
+		plurality = 0.5
 		ai_chance = { factor = 50 }
 	}
 }

@@ -1192,11 +1192,10 @@ country_event = {
 			}
 		}
 		
-		# Clears leader-specific modifiers (generic and specific) and handles standard popular anxiety changes
-		country_event = 3501
+		# Bard I's death hits harder than the standard leader [due to him being a good ruler and being the start of the dynasty]
+		plurality = 10
 		
-		# Bard I's death hits harder than the standard leader [due to him being a good ruler and being the start of the dynasty
-		plurality = 5
+		FOR = { country_event = 3500 } # Generic Leader Died Cleanup
 		
 		# Set the next leader
 		random_owned = {
@@ -1220,18 +1219,10 @@ country_event = {
 			owner = { country_event = 50934 }
 		}
 		
-		random_owned = {
-			limit = {
-				owner = { has_country_flag = regency_next_leader }
-			}
-			owner = { country_event = 50945 }
-		}
-		
 		# Clean up to make sure we don't break something with a flag being left around
 		clr_country_flag = bain_i_next_leader
 		clr_country_flag = brand_i_next_leader
 		clr_country_flag = bard_ii_next_leader
-		clr_country_flag = regency_next_leader
 		
 		FOR = { country_event = 33006 }
 	}
@@ -1346,8 +1337,9 @@ country_event = {
 			}
 		}
 		
-		# Clears leader-specific modifiers (generic and specific) and handles standard popular anxiety changes
-		country_event = 3501
+		plurality = 5
+		
+		FOR = { country_event = 3500 } # Generic Leader Died Cleanup
 		
 		# Set the next leader
 		random_owned = {
@@ -1364,17 +1356,9 @@ country_event = {
 			owner = { country_event = 50934 }
 		}
 		
-		random_owned = {
-			limit = {
-				owner = { has_country_flag = regency_next_leader }
-			}
-			owner = { country_event = 50945 }
-		}
-		
 		# Clean up to make sure we don't break something with a flag being left around
 		clr_country_flag = brand_i_next_leader
 		clr_country_flag = bard_ii_next_leader
-		clr_country_flag = regency_next_leader
 		
 		FOR = { country_event = 33007 }
 	}
@@ -1484,8 +1468,9 @@ country_event = {
 			}
 		}
 		
-		# Clears leader-specific modifiers (generic and specific) and handles standard popular anxiety changes
-		country_event = 3501
+		plurality = 5
+		
+		FOR = { country_event = 3500 } # Generic Leader Died Cleanup
 		
 		# Set the next leader
 		random_owned = {
@@ -1495,16 +1480,8 @@ country_event = {
 			owner = { country_event = 50934 }
 		}
 		
-		random_owned = {
-			limit = {
-				owner = { has_country_flag = regency_next_leader }
-			}
-			owner = { country_event = 50945 }
-		}
-		
 		# Clean up to make sure we don't break something with a flag being left around
 		clr_country_flag = bard_ii_next_leader
-		clr_country_flag = regency_next_leader
 		
 		FOR = { country_event = 33008 }
 	}
@@ -1574,8 +1551,9 @@ country_event = {
 	option = {
 		name = "He will be missed"
 		
-		# Clears leader-specific modifiers (generic and specific), sets Generic Leader as leader and handles standard popular anxiety changes
-		country_event = 3501
+		plurality = 5
+		
+		FOR = { country_event = 3500 } # Generic Leader Died Cleanup
 		
 		FOR = { country_event = 33009 }
 	}
@@ -1927,23 +1905,7 @@ country_event = {
 }
 # }
 
-# Regency
-country_event = {
-	id = 50945
-	title = "Regency!"
-	desc = "EVTDESC50945"
-	picture = "generic/coronation"
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = "At least we have an heir"
-		
-		prestige = -5
-		
-		plurality = -2
-	}
-}
+# Event 50945 made obselete by political rework. Removed
 
 # Bryn, Royal Warrior
 country_event = {
