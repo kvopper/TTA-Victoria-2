@@ -26,6 +26,7 @@ All notable changes will be documented in this file.
  - New flags by SneakyDeer and Argelia4president
  - Imported models from CK2 by Trigori
  - Old leader system (that replaced national value) replaced with heirloom system
+ - Dynamic Traits removed
 
 ## [v0.5 Bearers of the Black Arrow](https://github.com/The-Third-Age/TTA-Victoria-2/releases/tag/v0.5) - 2024-12-23
 
