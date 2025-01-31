@@ -190,6 +190,7 @@ country_event = {
 		name = "Intolerable!"
 		random_country = {
 			limit = {
+				neighbour = THIS
 				NOT = {
 					tag = THIS
 					guild_autonomy_policy = independent_guilds
