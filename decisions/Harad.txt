@@ -377,6 +377,7 @@ political_decisions = {
 			is_greater_power = yes
 			NOT = { is_culture_group = haradrim }
 			NOT = { is_culture_group = khandish }
+			NOT = { tag = UMB }
 			NOT = { exists = HAR }
 			OR = {
 				HRN = {
