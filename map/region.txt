@@ -347,7 +347,7 @@ SHI_1034 = { 1034 1032 1033 } # Sarn Marches
 SHI_1036 = { 1036 1035 1290 1291 1292 } # Southfarthing
 SHI_1040 = { 1040 1038 1039 1293 1294 } # Eastfarthing
 SHI_1031 = { 1031 1029 1037 1295 1296 1297 } # Westfarthing
-SHI_1030 = { 1030 64 1298 1299 1300 } # Westmarch
+SHI_1030 = { 1030 64 1298 1299 1300 } # Far Downs
 SHI_1041 = { 1041 127 1301 1302 1303 1304 } # Northfarthing
 
 DND_1309 = { 1309 1305 1306 1307 1308 } # Hyarmenyaména

@@ -225,7 +225,7 @@
 	}
 }
 
-# Gildor's Halls
+# Westmarch
 64 = {
 	aristocrats = {
 		culture = fallohide

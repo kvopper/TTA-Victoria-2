@@ -300,7 +300,7 @@ political_decisions = {
 			set_variable = { which = folyavuld_name value = 1 }
 			set_variable = { which = nan_annen_name value = 2 }
 			set_variable = { which = southern_gazar_narkad_name value = 0 }
-			set_variable = { which = emyn_beraid_name value = 2 }
+			set_variable = { which = emyn_beraid_name value = 1 }
 			set_variable = { which = western_gazar_barak_name value = 1 }
 			set_variable = { which = upper_othnen_vale_name value = 0 }
 			set_variable = { which = rhulindon_name value = 3 }
@@ -325,6 +325,7 @@ political_decisions = {
 			set_variable = { which = white_mountains_name value = 2 }
 			set_variable = { which = west-march_name value = 0 }
 			set_variable = { which = ethir_surubeki_name value = 1 }
+			set_variable = { which = far_downs_name value = 0 }
 			set_variable = { which = surubeki_vale_name value = 1 }
 			set_variable = { which = fonntir_name value = 1 }
 			set_variable = { which = woodman's_realm_name value = 0 }
