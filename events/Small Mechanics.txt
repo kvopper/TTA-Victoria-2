@@ -208,6 +208,7 @@ country_event = {
 	
 	trigger = {
 		has_country_flag = using_palantiri
+		NOT = { has_global_flag = event_5010_lock }
 		
 		FOR = {
 			any_neighbor_country = {
@@ -218,19 +219,31 @@ country_event = {
 	}
 	
 	mean_time_to_happen = { months = 36 }
+
+	immediate = {
+		set_global_flag = event_5010_lock
+		random_country = {
+			limit = {
+				alliance_with = THIS
+				NOT = { vassal_of = THIS }
+			}
+			set_country_flag = event_5010_target
+		}
+	}
 	
 	option = {
 		name = "Strike first"
 		
 		random_country = {
 			limit = {
-				alliance_with = THIS
-				NOT = { vassal_of = THIS }
+				has_country_flag = event_5010_target
 			}
 			leave_alliance = THIS
 			THIS = { badboy = 1 }
 			add_casus_belli = { type = humiliate months = 24 target = THIS }
+			clr_country_flag = event_5010_target
 		}
+		clr_global_flag = event_5010_lock
 	}
 	
 	option = {
@@ -238,11 +251,12 @@ country_event = {
 		
 		random_country = {
 			limit = {
-				alliance_with = THIS
+				has_country_flag = event_5010_target
 			}
 			leave_alliance = THIS
 			prestige = -5
 		}
+		clr_global_flag = event_5010_lock
 	}
 }
 
