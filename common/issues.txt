@@ -20,21 +20,166 @@ party_issues = {
 	tax_policy = {
 		laissez_faire = {
 			max_tax = 0.5
+			
+			rules = {
+				# Player touch factories
+				build_factory = yes
+				expand_factory = yes
+				open_factory = yes
+				destroy_factory = yes
+				factory_priority = yes
+				can_subsidise = yes
+				can_invest_in_pop_projects = yes
+				
+				# Pops touch factories
+				pop_build_factory = yes
+				pop_expand_factory = yes
+				pop_open_factory = yes
+				pop_build_factory_invest = yes
+				pop_expand_factory_invest = yes
+				delete_factory_if_no_input = yes
+				
+				# Investment
+				allow_foreign_investment = yes
+				open_factory_invest = yes
+				build_factory_invest = yes
+				expand_factory_invest = yes
+				build_railway_invest = yes
+				
+				# Other
+				build_railway = yes
+			}
 		}
 		vassal_interventionism = {
 			min_tax = 0.15
 			max_tax = 0.65
+			
+			rules = {
+				# Player touch factories
+				build_factory = yes
+				expand_factory = yes
+				open_factory = yes
+				destroy_factory = yes
+				factory_priority = yes
+				can_subsidise = yes
+				can_invest_in_pop_projects = yes
+				
+				# Pops touch factories
+				pop_build_factory = yes
+				pop_expand_factory = yes
+				pop_open_factory = yes
+				pop_build_factory_invest = yes
+				pop_expand_factory_invest = yes
+				delete_factory_if_no_input = yes
+				
+				# Investment
+				allow_foreign_investment = yes
+				open_factory_invest = yes
+				build_factory_invest = yes
+				expand_factory_invest = yes
+				build_railway_invest = yes
+				
+				# Other
+				build_railway = yes
+			}
 		}
 		interventionism = {
 			min_tax = 0.15
 			max_tax = 0.65
+			
+			rules = {
+				# Player touch factories
+				build_factory = yes
+				expand_factory = yes
+				open_factory = yes
+				destroy_factory = yes
+				factory_priority = yes
+				can_subsidise = yes
+				can_invest_in_pop_projects = yes
+				
+				# Pops touch factories
+				pop_build_factory = yes
+				pop_expand_factory = yes
+				pop_open_factory = yes
+				pop_build_factory_invest = yes
+				pop_expand_factory_invest = yes
+				delete_factory_if_no_input = yes
+				
+				# Investment
+				allow_foreign_investment = yes
+				open_factory_invest = yes
+				build_factory_invest = yes
+				expand_factory_invest = yes
+				build_railway_invest = yes
+				
+				# Other
+				build_railway = yes
+			}
 		}
 		state_capitalism = {
 			min_tax = 0.25
 			max_tax = 0.75
+			
+			rules = {
+				# Player touch factories
+				build_factory = yes
+				expand_factory = yes
+				open_factory = yes
+				destroy_factory = yes
+				factory_priority = yes
+				can_subsidise = yes
+				can_invest_in_pop_projects = yes
+				
+				# Pops touch factories
+				pop_build_factory = yes
+				pop_expand_factory = yes
+				pop_open_factory = yes
+				pop_build_factory_invest = yes
+				pop_expand_factory_invest = yes
+				delete_factory_if_no_input = yes
+				
+				# Investment
+				allow_foreign_investment = yes
+				open_factory_invest = yes
+				build_factory_invest = yes
+				expand_factory_invest = yes
+				build_railway_invest = yes
+				
+				# Other
+				build_railway = yes
+			}
 		}
 		planned_economy = {
 			min_tax = 0.5
+			
+			rules = {
+				# Player touch factories
+				build_factory = yes
+				expand_factory = yes
+				open_factory = yes
+				destroy_factory = yes
+				factory_priority = yes
+				can_subsidise = yes
+				can_invest_in_pop_projects = yes
+				
+				# Pops touch factories
+				pop_build_factory = yes
+				pop_expand_factory = yes
+				pop_open_factory = yes
+				pop_build_factory_invest = yes
+				pop_expand_factory_invest = yes
+				delete_factory_if_no_input = yes
+				
+				# Investment
+				allow_foreign_investment = yes
+				open_factory_invest = yes
+				build_factory_invest = yes
+				expand_factory_invest = yes
+				build_railway_invest = yes
+				
+				# Other
+				build_railway = yes
+			}
 		}
 	}
 	language_policy = {
