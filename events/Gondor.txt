@@ -830,6 +830,7 @@ country_event = {
 	trigger = {
 		has_country_flag = GON_content
 		has_global_flag = ecthelion_ii_alive
+		year = 2980
 		NOT = { ruling_party = GON_ecthelion_ii }
 	}
 	
@@ -2071,6 +2072,7 @@ country_event = {
 	trigger = {
 		has_country_flag = GON_content
 		has_global_flag = denethor_ii_alive
+		year = 3019
 		NOT = { ruling_party = GON_denethor_ii }
 	}
 	
