@@ -255,6 +255,7 @@ country_event = {
 			}
 			leave_alliance = THIS
 			prestige = -5
+			clr_country_flag = event_5010_target
 		}
 		clr_global_flag = event_5010_lock
 	}
