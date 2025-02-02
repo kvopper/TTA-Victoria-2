@@ -6,16 +6,6 @@ NATIONALIST_UNION_MOVEMENT_DESC;Movement calling for the forming of §Y$COUNTRY$
 NATIONALIST_LIBERATION_MOVEMENT_DESC;Movement calling for the liberation of §Y$COUNTRY$§!;x
 political_reforms;Political Reforms;x
 POLITICS_NOBILITY_PRIVILEGE;Nobility Privilege;x
-guild_autonomy_policy;Guild Autonomy;x
-independent_guilds;Independent;x
-independent_guilds_desc;Guilds are completely independent of the ruler of the realm. The realm has no influence over guilds whatsoever.;x
-independent_guilds_l;Independent;x
-oversight_guilds;Oversight;x
-oversight_guilds_desc;Guilds are overseen by servants of the realm. The realm cannot tell guilds where they should be or what their economic goals should be. However, they can enforce rules and support important guilds as needed.;x
-oversight_guilds_l;Oversight;x
-controlled_guilds;Controlled;x
-controlled_guilds_desc;Guilds are completely controlled by the realm.;x
-controlled_guilds_l;Controlled;x
 border_policy;Borders;x
 closed_borders;Closed Borders;x
 closed_borders_l;Closed Borders;x

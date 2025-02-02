@@ -66,28 +66,6 @@ country_event = {
 			dynamic_loc_slot_16 = { state_scope = { change_region_name = "Border Control (§GCurrently §MOpen§!)" } }
 		}
 		
-		random_country = {
-			limit = {
-				tag = FROM
-				guild_autonomy_policy = independent_guilds
-			}
-			dynamic_loc_slot_17 = { state_scope = { change_region_name = "Guild Autonomy (§GCurrently §MIndependent§!)" } }
-		}
-		random_country = {
-			limit = {
-				tag = FROM
-				guild_autonomy_policy = oversight_guilds
-			}
-			dynamic_loc_slot_17 = { state_scope = { change_region_name = "Guild Autonomy (§GCurrently §MOversight§!)" } }
-		}
-		random_country = {
-			limit = {
-				tag = FROM
-				guild_autonomy_policy = controlled_guilds
-			}
-			dynamic_loc_slot_17 = { state_scope = { change_region_name = "Guild Autonomy (§GCurrently §MControlled§!)" } }
-		}
-		
 		FROM = { country_event = { id = 10001 days = 0 } }
 	}
 	
@@ -124,10 +102,6 @@ country_event = {
 		empty_line_loc = {}
 		dynamic_loc_slot_16 = {}
 		empty_line_loc = {}
-		
-		empty_line_loc = {}
-		dynamic_loc_slot_17 = {}
-		empty_line_loc = {}
 	}
 	
 	option = {
@@ -154,20 +128,6 @@ country_event = {
 				has_global_flag = hidden_effects
 			}
 			country_event = { id = 10004 days = 0 }
-		}
-		clr_global_flag = hidden_effects
-	}
-	
-	option = {
-		name = ""
-		
-		set_global_flag = hidden_effects
-		random_country = {
-			limit = {
-				tag = FOR
-				has_global_flag = hidden_effects
-			}
-			country_event = { id = 10006 days = 0 }
 		}
 		clr_global_flag = hidden_effects
 	}
@@ -564,140 +524,6 @@ country_event = {
 		clr_global_flag = hidden_effects
 		
 		settings_borders_open_loc = {}
-	}
-}
-
-# Guild Autonomy Text Setter
-country_event = {
-	id = 10006
-	title = "Guild Autonomy Text Setter"
-	desc = ""
-	picture = "settings"
-	
-	is_triggered_only = yes
-	allow_multiple_instances = yes
-	
-	immediate = {
-		dynamic_loc_slot_15 = { state_scope = { change_region_name = "Independent" } }
-		dynamic_loc_slot_16 = { state_scope = { change_region_name = "Oversight" } }
-		dynamic_loc_slot_17 = { state_scope = { change_region_name = "Controlled" } }
-		
-		random_country = {
-			limit = {
-				tag = FROM
-				guild_autonomy_policy = independent_guilds
-			}
-			dynamic_loc_slot_15 = { state_scope = { change_region_name = "Independent (§GCurrently Enabled§!)" } }
-		}
-		random_country = {
-			limit = {
-				tag = FROM
-				guild_autonomy_policy = oversight_guilds
-			}
-			dynamic_loc_slot_16 = { state_scope = { change_region_name = "Oversight (§GCurrently Enabled§!)" } }
-		}
-		random_country = {
-			limit = {
-				tag = FROM
-				guild_autonomy_policy = controlled_guilds
-			}
-			dynamic_loc_slot_17 = { state_scope = { change_region_name = "Controlled (§GCurrently Enabled§!)" } }
-		}
-		
-		FROM = { country_event = { id = 10007 days = 0 } }
-	}
-	
-	option = {
-		name = "next"
-	}
-}
-
-# Guild Autonomy Settings
-country_event = {
-	id = 10007
-	title = "Guild Autonomy Settings"
-	desc = ""
-	picture = "settings"
-	
-	is_triggered_only = yes
-	allow_multiple_instances = yes
-	
-	immediate = {
-		end_color_loc = {}
-		empty_line_loc = {}
-		empty_line_loc = {}
-		empty_line_loc = {}
-		empty_line_loc = {}
-		empty_line_loc = {}
-		empty_line_loc = {}
-		empty_line_loc = {}
-		empty_line_loc = {}
-		
-		empty_line_loc = {}
-		dynamic_loc_slot_15 = {}
-		empty_line_loc = {}
-		
-		empty_line_loc = {}
-		dynamic_loc_slot_16 = {}
-		empty_line_loc = {}
-		
-		empty_line_loc = {}
-		dynamic_loc_slot_17 = {}
-		empty_line_loc = {}
-	}
-	
-	option = {
-		name = ""
-		
-		political_reform = independent_guilds
-		
-		set_global_flag = hidden_effects
-		random_country = {
-			limit = {
-				tag = FOR
-				has_global_flag = hidden_effects
-			}
-			country_event = { id = 10000 days = 0 }
-		}
-		clr_global_flag = hidden_effects
-		
-		settings_guild_autonomy_independent_loc = {}
-	}
-	
-	option = {
-		name = ""
-		
-		political_reform = oversight_guilds
-		
-		set_global_flag = hidden_effects
-		random_country = {
-			limit = {
-				tag = FOR
-				has_global_flag = hidden_effects
-			}
-			country_event = { id = 10000 days = 0 }
-		}
-		clr_global_flag = hidden_effects
-		
-		settings_guild_autonomy_oversight_loc = {}
-	}
-	
-	option = {
-		name = ""
-		
-		political_reform = controlled_guilds
-		
-		set_global_flag = hidden_effects
-		random_country = {
-			limit = {
-				tag = FOR
-				has_global_flag = hidden_effects
-			}
-			country_event = { id = 10000 days = 0 }
-		}
-		clr_global_flag = hidden_effects
-		
-		settings_guild_autonomy_controlled_loc = {}
 	}
 }
 
