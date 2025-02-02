@@ -4,7 +4,7 @@ primary_culture = galadhrim
 culture = elven_culture
 religion = elven
 government = monarchy
-nationalvalue = no_heirloom
+nationalvalue = nenya
 literacy = 0.5
 civilized = yes
 

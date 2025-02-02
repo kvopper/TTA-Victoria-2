@@ -5,7 +5,7 @@ culture = men_culture
 culture = adhalling
 religion = men
 government = monarchy
-nationalvalue = no_heirloom
+nationalvalue = black_arrow
 literacy = 0.2
 civilized = yes
 

@@ -1,2 +1,39 @@
 no_heirloom = {
 }
+
+horn_of_gondor = {
+	army_tech_research_bonus = 0.02
+}
+
+horn_of_the_mark = {
+	army_tech_research_bonus = 0.02
+}
+
+red_book_of_the_westmarch = {
+	population_tech_research_bonus = 0.02
+}
+
+black_arrow = {
+	army_tech_research_bonus = 0.02
+}
+
+narya = {
+	population_tech_research_bonus = 0.02
+}
+
+nenya = {
+	population_tech_research_bonus = 0.02
+}
+
+vilya = {
+	population_tech_research_bonus = 0.02
+}
+
+one_ring_of_power = {
+	population_tech_research_bonus = 0.02
+}
+
+ring_of_barahir = {
+	population_tech_research_bonus = 0.01
+	diplomacy_tech_research_bonus = 0.01
+}

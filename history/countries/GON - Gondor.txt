@@ -7,7 +7,7 @@ culture = amrothian
 religion = men
 government = monarchy_2
 plurality = 5
-nationalvalue = no_heirloom
+nationalvalue = horn_of_gondor
 literacy = 0.2
 civilized = yes
 

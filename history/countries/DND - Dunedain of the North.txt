@@ -7,7 +7,7 @@ culture = cardolandrim
 culture = haeranedain
 religion = men
 government = tribal
-nationalvalue = no_heirloom
+nationalvalue = ring_of_barahir
 literacy = 0.2
 civilized = yes
 

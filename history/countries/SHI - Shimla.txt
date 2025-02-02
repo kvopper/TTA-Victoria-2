@@ -7,7 +7,7 @@ culture = stoor
 culture = harfoot
 religion = hobbit
 government = republic
-nationalvalue = no_heirloom
+nationalvalue = red_book_of_the_westmarch
 literacy = 0.2
 civilized = yes
 
