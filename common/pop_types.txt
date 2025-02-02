@@ -358,6 +358,7 @@ migration_chance = {
 		OR = {
 			NOT = { location = { total_pops = 5000 } }
 			NOT = { location = { controlled_by = owner } }
+			pop_majority_ideology = slave_ideology
 		}
 	}
 	group = {
@@ -524,7 +525,10 @@ colonialmigration_chance = {
 	}
 	modifier = {
 		factor = -100
-		pop_majority_ideology = tribal_ideology
+		OR = {
+			pop_majority_ideology = tribal_ideology
+			pop_majority_ideology = slave_ideology
+		}
 	}
 }
 
@@ -534,11 +538,11 @@ emigration_chance = {
 
 	modifier = {
 		factor = -100
-		country = { border_policy = closed_borders }
-	}
-	modifier = {
-		factor = -100
-		NOT = { agree_with_ruling_party = 0.02 }
+		OR = {
+			country = { border_policy = closed_borders }
+			pop_majority_ideology = slave_ideology
+			NOT = { agree_with_ruling_party = 0.02 }
+		}
 	}
 	group = {
 		modifier = {
