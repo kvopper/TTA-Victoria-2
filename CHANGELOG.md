@@ -23,6 +23,7 @@ All notable changes will be documented in this file.
    - Governments used only by 1 or 2 tags have been removed and replaced by the standard generic type
  - More terrain descriptions and tweaks added
  - Some minor extra flavour
+ - Myriad of bug fixes
  - New flags by SneakyDeer and Argelia4president
  - Imported models from CK2 by Trigori
  - Old leader system (that replaced national value) replaced with heirloom system
