@@ -13,6 +13,7 @@
 #	Update the country history files (history/countries) as needed to get the right ruling party, starting upper house and starting decision
 #	Update starting decisions (or whatever flavor unlocks the ideology) to set the ideologies_[ideology name]_active on the tags in question
 #	Update events 14006 and 14007 in events/Election.txt
+#	Update common/governments.txt to allow the ideology in the various government types
 
 # cosmetic. Does nothing in game except define slaves for pop_types
 disenfranchised_group = {
