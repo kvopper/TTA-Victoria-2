@@ -4538,7 +4538,7 @@ CB_ALLOWED_CONCESSION;Concede Defeat;x
 MAINTENANCE_DESC;Maintenance goods need:;x
 PROCEED;Proceed;x
 ENDGAME_HEADLINE;Game Over;x
-ENDGAME_DESC;One hundred Momentous years have passed and we have entered the fourth age. The world is a radically different place, how did your realm do?;x
+ENDGAME_DESC;Over one hundred momentous years have passed and we have entered the Fourth Age. The world is a radically different place, how did your realm do?;x
 NEEDS_BOUGHT;Estimated needs for today:;x
 TOTAL_NEEDS_BOUGHT;Estimated needs cost:;x
 TOTAL_SOLD_FOR;Yesterday we produced $NUM$ §Y$GOOD$§W which sold for $CASH$;x
