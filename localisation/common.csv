@@ -241,7 +241,7 @@ MODIFY_RELATION_EFFECT;§Y$SOURCE$§!'s relation with §Y$TARGET$§! changed wit
 RANK_PRESTIGE;Prestige;x
 RANK_PRESTIGE_D;Prestige is accumulated through cultural development and performing well with your realm;x
 RANK_INDUSTRY;Industrial Power;x
-RANK_INDUSTRY_D;Industry score is a measure of your level of industrialization. It is a combination of the number of factories and the total value of the goods output of your realm. §RYou gain 1 point for every 2500 Guild Artisans employed§!;x
+RANK_INDUSTRY_D;Industry score is a measure of your level of industrialization. It is a combination of the number of guilds and the total value of the goods output of your realm. §RYou gain 1 point for every 2500 Guild Artisans employed§!;x
 RANK_MILITARY;Military Power;x
 RANK_MILITARY_D;The Military score is a measure of the power of your army, it scores your military by both size and equipment.;x
 TYPE_SPECIAL;Other;x
@@ -351,7 +351,7 @@ LEDGER_COUNTRY_STATUS;Status;x
 LEDGER_HEADER_COUNTRYCOMPARE;National Comparison;x
 LEDGER_COUNTRY_TOTAL_POP;Total pop.;x
 LEDGER_COUNTRY_PROVCOUNT;Provinces;x
-LEDGER_COUNTRY_FACTORYCOUNT;Factories;x
+LEDGER_COUNTRY_FACTORYCOUNT;Guilds;x
 LEDGER_COUNTRY_LITERACY;Literacy;x
 LEDGER_COUNTRY_LEADERSHIP;Leadership;x
 LEDGER_COUNTRY_DIVISIONS;Brigades;x
@@ -855,7 +855,7 @@ MILITARY_SCORE;Military: §Y$VAL$§W;x
 INDUSTRIAL_SCORE;Industry: §Y$VAL$§W;x
 BE_POPULATION;Population:;x
 BE_PROVINCES;Provinces:;x
-BE_FACTORIES;Factories:;x
+BE_FACTORIES;Guilds:;x
 BE_LITERACY;Literacy:;x
 BE_NAVY;Warships:;x
 BE_ARMY;Brigades:;x
@@ -1078,8 +1078,8 @@ PRODUCTION_CANNOT_BUILD_MISSING_MONEY_TOOLTIP;You need more money to set up a ne
 PRODUCTION_CANNOT_BUILD_MISSING_SELECTION;Select a Guild from the list\n;x
 PRODUCTION_BUILD_FACTORY_TOOLTIP;Set up a new $GUILD$\n;x
 PRODUCTION_CLOSE_TOOLTIP;Close window\n;x
-PRODUCTION_NOT_ALLOWED_TO_BUILD_TOOLTIP;We are not allowed to build factories because:\n;x
-PRODUCTION_NOT_ALLOWED_TO_BUILD_MAX_FACTORIES_TOOLTIP;We can only build $NUMBER$ factories in each state\n;x
+PRODUCTION_NOT_ALLOWED_TO_BUILD_TOOLTIP;We are not allowed to build guilds because:\n;x
+PRODUCTION_NOT_ALLOWED_TO_BUILD_MAX_FACTORIES_TOOLTIP;We can only build $NUMBER$ guilds in each state\n;x
 PRODUCTION_NOT_ALLOWED_TO_CHANGE_PRIO_TOOLTIP;We cannot change hire priority for this Guild because:\n;x
 PRODUCTION_NOT_ALLOWED_TO_SUBSIDISE_TOOLTIP;We cannot subsidise this Guild because:\n;x
 PRODUCTION_NOT_ALLOWED_TO_CLOSE_TOOLTIP;We cannot close this Guild because:\n;x
@@ -1106,7 +1106,7 @@ PRODUCTION_MUST_PRODUCE_GOODS_TOOLTIP;State must produce one of the following: ;
 PRODUCTION_FACTOR_FROM;From;x
 PRODUCTION_FACTOR_OWNER;Owners;x
 PRODUCTION_FACTOR_WORKER;Workers;x
-PRODUCTION_FACTORY_COUNT_TOOLTIP;State factories: $CURRENT$/$MAX$\n;x
+PRODUCTION_FACTORY_COUNT_TOOLTIP;State guilds: $CURRENT$/$MAX$\n;x
 PRODUCTION_FACTORY_UNIQUE_TOOLTIP;No §Y$NAME$§W in state\n;x
 GOODS_PROJECT_COMPLETE;All goods needs fulfilled;x
 GOODS_PROJECT_LACK_GOODS;Gathering the following goods before construction can begin:;x
@@ -3259,7 +3259,7 @@ OL_VIEW_COMBAT;Toggles §YCombat§W view.;x
 OL_VIEW_NAVALCOMBAT;Toggles §YNaval Combat§W view.;x
 OL_VIEW_ARMIES;Toggles §YArmy§W view.;x
 OL_VIEW_NAVIES;Toggles §YNavy§W view.;x
-OL_VIEW_FACTORIES;Toggles §YFactory Construction§W view.;x
+OL_VIEW_FACTORIES;Toggles §YGuild Construction§W view.;x
 OL_VIEW_BUILDINGS;Toggles §YBuilding Construction§W view.;x
 OL_VIEW_ARMY_CONSTRUCTION;Toggles §YArmy Construction§W view.;x
 OL_VIEW_NAVY_CONSTRUCTION;Toggles §YNavy Construction§W view.;x
@@ -3780,7 +3780,7 @@ TB_PRODUCTION_LOSING_MONEY;Losing money;x
 TB_PRODUCTION_SHOULD_EXPAND;Factory at full capacity;x
 TB_PRODUCTION_IS_SUBSIDIZING;Is subsidizing;x
 TB_PRODUCTION_CAN_OPEN;Can open factory;x
-TB_PRODUCTION_MOST_PROFITABLE;Most profitable factories:;x
+TB_PRODUCTION_MOST_PROFITABLE;Most profitable guilds:;x
 TB_BUDGET_INCOME;Income: $PARAM$;x
 TB_BUDGET_EXPENSE;Expense: $PARAM$;x
 TB_BUDGET_DAILY_BALANCE;Daily balance: $PARAM$;x
@@ -4587,8 +4587,8 @@ MAY_GAS_DEFEND;Can defend against Aerial Support\n;x
 IMMIGRANTS_FROM;There were §G$VAL$§W immigrants from $NAME$.;x
 EMIGRANTS_TO;§R$VAL$§W emigrated to $NAME$.;x
 PW_ALL_FOCUSES_USED;All national focuses are already used.;x
-HAS_NO_FACTORIES;Has NO factories.\n;x
-HAS_FACTORIES;Has factories.\n;x
+HAS_NO_FACTORIES;Has NO guilds.\n;x
+HAS_FACTORIES;Has guilds.\n;x
 RETREAT_DELAY_IRO;There is still §Y$VAL$§W day(s) left until a voluntary retreat can be made.;x
 CULTURE_IS_NOT;Culture is NOT;x
 CULTURE_IS;Culture is;x
@@ -5109,7 +5109,7 @@ MIL_FROM_CAP_SHIPS;Capital Ships;x
 MIL_FROM_LEADERS;Leaders;x
 OCCUPATION_SCORE;Occupation: ;x
 BLOCKADE_SCORE;Blockade: ;x
-OUTLINER_TOOLTIP_EMPLOYED;§Y$COUNT$§! Employed in factories (§Y$PERC$§!%);x
+OUTLINER_TOOLTIP_EMPLOYED;§Y$COUNT$§! Employed in guilds (§Y$PERC$§!%);x
 TRADE_SUPPLY_NEED_A;$VAL$ to supply army each day.\n;x
 TRADE_SUPPLY_NEED_N;$VAL$ to supply navy each day.\n;x
 DIPLOMACY_CANNOT_SET_PRIO_WAR;We cannot influence this realm while we have a war with them.;x
@@ -5944,7 +5944,7 @@ TOTAL_TAX_EFFICIENCY;Tax Efficiency: §Y$VAL$§W;x
 TOTAL_TAX_EFFICIENCY_BASED;Calculated from:;x
 TAX_POOR_DESC;This controls how much of the poor strata's income will be collected as tax. Too heavy taxation will leave them less money to spend on their own needs.;x
 TAX_MIDDLE_DESC;This controls how much of the middle strata's income will be collected as tax. Too heavy taxation will leave them less money to spend on their own needs or businesses;x
-TAX_RICH_DESC;This controls how much of the rich strata's income will be collected as tax. Too heavy taxation will leave them less money to spend on their own needs and less likely to invest in projects like building new factories.;x
+TAX_RICH_DESC;This controls how much of the rich strata's income will be collected as tax. Too heavy taxation will leave them less money to spend on their own needs and less likely to invest in projects like building new guilds.;x
 MIL_COST_DESC;Supply costs for your military.;x
 NAT_STOCK_DESC;Costs of trades to fill our national stockpile.;x
 TARIFFS_DESC;Tariffs impose an extra cost on imported goods, with the proceeds going to the national treasury. Negative tariffs can be used to help subsidize imports for anyone in your realm;x
