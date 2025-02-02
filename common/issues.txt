@@ -337,13 +337,15 @@ political_reforms = {
 	government_type = {
 		dictatorship = {
 			rules = { same_as_ruling_party = yes }
+			allow = { always = no }
 		}
 		monarchist = {
 			rules = { rich_only = yes }
+			allow = { always = no }
 		}
 		republican = {
 			rules = { population_vote = yes }
-			allow = { NOT = { vote_franschise = none_voting } }
+			allow = { always = no }
 		}
 	}
 	# Voting Count
