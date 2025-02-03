@@ -116,6 +116,7 @@ political_decisions = {
 			
 			# Set allowed leaders
 			set_country_flag = ideologies_house_of_bard_active
+			add_country_modifier = { name = bard_i_modifier duration = -1 }
 		}
 	}
 	

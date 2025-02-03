@@ -377,6 +377,52 @@ great_advisor;Great Advisor;x
 great_advisor_desc;One of our current advisors is much better than the average.;x
 great_diplomat;Great Diplomat;x
 great_diplomat_desc;One of our diplomats is much better than the average.;x
+ecthelion_ii_modifier;Ecthelion II;x
+ecthelion_ii_modifier_desc; ;x
+denethor_ii_modifier;Denethor II;x
+denethor_ii_modifier_desc; ;x
+boromir_ii_modifier;Boromir II;x
+boromir_ii_modifier_desc; ;x
+faramir_i_modifier;Faramir II;x
+faramir_i_modifier_desc; ;x
+aragorn_elessar_modifier;Aragorn Elessar;x
+aragorn_elessar_modifier_desc; ;x
+angelimir_modifier;Angelimir;x
+angelimir_modifier_desc; ;x
+sauron_modifier;Sauron the Great;x
+sauron_modifier_desc; ;x
+hegon_koldana_modifier;Hegon Koldana;x
+hegon_koldana_modifier_desc; ;x
+bard_i_modifier;Bard I;x
+bard_i_modifier_desc; ;x
+bain_i_modifier;Bain I;x
+bain_i_modifier_desc; ;x
+brand_i_modifier;Brand I;x
+brand_i_modifier_desc; ;x
+bard_ii_modifier;Bard II;x
+bard_ii_modifier_desc; ;x
+thranduil_modifier;Thranduil;x
+thranduil_modifier_desc; ;x
+khamul_modifier;Khamûl the Easterling;x
+khamul_modifier_desc; ;x
+celeborn_n_galadriel_modifier;Lord Celeborn and Lady Galadriel;x
+celeborn_n_galadriel_modifier_desc; ;x
+saruman_modifier;Saruman the White;x
+saruman_modifier_desc; ;x
+aragorn_modifier;Aragorn;x
+aragorn_modifier_desc; ;x
+elrond_modifier;Elrond;x
+elrond_modifier_desc; ;x
+cirdan_modifier;Círdan;x
+cirdan_modifier_desc; ;x
+king_of_the_dead_modifier;King of the Dead;x
+king_of_the_dead_modifier_desc; ;x
+radagast_modifier;Radagast the Brown;x
+radagast_modifier_desc; ;x
+roac_modifier;Roac;x
+roac_modifier_desc; ;x
+witch_king_of_angmar_modifier;Witch King of Angmar;x
+witch_king_of_angmar_modifier_desc; ;x
 ############################;x }
 ##### GONDOR MODIFIERS #####;x {
 ############################;x

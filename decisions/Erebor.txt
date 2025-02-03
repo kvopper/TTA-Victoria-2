@@ -28,6 +28,7 @@ political_decisions = {
 			set_country_flag = ideologies_lords_of_ravens_active
 			
 			set_country_flag = RAV_content
+			add_country_modifier = { name = roac_modifier duration = -1 }
 		}
 	}
 	ravens_of_erebor = {

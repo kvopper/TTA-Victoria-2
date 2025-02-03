@@ -91,6 +91,7 @@ political_decisions = {
 			
 			# Setting up starting leaders
 			set_country_flag = ideologies_house_of_stewards_active
+			add_country_modifier = { name = ecthelion_ii_modifier duration = -1 }
 		}
 	}
 	
@@ -119,6 +120,7 @@ political_decisions = {
 			
 			# Setting up starting leaders
 			set_country_flag = ideologies_house_of_dol_amroth_active
+			add_country_modifier = { name = angelimir_modifier duration = -1 }
 		}
 	}
 }

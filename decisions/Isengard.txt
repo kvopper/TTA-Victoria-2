@@ -45,7 +45,7 @@ political_decisions = {
 				release_vassal = ISE
 				country_event = 50100
 			}
-			ruling_party_ideology = servants_neutral
+			add_country_modifier = { name = saruman_modifier duration = -1 }
 			any_pop = { dominant_issue = { value = neutral_alignment factor = 0.4 } }
 		}
 	}

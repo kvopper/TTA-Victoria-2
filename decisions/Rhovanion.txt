@@ -16,6 +16,7 @@ political_decisions = {
 			set_country_flag = ideologies_house_of_koldana_active
 			
 			set_country_flag = DOR_content
+			add_country_modifier = { name = hegon_koldana_modifier duration = -1 }
 		}
 	}
 }

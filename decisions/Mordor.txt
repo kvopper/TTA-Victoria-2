@@ -20,12 +20,16 @@ political_decisions = {
 			set_country_flag = ideologies_lords_of_mordor_active
 			
 			set_country_flag = MOR_content
+			add_country_modifier = { name = sauron_modifier duration = -1 }
 			
 			# Set vassal allowed leaders
 			GUL = { set_country_flag = ideologies_saurons_nine_active }
 			SHE = { set_country_flag = ideologies_great_brood_mothers_active }
 			
-			GUL = { set_country_flag = GUL_content }
+			GUL = {
+				set_country_flag = GUL_content
+				add_country_modifier = { name = khamul_modifier duration = -1 }
+			}
 			SHE = {
 				set_country_flag = SHE_content
 				set_country_flag = vassal_can_have_own_ruler

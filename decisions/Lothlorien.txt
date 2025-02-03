@@ -10,6 +10,7 @@ political_decisions = {
 			
 			# Set allowed leaders
 			set_country_flag = ideologies_house_of_finarfin_active
+			add_country_modifier = { name = celeborn_n_galadriel_modifier duration = -1 }
 		}
 	}
 	

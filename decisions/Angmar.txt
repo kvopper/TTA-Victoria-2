@@ -21,6 +21,7 @@ political_decisions = {
 		effect = {
 			prestige = 5
 			ruling_party_ideology = saurons_nine
+			add_country_modifier = { name = witch_king_of_angmar_modifier duration = -1 }
 
 			any_country = {
 				limit = {

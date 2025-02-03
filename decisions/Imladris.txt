@@ -12,6 +12,7 @@ political_decisions = {
 			
 			# Set allowed leaders
 			set_country_flag = ideologies_house_half_elven_active
+			add_country_modifier = { name = elrond_modifier duration = -1 }
 		}
 	}
 }

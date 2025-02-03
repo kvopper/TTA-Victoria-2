@@ -847,6 +847,12 @@ country_event = {
 		
 		# Denethor hated and was jealous of Thorongil. If Thorongil was still an advisor when Ecthelion II died, he would have left/been expelled from the court
 		remove_country_modifier = thorongil
+		remove_country_modifier = ecthelion_ii_modifier
+		
+		random_owned = {
+			limit = { owner = { ruling_party = GON_denethor_ii } }
+			owner = { add_country_modifier = { name = denethor_ii_modifier duration = -1 } }
+		}
 	}
 }
 
@@ -2084,6 +2090,7 @@ country_event = {
 		FOR = { country_event = 3500 } # Generic Leader Died Cleanup
 		
 		clr_country_flag = denethor_ii_alive
+		remove_country_modifier = denethor_ii_modifier
 	}
 }
 # }
