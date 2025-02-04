@@ -7604,14 +7604,6 @@
 
 931 = {
     text_scale = 3
-    building_position = {
-        naval_base = {
-            x = 572.495000
-            y = 1595.555000
-        }
-
-    }
-
     building_rotation = {
         naval_base = 0.849141
     }
