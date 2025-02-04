@@ -1267,6 +1267,9 @@ country_event = { # Palantir found - osgiliath_palantir
 		is_greater_power = yes
 		has_country_flag = searching_for_palantiri
 		NOT = { has_global_flag = osgiliath_palantir_activated }
+		any_owned_province = {
+			is_coastal = yes
+		}
 	}
 
 	mean_time_to_happen = { months = 240 }
@@ -1302,6 +1305,9 @@ country_event = { # Palantir found - amonsul_palantir
 		is_greater_power = yes
 		has_country_flag = searching_for_palantiri
 		NOT = { has_global_flag = amonsul_palantir_activated }
+		any_owned_province = {
+			is_coastal = yes
+		}
 	}
 
 	mean_time_to_happen = { months = 240 }
@@ -1337,6 +1343,9 @@ country_event = { # Palantir found - annuminas_palantir
 		is_greater_power = yes
 		has_country_flag = searching_for_palantiri
 		NOT = { has_global_flag = annuminas_palantir_activated }
+		any_owned_province = {
+			is_coastal = yes
+		}
 	}
 
 	mean_time_to_happen = { months = 240 }
