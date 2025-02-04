@@ -1,8 +1,7 @@
 # Audax Validator "!" Ignore_1009
 capital = 885
-primary_culture = breelander
+primary_culture = huorn
 culture = men_culture
-culture = huorn
 religion = men
 government = monarchy
 nationalvalue = no_heirloom
