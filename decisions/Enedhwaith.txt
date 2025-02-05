@@ -1,0 +1,36 @@
+# Enedhwaith (Enedhwaithrim, Dunnish and Saerlanner) Decisions {
+# Reunification of Saerlann }
+political_decisions = {
+	reunify_SAE = {
+		potential = {
+			primary_culture = saerlanner
+		}
+	
+		allow = {
+			war = no
+			SAE = { 
+				all_core = {
+					OR = {
+						owner = { tag = THIS }
+						owner = { vassal_of = THIS }
+						owner = { in_sphere = THIS }
+						empty = yes
+					}
+				}
+			}
+		}
+	
+		effect = {
+			prestige = 10
+			change_tag = SAE
+			SAE = {
+				all_core = {
+					remove_core = FON
+					remove_core = HEN
+					remove_core = LSR
+					remove_core = USR
+				}
+			}
+		}
+	}
+}

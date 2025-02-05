@@ -1,6 +1,7 @@
 owner = HEN
 controller = HEN
 add_core = HEN
+add_core = SAE
 add_core = CAR
 add_core = ARN
 trade_goods = tobacco
