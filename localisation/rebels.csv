@@ -6,10 +6,10 @@ slave_revolt_title;Slave;x
 slave_revolt_name;Slave Revolters;x
 slave_revolt_desc;Slave revolters seek to free all slaves in $COUNTRY$.;x
 slave_revolt_army;Slave Revolters;x
-democratic_rebels_title;Militant Democrats;x
-democratic_rebels_name;Militant Democratic Reformists;x
-democratic_rebels_desc;Militant Democratic Reformists seek to improve or introduce the voting franschise in a realm.;x
-democratic_rebels_army;Militant Democratic Reformists;x
+republican_rebels_title;Militant Republicans;x
+republican_rebels_name;Militant Republican Reformists;x
+republican_rebels_desc;Militant Republican Reformists seek to improve or introduce the voting franschise in a realm.;x
+republican_rebels_army;Militant Republican Reformists;x
 noble_rebels_title;Noble Rebels;x
 noble_rebels_name;Noble Rebels;x
 noble_rebels_desc;Noble Rebels are middle and upper class pops who are attempting to reaquire nobility priveleges.;x

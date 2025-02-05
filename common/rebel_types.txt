@@ -530,9 +530,9 @@ slave_revolt = {
 }
 
 ###################################
-# Democratic Rebels
+# Republican Rebels
 ###################################
-democratic_rebels = {
+republican_rebels = {
 	icon = 3
 	
 	area = nation				# Stays within the nation

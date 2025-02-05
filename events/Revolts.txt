@@ -4,10 +4,10 @@
 # Revolt Events {
 # 3000 - 3499 }
 
-# Democratic Rebel Victory
+# Republican Rebel Victory
 country_event = {
 	id = 3000
-	title = "Democratic Rebel Victory"
+	title = "Republican Rebel Victory"
 	desc = "EVTDESC3000"
 	picture = administration
 	
