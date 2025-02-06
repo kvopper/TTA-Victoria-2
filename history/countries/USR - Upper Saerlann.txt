@@ -1,5 +1,5 @@
 # Audax Validator "!" Ignore_1009
-capital = 905
+capital = 902
 primary_culture = saerlanner
 culture = men_culture
 religion = men
