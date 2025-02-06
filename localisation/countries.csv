@@ -324,8 +324,6 @@ LEB_fiefdom;Fiefdom of Lebennin;x
 LEB_ADJ;Lebenninrim;x
 LSF;Lossoth of Forochel;x
 LSF_ADJ;Losson;x
-LSR;Tribes of Lower Saerlann;x
-LSR_ADJ;Saelanner;x
 LGV;Logath Clan;x
 LGV_ADJ;Logath;x
 LIN;Realm of Lindon;x
@@ -413,7 +411,7 @@ RHR_ADJ;Hillmen;x
 RUN;Reunited Kingdom;x
 RUN_democracy;Reunited Republic;x
 RUN_ADJ;Reunited Kingdom;x
-SAE;Kingdom of Saerlann;x
+SAE;Tribes of Saerlann;x
 SAE_ADJ;Saelanner;x
 SAG;Sagath Clan;x
 SAG_ADJ;Sagath;x
@@ -457,8 +455,6 @@ UMB;Corsairs of Umbar;x
 UMB_ADJ;Corsair;x
 URG;Urgath Clan;x
 URG_ADJ;Urgath;x
-USR;Tribes of Upper Saerlann;x
-USR_ADJ;Saelanner;x
 UTA;Utal Clan;x
 UTA_ADJ;Logath;x
 VID;Men of Vidusborg;x
