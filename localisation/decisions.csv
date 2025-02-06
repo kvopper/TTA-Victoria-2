@@ -270,6 +270,14 @@ invite_witch_king_of_angmar_desc;Since the Angmar War ended some one thousand ye
 ###########################;x }
 ##### ARNOR DECISIONS #####;x {
 ###########################;x
+shire_bree_unification_title;The Unification of Breeland and Shire;x
+shire_bree_unification_desc;Now that we have asserted dominance over these land in the heartland of Eriador, we can unify them.;x
+the_buckland_question_title;The Buckland question;x
+the_buckland_question_desc;Now that we have unified Bree and Shire, we should decide our policy regarding Buckland - an autonomous hobbit colony.;x
+annex_buckland_title;Annex Buckland;x
+annex_buckland_desc;The Bucklanders are a hardier and more adventurous breed of Hobbit who have formed a colony across the Brandywine river. Their settlements have been mostly autonomous until now. We should now bring them into the fold.;x
+high_hay_title;High Hay;x
+high_hay_desc;The High Hay, known locally as just the Hedge, is a barrier along the perimeter of Buckland to protect the land from the Old Forest. With our newfound knowledge of fortifications, it will be simple to turn this into a formidible defence to deter invaders.;x
 form_arthedain_title;Reform the Kingdom of Arthedain;x
 form_arthedain_desc;The Kingdom of Athedain has been fallen for over a thousand years. Now, however, with our prominent position within central Eriador, we can reform the old Kingdom, and put an end to the chaos that now plagues this land.;x
 form_cardolan_title;Reform the Kingdom of Cardolan;x
@@ -287,22 +295,6 @@ claim_angmar_desc;Since the Witch-king inhabited Carn Dûm, Angmar has repeatedl
 ######################################;x
 unify_arnor_and_gondor_title;Unify the Northern and Southern Kingdoms;x
 unify_arnor_and_gondor_desc;It's been three thousand years since the twin kingdoms of Arnor and Gondor have been united under one ruler. Now, we are in a position to restore them as the Reunited Kingdom.;x
-################################;x }
-##### SHIRE-BREE DECISIONS #####;x {
-################################;x
-shire_bree_unification_title;The Unification of Breeland and Shire;x
-shire_bree_unification_desc;Now that we have asserted dominance over these land in the heartland of Eriador, we can unify them.;x
-the_buckland_question_title;The Buckland question;x
-the_buckland_question_desc;Now that we have unified Bree and Shire, we should decide our policy regarding Buckland - an autonomous hobbit colony.;x
-annex_buckland_title;Annex Buckland;x
-annex_buckland_desc;The Bucklanders are a hardier and more adventurous breed of Hobbit who have formed a colony across the Brandywine river. Their settlements have been mostly autonomous until now. We should now bring them into the fold.;x
-high_hay_title;High Hay;x
-high_hay_desc;The High Hay, known locally as just the Hedge, is a barrier along the perimeter of Buckland to protect the land from the Old Forest. With our newfound knowledge of fortifications, it will be simple to turn this into a formidible defence to deter invaders.;x
-################################;x }
-##### ENEDHWAITH DECISIONS #####;x {
-################################;x
-reunify_SAE_title;Reform the Kingdom of Saerlann;x
-reunify_SAE_desc;The Kingdom of Saerlann has been fallen for almost a thousand years. Now, however, with our prominent position within its former territories, we can reform the old Kingdom, and put an end to the chaos that now plagues this land.;x
 ####################################################;x }
 ##### DWARVES OF THE WHITE MOUNTAINS DECISIONS #####;x {
 ####################################################;x
