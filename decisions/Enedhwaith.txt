@@ -4,6 +4,7 @@ political_decisions = {
 	reunify_SAE = {
 		potential = {
 			primary_culture = saerlanner
+			NOT = { exists = SAE }
 		}
 	
 		allow = {
