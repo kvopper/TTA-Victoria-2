@@ -2387,8 +2387,6 @@ BUILDTYPE_FACTORY;Guild;x
 BUILDTYPE_RGO;Rgo;x
 BUILDTYPE_INFRASTRUCTURE;Infrastructure;x
 BUILDTYPE_NAVALBASE;Port;x
-BUILDTYPE_FORT;Fort;x
-BUILDTYPE_NAVALBASE;Port;x
 BUILDTYPE_FORT;Castle;x
 UV_BACKGROUND;Background: $VAL$;x
 UV_BACKGROUND_LABEL;Background;x
@@ -2402,8 +2400,6 @@ ALLIED_WITH;Allied with:;x
 SEND_DIPLOMAT;Send Diplomat;x
 PV_CONTROLLER;Controller:;x
 PV_SIEGE_PROGRESS;Occupation progress:;x
-PV_FORT;Fort;x
-PV_NAVALBASE;Port;x
 PV_FORT;Castle;x
 PV_NAVALBASE;Port;x
 PV_RAILROAD;Road;x
@@ -4185,9 +4181,6 @@ DATE_DIFF_A;$Y$ years, $M$ months and $D$ days;x
 DATE_DIFF_B;$M$ months and $D$ days;x
 DATE_DIFF_C;$D$ days;x
 CB_DESTROY_FORTS;Destroy fortifications;x
-CB_DESTROY_NAVAL_BASES;Destroy ports;x
-po_destroy_forts;Destroy all forts in $STATE$.;x
-po_destroy_naval_bases;Destroy port in $STATE$.;x
 CB_DESTROY_NAVAL_BASES;Destroy ports;x
 po_destroy_forts;Destroy all fortifications in $STATE$.;x
 po_destroy_naval_bases;Destroy port in $STATE$.;x
