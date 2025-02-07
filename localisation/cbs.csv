@@ -121,10 +121,10 @@ take_puppet;Take Puppet;x
 take_puppet_short;Take $THIRD$ from $RECIPIENT$;x
 take_puppet_setup;Take $THIRD$ from $RECIPIENT$ and puppet them;x
 take_puppet_desc;Puppet a vassal of §Yanother realm§!;x
-dismantle_forts_desc;Dismantle forts and naval bases.;x
+dismantle_forts_desc;Dismantle castles and naval bases.;x
 dismantle_forts;Dismantle Fortifications;x
 dismantle_forts_short;Dismantle constructions in $STATE$;x
-dismantle_forts_setup;Dismantle forts and naval bases in $STATE$;x
+dismantle_forts_setup;Dismantle castles and naval bases in $STATE$;x
 release_puppet;Release Puppet;x
 release_puppet_short;$THIRD$ is released;x
 release_puppet_setup;Release $THIRD$ from $RECIPIENT$;x
