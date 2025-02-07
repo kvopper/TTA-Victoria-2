@@ -135,23 +135,6 @@ political_decisions = {
 				value = 0 # Bilbo
 			}
 			
-			# Democratic country flag for democracies
-			any_country = {
-				limit = {
-					government = republic
-				}
-				set_country_flag = democratic
-			}
-			
-			# Slavery flags for yes_slavery
-			any_country = {
-				limit = {
-					slavery = yes_slavery
-				}
-				set_country_flag = has_all_slavery
-				any_state = { is_slave = yes }
-			}
-			
 			# Start Monthly Generic Cleanup Event
 			country_event = 99000
 			
