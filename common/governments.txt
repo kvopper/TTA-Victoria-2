@@ -610,6 +610,13 @@ sauron_dictatorship = {
 	lords_of_mordor = yes
 }
 
+nazgul_dictatorship = {
+	election = no
+	appoint_ruling_party = no
+	
+	saurons_nine = yes
+}
+
 istari_kingdom = {
 	election = no
 	appoint_ruling_party = no
