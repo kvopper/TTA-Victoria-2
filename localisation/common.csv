@@ -776,7 +776,7 @@ SUPPLY_CONSUMPTION;Supply Consumption;x
 COMBAT_WIDTH;Combat Width;x
 TRANSPORT_CAPABILITY;Transport Capability;x
 HULL;Hull;x
-FORT_ADJUSTER;Fort;x
+FORT_ADJUSTER;Castle;x
 RIVER_ADJUSTER;River;x
 UA_ATTACK;Attack;x
 UA_DEFENCE;Defence;x
@@ -2388,6 +2388,8 @@ BUILDTYPE_RGO;Rgo;x
 BUILDTYPE_INFRASTRUCTURE;Infrastructure;x
 BUILDTYPE_NAVALBASE;Port;x
 BUILDTYPE_FORT;Fort;x
+BUILDTYPE_NAVALBASE;Port;x
+BUILDTYPE_FORT;Castle;x
 UV_BACKGROUND;Background: $VAL$;x
 UV_BACKGROUND_LABEL;Background;x
 MOB_FROM_TECH;From technology: §G+$VALUE$§W;x
@@ -2401,6 +2403,8 @@ SEND_DIPLOMAT;Send Diplomat;x
 PV_CONTROLLER;Controller:;x
 PV_SIEGE_PROGRESS;Occupation progress:;x
 PV_FORT;Fort;x
+PV_NAVALBASE;Port;x
+PV_FORT;Castle;x
 PV_NAVALBASE;Port;x
 PV_RAILROAD;Road;x
 AVG_STATE_BONUS;Average in state:;x
@@ -4184,6 +4188,9 @@ CB_DESTROY_FORTS;Destroy fortifications;x
 CB_DESTROY_NAVAL_BASES;Destroy ports;x
 po_destroy_forts;Destroy all forts in $STATE$.;x
 po_destroy_naval_bases;Destroy port in $STATE$.;x
+CB_DESTROY_NAVAL_BASES;Destroy ports;x
+po_destroy_forts;Destroy all fortifications in $STATE$.;x
+po_destroy_naval_bases;Destroy port in $STATE$.;x
 ALL_CORE_PROVINCES;all states with core provinces;x
 ALL_SATES;all states;x
 HAS_FLASHPOINT;Has flashpoint;x
@@ -4736,7 +4743,7 @@ WEGAINCB_BTN1;OK;x
 WEGAINCB_BTN2;OK;x
 WEGAINCB_BTN3;Goto;x
 WEGAINCB_MAP;*;x
-ADJ_FORT_EXTRA_ATTR;And §R+$VAL$%§W from hostile adjacent forts.;x
+ADJ_FORT_EXTRA_ATTR;And §R+$VAL$%§W from hostile adjacent castles.;x
 IS_NOT_ACCEPTED_CULTURE_POP;does not belong to an accepted culture.\n;x
 IS_ACCEPTED_CULTURE_POP;belong to an accepted culture.\n;x
 IS_NOT_PRIMARY_CULTURE_POP;Is not §Y$NAME$§W\n;x
