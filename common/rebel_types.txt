@@ -528,10 +528,10 @@ slave_revolt = {
 
 # Republican Rebels
 republican_rebels = {
-	icon = 3
+	icon = 2
 	
 	area = nation				# Stays within the nation
-	break_alliance_on_win = no
+	break_alliance_on_win = yes
 	
 	# <this is the governement in the country> = <this is what the rebels want>
 	government = {
@@ -690,7 +690,7 @@ pretender_rebels = {
 	icon = 3
 	
 	area = nation				# Stays within the nation
-	break_alliance_on_win = no
+	break_alliance_on_win = yes
 	
 	# <this is the governement in the country> = <this is what the rebels want>
 	government = {
@@ -834,8 +834,9 @@ pretender_rebels = {
 		}
 	}
 	demands_enforced_effect = {
-		country_event = 3000
+		country_event = 3001
 		prestige_factor = -0.1
 		war_exhaustion = 50
+		plurality = -50
 	}
 }

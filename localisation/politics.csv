@@ -464,7 +464,7 @@ POLITICS_SET_RULING_PARTY_TOOLTIP;Select $PARTY$ as our ruler\n;x
 POLITICS_CANNOT_SET_RULING_PARTY_TOOLTIP;We cannot select $PARTY$ as our ruler because:\n;x
 POLITICS_HOLD_ELECTION_TOOLTIP;Hold election to appoint a new ruler.\n;x
 POLITICS_SELECT_NEW_RULER_PARTY;Select New Ruler;x
-RIP_EFFECT;$NAME$ will become the new ruler.\n;x
+RIP_EFFECT;§Y$NAME$§! will become the new ruler.\n;x
 MODIFIER_RULING_PARTY_SUPPORT;Ruler Support;x
 CAN_APPOINT_RULING_PARTY;Can appoint ruler.;x
 ELECTIONDONE_3;$WINNER$ is now the new ruler.;x
