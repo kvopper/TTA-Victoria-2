@@ -42,7 +42,7 @@ CANT_CREATE_PROTECTORATE_COST;You need to have §Y$VALUE$§! free territorial po
 ACTIVATE_TECH_EFFECT;Activate technology: §Y$NAME$§!;x
 REFORM_RESEARCH_COST;Research Cost: §Y$COST$§!;x
 ADD_RELATIVE_INCOME_EFFECT;Treasury: $VALUE$§!;x
-SUPPLY_LOAD_STATUS_DESC_BASIC;The total §Ysupply throughput§! of all our §Yports§! is $TOT$.\nAll our ships requires in total §Y$REQ$§!.;x
+SUPPLY_LOAD_STATUS_DESC_BASIC;The total §Ysailor capacity§! of all our §Yports§! is §Y$TOT$§Yk§!.\nAll our ships requires in total §Y$REQ$§Yk§!.;x
 NF_OVERWRITE_HEADER;To set the new national focus §Y$NF$§! you must remove another one.;x
 NF_OVERWRITE_ENTRY;§Y$NF$§!\nin §G$STATE$§!;x
 POP_INTERNAL_MIGRATION;§Y$NUM$§! people intend to move to other national provinces.;x
@@ -312,14 +312,14 @@ PW_PROTECTORATE;Protectorate;x
 CREATE_DOMINION;Release Dominion;x
 MAPMODE_NAVAL_TOOLTIP_LEVEL;Port level §G$LVL$§!;x
 MAPMODE_NAVAL_TOOLTIP_NO_BASE;There is not any port in this state.;x
-MAPMODE_NAVAL_TOOLTIP_CAP;This province §Ynaval supply throughput§! is §G$CAP$§! of total §G$TOT$§!.;x
+MAPMODE_NAVAL_TOOLTIP_CAP;This province §Ysailor capacity§! is §G$CAP$§Yk§! of total §G$TOT$§Yk§!.;x
 MAPMODE_NAVAL_TOOLTIP_IN_OTHER;A port already exists in this state, in §Y$PROV$§!.;x
 MAPMODE_NAVAL_TOOLTIP_UNDER_CON;A port is already under construction here.;
-SUPPLY_LOAD;Supplies weight;x
+SUPPLY_LOAD;Sailors required (in thousands);x
 SUPPLY_LOAD_STATUS_DESC_PENALTY;Our ships suffer $PEN$ penalty of supplying them.;x
 SUPPLY_LOAD_STATUS_DESC_HINT;Consider building ports, or disband some ships.;x
 SUPPLY_LOAD_STATUS_DESC_UPCOMING_PENALTY;New ships are under construction, that will exceed the supply limits by $EXC$.;x
-SUPPLY_LOAD_STATUS_DESC_DETAILED_LIST;The following report shows the supply throughput demands:;x
+SUPPLY_LOAD_STATUS_DESC_DETAILED_LIST;The following report shows the §Ysailor capacity§! demands (in thousands):;x
 SHIP_BUILD_MIN_BASE_LEVEL;Requires naval port with level §Y$LVL$§! or greater.;x
 SHIP_BUILD_LIMIT_PER_BASE;Limited to §Y$LIM$§! units per each port that supports this ship.;x
 SHIP_BUILD_LIMIT_PER_BASE_HINT;§RConsider building more ports of level at least §G$LVL$§R.§!;x
