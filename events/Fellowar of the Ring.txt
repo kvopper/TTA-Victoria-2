@@ -1633,7 +1633,7 @@ country_event = {
 		# Death to Nazguls
 		any_country = {
 			limit = {
-				always = false # TODO: Get updated targetting of Nazgul
+				government = nazgul_dictatorship
 			}
 			country_event = 50331
 		}

@@ -1582,8 +1582,6 @@ political_decisions = {
 			}
 		}
 	}
-	
-	# TODO: Flavor to add cores to the newly conquered lands and add accepted cultures, Rhovanion formation decision update (remove vidugavia_successorship)
 }
 
 # Province Flavor

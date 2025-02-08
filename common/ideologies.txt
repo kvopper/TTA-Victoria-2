@@ -41,7 +41,7 @@ disenfranchised_group = {
 	}
 }
 
-# Only for puppets. TODO: Add pop support for these ideologies
+# Only for puppets.
 vassal_group = {
 	servants_good = {
 		color = { 30 144 255 }

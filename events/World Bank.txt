@@ -427,7 +427,6 @@ country_event = {
 		
 		# Investing in Province: 8% chance of +1 (average of a increase of 1 per year)
 		# Do not need to worry about the above changes as the province needs to be controlled by the owner with no battles in it + repairing province should not overlap with investing in province
-		# TODO: May want to consider moving this to a quarterly event -- it seems like the same provinces get favored every month
 		random_owned = {
 			any_neighbor_province = {
 				limit = {
