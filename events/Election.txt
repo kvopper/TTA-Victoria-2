@@ -4,65 +4,40 @@
 # Election Events {
 #	14000 - 14999
 
-# A Heated Debate: Guild Autonomy
+# Standard Policy Events {
+# A Heated Debate: Trade Policy
 country_event = {
 	id = 14000
 	title = "EVTNAME14000"
 	desc = "EVTDESC14000"
 	
 	election = yes
-	issue_group = guild_autonomy_policy
+	issue_group = trade_policy
 	is_triggered_only = yes
 	
 	option = {
-		name = "Guilds should be independent!"
+		name = "Trade needs to be protected!"
 		any_pop = {
 			dominant_issue = {
 				factor = 0.2
-				value = independent_guilds
+				value = protectionism
 			}
 			scaled_militancy = {
-				issue = controlled_guilds
+				issue = free_trade
 				factor = 4
 			}
-			scaled_militancy = {
-				issue = oversight_guilds
-				factor = 2
-			}
 		}
 	}
 	
 	option = {
-		name = "Guilds need some guidance from the Realm."
+		name = "Free trade for all!"
 		any_pop = {
 			dominant_issue = {
 				factor = 0.2
-				value = oversight_guilds
+				value = free_trade
 			}
 			scaled_militancy = {
-				issue = controlled_guilds
-				factor = 2
-			}
-			scaled_militancy = {
-				issue = independent_guilds
-				factor = 2
-			}
-		}
-	}
-	
-	option = {
-		name = "Guilds should be controlled by the Realm!"
-		any_pop = {
-			dominant_issue = {
-				factor = 0.2
-				value = controlled_guilds
-			}
-			scaled_militancy = {
-				issue = oversight_guilds
-				factor = 2
-			}
-			scaled_militancy = {
-				issue = independent_guilds
+				issue = protectionism
 				factor = 4
 			}
 		}
@@ -72,27 +47,19 @@ country_event = {
 		name = "Let the debate take its course"
 		# Audax Validator "." Ignore_1007
 		random_list = {
-			1 = {
+			50 = {
 				any_pop = {
 					dominant_issue = {
 						factor = 0.2
-						value = controlled_guilds
+						value = free_trade
 					}
 				}
 			}
-			3 = {
+			50 = {
 				any_pop = {
 					dominant_issue = {
 						factor = 0.2
-						value = oversight_guilds
-					}
-				}
-			}
-			5 = {
-				any_pop = {
-					dominant_issue = {
-						factor = 0.2
-						value = independent_guilds
+						value = protectionism
 					}
 				}
 			}
@@ -100,65 +67,99 @@ country_event = {
 	}
 }
 
-# A Heated Debate: Racial Policy
+# A Heated Debate: Economic Policy
 country_event = {
 	id = 14001
 	title = "EVTNAME14001"
 	desc = "EVTDESC14001"
 	
 	election = yes
-	issue_group = racial_policy
+	issue_group = tax_policy
 	is_triggered_only = yes
 	
 	option = {
-		name = "Only our race!"
+		name = "The more money our people have, the better"
 		any_pop = {
 			dominant_issue = {
 				factor = 0.2
-				value = racial_unity
+				value = laissez_faire
 			}
 			scaled_militancy = {
-				issue = alignment_acceptance
-				factor = 2
+				issue = interventionism
+				factor = 4
 			}
 			scaled_militancy = {
-				issue = all_peoples
+				issue = state_capitalism
+				factor = 4
+			}
+			scaled_militancy = {
+				issue = planned_economy
 				factor = 4
 			}
 		}
 	}
 	
 	option = {
-		name = "Anything non-Orc should be fine."
+		name = "The realm always needs some type of income"
 		any_pop = {
 			dominant_issue = {
 				factor = 0.2
-				value = alignment_acceptance
+				value = interventionism
 			}
 			scaled_militancy = {
-				issue = racial_unity
-				factor = 2
+				issue = laissez_faire
+				factor = 4
 			}
 			scaled_militancy = {
-				issue = all_peoples
-				factor = 2
+				issue = state_capitalism
+				factor = 4
+			}
+			scaled_militancy = {
+				issue = planned_economy
+				factor = 4
 			}
 		}
 	}
 	
 	option = {
-		name = "Everyone is welcome!"
+		name = "The realm could use some more income"
 		any_pop = {
 			dominant_issue = {
 				factor = 0.2
-				value = all_peoples
+				value = state_capitalism
 			}
 			scaled_militancy = {
-				issue = alignment_acceptance
-				factor = 2
+				issue = laissez_faire
+				factor = 4
 			}
 			scaled_militancy = {
-				issue = racial_unity
+				issue = interventionism
+				factor = 4
+			}
+			scaled_militancy = {
+				issue = planned_economy
+				factor = 4
+			}
+		}
+	}
+	
+	option = {
+		name = "The realm needs to refill its coffers"
+		any_pop = {
+			dominant_issue = {
+				factor = 0.2
+				value = planned_economy
+			}
+			scaled_militancy = {
+				issue = laissez_faire
+				factor = 4
+			}
+			scaled_militancy = {
+				issue = interventionism
+				factor = 4
+			}
+			scaled_militancy = {
+				issue = state_capitalism
 				factor = 4
 			}
 		}
@@ -168,27 +169,35 @@ country_event = {
 		name = "Let the debate take its course"
 		# Audax Validator "." Ignore_1007
 		random_list = {
-			1 = {
+			25 = {
 				any_pop = {
 					dominant_issue = {
 						factor = 0.2
-						value = racial_unity
+						value = laissez_faire
 					}
 				}
 			}
-			3 = {
+			25 = {
 				any_pop = {
 					dominant_issue = {
 						factor = 0.2
-						value = alignment_acceptance
+						value = interventionism
 					}
 				}
 			}
-			5 = {
+			25 = {
 				any_pop = {
 					dominant_issue = {
 						factor = 0.2
-						value = all_peoples
+						value = state_capitalism
+					}
+				}
+			}
+			25 = {
+				any_pop = {
+					dominant_issue = {
+						factor = 0.2
+						value = planned_economy
 					}
 				}
 			}
@@ -215,7 +224,7 @@ country_event = {
 			}
 			scaled_militancy = {
 				issue = minority_toleration
-				factor = 2
+				factor = 4
 			}
 			scaled_militancy = {
 				issue = regional_autonomy
@@ -233,11 +242,11 @@ country_event = {
 			}
 			scaled_militancy = {
 				issue = regional_autonomy
-				factor = 2
+				factor = 4
 			}
 			scaled_militancy = {
-				issue = all_peoples
-				factor = 2
+				issue = official_only
+				factor = 4
 			}
 		}
 	}
@@ -247,14 +256,14 @@ country_event = {
 		any_pop = {
 			dominant_issue = {
 				factor = 0.2
-				value = all_peoples
+				value = regional_autonomy
 			}
 			scaled_militancy = {
 				issue = minority_toleration
-				factor = 2
+				factor = 4
 			}
 			scaled_militancy = {
-				issue = regional_autonomy
+				issue = official_only
 				factor = 4
 			}
 		}
@@ -264,7 +273,7 @@ country_event = {
 		name = "Let the debate take its course"
 		# Audax Validator "." Ignore_1007
 		random_list = {
-			1 = {
+			33 = {
 				any_pop = {
 					dominant_issue = {
 						factor = 0.2
@@ -272,7 +281,7 @@ country_event = {
 					}
 				}
 			}
-			3 = {
+			33 = {
 				any_pop = {
 					dominant_issue = {
 						factor = 0.2
@@ -280,7 +289,7 @@ country_event = {
 					}
 				}
 			}
-			5 = {
+			33 = {
 				any_pop = {
 					dominant_issue = {
 						factor = 0.2
@@ -311,11 +320,11 @@ country_event = {
 			}
 			scaled_militancy = {
 				issue = reactive
-				factor = 1
+				factor = 4
 			}
 			scaled_militancy = {
 				issue = proactive
-				factor = 2
+				factor = 4
 			}
 			scaled_militancy = {
 				issue = interactive
@@ -333,16 +342,16 @@ country_event = {
 			}
 			scaled_militancy = {
 				issue = isolationist
-				factor = 1
+				factor = 4
 			}
 			scaled_militancy = {
 				issue = proactive
-				factor = 1
+				factor = 4
 			}
 			
 			scaled_militancy = {
 				issue = interactive
-				factor = 2
+				factor = 4
 			}
 		}
 	}
@@ -356,16 +365,16 @@ country_event = {
 			}
 			scaled_militancy = {
 				issue = interactive
-				factor = 1
+				factor = 4
 			}
 			scaled_militancy = {
 				issue = reactive
-				factor = 1
+				factor = 4
 			}
 			
 			scaled_militancy = {
 				issue = isolationist
-				factor = 2
+				factor = 4
 			}
 		}
 	}
@@ -379,11 +388,11 @@ country_event = {
 			}
 			scaled_militancy = {
 				issue = proactive
-				factor = 1
+				factor = 4
 			}
 			scaled_militancy = {
 				issue = reactive
-				factor = 2
+				factor = 4
 			}
 			scaled_militancy = {
 				issue = isolationist
@@ -396,7 +405,7 @@ country_event = {
 		name = "Let the debate take its course"
 		# Audax Validator "." Ignore_1007
 		random_list = {
-			1 = {
+			25 = {
 				any_pop = {
 					dominant_issue = {
 						factor = 0.2
@@ -404,7 +413,7 @@ country_event = {
 					}
 				}
 			}
-			3 = {
+			25 = {
 				any_pop = {
 					dominant_issue = {
 						factor = 0.2
@@ -412,7 +421,7 @@ country_event = {
 					}
 				}
 			}
-			5 = {
+			25 = {
 				any_pop = {
 					dominant_issue = {
 						factor = 0.2
@@ -420,7 +429,7 @@ country_event = {
 					}
 				}
 			}
-			7 = {
+			25 = {
 				any_pop = {
 					dominant_issue = {
 						factor = 0.2
@@ -451,11 +460,11 @@ country_event = {
 			}
 			scaled_militancy = {
 				issue = pro_military
-				factor = 1
+				factor = 4
 			}
 			scaled_militancy = {
 				issue = anti_military
-				factor = 2
+				factor = 4
 			}
 			scaled_militancy = {
 				issue = pacifism
@@ -473,11 +482,11 @@ country_event = {
 			}
 			scaled_militancy = {
 				issue = jingoism
-				factor = 1
+				factor = 4
 			}
 			scaled_militancy = {
 				issue = anti_military
-				factor = 1
+				factor = 4
 			}
 			
 			scaled_militancy = {
@@ -496,11 +505,11 @@ country_event = {
 			}
 			scaled_militancy = {
 				issue = pacifism
-				factor = 1
+				factor = 4
 			}
 			scaled_militancy = {
 				issue = pro_military
-				factor = 1
+				factor = 4
 			}
 			scaled_militancy = {
 				issue = jingoism
@@ -518,11 +527,11 @@ country_event = {
 			}
 			scaled_militancy = {
 				issue = anti_military
-				factor = 1
+				factor = 4
 			}
 			scaled_militancy = {
 				issue = pro_military
-				factor = 2
+				factor = 4
 			}
 			scaled_militancy = {
 				issue = jingoism
@@ -535,7 +544,7 @@ country_event = {
 		name = "Let the debate take its course"
 		# Audax Validator "." Ignore_1007
 		random_list = {
-			1 = {
+			25 = {
 				any_pop = {
 					dominant_issue = {
 						factor = 0.2
@@ -543,7 +552,7 @@ country_event = {
 					}
 				}
 			}
-			3 = {
+			25 = {
 				any_pop = {
 					dominant_issue = {
 						factor = 0.2
@@ -551,7 +560,7 @@ country_event = {
 					}
 				}
 			}
-			5 = {
+			25 = {
 				any_pop = {
 					dominant_issue = {
 						factor = 0.2
@@ -559,11 +568,3138 @@ country_event = {
 					}
 				}
 			}
-			7 = {
+			25 = {
 				any_pop = {
 					dominant_issue = {
 						factor = 0.2
 						value = pacifism
+					}
+				}
+			}
+		}
+	}
+}
+
+# A Heated Debate: Alignment
+country_event = {
+	id = 14005
+	title = "EVTNAME14005"
+	desc = "EVTDESC14005"
+	
+	election = yes
+	issue_group = good_evil_alignment
+	is_triggered_only = yes
+	
+	option = {
+		name = "Sauron cannot be trusted"
+		any_pop = {
+			dominant_issue = {
+				factor = 0.2
+				value = good_alignment
+			}
+			scaled_militancy = {
+				issue = neutral_alignment
+				factor = 4
+			}
+			scaled_militancy = {
+				issue = evil_alignment
+				factor = 4
+			}
+		}
+	}
+	
+	option = {
+		name = "We are aligned with no others"
+		any_pop = {
+			dominant_issue = {
+				factor = 0.2
+				value = neutral_alignment
+			}
+			scaled_militancy = {
+				issue = good_alignment
+				factor = 4
+			}
+			scaled_militancy = {
+				issue = evil_alignment
+				factor = 4
+			}
+		}
+	}
+	
+	option = {
+		name = "Sauron is the lord and protector of Middle Earth"
+		any_pop = {
+			dominant_issue = {
+				factor = 0.2
+				value = evil_alignment
+			}
+			scaled_militancy = {
+				issue = good_alignment
+				factor = 4
+			}
+			scaled_militancy = {
+				issue = neutral_alignment
+				factor = 4
+			}
+		}
+	}
+	
+	option = {
+		name = "Let the debate take its course"
+		# Audax Validator "." Ignore_1007
+		random_list = {
+			33 = {
+				any_pop = {
+					dominant_issue = {
+						factor = 0.2
+						value = good_alignment
+					}
+				}
+			}
+			33 = {
+				any_pop = {
+					dominant_issue = {
+						factor = 0.2
+						value = neutral_alignment
+					}
+				}
+			}
+			33 = {
+				any_pop = {
+					dominant_issue = {
+						factor = 0.2
+						value = evil_alignment
+					}
+				}
+			}
+		}
+	}
+}
+# }
+
+# Support from $PROVINCENAME$
+province_event = {
+	id = 14006
+	title = "Support from $PROVINCENAME$"
+	desc = "EVTDESC14006"
+	
+	trigger = {
+		is_state_capital = yes
+		NOT = { average_militancy = 4 }
+		controlled_by = owner
+	}
+	
+	mean_time_to_happen = {
+		months = 2000
+		modifier = {
+			factor = 0.9
+			average_militancy = 2
+			NOT = { average_militancy = 3 }
+		}
+		modifier = {
+			factor = 0.8
+			average_militancy = 1
+			NOT = { average_militancy = 2 }
+		}
+		modifier = {
+			factor = 0.7
+			NOT = { average_militancy = 1 }
+		}
+		modifier = {
+			factor = 0.75
+			OR = {
+				is_primary_culture = yes
+				is_accepted_culture = yes
+			}
+		}
+		modifier = {
+			factor = 0.5
+			owner = { election = yes }
+		}
+	}
+	
+	option = {
+		name = "We are the true ruler of the realm"
+		
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = servants_good } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = 0.1
+							value = servants_good
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = servants_neutral } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = 0.1
+							value = servants_neutral
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = servants_evil } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = 0.1
+							value = servants_evil
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = line_of_isildur } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = 0.1
+							value = line_of_isildur
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = dunedain_nobles } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = 0.1
+							value = dunedain_nobles
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = house_of_stewards } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = 0.1
+							value = house_of_stewards
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = gondorian_nobles } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = 0.1
+							value = gondorian_nobles
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = house_of_dol_amroth } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = 0.1
+							value = house_of_dol_amroth
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = amrothian_nobles } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = 0.1
+							value = amrothian_nobles
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = arthedani_nobles } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = 0.1
+							value = arthedani_nobles
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = cardolandrim_nobles } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = 0.1
+							value = cardolandrim_nobles
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = haeranedain_nobles } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = 0.1
+							value = haeranedain_nobles
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = house_half_elven } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = 0.1
+							value = house_half_elven
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = noldor_nobles } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = 0.1
+							value = noldor_nobles
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = lords_of_mithlond } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = 0.1
+							value = lords_of_mithlond
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = falathrim_nobles } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = 0.1
+							value = falathrim_nobles
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = house_of_oropher } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = 0.1
+							value = house_of_oropher
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = silvan_nobles } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = 0.1
+							value = silvan_nobles
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = house_of_finarfin } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = 0.1
+							value = house_of_finarfin
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = galadhrim_nobles } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = 0.1
+							value = galadhrim_nobles
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = avari_nobles } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = 0.1
+							value = avari_nobles
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = umbarrim_nobles } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = 0.1
+							value = umbarrim_nobles
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = harnendan_nobles } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = 0.1
+							value = harnendan_nobles
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = haruzani_nobles } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = 0.1
+							value = haruzani_nobles
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = pezarsani_nobles } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = 0.1
+							value = pezarsani_nobles
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = lurmsakuni_nobles } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = 0.1
+							value = lurmsakuni_nobles
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = arysian_nobles } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = 0.1
+							value = arysian_nobles
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = kingsmen_nobles } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = 0.1
+							value = kingsmen_nobles
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = black_numenorean_nobles } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = 0.1
+							value = black_numenorean_nobles
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = variag_nobles } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = 0.1
+							value = variag_nobles
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = nurniag_nobles } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = 0.1
+							value = nurniag_nobles
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = chelkiag_nobles } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = 0.1
+							value = chelkiag_nobles
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = sagath_nobles } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = 0.1
+							value = sagath_nobles
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = sekel_nobles } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = 0.1
+							value = sekel_nobles
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = urgath_nobles } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = 0.1
+							value = urgath_nobles
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = kuga_nobles } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = 0.1
+							value = kuga_nobles
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = logath_nobles } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = 0.1
+							value = logath_nobles
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = house_of_bard } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = 0.1
+							value = house_of_bard
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = barding_nobles } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = 0.1
+							value = barding_nobles
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = grammas_nobles } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = 0.1
+							value = grammas_nobles
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = rivermen_nobles } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = 0.1
+							value = rivermen_nobles
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = adhalling_nobles } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = 0.1
+							value = adhalling_nobles
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = house_of_koldana } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = 0.1
+							value = house_of_koldana
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = dorwinrim_nobles } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = 0.1
+							value = dorwinrim_nobles
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = aivathiuda_nobles } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = 0.1
+							value = aivathiuda_nobles
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = anthar_nobles } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = 0.1
+							value = anthar_nobles
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = gadraught_nobles } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = 0.1
+							value = gadraught_nobles
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = line_of_durin } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = 0.1
+							value = line_of_durin
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = longbeard_nobles } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = 0.1
+							value = longbeard_nobles
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = firebeard_nobles } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = 0.1
+							value = firebeard_nobles
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = broadbeam_nobles } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = 0.1
+							value = broadbeam_nobles
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = ironfist_nobles } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = 0.1
+							value = ironfist_nobles
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = dourhand_nobles } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = 0.1
+							value = dourhand_nobles
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = shornbeard_nobles } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = 0.1
+							value = shornbeard_nobles
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = woodsmen_nobles } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = 0.1
+							value = woodsmen_nobles
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = beorning_nobles } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = 0.1
+							value = beorning_nobles
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = house_of_beorn } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = 0.1
+							value = house_of_beorn
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = beiabarnae_nobles } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = 0.1
+							value = beiabarnae_nobles
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = melburgi_nobles } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = 0.1
+							value = melburgi_nobles
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = herimundi_nobles } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = 0.1
+							value = herimundi_nobles
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = lords_of_fangorn } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = 0.1
+							value = lords_of_fangorn
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = ent_nobles } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = 0.1
+							value = ent_nobles
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = huorn_nobles } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = 0.1
+							value = huorn_nobles
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = black_huorn_nobles } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = 0.1
+							value = black_huorn_nobles
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = druedain_nobles } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = 0.1
+							value = druedain_nobles
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = dunnish_nobles } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = 0.1
+							value = dunnish_nobles
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = hollin_folk_nobles } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = 0.1
+							value = hollin_folk_nobles
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = enedwaithrim_nobles } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = 0.1
+							value = enedwaithrim_nobles
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = saerlanner_nobles } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = 0.1
+							value = saerlanner_nobles
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = dunir_nobles } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = 0.1
+							value = dunir_nobles
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = marshmen_nobles } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = 0.1
+							value = marshmen_nobles
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = house_of_eorl } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = 0.1
+							value = house_of_eorl
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = rohirrim_nobles } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = 0.1
+							value = rohirrim_nobles
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = anduinmen_nobles } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = 0.1
+							value = anduinmen_nobles
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = isenmen_nobles } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = 0.1
+							value = isenmen_nobles
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = uruk_hai_nobles } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = 0.1
+							value = uruk_hai_nobles
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = mordor_orc_nobles } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = 0.1
+							value = mordor_orc_nobles
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = mordor_uruk_nobles } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = 0.1
+							value = mordor_uruk_nobles
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = guldurrim_nobles } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = 0.1
+							value = guldurrim_nobles
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = white_mountain_goblin_nobles } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = 0.1
+							value = white_mountain_goblin_nobles
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = morian_nobles } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = 0.1
+							value = morian_nobles
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = goblin_towner_nobles } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = 0.1
+							value = goblin_towner_nobles
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = gundabad_orc_nobles } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = 0.1
+							value = gundabad_orc_nobles
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = snow_orc_nobles } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = 0.1
+							value = snow_orc_nobles
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = gram_goblin_nobles } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = 0.1
+							value = gram_goblin_nobles
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = blue_mountain_goblin_nobles } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = 0.1
+							value = blue_mountain_goblin_nobles
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = angmarrim_nobles } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = 0.1
+							value = angmarrim_nobles
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = hillmen_nobles } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = 0.1
+							value = hillmen_nobles
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = lossoth_nobles } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = 0.1
+							value = lossoth_nobles
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = breelander_nobles } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = 0.1
+							value = breelander_nobles
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = siredain_nobles } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = 0.1
+							value = siredain_nobles
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = stoor_nobles } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = 0.1
+							value = stoor_nobles
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = harfoot_nobles } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = 0.1
+							value = harfoot_nobles
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = fallohide_nobles } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = 0.1
+							value = fallohide_nobles
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = cave_trolls_nobles } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = 0.1
+							value = cave_trolls_nobles
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = hill_trolls_nobles } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = 0.1
+							value = hill_trolls_nobles
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = mountain_trolls_nobles } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = 0.1
+							value = mountain_trolls_nobles
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = snow_trolls_nobles } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = 0.1
+							value = snow_trolls_nobles
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = stone_trolls_nobles } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = 0.1
+							value = stone_trolls_nobles
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = olog_hai_nobles } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = 0.1
+							value = olog_hai_nobles
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = flightlords_of_the_mountains } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = 0.1
+							value = flightlords_of_the_mountains
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = great_eagle_nobles } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = 0.1
+							value = great_eagle_nobles
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = lords_of_ravens } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = 0.1
+							value = lords_of_ravens
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = raven_nobles } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = 0.1
+							value = raven_nobles
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = great_brood_mothers } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = 0.1
+							value = great_brood_mothers
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = great_spider_nobles } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = 0.1
+							value = great_spider_nobles
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = wight_nobles } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = 0.1
+							value = wight_nobles
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = kings_of_the_dead } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = 0.1
+							value = kings_of_the_dead
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = oathbreaker_nobles } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = 0.1
+							value = oathbreaker_nobles
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = lords_of_isengard } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = 0.1
+							value = lords_of_isengard
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = lords_of_rhosgobel } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = 0.1
+							value = lords_of_rhosgobel
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = lords_of_mordor } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = 0.1
+							value = lords_of_mordor
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = saurons_nine } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = 0.1
+							value = saurons_nine
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+# Lack of Support from $PROVINCENAME$
+province_event = {
+	id = 14007
+	title = "Lack of Support from $PROVINCENAME$"
+	desc = "EVTDESC14007"
+	
+	trigger = {
+		is_state_capital = yes
+		average_militancy = 4
+		controlled_by = owner
+	}
+	
+	mean_time_to_happen = {
+		months = 2000
+		modifier = {
+			factor = 0.9
+			average_militancy = 4
+			NOT = { average_militancy = 6 }
+		}
+		modifier = {
+			factor = 0.8
+			average_militancy = 7
+			NOT = { average_militancy = 9 }
+		}
+		modifier = {
+			factor = 0.7
+			average_militancy = 9
+		}
+		modifier = {
+			factor = 0.75
+			is_primary_culture = no
+			is_accepted_culture = no
+		}
+		modifier = {
+			factor = 0.5
+			owner = { election = yes }
+		}
+	}
+	
+	option = {
+		name = "We are the true ruler of the realm"
+		
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = servants_good } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = -0.1
+							value = servants_good
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = servants_neutral } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = -0.1
+							value = servants_neutral
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = servants_evil } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = -0.1
+							value = servants_evil
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = line_of_isildur } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = -0.1
+							value = line_of_isildur
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = dunedain_nobles } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = -0.1
+							value = dunedain_nobles
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = house_of_stewards } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = -0.1
+							value = house_of_stewards
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = gondorian_nobles } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = -0.1
+							value = gondorian_nobles
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = house_of_dol_amroth } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = -0.1
+							value = house_of_dol_amroth
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = amrothian_nobles } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = -0.1
+							value = amrothian_nobles
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = arthedani_nobles } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = -0.1
+							value = arthedani_nobles
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = cardolandrim_nobles } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = -0.1
+							value = cardolandrim_nobles
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = haeranedain_nobles } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = -0.1
+							value = haeranedain_nobles
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = house_half_elven } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = -0.1
+							value = house_half_elven
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = noldor_nobles } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = -0.1
+							value = noldor_nobles
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = lords_of_mithlond } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = -0.1
+							value = lords_of_mithlond
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = falathrim_nobles } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = -0.1
+							value = falathrim_nobles
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = house_of_oropher } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = -0.1
+							value = house_of_oropher
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = silvan_nobles } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = -0.1
+							value = silvan_nobles
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = house_of_finarfin } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = -0.1
+							value = house_of_finarfin
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = galadhrim_nobles } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = -0.1
+							value = galadhrim_nobles
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = avari_nobles } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = -0.1
+							value = avari_nobles
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = umbarrim_nobles } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = -0.1
+							value = umbarrim_nobles
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = harnendan_nobles } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = -0.1
+							value = harnendan_nobles
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = haruzani_nobles } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = -0.1
+							value = haruzani_nobles
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = pezarsani_nobles } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = -0.1
+							value = pezarsani_nobles
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = lurmsakuni_nobles } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = -0.1
+							value = lurmsakuni_nobles
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = arysian_nobles } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = -0.1
+							value = arysian_nobles
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = kingsmen_nobles } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = -0.1
+							value = kingsmen_nobles
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = black_numenorean_nobles } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = -0.1
+							value = black_numenorean_nobles
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = variag_nobles } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = -0.1
+							value = variag_nobles
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = nurniag_nobles } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = -0.1
+							value = nurniag_nobles
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = chelkiag_nobles } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = -0.1
+							value = chelkiag_nobles
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = sagath_nobles } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = -0.1
+							value = sagath_nobles
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = sekel_nobles } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = -0.1
+							value = sekel_nobles
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = urgath_nobles } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = -0.1
+							value = urgath_nobles
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = kuga_nobles } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = -0.1
+							value = kuga_nobles
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = logath_nobles } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = -0.1
+							value = logath_nobles
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = house_of_bard } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = -0.1
+							value = house_of_bard
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = barding_nobles } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = -0.1
+							value = barding_nobles
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = grammas_nobles } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = -0.1
+							value = grammas_nobles
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = rivermen_nobles } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = -0.1
+							value = rivermen_nobles
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = adhalling_nobles } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = -0.1
+							value = adhalling_nobles
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = house_of_koldana } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = -0.1
+							value = house_of_koldana
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = dorwinrim_nobles } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = -0.1
+							value = dorwinrim_nobles
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = aivathiuda_nobles } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = -0.1
+							value = aivathiuda_nobles
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = anthar_nobles } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = -0.1
+							value = anthar_nobles
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = gadraught_nobles } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = -0.1
+							value = gadraught_nobles
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = line_of_durin } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = -0.1
+							value = line_of_durin
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = longbeard_nobles } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = -0.1
+							value = longbeard_nobles
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = firebeard_nobles } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = -0.1
+							value = firebeard_nobles
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = broadbeam_nobles } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = -0.1
+							value = broadbeam_nobles
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = ironfist_nobles } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = -0.1
+							value = ironfist_nobles
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = dourhand_nobles } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = -0.1
+							value = dourhand_nobles
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = shornbeard_nobles } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = -0.1
+							value = shornbeard_nobles
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = woodsmen_nobles } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = -0.1
+							value = woodsmen_nobles
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = beorning_nobles } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = -0.1
+							value = beorning_nobles
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = house_of_beorn } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = -0.1
+							value = house_of_beorn
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = beiabarnae_nobles } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = -0.1
+							value = beiabarnae_nobles
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = melburgi_nobles } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = -0.1
+							value = melburgi_nobles
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = herimundi_nobles } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = -0.1
+							value = herimundi_nobles
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = lords_of_fangorn } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = -0.1
+							value = lords_of_fangorn
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = ent_nobles } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = -0.1
+							value = ent_nobles
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = huorn_nobles } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = -0.1
+							value = huorn_nobles
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = black_huorn_nobles } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = -0.1
+							value = black_huorn_nobles
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = druedain_nobles } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = -0.1
+							value = druedain_nobles
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = dunnish_nobles } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = -0.1
+							value = dunnish_nobles
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = hollin_folk_nobles } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = -0.1
+							value = hollin_folk_nobles
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = enedwaithrim_nobles } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = -0.1
+							value = enedwaithrim_nobles
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = saerlanner_nobles } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = -0.1
+							value = saerlanner_nobles
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = dunir_nobles } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = -0.1
+							value = dunir_nobles
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = marshmen_nobles } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = -0.1
+							value = marshmen_nobles
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = house_of_eorl } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = -0.1
+							value = house_of_eorl
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = rohirrim_nobles } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = -0.1
+							value = rohirrim_nobles
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = anduinmen_nobles } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = -0.1
+							value = anduinmen_nobles
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = isenmen_nobles } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = -0.1
+							value = isenmen_nobles
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = uruk_hai_nobles } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = -0.1
+							value = uruk_hai_nobles
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = mordor_orc_nobles } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = -0.1
+							value = mordor_orc_nobles
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = mordor_uruk_nobles } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = -0.1
+							value = mordor_uruk_nobles
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = guldurrim_nobles } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = -0.1
+							value = guldurrim_nobles
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = white_mountain_goblin_nobles } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = -0.1
+							value = white_mountain_goblin_nobles
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = morian_nobles } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = -0.1
+							value = morian_nobles
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = goblin_towner_nobles } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = -0.1
+							value = goblin_towner_nobles
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = gundabad_orc_nobles } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = -0.1
+							value = gundabad_orc_nobles
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = snow_orc_nobles } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = -0.1
+							value = snow_orc_nobles
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = gram_goblin_nobles } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = -0.1
+							value = gram_goblin_nobles
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = blue_mountain_goblin_nobles } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = -0.1
+							value = blue_mountain_goblin_nobles
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = angmarrim_nobles } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = -0.1
+							value = angmarrim_nobles
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = hillmen_nobles } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = -0.1
+							value = hillmen_nobles
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = lossoth_nobles } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = -0.1
+							value = lossoth_nobles
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = breelander_nobles } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = -0.1
+							value = breelander_nobles
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = siredain_nobles } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = -0.1
+							value = siredain_nobles
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = stoor_nobles } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = -0.1
+							value = stoor_nobles
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = harfoot_nobles } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = -0.1
+							value = harfoot_nobles
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = fallohide_nobles } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = -0.1
+							value = fallohide_nobles
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = cave_trolls_nobles } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = -0.1
+							value = cave_trolls_nobles
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = hill_trolls_nobles } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = -0.1
+							value = hill_trolls_nobles
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = mountain_trolls_nobles } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = -0.1
+							value = mountain_trolls_nobles
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = snow_trolls_nobles } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = -0.1
+							value = snow_trolls_nobles
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = stone_trolls_nobles } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = -0.1
+							value = stone_trolls_nobles
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = olog_hai_nobles } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = -0.1
+							value = olog_hai_nobles
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = flightlords_of_the_mountains } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = -0.1
+							value = flightlords_of_the_mountains
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = great_eagle_nobles } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = -0.1
+							value = great_eagle_nobles
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = lords_of_ravens } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = -0.1
+							value = lords_of_ravens
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = raven_nobles } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = -0.1
+							value = raven_nobles
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = great_brood_mothers } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = -0.1
+							value = great_brood_mothers
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = great_spider_nobles } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = -0.1
+							value = great_spider_nobles
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = wight_nobles } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = -0.1
+							value = wight_nobles
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = kings_of_the_dead } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = -0.1
+							value = kings_of_the_dead
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = oathbreaker_nobles } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = -0.1
+							value = oathbreaker_nobles
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = lords_of_isengard } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = -0.1
+							value = lords_of_isengard
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = lords_of_rhosgobel } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = -0.1
+							value = lords_of_rhosgobel
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = lords_of_mordor } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = -0.1
+							value = lords_of_mordor
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = saurons_nine } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = -0.1
+							value = saurons_nine
+						}
 					}
 				}
 			}

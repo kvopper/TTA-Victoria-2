@@ -68,7 +68,7 @@ political_decisions = {
 			
 			modifier = {
 				factor = 0
-				nationalvalue = ecthelion_ii
+				ruling_party = GON_ecthelion_ii
 				has_global_flag = railroading_enabled
 			}
 		}

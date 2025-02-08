@@ -113,6 +113,19 @@ promotion_chance = {
 			strata = poor
 		}
 	}
+	group = {
+		modifier = {
+			factor = 0.2
+			OR = {
+				country = { apprenticeship = appointment }
+				country = { apprenticeship = guild_school }
+			}
+		}
+		modifier = {
+			factor = 0.2
+			country = { apprenticeship = guild_school }
+		}
+	}
 	modifier = {
 		factor = -100
 		location = { NOT = { controlled_by = owner } }
@@ -121,19 +134,19 @@ promotion_chance = {
 		factor = 0.5
 		pop_majority_ideology = tribal_ideology
 		country = { good_evil_alignment = good_alignment }
-		pop_majority_issue = good_alignment_fake
+		pop_majority_issue = good_alignment
 	}
 	modifier = {
 		factor = 0.5
 		pop_majority_ideology = tribal_ideology
 		country = { good_evil_alignment = neutral_alignment }
-		pop_majority_issue = neutral_alignment_fake
+		pop_majority_issue = neutral_alignment
 	}
 	modifier = {
 		factor = 0.5
 		pop_majority_ideology = tribal_ideology
 		country = { good_evil_alignment = evil_alignment }
-		pop_majority_issue = evil_alignment_fake
+		pop_majority_issue = evil_alignment
 	}
 	modifier = { # Angry unaccepted tribals won't promote out of tribals
 		factor = -100
@@ -345,6 +358,7 @@ migration_chance = {
 		OR = {
 			NOT = { location = { total_pops = 5000 } }
 			NOT = { location = { controlled_by = owner } }
+			pop_majority_ideology = slave_ideology
 		}
 	}
 	group = {
@@ -511,7 +525,10 @@ colonialmigration_chance = {
 	}
 	modifier = {
 		factor = -100
-		pop_majority_ideology = tribal_ideology
+		OR = {
+			pop_majority_ideology = tribal_ideology
+			pop_majority_ideology = slave_ideology
+		}
 	}
 }
 
@@ -521,11 +538,11 @@ emigration_chance = {
 
 	modifier = {
 		factor = -100
-		country = { border_policy = closed_borders }
-	}
-	modifier = {
-		factor = -100
-		NOT = { agree_with_ruling_party = 0.02 }
+		OR = {
+			country = { border_policy = closed_borders }
+			pop_majority_ideology = slave_ideology
+			NOT = { agree_with_ruling_party = 0.02 }
+		}
 	}
 	group = {
 		modifier = {

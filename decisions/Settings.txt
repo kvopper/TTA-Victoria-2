@@ -16,7 +16,15 @@ political_decisions = {
 		allow = {}
 		
 		effect = {
-			country_event = { id = 10000 days = 0 }
+			set_global_flag = hidden_effects
+			random_country = {
+				limit = {
+					tag = FOR
+					has_global_flag = hidden_effects
+				}
+				country_event = { id = 10000 days = 0 }
+			}
+			clr_global_flag = hidden_effects
 		}
 	}
 	

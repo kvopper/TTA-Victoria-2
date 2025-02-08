@@ -4,18 +4,17 @@ primary_culture = kuga
 culture = men_culture
 religion = men
 government = monarchy
-nationalvalue = generic_leader
+nationalvalue = no_heirloom
 literacy = 0
 
 oob = "IBR_oob.txt"
 
-ruling_party = generic_high_nobility
+ruling_party = generic_kuga_nobles
 
 upper_house = {
-	high_nobility = 100
+	kuga_nobles = 100
 }
 
 slavery = yes_slavery
-upper_house_composition = appointed
 
 schools = traditional_academic

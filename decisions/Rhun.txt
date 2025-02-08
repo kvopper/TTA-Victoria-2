@@ -8,6 +8,11 @@
 
 # Forming Rhun
 political_decisions = {
+	RHU_start_decision = {
+		potential = { always = no }
+		effect = {
+		}
+	}
 	form_rhun = {
 		potential = {
 			is_culture_group = easterlings
@@ -38,7 +43,7 @@ political_decisions = {
 				limit = {
 					is_culture_group = easterlings
 				}
-				country_event = 100003
+				country_event = 3502
 				
 				all_core = { add_core = RHU }
 			}
@@ -123,7 +128,7 @@ political_decisions = {
 					is_culture_group = easterlings
 					NOT = { tag = THIS }
 				}
-				country_event = 100005
+				country_event = 3504
 			}
 			
 			prestige = 5
@@ -238,11 +243,8 @@ political_decisions = {
 				RHU = {
 					remove_accepted_culture = evil_culture
 					remove_accepted_culture = neutral_culture
-					political_reform = good_alignment
+					ruling_party_ideology = servants_good
 					add_accepted_culture = good_culture
-					clr_country_flag = attempting_to_good
-					clr_country_flag = attempting_to_neutral
-					clr_country_flag = attempting_to_evil
 				}
 			}
 			
@@ -253,11 +255,8 @@ political_decisions = {
 				RHU = {
 					remove_accepted_culture = good_culture
 					remove_accepted_culture = neutral_culture
-					political_reform = evil_alignment
+					ruling_party_ideology = servants_evil
 					add_accepted_culture = evil_culture
-					clr_country_flag = attempting_to_good
-					clr_country_flag = attempting_to_neutral
-					clr_country_flag = attempting_to_evil
 				}
 			}
 			
@@ -268,11 +267,8 @@ political_decisions = {
 				RHU = {
 					remove_accepted_culture = good_culture
 					remove_accepted_culture = evil_culture
-					political_reform = neutral_alignment
+					ruling_party_ideology = servants_neutral
 					add_accepted_culture = neutral_culture
-					clr_country_flag = attempting_to_good
-					clr_country_flag = attempting_to_neutral
-					clr_country_flag = attempting_to_evil
 				}
 			}
 		}

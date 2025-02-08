@@ -4,18 +4,17 @@ primary_culture = logath
 culture = men_culture
 religion = men
 government = monarchy
-nationalvalue = generic_leader
+nationalvalue = no_heirloom
 literacy = 0
 
 oob = "GOR_oob.txt"
 
-ruling_party = generic_high_nobility
+ruling_party = generic_logath_nobles
 
 upper_house = {
-	high_nobility = 100
+	logath_nobles = 100
 }
 
 slavery = no_slavery
-upper_house_composition = appointed
 
 schools = traditional_academic

@@ -3,15 +3,14 @@ capital = 891
 primary_culture = cardolandrim
 culture = men_culture
 religion = men
-government = man_tribe
-nationalvalue = generic_leader
+government = tribal
+nationalvalue = no_heirloom
 literacy = 0
 
 slavery = no_slavery
-upper_house_composition = appointed
-ruling_party = generic_high_nobility
+ruling_party = generic_cardolandrim_nobles
 upper_house = {
-	high_nobility = 100
+	cardolandrim_nobles = 100
 }
 
 schools = traditional_academic

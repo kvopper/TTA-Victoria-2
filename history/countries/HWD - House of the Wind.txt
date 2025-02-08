@@ -4,19 +4,18 @@ primary_culture = noldor
 culture = elven_culture
 culture = falathrim
 religion = elven
-government = lord_monarchy
-nationalvalue = generic_leader
+government = monarchy
+nationalvalue = no_heirloom
 civilized = yes
 
-ruling_party = generic_high_nobility
+ruling_party = generic_noldor_nobles
 
 upper_house = {
-	high_nobility = 100
+	noldor_nobles = 100
 }
 penal_reform = hard_labor
 slavery = no_slavery
 serfdom = banned_serfdom
-upper_house_composition = appointed
 
 schools = traditional_academic
 

@@ -3,19 +3,18 @@ capital = 853
 primary_culture = hill_trolls
 culture = troll_culture
 religion = troll
-government = goblin_tribe
-nationalvalue = generic_leader
+government = tribal
+nationalvalue = no_heirloom
 literacy = 0
 
 oob = "ETT_oob.txt"
 
-ruling_party = generic_high_nobility
+ruling_party = generic_hill_trolls_nobles
 
 upper_house = {
-	high_nobility = 100
+	hill_trolls_nobles = 100
 }
 
 slavery = yes_slavery
-upper_house_composition = appointed
 
 schools = traditional_academic

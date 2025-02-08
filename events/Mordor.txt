@@ -27,7 +27,7 @@ country_event = {
 		
 		modifier = {
 			factor = 3
-			NOT = { nationalvalue = sauron }
+			NOT = { ruling_party = MOR_sauron }
 		}
 	}
 	
@@ -107,7 +107,7 @@ country_event = {
 	
 	trigger = {
 		tag = MOR
-		nationalvalue = sauron
+		ruling_party = MOR_sauron
 		has_global_flag = ithilien_depopulating
 		
 		GON_198 = {
@@ -459,7 +459,7 @@ country_event = {
 		create_alliance = HRD
 		HRD = {
 			country_event = 2510
-			political_reform = evil_alignment
+			ruling_party_ideology = servants_evil
 			capital = 255
 		}
 		diplomatic_influence = {

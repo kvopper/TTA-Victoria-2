@@ -22,24 +22,16 @@ EVTDESC2901;Cleaning up cbs that don't need to exist;x
 ##########################;x }
 ##### REVOLTS EVENTS #####;x {
 ##########################;x
-EVTDESC3000;To our leadership's dismay, the army was overwhelmed by the Democratic Rebels that plagued $CAPITAL$. They have been able to force their demands, increasing voter rights.;x
-EVTDESC3002;To our leadership's dismay, the army was overwhelmed by the Noble Rebels that plagued $CAPITAL$. They have been able to for their demands, increasing the nobility's privileges.;x
-EVTDESC3003;To our leadership's dismay, the army was overwhelmed by the Good Rebels that plagued $CAPITAL$. They have been able to for their demands, removing all influences of Neutrality and Evil from the government.;x
-EVTDESC3004;To our leadership's dismay, the army was overwhelmed by the Evil Rebels that plagued $CAPITAL$. They have been able to for their demands, removing all influences of Good and Neutrality from the government.;x
-EVTDESC3005;To our leadership's dismay, the army was overwhelmed by the Neutral Rebels that plagued $CAPITAL$. They have been able to for their demands, removing all influences of Good and Evil from the government.;x
+EVTDESC3000;To our leadership's dismay, the army was overwhelmed by the Republican Rebels that plagued $CAPITAL$. They have been able to force their demands, increasing voter rights.;x
+EVTDESC3001;To our former ruler's dismay, the so-called pretenders have occupied $CAPITAL$ and siezed leadership of $COUNTRY$.;x
 EVTDESC3006;$COUNTRY_ADJ$ patriots have risen up in a neighboring realm, and have gained sufficient control that they have sent word they wish to bring the province back to $COUNTRY$. Agreeing would mean risking war, but refusing would mean angering our people.;x
 EVTDESC3008;With the patriot rebellion now over, our provinces have now been brought under control and $COUNTRY_ADJ$ nobility are once again in command.;;;;;;;;;;;;;
-#################################;x }
-##### DYNAMIC TRAITS EVENTS #####;x {
-#################################;x
-EVTDESC3500;We have a new leader! With this, comes a potential for different traits...;x
-EVTDESC3501;It is a sad day for the $COUNTRY$. Our leader has died!;x
-EVTDESC3502;Our ruler's decisions has given/taken away a trait!;x
-EVTDESC3503;Our ruler's decisions has given/taken away a trait!;x
-EVTDESC3504;Our ruler's decisions has given/taken away a trait!;x
-EVTDESC3505;Our ruler's decisions has given/taken away a trait!;x
-EVTDESC3506;Our ruler's decisions has given/taken away a trait!;x
-EVTDESC3508;The monarchy has ended! As such, we will no longer have access to our realm-specific leaders and a new generic leader will be assigned instead. Due to the complexity involved with tracking leaders, the mod team has opted to not allow players to "get back on track". §RIn other words, you will not be able to access the standard leader line for the rest of the game, and will only have access to generic leaders\n\nNote that the "Our Leader has Died" event will fire in order to clean up any leader-specific modifiers that you may have. Your leader may not have died, but the event is needed to ensure that the mod functions as intended§!;x
+######################################;x }
+##### TRIGGERED FUNCTIONS EVENTS #####;x {
+######################################;x
+EVTDESC3501;Our overlord has acquired some land that they do not claim, but we do. They are willing to give it to us.;x
+EVTDESC3502;One group within our cultural union has claimed sovereignty over our culture. They have proposed a union of all part of our culture. Should we accept?;x
+EVTDESC3504;A more well recognized realm of our cultural brethren have invited us to a council. Undoubtedly, they will want us to recognize them as a stronger realm, formally making us subservient to them. Should we attend?;x
 #########################;x }
 ##### RANDOM EVENTS #####;x {
 #########################;x
@@ -67,6 +59,8 @@ EVTDESC3621;As the forces of evil continue to encroach on Middle Earth, we must 
 EVTDESC3622;The streets of $CAPITAL$ have turned into a sea of people, where an unruly mob have formed throughout the city. Their demands are disperate and unfocused.;x
 EVTDESC3623;The leader of a realm is the realm. When that leader falters, the realm suffers. Recently, the $MONARCHTITLE$ has succumbed to increased anxiety about the future of the realm, a sentiment that the people have also begun to feel, paralysing the ability of the $MONARCHTITLE$ to rule effectively.;x
 EVTDESC3624;The Grey Pilgrim, the wandering Istari who roams Eriador, known as Mithrandir or Gandalf, has visited $COUNTRY$. A wave of hope has washed over our nation.;x
+EVTDESC3625;Today, our leader and their ruling council nearly had an altercation, causing the ruling council to storm out of the palace of $CAPITAL$. They refuse to re-enter without concessions from our ruler.;x
+EVTDESC3626;Driven by high anxiety about the realm and its future, the people of $COUNTRY$ are outwardly questioning their ruling government and their leader. If we are not careful, this could turn into outright rebellion.;x
 ##################################;x }
 ##### SMALL MECHANICS EVENTS #####;x {
 ##################################;x
@@ -117,21 +111,26 @@ EVTDESC12068;Towering stone walls encircle a bustling metropolis of unprecedente
 ###########################;x }
 ##### ELECTION EVENTS #####;x {
 ###########################;x
-EVTNAME14000;$COUNTRY_ADJ$ Guild Autonomy Policy;;;;;;;;;;x
+EVTNAME14000;$COUNTRY_ADJ$ Trade Policy;;;;;;;;;;x
 EVTNAME14000_sub;A Heated Debate in $COUNTRY$;;;;;;;;;;x
-EVTDESC14000;The question of Guild Autonomy has come around this election cycle. There are stauch supporters across the spectrum, with major proponents for guilds being independent, the Realm having some oversight into the guilds, and the Realm completely controlling the guilds. What is the current leadership's stance?;;;;;;;;;x
-EVTNAME14001;$COUNTRY_ADJ$ Racial Policy;;;;;;;;;;x
+EVTDESC14000;The question of trade Policy has come around this election cycle. There are stauch supporters across the spectrum, with major proponents for protectionism and free trade. What is the current leadership's stance?;;;;;;;;;x
+EVTNAME14001;$COUNTRY_ADJ$ Tax Policy;;;;;;;;;;x
 EVTNAME14001_sub;A Heated Debate in $COUNTRY$;;;;;;;;;x
-EVTDESC14001;The question of Racial policy have come around this election cycle. There are stauch supporters across the spectrum, with major proponents for allowing all races, non-Orcs and only our race. What is the current leadership's stance?;;;;;;;;;x
+EVTDESC14001;The question of tax policy have come around this election cycle. There are stauch supporters across the spectrum, with major proponents for Laissez Faire, Inteventionism, State Capitalism and Planned Economy. What is the current leadership's stance?;;;;;;;;;x
 EVTNAME14002;$COUNTRY_ADJ$ Language Policy;;;;;;;;;;x
 EVTNAME14002_sub;A Heated Debate in $COUNTRY$;;;;;;;;;x
-EVTDESC14002;The question of Language policy have come around this election cycle. There are stauch supporters across the spectrum, with major proponents for allowing all languages, giving some toleration of accepted minority languages and only our language. What is the current leadership's stance?;;;;;;;;;x
+EVTDESC14002;The question of language policy have come around this election cycle. There are stauch supporters across the spectrum, with major proponents for allowing all languages, giving some toleration of accepted minority languages and only our language. What is the current leadership's stance?;;;;;;;;;x
 EVTNAME14003;$COUNTRY_ADJ$ Diplomatic Policy;;;;;;;;;;x
 EVTNAME14003_sub;A Heated Debate in $COUNTRY$;;;;;;;;;x
-EVTDESC14003;The question of Diplomatic policy have come around this election cycle. There are stauch supporters across the spectrum, with major proponents for an isolationist policy, a reactive policy, a proactive policy and an interactive policy. What is the current leadership's stance?;;;;;;;;;x
+EVTDESC14003;The question of diplomatic policy have come around this election cycle. There are stauch supporters across the spectrum, with major proponents for an isolationist policy, a reactive policy, a proactive policy and an interactive policy. What is the current leadership's stance?;;;;;;;;;x
 EVTNAME14004;$COUNTRY_ADJ$ War Policy;;;;;;;;;;x
 EVTNAME14004_sub;A Heated Debate in $COUNTRY$;;;;;;;;;x
-EVTDESC14004;The question of War policy have come around this election cycle. There are stauch supporters across the spectrum, with major proponents for a jingoist policy, a pro-military policy, an anti-militaary policy and a pacifist policy. What is the current leadership's stance?;;;;;;;;;x
+EVTDESC14004;The question of war policy have come around this election cycle. There are stauch supporters across the spectrum, with major proponents for a jingoist policy, a pro-military policy, an anti-militaary policy and a pacifist policy. What is the current leadership's stance?;;;;;;;;;x
+EVTNAME14005;$COUNTRY_ADJ$ Alignment;;;;;;;;;;x
+EVTNAME14005_sub;A Heated Debate in $COUNTRY$;;;;;;;;;x
+EVTDESC14005;The question of our alignment has come around this election cycle. There are stauch supporters across the spectrum, with major proponents for denouncing Sauron, aligning with no one, and aligning with Sauron. What is the current leadership's stance?;;;;;;;;;x
+EVTDESC14006;One by one, the people of $PROVINCENAME$ leave their homes and join the ever growing crowd. People have come from far and wide, proclaiming support for our leader and their rule. The town guard look on, uncertain if they should disperse the crowd.;x
+EVTDESC14007;One by one, the people of $PROVINCENAME$ leave their homes and join the ever growing crowd. People have come from far and wide, critizing our leader and their rule. The town guard look on, uncertain if they should disperse the crowd.;x
 ########################################;x }
 ##### NATIONALIST MOVEMENTS EVENTS #####;x {
 ########################################;x
@@ -198,7 +197,7 @@ EVTDESC29003;There have been some significant changes to military in this mod. F
 EVTDESC29004;There have been numerous changes to politics in this mod. The most obvious is the reforms. They have been almost completely redone - political reforms are still called political reforms. However, social reforms are now called Burgher reforms.\n\nAdditionally, the Upper House and political parties have been renamed. The Upper House is now representative of your ruler's advisors. A good ruler would not implement any reforms without the support of a modicum of their advisors.\n\nPolitical Parties are now called interest groups - the ruler may wield power, but different groups attempt to influence them. Generally speaking, there will not be more than one interest group of any given ideology. The interest group in government will be called the leading interest group.\n\nAll of the ideologies in vanilla have been cut. Instead, the ideologies represent groups attempting to get the attention of the ruler. There are 5 interest groups| §MServants§!, representing those who blindly follow what the ruler wants -- this interest group is only available to governments types that do not have some sort of ruling council (and instead are purely ruled by the leader), §MHigh Nobility§!, representing the wealthiest and most influential nobles, §MLow Nobility§!, representing the rest of the nobles, §MBurgher§!, representing all of the wealthy guild owners and merchentmen and §MLoremaster§!, representing the intellectuals in the realm.;x
 EVTDESC29005;In addition to changing all of the military units, how a realm gets their generals and admirals has been reworked. Instead of using leadership to hire military leaders, there are now events to get them (§GRecruit Generals§! and §GRecruit Admirals§!).\n\nThis allows there to be unique generals with §Munique§! traits - traits that only they or select few have. Generally speaking, a realm's best military leaders will be the unique ones that they get from their flavor.;x
 EVTDESC29006;In addition to the ideology changes that have occurred, national values have been completely reworked. Instead of being a country's national value, they are now realm leaders. As such, each unique one (that isn't a "Generic" leader) has flavor associated with their agenda. Each realm with unique leaders has a list of what leaders they have access to.\n\nFinally, in addition to the realm leaders, each leader has different traits given to them via flavor, or a player's choices. §MIn other words, the traits that a leader has is dynamic§!;x
-EVTDESC29007;Welcome and thanks for playing The Third Age! Before playing, there's a couple people the mod team would like to have recognized|\n\n§GModders§!\nSirRunner\nDerpAnarchist\nCheese\nKvopper\nRandomPerson\n\n§GLoremasters§!\nJorde\nMoskauMaster\nOlyi\nWyrms\n\n§GAdvisors§!\nRadstermann\nBob Bobbington\n\nFor those who also play HOI4, please check out the two LOTR mods there (in addition to their submods)|\n§TLord of the Rings mod§! (by Helliaca)\n§TRide for Ruin§! (by IsaacHhyphenR)\n§TChronicles of the Third Age§!, a submod for Lord of the Rings mod (by Dean200027 and Equan);x
+EVTDESC29007;Welcome and thanks for playing The Third Age! Before playing, there's a couple people the mod team would like to have recognized|\n\n§GModders§!\nSirRunner\nDerpAnarchist\nCheese\nKvopper\nRandomPerson\n\n§GLoremasters§!\nJorde\nMoskauMaster\nOlyi\nWyrms\nSneakyDeer\nArgelia4president\nTrigori\n\n§GAdvisors§!\nRadstermann\nBob Bobbington\n\nFor those who also play HOI4, please check out the two LOTR mods there (in addition to their submods)|\n§TLord of the Rings mod§! (by Helliaca)\n§TRide for Ruin§! (by IsaacHhyphenR)\n§TChronicles of the Third Age§!, a submod for Lord of the Rings mod (by Dean200027 and Equan);x
 EVTDESC29001;The economy of vanilla Victoria II is built around an industrializing world, while Middle Earth is the equivalent of a Middles Ages world. Therefore the economics of the mod should match and factories have been replaced with guilds.\n\nWhile normally a guild produces one of the non-RGO goods, there are the following exceptions|\n\n§MBurning Pits§! which turn timber into coal.\n§MDye Guilds§! which turn food into dye.\n\nAdditionally, there are two types of §MFabric Guilds§!| One that uses wool and another that uses cotton.\n\nSome places in Middle Earth had significant industries, so Guilds in states with these provinces get an additional 10% throughput bonus|\n\n§MBlast Furnaces§!| Barad-dur\n§MCotton Weavers' Guilds§!| Minas Tirith\n§MBreweries§!| Riavod\n§MWriters' Guilds§!| Imladris\n§MTailors' Guilds§!| Minas Tirith\n§MLuxury Tailors' Guilds§!| Minas Tirith\n§MSmithies§!| Barad-dur\n§MShipyards§!| Pelargir, Umbar and Mithlond\n;x
 EVTDESC29002;There are 29 goods in the mod, compared to the 48 in vanilla. Most goods were produced everywhere. A smaller amount of goods helps to approximate this. The following is a list of new goods|\n\n§MCut Stone§!| This good is a building good, akin to lumber. It is made in the Masonry from rock and is used in (almost) every building.\n§MPrecious Goods§!| This good is rarely seen, meant to better represent societies and provinces that primarily dealt with trade. Laketown (Esgaroth) is a good example.\n§MFood§!| Food is exactly what it suggests to be| food. It is a combination of Fruit, Grain, Fish, Cattle and Canned Food. It is needed by all POPs and military units.\n§MLiterature§!| Literature also is exactly what it sounds like. It is desired by some wealthier POPs.\n§MHorses§!| Horses also is exactly what it sounds like. It is needed by some POPs and all cavalry units.\n§MMelee Gear§!| Melee Gear is akin to all military goods that are not Canned Food in vanilla. It is needed by Nobles, Knights and Soldiers in addition to all non-ranged military units.\n§MRanged Gear§!| Ranged Gear, like Melee Gear, is a military good akin to all military goods in vanilla that are not Canned Food. It is needed by Nobles, Knights, Bureaucrats and Soldiers, as well as Horse Archers and Archers.;x
 EVTDESC29003;There have been some significant changes to military in this mod. First of all, Middle Earth did not really have the idea of mobilizing the poor. However, they did have raise militias, conscripting them into military service. As such, mobilization has been replaced with raising the militias. Additionally, the military units have been completely reworked. There are 8 total units| 3 infantry, 3 mounted and 2 support.\n\n§MLevies§! are the weakest troop. They are the unit that is mobilized. However, they are also the only unit that can be recruited from non-accepted cultures.\n§MSwordsmen§! are the standard main line infantry. They have average stats, and are useful in any combat scenario. \n§MPikemen§! are elite defensive infantry. They suffer on the offensive, but there is no trainable troop more defensive.\n§MScouts§! are the fastest trainable troop, and the only troop that provides recon. They are rather weak in combat| slightly stronger than levies but definitely weaker than swordsmen.\n§MHorse Archers§! are mounted support troops. Regardless of where they are, they do full damage. Additionally, they are faster than average, making them a rather versatile unit.\n§MHeavy Cavalry§! is the prime offensive unit. They have the highest attack of any trainable unit, and are faster than average.\n§MArchers§!, like artillery in vanilla, are rather useless on the front lines. However, when they are in the back lines of combat, their damage dramatically increases, making them one of the large damage dealers.\n§MArtillery§! is a rather weak unit, compared to Archers, Heavy Cavalry and Pikemen. However, they are the only trainable unit that provides siege.;x
@@ -326,7 +325,6 @@ EVTDESC30123;§MIncomplete, to be finished§!;x
 EVTDESC30124;There will be a list of economic-focused flavor that is unlocked by having Círdan as your leader.\n\n§MIncomplete, to be finished§!;x
 EVTDESC30125;§MIncomplete, to be finished§!;x
 EVTDESC30126;There will be a list of political-focused flavor that is unlocked by having Círdan as your leader.\n\n§MIncomplete, to be finished§!;x
-EVTDESC34999;If your realm has a Generic Leader, especially at the start of the game, means one of two things| the lore for your nation's leaders does not yet exist, or your country (eventually) will not be in existence at the start of the game and instead be replaced by minors of that realm.;x
 ######################################;x }
 ##### COUNTRY INFORMATION EVENTS #####;x {
 ######################################;x
@@ -395,7 +393,6 @@ EVTDESC50018;Every year, an expedition of the healers from Minas Tirith's Houses
 EVTDESC50019;We have neighbors who are of the same alignment as us. It has been suggested that we host a diplomatic feast in the Merethrond, the Great Hall of Feasts in Minas Tirith.;x
 EVTDESC50020;*Casually eating stew. Sees something flicking in the distance. Look at it and see a large flame burning. Stand up and stare at it just to be certain. Accidentally pour out all of your stew. Completely forget about your stew and run to tell the king that...*\n\nThe Beacons of Minas Tirith! The Beacons are lit! Gondor calls for aid.;x
 EVTDESC50021;It is a sad day in $COUNTRY$. The bells of $CAPITAL$ rang at dawn, and it was announce that our leader, Ecthelion II has moved from this world. A day of mourning has been declared.;x
-EVTDESC50022;Our ally $FROMCOUNTRY$ has invited us to the coronation of their next leader. Should we attend?;x
 EVTDESC50023;It has been 7 days since the death of Ecthelion II. The preparations have been completed, and our guests have arrived. Let the coronation commence!;x
 EVTDESC50024;The Lord of Lossarnach, Farlong, has died. His son, Forlong, is expected to become the new Lord of Lossarnach.;x
 EVTDESC50026;The Lord of Lamedon, Asgon, has died. His son, Angbor, is expected to become the new Lord of Lamedon.;x
@@ -426,6 +423,7 @@ EVTDESC50055;A ranger has quickly risen through the ranks due to their leadershi
 EVTDESC50056;Beregond was a member of the Third Company of the Citadel, tasked with protecting the 7th level of Minas Tirith. Their most sacred duty was to guard the White Tree of Gondor.\n\nDuring the War of the Ring, Beregond saved Faramir from Denethor, killing two of his guards in the process. Afterwards, he was exiled from Minas Tirith by King Aragorn Elessar, and was made Captain of the White Company - the gaurds of Faramir.;x
 EVTDESC50057;The Captain of Ships is the highest naval title in Gondor. The only official person to hold this title was Castamir during the Kin-Strife. It's possible that after the Kin-Strife, that the title was removed given that it gave Castamir the military backing that led to the Kin-Strife. TTA has decided to take the approach that this title was instead changed from being hereditary, to instead an appointed position.;x
 EVTDESC50058;Harondor had been a contested area since the Kin-Strife, and our forces were completely driven out of it in 2885 TA. However, today, worse news have reached us - $FROMCOUNTRY$ has taken over Harondor!;x
+EVTDESC50059;Thorongil has left our court, and so has his wisdom.;x
 ###########################;x }
 ##### ISENGARD EVENTS #####;x {
 ###########################;x
@@ -454,7 +452,7 @@ EVTDESC50211;A single light in the darkness upon an abandoned outpost. The five 
 EVTDESC50212;§RThis event does nothing except notify players about Pre-Fellowship events§!. Frodo has camped at Weathertop.;x
 EVTDESC50213;During the fighting upon Weathertop, Frodo was stabbed with a Morgul Blade. His spirit did its best to fight the infection, but given the strength of the assault it was under, Frodo fell, and gave the One Ring to the Nazgûl. They fled to the south-east, undoubtedly returning the One Ring to their master.;x
 EVTDESC50214;§RThis event does nothing except notify players about Pre-Fellowship events§!. Frodo has given the One Ring to the Nazgûl.;x
-EVTDESC50215;Earlier today, our scouts found a small party of five - four Hobbits and one Ranger - in our lands, seeking aid. One of the Hobbits had suffered a terrible wound. We were able to heal him, and, after talking with the group, learned that this is Frodo Baggins, the bearer of the One Ring. This is an issue for all Good realms.;x
+EVTDESC50215;Earlier today, our scouts found a small party of five - four Hobbits and one Ranger - in our lands, seeking aid. One of the Hobbits had suffered a terrible wound. We were able to heal him, and, after talking with the group, learned that this is Frodo Baggins, the bearer of the One Ring. This is an issue for all Anti-Sauron realms.;x
 EVTDESC50216;§RThis event does nothing except notify players about Pre-Fellowship events§!. Frodo has made it safely to $FROMCOUNTRY$;x
 EVTDESC50250;My $MONARCHTITLE$, today we received a pecurliar message from $FROMCOUNTRY$. Apparently, some kind of council has been called, but the message does not state what it will discuss. All it states is that the future of the Free World depends on what is decided in this meeting. Should we send representatives?;x
 EVTDESC50251;After arriving at the meeting, our delegation quickly learned that the meeting was called to answer the threat of the Evil in the East. The Weapon of the Enemy has fallen into the hands of a Hobbit - Frodo of Bag-End. Many ideas were discussed, and a couple of axes destroyed, but eventually, the prevailing idea became that a Fellowship of the Free Peoples is needed to destroy the One Ring. How should our representatives answer this resolution?;x
@@ -465,9 +463,9 @@ EVTDESC50300;Our valiant member of the Fellowship of the Ring has perished! They
 EVTDESC50301;§RThis event does nothing except notify players about Fellowship events§!. The Fellowship member from $FROMCOUNTRY$ has perished.;x
 EVTDESC50302;The pass is long and treacherous. Even in the most stable conditions, crossing the Misty Mountains is a dangerous task. Given that there may be powerful forces attempting to stop their crossing, the Fellowship may be forced to abandon their plans to cross the Misty Mountains in favor of passing under.;x
 EVTDESC50303;§RThis event does nothing except notify players about Fellowship events§!. The Fellowship is attempting to cross Caradhras. Should they be stopped by Saruman, they will; be forced through the Mines of Moria.;x
-EVTDESC50304;The Mines of Moria. There are rumors of a terrible monster roaming the lower halls - which the Fellowship needs to cross. Should these rumors prove to have merit, it is unlikely that the entire Fellowship will survive.\n\n§RIf Moria is owned by an Orc or Evil realm, a Fellowship member is guaranteed to die§!.;x
+EVTDESC50304;The Mines of Moria. There are rumors of a terrible monster roaming the lower halls - which the Fellowship needs to cross. Should these rumors prove to have merit, it is unlikely that the entire Fellowship will survive.\n\n§RIf Moria is owned by an Orc or Sauronite realm, a Fellowship member is guaranteed to die§!.;x
 EVTDESC50305;§RThis event does nothing except notify players about Fellowship events§!. The Fellowship has passed through the Mines of Moria.;x
-EVTDESC50306;Our member of the Fellowship of the Ring sacrified themselves in the Mines of Moria to save the Fellowship from certain doom. They single-handedly fought an unbeatable foe - a Balrog of Morgoth - to buy time for the rest to escape. §RThis modifier makes you pops slightly more good-aligned§!.;x
+EVTDESC50306;Our member of the Fellowship of the Ring sacrified themselves in the Mines of Moria to save the Fellowship from certain doom. They single-handedly fought an unbeatable foe - a Balrog of Morgoth - to buy time for the rest to escape. §RThis modifier makes you pops slightly more Anti-Sauron§!.;x
 EVTDESC50307;The Golden Trees of Lothlórien are a sight to behold after the treacherous Misty Mountains. On the other hand, the inhabitants of the Golden Wood may proove to be more hostile than their abode suggests.;x
 EVTDESC50308;§RThis event does nothing except notify players about Fellowship events§!. The Fellowship has entered Lothlórien.;x
 EVTDESC50309;Once the capital of Gondor, Ithilien is barren comparatively. Orc raids are commonplace, and the Enemy roams as they please. The Rangers run from stronghold to stronghold, striking as they are able and fleeing to one stronghold or another when they are not. It will be no easy task to avoid detection in this land.;x
@@ -612,7 +610,6 @@ EVTDESC50941;Today, Bryn, son of Brand. He would go on to become a brilliant war
 EVTDESC50942;Today, the whole realm celebrates as Bard, son of Brand I, marries Esgreld of Dale.;x
 EVTDESC50943;Today, Girion, son of Bard, was born. He was named for Girion I, the Lord of Dale when Smaug took the Lonely Mountain. The realm breathes a sign of relief knowing the succession has been secured.;x;x
 EVTDESC50944;Today, Girloth, son of Bard, was born. He would go on to become a tactician and general for the Barding Realm, commanding beside his brother-King.;x
-EVTDESC50945;An heir of the line of Bard exists, but they are not old enough to assume the throne. Until this happens, the realm will be ruled by a regency council, usually consisting of the previous ruler's wife and inner council.;x
 EVTDESC50946;Today, Bryn, second son of Brand I, comes of age. Raised in the royal halls of $CAPITAL$, he has been training to be a warrior and general since he was a child. When he was still a young man, the Easterings invaded during the War of the Ring and killed his father in the Siege of Dale. Distraught, he and his brother, Bard II, worked and fought together to free their home from invaders. Afterwards, he commanded the Barding Realm's armies in their conquests against the Easterlings.;x
 EVTDESC50947;Today, Girloth, second son of Bard II, comes of age. Born just after the War of the Ring, he grew up in a time of great rebuilding an expansion for the kingdom -- Dale has been rebuilt, and his father, Bard II, with the help of his brother Bryn, had taken the fight to the Easterlings. Their success left a lasting impression on Girloth. He devoted his studies to military tactics, and become of the best generals the kingdom had to offer while he lived.;x
 EVTDESC50948;With the dust settled and Erebor officially under our control, the Longbeards still remaining in Erebor have come to us asking that they at least retain control over Erebor. They propose to recognize our claim to the land surrounding the Lonely Mountain, and in return, we will relinquish control and claim over Erebor itself.;x
@@ -660,6 +657,11 @@ EVTDESC70005;We have advanced enough technologically to start to be considered o
 EVTDESC70006;The ungrateful government of $FROMCOUNTRY$ has sized our investments and claimed them as their own!;;;;;;;;;;;;x
 EVTDESC70007;With any land acquisition, there are many changes that need to be made as a result. When the populace does not recognize their new rulers as their own, some will choose to turn away from what they see as an illegitimate rule.;x
 EVTDESC70008;We finally have the support of the people to become a monarchy. What should our leader's title be?\n\n§RThe different titles are just cosmetic changes. They are all functionally the same.§!;x
+#############################;x }
+##### GOVERNMENT EVENTS #####;x {
+#############################;x
+EVTDESC72000;With the recent change to our voting reform, citizens with the right to vote have started a movement for an election to be ran. We have little choice but to allow this election to happen.;x
+EVTDESC72001;With the poor recently being allowed to vote, the masses have begun to demand a new election be run. They claim that the current government is illegitimate as does not represent the realm now that more people can vote;x
 ################################;x }
 ##### CB GENERATION EVENTS #####;x {
 ################################;x
@@ -669,13 +671,12 @@ EVTDESC90002;The Age of Man has begun| our ambitions are now unlimited and nothi
 ##############################;x }
 ##### RAILROADING EVENTS #####;x {
 ##############################;x
-EVTDESC91000;Should railroading be enabled? If so, all realms (yours included), will be locked into "historical" routes. Additionally, should something go wrong, the game will attempt to correct it.\n\nWith railroading enabled, §M we will be unable to hold alliances with or sphere realms of the opposite alignment (§PNeutral Alignment§! realms will be able to ally and sphere all realms), §Mwe will be unable to change our own alignment§!, §Mwe will lose access to the §TChange Alignment§M cb,§! and §Mwe will be unable to take uncored states from realms with the same alignment -- if we are of §PNeutral Alignment§!§M, we can still take non-core states from other Neutral realms§!\n\nFinally, the following "tracks" will specifically affect the $COUNTRY$|;x
-EVTDESC91001;Somehow, both railroading flags are present. The player likely save-game edited, which we don't like. Let's fix this.;x
+EVTDESC91000;Should railroading be enabled? If so, all realms (yours included), will be locked into "historical" routes. Additionally, should something go wrong, the game will attempt to correct it.\n\nWith railroading enabled, §M we will be unable to hold alliances with or sphere realms of the opposite alignment (§POpportunistic§! realms will be able to ally and sphere all realms), §Mwe will be unable to change our own alignment§!, §!and §Mwe will be unable to take uncored states from realms with the same alignment -- if we are of §POpportunistic§!§M, we can still take non-core states from other Opportunistic realms§!\n\nFinally, the following "tracks" will specifically affect the $COUNTRY$|;x
 EVTDESC91002;This is the main railroading cleanup loop. This will trigger any and all events that are needed to fire.;x
-EVTDESC91003;This event will make sure that good and evil realms hate each other.;x
+EVTDESC91003;This event will make sure that Sauronite and Anti-Sauronite realms hate each other.;x
 EVTDESC91004;This event will railroad specific alliances, and break other ones.;x
 EVTDESC91005;This event will set the realm specific description on the event to choose if railroading should be enabled.;x
-EVTDESC91006;Here are the affects of railroading|\n\n§M We will be unable to hold alliances with or sphere realms of the opposite alignment (§PNeutral Alignment§! realms will be able to ally and sphere all realms)\n§Mwe will be unable to change our own alignment§!\n§Mwe will lose access to the §TChange Alignment§M cb§!\n§Mwe will be unable to take uncored states from realms with the same alignment -- if we are of §PNeutral Alignment§!§M, we can still take non-core states from other Neutral realms§!\n\nFinally, the following "tracks" will specifically affect the $COUNTRY$|;x
+EVTDESC91006;Here are the affects of railroading|\n\n§M We will be unable to hold alliances with or sphere realms of the opposite alignment (§POpportunistic§! realms will be able to ally and sphere all realms)\n§Mwe will be unable to change our own alignment§!\n§Mwe will be unable to take uncored states from realms with the same alignment -- if we are of §POpportunistic§!§M, we can still take non-core states from other Opportunistic realms§!\n\nFinally, the following "tracks" will specifically affect the $COUNTRY$|;x
 ###############################;x }
 ##### COLONIZATION EVENTS #####;x {
 ###############################;x
@@ -689,24 +690,6 @@ EVTDESC99003;This is the monthly event to do any sort of cleanup associated with
 EVTDESC99006;Your overlord no longer exists, but your connection to them was never severed.;x
 EVTDESC99250;This is the daily event to do any sort of generic cleanup;x
 EVTDESC90799;This is a function event called whenever a province has some Province Wealth changes queued up;x
-###########################;x }
-##### CLEAN UP EVENTS #####;x {
-###########################;x
-EVTDESC100000;Our realm's policy on the noble's autonomy has changed recently. The nobles are upset at having their freedoms curtailed.;x
-EVTDESC100001;Our realm's policy on the noble's autonomy has changed recently. The nobles are enjoying their newfound freedoms.;x
-EVTDESC100002;Our realm's policy on slavery has recently changed to Non-Accetped Slavery. There may currently be some of our cultural brethren that are still slaves. We ought to emancipate them.;x
-EVTDESC100003;One group within our cultural union has claimed sovereignty over our culture. They have proposed a union of all part of our culture. Should we accept?;x
-EVTDESC100005;A more well recognized realm of our cultural brethren have invited us to a council. Undoubtedly, they will want us to recognize them as a stronger realm, formally making us subservient to them. Should we attend?;x
-EVTDESC100006;Our overlord has acquired some land that they do not claim, but we do. They are willing to give it to us.;x
-EVTDESC100007;No longer are we a puppet of Gondor or the Reunited Kingdom. As such, we should reorganize our government.\n\n§RThe choice you make is purely cosmetic and will not affect your gameplay§!;x
-EVTDESC100008;We have a generic leader when there is a unique leader that we can be using. Let's use that leader.;x
-EVTDESC100009;Thorongil has left our court, and so has his wisdom.;x
-EVTDESC100010;No longer are we a puppet of Sauron. As such, we should reorganize our government.;x
-EVTDESC100100;Standard government type cleanup event loop;x
-EVTDESC100101;Your democracy doesn't fit the democracy that was meant for you. The following are the democracies in the game|\n\nName -- Ruler Title -- Notes\nRepublic -- Lord -- Generic\nHobbit Realm -- Mayor -- Hobbits\nNorthmen Democracy -- Master -- Northmen;x
-EVTDESC100102;Your monarchy doesn't fit the monarchy that was meant for you. The following are the monarchies in the game|\n\nName -- Ruler Title -- Notes\nMonarchy -- King -- Generic\nPrincipality -- Prince -- Generic\nMonarchy -- Lord -- Generic\nStewardship -- Steward -- Gondor without a King\nFiefdom -- Lord -- Puppets of Gondor\nDual Monarchy -- Lord and Lady -- Lothlórien;x
-EVTDESC100103;Your dictatorship doesn't fit the dictatorship that was meant for you. The following are the dictatorships in the game|\n\nName -- Ruler Title -- Notes\nDark Realm -- Lord -- Generic\nSauron's Domain -- Dark Lord -- Realms ruled by Sauron\nSauron's Domain -- Lord -- Puppets of Sauron that are not Nazgul\nNazgul Realm -- Lord -- Realms ruled by a Nazgul\nIstari Kingdom -- Lord -- Realms ruled by a Wizard;x
-EVTDESC100104;Your tribe doesn't fit the tribe that was meant foryou. The following are the tribes in the game|\n\nName -- Ruler Title -- Notes\nTribe -- Chieftain -- Orc Realms\nTribe -- Thegen -- Northmen\nTribe -- Chief -- Generic;x
 ##############################################;x }
 ##### ALLIANCE OF DWARVES AND MEN EVENTS #####;x {
 ##############################################;x

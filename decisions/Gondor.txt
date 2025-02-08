@@ -29,6 +29,8 @@ political_decisions = {
 		
 		effect = {
 			# Setting flags for flavor
+			set_country_flag = GON_content
+			
 			add_country_modifier = {
 				name = low_military_recruitment
 				duration = -1
@@ -62,6 +64,12 @@ political_decisions = {
 				}
 			}
 			
+			# Setting flag for rulers
+			any_country = {
+				limit = { vassal_of = THIS }
+				set_country_flag = vassal_can_have_own_ruler
+			}
+			
 			# Setting Orc Raids
 			any_owned = {
 				limit = {
@@ -80,6 +88,10 @@ political_decisions = {
 			# Setting up flags stating that specific leaders are alive
 			set_global_flag = ecthelion_ii_alive
 			set_global_flag = denethor_ii_alive
+			
+			# Setting up starting leaders
+			set_country_flag = ideologies_house_of_stewards_active
+			add_country_modifier = { name = ecthelion_ii_modifier duration = -1 }
 		}
 	}
 	
@@ -105,6 +117,10 @@ political_decisions = {
 			
 			# Setting up flags stating that specific leaders are alive
 			set_global_flag = adrahil_ii_alive
+			
+			# Setting up starting leaders
+			set_country_flag = ideologies_house_of_dol_amroth_active
+			add_country_modifier = { name = angelimir_modifier duration = -1 }
 		}
 	}
 }
@@ -139,14 +155,12 @@ political_decisions = {
 			inherit = LOS
 			GON_23 = {
 				aristocrats = { militancy = 2 }
-				remove_core = LOS
 				add_core = GON
 			}
 			GON_27 = {
 				aristocrats = { militancy = 2 }
 				secede_province = LEB
 				add_core = LEB
-				remove_core = LOS
 			}
 			prestige = 5
 			
@@ -156,7 +170,7 @@ political_decisions = {
 				}
 				owner = {
 					define_general = {
-						name = "§LFarlong, §MLord of Lossarnach§!"
+						name = "§LFarlang, §MLord of Lossarnach§!"
 						background = lord_of_lossarnach
 						personality = stalwart
 					}
@@ -218,12 +232,10 @@ political_decisions = {
 					aristocrats = { militancy = 2 }
 					secede_province = ANF
 					add_core = ANF
-					remove_core = MRN
 				}
 				any_owned = {
 					limit = { is_core = MRN }
 					add_core = LAM
-					remove_core = MRN
 					aristocrats = { militancy = 2 }
 				}
 				
@@ -251,7 +263,6 @@ political_decisions = {
 			}
 			any_owned = {
 				limit = { is_core = LEB }
-				remove_core = LEB
 				add_core = GON
 				aristocrats = { militancy = 2 }
 			}
@@ -377,7 +388,6 @@ political_decisions = {
 			inherit = LAM
 			any_owned = {
 				limit = { is_core = LAM }
-				remove_core = LAM
 				add_core = GON
 				aristocrats = { militancy = 2 }
 			}
@@ -489,7 +499,6 @@ political_decisions = {
 			inherit = ANF
 			any_owned = {
 				limit = { is_core = ANF }
-				remove_core = ANF
 				add_core = GON
 				aristocrats = { militancy = 2 }
 			}
@@ -559,11 +568,7 @@ political_decisions = {
 			}
 			owns = 133
 			NOT = { has_global_flag = da_independence_war }
-			OR = {
-				nationalvalue = denethor_ii
-				nationalvalue = boromir_ii
-				nationalvalue = faramir_i
-			}
+			ruling_party = GON_denethor_ii
 		}
 		
 		allow = {
@@ -1114,7 +1119,6 @@ political_decisions = {
 			prestige = 8
 			any_owned = {
 				limit = { is_core = ADR }
-				remove_core = ADR
 				add_core = GON
 				aristocrats = { militancy = 2 }
 			}
@@ -1646,7 +1650,7 @@ political_decisions = {
 			
 			HRD = {
 				country_event = 2509
-				government = fiefdom
+				government = dominion_2
 				capital = 226
 				political_reform = no_slavery
 			}
@@ -1787,8 +1791,6 @@ political_decisions = {
 					HAR_286 = { add_core = HRN }
 					HAR = { release = HRN }
 					GON = {	inherit = HRN }
-					HAR_286 = { remove_core = HRN }
-					HAR_286 = { remove_core = HAR }
 				}
 			}
 			HAR_286 = { add_core = GON }
@@ -2076,7 +2078,7 @@ political_decisions = {
 		picture = "gondor_throne"
 		potential = {
 			tag = GON
-			government = stewardship
+			government = monarchy_2
 		}
 		
 		allow = {
@@ -2236,7 +2238,7 @@ political_decisions = {
 	encourage_outside_military_recruitment = {
 		picture = "travellers"
 		potential = {
-			nationalvalue = ecthelion_ii
+			ruling_party = GON_ecthelion_ii
 			tag = GON
 			NOT = { has_country_modifier = encouraging_outside_military_recruitment }
 		}
@@ -2260,8 +2262,8 @@ political_decisions = {
 		potential = {
 			tag = GON
 			OR = {
-				nationalvalue = ecthelion_ii
-				nationalvalue = denethor_ii
+				ruling_party = GON_ecthelion_ii
+				ruling_party = GON_denethor_ii
 			}
 			NOT = { has_global_flag = GON_strengthened_river_crossings }
 			OR = {
@@ -2300,8 +2302,8 @@ political_decisions = {
 		potential = {
 			tag = GON
 			OR = {
-				nationalvalue = ecthelion_ii
-				nationalvalue = denethor_ii
+				ruling_party = GON_ecthelion_ii
+				ruling_party = GON_denethor_ii
 			}
 			NOT = { has_global_flag = GON_built_rammas_echor }
 			has_global_flag = GON_strengthened_river_crossings
@@ -2325,8 +2327,8 @@ political_decisions = {
 		potential = {
 			tag = GON
 			OR = {
-				nationalvalue = ecthelion_ii
-				nationalvalue = denethor_ii
+				ruling_party = GON_ecthelion_ii
+				ruling_party = GON_denethor_ii
 			}
 			OR = {
 				owns = 44
@@ -2350,7 +2352,7 @@ political_decisions = {
 		picture = "coastal_fortifications"
 		potential = {
 			tag = GON
-			nationalvalue = ecthelion_ii
+			ruling_party = GON_ecthelion_ii
 			has_country_modifier = thorongil
 			NOT = { has_global_flag = GON_took_thorongils_advice }
 			OR = {
@@ -2390,7 +2392,7 @@ political_decisions = {
 	fund_ithilien_rangers = {
 		picture = "fund_ithilien_rangers"
 		potential = {
-			nationalvalue = ecthelion_ii
+			ruling_party = GON_ecthelion_ii
 			NOT = { has_country_modifier = ithilien_rangers }
 			OR = {
 				any_owned_province = {
@@ -2457,9 +2459,9 @@ political_decisions = {
 			}
 			NOT = { has_global_flag = bar_iaur_dinen_restored }
 			OR = {
-				nationalvalue = aragorn_elessar
+				ruling_party = GON_aragorn_elessar
 				# # Audax Validator "." Ignore_NEXT
-				# nationalvalue = imrahil_1 # Has not yet been created
+				# ruling_party = AMR_imrahil_1 # Has not yet been created
 			}
 			OR = {
 				is_vassal = no

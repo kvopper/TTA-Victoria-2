@@ -64,7 +64,7 @@ PROV60;Thônfalas;x
 PROV61;Gwaelad;x
 PROV62;Eregost;x
 PROV63;Methrast;x
-PROV64;Gildor's Halls;x
+PROV64;Westmarch;x
 PROV65;Endil;x
 PROV66;Bared Rillen;x
 PROV67;Nan Duilwen;x
@@ -1563,7 +1563,6 @@ add_claim_ROH_801_loc;§WWe will gain claims over §!§YLower West Emnet§!§I;x
 claim_status_doesnt_own_DND_1015_loc;§YTyrn Formen§!: §RUnowned§!§I;x
 DAL_northman_generals_rivermen_gotten_loc;§TWe have recruited the following Rivermen Thegans§!|;x
 claim_status_doesnt_own_MOR_404_loc;§YSouthern Nurza-Shukh§!: §RUnowned§!§I;x
-currently_loc;§GCurrently;x
 add_claim_GON_194_loc;§WWe will gain claims over §!§YRhûndrúwaith Iaur§!§I;x
 claim_status_owns_RHO_508_loc;§YLower Sekelavuld§!: §GOwned§!§I;x
 claim_status_doesnt_own_SHI_1034_loc;§YSarn Marches§!: §RUnowned§!§I;x
@@ -1592,10 +1591,8 @@ claim_status_owns_RHU_616_loc;§YBarren Wastes§!: §GOwned§!§I;x
 DAL_king_of_adhalling_loc;§GAdhalling§!,;x
 claim_status_owns_UMB_256_loc;§YSakal an-Khar§!: §GOwned§!§I;x
 claim_status_owns_MOR_397_loc;§YEastern Desolation§!: §GOwned§!§I;x
-seven_point_five_percent_loc;7.5%;x
 claim_status_owns_MOR_404_loc;§YSouthern Nurza-Shukh§!: §GOwned§!§I;x
 add_claim_BLU_940_loc;§WWe will gain claims over §!§YDor Lelvin§!§I;x
-close_parenthesis_loc;);x
 add_claim_GON_27_loc;§WWe will gain claims over §!§YLossarnach§!§I;x
 claim_status_doesnt_own_AND_732_loc;§YNan Anduin§!: §RUnowned§!§I;x
 claim_status_doesnt_own_GON_16_loc;§YOld Anórien§!: §RUnowned§!§I;x
@@ -1628,14 +1625,12 @@ claim_status_owns_GON_71_loc;§YDor-en-Ernil§!: §GOwned§!§I;x
 claim_status_owns_NUM_960_loc;§YRuins of Númenor§!: §GOwned§!§I;x
 claim_status_doesnt_own_HAR_356_loc;§YLûrmsakûn§!: §RUnowned§!§I;x
 claim_status_owns_DND_1328_loc;§YNengaren§!: §GOwned§!§I;x
-province_wealth_intervention_loc;Province Wealth Intervention (;x
 claim_status_owns_RHU_587_loc;§YMorad§!: §GOwned§!§I;x
 remove_claim_CAR_1207_loc;§WWe will lose claims over §!§YSarnladen§!§I;x
 add_claim_DUN_1448_loc;§WWe will gain claims over §!§YIsendale§!§I;x
 claim_status_doesnt_own_GON_796_loc;§YWhite Mountains§!: §RUnowned§!§I;x
 claim_status_owns_HAR_322_loc;§YHaradwaith§!: §GOwned§!§I;x
 triggered_event_alliance_of_dwarves_and_men_economic_union_loc;get the 'Alliance of Dwarves and Men Economic Union' event.§I;x
-infamy_loc;Infamy (;x
 claim_status_doesnt_own_DND_1328_loc;§YNengaren§!: §RUnowned§!§I;x
 triggered_event_alliance_of_dwarves_and_men_specific_flavor_loc;get the 'Alliance of Dwarves and Men - Specific Flavor' event.§I;x
 remove_claim_MOR_440_loc;§WWe will lose claims over §!§YMorgai§!§I;x
@@ -1650,7 +1645,6 @@ claim_status_owns_GUL_1436_loc;§YSouthern Mirkwood§!: §GOwned§!§I;x
 claim_status_owns_MOR_411_loc;§YMaegond§!: §GOwned§!§I;x
 claim_status_owns_GON_183_loc;§YHaerawreigion§!: §GOwned§!§I;x
 remove_claim_CAR_890_loc;§WWe will lose claims over §!§YRohwaen§!§I;x
-alignment_loc;Alignment;x
 claim_status_owns_GON_228_loc;§YHarfalas§!: §GOwned§!§I;x
 claim_status_doesnt_own_GUL_1436_loc;§YSouthern Mirkwood§!: §RUnowned§!§I;x
 claim_status_doesnt_own_RHU_578_loc;§YKara Kalpak§!: §RUnowned§!§I;x
@@ -1697,13 +1691,12 @@ remove_claim_LOS_1158_loc;§WWe will lose claims over §!§YTalvi-mûri§!§I;x
 claim_status_owns_LIN_929_loc;§YHarlindon§!: §GOwned§!§I;x
 DAL_brand_i_age_loc;§TBrand I§! has not yet been born§I;x
 add_claim_ANG_988_loc;§WWe will gain claims over §!§YTulban§!§I;x
-FFN_sphere_annex_description_loc;§GAny good-or-neutral-aligned ai Hobbit, Northmen, Anduinmen or Elven realm with a capital in Rhovanion that never joined the Alliance of Dwarves and Men will join us if we sphere them!§!§I;x
+FFN_sphere_annex_description_loc;§GAny Anti-Sauron or Opportunistic ai Hobbit, Northmen, Anduinmen or Elven realm with a capital in Rhovanion that never joined the Alliance of Dwarves and Men will join us if we sphere them!§I;x
 triggered_event_alliance_of_dwarves_and_men_specific_flavor_northan_core_dispute_loc;get the 'Alliance of Dwarves and Men - Northmen Core Dispute' event.§I;x
 add_claim_HAR_322_loc;§WWe will gain claims over §!§YHaradwaith§!§I;x
 claim_status_doesnt_own_WOO_709_loc;§YWoodman's Realm§!: §RUnowned§!§I;x
 add_claim_IML_875_loc;§WWe will gain claims over §!§YSruth Líath Marches§!§I;x
 claim_status_doesnt_own_LIN_957_loc;§YEstoriand§!: §RUnowned§!§I;x
-open_loc;Open;x
 claim_status_owns_MOR_449_loc;§YBauglith-en-Sauron§!: §GOwned§!§I;x
 claim_status_doesnt_own_DOR_550_loc;§YParta Rokantha§!: §RUnowned§!§I;x
 claim_status_owns_RHU_859_loc;§YRann Gasta§!: §GOwned§!§I;x
@@ -1727,13 +1720,13 @@ claim_status_owns_RHO_520_loc;§YAustrabuht§!: §GOwned§!§I;x
 add_claim_RHO_1379_loc;§WWe will gain claims over §!§YTaj-Urés§!§I;x
 claim_status_doesnt_own_IML_868_loc;§YForeregion§!: §RUnowned§!§I;x
 claim_status_owns_ERE_1166_loc;§YEmyn Engrin§!: §GOwned§!§I;x
+settings_guild_autonomy_independent_loc;You will not be able to build guilds nor province-level buildings. Your economy will be at the mercy of the pops§I;x
 remove_claim_GON_165_loc;§WWe will lose claims over §!§YAngast§!§I;x
 claim_status_doesnt_own_CAR_1202_loc;§YGirithlin Highlands§!: §RUnowned§!§I;x
 claim_status_doesnt_own_LIN_137_loc;§YDor Leithan§!: §RUnowned§!§I;x
 claim_status_doesnt_own_ROH_786_loc;§YLower Eastfold§!: §RUnowned§!§I;x
 remove_claim_GMO_1443_loc;§WWe will lose claims over §!§YMisty Mountain Tunnels§!§I;x
 claim_status_doesnt_own_UMB_256_loc;§YSakal an-Khar§!: §RUnowned§!§I;x
-five_percent_loc;5%;x
 claim_status_doesnt_own_RHU_855_loc;§YMuir Cairn§!: §RUnowned§!§I;x
 claim_status_owns_DND_1026_loc;§YRoyal Fold§!: §GOwned§!§I;x
 claim_status_owns_RHU_625_loc;§YEastern Gazar Barak§!: §GOwned§!§I;x
@@ -1763,7 +1756,7 @@ remove_claim_DAL_654_loc;§WWe will lose claims over §!§YNan Annen§!§I;x
 claim_status_doesnt_own_MOR_408_loc;§YEphel Dûath§!: §RUnowned§!§I;x
 remove_claim_STO_757_loc;§WWe will lose claims over §!§YGladden Fields§!§I;x
 claim_status_doesnt_own_DND_1269_loc;§YEn Eredoriath§!: §RUnowned§!§I;x
-settings_borders_alignment_loc;Migration between realms of opposite alignments is disabled. Realms of §PNeutral Alignment§! can receive migrants from any other realm, and they can have emigration to any other realm.§I;x
+settings_borders_alignment_loc;Migration between realms of opposite alignments is disabled. Realms of §POpportunistic§! can receive migrants from any other realm, and they can have emigration to any other realm.§I;x
 claim_status_doesnt_own_BLU_947_loc;§YVale of Thrain§!: §RUnowned§!§I;x
 remove_claim_GON_27_loc;§WWe will lose claims over §!§YLossarnach§!§I;x
 triggered_event_alliance_of_dwarves_and_men_country_selection_loc;§!get the 'Alliance of Dwarves and Men - Realm Selection' event.§I;x
@@ -2062,9 +2055,9 @@ claim_status_doesnt_own_DAL_1377_loc;§YMedes§!: §RUnowned§!§I;x
 claim_status_owns_CAR_905_loc;§YLower Saerlann§!: §GOwned§!§I;x
 remove_claim_ERE_669_loc;§WWe will lose claims over §!§YIron Hills§!§I;x
 DAL_military_leaders_girloth_born_loc;Girloth has been born§!;x
+settings_guild_autonomy_oversight_loc;Both you and your pops will be able to build guilds and province-level buildings§I;x
 claim_status_doesnt_own_CAR_883_loc;§YMindornath§!: §RUnowned§!§I;x
 add_claim_ERE_668_loc;§WWe will gain claims over §!§YNan Morsereg§!§I;x
-unciv_10_loc;Unciv Soldier Pops 10% (;x
 claim_status_doesnt_own_GON_232_loc;§YForethir§!: §RUnowned§!§I;x
 remove_claim_ANG_988_loc;§WWe will lose claims over §!§YTulban§!§I;x
 add_claim_BLU_915_loc;§WWe will gain claims over §!§YOld Sylvana§!§I;x
@@ -2082,7 +2075,6 @@ remove_claim_LIN_111_loc;§WWe will lose claims over §!§YForlindon§!§I;x
 claim_status_owns_ENE_838_loc;§YWinterdowns§!: §GOwned§!§I;x
 remove_claim_GUL_1436_loc;§WWe will lose claims over §!§YSouthern Mirkwood§!§I;x
 claim_status_owns_CAR_1207_loc;§YSarnladen§!: §GOwned§!§I;x
-borders_alignment_loc;Alignment Borders (;x
 claim_status_doesnt_own_RHU_601_loc;§YMayzri§!: §RUnowned§!§I;x
 add_claim_KHA_380_loc;§WWe will gain claims over §!§YKhandu Prakhod§!§I;x
 claim_status_doesnt_own_BEO_733_loc;§YLower Carrock§!: §RUnowned§!§I;x
@@ -2091,7 +2083,6 @@ remove_claim_ROH_805_loc;§WWe will lose claims over §!§YGap of Rohan§!§I;x
 add_claim_DND_1335_loc;§WWe will gain claims over §!§YForoménya§!§I;x
 add_claim_DND_862_loc;§WWe will gain claims over §!§YNan Brethil§!§I;x
 claim_status_doesnt_own_GON_46_loc;§YLower Lebennin§!: §RUnowned§!§I;x
-generic_rgo_changing_loc;Generic RGO Changing (;x
 claim_status_doesnt_own_CAR_1208_loc;§YDol Tinereb§!: §RUnowned§!§I;x
 claim_status_doesnt_own_GON_78_loc;§YDor-en-Edhel§!: §RUnowned§!§I;x
 remove_claim_DUN_834_loc;§WWe will lose claims over §!§YDunfearn§!§I;x
@@ -2100,7 +2091,6 @@ remove_claim_MOR_421_loc;§WWe will lose claims over §!§YGap of Nurza-Shûk§!
 remove_claim_RHO_476_loc;§WWe will lose claims over §!§YTalath Harroch§!§I;x
 claim_status_owns_RHU_603_loc;§YKug Valley§!: §GOwned§!§I;x
 claim_status_owns_ANG_1374_loc;§YEphel Angmar§!: §GOwned§!§I;x
-observer_mode_loc;Observer Mode (;x
 remove_claim_GON_133_loc;§WWe will lose claims over §!§YAnfalas§!§I;x
 add_claim_ANG_996_loc;§WWe will gain claims over §!§YTalath Litash§!§I;x
 add_claim_DUN_835_loc;§WWe will gain claims over §!§YTrum Dreng§!§I;x
@@ -2135,7 +2125,7 @@ add_claim_ROH_775_loc;§WWe will gain claims over §!§YThe Wold§!§I;x
 remove_claim_MOR_423_loc;§WWe will lose claims over §!§YLithlad§!§I;x
 claim_status_doesnt_own_HAR_322_loc;§YHaradwaith§!: §RUnowned§!§I;x
 add_claim_ANV_740_loc;§WWe will gain claims over §!§YGreylin Vale§!§I;x
-settings_unciv_10_loc;This option allows uncivs to have (at most), 10% of their population as soldiers from natural promotion§I;x
+settings_unciv_10_loc;This option allows uncentralized realms to have (at most), 10% of their population as soldiers from natural promotion§I;x
 remove_claim_CAR_365_loc;§WWe will lose claims over §!§YTyrn Gorthad§!§I;x
 claim_status_owns_GON_796_loc;§YWhite Mountains§!: §GOwned§!§I;x
 remove_claim_GON_105_loc;§WWe will lose claims over §!§YLower Morthond Vale§!§I;x
@@ -2245,7 +2235,6 @@ add_claim_DND_1355_loc;§WWe will gain claims over §!§YRammas Forod§!§I;x
 DAL_military_leaders_unrecruited_bryn_loc;§MHe will be recruited around the year 3005 if§!;x
 claim_status_doesnt_own_GMO_1443_loc;§YMisty Mountain Tunnels§!: §RUnowned§!§I;x
 add_claim_CAR_1208_loc;§WWe will gain claims over §!§YDol Tinereb§!§I;x
-borders_open_loc;Open Borders (;x
 add_claim_GGT_849_loc;§WWe will gain claims over §!§YHigh Pass§!§I;x
 claim_status_owns_GON_72_loc;§YEred Tarthonion§!: §GOwned§!§I;x
 remove_claim_UMB_273_loc;§WWe will lose claims over §!§YSakal-Pharaz§!§I;x
@@ -2255,7 +2244,6 @@ claim_status_owns_LIN_926_loc;§YElvaedhorien§!: §GOwned§!§I;x
 claim_status_doesnt_own_BRE_148_loc;§YBree-land Wilds§!: §RUnowned§!§I;x
 claim_status_doesnt_own_KHA_362_loc;§YKhandu Itakh§!: §RUnowned§!§I;x
 add_claim_GON_105_loc;§WWe will gain claims over §!§YLower Morthond Vale§!§I;x
-racial_loc;Racial;x
 claim_status_owns_GON_175_loc;§YPerth Iaur§!: §GOwned§!§I;x
 settle_cores_of_dadhriks_gap_loc;Settle Cores of Dádhrik's Gap;x
 remove_claim_ENE_836_loc;§WWe will lose claims over §!§YReedwater Vale§!§I;x
@@ -2271,10 +2259,8 @@ remove_claim_ROH_791_loc;§WWe will lose claims over §!§YUpper Eastfold§!§I;
 DAL_merchant_guild_bop_desc_ii_loc;);x
 claim_status_doesnt_own_BLU_968_loc;§YEred Luin§!: §RUnowned§!§I;x
 claim_status_doesnt_own_RHO_523_loc;§YHigh Hand§!: §RUnowned§!§I;x
-closed_loc;Closed;x
 claim_status_doesnt_own_KHA_344_loc;§YEred Harmal§!: §RUnowned§!§I;x
 add_claim_KHA_391_loc;§WWe will gain claims over §!§YKhandu Ylâ§!§I;x
-unciv_5_loc;Unciv Soldier Pops 5% (;x
 end_color_loc;§!;x
 claim_status_owns_ERE_669_loc;§YIron Hills§!: §GOwned§!§I;x
 add_claim_KHA_357_loc;§WWe will gain claims over §!§YKhandu Sûrakh§!§I;x
@@ -2310,7 +2296,6 @@ add_claim_MOR_418_loc;§WWe will gain claims over §!§YNorthern Nurza-Shukh§!�
 claim_status_owns_DND_1309_loc;§YHyarmenyaména§!: §GOwned§!§I;x
 claim_status_doesnt_own_LIN_111_loc;§YForlindon§!: §RUnowned§!§I;x
 claim_status_owns_MOR_412_loc;§YGhurzun§!: §GOwned§!§I;x
-borders_race_loc;Racial Borders (;x
 claim_status_owns_GON_105_loc;§YLower Morthond Vale§!: §GOwned§!§I;x
 claim_status_doesnt_own_HAR_310_loc;§YSiakan§!: §RUnowned§!§I;x
 claim_status_owns_DND_1007_loc;§YTír Or§!: §GOwned§!§I;x
@@ -2367,7 +2352,6 @@ remove_claim_MIR_706_loc;§WWe will lose claims over §!§YEmyn-i-Thang§!§I;x
 claim_status_doesnt_own_CAR_894_loc;§YDol Caledir§!: §RUnowned§!§I;x
 empty_line_loc;\n;x
 add_claim_ANG_987_loc;§WWe will gain claims over §!§YKanclemas§!§I;x
-unciv_7_loc;Unciv Soldier Pops 7.5% (;x
 add_claim_ERE_669_loc;§WWe will gain claims over §!§YIron Hills§!§I;x
 claim_status_doesnt_own_KHA_342_loc;§YMuzeida Vale§!: §RUnowned§!§I;x
 settings_borders_race_loc;Migration between realms is limiteed to migrations between the same race -- Orcs pops will migrate to orc realms, Elves will migrate to elven realms, etc§I;x
@@ -2408,7 +2392,6 @@ remove_claim_RHU_606_loc;§WWe will lose claims over §!§YSouthern Gazar Utal§
 dynamic_loc_slot_28;§I;x
 dynamic_loc_slot_29;§I;x
 remove_claim_ROH_786_loc;§WWe will lose claims over §!§YLower Eastfold§!§I;x
-debugging_loc;Debug Settings;x
 claim_status_owns_ERE_151_loc;§YEred Mithrin§!: §GOwned§!§I;x
 claim_status_owns_DND_1025_loc;§YEketyaménya§!: §GOwned§!§I;x
 claim_status_owns_LIN_953_loc;§YGalfalas§!: §GOwned§!§I;x
@@ -2474,7 +2457,6 @@ DAL_trade_with_other_realms_loc;§GTrade with Other Realms§!;x
 dynamic_loc_slot_39;§I;x
 claim_status_owns_KHA_344_loc;§YEred Harmal§!: §GOwned§!§I;x
 claim_status_doesnt_own_MIR_718_loc;§YMirkwood Narrows§!: §RUnowned§!§I;x
-flavor_loc;Flavor Settings;x
 remove_claim_KHA_380_loc;§WWe will lose claims over §!§YKhandu Prakhod§!§I;x
 claim_status_doesnt_own_ROH_805_loc;§YGap of Rohan§!: §RUnowned§!§I;x
 add_claim_GON_37_loc;§WWe will gain claims over §!§YUpper Lebennin§!§I;x
@@ -2497,14 +2479,12 @@ DAL_invite_grammas_loc;§GInvitations will be sent to the Grammas villages. It m
 add_claim_LOS_977_loc;§WWe will gain claims over §!§YForochel§!§I;x
 add_claim_RHU_1253_loc;§WWe will gain claims over §!§YCaill na Trowe§!§I;x
 add_claim_KHA_362_loc;§WWe will gain claims over §!§YKhandu Itakh§!§I;x
-annexed_all_loc;Annex All (;x
 specific_flavor_loc;Realm Specific Flavor;x
 remove_claim_DOR_539_loc;§WWe will lose claims over §!§YFolyavuld§!§I;x
 add_claim_BEO_733_loc;§WWe will gain claims over §!§YLower Carrock§!§I;x
 claim_status_doesnt_own_ANG_999_loc;§YDur-Lûgata§!: §RUnowned§!§I;x
 add_claim_ANV_748_loc;§WWe will gain claims over §!§YLangflood§!§I;x
 remove_claim_ANG_996_loc;§WWe will lose claims over §!§YTalath Litash§!§I;x
-pop_management_loc;Pop Management (;x
 remove_claim_GON_98_loc;§WWe will lose claims over §!§YTarlang§!§I;x
 DAL_northman_generals_grammas_eynar_loc;Eynar (owns Grasgard, year is at least 2970)§!,;x
 claim_status_owns_HAR_334_loc;§YHarûzan§!: §GOwned§!§I;x
@@ -2538,7 +2518,6 @@ claim_status_doesnt_own_DAL_640_loc;§YUpper Marches§!: §RUnowned§!§I;x
 remove_claim_LIN_137_loc;§WWe will lose claims over §!§YDor Leithan§!§I;x
 claim_status_doesnt_own_DND_863_loc;§YDor-en-Egladil§!: §RUnowned§!§I;x
 remove_claim_LOS_980_loc;§WWe will lose claims over §!§YEmyn Helch§!§I;x
-fluff_loc;Fluff (;x
 add_claim_RHO_525_loc;§WWe will gain claims over §!§YWest Dunheath§!§I;x
 claim_status_owns_DND_1023_loc;§YEmyn Uial§!: §GOwned§!§I;x
 add_claim_DND_1028_loc;§WWe will gain claims over §!§YLuinardhon§!§I;x
@@ -2580,7 +2559,6 @@ claim_status_owns_KHA_357_loc;§YKhandu Sûrakh§!: §GOwned§!§I;x
 claim_status_doesnt_own_RHU_568_loc;§YSûrûbeki Vale§!: §RUnowned§!§I;x
 remove_claim_CAR_902_loc;§WWe will lose claims over §!§YUpper Saerlann§!§I;x
 add_claim_DUN_1450_loc;§WWe will gain claims over §!§YGravenwood§!§I;x
-borders_closed_loc;Closed Borders (;x
 claim_status_owns_KHA_342_loc;§YMuzeida Vale§!: §GOwned§!§I;x
 claim_status_doesnt_own_GON_98_loc;§YTarlang§!: §RUnowned§!§I;x
 claim_status_owns_RHO_507_loc;§YDor Rhúnen§!: §GOwned§!§I;x
@@ -2589,7 +2567,6 @@ claim_status_owns_DAL_642_loc;§YSalenin Vale§!: §GOwned§!§I;x
 claim_status_owns_ERE_665_loc;§YTalath Huz§!: §GOwned§!§I;x
 claim_status_owns_GMO_1443_loc;§YMisty Mountain Tunnels§!: §GOwned§!§I;x
 remove_claim_BEO_751_loc;§WWe will lose claims over §!§YMiddle Vales§!§I;x
-disabled_loc;§RCurrently Disabled§!;x
 add_claim_LIN_933_loc;§WWe will gain claims over §!§YEmyn Beraid§!§I;x
 add_claim_BLU_968_loc;§WWe will gain claims over §!§YEred Luin§!§I;x
 add_claim_LOS_979_loc;§WWe will gain claims over §!§YTalath Uichel§!§I;x
@@ -2600,7 +2577,7 @@ claim_status_owns_LIN_111_loc;§YForlindon§!: §GOwned§!§I;x
 remove_claim_BRE_1014_loc;§WWe will lose claims over §!§YNan Turnath§!§I;x
 remove_claim_MOR_418_loc;§WWe will lose claims over §!§YNorthern Nurza-Shukh§!§I;x
 claim_status_owns_RHO_476_loc;§YTalath Harroch§!: §GOwned§!§I;x
-FFN_join_alliance_dwarves_men_loc;If the pass the conditions on this decision (ignoring the always false), we will almost be eligible to be invited to the Alliance of Dwarves and Men -- we also need to be allied to realm that is currently in the alliance. From here, the ai will always attempt to send an invite, however, §Rit is possible for the rest of the alliance to reject the invite proposal§!.\n\nThe full list of conditions is:\nWe are §GGood Aligned§! or §PNeutral Aligned§!\nWe are not a vassal\nWe are either a Dwarven realm, a Northman realm, a secondary power or a great power\nOur capital is in Rhovanion§I;x
+FFN_join_alliance_dwarves_men_loc;If the pass the conditions on this decision (ignoring the always false), we will almost be eligible to be invited to the Alliance of Dwarves and Men -- we also need to be allied to realm that is currently in the alliance. From here, the ai will always attempt to send an invite, however, §Rit is possible for the rest of the alliance to reject the invite proposal§!.\n\nThe full list of conditions is:\nWe are §GAnti-Sauron§! or §POpportunistic§!\nWe are not a vassal\nWe are either a Dwarven realm, a Northman realm, a secondary power or a great power\nOur capital is in Rhovanion§I;x
 triggered_event_alliance_of_dwarves_and_men_core_dispute_loc;get the 'Alliance of Dwarves and Men - Core Dispute' event.§I;x
 add_claim_RHU_604_loc;§WWe will gain claims over §!§YAgasha Dag§!§I;x
 claim_status_owns_GON_81_loc;§YTarnost§!: §GOwned§!§I;x
@@ -2650,7 +2627,7 @@ claim_status_owns_ROH_786_loc;§YLower Eastfold§!: §GOwned§!§I;x
 add_claim_CAR_893_loc;§WWe will gain claims over §!§YLittle Caledir§!§I;x
 remove_claim_GON_154_loc;§WWe will lose claims over §!§YNan-i-Faroth§!§I;x
 claim_status_doesnt_own_LIN_962_loc;§YWestern Islands§!: §RUnowned§!§I;x
-settings_unciv_5_loc;This option ensures that uncivs can have (at most), the standard 5% soldiers from natural promotion§I;x
+settings_unciv_5_loc;This option ensures that uncentralized realms can have (at most), the standard 5% soldiers from natural promotion§I;x
 add_claim_ERE_665_loc;§WWe will gain claims over §!§YTalath Huz§!§I;x
 remove_claim_GON_78_loc;§WWe will lose claims over §!§YDor-en-Edhel§!§I;x
 claim_status_doesnt_own_DOR_553_loc;§YUldona Vale§!: §RUnowned§!§I;x
@@ -2664,6 +2641,7 @@ add_claim_ANG_999_loc;§WWe will gain claims over §!§YDur-Lûgata§!§I;x
 add_claim_ANG_1374_loc;§WWe will gain claims over §!§YEphel Angmar§!§I;x
 add_claim_DOR_558_loc;§WWe will gain claims over §!§YCairn Angle§!§I;x
 claim_status_doesnt_own_ERE_660_loc;§YMountainlands§!: §RUnowned§!§I;x
+settings_guild_autonomy_controlled_loc;You will have sole controll over your guilds. Pops can only build province-level buildings§I;x
 DAL_military_leaders_elstan_loc;§LElstan, §MFirst Captain of Dale§!|;x
 dynamic_loc_slots;Dynamic Loc Slots§I;x
 add_claim_BRE_1013_loc;§WWe will gain claims over §!§YBree-land§!§I;x
@@ -2678,7 +2656,6 @@ remove_claim_CAR_894_loc;§WWe will lose claims over §!§YDol Caledir§!§I;x
 remove_claim_ROH_808_loc;§WWe will lose claims over §!§YWest-march§!§I;x
 claim_status_owns_KHA_387_loc;§YKhandu Khûrvesra§!: §GOwned§!§I;x
 DAL_supported_guild_loc;§RThis decision will lock us into supporting the Fisher's Guild and not allow us to pass any Burgher reforms. Additionally, all Burgher reforms will be set to the most centralized versions§!§I;x
-border_control_loc;Border Control (;x
 claim_status_doesnt_own_LIN_953_loc;§YGalfalas§!: §RUnowned§!§I;x
 claim_status_doesnt_own_RHU_619_loc;§YNorthern Gazar Utal§!: §RUnowned§!§I;x
 claim_status_doesnt_own_GON_56_loc;§YTolfalas§!: §RUnowned§!§I;x
@@ -2722,7 +2699,7 @@ add_claim_GON_72_loc;§WWe will gain claims over §!§YEred Tarthonion§!§I;x
 claim_status_doesnt_own_DOR_545_loc;§YDobok Rhín§!: §RUnowned§!§I;x
 remove_claim_DUN_839_loc;§WWe will lose claims over §!§YMournshaws§!§I;x
 claim_status_owns_RHO_491_loc;§YSagathavuld§!: §GOwned§!§I;x
-settings_unciv_7_loc;This option allows uncivs to have (at most), 7.5% of their population as soldiers from natural promotion§I;x
+settings_unciv_7_loc;This option allows uncentralized realms to have (at most), 7.5% of their population as soldiers from natural promotion§I;x
 four_loc;4;x
 claim_status_doesnt_own_LOS_1343_loc;§YItä-mâ§!: §RUnowned§!§I;x
 DAL_reforms_bard_i_loc;§GThis decision will either give us the reforms of Bard I for free, or, if we have completed all of Bard I's reforms, it will give us some prestige and reduce popular anxiety. If some of Bard's reforms have been completed or superceded, our reforms will not regress§!\n§I;x
@@ -2770,7 +2747,6 @@ remove_claim_DND_1323_loc;§WWe will lose claims over §!§YOroménya§!§I;x
 add_claim_CAR_905_loc;§WWe will gain claims over §!§YLower Saerlann§!§I;x
 claim_status_owns_ANG_996_loc;§YTalath Litash§!: §GOwned§!§I;x
 claim_status_doesnt_own_RHO_491_loc;§YSagathavuld§!: §RUnowned§!§I;x
-10_percent_loc;10%;x
 remove_claim_DAL_640_loc;§WWe will lose claims over §!§YUpper Marches§!§I;x
 claim_status_owns_GON_205_loc;§YEmyn Arnen§!: §GOwned§!§I;x
 claim_status_doesnt_own_LOS_1158_loc;§YTalvi-mûri§!: §RUnowned§!§I;x
@@ -2853,11 +2829,9 @@ remove_claim_GON_232_loc;§WWe will lose claims over §!§YForethir§!§I;x
 add_claim_MOR_421_loc;§WWe will gain claims over §!§YGap of Nurza-Shûk§!§I;x
 claim_status_owns_CAR_886_loc;§YPinnath Ceren§!: §GOwned§!§I;x
 remove_claim_BLU_947_loc;§WWe will lose claims over §!§YVale of Thrain§!§I;x
-enabled_loc;§GCurrently Enabled§!;x
 claim_status_doesnt_own_ERE_686_loc;§YThe Narrows§!: §RUnowned§!§I;x
 remove_claim_GON_134_loc;§WWe will lose claims over §!§YLangstrand§!§I;x
 add_claim_DND_863_loc;§WWe will gain claims over §!§YDor-en-Egladil§!§I;x
-gondor_own_mouths_entwash_loc;Gondor Owning the Mouths of the Entwash (;x
 claim_status_owns_GON_154_loc;§YNan-i-Faroth§!: §GOwned§!§I;x
 settings_gondor_own_mouths_entwash_loc;According to the canon, the Mouths of the Entwash were owned and controlled by the Kingdom of Gondor. However, that tends to cause some bordergore between Gondor and Rohan. As such, by default, the mod chooses to have Rohan own the region. Turn on this option in order to make this more lore-friendly. §RThis cannot be undone§!§I;x
 remove_claim_HAR_322_loc;§WWe will lose claims over §!§YHaradwaith§!§I;x
@@ -2924,7 +2898,6 @@ maroon_color_loc;§M;x
 claim_status_doesnt_own_CAR_882_loc;§YTyrn Harn§!: §RUnowned§!§I;x
 add_claim_LIN_926_loc;§WWe will gain claims over §!§YElvaedhorien§!§I;x
 claim_status_doesnt_own_ANG_1374_loc;§YEphel Angmar§!: §RUnowned§!§I;x
-uncentralized_soldier_pop_percentages_loc;Uncentralized soldier pop percentages (;x
 claim_status_doesnt_own_CAR_900_loc;§YEnedbund§!: §RUnowned§!§I;x
 claim_status_doesnt_own_RHO_524_loc;§YArkran§!: §RUnowned§!§I;x
 DAL_king_of_lakemen_loc;§GLakemen§!,;x
@@ -2960,7 +2933,6 @@ add_claim_GON_14_loc;§WWe will gain claims over §!§YTalath Anór§!§I;x
 DAL_northman_generals_grammas_desc_loc;The Lords of Riding will only spawn if Grammas is accepted, and if any conditions in parenthesis are met.;x
 add_claim_ERE_291_loc;§WWe will gain claims over §!§YWithered Heath§!§I;x
 claim_status_owns_LIN_936_loc;§YRhûlindon§!: §GOwned§!§I;x
-memes_loc;Memes (;x
 remove_claim_ERE_681_loc;§WWe will lose claims over §!§YCirith Gondmaeglorn§!§I;x
 claim_status_owns_DUN_840_loc;§YFordirith§!: §GOwned§!§I;x
 DAL_northman_generals_rivermen_kynodin_loc;Kynodin (Kaupaborg)§!,;x
@@ -3265,7 +3237,7 @@ DND_1023;Emyn Uial;x
 DND_1025;Eketyaménya;x
 DND_1026;Royal Fold;x
 DND_1028;Luinardhon;x
-SHI_1030;Westmarch;x
+SHI_1030;Far Downs;x
 SHI_1031;Westfarthing;x
 SHI_1034;Sarn Marches;x
 SHI_1036;Southfarthing;x

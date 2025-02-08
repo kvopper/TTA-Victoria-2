@@ -1,0 +1,18 @@
+# Audax Validator "!" Ignore_1009
+capital = 902
+primary_culture = saerlanner
+culture = men_culture
+religion = men
+government = tribal
+nationalvalue = no_heirloom
+literacy = 0
+
+ruling_party = generic_saerlanner_nobles
+
+upper_house = {
+	saerlanner_nobles = 100
+}
+
+slavery = no_slavery
+
+schools = traditional_academic

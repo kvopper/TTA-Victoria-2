@@ -6,7 +6,6 @@ political_decisions = {
 		picture = "witch_king_of_angmar"
 		potential = {
 			tag = MAN
-			NOT = { government = nazgul_dictatorship }
 			good_evil_alignment = evil_alignment
 		}
 		
@@ -21,15 +20,12 @@ political_decisions = {
 		
 		effect = {
 			prestige = 5
-			nationalvalue = witch_king_of_angmar
-			government = nazgul_dictatorship
+			ruling_party_ideology = saurons_nine
+			add_country_modifier = { name = witch_king_of_angmar_modifier duration = -1 }
 
 			any_country = {
 				limit = {
-					OR = {
-						government = nazgul_dictatorship
-						government = sauron_dictatorship
-					}
+					government = sauron_dictatorship
 					is_vassal = no
 				}
 				create_alliance = THIS

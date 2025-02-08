@@ -24,7 +24,6 @@ country_event = {
 				limit = {
 					is_core = TOL
 				}
-				remove_core = TOL
 				add_core = AMR
 			}
 			prestige = 5
@@ -46,7 +45,6 @@ country_event = {
 			limit = {
 				is_core = TOL
 			}
-			remove_core = TOL
 			add_core = AMR
 		}
 		relation = {
@@ -289,7 +287,7 @@ country_event = {
 	trigger = {
 		tag = GON
 		year = 2976
-		nationalvalue = ecthelion_ii
+		ruling_party = GON_ecthelion_ii
 		OR = {
 			AND = {
 				owns = 71
@@ -418,7 +416,7 @@ country_event = {
 	trigger = {
 		tag = GON
 		has_country_modifier = encouraging_outside_military_recruitment
-		nationalvalue = ecthelion_ii
+		ruling_party = GON_ecthelion_ii
 	}
 	
 	mean_time_to_happen = {
@@ -618,7 +616,7 @@ country_event = {
 			add_core = GNR
 		}
 		
-		GNR = { government = stewardship }
+		GNR = { government = monarchy_2 }
 		
 		any_country = {
 			limit = {
@@ -819,8 +817,6 @@ country_event = {
 	}
 }
 
-# The Death of Ecthelion II and Coronation of Denethor II {
-#	Currently it is assumed that Denethor II will succeed Ecthelion II as there is no way for him to die early or do other things
 # The Death of Ecthelion II
 country_event = {
 	id = 50021
@@ -832,96 +828,31 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
-		nationalvalue = ecthelion_ii
+		has_country_flag = GON_content
+		has_global_flag = ecthelion_ii_alive
 		year = 2980
-		NOT = { is_substate = yes }
-	}
-	
-	mean_time_to_happen = {
-		months = 96
-		
-		modifier = {
-			factor = 0.75
-			year = 2982
-			NOT = { year = 2983 }
-		}
-		modifier = {
-			factor = 0.5
-			year = 2983
-			NOT = { year = 2984 }
-		}
-		modifier = {
-			factor = 0.25
-			year = 2984
-		}
-		modifier = {
-			factor = 0.01
-			year = 2985
-		}
+		NOT = { ruling_party = GON_ecthelion_ii }
 	}
 	
 	option = {
 		name = "He will be missed"
 		
-		# If Denethor II is alive, we know the next leader
-		random_owned = {
-			limit = {
-				owner = { has_global_flag = denethor_ii_alive }
-			}
-			owner = {
-				set_country_flag = knows_next_leader
-				
-				any_country = {
-					limit = {
-						exists = yes
-						nationalvalue = ecthelion_ii
-					}
-					set_country_flag = knows_next_leader
-				}
-			}
-		}
+		plurality = 5
 		
-		# Kills Ecthelion II and coronates the new leader
-		country_event = 3501
+		FOR = { country_event = 3500 } # Generic Leader Died Cleanup
 		
-		any_country = {
-			limit = {
-				exists = yes
-				nationalvalue = ecthelion_ii
-			}
-			country_event = 3501
-		}
-		
-		random_owned = {
-			limit = {
-				owner = { has_global_flag = denethor_ii_alive }
-			}
-			owner = {
-				nationalvalue = denethor_ii
-				
-				any_country = {
-					limit = {
-						exists = yes
-						nationalvalue = ecthelion_ii
-					}
-					nationalvalue = denethor_ii
-				}
-			}
-		}
+		ruling_party_ideology = house_of_stewards
 		
 		clr_global_flag = ecthelion_ii_alive
 		
-		# Invites non-puppet allies to the coronation
-		any_country = {
-			limit = {
-				alliance_with = THIS
-				NOT = { is_substate = yes }
-			}
-			country_event = 3507
-		}
-		
 		# Denethor hated and was jealous of Thorongil. If Thorongil was still an advisor when Ecthelion II died, he would have left/been expelled from the court
 		remove_country_modifier = thorongil
+		remove_country_modifier = ecthelion_ii_modifier
+		
+		random_owned = {
+			limit = { owner = { ruling_party = GON_denethor_ii } }
+			owner = { add_country_modifier = { name = denethor_ii_modifier duration = -1 } }
+		}
 	}
 }
 
@@ -969,7 +900,7 @@ country_event = {
 		
 		# Audax Validator "." Ignore_1007
 		define_general = {
-			name = "§LFarlong, §MLord of Lossarnach§!"
+			name = "§LForlong, §MLord of Lossarnach§!"
 			background = lord_of_lossarnach
 			personality = stalwart
 		}
@@ -1493,7 +1424,7 @@ country_event = {
 	option = {
 		name = "We are reclaiming what is rightfully ours"
 		
-		HRD = { country_event = 100006 }
+		HRD = { country_event = 3501 }
 	}
 }
 # }
@@ -2113,7 +2044,7 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
-		nationalvalue = denethor_ii
+		ruling_party = GON_denethor_ii
 		has_country_modifier = palantir_madness
 		NOT = { controls = 16 }
 		OR = {
@@ -2145,120 +2076,21 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
-		nationalvalue = denethor_ii
-		year = 3025
-		NOT = { is_substate = yes }
-	}
-	
-	mean_time_to_happen = {
-		months = 96
-		
-		modifier = {
-			factor = 0.75
-			year = 3027
-			NOT = { year = 3028 }
-		}
-		modifier = {
-			factor = 0.5
-			year = 3028
-			NOT = { year = 3029 }
-		}
-		modifier = {
-			factor = 0.25
-			year = 3029
-		}
-		modifier = {
-			factor = 0.01
-			year = 3030
-		}
+		has_country_flag = GON_content
+		has_global_flag = denethor_ii_alive
+		year = 3019
+		NOT = { ruling_party = GON_denethor_ii }
 	}
 	
 	option = {
 		name = "He will be missed"
 		
-		# If one of Denethor II's successors is alive, we know the next leader
-		random_owned = {
-			limit = {
-				owner = {
-					OR = {
-						has_global_flag = boromir_ii_alive
-						has_global_flag = faramir_i_alive
-					}
-				}
-			}
-			owner = {
-				set_country_flag = knows_next_leader
-				
-				any_country = {
-					limit = {
-						exists = yes
-						nationalvalue = denethor_ii
-					}
-					set_country_flag = knows_next_leader
-				}
-			}
-		}
+		plurality = 5
 		
-		# Kills Denethor II and coronates the new leader
-		country_event = 3501
-		
-		any_country = {
-			limit = {
-				exists = yes
-				nationalvalue = denethor_ii
-			}
-			country_event = 3501
-		}
-		
-		# Boromir II highest priority
-		random_owned = {
-			limit = {
-				owner = { has_global_flag = boromir_ii_alive }
-			}
-			owner = {
-				nationalvalue = boromir_ii
-				
-				any_country = {
-					limit = {
-						exists = yes
-						nationalvalue = denethor_ii
-					}
-					nationalvalue = boromir_ii
-				}
-			}
-		}
-		
-		# Faramir I next
-		random_owned = {
-			limit = {
-				owner = {
-					NOT = { has_global_flag = boromir_ii_alive }
-					has_global_flag = faramir_i_alive
-				}
-			}
-			owner = {
-				nationalvalue = faramir_i
-				
-				any_country = {
-					limit = {
-						exists = yes
-						nationalvalue = denethor_ii
-					}
-					nationalvalue = faramir_i
-				}
-			}
-		}
+		FOR = { country_event = 3500 } # Generic Leader Died Cleanup
 		
 		clr_country_flag = denethor_ii_alive
-		
-		# Invites non-puppet allies to the coronation
-		any_country = {
-			limit = {
-				alliance_with = THIS
-				NOT = { is_substate = yes }
-			}
-			country_event = 3507
-		}
+		remove_country_modifier = denethor_ii_modifier
 	}
 }
 # }
@@ -2339,8 +2171,6 @@ country_event = {
 			personality = heroic
 		}
 		primary_culture = dunedain
-		
-		set_global_flag = boromir_ii_alive
 	}
 }
 
@@ -2366,8 +2196,6 @@ country_event = {
 			personality = heroic
 		}
 		primary_culture = dunedain
-		
-		set_global_flag = faramir_i_alive
 	}
 }
 
@@ -2389,7 +2217,6 @@ country_event = {
 			background = prince_of_belfalas
 			personality = tactical
 		}
-		set_global_flag = imrahil_i_alive
 	}
 }
 
@@ -2529,5 +2356,27 @@ country_event = {
 			name = harondor_lost
 			duration = -1
 		}
+	}
+}
+
+# Bonuses from Thorongil go away after he has left
+country_event = {
+	id = 50059
+	title = "The Thorongil Departs"
+	desc = "EVTDESC50059"
+	picture = "gondor/thorongil"
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = GON
+		has_country_modifier = GON_increased_naval_concern
+		NOT = { has_country_modifier = thorongil }
+	}
+	
+	option = {
+		name = "Drat"
+		
+		remove_country_modifier = GON_increased_naval_concern
 	}
 }

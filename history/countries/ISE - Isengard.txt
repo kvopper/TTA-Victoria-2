@@ -6,7 +6,7 @@ culture = dunedain
 culture = dunnish
 religion = men
 government = istari_kingdom
-nationalvalue = saruman
+nationalvalue = no_heirloom
 literacy = 0.2
 civilized = yes
 
@@ -16,17 +16,13 @@ decision = isengard_start_decision
 
 oob = "ISE_oob.txt"
 
-ruling_party = generic_high_nobility
+ruling_party = ISE_saruman
 
 upper_house = {
-	high_nobility = 60
-	low_nobility = 29
-	burgher = 6
-	loremaster = 5
+	lords_of_isengard = 100
 }
 
 slavery = no_slavery
-upper_house_composition = appointed
 penal_reform = hard_labor
 
 schools = traditional_academic

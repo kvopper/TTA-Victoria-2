@@ -8,33 +8,13 @@ POLITICS_DECISIONS;Decisions: Flavor   §OFluff   §GGeneral   §TQOL   §rSetti
 leave_soi_title;§GLeave Sphere of Influence§!;x
 leave_soi_desc;We can leave this Sphere of Influence, however our former master may well declare war to stop us.;x
 leave_soi_good_evil_title;§GLeave Sphere of Influence (Good/Evil)§!;x
-leave_soi_good_evil_desc;We can leave this Sphere of Influence due to being good when our sphere leader is evil, or because we are evil when our sphere leader is good. However, our former master may well declare war to stop us.;x
-convert_good_evil_title;§GConvert Good/Evil§!;x
-convert_good_evil_desc;Our sphere leader's alignment does not match up with our own. We can choose to convert to their alignment.;x
+leave_soi_good_evil_desc;We can leave this Sphere of Influence due to being Anti-Sauron when our sphere leader is Sauronite, or because we are Sauronite when our sphere leader is Anti-Sauron. However, our former master may well declare war to stop us.;x
 nationalize_title;§GSeize the means of production!§!;x
 nationalize_desc;No more will the foreign dogs grow fat off of the sweat of our people! The time has come to seize all assets owned by outsiders, to be cared for by the realm.;x
-become_a_monarchy_title;§GBecome a Monarchy§!;x
-become_a_monarchy_desc;We have the public support for making our realm into a monarchy.;x
-convert_to_good_title;§GBecome a Good Realm§!;x
-convert_to_good_desc;We have enough public support to become a Good Realm.;x
-convert_to_neutral_title;§GBecome a Neutral Realm§!;x
-convert_to_neutral_desc;We have enough public support to become a Neutral Realm.;x
-convert_to_evil_title;§GBecome an Evil Realm§!;x
-convert_to_evil_desc;We have enough public support to become an Evil Realm.;x
 show_government_decisions_title;§GShow Government Decisions§!;x
 show_government_decisions_desc;This decision allows you to see all government-related decisions;x
 hide_government_decisions_title;§GHide Government Decisions§!;x
 hide_government_decisions_desc;This decisions allows you to hide all government-related decisions;x
-democratizing_title;§GDemocratizing§!;x
-democratizing_desc;This decision allows you to convert your realm into a democracy. When you take the Landed Voting reform, the Utility Tag will automatically change your government to a democracy and start and election.;x
-monarchizing_title;§GMonarchizing§!;x
-monarchizing_desc;This decision allows you to begin the process of converting your realm into a monarchy. When you hit 30% of your population with Servants as their favored Interest Group, you will be able to become a monarchy of your choice.;x
-attempt_to_good_title;§GEncourage Good Alignment§!;x
-attempt_to_good_desc;If we wish to become a Good Realm, the best way is to make the people want to be in a Good Realm.;x
-attempt_to_neutral_title;§GEncourage Neutral Alignment§!;x
-attempt_to_neutral_desc;If we wish to become a Neutral Realm, the best way is to make the people want to be in a Neutral Realm.;x
-attempt_to_evil_title;§GEncourage Evil Alignment§!;x
-attempt_to_evil_desc;If we wish to become an Evil Realm, the best way is to make the people want to be in an Evil Realm.;x
 abandon_neutrality_title;§GAbandon Neutrality§!;x
 abandon_neutrality_desc;Our realm is considered politically neutral and unable to take part in wars or be attacked. We can choose to abandon this neutrality.;x
 #####################################;x }
@@ -66,8 +46,6 @@ clear_cores_from_DWM_desc;If you wish to make it as if Dwarves of the White Moun
 #####################################;x }
 ##### NATIONAL LEADER DECISIONS #####;x {
 #####################################;x
-generic_leader_decision_title;§O$MONARCHTITLE$ Generic Leader§!;x
-generic_leader_decision_desc;Learn about §Y$MONARCHTITLE$ Generic Leader§!!;x
 steward_ecthelion_ii_title;§O$MONARCHTITLE$ Ecthelion II§!;x
 steward_ecthelion_ii_desc;Learn about §Y$MONARCHTITLE$ Ecthelion II§!!;x
 prince_angelimir_title;§O$MONARCHTITLE$ Angelimir§!;x
@@ -117,8 +95,8 @@ beornings_of_the_vale_desc;Learn about the §Y$COUNTRY$§!!;x
 ##### RGO MODIFIER DECISIONS #####;x {
 ##################################;x
 bywater_road_title;The Bywater Road;x
-bywater_road_desc;The Bywater Road is a small road branching off of the Great East Road, passing through its namesake, Bywater, and ending in Michael Delving;x
-old_forest_road_title;The Old Forest Road.;x
+bywater_road_desc;The Bywater Road is a small road branching off of the Great East Road, passing through its namesake, Bywater, and ending in Michael Delving.;x
+old_forest_road_title;The Old Forest Road;x
 old_forest_road_desc;The Old Forest Road is a road leading from High Pass through Mirkwood to the Barding Realm. Originally, it used to connect all the way to the Iron Hills, but the easternmost sections of the road have fallen into disrepair.;x
 great_west_road_title;The Great West Road;x
 great_west_road_desc;The Great West road is part of the North-South road that connects Edoras to Minas Tirith.;x
@@ -270,14 +248,6 @@ invite_witch_king_of_angmar_desc;Since the Angmar War ended some one thousand ye
 ###########################;x }
 ##### ARNOR DECISIONS #####;x {
 ###########################;x
-shire_bree_unification_title;The Unification of Breeland and Shire;x
-shire_bree_unification_desc;Now that we have asserted dominance over these land in the heartland of Eriador, we can unify them.;x
-the_buckland_question_title;The Buckland question;x
-the_buckland_question_desc;Now that we have unified Bree and Shire, we should decide our policy regarding Buckland - an autonomous hobbit colony.;x
-annex_buckland_title;Annex Buckland;x
-annex_buckland_desc;The Bucklanders are a hardier and more adventurous breed of Hobbit who have formed a colony across the Brandywine river. Their settlements have been mostly autonomous until now. We should now bring them into the fold.;x
-high_hay_title;High Hay;x
-high_hay_desc;The High Hay, known locally as just the Hedge, is a barrier along the perimeter of Buckland to protect the land from the Old Forest. With our newfound knowledge of fortifications, it will be simple to turn this into a formidible defence to deter invaders.;x
 form_arthedain_title;Reform the Kingdom of Arthedain;x
 form_arthedain_desc;The Kingdom of Athedain has been fallen for over a thousand years. Now, however, with our prominent position within central Eriador, we can reform the old Kingdom, and put an end to the chaos that now plagues this land.;x
 form_cardolan_title;Reform the Kingdom of Cardolan;x
@@ -295,6 +265,22 @@ claim_angmar_desc;Since the Witch-king inhabited Carn Dûm, Angmar has repeatedl
 ######################################;x
 unify_arnor_and_gondor_title;Unify the Northern and Southern Kingdoms;x
 unify_arnor_and_gondor_desc;It's been three thousand years since the twin kingdoms of Arnor and Gondor have been united under one ruler. Now, we are in a position to restore them as the Reunited Kingdom.;x
+################################;x }
+##### SHIRE-BREE DECISIONS #####;x {
+################################;x
+shire_bree_unification_title;The Unification of Breeland and Shire;x
+shire_bree_unification_desc;Now that we have asserted dominance over these land in the heartland of Eriador, we can unify them.;x
+the_buckland_question_title;The Buckland question;x
+the_buckland_question_desc;Now that we have unified Bree and Shire, we should decide our policy regarding Buckland - an autonomous hobbit colony.;x
+annex_buckland_title;Annex Buckland;x
+annex_buckland_desc;The Bucklanders are a hardier and more adventurous breed of Hobbit who have formed a colony across the Brandywine river. Their settlements have been mostly autonomous until now. We should now bring them into the fold.;x
+high_hay_title;High Hay;x
+high_hay_desc;The High Hay, known locally as just the Hedge, is a barrier along the perimeter of Buckland to protect the land from the Old Forest. With our newfound knowledge of fortifications, it will be simple to turn this into a formidible defence to deter invaders.;x
+################################;x }
+##### ENEDHWAITH DECISIONS #####;x {
+################################;x
+reunify_SAE_title;Reform the Kingdom of Saerlann;x
+reunify_SAE_desc;The Kingdom of Saerlann has been fallen for almost a thousand years. Now, however, with our prominent position within its former territories, we can reform the old Kingdom, and put an end to the chaos that now plagues this land.;x
 ####################################################;x }
 ##### DWARVES OF THE WHITE MOUNTAINS DECISIONS #####;x {
 ####################################################;x
@@ -540,7 +526,7 @@ form_misty_mountains_title;Form Urukdurbzagh;x
 form_misty_mountains_desc;For too long have the orcs of the Misty Mountains squabbled, it is time we united them. Should we conquer the core orcish lands of the Misty Mountains we may declare the creation of a new power in Middle Earth.;x
 make_snow_orcs_accepted_title;Incorporate the Snow Orcs;x
 make_snow_orcs_accepted_desc;The snow orcs do not live in the Misty Mountains, but they are our cultural cousins. We will take their lands and whip them into place in our realm!;x
-make_angrimm_accepted_title;The Fate of the Angrimm;x
+make_angrimm_accepted_title;The Fate of the Angmarrim;x
 make_angrimm_accepted_desc;The hillmen of Angmar have long cooperated with their neighboring orcs, the two peoples growing closer as time passed. Through force of arms we have convinced the orcs of Angmar that they belong in our realm and we will do the same to their human neighbors.;x
 saruman_engineers;The Servants of Sharkû;x
 saruman_engineers_title;The Servants of Sharkû;x
@@ -551,6 +537,8 @@ goblin_industry_desc;We make no beautiful things, but many clever ones. We are d
 ##########################################;x }
 ##### FELLOWAR OF THE RING DECISIONS #####;x {
 ##########################################;x
+bilbos_111_birthday_title;Bilbo's 111th Birthday;x
+bilbos_111_birthday_desc;Clicking this decision immediately on September 1st, 3001, ensures that the event fires for the owner of Hobbiton September 22, 3001.;x
 search_for_the_ring_hobbiton_title;Rumors of the Ring in Hobbiton;x
 search_for_the_ring_hobbiton_desc;Rumors have been circulating in our glorious realm about usage of a magic Ring by Bilbo Baggins - the very one who went on an "adventure" 50 years prior - at his 111th birthday party. They may be nothing, but nevertheless, we should follow up.;x
 release_the_nine_title;Release the Nine;x
@@ -582,55 +570,24 @@ the_fellowship_succeeds_desc;The Fellowship has reached Mount Doom!;x
 destroy_one_ring_title;Destroy the One Ring;x
 destroy_one_ring_desc;The Fellowship may have failed. However, that does not mean that the One Ring will never be destroyed!;x
 request_the_ring_title;Request the One Ring;x
-request_the_ring_desc;An Evil Realm has acquired the One Ring. It rightfully belongs to our Dark Lord, and he shall have it!\n\n§RShould the realm reject this demand, we will declare war on them§!;x
+request_the_ring_desc;A Sauronite Realm has acquired the One Ring. It rightfully belongs to our Dark Lord, and he shall have it!\n\n§RShould the realm reject this demand, we will declare war on them§!;x
 give_ring_to_mordor_title;Give the One Ring to Mordor;x
 give_ring_to_mordor_desc;The One Ring is rightfully owned by Sauron. As such, Mordor should have the Ring. If we were to do this, they would undoubtedly protect us.;x
 mordor_start_war_of_the_ring_title;The Gondor Assault;x
 mordor_start_war_of_the_ring_desc;To the West lies the Land of Stone. Long have we fought them, and long have they stood against us. No more - the Time of the Orc has come!;x
-################################;x }
-##### WORLD BANK DECISIONS #####;x {
-################################;x
-bilbos_111_birthday_title;Bilbo's 111th Birthday;x
-bilbos_111_birthday_desc;Clicking this decision immediately on September 1st, 3001, ensures that the event fires for the owner of Hobbiton September 22, 3001.;x
-good_evil_messed_up_title;Good and Evil Confusion;x
-good_evil_messed_up_desc;It has been detected that there is a weird combination of country flags and country modifiers (in terms of Good Realm and Evil Realm) in at least one realm. This decision should fix that.;x
-good_evil_wrong_sphere_title;Good and Evil in the Wrong Spheres;x
-good_evil_wrong_sphere_desc;There is a realm who is in the wrong sphere - either they are a Good Realm in a Neutral/Evil sphere, a Neutral Realm in a Good/Evil sphere, or an Evil Realm in a Good/Neutral sphere. This decision should fix that.;x
-break_alliance_with_FOR_title;Break Alliance with the World Bank;x
-break_alliance_with_FOR_desc;That is not allowed. Stop it.;x
-leave_sphere_FOR_title;Remove the World Bank from a Sphere;x
-leave_sphere_FOR_desc;That is not allowed. Stop it.;x
-end_war_FOR_title;End War;x
-end_war_FOR_desc;That is not allowed. Stop it.;x
-democratic_flag_clean_up_title;Democratic Flag Clean Up;x
-democratic_flag_clean_up_desc;Something has gone wrong with the democratic country flags. This decision will fix it.;x
-something_to_democracy_title;Change Government to Democracy;x
-something_to_democracy_desc;Some realm has converted themselves to a democracy. Let's make it official;x
-monarchize_flag_cleanup_title;Monarchy Flag Clean Up;x
-monarchize_flag_cleanup_desc;Some realm that was attempting to convert to a monarchy has become one. Let's get rid of some extra flags.;x
-noble_autonomy_flag_clean_up_title;Noble Autonomy Flag Clean Up;x
-noble_autonomy_flag_clean_up_desc;Something has gone wrong with the noble autonomy country flags. This decision will fix it.;x
-non_accepted_slavery_clean_up_title;Non-Accepted Slavery Clean Up;x
-non_accepted_slavery_clean_up_desc;A realm has recently changed its slavery laws and may need some of its slaves turned into labourers.;x
-border_laws_clean_up_title;Border Laws Clean Up;x
-border_laws_clean_up_desc;A realm does not have the correct border policy. Let's fix that.;x
-set_initial_leader_title;Set Initial Leader;x
-set_initial_leader_desc;A realm has just spruing into existence. Let's set their initial leader traits.;x
-debug_research_flags_title;Debug Research Flags;x
-debug_research_flags_desc;This decision will only pop up if there are realms missing one of the research flags (infantry_focused, ranged_focused, cavalry_focused);x
 #################################################;x }
 ##### ORGANIZATIONS AND ALLIANCES DECISIONS #####;x {
 #################################################;x
 alliance_dwarves_men_menu_title;Alliance of Dwarves and Men;x
 alliance_dwarves_men_menu_desc;Our country is a member of the Alliance of Dwarves and Men. Use this decision to access options and flavor related to the alliance.\n\nNote that the options you see will change as the game goes on. The potential options are:\n\n§OCall to Arms§! - only accessible when at war, another alliance member is not at war, and they have not recently rejected a scripted call to arms.\n§OCore Dispute Menu§! - only accessible when you own another alliance member's cores, or another alliance member owns your cores.\n§OInvite Realm§! - only accessible when you are allied to another realm not in the Alliance whose primary culture is accepted by the Alliance and whose capital is in Rhovanion.\n§OExpand Cultural Reach§! - only accessible when you are allied to another realm not in the Alliance whose primary culture is NOT accepted by the Alliance, whose capital is in Rhovanion, and is of the Teleri, Avari, Anduirim, Rohirrim or Hobbit culture groups.\n§OSpecific Flavor Menu§! - only available if there is flavor specific to your realm related to the Alliance. You will unlock this flavor by doing research or following your realm's standard flavor.\n§OPropose Economic Union§! - only available if you are a GP and an economic union has not yet been passed.\n§OPropose Political Union§! - only available if you are a GP, an economic union has been passed, and you have completed the Diplomacy line of research.\n§OLeave Alliance§! - always available;x
 alliance_dwarves_men_outsider_information_title;Joining the Alliance of Dwarves and Men;x
-alliance_dwarves_men_outsider_information_desc;Our country is not a member of the Alliance of Dwarves and Men.\n\nIf our country passes the conditions on this decision (ignoring the Never), we will be eligible to be invited to the Alliance of Dwarves and Men. We also need to be allied to realm that is currently in the alliance. We will then receive an inviation, however, §Rit is possible for the rest of the alliance to reject the invitation proposal§!.\n\nThe full list of conditions is:\nWe are §GGood Aligned§! or §PNeutral Aligned§!\nWe are not a vassal\nWe are either a Dwarven realm, a Northman realm, a secondary power or a great power\nOur capital is in Rhovanion;x`
+alliance_dwarves_men_outsider_information_desc;Our country is not a member of the Alliance of Dwarves and Men.\n\nIf our country passes the conditions on this decision (ignoring the Never), we will be eligible to be invited to the Alliance of Dwarves and Men. We also need to be allied to realm that is currently in the alliance. We will then receive an inviation, however, §Rit is possible for the rest of the alliance to reject the invitation proposal§!.\n\nThe full list of conditions is:\nWe are §GAnti-Sauron§! or §POpportunistic§!\nWe are not a vassal\nWe are either a Dwarven realm, a Northman realm, a secondary power or a great power\nOur capital is in Rhovanion;x
 FFN_claim_refused_countries_title;Claim the Lands of Former Alliance Members;x
 FFN_claim_refused_countries_desc;There exists at least one realm that did not vote for our political union. Given that we are the union created out of the Alliance of Dwarves and Men, we have rightful claims to any other realm that was once part of the alliance.;x
 rhovanion_minor_join_FFN_title;AI: Rhovanion Minor Join FFN;x
 rhovanion_minor_join_FFN_desc;AI only. How are you reading this?;x
 rhovanion_minor_join_FFN_player_title;Annexation of Rhovanion Minor Realms;x
-rhovanion_minor_join_FFN_player_desc;Hover of the effects of this decision to see how you can annex good-aligned Rhovanion realms;x
+rhovanion_minor_join_FFN_player_desc;Hover of the effects of this decision to see how you can annex Anti-Sauron Rhovanion realms;x
 ##############################;x }
 ##### RENAMING DECISIONS #####;x {
 ##############################;x
@@ -706,6 +663,8 @@ rename_lossarnach_title;Rename Lossarnach;x
 rename_lossarnach_desc;A section of Lossarnach has fallen under our control. We have alternative names for select provinces and states in the region. Let's use them.;x
 rename_wasteland_title;Rename Wasteland;x
 rename_wasteland_desc;A section of Wasteland has fallen under our control. We have alternative names for select provinces and states in the region. Let's use them.;x
+rename_shire_title;Rename Shire;x
+rename_shire_desc;A section of Shire has fallen under our control. We have alternative names for select provinces and states in the region. Let's use them.;x
 rename_nurn_title;Rename Nurn;x
 rename_nurn_desc;A section of Nurn has fallen under our control. We have alternative names for select provinces and states in the region. Let's use them.;x
 rename_nan_curunir_title;Rename Nan Curunir;x

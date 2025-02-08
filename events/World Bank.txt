@@ -427,7 +427,6 @@ country_event = {
 		
 		# Investing in Province: 8% chance of +1 (average of a increase of 1 per year)
 		# Do not need to worry about the above changes as the province needs to be controlled by the owner with no battles in it + repairing province should not overlap with investing in province
-		# TODO: May want to consider moving this to a quarterly event -- it seems like the same provinces get favored every month
 		random_owned = {
 			any_neighbor_province = {
 				limit = {
@@ -1271,6 +1270,7 @@ country_event = {
 			country_event = 2901
 		}
 		
+		# Ends wars where one side no longer exists
 		any_country = {
 			limit = {
 				exists = no
@@ -1280,6 +1280,7 @@ country_event = {
 			country_event = 99005
 		}
 		
+		# Ends vassal relationships if the overlord no longer exists
 		any_country = {
 			limit = {
 				exists = yes
@@ -1288,6 +1289,839 @@ country_event = {
 			}
 			country_event = 99006
 		}
+		
+		# Leader alignment/accepted culture mismatch {
+		any_country = {
+			limit = {
+				good_evil_alignment = good_alignment
+				OR = {
+					NOT = { accepted_culture = good_culture }
+					accepted_culture = neutral_culture
+					accepted_culture = evil_culture
+				}
+			}
+			add_accepted_culture = good_culture
+			remove_accepted_culture = neutral_culture
+			remove_accepted_culture = evil_culture
+		}
+		any_country = {
+			limit = {
+				good_evil_alignment = neutral_alignment
+				OR = {
+					accepted_culture = good_culture
+					NOT = { accepted_culture = neutral_culture }
+					accepted_culture = evil_culture
+				}
+			}
+			remove_accepted_culture = good_culture
+			add_accepted_culture = neutral_culture
+			remove_accepted_culture = evil_culture
+		}
+		any_country = {
+			limit = {
+				good_evil_alignment = evil_alignment
+				OR = {
+					accepted_culture = good_culture
+					accepted_culture = neutral_culture
+					NOT = { accepted_culture = evil_culture }
+				}
+			}
+			remove_accepted_culture = good_culture
+			remove_accepted_culture = neutral_culture
+			add_accepted_culture = evil_culture
+		}
+		# }
+		
+		# Government Clean up
+		# This must come before reform assignment because it depends upon government {
+		# Vassals of Mordor become dominion_1
+		any_country = {
+			limit = {
+				overlord = { government = sauron_dictatorship }
+				NOT = { government = dominion_1 }
+			}
+			government = dominion_1
+			ruling_party_ideology = servants_evil
+		}
+		# dominion_2
+		any_country = {
+			limit = {
+				NOT = { government = dominion_2 }
+				OR = {
+					# Fiefdoms of Gondor
+					AND = {
+						OR = {
+							vassal_of = GON
+							vassal_of = RUN
+						}
+						OR = {
+							tag = ITH
+							tag = LOS
+							tag = LEB
+							tag = AMR
+							tag = LAM
+							tag = ANF
+							tag = ANO
+							tag = TOL
+							tag = MRN
+							tag = ADR
+						}
+					}
+					# Rohan
+					AND = {
+						vassal_of = ROH
+						tag = FRA
+					}
+				}
+			}
+			government = dominion_2
+		}
+		# Dominions that are now free
+		any_country = {
+			limit = {
+				OR = {
+					government = dominion_1
+					government = dominion_2
+				}
+				is_vassal = no
+			}
+			random_owned = {
+				limit = { owner = { primary_culture = dunedain } }
+				owner = {
+					government = monarchy
+					ruling_party_ideology = dunedain_nobles
+				}
+			}
+			random_owned = {
+				limit = { owner = { primary_culture = gondorian } }
+				owner = {
+					government = monarchy
+					ruling_party_ideology = gondorian_nobles
+				}
+			}
+			random_owned = {
+				limit = { owner = { primary_culture = amrothian } }
+				owner = {
+					government = monarchy
+					ruling_party_ideology = amrothian_nobles
+				}
+			}
+			random_owned = {
+				limit = { owner = { primary_culture = arthedani } }
+				owner = {
+					government = tribal
+					ruling_party_ideology = arthedani_nobles
+				}
+			}
+			random_owned = {
+				limit = { owner = { primary_culture = cardolandrim } }
+				owner = {
+					government = tribal
+					ruling_party_ideology = cardolandrim_nobles
+				}
+			}
+			random_owned = {
+				limit = { owner = { primary_culture = haeranedain } }
+				owner = {
+					government = tribal
+					ruling_party_ideology = haeranedain_nobles
+				}
+			}
+			random_owned = {
+				limit = { owner = { primary_culture = noldor } }
+				owner = {
+					government = monarchy
+					ruling_party_ideology = noldor_nobles
+				}
+			}
+			random_owned = {
+				limit = { owner = { primary_culture = falathrim } }
+				owner = {
+					government = monarchy
+					ruling_party_ideology = falathrim_nobles
+				}
+			}
+			random_owned = {
+				limit = { owner = { primary_culture = silvan } }
+				owner = {
+					government = monarchy
+					ruling_party_ideology = silvan_nobles
+				}
+			}
+			random_owned = {
+				limit = { owner = { primary_culture = galadhrim } }
+				owner = {
+					government = monarchy
+					ruling_party_ideology = galadhrim_nobles
+				}
+			}
+			random_owned = {
+				limit = { owner = { primary_culture = avari } }
+				owner = {
+					government = monarchy
+					ruling_party_ideology = avari_nobles
+				}
+			}
+			random_owned = {
+				limit = { owner = { primary_culture = umbarrim } }
+				owner = {
+					government = monarchy
+					ruling_party_ideology = umbarrim_nobles
+				}
+			}
+			random_owned = {
+				limit = { owner = { primary_culture = harnendan } }
+				owner = {
+					government = tribal
+					ruling_party_ideology = harnendan_nobles
+				}
+			}
+			random_owned = {
+				limit = { owner = { primary_culture = haruzani } }
+				owner = {
+					government = tribal
+					ruling_party_ideology = haruzani_nobles
+				}
+			}
+			random_owned = {
+				limit = { owner = { primary_culture = pezarsani } }
+				owner = {
+					government = tribal
+					ruling_party_ideology = pezarsani_nobles
+				}
+			}
+			random_owned = {
+				limit = { owner = { primary_culture = lurmsakuni } }
+				owner = {
+					government = tribal
+					ruling_party_ideology = lurmsakuni_nobles
+				}
+			}
+			random_owned = {
+				limit = { owner = { primary_culture = arysian } }
+				owner = {
+					government = tribal
+					ruling_party_ideology = arysian_nobles
+				}
+			}
+			random_owned = {
+				limit = { owner = { primary_culture = kingsmen } }
+				owner = {
+					government = monarchy
+					ruling_party_ideology = kingsmen_nobles
+				}
+			}
+			random_owned = {
+				limit = { owner = { primary_culture = black_numenorean } }
+				owner = {
+					government = monarchy
+					ruling_party_ideology = black_numenorean_nobles
+				}
+			}
+			random_owned = {
+				limit = { owner = { primary_culture = variag } }
+				owner = {
+					government = tribal
+					ruling_party_ideology = variag_nobles
+				}
+			}
+			random_owned = {
+				limit = { owner = { primary_culture = nurniag } }
+				owner = {
+					government = tribal
+					ruling_party_ideology = nurniag_nobles
+				}
+			}
+			random_owned = {
+				limit = { owner = { primary_culture = chelkiag } }
+				owner = {
+					government = tribal
+					ruling_party_ideology = chelkiag_nobles
+				}
+			}
+			random_owned = {
+				limit = { owner = { primary_culture = sagath } }
+				owner = {
+					government = tribal
+					ruling_party_ideology = sagath_nobles
+				}
+			}
+			random_owned = {
+				limit = { owner = { primary_culture = sekel } }
+				owner = {
+					government = tribal
+					ruling_party_ideology = sekel_nobles
+				}
+			}
+			random_owned = {
+				limit = { owner = { primary_culture = urgath } }
+				owner = {
+					government = tribal
+					ruling_party_ideology = urgath_nobles
+				}
+			}
+			random_owned = {
+				limit = { owner = { primary_culture = kuga } }
+				owner = {
+					government = tribal
+					ruling_party_ideology = kuga_nobles
+				}
+			}
+			random_owned = {
+				limit = { owner = { primary_culture = logath } }
+				owner = {
+					government = tribal
+					ruling_party_ideology = logath_nobles
+				}
+			}
+			# TODO: Allow the right rulers to be chosen
+			random_owned = {
+				limit = { owner = { primary_culture = barding } }
+				owner = {
+					government = merchant_republic
+					ruling_party_ideology = barding_nobles
+				}
+			}
+			random_owned = {
+				limit = { owner = { primary_culture = grammas } }
+				owner = {
+					government = merchant_republic
+					ruling_party_ideology = grammas_nobles
+				}
+			}
+			random_owned = {
+				limit = { owner = { primary_culture = rivermen } }
+				owner = {
+					government = merchant_republic
+					ruling_party_ideology = rivermen_nobles
+				}
+			}
+			random_owned = {
+				limit = { owner = { primary_culture = adhalling } }
+				owner = {
+					government = merchant_republic
+					ruling_party_ideology = adhalling_nobles
+				}
+			}
+			random_owned = {
+				limit = { owner = { primary_culture = dorwinrim } }
+				owner = {
+					government = monarchy
+					ruling_party_ideology = dorwinrim_nobles
+				}
+			}
+			random_owned = {
+				limit = { owner = { primary_culture = aivathiuda } }
+				owner = {
+					government = tribal
+					ruling_party_ideology = aivathiuda_nobles
+				}
+			}
+			random_owned = {
+				limit = { owner = { primary_culture = anthar } }
+				owner = {
+					government = tribal
+					ruling_party_ideology = anthar_nobles
+				}
+			}
+			random_owned = {
+				limit = { owner = { primary_culture = gadraught } }
+				owner = {
+					government = tribal
+					ruling_party_ideology = gadraught_nobles
+				}
+			}
+			random_owned = {
+				limit = { owner = { primary_culture = longbeard } }
+				owner = {
+					government = monarchy
+					ruling_party_ideology = longbeard_nobles
+				}
+			}
+			random_owned = {
+				limit = { owner = { primary_culture = firebeard } }
+				owner = {
+					government = monarchy
+					ruling_party_ideology = firebeard_nobles
+				}
+			}
+			random_owned = {
+				limit = { owner = { primary_culture = broadbeam } }
+				owner = {
+					government = monarchy
+					ruling_party_ideology = broadbeam_nobles
+				}
+			}
+			random_owned = {
+				limit = { owner = { primary_culture = ironfist } }
+				owner = {
+					government = monarchy
+					ruling_party_ideology = ironfist_nobles
+				}
+			}
+			random_owned = {
+				limit = { owner = { primary_culture = dourhand } }
+				owner = {
+					government = monarchy
+					ruling_party_ideology = dourhand_nobles
+				}
+			}
+			random_owned = {
+				limit = { owner = { primary_culture = shornbeard } }
+				owner = {
+					government = monarchy
+					ruling_party_ideology = shornbeard_nobles
+				}
+			}
+			random_owned = {
+				limit = { owner = { primary_culture = woodsmen } }
+				owner = {
+					government = tribal
+					ruling_party_ideology = woodsmen_nobles
+				}
+			}
+			random_owned = {
+				limit = { owner = { primary_culture = beorning } }
+				owner = {
+					government = tribal
+					ruling_party_ideology = beorning_nobles
+				}
+			}
+			random_owned = {
+				limit = { owner = { primary_culture = beiabarnae } }
+				owner = {
+					government = tribal
+					ruling_party_ideology = beiabarnae_nobles
+				}
+			}
+			random_owned = {
+				limit = { owner = { primary_culture = melburgi } }
+				owner = {
+					government = tribal
+					ruling_party_ideology = melburgi_nobles
+				}
+			}
+			random_owned = {
+				limit = { owner = { primary_culture = herimundi } }
+				owner = {
+					government = tribal
+					ruling_party_ideology = herimundi_nobles
+				}
+			}
+			random_owned = {
+				limit = { owner = { primary_culture = ent } }
+				owner = {
+					government = tribal
+					ruling_party_ideology = ent_nobles
+				}
+			}
+			random_owned = {
+				limit = { owner = { primary_culture = huorn } }
+				owner = {
+					government = tribal
+					ruling_party_ideology = huorn_nobles
+				}
+			}
+			random_owned = {
+				limit = { owner = { primary_culture = black_huorn } }
+				owner = {
+					government = tribal
+					ruling_party_ideology = black_huorn_nobles
+				}
+			}
+			random_owned = {
+				limit = { owner = { primary_culture = druedain } }
+				owner = {
+					government = tribal
+					ruling_party_ideology = druedain_nobles
+				}
+			}
+			random_owned = {
+				limit = { owner = { primary_culture = dunnish } }
+				owner = {
+					government = tribal
+					ruling_party_ideology = dunnish_nobles
+				}
+			}
+			random_owned = {
+				limit = { owner = { primary_culture = hollin_folk } }
+				owner = {
+					government = tribal
+					ruling_party_ideology = hollin_folk_nobles
+				}
+			}
+			random_owned = {
+				limit = { owner = { primary_culture = enedwaithrim } }
+				owner = {
+					government = tribal
+					ruling_party_ideology = enedwaithrim_nobles
+				}
+			}
+			random_owned = {
+				limit = { owner = { primary_culture = saerlanner } }
+				owner = {
+					government = tribal
+					ruling_party_ideology = saerlanner_nobles
+				}
+			}
+			random_owned = {
+				limit = { owner = { primary_culture = dunir } }
+				owner = {
+					government = tribal
+					ruling_party_ideology = dunir_nobles
+				}
+			}
+			random_owned = {
+				limit = { owner = { primary_culture = marshmen } }
+				owner = {
+					government = tribal
+					ruling_party_ideology = marshmen_nobles
+				}
+			}
+			random_owned = {
+				limit = { owner = { primary_culture = rohirrim } }
+				owner = {
+					government = monarchy
+					ruling_party_ideology = rohirrim_nobles
+				}
+			}
+			random_owned = {
+				limit = { owner = { primary_culture = anduinmen } }
+				owner = {
+					government = tribal
+					ruling_party_ideology = anduinmen_nobles
+				}
+			}
+			random_owned = {
+				limit = { owner = { primary_culture = isenmen } }
+				owner = {
+					government = monarchy
+					ruling_party_ideology = isenmen_nobles
+				}
+			}
+			random_owned = {
+				limit = { owner = { primary_culture = uruk_hai } }
+				owner = {
+					government = tribal
+					ruling_party_ideology = uruk_hai_nobles
+				}
+			}
+			random_owned = {
+				limit = { owner = { primary_culture = mordor_orc } }
+				owner = {
+					government = tribal
+					ruling_party_ideology = mordor_orc_nobles
+				}
+			}
+			random_owned = {
+				limit = { owner = { primary_culture = mordor_uruk } }
+				owner = {
+					government = tribal
+					ruling_party_ideology = mordor_uruk_nobles
+				}
+			}
+			random_owned = {
+				limit = { owner = { primary_culture = guldurrim } }
+				owner = {
+					government = tribal
+					ruling_party_ideology = guldurrim_nobles
+				}
+			}
+			random_owned = {
+				limit = { owner = { primary_culture = white_mountain_goblin } }
+				owner = {
+					government = tribal
+					ruling_party_ideology = white_mountain_goblin_nobles
+				}
+			}
+			random_owned = {
+				limit = { owner = { primary_culture = morian } }
+				owner = {
+					government = tribal
+					ruling_party_ideology = morian_nobles
+				}
+			}
+			random_owned = {
+				limit = { owner = { primary_culture = goblin_towner } }
+				owner = {
+					government = tribal
+					ruling_party_ideology = goblin_towner_nobles
+				}
+			}
+			random_owned = {
+				limit = { owner = { primary_culture = gundabad_orc } }
+				owner = {
+					government = tribal
+					ruling_party_ideology = gundabad_orc_nobles
+				}
+			}
+			random_owned = {
+				limit = { owner = { primary_culture = snow_orc } }
+				owner = {
+					government = tribal
+					ruling_party_ideology = snow_orc_nobles
+				}
+			}
+			random_owned = {
+				limit = { owner = { primary_culture = gram_goblin } }
+				owner = {
+					government = tribal
+					ruling_party_ideology = gram_goblin_nobles
+				}
+			}
+			random_owned = {
+				limit = { owner = { primary_culture = blue_mountain_goblin } }
+				owner = {
+					government = tribal
+					ruling_party_ideology = blue_mountain_goblin_nobles
+				}
+			}
+			random_owned = {
+				limit = { owner = { primary_culture = angmarrim } }
+				owner = {
+					government = tribal
+					ruling_party_ideology = angmarrim_nobles
+				}
+			}
+			random_owned = {
+				limit = { owner = { primary_culture = hillmen } }
+				owner = {
+					government = tribal
+					ruling_party_ideology = hillmen_nobles
+				}
+			}
+			random_owned = {
+				limit = { owner = { primary_culture = lossoth } }
+				owner = {
+					government = tribal
+					ruling_party_ideology = lossoth_nobles
+				}
+			}
+			random_owned = {
+				limit = { owner = { primary_culture = breelander } }
+				owner = {
+					government = republic
+					ruling_party_ideology = breelander_nobles
+				}
+			}
+			random_owned = {
+				limit = { owner = { primary_culture = siredain } }
+				owner = {
+					government = republic
+					ruling_party_ideology = siredain_nobles
+				}
+			}
+			random_owned = {
+				limit = { owner = { primary_culture = stoor } }
+				owner = {
+					government = republic
+					ruling_party_ideology = stoor_nobles
+				}
+			}
+			random_owned = {
+				limit = { owner = { primary_culture = harfoot } }
+				owner = {
+					government = republic
+					ruling_party_ideology = harfoot_nobles
+				}
+			}
+			random_owned = {
+				limit = { owner = { primary_culture = fallohide } }
+				owner = {
+					government = republic
+					ruling_party_ideology = fallohide_nobles
+				}
+			}
+			random_owned = {
+				limit = { owner = { primary_culture = cave_trolls } }
+				owner = {
+					government = tribal
+					ruling_party_ideology = cave_trolls_nobles
+				}
+			}
+			random_owned = {
+				limit = { owner = { primary_culture = hill_trolls } }
+				owner = {
+					government = tribal
+					ruling_party_ideology = hill_trolls_nobles
+				}
+			}
+			random_owned = {
+				limit = { owner = { primary_culture = mountain_trolls } }
+				owner = {
+					government = tribal
+					ruling_party_ideology = mountain_trolls_nobles
+				}
+			}
+			random_owned = {
+				limit = { owner = { primary_culture = snow_trolls } }
+				owner = {
+					government = tribal
+					ruling_party_ideology = snow_trolls_nobles
+				}
+			}
+			random_owned = {
+				limit = { owner = { primary_culture = stone_trolls } }
+				owner = {
+					government = tribal
+					ruling_party_ideology = stone_trolls_nobles
+				}
+			}
+			random_owned = {
+				limit = { owner = { primary_culture = olog_hai } }
+				owner = {
+					government = tribal
+					ruling_party_ideology = olog_hai_nobles
+				}
+			}
+			random_owned = {
+				limit = { owner = { primary_culture = great_eagle } }
+				owner = {
+					government = tribal
+					ruling_party_ideology = great_eagle_nobles
+				}
+			}
+			random_owned = {
+				limit = { owner = { primary_culture = raven } }
+				owner = {
+					government = tribal
+					ruling_party_ideology = raven_nobles
+				}
+			}
+			random_owned = {
+				limit = { owner = { primary_culture = great_spider } }
+				owner = {
+					government = tribal
+					ruling_party_ideology = great_spider_nobles
+				}
+			}
+			random_owned = {
+				limit = { owner = { primary_culture = wight } }
+				owner = {
+					government = tribal
+					ruling_party_ideology = wight_nobles
+				}
+			}
+			random_owned = {
+				limit = { owner = { primary_culture = oathbreaker } }
+				owner = {
+					government = tribal
+					ruling_party_ideology = oathbreaker_nobles
+				}
+			}
+		}
+		# }
+		
+		# Setting the ruler of vassals {
+		any_country = {
+			limit = {
+				is_vassal = yes
+				NOT = { has_country_flag = vassal_can_have_own_ruler }
+				AND = {
+					overlord = { good_evil_alignment = good_alignment }
+					NOT = { ruling_party_ideology = servants_good }
+				}
+			}
+			ruling_party_ideology = servants_good
+		}
+		any_country = {
+			limit = {
+				is_vassal = yes
+				NOT = { has_country_flag = vassal_can_have_own_ruler }
+				AND = {
+					overlord = { good_evil_alignment = neutral_alignment }
+					NOT = { ruling_party_ideology = servants_neutral }
+				}
+			}
+			ruling_party_ideology = servants_neutral
+		}
+		any_country = {
+			limit = {
+				is_vassal = yes
+				NOT = { has_country_flag = vassal_can_have_own_ruler }
+				AND = {
+					overlord = { good_evil_alignment = evil_alignment }
+					NOT = { ruling_party_ideology = servants_evil }
+				}
+			}
+			ruling_party_ideology = servants_evil
+		}
+		any_country = {
+			limit = { is_vassal = no }
+			clr_country_flag = vassal_can_have_own_ruler
+		}
+		# }
+		
+		# Upper House Reform Assignment {
+		any_country = {
+			limit = {
+				OR = {
+					government = republic
+					government = merchant_republic
+				}
+			}
+			political_reform = republican
+		}
+		any_country = {
+			limit = {
+				OR = {
+					government = monarchy
+					government = monarchy_2
+					government = tribal
+				}
+			}
+			political_reform = monarchist
+		}
+		any_country = {
+			limit = {
+				OR = {
+					government = sauron_dictatorship
+					government = nazgul_dictatorship
+					government = istari_kingdom
+					government = dominion_1
+					government = dominion_2
+				}
+			}
+			political_reform = dictatorship
+		}
+		# }
+		
+		# stirrings_of_dissent Cleanup
+		any_country = {
+			limit = {
+				has_country_modifier = stirrings_of_dissent
+				NOT = { plurality = 90 }
+			}
+			remove_country_modifier = stirrings_of_dissent
+		}
+		
+		# Border Policy Reform Assignment {
+		any_country = {
+			limit = { has_global_flag = borders_closed }
+			political_reform = closed_borders
+		}
+		any_country = {
+			limit = { has_global_flag = borders_alignment }
+			political_reform = alignment_borders
+		}
+		any_country = {
+			limit = { has_global_flag = borders_race }
+			political_reform = race_borders
+		}
+		any_country = {
+			limit = { has_global_flag = borders_open }
+			political_reform = open_borders
+		}
+		# }
+		
+		# Realm attempting to do stuff with the ai {
+		any_country = {
+			leave_alliance = FOR
+			relation = { who = FOR value = -400 }
+			end_war = FOR
+		}
+		any_greater_power = { diplomatic_influence = { who = FOR value = -400 } }
+		# }
 		
 		# Refire the cleanup event next month {
 		random_owned = {
@@ -1366,26 +2200,6 @@ country_event = {
 	
 	option = {
 		name = "Fix it please"
-		
-		# If turned in a Republic of some kind, Bard's line no longer rules
-		random_country = {
-			limit = {
-				OR = {
-					nationalvalue = bard_i
-					nationalvalue = bain_i
-					nationalvalue = brand_i
-					nationalvalue = bard_ii
-					nationalvalue = regency
-				}
-				OR = {
-					government = democracy
-					government = hobbit_realm
-					government = northmen_democracy
-				}
-			}
-			
-			country_event = 3508
-		}
 		
 		# Building Mere's End Boat Life {
 		random_country = { # Boat lift started building, then province switched hands
@@ -2498,12 +3312,7 @@ country_event = {
 			limit = {
 				tag = DAL
 				government = monarchy_2
-				OR = {
-					nationalvalue = bard_i
-					nationalvalue = bain_i
-					nationalvalue = brand_i
-					nationalvalue = bard_ii
-				}
+				ruling_party_ideology = house_of_bard
 			}
 			government = monarchy
 		}
@@ -2511,10 +3320,7 @@ country_event = {
 			limit = {
 				tag = DAL
 				government = monarchy
-				NOT = { nationalvalue = bard_i }
-				NOT = { nationalvalue = bain_i }
-				NOT = { nationalvalue = brand_i }
-				NOT = { nationalvalue = bard_ii }
+				NOT = { ruling_party_ideology = house_of_bard }
 			}
 			government = monarchy_2
 		}
@@ -2522,12 +3328,7 @@ country_event = {
 			limit = {
 				tag = RHO
 				government = monarchy
-				OR = {
-					nationalvalue = bard_i
-					nationalvalue = bain_i
-					nationalvalue = brand_i
-					nationalvalue = bard_ii
-				}
+				ruling_party_ideology = house_of_bard
 			}
 			government = monarchy_2
 		}
@@ -2535,10 +3336,7 @@ country_event = {
 			limit = {
 				tag = RHO
 				government = monarchy_2
-				NOT = { nationalvalue = bard_i }
-				NOT = { nationalvalue = bain_i }
-				NOT = { nationalvalue = brand_i }
-				NOT = { nationalvalue = bard_ii }
+				NOT = { ruling_party_ideology = house_of_bard }
 			}
 			government = monarchy
 		}
@@ -5643,150 +6441,6 @@ country_event = {
 			}
 			
 			random_owned = {
-				limit = { owner = { has_country_modifier = kind } }
-				owner = {
-					change_variable = { which = modifier_count value = 1 }
-					change_variable = { which = total_modifier_count value = 1 }
-				}
-			}
-			
-			random_owned = {
-				limit = { owner = { has_country_modifier = smart_modifier } }
-				owner = {
-					change_variable = { which = modifier_count value = 1 }
-					change_variable = { which = total_modifier_count value = 1 }
-				}
-			}
-			
-			random_owned = {
-				limit = { owner = { has_country_modifier = of_noble_house } }
-				owner = {
-					change_variable = { which = modifier_count value = 1 }
-					change_variable = { which = total_modifier_count value = 1 }
-				}
-			}
-			
-			random_owned = {
-				limit = { owner = { has_country_modifier = defensive_modifier } }
-				owner = {
-					change_variable = { which = modifier_count value = 1 }
-					change_variable = { which = total_modifier_count value = 1 }
-				}
-			}
-			
-			random_owned = {
-				limit = { owner = { has_country_modifier = aggressive_modifier } }
-				owner = {
-					change_variable = { which = modifier_count value = 1 }
-					change_variable = { which = total_modifier_count value = 1 }
-				}
-			}
-			
-			random_owned = {
-				limit = { owner = { has_country_modifier = strong } }
-				owner = {
-					change_variable = { which = modifier_count value = 1 }
-					change_variable = { which = total_modifier_count value = 1 }
-				}
-			}
-			
-			random_owned = {
-				limit = { owner = { has_country_modifier = honest } }
-				owner = {
-					change_variable = { which = modifier_count value = 1 }
-					change_variable = { which = total_modifier_count value = 1 }
-				}
-			}
-			
-			random_owned = {
-				limit = { owner = { has_country_modifier = deceitful } }
-				owner = {
-					change_variable = { which = modifier_count value = 1 }
-					change_variable = { which = total_modifier_count value = 1 }
-				}
-			}
-			
-			random_owned = {
-				limit = { owner = { has_country_modifier = aristocrat_modifier } }
-				owner = {
-					change_variable = { which = modifier_count value = 1 }
-					change_variable = { which = total_modifier_count value = 1 }
-				}
-			}
-			
-			random_owned = {
-				limit = { owner = { has_country_modifier = of_the_people } }
-				owner = {
-					change_variable = { which = modifier_count value = 1 }
-					change_variable = { which = total_modifier_count value = 1 }
-				}
-			}
-			
-			random_owned = {
-				limit = { owner = { has_country_modifier = charlatan } }
-				owner = {
-					change_variable = { which = modifier_count value = 1 }
-					change_variable = { which = total_modifier_count value = 1 }
-				}
-			}
-			
-			random_owned = {
-				limit = { owner = { has_country_modifier = wise_ruler } }
-				owner = {
-					change_variable = { which = modifier_count value = 1 }
-					change_variable = { which = total_modifier_count value = 1 }
-				}
-			}
-			
-			random_owned = {
-				limit = { owner = { has_country_modifier = lazy } }
-				owner = {
-					change_variable = { which = modifier_count value = 1 }
-					change_variable = { which = total_modifier_count value = 1 }
-				}
-			}
-			
-			random_owned = {
-				limit = { owner = { has_country_modifier = diligent } }
-				owner = {
-					change_variable = { which = modifier_count value = 1 }
-					change_variable = { which = total_modifier_count value = 1 }
-				}
-			}
-			
-			random_owned = {
-				limit = { owner = { has_country_modifier = greedy } }
-				owner = {
-					change_variable = { which = modifier_count value = 1 }
-					change_variable = { which = total_modifier_count value = 1 }
-				}
-			}
-			
-			random_owned = {
-				limit = { owner = { has_country_modifier = generous } }
-				owner = {
-					change_variable = { which = modifier_count value = 1 }
-					change_variable = { which = total_modifier_count value = 1 }
-				}
-			}
-			
-			random_owned = {
-				limit = { owner = { has_country_modifier = corrupt } }
-				owner = {
-					change_variable = { which = modifier_count value = 1 }
-					change_variable = { which = total_modifier_count value = 1 }
-				}
-			}
-			
-			random_owned = {
-				limit = { owner = { has_country_modifier = just } }
-				owner = {
-					change_variable = { which = modifier_count value = 1 }
-					change_variable = { which = total_modifier_count value = 1 }
-				}
-			}
-			
-			random_owned = {
 				limit = { owner = { has_country_modifier = palantir_madness } }
 				owner = {
 					change_variable = { which = modifier_count value = 1 }
@@ -5932,6 +6586,198 @@ country_event = {
 			
 			random_owned = {
 				limit = { owner = { has_country_modifier = great_diplomat } }
+				owner = {
+					change_variable = { which = modifier_count value = 1 }
+					change_variable = { which = total_modifier_count value = 1 }
+				}
+			}
+			
+			random_owned = {
+				limit = { owner = { has_country_modifier = stirrings_of_dissent } }
+				owner = {
+					change_variable = { which = modifier_count value = 1 }
+					change_variable = { which = total_modifier_count value = 1 }
+				}
+			}
+			
+			random_owned = {
+				limit = { owner = { has_country_modifier = ecthelion_ii_modifier } }
+				owner = {
+					change_variable = { which = modifier_count value = 1 }
+					change_variable = { which = total_modifier_count value = 1 }
+				}
+			}
+			
+			random_owned = {
+				limit = { owner = { has_country_modifier = denethor_ii_modifier } }
+				owner = {
+					change_variable = { which = modifier_count value = 1 }
+					change_variable = { which = total_modifier_count value = 1 }
+				}
+			}
+			
+			random_owned = {
+				limit = { owner = { has_country_modifier = boromir_ii_modifier } }
+				owner = {
+					change_variable = { which = modifier_count value = 1 }
+					change_variable = { which = total_modifier_count value = 1 }
+				}
+			}
+			
+			random_owned = {
+				limit = { owner = { has_country_modifier = faramir_i_modifier } }
+				owner = {
+					change_variable = { which = modifier_count value = 1 }
+					change_variable = { which = total_modifier_count value = 1 }
+				}
+			}
+			
+			random_owned = {
+				limit = { owner = { has_country_modifier = aragorn_elessar_modifier } }
+				owner = {
+					change_variable = { which = modifier_count value = 1 }
+					change_variable = { which = total_modifier_count value = 1 }
+				}
+			}
+			
+			random_owned = {
+				limit = { owner = { has_country_modifier = angelimir_modifier } }
+				owner = {
+					change_variable = { which = modifier_count value = 1 }
+					change_variable = { which = total_modifier_count value = 1 }
+				}
+			}
+			
+			random_owned = {
+				limit = { owner = { has_country_modifier = sauron_modifier } }
+				owner = {
+					change_variable = { which = modifier_count value = 1 }
+					change_variable = { which = total_modifier_count value = 1 }
+				}
+			}
+			
+			random_owned = {
+				limit = { owner = { has_country_modifier = hegon_koldana_modifier } }
+				owner = {
+					change_variable = { which = modifier_count value = 1 }
+					change_variable = { which = total_modifier_count value = 1 }
+				}
+			}
+			
+			random_owned = {
+				limit = { owner = { has_country_modifier = bard_i_modifier } }
+				owner = {
+					change_variable = { which = modifier_count value = 1 }
+					change_variable = { which = total_modifier_count value = 1 }
+				}
+			}
+			
+			random_owned = {
+				limit = { owner = { has_country_modifier = bain_i_modifier } }
+				owner = {
+					change_variable = { which = modifier_count value = 1 }
+					change_variable = { which = total_modifier_count value = 1 }
+				}
+			}
+			
+			random_owned = {
+				limit = { owner = { has_country_modifier = brand_i_modifier } }
+				owner = {
+					change_variable = { which = modifier_count value = 1 }
+					change_variable = { which = total_modifier_count value = 1 }
+				}
+			}
+			
+			random_owned = {
+				limit = { owner = { has_country_modifier = bard_ii_modifier } }
+				owner = {
+					change_variable = { which = modifier_count value = 1 }
+					change_variable = { which = total_modifier_count value = 1 }
+				}
+			}
+			
+			random_owned = {
+				limit = { owner = { has_country_modifier = thranduil_modifier } }
+				owner = {
+					change_variable = { which = modifier_count value = 1 }
+					change_variable = { which = total_modifier_count value = 1 }
+				}
+			}
+			
+			random_owned = {
+				limit = { owner = { has_country_modifier = khamul_modifier } }
+				owner = {
+					change_variable = { which = modifier_count value = 1 }
+					change_variable = { which = total_modifier_count value = 1 }
+				}
+			}
+			
+			random_owned = {
+				limit = { owner = { has_country_modifier = celeborn_n_galadriel_modifier } }
+				owner = {
+					change_variable = { which = modifier_count value = 1 }
+					change_variable = { which = total_modifier_count value = 1 }
+				}
+			}
+			
+			random_owned = {
+				limit = { owner = { has_country_modifier = saruman_modifier } }
+				owner = {
+					change_variable = { which = modifier_count value = 1 }
+					change_variable = { which = total_modifier_count value = 1 }
+				}
+			}
+			
+			random_owned = {
+				limit = { owner = { has_country_modifier = aragorn_modifier } }
+				owner = {
+					change_variable = { which = modifier_count value = 1 }
+					change_variable = { which = total_modifier_count value = 1 }
+				}
+			}
+			
+			random_owned = {
+				limit = { owner = { has_country_modifier = elrond_modifier } }
+				owner = {
+					change_variable = { which = modifier_count value = 1 }
+					change_variable = { which = total_modifier_count value = 1 }
+				}
+			}
+			
+			random_owned = {
+				limit = { owner = { has_country_modifier = cirdan_modifier } }
+				owner = {
+					change_variable = { which = modifier_count value = 1 }
+					change_variable = { which = total_modifier_count value = 1 }
+				}
+			}
+			
+			random_owned = {
+				limit = { owner = { has_country_modifier = king_of_the_dead_modifier } }
+				owner = {
+					change_variable = { which = modifier_count value = 1 }
+					change_variable = { which = total_modifier_count value = 1 }
+				}
+			}
+			
+			random_owned = {
+				limit = { owner = { has_country_modifier = radagast_modifier } }
+				owner = {
+					change_variable = { which = modifier_count value = 1 }
+					change_variable = { which = total_modifier_count value = 1 }
+				}
+			}
+			
+			random_owned = {
+				limit = { owner = { has_country_modifier = roac_modifier } }
+				owner = {
+					change_variable = { which = modifier_count value = 1 }
+					change_variable = { which = total_modifier_count value = 1 }
+				}
+			}
+			
+			random_owned = {
+				limit = { owner = { has_country_modifier = witch_king_of_angmar_modifier } }
 				owner = {
 					change_variable = { which = modifier_count value = 1 }
 					change_variable = { which = total_modifier_count value = 1 }
@@ -6712,6 +7558,22 @@ country_event = {
 				}
 			}
 			# }
+		}
+		
+		any_country = {
+			limit = {
+				exists = yes
+				NOT = { has_country_flag = existing_country }
+			}
+			set_country_flag = existing_country
+		}
+		
+		any_country = {
+			limit = {
+				exists = no
+				has_country_flag = existing_country
+			}
+			clr_country_flag = existing_country
 		}
 		
 		# Refire the cleanup event tomorrow

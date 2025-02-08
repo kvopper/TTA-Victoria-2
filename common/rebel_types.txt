@@ -9,9 +9,7 @@
 #
 ##############################################
 
-###################################
 # Nationalist Rebels
-###################################
 nationalist_rebels = {
 	icon = 1
 	
@@ -20,26 +18,16 @@ nationalist_rebels = {
 	
 	# <this is the governement in the country> = <this is what the rebels want>
 	government = {
-		democracy = democracy
-		hobbit_realm = hobbit_realm
-		northmen_democracy = northmen_democracy
+		republic = republic
+		merchant_republic = merchant_republic
 		monarchy = monarchy
 		monarchy_2 = monarchy_2
-		principality = principality
-		lord_monarchy = lord_monarchy
-		stewardship = stewardship
-		fiefdom = fiefdom
-		galadhrim_monarchy = galadhrim_monarchy
-		dark_realm = dark_realm
+		tribal = tribal
 		sauron_dictatorship = sauron_dictatorship
-		sauron_puppet = sauron_puppet
 		nazgul_dictatorship = nazgul_dictatorship
 		istari_kingdom = istari_kingdom
-		goblin_tribe = goblin_tribe
-		man_tribe = man_tribe
-		northmen_tribe = northmen_tribe
-		cosmetic_1_govt = cosmetic_1_govt
-		cosmetic_2_govt = cosmetic_2_govt
+		dominion_1 = dominion_1
+		dominion_2 = dominion_2
 	}
 	
 	defection = culture			# If the country seeks independence, defection specifies what type of provinces it wants.
@@ -201,9 +189,7 @@ nationalist_rebels = {
 	}
 }
 
-###################################
 # Patriot Rebels
-###################################
 patriot_rebels = {
 	icon = 1
 
@@ -211,33 +197,22 @@ patriot_rebels = {
 
 	# <this is the governement in the country> = <this is what the rebels want>
 	government = {
-		democracy = democracy
-		hobbit_realm = hobbit_realm
-		northmen_democracy = northmen_democracy
+		republic = republic
+		merchant_republic = merchant_republic
 		monarchy = monarchy
 		monarchy_2 = monarchy_2
-		principality = principality
-		lord_monarchy = lord_monarchy
-		stewardship = stewardship
-		fiefdom = fiefdom
-		galadhrim_monarchy = galadhrim_monarchy
-		dark_realm = dark_realm
+		tribal = tribal
 		sauron_dictatorship = sauron_dictatorship
-		sauron_puppet = sauron_puppet
 		nazgul_dictatorship = nazgul_dictatorship
 		istari_kingdom = istari_kingdom
-		goblin_tribe = goblin_tribe
-		man_tribe = man_tribe
-		northmen_tribe = northmen_tribe
-		cosmetic_1_govt = cosmetic_1_govt
-		cosmetic_2_govt = cosmetic_2_govt
+		dominion_1 = dominion_1
+		dominion_2 = dominion_2
 	}
 
 	defection = none		# If the country seeks independence, defection specifies what type of provinces it wants.
 	independence = none
 	defect_delay = 3		# Can spontaneously declare independence after X months (earliest)
 
-	ideology = loremaster
 	allow_all_cultures = no
 	allow_all_religions = yes
 	allow_all_ideologies = yes
@@ -406,9 +381,7 @@ patriot_rebels = {
 	}
 }
 
-###################################
 # Slave Rebels
-###################################
 slave_revolt = {
 	icon = 2
 	break_alliance_on_win = no
@@ -417,26 +390,16 @@ slave_revolt = {
 
 	# <this is the government in the country> = <this is what the rebels want>
 	government = {
-		democracy = democracy
-		hobbit_realm = hobbit_realm
-		northmen_democracy = northmen_democracy
+		republic = republic
+		merchant_republic = merchant_republic
 		monarchy = monarchy
 		monarchy_2 = monarchy_2
-		principality = principality
-		lord_monarchy = lord_monarchy
-		stewardship = stewardship
-		fiefdom = fiefdom
-		galadhrim_monarchy = galadhrim_monarchy
-		dark_realm = dark_realm
+		tribal = tribal
 		sauron_dictatorship = sauron_dictatorship
-		sauron_puppet = sauron_puppet
 		nazgul_dictatorship = nazgul_dictatorship
 		istari_kingdom = istari_kingdom
-		goblin_tribe = goblin_tribe
-		man_tribe = man_tribe
-		northmen_tribe = northmen_tribe
-		cosmetic_1_govt = cosmetic_1_govt
-		cosmetic_2_govt = cosmetic_2_govt
+		dominion_1 = dominion_1
+		dominion_2 = dominion_2
 	}
 
 	defection = none				# Will defect to the "best" alternative.
@@ -483,7 +446,7 @@ slave_revolt = {
 
 	# The rebel type with the highest modifier for this pop gets picked
 	spawn_chance = {
-		factor = 0.25
+		factor = 25
 		modifier = {
 			factor = 0
 			NOT = { type = slaves }
@@ -563,37 +526,25 @@ slave_revolt = {
 	}
 }
 
-###################################
-# Democratic Rebels
-###################################
-democratic_rebels = {
-	icon = 3
+# Republican Rebels
+republican_rebels = {
+	icon = 2
 	
 	area = nation				# Stays within the nation
-	break_alliance_on_win = no
+	break_alliance_on_win = yes
 	
 	# <this is the governement in the country> = <this is what the rebels want>
 	government = {
-		democracy = democracy
-		hobbit_realm = hobbit_realm
-		northmen_democracy = northmen_democracy
-		monarchy = democracy
-		monarchy_2 = democracy
-		principality = democracy
-		lord_monarchy = democracy
-		stewardship = democracy
-		fiefdom = democracy
-		galadhrim_monarchy = democracy
-		dark_realm = democracy
-		sauron_dictatorship = democracy
-		sauron_puppet = democracy
-		nazgul_dictatorship = democracy
-		istari_kingdom = democracy
-		goblin_tribe = democracy
-		man_tribe = democracy
-		northmen_tribe = northmen_democracy
-		cosmetic_1_govt = democracy
-		cosmetic_2_govt = democracy
+		republic = republic
+		merchant_republic = republic
+		monarchy = merchant_republic
+		monarchy_2 = merchant_republic
+		tribal = merchant_republic
+		sauron_dictatorship = merchant_republic
+		nazgul_dictatorship = merchant_republic
+		istari_kingdom = merchant_republic
+		dominion_1 = merchant_republic
+		dominion_2 = merchant_republic
 	}
 	
 	defection = none				# Will defect to the "best" alternative.
@@ -644,36 +595,43 @@ democratic_rebels = {
 				type = slaves
 				country = { civilized = no }
 				country = { vote_franschise = universal_voting }
-				pop_majority_ideology = servants
 			}
 		}
 		modifier = {
-			factor = 0.75
-			country = { good_evil_alignment = evil_alignment }
-		}
-		modifier = {
-			factor = 1.5
-			pop_majority_ideology = loremaster
-		}
-		modifier = {
-			factor = 1.25
-			pop_majority_ideology = burgher
-		}
-		modifier = {
-			factor = 1.015
+			factor = 1.1
 			political_reform_want = 0.1
 		}
 		modifier = {
-			factor = 1.015
+			factor = 1.1
 			political_reform_want = 0.2
 		}
 		modifier = {
-			factor = 1.015
+			factor = 1.1
 			political_reform_want = 0.3
 		}
 		modifier = {
-			factor = 0.75
-			country = { has_country_flag = attempting_to_democratic }
+			factor = 1.1
+			political_reform_want = 0.4
+		}
+		modifier = {
+			factor = 1.1
+			political_reform_want = 0.5
+		}
+		modifier = {
+			factor = 1.1
+			political_reform_want = 0.6
+		}
+		modifier = {
+			factor = 1.1
+			political_reform_want = 0.7
+		}
+		modifier = {
+			factor = 1.1
+			political_reform_want = 0.8
+		}
+		modifier = {
+			factor = 1.1
+			political_reform_want = 0.9
 		}
 	}
 
@@ -727,384 +685,25 @@ democratic_rebels = {
 	}
 }
 
-###################################
-# Noble Rebels
-###################################
-noble_rebels = {
-	icon = 5
+# Pretender Rebels
+pretender_rebels = {
+	icon = 3
 	
 	area = nation				# Stays within the nation
-	break_alliance_on_win = no
+	break_alliance_on_win = yes
 	
 	# <this is the governement in the country> = <this is what the rebels want>
 	government = {
-		democracy = monarchy
-		hobbit_realm = hobbit_realm
-		northmen_democracy = northmen_democracy
+		republic = monarchy
+		merchant_republic = monarchy
 		monarchy = monarchy
 		monarchy_2 = monarchy_2
-		principality = principality
-		lord_monarchy = lord_monarchy
-		stewardship = stewardship
-		fiefdom = fiefdom
-		galadhrim_monarchy = galadhrim_monarchy
-		dark_realm = dark_realm
-		sauron_dictatorship = sauron_dictatorship
-		sauron_puppet = sauron_puppet
-		nazgul_dictatorship = nazgul_dictatorship
-		istari_kingdom = istari_kingdom
-		goblin_tribe = goblin_tribe
-		man_tribe = man_tribe
-		northmen_tribe = northmen_tribe
-		cosmetic_1_govt = cosmetic_1_govt
-		cosmetic_2_govt = cosmetic_2_govt
-	}
-	
-	defection = none				# Will defect to the "best" alternative.
-	independence = none				# Does not strive for independence
-	defect_delay = 18
-	
-	allow_all_cultures = yes
-	allow_all_religions = yes
-	allow_all_ideologies = yes
-	
-	resilient = yes					# Does not disband on retreat
-	reinforcing = yes				# Receives reinforcements
-	general = yes					# Uses generals
-	smart = yes						# Assaults forts, tactically withdraws from battle, etc.
-	unit_transfer = no				# Units remain after enforcing demands.
-
-	occupation_mult = 1.0			# The amount of strength this rebel gains from taking provinces
-
-	# triggers a general rising, modifier will be multiplied with the countrys army strength and compared to the factions strenght
-	will_rise = {
-		factor = 1
-
-		modifier = {
-			war = yes
-			factor = 0.8
-		}
-		modifier = {
-			war_exhaustion = 40
-			factor = 0.95
-		}
-		modifier = {
-			war_exhaustion = 60
-			factor = 0.95
-		}
-		modifier = {
-			war_exhaustion = 80
-			factor = 0.95
-		}
-	}
-	
-	# The rebel type with the highest modifier for this pop gets picked
-	spawn_chance = {
-		factor = 1.05
-		
-		modifier = {
-			factor = 0
-			OR = {
-				type = slaves
-				country = { civilized = no }
-				pop_majority_ideology = servants
-				pop_majority_ideology = loremaster
-				pop_majority_ideology = burgher
-				strata = poor
-				AND = {
-					country = { nobility_autonomy = large_noble_autonomy }
-					country = { noble_levy_contribution = large_levy_contribution }
-					country = { noble_tax_contribution = small_tax_contribution }
-					country = { knighting_rights = allowed_knighting_rights }
-				}
-			}
-		}
-		modifier = {
-			factor = 1.5
-			pop_majority_ideology = high_nobility
-		}
-		modifier = {
-			factor = 1.25
-			pop_majority_ideology = low_nobility
-		}
-		modifier = {
-			factor = 1.2
-			NOT = { cash_reserves = 0.25 }
-		}
-		modifier = {
-			factor = 1.1
-			consciousness = 5
-		}
-		modifier = {
-			factor = 1.02
-			country = { nobility_autonomy = medium_noble_autonomy }
-		}
-		modifier = {
-			factor = 1.05
-			country = { nobility_autonomy = small_noble_autonomy }
-		}
-		modifier = {
-			factor = 1.02
-			country = { noble_levy_contribution = medium_levy_contribution }
-		}
-		modifier = {
-			factor = 1.05
-			country = { noble_levy_contribution = small_levy_contribution }
-		}
-		modifier = {
-			factor = 1.02
-			country = { noble_tax_contribution = medium_tax_contribution }
-		}
-		modifier = {
-			factor = 1.05
-			country = { noble_tax_contribution = large_tax_contribution }
-		}
-		modifier = {
-			factor = 1.02
-			country = { knighting_rights = restricted_knighting_rights }
-		}
-		modifier = {
-			factor = 1.05
-			country = { knighting_rights = royal_knighting_rights }
-		}
-	}
-
-	#This is checked for EACH province in the Area of Operations
-	movement_evaluation = {
-		factor = 1
-		modifier = {
-			factor = 0.1
-			units_in_province = 1
-		}
-		modifier = {
-			factor = 0.001
-			controlled_by = REB
-		}
-		modifier = {
-			factor = 1.5
-			average_militancy = 4
-		}
-		modifier = {
-			factor = 1.5
-			average_militancy = 6
-		}
-		modifier = {
-			factor = 1.5
-			average_militancy = 8
-		}
-		modifier = {
-			factor = 2.0
-			is_capital = yes
-		}
-	}
-	
-	# Province Scope
-	#siege_won_trigger = {
-	#}
-	
-	#siege_won_effect = {
-	#}
-	
-	# Country scope
-	demands_enforced_trigger = {
-		capital_scope = {
-			controlled_by = REB
-			province_control_days = 90
-		}
-	}
-	demands_enforced_effect = {
-		country_event = 3002
-		prestige_factor = -0.1
-		war_exhaustion = 50
-	}
-}
-
-###################################
-# Serf Rebels
-###################################
-serf_rebels = {
-	icon = 6
-	
-	area = nation				# Stays within the nation
-	break_alliance_on_win = no
-	
-	# <this is the governement in the country> = <this is what the rebels want>
-	government = {
-		democracy = democracy
-		hobbit_realm = hobbit_realm
-		northmen_democracy = northmen_democracy
-		monarchy = monarchy
-		monarchy_2 = monarchy_2
-		principality = principality
-		lord_monarchy = lord_monarchy
-		stewardship = stewardship
-		fiefdom = fiefdom
-		galadhrim_monarchy = galadhrim_monarchy
-		dark_realm = dark_realm
-		sauron_dictatorship = sauron_dictatorship
-		sauron_puppet = sauron_puppet
-		nazgul_dictatorship = nazgul_dictatorship
-		istari_kingdom = istari_kingdom
-		goblin_tribe = goblin_tribe
-		man_tribe = man_tribe
-		northmen_tribe = northmen_tribe
-		cosmetic_1_govt = cosmetic_1_govt
-		cosmetic_2_govt = cosmetic_2_govt
-	}
-	
-	defection = none				# Will defect to the "best" alternative.
-	independence = none				# Does not strive for independence
-	defect_delay = 18
-	
-	allow_all_cultures = yes
-	allow_all_religions = yes
-	allow_all_ideologies = yes
-	
-	resilient = yes					# Does not disband on retreat
-	reinforcing = yes				# Receives reinforcements
-	general = yes					# Uses generals
-	smart = yes						# Assaults forts, tactically withdraws from battle, etc.
-	unit_transfer = no				# Units remain after enforcing demands.
-
-	occupation_mult = 1.0			# The amount of strength this rebel gains from taking provinces
-
-	# triggers a general rising, modifier will be multiplied with the countrys army strength and compared to the factions strenght
-	will_rise = {
-		factor = 1
-
-		modifier = {
-			war = yes
-			factor = 0.8
-		}
-		modifier = {
-			war_exhaustion = 40
-			factor = 0.95
-		}
-		modifier = {
-			war_exhaustion = 60
-			factor = 0.95
-		}
-		modifier = {
-			war_exhaustion = 80
-			factor = 0.95
-		}
-	}
-	
-	# The rebel type with the highest modifier for this pop gets picked
-	spawn_chance = {
-		factor = 4
-		
-		modifier = {
-			factor = 0
-			OR = {
-				NOT = { type = labourers }
-				country = { civilized = no }
-				country = { serfdom = enforced_serfdom }
-				pop_majority_ideology = servants
-				pop_majority_ideology = loremaster
-				pop_majority_ideology = burgher
-				strata = poor
-			}
-		}
-
-		modifier = {
-			factor = 1.1
-			consciousness = 5
-		}
-		modifier = {
-			factor = 1.5
-			OR = {
-				is_primary_culture = yes
-				is_accepted_culture = yes
-			}
-		}
-		modifier = {
-			factor = 0.75
-			country = { serfdom = discouraged_serfdom }
-		}
-	}
-
-	#This is checked for EACH province in the Area of Operations
-	movement_evaluation = {
-		factor = 1
-		modifier = {
-			factor = 0.1
-			units_in_province = 1
-		}
-		modifier = {
-			factor = 0.001
-			controlled_by = REB
-		}
-		modifier = {
-			factor = 1.5
-			average_militancy = 4
-		}
-		modifier = {
-			factor = 1.5
-			average_militancy = 6
-		}
-		modifier = {
-			factor = 1.5
-			average_militancy = 8
-		}
-		modifier = {
-			factor = 2.0
-			is_capital = yes
-		}
-	}
-	
-	# Province Scope
-	#siege_won_trigger = {
-	#}
-	
-	#siege_won_effect = {
-	#}
-	
-	# Country scope
-	demands_enforced_trigger = {
-		capital_scope = {
-			controlled_by = REB
-			province_control_days = 90
-		}
-	}
-	demands_enforced_effect = {
-		political_reform = banned_serfdom
-		prestige_factor = -0.1
-		war_exhaustion = 50
-	}
-}
-
-###################################
-# Good Rebels
-###################################
-good_rebels = {
-	icon = 7
-	
-	area = nation				# Stays within the nation
-	break_alliance_on_win = no
-	
-	# <this is the governement in the country> = <this is what the rebels want>
-	government = {
-		democracy = democracy
-		hobbit_realm = hobbit_realm
-		northmen_democracy = northmen_democracy
-		monarchy = monarchy
-		monarchy_2 = monarchy_2
-		principality = principality
-		lord_monarchy = lord_monarchy
-		stewardship = stewardship
-		fiefdom = fiefdom
-		galadhrim_monarchy = galadhrim_monarchy
-		dark_realm = monarchy
+		tribal = tribal
 		sauron_dictatorship = monarchy
-		sauron_puppet = monarchy
 		nazgul_dictatorship = monarchy
-		istari_kingdom = istari_kingdom
-		goblin_tribe = goblin_tribe
-		man_tribe = man_tribe
-		northmen_tribe = northmen_tribe
-		cosmetic_1_govt = cosmetic_1_govt
-		cosmetic_2_govt = cosmetic_2_govt
+		istari_kingdom = monarchy
+		dominion_1 = monarchy
+		dominion_2 = monarchy
 	}
 	
 	defection = none				# Will defect to the "best" alternative.
@@ -1121,7 +720,7 @@ good_rebels = {
 	smart = yes						# Assaults forts, tactically withdraws from battle, etc.
 	unit_transfer = no				# Units remain after enforcing demands.
 
-	occupation_mult = 1.0			# The amount of strength this rebel gains from taking provinces
+	occupation_mult = 5.0			# The amount of strength this rebel gains from taking provinces
 
 	# triggers a general rising, modifier will be multiplied with the countrys army strength and compared to the factions strenght
 	will_rise = {
@@ -1132,88 +731,62 @@ good_rebels = {
 			factor = 0.8
 		}
 		modifier = {
-			war_exhaustion = 40
-			factor = 0.95
+			factor = 1.25
+			plurality = 50
 		}
 		modifier = {
-			war_exhaustion = 60
-			factor = 0.95
+			factor = 1.25
+			plurality = 60
 		}
 		modifier = {
-			war_exhaustion = 80
-			factor = 0.95
+			factor = 1.25
+			plurality = 70
+		}
+		modifier = {
+			factor = 1.25
+			plurality = 80
+		}
+		modifier = {
+			factor = 1.25
+			plurality = 90
+		}
+		modifier = {
+			factor = 9999
+			plurality = 95
 		}
 	}
 	
 	# The rebel type with the highest modifier for this pop gets picked
 	spawn_chance = {
-		factor = 0.5
+		factor = 1
 		
 		modifier = {
 			factor = 0
-			OR = {
-				pop_majority_ideology = servants
-				country = { good_evil_alignment = good_alignment }
-			}
+			type = slaves
 		}
 		modifier = {
-			factor = 1.1
-			consciousness = 5
+			factor = 2
+			country = { plurality = 50 }
 		}
 		modifier = {
-			factor = 1.5
-			OR = {
-				is_primary_culture = yes
-				is_accepted_culture = yes
-			}
+			factor = 2
+			country = { plurality = 60 }
 		}
 		modifier = {
-			factor = 1.25
-			country = { any_neighbor_country = { good_evil_alignment = good_alignment } }
+			factor = 2
+			country = { plurality = 70 }
 		}
 		modifier = {
-			factor = 1.1
-			location = { controller = { good_evil_alignment = good_alignment } }
+			factor = 2
+			country = { plurality = 80 }
 		}
 		modifier = {
-			factor = 1.1
-			country = { good_alignment_fake = 10 }
+			factor = 2
+			country = { plurality = 90 }
 		}
 		modifier = {
-			factor = 1.1
-			country = { good_alignment_fake = 20 }
-		}
-		modifier = {
-			factor = 1.1
-			country = { good_alignment_fake = 30 }
-		}
-		modifier = {
-			factor = 1.1
-			country = { good_alignment_fake = 40 }
-		}
-		modifier = {
-			factor = 1.1
-			country = { good_alignment_fake = 50 }
-		}
-		modifier = {
-			factor = 1.1
-			country = { good_alignment_fake = 60 }
-		}
-		modifier = {
-			factor = 1.1
-			country = { good_alignment_fake = 70 }
-		}
-		modifier = {
-			factor = 1.1
-			country = { good_alignment_fake = 80 }
-		}
-		modifier = {
-			factor = 1.1
-			country = { good_alignment_fake = 90 }
-		}
-		modifier = {
-			factor = 1.1
-			country = { good_alignment_fake = 99 }
+			factor = 999
+			country = { plurality = 95 }
 		}
 	}
 
@@ -1261,394 +834,9 @@ good_rebels = {
 		}
 	}
 	demands_enforced_effect = {
-		country_event = 3003
+		country_event = 3001
 		prestige_factor = -0.1
 		war_exhaustion = 50
-	}
-}
-
-###################################
-# Evil Rebels
-###################################
-evil_rebels = {
-	icon = 8
-	
-	area = nation				# Stays within the nation
-	break_alliance_on_win = no
-	
-	# <this is the governement in the country> = <this is what the rebels want>
-	government = {
-		democracy = dark_realm
-		hobbit_realm = dark_realm
-		northmen_democracy = dark_realm
-		monarchy = dark_realm
-		monarchy_2 = dark_realm
-		principality = dark_realm
-		lord_monarchy = dark_realm
-		stewardship = dark_realm
-		fiefdom = dark_realm
-		galadhrim_monarchy = dark_realm
-		dark_realm = dark_realm
-		sauron_dictatorship = sauron_dictatorship
-		sauron_puppet = sauron_puppet
-		nazgul_dictatorship = nazgul_dictatorship
-		istari_kingdom = istari_kingdom
-		goblin_tribe = dark_realm
-		man_tribe = dark_realm
-		northmen_tribe = dark_realm
-		cosmetic_1_govt = dark_realm
-		cosmetic_2_govt = dark_realm
-	}
-	
-	defection = none				# Will defect to the "best" alternative.
-	independence = none				# Does not strive for independence
-	defect_delay = 18
-	
-	allow_all_cultures = yes
-	allow_all_religions = yes
-	allow_all_ideologies = yes
-	
-	resilient = yes					# Does not disband on retreat
-	reinforcing = yes				# Receives reinforcements
-	general = yes					# Uses generals
-	smart = yes						# Assaults forts, tactically withdraws from battle, etc.
-	unit_transfer = no				# Units remain after enforcing demands.
-
-	occupation_mult = 1.0			# The amount of strength this rebel gains from taking provinces
-
-	# triggers a general rising, modifier will be multiplied with the countrys army strength and compared to the factions strenght
-	will_rise = {
-		factor = 1
-
-		modifier = {
-			war = yes
-			factor = 0.8
-		}
-		modifier = {
-			war_exhaustion = 40
-			factor = 0.95
-		}
-		modifier = {
-			war_exhaustion = 60
-			factor = 0.95
-		}
-		modifier = {
-			war_exhaustion = 80
-			factor = 0.95
-		}
-	}
-	
-	# The rebel type with the highest modifier for this pop gets picked
-	spawn_chance = {
-		factor = 0.5
-		
-		modifier = {
-			factor = 0
-			OR = {
-				pop_majority_ideology = servants
-				country = { good_evil_alignment = evil_alignment }
-			}
-		}
-		modifier = {
-			factor = 1.1
-			consciousness = 5
-		}
-		modifier = {
-			factor = 1.5
-			OR = {
-				is_primary_culture = yes
-				is_accepted_culture = yes
-			}
-		}
-		modifier = {
-			factor = 1.25
-			country = { any_neighbor_country = { good_evil_alignment = evil_alignment } }
-		}
-		modifier = {
-			factor = 1.1
-			location = { controller = { good_evil_alignment = evil_alignment } }
-		}
-		modifier = {
-			factor = 1.1
-			country = { evil_alignment_fake = 10 }
-		}
-		modifier = {
-			factor = 1.1
-			country = { evil_alignment_fake = 20 }
-		}
-		modifier = {
-			factor = 1.1
-			country = { evil_alignment_fake = 30 }
-		}
-		modifier = {
-			factor = 1.1
-			country = { evil_alignment_fake = 40 }
-		}
-		modifier = {
-			factor = 1.1
-			country = { evil_alignment_fake = 50 }
-		}
-		modifier = {
-			factor = 1.1
-			country = { evil_alignment_fake = 60 }
-		}
-		modifier = {
-			factor = 1.1
-			country = { evil_alignment_fake = 70 }
-		}
-		modifier = {
-			factor = 1.1
-			country = { evil_alignment_fake = 80 }
-		}
-		modifier = {
-			factor = 1.1
-			country = { evil_alignment_fake = 90 }
-		}
-		modifier = {
-			factor = 1.1
-			country = { evil_alignment_fake = 99 }
-		}
-	}
-
-	#This is checked for EACH province in the Area of Operations
-	movement_evaluation = {
-		factor = 1
-		modifier = {
-			factor = 0.1
-			units_in_province = 1
-		}
-		modifier = {
-			factor = 0.001
-			controlled_by = REB
-		}
-		modifier = {
-			factor = 1.5
-			average_militancy = 4
-		}
-		modifier = {
-			factor = 1.5
-			average_militancy = 6
-		}
-		modifier = {
-			factor = 1.5
-			average_militancy = 8
-		}
-		modifier = {
-			factor = 2.0
-			is_capital = yes
-		}
-	}
-	
-	# Province Scope
-	#siege_won_trigger = {
-	#}
-	
-	#siege_won_effect = {
-	#}
-	
-	# Country scope
-	demands_enforced_trigger = {
-		capital_scope = {
-			controlled_by = REB
-			province_control_days = 90
-		}
-	}
-	demands_enforced_effect = {
-		country_event = 3004
-		prestige_factor = -0.1
-		war_exhaustion = 50
-	}
-}
-
-###################################
-# Neutral Rebels
-###################################
-neutral_rebels = {
-	icon = 2
-	
-	area = nation				# Stays within the nation
-	break_alliance_on_win = no
-	
-	# <this is the governement in the country> = <this is what the rebels want>
-	government = {
-		democracy = democracy
-		hobbit_realm = hobbit_realm
-		northmen_democracy = northmen_democracy
-		monarchy = monarchy
-		monarchy_2 = monarchy_2
-		principality = principality
-		lord_monarchy = lord_monarchy
-		stewardship = stewardship
-		fiefdom = fiefdom
-		galadhrim_monarchy = galadhrim_monarchy
-		dark_realm = dark_realm
-		sauron_dictatorship = sauron_dictatorship
-		sauron_puppet = sauron_puppet
-		nazgul_dictatorship = nazgul_dictatorship
-		istari_kingdom = istari_kingdom
-		goblin_tribe = goblin_tribe
-		man_tribe = man_tribe
-		northmen_tribe = northmen_tribe
-		cosmetic_1_govt = cosmetic_1_govt
-		cosmetic_2_govt = cosmetic_2_govt
-	}
-	
-	defection = none				# Will defect to the "best" alternative.
-	independence = none				# Does not strive for independence
-	defect_delay = 18
-	
-	allow_all_cultures = yes
-	allow_all_religions = yes
-	allow_all_ideologies = yes
-	
-	resilient = yes					# Does not disband on retreat
-	reinforcing = yes				# Receives reinforcements
-	general = yes					# Uses generals
-	smart = yes						# Assaults forts, tactically withdraws from battle, etc.
-	unit_transfer = no				# Units remain after enforcing demands.
-
-	occupation_mult = 1.0			# The amount of strength this rebel gains from taking provinces
-
-	# triggers a general rising, modifier will be multiplied with the countrys army strength and compared to the factions strenght
-	will_rise = {
-		factor = 1
-
-		modifier = {
-			war = yes
-			factor = 0.8
-		}
-		modifier = {
-			war_exhaustion = 40
-			factor = 0.95
-		}
-		modifier = {
-			war_exhaustion = 60
-			factor = 0.95
-		}
-		modifier = {
-			war_exhaustion = 80
-			factor = 0.95
-		}
-	}
-	
-	# The rebel type with the highest modifier for this pop gets picked
-	spawn_chance = {
-		factor = 0.5
-		
-		modifier = {
-			factor = 0
-			OR = {
-				pop_majority_ideology = servants
-				country = { good_evil_alignment = neutral_alignment }
-			}
-		}
-		modifier = {
-			factor = 1.1
-			consciousness = 5
-		}
-		modifier = {
-			factor = 1.5
-			OR = {
-				is_primary_culture = yes
-				is_accepted_culture = yes
-			}
-		}
-		modifier = {
-			factor = 1.25
-			country = { any_neighbor_country = { good_evil_alignment = neutral_alignment } }
-		}
-		modifier = {
-			factor = 1.1
-			location = { controller = { good_evil_alignment = neutral_alignment } }
-		}
-		modifier = {
-			factor = 1.1
-			country = { neutral_alignment_fake = 10 }
-		}
-		modifier = {
-			factor = 1.1
-			country = { neutral_alignment_fake = 20 }
-		}
-		modifier = {
-			factor = 1.1
-			country = { neutral_alignment_fake = 30 }
-		}
-		modifier = {
-			factor = 1.1
-			country = { neutral_alignment_fake = 40 }
-		}
-		modifier = {
-			factor = 1.1
-			country = { neutral_alignment_fake = 50 }
-		}
-		modifier = {
-			factor = 1.1
-			country = { neutral_alignment_fake = 60 }
-		}
-		modifier = {
-			factor = 1.1
-			country = { neutral_alignment_fake = 70 }
-		}
-		modifier = {
-			factor = 1.1
-			country = { neutral_alignment_fake = 80 }
-		}
-		modifier = {
-			factor = 1.1
-			country = { neutral_alignment_fake = 90 }
-		}
-		modifier = {
-			factor = 1.1
-			country = { neutral_alignment_fake = 99 }
-		}
-	}
-
-	#This is checked for EACH province in the Area of Operations
-	movement_evaluation = {
-		factor = 1
-		modifier = {
-			factor = 0.1
-			units_in_province = 1
-		}
-		modifier = {
-			factor = 0.001
-			controlled_by = REB
-		}
-		modifier = {
-			factor = 1.5
-			average_militancy = 4
-		}
-		modifier = {
-			factor = 1.5
-			average_militancy = 6
-		}
-		modifier = {
-			factor = 1.5
-			average_militancy = 8
-		}
-		modifier = {
-			factor = 2.0
-			is_capital = yes
-		}
-	}
-	
-	# Province Scope
-	#siege_won_trigger = {
-	#}
-	
-	#siege_won_effect = {
-	#}
-	
-	# Country scope
-	demands_enforced_trigger = {
-		capital_scope = {
-			controlled_by = REB
-			province_control_days = 90
-		}
-	}
-	demands_enforced_effect = {
-		country_event = 3005
-		prestige_factor = -0.1
-		war_exhaustion = 50
+		plurality = -50
 	}
 }

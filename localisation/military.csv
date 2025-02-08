@@ -196,7 +196,7 @@ NAVAL_COMBAT_DETAILS_RETREAT;This unit is retreating.;x
 NAVAL_COMBAT_DETAILS_SEEKING;Searching for best target.;x
 NAVAL_COMBAT_DETAILS_SHOOTING;Firing at §Y$WHO$§!.\n- Damage to Organisation §G$ORG$§!\n- Damage to Strength §Y$STR$§!;x
 NAVAL_COMBAT_DETAILS_FILTERING;Click with §GLMB§! to show all ships that are targetting this ship.;x
-NAVAL_SUPPLY_PENALTY_DESC;Affected by §Ynaval supply throughput§! penalty of §R$PEN$%§!.;x
+NAVAL_SUPPLY_PENALTY_DESC;Affected by §Ylack of sailor§! penalty of §R$PEN$%§!.;x
 COMBAT_LEADER_MOD_ATTACK;Leader attack;x
 COMBAT_LEADER_MOD_DEFENSE;Leader defense;;x
 OCCUPATION_SCORE_ATTACKER;Attacker occupation: ;x

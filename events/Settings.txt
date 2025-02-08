@@ -4,9 +4,79 @@
 # Settings Events: {
 # 10000 - 10499 }
 
-# Settings Main Menu
+# Main Menu Settings Text Setter
 country_event = {
 	id = 10000
+	title = "Main Menu Settings Text Setter"
+	desc = ""
+	picture = "settings"
+	
+	is_triggered_only = yes
+	allow_multiple_instances = yes
+	
+	immediate = {
+		random_country = {
+			limit = {
+				tag = FROM
+				has_country_flag = unciv_5
+			}
+			dynamic_loc_slot_15 = { state_scope = { change_region_name = "Uncentralized soldier pop percentages (§GCurrently §M5%§!)" } }
+		}
+		random_country = {
+			limit = {
+				tag = FROM
+				has_country_flag = unciv_7
+			}
+			dynamic_loc_slot_15 = { state_scope = { change_region_name = "Uncentralized soldier pop percentages (§GCurrently §M7.5%§!)" } }
+		}
+		random_country = {
+			limit = {
+				tag = FROM
+				has_country_flag = unciv_10
+			}
+			dynamic_loc_slot_15 = { state_scope = { change_region_name = "Uncentralized soldier pop percentages (§GCurrently §M10%§!)" } }
+		}
+		
+		random_country = {
+			limit = {
+				tag = FROM
+				has_global_flag = borders_closed
+			}
+			dynamic_loc_slot_16 = { state_scope = { change_region_name = "Border Control (§GCurrently §MClosed§!)" } }
+		}
+		random_country = {
+			limit = {
+				tag = FROM
+				has_global_flag = borders_alignment
+			}
+			dynamic_loc_slot_16 = { state_scope = { change_region_name = "Border Control (§GCurrently §MAlignment§!)" } }
+		}
+		random_country = {
+			limit = {
+				tag = FROM
+				has_global_flag = borders_race
+			}
+			dynamic_loc_slot_16 = { state_scope = { change_region_name = "Border Control (§GCurrently §MRacial§!)" } }
+		}
+		random_country = {
+			limit = {
+				tag = FROM
+				has_global_flag = borders_open
+			}
+			dynamic_loc_slot_16 = { state_scope = { change_region_name = "Border Control (§GCurrently §MOpen§!)" } }
+		}
+		
+		FROM = { country_event = { id = 10001 days = 0 } }
+	}
+	
+	option = {
+		name = "next"
+	}
+}
+
+# Settings Main Menu
+country_event = {
+	id = 10001
 	title = "Settings"
 	desc = ""
 	picture = "settings"
@@ -26,94 +96,68 @@ country_event = {
 		empty_line_loc = {}
 		
 		empty_line_loc = {}
-		uncentralized_soldier_pop_percentages_loc = {}
-		currently_loc = {}
-		random_owned = {
-			limit = {
-				owner = { has_country_flag = unciv_5 }
-			}
-			five_percent_loc = {}
-		}
-		random_owned = {
-			limit = {
-				owner = { has_country_flag = unciv_7 }
-			}
-			seven_point_five_percent_loc = {}
-		}
-		random_owned = {
-			limit = {
-				owner = { has_country_flag = unciv_10 }
-			}
-			10_percent_loc = {}
-		}
-		end_color_loc = {}
-		close_parenthesis_loc = {}
-		
+		dynamic_loc_slot_15 = {}
 		empty_line_loc = {}
 		
 		empty_line_loc = {}
-		border_control_loc = {}
-		currently_loc = {}
-		random_owned = {
-			limit = {
-				owner = { has_global_flag = borders_closed }
-			}
-			closed_loc = {}
-		}
-		random_owned = {
-			limit = {
-				owner = { has_global_flag = borders_alignment }
-			}
-			alignment_loc = {}
-		}
-		random_owned = {
-			limit = {
-				owner = { has_global_flag = borders_race }
-			}
-			racial_loc = {}
-		}
-		random_owned = {
-			limit = {
-				owner = { has_global_flag = borders_open }
-			}
-			open_loc = {}
-		}
-		end_color_loc = {}
-		close_parenthesis_loc = {}
-		
+		dynamic_loc_slot_16 = {}
 		empty_line_loc = {}
-		
-		empty_line_loc = {}
-		debugging_loc = {}
-		
-		empty_line_loc = {}
-		
-		empty_line_loc = {}
-		flavor_loc = {}
 	}
 	
 	option = {
 		name = ""
 		
-		country_event = { id = 10001 days = 0 }
+		set_global_flag = hidden_effects
+		random_country = {
+			limit = {
+				tag = FOR
+				has_global_flag = hidden_effects
+			}
+			country_event = { id = 10002 days = 0 }
+		}
+		clr_global_flag = hidden_effects
 	}
 	
 	option = {
 		name = ""
 		
-		country_event = { id = 10002 days = 0 }
+		set_global_flag = hidden_effects
+		random_country = {
+			limit = {
+				tag = FOR
+				has_global_flag = hidden_effects
+			}
+			country_event = { id = 10004 days = 0 }
+		}
+		clr_global_flag = hidden_effects
 	}
 	
 	option = {
-		name = ""
+		name = "Debug Settings"
 		
-		country_event = { id = 10003 days = 0 }
+		set_global_flag = hidden_effects
+		random_country = {
+			limit = {
+				tag = FOR
+				has_global_flag = hidden_effects
+			}
+			country_event = { id = 10008 days = 0 }
+		}
+		clr_global_flag = hidden_effects
 	}
 	
 	option = {
-		name = ""
+		name = "Flavor Settings"
 		
-		country_event = { id = 10004 days = 0 }
+		set_global_flag = hidden_effects
+		random_country = {
+			limit = {
+				tag = FOR
+				has_global_flag = hidden_effects
+			}
+			country_event = { id = 10010 days = 0 }
+		}
+		clr_global_flag = hidden_effects
 	}
 	
 	option = {
@@ -122,16 +166,81 @@ country_event = {
 		set_global_flag = no_settings
 		
 		settings_disable_settings_loc = {}
+		
+		set_global_flag = hidden_effects
+		random_country = {
+			limit = {
+				tag = FOR
+				has_global_flag = hidden_effects
+			}
+			country_event = { id = 402002 days = 0 }
+		}
+		clr_global_flag = hidden_effects
 	}
 	
 	option = {
 		name = "§RExit§!"
+		
+		set_global_flag = hidden_effects
+		random_country = {
+			limit = {
+				tag = FOR
+				has_global_flag = hidden_effects
+			}
+			country_event = { id = 402002 days = 0 }
+		}
+		clr_global_flag = hidden_effects
+	}
+}
+
+# Unciv Soldier Pop Percentages Text Setter
+country_event = {
+	id = 10002
+	title = "Unciv Soldier Pop Percentages Text Setter"
+	desc = ""
+	picture = "settings"
+	
+	is_triggered_only = yes
+	allow_multiple_instances = yes
+	
+	immediate = {
+		dynamic_loc_slot_15 = { state_scope = { change_region_name = "Uncentralized soldier pops 5%" } }
+		dynamic_loc_slot_16 = { state_scope = { change_region_name = "Uncentralized soldier pops 7.5%" } }
+		dynamic_loc_slot_17 = { state_scope = { change_region_name = "Uncentralized soldier pops 10%" } }
+		
+		random_country = {
+			limit = {
+				tag = FROM
+				has_country_flag = unciv_5
+			}
+			dynamic_loc_slot_15 = { state_scope = { change_region_name = "Uncentralized soldier pops 5% (§GCurrently Enabled§!)" } }
+		}
+		random_country = {
+			limit = {
+				tag = FROM
+				has_country_flag = unciv_7
+			}
+			dynamic_loc_slot_16 = { state_scope = { change_region_name = "Uncentralized soldier pops 7.5% (§GCurrently Enabled§!)" } }
+		}
+		random_country = {
+			limit = {
+				tag = FROM
+				has_country_flag = unciv_10
+			}
+			dynamic_loc_slot_17 = { state_scope = { change_region_name = "Uncentralized soldier pops 10% (§GCurrently Enabled§!)" } }
+		}
+		
+		FROM = { country_event = { id = 10003 days = 0 } }
+	}
+	
+	option = {
+		name = "next"
 	}
 }
 
 # Unciv Soldier Pop Percentages
 country_event = {
-	id = 10001
+	id = 10003
 	title = "Unciv Soldier Pop Percentages"
 	desc = ""
 	picture = "settings"
@@ -151,56 +260,16 @@ country_event = {
 		empty_line_loc = {}
 		
 		empty_line_loc = {}
-		unciv_5_loc = {}
-		random_owned = {
-			limit = {
-				owner = { has_country_flag = unciv_5 }
-			}
-			enabled_loc = {}
-		}
-		random_owned = {
-			limit = {
-				owner = { NOT = { has_country_flag = unciv_5 } }
-			}
-			disabled_loc = {}
-		}
-		close_parenthesis_loc = {}
-		
+		dynamic_loc_slot_15 = {}
 		empty_line_loc = {}
 		
 		empty_line_loc = {}
-		unciv_7_loc = {}
-		random_owned = {
-			limit = {
-				owner = { has_country_flag = unciv_7 }
-			}
-			enabled_loc = {}
-		}
-		random_owned = {
-			limit = {
-				owner = { NOT = { has_country_flag = unciv_7 } }
-			}
-			disabled_loc = {}
-		}
-		close_parenthesis_loc = {}
-		
+		dynamic_loc_slot_16 = {}
 		empty_line_loc = {}
 		
 		empty_line_loc = {}
-		unciv_10_loc = {}
-		random_owned = {
-			limit = {
-				owner = { has_country_flag = unciv_10 }
-			}
-			enabled_loc = {}
-		}
-		random_owned = {
-			limit = {
-				owner = { NOT = { has_country_flag = unciv_10 } }
-			}
-			disabled_loc = {}
-		}
-		close_parenthesis_loc = {}
+		dynamic_loc_slot_17 = {}
+		empty_line_loc = {}
 	}
 	
 	option = {
@@ -217,14 +286,13 @@ country_event = {
 		}
 		
 		set_global_flag = hidden_effects
-		
-		random_owned = {
+		random_country = {
 			limit = {
+				tag = FOR
 				has_global_flag = hidden_effects
 			}
-			owner = { country_event = { id = 10000 days = 0 } }
+			country_event = { id = 10000 days = 0 }
 		}
-		
 		clr_global_flag = hidden_effects
 		
 		settings_unciv_5_loc = {}
@@ -244,14 +312,13 @@ country_event = {
 		}
 		
 		set_global_flag = hidden_effects
-		
-		random_owned = {
+		random_country = {
 			limit = {
+				tag = FOR
 				has_global_flag = hidden_effects
 			}
-			owner = { country_event = { id = 10000 days = 0 } }
+			country_event = { id = 10000 days = 0 }
 		}
-		
 		clr_global_flag = hidden_effects
 		
 		settings_unciv_7_loc = {}
@@ -271,23 +338,75 @@ country_event = {
 		}
 		
 		set_global_flag = hidden_effects
-		
-		random_owned = {
+		random_country = {
 			limit = {
+				tag = FOR
 				has_global_flag = hidden_effects
 			}
-			owner = { country_event = { id = 10000 days = 0 } }
+			country_event = { id = 10000 days = 0 }
 		}
-		
 		clr_global_flag = hidden_effects
 		
 		settings_unciv_10_loc = {}
 	}
 }
 
+# Border Settings Text Setter
+country_event = {
+	id = 10004
+	title = "Border Settings Text Setter"
+	desc = ""
+	picture = "settings"
+	
+	is_triggered_only = yes
+	allow_multiple_instances = yes
+	
+	immediate = {
+		dynamic_loc_slot_15 = { state_scope = { change_region_name = "Closed borders" } }
+		dynamic_loc_slot_16 = { state_scope = { change_region_name = "Alignment borders" } }
+		dynamic_loc_slot_17 = { state_scope = { change_region_name = "Racial borders" } }
+		dynamic_loc_slot_18 = { state_scope = { change_region_name = "Open borders" } }
+		
+		random_country = {
+			limit = {
+				tag = FROM
+				has_global_flag = borders_closed
+			}
+			dynamic_loc_slot_15 = { state_scope = { change_region_name = "Closed borders (§GCurrently Enabled§!)" } }
+		}
+		random_country = {
+			limit = {
+				tag = FROM
+				has_global_flag = borders_alignment
+			}
+			dynamic_loc_slot_16 = { state_scope = { change_region_name = "Alignment borders (§GCurrently Enabled§!)" } }
+		}
+		random_country = {
+			limit = {
+				tag = FROM
+				has_global_flag = borders_race
+			}
+			dynamic_loc_slot_17 = { state_scope = { change_region_name = "Racial borders (§GCurrently Enabled§!)" } }
+		}
+		random_country = {
+			limit = {
+				tag = FROM
+				has_global_flag = borders_open
+			}
+			dynamic_loc_slot_18 = { state_scope = { change_region_name = "Open borders (§GCurrently Enabled§!)" } }
+		}
+		
+		FROM = { country_event = { id = 10005 days = 0 } }
+	}
+	
+	option = {
+		name = "next"
+	}
+}
+
 # Border Settings
 country_event = {
-	id = 10002
+	id = 10005
 	title = "Border Settings"
 	desc = ""
 	picture = "settings"
@@ -307,74 +426,20 @@ country_event = {
 		empty_line_loc = {}
 		
 		empty_line_loc = {}
-		borders_closed_loc = {}
-		random_owned = {
-			limit = {
-				owner = { has_global_flag = borders_closed }
-			}
-			enabled_loc = {}
-		}
-		random_owned = {
-			limit = {
-				owner = { NOT = { has_global_flag = borders_closed } }
-			}
-			disabled_loc = {}
-		}
-		close_parenthesis_loc = {}
-		
+		dynamic_loc_slot_15 = {}
 		empty_line_loc = {}
 		
 		empty_line_loc = {}
-		borders_alignment_loc = {}
-		random_owned = {
-			limit = {
-				owner = { has_global_flag = borders_alignment }
-			}
-			enabled_loc = {}
-		}
-		random_owned = {
-			limit = {
-				owner = { NOT = { has_global_flag = borders_alignment } }
-			}
-			disabled_loc = {}
-		}
-		close_parenthesis_loc = {}
-		
+		dynamic_loc_slot_16 = {}
 		empty_line_loc = {}
 		
 		empty_line_loc = {}
-		borders_race_loc = {}
-		random_owned = {
-			limit = {
-				owner = { has_global_flag = borders_race }
-			}
-			enabled_loc = {}
-		}
-		random_owned = {
-			limit = {
-				owner = { NOT = { has_global_flag = borders_race } }
-			}
-			disabled_loc = {}
-		}
-		close_parenthesis_loc = {}
-		
+		dynamic_loc_slot_17 = {}
 		empty_line_loc = {}
 		
 		empty_line_loc = {}
-		borders_open_loc = {}
-		random_owned = {
-			limit = {
-				owner = { has_global_flag = borders_open }
-			}
-			enabled_loc = {}
-		}
-		random_owned = {
-			limit = {
-				owner = { NOT = { has_global_flag = borders_open } }
-			}
-			disabled_loc = {}
-		}
-		close_parenthesis_loc = {}
+		dynamic_loc_slot_18 = {}
+		empty_line_loc = {}
 	}
 	
 	option = {
@@ -386,14 +451,13 @@ country_event = {
 		clr_global_flag = borders_open
 		
 		set_global_flag = hidden_effects
-		
-		random_owned = {
+		random_country = {
 			limit = {
+				tag = FOR
 				has_global_flag = hidden_effects
 			}
-			owner = { country_event = { id = 10000 days = 0 } }
+			country_event = { id = 10000 days = 0 }
 		}
-		
 		clr_global_flag = hidden_effects
 		
 		settings_borders_closed_loc = {}
@@ -408,14 +472,13 @@ country_event = {
 		clr_global_flag = borders_open
 		
 		set_global_flag = hidden_effects
-		
-		random_owned = {
+		random_country = {
 			limit = {
+				tag = FOR
 				has_global_flag = hidden_effects
 			}
-			owner = { country_event = { id = 10000 days = 0 } }
+			country_event = { id = 10000 days = 0 }
 		}
-		
 		clr_global_flag = hidden_effects
 		
 		settings_borders_alignment_loc = {}
@@ -430,14 +493,13 @@ country_event = {
 		clr_global_flag = borders_open
 		
 		set_global_flag = hidden_effects
-		
-		random_owned = {
+		random_country = {
 			limit = {
+				tag = FOR
 				has_global_flag = hidden_effects
 			}
-			owner = { country_event = { id = 10000 days = 0 } }
+			country_event = { id = 10000 days = 0 }
 		}
-		
 		clr_global_flag = hidden_effects
 		
 		settings_borders_race_loc = {}
@@ -452,23 +514,75 @@ country_event = {
 		set_global_flag = borders_open
 		
 		set_global_flag = hidden_effects
-		
-		random_owned = {
+		random_country = {
 			limit = {
+				tag = FOR
 				has_global_flag = hidden_effects
 			}
-			owner = { country_event = { id = 10000 days = 0 } }
+			country_event = { id = 10000 days = 0 }
 		}
-		
 		clr_global_flag = hidden_effects
 		
 		settings_borders_open_loc = {}
 	}
 }
 
+# Debugging Settings Text Setter
+country_event = {
+	id = 10008
+	title = "Debugging Settings Text Setter"
+	desc = ""
+	picture = "settings"
+	
+	is_triggered_only = yes
+	allow_multiple_instances = yes
+	
+	immediate = {
+		dynamic_loc_slot_15 = { state_scope = { change_region_name = "Observer Mode" } }
+		dynamic_loc_slot_16 = { state_scope = { change_region_name = "Annex All" } }
+		dynamic_loc_slot_17 = { state_scope = { change_region_name = "Pop Management" } }
+		dynamic_loc_slot_18 = { state_scope = { change_region_name = "Infamy" } }
+		
+		random_country = {
+			limit = {
+				tag = FROM
+				has_country_modifier = observer_mode
+			}
+			dynamic_loc_slot_15 = { state_scope = { change_region_name = "Observer Mode (§GCurrently Enabled§!)" } }
+		}
+		random_country = {
+			limit = {
+				tag = FROM
+				has_global_flag = annexed_all
+			}
+			dynamic_loc_slot_16 = { state_scope = { change_region_name = "Annex All (§GCurrently Enabled§!)" } }
+		}
+		random_country = {
+			limit = {
+				tag = FROM
+				has_global_flag = pop_management
+			}
+			dynamic_loc_slot_17 = { state_scope = { change_region_name = "Pop Management (§GCurrently Enabled§!)" } }
+		}
+		random_country = {
+			limit = {
+				tag = FROM
+				NOT = { has_global_flag = removed_infamy }
+			}
+			dynamic_loc_slot_18 = { state_scope = { change_region_name = "Infamy (§GCurrently Enabled§!)" } }
+		}
+		
+		FROM = { country_event = { id = 10009 days = 0 } }
+	}
+	
+	option = {
+		name = "next"
+	}
+}
+
 # Debugging Settings
 country_event = {
-	id = 10003
+	id = 10009
 	title = "Debugging Settings"
 	desc = ""
 	picture = "settings"
@@ -488,74 +602,20 @@ country_event = {
 		empty_line_loc = {}
 		
 		empty_line_loc = {}
-		observer_mode_loc = {}
-		random_owned = {
-			limit = {
-				owner = { has_country_modifier = observer_mode }
-			}
-			enabled_loc = {}
-		}
-		random_owned = {
-			limit = {
-				owner = { NOT = { has_country_modifier = observer_mode } }
-			}
-			disabled_loc = {}
-		}
-		close_parenthesis_loc = {}
-		
+		dynamic_loc_slot_15 = {}
 		empty_line_loc = {}
 		
 		empty_line_loc = {}
-		annexed_all_loc = {}
-		random_owned = {
-			limit = {
-				owner = { has_global_flag = annexed_all }
-			}
-			enabled_loc = {}
-		}
-		random_owned = {
-			limit = {
-				owner = { NOT = { has_global_flag = annexed_all } }
-			}
-			disabled_loc = {}
-		}
-		close_parenthesis_loc = {}
-		
+		dynamic_loc_slot_16 = {}
 		empty_line_loc = {}
 		
 		empty_line_loc = {}
-		pop_management_loc = {}
-		random_owned = {
-			limit = {
-				owner = { has_global_flag = pop_management }
-			}
-			enabled_loc = {}
-		}
-		random_owned = {
-			limit = {
-				owner = { NOT = { has_global_flag = pop_management } }
-			}
-			disabled_loc = {}
-		}
-		close_parenthesis_loc = {}
-		
+		dynamic_loc_slot_17 = {}
 		empty_line_loc = {}
 		
 		empty_line_loc = {}
-		infamy_loc = {}
-		random_owned = {
-			limit = {
-				owner = { NOT = { has_global_flag = removed_infamy } }
-			}
-			enabled_loc = {}
-		}
-		random_owned = {
-			limit = {
-				owner = { has_global_flag = removed_infamy }
-			}
-			disabled_loc = {}
-		}
-		close_parenthesis_loc = {}
+		dynamic_loc_slot_18 = {}
+		empty_line_loc = {}
 	}
 	
 	option = {
@@ -580,13 +640,13 @@ country_event = {
 			}
 		}
 		
-		random_owned = {
+		random_country = {
 			limit = {
+				tag = FOR
 				has_global_flag = hidden_effects
 			}
-			owner = { country_event = { id = 10003 days = 0 } }
+			country_event = { id = 10008 days = 0 }
 		}
-		
 		clr_global_flag = hidden_effects
 		
 		settings_observer_mode_loc = {}
@@ -596,7 +656,6 @@ country_event = {
 		name = ""
 		
 		set_global_flag = hidden_effects
-		
 		random_owned = {
 			limit = {
 				has_global_flag = hidden_effects
@@ -736,13 +795,13 @@ country_event = {
 			}
 		}
 		
-		random_owned = {
+		random_country = {
 			limit = {
+				tag = FOR
 				has_global_flag = hidden_effects
 			}
-			owner = { country_event = { id = 10003 days = 0 } }
+			country_event = { id = 10008 days = 0 }
 		}
-		
 		clr_global_flag = hidden_effects
 		
 		settings_annex_all_loc = {}
@@ -772,15 +831,15 @@ country_event = {
 		}
 		
 		clr_global_flag = updated_setting
-		set_global_flag = hidden_effects
 		
-		random_owned = {
+		set_global_flag = hidden_effects
+		random_country = {
 			limit = {
+				tag = FOR
 				has_global_flag = hidden_effects
 			}
-			owner = { country_event = { id = 10003 days = 0 } }
+			country_event = { id = 10008 days = 0 }
 		}
-		
 		clr_global_flag = hidden_effects
 		
 		settings_pop_management_loc = {}
@@ -810,15 +869,15 @@ country_event = {
 		}
 		
 		clr_global_flag = updated_setting
-		set_global_flag = hidden_effects
 		
-		random_owned = {
+		set_global_flag = hidden_effects
+		random_country = {
 			limit = {
+				tag = FOR
 				has_global_flag = hidden_effects
 			}
-			owner = { country_event = { id = 10003 days = 0 } }
+			country_event = { id = 10008 days = 0 }
 		}
-		
 		clr_global_flag = hidden_effects
 		
 		settings_toggle_infamy_removal_loc = {}
@@ -827,13 +886,82 @@ country_event = {
 	option = {
 		name = "§BBack§!"
 		
-		country_event = { id = 10000 days = 0 }
+		set_global_flag = hidden_effects
+		random_country = {
+			limit = {
+				tag = FOR
+				has_global_flag = hidden_effects
+			}
+			country_event = { id = 10000 days = 0 }
+		}
+		clr_global_flag = hidden_effects
+	}
+}
+
+# Flavor Settings Text Setter
+country_event = {
+	id = 10010
+	title = "Flavor Settings Text Setter"
+	desc = ""
+	picture = "settings"
+	
+	is_triggered_only = yes
+	allow_multiple_instances = yes
+	
+	immediate = {
+		dynamic_loc_slot_15 = { state_scope = { change_region_name = "Memes" } }
+		dynamic_loc_slot_16 = { state_scope = { change_region_name = "Gondor Owning Mouths of the Entwash" } }
+		dynamic_loc_slot_17 = { state_scope = { change_region_name = "Fluff" } }
+		dynamic_loc_slot_18 = { state_scope = { change_region_name = "Province Wealth Intervention" } }
+		dynamic_loc_slot_19 = { state_scope = { change_region_name = "Generic RGO Changing" } }
+		
+		random_country = {
+			limit = {
+				tag = FROM
+				has_global_flag = memes_enabled
+			}
+			dynamic_loc_slot_15 = { state_scope = { change_region_name = "Memes (§GCurrently Enabled§!)" } }
+		}
+		random_country = {
+			limit = {
+				tag = FROM
+				has_global_flag = gondor_own_mouths_entwash
+			}
+			dynamic_loc_slot_16 = { state_scope = { change_region_name = "Gondor Owning Mouths of the Entwash (§GCurrently Enabled§!)" } }
+		}
+		random_country = {
+			limit = {
+				tag = FROM
+				NOT = { has_global_flag = fluff_disabled }
+			}
+			dynamic_loc_slot_17 = { state_scope = { change_region_name = "Fluff (§GCurrently Enabled§!)" } }
+		}
+		random_country = {
+			limit = {
+				tag = FROM
+				NOT = { has_global_flag = province_wealth_intervention_disabled }
+			}
+			dynamic_loc_slot_18 = { state_scope = { change_region_name = "Province Wealth Intervention (§GCurrently Enabled§!)" } }
+		}
+		random_country = {
+			limit = {
+				tag = FROM
+				NOT = { has_global_flag = generic_rgo_changing_disabled }
+			}
+			dynamic_loc_slot_19 = { state_scope = { change_region_name = "Generic RGO Changing (§GCurrently Enabled§!)" } }
+		}
+		
+		FROM = { country_event = { id = 10011 days = 0 } }
+	}
+	
+	option = {
+		name = "next"
 	}
 }
 
 # Flavor Settings
 country_event = {
-	id = 10004
+	id = 10011
 	title = "Flavor Settings"
 	desc = ""
 	picture = "settings"
@@ -853,92 +981,24 @@ country_event = {
 		empty_line_loc = {}
 		
 		empty_line_loc = {}
-		memes_loc = {}
-		random_owned = {
-			limit = {
-				owner = { has_global_flag = memes_enabled }
-			}
-			enabled_loc = {}
-		}
-		random_owned = {
-			limit = {
-				owner = { NOT = { has_global_flag = memes_enabled } }
-			}
-			disabled_loc = {}
-		}
-		close_parenthesis_loc = {}
-		
+		dynamic_loc_slot_15 = {}
 		empty_line_loc = {}
 		
 		empty_line_loc = {}
-		gondor_own_mouths_entwash_loc = {}
-		random_owned = {
-			limit = {
-				owner = { has_global_flag = gondor_own_mouths_entwash }
-			}
-			enabled_loc = {}
-		}
-		random_owned = {
-			limit = {
-				owner = { NOT = { has_global_flag = gondor_own_mouths_entwash } }
-			}
-			disabled_loc = {}
-		}
-		close_parenthesis_loc = {}
-		
+		dynamic_loc_slot_16 = {}
 		empty_line_loc = {}
 		
 		empty_line_loc = {}
-		fluff_loc = {}
-		random_owned = {
-			limit = {
-				owner = { NOT = { has_global_flag = fluff_disabled } }
-			}
-			enabled_loc = {}
-		}
-		random_owned = {
-			limit = {
-				owner = { has_global_flag = fluff_disabled }
-			}
-			disabled_loc = {}
-		}
-		close_parenthesis_loc = {}
-		
+		dynamic_loc_slot_17 = {}
 		empty_line_loc = {}
 		
 		empty_line_loc = {}
-		province_wealth_intervention_loc = {}
-		random_owned = {
-			limit = {
-				owner = { NOT = { has_global_flag = province_wealth_intervention_disabled } }
-			}
-			enabled_loc = {}
-		}
-		random_owned = {
-			limit = {
-				owner = { has_global_flag = province_wealth_intervention_disabled }
-			}
-			disabled_loc = {}
-		}
-		close_parenthesis_loc = {}
-		
+		dynamic_loc_slot_18 = {}
 		empty_line_loc = {}
 		
 		empty_line_loc = {}
-		generic_rgo_changing_loc = {}
-		random_owned = {
-			limit = {
-				owner = { NOT = { has_global_flag = generic_rgo_changing_disabled } }
-			}
-			enabled_loc = {}
-		}
-		random_owned = {
-			limit = {
-				owner = { has_global_flag = generic_rgo_changing_disabled }
-			}
-			disabled_loc = {}
-		}
-		close_parenthesis_loc = {}
+		dynamic_loc_slot_19 = {}
+		empty_line_loc = {}
 	}
 	
 	option = {
@@ -947,14 +1007,13 @@ country_event = {
 		set_global_flag = memes_enabled
 		
 		set_global_flag = hidden_effects
-		
-		random_owned = {
+		random_country = {
 			limit = {
+				tag = FOR
 				has_global_flag = hidden_effects
 			}
-			owner = { country_event = { id = 10004 days = 0 } }
+			country_event = { id = 10010 days = 0 }
 		}
-		
 		clr_global_flag = hidden_effects
 		
 		settings_enable_memes_loc = {}
@@ -985,13 +1044,13 @@ country_event = {
 			}
 		}
 		
-		random_owned = {
+		random_country = {
 			limit = {
+				tag = FOR
 				has_global_flag = hidden_effects
 			}
-			owner = { country_event = { id = 10004 days = 0 } }
+			country_event = { id = 10010 days = 0 }
 		}
-		
 		clr_global_flag = hidden_effects
 		
 		settings_gondor_own_mouths_entwash_loc = {}
@@ -1021,15 +1080,15 @@ country_event = {
 		}
 		
 		clr_global_flag = updated_setting
-		set_global_flag = hidden_effects
 		
-		random_owned = {
+		set_global_flag = hidden_effects
+		random_country = {
 			limit = {
+				tag = FOR
 				has_global_flag = hidden_effects
 			}
-			owner = { country_event = { id = 10004 days = 0 } }
+			country_event = { id = 10010 days = 0 }
 		}
-		
 		clr_global_flag = hidden_effects
 		
 		settings_toggle_fluff_loc = {}
@@ -1059,15 +1118,15 @@ country_event = {
 		}
 		
 		clr_global_flag = updated_setting
-		set_global_flag = hidden_effects
 		
-		random_owned = {
+		set_global_flag = hidden_effects
+		random_country = {
 			limit = {
+				tag = FOR
 				has_global_flag = hidden_effects
 			}
-			owner = { country_event = { id = 10004 days = 0 } }
+			country_event = { id = 10010 days = 0 }
 		}
-		
 		clr_global_flag = hidden_effects
 		
 		settings_province_wealth_intervention_loc = {}
@@ -1097,15 +1156,15 @@ country_event = {
 		}
 		
 		clr_global_flag = updated_setting
-		set_global_flag = hidden_effects
 		
-		random_owned = {
+		set_global_flag = hidden_effects
+		random_country = {
 			limit = {
+				tag = FOR
 				has_global_flag = hidden_effects
 			}
-			owner = { country_event = { id = 10004 days = 0 } }
+			country_event = { id = 10010 days = 0 }
 		}
-		
 		clr_global_flag = hidden_effects
 		
 		settings_generic_rgo_changing_loc = {}
@@ -1114,6 +1173,14 @@ country_event = {
 	option = {
 		name = "§BBack§!"
 		
-		country_event = { id = 10000 days = 0 }
+		set_global_flag = hidden_effects
+		random_country = {
+			limit = {
+				tag = FOR
+				has_global_flag = hidden_effects
+			}
+			country_event = { id = 10000 days = 0 }
+		}
+		clr_global_flag = hidden_effects
 	}
 }

@@ -93,14 +93,14 @@ political_decisions = {
 			NOT = { has_global_flag = nine_hunting_frodo }
 			has_global_flag = findings_of_gandalf
 			good_evil_alignment = evil_alignment
-			nationalvalue = sauron
+			ruling_party = MOR_sauron
 			FOR = { check_variable = { which = ring_controller value = 0.9 } } # Frodo
 			FOR = { NOT = { check_variable = { which = ring_controller value = 1.1 } } } # Frodo
 		}
 		
 		allow = {
 			good_evil_alignment = evil_alignment
-			nationalvalue = sauron
+			ruling_party = MOR_sauron
 		}
 		
 		effect = {
@@ -165,7 +165,7 @@ political_decisions = {
 	# Special council_of_capital for Imladris
 	council_of_elrond = {
 		potential = {
-			nationalvalue = elrond
+			ruling_party = IML_elrond
 			NOT = { has_global_flag = the_council_of_elrond }
 			FOR = { check_variable = { which = ring_controller value = 0.9 } } # Frodo
 			FOR = { NOT = { check_variable = { which = ring_controller value = 1.1 } } } # Frodo
@@ -228,7 +228,7 @@ political_decisions = {
 			FOR = { check_variable = { which = ring_controller value = 0.9 } } # Frodo
 			FOR = { NOT = { check_variable = { which = ring_controller value = 1.1 } } } # Frodo
 			NOT = { has_global_flag = the_council_of_elrond }
-			NOT = { nationalvalue = elrond }
+			NOT = { ruling_party = IML_elrond }
 			OR = {
 				has_country_flag = frodo_chose_us
 				FOR = {
@@ -340,7 +340,7 @@ political_decisions = {
 			NOT = { has_global_flag = fellowship_has_failed }
 			NOT = { has_global_flag = fellowship_passed_through_ithilien }
 			NOT = { good_evil_alignment = evil_alignment }
-			nationalvalue = celeborn_n_galadriel
+			ruling_party = LOR_galadriel_n_celeborn
 			NOT = { has_country_flag = galadriel_did_the_test }
 			FOR = { check_variable = { which = ring_controller value = 1.9 } } # Fellowship
 			FOR = { NOT = { check_variable = { which = ring_controller value = 2.1 } } } # Fellowship
@@ -348,7 +348,7 @@ political_decisions = {
 		}
 		
 		allow = {
-			nationalvalue = celeborn_n_galadriel
+			ruling_party = LOR_galadriel_n_celeborn
 			NOT = { good_evil_alignment = evil_alignment }
 		}
 		
@@ -366,7 +366,7 @@ political_decisions = {
 			NOT = { has_global_flag = fellowship_has_failed }
 			NOT = { has_global_flag = fellowship_passed_through_ithilien }
 			NOT = { good_evil_alignment = evil_alignment }
-			nationalvalue = celeborn_n_galadriel
+			ruling_party = LOR_galadriel_n_celeborn
 			FOR = { check_variable = { which = ring_controller value = 1.9 } } # Fellowship
 			FOR = { NOT = { check_variable = { which = ring_controller value = 2.1 } } } # Fellowship
 			NOT = { has_country_flag = galadriel_gave_gifts }
@@ -374,7 +374,7 @@ political_decisions = {
 		}
 		
 		allow = {
-			nationalvalue = celeborn_n_galadriel
+			ruling_party = LOR_galadriel_n_celeborn
 			NOT = { good_evil_alignment = evil_alignment }
 			money = 50000
 		}
@@ -395,7 +395,7 @@ political_decisions = {
 			NOT = { has_global_flag = fellowship_passed_through_ithilien }
 			good_evil_alignment = evil_alignment
 			primary_culture = uruk_hai
-			nationalvalue = saruman
+			ruling_party = ISE_saruman
 			FOR = { check_variable = { which = ring_controller value = 1.9 } } # Fellowship
 			FOR = { NOT = { check_variable = { which = ring_controller value = 2.1 } } } # Fellowship
 			NOT = { has_country_flag = unleashed_uruk_hai_raiders }
@@ -403,7 +403,7 @@ political_decisions = {
 		
 		allow = {
 			money = 100000
-			nationalvalue = saruman
+			ruling_party = ISE_saruman
 			good_evil_alignment = evil_alignment
 		}
 		
@@ -579,7 +579,7 @@ political_decisions = {
 		potential = {
 			tag = MOR
 			good_evil_alignment = evil_alignment
-			nationalvalue = sauron
+			ruling_party = MOR_sauron
 			FOR = {
 				any_neighbor_country = {
 					has_country_flag = has_one_ring
@@ -613,7 +613,7 @@ political_decisions = {
 			NOT = { war_with = MOR }
 			NOT = { tag = MOR }
 			MOR = {
-				nationalvalue = sauron
+				ruling_party = MOR_sauron
 				good_evil_alignment = evil_alignment
 			}
 		}
@@ -645,7 +645,7 @@ political_decisions = {
 			modifier = {
 				factor = 0
 				tag = ISE
-				nationalvalue = saruman
+				ruling_party = ISE_saruman
 			}
 		}
 	}

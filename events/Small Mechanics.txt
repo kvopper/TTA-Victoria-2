@@ -312,8 +312,8 @@ country_event = {
 	
 	trigger = {
 		has_country_flag = using_palantiri
-		NOT = { nationalvalue = sauron }
-		MOR = { nationalvalue = sauron }
+		NOT = { ruling_party = MOR_sauron }
+		MOR = { ruling_party = MOR_sauron }
 	}
 	
 	mean_time_to_happen = { months = 108 }
@@ -325,7 +325,7 @@ country_event = {
 			limit = {
 				OR = {
 					AND = {
-						owner = { nationalvalue = denethor_ii }
+						owner = { ruling_party = GON_denethor_ii }
 						has_global_flag = railroading_enabled
 					}
 					is_greater_power = yes
@@ -337,7 +337,7 @@ country_event = {
 		random_owned = {
 			limit = {
 				NOT = {
-					owner = { nationalvalue = denethor_ii }
+					owner = { ruling_party = GON_denethor_ii }
 					has_global_flag = railroading_enabled
 				}
 				is_greater_power = no
@@ -364,7 +364,7 @@ country_event = {
 	
 	trigger = {
 		has_country_flag = lost_contest_of_wills_to_sauron
-		MOR = { nationalvalue = sauron }
+		MOR = { ruling_party = MOR_sauron }
 		NOT = { in_sphere = MOR }
 	}
 	
@@ -399,7 +399,7 @@ country_event = {
 	
 	trigger = {
 		has_country_flag = lost_contest_of_wills_to_sauron
-		MOR = { nationalvalue = sauron }
+		MOR = { ruling_party = MOR_sauron }
 		in_sphere = MOR
 	}
 	
@@ -409,7 +409,7 @@ country_event = {
 		name = "We serve the Lord Sauron"
 		
 		MOR = { create_vassal = THIS }
-		political_reform = evil_alignment
+		ruling_party_ideology = servants_evil
 		clr_country_flag = lost_contest_of_wills_to_sauron
 	}
 }

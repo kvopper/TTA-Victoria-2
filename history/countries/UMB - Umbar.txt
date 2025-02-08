@@ -5,7 +5,7 @@ culture = men_culture
 culture = umbarrim
 religion = men
 government = monarchy
-nationalvalue = generic_leader
+nationalvalue = no_heirloom
 literacy = 0.2
 civilized = yes
 
@@ -15,13 +15,9 @@ decision = umbar_start_decision
 oob = "UMB_oob.txt"
 
 slavery = yes_slavery
-upper_house_composition = appointed
-ruling_party = generic_high_nobility
+ruling_party = generic_black_numenorean_nobles
 upper_house = {
-	high_nobility = 60
-	low_nobility = 29
-	burgher = 6
-	loremaster = 5
+	black_numenorean_nobles = 100
 }
 
 schools = traditional_academic

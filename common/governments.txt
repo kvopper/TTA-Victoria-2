@@ -1,239 +1,647 @@
+# Flag Overview
+# TAG -> Dictatorship
+# TAG_republic -> Democracies
+# TAG_monarchy -> Monarchies
+# TAG_cosmetic_1 -> Puppet of Sauron
+# TAG_cosmetic_2 -> Alternate 1
+
+# WHEN ADDING A NEW GOVERNMENT, DON'T FORGET TO UPDATE THE "# Upper House Reform Assignment" in events/World Bank.txt TO ASSIGN THE RIGHT GOVERNMENT_TYPE
+
 #######################
 ##### DEMOCRACIES #####
 #######################
-# Lord (generic republic)
-democracy = {
-	high_nobility = yes
-	low_nobility = yes
-	burgher = yes
-	loremaster = yes
-	
+republic = {
 	election = yes
 	duration = 48
 	appoint_ruling_party = no
 	flagType = republic
+	
+	line_of_isildur = yes
+	dunedain_nobles = yes
+	house_of_stewards = yes
+	gondorian_nobles = yes
+	house_of_dol_amroth = yes
+	amrothian_nobles = yes
+	arthedani_nobles = yes
+	cardolandrim_nobles = yes
+	haeranedain_nobles = yes
+	house_half_elven = yes
+	noldor_nobles = yes
+	lords_of_mithlond = yes
+	falathrim_nobles = yes
+	house_of_oropher = yes
+	silvan_nobles = yes
+	house_of_finarfin = yes
+	galadhrim_nobles = yes
+	avari_nobles = yes
+	umbarrim_nobles = yes
+	harnendan_nobles = yes
+	haruzani_nobles = yes
+	pezarsani_nobles = yes
+	lurmsakuni_nobles = yes
+	arysian_nobles = yes
+	kingsmen_nobles = yes
+	black_numenorean_nobles = yes
+	variag_nobles = yes
+	nurniag_nobles = yes
+	chelkiag_nobles = yes
+	sagath_nobles = yes
+	sekel_nobles = yes
+	urgath_nobles = yes
+	kuga_nobles = yes
+	logath_nobles = yes
+	house_of_bard = yes
+	barding_nobles = yes
+	grammas_nobles = yes
+	rivermen_nobles = yes
+	adhalling_nobles = yes
+	house_of_koldana = yes
+	dorwinrim_nobles = yes
+	aivathiuda_nobles = yes
+	anthar_nobles = yes
+	gadraught_nobles = yes
+	line_of_durin = yes
+	longbeard_nobles = yes
+	firebeard_nobles = yes
+	broadbeam_nobles = yes
+	ironfist_nobles = yes
+	dourhand_nobles = yes
+	shornbeard_nobles = yes
+	woodsmen_nobles = yes
+	beorning_nobles = yes
+	house_of_beorn = yes
+	beiabarnae_nobles = yes
+	melburgi_nobles = yes
+	herimundi_nobles = yes
+	lords_of_fangorn = yes
+	ent_nobles = yes
+	huorn_nobles = yes
+	black_huorn_nobles = yes
+	druedain_nobles = yes
+	dunnish_nobles = yes
+	hollin_folk_nobles = yes
+	enedwaithrim_nobles = yes
+	saerlanner_nobles = yes
+	dunir_nobles = yes
+	marshmen_nobles = yes
+	house_of_eorl = yes
+	rohirrim_nobles = yes
+	anduinmen_nobles = yes
+	isenmen_nobles = yes
+	uruk_hai_nobles = yes
+	mordor_orc_nobles = yes
+	mordor_uruk_nobles = yes
+	guldurrim_nobles = yes
+	white_mountain_goblin_nobles = yes
+	morian_nobles = yes
+	goblin_towner_nobles = yes
+	gundabad_orc_nobles = yes
+	snow_orc_nobles = yes
+	gram_goblin_nobles = yes
+	blue_mountain_goblin_nobles = yes
+	angmarrim_nobles = yes
+	hillmen_nobles = yes
+	lossoth_nobles = yes
+	breelander_nobles = yes
+	siredain_nobles = yes
+	stoor_nobles = yes
+	harfoot_nobles = yes
+	fallohide_nobles = yes
+	cave_trolls_nobles = yes
+	hill_trolls_nobles = yes
+	mountain_trolls_nobles = yes
+	snow_trolls_nobles = yes
+	stone_trolls_nobles = yes
+	olog_hai_nobles = yes
+	flightlords_of_the_mountains = yes
+	great_eagle_nobles = yes
+	lords_of_ravens = yes
+	raven_nobles = yes
+	great_brood_mothers = yes
+	great_spider_nobles = yes
+	wight_nobles = yes
+	kings_of_the_dead = yes
+	oathbreaker_nobles = yes
+	lords_of_isengard = yes
+	lords_of_rhosgobel = yes
+	lords_of_mordor = yes
+	saurons_nine = yes
 }
 
-# Mayor (Special republic for Hobbits)
-hobbit_realm = {
-	high_nobility = yes
-	low_nobility = yes
-	burgher = yes
-	loremaster = yes
-	
+merchant_republic = {
 	election = yes
 	duration = 48
 	appoint_ruling_party = no
 	flagType = republic
-}
-
-# Master (Special republic for Northmen)
-northmen_democracy = {
-	high_nobility = yes
-	low_nobility = yes
-	burgher = yes
-	loremaster = yes
 	
-	election = yes
-	duration = 48
-	appoint_ruling_party = no
-	flagType = republic
+	line_of_isildur = yes
+	dunedain_nobles = yes
+	house_of_stewards = yes
+	gondorian_nobles = yes
+	house_of_dol_amroth = yes
+	amrothian_nobles = yes
+	arthedani_nobles = yes
+	cardolandrim_nobles = yes
+	haeranedain_nobles = yes
+	house_half_elven = yes
+	noldor_nobles = yes
+	lords_of_mithlond = yes
+	falathrim_nobles = yes
+	house_of_oropher = yes
+	silvan_nobles = yes
+	house_of_finarfin = yes
+	galadhrim_nobles = yes
+	avari_nobles = yes
+	umbarrim_nobles = yes
+	harnendan_nobles = yes
+	haruzani_nobles = yes
+	pezarsani_nobles = yes
+	lurmsakuni_nobles = yes
+	arysian_nobles = yes
+	kingsmen_nobles = yes
+	black_numenorean_nobles = yes
+	variag_nobles = yes
+	nurniag_nobles = yes
+	chelkiag_nobles = yes
+	sagath_nobles = yes
+	sekel_nobles = yes
+	urgath_nobles = yes
+	kuga_nobles = yes
+	logath_nobles = yes
+	house_of_bard = yes
+	barding_nobles = yes
+	grammas_nobles = yes
+	rivermen_nobles = yes
+	adhalling_nobles = yes
+	house_of_koldana = yes
+	dorwinrim_nobles = yes
+	aivathiuda_nobles = yes
+	anthar_nobles = yes
+	gadraught_nobles = yes
+	line_of_durin = yes
+	longbeard_nobles = yes
+	firebeard_nobles = yes
+	broadbeam_nobles = yes
+	ironfist_nobles = yes
+	dourhand_nobles = yes
+	shornbeard_nobles = yes
+	woodsmen_nobles = yes
+	beorning_nobles = yes
+	house_of_beorn = yes
+	beiabarnae_nobles = yes
+	melburgi_nobles = yes
+	herimundi_nobles = yes
+	lords_of_fangorn = yes
+	ent_nobles = yes
+	huorn_nobles = yes
+	black_huorn_nobles = yes
+	druedain_nobles = yes
+	dunnish_nobles = yes
+	hollin_folk_nobles = yes
+	enedwaithrim_nobles = yes
+	saerlanner_nobles = yes
+	dunir_nobles = yes
+	marshmen_nobles = yes
+	house_of_eorl = yes
+	rohirrim_nobles = yes
+	anduinmen_nobles = yes
+	isenmen_nobles = yes
+	uruk_hai_nobles = yes
+	mordor_orc_nobles = yes
+	mordor_uruk_nobles = yes
+	guldurrim_nobles = yes
+	white_mountain_goblin_nobles = yes
+	morian_nobles = yes
+	goblin_towner_nobles = yes
+	gundabad_orc_nobles = yes
+	snow_orc_nobles = yes
+	gram_goblin_nobles = yes
+	blue_mountain_goblin_nobles = yes
+	angmarrim_nobles = yes
+	hillmen_nobles = yes
+	lossoth_nobles = yes
+	breelander_nobles = yes
+	siredain_nobles = yes
+	stoor_nobles = yes
+	harfoot_nobles = yes
+	fallohide_nobles = yes
+	cave_trolls_nobles = yes
+	hill_trolls_nobles = yes
+	mountain_trolls_nobles = yes
+	snow_trolls_nobles = yes
+	stone_trolls_nobles = yes
+	olog_hai_nobles = yes
+	flightlords_of_the_mountains = yes
+	great_eagle_nobles = yes
+	lords_of_ravens = yes
+	raven_nobles = yes
+	great_brood_mothers = yes
+	great_spider_nobles = yes
+	wight_nobles = yes
+	kings_of_the_dead = yes
+	oathbreaker_nobles = yes
+	lords_of_isengard = yes
+	lords_of_rhosgobel = yes
+	lords_of_mordor = yes
+	saurons_nine = yes
 }
 
 ######################
 ##### MONARCHIES #####
 ######################
-# King (generic monarchy)
 monarchy = {
-	high_nobility = yes
-	low_nobility = yes
-	burgher = yes
-	loremaster = yes
-	
 	election = no
-	appoint_ruling_party = yes
+	appoint_ruling_party = no
 	flagType = monarchy
+	
+	line_of_isildur = yes
+	dunedain_nobles = yes
+	house_of_stewards = yes
+	gondorian_nobles = yes
+	house_of_dol_amroth = yes
+	amrothian_nobles = yes
+	arthedani_nobles = yes
+	cardolandrim_nobles = yes
+	haeranedain_nobles = yes
+	house_half_elven = yes
+	noldor_nobles = yes
+	lords_of_mithlond = yes
+	falathrim_nobles = yes
+	house_of_oropher = yes
+	silvan_nobles = yes
+	house_of_finarfin = yes
+	galadhrim_nobles = yes
+	avari_nobles = yes
+	umbarrim_nobles = yes
+	harnendan_nobles = yes
+	haruzani_nobles = yes
+	pezarsani_nobles = yes
+	lurmsakuni_nobles = yes
+	arysian_nobles = yes
+	kingsmen_nobles = yes
+	black_numenorean_nobles = yes
+	variag_nobles = yes
+	nurniag_nobles = yes
+	chelkiag_nobles = yes
+	sagath_nobles = yes
+	sekel_nobles = yes
+	urgath_nobles = yes
+	kuga_nobles = yes
+	logath_nobles = yes
+	house_of_bard = yes
+	barding_nobles = yes
+	grammas_nobles = yes
+	rivermen_nobles = yes
+	adhalling_nobles = yes
+	house_of_koldana = yes
+	dorwinrim_nobles = yes
+	aivathiuda_nobles = yes
+	anthar_nobles = yes
+	gadraught_nobles = yes
+	line_of_durin = yes
+	longbeard_nobles = yes
+	firebeard_nobles = yes
+	broadbeam_nobles = yes
+	ironfist_nobles = yes
+	dourhand_nobles = yes
+	shornbeard_nobles = yes
+	woodsmen_nobles = yes
+	beorning_nobles = yes
+	house_of_beorn = yes
+	beiabarnae_nobles = yes
+	melburgi_nobles = yes
+	herimundi_nobles = yes
+	lords_of_fangorn = yes
+	ent_nobles = yes
+	huorn_nobles = yes
+	black_huorn_nobles = yes
+	druedain_nobles = yes
+	dunnish_nobles = yes
+	hollin_folk_nobles = yes
+	enedwaithrim_nobles = yes
+	saerlanner_nobles = yes
+	dunir_nobles = yes
+	marshmen_nobles = yes
+	house_of_eorl = yes
+	rohirrim_nobles = yes
+	anduinmen_nobles = yes
+	isenmen_nobles = yes
+	uruk_hai_nobles = yes
+	mordor_orc_nobles = yes
+	mordor_uruk_nobles = yes
+	guldurrim_nobles = yes
+	white_mountain_goblin_nobles = yes
+	morian_nobles = yes
+	goblin_towner_nobles = yes
+	gundabad_orc_nobles = yes
+	snow_orc_nobles = yes
+	gram_goblin_nobles = yes
+	blue_mountain_goblin_nobles = yes
+	angmarrim_nobles = yes
+	hillmen_nobles = yes
+	lossoth_nobles = yes
+	breelander_nobles = yes
+	siredain_nobles = yes
+	stoor_nobles = yes
+	harfoot_nobles = yes
+	fallohide_nobles = yes
+	cave_trolls_nobles = yes
+	hill_trolls_nobles = yes
+	mountain_trolls_nobles = yes
+	snow_trolls_nobles = yes
+	stone_trolls_nobles = yes
+	olog_hai_nobles = yes
+	flightlords_of_the_mountains = yes
+	great_eagle_nobles = yes
+	lords_of_ravens = yes
+	raven_nobles = yes
+	great_brood_mothers = yes
+	great_spider_nobles = yes
+	wight_nobles = yes
+	kings_of_the_dead = yes
+	oathbreaker_nobles = yes
+	lords_of_isengard = yes
+	lords_of_rhosgobel = yes
+	lords_of_mordor = yes
+	saurons_nine = yes
 }
 
-# King (generic monarchy)
 monarchy_2 = {
-	high_nobility = yes
-	low_nobility = yes
-	burgher = yes
-	loremaster = yes
-	
 	election = no
-	appoint_ruling_party = yes
+	appoint_ruling_party = no
 	flagType = monarchy
+	
+	line_of_isildur = yes
+	dunedain_nobles = yes
+	house_of_stewards = yes
+	gondorian_nobles = yes
+	house_of_dol_amroth = yes
+	amrothian_nobles = yes
+	arthedani_nobles = yes
+	cardolandrim_nobles = yes
+	haeranedain_nobles = yes
+	house_half_elven = yes
+	noldor_nobles = yes
+	lords_of_mithlond = yes
+	falathrim_nobles = yes
+	house_of_oropher = yes
+	silvan_nobles = yes
+	house_of_finarfin = yes
+	galadhrim_nobles = yes
+	avari_nobles = yes
+	umbarrim_nobles = yes
+	harnendan_nobles = yes
+	haruzani_nobles = yes
+	pezarsani_nobles = yes
+	lurmsakuni_nobles = yes
+	arysian_nobles = yes
+	kingsmen_nobles = yes
+	black_numenorean_nobles = yes
+	variag_nobles = yes
+	nurniag_nobles = yes
+	chelkiag_nobles = yes
+	sagath_nobles = yes
+	sekel_nobles = yes
+	urgath_nobles = yes
+	kuga_nobles = yes
+	logath_nobles = yes
+	house_of_bard = yes
+	barding_nobles = yes
+	grammas_nobles = yes
+	rivermen_nobles = yes
+	adhalling_nobles = yes
+	house_of_koldana = yes
+	dorwinrim_nobles = yes
+	aivathiuda_nobles = yes
+	anthar_nobles = yes
+	gadraught_nobles = yes
+	line_of_durin = yes
+	longbeard_nobles = yes
+	firebeard_nobles = yes
+	broadbeam_nobles = yes
+	ironfist_nobles = yes
+	dourhand_nobles = yes
+	shornbeard_nobles = yes
+	woodsmen_nobles = yes
+	beorning_nobles = yes
+	house_of_beorn = yes
+	beiabarnae_nobles = yes
+	melburgi_nobles = yes
+	herimundi_nobles = yes
+	lords_of_fangorn = yes
+	ent_nobles = yes
+	huorn_nobles = yes
+	black_huorn_nobles = yes
+	druedain_nobles = yes
+	dunnish_nobles = yes
+	hollin_folk_nobles = yes
+	enedwaithrim_nobles = yes
+	saerlanner_nobles = yes
+	dunir_nobles = yes
+	marshmen_nobles = yes
+	house_of_eorl = yes
+	rohirrim_nobles = yes
+	anduinmen_nobles = yes
+	isenmen_nobles = yes
+	uruk_hai_nobles = yes
+	mordor_orc_nobles = yes
+	mordor_uruk_nobles = yes
+	guldurrim_nobles = yes
+	white_mountain_goblin_nobles = yes
+	morian_nobles = yes
+	goblin_towner_nobles = yes
+	gundabad_orc_nobles = yes
+	snow_orc_nobles = yes
+	gram_goblin_nobles = yes
+	blue_mountain_goblin_nobles = yes
+	angmarrim_nobles = yes
+	hillmen_nobles = yes
+	lossoth_nobles = yes
+	breelander_nobles = yes
+	siredain_nobles = yes
+	stoor_nobles = yes
+	harfoot_nobles = yes
+	fallohide_nobles = yes
+	cave_trolls_nobles = yes
+	hill_trolls_nobles = yes
+	mountain_trolls_nobles = yes
+	snow_trolls_nobles = yes
+	stone_trolls_nobles = yes
+	olog_hai_nobles = yes
+	flightlords_of_the_mountains = yes
+	great_eagle_nobles = yes
+	lords_of_ravens = yes
+	raven_nobles = yes
+	great_brood_mothers = yes
+	great_spider_nobles = yes
+	wight_nobles = yes
+	kings_of_the_dead = yes
+	oathbreaker_nobles = yes
+	lords_of_isengard = yes
+	lords_of_rhosgobel = yes
+	lords_of_mordor = yes
+	saurons_nine = yes
 }
 
-# Prince (generic monarchy)
-principality = {
-	high_nobility = yes
-	low_nobility = yes
-	burgher = yes
-	loremaster = yes
-	
+tribal = {
 	election = no
-	appoint_ruling_party = yes
+	appoint_ruling_party = no
 	flagType = monarchy
-}
-
-# Lord (generic monarchy)
-lord_monarchy = {
-	high_nobility = yes
-	low_nobility = yes
-	burgher = yes
-	loremaster = yes
 	
-	election = no
-	appoint_ruling_party = yes
-	flagType = monarchy
-}
-
-# Steward (Special monarchy for Gondor)
-stewardship = {
-	high_nobility = yes
-	low_nobility = yes
-	burgher = yes
-	loremaster = yes
-	
-	election = no
-	appoint_ruling_party = yes
-	flagType = monarchy
-}
-
-# Lord (Gondor specific puppet)
-fiefdom = {
-	high_nobility = yes
-	low_nobility = yes
-	burgher = yes
-	loremaster = yes
-	
-	election = no
-	appoint_ruling_party = yes
-	flagType = monarchy
-}
-
-# Lord and Lady (Special monarchy for Lothlorien)
-galadhrim_monarchy = {
-	high_nobility = yes
-	low_nobility = yes
-	burgher = yes
-	loremaster = yes
-	
-	election = no
-	appoint_ruling_party = yes
-	flagType = monarchy
+	line_of_isildur = yes
+	dunedain_nobles = yes
+	house_of_stewards = yes
+	gondorian_nobles = yes
+	house_of_dol_amroth = yes
+	amrothian_nobles = yes
+	arthedani_nobles = yes
+	cardolandrim_nobles = yes
+	haeranedain_nobles = yes
+	house_half_elven = yes
+	noldor_nobles = yes
+	lords_of_mithlond = yes
+	falathrim_nobles = yes
+	house_of_oropher = yes
+	silvan_nobles = yes
+	house_of_finarfin = yes
+	galadhrim_nobles = yes
+	avari_nobles = yes
+	umbarrim_nobles = yes
+	harnendan_nobles = yes
+	haruzani_nobles = yes
+	pezarsani_nobles = yes
+	lurmsakuni_nobles = yes
+	arysian_nobles = yes
+	kingsmen_nobles = yes
+	black_numenorean_nobles = yes
+	variag_nobles = yes
+	nurniag_nobles = yes
+	chelkiag_nobles = yes
+	sagath_nobles = yes
+	sekel_nobles = yes
+	urgath_nobles = yes
+	kuga_nobles = yes
+	logath_nobles = yes
+	house_of_bard = yes
+	barding_nobles = yes
+	grammas_nobles = yes
+	rivermen_nobles = yes
+	adhalling_nobles = yes
+	house_of_koldana = yes
+	dorwinrim_nobles = yes
+	aivathiuda_nobles = yes
+	anthar_nobles = yes
+	gadraught_nobles = yes
+	line_of_durin = yes
+	longbeard_nobles = yes
+	firebeard_nobles = yes
+	broadbeam_nobles = yes
+	ironfist_nobles = yes
+	dourhand_nobles = yes
+	shornbeard_nobles = yes
+	woodsmen_nobles = yes
+	beorning_nobles = yes
+	house_of_beorn = yes
+	beiabarnae_nobles = yes
+	melburgi_nobles = yes
+	herimundi_nobles = yes
+	lords_of_fangorn = yes
+	ent_nobles = yes
+	huorn_nobles = yes
+	black_huorn_nobles = yes
+	druedain_nobles = yes
+	dunnish_nobles = yes
+	hollin_folk_nobles = yes
+	enedwaithrim_nobles = yes
+	saerlanner_nobles = yes
+	dunir_nobles = yes
+	marshmen_nobles = yes
+	house_of_eorl = yes
+	rohirrim_nobles = yes
+	anduinmen_nobles = yes
+	isenmen_nobles = yes
+	uruk_hai_nobles = yes
+	mordor_orc_nobles = yes
+	mordor_uruk_nobles = yes
+	guldurrim_nobles = yes
+	white_mountain_goblin_nobles = yes
+	morian_nobles = yes
+	goblin_towner_nobles = yes
+	gundabad_orc_nobles = yes
+	snow_orc_nobles = yes
+	gram_goblin_nobles = yes
+	blue_mountain_goblin_nobles = yes
+	angmarrim_nobles = yes
+	hillmen_nobles = yes
+	lossoth_nobles = yes
+	breelander_nobles = yes
+	siredain_nobles = yes
+	stoor_nobles = yes
+	harfoot_nobles = yes
+	fallohide_nobles = yes
+	cave_trolls_nobles = yes
+	hill_trolls_nobles = yes
+	mountain_trolls_nobles = yes
+	snow_trolls_nobles = yes
+	stone_trolls_nobles = yes
+	olog_hai_nobles = yes
+	flightlords_of_the_mountains = yes
+	great_eagle_nobles = yes
+	lords_of_ravens = yes
+	raven_nobles = yes
+	great_brood_mothers = yes
+	great_spider_nobles = yes
+	wight_nobles = yes
+	kings_of_the_dead = yes
+	oathbreaker_nobles = yes
+	lords_of_isengard = yes
+	lords_of_rhosgobel = yes
+	lords_of_mordor = yes
+	saurons_nine = yes
 }
 
 #########################
 ##### DICTATORSHIPS #####
 #########################
-# Lord (generic evil realm)
-dark_realm = {
-	high_nobility = yes
-	low_nobility = yes
-	burgher = yes
-	loremaster = yes
-	
-	election = no
-	appoint_ruling_party = yes
-}
-
-# Dark Lord (Special government for realms lead by Sauron)
 sauron_dictatorship = {
-	servants = yes
-	
 	election = no
-	appoint_ruling_party = yes
+	appoint_ruling_party = no
+	
+	lords_of_mordor = yes
 }
 
-# Dark Lord (Generic puppets of Sauron)
-sauron_puppet = {
-	servants = yes
-	
-	election = no
-	appoint_ruling_party = yes
-}
-
-# Lord (Special government for realms lead by a Nazgul)
 nazgul_dictatorship = {
-	servants = yes
-	
 	election = no
-	appoint_ruling_party = yes
+	appoint_ruling_party = no
+	
+	saurons_nine = yes
 }
 
-# Lord (Special government for realms lead by a Wizard)
 istari_kingdom = {
-	servants = yes
-	
 	election = no
-	appoint_ruling_party = yes
+	appoint_ruling_party = no
+	
+	lords_of_isengard = yes
+	lords_of_rhosgobel = yes
 }
 
-##################
-##### TRIBAL #####
-##################
-# Chieftain
-goblin_tribe = {
-	high_nobility = yes
-	low_nobility = yes
-	burgher = yes
-	loremaster = yes
-	
+# Specifically puppets of Sauron
+dominion_1 = {
 	election = no
-	appoint_ruling_party = yes
-}
-
-# Chief
-man_tribe = {
-	high_nobility = yes
-	low_nobility = yes
-	burgher = yes
-	loremaster = yes
-	
-	election = no
-	appoint_ruling_party = yes
-}
-
-# Thegen
-northmen_tribe = {
-	high_nobility = yes
-	low_nobility = yes
-	burgher = yes
-	loremaster = yes
-	
-	election = no
-	appoint_ruling_party = yes
-}
-
-################
-##### FAKE #####
-################
-
-# These two government types should never show up in game -- they are used purely as placeholders to be able to use the "cosmetic" flag spots for tags
-cosmetic_1_govt = {
-	servants = yes
-	high_nobility = yes
-	low_nobility = yes
-	burgher = yes
-	loremaster = yes
-	
-	election = no
-	appoint_ruling_party = yes
+	appoint_ruling_party = no
 	flagType = cosmetic_1
+	
+	servants_good = yes
+	servants_neutral = yes
+	servants_evil = yes
 }
 
-cosmetic_2_govt = {
-	servants = yes
-	high_nobility = yes
-	low_nobility = yes
-	burgher = yes
-	loremaster = yes
-	
+dominion_2 = {
 	election = no
-	appoint_ruling_party = yes
+	appoint_ruling_party = no
 	flagType = cosmetic_2
+	
+	servants_good = yes
+	servants_neutral = yes
+	servants_evil = yes
 }

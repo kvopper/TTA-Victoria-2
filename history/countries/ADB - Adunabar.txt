@@ -11,19 +11,17 @@ culture = kingsmen
 culture = umbarrim
 culture = harnendan
 government = monarchy
-nationalvalue = generic_leader
+nationalvalue = no_heirloom
 civilized = yes
 
 prestige = 1
 
-ruling_party = generic_high_nobility
+ruling_party = generic_dunedain_nobles
 
 upper_house = {
-	high_nobility = 100
+	dunedain_nobles = 100
 }
 
 slavery = yes_slavery
-upper_house_composition = appointed
-ruling_party = generic_high_nobility
 
 schools = traditional_academic

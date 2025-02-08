@@ -4,10 +4,10 @@
 # Revolt Events {
 # 3000 - 3499 }
 
-# Democratic Rebel Victory
+# Republican Rebel Victory
 country_event = {
 	id = 3000
-	title = "Democratic Rebel Victory"
+	title = "Republican Rebel Victory"
 	desc = "EVTDESC3000"
 	picture = administration
 	
@@ -19,11 +19,7 @@ country_event = {
 		random_owned = {
 			limit = {
 				owner = {
-					OR = {
-						government = democracy
-						government = hobbit_realm
-						government = northmen_democracy
-					}
+					government = republic
 					vote_franschise = universal_weighted_voting
 				}
 			}
@@ -32,11 +28,7 @@ country_event = {
 		random_owned = {
 			limit = {
 				owner = {
-					OR = {
-						government = democracy
-						government = hobbit_realm
-						government = northmen_democracy
-					}
+					government = republic
 					vote_franschise = wealth_voting
 				}
 			}
@@ -46,11 +38,7 @@ country_event = {
 		random_owned = {
 			limit = {
 				owner = {
-					OR = {
-						government = democracy
-						government = hobbit_realm
-						government = northmen_democracy
-					}
+					government = republic
 					vote_franschise = wealth_weighted_voting
 				}
 			}
@@ -60,47 +48,11 @@ country_event = {
 		random_owned = {
 			limit = {
 				owner = {
-					OR = {
-						government = democracy
-						government = hobbit_realm
-						government = northmen_democracy
-					}
+					government = republic
 					vote_franschise = landed_voting
 				}
 			}
 			owner = { political_reform = wealth_weighted_voting }
-		}
-		random_owned = {
-			limit = {
-				owner = {
-					is_culture_group = hobbits
-					NOT = { government = hobbit_realm }
-				}
-			}
-			owner = {
-				government = hobbit_realm
-				political_reform = landed_voting
-				set_country_flag = democratic
-				election = yes
-			}
-		}
-		
-		random_owned = {
-			limit = {
-				owner = {
-					OR = {
-						is_culture_group = northmen
-						is_culture_group = gramavuld_northmen
-					}
-					NOT = { government = northmen_democracy }
-				}
-			}
-			owner = {
-				government = northmen_democracy
-				political_reform = landed_voting
-				set_country_flag = democracy
-				election = yes
-			}
 		}
 		
 		random_owned = {
@@ -109,204 +61,498 @@ country_event = {
 					NOT = { is_culture_group = hobbits }
 					NOT = { is_culture_group = northmen }
 					NOT = { is_culture_group = gramavuld_northmen }
-					NOT = { government = democracy }
+					NOT = { government = republic }
 				}
 			}
 			owner = {
-				government = democracy
+				government = republic
 				political_reform = landed_voting
-				set_country_flag = democratic
 				election = yes
 			}
 		}
 	}
 }
 
-# Noble Rebel Win
+# Pretender Rebel Victory
 country_event = {
-	id = 3002
-	title = "Noble Rebel Victory"
-	desc = "EVTDESC3002"
+	id = 3001
+	title = "Pretender Rebel Victory"
+	desc = "EVTDESC3001"
 	picture = administration
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = "Damn"
+		name = "To the new regime!"
 		
-		set_country_flag = na_large
-		clr_country_flag = na_medium
-		clr_country_flag = na_small
+		random_owned = {
+			limit = { owner = { primary_culture = dunedain } }
+			owner = { ruling_party_ideology = dunedain_nobles }
+		}
 		
-		political_reform = large_noble_autonomy
-		political_reform = large_levy_contribution
-		political_reform = small_tax_contribution
-		political_reform = allowed_knighting_rights
+		random_owned = {
+			limit = { owner = { primary_culture = gondorian } }
+			owner = { ruling_party_ideology = gondorian_nobles }
+		}
+		
+		random_owned = {
+			limit = { owner = { primary_culture = amrothian } }
+			owner = { ruling_party_ideology = amrothian_nobles }
+		}
+		
+		random_owned = {
+			limit = { owner = { primary_culture = arthedani } }
+			owner = { ruling_party_ideology = arthedani_nobles }
+		}
+		
+		random_owned = {
+			limit = { owner = { primary_culture = cardolandrim } }
+			owner = { ruling_party_ideology = cardolandrim_nobles }
+		}
+		
+		random_owned = {
+			limit = { owner = { primary_culture = haeranedain } }
+			owner = { ruling_party_ideology = haeranedain_nobles }
+		}
+		
+		random_owned = {
+			limit = { owner = { primary_culture = noldor } }
+			owner = { ruling_party_ideology = noldor_nobles }
+		}
+		
+		random_owned = {
+			limit = { owner = { primary_culture = falathrim } }
+			owner = { ruling_party_ideology = falathrim_nobles }
+		}
+		
+		random_owned = {
+			limit = { owner = { primary_culture = silvan } }
+			owner = { ruling_party_ideology = silvan_nobles }
+		}
+		
+		random_owned = {
+			limit = { owner = { primary_culture = galadhrim } }
+			owner = { ruling_party_ideology = galadhrim_nobles }
+		}
+		
+		random_owned = {
+			limit = { owner = { primary_culture = avari } }
+			owner = { ruling_party_ideology = avari_nobles }
+		}
+		
+		random_owned = {
+			limit = { owner = { primary_culture = umbarrim } }
+			owner = { ruling_party_ideology = umbarrim_nobles }
+		}
+		
+		random_owned = {
+			limit = { owner = { primary_culture = harnendan } }
+			owner = { ruling_party_ideology = harnendan_nobles }
+		}
+		
+		random_owned = {
+			limit = { owner = { primary_culture = haruzani } }
+			owner = { ruling_party_ideology = haruzani_nobles }
+		}
+		
+		random_owned = {
+			limit = { owner = { primary_culture = pezarsani } }
+			owner = { ruling_party_ideology = pezarsani_nobles }
+		}
+		
+		random_owned = {
+			limit = { owner = { primary_culture = lurmsakuni } }
+			owner = { ruling_party_ideology = lurmsakuni_nobles }
+		}
+		
+		random_owned = {
+			limit = { owner = { primary_culture = arysian } }
+			owner = { ruling_party_ideology = arysian_nobles }
+		}
+		
+		random_owned = {
+			limit = { owner = { primary_culture = union } }
+			owner = { ruling_party_ideology = union_nobles }
+		}
+		
+		random_owned = {
+			limit = { owner = { primary_culture = kingsmen } }
+			owner = { ruling_party_ideology = kingsmen_nobles }
+		}
+		
+		random_owned = {
+			limit = { owner = { primary_culture = black_numenorean } }
+			owner = { ruling_party_ideology = black_numenorean_nobles }
+		}
+		
+		random_owned = {
+			limit = { owner = { primary_culture = variag } }
+			owner = { ruling_party_ideology = variag_nobles }
+		}
+		
+		random_owned = {
+			limit = { owner = { primary_culture = nurniag } }
+			owner = { ruling_party_ideology = nurniag_nobles }
+		}
+		
+		random_owned = {
+			limit = { owner = { primary_culture = chelkiag } }
+			owner = { ruling_party_ideology = chelkiag_nobles }
+		}
+		
+		random_owned = {
+			limit = { owner = { primary_culture = sagath } }
+			owner = { ruling_party_ideology = sagath_nobles }
+		}
+		
+		random_owned = {
+			limit = { owner = { primary_culture = sekel } }
+			owner = { ruling_party_ideology = sekel_nobles }
+		}
+		
+		random_owned = {
+			limit = { owner = { primary_culture = urgath } }
+			owner = { ruling_party_ideology = urgath_nobles }
+		}
+		
+		random_owned = {
+			limit = { owner = { primary_culture = kuga } }
+			owner = { ruling_party_ideology = kuga_nobles }
+		}
+		
+		random_owned = {
+			limit = { owner = { primary_culture = logath } }
+			owner = { ruling_party_ideology = logath_nobles }
+		}
+		
+		random_owned = {
+			limit = { owner = { primary_culture = union } }
+			owner = { ruling_party_ideology = union_nobles }
+		}
+		
+		random_owned = {
+			limit = { owner = { primary_culture = barding } }
+			owner = { ruling_party_ideology = barding_nobles }
+		}
+		
+		random_owned = {
+			limit = { owner = { primary_culture = grammas } }
+			owner = { ruling_party_ideology = grammas_nobles }
+		}
+		
+		random_owned = {
+			limit = { owner = { primary_culture = rivermen } }
+			owner = { ruling_party_ideology = rivermen_nobles }
+		}
+		
+		random_owned = {
+			limit = { owner = { primary_culture = adhalling } }
+			owner = { ruling_party_ideology = adhalling_nobles }
+		}
+		
+		random_owned = {
+			limit = { owner = { primary_culture = union } }
+			owner = { ruling_party_ideology = union_nobles }
+		}
+		
+		random_owned = {
+			limit = { owner = { primary_culture = dorwinrim } }
+			owner = { ruling_party_ideology = dorwinrim_nobles }
+		}
+		
+		random_owned = {
+			limit = { owner = { primary_culture = aivathiuda } }
+			owner = { ruling_party_ideology = aivathiuda_nobles }
+		}
+		
+		random_owned = {
+			limit = { owner = { primary_culture = anthar } }
+			owner = { ruling_party_ideology = anthar_nobles }
+		}
+		
+		random_owned = {
+			limit = { owner = { primary_culture = gadraught } }
+			owner = { ruling_party_ideology = gadraught_nobles }
+		}
+		
+		random_owned = {
+			limit = { owner = { primary_culture = union } }
+			owner = { ruling_party_ideology = union_nobles }
+		}
+		
+		random_owned = {
+			limit = { owner = { primary_culture = longbeard } }
+			owner = { ruling_party_ideology = longbeard_nobles }
+		}
+		
+		random_owned = {
+			limit = { owner = { primary_culture = firebeard } }
+			owner = { ruling_party_ideology = firebeard_nobles }
+		}
+		
+		random_owned = {
+			limit = { owner = { primary_culture = broadbeam } }
+			owner = { ruling_party_ideology = broadbeam_nobles }
+		}
+		
+		random_owned = {
+			limit = { owner = { primary_culture = ironfist } }
+			owner = { ruling_party_ideology = ironfist_nobles }
+		}
+		
+		random_owned = {
+			limit = { owner = { primary_culture = dourhand } }
+			owner = { ruling_party_ideology = dourhand_nobles }
+		}
+		
+		random_owned = {
+			limit = { owner = { primary_culture = shornbeard } }
+			owner = { ruling_party_ideology = shornbeard_nobles }
+		}
+		
+		random_owned = {
+			limit = { owner = { primary_culture = woodsmen } }
+			owner = { ruling_party_ideology = woodsmen_nobles }
+		}
+		
+		random_owned = {
+			limit = { owner = { primary_culture = beorning } }
+			owner = { ruling_party_ideology = beorning_nobles }
+		}
+		
+		random_owned = {
+			limit = { owner = { primary_culture = beiabarnae } }
+			owner = { ruling_party_ideology = beiabarnae_nobles }
+		}
+		
+		random_owned = {
+			limit = { owner = { primary_culture = melburgi } }
+			owner = { ruling_party_ideology = melburgi_nobles }
+		}
+		
+		random_owned = {
+			limit = { owner = { primary_culture = herimundi } }
+			owner = { ruling_party_ideology = herimundi_nobles }
+		}
+		
+		random_owned = {
+			limit = { owner = { primary_culture = ent } }
+			owner = { ruling_party_ideology = ent_nobles }
+		}
+		
+		random_owned = {
+			limit = { owner = { primary_culture = huorn } }
+			owner = { ruling_party_ideology = huorn_nobles }
+		}
+		
+		random_owned = {
+			limit = { owner = { primary_culture = black_huorn } }
+			owner = { ruling_party_ideology = black_huorn_nobles }
+		}
+		
+		random_owned = {
+			limit = { owner = { primary_culture = druedain } }
+			owner = { ruling_party_ideology = druedain_nobles }
+		}
+		
+		random_owned = {
+			limit = { owner = { primary_culture = dunnish } }
+			owner = { ruling_party_ideology = dunnish_nobles }
+		}
+		
+		random_owned = {
+			limit = { owner = { primary_culture = hollin_folk } }
+			owner = { ruling_party_ideology = hollin_folk_nobles }
+		}
+		
+		random_owned = {
+			limit = { owner = { primary_culture = enedwaithrim } }
+			owner = { ruling_party_ideology = enedwaithrim_nobles }
+		}
+		
+		random_owned = {
+			limit = { owner = { primary_culture = saerlanner } }
+			owner = { ruling_party_ideology = saerlanner_nobles }
+		}
+		
+		random_owned = {
+			limit = { owner = { primary_culture = dunir } }
+			owner = { ruling_party_ideology = dunir_nobles }
+		}
+		
+		random_owned = {
+			limit = { owner = { primary_culture = marshmen } }
+			owner = { ruling_party_ideology = marshmen_nobles }
+		}
+		
+		random_owned = {
+			limit = { owner = { primary_culture = rohirrim } }
+			owner = { ruling_party_ideology = rohirrim_nobles }
+		}
+		
+		random_owned = {
+			limit = { owner = { primary_culture = anduinmen } }
+			owner = { ruling_party_ideology = anduinmen_nobles }
+		}
+		
+		random_owned = {
+			limit = { owner = { primary_culture = isenmen } }
+			owner = { ruling_party_ideology = isenmen_nobles }
+		}
+		
+		random_owned = {
+			limit = { owner = { primary_culture = uruk_hai } }
+			owner = { ruling_party_ideology = uruk_hai_nobles }
+		}
+		
+		random_owned = {
+			limit = { owner = { primary_culture = mordor_orc } }
+			owner = { ruling_party_ideology = mordor_orc_nobles }
+		}
+		
+		random_owned = {
+			limit = { owner = { primary_culture = mordor_uruk } }
+			owner = { ruling_party_ideology = mordor_uruk_nobles }
+		}
+		
+		random_owned = {
+			limit = { owner = { primary_culture = guldurrim } }
+			owner = { ruling_party_ideology = guldurrim_nobles }
+		}
+		
+		random_owned = {
+			limit = { owner = { primary_culture = white_mountain_goblin } }
+			owner = { ruling_party_ideology = white_mountain_goblin_nobles }
+		}
+		
+		random_owned = {
+			limit = { owner = { primary_culture = morian } }
+			owner = { ruling_party_ideology = morian_nobles }
+		}
+		
+		random_owned = {
+			limit = { owner = { primary_culture = goblin_towner } }
+			owner = { ruling_party_ideology = goblin_towner_nobles }
+		}
+		
+		random_owned = {
+			limit = { owner = { primary_culture = gundabad_orc } }
+			owner = { ruling_party_ideology = gundabad_orc_nobles }
+		}
+		
+		random_owned = {
+			limit = { owner = { primary_culture = snow_orc } }
+			owner = { ruling_party_ideology = snow_orc_nobles }
+		}
+		
+		random_owned = {
+			limit = { owner = { primary_culture = gram_goblin } }
+			owner = { ruling_party_ideology = gram_goblin_nobles }
+		}
+		
+		random_owned = {
+			limit = { owner = { primary_culture = blue_mountain_goblin } }
+			owner = { ruling_party_ideology = blue_mountain_goblin_nobles }
+		}
+		
+		random_owned = {
+			limit = { owner = { primary_culture = angmarrim } }
+			owner = { ruling_party_ideology = angmarrim_nobles }
+		}
+		
+		random_owned = {
+			limit = { owner = { primary_culture = hillmen } }
+			owner = { ruling_party_ideology = hillmen_nobles }
+		}
+		
+		random_owned = {
+			limit = { owner = { primary_culture = lossoth } }
+			owner = { ruling_party_ideology = lossoth_nobles }
+		}
+		
+		random_owned = {
+			limit = { owner = { primary_culture = breelander } }
+			owner = { ruling_party_ideology = breelander_nobles }
+		}
+		
+		random_owned = {
+			limit = { owner = { primary_culture = siredain } }
+			owner = { ruling_party_ideology = siredain_nobles }
+		}
+		
+		random_owned = {
+			limit = { owner = { primary_culture = stoor } }
+			owner = { ruling_party_ideology = stoor_nobles }
+		}
+		
+		random_owned = {
+			limit = { owner = { primary_culture = harfoot } }
+			owner = { ruling_party_ideology = harfoot_nobles }
+		}
+		
+		random_owned = {
+			limit = { owner = { primary_culture = fallohide } }
+			owner = { ruling_party_ideology = fallohide_nobles }
+		}
+		
+		random_owned = {
+			limit = { owner = { primary_culture = cave_trolls } }
+			owner = { ruling_party_ideology = cave_trolls_nobles }
+		}
+		
+		random_owned = {
+			limit = { owner = { primary_culture = hill_trolls } }
+			owner = { ruling_party_ideology = hill_trolls_nobles }
+		}
+		
+		random_owned = {
+			limit = { owner = { primary_culture = mountain_trolls } }
+			owner = { ruling_party_ideology = mountain_trolls_nobles }
+		}
+		
+		random_owned = {
+			limit = { owner = { primary_culture = snow_trolls } }
+			owner = { ruling_party_ideology = snow_trolls_nobles }
+		}
+		
+		random_owned = {
+			limit = { owner = { primary_culture = stone_trolls } }
+			owner = { ruling_party_ideology = stone_trolls_nobles }
+		}
+		
+		random_owned = {
+			limit = { owner = { primary_culture = olog_hai } }
+			owner = { ruling_party_ideology = olog_hai_nobles }
+		}
+		
+		random_owned = {
+			limit = { owner = { primary_culture = great_eagle } }
+			owner = { ruling_party_ideology = great_eagle_nobles }
+		}
+		
+		random_owned = {
+			limit = { owner = { primary_culture = raven } }
+			owner = { ruling_party_ideology = raven_nobles }
+		}
+		
+		random_owned = {
+			limit = { owner = { primary_culture = great_spider } }
+			owner = { ruling_party_ideology = great_spider_nobles }
+		}
+		
+		random_owned = {
+			limit = { owner = { primary_culture = wight } }
+			owner = { ruling_party_ideology = wight_nobles }
+		}
+		
+		random_owned = {
+			limit = { owner = { primary_culture = oathbreaker } }
+			owner = { ruling_party_ideology = oathbreaker_nobles }
+		}
 	}
 }
 
-# Good Rebel win
-country_event = {
-	id = 3003
-	title = "Good Rebel Victory"
-	desc = "EVTDESC3003"
-	picture = administration
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = "Damn"
-		
-		political_reform = no_slavery
-		clr_country_flag = has_all_slavery
-		
-		random_owned = {
-			limit = {
-				owner = { accepted_culture = neutral_culture }
-			}
-			owner = { remove_accepted_culture = neutral_culture }
-		}
-		random_owned = {
-			limit = {
-				owner = { accepted_culture = evil_culture }
-			}
-			owner = { remove_accepted_culture = evil_culture }
-		}
-		
-		political_reform = good_alignment
-		add_accepted_culture = good_culture
-		
-		any_pop = { dominant_issue = { value = good_alignment_fake factor = 0.2 } }
-		
-		clr_country_flag = attempting_to_good
-		clr_country_flag = attempting_to_neutral
-		clr_country_flag = attempting_to_evil
-		
-		random_owned = {
-			limit = {
-				owner = {
-					OR = {
-						government = dark_realm
-						government = sauron_dictatorship
-						government = nazgul_dictatorship
-					}
-				}
-			}
-			owner = { government = monarchy }
-		}
-	}
-}
-
-# Evil Rebel win
-country_event = {
-	id = 3004
-	title = "Evil Rebel Victory"
-	desc = "EVTDESC3004"
-	picture = administration
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = "Damn"
-		
-		political_reform = yes_slavery
-		set_country_flag = has_all_slavery
-		
-		any_state = {
-			is_slave = yes
-		}
-		
-		random_owned = {
-			limit = {
-				owner = { accepted_culture = good_culture }
-			}
-			owner = { remove_accepted_culture = good_culture }
-		}
-		random_owned = {
-			limit = {
-				owner = { accepted_culture = neutral_culture }
-			}
-			owner = { remove_accepted_culture = neutral_culture }
-		}
-		
-		political_reform = evil_alignment
-		add_accepted_culture = evil_culture
-		
-		any_pop = { dominant_issue = { value = evil_alignment_fake factor = 0.2 } }
-		
-		clr_country_flag = attempting_to_good
-		clr_country_flag = attempting_to_neutral
-		clr_country_flag = attempting_to_evil
-		
-		random_owned = {
-			limit = {
-				NOT = {
-					owner = {
-						OR = {
-							government = dark_realm
-							government = sauron_dictatorship
-							government = nazgul_dictatorship
-						}
-					}
-				}
-			}
-			owner = {
-				government = dark_realm
-				political_reform = none_voting
-			}
-		}
-	}
-}
-
-# Neutral Rebel win
-country_event = {
-	id = 3005
-	title = "Neutral Rebel Victory"
-	desc = "EVTDESC3005"
-	picture = administration
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = "Damn"
-		
-		random_owned = {
-			limit = {
-				owner = { accepted_culture = good_culture }
-			}
-			owner = { remove_accepted_culture = good_culture }
-		}
-		random_owned = {
-			limit = {
-				owner = { accepted_culture = evil_culture }
-			}
-			owner = { remove_accepted_culture = evil_culture }
-		}
-		
-		political_reform = neutral_alignment
-		add_accepted_culture = neutral_culture
-		
-		any_pop = { dominant_issue = { value = neutral_alignment_fake factor = 0.2 } }
-		
-		clr_country_flag = attempting_to_good
-		clr_country_flag = attempting_to_neutral
-		clr_country_flag = attempting_to_evil
-		
-		random_owned = {
-			limit = {
-				owner = {
-					OR = {
-						government = dark_realm
-						government = sauron_dictatorship
-						government = nazgul_dictatorship
-					}
-				}
-			}
-			owner = { government = monarchy }
-		}
-	}
-}
-
+# Patriot Rebel Victory, 3006 - 3008 {
 # $COUNTRY_ADJ$ Patriots
 country_event = {
 	id = 3006
@@ -660,3 +906,4 @@ country_event = {
 		}
 	}
 }
+# }

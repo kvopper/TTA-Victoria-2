@@ -24,7 +24,6 @@ political_decisions = {
 	DAL_start_decision = {
 		potential = {
 			always = no
-			has_country_flag = DAL_content
 		}
 		
 		allow = {}
@@ -114,6 +113,10 @@ political_decisions = {
 				all_core = { add_province_modifier = { name = AMO_easterling_war_camp duration = 3650 } }
 				add_country_modifier = { name = AMO_upcoming_conquest duration = -1 }
 			}
+			
+			# Set allowed leaders
+			set_country_flag = ideologies_house_of_bard_active
+			add_country_modifier = { name = bard_i_modifier duration = -1 }
 		}
 	}
 	
@@ -671,9 +674,8 @@ political_decisions = {
 		picture = "Barding Realm/DAL_marsh_wights_rise"
 		potential = {
 			OR = {
-				nationalvalue = sauron
-				nationalvalue = witch_king_of_angmar
-				nationalvalue = khamul
+				ruling_party = MOR_sauron
+				ruling_party_ideology = saurons_nine
 			}
 			LMW = {
 				any_core = {
@@ -1580,8 +1582,6 @@ political_decisions = {
 			}
 		}
 	}
-	
-	# TODO: Flavor to add cores to the newly conquered lands and add accepted cultures, Rhovanion formation decision update (remove vidugavia_successorship)
 }
 
 # Province Flavor
@@ -1688,7 +1688,7 @@ political_decisions = {
 		potential = {
 			has_country_flag = DAL_content
 			NOT = { has_global_flag = DAL_appointed_lifstan }
-			nationalvalue = bard_i
+			ruling_party = DAL_bard_i
 		}
 		
 		allow = {
@@ -1710,7 +1710,7 @@ political_decisions = {
 		potential = {
 			has_country_flag = DAL_content
 			NOT = { has_global_flag = DAL_appointed_erland }
-			nationalvalue = bard_i
+			ruling_party = DAL_bard_i
 		}
 		
 		allow = {
@@ -1737,7 +1737,7 @@ political_decisions = {
 		potential = {
 			has_country_flag = DAL_content
 			NOT = { has_global_flag = DAL_appointed_tilda }
-			nationalvalue = bard_i
+			ruling_party = DAL_bard_i
 			exists = ERE
 		}
 		
@@ -1778,7 +1778,7 @@ political_decisions = {
 		picture = "Barding Realm/DAL_reforms_bard_i"
 		potential = {
 			has_country_flag = DAL_content
-			nationalvalue = bard_i
+			ruling_party = DAL_bard_i
 			NOT = { has_global_flag = DAL_reforms_bard_i }
 		}
 		
@@ -1884,7 +1884,7 @@ political_decisions = {
 			has_country_flag = DAL_content
 			has_global_flag = DAL_girion_bainson_born
 			NOT = { has_global_flag = DAL_girion_bainson_sent_to_austriborg }
-			nationalvalue = bain_i
+			ruling_party = DAL_bain_i
 		}
 		
 		allow = {
@@ -1909,7 +1909,7 @@ political_decisions = {
 		picture = "Barding Realm/DAL_dwarves"
 		potential = {
 			has_country_flag = DAL_content
-			nationalvalue = bard_ii
+			ruling_party = DAL_bard_ii
 			NOT = { accepted_culture = longbeard }
 			check_variable = { which = erebor_relations value = 99.99 }
 		}

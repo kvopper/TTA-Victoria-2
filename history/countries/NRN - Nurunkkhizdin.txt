@@ -4,7 +4,7 @@ primary_culture = ironfist
 culture = dwarven_culture
 religion = dwarven
 government = monarchy
-nationalvalue = generic_leader
+nationalvalue = no_heirloom
 literacy = 0.3
 civilized = yes
 
@@ -12,17 +12,13 @@ oob = "NRN_oob.txt"
 
 prestige = 0
 
-ruling_party = generic_high_nobility
+ruling_party = generic_ironfist_nobles
 
 upper_house = {
-	high_nobility = 60
-	low_nobility = 29
-	burgher = 6
-	loremaster = 5
+	ironfist_nobles = 100
 }
 penal_reform = hard_labor
 slavery = no_slavery
-upper_house_composition = appointed
 
 schools = traditional_academic
 #tech

@@ -6,18 +6,17 @@ culture = broadbeam
 culture = longbeard
 religion = dwarven
 government = monarchy
-nationalvalue = generic_leader
+nationalvalue = no_heirloom
 literacy = 0.3
 civilized = yes
 prestige = 50
-ruling_party = generic_high_nobility
+ruling_party = generic_firebeard_nobles
 
 upper_house = {
-	high_nobility = 100
+	firebeard_nobles = 100
 }
 penal_reform = hard_labor
 slavery = no_slavery
-upper_house_composition = appointed
 
 schools = traditional_academic
 
