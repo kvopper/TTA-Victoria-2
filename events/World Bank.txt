@@ -2077,6 +2077,7 @@ country_event = {
 			limit = {
 				OR = {
 					government = sauron_dictatorship
+					government = nazgul_dictatorship
 					government = istari_kingdom
 					government = dominion_1
 					government = dominion_2
@@ -2085,6 +2086,15 @@ country_event = {
 			political_reform = dictatorship
 		}
 		# }
+		
+		# stirrings_of_dissent Cleanup
+		any_country = {
+			limit = {
+				has_country_modifier = stirrings_of_dissent
+				NOT = { plurality = 90 }
+			}
+			remove_country_modifier = stirrings_of_dissent
+		}
 		
 		# Border Policy Reform Assignment {
 		any_country = {
@@ -6577,6 +6587,14 @@ country_event = {
 			
 			random_owned = {
 				limit = { owner = { has_country_modifier = great_diplomat } }
+				owner = {
+					change_variable = { which = modifier_count value = 1 }
+					change_variable = { which = total_modifier_count value = 1 }
+				}
+			}
+			
+			random_owned = {
+				limit = { owner = { has_country_modifier = stirrings_of_dissent } }
 				owner = {
 					change_variable = { which = modifier_count value = 1 }
 					change_variable = { which = total_modifier_count value = 1 }

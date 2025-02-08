@@ -1065,3 +1065,49 @@ country_event = {
 		any_pop = { militancy = -0.2 }
 	}
 }
+
+# Ruling Council Walks Out
+country_event = {
+	id = 3625
+	title = "Ruling Council Walks Out"
+	desc = "EVTDESC3625"
+	picture = "bad_news"
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		plurality = 60
+	}
+	
+	option = {
+		name = "Concede to their demands"
+		
+		plurality = -5
+	}
+	
+	option = {
+		name = "I, and I alone, rule $COUNTRY$"
+		
+		plurality = 5
+		prestige = 25
+	}
+}
+
+# The Stirrings of Dissent
+country_event = {
+	id = 3626
+	title = "The Stirrings of Dissent"
+	desc = "EVTDESC3626"
+	picture = "bad_news"
+	
+	trigger = {
+		plurality = 90
+		NOT = { has_country_modifier = stirrings_of_dissent }
+	}
+	
+	option = {
+		name = "The commonfolk are thinking..."
+		any_pop = { militancy = 1 }
+		add_country_modifier = { name = stirrings_of_dissent duration = -1 }
+	}
+}

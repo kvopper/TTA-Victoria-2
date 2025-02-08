@@ -8,6 +8,7 @@ government = monarchy
 nationalvalue = black_arrow
 literacy = 0.2
 civilized = yes
+plurality = 90
 
 decision = DAL_start_decision
 oob = "DAL_oob.txt"

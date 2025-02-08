@@ -5,7 +5,7 @@
 # TAG_cosmetic_1 -> Puppet of Sauron
 # TAG_cosmetic_2 -> Alternate 1
 
-# WHEN ADDING A NEW GOVERNMENT, DON'T FORGET TO UPDATE THE "# Upper House Reform Assignment" TO ASSIGN THE RIGHT GOVERNMENT_TYPE
+# WHEN ADDING A NEW GOVERNMENT, DON'T FORGET TO UPDATE THE "# Upper House Reform Assignment" in events/World Bank.txt TO ASSIGN THE RIGHT GOVERNMENT_TYPE
 
 #######################
 ##### DEMOCRACIES #####

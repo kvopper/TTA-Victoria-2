@@ -14,6 +14,7 @@
 #	Update starting decisions (or whatever flavor unlocks the ideology) to set the ideologies_[ideology name]_active on the tags in question
 #	Update events 14006 and 14007 in events/Election.txt
 #	Update common/governments.txt to allow the ideology in the various government types
+#	Update event 3001 common/Revolts.txt (if new generic noble ideology)
 
 # cosmetic. Does nothing in game except define slaves for pop_types
 disenfranchised_group = {
