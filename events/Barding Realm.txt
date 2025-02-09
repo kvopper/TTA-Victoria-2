@@ -2012,6 +2012,7 @@ country_event = {
 	
 	trigger = {
 		has_country_flag = DAL_content
+		NOT = { tag = FFN }
 		owns = 660 # Erebor
 	}
 	
