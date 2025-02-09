@@ -756,6 +756,10 @@ political_decisions = {
 		
 		effect = {
 			11 = { remove_province_modifier = stonewain_valley_modifier }
+			any_country = {
+				limit = { has_country_flag = stonewain_requester }
+				clr_country_flag = stonewain_requester
+			}
 		}
 	}
 	
