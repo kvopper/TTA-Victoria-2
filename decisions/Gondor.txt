@@ -652,37 +652,6 @@ political_decisions = {
 		}
 	}
 	
-	destroy_crossroads_fallen_king = {
-		picture = "crossroads_fallen_king"
-		potential = {
-			controls = 204
-			NOT = { owns = 204 }
-			204 = {
-				owner = { war_with = THIS }
-				has_province_modifier = crossroads_fallen_king
-			}
-		}
-		
-		allow = {}
-		
-		effect = {
-			prestige = 5
-			badboy = 2
-			204 = {
-				owner = { prestige = -5 }
-				remove_province_modifier = crossroads_fallen_king
-			}
-		}
-		
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0
-				badboy = 0.92
-			}
-		}
-	}
-	
 	stonewain_valley = {
 		picture = "free_druadan_forest"
 		potential = {
