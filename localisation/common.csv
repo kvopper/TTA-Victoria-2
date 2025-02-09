@@ -107,7 +107,7 @@ COLONIAL_PRESTIGE_MODIFIER_TECH;Territorial prestige;x
 PROVINCEVIEW_UNCOLONIZED;Unsettled;x
 PV_UNCOLONIZED;Unsettled;x
 PV_COLONY_PROG;Settlement progress: §Y$VAL$§!%. Estimated completion: §Y$TIME$§!;x
-PW_COLONY;Territorial Province;x
+PW_COLONY;Territorial Region;x
 PW_COLONY_STATE;Click to convert to state. This requires §R$VALUE$§! free territorial power points.;x
 POP_COLONIAL_MIGRATION_FACTORS;Territorial migration factors:;x
 POP_COLONIAL_MIGRATION_NONE;No territorial migration.;x

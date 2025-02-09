@@ -4,7 +4,7 @@ nationalist_rebels_desc;Nationalist rebels seek freedom for their people. They a
 nationalist_rebels_army;$INDEP$ Nationalists;x
 patriot_rebels_title;Separatist Rebels;x
 patriot_rebels_name;$CULTURE$ Separatists;x
-patriot_rebels_desc;Separatist rebels dream of unification with their cultural kin under a free banner. Beware, for provinces taken by them may defect.;x
+patriot_rebels_desc;Separatist rebels dream of unification with their cultural kin under a free banner. Beware! Provinces taken by them may defect.;x
 patriot_rebels_army;$CULTURE$ Separatists;x
 slave_revolt_title;Slave Revolters;x
 slave_revolt_name;Slave Revolters;x
