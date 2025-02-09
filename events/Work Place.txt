@@ -3550,6 +3550,7 @@ province_event = {
 		controlled_by = owner
 		province_control_days = 365
 		owner = { war = no }
+		NOT = { owner = { has_country_flag = generic_rgo_change_lock } } # Attempt to prevent this from firing for multiple provinces
 		NOT = { trade_goods = precious_metal }
 		NOT = { trade_goods = precious_goods }
 	}
@@ -3557,11 +3558,14 @@ province_event = {
 	mean_time_to_happen = { months = 500 }
 	
 	immediate = {
+		owner = { set_country_flag = generic_rgo_change_lock }
 		add_province_modifier = { name = province_target_rgo_change_modifier duration = 1 }
 	}
 	
 	option = {
 		name = "Of course!"
+		
+		clr_country_flag = generic_rgo_change_lock
 		
 		owner = {
 			# "Hills" RGOs
@@ -3948,6 +3952,8 @@ province_event = {
 	option = {
 		name = "We do not want to change the RGO at this time"
 		
+		clr_country_flag = generic_rgo_change_lock
+		
 		add_province_modifier = { name = locked_rgo duration = 365 }
 		
 		owner = {
@@ -3976,6 +3982,8 @@ province_event = {
 	
 	option = {
 		name = "We never want to change this RGO"
+		
+		clr_country_flag = generic_rgo_change_lock
 		
 		add_province_modifier = { name = locked_rgo duration = -1 }
 		
