@@ -1,0 +1,14 @@
+army = {
+	name = "Talsir Garrison"
+	location = 902
+	regiment = {
+		name = "1st Upper Saerlann Horse Archers"
+		type = horse_archers
+		home = 902
+	}
+	regiment = {
+		name = "1st Upper Saerlann Scouts"
+		type = scouts
+		home = 1188
+	}
+}

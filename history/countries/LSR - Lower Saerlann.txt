@@ -9,6 +9,8 @@ literacy = 0
 
 ruling_party = generic_saerlanner_nobles
 
+oob = "LSR_oob.txt"
+
 upper_house = {
 	saerlanner_nobles = 100
 }
