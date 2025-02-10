@@ -1,0 +1,34 @@
+army = {
+	name = "Súthure Garrison"
+	location = 905
+	regiment = {
+		name = "1st Lower Saerlann Swordsmen"
+		type = swordsmen
+		home = 905
+	}
+	regiment = {
+		name = "2nd Lower Saerlann Swordsmen"
+		type = swordsmen
+		home = 905
+	}
+	regiment = {
+		name = "1st Lower Saerlann Archers"
+		type = archers
+		home = 905
+	}
+	regiment = {
+		name = "2nd Lower Saerlann Archers"
+		type = archers
+		home = 906
+	}
+	regiment = {
+		name = "3rd Lower Saerlann Archers"
+		type = archers
+		home = 1186
+	}
+	regiment = {
+		name = "1st Lower Saerlann Scouts"
+		type = scouts
+		home = 1187
+	}
+}
