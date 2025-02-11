@@ -503,7 +503,7 @@ diplomat_erland_flavor_loc = { } # Appoint Erland of Esgaroth as Diplomat
 diplomat_tilda_flavor_loc = { } # Appoint Tilda Ambassador to Erebor
 bard_i_reforms_loc = { } # The Reforms of Bard I
 girion_bainson_austriborg_loc = { } # Send Girion Bainson to Austriborg
-colonize_harondor_province_loc = { }
+colonize_harondor_province_loc = { } # §GA random uncolonized core of the Grammas that is adjacent to our realm will join!§!
 
 # SirRunner Generator Apply "§I"
 
