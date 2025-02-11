@@ -57,6 +57,8 @@ province_event = {
 			
 			# Clears the targeting modifiers to clear the path for the next time this event fires
 			HRD = { all_core = { remove_province_modifier = colonization_target } }
+			
+			colonize_harondor_province_loc = {}
 		}
 	}
 }

@@ -2947,6 +2947,7 @@ claim_status_owns_LIN_921_loc;§YDânwaith§!: §GOwned§!§I;x
 add_claim_GOB_847_loc;§WWe will gain claims over §!§YHithaeglir§!§I;x
 claim_status_owns_RHU_560_loc;§YRiav§!: §GOwned§!§I;x
 DAL_colonize_grammas_province_loc;§GA random uncolonized core of the Grammas that is adjacent to our realm will join!§!§I;x
+colonize_harondor_province_loc;§GA random uncolonized core of Harondor that is adjacent to our realm will join!§!§I;x
 add_claim_CAR_891_loc;§WWe will gain claims over §!§YNimiand§!§I;x
 claim_status_doesnt_own_LOS_977_loc;§YForochel§!: §RUnowned§!§I;x
 claim_status_owns_ANG_1004_loc;§YEn Udanoriath§!: §GOwned§!§I;x
