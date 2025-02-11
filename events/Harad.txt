@@ -7,15 +7,15 @@
 # Harondor colonisation by the Haradrim/Corsairs/Chelkiags
 province_event = {
 	id = 60200
-	title = "The Colonisation of Harondor"
+	title = "The Colonization of Harondor"
 	desc = "EVTDESC60200"
 	
 	trigger = {
 		OR = {
-			province_id = 270
-			province_id = 286
-			province_id = 334
-			province_id = 376
+			province_id = 270 #Umbar
+			province_id = 286 #Gobel Ancalimon
+			province_id = 334 #Korb Traskal
+			province_id = 376 #Ikh'ahôn
 		}
 		owner = {
 			has_country_flag = colonizing_harondor
