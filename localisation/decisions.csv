@@ -335,7 +335,7 @@ ask_for_permission_from_sauron_desc;Harondor had been a contested area since the
 colonize_harondor_title;Colonize Harondor;x
 colonize_harondor_desc;We are in a position to colonize the neighboring land of Harondor.;x
 harnendor_question_title;The Harnendan Question;x
-harnendor_question_desc;Since we started colonising Harondor, Harnendan influence and prestige among the Haradrim has decreased. In fact, they've become a mere buffer state. We can use our influence in the area to annex Harnendor.;x
+harnendor_question_desc;Since we started colonising Harondor, Harnendan influence and prestige among the Haradrim has decreased. In fact, they've become a mere buffer state between us and Harondor. We can use our influence in the area to annex Harnendor.;x
 conquer_harondor_southron_colonizer_title;Conquer Harondor;x
 conquer_harondor_southron_colonizer_desc;Another realm owns some of Harondor. We need to expel them from it.;x
 claim_harondor_title;Claim Harondor;x

@@ -209,7 +209,7 @@ province_event = {
 		name = "We welcome our brothers"
 		
 		owner = {
-			# Adds a targetting modifier to all eligible provinces
+			# Adds a targeting modifier to all eligible provinces
 			GRA = {
 				all_core = {
 					limit = {
