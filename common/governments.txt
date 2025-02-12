@@ -16,6 +16,9 @@ republic = {
 	appoint_ruling_party = no
 	flagType = republic
 	
+	servants_good = no
+	servants_neutral = no
+	servants_evil = no
 	line_of_isildur = yes
 	dunedain_nobles = yes
 	house_of_stewards = yes
@@ -134,6 +137,9 @@ merchant_republic = {
 	appoint_ruling_party = no
 	flagType = republic
 	
+	servants_good = no
+	servants_neutral = no
+	servants_evil = no
 	line_of_isildur = yes
 	dunedain_nobles = yes
 	house_of_stewards = yes
