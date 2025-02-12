@@ -325,11 +325,13 @@ GMO;Goblins of Moria;x
 GMO_ADJ;Moria Goblin;x
 GNR;Turmen Hyallondiéva;x
 GNR_republic;Republic of Gondor;x
+GNR_merchant_republic;Republic of Gondor;x
 GNR_dominion_1;Kingdom of Adûnabâr;x
 GNR_monarchy_2;Stewardship of Gondir;x
 GNR_ADJ;Gondorian;x
 GON;Kingdom of Gondor;x
 GON_republic;Republic of Gondor;x
+GON_merchant_republic;Republic of Gondor;x
 GON_dominion_1;Kingdom of Adûnabâr;x
 GON_monarchy_2;Stewardship of Gondor;x
 GON_ADJ;Gondorian;x
