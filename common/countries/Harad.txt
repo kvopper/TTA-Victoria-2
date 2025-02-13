@@ -77,48 +77,18 @@ party = {
 }
 
 party = {
-	name = "generic_servants_good"
+	name = "generic_servants"
 	start_date = 2954.1.1
 	end_date = 4000.1.1
 	
-	ideology = servants_good
+	ideology = servants
 	
 	trade_policy = vassal_protectionism
 	tax_policy = vassal_interventionism
 	language_policy = vassal_regional_autonomy
 	diplomatic_policy = vassal_reactive
 	war_policy = vassal_pro_military
-	good_evil_alignment = good_alignment
-}
-
-party = {
-	name = "generic_servants_neutral"
-	start_date = 2954.1.1
-	end_date = 4000.1.1
-	
-	ideology = servants_neutral
-	
-	trade_policy = vassal_protectionism
-	tax_policy = vassal_interventionism
-	language_policy = vassal_regional_autonomy
-	diplomatic_policy = vassal_reactive
-	war_policy = vassal_pro_military
-	good_evil_alignment = neutral_alignment
-}
-
-party = {
-	name = "generic_servants_evil"
-	start_date = 2954.1.1
-	end_date = 4000.1.1
-	
-	ideology = servants_evil
-	
-	trade_policy = vassal_protectionism
-	tax_policy = vassal_interventionism
-	language_policy = vassal_regional_autonomy
-	diplomatic_policy = vassal_reactive
-	war_policy = vassal_pro_military
-	good_evil_alignment = evil_alignment
+	good_evil_alignment = vassal_alignment
 }
 
 unit_names = {

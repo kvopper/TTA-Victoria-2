@@ -12,7 +12,7 @@ oob = "KHU_oob.txt"
 
 prestige = 1
 
-ruling_party = generic_servants_good
+ruling_party = generic_servants
 
 upper_house = {
 	longbeard_nobles = 100

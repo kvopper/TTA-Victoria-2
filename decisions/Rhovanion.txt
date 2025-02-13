@@ -309,7 +309,7 @@ political_decisions = {
 				RHO = {
 					remove_accepted_culture = evil_culture
 					remove_accepted_culture = neutral_culture
-					ruling_party_ideology = servants_good
+					ruling_party_ideology = servants
 					add_accepted_culture = good_culture
 				}
 			}
@@ -321,7 +321,7 @@ political_decisions = {
 				RHO = {
 					remove_accepted_culture = good_culture
 					remove_accepted_culture = neutral_culture
-					ruling_party_ideology = servants_evil
+					ruling_party_ideology = servants
 					add_accepted_culture = evil_culture
 				}
 			}
@@ -333,7 +333,7 @@ political_decisions = {
 				RHO = {
 					remove_accepted_culture = good_culture
 					remove_accepted_culture = evil_culture
-					ruling_party_ideology = servants_neutral
+					ruling_party_ideology = servants
 					add_accepted_culture = neutral_culture
 				}
 			}

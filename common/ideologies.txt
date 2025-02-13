@@ -43,27 +43,7 @@ disenfranchised_group = {
 
 # Only for puppets.
 vassal_group = {
-	servants_good = {
-		color = { 30 144 255 }
-		
-		add_political_reform = { base = 0 }
-		remove_political_reform = { base = 0 }
-		add_social_reform = { base = 0 }
-		remove_social_reform = { base = 0 }
-		add_military_reform = { base = 0 }
-		add_economic_reform = { base = 0 }
-	}
-	servants_neutral = {
-		color = { 30 144 255 }
-		
-		add_political_reform = { base = 0 }
-		remove_political_reform = { base = 0 }
-		add_social_reform = { base = 0 }
-		remove_social_reform = { base = 0 }
-		add_military_reform = { base = 0 }
-		add_economic_reform = { base = 0 }
-	}
-	servants_evil = {
+	servants = {
 		color = { 30 144 255 }
 		
 		add_political_reform = { base = 0 }

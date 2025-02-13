@@ -301,7 +301,7 @@ country_event = {
 				value = 200
 			}
 		}
-		ruling_party_ideology = servants_evil
+		ruling_party_ideology = servants
 		prestige = 2
 		ai_chance = { factor = 100 }
 	}

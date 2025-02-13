@@ -7,10 +7,10 @@ government = tribal
 nationalvalue = no_heirloom
 literacy = 0
 
-ruling_party = generic_servants_neutral
+ruling_party = generic_servants
 
 upper_house = {
-	servants_neutral = 100
+	generic_servants = 100
 }
 
 decision = FOR_start_decision

@@ -24,9 +24,7 @@ dominion_2_ruler;Lord;x
 #############################;x }
 ##### POLITICAL PARTIES #####;x {
 #############################;x
-generic_servants_good;Servants (Anti-Sauron);x
-generic_servants_neutral;Servants (Opportunistic);x
-generic_servants_evil;Servants (Sauronite);x
+generic_servants;Servants;x
 generic_dunedain_nobles;Dúnedain Nobles;x
 generic_gondorian_nobles;Gondorian Nobles;x
 generic_amrothian_nobles;Amrothian Nobles;x

@@ -509,7 +509,7 @@ country_event = {
 				NOT = { owner = { good_evil_alignment = good_alignment } }
 			}
 			owner = {
-				ruling_party_ideology = servants_good
+				ruling_party_ideology = servants
 				add_accepted_culture = good_culture
 				remove_accepted_culture = neutral_culture
 				remove_accepted_culture = evil_culture
@@ -523,7 +523,7 @@ country_event = {
 				NOT = { owner = { good_evil_alignment = neutral_alignment } }
 			}
 			owner = {
-				ruling_party_ideology = servants_neutral
+				ruling_party_ideology = servants
 				remove_accepted_culture = good_culture
 				add_accepted_culture = neutral_culture
 				remove_accepted_culture = evil_culture
@@ -537,7 +537,7 @@ country_event = {
 				NOT = { owner = { good_evil_alignment = evil_alignment } }
 			}
 			owner = {
-				ruling_party_ideology = servants_evil
+				ruling_party_ideology = servants
 				remove_accepted_culture = good_culture
 				remove_accepted_culture = neutral_culture
 				add_accepted_culture = evil_culture

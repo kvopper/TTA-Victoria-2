@@ -9,7 +9,7 @@ nationalvalue = no_heirloom
 literacy = 0.2
 civilized = yes
 
-ruling_party = generic_servants_good
+ruling_party = generic_servants
 
 oob = "THA_oob.txt"
 

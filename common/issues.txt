@@ -276,6 +276,8 @@ party_issues = {
 		}
 		evil_alignment = {
 		}
+		vassal_alignment = {
+		}
 	}
 }
 
