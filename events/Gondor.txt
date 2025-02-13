@@ -1394,29 +1394,37 @@ province_event = {
 	option = {
 		name = "We are reclaiming what is rightfully ours"
 		
-		# Adds a targeting modifier to all eligible provinces
-		HRD = {
-			all_core = {
-				limit = {
-					empty = yes
-					any_neighbor_province = { owned_by = THIS }
-				}
-				add_province_modifier = { name = colonization_target duration = -1 }
-			}
-		}
-		
-		# Randomly grabs one of the marked provinces and annexes a random neighbor uncolonized core
-		FOR = {
+		owner = {
 			random_owned = {
-				random_empty_neighbor_province = {
-					limit = { has_province_modifier = colonization_target }
-					secede_province = THIS
+				limit = { owner = { has_global_flag = hidden_effects } }
+				# Adds a targeting modifier to all eligible provinces
+				owner = {
+					HRD = {
+						all_core = {
+							limit = {
+								empty = yes
+								any_neighbor_province = { owned_by = THIS }
+							}
+							add_province_modifier = { name = colonization_target duration = -1 }
+						}
+					}
+					
+					# Randomly grabs one of the marked provinces and annexes a random neighbor uncolonized core
+					FOR = {
+						random_owned = {
+							random_empty_neighbor_province = {
+								limit = { has_province_modifier = colonization_target }
+								secede_province = THIS
+							}
+						}
+					}
+					
+					# Clears the targeting modifiers to clear the path for the next time this event fires
+					HRD = { all_core = { remove_province_modifier = colonization_target } }
+					
 				}
 			}
 		}
-		
-		# Clears the targeting modifiers to clear the path for the next time this event fires
-		HRD = { all_core = { remove_province_modifier = colonization_target } }
 		
 		colonize_harondor_province_loc = {}
 	}
