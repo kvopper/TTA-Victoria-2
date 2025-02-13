@@ -2028,6 +2028,17 @@ country_event = {
 				}
 			}
 		}
+		# Republics without voting become monarchies
+		any_country = {
+			limit = {
+				OR = {
+					government = republic
+					government = merchant_republic
+				}
+				vote_franschise = none_voting
+			}
+			government = dictatorship
+		}
 		# }
 		
 		# Setting the ruler of vassals {
@@ -2068,6 +2079,7 @@ country_event = {
 		any_country = {
 			limit = {
 				OR = {
+					government = dictatorship
 					government = sauron_dictatorship
 					government = nazgul_dictatorship
 					government = istari_kingdom
@@ -2107,13 +2119,28 @@ country_event = {
 		}
 		# }
 		
-		# Realm attempting to do stuff with the ai {
+		# Realm attempting to do stuff with the utility tag {
 		any_country = {
 			leave_alliance = FOR
 			relation = { who = FOR value = -400 }
 			end_war = FOR
 		}
 		any_greater_power = { diplomatic_influence = { who = FOR value = -400 } }
+		# }
+		
+		# Slavery Rules {
+		any_country = {
+			limit = { slavery = non_accepted_slavery }
+			any_pop = {
+				limit = {
+					OR = {
+						is_primary_culture = yes
+						is_accepted_culture = yes
+					}
+				}
+				pop_type = labourers
+			}
+		}
 		# }
 		
 		# Refire the cleanup event next month {
