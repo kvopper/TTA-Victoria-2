@@ -13,8 +13,6 @@ political_decisions = {
 			ai = no
 			has_country_flag = should_apply_acquire_claim_cb
 		}
-		allow = {
-		}
 		effect = {
 			country_event = 2900
 			random_owned = {

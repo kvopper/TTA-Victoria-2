@@ -16,7 +16,7 @@ political_decisions = {
 				tag = HRD
 			}
 		}
-		allow = {}
+		
 		effect = {
 			# Gondor
 			random_owned = {
@@ -50,7 +50,7 @@ political_decisions = {
 			tag = AMR
 			NOT = { has_global_flag = fluff_disabled }
 		}
-		allow = {}
+		
 		effect = { country_event = 35005 }
 	}
 	shadow_of_mordor = {
@@ -61,7 +61,7 @@ political_decisions = {
 			tag = MOR
 			NOT = { has_global_flag = fluff_disabled }
 		}
-		allow = {}
+		
 		effect = { country_event = 35009 }
 	}
 	kingdom_of_dorwinion = {
@@ -72,7 +72,7 @@ political_decisions = {
 			tag = DOR
 			NOT = { has_global_flag = fluff_disabled }
 		}
-		allow = {}
+		
 		effect = { country_event = 35013 }
 	}
 	beornings_of_the_vale = {
@@ -83,7 +83,7 @@ political_decisions = {
 			tag = BEO
 			NOT = { has_global_flag = fluff_disabled }
 		}
-		allow = {}
+		
 		effect = { country_event = 35041 }
 	}
 }

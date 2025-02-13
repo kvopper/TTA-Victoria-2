@@ -17,8 +17,6 @@ prestige = 5
 
 ruling_party = generic_fallohide_nobles
 
-decision = shire_start_decision
-
 upper_house = {
 	fallohide_nobles = 100
 }

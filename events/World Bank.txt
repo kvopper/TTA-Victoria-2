@@ -1293,7 +1293,13 @@ country_event = {
 		# Leader alignment/accepted culture mismatch {
 		any_country = {
 			limit = {
-				good_evil_alignment = good_alignment
+				OR = {
+					good_evil_alignment = good_alignment
+					AND = {
+						good_evil_alignment = vassal_alignment
+						overlord = { good_evil_alignment = good_alignment }
+					}
+				}
 				OR = {
 					NOT = { accepted_culture = good_culture }
 					accepted_culture = neutral_culture
@@ -1306,7 +1312,13 @@ country_event = {
 		}
 		any_country = {
 			limit = {
-				good_evil_alignment = neutral_alignment
+				OR = {
+					good_evil_alignment = neutral_alignment
+					AND = {
+						good_evil_alignment = vassal_alignment
+						overlord = { good_evil_alignment = neutral_alignment }
+					}
+				}
 				OR = {
 					accepted_culture = good_culture
 					NOT = { accepted_culture = neutral_culture }
@@ -1319,7 +1331,13 @@ country_event = {
 		}
 		any_country = {
 			limit = {
-				good_evil_alignment = evil_alignment
+				OR = {
+					good_evil_alignment = evil_alignment
+					AND = {
+						good_evil_alignment = vassal_alignment
+						overlord = { good_evil_alignment = evil_alignment }
+					}
+				}
 				OR = {
 					accepted_culture = good_culture
 					accepted_culture = neutral_culture
@@ -1341,7 +1359,7 @@ country_event = {
 				NOT = { government = dominion_1 }
 			}
 			government = dominion_1
-			ruling_party_ideology = servants_evil
+			ruling_party_ideology = servants
 		}
 		# dominion_2
 		any_country = {
@@ -2010,6 +2028,17 @@ country_event = {
 				}
 			}
 		}
+		# Republics without voting become monarchies
+		any_country = {
+			limit = {
+				OR = {
+					government = republic
+					government = merchant_republic
+				}
+				vote_franschise = none_voting
+			}
+			government = dictatorship
+		}
 		# }
 		
 		# Setting the ruler of vassals {
@@ -2017,34 +2046,9 @@ country_event = {
 			limit = {
 				is_vassal = yes
 				NOT = { has_country_flag = vassal_can_have_own_ruler }
-				AND = {
-					overlord = { good_evil_alignment = good_alignment }
-					NOT = { ruling_party_ideology = servants_good }
-				}
+				NOT = { ruling_party_ideology = servants }
 			}
-			ruling_party_ideology = servants_good
-		}
-		any_country = {
-			limit = {
-				is_vassal = yes
-				NOT = { has_country_flag = vassal_can_have_own_ruler }
-				AND = {
-					overlord = { good_evil_alignment = neutral_alignment }
-					NOT = { ruling_party_ideology = servants_neutral }
-				}
-			}
-			ruling_party_ideology = servants_neutral
-		}
-		any_country = {
-			limit = {
-				is_vassal = yes
-				NOT = { has_country_flag = vassal_can_have_own_ruler }
-				AND = {
-					overlord = { good_evil_alignment = evil_alignment }
-					NOT = { ruling_party_ideology = servants_evil }
-				}
-			}
-			ruling_party_ideology = servants_evil
+			ruling_party_ideology = servants
 		}
 		any_country = {
 			limit = { is_vassal = no }
@@ -2075,6 +2079,7 @@ country_event = {
 		any_country = {
 			limit = {
 				OR = {
+					government = dictatorship
 					government = sauron_dictatorship
 					government = nazgul_dictatorship
 					government = istari_kingdom
@@ -2114,13 +2119,28 @@ country_event = {
 		}
 		# }
 		
-		# Realm attempting to do stuff with the ai {
+		# Realm attempting to do stuff with the utility tag {
 		any_country = {
 			leave_alliance = FOR
 			relation = { who = FOR value = -400 }
 			end_war = FOR
 		}
 		any_greater_power = { diplomatic_influence = { who = FOR value = -400 } }
+		# }
+		
+		# Slavery Rules {
+		any_country = {
+			limit = { slavery = non_accepted_slavery }
+			any_pop = {
+				limit = {
+					OR = {
+						is_primary_culture = yes
+						is_accepted_culture = yes
+					}
+				}
+				pop_type = labourers
+			}
+		}
 		# }
 		
 		# Refire the cleanup event next month {

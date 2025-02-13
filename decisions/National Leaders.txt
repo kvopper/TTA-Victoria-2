@@ -11,7 +11,6 @@ political_decisions = {
 			ruling_party = GON_ecthelion_ii
 			NOT = { has_global_flag = fluff_disabled }
 		}
-		allow = {}
 		effect = {
 			country_event = 30000
 		}
@@ -24,7 +23,6 @@ political_decisions = {
 			ruling_party = AMR_angelimir
 			NOT = { has_global_flag = fluff_disabled }
 		}
-		allow = {}
 		effect = {
 			country_event = 30008
 		}
@@ -37,7 +35,6 @@ political_decisions = {
 			ruling_party = MOR_sauron
 			NOT = { has_global_flag = fluff_disabled }
 		}
-		allow = {}
 		effect = {
 			country_event = 30016
 		}
@@ -50,7 +47,6 @@ political_decisions = {
 			ruling_party = DOR_hegon
 			NOT = { has_global_flag = fluff_disabled }
 		}
-		allow = {}
 		effect = {
 			country_event = 30024
 		}
@@ -63,7 +59,6 @@ political_decisions = {
 			ruling_party = ERE_dain_ii
 			NOT = { has_global_flag = fluff_disabled }
 		}
-		allow = {}
 		effect = {
 			country_event = 30040
 		}
@@ -76,7 +71,6 @@ political_decisions = {
 			ruling_party = WRM_thranduil
 			NOT = { has_global_flag = fluff_disabled }
 		}
-		allow = {}
 		effect = {
 			country_event = 30048
 		}
@@ -89,7 +83,6 @@ political_decisions = {
 			ruling_party = GUL_khamul
 			NOT = { has_global_flag = fluff_disabled }
 		}
-		allow = {}
 		effect = {
 			country_event = 30056
 		}
@@ -102,7 +95,6 @@ political_decisions = {
 			ruling_party = BEO_beorn
 			NOT = { has_global_flag = fluff_disabled }
 		}
-		allow = {}
 		effect = {
 			country_event = 30064
 		}
@@ -115,7 +107,6 @@ political_decisions = {
 			ruling_party = LOR_galadriel_n_celeborn
 			NOT = { has_global_flag = fluff_disabled }
 		}
-		allow = {}
 		effect = {
 			country_event = 30072
 		}
@@ -128,7 +119,6 @@ political_decisions = {
 			ruling_party = FAN_treebeard
 			NOT = { has_global_flag = fluff_disabled }
 		}
-		allow = {}
 		effect = {
 			country_event = 30080
 		}
@@ -141,7 +131,6 @@ political_decisions = {
 			ruling_party = ROH_thengel
 			NOT = { has_global_flag = fluff_disabled }
 		}
-		allow = {}
 		effect = {
 			country_event = 30088
 		}
@@ -154,7 +143,6 @@ political_decisions = {
 			ruling_party = ISE_saruman
 			NOT = { has_global_flag = fluff_disabled }
 		}
-		allow = {}
 		effect = {
 			country_event = 30096
 		}
@@ -167,7 +155,6 @@ political_decisions = {
 			ruling_party = GON_aragorn_elessar
 			NOT = { has_global_flag = fluff_disabled }
 		}
-		allow = {}
 		effect = {
 			country_event = 30104
 		}
@@ -180,7 +167,6 @@ political_decisions = {
 			ruling_party = IML_elrond
 			NOT = { has_global_flag = fluff_disabled }
 		}
-		allow = {}
 		effect = {
 			country_event = 30112
 		}
@@ -193,7 +179,6 @@ political_decisions = {
 			ruling_party = LIN_cirdan
 			NOT = { has_global_flag = fluff_disabled }
 		}
-		allow = {}
 		effect = {
 			country_event = 30120
 		}

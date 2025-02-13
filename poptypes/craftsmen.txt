@@ -801,14 +801,14 @@ promote_to = {
 }
 
 ideologies = {
-	servants_good = {
+	servants = {
 		factor = 1
 		
 		modifier = {
 			factor = 0
 			OR = {
 				country = { is_vassal = no }
-				country = { NOT = { ruling_party_ideology = servants_good } }
+				country = { NOT = { ruling_party_ideology = servants } }
 			}
 		}
 		
@@ -888,189 +888,7 @@ ideologies = {
 		
 		modifier = {
 			factor = 2
-			ruling_party_ideology = servants_good
-		}
-	}
-	
-	servants_neutral = {
-		factor = 1
-		
-		modifier = {
-			factor = 0
-			OR = {
-				country = { is_vassal = no }
-				country = { NOT = { ruling_party_ideology = servants_neutral } }
-			}
-		}
-		
-		modifier = {
-			factor = 0.5
-			militancy = 9
-		}
-		
-		modifier = {
-			factor = 0.5
-			militancy = 8
-		}
-		
-		modifier = {
-			factor = 0.5
-			militancy = 7
-		}
-		
-		modifier = {
-			factor = 0.5
-			militancy = 6
-		}
-		
-		modifier = {
-			factor = 2
-			NOT = { militancy = 4 }
-		}
-		modifier = {
-			factor = 2
-			NOT = { militancy = 3 }
-		}
-		modifier = {
-			factor = 2
-			NOT = { militancy = 2 }
-		}
-		modifier = {
-			factor = 2
-			NOT = { militancy = 1 }
-		}
-		
-		modifier = {
-			factor = 0.5
-			consciousness = 9
-		}
-		
-		modifier = {
-			factor = 0.5
-			consciousness = 8
-		}
-		
-		modifier = {
-			factor = 0.5
-			consciousness = 7
-		}
-		
-		modifier = {
-			factor = 0.5
-			consciousness = 6
-		}
-		
-		modifier = {
-			factor = 2
-			NOT = { consciousness = 4 }
-		}
-		modifier = {
-			factor = 2
-			NOT = { consciousness = 3 }
-		}
-		modifier = {
-			factor = 2
-			NOT = { consciousness = 2 }
-		}
-		modifier = {
-			factor = 2
-			NOT = { consciousness = 1 }
-		}
-		
-		modifier = {
-			factor = 2
-			ruling_party_ideology = servants_neutral
-		}
-	}
-	
-	servants_evil = {
-		factor = 1
-		
-		modifier = {
-			factor = 0
-			OR = {
-				country = { is_vassal = no }
-				country = { NOT = { ruling_party_ideology = servants_evil } }
-			}
-		}
-		
-		modifier = {
-			factor = 0.5
-			militancy = 9
-		}
-		
-		modifier = {
-			factor = 0.5
-			militancy = 8
-		}
-		
-		modifier = {
-			factor = 0.5
-			militancy = 7
-		}
-		
-		modifier = {
-			factor = 0.5
-			militancy = 6
-		}
-		
-		modifier = {
-			factor = 2
-			NOT = { militancy = 4 }
-		}
-		modifier = {
-			factor = 2
-			NOT = { militancy = 3 }
-		}
-		modifier = {
-			factor = 2
-			NOT = { militancy = 2 }
-		}
-		modifier = {
-			factor = 2
-			NOT = { militancy = 1 }
-		}
-		
-		modifier = {
-			factor = 0.5
-			consciousness = 9
-		}
-		
-		modifier = {
-			factor = 0.5
-			consciousness = 8
-		}
-		
-		modifier = {
-			factor = 0.5
-			consciousness = 7
-		}
-		
-		modifier = {
-			factor = 0.5
-			consciousness = 6
-		}
-		
-		modifier = {
-			factor = 2
-			NOT = { consciousness = 4 }
-		}
-		modifier = {
-			factor = 2
-			NOT = { consciousness = 3 }
-		}
-		modifier = {
-			factor = 2
-			NOT = { consciousness = 2 }
-		}
-		modifier = {
-			factor = 2
-			NOT = { consciousness = 1 }
-		}
-		
-		modifier = {
-			factor = 2
-			ruling_party_ideology = servants_evil
+			ruling_party_ideology = servants
 		}
 	}
 	

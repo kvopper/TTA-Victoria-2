@@ -10,7 +10,6 @@ political_decisions = {
 			ai = no
 			NOT = { has_global_flag = fluff_disabled }
 		}
-		allow = {}
 		effect = {
 			country_event = 29000
 		}

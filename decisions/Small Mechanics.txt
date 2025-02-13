@@ -58,7 +58,6 @@ political_decisions = {
 			}
 			NOT = { has_country_flag = using_palantiri }
 		}
-		allow = {}
 		effect = {
 			set_country_flag = using_palantiri
 		}

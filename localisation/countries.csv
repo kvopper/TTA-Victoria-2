@@ -11,6 +11,8 @@ monarchy_2;Monarchy;x
 monarchy_2_ruler;King;x
 tribal;Tribal;x
 tribal_ruler;Chief;x
+dictatorship;Dictatorship;x
+dictatorship_ruler;Lord;x
 sauron_dictatorship;Sauron's Domain;x
 sauron_dictatorship_ruler;Dark Lord;x
 nazgul_dictatorship;Nazgûl Dictatorship;x
@@ -24,9 +26,7 @@ dominion_2_ruler;Lord;x
 #############################;x }
 ##### POLITICAL PARTIES #####;x {
 #############################;x
-generic_servants_good;Servants (Anti-Sauron);x
-generic_servants_neutral;Servants (Opportunistic);x
-generic_servants_evil;Servants (Sauronite);x
+generic_servants;Servants;x
 generic_dunedain_nobles;Dúnedain Nobles;x
 generic_gondorian_nobles;Gondorian Nobles;x
 generic_amrothian_nobles;Amrothian Nobles;x

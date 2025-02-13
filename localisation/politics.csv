@@ -121,11 +121,11 @@ yes_slavery_desc;Slavery is allowed. Slaves are used from manual labor to variou
 movement_yes_slavery;Movement to expand slavery;x
 non_accepted_slavery;Non-Accepted Slavery;x
 non_accepted_slavery_l;Non-Accepted Slavery;x
-non_accepted_slavery_desc;Only pops that are not primary or accepted cultures are slaves.;x
+non_accepted_slavery_desc;Only pops that are not primary or accepted cultures are slaves.\nPrimary culture and Accepted culture pop §YSlaves§! become §YLabourers§! (on first of month): §GYes§!;x
 movement_non_accepted_slavery;Movement to free cultural brethrin from slavery;x
 no_slavery;Outlawed;x
 no_slavery_l;Outlaw Slavery;x
-no_slavery_desc;Slavery is forbidden and punished by law.;x
+no_slavery_desc;Slavery is forbidden and punished by law.\nAll §YSlaves§! become §YLabourers§!: §GYes§!;x
 movement_no_slavery;Movement to abolish slavery;x
 POLITICS_VOTING_REFORM;Voting Reform;x
 vote_franschise;Vote Franchise;x
@@ -450,6 +450,10 @@ evil_alignment;Sauronite;x
 evil_alignment_l;Sauronite;x
 evil_alignment_desc;We are considered a realm aligned with Sauron;x
 movement_evil_alignment;Movement to become a realm aligned with Sauron;x
+vassal_alignment;Overlord;x
+vassal_alignment_l;Overlord;x
+vassal_alignment_desc;We are considered a realm aligned with our overlord;x
+movement_vassal_alignment;Movement to become a realm aligned with our overlord;x
 ###############################;x }
 ##### INTEREST GROUP TEXT #####;x {
 ###############################;x
@@ -550,12 +554,8 @@ slave_ideology_uh;Slave ideology supporters will vote to follow whatever the rea
 tribal_ideology;Tribal;x
 tribal_ideology_uh;Tribal ideology supporters will vote against progress in the realm and active look to reverse it.;x
 vassal_group;Servants;x
-servants_good;Servants(Anti-Sauron);x
-servants_good_uh;Servants supporters will never vote to reform the realm. They only serve our overlord.;x
-servants_neutral;Servants(Opportunistic);x
-servants_neutral_uh;Servants supporters will never vote to reform the realm. They only serve our overlord.;x
-servants_evil;Servants(Sauronite);x
-servants_evil_uh;Servants supporters will never vote to reform the realm. They only serve our overlord.;x
+servants;Servants;x
+servants_uh;Servants supporters will never vote to reform the realm. They only serve our overlord.;x
 dunedain_nobility;Dúnedain Nobility;x
 line_of_isildur;Line of Isildur;x
 line_of_isildur_uh;Line of Isildur supporters will vote for all reforms while in power.;x

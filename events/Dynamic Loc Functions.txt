@@ -9,7 +9,6 @@ country_event = {
 	id = 400000
 	title = "Dynamic Loc Country Cleanup"
 	desc = ""
-	# picture = ""
 	
 	is_triggered_only = yes
 	
@@ -52,7 +51,6 @@ country_event = {
 	id = 400001
 	title = "Dynamic Loc Region Cleanup"
 	desc = ""
-	# picture = ""
 	
 	is_triggered_only = yes
 	
@@ -81,7 +79,6 @@ country_event = {
 	id = 400002
 	title = "Dynamic Loc Culture Group Cleanup"
 	desc = ""
-	# picture = ""
 	
 	is_triggered_only = yes
 	
@@ -108,7 +105,6 @@ country_event = {
 	id = 401001
 	title = "Dynamic Loc Region Cleanup"
 	desc = ""
-	# picture = ""
 	
 	is_triggered_only = yes
 	
@@ -136,7 +132,6 @@ country_event = {
 	id = 402000
 	title = "Dynamic Loc Reset Names"
 	desc = ""
-	# picture = ""
 	
 	is_triggered_only = yes
 	
@@ -157,7 +152,6 @@ country_event = {
 	id = 402001
 	title = "Dynamic Loc Reset Everything"
 	desc = ""
-	# picture = ""
 	
 	is_triggered_only = yes
 	
@@ -177,7 +171,6 @@ country_event = {
 	id = 402002
 	title = "Dynamic Loc Reset Names"
 	desc = ""
-	# picture = ""
 	
 	is_triggered_only = yes
 	

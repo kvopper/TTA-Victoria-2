@@ -11,11 +11,6 @@
 
 # Forming Harad
 political_decisions = {
-	HAR_start_decision = {
-		potential = { always = no }
-		effect = {
-		}
-	}
 	form_harad = {
 		potential = {
 			is_culture_group = haradrim
@@ -640,7 +635,7 @@ political_decisions = {
 				HAR = {
 					remove_accepted_culture = evil_culture
 					remove_accepted_culture = neutral_culture
-					ruling_party_ideology = servants_good
+					ruling_party_ideology = servants
 					add_accepted_culture = good_culture
 				}
 			}
@@ -652,7 +647,7 @@ political_decisions = {
 				HAR = {
 					remove_accepted_culture = good_culture
 					remove_accepted_culture = neutral_culture
-					ruling_party_ideology = servants_evil
+					ruling_party_ideology = servants
 					add_accepted_culture = evil_culture
 				}
 			}
@@ -664,7 +659,7 @@ political_decisions = {
 				HAR = {
 					remove_accepted_culture = good_culture
 					remove_accepted_culture = evil_culture
-					ruling_party_ideology = servants_neutral
+					ruling_party_ideology = servants
 					add_accepted_culture = neutral_culture
 				}
 			}

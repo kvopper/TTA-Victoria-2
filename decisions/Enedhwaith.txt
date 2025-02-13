@@ -2,6 +2,7 @@
 # Reunification of Saerlann }
 political_decisions = {
 	reunify_SAE = {
+		picture = "saerlann"
 		potential = {
 			primary_culture = saerlanner
 			NOT = { exists = SAE }

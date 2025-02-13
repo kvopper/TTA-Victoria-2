@@ -13,8 +13,6 @@ political_decisions = {
 			NOT = { exists = DWM }
 		}
 		
-		allow = {}
-		
 		effect = {
 			FOR = {
 				any_neighbor_country = {
@@ -120,7 +118,7 @@ political_decisions = {
 			tag = DWM
 			NOT = { has_global_flag = DWM_renamed_white_mountains }
 		}
-		allow = {}
+		
 		effect = {
 			116 = { change_province_name = "Forbidden Halls" }
 			
