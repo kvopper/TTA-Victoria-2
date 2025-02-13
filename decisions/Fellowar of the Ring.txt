@@ -294,8 +294,6 @@ political_decisions = {
 			FOR = { NOT = { check_variable = { which = ring_controller value = 2.1 } } } # Fellowship
 		}
 		
-		allow = {}
-		
 		effect = {
 			random_country = {
 				limit = {
@@ -488,8 +486,6 @@ political_decisions = {
 			}
 		}
 		
-		allow = {}
-		
 		effect = {
 			badboy = 1
 			add_country_modifier = { name = ring_hunters duration = -1 }
@@ -528,8 +524,6 @@ political_decisions = {
 			FOR = { check_variable = { which = ring_controller value = 1.9 } } # Fellowship
 			FOR = { NOT = { check_variable = { which = ring_controller value = 2.1 } } } # Fellowship
 		}
-		
-		allow = {}
 		
 		effect = {
 			country_event = 50325
@@ -617,8 +611,6 @@ political_decisions = {
 				good_evil_alignment = evil_alignment
 			}
 		}
-		
-		allow = {}
 		
 		effect = {
 			prestige = -25

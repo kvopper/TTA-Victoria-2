@@ -9,7 +9,6 @@ literacy = 0.2
 civilized = yes
 
 ruling_party = generic_kingsmen_nobles
-decision = NUM_start_decision
 
 upper_house = {
 	kingsmen_nobles = 100

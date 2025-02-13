@@ -13,7 +13,6 @@ political_decisions = {
 			tag = UMB
 			always = no
 		}
-		allow = {}
 		effect = {
 			# Literacy boosts
 			any_pop = {

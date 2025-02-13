@@ -8,11 +8,6 @@
 
 # Forming Rhun
 political_decisions = {
-	RHU_start_decision = {
-		potential = { always = no }
-		effect = {
-		}
-	}
 	form_rhun = {
 		potential = {
 			is_culture_group = easterlings

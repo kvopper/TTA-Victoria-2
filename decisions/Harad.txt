@@ -11,11 +11,6 @@
 
 # Forming Harad
 political_decisions = {
-	HAR_start_decision = {
-		potential = { always = no }
-		effect = {
-		}
-	}
 	form_harad = {
 		potential = {
 			is_culture_group = haradrim

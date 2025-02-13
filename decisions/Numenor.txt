@@ -4,9 +4,4 @@
 
 # Starting Decisions (Unseen)
 political_decisions = {
-	NUM_start_decision = {
-		potential = { always = no }
-		effect = {
-		}
-	}
 }

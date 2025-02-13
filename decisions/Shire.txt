@@ -2,22 +2,9 @@
 # Audax Validator "!" Ignore_1009
 
 # Shire Decisions: {
-#	Starting Decision
 #	Expansion
 #	Flavour }
 
-# Starting Decision
-political_decisions = {
-	# Audax Validator "." Ignore_1004
-	shire_start_decision = {
-		potential = {
-			tag = SHI
-			always = no
-		}
-		allow = {}
-		effect = {}
-	}
-}
 # Expansion
 political_decisions = {
 	annex_buckland = {

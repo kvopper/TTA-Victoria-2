@@ -14,9 +14,6 @@ political_decisions = {
 			always = no
 			tag = FOR
 		}
-		
-		allow = {}
-		
 		effect = {
 			# For the World Bank
 #			any_owned = {

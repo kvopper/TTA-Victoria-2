@@ -26,8 +26,6 @@ political_decisions = {
 			always = no
 		}
 		
-		allow = {}
-		
 		effect = {
 			# Allowing access to DAL flavor -- given that DAL should pretty easily become Rhovanion or the Free Folk of the North, it's easier (from a dev standpoint) and more efficient on the actual engine to do a country flag check instead of an OR block checkign the 3 potential tags
 			set_country_flag = DAL_content
@@ -128,8 +126,6 @@ political_decisions = {
 			ai = no
 			NOT = { has_global_flag = fluff_disabled }
 		}
-		
-		allow = {}
 		
 		effect = {
 			country_event = 35017
@@ -281,8 +277,6 @@ political_decisions = {
 			tag = RIV
 			NOT = { has_global_flag = DAL_rivermen_claimed_nether_marches }
 		}
-		
-		allow = { }
 		
 		effect = {
 			badboy = 3
@@ -1672,8 +1666,6 @@ political_decisions = {
 			ai = no
 			NOT = { has_global_flag = fluff_disabled }
 		}
-		
-		allow = {}
 		
 		effect = {
 			country_event = 30032

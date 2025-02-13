@@ -2,21 +2,7 @@
 # Audax Validator "!" Ignore_1009
 
 # Breeland Decisions: {
-#	Starting Decision
 #	Province Flavor }
-
-# Starting Decision
-political_decisions = {
-	# Audax Validator "." Ignore_1004
-	bree_start_decision = {
-		potential = {
-			tag = BRE
-			always = no
-		}
-		allow = {}
-		effect = {}
-	}
-}
 
 # Province Flavor
 political_decisions = {
@@ -29,7 +15,7 @@ political_decisions = {
 			1013 = { NOT = { has_province_modifier = friggin_bree_mod } }
 			taxes_3 = 1
 		}
-		allow = {}
+		
 		effect = {
 			1013 = { add_province_modifier = { name = friggin_bree_mod duration = -1 } }
 		}

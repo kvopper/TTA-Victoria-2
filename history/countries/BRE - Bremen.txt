@@ -16,7 +16,6 @@ oob = "BRE_oob.txt"
 prestige = 1
 
 ruling_party = generic_breelander_nobles
-decision = bree_start_decision
 
 upper_house = {
 	breelander_nobles = 100

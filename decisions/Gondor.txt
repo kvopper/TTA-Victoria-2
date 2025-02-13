@@ -24,9 +24,6 @@ political_decisions = {
 			tag = GON
 			always = no
 		}
-		
-		allow = {}
-		
 		effect = {
 			# Setting flags for flavor
 			set_country_flag = GON_content
@@ -101,9 +98,6 @@ political_decisions = {
 			tag = AMR
 			always = no
 		}
-		
-		allow = {}
-		
 		effect = {
 			# Literacy boosts
 			any_pop = {
@@ -331,9 +325,6 @@ political_decisions = {
 			has_global_flag = no_tolfalas_for_da
 			NOT = { has_global_flag = da_independence_war }
 		}
-		
-		allow = {}
-		
 		effect = {
 			prestige = 10
 			set_global_flag = da_independence_war
@@ -720,9 +711,6 @@ political_decisions = {
 				war = no
 			}
 		}
-		
-		allow = {}
-		
 		effect = {
 			11 = { remove_province_modifier = stonewain_valley_modifier }
 			any_country = {
@@ -2190,10 +2178,6 @@ political_decisions = {
 				war = no
 			}
 		}
-		
-		allow = {
-		}
-		
 		effect = {
 			any_neighbor_country = {
 				limit = {

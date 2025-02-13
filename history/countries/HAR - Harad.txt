@@ -14,7 +14,6 @@ civilized = yes
 
 slavery = yes_slavery
 ruling_party = generic_haruzani_nobles
-decision = HAR_start_decision
 upper_house = {
 	haruzani_nobles = 100
 }
