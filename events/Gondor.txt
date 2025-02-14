@@ -1366,21 +1366,26 @@ province_event = {
 
 # { Expansion of the Harondor Puppet
 # Harondor Puppet Expands
-country_event = {
+province_event = {
 	id = 50038
 	title = "Harondor Expands"
 	desc = "EVTDESC50038"
-	picture = "harad/map"
 	
 	trigger = {
-		tag = HRD
 		OR = {
-			vassal_of = GON
-			vassal_of = MOR
+			province = 226 #Methir
+			province = 255 #Gilin
 		}
-		any_owned_province = {
-			has_empty_adjacent_province = yes
-			is_core = HRD
+		owner = {
+			tag = HRD
+			OR = {
+				vassal_of = GON
+				vassal_of = MOR
+			}
+			any_core = {
+				empty = yes
+				any_neighbor_province = { owned_by = THIS }
+			}
 		}
 	}
 	
@@ -1389,19 +1394,39 @@ country_event = {
 	option = {
 		name = "We are reclaiming what is rightfully ours"
 		
-		random_owned = {
-			limit = {
-				has_empty_adjacent_province = yes
-				is_core = HRD
-			}
-			
-			random_empty_neighbor_province = {
-				limit = {
-					is_core = HRD
+		owner = {
+			random_owned = {
+				limit = { owner = { has_global_flag = hidden_effects } }
+				# Adds a targeting modifier to all eligible provinces
+				owner = {
+					HRD = {
+						all_core = {
+							limit = {
+								empty = yes
+								any_neighbor_province = { owned_by = THIS }
+							}
+							add_province_modifier = { name = colonization_target duration = -1 }
+						}
+					}
+					
+					# Randomly grabs one of the marked provinces and annexes a random neighbor uncolonized core
+					FOR = {
+						random_owned = {
+							random_empty_neighbor_province = {
+								limit = { has_province_modifier = colonization_target }
+								secede_province = THIS
+							}
+						}
+					}
+					
+					# Clears the targeting modifiers to clear the path for the next time this event fires
+					HRD = { all_core = { remove_province_modifier = colonization_target } }
+					
 				}
-				secede_province = THIS
 			}
 		}
+		
+		colonize_harondor_province_loc = {}
 	}
 }
 
