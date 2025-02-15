@@ -1176,10 +1176,10 @@ country_event = {
 	
 	immediate = {
 		empty_line_loc = {}
-		DAL_bard_i_born_loc = {}
+		empty_line_loc = {}
 		
 		empty_line_loc = {}
-		DAL_bard_i_age_loc = {}
+		empty_line_loc = {}
 		
 		empty_line_loc = {}
 		
@@ -1287,10 +1287,10 @@ country_event = {
 	
 	immediate = {
 		empty_line_loc = {}
-		DAL_bain_i_born_loc = {}
+		empty_line_loc = {}
 		
 		empty_line_loc = {}
-		DAL_bain_i_age_loc = {}
+		empty_line_loc = {}
 		
 		empty_line_loc = {}
 		
@@ -1362,9 +1362,9 @@ country_event = {
 	
 	immediate = {
 		empty_line_loc = {}
-		DAL_brand_i_born_loc = {}
 		empty_line_loc = {}
-		DAL_brand_i_age_loc = {}
+		empty_line_loc = {}
+		empty_line_loc = {}
 		empty_line_loc = {}
 		empty_line_loc = {}
 		traits_loc = {}
@@ -1417,9 +1417,9 @@ country_event = {
 	
 	immediate = {
 		empty_line_loc = {}
-		DAL_bard_ii_born_loc = {}
 		empty_line_loc = {}
-		DAL_bard_ii_age_loc = {}
+		empty_line_loc = {}
+		empty_line_loc = {}
 		empty_line_loc = {}
 		empty_line_loc = {}
 		traits_loc = {}

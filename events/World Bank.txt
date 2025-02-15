@@ -6717,6 +6717,14 @@ country_event = {
 			}
 			
 			random_owned = {
+				limit = { owner = { has_country_modifier = girion_ii_modifier } }
+				owner = {
+					change_variable = { which = modifier_count value = 1 }
+					change_variable = { which = total_modifier_count value = 1 }
+				}
+			}
+			
+			random_owned = {
 				limit = { owner = { has_country_modifier = thranduil_modifier } }
 				owner = {
 					change_variable = { which = modifier_count value = 1 }

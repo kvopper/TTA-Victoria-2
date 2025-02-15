@@ -1221,13 +1221,6 @@ country_event = {
 		random_owned = {
 			limit = {
 				owner = { NOT = { has_global_flag = DAL_recruited_bryn } }
-				owner = { FOR = { check_variable = { which = brand_i_age value = 15.9 } } }
-			}
-			green_color_loc = {}
-		}
-		random_owned = {
-			limit = {
-				owner = { NOT = { has_global_flag = DAL_recruited_bryn } }
 			}
 			DAL_military_leaders_brand_i_an_adult_loc = {}
 			maroon_color_loc = {}
@@ -1245,13 +1238,6 @@ country_event = {
 			}
 			DAL_military_leaders_brand_i_married_loc = {}
 			maroon_color_loc = {}
-		}
-		random_owned = {
-			limit = {
-				owner = { NOT = { has_global_flag = DAL_recruited_bryn } }
-				owner = { FOR = { check_variable = { which = bard_ii_age value = 0.9 } } }
-			}
-			green_color_loc = {}
 		}
 		random_owned = {
 			limit = {
@@ -1293,13 +1279,6 @@ country_event = {
 		random_owned = {
 			limit = {
 				owner = { NOT = { has_global_flag = DAL_recruited_girloth } }
-				owner = { FOR = { check_variable = { which = bard_ii_age value = 15.9 } } }
-			}
-			green_color_loc = {}
-		}
-		random_owned = {
-			limit = {
-				owner = { NOT = { has_global_flag = DAL_recruited_girloth } }
 			}
 			DAL_military_leaders_bard_ii_an_adult_loc = {}
 			maroon_color_loc = {}
@@ -1321,7 +1300,7 @@ country_event = {
 		random_owned = {
 			limit = {
 				owner = { NOT = { has_global_flag = DAL_recruited_girloth } }
-				owner = { has_global_flag = DAL_girion_ii_born }
+				owner = { has_global_flag = DAL_girion_ii_alive }
 			}
 			green_color_loc = {}
 		}

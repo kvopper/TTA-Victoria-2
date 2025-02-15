@@ -594,13 +594,14 @@ EVTDESC50923;Despite our attempts to hunt and exterminate the wights, they are s
 EVTDESC50924;We have lost control over the Long Marshes! In one massive attack, the wights have pushed our troops out from the region. We must restore order quickly!;x
 EVTDESC50925;$FROMCOUNTRY$ has proposed a trade agreement with us. Undoubtedly this would be lucrative for both of our realms, but do we wish to strengthen their economy?;x
 EVTDESC50928;The amount of trading going to Esgaroth (from our trade agreements) has changed in the past month.;x
-EVTDESC50929;$MONARCHTITLE$ Bard I has died today! The whole realm mourns, and prepares for his heir's coronation.\n\n§MDespite not showing in the effects, this event will calculate the next leader and fire their coronation event.§!;x
+EVTDESC50929;$MONARCHTITLE$ Bard I has died today! The whole realm mourns, and prepares for the coronation of his sonBain.;x
 EVTDESC50930;Today, Bain, son of Bard I, was coronated as $MONARCHTITLE$ Bain I of $COUNTRY$. May his reign be long and prosperous!;x
-EVTDESC50931;$MONARCHTITLE$ Bain I has died today! The whole realm mourns, and prepares for his heir's coronation.\n\n§MDespite not showing in the effects, this event will calculate the next leader and fire their coronation event.§!;x
+EVTDESC50931;$MONARCHTITLE$ Bain I has died today! The whole realm mourns, and prepares for the coronation of his son Brand.;x
 EVTDESC50932;Today, Brand, son of Bain I, was coronated as $MONARCHTITLE$ Brand I of $COUNTRY$. May his reign be long and prosperous!;x
-EVTDESC50933;$MONARCHTITLE$ Brand I has died today! The whole realm mourns, and prepares for his heir's coronation.\n\n§MDespite not showing in the effects, this event will calculate the next leader and fire their coronation event.§!;x
+EVTDESC50933;$MONARCHTITLE$ Brand I has died today! The whole realm mourns, and prepares for the coronation of his sonBard.;x
 EVTDESC50934;Today, Bard, son of Brand I, was coronated as $MONARCHTITLE$ Bard II of $COUNTRY$. May his reign be long and prosperous!;x
-EVTDESC50935;$MONARCHTITLE$ Bard II has died today! The whole realm mourns, and prepares for his heir's coronation.\n\n§MTechnically, Girion II should be coronated (assuming he has been born and is of age), but due to limited leader slots, the mod team has elected to not put Girion II into the mod. You will instead get a generic leader§!;x
+EVTDESC50935;$MONARCHTITLE$ Bard II has died today! The whole realm mourns, and prepares for the coronation of his son Girion.;x
+EVTDESC50916;Today, Girion, son of Brand II, was coronated as $MONARCHTITLE$ Girion II of $COUNTRY$. May his reign be long and prosperous!;x
 EVTDESC50936;Today, the whole realm celebrates as Bain, son of Bard I, marries Astrid, daughter of Braga.;x
 EVTDESC50937;Today, Brand, son of Bain, was born. The realm breathes a sign of relief knowing the succession has been secured.;x
 EVTDESC50938;Today, Girion, son of Bain, was born. Despite not becoming king, Girion Bainson would go on to protect and rule the border-town of Austriborg. His leadership would elevate the town's status, making it one of the most important towns in the realm.;x

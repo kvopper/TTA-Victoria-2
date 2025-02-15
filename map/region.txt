@@ -508,6 +508,7 @@ colonize_harondor_province_loc = { } # §GA random uncolonized core of Harondor 
 # SirRunner Generator Apply "§I"
 
 # Dynamic Tooltip Locs - Generic
+# 1066, 1067, 1069 - 1072 originally for leader age calculations. Has been removed
 # 1073 - 1084 originally were the "railroading_tag_specific_description_loc_#" regions, but those have been removed in favor of the dynamic loc regions
 dynamic_loc_slot_1 = { 1085 } # 
 dynamic_loc_slot_2 = { 1086 } # 
@@ -554,14 +555,7 @@ fourth_age_year_loc = { 1147 } # The Fourth Age hasn't started yet
 shire_reckoning_loc = { 1148 } # The year is 0 by Shire Reckoning
 
 # Dynamic Tooltip Locs - Barding Realm
-DAL_bard_i_age_loc = { 1066 } # §TBard I§! is currently §T55§! years old
-DAL_bain_i_age_loc = { 1067 } # §TBain I§! is currently §T25§! years old
 DAL_trading_realm_count_loc = { 1068 } # §TWe are currently trading with §G2§! realms:\n
-DAL_brand_i_age_loc = { 1069 } # §TBrand I§! has not yet been born
-DAL_bard_ii_age_loc = { 1070 } # §TBard II§! has not yet been born
-
-DAL_brand_i_born_loc = { 1071 } # §TBrand I§! has not yet been born
-DAL_bard_ii_born_loc = { 1072 } # §TBard II§! has not yet been born
 
 dynamic_loc_slots = { 1085 1086 1087 1088 1089 1090 1091 1092 1093 1094 1095 1096 1097 1098 1099 1100 1101 1102 1103 1104 1105 1106 1107 1108 1109 1110 1111 1112 1113 1114 1115 1116 1117 1118 1119 1120 1121 1122 1123 1124 } # Dynamic Loc Slots
 
@@ -648,9 +642,6 @@ DAL_merchant_guild_bop_shift_merchants_1_loc = { } # §RThe Balance of Power bet
 DAL_merchant_guild_bop_shift_guild_1_loc = { } # §RThe Balance of Power between the Merchants and Fisher's Guild will shift in the favor of the Fisher's Guild by 1
 
 RIV_break_dal_hegemony_loc = { } # §GWe must win this war and get our CB fulfilled. If we lose or whitepeace, DAL will puppet us (and likely annex us via flavor).§!
-
-DAL_bard_i_born_loc = { } # §TBard I§! was born in §TJune§! of §TTA 2898§!
-DAL_bain_i_born_loc = { } # §TBain I§! was born in §TJuly§! of §TTA 2928§!
 
 DAL_increase_erebor_relations_5_loc = { } # §GErebor Alliance points increased by 5§!;x
 DAL_increase_erebor_relations_2_loc = { } # §GErebor Alliance points increased by 2§!;x

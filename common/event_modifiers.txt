@@ -1454,6 +1454,18 @@ bard_ii_modifier = {
 }
 
 # Country Modifier
+girion_ii_modifier = {
+	# Of the House of Bard
+	global_pop_consciousness_modifier = -0.01
+	# The Peaceful
+	rgo_output = 0.25
+	supply_consumption = -0.50
+	research_points_modifier = 0.10
+	
+	icon = 58
+}
+
+# Country Modifier
 thranduil_modifier = {
 	# Erratic
 	global_pop_consciousness_modifier = 0.01
