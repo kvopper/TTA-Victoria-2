@@ -20,4 +20,17 @@ political_decisions = {
 			shire_reckoning_loc = {}
 		}
 	}
+	show_bree_reckoning_date = {
+		picture = "clock"
+		potential = {
+			ai = no
+			OR = {
+				primary_culture = breelander
+				accepted_culture = breelander
+			}
+		}
+		effect = {
+			bree_reckoning_loc = {}
+		}
+	}
 }

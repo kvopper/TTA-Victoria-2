@@ -138,8 +138,9 @@ political_decisions = {
 			# Start Monthly Alliance of Dwarves and Men Cleanup Event
 			country_event = { id = 99003 days = 33 } # Due to the order of how things get fired, bad things happen if this is going right away. Starting this on 2/1/2954
 
-			# Start Shire Reckoning event loop
+			# Start Shire/Bree Reckoning event loop
 			country_event = 99903
+			country_event = 99904
 			
 			# Start Daily Generic Cleanup Event
 			country_event = 99250
