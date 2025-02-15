@@ -2,8 +2,7 @@
 # Audax Validator "!" Ignore_1009
 
 # Political Decisions: {
-#	Political
-#	Government Reform }
+#	Political }
 
 # Political
 political_decisions = {
@@ -14,13 +13,25 @@ political_decisions = {
 		
 		allow = {
 			is_secondary_power = yes
-			sphere_owner = {
-				NOT = {
-					relation = {
-						who = THIS
-						value = 0
+			OR = {
+				sphere_owner = {
+					NOT = {
+						relation = {
+							who = THIS
+							value = 0
+						}
+					truce_with = THIS
 					}
-				truce_with = THIS
+				}
+				AND = {
+					ai = no
+					good_evil_alignment = good_alignment
+					sphere_owner = { good_evil_alignment = evil_alignment }
+				}
+				AND = {
+					ai = no
+					good_evil_alignment = evil_alignment
+					sphere_owner = { good_evil_alignment = good_alignment }
 				}
 			}
 		}
@@ -41,27 +52,6 @@ political_decisions = {
 		}
 	}
 	
-	leave_soi_good_evil = {
-		potential = {
-			ai = no
-			part_of_sphere = yes
-			OR = {
-				AND = {
-					good_evil_alignment = good_alignment
-					sphere_owner = { good_evil_alignment = evil_alignment }
-				}
-				AND = {
-					good_evil_alignment = evil_alignment
-					sphere_owner = { good_evil_alignment = good_alignment }
-				}
-			}
-		}
-		
-		effect = {
-			sphere_owner = { country_event = 2505 }
-		}
-	}
-	
 	nationalize = {
 		potential = {
 			can_nationalize = yes
@@ -79,37 +69,11 @@ political_decisions = {
 			factor = 0
 		}
 	}
-}
-
-# Government Reform
-political_decisions = {
-	show_government_decisions = {
-		potential = {
-			ai = no
-			NOT = { has_global_flag = viewing_government_decisions }
-		}
-		
-		effect = {
-			set_global_flag = viewing_government_decisions
-		}
-	}
 	
-	hide_government_decisions = {
-		potential = {
-			ai = no
-			has_global_flag = viewing_government_decisions
-		}
-		
-		effect = {
-			clr_global_flag = viewing_government_decisions
-		}
-	}
-
 	abandon_neutrality = {
 		potential = {
 			ai = no
 			has_country_modifier = political_neutrality
-			has_global_flag = viewing_government_decisions
 		}
 
 		effect = {

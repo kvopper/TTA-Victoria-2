@@ -7,14 +7,8 @@ POLITICS_DECISIONS;Decisions: Flavor   §OFluff   §GGeneral   §TQOL   §rSetti
 ###############################;x
 leave_soi_title;§GLeave Sphere of Influence§!;x
 leave_soi_desc;We can leave this Sphere of Influence, however our former master may well declare war to stop us.;x
-leave_soi_good_evil_title;§GLeave Sphere of Influence (Good/Evil)§!;x
-leave_soi_good_evil_desc;We can leave this Sphere of Influence due to being Anti-Sauron when our sphere leader is Sauronite, or because we are Sauronite when our sphere leader is Anti-Sauron. However, our former master may well declare war to stop us.;x
 nationalize_title;§GSeize the means of production!§!;x
 nationalize_desc;No more will the foreign dogs grow fat off of the sweat of our people! The time has come to seize all assets owned by outsiders, to be cared for by the realm.;x
-show_government_decisions_title;§GShow Government Decisions§!;x
-show_government_decisions_desc;This decision allows you to see all government-related decisions;x
-hide_government_decisions_title;§GHide Government Decisions§!;x
-hide_government_decisions_desc;This decisions allows you to hide all government-related decisions;x
 abandon_neutrality_title;§GAbandon Neutrality§!;x
 abandon_neutrality_desc;Our realm is considered politically neutral and unable to take part in wars or be attacked. We can choose to abandon this neutrality.;x
 #####################################;x }
