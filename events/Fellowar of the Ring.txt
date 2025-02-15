@@ -1767,7 +1767,7 @@ country_event = {
 			country_event = 50327
 		}
 
-		prestige = -100
+		prestige = -10000
 		
 		random_owned = {
 			limit = {
