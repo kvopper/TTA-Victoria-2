@@ -7,14 +7,14 @@ research_optimum = 0.01
 
 demote_migrant = yes
 
+administrative_efficiency = yes
+
+tax_eff = 1.0
+
 rebel = {
 	infantry = 0.5
 	archers = 0.5
 }
-
-administrative_efficiency = yes
-
-tax_eff = 1.0
 
 life_needs_income = {
 	type = administration
@@ -1815,6 +1815,32 @@ ideologies = {
 		}
 	}
 	
+	rivermen_thegans = {
+		factor = 1
+		# Must be active in the realm or active in the province the pop resides
+		modifier = {
+			factor = 0
+			NOT = { country = { has_country_flag = ideologies_rivermen_thegans_active } }
+			NOT = { location = { state_scope = { any_owned_province = { any_core = { has_country_flag = ideologies_rivermen_thegans_active } } } } }
+		}
+		modifier = {
+			factor = 2
+			has_pop_religion = men
+		}
+		modifier = {
+			factor = 2
+			is_culture_group = gramavuld_northmen
+		}
+		modifier = {
+			factor = 2
+			location = { any_core = { has_country_flag = RIV_content } }
+		}
+		modifier = {
+			factor = 2
+			ruling_party_ideology = rivermen_thegans
+		}
+	}
+	
 	rivermen_nobles = {
 		factor = 1
 		# Must be active in the realm or active in the province the pop resides
@@ -1864,6 +1890,58 @@ ideologies = {
 		modifier = {
 			factor = 2
 			ruling_party_ideology = adhalling_nobles
+		}
+	}
+	
+	master_of_laketown = {
+		factor = 1
+		# Must be active in the realm or active in the province the pop resides
+		modifier = {
+			factor = 0
+			NOT = { country = { has_country_flag = ideologies_master_of_laketown_active } }
+			NOT = { location = { state_scope = { any_owned_province = { any_core = { has_country_flag = ideologies_master_of_laketown_active } } } } }
+		}
+		modifier = {
+			factor = 2
+			has_pop_religion = men
+		}
+		modifier = {
+			factor = 2
+			is_culture_group = gramavuld_northmen
+		}
+		modifier = {
+			factor = 2
+			strata = rich
+		}
+		modifier = {
+			factor = 2
+			ruling_party_ideology = master_of_laketown
+		}
+	}
+	
+	lakemen_fishers_guild = {
+		factor = 1
+		# Must be active in the realm or active in the province the pop resides
+		modifier = {
+			factor = 0
+			NOT = { country = { has_country_flag = ideologies_lakemen_fishers_guild_active } }
+			NOT = { location = { state_scope = { any_owned_province = { any_core = { has_country_flag = ideologies_lakemen_fishers_guild_active } } } } }
+		}
+		modifier = {
+			factor = 2
+			has_pop_religion = men
+		}
+		modifier = {
+			factor = 2
+			is_culture_group = gramavuld_northmen
+		}
+		modifier = {
+			factor = 2
+			strata = poor
+		}
+		modifier = {
+			factor = 2
+			ruling_party_ideology = lakemen_fishers_guild
 		}
 	}
 	

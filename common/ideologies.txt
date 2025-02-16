@@ -13,7 +13,7 @@
 #	Update the country history files (history/countries) as needed to get the right ruling party, starting upper house and starting decision
 #	Update starting decisions (or whatever flavor unlocks the ideology) to set the ideologies_[ideology name]_active on the tags in question
 #	Update events 14006 and 14007 in events/Election.txt
-#	Update common/governments.txt to allow the ideology in the various government types
+#	Update common/governments.txt to allow the ideology in the various government types (only needed on appoint_ruling_party = yes governments)
 #	Update event 3001 common/Revolts.txt (if new generic noble ideology)
 
 # cosmetic. Does nothing in game except define slaves for pop_types
@@ -478,6 +478,17 @@ gramavuld_northmen_nobility = {
 		add_economic_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = grammas_nobles } }
 	}
 	
+	rivermen_thegans = {
+		color = { 110 130 205 }
+		
+		add_political_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = rivermen_thegans } }
+		remove_political_reform = { base = 0 }
+		add_social_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = rivermen_thegans } }
+		remove_social_reform = { base = 0 }
+		add_military_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = rivermen_thegans } }
+		add_economic_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = rivermen_thegans } }
+	}
+	
 	rivermen_nobles = {
 		color = { 112 135 215 }
 		
@@ -498,6 +509,32 @@ gramavuld_northmen_nobility = {
 		remove_social_reform = { base = 0 }
 		add_military_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = adhalling_nobles } }
 		add_economic_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = adhalling_nobles } }
+	}
+}
+
+gramavuld_northmen_merchants = {
+	master_of_laketown = {
+		color = { 90 135 200 }
+		
+		add_political_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = master_of_laketown } }
+		remove_political_reform = { base = 0 }
+		add_social_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = master_of_laketown } }
+		remove_social_reform = { base = 0 }
+		add_military_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = master_of_laketown } }
+		add_economic_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = master_of_laketown } }
+	}
+}
+
+gramavuld_northmen_guilds = {
+	lakemen_fishers_guild = {
+		color = { 90 135 255 }
+		
+		add_political_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = lakemen_fishers_guild } }
+		remove_political_reform = { base = 0 }
+		add_social_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = lakemen_fishers_guild } }
+		remove_social_reform = { base = 0 }
+		add_military_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = lakemen_fishers_guild } }
+		add_economic_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = lakemen_fishers_guild } }
 	}
 }
 

@@ -105,7 +105,23 @@ political_decisions = {
 			
 			# Set allowed leaders
 			set_country_flag = ideologies_house_of_bard_active
+			set_country_flag = ideologies_master_of_laketown_active
+			set_country_flag = ideologies_lakemen_fishers_guild_active
 			add_country_modifier = { name = bard_i_modifier duration = -1 }
+			
+			# Set allowed leaders for Rivermen realms
+			any_country = {
+				limit = {
+					OR = {
+						tag = DA1
+						tag = DA2
+						tag = DA3
+						tag = DA4
+					}
+				}
+				set_country_flag = ideologies_rivermen_thegans_active
+				set_country_flag = RIV_content
+			}
 			
 			# Set up leaders
 			set_global_flag = DAL_bard_i_alive

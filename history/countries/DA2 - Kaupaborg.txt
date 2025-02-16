@@ -13,10 +13,10 @@ prestige = 10
 
 oob = "DA2_oob.txt"
 
-ruling_party = generic_rivermen_nobles
+ruling_party = DA2_rivermen_thegans
 
 upper_house = {
-	rivermen_nobles = 100
+	rivermen_thegans = 100
 }
 
 penal_reform = hard_labor

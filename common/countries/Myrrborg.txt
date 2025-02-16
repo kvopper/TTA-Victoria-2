@@ -2,6 +2,21 @@ graphical_culture = NorthmenGC
 color = { 80 149 217 }
 
 party = {
+	name = "DA3_rivermen_thegans"
+	start_date = 2954.1.1
+	end_date = 4000.1.1
+	
+	ideology = rivermen_thegans
+	
+	trade_policy = protectionism
+	tax_policy = interventionism
+	language_policy = regional_autonomy
+	diplomatic_policy = reactive
+	war_policy = jingoism
+	good_evil_alignment = good_alignment
+}
+
+party = {
 	name = "generic_rivermen_nobles"
 	start_date = 2954.1.1
 	end_date = 4000.1.1
