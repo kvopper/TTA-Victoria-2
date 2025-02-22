@@ -304,32 +304,38 @@ political_reforms = {
 	vote_franschise = {
 		next_step_only = yes
 		none_voting = {
+			allow = { NOT = { has_country_flag = locked_voting } }
 			rich_vote = 0
 			middle_vote = 0
 			poor_vote = 0
 		}
 		landed_voting = {
+			allow = { NOT = { has_country_flag = locked_voting } }
 			rich_vote = 1
 			middle_vote = 0
 			poor_vote = 0
 			allow = { ai = no }
 		}
 		wealth_weighted_voting = {
+			allow = { NOT = { has_country_flag = locked_voting } }
 			rich_vote = 2
 			middle_vote = 1
 			poor_vote = 0
 		}
 		wealth_voting = {
+			allow = { NOT = { has_country_flag = locked_voting } }
 			rich_vote = 1
 			middle_vote = 1
 			poor_vote = 0
 		}
 		universal_weighted_voting = {
+			allow = { NOT = { has_country_flag = locked_voting } }
 			rich_vote = 3
 			middle_vote = 2
 			poor_vote = 1
 		}
 		universal_voting = {
+			allow = { NOT = { has_country_flag = locked_voting } }
 			rich_vote = 1
 			middle_vote = 1
 			poor_vote = 1
@@ -533,24 +539,12 @@ social_reforms = {
 		next_step_only = yes
 		
 		granted_exclusive_tr = {
-			allow = {
-				NOT = { has_country_flag = DAL_merchant_supported_by_realm }
-				NOT = { has_country_flag = DAL_guild_supported_by_realm }
-			}
 			tariff_efficiency_modifier = -0.1
 		}
 		limited_exclusive_tr = {
-			allow = {
-				NOT = { has_country_flag = DAL_merchant_supported_by_realm }
-				NOT = { has_country_flag = DAL_guild_supported_by_realm }
-			}
 			tariff_efficiency_modifier = -0.05
 		}
 		abolished_exclusive_tr = {
-			allow = {
-				NOT = { has_country_flag = DAL_merchant_supported_by_realm }
-				NOT = { has_country_flag = DAL_guild_supported_by_realm }
-			}
 		}
 	}
 	# Income Modifiers
@@ -559,29 +553,17 @@ social_reforms = {
 		next_step_only = yes
 		
 		privileged_state_supplies = {
-			allow = {
-				NOT = { has_country_flag = DAL_merchant_supported_by_realm }
-				NOT = { has_country_flag = DAL_guild_supported_by_realm }
-			}
 			rich_income_modifier = 0.25
 			middle_income_modifier = -0.05
 			poor_income_modifier = -0.1
 		}
 		allowed_state_supplies = {
-			allow = {
-				NOT = { has_country_flag = DAL_merchant_supported_by_realm }
-				NOT = { has_country_flag = DAL_guild_supported_by_realm }
-			}
 			rich_income_modifier = 0.1
 			middle_income_modifier = -0.02
 			poor_income_modifier = -0.05
 			administrative_multiplier = 1
 		}
 		restricted_state_supplies = {
-			allow = {
-				NOT = { has_country_flag = DAL_merchant_supported_by_realm }
-				NOT = { has_country_flag = DAL_guild_supported_by_realm }
-			}
 			administrative_multiplier = 2
 		}
 	}
@@ -591,36 +573,20 @@ social_reforms = {
 		next_step_only = yes
 		
 		independent_cities = {
-			allow = {
-				NOT = { has_country_flag = DAL_merchant_supported_by_realm }
-				NOT = { has_country_flag = DAL_guild_supported_by_realm }
-			}
 			global_pop_militancy_modifier = 0.03
 			global_pop_consciousness_modifier = 0.03
 		}
 		chartered_cities = {
-			allow = {
-				NOT = { has_country_flag = DAL_merchant_supported_by_realm }
-				NOT = { has_country_flag = DAL_guild_supported_by_realm }
-			}
 			administrative_multiplier = 1
 			global_pop_militancy_modifier = 0.02
 			global_pop_consciousness_modifier = 0.02
 		}
 		territorial_cities = {
-			allow = {
-				NOT = { has_country_flag = DAL_merchant_supported_by_realm }
-				NOT = { has_country_flag = DAL_guild_supported_by_realm }
-			}
 			administrative_multiplier = 2
 			global_pop_militancy_modifier = 0.01
 			global_pop_consciousness_modifier = 0.01
 		}
 		royal_cities = {
-			allow = {
-				NOT = { has_country_flag = DAL_merchant_supported_by_realm }
-				NOT = { has_country_flag = DAL_guild_supported_by_realm }
-			}
 			administrative_multiplier = 3
 		}
 	}
@@ -629,41 +595,21 @@ social_reforms = {
 		next_step_only = yes
 		
 		no_pensions = {
-			allow = {
-				NOT = { has_country_flag = DAL_merchant_supported_by_realm }
-				NOT = { has_country_flag = DAL_guild_supported_by_realm }
-			}
 			minimum_wage = 1
 		}
 		trinket_pensions = {
-			allow = {
-				NOT = { has_country_flag = DAL_merchant_supported_by_realm }
-				NOT = { has_country_flag = DAL_guild_supported_by_realm }
-			}
 			minimum_wage = 1
 			pension_level = 0.25
 		}
 		low_pensions = {
-			allow = {
-				NOT = { has_country_flag = DAL_merchant_supported_by_realm }
-				NOT = { has_country_flag = DAL_guild_supported_by_realm }
-			}
 			minimum_wage = 1
 			pension_level = 0.50
 		}
 		acceptable_pensions = {
-			allow = {
-				NOT = { has_country_flag = DAL_merchant_supported_by_realm }
-				NOT = { has_country_flag = DAL_guild_supported_by_realm }
-			}
 			minimum_wage = 1
 			pension_level = 0.75
 		}
 		good_pensions = {
-			allow = {
-				NOT = { has_country_flag = DAL_merchant_supported_by_realm }
-				NOT = { has_country_flag = DAL_guild_supported_by_realm }
-			}
 			minimum_wage = 1
 			pension_level = 1
 		}
@@ -674,23 +620,11 @@ social_reforms = {
 		administrative = yes
 		
 		hereditary = {
-			allow = {
-				NOT = { has_country_flag = DAL_merchant_supported_by_realm }
-				NOT = { has_country_flag = DAL_guild_supported_by_realm }
-			}
 		}
 		appointment = {
-			allow = {
-				NOT = { has_country_flag = DAL_merchant_supported_by_realm }
-				NOT = { has_country_flag = DAL_guild_supported_by_realm }
-			}
 			administrative_multiplier = 1
 		}
 		guild_school = {
-			allow = {
-				NOT = { has_country_flag = DAL_merchant_supported_by_realm }
-				NOT = { has_country_flag = DAL_guild_supported_by_realm }
-			}
 			administrative_multiplier = 2
 		}
 	}

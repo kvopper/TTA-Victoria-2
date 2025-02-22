@@ -1906,6 +1906,36 @@ province_event = {
 		name = "Agree with the Merchants"
 		
 		owner = {
+			any_pop = {
+				limit = {
+					location = {
+						province_id = 140 # Holmgeirstadur
+						province_id = 648 # Londaroth
+						province_id = 649 # Elliborg
+						province_id = 653 # Hafborg
+						province_id = 654 # Esgaroth
+					}
+				}
+				ideology = {
+					factor = 0.03
+					value = master_of_laketown
+				}
+			}
+			any_pop = {
+				limit = {
+					location = {
+						NOT = { province_id = 140 } # Holmgeirstadur
+						NOT = { province_id = 648 } # Londaroth
+						NOT = { province_id = 649 } # Elliborg
+						NOT = { province_id = 653 } # Hafborg
+						NOT = { province_id = 654 } # Esgaroth
+					}
+				}
+				ideology = {
+					factor = 0.02
+					value = master_of_laketown
+				}
+			}
 			change_variable = { which = DAL_merchants_fishers_bop value = -1 } # Shift 1 in favor of the Merchants
 			DAL_merchant_guild_bop_shift_merchants_1_loc = {}
 		}
@@ -1919,6 +1949,36 @@ province_event = {
 		name = "Agree with the Fisher's Guild"
 		
 		owner = {
+			any_pop = {
+				limit = {
+					location = {
+						province_id = 140 # Holmgeirstadur
+						province_id = 648 # Londaroth
+						province_id = 649 # Elliborg
+						province_id = 653 # Hafborg
+						province_id = 654 # Esgaroth
+					}
+				}
+				ideology = {
+					factor = 0.03
+					value = lakemen_fishers_guild
+				}
+			}
+			any_pop = {
+				limit = {
+					location = {
+						NOT = { province_id = 140 } # Holmgeirstadur
+						NOT = { province_id = 648 } # Londaroth
+						NOT = { province_id = 649 } # Elliborg
+						NOT = { province_id = 653 } # Hafborg
+						NOT = { province_id = 654 } # Esgaroth
+					}
+				}
+				ideology = {
+					factor = 0.02
+					value = lakemen_fishers_guild
+				}
+			}
 			change_variable = { which = DAL_merchants_fishers_bop value = 1 } # Shift 1 in favor of the Fisher's Guild
 			DAL_merchant_guild_bop_shift_guild_1_loc = {}
 		}
@@ -1929,20 +1989,40 @@ province_event = {
 	}
 	
 	option = {
-		name = "Take no sides"
+		name = "Forge a compromise"
 		
 		owner = {
-			random_list = {
-				1 = {
-					change_variable = { which = DAL_merchants_fishers_bop value = -1 } # Shift 1 in favor of the Merchants
-					DAL_merchant_guild_bop_shift_merchants_1_loc = {}
-				}
-				1 = {
-					change_variable = { which = DAL_merchants_fishers_bop value = 1 } # Shift 1 in favor of the Fisher's Guild
-					DAL_merchant_guild_bop_shift_guild_1_loc = {}
+			any_pop = {
+				limit = {
+					location = {
+						province_id = 140 # Holmgeirstadur
+						province_id = 648 # Londaroth
+						province_id = 649 # Elliborg
+						province_id = 653 # Hafborg
+						province_id = 654 # Esgaroth
 					}
+				}
+				ideology = {
+					factor = 0.03
+					value = house_of_bard
+				}
 			}
-			plurality = 1
+			any_pop = {
+				limit = {
+					location = {
+						NOT = { province_id = 140 } # Holmgeirstadur
+						NOT = { province_id = 648 } # Londaroth
+						NOT = { province_id = 649 } # Elliborg
+						NOT = { province_id = 653 } # Hafborg
+						NOT = { province_id = 654 } # Esgaroth
+					}
+				}
+				ideology = {
+					factor = 0.02
+					value = house_of_bard
+				}
+			}
+			plurality = -1
 		}
 	}
 }
@@ -2354,5 +2434,241 @@ country_event = {
 		name = "To good friends!"
 		
 		treasury = 50000
+	}
+}
+
+# The Demands of the Merchants
+country_event = {
+	id = 50962
+	title = "Demands of the Merchants"
+	desc = "EVTDESC50962"
+	picture = "gramavuld/master_of_laketown"
+	
+	fire_only_once = yes
+	
+	trigger = {
+		has_country_flag = DAL_content
+		has_country_modifier = DAL_merchant_power_10
+		ruling_party_ideology = house_of_bard
+		government_type = monarchist
+	}
+	
+	mean_time_to_happen = {
+		months = 60
+		modifier = {
+			modifier = 0.5
+			average_militancy = 4
+		}
+	}
+	
+	option = {
+		name = "We must concede"
+		
+		prestige = -5
+		
+		any_pop = {
+			limit = { is_primary_culture = yes }
+			ideology = {
+				factor = 0.15
+				value = master_of_laketown
+			}
+		}
+		
+		# Mimicking the effects of DAL_support_merchants (decision)
+		random_owned = {
+			limit = { owner = { NOT = { has_country_flag = DAL_merchant_supported_by_realm } } }
+			owner = {
+				remove_country_modifier = DAL_guild_power_10
+				remove_country_modifier = DAL_guild_power_9
+				remove_country_modifier = DAL_guild_power_8
+				remove_country_modifier = DAL_guild_power_7
+				remove_country_modifier = DAL_guild_power_6
+				remove_country_modifier = DAL_guild_power_5
+				remove_country_modifier = DAL_guild_power_4
+				remove_country_modifier = DAL_guild_power_3
+				remove_country_modifier = DAL_guild_power_2
+				remove_country_modifier = DAL_guild_power_1
+				remove_country_modifier = DAL_merchant_guild_balanced
+				remove_country_modifier = DAL_merchant_power_1
+				remove_country_modifier = DAL_merchant_power_2
+				remove_country_modifier = DAL_merchant_power_3
+				remove_country_modifier = DAL_merchant_power_4
+				remove_country_modifier = DAL_merchant_power_5
+				remove_country_modifier = DAL_merchant_power_6
+				remove_country_modifier = DAL_merchant_power_7
+				remove_country_modifier = DAL_merchant_power_8
+				remove_country_modifier = DAL_merchant_power_9
+				
+				set_variable = { which = DAL_merchants_fishers_bop value = -10 } # 10 in favor of the Merchants
+				
+				random_owned = {
+					limit = {
+						NOT = { owner = { has_country_modifier = DAL_merchant_power_10 } }
+					}
+					owner = { add_country_modifier = { name = DAL_merchant_power_10 duration = -1 } }
+				}
+				
+				set_country_flag = DAL_merchant_supported_by_realm
+			}
+		}
+		
+		political_reform = landed_voting
+		political_reform = primary_voting
+		political_reform = first_past_the_post
+		political_reform = republican
+		government = merchant_republic
+		
+		locks_voting_reform_loc = { }
+		
+		election = yes # Last thing that shows text because it doesn't have a newline for some reason
+		
+		set_country_flag = locked_voting
+		
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0
+				has_global_flag = railroading_enabled
+			}
+		}
+	}
+	
+	option = {
+		name = "The House of Bard rules this realm! Not the merchants"
+		
+		prestige = 5
+		
+		any_pop = {
+			limit = {
+				is_primary_culture = yes
+				is_accepted_culture = yes
+			}
+			ideology = {
+				factor = 0.025
+				value = master_of_laketown
+			}
+		}
+		
+		ai_chance = {
+			factor = 50
+		}
+	}
+}
+
+# The Demands of the Fishers Guild
+country_event = {
+	id = 50963
+	title = "Demands of the Fishers Guild"
+	desc = "EVTDESC50963"
+	picture = "gramavuld/fishers_guild"
+	
+	fire_only_once = yes
+	
+	trigger = {
+		has_country_flag = DAL_content
+		has_country_modifier = DAL_guild_power_10
+		ruling_party_ideology = house_of_bard
+		government_type = monarchist
+	}
+	
+	mean_time_to_happen = {
+		months = 60
+		modifier = {
+			modifier = 0.5
+			average_militancy = 4
+		}
+	}
+	
+	option = {
+		name = "We must concede"
+		
+		prestige = -5
+		
+		any_pop = {
+			limit = { is_primary_culture = yes }
+			ideology = {
+				factor = 0.15
+				value = lakemen_fishers_guild
+			}
+		}
+		
+		# Mimicking the effects of DAL_support_merchants (decision)
+		random_owned = {
+			limit = { owner = { NOT = { has_country_flag = DAL_merchant_supported_by_realm } } }
+			owner = {
+				remove_country_modifier = DAL_merchant_power_10
+				remove_country_modifier = DAL_merchant_power_9
+				remove_country_modifier = DAL_merchant_power_8
+				remove_country_modifier = DAL_merchant_power_7
+				remove_country_modifier = DAL_merchant_power_6
+				remove_country_modifier = DAL_merchant_power_5
+				remove_country_modifier = DAL_merchant_power_4
+				remove_country_modifier = DAL_merchant_power_3
+				remove_country_modifier = DAL_merchant_power_2
+				remove_country_modifier = DAL_merchant_power_1
+				remove_country_modifier = DAL_merchant_guild_balanced
+				remove_country_modifier = DAL_guild_power_1
+				remove_country_modifier = DAL_guild_power_2
+				remove_country_modifier = DAL_guild_power_3
+				remove_country_modifier = DAL_guild_power_4
+				remove_country_modifier = DAL_guild_power_5
+				remove_country_modifier = DAL_guild_power_6
+				remove_country_modifier = DAL_guild_power_7
+				remove_country_modifier = DAL_guild_power_8
+				remove_country_modifier = DAL_guild_power_9
+				
+				set_variable = { which = DAL_merchants_fishers_bop value = 10 } # 10 in favor of the Fishers Guild
+				
+				random_owned = {
+					limit = {
+						NOT = { owner = { has_country_modifier = DAL_guild_power_10 } }
+					}
+					owner = { add_country_modifier = { name = DAL_guild_power_10 duration = -1 } }
+				}
+				
+				set_country_flag = DAL_guild_supported_by_realm
+			}
+		}
+		
+		political_reform = universal_voting
+		political_reform = primary_voting
+		political_reform = first_past_the_post
+		political_reform = republican
+		government = republic
+		
+		locks_voting_reform_loc = { }
+		
+		election = yes # Last thing that shows text because it doesn't have a newline for some reason
+		
+		set_country_flag = locked_voting
+		
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0
+				has_global_flag = railroading_enabled
+			}
+		}
+	}
+	
+	option = {
+		name = "The House of Bard rules this realm! Not the guild"
+		
+		prestige = 5
+		
+		any_pop = {
+			limit = {
+				is_primary_culture = yes
+				is_accepted_culture = yes
+			}
+			ideology = {
+				factor = 0.025
+				value = master_of_laketown
+			}
+		}
+		
+		ai_chance = {
+			factor = 50
+		}
 	}
 }

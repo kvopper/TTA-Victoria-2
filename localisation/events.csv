@@ -624,6 +624,8 @@ EVTDESC50958;The call to war has been sounded! Today, the Khan's promises have b
 EVTDESC50959;The call to war has been sounded! The $FROMCOUNTRY$ rallies their armies to attack us. We can use this as a way to start our glorious conquest of Gramavuld!;x
 EVTDESC50960;With our coffers overflowing, it has been suggested that we provide gifts to the Dwarves. Should they share in our wealth?;x
 EVTDESC50961;Our loyal friends from $FROMCOUNTRY$ have sent us a gift!;x
+EVTDESC50962;Over the past couple of years, the merchants have regained much of the power they lost with Smaug's devastating attack on Laketown. As such, they are requesting the return of much of their power, including elections for the ruler of the realm.;x
+EVTDESC50963;The rise of the Fisher's Guild has been slow but steady. Rising out of the power vacuum left by the Master of Laketown's demise, they slowly accumulated the support of the people until their apex of support. With their current support, they've request certain rights, including elections for the ruler of the realm.;x
 #######################################;x }
 ##### SHIRE-BREELAND UNION EVENTS #####;x {
 #######################################;x
@@ -689,6 +691,7 @@ EVTDESC99000;This is the monthly event to do any sort of generic cleanup;x
 EVTDESC99001;This is the monthly event to do any sort of cleanup related to DAL flavor.;x
 EVTDESC99003;This is the monthly event to do any sort of cleanup associated with the Alliance of Dwarves and Men;x
 EVTDESC99006;Your overlord no longer exists, but your connection to them was never severed.;x
+EVTDESC99007;Our voting laws were previously locked. However, due to changed within your realm, it no longer makes sense to keep them locked.;x
 EVTDESC99250;This is the daily event to do any sort of generic cleanup;x
 EVTDESC90799;This is a function event called whenever a province has some Province Wealth changes queued up;x
 ##############################################;x }

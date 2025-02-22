@@ -2119,6 +2119,30 @@ country_event = {
 		}
 		# }
 		
+		# Clean up locked_voting
+		any_country = {
+			limit = {
+				has_country_flag = locked_voting
+				election = no
+				OR = {
+					NOT = { government_type = republican }
+					# Barding Realm that took the Merchants path, but no longer ruled by the Merchants
+					AND = {
+						has_country_flag = DAL_content
+						government = merchant_republic
+						NOT = { ruling_party_ideology = master_of_laketown }
+					}
+					# Barding Realm that took the Guild path, but no longer ruled by the Guild
+					AND = {
+						has_country_flag = DAL_content
+						government = republic
+						NOT = { ruling_party_ideology = lakemen_fishers_guild }
+					}
+				}
+			}
+			country_event = 99007
+		}
+		
 		# Realm attempting to do stuff with the utility tag {
 		any_country = {
 			leave_alliance = FOR
@@ -6191,6 +6215,24 @@ country_event = {
 		name = "Let us be rid of it!"
 		
 		overlord = { release_vassal = THIS }
+	}
+}
+
+# Clean up overlords that no longer exist
+country_event = {
+	id = 99007
+	title = "Removal of Voting Reform Restrictions"
+	desc = "EVTDESC99007"
+	picture = "administration"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "I understand"
+		
+		unlocks_voting_reform_loc = { }
+		
+		clr_country_flag = locked_voting
 	}
 }
 

@@ -673,6 +673,7 @@ HAVE_NOT_COUNTRY_FLAG;§RNOT§! ;x
 unciv_5;Uncentralized Recruitment Limit 5%;x
 unciv_7;Uncentralized Recruitment Limit 7.5%;x
 unciv_10;Uncentralized Recruitment Limit 10%;x
+locked_voting;Voting Laws Locked;x
 has_one_ring;Has the One Ring;x
 frodo_chose_us;Frodo arrived in our lands;x
 the_council_of_elrond_host;Hosted the Council of Elrond;x

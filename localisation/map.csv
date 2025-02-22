@@ -1733,6 +1733,7 @@ remove_claim_GON_198_loc;§WWe will lose claims over §!§YForithilien§!§I;x
 add_claim_LOS_1343_loc;§WWe will gain claims over §!§YItä-mâ§!§I;x
 add_claim_GON_133_loc;§WWe will gain claims over §!§YAnfalas§!§I;x
 claim_status_doesnt_own_SHI_1041_loc;§YNorthfarthing§!: §RUnowned§!§I;x
+unlocks_voting_reform_loc;§YUnlocks Voting Reform§!§I;x
 claim_status_owns_GON_51_loc;§YMethed Lebennin§!: §GOwned§!§I;x
 claim_status_doesnt_own_DND_1026_loc;§YRoyal Fold§!: §RUnowned§!§I;x
 add_claim_AND_732_loc;§WWe will gain claims over §!§YNan Anduin§!§I;x
@@ -1908,7 +1909,6 @@ claim_status_doesnt_own_GON_186_loc;§YAnnûndrúwaith Iaur§!: §RUnowned§!§I
 claim_status_doesnt_own_FOR_1042_loc;§YNorthern Wastes§!: §RUnowned§!§I;x
 claim_status_doesnt_own_LOS_1346_loc;§YHyvämetsästyksen Maa§!: §RUnowned§!§I;x
 remove_claim_CAR_905_loc;§WWe will lose claims over §!§YLower Saerlann§!§I;x
-DAL_supported_merchants_loc;§RThis decision will lock us into supporting the Merchants and not allow us to pass any Burgher reforms. Additionally, all Burgher reforms will be set to the least centralized versions§!§I;x
 settings_observer_mode_loc;Turn on a variety of modifiers and flags to make an observer game as relaxed as possible. It's recommended to play as Remnants of Numenor if you want to play an observer game since they are far from the rest of the world. §RThis cannot be undone§!§I;x
 remove_claim_RHU_611_loc;§WWe will lose claims over §!§YGovedalend§!§I;x
 claim_status_doesnt_own_RHU_859_loc;§YRann Gasta§!: §RUnowned§!§I;x
@@ -1957,6 +1957,7 @@ claim_status_doesnt_own_GON_188_loc;§YCentral Drúwaith Iaur§!: §RUnowned§!�
 add_claim_SHI_1041_loc;§WWe will gain claims over §!§YNorthfarthing§!§I;x
 triggered_event_railroading_loc;get the 'Railroading' event.§I;x
 remove_claim_ANG_999_loc;§WWe will lose claims over §!§YDur-Lûgata§!§I;x
+locks_voting_reform_loc;§YLocks Voting Reform§!§I;x
 claim_status_owns_LOS_1158_loc;§YTalvi-mûri§!: §GOwned§!§I;x
 add_claim_RHU_590_loc;§WWe will gain claims over §!§YMenelothriand§!§I;x
 add_claim_ENE_830_loc;§WWe will gain claims over §!§YDor Wathui§!§I;x
@@ -1988,7 +1989,6 @@ claim_status_doesnt_own_ERE_151_loc;§YEred Mithrin§!: §RUnowned§!§I;x
 remove_claim_RHO_489_loc;§WWe will lose claims over §!§YLower Othnen Vale§!§I;x
 claim_status_doesnt_own_GON_194_loc;§YRhûndrúwaith Iaur§!: §RUnowned§!§I;x
 shire_reckoning_loc;The year is 0 by Shire Reckoning§I;x
-bree_reckoning_loc;The year is 0 by Bree Reckoning§I;x
 claim_status_doesnt_own_RHU_598_loc;§YSouthern Telaith Lyst§!: §RUnowned§!§I;x
 remove_claim_CAR_907_loc;§WWe will lose claims over §!§YFonntir§!§I;x
 claim_status_doesnt_own_LOS_980_loc;§YEmyn Helch§!: §RUnowned§!§I;x
@@ -2059,6 +2059,7 @@ claim_status_doesnt_own_GON_232_loc;§YForethir§!: §RUnowned§!§I;x
 remove_claim_ANG_988_loc;§WWe will lose claims over §!§YTulban§!§I;x
 add_claim_BLU_915_loc;§WWe will gain claims over §!§YOld Sylvana§!§I;x
 add_claim_DND_1007_loc;§WWe will gain claims over §!§YTír Or§!§I;x
+colonize_harondor_province_loc;§GA random uncolonized core of Harondor that is adjacent to our realm will join!§!;x
 remove_claim_LOS_977_loc;§WWe will lose claims over §!§YForochel§!§I;x
 claim_status_owns_WRM_697_loc;§YAnnûneryn Galen§!: §GOwned§!§I;x
 add_claim_CAR_890_loc;§WWe will gain claims over §!§YRohwaen§!§I;x
@@ -2407,6 +2408,7 @@ dynamic_loc_slot_12;§I;x
 claim_status_doesnt_own_RHO_476_loc;§YTalath Harroch§!: §RUnowned§!§I;x
 remove_claim_ENE_825_loc;§WWe will lose claims over §!§YMagur§!§I;x
 claim_status_doesnt_own_DUN_1448_loc;§YIsendale§!: §RUnowned§!§I;x
+DAL_military_leaders_girion_ii_born_loc;Girion II has been born§!,;x
 dynamic_loc_slot_17;§I;x
 add_claim_CAR_900_loc;§WWe will gain claims over §!§YEnedbund§!§I;x
 dynamic_loc_slot_18;§I;x
@@ -2649,7 +2651,6 @@ add_claim_RHO_520_loc;§WWe will gain claims over §!§YAustrabuht§!§I;x
 remove_claim_CAR_894_loc;§WWe will lose claims over §!§YDol Caledir§!§I;x
 remove_claim_ROH_808_loc;§WWe will lose claims over §!§YWest-march§!§I;x
 claim_status_owns_KHA_387_loc;§YKhandu Khûrvesra§!: §GOwned§!§I;x
-DAL_supported_guild_loc;§RThis decision will lock us into supporting the Fisher's Guild and not allow us to pass any Burgher reforms. Additionally, all Burgher reforms will be set to the most centralized versions§!§I;x
 claim_status_doesnt_own_LIN_953_loc;§YGalfalas§!: §RUnowned§!§I;x
 claim_status_doesnt_own_RHU_619_loc;§YNorthern Gazar Utal§!: §RUnowned§!§I;x
 claim_status_doesnt_own_GON_56_loc;§YTolfalas§!: §RUnowned§!§I;x
@@ -2721,6 +2722,7 @@ add_claim_ROH_798_loc;§WWe will gain claims over §!§YWestfold§!§I;x
 claim_status_owns_GON_226_loc;§YLaergaladrín§!: §GOwned§!§I;x
 claim_status_owns_RHU_566_loc;§YEthir Sûrûbeki§!: §GOwned§!§I;x
 claim_status_doesnt_own_LOR_769_loc;§YParth Celebrant§!: §RUnowned§!§I;x
+DAL_military_leaders_bard_ii_born_loc;Bard II has been born§!,;x
 AMO_sent_out_raiders_loc;§GWe will send out raiding parties, occasionally decreasing the affected provinces wealth, and increasing our own§I;x
 add_claim_RHU_600_loc;§WWe will gain claims over §!§YNorthern Telaith Lyst§!§I;x
 claim_status_owns_RHO_500_loc;§YDor Rewinion§!: §GOwned§!§I;x
@@ -2938,7 +2940,6 @@ claim_status_owns_LIN_921_loc;§YDânwaith§!: §GOwned§!§I;x
 add_claim_GOB_847_loc;§WWe will gain claims over §!§YHithaeglir§!§I;x
 claim_status_owns_RHU_560_loc;§YRiav§!: §GOwned§!§I;x
 DAL_colonize_grammas_province_loc;§GA random uncolonized core of the Grammas that is adjacent to our realm will join!§!§I;x
-colonize_harondor_province_loc;§GA random uncolonized core of Harondor that is adjacent to our realm will join!§!§I;x
 add_claim_CAR_891_loc;§WWe will gain claims over §!§YNimiand§!§I;x
 claim_status_doesnt_own_LOS_977_loc;§YForochel§!: §RUnowned§!§I;x
 claim_status_owns_ANG_1004_loc;§YEn Udanoriath§!: §GOwned§!§I;x
@@ -2954,6 +2955,7 @@ DAL_bain_i_only_loc;§RThis decision can only be taken while §YBain I§R is you
 add_claim_HAR_288_loc;§WWe will gain claims over §!§YHarwan§!§I;x
 remove_claim_RHO_508_loc;§WWe will lose claims over §!§YLower Sekelavuld§!§I;x
 claim_status_doesnt_own_MOR_455_loc;§YUdûn§!: §RUnowned§!§I;x
+bree_reckoning_loc;The year is 0 by Bree Reckoning§I;x
 remove_claim_ANG_987_loc;§WWe will lose claims over §!§YKanclemas§!§I;x
 GON_4;Far Anórien;x
 GON_14;Talath Anór;x

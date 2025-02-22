@@ -1831,22 +1831,14 @@ political_decisions = {
 			
 			random_owned = {
 				limit = {
-					owner = {
-						city_jurisdiction = independent_cities
-						NOT = { has_country_flag = DAL_merchant_supported_by_realm }
-						NOT = { has_country_flag = DAL_guild_supported_by_realm }
-					}
+					owner = { city_jurisdiction = independent_cities }
 				}
 				owner = { social_reform = chartered_cities }
 			}
 			
 			random_owned = {
 				limit = {
-					owner = {
-						pensions = no_pensions
-						NOT = { has_country_flag = DAL_merchant_supported_by_realm }
-						NOT = { has_country_flag = DAL_guild_supported_by_realm }
-					}
+					owner = { pensions = no_pensions }
 				}
 				owner = { social_reform = trinket_pensions }
 			}
@@ -1997,46 +1989,9 @@ political_decisions = {
 				militancy = -10
 			}
 			
-			random_owned = {
-				limit = {
-					NOT = { owner = { exclusive_trading_rights = granted_exclusive_tr } }
-				}
-				owner = { social_reform = granted_exclusive_tr }
-			}
-			
-			random_owned = {
-				limit = {
-					NOT = { owner = { state_supplies_monopoly = privileged_state_supplies } }
-				}
-				owner = { social_reform = privileged_state_supplies }
-			}
-			
-			random_owned = {
-				limit = {
-					NOT = { owner = { city_jurisdiction = independent_cities } }
-				}
-				owner = { social_reform = independent_cities }
-			}
-			
-			random_owned = {
-				limit = {
-					NOT = { owner = { pensions = no_pensions } }
-				}
-				owner = { social_reform = no_pensions }
-			}
-			
-			random_owned = {
-				limit = {
-					NOT = { owner = { apprenticeship = hereditary } }
-				}
-				owner = { social_reform = hereditary }
-			}
-			
 			set_country_flag = DAL_merchant_supported_by_realm
 			
 			plurality = -2
-			
-			DAL_supported_merchants_loc = {}
 		}
 	}
 	
@@ -2108,46 +2063,9 @@ political_decisions = {
 				militancy = 6
 			}
 			
-			random_owned = {
-				limit = {
-					NOT = { owner = { exclusive_trading_rights = abolished_exclusive_tr } }
-				}
-				owner = { social_reform = abolished_exclusive_tr }
-			}
-			
-			random_owned = {
-				limit = {
-					NOT = { owner = { state_supplies_monopoly = restricted_state_supplies } }
-				}
-				owner = { social_reform = restricted_state_supplies }
-			}
-			
-			random_owned = {
-				limit = {
-					NOT = { owner = { city_jurisdiction = royal_cities } }
-				}
-				owner = { social_reform = royal_cities }
-			}
-			
-			random_owned = {
-				limit = {
-					NOT = { owner = { pensions = good_pensions } }
-				}
-				owner = { social_reform = good_pensions }
-			}
-			
-			random_owned = {
-				limit = {
-					NOT = { owner = { apprenticeship = guild_school } }
-				}
-				owner = { social_reform = guild_school }
-			}
-			
 			set_country_flag = DAL_guild_supported_by_realm
 			
 			plurality = -2
-			
-			DAL_supported_guild_loc = {}
 		}
 	}
 }
