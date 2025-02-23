@@ -99,10 +99,10 @@ party = {
 	ideology = lakemen_fishers_guild
 	
 	trade_policy = protectionism
-	tax_policy = interventionism
+	tax_policy = state_capitalism
 	language_policy = regional_autonomy
 	diplomatic_policy = reactive
-	war_policy = jingoism
+	war_policy = anti_military
 	good_evil_alignment = good_alignment
 }
 
