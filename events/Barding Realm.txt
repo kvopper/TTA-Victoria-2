@@ -2545,7 +2545,7 @@ country_event = {
 			}
 			ideology = {
 				factor = 0.025
-				value = master_of_laketown
+				value = house_of_bard
 			}
 		}
 		
@@ -2585,7 +2585,12 @@ country_event = {
 		prestige = -5
 		
 		any_pop = {
-			limit = { is_primary_culture = yes }
+			limit = {
+				OR = {
+					is_primary_culture = yes
+					is_accepted_culture = yes
+				}
+			}
 			ideology = {
 				factor = 0.15
 				value = lakemen_fishers_guild
@@ -2631,7 +2636,7 @@ country_event = {
 		}
 		
 		political_reform = universal_voting
-		political_reform = primary_voting
+		political_reform = accepted_voting
 		political_reform = first_past_the_post
 		political_reform = republican
 		government = republic
@@ -2663,12 +2668,58 @@ country_event = {
 			}
 			ideology = {
 				factor = 0.025
-				value = master_of_laketown
+				value = house_of_bard
 			}
 		}
 		
 		ai_chance = {
 			factor = 50
+		}
+	}
+}
+
+# The Dismantlement of Merchant Power
+country_event = {
+	id = 50964
+	title = "The Dismantlement of Merchant Power"
+	desc = "EVTDESC50964"
+	picture = "gramavuld/fishers_guild"
+	
+	fire_only_once = yes
+	
+	trigger = {
+		has_country_flag = DAL_content
+		ruling_party_ideology = lakemen_fishers_guild
+		nobility_autonomy = small_noble_autonomy
+		noble_levy_contribution = small_levy_contribution
+		noble_tax_contribution = large_tax_contribution
+		knighting_rights = royal_knighting_rights
+	}
+	
+	option = {
+		name = "We welcome the end of their power"
+		
+		prestige = 25
+		plurality = -5
+		
+		any_pop = {
+			limit = { strata = poor }
+			ideology = {
+				factor = 0.10
+				value = lakemen_fishers_guild
+			}
+		}
+		
+		any_pop = {
+			ideology = {
+				factor = -0.25
+				value = master_of_laketown
+			}
+		}
+		
+		any_pop = {
+			limit = { strata = rich }
+			militancy = 6
 		}
 	}
 }

@@ -16,6 +16,7 @@
 #	Bain I Flavor
 #	Bard II Flavor
 #	Fishers Guild vs Merchants
+#	Fishers Guild Flavor
 #	Esgaroth Trade }
 
 # Starting Decision (Unseen) + Country Info (Seen)
@@ -1792,10 +1793,38 @@ political_decisions = {
 					year = 2970
 					ai = yes
 				}
+				AND = {
+					NOT = { nobility_autonomy = large_noble_autonomy }
+					NOT = { noble_tax_contribution = small_tax_contribution }
+					NOT = { serfdom = enforced_serfdom }
+					NOT = { crown_land_ownership = five_land_ownership }
+					NOT = { crown_land_ownership = ten_land_ownership }
+					NOT = { city_jurisdiction = independent_cities }
+					NOT = { pensions = no_pensions }
+				}
 			}
 		}
 		
 		effect = {
+			# At the top to only fire when the reforms are taken before the decision is taken
+			random_owned = {
+				limit = {
+					owner = {
+						NOT = { nobility_autonomy = large_noble_autonomy }
+						NOT = { noble_tax_contribution = small_tax_contribution }
+						NOT = { serfdom = enforced_serfdom }
+						NOT = { crown_land_ownership = five_land_ownership }
+						NOT = { crown_land_ownership = ten_land_ownership }
+						NOT = { city_jurisdiction = independent_cities }
+						NOT = { pensions = no_pensions }
+					}
+				}
+				owner = {
+					prestige = 15
+					plurality = -1
+				}
+			}
+			
 			random_owned = {
 				limit = {
 					owner = { nobility_autonomy = large_noble_autonomy }
@@ -1843,23 +1872,7 @@ political_decisions = {
 				owner = { social_reform = trinket_pensions }
 			}
 			
-			random_owned = {
-				limit = {
-					owner = {
-						NOT = { nobility_autonomy = large_noble_autonomy }
-						NOT = { noble_tax_contribution = small_tax_contribution }
-						NOT = { serfdom = enforced_serfdom }
-						NOT = { crown_land_ownership = five_land_ownership }
-						NOT = { crown_land_ownership = ten_land_ownership }
-						NOT = { city_jurisdiction = independent_cities }
-						NOT = { pensions = no_pensions }
-					}
-				}
-				owner = {
-					prestige = 15
-					plurality = -1
-				}
-			}
+			any_pop = { ideology = { factor = 0.05 value = house_of_bard } }
 			
 			empty_line_decisions_loc = {}
 			DAL_reforms_bard_i_loc = {}
@@ -1925,6 +1938,7 @@ political_decisions = {
 		picture = "Barding Realm/merchants"
 		potential = {
 			has_country_flag = DAL_content
+			ruling_party_ideology = house_of_bard
 			NOT = { has_country_flag = DAL_merchant_supported_by_realm }
 			NOT = { has_country_flag = DAL_guild_supported_by_realm }
 		}
@@ -1989,6 +2003,8 @@ political_decisions = {
 				militancy = -10
 			}
 			
+			any_pop = { ideology = { factor = 0.05 value = master_of_laketown } }
+			
 			set_country_flag = DAL_merchant_supported_by_realm
 			
 			plurality = -2
@@ -1999,6 +2015,7 @@ political_decisions = {
 		picture = "Barding Realm/fishers_guild"
 		potential = {
 			has_country_flag = DAL_content
+			ruling_party_ideology = house_of_bard
 			NOT = { has_country_flag = DAL_merchant_supported_by_realm }
 			NOT = { has_country_flag = DAL_guild_supported_by_realm }
 		}
@@ -2063,9 +2080,139 @@ political_decisions = {
 				militancy = 6
 			}
 			
+			any_pop = { ideology = { factor = 0.05 value = lakemen_fishers_guild } }
+			
 			set_country_flag = DAL_guild_supported_by_realm
 			
 			plurality = -2
+		}
+	}
+}
+
+# Fishers Guild Flavor
+political_decisions = {
+	DAL_fishers_guild_political_reforms = {
+		picture = "Barding Realm/fishers_guild"
+		potential = {
+			has_country_flag = DAL_content
+			ruling_party_ideology = lakemen_fishers_guild
+			NOT = { has_country_flag = DAL_fishers_guild_political_reformed }
+		}
+		allow = {
+			OR = {
+				population_2 = 1
+				AND = {
+					year = 2970
+					ai = yes
+				}
+				AND = {
+					exclusive_trading_rights = abolished_exclusive_tr
+					state_supplies_monopoly = restricted_state_supplies
+					city_jurisdiction = royal_cities
+					pensions = good_pensions
+					apprenticeship = guild_school
+				}
+			}
+		}
+		effect = {
+			# At the top to only fire when the reforms are taken before the decision is taken
+			random_owned = {
+				limit = {
+					owner = {
+						exclusive_trading_rights = abolished_exclusive_tr
+						state_supplies_monopoly = restricted_state_supplies
+						city_jurisdiction = royal_cities
+						pensions = good_pensions
+						apprenticeship = guild_school
+					}
+				}
+				owner = {
+					prestige = 15
+					plurality = -1
+				}
+			}
+			
+			random_owned = {
+				limit = { NOT = { owner = { exclusive_trading_rights = abolished_exclusive_tr } } }
+				owner = { social_reform = abolished_exclusive_tr }
+			}
+			random_owned = {
+				limit = { NOT = { owner = { state_supplies_monopoly = restricted_state_supplies } } }
+				owner = { social_reform = restricted_state_supplies }
+			}
+			random_owned = {
+				limit = { NOT = { owner = { city_jurisdiction = royal_cities } } }
+				owner = { social_reform = royal_cities }
+			}
+			random_owned = {
+				limit = { NOT = { owner = { pensions = good_pensions } } }
+				owner = { social_reform = good_pensions }
+			}
+			random_owned = {
+				limit = { NOT = { owner = { apprenticeship = guild_school } } }
+				owner = { social_reform = guild_school }
+			}
+			
+			any_pop = {
+				limit = { strata = poor }
+				ideology = { factor = 0.05 value = lakemen_fishers_guild }
+			}
+			
+			empty_line_decisions_loc = {}
+			DAL_reforms_fishers_guild_loc = {}
+			empty_line_decisions_loc = {}
+			DAL_fishers_guild_only_loc = {}
+			
+			set_country_flag = DAL_fishers_guild_political_reformed
+		}
+	}
+	
+	DAL_fishers_guild_land_reforms = {
+		picture = "Barding Realm/fishers_guild"
+		potential = {
+			has_country_flag = DAL_content
+			ruling_party_ideology = lakemen_fishers_guild
+			NOT = { has_country_flag = DAL_fishers_guild_land_reformed }
+		}
+		allow = {
+			money = 250000
+			farming_tech_4 = 1
+			mining_tech_4 = 1
+		}
+		effect = {
+			treasury = -250000
+			
+			any_owned = {
+				limit = {
+					OR = {
+						region = DAL_640 # Upper Marches
+						region = DAL_643 # Nether Marches
+						region = DAL_645 # Nan Celduin
+						region = DAL_1377 # Medes
+						region = DAL_652 # Dalelands
+						region = DAL_654 # Nan Annen
+						province_id = 1475 # Ironhold
+						province_id = 639 # Lar Huil
+						province_id = 638 # Northwatch
+						province_id = 642 # Burh Austris
+				}
+				add_province_modifier = { name = fishers_guild_rgo_reform duration = -1 }
+			}
+			
+			any_pop = {
+				limit = {
+					OR = {
+						type = labourers
+						type = aristocrats
+					}
+				}
+				militancy = 2
+			}
+			
+			empty_line_decisions_loc = {}
+			DAL_fishers_guild_only_loc = {}
+			
+			set_country_flag = DAL_fishers_guild_land_reformed
 		}
 	}
 }

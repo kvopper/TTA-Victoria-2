@@ -2284,6 +2284,14 @@ erebor_relations_modifier = {
 	icon = 56
 }
 
+# Province Modifier
+fishers_guild_rgo_reform = {
+	farm_rgo_eff = 0.05
+	mine_rgo_eff = 0.05
+	
+	icon = 5
+}
+
 # }
 ##### URUKDURBZAGH ##### {
 # Country Modifier

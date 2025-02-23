@@ -3386,6 +3386,29 @@ country_event = {
 		}
 		# }
 		
+		# fishers_guild_rgo_reform clean up
+		random_country = {
+			limit = { has_country_flag = DAL_fishers_guild_land_reformed }
+			any_owned = {
+				limit = {
+					OR = {
+						region = DAL_640 # Upper Marches
+						region = DAL_643 # Nether Marches
+						region = DAL_645 # Nan Celduin
+						region = DAL_1377 # Medes
+						region = DAL_652 # Dalelands
+						region = DAL_654 # Nan Annen
+						province_id = 1475 # Ironhold
+						province_id = 639 # Lar Huil
+						province_id = 638 # Northwatch
+						province_id = 642 # Burh Austris
+					}
+					NOT = { has_province_modifier = fishers_guild_rgo_reform }
+				}
+				add_province_modifier = { name = fishers_guild_rgo_reform duration = -1 }
+			}
+		}
+		
 		# Refire the cleanup event next month {
 		random_owned = {
 			limit = {

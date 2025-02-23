@@ -2124,6 +2124,7 @@ remove_claim_MOR_423_loc;§WWe will lose claims over §!§YLithlad§!§I;x
 claim_status_doesnt_own_HAR_322_loc;§YHaradwaith§!: §RUnowned§!§I;x
 add_claim_ANV_740_loc;§WWe will gain claims over §!§YGreylin Vale§!§I;x
 settings_unciv_10_loc;This option allows uncentralized realms to have (at most), 10% of their population as soldiers from natural promotion§I;x
+DAL_fishers_guild_only_loc;§RThis decision can only be taken while the §YFishers Guild§R is your leader§!§I;x
 remove_claim_CAR_365_loc;§WWe will lose claims over §!§YTyrn Gorthad§!§I;x
 claim_status_owns_GON_796_loc;§YWhite Mountains§!: §GOwned§!§I;x
 remove_claim_GON_105_loc;§WWe will lose claims over §!§YLower Morthond Vale§!§I;x
@@ -2370,6 +2371,7 @@ claim_status_doesnt_own_DOR_558_loc;§YCairn Angle§!: §RUnowned§!§I;x
 remove_claim_GON_57_loc;§WWe will lose claims over §!§YEmyn Ernil§!§I;x
 add_claim_ENE_838_loc;§WWe will gain claims over §!§YWinterdowns§!§I;x
 claim_status_owns_GON_249_loc;§YEraguk§!: §GOwned§!§I;x
+DAL_reforms_fishers_guild_loc;§GThis decision will either give us the reforms of the Fishers Guild' for free or if we have completed all of the Fishers' Guilds reforms, it will give us some prestige and reduce popular anxiety§!\n§I;x
 claim_status_doesnt_own_IML_865_loc;§YElven Fells§!: §RUnowned§!§I;x
 claim_status_owns_BEO_733_loc;§YLower Carrock§!: §GOwned§!§I;x
 claim_status_doesnt_own_HAR_312_loc;§YVelarith§!: §RUnowned§!§I;x

@@ -627,6 +627,8 @@ FFN_join_alliance_dwarves_men_loc = { } # If the pass the conditions on this dec
 # Static Tooltip Locs - Barding Realm
 DAL_bard_i_only_loc = { } # §RThis decision can only be taken while §YBard I§R is your leader§!
 DAL_bain_i_only_loc = { } # §RThis decision can only be taken while §YBain I§R is your leader§!
+DAL_fishers_guild_only_loc = { } # §RThis decision can only be taken while the §YFishers Guild§R is your leader§!
+
 DAL_invite_grammas_loc = { } # §GInvitations will be sent to the Grammas villages. It may take some time - months or even years - to receive a response back from each province...§!
 DAL_colonize_grammas_province_loc = { } # §GA random uncolonized core of the Grammas that is adjacent to our realm will join!§!
 DAL_send_ultimatum_to_rivermen_loc = { } # §GAn ultimatum will be sent to each of the Rivermen minors. If they accept, they will become our puppets. If they refuse, we will declare war to annex them.§!
@@ -636,6 +638,7 @@ DAL_constructing_meres_end_boat_lift_loc = { } # §GWhen the boat life finishes 
 DAL_activate_celduin_pirates_loc = { } # §GThis will activate the Celduin Pirates mechanic. Realms with Rivermen as their primary culture are immune to the pirates.§!
 
 DAL_reforms_bard_i_loc = { } # §GThis decision will either give us the reforms of Bard I for free, or, if we have completed all of Bard I's reforms, it will give us some prestige and reduce popular anxiety. If some of Bard's reforms have been completed or superceded, our reforms will not regress§!\n
+DAL_reforms_fishers_guild_loc = { } # §GThis decision will either give us the reforms of the Fishers Guild' for free or if we have completed all of the Fishers' Guilds reforms, it will give us some prestige and reduce popular anxiety§!\n
 
 DAL_economics_reform_explanation_loc = { } # §GThis decision will allow us to choose the rgo of each province in Gramavuld that is has not been locked, is not Precious Goods, and is not Precious Metals.\n\n§RDue to technical limitations, you will be able to choose the RGO of one province per day. Your list of potential RGOs will be decided by the liferating and terrain type of the province in question.§!
 DAL_merchant_guild_bop_shift_merchants_1_loc = { } # §RThe Balance of Power between the Merchants and Fisher's Guild will shift in the favor of the Merchants by 1
