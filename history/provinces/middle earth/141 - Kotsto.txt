@@ -5,3 +5,13 @@ add_core = ADH
 trade_goods = food
 life_rating = 30
 terrain = gramavuld_plains
+
+party_loyalty = {
+	ideology = adhalling_nobles
+	loyalty_value = 10.0
+}
+
+party_loyalty = {
+	ideology = house_of_bard
+	loyalty_value = 5.0
+}

@@ -15,3 +15,18 @@ state_building = {
 	building = horse_abattoir
 	upgrade = yes
 }
+
+party_loyalty = {
+	ideology = house_of_bard
+	loyalty_value = 15.0
+}
+
+party_loyalty = {
+	ideology = barding_nobles
+	loyalty_value = 5.0
+}
+
+party_loyalty = {
+	ideology = grammas_nobles
+	loyalty_value = 2.0
+}

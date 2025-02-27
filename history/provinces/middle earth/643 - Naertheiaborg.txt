@@ -16,3 +16,13 @@ state_building = {
 	building = paper_mill
 	upgrade = yes
 }
+
+party_loyalty = {
+	ideology = rivermen_thegans
+	loyalty_value = 10.0
+}
+
+party_loyalty = {
+	ideology = rivermen_nobles
+	loyalty_value = 5.0
+}

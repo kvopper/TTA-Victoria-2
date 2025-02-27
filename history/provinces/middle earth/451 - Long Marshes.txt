@@ -6,3 +6,23 @@ add_core = ADH
 trade_goods = food
 life_rating = 30
 terrain = long_marshes
+
+party_loyalty = {
+	ideology = adhalling_nobles
+	loyalty_value = 7.5
+}
+
+party_loyalty = {
+	ideology = house_of_bard
+	loyalty_value = 7.5
+}
+
+party_loyalty = {
+	ideology = lakemen_fishers_guild
+	loyalty_value = 2.0
+}
+
+party_loyalty = {
+	ideology = wight_nobles
+	loyalty_value = 5.0
+}

@@ -25,3 +25,23 @@ state_building = {
 	building = luxury_clothes_factory
 	upgrade = yes
 }
+
+party_loyalty = {
+	ideology = master_of_laketown
+	loyalty_value = 2.0
+}
+
+party_loyalty = {
+	ideology = house_of_bard
+	loyalty_value = 15.0
+}
+
+party_loyalty = {
+	ideology = lakemen_fishers_guild
+	loyalty_value = 10.0
+}
+
+party_loyalty = {
+	ideology = barding_nobles
+	loyalty_value = 5.0
+}
