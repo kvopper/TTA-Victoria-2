@@ -4583,7 +4583,7 @@
 	}
 }
 
-# Sudúri
+# Súthure
 905 = {
 	aristocrats = {
 		culture = saerlanner
