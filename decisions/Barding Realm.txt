@@ -332,6 +332,8 @@ political_decisions = {
 				months = 12
 			}
 			
+			any_pop = { ideology = { factor = -0.05 value = house_of_bard } }
+			
 			war = {
 				target = DAL
 				attacker_goal = { casus_belli = make_puppet }
@@ -666,8 +668,13 @@ political_decisions = {
 				limit = { is_core = AMO }
 				remove_core = AMO
 				any_pop = {
+					limit = { is_culture_group = gramavuld_northmen }
+					ideology = { factor = 0.05 value = house_of_bard }
+				}
+				any_pop = {
 					limit = { is_culture_group = easterlings }
 					militancy = 5
+					ideology = { factor = -0.05 value = house_of_bard }
 				}
 			}
 		}
@@ -739,10 +746,12 @@ political_decisions = {
 				all_core = {
 					remove_core = LMW
 					any_pop = {
-						limit = {
-							has_pop_culture = wight
-						}
+						limit = { has_pop_culture = wight }
 						reduce_pop = 0
+					}
+					any_pop = {
+						limit = { NOT = { has_pop_culture = wight } }
+						ideology = { factor = 0.05 value = house_of_bard }
 					}
 					add_province_modifier = { name = rebuilt_city_5 duration = 1825 }
 				}
@@ -820,6 +829,7 @@ political_decisions = {
 						NOT = { is_core = THIS }
 					}
 					add_province_modifier = { name = cultural_core_integration duration = -1 } # Average of 5 years to get a core per province
+					any_pop = { ideology = { factor = 0.05 value = house_of_bard } }
 				}
 			}
 			
@@ -1041,6 +1051,7 @@ political_decisions = {
 				all_core = {
 					limit = { NOT = { is_core = THIS } }
 					add_province_modifier = { name = cultural_core_integration duration = -1 } # Average of 5 years to get a core per province
+					any_pop = { ideology = { factor = 0.05 value = house_of_bard } }
 				}
 				all_core = { remove_core = DA1 }
 			}
@@ -1049,6 +1060,7 @@ political_decisions = {
 				all_core = {
 					limit = { NOT = { is_core = THIS } }
 					add_province_modifier = { name = cultural_core_integration duration = -1 } # Average of 5 years to get a core per province
+					any_pop = { ideology = { factor = 0.05 value = house_of_bard } }
 				}
 				all_core = { remove_core = DA2 }
 			}
@@ -1057,6 +1069,7 @@ political_decisions = {
 				all_core = {
 					limit = { NOT = { is_core = THIS } }
 					add_province_modifier = { name = cultural_core_integration duration = -1 } # Average of 5 years to get a core per province
+					any_pop = { ideology = { factor = 0.05 value = house_of_bard } }
 				}
 				all_core = { remove_core = DA3 }
 			}
@@ -1065,6 +1078,7 @@ political_decisions = {
 				all_core = {
 					limit = { NOT = { is_core = THIS } }
 					add_province_modifier = { name = cultural_core_integration duration = -1 } # Average of 5 years to get a core per province
+					any_pop = { ideology = { factor = 0.05 value = house_of_bard } }
 				}
 				all_core = { remove_core = DA4 }
 			}
@@ -1502,10 +1516,18 @@ political_decisions = {
 		effect = {
 			prestige = 5
 			
-			526 = { add_province_modifier = { name = cultural_core_integration duration = -1 } } # Average of 5 years to get a core per province
-			528 = { add_province_modifier = { name = cultural_core_integration duration = -1 } } # Average of 5 years to get a core per province
-			524 = { add_province_modifier = { name = cultural_core_integration duration = -1 } } # Average of 5 years to get a core per province
-			530 = { add_province_modifier = { name = cultural_core_integration duration = -1 } } # Average of 5 years to get a core per province
+			any_owned = {
+				limit = {
+					OR = {
+						province_id = 524
+						province_id = 526
+						province_id = 528
+						province_id = 530
+					}
+				}
+				add_province_modifier = { name = cultural_core_integration duration = -1 } # Average of 5 years to get a core per province
+				any_pop = { ideology = { factor = 0.05 value = house_of_bard } }
+			}
 			
 			set_country_flag = DAL_cored_southern_rivermen
 		}
@@ -1822,6 +1844,7 @@ political_decisions = {
 				owner = {
 					prestige = 15
 					plurality = -1
+					any_pop = { ideology = { factor = 0.05 value = house_of_bard } }
 				}
 			}
 			
