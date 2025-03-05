@@ -13,7 +13,8 @@ oob = "AMO_oob.txt"
 ruling_party = generic_logath_nobles
 
 upper_house = {
-	logath_nobles = 100
+	logath_nobles = 80
+	grammas_nobles = 20
 }
 
 slavery = no_slavery

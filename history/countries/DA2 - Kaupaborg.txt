@@ -16,7 +16,9 @@ oob = "DA2_oob.txt"
 ruling_party = DA2_rivermen_thegans
 
 upper_house = {
-	rivermen_thegans = 100
+	rivermen_thegans = 34
+	rivermen_nobles = 33
+	grammas_nobles = 33
 }
 
 penal_reform = hard_labor
