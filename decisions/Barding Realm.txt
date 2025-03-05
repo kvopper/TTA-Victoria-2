@@ -2218,6 +2218,7 @@ political_decisions = {
 						province_id = 639 # Lar Huil
 						province_id = 638 # Northwatch
 						province_id = 642 # Burh Austris
+					}
 				}
 				add_province_modifier = { name = fishers_guild_rgo_reform duration = -1 }
 			}
