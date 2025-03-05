@@ -2167,6 +2167,18 @@ country_event = {
 		}
 		# }
 		
+		any_country = {
+			limit = { exists = yes }
+			any_pop = {
+				limit = {
+					type = bureaucrats
+					is_primary_culture = no
+					is_accepted_culture = no
+				}
+				pop_type = labourers
+			}
+		}
+		
 		# Refire the cleanup event next month {
 		random_owned = {
 			limit = {
