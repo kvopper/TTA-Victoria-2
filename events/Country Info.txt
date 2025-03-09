@@ -5,7 +5,7 @@
 # Audax Validator "!" Ignore_NEXT
 
 # Country Information Events: {
-#	35000 - 39999 (4 per country) }
+#	35000 - 36999 }
 
 # { The Kingdom of Gondor
 # The Kingdom of Gondor
@@ -590,7 +590,6 @@ country_event = {
 }
 # }
 
-# TODO: Next time updating this event, make it work using new dynamic loc regions instead of this hardcoded, hard-to-follow stuff
 # Kingdom of Dale (Barding Realm) {
 country_event = {
 	id = 35017
@@ -618,6 +617,13 @@ country_event = {
 	option = {
 		name = "EVTOPTC35000"
 		country_event = 35019
+		
+		ai_chance = { factor = 0 }
+	}
+
+	option = {
+		name = "EVTOPTH35000"
+		country_event = 35023
 		
 		ai_chance = { factor = 0 }
 	}
@@ -676,6 +682,11 @@ country_event = {
 	}
 
 	option = {
+		name = "EVTOPTH35000"
+		country_event = 35023
+	}
+
+	option = {
 		name = "EVTOPTD35000"
 		country_event = 35020
 	}
@@ -695,7 +706,7 @@ country_event = {
 	}
 }
 
-# Kingdom of Dale (Barding Realm) - Government
+# Kingdom of Dale (Barding Realm) - Historical Leaders
 country_event = {
 	id = 35019
 	title = "EVTNAME35002"
@@ -718,6 +729,11 @@ country_event = {
 	option = {
 		name = "EVTOPTC35000"
 		country_event = 35019
+	}
+
+	option = {
+		name = "EVTOPTH35000"
+		country_event = 35023
 	}
 
 	option = {
@@ -1143,6 +1159,11 @@ country_event = {
 	}
 
 	option = {
+		name = "EVTOPTH35000"
+		country_event = 35023
+	}
+
+	option = {
 		name = "EVTOPTD35000"
 		country_event = 35020
 	}
@@ -1345,6 +1366,11 @@ country_event = {
 	option = {
 		name = "EVTOPTC35000"
 		country_event = 35019
+	}
+
+	option = {
+		name = "EVTOPTH35000"
+		country_event = 35023
 	}
 
 	option = {
@@ -1609,6 +1635,61 @@ country_event = {
 	option = {
 		name = "EVTOPTC35000"
 		country_event = 35019
+	}
+
+	option = {
+		name = "EVTOPTH35000"
+		country_event = 35023
+	}
+
+	option = {
+		name = "EVTOPTD35000"
+		country_event = 35020
+	}
+
+	option = {
+		name = "EVTOPTG35000"
+		country_event = 35022
+	}
+
+	option = {
+		name = "EVTOPTF35000"
+		country_event = 35021
+	}
+
+	option = {
+		name = "EVTOPTE35000"
+	}
+}
+
+# Kingdom of Dale (Barding Realm) - Ahistorical Leaders
+country_event = {
+	id = 35023
+	title = "EVTNAME35002"
+	desc = "EVTDESC35023"
+	picture = "kingdom_of_dale"
+
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA35000"
+		country_event = 35017
+	}
+
+	option = {
+		name = "EVTOPTB35000"
+		country_event = 35018
+	}
+
+	option = {
+		name = "EVTOPTC35000"
+		country_event = 35019
+	}
+
+	option = {
+		name = "EVTOPTH35000"
+		country_event = 35023
 	}
 
 	option = {
