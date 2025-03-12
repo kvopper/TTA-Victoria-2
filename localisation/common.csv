@@ -5251,7 +5251,7 @@ REMOVE_RANDOM_ECO_REFORMS_EFFECT;Remove §R$VAL$§! economic reforms.\n;x
 REMOVE_RANDOM_MIL_REFORMS_EFFECT;Remove §R$VAL$§! military reforms.\n;x
 PRODUCTION_FACTORY_PURE_INCOME;Last day's pure income: $VALUE$;x
 PRODUCTION_FACTORY_MARKET_SPENDINGS;Market spendings: $VALUE$;x
-PRODUCTION_FACTORY_POP_PAYCHECKS;Workers and capitalists paychecks: $VALUE$;x
+PRODUCTION_FACTORY_POP_PAYCHECKS;Workers and Guild Masters paychecks: $VALUE$;x
 PRODUCTION_FACTORY_TOTAL_BALANCE;Last day's balance: $VALUE$;x
 PRODUCTION_FACTORY_TODAY_PROFIT;Last day's profitability: $VALUE$;x
 PRODUCTION_FACTORY_PROFITABILITY;Avg. profitability (last $DAYS$ days): $VALUE$;x
@@ -5663,9 +5663,9 @@ war_we_lose_small_desc;$STRING_0_0$ has ended with our defeat at the hands of $T
 rebels_win_small_title;Revolution!;x
 rebels_win_small_desc;$STRING_0_0$ have defeated $TAG_0_0$ and broken the realm, what will the $STRING_0_3$ $STRING_0_4$ do now?;x
 GOODS_PRICE_UP_TITLE_LARGE;PRICES RISE!;x
-GOODS_PRICE_UP_LARGE;In the last $VALUE_INT_0_0$ months the price of $STRING_0_1$ has steadily risen. Capitalists and Artisans worldwide scramble to produce more $STRING_0_1$ to meet the ever-increasing demands of the market.;x
+GOODS_PRICE_UP_LARGE;In the last $VALUE_INT_0_0$ months the price of $STRING_0_1$ has steadily risen. Guild Masters and Artisans worldwide scramble to produce more $STRING_0_1$ to meet the ever-increasing demands of the market.;x
 GOODS_PRICE_UP_TITLE_MEDIUM;PRICES RISE!;x
-GOODS_PRICE_UP_MEDIUM;In the last $VALUE_INT_0_0$ months the price of $STRING_0_1$ has steadily risen. Capitalists and Artisans worldwide scramble to produce more $STRING_0_1$ to meet the ever-increasing demands of the market.;x
+GOODS_PRICE_UP_MEDIUM;In the last $VALUE_INT_0_0$ months the price of $STRING_0_1$ has steadily risen. Guild Masters and Artisans worldwide scramble to produce more $STRING_0_1$ to meet the ever-increasing demands of the market.;x
 GOODS_PRICE_UP_TITLE_SMALL;PRICES RISE!;x
 GOODS_PRICE_UP_SMALL;In the last $VALUE_INT_0_0$ months the price of $STRING_0_1$ has steadily risen!;x
 GOODS_PRICE_DOWN_TITLE_LARGE;PRICES COLLAPSE!;x
@@ -5786,7 +5786,7 @@ COMMUNIST_REVOLUTION_NEWS_LARGE_COMMUNIST;Workers of the world, unite!' Once mor
 COMMUNIST_REVOLUTION_NEWS_TITLE_MEDIUM_COMMUNIST;COMMUNISM IN $TAG_0_0_UPPER$!;x
 COMMUNIST_REVOLUTION_NEWS_MEDIUM_COMMUNIST;Workers of the world, unite!' This rallying cry can been heard today throughout $TAG_0_0$, where our communist comrades have been victorious in overthrowing the government and establishing the one and true people's party: $STRING_0_0$!;x
 COMMUNIST_REVOLUTION_NEWS_TITLE_SMALL_COMMUNIST;REVOLUTION!;x
-COMMUNIST_REVOLUTION_NEWS_SMALL_COMMUNIST;Workers of the world, unite!' This rallying cry can been heard today throughout $TAG_0_0$, where our comrades have been victorious in overthrowing the corrupt capitalist crooks!;x
+COMMUNIST_REVOLUTION_NEWS_SMALL_COMMUNIST;Workers of the world, unite!' This rallying cry can been heard today throughout $TAG_0_0$, where our comrades have been victorious in overthrowing the corrupt Guild Master crooks!;x
 battle_we_lose_large_censored_press;Reports from the field tell us that on $DATE_LONG_0$, our courageous troops have made a tactical retreat from the battle against $TAG_0_3$ in $STRING_0_3$. This has been proven necessary to maximise our element of unpredictability and surprise. $VALUE_INT_0_4$ enemy soldiers have been killed by our valiant boys. Although $VALUE_INT_0_2$ of our soldiers are yet to report back for duty, it's worth noting that many of our troops remain hidden to surprise the enemy in an ambush, showing true courage and resilience!;x
 battle_we_lose_medium_censored_press;On $DATE_LONG_0$, a tactical retreat from the battle against $TAG_0_3$ has been proven necessary, in order to maximise our element of surprise! $VALUE_INT_0_2$ of our soldiers are said to be hiding for an ambush, while $VALUE_INT_0_4$ enemy troops have been killed!;x
 battle_we_lose_small_censored_press;On $DATE_LONG_0$, a tactical retreat has been conducted from the battle against $TAG_0_3$. It is thought $VALUE_INT_0_2$ of our troops are in hiding, preparing for an ambush!;x

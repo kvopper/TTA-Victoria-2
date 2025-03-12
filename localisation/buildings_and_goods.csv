@@ -124,9 +124,9 @@ PRODUCTION_OPEN_FACTORY_BECAUSE_TOOLTIP;We are allowed to open this guild becaus
 PRODUCTION_CLOSE_FACTORY_BECAUSE_TOOLTIP;We are allowed to close this guild because:\n;x
 PRODUCTION_EXPAND_FACTORY_BECAUSE_TOOLTIP;We are allowed to expand this guild because:\n;x
 RULE_CAN_SUBSIDISE;Can Subsidise Guilds;x
-RULE_POP_BUILD_FACTORY;Capitalists Build Guilds;x
-RULE_POP_EXPAND_FACTORY;Capitalists Expand Guilds;x
-RULE_POP_OPEN_FACTORY;Capitalists Open Guilds;x
+RULE_POP_BUILD_FACTORY;Guild Masters Build Guilds;x
+RULE_POP_EXPAND_FACTORY;Guild Masters Expand Guilds;x
+RULE_POP_OPEN_FACTORY;Guild Masters Open Guilds;x
 RULE_DELETE_FACTORY_IF_NO_INPUT;Bankrupt Guilds Removed;x
 PRODUCTION_OPEN_FACTORY_DESC_TOOLTIP;If we open this guild, it will start to hire people and produce goods again;x
 PRODUCTION_CLOSE_FACTORY_DESC_TOOLTIP;If we shut down this guild, it will cease production and make its entire workforce unemployed;x
