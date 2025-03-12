@@ -244,10 +244,6 @@ country_event = {
 	title = "Embrace Advancement"
 	desc = "EVTDESC70005"
 	picture = "Prosper"
-	news = yes
-	news_desc_long = "EVTDESC70005_NEWS_LONG"
-	news_desc_medium = "EVTDESC70005_NEWS_MEDIUM"
-	news_desc_short = "EVTDESC70005_NEWS_SHORT"
 
 	is_triggered_only = yes
 	

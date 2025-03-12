@@ -1036,7 +1036,6 @@ country_event = {
 	title = "The Grey Wanderer"
 	desc = "EVTDESC3624"
 	picture = "gandalf"
-	news = yes
 
 	is_triggered_only = yes
 	
