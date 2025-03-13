@@ -178,7 +178,7 @@ ADB;Kingdom of Adûnabâr;x
 ADB_republic;Republic of Adûnabâr;x
 ADB_dominion_1;Kingdom of Adûnabâr;x
 ADB_ADJ;Adûnabârian;x
-ADR;Andrast;x
+ADR;Realm of Andrast;x
 ADR_dominion_2;Fiefdom of Andrast;x
 ADR_ADJ;Andrasthrim;x
 AGA;Agasha Clan;x
@@ -187,7 +187,7 @@ AGR;Tribes of Angrast;x
 AGR_ADJ;Enedwaithrim;x
 ALA;Alatar's Realm;x
 ALA_ADJ;Alatar;x
-ALG;Algraig;x
+ALG;Tribes of Algraig;x
 ALG_ADJ;Algraig;x
 ALN;Men of Alanborg;x
 ALN_ADJ;Aivathiuda;x
@@ -196,23 +196,26 @@ AMO_ADJ;Logath;x
 AMR;Principality of Dol Amroth;x
 AMR_dominion_2;Fiefdom of Belfalas;x
 AMR_republic;Republic of Belfalas;x
+AMR_merchant_republic;Republic of Belfalas;x
 AMR_ADJ;Amrothian;x
 AMR_dominion_2_ADJ;Belfalathrim;x
-ANF;Anfalas;x
+ANF;Realm of Anfalas;x
 ANF_dominion_2;Fiefdom of Anfalas;x
 ANF_ADJ;Anfalathrim;x
-ANO;Anórien;x
+ANO;Realm of Anórien;x
 ANO_dominion_2;Fiefdom of Anórien;x
 ANO_ADJ;Anórienrim;x
 ANT;Men of Antharsborg;x
 ANT_ADJ;Anthar;x
 ARN;Kingdom of Arnor;x
 ARN_republic;Republic of Arnor;x
+ARN_merchant_republic;Republic of Arnor;x
 ARN_ADJ;Arnorian;x
 ART;Kingdom of Arthedain;x
 ART_republic;Republic of Arthedain;x
+ART_merchant_republic;Republic of Arthedain;x
 ART_ADJ;Arthedain;x
-ARY;Arysis;x
+ARY;Realm of Arysis;x
 ARY_ADJ;Arysian;x
 BAR;Barrow-wights;x
 BAR_ADJ;Barrow-wight;x
@@ -222,7 +225,7 @@ BOM;Bombadil of the Old Forest;x
 BOM_ADJ;Old Forestrean;x
 BEO;Beornings of the Vale;x
 BEO_ADJ;Beorning;x
-BLG;Belegost;x
+BLG;Dwarves of Belegost;x
 BLG_ADJ;Dwarvish;x
 BLU;Dwarves of Ered Luin;x
 BLU_ADJ;Blue Dwarvish;x
@@ -232,11 +235,12 @@ BRE;Free Peoples of Bree;x
 BRE_ADJ;Breelander;x
 BRC;Barak Clan;x
 BRC_ADJ;Logath;x
-BSH;Bar Shûal;x
+BSH;Dwarves of Bar Shûal;x
 BSH_ADJ;Ironfist;x
 CAL;Men of Caladir;x
 CAL_ADJ;Caladirim;x
 CAR;Kingdom of Cardolan;x
+CAR_merchant_republic;Republic of Cardolan;x
 CAR_republic;Republic of Cardolan;x
 CAR_ADJ;Cardolani;x
 CHE;Chelkar;x
@@ -258,6 +262,7 @@ DND;Dúnedain of the North;x
 DND_ADJ;Dúnedain;x
 DOR;Kingdom of Dorwinion;x
 DOR_republic;Republic of Dorwinion;x
+DOR_merchant_republic;Republic of Dorwinion;x
 DOR_ADJ;Dorwinrim;x
 DRA;Dunir of Angast;x
 DRA_ADJ;Wildmen;x
@@ -265,27 +270,27 @@ DRH;Wildmen of Haerawreigion;x
 DRH_ADJ;Wildmen;x
 DRU;Drúedain of Drúedain Forest;x
 DRU_ADJ;Drúedain;x
-DUN;United Dunland;x
+DUN;United Tribes of Dunland;x
 DUN_ADJ;Dunnish;x
 DWM;Dwarves of the White Mountains;x
 DWM_ADJ;White Mountain Dwarves;x
-DCA;Caru-Lûth;x
+DCA;Caru Tribe;x
 DCA_ADJ;Dunnish;x
-DDR;Draig-Lûth;x
+DDR;Draig Tribe;x
 DDR_ADJ;Dunnish;x
 DEV;Drúedain of Eryn Vorn;x
 DEV_ADJ;Drúedain;x
-DHE;Hebog-Lûth;x
+DHE;Hebog Tribe;x
 DHE_ADJ;Dunnish;x
 DOU;Dourhands of Ered Luin;x
 DOU_ADJ;Dourhand;x
-DTU;Turch-Lûth;x
+DTU;Turch Tribe;x
 DTU_ADJ;Dunnish;x
-DUC;Uch-Lûth;x
+DUC;Uch Tribe;x
 DUC_ADJ;Dunnish;x
 EAG;Eagles of the Eyrie;x
 EAG_ADJ;Eagle;x
-EDA;Vassal of Erebor;x
+EDA;Dwarvish Vassal of Erebor;x
 EDA_ADJ;Longbeard;x
 EDB;Men of Enedbund;x
 EDB_ADJ;Enedbundhrim;x
@@ -297,14 +302,15 @@ EHW;Ehwathrumavuld;x
 EHW_ADJ;Aivathiuda;x
 ELG;Elgaer Clan;x
 ELG_ADJ;Urgath;x
-EMB;Emyn Beriad;x
+EMB;Elves of Emyn Beraid;x
 EMB_ADJ;Beriadhrim;x
-ENE;Enedwaithrim;x
+ENE;United Tribes of Enedwaith;x
 ENE_ADJ;Enedwaithrim;x;
 ERE;Kingdom of Erebor;x
 ERE_republic;Republic of Erebor;x
+ERE_merchant_republic;Republic of Erebor;x
 ERE_ADJ;Dwarvish;x
-ESG;Esgaroth-upon-the-Long-Lake;x
+ESG;Realm of Esgaroth-upon-the-Long-Lake;x
 ESG_ADJ;Lake-towner;x;
 ETT;Troll-fells;x
 ETT_ADJ;Troll;x
@@ -314,9 +320,9 @@ FFN;Free Folk of the North;x
 FFN_ADJ;Rhovanrim;x
 FON;Tribes of Fonntir;x
 FON_ADJ;Fonntiri;x
-FOR;World Bank;x
+FOR;Northern Wastes;x
 FOR_ADJ;Banker;x
-FRA;Framsburg;x
+FRA;Realm of Framsburg;x
 FRA_ADJ;Framsburger;x
 GAD;Men of Gadraughtsborg;x
 GAD_ADJ;Gadraught;x
@@ -348,28 +354,28 @@ GRA;Grammas of Gramavuld;x
 GRA_ADJ;Grammas;x
 GRM;Orcs of Mount Gram;x
 GRM_ADJ;Gram-goblin;x
-GUL;Dol Guldur;x
+GUL;Realm of Dol Guldur;x
 GUL_ADJ;Guldurrim;x;
 GUL_dominion_1;Nazgûl Realm of Dol Guldur;x
 GUN;Orcs of Gundabad;x
 GUN_ADJ;Gundabad Orc;x
-GWA;Gwathirim;x
+GWA;Gwathirim Tribe;x
 GWA_ADJ;Gwathirim;x;
 HAR;Haradrim Tribes;x
 HAR_ADJ;Haradrim;x
 HEN;Tribes of Henlan;x
 HEN_ADJ;Helani;x
-HRD;Harondor;x
-HRD_dominion_2;South Gondor;x
+HRD;Realm of Harondor;x
+HRD_dominion_2;Fiefdom of South Gondor;x
 HRD_ADJ;Harondan;x
 HRD_dominion_2_ADJ;South Gondorian;x
 HRI;Herimundi of the Vale;x
 HRI_ADJ;Herimundi;x
-HRN;Harnendor;x
+HRN;Realm of Harnendor;x
 HRN_ADJ;Harnendan;x
-HRU;Harûzan;x
+HRU;Realm of Harûzan;x
 HRU_ADJ;Harûzani;x
-HRV;Harvaneth;x
+HRV;Realm of Harvaneth;x
 HRV_ADJ;Harvaneth;x
 HWD;House of the Wind;x
 HWD_ADJ;Gwaihrim;x
@@ -383,27 +389,29 @@ ISE;Realm of Isengard;x
 ISE_dominion_2;Fiefdom of Dunfearn;x
 ISE_ADJ;Isengardhrim;x
 ITH;Principality of Ithilien;x
+ITH_republic;Republic of Ithilien;x
+ITH_merchant_republic;Republic of Ithilien;x
 ITH_dominion_1;Occupied Ithilien;x
 ITH_dominion_2;Fiefdom of Ithilien;x
 ITH_ADJ;Ithilienrim;x
 KHA;Variags of Khand;x
 KHA_ADJ;Variag;x
-KHG;Khagolabbad Faraku;x
+KHG;Dwarves if Khagolabbad Faraku;x
 KHG_ADJ;Dwarvish;x
-KHU;Annâk-khurfu;x
+KHU;Dwarves of Annâk-khurfu;x
 KHU_ADJ;Dwarvish;x
-KHZ;Khazadbizar;x
+KHZ;Dwarves of Khazadbizar;x
 KHZ_ADJ;Dwarvish;x
 KSH;Kosh Clan;x
 KSH_ADJ;Koshrim;x
 KUG;Kug Clan;x
 KUG_ADJ;Kuga;x
-LAM;Lamedon;x
+LAM;Realm of Lamedon;x
 LAM_dominion_2;Fiefdom of Lamedon;x
 LAM_ADJ;Lamedonrim;x
 LAR;Snow Orcs of Lar Huz;x
 LAR_ADJ;Snow Orc;x
-LEB;Lebennin;x
+LEB;Realm of Lebennin;x
 LEB_dominion_2;Fiefdom of Lebennin;x
 LEB_ADJ;Lebenninrim;x
 LSF;Lossoth of Forochel;x
@@ -416,12 +424,12 @@ LMW;Marsh-wights;x
 LMW_ADJ;Marsh-wight;x
 LOR;Realm of Lothlórien;x
 LOR_ADJ;Galadhrim;x
-LOS;Lossarnach;x
+LOS;Realm of Lossarnach;x
 LOS_dominion_2;Fiefdom of Lossarnach;x
 LOS_ADJ;Lossarnachrim;x
 LSR;Tribes of Lower Saerlann;x
 LSR_ADJ;Lower Saelanner;x
-LUR;Lûrmsakûn;x
+LUR;Realm of Lûrmsakûn;x
 LUR_ADJ;Lûrmsakûni;x
 LYN;Stoors of Lyndelby;x
 LYN_ADJ;Stoor;x
@@ -432,9 +440,9 @@ MAN_ADJ;Angmarrim;x
 MAN_dominion_1;Witch-Kingdom of Angmar;x
 MAU;Stoors of Maur Tulhau;x
 MAU_ADJ;Stoor;x
-MEL;Mathleisbuarg;x
+MEL;Realm of Mathleisbuarg;x
 MEL_ADJ;Melburgi;x
-MET;Metraith;x
+MET;Realm of Metraith;x
 MET_ADJ;Metraithir;x
 MIR;Spiders of Mirkwood;x
 MIR_ADJ;Arachnid;x
@@ -443,14 +451,14 @@ MOR_sauron_dictatorship;Shadow of Mordor;x
 MOR_ADJ;Mordorim;x
 MRB;Dunlendings of Mirobel;x
 MRB_ADJ;Hollin-folk;x
-MRN;Mornan;x
+MRN;Realm of Mornan;x
 MRN_dominion_2;Fiefdom of Mornan;x
 MRN_ADJ;Mornathrim;x
-MTN;Urukdurbzagh;x
+MTN;United Tribles of Urukdurbzagh;x
 MTN_ADJ;Urukdurbzaghian;x
 NAR;Narkad Clan;x
 NAR_ADJ;Logath;x
-NGD;Nogrod;x
+NGD;Dwarves of Nogrod;x
 NGD_ADJ;Dwarvish;x
 NRN;Nurunkkhizdín;x
 NRN_ADJ;Ironfist;x
@@ -464,7 +472,7 @@ OTH;Men of Othlebed;x
 OTH_ADJ;Gadraught;x;
 OST;Orcs of Ost-in-Edhil;x
 OST_ADJ;Ost-in-Edhil Orc;x
-PEZ;Pezarsan;x
+PEZ;Realm of Pezarsan;x
 PEZ_ADJ;Pezarsani;x
 PRI;Pris Clan;x
 PRI_ADJ;Urgath;x
@@ -475,29 +483,34 @@ RAD;Radagast of Rhosgobel;x
 RAD_ADJ;Rhosgobelean;x
 RAV;Ravens of Erebor;x
 RAV_ADJ;Raven;x
-RHO;Rhovanion;x
+RHO;Kingdom of Rhovanion;x
 RHO_ADJ;Rhovanrim;x
-RHO_monarchy;Kingdom of Rhovanion;x
 RHO_monarchy_2;Barding Kingdom of Rhovanion;x
+RHO_merchant_republic;Republic of Rhovanion;x
+RHO_republic;Republic of Rhovanion;x
 RHO_monarchy_2_ADJ;Barding;x
 RHO_dominion_2;Fiefdom of Dor Rhúnen;x
 RIV;Rivermen of the Celduin;x
 RIV_ADJ;Rivermen;x
-ROF;Royal Fold;x
+ROF;Dúnedain of the Royal Fold;x
 ROF_ADJ;Foldian;x
 ROH;Kingdom of Rohan;x
+ROH_merchant_republic;Republic of Rohan;x
+ROH_republic;Republic of Rohan;x
 ROH_dominion_2;Fiefdom of Calenardhon;x
 ROH_ADJ;Rohirrim;x
-RME;Rómenost;x
+RME;Realm of Rómenost;x
 RME_ADJ;Anthar;x
 RHU;Realm of the Easterlings;x
 RHU_ADJ;Easterling;x
 RHR;Hillmen of Rhudaur;x
 RHR_ADJ;Hillmen;x
 RUN;Reunited Kingdom;x
+RUN_merchant_republic;Reunited Republic;x
 RUN_republic;Reunited Republic;x
 RUN_ADJ;Reunited Kingdom;x
 SAE;Kingdom of Saerlann;x
+SAE_merchant_republic;Republic of Saerlann;x
 SAE_republic;Republic of Saerlann;x
 SAE_ADJ;Saelanner;x
 SAG;Sagath Clan;x
@@ -505,16 +518,17 @@ SAG_ADJ;Sagath;x
 SAU;Men of Sauthborg;x
 SAU_ADJ;Gadraught;x
 SBU;Shire-Breeland Union;x
-SBU_monarchy;United Kingdom of Shire and Breeland;x
+SBU_monarchy;United Kingdoms of Shire and Breeland;x
+SBU_monarchy_2;United Kingdoms of Shire and Breeland;x
 SBU_ADJ;Hobbit-Breelander;x
 SEK;Sekel Clan;x
 SEK_ADJ;Sekel;x
-SHE;Shelob's Domain;x
+SHE;Domain of Shelob;x
 SHE_ADJ;Shelob;x
 SHI;Hobbits of the Shire;x
 SHI_ADJ;Hobbit;x
 SKU;Skuthruga Clan;x
-SKU_ADJ;Skuthrgan;x
+SKU_ADJ;Skuthrugan;x
 SNO;Snow Orcs of the North;x
 SNO_ADJ;Snow Orc;x
 SOA;Snow Orcs of Angmar;x
@@ -523,11 +537,11 @@ STF;Spiders of Tol Fuin;x
 STF_ADJ;Arachnid;x
 STO;Stoors of the Gladden;x
 STO_ADJ;Stoor;x
-SYL;Old Sylvana;x
+SYL;Realm of Old Sylvana;x
 SYL_ADJ;Old Sylvana;x
-THA;Tharbad;x
+THA;Dúnedain of Tharbad;x
 THA_ADJ;Tharbadrim;x
-THO;Thorin's Halls;x
+THO;Dwarves of Thorin's Halls;x
 THO_ADJ;Dwarvish;x
 TNR;Men of Dol Tinereb;x
 TNR_ADJ;Tinerebhrim;x
@@ -548,8 +562,8 @@ UTA;Utal Clan;x
 UTA_ADJ;Logath;x
 VID;Men of Vidusborg;x
 VID_ADJ;Aivathiuda;x
-WEA;Weathertop;x
-WEA_ADJ;Weathertop;x
+WEA;Realm of Weathertop;x
+WEA_ADJ;Realm of Weathertop;x
 WEA_dominion_1;Nazgûl Realm of Weathertop;x
 WND;Windan Elves of Harlindon;x
 WND_ADJ;Windan;x
