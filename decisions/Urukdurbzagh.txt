@@ -12,6 +12,9 @@ political_decisions = {
 			GUN = { all_core = { owned_by = THIS } }
 			GMO = { all_core = { owned_by = THIS } }
 			GGT = { all_core = { owned_by = THIS } }
+			KSH = { all_core = { owned_by = THIS } }
+			GRM = { all_core = { owned_by = THIS } }
+			SKU = { all_core = { owned_by = THIS } }
 		}
 		effect = {
 			prestige = 20
@@ -19,6 +22,9 @@ political_decisions = {
 			GUN = { all_core = { add_core = MTN } }
 			GMO = { all_core = { add_core = MTN } }
 			GGT = { all_core = { add_core = MTN } }
+			KSH = { all_core = { add_core = MTN } }
+			GRM = { all_core = { add_core = MTN } }
+			SKU = { all_core = { add_core = MTN } }
 			995 = { add_core = MTN }		# Parth Gurthil
 			994 = { add_core = MTN }		# Malenhad
 			999 = { add_core = MTN }		# Mount Gram
