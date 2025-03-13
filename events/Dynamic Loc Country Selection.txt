@@ -3043,7 +3043,7 @@ country_event = {
 				has_province_modifier = dynamic_loc_slot_selector
 				EMB = { has_country_flag = dynamic_loc_slot_selector }
 			}
-			state_scope = { change_region_name = "@EMB Emyn Beriad" }
+			state_scope = { change_region_name = "@EMB Emyn Beraid" }
 		}
 		dynamic_loc_slots = {
 			limit = {
