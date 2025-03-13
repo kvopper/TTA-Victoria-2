@@ -3385,6 +3385,7 @@ province_event = {
 		NOT = { owner = { has_global_flag = province_wealth_intervention_disabled } }
 		owner = { war = no }
 		NOT = { owner = { has_country_modifier = observer_mode } }
+		NOT = { owner = { any_owned_province = { has_province_modifier = province_wealth_investing_in_province } } }
 		OR = {
 			has_crime = province_wealth_0
 			has_crime = province_wealth_1
