@@ -10,6 +10,53 @@ news_priority =
 	type = "PROVINCE_CHANGE_OWNER"
 	name = "default"
 	case = { priority_add = 15 }
+	# Ignore World Bank stuff
+	case = {
+		trigger = {
+			OR = {
+				# Celduin River
+				values_eq = { 0 0 1068 }
+				values_eq = { 0 0 1069 }
+				values_eq = { 0 0 1070 }
+				values_eq = { 0 0 1071 }
+				values_eq = { 0 0 1072 }
+				values_eq = { 0 0 1073 }
+				values_eq = { 0 0 1074 }
+				# Seas
+				values_eq = { 0 0 1106 }
+				values_eq = { 0 0 1108 }
+				values_eq = { 0 0 1109 }
+				values_eq = { 0 0 1110 }
+				values_eq = { 0 0 1111 }
+				values_eq = { 0 0 1112 }
+				values_eq = { 0 0 1114 }
+				values_eq = { 0 0 1116 }
+				values_eq = { 0 0 1117 }
+				values_eq = { 0 0 1118 }
+				values_eq = { 0 0 1119 }
+				values_eq = { 0 0 1120 }
+				values_eq = { 0 0 1121 }
+				values_eq = { 0 0 1123 }
+				values_eq = { 0 0 1124 }
+				values_eq = { 0 0 1126 }
+				values_eq = { 0 0 1127 }
+				values_eq = { 0 0 1128 }
+				values_eq = { 0 0 1129 }
+				values_eq = { 0 0 1136 }
+				values_eq = { 0 0 1137 }
+				values_eq = { 0 0 1138 }
+				values_eq = { 0 0 1139 }
+				values_eq = { 0 0 1140 }
+				values_eq = { 0 0 1141 }
+				values_eq = { 0 0 1142 }
+				values_eq = { 0 0 1144 }
+				values_eq = { 0 0 1146 }
+				# Lake Ata
+				values_eq = { 0 0 1148 }
+			}
+		}
+		priority_add = -999
+	}
 	#case = 
 	#{ 
 	#	trigger = { values_eq = { 0 0 420 } tags_eq = { 0 0 FRA } } # FRA lost Brest
@@ -19,7 +66,7 @@ news_priority =
 
 generate_article =
 {
-	type = "PROVINCE_CHANGE_OWNER"
+	type = "PROVINCE_CHANGE_OWNER" 
 	size = large
 	name = "default"
 
