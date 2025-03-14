@@ -104,7 +104,7 @@ generate_article =
 		trigger = { values_eq = { 0 4 1 } }
 		picture = "news/revolution_01_news_image.dds"
 	}
-	picture_case = { picture = "events/$STRING_0_1$.tga" }
+	picture_case = { picture = "events/news/$STRING_0_1$.tga" }
 
 	# Use the same title as event
 	title_case = { text_add = { "$STRING_0_0$" } }
@@ -126,7 +126,7 @@ generate_article =
 		trigger = { values_eq = { 0 4 1 } }
 		picture = "news/revolution_01_news_image.dds"
 	}
-	picture_case = { picture = "events/$STRING_0_1$.tga" }
+	picture_case = { picture = "events/news/$STRING_0_1$.tga" }
 
 	# Use the same title as event
 	title_case = { text_add = { "$STRING_0_0$" } }

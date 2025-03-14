@@ -106,6 +106,10 @@ country_event = {
 	title = "A Place in the Sun"
 	desc = "EVTDESC19002"
 	picture = "greatpowers"
+	news = yes
+	news_desc_long = "EVTDESC19002_NEWS_LONG"
+	news_desc_medium = "EVTDESC19002_NEWS_MEDIUM"
+	news_desc_short = "EVTDESC19002_NEWS_SHORT"
 
 	trigger = {
 		is_greater_power = yes
