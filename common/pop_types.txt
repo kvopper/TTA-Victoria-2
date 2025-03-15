@@ -541,7 +541,6 @@ emigration_chance = {
 		OR = {
 			country = { border_policy = closed_borders }
 			pop_majority_ideology = slave_ideology
-			NOT = { agree_with_ruling_party = 0.02 }
 		}
 	}
 	group = {

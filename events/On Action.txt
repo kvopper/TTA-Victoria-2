@@ -253,6 +253,8 @@ country_event = {
 
 	option = {
 		name = "Advancement!"
+		
+		civilized = yes
 	}
 }
 
