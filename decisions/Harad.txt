@@ -886,20 +886,20 @@ political_decisions = {
 						tag = CHE
 					}
 					OR = {
-						owns = 241
-						owns = 235
-						owns = 238
-						owns = 239
+						owns = 241 # Ausk Harmaka
+						owns = 235 # Korb Ugarta
+						owns = 238 # Tharven
+						owns = 239 # Athrad Hingren
 					}
 				}
 				AND = {
 					tag = UMB
 					OR = {
-						owns = 235
-						owns = 233
-						owns = 232
-						owns = 234
-						owns = 236
+						owns = 235 # Korb Ugarta
+						owns = 233 # An Sakal
+						owns = 232 # Kas Marzuk
+						owns = 234 # Has Yayb
+						owns = 236 # Has Sebiya
 					}
 				}
 			}
@@ -912,16 +912,16 @@ political_decisions = {
 			diplomacy_1 = 1
 			OR = {
 				AND = {
-					owns = 241
-					owns = 235
-					owns = 233
-					owns = 232
+					owns = 241 # Ausk Harmaka
+					owns = 235 # Korb Ugarta
+					owns = 233 # An Sakal
+					owns = 232 # Kas Marzuk
 				}
 				AND = {
-					owns = 234
-					owns = 236
-					owns = 238
-					owns = 239
+					owns = 234 # Has Yayb
+					owns = 236 # Has Sebiya
+					owns = 238 # Tharven
+					owns = 239 # Athrad Hingren
 				}
 			}
 			NOT = { truce_with = HRN }

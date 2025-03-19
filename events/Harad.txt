@@ -483,14 +483,14 @@ country_event = {
 		any_owned = {
 			limit = {
 				OR = {
-					province_id = 234
-					province_id = 236
-					province_id = 238
-					province_id = 239
-					province_id = 284
-					province_id = 285
-					province_id = 286
-					province_id = 287
+					province_id = 234 # Has Yayb
+					province_id = 236 # Has Sebiya
+					province_id = 238 # Tharven
+					province_id = 239 # Athrad Hingren
+					province_id = 284 # Ausk Parch
+					province_id = 285 # Blacksand Vale
+					province_id = 286 # Gobel Ancalimon
+					province_id = 287 # Sok Abarrim
 					is_core	= HRN
 				}
 			}
@@ -506,7 +506,7 @@ country_event = {
 						tag = CHE
 						tag = UMB
 					}
-					owns = 235
+					owns = 235 # Korb Ugarta
 				}
 			}
 			235 = {
@@ -522,7 +522,7 @@ country_event = {
 						tag = CHE
 						tag = UMB
 					}
-					owns = 233
+					owns = 233 # An Sakal
 				}
 			}
 			233 = {
@@ -538,10 +538,58 @@ country_event = {
 						tag = CHE
 						tag = UMB
 					}
-					owns = 233
+					owns = 234 # Has Yayb
 				}
 			}
-			232 = {
+			234 = {
+				add_core = HRN
+				secede_province = HRN
+			}
+		}
+		random_owned = {
+			limit = {
+				THIS = {
+					OR = {
+						tag = HRU
+						tag = CHE
+						tag = UMB
+					}
+					owns = 233 # Has Sebiya
+				}
+			}
+			236 = {
+				add_core = HRN
+				secede_province = HRN
+			}
+		}
+		random_owned = {
+			limit = {
+				THIS = {
+					OR = {
+						tag = HRU
+						tag = CHE
+						tag = UMB
+					}
+					owns = 238 # Tharven
+				}
+			}
+			238 = {
+				add_core = HRN
+				secede_province = HRN
+			}
+		}
+		random_owned = {
+			limit = {
+				THIS = {
+					OR = {
+						tag = HRU
+						tag = CHE
+						tag = UMB
+					}
+					owns = 239 # Athrad Hingren
+				}
+			}
+			239 = {
 				add_core = HRN
 				secede_province = HRN
 			}
