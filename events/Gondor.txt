@@ -1373,8 +1373,8 @@ province_event = {
 	
 	trigger = {
 		OR = {
-			province = 226 #Methir
-			province = 255 #Gilin
+			province_id = 226 #Methir
+			province_id = 255 #Gilin
 		}
 		owner = {
 			tag = HRD
@@ -1395,6 +1395,7 @@ province_event = {
 		name = "We are reclaiming what is rightfully ours"
 		
 		owner = {
+			set_global_flag = hidden_effects
 			random_owned = {
 				limit = { owner = { has_global_flag = hidden_effects } }
 				# Adds a targeting modifier to all eligible provinces
@@ -1427,6 +1428,8 @@ province_event = {
 		}
 		
 		colonize_harondor_province_loc = {}
+		
+		owner = { clr_global_flag = hidden_effects }
 	}
 }
 
