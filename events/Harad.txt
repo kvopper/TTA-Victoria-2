@@ -501,12 +501,15 @@ country_event = {
 		random_owned = {
 			limit = {
 				THIS = {
-					tag = UMB
-					owns = 232
+					OR = {
+						tag = HRU
+						tag = CHE
+						tag = UMB
+					}
+					owns = 235
 				}
 			}
-			232 = {
-				remove_core = THIS
+			235 = {
 				add_core = HRN
 				secede_province = HRN
 			}
@@ -517,16 +520,33 @@ country_event = {
 					OR = {
 						tag = HRU
 						tag = CHE
+						tag = UMB
 					}
-					owns = 235
+					owns = 233
 				}
 			}
-			235 = {
-				remove_core = THIS
+			233 = {
 				add_core = HRN
 				secede_province = HRN
 			}
 		}
+		random_owned = {
+			limit = {
+				THIS = {
+					OR = {
+						tag = HRU
+						tag = CHE
+						tag = UMB
+					}
+					owns = 233
+				}
+			}
+			232 = {
+				add_core = HRN
+				secede_province = HRN
+			}
+		}
+		HRN = {	all_core = { remove_core = THIS } }
 		clr_country_flag = HRN_ultimatum_sent
 	}
 }
