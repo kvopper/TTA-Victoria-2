@@ -1,7 +1,6 @@
 owner = BSH
 controller = BSH
 add_core = BSH
-add_core = RHU
 trade_goods = iron
 life_rating = 25
 terrain = rhun_hills
