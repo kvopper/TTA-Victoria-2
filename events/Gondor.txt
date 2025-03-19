@@ -1373,8 +1373,8 @@ province_event = {
 	
 	trigger = {
 		OR = {
-			province = 226 #Methir
-			province = 255 #Gilin
+			province_id = 226 #Methir
+			province_id = 255 #Gilin
 		}
 		owner = {
 			tag = HRD
@@ -1393,6 +1393,8 @@ province_event = {
 	
 	option = {
 		name = "We are reclaiming what is rightfully ours"
+		
+		owner = { set_global_flag = hidden_effects }
 		
 		owner = {
 			random_owned = {
