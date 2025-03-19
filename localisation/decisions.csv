@@ -302,7 +302,7 @@ reclaim_tirith_aear_desc;Long before the Númenóreans settled Dol Amroth, the S
 ##### HARAD DECISIONS #####;x {
 ###########################;x
 form_harad_title;Form Harad;x
-form_harad_desc;We have militarily risen to hold a sovereign place over our culture. We should unite to show Middle-Earth that we are powerful\n\n§RFor each of the 5 tribes, all of their cores that are controlled by a Haradrim tribe must be either owned by you, owned by a vassal or owned by a sphereling. Should a core not be owned by a Haradram tribe, you do not need to do anything with it to form Harad§!;x
+form_harad_desc;We have militarily risen to hold a sovereign place over our culture. We should unite to show Middle-Earth that we are powerful\n\n§RFor each of the 5 tribes, all of their cores that are controlled by a Haradrim tribe must be either owned by you, owned by a vassal or owned by a sphereling. Should a core not be owned by a Haradrim tribe, you do not need to do anything with it to form Harad§!;x
 form_harad_diplo_title;Invite the Tribes to a Council;x
 form_harad_diplo_desc;Our tribe has risen in the ranks of Middle-Earth. In fact, we are so well considered that we may be able to diplomatically create alliances to unite the tribes.\n\n§RIf each of the tribes accept the proposal, you will become their sphere owner§!;x
 form_harad_UMB_title;Form Harad;x

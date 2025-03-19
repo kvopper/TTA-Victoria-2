@@ -2380,6 +2380,7 @@ country_event = {
 	option = {
 		name = "We will not surrender to the Shadow!"
 		prestige = -10
+		plurality = 2
 		add_country_modifier = {
 			name = harondor_lost
 			duration = -1
