@@ -111,6 +111,155 @@ style =
 
 	title_image =
 	{
+		# The first case that matches is the one that applies
+		# Ordered by priority - highest first
+
+		# Generic race pictures
+		case = { # Dwarven
+			trigger = { 
+				OR = {
+					AND = {
+						accepted_culture = dwarven_culture
+					}
+					AND = {
+						civilized = no
+						part_of_sphere = yes
+						sphere_owner = {
+							accepted_culture = dwarven_culture
+						}
+					}
+					AND = {
+						civilized = no
+						is_vassal = yes
+						overlord = {
+							accepted_culture = dwarven_culture
+						}
+					}					
+				}
+			}
+			picture = "news/generic_dwarf_newspaper_title.dds" 
+		}
+		case = { # Eagle
+			trigger = { 
+				OR = {
+					AND = {
+						accepted_culture = eagle_culture
+					}
+					AND = {
+						civilized = no
+						part_of_sphere = yes
+						sphere_owner = {
+							accepted_culture = eagle_culture
+						}
+					}
+					AND = {
+						civilized = no
+						is_vassal = yes
+						overlord = {
+							accepted_culture = eagle_culture
+						}
+					}					
+				}
+			}
+			picture = "news/generic_eagle_newspaper_title.dds" 
+		}
+		case = { # Elven
+			trigger = { 
+				OR = {
+					AND = {
+						accepted_culture = elven_culture
+					}
+					AND = {
+						civilized = no
+						part_of_sphere = yes
+						sphere_owner = {
+							accepted_culture = elven_culture
+						}
+					}
+					AND = {
+						civilized = no
+						is_vassal = yes
+						overlord = {
+							accepted_culture = elven_culture
+						}
+					}					
+				}
+			}
+			picture = "news/generic_elf_newspaper_title.dds" 
+		}
+		case = { # Orc
+			trigger = { 
+				OR = {
+					AND = {
+						accepted_culture = orc_culture
+					}
+					AND = {
+						civilized = no
+						part_of_sphere = yes
+						sphere_owner = {
+							accepted_culture = orc_culture
+						}
+					}
+					AND = {
+						civilized = no
+						is_vassal = yes
+						overlord = {
+							accepted_culture = orc_culture
+						}
+					}					
+				}
+			}
+			picture = "news/generic_orc_newspaper_title.dds" 
+		}
+		case = { # Spider
+			trigger = { 
+				OR = {
+					AND = {
+						accepted_culture = spider_culture
+					}
+					AND = {
+						civilized = no
+						part_of_sphere = yes
+						sphere_owner = {
+							accepted_culture = spider_culture
+						}
+					}
+					AND = {
+						civilized = no
+						is_vassal = yes
+						overlord = {
+							accepted_culture = spider_culture
+						}
+					}					
+				}
+			}
+			picture = "news/generic_spider_newspaper_title.dds" 
+		}
+		case = { # Ent
+			trigger = { 
+				OR = {
+					AND = {
+						accepted_culture = ent_culture
+					}
+					AND = {
+						civilized = no
+						part_of_sphere = yes
+						sphere_owner = {
+							accepted_culture = ent_culture
+						}
+					}
+					AND = {
+						civilized = no
+						is_vassal = yes
+						overlord = {
+							accepted_culture = ent_culture
+						}
+					}					
+				}
+			}
+			picture = "news/generic_ent_newspaper_title.dds" 
+		}
+
 		# Fallback picture
 		case = { 
 			picture = "news/generic_newspaper_title.dds" 
