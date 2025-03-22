@@ -114,6 +114,56 @@ style =
 		# The first case that matches is the one that applies
 		# Ordered by priority - highest first
 
+		# Nation/culture/government specific pictures
+		case = { # Sauron
+			trigger = { 
+				OR = {
+					AND = {
+						government = sauron_dictatorship
+					}
+					AND = {
+						civilized = no
+						part_of_sphere = yes
+						sphere_owner = {
+							government = sauron_dictatorship
+						}
+					}
+					AND = {
+						civilized = no
+						is_vassal = yes
+						overlord = {
+							government = sauron_dictatorship
+						}
+					}					
+				}
+			}
+			picture = "news/newspaper_title_sauron.dds" 
+		}
+		case = { # Nazgul
+			trigger = { 
+				OR = {
+					AND = {
+						government = nazgul_dictatorship
+					}
+					AND = {
+						civilized = no
+						part_of_sphere = yes
+						sphere_owner = {
+							government = nazgul_dictatorship
+						}
+					}
+					AND = {
+						civilized = no
+						is_vassal = yes
+						overlord = {
+							government = nazgul_dictatorship
+						}
+					}					
+				}
+			}
+			picture = "news/newspaper_title_nazgul.dds" 
+		}
+
 		# Generic race pictures
 		case = { # Dwarven
 			trigger = { 
@@ -137,7 +187,7 @@ style =
 					}					
 				}
 			}
-			picture = "news/generic_dwarf_newspaper_title.dds" 
+			picture = "news/newspaper_title_dwarf.dds" 
 		}
 		case = { # Eagle
 			trigger = { 
@@ -161,7 +211,7 @@ style =
 					}					
 				}
 			}
-			picture = "news/generic_eagle_newspaper_title.dds" 
+			picture = "news/newspaper_title_eagle.dds" 
 		}
 		case = { # Elven
 			trigger = { 
@@ -185,7 +235,7 @@ style =
 					}					
 				}
 			}
-			picture = "news/generic_elf_newspaper_title.dds" 
+			picture = "news/newspaper_title_elf.dds" 
 		}
 		case = { # Orc
 			trigger = { 
@@ -209,7 +259,7 @@ style =
 					}					
 				}
 			}
-			picture = "news/generic_orc_newspaper_title.dds" 
+			picture = "news/newspaper_title_orc.dds" 
 		}
 		case = { # Spider
 			trigger = { 
@@ -233,7 +283,7 @@ style =
 					}					
 				}
 			}
-			picture = "news/generic_spider_newspaper_title.dds" 
+			picture = "news/newspaper_title_spider.dds" 
 		}
 		case = { # Ent
 			trigger = { 
@@ -257,12 +307,12 @@ style =
 					}					
 				}
 			}
-			picture = "news/generic_ent_newspaper_title.dds" 
+			picture = "news/newspaper_title_ent.dds" 
 		}
 
 		# Fallback picture
 		case = { 
-			picture = "news/generic_newspaper_title.dds" 
+			picture = "news/newspaper_title_generic.dds" 
 		}
 	}
 }
