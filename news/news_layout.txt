@@ -114,7 +114,31 @@ style =
 		# The first case that matches is the one that applies
 		# Ordered by priority - highest first
 
-		# Nation specific pictures
+		# Culture specific pictures
+		case = { # Bree
+			trigger = { 
+				OR = {
+					AND = {
+						is_culture_group = breelander
+					}
+					AND = {
+						civilized = no
+						part_of_sphere = yes
+						sphere_owner = {
+							is_culture_group = breelander
+						}
+					}
+					AND = {
+						civilized = no
+						is_vassal = yes
+						overlord = {
+							is_culture_group = breelander
+						}
+					}					
+				}
+			}
+			picture = "news/newspaper_title_breelander.dds" 
+		}
 		case = { # Rohirrim
 			trigger = { 
 				OR = {
@@ -335,8 +359,80 @@ style =
 			}
 			picture = "news/newspaper_title_ent.dds" 
 		}
+		case = { # Hobbit
+			trigger = { 
+				OR = {
+					AND = {
+						accepted_culture = hobbit_culture
+					}
+					AND = {
+						civilized = no
+						part_of_sphere = yes
+						sphere_owner = {
+							accepted_culture = hobbit_culture
+						}
+					}
+					AND = {
+						civilized = no
+						is_vassal = yes
+						overlord = {
+							accepted_culture = hobbit_culture
+						}
+					}					
+				}
+			}
+			picture = "news/newspaper_title_hobbit.dds" 
+		}
+		case = { # Troll
+			trigger = { 
+				OR = {
+					AND = {
+						accepted_culture = troll_culture
+					}
+					AND = {
+						civilized = no
+						part_of_sphere = yes
+						sphere_owner = {
+							accepted_culture = troll_culture
+						}
+					}
+					AND = {
+						civilized = no
+						is_vassal = yes
+						overlord = {
+							accepted_culture = troll_culture
+						}
+					}					
+				}
+			}
+			picture = "news/newspaper_title_troll.dds" 
+		}
+		case = { # Undead
+			trigger = { 
+				OR = {
+					AND = {
+						accepted_culture = undead_culture
+					}
+					AND = {
+						civilized = no
+						part_of_sphere = yes
+						sphere_owner = {
+							accepted_culture = undead_culture
+						}
+					}
+					AND = {
+						civilized = no
+						is_vassal = yes
+						overlord = {
+							accepted_culture = undead_culture
+						}
+					}					
+				}
+			}
+			picture = "news/newspaper_title_undead.dds" 
+		}
 
-		# Fallback picture
+		# Fallback picture - men only
 		case = { 
 			picture = "news/newspaper_title_generic.dds" 
 		}
