@@ -49,35 +49,35 @@ country_migration_target = {
 	factor = 1
 
 	modifier = {
-		factor = -9.9
+		factor = 0.9
 		unemployment = 0.05
 	}
 	modifier = {
-		factor = -9.9
+		factor = 0.9
 		unemployment = 0.1
 	}
 	modifier = {
-		factor = -9.9
+		factor = 0.9
 		unemployment = 0.15
 	}
 	modifier = {
-		factor = -9.9
+		factor = 0.9
 		unemployment = 0.2
 	}
 	modifier = {
-		factor = -9.9
+		factor = 0.9
 		unemployment = 0.25
 	}
 	modifier = {
-		factor = -9.9
+		factor = 0.9
 		unemployment = 0.3
 	}
 	modifier = {
-		factor = -9.9
+		factor = 0.9
 		unemployment = 0.35
 	}
 	modifier = {
-		factor = -9.1
+		factor = 0.1
 		unemployment = 0.5
 	}
 	modifier = {
@@ -178,7 +178,7 @@ country_migration_target = {
 		border_policy = alignment_borders
 	}
 	modifier = {
-		factor = -9.1
+		factor = 0.1
 		NOT = {
 			any_owned_province = {
 				life_rating = 30
@@ -198,10 +198,10 @@ country_migration_target = {
 }
 
 migration_target = {
-	factor = -9.01
+	factor = 0.01
 	
 	modifier = {
-		factor = -9.1
+		factor = 0.1
 		unemployment = 0.1
 		state_scope = { has_factories = no }
 	}
@@ -244,7 +244,7 @@ migration_target = {
 		any_core = { is_primary_culture = THIS }
 	}
 	modifier = {
-		factor = -9.75
+		factor = 0.75
 		state_scope = { is_slave = yes is_colonial = no }
 	}
 	modifier = {
@@ -275,7 +275,7 @@ migration_target = {
 
 promote_to = {
 	capitalists = {
-		factor = -9.01
+		factor = 0.01
 		modifier = {
 			factor = -1
 			state_scope = { has_factories = no }
@@ -301,27 +301,27 @@ promote_to = {
 		}
 		group = {
 			modifier = {
-				factor = -9.5
+				factor = 0.5
 				literacy = 0.3
 			}
 			modifier = {
-				factor = -9.25
+				factor = 0.25
 				literacy = 0.4
 			}
 			modifier = {
-				factor = -9.25
+				factor = 0.25
 				literacy = 0.5
 			}
 			modifier = {
-				factor = -9.25
+				factor = 0.25
 				literacy = 0.6
 			}
 			modifier = {
-				factor = -9.25
+				factor = 0.25
 				literacy = 0.7
 			}
 			modifier = {
-				factor = -9.25
+				factor = 0.25
 				literacy = 0.8
 			}
 		}
@@ -356,30 +356,30 @@ promote_to = {
 		}
 	}
 	clergymen = {
-		factor = -9.01
+		factor = 0.01
 		group = {
 			modifier = {
-				factor = -9.5
+				factor = 0.5
 				literacy = 0.3
 			}
 			modifier = {
-				factor = -9.25
+				factor = 0.25
 				literacy = 0.4
 			}
 			modifier = {
-				factor = -9.25
+				factor = 0.25
 				literacy = 0.5
 			}
 			modifier = {
-				factor = -9.25
+				factor = 0.25
 				literacy = 0.6
 			}
 			modifier = {
-				factor = -9.25
+				factor = 0.25
 				literacy = 0.7
 			}
 			modifier = {
-				factor = -9.25
+				factor = 0.25
 				literacy = 0.8
 			}
 		}
@@ -495,7 +495,7 @@ promote_to = {
 		}
 	}
 	bureaucrats = {
-		factor = -9.01
+		factor = 0.01
 		modifier = {
 			factor = -100
 			NOT = { is_accepted_culture = yes }
@@ -503,19 +503,19 @@ promote_to = {
 		}
 		group = {
 			modifier = {
-				factor = -9.25
+				factor = 0.25
 				literacy = 0.4
 			}
 			modifier = {
-				factor = -9.25
+				factor = 0.25
 				literacy = 0.5
 			}
 			modifier = {
-				factor = -9.5
+				factor = 0.5
 				literacy = 0.6
 			}
 			modifier = {
-				factor = -9.5
+				factor = 0.5
 				literacy = 0.7
 			}
 			modifier = {
@@ -613,7 +613,7 @@ promote_to = {
 		}
 	}
 	labourers = {
-		factor = -9.01
+		factor = 0.01
 		modifier = {
 			factor = 5
 			soldiers = 0.03
@@ -628,7 +628,7 @@ promote_to = {
 		}
 	}
 	soldiers = {
-		factor = -9.01
+		factor = 0.01
 		group = {
 			modifier = {
 				factor = -4
@@ -667,7 +667,7 @@ promote_to = {
 				recruited_percentage = 0.8
 			}
 			modifier = {
-				factor = -9.1
+				factor = 0.1
 				recruited_percentage = 0.9
 			}
 		}
@@ -801,7 +801,7 @@ promote_to = {
 		}
 	}
 	craftsmen = {
-		factor = -9.01
+		factor = 0.01
 		group = {
 			modifier = {
 				factor = 2
@@ -2752,7 +2752,7 @@ issues = {
 			}
 		}
 		modifier = {
-			factor = -9.25
+			factor = 0.25
 			country = { civilized = no }
 		}
 		modifier = {
@@ -2820,7 +2820,7 @@ issues = {
 			}
 		}
 		modifier = {
-			factor = -9.25
+			factor = 0.25
 			country = { civilized = no }
 		}
 		modifier = {
@@ -2877,7 +2877,7 @@ issues = {
 		}
 	}
 	wealth_voting = {
-		factor = -9.9
+		factor = 0.9
 		modifier = {
 			factor = -9
 			OR = {
@@ -2888,7 +2888,7 @@ issues = {
 			}
 		}
 		modifier = {
-			factor = -9.25
+			factor = 0.25
 			country = { civilized = no }
 		}
 		modifier = {
@@ -2945,7 +2945,7 @@ issues = {
 		}
 	}
 	universal_weighted_voting = {
-		factor = -9.8
+		factor = 0.8
 		modifier = {
 			factor = -9
 			OR = {
@@ -2956,7 +2956,7 @@ issues = {
 			}
 		}
 		modifier = {
-			factor = -9.25
+			factor = 0.25
 			country = { civilized = no }
 		}
 		modifier = {
@@ -3013,7 +3013,7 @@ issues = {
 		}
 	}
 	universal_voting = {
-		factor = -9.7
+		factor = 0.7
 		modifier = {
 			factor = -9
 			OR = {
@@ -3024,7 +3024,7 @@ issues = {
 			}
 		}
 		modifier = {
-			factor = -9.25
+			factor = 0.25
 			country = { civilized = no }
 		}
 		modifier = {
@@ -3092,7 +3092,7 @@ issues = {
 			}
 		}
 		modifier = {
-			factor = -9.25
+			factor = 0.25
 			country = { civilized = no }
 		}
 		modifier = {
@@ -3132,7 +3132,7 @@ issues = {
 			}
 		}
 		modifier = {
-			factor = -9.25
+			factor = 0.25
 			country = { civilized = no }
 		}
 		modifier = {
@@ -3172,7 +3172,7 @@ issues = {
 			}
 		}
 		modifier = {
-			factor = -9.75
+			factor = 0.75
 			is_primary_culture = yes
 		}
 		modifier = {
@@ -3180,7 +3180,7 @@ issues = {
 			is_accepted_culture = yes
 		}
 		modifier = {
-			factor = -9.25
+			factor = 0.25
 			country = { civilized = no }
 		}
 		modifier = {
@@ -3220,7 +3220,7 @@ issues = {
 			}
 		}
 		modifier = {
-			factor = -9.75
+			factor = 0.75
 			OR = {
 				is_primary_culture = yes
 				is_accepted_culture = yes
@@ -3232,7 +3232,7 @@ issues = {
 			is_primary_culture = no
 		}
 		modifier = {
-			factor = -9.25
+			factor = 0.25
 			country = { civilized = no }
 		}
 		modifier = {
