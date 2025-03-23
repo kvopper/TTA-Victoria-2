@@ -10,9 +10,8 @@ literacy = 0
 oob = "PEZ_oob.txt"
 
 slavery = yes_slavery
-ruling_party = generic_pezarsani_nobles
-upper_house = {
-	pezarsani_nobles = 100
+ruling_party = generic_nobilityupper_house = {
+	nobility = 100
 }
 
 schools = traditional_academic

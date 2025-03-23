@@ -8,9 +8,8 @@ nationalvalue = no_heirloom
 literacy = 0
 
 slavery = no_slavery
-ruling_party = generic_cardolandrim_nobles
-upper_house = {
-	cardolandrim_nobles = 100
+ruling_party = generic_nobilityupper_house = {
+	nobility = 100
 }
 
 schools = traditional_academic

@@ -17,62 +17,47 @@ party = {
 }
 
 party = {
-	name = "generic_mordor_orc_nobles"
+	name = "generic_nobility"
 	start_date = 2954.1.1
 	end_date = 4000.1.1
 	
-	ideology = mordor_orc_nobles
+	ideology = nobility
 	
 	trade_policy = protectionism
-	tax_policy = interventionism
-	language_policy = regional_autonomy
+	tax_policy = state_capitalism
+	language_policy = official_only
 	diplomatic_policy = reactive
 	war_policy = jingoism
 	good_evil_alignment = evil_alignment
 }
 
 party = {
-	name = "generic_guldurrim_nobles"
+	name = "generic_burgher"
 	start_date = 2954.1.1
 	end_date = 4000.1.1
 	
-	ideology = guldurrim_nobles
+	ideology = burgher
 	
-	trade_policy = protectionism
-	tax_policy = interventionism
-	language_policy = regional_autonomy
-	diplomatic_policy = reactive
-	war_policy = jingoism
+	trade_policy = free_trade
+	tax_policy = laissez_faire
+	language_policy = minority_toleration
+	diplomatic_policy = interactive
+	war_policy = pro_military
 	good_evil_alignment = evil_alignment
 }
 
 party = {
-	name = "generic_olog_hai_nobles"
+	name = "generic_loremaster"
 	start_date = 2954.1.1
 	end_date = 4000.1.1
 	
-	ideology = olog_hai_nobles
+	ideology = loremaster
 	
-	trade_policy = protectionism
+	trade_policy = free_trade
 	tax_policy = interventionism
 	language_policy = regional_autonomy
-	diplomatic_policy = reactive
-	war_policy = jingoism
-	good_evil_alignment = evil_alignment
-}
-
-party = {
-	name = "generic_black_numenorean_nobles"
-	start_date = 2954.1.1
-	end_date = 4000.1.1
-	
-	ideology = black_numenorean_nobles
-	
-	trade_policy = protectionism
-	tax_policy = interventionism
-	language_policy = regional_autonomy
-	diplomatic_policy = reactive
-	war_policy = jingoism
+	diplomatic_policy = proactive
+	war_policy = anti_military
 	good_evil_alignment = evil_alignment
 }
 

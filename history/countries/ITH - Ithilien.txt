@@ -13,7 +13,7 @@ literacy = 0.2
 ruling_party = ITH_nobles_of_ithilien
 
 upper_house = {
-	gondorian_nobles = 100
+	nobility = 100
 }
 
 slavery = no_slavery

@@ -10,9 +10,8 @@ literacy = 0
 oob = "LSF_oob.txt"
 
 slavery = no_slavery
-ruling_party = generic_lossoth_nobles
-upper_house = {
-	lossoth_nobles = 100
+ruling_party = generic_nobilityupper_house = {
+	nobility = 100
 }
 
 schools = traditional_academic

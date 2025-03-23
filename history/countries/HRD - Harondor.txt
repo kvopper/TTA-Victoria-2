@@ -8,10 +8,9 @@ nationalvalue = no_heirloom
 literacy = 0
 
 slavery = yes_slavery
-ruling_party = generic_harnendan_nobles
-
+ruling_party = generic_nobility
 upper_house = {
-	harnendan_nobles = 100
+	nobility = 100
 }
 
 schools = traditional_academic

@@ -27,96 +27,9 @@ dominion_2_ruler;Lord;x
 ##### POLITICAL PARTIES #####;x {
 #############################;x
 generic_servants;Servants;x
-generic_dunedain_nobles;Dúnedain Nobles;x
-generic_gondorian_nobles;Gondorian Nobles;x
-generic_amrothian_nobles;Amrothian Nobles;x
-generic_arthedani_nobles;Arthedani Nobles;x
-generic_cardolandrim_nobles;Cardolandrim Nobles;x
-generic_haeranedain_nobles;Haeranedain Nobles;x
-generic_noldor_nobles;Noldor Nobles;x
-generic_falathrim_nobles;Falathrim Nobles;x
-generic_silvan_nobles;Silvan Nobles;x
-generic_galadhrim_nobles;Galadhrim Nobles;x
-generic_avari_nobles;Avari Nobles;x
-generic_umbarrim_nobles;Umbarrim Nobles;x
-generic_harnendan_nobles;Harnendan Nobles;x
-generic_haruzani_nobles;Haruzani Nobles;x
-generic_pezarsani_nobles;Pezarsani Nobles;x
-generic_lurmsakuni_nobles;Lurmsakuni Nobles;x
-generic_arysian_nobles;Arysian Nobles;x
-generic_kingsmen_nobles;Kingsmen Nobles;x
-generic_black_numenorean_nobles;Black Numenorean Nobles;x
-generic_variag_nobles;Variag Nobles;x
-generic_nurniag_nobles;Nurniag Nobles;x
-generic_chelkiag_nobles;Chelkiag Nobles;x
-generic_sagath_nobles;Sagath Nobles;x
-generic_sekel_nobles;Sekel Nobles;x
-generic_urgath_nobles;Urgath Nobles;x
-generic_kuga_nobles;Kuga Nobles;x
-generic_logath_nobles;Logath Nobles;x
-generic_barding_nobles;Lakemen Nobles;x
-generic_grammas_nobles;Grammas Nobles;x
-generic_rivermen_thegans;Rivermen Thegans;x
-generic_rivermen_nobles;Rivermen Nobles;x
-generic_adhalling_nobles;Adhalling Nobles;x
-generic_dorwinrim_nobles;Dorwinrim Nobles;x
-generic_aivathiuda_nobles;Aivathiuda Nobles;x
-generic_anthar_nobles;Anthar Nobles;x
-generic_gadraught_nobles;Gadraught Nobles;x
-generic_longbeard_nobles;Longbeard Nobles;x
-generic_firebeard_nobles;Firebeard Nobles;x
-generic_broadbeam_nobles;Broadbeam Nobles;x
-generic_ironfist_nobles;Ironfist Nobles;x
-generic_dourhand_nobles;Dourhand Nobles;x
-generic_shornbeard_nobles;Shornbeard Nobles;x
-generic_woodsmen_nobles;Woodsmen Nobles;x
-generic_beorning_nobles;Beorning Nobles;x
-generic_beiabarnae_nobles;Beiabarnae Nobles;x
-generic_melburgi_nobles;Melburgi Nobles;x
-generic_herimundi_nobles;Herimundi Nobles;x
-generic_ent_nobles;Ent Nobles;x
-generic_huorn_nobles;Huorn Nobles;x
-generic_black_huorn_nobles;Black Huorn Nobles;x
-generic_druedain_nobles;Druedain Nobles;x
-generic_dunnish_nobles;Dunnish Nobles;x
-generic_hollin_folk_nobles;Hollin Folk Nobles;x
-generic_enedwaithrim_nobles;Enedwaithrim Nobles;x
-generic_saerlanner_nobles;Saerlanner Nobles;x
-generic_dunir_nobles;Dunir Nobles;x
-generic_marshmen_nobles;Marshmen Nobles;x
-generic_rohirrim_nobles;Rohirrim Nobles;x
-generic_anduinmen_nobles;Anduinmen Nobles;x
-generic_isenmen_nobles;Isenmen Nobles;x
-generic_uruk_hai_nobles;Uruk Hai Nobles;x
-generic_mordor_orc_nobles;Mordor Orc Nobles;x
-generic_mordor_uruk_nobles;Mordor Uruk Nobles;x
-generic_guldurrim_nobles;Guldurrim Nobles;x
-generic_white_mountain_goblin_nobles;White Mountain Goblin Nobles;x
-generic_morian_nobles;Morian Nobles;x
-generic_goblin_towner_nobles;Goblin Towner Nobles;x
-generic_gundabad_orc_nobles;Gundabad Orc Nobles;x
-generic_snow_orc_nobles;Snow Orc Nobles;x
-generic_gram_goblin_nobles;Gram Goblin Nobles;x
-generic_blue_mountain_goblin_nobles;Blue Mountain Goblin Nobles;x
-generic_angmarrim_nobles;Angmarrim Nobles;x
-generic_hillmen_nobles;Hillmen Nobles;x
-generic_lossoth_nobles;Lossoth Nobles;x
-generic_breelander_nobles;Breelander Nobles;x
-generic_siredain_nobles;Siredain Nobles;x
-generic_stoor_nobles;Stoor Nobles;x
-generic_harfoot_nobles;Harfoot Nobles;x
-generic_fallohide_nobles;Fallohide Nobles;x
-generic_cave_trolls_nobles;Cave Troll Nobles;x
-generic_hill_trolls_nobles;Hill Troll Nobles;x
-generic_mountain_trolls_nobles;Mountain Troll Nobles;x
-generic_snow_trolls_nobles;Snow Troll Nobles;x
-generic_stone_trolls_nobles;Stone Troll Nobles;x
-generic_olog_hai_nobles;Olog Hai Nobles;x
-generic_great_eagle_nobles;Great Eagle Nobles;x
-generic_raven_nobles;Raven Nobles;x
-generic_great_spider_nobles;Great Spider Nobles;x
-generic_wight_nobles;Wight Nobles;x
-generic_oathbreaker_nobles;Oathbreaker Nobles;x
+generic_nobility;Nobility;x
+generic_burgher;Burghers;x
+generic_loremaster;Loremasters;x
 ADR_nobles_of_andrast;Nobles of Andrast;x
 AMR_angelimir;Angelimir I;x
 AMR_adrahil_ii;Adrahil II;x

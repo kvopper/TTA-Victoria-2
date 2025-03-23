@@ -16,10 +16,9 @@ nationalvalue = no_heirloom
 literacy = 0.2
 civilized = yes
 
-ruling_party = generic_barding_nobles
-
+ruling_party = generic_nobility
 upper_house = {
-	barding_nobles = 100
+	nobility = 100
 }
 penal_reform = hard_labor
 slavery = no_slavery

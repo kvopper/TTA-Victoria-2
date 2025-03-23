@@ -11,10 +11,9 @@ literacy = 0.2
 
 oob = "TRE_oob.txt"
 
-ruling_party = generic_aivathiuda_nobles
-
+ruling_party = generic_nobility
 upper_house = {
-	aivathiuda_nobles = 100
+	nobility = 100
 }
 penal_reform = hard_labor
 slavery = no_slavery

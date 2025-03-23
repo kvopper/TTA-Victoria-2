@@ -15,10 +15,9 @@ civilized = yes
 
 prestige = 100
 
-ruling_party = generic_dunedain_nobles
-
+ruling_party = generic_nobility
 upper_house = {
-	dunedain_nobles = 100
+	nobility = 100
 }
 penal_reform = hard_labor
 slavery = no_slavery

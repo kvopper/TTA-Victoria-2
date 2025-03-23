@@ -9,10 +9,9 @@ literacy = 0
 
 oob = "MEL_oob.txt"
 
-ruling_party = generic_melburgi_nobles
-
+ruling_party = generic_nobility
 upper_house = {
-	melburgi_nobles = 100
+	nobility = 100
 }
 
 slavery = no_slavery

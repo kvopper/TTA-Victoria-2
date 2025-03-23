@@ -11,9 +11,8 @@ literacy = 0
 oob = "SYL_oob.txt"
 
 slavery = no_slavery
-ruling_party = generic_arthedani_nobles
-upper_house = {
-	arthedani_nobles = 100
+ruling_party = generic_nobilityupper_house = {
+	nobility = 100
 }
 
 schools = traditional_academic

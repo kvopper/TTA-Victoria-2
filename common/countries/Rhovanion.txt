@@ -170,122 +170,47 @@ party = {
 }
 
 party = {
-	name = "generic_barding_nobles"
+	name = "generic_nobility"
 	start_date = 2954.1.1
 	end_date = 4000.1.1
 	
-	ideology = barding_nobles
+	ideology = nobility
 	
 	trade_policy = protectionism
-	tax_policy = interventionism
-	language_policy = regional_autonomy
+	tax_policy = state_capitalism
+	language_policy = official_only
 	diplomatic_policy = reactive
 	war_policy = jingoism
 	good_evil_alignment = good_alignment
 }
 
 party = {
-	name = "generic_aivathiuda_nobles"
+	name = "generic_burgher"
 	start_date = 2954.1.1
 	end_date = 4000.1.1
 	
-	ideology = aivathiuda_nobles
+	ideology = burgher
 	
-	trade_policy = protectionism
-	tax_policy = interventionism
-	language_policy = regional_autonomy
-	diplomatic_policy = reactive
-	war_policy = jingoism
+	trade_policy = free_trade
+	tax_policy = laissez_faire
+	language_policy = minority_toleration
+	diplomatic_policy = interactive
+	war_policy = pro_military
 	good_evil_alignment = good_alignment
 }
 
 party = {
-	name = "generic_anthar_nobles"
+	name = "generic_loremaster"
 	start_date = 2954.1.1
 	end_date = 4000.1.1
 	
-	ideology = anthar_nobles
+	ideology = loremaster
 	
-	trade_policy = protectionism
+	trade_policy = free_trade
 	tax_policy = interventionism
 	language_policy = regional_autonomy
-	diplomatic_policy = reactive
-	war_policy = jingoism
-	good_evil_alignment = good_alignment
-}
-
-party = {
-	name = "generic_gadraught_nobles"
-	start_date = 2954.1.1
-	end_date = 4000.1.1
-	
-	ideology = gadraught_nobles
-	
-	trade_policy = protectionism
-	tax_policy = interventionism
-	language_policy = regional_autonomy
-	diplomatic_policy = reactive
-	war_policy = jingoism
-	good_evil_alignment = good_alignment
-}
-
-party = {
-	name = "generic_dorwinrim_nobles"
-	start_date = 2954.1.1
-	end_date = 4000.1.1
-	
-	ideology = dorwinrim_nobles
-	
-	trade_policy = protectionism
-	tax_policy = interventionism
-	language_policy = regional_autonomy
-	diplomatic_policy = reactive
-	war_policy = jingoism
-	good_evil_alignment = good_alignment
-}
-
-party = {
-	name = "generic_grammas_nobles"
-	start_date = 2954.1.1
-	end_date = 4000.1.1
-	
-	ideology = grammas_nobles
-	
-	trade_policy = protectionism
-	tax_policy = interventionism
-	language_policy = regional_autonomy
-	diplomatic_policy = reactive
-	war_policy = jingoism
-	good_evil_alignment = good_alignment
-}
-
-party = {
-	name = "generic_rivermen_nobles"
-	start_date = 2954.1.1
-	end_date = 4000.1.1
-	
-	ideology = rivermen_nobles
-	
-	trade_policy = protectionism
-	tax_policy = interventionism
-	language_policy = regional_autonomy
-	diplomatic_policy = reactive
-	war_policy = jingoism
-	good_evil_alignment = good_alignment
-}
-
-party = {
-	name = "generic_adhalling_nobles"
-	start_date = 2954.1.1
-	end_date = 4000.1.1
-	
-	ideology = adhalling_nobles
-	
-	trade_policy = protectionism
-	tax_policy = interventionism
-	language_policy = regional_autonomy
-	diplomatic_policy = reactive
-	war_policy = jingoism
+	diplomatic_policy = proactive
+	war_policy = anti_military
 	good_evil_alignment = good_alignment
 }
 

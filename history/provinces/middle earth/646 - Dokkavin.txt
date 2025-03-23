@@ -12,6 +12,6 @@ party_loyalty = {
 }
 
 party_loyalty = {
-	ideology = rivermen_nobles
+	ideology = nobility
 	loyalty_value = 5.0
 }

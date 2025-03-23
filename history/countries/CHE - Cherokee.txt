@@ -11,10 +11,9 @@ literacy = 0
 oob = "CHE_oob.txt"
 
 slavery = yes_slavery
-ruling_party = generic_chelkiag_nobles
-
+ruling_party = generic_nobility
 upper_house = {
-	chelkiag_nobles = 100
+	nobility = 100
 }
 
 schools = traditional_academic

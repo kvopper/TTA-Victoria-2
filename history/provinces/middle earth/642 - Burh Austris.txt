@@ -4,11 +4,6 @@ life_rating = 25
 terrain = gramavuld_hills
 
 party_loyalty = {
-	ideology = grammas_nobles
+	ideology = nobility
 	loyalty_value = 10.0
-}
-
-party_loyalty = {
-	ideology = logath_nobles
-	loyalty_value = 2.0
 }

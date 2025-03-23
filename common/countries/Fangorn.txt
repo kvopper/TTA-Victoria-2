@@ -17,48 +17,48 @@ party = {
 }
 
 party = {
-	name = "generic_ent_nobles"
+	name = "generic_nobility"
 	start_date = 2954.1.1
 	end_date = 4000.1.1
 	
-	ideology = ent_nobles
+	ideology = nobility
 	
 	trade_policy = protectionism
-	tax_policy = interventionism
-	language_policy = regional_autonomy
+	tax_policy = state_capitalism
+	language_policy = official_only
 	diplomatic_policy = reactive
 	war_policy = jingoism
 	good_evil_alignment = good_alignment
 }
 
 party = {
-	name = "generic_huorn_nobles"
+	name = "generic_burgher"
 	start_date = 2954.1.1
 	end_date = 4000.1.1
 	
-	ideology = huorn_nobles
+	ideology = burgher
 	
-	trade_policy = protectionism
-	tax_policy = interventionism
-	language_policy = regional_autonomy
-	diplomatic_policy = reactive
-	war_policy = jingoism
+	trade_policy = free_trade
+	tax_policy = laissez_faire
+	language_policy = minority_toleration
+	diplomatic_policy = interactive
+	war_policy = pro_military
 	good_evil_alignment = good_alignment
 }
 
 party = {
-	name = "generic_servants"
+	name = "generic_loremaster"
 	start_date = 2954.1.1
 	end_date = 4000.1.1
 	
-	ideology = servants
+	ideology = loremaster
 	
-	trade_policy = vassal_protectionism
-	tax_policy = vassal_interventionism
-	language_policy = vassal_regional_autonomy
-	diplomatic_policy = vassal_reactive
-	war_policy = vassal_pro_military
-	good_evil_alignment = vassal_alignment
+	trade_policy = free_trade
+	tax_policy = interventionism
+	language_policy = regional_autonomy
+	diplomatic_policy = proactive
+	war_policy = anti_military
+	good_evil_alignment = good_alignment
 }
 
 unit_names = {

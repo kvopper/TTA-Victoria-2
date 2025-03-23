@@ -15,9 +15,9 @@ decision = umbar_start_decision
 oob = "UMB_oob.txt"
 
 slavery = yes_slavery
-ruling_party = generic_black_numenorean_nobles
+ruling_party = generic_nobility
 upper_house = {
-	black_numenorean_nobles = 100
+	nobility = 100
 }
 
 schools = traditional_academic

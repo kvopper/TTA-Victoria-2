@@ -8,12 +8,11 @@ nationalvalue = no_heirloom
 literacy = 0
 
 slavery = yes_slavery
-ruling_party = generic_goblin_towner_nobles
-
+ruling_party = generic_nobility
 oob = "GGT_oob.txt"
 
 upper_house = {
-	goblin_towner_nobles = 100
+	nobility = 100
 }
 
 schools = traditional_academic

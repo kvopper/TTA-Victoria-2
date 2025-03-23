@@ -17,7 +17,7 @@ ruling_party = ANF_gundor
 oob = "ANF_oob.txt"
 
 upper_house = {
-	gondorian_nobles = 100
+	nobility = 100
 }
 
 penal_reform = hard_labor

@@ -16,7 +16,7 @@ ruling_party = DA4_rivermen_thegans
 
 upper_house = {
 	rivermen_thegans = 50
-	rivermen_nobles = 50
+	nobility = 50
 }
 
 penal_reform = hard_labor

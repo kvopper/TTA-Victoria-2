@@ -7,10 +7,9 @@ government = monarchy
 nationalvalue = no_heirloom
 literacy = 0.3
 civilized = yes
-ruling_party = generic_broadbeam_nobles
-
+ruling_party = generic_nobility
 upper_house = {
-	broadbeam_nobles = 100
+	nobility = 100
 }
 penal_reform = hard_labor
 slavery = no_slavery

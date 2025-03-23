@@ -18,12 +18,9 @@ ruling_party = DAL_bard_i
 
 upper_house = {
 	house_of_bard = 21
-	adhalling_nobles = 21
-	barding_nobles = 21
+	nobility = 49
 	lakemen_fishers_guild = 19
 	master_of_laketown = 11
-	wight_nobles = 6
-	grammas_nobles = 1
 }
 
 penal_reform = hard_labor

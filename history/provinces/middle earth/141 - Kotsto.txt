@@ -7,7 +7,7 @@ life_rating = 30
 terrain = gramavuld_plains
 
 party_loyalty = {
-	ideology = adhalling_nobles
+	ideology = nobility
 	loyalty_value = 10.0
 }
 

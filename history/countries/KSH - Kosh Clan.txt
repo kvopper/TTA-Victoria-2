@@ -12,10 +12,9 @@ prestige = 5
 
 oob = "KSH_oob.txt"
 
-ruling_party = generic_gundabad_orc_nobles
-
+ruling_party = generic_nobility
 upper_house = {
-	gundabad_orc_nobles = 100
+	nobility = 100
 }
 
 slavery = yes_slavery

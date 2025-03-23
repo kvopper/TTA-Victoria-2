@@ -1774,7 +1774,7 @@ country_event = {
 				owner = { ruling_party = MOR_sauron }
 			}
 			owner = {
-				ruling_party_ideology = mordor_orc_nobles
+				ruling_party_ideology = generic_nobility
 			}
 		}
 		

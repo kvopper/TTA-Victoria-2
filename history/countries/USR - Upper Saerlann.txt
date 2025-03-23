@@ -7,12 +7,11 @@ government = tribal
 nationalvalue = no_heirloom
 literacy = 0
 
-ruling_party = generic_saerlanner_nobles
-
+ruling_party = generic_nobility
 oob = "USR_oob.txt"
 
 upper_house = {
-	saerlanner_nobles = 100
+	nobility = 100
 }
 
 slavery = no_slavery

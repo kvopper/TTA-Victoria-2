@@ -10,10 +10,9 @@ civilized = yes
 
 prestige = 50
 
-ruling_party = generic_variag_nobles
-
+ruling_party = generic_nobility
 upper_house = {
-	variag_nobles = 100
+	nobility = 100
 }
 penal_reform = hard_labor
 slavery = yes_slavery

@@ -10,10 +10,9 @@ literacy = 0
 
 oob = "DRH_oob.txt"
 
-ruling_party = generic_druedain_nobles
-
+ruling_party = generic_nobility
 upper_house = {
-	druedain_nobles = 100
+	nobility = 100
 }
 
 slavery = no_slavery

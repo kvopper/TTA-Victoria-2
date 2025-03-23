@@ -10,11 +10,10 @@ plurality = 10
 
 oob = "AMO_oob.txt"
 
-ruling_party = generic_logath_nobles
+ruling_party = generic_nobility
 
 upper_house = {
-	logath_nobles = 80
-	grammas_nobles = 20
+	nobility = 100
 }
 
 slavery = no_slavery

@@ -884,22 +884,22 @@ ideologies = {
 		}
 		
 		modifier = {
-			factor = -9.5
+			factor = -0.5
 			militancy = 9
 		}
 		
 		modifier = {
-			factor = -9.5
+			factor = -0.5
 			militancy = 8
 		}
 		
 		modifier = {
-			factor = -9.5
+			factor = -0.5
 			militancy = 7
 		}
 		
 		modifier = {
-			factor = -9.5
+			factor = -0.5
 			militancy = 6
 		}
 		
@@ -921,22 +921,22 @@ ideologies = {
 		}
 		
 		modifier = {
-			factor = -9.5
+			factor = -0.5
 			consciousness = 9
 		}
 		
 		modifier = {
-			factor = -9.5
+			factor = -0.5
 			consciousness = 8
 		}
 		
 		modifier = {
-			factor = -9.5
+			factor = -0.5
 			consciousness = 7
 		}
 		
 		modifier = {
-			factor = -9.5
+			factor = -0.5
 			consciousness = 6
 		}
 		
@@ -960,6 +960,101 @@ ideologies = {
 		modifier = {
 			factor = 2
 			ruling_party_ideology = servants
+		}
+	}
+	nobility = {
+		factor = 1
+		modifier = {
+			factor = 0.5
+			militancy = 6
+		}
+		modifier = {
+			factor = 2
+			ruling_party_ideology = nobility
+		}
+		modifier = {
+			factor = 1.5
+			NOT = { literacy = 0.5 }
+		}
+		modifier = {
+			factor = 1.3
+			NOT = { consciousness = 1 }
+		}
+		modifier = {
+			factor = 1.3
+			NOT = { consciousness = 2 }
+		}
+		modifier = {
+			factor = 1.3
+			NOT = { consciousness = 3 }
+		}
+		modifier = {
+			factor = 1.3
+			NOT = { consciousness = 4 }
+		}
+	}
+	
+	burgher = {
+		factor = 1
+		modifier = {
+			factor = 0.5
+			militancy = 6
+		}
+		modifier = {
+			factor = 2
+			ruling_party_ideology = burgher
+		}
+		modifier = {
+			factor = 0.9
+			literacy = 0.5
+		}
+		modifier = {
+			factor = 1.1
+			life_needs = 0.99
+		}
+		modifier = {
+			factor = 1.25
+			everyday_needs = 0.5
+		}
+		modifier = {
+			factor = 1.25
+			everyday_needs = 0.99
+		}
+		modifier = {
+			factor = 1.5
+			luxury_needs = 0.25
+		}
+		modifier = {
+			factor = 1.5
+			luxury_needs = 0.5
+		}
+		modifier = {
+			factor = 1.5
+			luxury_needs = 0.75
+		}
+	}
+	
+	loremaster = {
+		factor = 1
+		modifier = {
+			factor = 0.5
+			militancy = 6
+		}
+		modifier = {
+			factor = 2
+			ruling_party_ideology = loremaster
+		}
+		modifier = {
+			factor = 1.1
+			literacy = 0.5
+		}
+		modifier = {
+			factor = 1.25
+			literacy = 0.75
+		}
+		modifier = {
+			factor = 1.1
+			NOT = { life_needs = 0.99 }
 		}
 	}
 	
@@ -988,32 +1083,6 @@ ideologies = {
 		}
 	}
 	
-	dunedain_nobles = {
-		factor = 1
-		# Must be active in the realm or the pop culture
-		modifier = {
-			factor = -9
-			NOT = { country = { OR = { primary_culture = dunedain accepted_culture = dunedain } } }
-			NOT = { has_pop_culture = dunedain }
-		}
-		modifier = {
-			factor = 2
-			has_pop_religion = men
-		}
-		modifier = {
-			factor = 2
-			is_culture_group = dunedain
-		}
-		modifier = {
-			factor = 2
-			has_pop_culture = dunedain
-		}
-		modifier = {
-			factor = 2
-			ruling_party_ideology = dunedain_nobles
-		}
-	}
-	
 	house_of_stewards = {
 		factor = 1
 		# Must be active in the realm
@@ -1036,32 +1105,6 @@ ideologies = {
 		modifier = {
 			factor = 2
 			ruling_party_ideology = house_of_stewards
-		}
-	}
-	
-	gondorian_nobles = {
-		factor = 1
-		# Must be active in the realm or the pop culture
-		modifier = {
-			factor = -9
-			NOT = { country = { OR = { primary_culture = gondorian accepted_culture = gondorian } } }
-			NOT = { has_pop_culture = gondorian }
-		}
-		modifier = {
-			factor = 2
-			has_pop_religion = men
-		}
-		modifier = {
-			factor = 2
-			is_culture_group = dunedain
-		}
-		modifier = {
-			factor = 2
-			has_pop_culture = gondorian
-		}
-		modifier = {
-			factor = 2
-			ruling_party_ideology = gondorian_nobles
 		}
 	}
 	
@@ -1090,110 +1133,6 @@ ideologies = {
 		}
 	}
 	
-	amrothian_nobles = {
-		factor = 1
-		# Must be active in the realm or the pop culture
-		modifier = {
-			factor = -9
-			NOT = { country = { OR = { primary_culture = amrothian accepted_culture = amrothian } } }
-			NOT = { has_pop_culture = amrothian }
-		}
-		modifier = {
-			factor = 2
-			has_pop_religion = men
-		}
-		modifier = {
-			factor = 2
-			is_culture_group = dunedain
-		}
-		modifier = {
-			factor = 2
-			has_pop_culture = amrothian
-		}
-		modifier = {
-			factor = 2
-			ruling_party_ideology = amrothian_nobles
-		}
-	}
-	
-	arthedani_nobles = {
-		factor = 1
-		# Must be active in the realm or the pop culture
-		modifier = {
-			factor = -9
-			NOT = { country = { OR = { primary_culture = arthedani accepted_culture = arthedani } } }
-			NOT = { has_pop_culture = arthedani }
-		}
-		modifier = {
-			factor = 2
-			has_pop_religion = men
-		}
-		modifier = {
-			factor = 2
-			is_culture_group = dunedain
-		}
-		modifier = {
-			factor = 2
-			has_pop_culture = arthedani
-		}
-		modifier = {
-			factor = 2
-			ruling_party_ideology = arthedani_nobles
-		}
-	}
-	
-	cardolandrim_nobles = {
-		factor = 1
-		# Must be active in the realm or the pop culture
-		modifier = {
-			factor = -9
-			NOT = { country = { OR = { primary_culture = cardolandrim accepted_culture = cardolandrim } } }
-			NOT = { has_pop_culture = cardolandrim }
-		}
-		modifier = {
-			factor = 2
-			has_pop_religion = men
-		}
-		modifier = {
-			factor = 2
-			is_culture_group = dunedain
-		}
-		modifier = {
-			factor = 2
-			has_pop_culture = cardolandrim
-		}
-		modifier = {
-			factor = 2
-			ruling_party_ideology = cardolandrim_nobles
-		}
-	}
-	
-	haeranedain_nobles = {
-		factor = 1
-		# Must be active in the realm or the pop culture
-		modifier = {
-			factor = -9
-			NOT = { country = { OR = { primary_culture = haeranedain accepted_culture = haeranedain } } }
-			NOT = { has_pop_culture = haeranedain }
-		}
-		modifier = {
-			factor = 2
-			has_pop_religion = men
-		}
-		modifier = {
-			factor = 2
-			is_culture_group = dunedain
-		}
-		modifier = {
-			factor = 2
-			has_pop_culture = haeranedain
-		}
-		modifier = {
-			factor = 2
-			ruling_party_ideology = haeranedain_nobles
-		}
-	}
-	
 	house_half_elven = {
 		factor = 1
 		# Must be active in the realm
@@ -1216,32 +1155,6 @@ ideologies = {
 		modifier = {
 			factor = 2
 			ruling_party_ideology = house_half_elven
-		}
-	}
-	
-	noldor_nobles = {
-		factor = 1
-		# Must be active in the realm or the pop culture
-		modifier = {
-			factor = -9
-			NOT = { country = { OR = { primary_culture = noldor accepted_culture = noldor } } }
-			NOT = { has_pop_culture = noldor }
-		}
-		modifier = {
-			factor = 2
-			has_pop_religion = elven
-		}
-		modifier = {
-			factor = 2
-			is_culture_group = eldar
-		}
-		modifier = {
-			factor = 2
-			has_pop_culture = noldor
-		}
-		modifier = {
-			factor = 2
-			ruling_party_ideology = noldor_nobles
 		}
 	}
 	
@@ -1270,32 +1183,6 @@ ideologies = {
 		}
 	}
 	
-	falathrim_nobles = {
-		factor = 1
-		# Must be active in the realm or the pop culture
-		modifier = {
-			factor = -9
-			NOT = { country = { OR = { primary_culture = falathrim accepted_culture = falathrim } } }
-			NOT = { has_pop_culture = falathrim }
-		}
-		modifier = {
-			factor = 2
-			has_pop_religion = elven
-		}
-		modifier = {
-			factor = 2
-			is_culture_group = teleri
-		}
-		modifier = {
-			factor = 2
-			has_pop_culture = falathrim
-		}
-		modifier = {
-			factor = 2
-			ruling_party_ideology = falathrim_nobles
-		}
-	}
-	
 	house_of_oropher = {
 		factor = 1
 		# Must be active in the realm
@@ -1318,32 +1205,6 @@ ideologies = {
 		modifier = {
 			factor = 2
 			ruling_party_ideology = house_of_oropher
-		}
-	}
-	
-	silvan_nobles = {
-		factor = 1
-		# Must be active in the realm or the pop culture
-		modifier = {
-			factor = -9
-			NOT = { country = { OR = { primary_culture = silvan accepted_culture = silvan } } }
-			NOT = { has_pop_culture = silvan }
-		}
-		modifier = {
-			factor = 2
-			has_pop_religion = elven
-		}
-		modifier = {
-			factor = 2
-			is_culture_group = teleri
-		}
-		modifier = {
-			factor = 2
-			has_pop_culture = silvan
-		}
-		modifier = {
-			factor = 2
-			ruling_party_ideology = silvan_nobles
 		}
 	}
 	
@@ -1372,474 +1233,6 @@ ideologies = {
 		}
 	}
 	
-	galadhrim_nobles = {
-		factor = 1
-		# Must be active in the realm or the pop culture
-		modifier = {
-			factor = -9
-			NOT = { country = { OR = { primary_culture = galadhrim accepted_culture = galadhrim } } }
-			NOT = { has_pop_culture = galadrim }
-		}
-		modifier = {
-			factor = 2
-			has_pop_religion = elven
-		}
-		modifier = {
-			factor = 2
-			is_culture_group = teleri
-		}
-		modifier = {
-			factor = 2
-			has_pop_culture = galadhrim
-		}
-		modifier = {
-			factor = 2
-			ruling_party_ideology = galadhrim_nobles
-		}
-	}
-	
-	avari_nobles = {
-		factor = 1
-		# Must be active in the realm or the pop culture
-		modifier = {
-			factor = -9
-			NOT = { country = { OR = { primary_culture = avari accepted_culture = avari } } }
-			NOT = { has_pop_culture = avari }
-		}
-		modifier = {
-			factor = 2
-			has_pop_religion = elven
-		}
-		modifier = {
-			factor = 2
-			is_culture_group = avari
-		}
-		modifier = {
-			factor = 2
-			has_pop_culture = avari
-		}
-		modifier = {
-			factor = 2
-			ruling_party_ideology = avari_nobles
-		}
-	}
-	
-	umbarrim_nobles = {
-		factor = 1
-		# Must be active in the realm or the pop culture
-		modifier = {
-			factor = -9
-			NOT = { country = { OR = { primary_culture = umbarrim accepted_culture = umbarrim } } }
-			NOT = { has_pop_culture = umbarrim }
-		}
-		modifier = {
-			factor = 2
-			has_pop_religion = men
-		}
-		modifier = {
-			factor = 2
-			is_culture_group = haradrim
-		}
-		modifier = {
-			factor = 2
-			has_pop_culture = umbarrim
-		}
-		modifier = {
-			factor = 2
-			ruling_party_ideology = umbarrim_nobles
-		}
-	}
-	
-	harnendan_nobles = {
-		factor = 1
-		# Must be active in the realm or the pop culture
-		modifier = {
-			factor = -9
-			NOT = { country = { OR = { primary_culture = harnendan accepted_culture = harnendan } } }
-			NOT = { has_pop_culture = harnendan }
-		}
-		modifier = {
-			factor = 2
-			has_pop_religion = men
-		}
-		modifier = {
-			factor = 2
-			is_culture_group = haradrim
-		}
-		modifier = {
-			factor = 2
-			has_pop_culture = harnendan
-		}
-		modifier = {
-			factor = 2
-			ruling_party_ideology = harnendan_nobles
-		}
-	}
-	
-	haruzani_nobles = {
-		factor = 1
-		# Must be active in the realm or the pop culture
-		modifier = {
-			factor = -9
-			NOT = { country = { OR = { primary_culture = haruzani accepted_culture = haruzani } } }
-			NOT = { has_pop_culture = haruzuni }
-		}
-		modifier = {
-			factor = 2
-			has_pop_religion = men
-		}
-		modifier = {
-			factor = 2
-			is_culture_group = haradrim
-		}
-		modifier = {
-			factor = 2
-			has_pop_culture = haruzani
-		}
-		modifier = {
-			factor = 2
-			ruling_party_ideology = haruzani_nobles
-		}
-	}
-	
-	pezarsani_nobles = {
-		factor = 1
-		# Must be active in the realm or the pop culture
-		modifier = {
-			factor = -9
-			NOT = { country = { OR = { primary_culture = pezarsani accepted_culture = pezarsani } } }
-			NOT = { has_pop_culture = pezarsani }
-		}
-		modifier = {
-			factor = 2
-			has_pop_religion = men
-		}
-		modifier = {
-			factor = 2
-			is_culture_group = haradrim
-		}
-		modifier = {
-			factor = 2
-			has_pop_culture = pezarsani
-		}
-		modifier = {
-			factor = 2
-			ruling_party_ideology = pezarsani_nobles
-		}
-	}
-	
-	lurmsakuni_nobles = {
-		factor = 1
-		# Must be active in the realm or the pop culture
-		modifier = {
-			factor = -9
-			NOT = { country = { OR = { primary_culture = lurmsakuni accepted_culture = lurmsakuni } } }
-			NOT = { has_pop_culture = lurmsakuni }
-		}
-		modifier = {
-			factor = 2
-			has_pop_religion = men
-		}
-		modifier = {
-			factor = 2
-			is_culture_group = haradrim
-		}
-		modifier = {
-			factor = 2
-			has_pop_culture = lurmsakuni
-		}
-		modifier = {
-			factor = 2
-			ruling_party_ideology = lurmsakuni_nobles
-		}
-	}
-	
-	arysian_nobles = {
-		factor = 1
-		# Must be active in the realm or the pop culture
-		modifier = {
-			factor = -9
-			NOT = { country = { OR = { primary_culture = arysian accepted_culture = arysian } } }
-			NOT = { has_pop_culture = arysian }
-		}
-		modifier = {
-			factor = 2
-			has_pop_religion = men
-		}
-		modifier = {
-			factor = 2
-			is_culture_group = haradrim
-		}
-		modifier = {
-			factor = 2
-			has_pop_culture = arysian
-		}
-		modifier = {
-			factor = 2
-			ruling_party_ideology = arysian_nobles
-		}
-	}
-	
-	kingsmen_nobles = {
-		factor = 1
-		# Must be active in the realm or the pop culture
-		modifier = {
-			factor = -9
-			NOT = { country = { OR = { primary_culture = kingsmen accepted_culture = kingsmen } } }
-			NOT = { has_pop_culture = kingsmen }
-		}
-		modifier = {
-			factor = 2
-			has_pop_religion = men
-		}
-		modifier = {
-			factor = 2
-			is_culture_group = kingsmen
-		}
-		modifier = {
-			factor = 2
-			has_pop_culture = kingsmen
-		}
-		modifier = {
-			factor = 2
-			ruling_party_ideology = kingsmen_nobles
-		}
-	}
-	
-	black_numenorean_nobles = {
-		factor = 1
-		# Must be active in the realm or the pop culture
-		modifier = {
-			factor = -9
-			NOT = { country = { OR = { primary_culture = black_numenorean accepted_culture = black_numenorean } } }
-			NOT = { has_pop_culture = black_numenorean }
-		}
-		modifier = {
-			factor = 2
-			has_pop_religion = men
-		}
-		modifier = {
-			factor = 2
-			is_culture_group = kingsmen
-		}
-		modifier = {
-			factor = 2
-			has_pop_culture = black_numenorean
-		}
-		modifier = {
-			factor = 2
-			ruling_party_ideology = black_numenorean_nobles
-		}
-	}
-	
-	variag_nobles = {
-		factor = 1
-		# Must be active in the realm or the pop culture
-		modifier = {
-			factor = -9
-			NOT = { country = { OR = { primary_culture = variag accepted_culture = variag } } }
-			NOT = { has_pop_culture = variag }
-		}
-		modifier = {
-			factor = 2
-			has_pop_religion = men
-		}
-		modifier = {
-			factor = 2
-			is_culture_group = khandish
-		}
-		modifier = {
-			factor = 2
-			has_pop_culture = variag
-		}
-		modifier = {
-			factor = 2
-			ruling_party_ideology = variag_nobles
-		}
-	}
-	
-	nurniag_nobles = {
-		factor = 1
-		# Must be active in the realm or the pop culture
-		modifier = {
-			factor = -9
-			NOT = { country = { OR = { primary_culture = nurniag accepted_culture = nurniag } } }
-			NOT = { has_pop_culture = nurniag }
-		}
-		modifier = {
-			factor = 2
-			has_pop_religion = men
-		}
-		modifier = {
-			factor = 2
-			is_culture_group = khandish
-		}
-		modifier = {
-			factor = 2
-			has_pop_culture = nurniag
-		}
-		modifier = {
-			factor = 2
-			ruling_party_ideology = nurniag_nobles
-		}
-	}
-	
-	chelkiag_nobles = {
-		factor = 1
-		# Must be active in the realm or the pop culture
-		modifier = {
-			factor = -9
-			NOT = { country = { OR = { primary_culture = chelkiag accepted_culture = chelkiag } } }
-			NOT = { has_pop_culture = chelkiag }
-		}
-		modifier = {
-			factor = 2
-			has_pop_religion = men
-		}
-		modifier = {
-			factor = 2
-			is_culture_group = khandish
-		}
-		modifier = {
-			factor = 2
-			has_pop_culture = chelkiag
-		}
-		modifier = {
-			factor = 2
-			ruling_party_ideology = chelkiag_nobles
-		}
-	}
-	
-	sagath_nobles = {
-		factor = 1
-		# Must be active in the realm or the pop culture
-		modifier = {
-			factor = -9
-			NOT = { country = { OR = { primary_culture = sagath accepted_culture = sagath } } }
-			NOT = { has_pop_culture = sagath }
-		}
-		modifier = {
-			factor = 2
-			has_pop_religion = men
-		}
-		modifier = {
-			factor = 2
-			is_culture_group = easterlings
-		}
-		modifier = {
-			factor = 2
-			has_pop_culture = sagath
-		}
-		modifier = {
-			factor = 2
-			ruling_party_ideology = sagath_nobles
-		}
-	}
-	
-	sekel_nobles = {
-		factor = 1
-		# Must be active in the realm or the pop culture
-		modifier = {
-			factor = -9
-			NOT = { country = { OR = { primary_culture = sekel accepted_culture = sekel } } }
-			NOT = { has_pop_culture = sekel }
-		}
-		modifier = {
-			factor = 2
-			has_pop_religion = men
-		}
-		modifier = {
-			factor = 2
-			is_culture_group = easterlings
-		}
-		modifier = {
-			factor = 2
-			has_pop_culture = sekel
-		}
-		modifier = {
-			factor = 2
-			ruling_party_ideology = sekel_nobles
-		}
-	}
-	
-	urgath_nobles = {
-		factor = 1
-		# Must be active in the realm or the pop culture
-		modifier = {
-			factor = -9
-			NOT = { country = { OR = { primary_culture = urgath accepted_culture = urgath } } }
-			NOT = { has_pop_culture = urgath }
-		}
-		modifier = {
-			factor = 2
-			has_pop_religion = men
-		}
-		modifier = {
-			factor = 2
-			is_culture_group = easterlings
-		}
-		modifier = {
-			factor = 2
-			has_pop_culture = urgath
-		}
-		modifier = {
-			factor = 2
-			ruling_party_ideology = urgath_nobles
-		}
-	}
-	
-	kuga_nobles = {
-		factor = 1
-		# Must be active in the realm or the pop culture
-		modifier = {
-			factor = -9
-			NOT = { country = { OR = { primary_culture = kuga accepted_culture = kuga } } }
-			NOT = { has_pop_culture = kuga }
-		}
-		modifier = {
-			factor = 2
-			has_pop_religion = men
-		}
-		modifier = {
-			factor = 2
-			is_culture_group = easterlings
-		}
-		modifier = {
-			factor = 2
-			has_pop_culture = kuga
-		}
-		modifier = {
-			factor = 2
-			ruling_party_ideology = kuga_nobles
-		}
-	}
-	
-	logath_nobles = {
-		factor = 1
-		# Must be active in the realm or the pop culture
-		modifier = {
-			factor = -9
-			NOT = { country = { OR = { primary_culture = logath accepted_culture = logath } } }
-			NOT = { has_pop_culture = logath }
-		}
-		modifier = {
-			factor = 2
-			has_pop_religion = men
-		}
-		modifier = {
-			factor = 2
-			is_culture_group = easterlings
-		}
-		modifier = {
-			factor = 2
-			has_pop_culture = logath
-		}
-		modifier = {
-			factor = 2
-			ruling_party_ideology = logath_nobles
-		}
-	}
-	
 	house_of_bard = {
 		factor = 1
 		# Must be active in the realm
@@ -1865,58 +1258,6 @@ ideologies = {
 		}
 	}
 	
-	barding_nobles = {
-		factor = 1
-		# Must be active in the realm or the pop culture
-		modifier = {
-			factor = -9
-			NOT = { country = { OR = { primary_culture = barding accepted_culture = barding } } }
-			NOT = { has_pop_culture = barding }
-		}
-		modifier = {
-			factor = 2
-			has_pop_religion = men
-		}
-		modifier = {
-			factor = 2
-			is_culture_group = gramavuld_northmen
-		}
-		modifier = {
-			factor = 2
-			has_pop_culture = barding
-		}
-		modifier = {
-			factor = 2
-			ruling_party_ideology = barding_nobles
-		}
-	}
-	
-	grammas_nobles = {
-		factor = 1
-		# Must be active in the realm or the pop culture
-		modifier = {
-			factor = -9
-			NOT = { country = { OR = { primary_culture = grammas accepted_culture = grammas } } }
-			NOT = { has_pop_culture = grammas }
-		}
-		modifier = {
-			factor = 2
-			has_pop_religion = men
-		}
-		modifier = {
-			factor = 2
-			is_culture_group = gramavuld_northmen
-		}
-		modifier = {
-			factor = 2
-			has_pop_culture = grammas
-		}
-		modifier = {
-			factor = 2
-			ruling_party_ideology = grammas_nobles
-		}
-	}
-	
 	rivermen_thegans = {
 		factor = 1
 		# Must be active in the realm
@@ -1939,58 +1280,6 @@ ideologies = {
 		modifier = {
 			factor = 2
 			ruling_party_ideology = rivermen_thegans
-		}
-	}
-	
-	rivermen_nobles = {
-		factor = 1
-		# Must be active in the realm or the pop culture
-		modifier = {
-			factor = -9
-			NOT = { country = { OR = { primary_culture = rivermen accepted_culture = rivermen } } }
-			NOT = { has_pop_culture = rivermen }
-		}
-		modifier = {
-			factor = 2
-			has_pop_religion = men
-		}
-		modifier = {
-			factor = 2
-			is_culture_group = gramavuld_northmen
-		}
-		modifier = {
-			factor = 2
-			has_pop_culture = rivermen
-		}
-		modifier = {
-			factor = 2
-			ruling_party_ideology = rivermen_nobles
-		}
-	}
-	
-	adhalling_nobles = {
-		factor = 1
-		# Must be active in the realm or the pop culture
-		modifier = {
-			factor = -9
-			NOT = { country = { OR = { primary_culture = adhalling accepted_culture = adhalling } } }
-			NOT = { has_pop_culture = adhalling }
-		}
-		modifier = {
-			factor = 2
-			has_pop_religion = men
-		}
-		modifier = {
-			factor = 2
-			is_culture_group = gramavuld_northmen
-		}
-		modifier = {
-			factor = 2
-			has_pop_culture = adhalling
-		}
-		modifier = {
-			factor = 2
-			ruling_party_ideology = adhalling_nobles
 		}
 	}
 	
@@ -2069,110 +1358,6 @@ ideologies = {
 		}
 	}
 	
-	dorwinrim_nobles = {
-		factor = 1
-		# Must be active in the realm or the pop culture
-		modifier = {
-			factor = -9
-			NOT = { country = { OR = { primary_culture = dorwinrim accepted_culture = dorwinrim } } }
-			NOT = { has_pop_culture = dorwinrim }
-		}
-		modifier = {
-			factor = 2
-			has_pop_religion = men
-		}
-		modifier = {
-			factor = 2
-			is_culture_group = northmen
-		}
-		modifier = {
-			factor = 2
-			has_pop_culture = dorwinrim
-		}
-		modifier = {
-			factor = 2
-			ruling_party_ideology = dorwinrim_nobles
-		}
-	}
-	
-	aivathiuda_nobles = {
-		factor = 1
-		# Must be active in the realm or the pop culture
-		modifier = {
-			factor = -9
-			NOT = { country = { OR = { primary_culture = aivathiuda accepted_culture = aivathiuda } } }
-			NOT = { has_pop_culture = aivathiuda }
-		}
-		modifier = {
-			factor = 2
-			has_pop_religion = men
-		}
-		modifier = {
-			factor = 2
-			is_culture_group = northmen
-		}
-		modifier = {
-			factor = 2
-			has_pop_culture = aivathiuda
-		}
-		modifier = {
-			factor = 2
-			ruling_party_ideology = aivathiuda_nobles
-		}
-	}
-	
-	anthar_nobles = {
-		factor = 1
-		# Must be active in the realm or the pop culture
-		modifier = {
-			factor = -9
-			NOT = { country = { OR = { primary_culture = anthar accepted_culture = anthar } } }
-			NOT = { has_pop_culture = anthar }
-		}
-		modifier = {
-			factor = 2
-			has_pop_religion = men
-		}
-		modifier = {
-			factor = 2
-			is_culture_group = northmen
-		}
-		modifier = {
-			factor = 2
-			has_pop_culture = anthar
-		}
-		modifier = {
-			factor = 2
-			ruling_party_ideology = anthar_nobles
-		}
-	}
-	
-	gadraught_nobles = {
-		factor = 1
-		# Must be active in the realm or the pop culture
-		modifier = {
-			factor = -9
-			NOT = { country = { OR = { primary_culture = gadraught accepted_culture = gadraught } } }
-			NOT = { has_pop_culture = gadraught }
-		}
-		modifier = {
-			factor = 2
-			has_pop_religion = men
-		}
-		modifier = {
-			factor = 2
-			is_culture_group = northmen
-		}
-		modifier = {
-			factor = 2
-			has_pop_culture = gadraught
-		}
-		modifier = {
-			factor = 2
-			ruling_party_ideology = gadraught_nobles
-		}
-	}
-	
 	line_of_durin = {
 		factor = 1
 		# Must be active in the realm
@@ -2195,214 +1380,6 @@ ideologies = {
 		modifier = {
 			factor = 2
 			ruling_party_ideology = line_of_durin
-		}
-	}
-	
-	longbeard_nobles = {
-		factor = 1
-		# Must be active in the realm or the pop culture
-		modifier = {
-			factor = -9
-			NOT = { country = { OR = { primary_culture = longbeard accepted_culture = longbeard } } }
-			NOT = { has_pop_culture = longbeard }
-		}
-		modifier = {
-			factor = 2
-			has_pop_religion = dwarven
-		}
-		modifier = {
-			factor = 2
-			is_culture_group = dwarves
-		}
-		modifier = {
-			factor = 2
-			has_pop_culture = longbeard
-		}
-		modifier = {
-			factor = 2
-			ruling_party_ideology = longbeard_nobles
-		}
-	}
-	
-	firebeard_nobles = {
-		factor = 1
-		# Must be active in the realm or the pop culture
-		modifier = {
-			factor = -9
-			NOT = { country = { OR = { primary_culture = firebeard accepted_culture = firebeard } } }
-			NOT = { has_pop_culture = firebeard }
-		}
-		modifier = {
-			factor = 2
-			has_pop_religion = dwarven
-		}
-		modifier = {
-			factor = 2
-			is_culture_group = dwarves
-		}
-		modifier = {
-			factor = 2
-			has_pop_culture = firebeard
-		}
-		modifier = {
-			factor = 2
-			ruling_party_ideology = firebeard_nobles
-		}
-	}
-	
-	broadbeam_nobles = {
-		factor = 1
-		# Must be active in the realm or the pop culture
-		modifier = {
-			factor = -9
-			NOT = { country = { OR = { primary_culture = broadbeam accepted_culture = broadbeam } } }
-			NOT = { has_pop_culture = broadbeam }
-		}
-		modifier = {
-			factor = 2
-			has_pop_religion = dwarven
-		}
-		modifier = {
-			factor = 2
-			is_culture_group = dwarves
-		}
-		modifier = {
-			factor = 2
-			has_pop_culture = broadbeam
-		}
-		modifier = {
-			factor = 2
-			ruling_party_ideology = broadbeam_nobles
-		}
-	}
-	
-	ironfist_nobles = {
-		factor = 1
-		# Must be active in the realm or the pop culture
-		modifier = {
-			factor = -9
-			NOT = { country = { OR = { primary_culture = ironfist accepted_culture = ironfist } } }
-			NOT = { has_pop_culture = ironfist }
-		}
-		modifier = {
-			factor = 2
-			has_pop_religion = dwarven
-		}
-		modifier = {
-			factor = 2
-			is_culture_group = dwarves
-		}
-		modifier = {
-			factor = 2
-			has_pop_culture = ironfist
-		}
-		modifier = {
-			factor = 2
-			ruling_party_ideology = ironfist_nobles
-		}
-	}
-	
-	dourhand_nobles = {
-		factor = 1
-		# Must be active in the realm or the pop culture
-		modifier = {
-			factor = -9
-			NOT = { country = { OR = { primary_culture = dourhand accepted_culture = dourhand } } }
-			NOT = { has_pop_culture = dourhand }
-		}
-		modifier = {
-			factor = 2
-			has_pop_religion = dwarven
-		}
-		modifier = {
-			factor = 2
-			is_culture_group = wicked_dwarves
-		}
-		modifier = {
-			factor = 2
-			has_pop_culture = dourhand
-		}
-		modifier = {
-			factor = 2
-			ruling_party_ideology = dourhand_nobles
-		}
-	}
-	
-	shornbeard_nobles = {
-		factor = 1
-		# Must be active in the realm or the pop culture
-		modifier = {
-			factor = -9
-			NOT = { country = { OR = { primary_culture = shornbeard accepted_culture = shornbeard } } }
-			NOT = { has_pop_culture = shornbeard }
-		}
-		modifier = {
-			factor = 2
-			has_pop_religion = dwarven
-		}
-		modifier = {
-			factor = 2
-			is_culture_group = wicked_dwarves
-		}
-		modifier = {
-			factor = 2
-			has_pop_culture = shornbeard
-		}
-		modifier = {
-			factor = 2
-			ruling_party_ideology = shornbeard_nobles
-		}
-	}
-	
-	woodsmen_nobles = {
-		factor = 1
-		# Must be active in the realm or the pop culture
-		modifier = {
-			factor = -9
-			NOT = { country = { OR = { primary_culture = woodsmen accepted_culture = woodsmen } } }
-			NOT = { has_pop_culture = woodsmen }
-		}
-		modifier = {
-			factor = 2
-			has_pop_religion = men
-		}
-		modifier = {
-			factor = 2
-			is_culture_group = anduinrim
-		}
-		modifier = {
-			factor = 2
-			has_pop_culture = woodsmen
-		}
-		modifier = {
-			factor = 2
-			ruling_party_ideology = woodsmen_nobles
-		}
-	}
-	
-	beorning_nobles = {
-		factor = 1
-		# Must be active in the realm or the pop culture
-		modifier = {
-			factor = -9
-			NOT = { country = { OR = { primary_culture = beorning accepted_culture = beorning } } }
-			NOT = { has_pop_culture = beorning }
-		}
-		modifier = {
-			factor = 2
-			has_pop_religion = men
-		}
-		modifier = {
-			factor = 2
-			is_culture_group = anduinrim
-		}
-		modifier = {
-			factor = 2
-			has_pop_culture = beorning
-		}
-		modifier = {
-			factor = 2
-			ruling_party_ideology = beorning_nobles
 		}
 	}
 	
@@ -2431,84 +1408,6 @@ ideologies = {
 		}
 	}
 	
-	beiabarnae_nobles = {
-		factor = 1
-		# Must be active in the realm or the pop culture
-		modifier = {
-			factor = -9
-			NOT = { country = { OR = { primary_culture = beiabarnae accepted_culture = beiabarnae } } }
-			NOT = { has_pop_culture = beiabarnae }
-		}
-		modifier = {
-			factor = 2
-			has_pop_religion = men
-		}
-		modifier = {
-			factor = 2
-			is_culture_group = anduinrim
-		}
-		modifier = {
-			factor = 2
-			has_pop_culture = beiabarnae
-		}
-		modifier = {
-			factor = 2
-			ruling_party_ideology = beiabarnae_nobles
-		}
-	}
-	
-	melburgi_nobles = {
-		factor = 1
-		# Must be active in the realm or the pop culture
-		modifier = {
-			factor = -9
-			NOT = { country = { OR = { primary_culture = melburgi accepted_culture = melburgi } } }
-			NOT = { has_pop_culture = melburgi }
-		}
-		modifier = {
-			factor = 2
-			has_pop_religion = men
-		}
-		modifier = {
-			factor = 2
-			is_culture_group = anduinrim
-		}
-		modifier = {
-			factor = 2
-			has_pop_culture = melburgi
-		}
-		modifier = {
-			factor = 2
-			ruling_party_ideology = melburgi_nobles
-		}
-	}
-	
-	herimundi_nobles = {
-		factor = 1
-		# Must be active in the realm or the pop culture
-		modifier = {
-			factor = -9
-			NOT = { country = { OR = { primary_culture = herimundi accepted_culture = herimundi } } }
-			NOT = { has_pop_culture = herimundi }
-		}
-		modifier = {
-			factor = 2
-			has_pop_religion = men
-		}
-		modifier = {
-			factor = 2
-			is_culture_group = anduinrim
-		}
-		modifier = {
-			factor = 2
-			has_pop_culture = herimundi
-		}
-		modifier = {
-			factor = 2
-			ruling_party_ideology = herimundi_nobles
-		}
-	}
-	
 	lords_of_fangorn = {
 		factor = 1
 		# Must be active in the realm
@@ -2531,266 +1430,6 @@ ideologies = {
 		modifier = {
 			factor = 2
 			ruling_party_ideology = lords_of_fangorn
-		}
-	}
-	
-	ent_nobles = {
-		factor = 1
-		# Must be active in the realm or the pop culture
-		modifier = {
-			factor = -9
-			NOT = { country = { OR = { primary_culture = ent accepted_culture = ent } } }
-			NOT = { has_pop_culture = ent }
-		}
-		modifier = {
-			factor = 2
-			has_pop_religion = ent
-		}
-		modifier = {
-			factor = 2
-			is_culture_group = ents
-		}
-		modifier = {
-			factor = 2
-			has_pop_culture = ent
-		}
-		modifier = {
-			factor = 2
-			ruling_party_ideology = ent_nobles
-		}
-	}
-	
-	huorn_nobles = {
-		factor = 1
-		# Must be active in the realm or the pop culture
-		modifier = {
-			factor = -9
-			NOT = { country = { OR = { primary_culture = huorn accepted_culture = huorn } } }
-			NOT = { has_pop_culture = huorn }
-		}
-		modifier = {
-			factor = 2
-			has_pop_religion = ent
-		}
-		modifier = {
-			factor = 2
-			is_culture_group = ents
-		}
-		modifier = {
-			factor = 2
-			has_pop_culture = huorn
-		}
-		modifier = {
-			factor = 2
-			ruling_party_ideology = huorn_nobles
-		}
-	}
-	
-	black_huorn_nobles = {
-		factor = 1
-		# Must be active in the realm or the pop culture
-		modifier = {
-			factor = -9
-			NOT = { country = { OR = { primary_culture = black_huorn accepted_culture = black_huorn } } }
-			NOT = { has_pop_culture = black_huorn }
-		}
-		modifier = {
-			factor = 2
-			has_pop_religion = ent
-		}
-		modifier = {
-			factor = 2
-			is_culture_group = ents
-		}
-		modifier = {
-			factor = 2
-			has_pop_culture = black_huorn
-		}
-		modifier = {
-			factor = 2
-			ruling_party_ideology = black_huorn_nobles
-		}
-	}
-	
-	druedain_nobles = {
-		factor = 1
-		# Must be active in the realm or the pop culture
-		modifier = {
-			factor = -9
-			NOT = { country = { OR = { primary_culture = druedain accepted_culture = druedain } } }
-			NOT = { has_pop_culture = druedain }
-		}
-		modifier = {
-			factor = 2
-			has_pop_religion = men
-		}
-		modifier = {
-			factor = 2
-			is_culture_group = wildmen
-		}
-		modifier = {
-			factor = 2
-			has_pop_culture = druedain
-		}
-		modifier = {
-			factor = 2
-			ruling_party_ideology = druedain_nobles
-		}
-	}
-	
-	dunnish_nobles = {
-		factor = 1
-		# Must be active in the realm or the pop culture
-		modifier = {
-			factor = -9
-			NOT = { country = { OR = { primary_culture = dunnish accepted_culture = dunnish } } }
-			NOT = { has_pop_culture = dunnish }
-		}
-		modifier = {
-			factor = 2
-			has_pop_religion = men
-		}
-		modifier = {
-			factor = 2
-			is_culture_group = wildmen
-		}
-		modifier = {
-			factor = 2
-			has_pop_culture = dunnish
-		}
-		modifier = {
-			factor = 2
-			ruling_party_ideology = dunnish_nobles
-		}
-	}
-	
-	hollin_folk_nobles = {
-		factor = 1
-		# Must be active in the realm or the pop culture
-		modifier = {
-			factor = -9
-			NOT = { country = { OR = { primary_culture = hollin_folk accepted_culture = hollin_folk } } }
-			NOT = { has_pop_culture = hollin_folk }
-		}
-		modifier = {
-			factor = 2
-			has_pop_religion = men
-		}
-		modifier = {
-			factor = 2
-			is_culture_group = wildmen
-		}
-		modifier = {
-			factor = 2
-			has_pop_culture = hollin_folk
-		}
-		modifier = {
-			factor = 2
-			ruling_party_ideology = hollin_folk_nobles
-		}
-	}
-	
-	enedwaithrim_nobles = {
-		factor = 1
-		# Must be active in the realm or the pop culture
-		modifier = {
-			factor = -9
-			NOT = { country = { OR = { primary_culture = enedwaithrim accepted_culture = enedwaithrim } } }
-			NOT = { has_pop_culture = enedwaithrim }
-		}
-		modifier = {
-			factor = 2
-			has_pop_religion = men
-		}
-		modifier = {
-			factor = 2
-			is_culture_group = wildmen
-		}
-		modifier = {
-			factor = 2
-			has_pop_culture = enedwaithrim
-		}
-		modifier = {
-			factor = 2
-			ruling_party_ideology = enedwaithrim_nobles
-		}
-	}
-	
-	saerlanner_nobles = {
-		factor = 1
-		# Must be active in the realm or the pop culture
-		modifier = {
-			factor = -9
-			NOT = { country = { OR = { primary_culture = saerlanner accepted_culture = saerlanner } } }
-			NOT = { has_pop_culture = saerlanner }
-		}
-		modifier = {
-			factor = 2
-			has_pop_religion = men
-		}
-		modifier = {
-			factor = 2
-			is_culture_group = wildmen
-		}
-		modifier = {
-			factor = 2
-			has_pop_culture = saerlanner
-		}
-		modifier = {
-			factor = 2
-			ruling_party_ideology = saerlanner_nobles
-		}
-	}
-	
-	dunir_nobles = {
-		factor = 1
-		# Must be active in the realm or the pop culture
-		modifier = {
-			factor = -9
-			NOT = { country = { OR = { primary_culture = dunir accepted_culture = dunir } } }
-			NOT = { has_pop_culture = dunir }
-		}
-		modifier = {
-			factor = 2
-			has_pop_religion = men
-		}
-		modifier = {
-			factor = 2
-			is_culture_group = wildmen
-		}
-		modifier = {
-			factor = 2
-			has_pop_culture = dunir
-		}
-		modifier = {
-			factor = 2
-			ruling_party_ideology = dunir_nobles
-		}
-	}
-	
-	marshmen_nobles = {
-		factor = 1
-		# Must be active in the realm or the pop culture
-		modifier = {
-			factor = -9
-			NOT = { country = { OR = { primary_culture = marshmen accepted_culture = marshmen } } }
-			NOT = { has_pop_culture = marshmen }
-		}
-		modifier = {
-			factor = 2
-			has_pop_religion = men
-		}
-		modifier = {
-			factor = 2
-			is_culture_group = wildmen
-		}
-		modifier = {
-			factor = 2
-			has_pop_culture = marshmen
-		}
-		modifier = {
-			factor = 2
-			ruling_party_ideology = marshmen_nobles
 		}
 	}
 	
@@ -2819,734 +1458,6 @@ ideologies = {
 		}
 	}
 	
-	rohirrim_nobles = {
-		factor = 1
-		# Must be active in the realm or the pop culture
-		modifier = {
-			factor = -9
-			NOT = { country = { OR = { primary_culture = rohirrim accepted_culture = rohirrim } } }
-			NOT = { has_pop_culture = rohirrim }
-		}
-		modifier = {
-			factor = 2
-			has_pop_religion = men
-		}
-		modifier = {
-			factor = 2
-			is_culture_group = rohirrim
-		}
-		modifier = {
-			factor = 2
-			has_pop_culture = rohirrim
-		}
-		modifier = {
-			factor = 2
-			ruling_party_ideology = rohirrim_nobles
-		}
-	}
-	
-	anduinmen_nobles = {
-		factor = 1
-		# Must be active in the realm or the pop culture
-		modifier = {
-			factor = -9
-			NOT = { country = { OR = { primary_culture = anduinmen accepted_culture = anduinmen } } }
-			NOT = { has_pop_culture = anduinmen }
-		}
-		modifier = {
-			factor = 2
-			has_pop_religion = men
-		}
-		modifier = {
-			factor = 2
-			is_culture_group = rohirrim
-		}
-		modifier = {
-			factor = 2
-			has_pop_culture = anduinmen
-		}
-		modifier = {
-			factor = 2
-			ruling_party_ideology = anduinmen_nobles
-		}
-	}
-	
-	isenmen_nobles = {
-		factor = 1
-		# Must be active in the realm or the pop culture
-		modifier = {
-			factor = -9
-			NOT = { country = { OR = { primary_culture = isenmen accepted_culture = isenmen } } }
-			NOT = { has_pop_culture = isenmen }
-		}
-		modifier = {
-			factor = 2
-			has_pop_religion = men
-		}
-		modifier = {
-			factor = 2
-			is_culture_group = rohirrim
-		}
-		modifier = {
-			factor = 2
-			has_pop_culture = isenmen
-		}
-		modifier = {
-			factor = 2
-			ruling_party_ideology = isenmen_nobles
-		}
-	}
-	
-	uruk_hai_nobles = {
-		factor = 1
-		# Must be active in the realm or the pop culture
-		modifier = {
-			factor = -9
-			NOT = { country = { OR = { primary_culture = uruk_hai accepted_culture = uruk_hai } } }
-			NOT = { has_pop_culture = uruk_hai }
-		}
-		modifier = {
-			factor = 2
-			has_pop_religion = orc
-		}
-		modifier = {
-			factor = 2
-			is_culture_group = uruk_hai
-		}
-		modifier = {
-			factor = 2
-			has_pop_culture = uruk_hai
-		}
-		modifier = {
-			factor = 2
-			ruling_party_ideology = uruk_hai_nobles
-		}
-	}
-	
-	mordor_orc_nobles = {
-		factor = 1
-		# Must be active in the realm or the pop culture
-		modifier = {
-			factor = -9
-			NOT = { country = { OR = { primary_culture = mordor_orc accepted_culture = mordor_orc } } }
-			NOT = { has_pop_culture = mordor_orc }
-		}
-		modifier = {
-			factor = 2
-			has_pop_religion = orc
-		}
-		modifier = {
-			factor = 2
-			is_culture_group = mordorian
-		}
-		modifier = {
-			factor = 2
-			has_pop_culture = mordor_orc
-		}
-		modifier = {
-			factor = 2
-			ruling_party_ideology = mordor_orc_nobles
-		}
-	}
-	
-	mordor_uruk_nobles = {
-		factor = 1
-		# Must be active in the realm or the pop culture
-		modifier = {
-			factor = -9
-			NOT = { country = { OR = { primary_culture = mordor_uruk accepted_culture = mordor_uruk } } }
-			NOT = { has_pop_culture = mordor_uruk }
-		}
-		modifier = {
-			factor = 2
-			has_pop_religion = orc
-		}
-		modifier = {
-			factor = 2
-			is_culture_group = mordorian
-		}
-		modifier = {
-			factor = 2
-			has_pop_culture = mordor_uruk
-		}
-		modifier = {
-			factor = 2
-			ruling_party_ideology = mordor_uruk_nobles
-		}
-	}
-	
-	guldurrim_nobles = {
-		factor = 1
-		# Must be active in the realm or the pop culture
-		modifier = {
-			factor = -9
-			NOT = { country = { OR = { primary_culture = guldurrim accepted_culture = guldurrim } } }
-			NOT = { has_pop_culture = guldurrim }
-		}
-		modifier = {
-			factor = 2
-			has_pop_religion = orc
-		}
-		modifier = {
-			factor = 2
-			is_culture_group = mordorian
-		}
-		modifier = {
-			factor = 2
-			has_pop_culture = guldurrim
-		}
-		modifier = {
-			factor = 2
-			ruling_party_ideology = guldurrim_nobles
-		}
-	}
-	
-	white_mountain_goblin_nobles = {
-		factor = 1
-		# Must be active in the realm or the pop culture
-		modifier = {
-			factor = -9
-			NOT = { country = { OR = { primary_culture = white_mountain_goblin accepted_culture = white_mountain_goblin } } }
-			NOT = { has_pop_culture = white_mountain_goblin }
-		}
-		modifier = {
-			factor = 2
-			has_pop_religion = orc
-		}
-		modifier = {
-			factor = 2
-			is_culture_group = mordorian
-		}
-		modifier = {
-			factor = 2
-			has_pop_culture = white_mountain_goblin
-		}
-		modifier = {
-			factor = 2
-			ruling_party_ideology = white_mountain_goblin_nobles
-		}
-	}
-	
-	morian_nobles = {
-		factor = 1
-		# Must be active in the realm or the pop culture
-		modifier = {
-			factor = -9
-			NOT = { country = { OR = { primary_culture = morian accepted_culture = morian } } }
-			NOT = { has_pop_culture = morian }
-		}
-		modifier = {
-			factor = 2
-			has_pop_religion = orc
-		}
-		modifier = {
-			factor = 2
-			is_culture_group = northern_goblins
-		}
-		modifier = {
-			factor = 2
-			has_pop_culture = morian
-		}
-		modifier = {
-			factor = 2
-			ruling_party_ideology = morian_nobles
-		}
-	}
-	
-	goblin_towner_nobles = {
-		factor = 1
-		# Must be active in the realm or the pop culture
-		modifier = {
-			factor = -9
-			NOT = { country = { OR = { primary_culture = goblin_towner accepted_culture = goblin_towner } } }
-			NOT = { has_pop_culture = goblin_towner }
-		}
-		modifier = {
-			factor = 2
-			has_pop_religion = orc
-		}
-		modifier = {
-			factor = 2
-			is_culture_group = northern_goblins
-		}
-		modifier = {
-			factor = 2
-			has_pop_culture = goblin_towner
-		}
-		modifier = {
-			factor = 2
-			ruling_party_ideology = goblin_towner_nobles
-		}
-	}
-	
-	gundabad_orc_nobles = {
-		factor = 1
-		# Must be active in the realm or the pop culture
-		modifier = {
-			factor = -9
-			NOT = { country = { OR = { primary_culture = gundabad_orc accepted_culture = gundabad_orc } } }
-			NOT = { has_pop_culture = gundabad_orc }
-		}
-		modifier = {
-			factor = 2
-			has_pop_religion = orc
-		}
-		modifier = {
-			factor = 2
-			is_culture_group = northern_goblins
-		}
-		modifier = {
-			factor = 2
-			has_pop_culture = gundabad_orc
-		}
-		modifier = {
-			factor = 2
-			ruling_party_ideology = gundabad_orc_nobles
-		}
-	}
-	
-	snow_orc_nobles = {
-		factor = 1
-		# Must be active in the realm or the pop culture
-		modifier = {
-			factor = -9
-			NOT = { country = { OR = { primary_culture = snow_orc accepted_culture = snow_orc } } }
-			NOT = { has_pop_culture = snow_orc }
-		}
-		modifier = {
-			factor = 2
-			has_pop_religion = orc
-		}
-		modifier = {
-			factor = 2
-			is_culture_group = northern_goblins
-		}
-		modifier = {
-			factor = 2
-			has_pop_culture = snow_orc
-		}
-		modifier = {
-			factor = 2
-			ruling_party_ideology = snow_orc_nobles
-		}
-	}
-	
-	gram_goblin_nobles = {
-		factor = 1
-		# Must be active in the realm or the pop culture
-		modifier = {
-			factor = -9
-			NOT = { country = { OR = { primary_culture = gram_goblin accepted_culture = gram_goblin } } }
-			NOT = { has_pop_culture = gram_goblin }
-		}
-		modifier = {
-			factor = 2
-			has_pop_religion = orc
-		}
-		modifier = {
-			factor = 2
-			is_culture_group = northern_goblins
-		}
-		modifier = {
-			factor = 2
-			has_pop_culture = gram_goblin
-		}
-		modifier = {
-			factor = 2
-			ruling_party_ideology = gram_goblin_nobles
-		}
-	}
-	
-	blue_mountain_goblin_nobles = {
-		factor = 1
-		# Must be active in the realm or the pop culture
-		modifier = {
-			factor = -9
-			NOT = { country = { OR = { primary_culture = blue_mountain_goblin accepted_culture = blue_mountain_goblin } } }
-			NOT = { has_pop_culture = blue_mountain_goblin }
-		}
-		modifier = {
-			factor = 2
-			has_pop_religion = orc
-		}
-		modifier = {
-			factor = 2
-			is_culture_group = northern_goblins
-		}
-		modifier = {
-			factor = 2
-			has_pop_culture = blue_mountain_goblin
-		}
-		modifier = {
-			factor = 2
-			ruling_party_ideology = blue_mountain_goblin_nobles
-		}
-	}
-	
-	angmarrim_nobles = {
-		factor = 1
-		# Must be active in the realm or the pop culture
-		modifier = {
-			factor = -9
-			NOT = { country = { OR = { primary_culture = angmarrim accepted_culture = angmarrim } } }
-			NOT = { has_pop_culture = angmarrim }
-		}
-		modifier = {
-			factor = 2
-			has_pop_religion = men
-		}
-		modifier = {
-			factor = 2
-			is_culture_group = angmarrim
-		}
-		modifier = {
-			factor = 2
-			has_pop_culture = angmarrim
-		}
-		modifier = {
-			factor = 2
-			ruling_party_ideology = angmarrim_nobles
-		}
-	}
-	
-	hillmen_nobles = {
-		factor = 1
-		# Must be active in the realm or the pop culture
-		modifier = {
-			factor = -9
-			NOT = { country = { OR = { primary_culture = hillmen accepted_culture = hillmen } } }
-			NOT = { has_pop_culture = hillman }
-		}
-		modifier = {
-			factor = 2
-			has_pop_religion = men
-		}
-		modifier = {
-			factor = 2
-			is_culture_group = angmarrim
-		}
-		modifier = {
-			factor = 2
-			has_pop_culture = hillmen
-		}
-		modifier = {
-			factor = 2
-			ruling_party_ideology = hillmen_nobles
-		}
-	}
-	
-	lossoth_nobles = {
-		factor = 1
-		# Must be active in the realm or the pop culture
-		modifier = {
-			factor = -9
-			NOT = { country = { OR = { primary_culture = lossoth accepted_culture = lossoth } } }
-			NOT = { has_pop_culture = lossoth }
-		}
-		modifier = {
-			factor = 2
-			has_pop_religion = men
-		}
-		modifier = {
-			factor = 2
-			is_culture_group = lossoth
-		}
-		modifier = {
-			factor = 2
-			has_pop_culture = lossoth
-		}
-		modifier = {
-			factor = 2
-			ruling_party_ideology = lossoth_nobles
-		}
-	}
-	
-	breelander_nobles = {
-		factor = 1
-		# Must be active in the realm or the pop culture
-		modifier = {
-			factor = -9
-			NOT = { country = { OR = { primary_culture = breelander accepted_culture = breelander } } }
-			NOT = { has_pop_culture = breelander }
-		}
-		modifier = {
-			factor = 2
-			has_pop_religion = men
-		}
-		modifier = {
-			factor = 2
-			is_culture_group = breelander
-		}
-		modifier = {
-			factor = 2
-			has_pop_culture = breelander
-		}
-		modifier = {
-			factor = 2
-			ruling_party_ideology = breelander_nobles
-		}
-	}
-	
-	siredain_nobles = {
-		factor = 1
-		# Must be active in the realm or the pop culture
-		modifier = {
-			factor = -9
-			NOT = { country = { OR = { primary_culture = siredain accepted_culture = siredain } } }
-			NOT = { has_pop_culture = siredain }
-		}
-		modifier = {
-			factor = 2
-			has_pop_religion = men
-		}
-		modifier = {
-			factor = 2
-			is_culture_group = breelander
-		}
-		modifier = {
-			factor = 2
-			has_pop_culture = siredain
-		}
-		modifier = {
-			factor = 2
-			ruling_party_ideology = siredain_nobles
-		}
-	}
-	
-	stoor_nobles = {
-		factor = 1
-		# Must be active in the realm or the pop culture
-		modifier = {
-			factor = -9
-			NOT = { country = { OR = { primary_culture = stoor accepted_culture = stoor } } }
-			NOT = { has_pop_culture = stoor }
-		}
-		modifier = {
-			factor = 2
-			has_pop_religion = hobbit
-		}
-		modifier = {
-			factor = 2
-			is_culture_group = hobbits
-		}
-		modifier = {
-			factor = 2
-			has_pop_culture = stoor
-		}
-		modifier = {
-			factor = 2
-			ruling_party_ideology = stoor_nobles
-		}
-	}
-	
-	harfoot_nobles = {
-		factor = 1
-		# Must be active in the realm or the pop culture
-		modifier = {
-			factor = -9
-			NOT = { country = { OR = { primary_culture = harfoot accepted_culture = harfoot } } }
-			NOT = { has_pop_culture = harfoot }
-		}
-		modifier = {
-			factor = 2
-			has_pop_religion = hobbit
-		}
-		modifier = {
-			factor = 2
-			is_culture_group = hobbits
-		}
-		modifier = {
-			factor = 2
-			has_pop_culture = harfoot
-		}
-		modifier = {
-			factor = 2
-			ruling_party_ideology = harfoot_nobles
-		}
-	}
-	
-	fallohide_nobles = {
-		factor = 1
-		# Must be active in the realm or the pop culture
-		modifier = {
-			factor = -9
-			NOT = { country = { OR = { primary_culture = fallohide accepted_culture = fallohide } } }
-			NOT = { has_pop_culture = fallohide }
-		}
-		modifier = {
-			factor = 2
-			has_pop_religion = hobbit
-		}
-		modifier = {
-			factor = 2
-			is_culture_group = hobbits
-		}
-		modifier = {
-			factor = 2
-			has_pop_culture = fallohide
-		}
-		modifier = {
-			factor = 2
-			ruling_party_ideology = fallohide_nobles
-		}
-	}
-	
-	cave_trolls_nobles = {
-		factor = 1
-		# Must be active in the realm or the pop culture
-		modifier = {
-			factor = -9
-			NOT = { country = { OR = { primary_culture = cave_trolls accepted_culture = cave_trolls } } }
-			NOT = { has_pop_culture = cave_trolls }
-		}
-		modifier = {
-			factor = 2
-			has_pop_religion = troll
-		}
-		modifier = {
-			factor = 2
-			is_culture_group = trolls
-		}
-		modifier = {
-			factor = 2
-			has_pop_culture = cave_trolls
-		}
-		modifier = {
-			factor = 2
-			ruling_party_ideology = cave_trolls_nobles
-		}
-	}
-	
-	hill_trolls_nobles = {
-		factor = 1
-		# Must be active in the realm or the pop culture
-		modifier = {
-			factor = -9
-			NOT = { country = { OR = { primary_culture = hill_trolls accepted_culture = hill_trolls } } }
-			NOT = { has_pop_culture = hill_trolls }
-		}
-		modifier = {
-			factor = 2
-			has_pop_religion = troll
-		}
-		modifier = {
-			factor = 2
-			is_culture_group = trolls
-		}
-		modifier = {
-			factor = 2
-			has_pop_culture = hill_trolls
-		}
-		modifier = {
-			factor = 2
-			ruling_party_ideology = hill_trolls_nobles
-		}
-	}
-	
-	mountain_trolls_nobles = {
-		factor = 1
-		# Must be active in the realm or the pop culture
-		modifier = {
-			factor = -9
-			NOT = { country = { OR = { primary_culture = mountain_trolls accepted_culture = mountain_trolls } } }
-			NOT = { has_pop_culture = mountain_trolls }
-		}
-		modifier = {
-			factor = 2
-			has_pop_religion = troll
-		}
-		modifier = {
-			factor = 2
-			is_culture_group = trolls
-		}
-		modifier = {
-			factor = 2
-			has_pop_culture = mountain_trolls
-		}
-		modifier = {
-			factor = 2
-			ruling_party_ideology = mountain_trolls_nobles
-		}
-	}
-	
-	snow_trolls_nobles = {
-		factor = 1
-		# Must be active in the realm or the pop culture
-		modifier = {
-			factor = -9
-			NOT = { country = { OR = { primary_culture = snow_trolls accepted_culture = snow_trolls } } }
-			NOT = { has_pop_culture = snow_trolls }
-		}
-		modifier = {
-			factor = 2
-			has_pop_religion = troll
-		}
-		modifier = {
-			factor = 2
-			is_culture_group = trolls
-		}
-		modifier = {
-			factor = 2
-			has_pop_culture = snow_trolls
-		}
-		modifier = {
-			factor = 2
-			ruling_party_ideology = snow_trolls_nobles
-		}
-	}
-	
-	stone_trolls_nobles = {
-		factor = 1
-		# Must be active in the realm or the pop culture
-		modifier = {
-			factor = -9
-			NOT = { country = { OR = { primary_culture = stone_trolls accepted_culture = stone_trolls } } }
-			NOT = { has_pop_culture = stone_trolls }
-		}
-		modifier = {
-			factor = 2
-			has_pop_religion = troll
-		}
-		modifier = {
-			factor = 2
-			is_culture_group = trolls
-		}
-		modifier = {
-			factor = 2
-			has_pop_culture = stone_trolls
-		}
-		modifier = {
-			factor = 2
-			ruling_party_ideology = stone_trolls_nobles
-		}
-	}
-	
-	olog_hai_nobles = {
-		factor = 1
-		# Must be active in the realm or the pop culture
-		modifier = {
-			factor = -9
-			NOT = { country = { OR = { primary_culture = olog_hai accepted_culture = olog_hai } } }
-			NOT = { has_pop_culture = olog_hai }
-		}
-		modifier = {
-			factor = 2
-			has_pop_religion = troll
-		}
-		modifier = {
-			factor = 2
-			is_culture_group = trolls
-		}
-		modifier = {
-			factor = 2
-			has_pop_culture = olog_hai
-		}
-		modifier = {
-			factor = 2
-			ruling_party_ideology = olog_hai_nobles
-		}
-	}
-	
 	flightlords_of_the_mountains = {
 		factor = 1
 		# Must be active in the realm
@@ -3569,32 +1480,6 @@ ideologies = {
 		modifier = {
 			factor = 2
 			ruling_party_ideology = flightlords_of_the_mountains
-		}
-	}
-	
-	great_eagle_nobles = {
-		factor = 1
-		# Must be active in the realm or the pop culture
-		modifier = {
-			factor = -9
-			NOT = { country = { OR = { primary_culture = great_eagle accepted_culture = great_eagle } } }
-			NOT = { has_pop_culture = great_eagle }
-		}
-		modifier = {
-			factor = 2
-			has_pop_religion = eagle
-		}
-		modifier = {
-			factor = 2
-			is_culture_group = eagles
-		}
-		modifier = {
-			factor = 2
-			has_pop_culture = great_eagle
-		}
-		modifier = {
-			factor = 2
-			ruling_party_ideology = great_eagle_nobles
 		}
 	}
 	
@@ -3623,32 +1508,6 @@ ideologies = {
 		}
 	}
 	
-	raven_nobles = {
-		factor = 1
-		# Must be active in the realm or the pop culture
-		modifier = {
-			factor = -9
-			NOT = { country = { OR = { primary_culture = raven accepted_culture = raven } } }
-			NOT = { has_pop_culture = raven }
-		}
-		modifier = {
-			factor = 2
-			has_pop_religion = eagle
-		}
-		modifier = {
-			factor = 2
-			is_culture_group = eagles
-		}
-		modifier = {
-			factor = 2
-			has_pop_culture = raven
-		}
-		modifier = {
-			factor = 2
-			ruling_party_ideology = raven_nobles
-		}
-	}
-	
 	great_brood_mothers = {
 		factor = 1
 		# Must be active in the realm
@@ -3674,58 +1533,6 @@ ideologies = {
 		}
 	}
 	
-	great_spider_nobles = {
-		factor = 1
-		# Must be active in the realm or the pop culture
-		modifier = {
-			factor = -9
-			NOT = { country = { OR = { primary_culture = great_spider accepted_culture = great_spider } } }
-			NOT = { has_pop_culture = great_spider }
-		}
-		modifier = {
-			factor = 2
-			has_pop_religion = spider
-		}
-		modifier = {
-			factor = 2
-			is_culture_group = spiders
-		}
-		modifier = {
-			factor = 2
-			has_pop_culture = great_spider
-		}
-		modifier = {
-			factor = 2
-			ruling_party_ideology = great_spider_nobles
-		}
-	}
-	
-	wight_nobles = {
-		factor = 1
-		# Must be active in the realm or the pop culture
-		modifier = {
-			factor = -9
-			NOT = { country = { OR = { primary_culture = wight accepted_culture = wight } } }
-			NOT = { has_pop_culture = wight }
-		}
-		modifier = {
-			factor = 2
-			has_pop_religion = undead
-		}
-		modifier = {
-			factor = 2
-			is_culture_group = undead
-		}
-		modifier = {
-			factor = 2
-			has_pop_culture = wight
-		}
-		modifier = {
-			factor = 2
-			ruling_party_ideology = wight_nobles
-		}
-	}
-	
 	kings_of_the_dead = {
 		factor = 1
 		# Must be active in the realm
@@ -3748,32 +1555,6 @@ ideologies = {
 		modifier = {
 			factor = 2
 			ruling_party_ideology = kings_of_the_dead
-		}
-	}
-	
-	oathbreaker_nobles = {
-		factor = 1
-		# Must be active in the realm or the pop culture
-		modifier = {
-			factor = -9
-			NOT = { country = { OR = { primary_culture = oathbreaker accepted_culture = oathbreaker } } }
-			NOT = { has_pop_culture = oathbreaker }
-		}
-		modifier = {
-			factor = 2
-			has_pop_religion = undead
-		}
-		modifier = {
-			factor = 2
-			is_culture_group = undead
-		}
-		modifier = {
-			factor = 2
-			has_pop_culture = oathbreaker
-		}
-		modifier = {
-			factor = 2
-			ruling_party_ideology = oathbreaker_nobles
 		}
 	}
 	
