@@ -113,56 +113,6 @@ style =
 	{
 		# The first case that matches is the one that applies
 		# Ordered by priority - highest first
-
-		# Culture specific pictures
-		case = { # Bree
-			trigger = { 
-				OR = {
-					AND = {
-						is_culture_group = breelander
-					}
-					AND = {
-						civilized = no
-						part_of_sphere = yes
-						sphere_owner = {
-							is_culture_group = breelander
-						}
-					}
-					AND = {
-						civilized = no
-						is_vassal = yes
-						overlord = {
-							is_culture_group = breelander
-						}
-					}					
-				}
-			}
-			picture = "news/newspaper_title_breelander.dds" 
-		}
-		case = { # Rohirrim
-			trigger = { 
-				OR = {
-					AND = {
-						is_culture_group = rohirrim
-					}
-					AND = {
-						civilized = no
-						part_of_sphere = yes
-						sphere_owner = {
-							is_culture_group = rohirrim
-						}
-					}
-					AND = {
-						civilized = no
-						is_vassal = yes
-						overlord = {
-							is_culture_group = rohirrim
-						}
-					}					
-				}
-			}
-			picture = "news/newspaper_title_rohirrim.dds" 
-		}
 		
 		# Gvernment specific pictures
 		case = { # Sauron
@@ -212,6 +162,107 @@ style =
 				}
 			}
 			picture = "news/newspaper_title_nazgul.dds" 
+		}
+		case = { # Istari
+			trigger = { 
+				OR = {
+					AND = {
+						government = istari_kingdom
+					}
+					AND = {
+						civilized = no
+						part_of_sphere = yes
+						sphere_owner = {
+							government = istari_kingdom
+						}
+					}
+					AND = {
+						civilized = no
+						is_vassal = yes
+						overlord = {
+							government = istari_kingdom
+						}
+					}					
+				}
+			}
+			picture = "news/newspaper_title_istari.dds" 
+		}
+
+		# Culture specific pictures
+		case = { # Bree
+			trigger = { 
+				OR = {
+					AND = {
+						is_culture_group = breelander
+					}
+					AND = {
+						civilized = no
+						part_of_sphere = yes
+						sphere_owner = {
+							is_culture_group = breelander
+						}
+					}
+					AND = {
+						civilized = no
+						is_vassal = yes
+						overlord = {
+							is_culture_group = breelander
+						}
+					}					
+				}
+			}
+			picture = "news/newspaper_title_breelander.dds" 
+		}
+		case = { # Dunedain rangers
+			trigger = { 
+				OR = {
+					AND = {
+						primary_culture = dunedain
+						government = tribal
+					}
+					AND = {
+						civilized = no
+						part_of_sphere = yes
+						sphere_owner = {
+							primary_culture = dunedain
+							government = tribal
+						}
+					}
+					AND = {
+						civilized = no
+						is_vassal = yes
+						overlord = {
+							primary_culture = dunedain
+							government = tribal
+						}
+					}					
+				}
+			}
+			picture = "news/newspaper_title_dunedain_tribal.dds" 
+		}
+		case = { # Rohirrim
+			trigger = { 
+				OR = {
+					AND = {
+						is_culture_group = rohirrim
+					}
+					AND = {
+						civilized = no
+						part_of_sphere = yes
+						sphere_owner = {
+							is_culture_group = rohirrim
+						}
+					}
+					AND = {
+						civilized = no
+						is_vassal = yes
+						overlord = {
+							is_culture_group = rohirrim
+						}
+					}					
+				}
+			}
+			picture = "news/newspaper_title_rohirrim.dds" 
 		}
 
 		# Generic race pictures
