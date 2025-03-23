@@ -32,7 +32,7 @@ party = {
 }
 
 party = {
-	name = "AMR_imharil"
+	name = "AMR_imrahil"
 	start_date = 3010.1.1
 	end_date = 4000.1.1
 	
