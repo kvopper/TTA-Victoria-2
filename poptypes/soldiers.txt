@@ -303,7 +303,7 @@ promote_to = {
 	craftsmen = {
 		factor = 0.01
 			modifier = {
-				factor = -5
+				factor = 0
 				NOT = { literacy = 0.1 }
 			}
 			modifier = {
@@ -373,7 +373,7 @@ ideologies = {
 		factor = 1
 		
 		modifier = {
-			factor = -9
+			factor = 0
 			OR = {
 				country = { is_vassal = no }
 				country = { NOT = { ruling_party_ideology = servants } }
@@ -558,7 +558,7 @@ ideologies = {
 		factor = 1
 		# Must be active in the realm
 		modifier = {
-			factor = -9
+			factor = 0
 			NOT = { country = { has_country_flag = ideologies_line_of_isildur_active } }
 		}
 		modifier = {
@@ -583,7 +583,7 @@ ideologies = {
 		factor = 1
 		# Must be active in the realm
 		modifier = {
-			factor = -9
+			factor = 0
 			NOT = { country = { has_country_flag = ideologies_house_of_stewards_active } }
 		}
 		modifier = {
@@ -608,7 +608,7 @@ ideologies = {
 		factor = 1
 		# Must be active in the realm
 		modifier = {
-			factor = -9
+			factor = 0
 			NOT = { country = { has_country_flag = ideologies_house_of_dol_amroth_active } }
 		}
 		modifier = {
@@ -633,7 +633,7 @@ ideologies = {
 		factor = 1
 		# Must be active in the realm
 		modifier = {
-			factor = -9
+			factor = 0
 			NOT = { country = { has_country_flag = ideologies_house_half_elven_active } }
 		}
 		modifier = {
@@ -658,7 +658,7 @@ ideologies = {
 		factor = 1
 		# Must be active in the realm
 		modifier = {
-			factor = -9
+			factor = 0
 			NOT = { country = { has_country_flag = ideologies_lords_of_mithlond_active } }
 		}
 		modifier = {
@@ -683,7 +683,7 @@ ideologies = {
 		factor = 1
 		# Must be active in the realm
 		modifier = {
-			factor = -9
+			factor = 0
 			NOT = { country = { has_country_flag = ideologies_house_of_oropher_active } }
 		}
 		modifier = {
@@ -708,7 +708,7 @@ ideologies = {
 		factor = 1
 		# Must be active in the realm
 		modifier = {
-			factor = -9
+			factor = 0
 			NOT = { country = { has_country_flag = ideologies_house_of_finarfin_active } }
 		}
 		modifier = {
@@ -733,7 +733,7 @@ ideologies = {
 		factor = 1
 		# Must be active in the realm
 		modifier = {
-			factor = -9
+			factor = 0
 			NOT = { country = { has_country_flag = ideologies_house_of_bard_active } }
 		}
 		modifier = {
@@ -758,7 +758,7 @@ ideologies = {
 		factor = 1
 		# Must be active in the realm
 		modifier = {
-			factor = -9
+			factor = 0
 			NOT = { country = { has_country_flag = ideologies_rivermen_thegans_active } }
 		}
 		modifier = {
@@ -783,7 +783,7 @@ ideologies = {
 		factor = 1
 		# Must be active in the realm
 		modifier = {
-			factor = -9
+			factor = 0
 			NOT = { country = { has_country_flag = ideologies_master_of_laketown_active } }
 		}
 		modifier = {
@@ -808,7 +808,7 @@ ideologies = {
 		factor = 1
 		# Must be active in the realm
 		modifier = {
-			factor = -9
+			factor = 0
 			NOT = { country = { has_country_flag = ideologies_lakemen_fishers_guild_active } }
 		}
 		modifier = {
@@ -833,7 +833,7 @@ ideologies = {
 		factor = 1
 		# Must be active in the realm
 		modifier = {
-			factor = -9
+			factor = 0
 			NOT = { country = { has_country_flag = ideologies_house_of_koldana_active } }
 		}
 		modifier = {
@@ -858,7 +858,7 @@ ideologies = {
 		factor = 1
 		# Must be active in the realm
 		modifier = {
-			factor = -9
+			factor = 0
 			NOT = { country = { has_country_flag = ideologies_line_of_durin_active } }
 		}
 		modifier = {
@@ -883,7 +883,7 @@ ideologies = {
 		factor = 1
 		# Must be active in the realm
 		modifier = {
-			factor = -9
+			factor = 0
 			NOT = { country = { has_country_flag = ideologies_house_of_beorn_active } }
 		}
 		modifier = {
@@ -908,7 +908,7 @@ ideologies = {
 		factor = 1
 		# Must be active in the realm
 		modifier = {
-			factor = -9
+			factor = 0
 			NOT = { country = { has_country_flag = ideologies_lords_of_fangorn_active } }
 		}
 		modifier = {
@@ -933,7 +933,7 @@ ideologies = {
 		factor = 1
 		# Must be active in the realm
 		modifier = {
-			factor = -9
+			factor = 0
 			NOT = { country = { has_country_flag = ideologies_house_of_eorl_active } }
 		}
 		modifier = {
@@ -958,7 +958,7 @@ ideologies = {
 		factor = 1
 		# Must be active in the realm
 		modifier = {
-			factor = -9
+			factor = 0
 			NOT = { country = { has_country_flag = ideologies_flightlords_of_the_mountains_active } }
 		}
 		modifier = {
@@ -983,7 +983,7 @@ ideologies = {
 		factor = 1
 		# Must be active in the realm
 		modifier = {
-			factor = -9
+			factor = 0
 			NOT = { country = { has_country_flag = ideologies_lords_of_ravens_active } }
 		}
 		modifier = {
@@ -1008,7 +1008,7 @@ ideologies = {
 		factor = 1
 		# Must be active in the realm
 		modifier = {
-			factor = -9
+			factor = 0
 			NOT = { country = { has_country_flag = ideologies_great_brood_mothers_active } }
 		}
 		modifier = {
@@ -1033,7 +1033,7 @@ ideologies = {
 		factor = 1
 		# Must be active in the realm
 		modifier = {
-			factor = -9
+			factor = 0
 			NOT = { country = { has_country_flag = ideologies_kings_of_the_dead_active } }
 		}
 		modifier = {
@@ -1058,7 +1058,7 @@ ideologies = {
 		factor = 1
 		# Must be active in the realm or the pop culture
 		modifier = {
-			factor = -9
+			factor = 0
 			NOT = { country = { has_country_flag = ideologies_lords_of_isengard_active } }
 		}
 		modifier = {
@@ -1091,7 +1091,7 @@ ideologies = {
 		factor = 1
 		# Must be active in the realm or the pop culture
 		modifier = {
-			factor = -9
+			factor = 0
 			NOT = { country = { has_country_flag = ideologies_lords_of_rhosgobel_active } }
 		}
 		modifier = {
@@ -1116,7 +1116,7 @@ ideologies = {
 		factor = 1
 		# Must be active in the realm or the pop culture
 		modifier = {
-			factor = -9
+			factor = 0
 			NOT = { country = { has_country_flag = ideologies_lords_of_mordor_active } }
 		}
 		modifier = {
@@ -1153,7 +1153,7 @@ ideologies = {
 		factor = 1
 		# Must be active in the realm or the pop culture
 		modifier = {
-			factor = -9
+			factor = 0
 			NOT = { country = { has_country_flag = ideologies_saurons_nine_active } }
 		}
 		modifier = {
