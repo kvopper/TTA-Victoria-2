@@ -222,7 +222,7 @@ migration_target = {
 		total_pops = 750000
 	}
 	modifier = {
-		factor = -9
+		factor = 0
 		state_scope = { has_factories = no }
 		can_build_factory = no
 		unemployment_by_type = { type = labourers value = 0.1 }
@@ -2739,7 +2739,7 @@ issues = {
 	landed_voting = {
 		factor = 1.25
 		modifier = {
-			factor = -9
+			factor = 0
 			OR = {
 				NOT = { is_next_reform = landed_voting }
 				NOT = { consciousness = 6 }
@@ -2811,7 +2811,7 @@ issues = {
 	wealth_weighted_voting = {
 		factor = 1
 		modifier = {
-			factor = -9
+			factor = 0
 			OR = {
 				NOT = { is_next_reform = wealth_weighted_voting }
 				NOT = { consciousness = 6 }
@@ -2879,7 +2879,7 @@ issues = {
 	wealth_voting = {
 		factor = 0.9
 		modifier = {
-			factor = -9
+			factor = 0
 			OR = {
 				NOT = { is_next_reform = wealth_voting }
 				NOT = { consciousness = 6 }
@@ -2947,7 +2947,7 @@ issues = {
 	universal_weighted_voting = {
 		factor = 0.8
 		modifier = {
-			factor = -9
+			factor = 0
 			OR = {
 				NOT = { is_next_reform = universal_weighted_voting }
 				NOT = { consciousness = 6 }
@@ -3015,7 +3015,7 @@ issues = {
 	universal_voting = {
 		factor = 0.7
 		modifier = {
-			factor = -9
+			factor = 0
 			OR = {
 				NOT = { is_next_reform = universal_voting }
 				NOT = { consciousness = 6 }
@@ -3083,7 +3083,7 @@ issues = {
 	jefferson_method = {
 		factor = 1
 		modifier = {
-			factor = -9
+			factor = 0
 			OR = {
 				NOT = { is_next_reform = proportional_representation }
 				NOT = { consciousness = 6 }
@@ -3123,7 +3123,7 @@ issues = {
 	proportional_representation = {
 		factor = 1
 		modifier = {
-			factor = -9
+			factor = 0
 			OR = {
 				NOT = { is_next_reform = proportional_representation }
 				NOT = { consciousness = 6 }
@@ -3163,7 +3163,7 @@ issues = {
 	accepted_voting = {
 		factor = 1
 		modifier = {
-			factor = -9
+			factor = 0
 			OR = {
 				NOT = { is_next_reform = accepted_voting }
 				NOT = { consciousness = 6 }
@@ -3211,7 +3211,7 @@ issues = {
 	all_vote = {
 		factor = 1
 		modifier = {
-			factor = -9
+			factor = 0
 			OR = {
 				NOT = { is_next_reform = all_vote }
 				NOT = { consciousness = 6 }
