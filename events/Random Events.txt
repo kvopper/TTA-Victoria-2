@@ -892,7 +892,7 @@ country_event = {
 # Diplomacy - eagles
 country_event = {
 	id = 3621
-	title = "Diplomacy with Eagles of Manwë"
+	title = "Diplomacy with Eagles of ManwÃƒÂ«"
 	desc = "EVTDESC3621"
 	picture = "eagle"
 
@@ -1058,7 +1058,7 @@ country_event = {
 			accepted_culture = eagle_culture
 		}
 		capital_scope = {
-			continent = north_america
+			continent = north_america # Eriador
 		}
 	}
 	
@@ -1102,6 +1102,8 @@ country_event = {
 	title = "The Stirrings of Dissent"
 	desc = "EVTDESC3626"
 	picture = "bad_news"
+	
+	is_triggered_only = yes
 	
 	trigger = {
 		plurality = 90
