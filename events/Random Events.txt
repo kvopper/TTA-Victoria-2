@@ -892,7 +892,7 @@ country_event = {
 # Diplomacy - eagles
 country_event = {
 	id = 3621
-	title = "Diplomacy with Eagles of ManwÃƒÂ«"
+	title = "Diplomacy with Eagles of Manwë"
 	desc = "EVTDESC3621"
 	picture = "eagle"
 
@@ -1047,7 +1047,7 @@ country_event = {
 		NOT = {
 			has_country_modifier = observer_mode
 			good_evil_alignment = evil_alignment
-				# Rough start of War of the Ring where Gandalf would be elsewhere in Middle Earth
+			# Rough start of War of the Ring where Gandalf would be elsewhere in Middle Earth
 			has_global_flag = findings_of_gandalf
 		}
 		OR = {
@@ -1114,5 +1114,36 @@ country_event = {
 		name = "The commonfolk are thinking..."
 		any_pop = { militancy = 1 }
 		add_country_modifier = { name = stirrings_of_dissent duration = -1 }
+	}
+}
+
+# Pallando in Rhun
+country_event = {
+	id = 3627
+	title = "The Blue Wizard"
+	desc = "EVTDESC3627"
+	picture = "blue_wizards"
+	news = yes
+	news_desc_long = "EVTDESC3627_NEWS_LONG"
+	news_desc_medium = "EVTDESC3627_NEWS_MEDIUM"
+	news_desc_short = "EVTDESC3627_NEWS_SHORT"
+
+	is_triggered_only = yes
+	
+	trigger = {
+		NOT = {
+			has_country_modifier = observer_mode
+			has_global_flag = fourth_age_flag
+			FOR = { any_neighbor_country = { has_country_modifier = pallando_influence } }
+		}
+		capital_scope = {
+			continent = asia # Rhun
+		}
+	}
+	
+	option = {
+		name = "What's his game?"
+		any_pop = { dominant_issue = { value = evil_alignment factor = 0.1 } }
+		any_pop = { militancy = -0.1 }
 	}
 }
