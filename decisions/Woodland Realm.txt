@@ -12,7 +12,8 @@ political_decisions = {
 			
 			# Set allowed leaders
 			set_country_flag = ideologies_house_of_oropher_active
-				add_country_modifier = { name = thranduil_modifier duration = -1 }
+			set_country_flag = nobility_deactivated
+			add_country_modifier = { name = thranduil_modifier duration = -1 }
 		}
 	}
 }

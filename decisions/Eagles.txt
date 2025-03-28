@@ -9,6 +9,7 @@ political_decisions = {
 		effect = {
 			# Set allowed leaders
 			set_country_flag = ideologies_flightlords_of_the_mountains_active
+			set_country_flag = nobility_deactivated
 			
 			set_country_flag = EAG_content
 			EEL = { set_country_flag = EEL_content }

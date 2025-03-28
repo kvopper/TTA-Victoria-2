@@ -15,6 +15,7 @@ political_decisions = {
 			
 			# Set allowed leaders
 			set_country_flag = ideologies_line_of_durin_active
+			set_country_flag = nobility_deactivated
 			
 			set_country_flag = ERE_content
 		}
@@ -26,6 +27,7 @@ political_decisions = {
 		effect = {
 			# Set allowed leaders
 			set_country_flag = ideologies_lords_of_ravens_active
+			set_country_flag = nobility_deactivated
 			
 			set_country_flag = RAV_content
 			add_country_modifier = { name = roac_modifier duration = -1 }

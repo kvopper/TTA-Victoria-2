@@ -110,6 +110,10 @@ political_decisions = {
 			set_country_flag = ideologies_lakemen_fishers_guild_active
 			add_country_modifier = { name = bard_i_modifier duration = -1 }
 			
+			set_country_flag = nobility_deactivated
+			set_country_flag = burgher_deactivated
+			set_country_flag = loremaster_deactivated
+			
 			# Set allowed leaders for Rivermen realms
 			any_country = {
 				limit = {
@@ -122,6 +126,7 @@ political_decisions = {
 				}
 				set_country_flag = ideologies_rivermen_thegans_active
 				set_country_flag = RIV_content
+				set_country_flag = nobility_deactivated
 			}
 			
 			# Set up leaders

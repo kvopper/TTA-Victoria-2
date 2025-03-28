@@ -11,6 +11,7 @@ political_decisions = {
 		effect = {
 			# Set allowed leaders
 			set_country_flag = ideologies_house_of_eorl_active
+			set_country_flag = nobility_deactivated
 			
 			set_country_flag = ROH_content
 		}

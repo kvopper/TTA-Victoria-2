@@ -10,6 +10,7 @@ political_decisions = {
 		effect = {
 			# Set allowed leaders
 			set_country_flag = ideologies_lords_of_mithlond_active
+			set_country_flag = nobility_deactivated
 			
 			set_country_flag = LIN_content
 			add_country_modifier = { name = cirdan_modifier duration = -1 }

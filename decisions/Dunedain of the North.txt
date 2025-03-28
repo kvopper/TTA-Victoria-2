@@ -9,6 +9,7 @@ political_decisions = {
 		effect = {
 			# Set allowed leaders
 			set_country_flag = ideologies_line_of_isildur_active
+			set_country_flag = nobility_deactivated
 			add_country_modifier = { name = aragorn_modifier duration = -1 }
 		}
 	}

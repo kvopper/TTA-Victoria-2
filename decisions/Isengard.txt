@@ -17,6 +17,7 @@ political_decisions = {
 		effect = {
 			# Set allowed leaders
 			set_country_flag = ideologies_lords_of_isengard_active
+			set_country_flag = nobility_deactivated
 			
 			set_country_flag = ISE_content
 		}

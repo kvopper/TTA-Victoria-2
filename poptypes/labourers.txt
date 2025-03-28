@@ -945,6 +945,10 @@ ideologies = {
 	nobility = {
 		factor = 1
 		modifier = {
+			factor = 0
+			country = { has_country_flag = nobility_deactivated }
+		}
+		modifier = {
 			factor = 0.5
 			militancy = 6
 		}
@@ -976,6 +980,10 @@ ideologies = {
 	
 	burgher = {
 		factor = 1
+		modifier = {
+			factor = 0
+			country = { has_country_flag = burgher_deactivated }
+		}
 		modifier = {
 			factor = 0.5
 			militancy = 6
@@ -1016,6 +1024,10 @@ ideologies = {
 	
 	loremaster = {
 		factor = 1
+		modifier = {
+			factor = 0
+			country = { has_country_flag = loremaster_deactivated }
+		}
 		modifier = {
 			factor = 0.5
 			militancy = 6

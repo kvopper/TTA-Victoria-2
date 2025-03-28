@@ -13,6 +13,7 @@ political_decisions = {
 		effect = {
 			# Set allowed leaders
 			set_country_flag = ideologies_kings_of_the_dead_active
+			set_country_flag = nobility_deactivated
 			
 			set_country_flag = OBS_content
 			add_country_modifier = { name = king_of_the_dead_modifier duration = -1 }
