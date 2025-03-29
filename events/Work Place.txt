@@ -59,7 +59,7 @@ province_event = {
 	}
 }
 
-# Production Shortage (Ranged Gear)
+# Production Shortage (Fletchery )
 country_event = {
 	id = 12001
 	title = "Production Shortage"
@@ -105,7 +105,7 @@ country_event = {
 	}
 }
 
-# Production Shortage (Melee Gear)
+# Production Shortage (Armaments)
 country_event = {
 	id = 12002
 	title = "Production Shortage"
@@ -1428,7 +1428,7 @@ province_event = {
 	}
 }
 
-# High Quality Goods (Ranged Gear)
+# High Quality Goods (Fletchery )
 province_event = {
 	id = 12028
 	title = "High Quality Goods"
@@ -1506,7 +1506,7 @@ province_event = {
 	}
 }
 
-# High Quality Goods (Melee Gear)
+# High Quality Goods (Armaments)
 province_event = {
 	id = 12029
 	title = "High Quality Goods"

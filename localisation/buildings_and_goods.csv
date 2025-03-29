@@ -75,10 +75,10 @@ luxury_clothes_factory_desc;Guild artisans with a particular talent use dye and 
 horses;Horses;x
 horses_RGO_SIZE;Stable size;x
 military_goods;Military Goods;x
-melee_gear;Melee Gear;x
+melee_gear;Armaments;x
 melee_gear_factory;Smithy;x
 melee_gear_factory_desc;A Smithy employs blacksmiths to make weapons, armors, and shields out of steel that are usable for melee combat.;x
-ranged_gear;Ranged Gear;x
+ranged_gear;Fletchery;x
 ranged_gear_factory;Fletchers' Guild;x
 ranged_gear_factory_desc;A Fletchers' Guild uses iron and lumber to produce bows and arrows. These weapons are a daily need for any army with archers.;x
 artillery_factory;Siegeyard;x

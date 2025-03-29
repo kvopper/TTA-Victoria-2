@@ -63,8 +63,8 @@ Loremasters (researchers and contributers):
 - Icons
 	- [Rock](http://14thwarriorcustomsettlers.blogspot.com/2008/02/rock-this-town.html)
 	- [Cut Stone](https://icon-library.com/icon/brick-icon-png-26.html)
-	- [Melee Gear](https://thenounproject.com/term/shield-and-sword/1477540/)
-	- [Ranged Gear](https://www.pinterest.com/pin/814588651337049655/)
+	- [armaments](https://thenounproject.com/term/shield-and-sword/1477540/)
+	- [Fletchery ](https://www.pinterest.com/pin/814588651337049655/)
 	- [Horses (AOE Expanded)](https://github.com/AoE-guys/AOE-exp)
 	- [Administrative Services (EU4)](https://store.steampowered.com/app/236850/Europa_Universalis_IV/)
 	- [Icons of Crusader Kings 3](https://ck3.paradoxwikis.com/Category:Icons)
