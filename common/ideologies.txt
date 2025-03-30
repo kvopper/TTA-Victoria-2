@@ -5,7 +5,7 @@
 # Change as needed to get the right "coalitions" for republics (speciifally related to how votes for ideologies of the same ideology_group can combine to become the plurality)
 
 # Note, when adding new ideologies (barring special cases like slave or tribal, the following updates are needed (outside of this file)
-#	Generally speaking, colors are either the color of the associated culture (for the generic nobles), or the color or the associated tag
+#	Generally speaking, colors are the color or the associated tag
 #	Update localisation/modifiers and flavs.csv to define the ideologies_[ideology name]_active flag
 #	Update localisation/politics.csv with the ideology and the _uh
 #	Update each of the pops that can support the ideology in the poptypes folder
@@ -14,7 +14,7 @@
 #	Update starting decisions (or whatever flavor unlocks the ideology) to set the ideologies_[ideology name]_active on the tags in question
 #	Update events 14006 and 14007 in events/Election.txt
 #	Update common/governments.txt to allow the ideology in the various government types (only needed on appoint_ruling_party = yes governments)
-#	Update event 3001 common/Revolts.txt (if new generic noble ideology)
+#	Update the monthly update event (# Dominions that are now free) to set the government when puppets are freed
 
 # cosmetic. Does nothing in game except define slaves for pop_types
 disenfranchised_group = {

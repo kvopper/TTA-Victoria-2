@@ -1403,9 +1403,13 @@ country_event = {
 				}
 				is_vassal = no
 			}
-			# TODO: Allow the right rulers to be chosen
 			government = monarchy
 			ruling_party_ideology = nobility
+			
+			random_owned = {
+				limit = { has_country_flag = DAL_content }
+				owner = { ruling_party_ideology = house_of_bard }
+			}
 		}
 		# Republics without voting become monarchies
 		any_country = {
