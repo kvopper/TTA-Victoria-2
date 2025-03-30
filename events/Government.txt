@@ -13,7 +13,6 @@ country_event = {
 	
 	trigger = {
 		NOT = { government = merchant_republic }
-		NOT = { government = republic }
 		OR = {
 			vote_franschise = landed_voting
 			vote_franschise = wealth_weighted_voting
@@ -37,7 +36,6 @@ country_event = {
 	picture = "administration"
 	
 	trigger = {
-		NOT = { government = merchant_republic }
 		NOT = { government = republic }
 		OR = {
 			vote_franschise = universal_weighted_voting
