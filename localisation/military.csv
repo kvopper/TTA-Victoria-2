@@ -151,7 +151,7 @@ ARMY_SPLIT_AND_LOAD_DESC_3;§RThe remaining army of total weight ($NUM$) will no
 NAVAL_BASE_OVERSEAS_LIMIT;§RCapital ships cannot be built in overseas provinces.§!;x
 NAVAL_COMBAT_DAMAGE_DESC_TITLE;The estimated fire power is §G$POWER$§!:;x
 NAVAL_COMBAT_DAMAGE_DESC_BASE;§Y$UNIT$§! base attack: §G$VAL$§!;x
-NAVAL_COMBAT_DAMAGE_DESC_TORP;Torpedo attack: §G$VAL$§!;x
+NAVAL_COMBAT_DAMAGE_DESC_TORP;Grapple attack: §G$VAL$§!;x
 NAVAL_COMBAT_DAMAGE_DESC_LUCK;Luck and decisions: §Y$VAL$%§!;x
 NAVAL_COMBAT_DAMAGE_DESC_HULL;Reduced by opponent hull (§R$HULL$§!): §R$VAL$%§!;x
 NAVAL_COMBAT_DAMAGE_DESC_EXP;Reduced by opponent experience (§R$EXP$%§!): §R$VAL$%§!;x
@@ -186,8 +186,8 @@ ARMY_RECON_TOOLTIP;Recon Efficiency: §Y$VAL$§!%;x
 ARMY_RECON_DELAYED_TOOLTIP;Recon Efficiency is the ability of this army's scouts to reduce the dig-in bonus of enemy armies and speed up sieges.\n\nThis army contains §Y$RECONUNITS$§! recon brigades out of a needed §Y$RECONMAXUNITS$§!, giving it a Recon Efficiency of §Y$VAL$%§!.;x
 ARMY_ENGINEER_TOOLTIP;Siege Efficiency: §Y$VAL$§!%;x
 ARMY_ENGINEER_DELAYED_TOOLTIP;Siege Efficiency is the ability of this army's artillery to reduce the effectiveness of enemy forts when attacking and sieging.\n\nThis army contains §Y$ENGINEERUNITS$§! artillery brigades out of a needed §Y$ENGINEERMAXUNITS$§!, giving it a Siege Efficiency of §Y$VAL$%§!.;x
-TORPEDO_ATTACK;Torpedo Attack;x
-TORPEDO_ATTACK_DESC;Torpedo attacks do extra damage against larger ships.;x
+TORPEDO_ATTACK;Grapple Attack;x
+TORPEDO_ATTACK_DESC;Grapple attacks do extra damage against larger ships.;x
 NAVAL_COMBAT_STACK_PENALTY_DESC;§YCoordination penalty §R$PEN$%§Y caused by poor communication in the fleet, it makes it more difficult for our ships to find targets. Affected by amount of our ships and potential targets.§!;x
 NAVAL_COMBAT_DETAILS_APPROACH;Approaching §Y$WHO$§!. Current distance: §Y$DIST$§!.;x
 NAVAL_COMBAT_DETAILS_DESTROYED;§RDestroyed§! by §Y$WHO$§!;x
