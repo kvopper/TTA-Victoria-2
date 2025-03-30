@@ -17,58 +17,27 @@ country_event = {
 		name = "Damn"
 		
 		random_owned = {
-			limit = {
-				owner = {
-					government = republic
-					vote_franschise = universal_weighted_voting
-				}
-			}
+			limit = { owner = { vote_franschise = universal_weighted_voting } }
 			owner = { political_reform = universal_voting }
 		}
 		random_owned = {
-			limit = {
-				owner = {
-					government = republic
-					vote_franschise = wealth_voting
-				}
-			}
+			limit = { owner = { vote_franschise = wealth_voting } }
 			owner = { political_reform = universal_weighted_voting }
 		}
 		
 		random_owned = {
-			limit = {
-				owner = {
-					government = republic
-					vote_franschise = wealth_weighted_voting
-				}
-			}
+			limit = { owner = { vote_franschise = wealth_weighted_voting } }
 			owner = { political_reform = wealth_voting }
 		}
 		
 		random_owned = {
-			limit = {
-				owner = {
-					government = republic
-					vote_franschise = landed_voting
-				}
-			}
+			limit = { owner = { vote_franschise = landed_voting } }
 			owner = { political_reform = wealth_weighted_voting }
 		}
 		
 		random_owned = {
-			limit = {
-				owner = {
-					NOT = { is_culture_group = hobbits }
-					NOT = { is_culture_group = northmen }
-					NOT = { is_culture_group = gramavuld_northmen }
-					NOT = { government = republic }
-				}
-			}
-			owner = {
-				government = republic
-				political_reform = landed_voting
-				election = yes
-			}
+			limit = { owner = { vote_franschise = none_voting } }
+			owner = { political_reform = landed_voting }
 		}
 	}
 }

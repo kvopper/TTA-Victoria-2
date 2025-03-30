@@ -75,7 +75,7 @@ EVTDESC5011;While using the Palantír, our ruler has discovered economic opportu
 EVTDESC5012;While using the Palantír, our ruler has discovered new knowledge that will help the realm.;x
 EVTDESC5013;While using the Palantír, our ruler was met by another entity. A battle of wills has been fought, and the fight has taken its toll.;x
 EVTDESC5014;Ever since our ruler's fateful meeting with the mysterious entity, they have been stating that Sauron is $COUNTRY$'s friend.;x
-EVTDESC5015;Following all of our ruler's statements that Sauron is our friend, today our ruler has agreed to serve our Lord Sauron as his puppet.;x
+EVTDESC5015;Following all of our ruler's statements that Sauron is our friend, today our ruler has agreed to serve our Lord Sauron as his vassal.;x
 EVTDESC5016;Ever-changed by our ruler's encounted in the Palantír, they threw a number of unfounded accusations against one of our allies and stormed out of diplomatic talks.;x
 EVTDESC5050;Our conquest of Erebor has led to us encountering the Ravens who inhabit the mountain. These little birds have a long history of meddling in foreign affairs and they are using their influence to stifle our diplomatic efforts.;x
 EVTDESC5051;The Ravens of Erebor can now see that we no longer pose a threat to them, and they have halted their efforts to stifle our diplomacy.;x
@@ -503,7 +503,7 @@ EVTDESC50620;With our influence and in Eriador fully established, we must determ
 EVTDESC50621;We have received a request from $FROMCOUNTRY$ to be annexed.;x
 EVTDESC50622;The Hobbits of the Shire have accepted our request for annexation.;x
 EVTDESC50623;The Hobbits of the Shire have rejected our request for annexation. Shall we force their hand?;x
-EVTDESC50624;We have received a request from $FROMCOUNTRY$ to be made a Free Land. This would effectively make the Shire a puppet state, though still retaining some autonomy.;x
+EVTDESC50624;We have received a request from $FROMCOUNTRY$ to be made a Free Land. This would effectively make the Shire a vassal state, though still retaining some autonomy.;x
 EVTDESC50625;The Hobbits of the Shire have accepted our request to be made a Free Land.;x
 EVTDESC50626;The Hobbits of the Shire have rejected our request to be made a Free Land. Shall we force their hand?;x
 ###################################;x }
