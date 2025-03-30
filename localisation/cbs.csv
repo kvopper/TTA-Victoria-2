@@ -6,9 +6,9 @@ take_one_ring_short;Take the One Ring from §Y$RECIPIENT$§!;x
 take_one_ring_setup;Take the One Ring from §Y$RECIPIENT$§!;x
 take_one_ring_desc;Take the One Ring from a §Yrealm§!;x
 war_of_the_ring_cb;War of the Ring;x
-war_of_the_ring_cb_short;Disarm and puppet (non-GP target) a realm.;x
-war_of_the_ring_cb_setup;Disarm and puppet (non-GP target) a realm.;x
-war_of_the_ring_cb_desc;Disarm and puppet (non-GP target) a realm.;x
+war_of_the_ring_cb_short;Disarm and vassalize (non-GP target) a realm.;x
+war_of_the_ring_cb_setup;Disarm and vassalize (non-GP target) a realm.;x
+war_of_the_ring_cb_desc;Disarm and vassalize (non-GP target) a realm.;x
 add_to_sphere;Add to Sphere;x
 add_to_sphere_short;Add $RECIPIENT$ to Sphere of Influence;x
 add_to_sphere_setup;Add $RECIPIENT$ to Sphere of Influence;x
@@ -97,8 +97,8 @@ liberate_country_desc;Liberate an §Yentire realm§! from its oppressors;x
 liberate_country;Liberate Realm;x
 liberate_country_short;$THIRD$ acquires $STATE$;x
 liberate_country_setup;Return $STATE$ to $THIRD$ from $RECIPIENT$;x
-liberate_and_puppet_country_desc;Liberate and puppet an §Yentire realm§!;x
-liberate_and_puppet_country;Liberate and Puppet Realm;x
+liberate_and_puppet_country_desc;Liberate and vassalize an §Yentire realm§!;x
+liberate_and_puppet_country;Liberate and Vassalize Realm;x
 liberate_and_puppet_country_short;$THIRD$ acquires $STATE$ and becomes our vassal.;x
 liberate_and_puppet_country_setup;Return $STATE$ to $THIRD$ from $RECIPIENT$ and becomes our vassal;x
 andrast_war_cb_desc;Liberate an §Yentire realm§! from its oppressors;x
@@ -113,22 +113,22 @@ free_allied_cores_desc;Liberate cores belonging to an §Yallied realm§Y in your
 free_allied_cores;Free Allied Cores;x
 free_allied_cores_short;$THIRD$ acquires $STATE$;x
 free_allied_cores_setup;Hand $STATE$ back to $THIRD$ from $RECIPIENT$;x
-take_puppet;Take Puppet;x
+take_puppet;Take Vassal;x
 take_puppet_short;Take $THIRD$ from $RECIPIENT$;x
-take_puppet_setup;Take $THIRD$ from $RECIPIENT$ and puppet them;x
-take_puppet_desc;Puppet a vassal of §Yanother realm§!;x
+take_puppet_setup;Take $THIRD$ from $RECIPIENT$ and vassalize them;x
+take_puppet_desc;Take a vassal of §Yanother realm§!;x
 dismantle_forts_desc;Dismantle castles and ports.;x
 dismantle_forts;Dismantle Fortifications;x
 dismantle_forts_short;Dismantle constructions in $STATE$;x
 dismantle_forts_setup;Dismantle castles and ports in $STATE$;x
-release_puppet;Release Puppet;x
+release_puppet;Release Vassal;x
 release_puppet_short;$THIRD$ is released;x
 release_puppet_setup;Release $THIRD$ from $RECIPIENT$;x
 release_puppet_desc;Release a §Yrealm§! from its sovereign realm;x
-make_puppet;Make Puppet;x
-make_puppet_short;$RECIPIENT$ becomes a puppet of $ACTOR$;x
-make_puppet_setup;$RECIPIENT$ becomes a puppet of $ACTOR$;x
-make_puppet_desc;Become a puppet;x
+make_puppet;Make Vassal;x
+make_puppet_short;$RECIPIENT$ becomes a vassal of $ACTOR$;x
+make_puppet_setup;$RECIPIENT$ becomes a vassal of $ACTOR$;x
+make_puppet_desc;Become a vassal;x
 become_independent;Become Independent;x
 become_independent_short;$ACTOR$ is released from $RECIPIENT$;x
 become_independent_setup;$ACTOR$ is released from $RECIPIENT$ and becomes independent.;x

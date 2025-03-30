@@ -1326,13 +1326,13 @@ CW_WARNWARN;We have been warned by $COUNTRY$, so they may intervene.;x
 CW_WARNALLIES2;$ENEMY$ is allied with $COUNTRY$.;x
 CW_WARNGUARANTEED2;$ENEMY$ is guaranteed by $COUNTRY$.;x
 CW_WARNWARN2;$FRIEND$ has been warned by $COUNTRY$, so they may intervene.;x
-CW_WARNOVERLORD2;$ENEMY$ is a puppet of $COUNTRY$, who will protect them.;x
+CW_WARNOVERLORD2;$ENEMY$ is a vassal of $COUNTRY$, who will protect them.;x
 PW_SEND;Send;x
 NEED;Need;x
 PW_I_DO;I do;x
 PW_RUN_AWAY;Rather not;x
 INDEPENDANT;Independent Nation;x
-VASSAL_SUBJECT;Puppet of $LORD$;x
+VASSAL_SUBJECT;Vassal of $LORD$;x
 DIPRELCH_WAR;War;x
 DIPRELCH_NBOR_PEACE;Neighbours at Peace;x
 DIPRELCH_GUARANTEE;Guarantees;x
@@ -2271,7 +2271,7 @@ REMOVE_PROVINCE_SUPPLIES_EFFECT;Lose §R$VALUE$§W supplies in §Y$PROVINCE$§W.
 ADD_PROVINCE_SUPPLIES_EFFECT;Gain §G$VALUE$§W supplies in §Y$PROVINCE$§W.\n;x
 REMOVE_PROVINCE_MONEY_EFFECT;Lose §R$VALUE$§W in §Y$PROVINCE$§W.\n;x
 ADD_PROVINCE_MONEY_EFFECT;Gain §G$VALUE$§W in §Y$PROVINCE$§W.\n;x
-CREATE_VASSAL_EFFECT;§Y$TARGET_COUNTRY$§W becomes a puppet of §Y$COUNTRY$§W.\n;x
+CREATE_VASSAL_EFFECT;§Y$TARGET_COUNTRY$§W becomes a vassal of §Y$COUNTRY$§W.\n;x
 ADD_BUILDING_EFFECT;Gain a §Y$BUILDING$§W with level §Y$VALUE$§W in §Y$PROVINCE$§W.\n;x
 REMOVE_BUILDING_EFFECT;Set §Y$BUILDING$§W to level §Y$VALUE$§W in §Y$PROVINCE$§W.\n;x
 ADD_ORGANISATION_POPULARITY_EFFECT;§Y$IDEOLOGY$§W gains §G$ORGANISATION$§W in organisation and §G$POPULARITY$§W in popularity§W.\n;x
@@ -2600,8 +2600,8 @@ ALLIEDWITH;Allied with $LIST$.;x
 LEADUNIONS;Lead Personal Union with $LIST$.;x
 INUNION;In Personal Union with $LIST$.;x
 ROYALMARRIAGE;Royal Marriage with $LIST$.;x
-LEADVASSAL;Has the following puppets: $LIST$.;x
-AMVASSAL;Is a puppet of $LIST$.;x
+LEADVASSAL;Has the following vassals: $LIST$.;x
+AMVASSAL;Is a vassal of $LIST$.;x
 HASCBON;Has claims on $LIST$.;x
 GUARANTEED;Independence guaranteed by $LIST$.;x
 GUARANTING;Guaranteeing the Independence of $LIST$.;x
@@ -2756,8 +2756,8 @@ UTM_NOT_LEGAL_RETREAT;§YWe can not retreat into territory where there are hosti
 OV_NO_VALID_ORDER;No valid order is selected.;x
 OV_NO_VALID_PROVINCES;No valid provinces selected;x
 VASSALPROVNUM;They will receive $NUMBER$ provinces.;x
-IS_NOT_VASSAL_OF;Is NOT a puppet of ;x
-IS_VASSAL_OF;Is a puppet of ;x
+IS_NOT_VASSAL_OF;Is NOT a vassal of ;x
+IS_VASSAL_OF;Is a vassal of ;x
 FE_NONE_FOUND;None;x
 SAVED_GAMES;Saved Game;x
 FE_PAUSED_TEXT;Paused;x
@@ -2765,7 +2765,7 @@ PV_OCEAN;Ocean;x
 PV_OCEAN_DESC;Only ships can enter this province;x
 CONFIRM_CANCEL_CONSTRUCTION_TITLE;Cancel Construction?;x
 CONFIRM_CANCEL_CONSTRUCTION_DESC;Are you sure you wish to cancel this construction?;x
-DIP_THEY_PUPPET;They are a puppet state of §Y$OVERLORD$§W;x
+DIP_THEY_PUPPET;They are a vassal of §Y$OVERLORD$§W;x
 UV_UNDER_ATTACK;This unit is under attack;x
 UV_ATTACKING;This unit is attacking;x
 UV_MOVING;This unit is moving;x
@@ -4530,7 +4530,7 @@ PRODUCTION_BONUS;$BON$ bonus from:;x
 MODIFIER_LOCAL_SHIP_BUILD;Local Ship Build Time;x
 CB_ALLOWED_ANNEX;Allow Annexation;x
 CB_ALLOWED_ADD_TO_SPHERE;Add to Sphere;x
-CB_ALLOWED_RELEASE_PUPPET;Release of Puppet;x
+CB_ALLOWED_RELEASE_PUPPET;Release of Vassal;x
 CB_ALLOWED_STATUS_QUO;Return to Status Quo;x
 CB_ALLOWED_TRANSFER_PROVINCES;Transfer of provinces;x
 CB_ALLOWED_PRESTIGE;Reduction of Prestige;x
@@ -4635,8 +4635,8 @@ MILITARY_MILITARY_TACTICS;Military tactics;x
 COUNTRYALERT_NO_CanDoDecisions;There are no decisions that presently demand our attention.;x
 POP_OTHER_LABEL;Other;x
 WARSUBSIDIES_DESC;Offer §Y$MONEY$§W each day to help this realm;x
-IS_NOT_OUR_VASSAL; is NOT our Puppet;x
-IS_OUR_VASSAL; is our Puppet;x
+IS_NOT_OUR_VASSAL; is NOT our Vassal;x
+IS_OUR_VASSAL; is our Vassal;x
 COUNTRYALERT_HaveOrganizingRebels;Rebel Factions are organizing in our realm!;x
 TOTAL_REBEL_POP;Rebel Faction Members;x
 NUMBER_OF_EMIREES;§Y$NUM$§W have left our realm for other realms this month;x
@@ -5157,7 +5157,7 @@ HAS_LESS_STATE_THAN;Has number of States < ;x
 HAS_STATES_GREATER_EQ;Has number of States >= ;x
 HAVE_MORE_SUBSTATES_THEN;Have more substates than ;x
 HAVE_LESS_SUBSTATES_THEN;Have less substates than ;x
-HAVE_MORE_VASSALS_THAN;Have more puppets than ;x
+HAVE_MORE_VASSALS_THAN;Have more vassals than ;x
 HAS_UNION_TAG;has culture union;x
 HAS_NO_UNION_TAG;has NO culture union;x
 HAS_CULTURE_UNION;Has culture union;x
@@ -5329,7 +5329,7 @@ RALLY_POINT_ENABLE_INFO;Enable or Disable this province as a rally point.;x
 RALLY_POINT_MERGE_INFO;Enable or Disable units merging at destination.\n(Armies will merge up to the local supply limit.);x
 RALLY_POINT_PROVINCE_INFO;$PROV$ is a §Yrally point§!;x
 RALLY_POINT_PROVINCE_MERGE_INFO;All recruited units will merge up to §Y$LIMIT$§! when arrive here.;x
-CB_ALLOWED_MAKE_PUPPET;Make a Puppet;x
+CB_ALLOWED_MAKE_PUPPET;Make a Vassal;x
 DIPLOMACY_NEGOTIATE_SUBSTATE;We are not allowed to negotiate with §YSubstates§W;x
 DIPLOMACY_NEGOTIATE_WE_SUBSTATE;We are not allowed to negotiate with realms if we are a §YSubstate§W;x
 DECL_WAR_NO_SUBSTATE;We are not allowed to declare war against §Ysubstates§W;x
@@ -5339,7 +5339,7 @@ SELECT_CB_CREATION_TYPE;Select the type of justification we want to manufacture;
 CB_MANUFACTURE_TECH;War justification efficiency;x
 CB_CREATE_TECH;War justification efficiency: $VAL$;x
 SUPPRESSION_TECH_DESC;Suppression efficiency: $VAL$;x
-CB_NOT_ON_PUPPETS;We can't justify war against §Ypuppets§W and §Ysubstates§W.;x
+CB_NOT_ON_PUPPETS;We can't justify war against §Yvassals§W.;x
 CB_NOT_ON_SPHERES;We can't justify war against a realm that is in our sphere.;x
 NO_WAR_JUSTIFICATION;We are missing a valid justification for declaring war on them.;x
 NOT_HOSTILE_BUILD;Not Hostile;x
@@ -5550,9 +5550,9 @@ SPLITINHALF;Split in Half;x
 SPLITINHALF_DRO;Split in half will split the current unit into two roughly even-sized units and select the larger of the two units.;x
 GIVE_UNIT_COMMAND_BUTTON;Command Units;x
 GIVE_UNIT_COMMANDTITLE;Command Units;x
-GIVE_UNIT_COMMAND_DESC;While fighting a war together, a puppet's overlord may take command of their units.;x
-GIVE_UNIT_COMMAND_OK;Ask your puppet to take back command over their own units.;x
-GIVE_UNIT_COMMAND_CANT_CONTROL;You can command units of your §Ypuppets§! only when you are fighting in a war together.;x
+GIVE_UNIT_COMMAND_DESC;While fighting a war together, a vassal's overlord may take command of their units.;x
+GIVE_UNIT_COMMAND_OK;Ask your vassal to take back command over their own units.;x
+GIVE_UNIT_COMMAND_CANT_CONTROL;You can command units of your §Yvassals§! only when you are fighting in a war together.;x
 GIVE_UNIT_COMMAND_ALREADY_CONTROL;You are already in command of their units.;x
 CANCEL_UNIT_COMMAND_BUTTON;Give Back Units;x
 CANCEL_UNIT_COMMANDTITLE;Give Back Units;x
