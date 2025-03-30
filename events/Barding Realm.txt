@@ -2524,6 +2524,7 @@ country_event = {
 		political_reform = first_past_the_post
 		political_reform = republican
 		government = merchant_republic
+		ruling_party_ideology = master_of_laketown
 		
 		locks_voting_reform_loc = { }
 		
@@ -2647,6 +2648,7 @@ country_event = {
 		political_reform = first_past_the_post
 		political_reform = republican
 		government = republic
+		ruling_party_ideology = lakemen_fishers_guild
 		
 		locks_voting_reform_loc = { }
 		

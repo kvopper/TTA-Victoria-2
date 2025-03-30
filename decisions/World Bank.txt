@@ -132,6 +132,9 @@ political_decisions = {
 				value = 0 # Bilbo
 			}
 			
+			# Start Yearly Generic Cleanup Event
+			country_event = 99004
+			
 			# Start Monthly Generic Cleanup Event
 			country_event = 99000
 			

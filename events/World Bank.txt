@@ -5575,10 +5575,10 @@ country_event = {
 	}
 }
 
-# Generic Yearly Cleanup 
+# Generic Yearly Cleanup 1
 country_event = {
 	id = 99004
-	title = "Generic Cleanup - Yearly"
+	title = "Generic Cleanup - Yearly 1"
 	desc = "EVTDESC99004"
 	picture = "production"
 	
@@ -5595,6 +5595,15 @@ country_event = {
 				alliance_with = ERE
 			}
 			change_variable = { name = erebor_relations value = 1 }
+		}
+		
+		# Guild-led DAL
+		random_country = {
+			limit = {
+				has_country_flag = DAL_content
+				ruling_party_ideology = lakemen_fishers_guild
+			}
+			upper_house = { ideology = lakemen_fishers_guild value = 0.5 }
 		}
 		
 		# Refire the cleanup event next year
