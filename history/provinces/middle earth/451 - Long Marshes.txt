@@ -8,7 +8,7 @@ life_rating = 30
 terrain = long_marshes
 
 party_loyalty = {
-	ideology = nobility
+	ideology = master_of_laketown
 	loyalty_value = 10.0
 }
 

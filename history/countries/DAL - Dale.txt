@@ -17,10 +17,9 @@ prestige = 10
 ruling_party = DAL_bard_i
 
 upper_house = {
-	house_of_bard = 21
-	nobility = 49
-	lakemen_fishers_guild = 19
-	master_of_laketown = 11
+	house_of_bard = 45
+	lakemen_fishers_guild = 30
+	master_of_laketown = 25
 }
 
 penal_reform = hard_labor

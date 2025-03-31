@@ -4,6 +4,6 @@ life_rating = 25
 terrain = gramavuld_hills
 
 party_loyalty = {
-	ideology = nobility
+	ideology = master_of_laketown
 	loyalty_value = 10.0
 }

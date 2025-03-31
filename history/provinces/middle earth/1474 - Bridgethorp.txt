@@ -15,8 +15,3 @@ party_loyalty = {
 	ideology = house_of_bard
 	loyalty_value = 2.0
 }
-
-party_loyalty = {
-	ideology = nobility
-	loyalty_value = 5.0
-}

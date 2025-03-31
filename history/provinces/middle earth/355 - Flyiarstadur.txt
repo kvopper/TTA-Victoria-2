@@ -12,6 +12,6 @@ party_loyalty = {
 }
 
 party_loyalty = {
-	ideology = nobility
+	ideology = master_of_laketown
 	loyalty_value = 5.0
 }
