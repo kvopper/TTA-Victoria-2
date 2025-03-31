@@ -118,7 +118,6 @@ country_event = {
 	desc = "EVTDESC60202"
 	picture = "harad/map"
 	
-	major = yes
 	is_triggered_only = yes
 	
 	option = {
@@ -136,7 +135,6 @@ country_event = {
 	desc = "EVTDESC60203"
 	picture = "harad/map"
 	
-	major = yes
 	is_triggered_only = yes
 	
 	option = {
@@ -241,7 +239,6 @@ country_event = {
 	desc = "EVTDESC60205"
 	picture = "harad/map"
 	
-	major = yes
 	is_triggered_only = yes
 	
 	option = {
@@ -263,7 +260,6 @@ country_event = {
 	desc = "EVTDESC60206"
 	picture = "harad/map"
 	
-	major = yes
 	is_triggered_only = yes
 	
 	option = {
@@ -316,8 +312,6 @@ country_event = {
 	desc = "EVTDESC60207"
 	picture = "harad/map"
 	
-	major = yes
-	
 	trigger = {
 		OR = {
 			tag = UMB
@@ -368,8 +362,6 @@ country_event = {
 	title = "We won!"
 	desc = "EVTDESC60209"
 	picture = "harad/map"
-	
-	major = yes
 	
 	trigger = {
 		has_country_flag = harondor_core_owner
@@ -445,8 +437,6 @@ country_event = {
 	title = "We won!"
 	desc = "EVTDESC60211"
 	picture = "harad/map"
-	
-	major = yes
 	
 	trigger = {
 		OR = {
@@ -605,8 +595,6 @@ country_event = {
 	title = "We won!"
 	desc = "EVTDESC60209"
 	picture = "harad/map"
-	
-	major = yes
 	
 	trigger = {
 		tag = HRN

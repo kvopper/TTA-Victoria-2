@@ -384,6 +384,7 @@ FOR_1042 = { 1042 1043 1044 1045 1046 1047 1048 1049 1050 1051 1052 1053 1054 10
 
 # Remove the below line to have the validator check lines below this line
 # Audax Validator "!" Ignore_NEXT
+# Immediate Descriptions (no need to hide a colon since the font uses 0 width colon character) {
 
 # Static Tooltip Locs - Generic, Event description
 empty_line_loc = { } # \n
@@ -416,7 +417,7 @@ hyphen_loc = { } # -
 
 gain_cores_and_ownership_loc = { } # We will gain cores and ownership over the region
 
-# Alliance of Dwarves and Men
+# Alliance of Dwarves and Men {
 province_wealth_decrease_2_loc = { } # §OProvince Wealth§! §Rdecreases by 2§!
 province_wealth_decrease_1_loc = { } # §OProvince Wealth§! §Rdecreases by 1§!
 province_wealth_increase_1_loc = { } # §OProvince Wealth§! §Rincreases by 1§!
@@ -436,8 +437,9 @@ return_cores_loc = { } # Return Cores
 
 settle_cores_of_dadhriks_gap_loc = { } # Settle Cores of Dádhrik's Gap
 settle_cores_of_mountainlands_loc = { } # Settle Cores of Mountainlands
+# }
 
-# Static Tooltip Locs - Barding Realm, Event description
+# Static Tooltip Locs - Barding Realm, Event description {
 DAL_king_of_the_northmen_loc = { } # King of the Northmen
 DAL_king_of_the_northmen_desc_loc = { } # Rule each Northman culture within Gramavuld!
 DAL_king_of_the_northmen_currently_ruling_over_loc = { } # §TWe currently rule over the following cultures§!|
@@ -504,10 +506,12 @@ diplomat_tilda_flavor_loc = { } # Appoint Tilda Ambassador to Erebor
 bard_i_reforms_loc = { } # The Reforms of Bard I
 girion_bainson_austriborg_loc = { } # Send Girion Bainson to Austriborg
 colonize_harondor_province_loc = { } # §GA random uncolonized core of Harondor that is adjacent to our realm will join!§!
+# }
+# }
 
 # SirRunner Generator Apply "§I"
 
-# Dynamic Tooltip Locs - Generic
+# Dynamic Tooltip Locs - Generic {
 # 1066, 1067, 1069 - 1072 originally for leader age calculations. Has been removed
 # 1073 - 1084 originally were the "railroading_tag_specific_description_loc_#" regions, but those have been removed in favor of the dynamic loc regions
 dynamic_loc_slot_1 = { 1085 } # 
@@ -554,6 +558,7 @@ bree_reckoning_loc = { 1144 } # The year is 0 by Bree Reckoning
 fourth_age_start_date_loc = { 1146 } # The Fourth Age hasn't started yet
 fourth_age_year_loc = { 1147 } # The Fourth Age hasn't started yet
 shire_reckoning_loc = { 1148 } # The year is 0 by Shire Reckoning
+# }
 
 # Dynamic Tooltip Locs - Barding Realm
 DAL_trading_realm_count_loc = { 1068 } # §TWe are currently trading with §G2§! realms:\n
@@ -568,6 +573,9 @@ triggered_event_railroading_loc = { } # get the 'Railroading' event.
 empty_line_decisions_loc = { } # \n
 locks_voting_reform_loc = { } # §YLocks Voting Reform§!
 unlocks_voting_reform_loc = { } # §YUnlocks Voting Reform§!
+no_effects_loc = { } # No effect
+become_sauron_vassal_loc = { } # We will start the path to becoming §RSauron's vassal§!
+strong_leader_beats_saurons_will_loc = { } # Due to our leader's strong will, we will completely avert the chance to become §RSauron's vassal§!. However, we will not avoid the after-effects of the contest of wills...
 
 # Static Tooltip Locs - Random
 conversion_to_tribal_loc = { } # §RAny unaccepted soldier pop in the newly conquered lands will convert into tribals§!

@@ -314,12 +314,15 @@ country_event = {
 		has_country_flag = using_palantiri
 		NOT = { ruling_party = MOR_sauron }
 		MOR = { ruling_party = MOR_sauron }
+		NOT = { has_country_modifier = palantir_madness }
 	}
 	
 	mean_time_to_happen = { months = 108 }
 	
 	option = {
 		name = "A contest of wills"
+		
+		add_country_modifier = { name = palantir_madness duration = -1 }
 		
 		random_owned = {
 			limit = {
@@ -331,7 +334,7 @@ country_event = {
 					is_greater_power = yes
 				}
 			}
-			owner = { add_country_modifier = { name = palantir_madness duration = -1 } }
+			owner = { strong_leader_beats_saurons_will_loc = {} }
 		}
 		
 		random_owned = {
@@ -343,10 +346,17 @@ country_event = {
 				is_greater_power = no
 			}
 			random_list = {
-				1 = { owner = { add_country_modifier = { name = palantir_madness duration = -1 } } }
-				1 = {
+				50 = {
 					owner = {
-						add_country_modifier = { name = palantir_madness duration = -1 }
+						prestige = 5
+						MOR = { prestige = -5 }
+					}
+				}
+				50 = {
+					owner = {
+						prestige = -5
+						MOR = { prestige = 5 }
+						become_sauron_vassal_loc = {}
 						set_country_flag = lost_contest_of_wills_to_sauron
 					}
 				}

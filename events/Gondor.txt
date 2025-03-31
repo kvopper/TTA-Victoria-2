@@ -822,7 +822,7 @@ country_event = {
 	id = 50021
 	title = "The Death of Ecthelion II"
 	desc = "EVTDESC50021"
-	picture = "gondor/leader_death"
+	picture = "gondor/leader_death_major"
 	
 	major = yes
 	fire_only_once = yes
@@ -832,6 +832,7 @@ country_event = {
 		has_global_flag = ecthelion_ii_alive
 		year = 2980
 		NOT = { ruling_party = GON_ecthelion_ii }
+		ruling_party_ideology = house_of_stewards
 	}
 	
 	option = {
@@ -2098,7 +2099,7 @@ country_event = {
 	id = 50049
 	title = "The Passing of Denethor II"
 	desc = "EVTDESC50049"
-	picture = "gondor/leader_death"
+	picture = "gondor/leader_death_major"
 	
 	major = yes
 	fire_only_once = yes
@@ -2108,6 +2109,7 @@ country_event = {
 		has_global_flag = denethor_ii_alive
 		year = 3019
 		NOT = { ruling_party = GON_denethor_ii }
+		ruling_party_ideology = house_of_stewards
 	}
 	
 	option = {
@@ -2374,7 +2376,6 @@ country_event = {
 	desc = "EVTDESC50058"
 	picture = "harad/map"
 	
-	major = yes
 	is_triggered_only = yes
 	
 	option = {

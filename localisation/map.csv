@@ -2396,6 +2396,7 @@ claim_status_owns_LIN_953_loc;§YGalfalas§!: §GOwned§!§I;x
 remove_claim_MIR_717_loc;§WWe will lose claims over §!§YAngaladh§!§I;x
 DAL_northmen_generals_loc;Lords of Riding and Rivermen Thegans;x
 claim_status_owns_ENE_830_loc;§YDor Wathui§!: §GOwned§!§I;x
+no_effects_loc;No effect§I;x
 claim_status_owns_DND_1009_loc;§YFérroen§!: §GOwned§!§I;x
 dynamic_loc_slot_30;§I;x
 add_claim_DND_1328_loc;§WWe will gain claims over §!§YNengaren§!§I;x
@@ -2568,6 +2569,7 @@ remove_claim_BEO_751_loc;§WWe will lose claims over §!§YMiddle Vales§!§I;x
 add_claim_LIN_933_loc;§WWe will gain claims over §!§YEmyn Beraid§!§I;x
 add_claim_BLU_968_loc;§WWe will gain claims over §!§YEred Luin§!§I;x
 add_claim_LOS_979_loc;§WWe will gain claims over §!§YTalath Uichel§!§I;x
+become_sauron_vassal_loc;We will start the path to becoming §RSauron's vassal§!§I;x
 alliance_of_dwarves_and_men_economic_union_sphere_loc;We will be placed in the highest-ranked GP in the alliance. If there is a lower rank GP that is of our culture group, that realm will be favored over the higher rank GP§I;x
 claim_status_doesnt_own_KHA_380_loc;§YKhandu Prakhod§!: §RUnowned§!§I;x
 remove_claim_RHO_500_loc;§WWe will lose claims over §!§YDor Rewinion§!§I;x
@@ -2842,6 +2844,7 @@ remove_claim_IML_875_loc;§WWe will lose claims over §!§YSruth Líath Marches�
 remove_claim_UMB_263_loc;§WWe will lose claims over §!§YTol Uialgaer§!§I;x
 claim_status_doesnt_own_DUN_1450_loc;§YGravenwood§!: §RUnowned§!§I;x
 add_claim_CAR_365_loc;§WWe will gain claims over §!§YTyrn Gorthad§!§I;x
+strong_leader_beats_saurons_will_loc;Due to our leader's strong will, we will completely avert the chance to become §RSauron's vassal§!. However, we will not avoid the after-effects of the contest of wills...§I;x
 claim_status_owns_LIN_962_loc;§YWestern Islands§!: §GOwned§!§I;x
 claim_status_owns_GUL_727_loc;§YNecromancer's Realm§!: §GOwned§!§I;x
 add_claim_RHU_622_loc;§WWe will gain claims over §!§YGazar Ibar§!§I;x

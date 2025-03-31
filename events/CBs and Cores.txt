@@ -129,7 +129,10 @@ country_event = {
 			war_policy = jingoism
 			war_policy = pro_military
 		}
-		any_neighbor_country = { trade_policy = protectionism }
+		any_neighbor_country = {
+			trade_policy = protectionism
+			NOT = { vassal_of = THIS }
+		}
 	}
 	
 	mean_time_to_happen = {
@@ -187,6 +190,7 @@ country_event = {
 			limit = {
 				neighbour = THIS
 				trade_policy = protectionism
+				NOT = { vassal_of = THIS }
 			}
 			add_casus_belli = {
 				target = THIS
