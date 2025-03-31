@@ -838,5 +838,10 @@ pretender_rebels = {
 		prestige_factor = -0.1
 		war_exhaustion = 50
 		plurality = -50
+		political_reform = none_voting
+		government_type = monarchist
+		nobility_autonomy = large_noble_autonomy
+		noble_levy_contribution = large_levy_contribution
+		noble_tax_contribution = small_tax_contribution
 	}
 }
