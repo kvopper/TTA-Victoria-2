@@ -1246,18 +1246,18 @@ ideologies = {
 	}
 	
 	house_of_bard = {
-		factor = 1
+		factor = 2
 		# Must be active in the realm
 		modifier = {
 			factor = 0
 			NOT = { country = { has_country_flag = ideologies_house_of_bard_active } }
 		}
 		modifier = {
-			factor = 2
+			factor = 1.5
 			has_pop_religion = men
 		}
 		modifier = {
-			factor = 2
+			factor = 1.5
 			is_culture_group = gramavuld_northmen
 		}
 		modifier = {
@@ -1265,8 +1265,45 @@ ideologies = {
 			location = { any_core = { has_country_flag = DAL_content } }
 		}
 		modifier = {
-			factor = 2
+			factor = 1.5
 			ruling_party_ideology = house_of_bard
+		}
+		modifier = {
+			factor = 1.5
+			country = {
+				check_variable = { which = DAL_merchants_fishers_bop value = -0.1 }
+				NOT = { check_variable = { which = DAL_merchants_fishers_bop value = 0.1 } }
+			}
+		}
+		modifier = {
+			factor = 1.25
+			country = {
+				OR = {
+					AND = {
+						check_variable = { which = DAL_merchants_fishers_bop value = -1.1 }
+						NOT = { check_variable = { which = DAL_merchants_fishers_bop value = -0.9 } }
+					}
+					AND = {
+						check_variable = { which = DAL_merchants_fishers_bop value = 0.9 }
+						NOT = { check_variable = { which = DAL_merchants_fishers_bop value = 1.1 } }
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 1.1
+			country = {
+				OR = {
+					AND = {
+						check_variable = { which = DAL_merchants_fishers_bop value = -2.1 }
+						NOT = { check_variable = { which = DAL_merchants_fishers_bop value = -1.9 } }
+					}
+					AND = {
+						check_variable = { which = DAL_merchants_fishers_bop value = 1.9 }
+						NOT = { check_variable = { which = DAL_merchants_fishers_bop value = 2.1 } }
+					}
+				}
+			}
 		}
 	}
 	
@@ -1303,20 +1340,65 @@ ideologies = {
 			NOT = { country = { has_country_flag = ideologies_master_of_laketown_active } }
 		}
 		modifier = {
-			factor = 2
+			factor = 1.5
 			has_pop_religion = men
 		}
 		modifier = {
-			factor = 2
+			factor = 1.5
 			is_culture_group = gramavuld_northmen
 		}
 		modifier = {
-			factor = 2
+			factor = 1.25
 			strata = rich
 		}
 		modifier = {
-			factor = 2
+			factor = 1.5
 			ruling_party_ideology = master_of_laketown
+		}
+		modifier = {
+			factor = 1.1
+			country = { NOT = { check_variable = { which = DAL_merchants_fishers_bop value = -0.9 } } }
+		}
+		modifier = {
+			factor = 1.1
+			country = { NOT = { check_variable = { which = DAL_merchants_fishers_bop value = -1.9 } } }
+		}
+		modifier = {
+			factor = 1.1
+			country = { NOT = { check_variable = { which = DAL_merchants_fishers_bop value = -2.9 } } }
+		}
+		modifier = {
+			factor = 1.1
+			country = { NOT = { check_variable = { which = DAL_merchants_fishers_bop value = -3.9 } } }
+		}
+		modifier = {
+			factor = 1.1
+			country = { NOT = { check_variable = { which = DAL_merchants_fishers_bop value = -4.9 } } }
+		}
+		modifier = {
+			factor = 1.1
+			country = { NOT = { check_variable = { which = DAL_merchants_fishers_bop value = -5.9 } } }
+		}
+		modifier = {
+			factor = 1.1
+			country = { NOT = { check_variable = { which = DAL_merchants_fishers_bop value = -6.9 } } }
+		}
+		modifier = {
+			factor = 1.1
+			country = { NOT = { check_variable = { which = DAL_merchants_fishers_bop value = -7.9 } } }
+		}
+		modifier = {
+			factor = 1.1
+			country = { NOT = { check_variable = { which = DAL_merchants_fishers_bop value = -8.9 } } }
+		}
+		modifier = {
+			factor = 1.1
+			country = {
+				OR = {
+					has_country_flag = DAL_merchant_supported_by_realm
+					NOT = { check_variable = { which = DAL_merchants_fishers_bop value = -9.9 } }
+				}
+			}
 		}
 	}
 	
@@ -1328,20 +1410,60 @@ ideologies = {
 			NOT = { country = { has_country_flag = ideologies_lakemen_fishers_guild_active } }
 		}
 		modifier = {
-			factor = 2
+			factor = 1.5
 			has_pop_religion = men
 		}
 		modifier = {
-			factor = 2
+			factor = 1.5
 			is_culture_group = gramavuld_northmen
 		}
 		modifier = {
-			factor = 2
+			factor = 1.25
 			strata = poor
 		}
 		modifier = {
-			factor = 2
+			factor = 1.5
 			ruling_party_ideology = lakemen_fishers_guild
+		}
+		modifier = {
+			factor = 1.1
+			country = { check_variable = { which = DAL_merchants_fishers_bop value = 0.9 } }
+		}
+		modifier = {
+			factor = 1.1
+			country = { check_variable = { which = DAL_merchants_fishers_bop value = 1.9 } }
+		}
+		modifier = {
+			factor = 1.1
+			country = { check_variable = { which = DAL_merchants_fishers_bop value = 2.9 } }
+		}
+		modifier = {
+			factor = 1.1
+			country = { check_variable = { which = DAL_merchants_fishers_bop value = 3.9 } }
+		}
+		modifier = {
+			factor = 1.1
+			country = { check_variable = { which = DAL_merchants_fishers_bop value = 4.9 } }
+		}
+		modifier = {
+			factor = 1.1
+			country = { check_variable = { which = DAL_merchants_fishers_bop value = 5.9 } }
+		}
+		modifier = {
+			factor = 1.1
+			country = { check_variable = { which = DAL_merchants_fishers_bop value = 6.9 } }
+		}
+		modifier = {
+			factor = 1.1
+			country = { check_variable = { which = DAL_merchants_fishers_bop value = 7.9 } }
+		}
+		modifier = {
+			factor = 1.1
+			country = { check_variable = { which = DAL_merchants_fishers_bop value = 8.9 } }
+		}
+		modifier = {
+			factor = 1.1
+			country = { check_variable = { which = DAL_merchants_fishers_bop value = 9.9 } }
 		}
 	}
 	
