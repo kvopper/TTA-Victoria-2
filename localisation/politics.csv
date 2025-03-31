@@ -556,10 +556,13 @@ tribal_ideology_uh;Tribal ideology supporters will vote against progress in the 
 vassal_group;Servants;x
 servants;Servants;x
 servants_uh;Servants supporters will never vote to reform the realm. They only serve our overlord.;x
+nobility_group;Nobility;x
 nobility;Nobility;x
 nobility_uh;Nobility supporters will vote for all reforms while in power.;x
+burgher_group;Burghers;x
 burgher;Burghers;x
 burgher_uh;Burgher supporters will vote for all reforms while in power.;x
+loremaster_group;Loremasters;x
 loremaster;Loremasters;x
 loremaster_uh;Loremasters= supporters will vote for all reforms while in power.;x
 dunedain_nobility;Dúnedain Nobility;x
