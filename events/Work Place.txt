@@ -401,21 +401,10 @@ country_event = {
 		modifier = {
 			factor = 0.7
 			any_owned_province = {
-				OR = {
-					AND = {
-						state_scope = { has_building = charcoal_factory }
-						unemployment_by_type = {
-							type = craftsmen
-							value = 0.25
-						}
-					}
-					AND = {
-						trade_goods = coal
-						unemployment_by_type = {
-							type = labourers
-							value = 0.25
-						}
-					}
+				trade_goods = coal
+				unemployment_by_type = {
+					type = labourers
+					value = 0.25
 				}
 			}
 		}
@@ -1903,10 +1892,7 @@ province_event = {
 	desc = "EVTDESC12027"
 	
 	trigger = {
-		OR = {
-			trade_goods = coal
-			state_scope = { has_building = charcoal_factory }
-		}
+		trade_goods = coal
 	}
 	
 	mean_time_to_happen = {

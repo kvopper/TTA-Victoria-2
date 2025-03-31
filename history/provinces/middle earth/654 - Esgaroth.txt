@@ -7,11 +7,6 @@ life_rating = 33
 terrain = esgaroth
 state_building = {
 	level = 2
-	building = dye_factory
-	upgrade = yes
-}
-state_building = {
-	level = 2
 	building = fabric_factory_wool
 	upgrade = yes
 }

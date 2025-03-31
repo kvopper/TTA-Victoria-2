@@ -10,11 +10,6 @@ state_building = {
 	building = liquor_distillery
 	upgrade = yes
 }
-state_building = {
-	level = 1
-	building = horse_abattoir
-	upgrade = yes
-}
 
 party_loyalty = {
 	ideology = house_of_bard
