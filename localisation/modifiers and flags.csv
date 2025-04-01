@@ -668,6 +668,62 @@ promote_clergymen;Promote Loremasters;x
 promote_craftsmen;Promote Guild Artisans;x
 promote_labourers;Promote Labourers;x
 promote_soldiers;Promote Soldiers;x
+promotion_ideologies;Promote Interest Groups (only affects election results)
+promote_nobility;Promote Nobility;x
+promote_burgher;Promote Burgher;x
+promote_loremaster;Promote Loremaster;x
+promote_line_of_isildur;Promote Line of Isildur;x
+promote_house_of_stewards;Promote House of Stewards;x
+promote_house_of_dol_amroth;Promote House of Dol Amroth;x
+promote_house_half_elven;Promote House Half Elven;x
+promote_lords_of_mithlond;Promote Lords of Mithlond;x
+promote_house_of_oropher;Promote House of Oropher;x
+promote_house_of_finarfin;Promote House of Finarfin;x
+promote_house_of_bard;Promote House of Bard;x
+promote_rivermen_thegans;Promote Rivermen Thegans;x
+promote_master_of_laketown;Promote Master of Laketown;x
+promote_lakemen_fishers_guild;Promote Lakemen Fishers Guild;x
+promote_house_of_koldana;Promote House of Koldana;x
+promote_line_of_durin;Promote Line of Durin;x
+promote_house_of_beorn;Promote House of Beorn;x
+promote_lords_of_fangorn;Promote Lords of Fangorn;x
+promote_house_of_eorl;Promote House of Eorl;x
+promote_flightlords_of_the_mountains;Promote Flightlords of the Mountains;x
+promote_lords_of_ravens;Promote Lords of Ravens;x
+promote_great_brood_mothers;Promote Great Brood Mothers;x
+promote_kings_of_the_dead;Promote Kings of the Dead;x
+promote_lords_of_isengard;Promote Lords of Isengard;x
+promote_lords_of_rhosgobel;Promote Lords of Rhosgobel;x
+promote_lords_of_mordor;Promote Lords of Mordor;x
+promote_saurons_nine;Promote Saurons Nine;x
+demotion_ideologies;Reduce Interest Groups (only affects election results)
+demote_nobility;Promote Nobility;x
+demote_burgher;Promote Burgher;x
+demote_loremaster;Promote Loremaster;x
+demote_line_of_isildur;Promote Line of Isildur;x
+demote_house_of_stewards;Promote House of Stewards;x
+demote_house_of_dol_amroth;Promote House of Dol Amroth;x
+demote_house_half_elven;Promote House Half Elven;x
+demote_lords_of_mithlond;Promote Lords of Mithlond;x
+demote_house_of_oropher;Promote House of Oropher;x
+demote_house_of_finarfin;Promote House of Finarfin;x
+demote_house_of_bard;Promote House of Bard;x
+demote_rivermen_thegans;Promote Rivermen Thegans;x
+demote_master_of_laketown;Promote Master of Laketown;x
+demote_lakemen_fishers_guild;Promote Lakemen Fishers Guild;x
+demote_house_of_koldana;Promote House of Koldana;x
+demote_line_of_durin;Promote Line of Durin;x
+demote_house_of_beorn;Promote House of Beorn;x
+demote_lords_of_fangorn;Promote Lords of Fangorn;x
+demote_house_of_eorl;Promote House of Eorl;x
+demote_flightlords_of_the_mountains;Promote Flightlords of the Mountains;x
+demote_lords_of_ravens;Promote Lords of Ravens;x
+demote_great_brood_mothers;Promote Great Brood Mothers;x
+demote_kings_of_the_dead;Promote Kings of the Dead;x
+demote_lords_of_isengard;Promote Lords of Isengard;x
+demote_lords_of_rhosgobel;Promote Lords of Rhosgobel;x
+demote_lords_of_mordor;Promote Lords of Mordor;x
+demote_saurons_nine;Promote Saurons Nine;x
 #########################;x }
 ##### COUNTRY FLAGS #####;x {
 #########################;x

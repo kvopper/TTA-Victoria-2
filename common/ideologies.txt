@@ -15,6 +15,7 @@
 #	Update events 14006 and 14007 in events/Election.txt
 #	Update common/governments.txt to allow the ideology in the various government types (only needed on appoint_ruling_party = yes governments)
 #	Update the monthly update event (# Dominions that are now free) to set the government when puppets are freed
+#	Add an associated promote and demote national focus
 
 # cosmetic. Does nothing in game except define slaves for pop_types
 disenfranchised_group = {
