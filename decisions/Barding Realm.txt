@@ -2243,6 +2243,26 @@ political_decisions = {
 			set_country_flag = DAL_fishers_guild_land_reformed
 		}
 	}
+	
+	DAL_fishers_guild_immigration_reform = {
+		picture = "Barding Realm/fishers_guild"
+		potential = {
+			has_country_flag = DAL_content
+			ruling_party_ideology = lakemen_fishers_guild
+			NOT = { border_policy = closed_borders }
+			NOT = { has_country_modifier = DAL_fishers_guild_immigration_reform_modifier }
+		}
+		
+		allow = {
+			money = 100000
+			population_3 = 1
+		}
+		
+		effect = {
+			treasury = -100000
+			add_country_modifier = { name = DAL_fishers_guild_immigration_reform_modifier duration = -1 }
+		}
+	}
 }
 
 # Esgaroth Trade

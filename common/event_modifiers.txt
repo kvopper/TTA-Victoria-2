@@ -2292,6 +2292,13 @@ fishers_guild_rgo_reform = {
 	icon = 5
 }
 
+# Country Modifier
+DAL_fishers_guild_immigration_reform_modifier = {
+	global_immigrant_attract = 1.5
+	
+	icon = 17
+}
+
 # }
 ##### URUKDURBZAGH ##### {
 # Country Modifier

@@ -423,6 +423,8 @@ DAL_fishers_guild_political_reforms_title;The Reforms of the Fishers Guild;x
 DAL_fishers_guild_political_reforms_desc;Since siezing power, the Fishers Guild have been working on giving the people more rights. Today, the final laws have been signed into effect.\n\n§RThis decision can only be taken while the Fishers Guild is your leader.§!;x
 DAL_fishers_guild_land_reforms_title;Guild Land Reform;x
 DAL_fishers_guild_land_reforms_desc;With recent innovations in both our farms and mines, we can standardize practices across Gramavuld. This will undoubtedly step on the toes of the local labourers and nobles, but will yield greater output over time.\n\n§RThis decision can only be taken while the Fishers Guild is your leader.§!;x
+DAL_fishers_guild_immigration_reform_title;Guild Immigration Reform;x
+DAL_fishers_guild_immigration_reform_desc;After having a better understanding of how to rule effectively, we also have a better understanding of how to attract more migrants.\n\n§RThis decision can only be taken while the Fishers Guild is your leader.§!;x
 propose_trade_with_realm_title;Propose a Trade Agreement with Allied or Sphered Realm;x
 propose_trade_with_realm_desc;There is an allied or sphere realm to which we have not yet proposed a trade agreement. It may be a prosperous idea to do so.\n\n§YThere are 6 levels of trading:\n    §Y0§!:§RNo bonus\n    §Y1§!: §G5% RGO Output\n    §Y2-3§!: §G10% RGO Output\n    §Y4-5§!: §G20% RGO Output, -0.01 pop consiousness\n    §Y6-9§!: §G30% RGO Output -0.01 pop consciousness\n    §Y10+§!: §G50% RGO Output, -0.01 pop consciousness, -0.01 pop consciousness§!\n\n§YNote all of these modifiers only affect Esgaroth§!;x
 ##############################;x }

@@ -1845,6 +1845,15 @@ country_event = {
 			remove_country_modifier = trading_with_DAL
 		}
 		
+		random_country = {
+			limit = {
+				has_country_flag = DAL_content
+				NOT = { ruling_party_ideology = lakemen_fishers_guild }
+				has_country_modifier = DAL_fishers_guild_immigration_reform_modifier
+			}
+			remove_country_modifier = DAL_fishers_guild_immigration_reform_modifier
+		}
+		
 		# Recalculate the number of realms trading
 		set_variable = { which = esgaroth_trading value = 0 }
 		
@@ -6660,6 +6669,14 @@ country_event = {
 			
 			random_owned = {
 				limit = { owner = { has_country_modifier = erebor_relations_modifier } }
+				owner = {
+					change_variable = { which = modifier_count value = 1 }
+					change_variable = { which = total_modifier_count value = 1 }
+				}
+			}
+			
+			random_owned = {
+				limit = { owner = { has_country_modifier = DAL_fishers_guild_immigration_reform_modifier } }
 				owner = {
 					change_variable = { which = modifier_count value = 1 }
 					change_variable = { which = total_modifier_count value = 1 }
