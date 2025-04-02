@@ -18,5 +18,6 @@ penal_reform = hard_labor
 slavery = no_slavery
 serfdom = banned_serfdom
 vote_franschise = wealth_weighted_voting
+cultural_rights = accepted_voting
 
 schools = traditional_academic
