@@ -941,6 +941,13 @@ recent_raid = {
 }
 
 # Province Modifier
+building_capital = {
+	tax_efficiency = -0.05
+	
+	icon = 12
+}
+
+# Province Modifier
 rebuilt_city = {
 	life_rating = 0.1
 	immigrant_attract = 0.25
