@@ -5681,11 +5681,11 @@ REVOLUTION_NEWS_MEDIUM;A revolution has taken place in $TAG_0_0$! $STRING_0_0$ h
 REVOLUTION_NEWS_TITLE_SMALL;REVOLUTION!;x
 REVOLUTION_NEWS_SMALL;A revolution has taken place in $TAG_0_0$! $STRING_0_0$ have defeated the government's forces and broken the realm.;x
 INVENTION_NEWS_TITLE_LARGE;INVENTION!;x
-INVENTION_NEWS_LARGE;Scientists and engineers in $TAG_0_0$ are reported to have invented $STRING_0_1$. ;x
+INVENTION_NEWS_LARGE;Researchers and engineers in $TAG_0_0$ are reported to have invented $STRING_0_1$. ;x
 INVENTION_NEWS_TITLE_MEDIUM;INVENTION!;x
-INVENTION_NEWS_MEDIUM;Scientists and engineers in $TAG_0_0$ are reported to have invented $STRING_0_1$. ;x
+INVENTION_NEWS_MEDIUM;Researchers and engineers in $TAG_0_0$ are reported to have invented $STRING_0_1$. ;x
 INVENTION_NEWS_TITLE_SMALL;Invention!;x
-INVENTION_NEWS_SMALL;Scientists and engineers in $TAG_0_0$ are reported to have invented $STRING_0_1$. ;x
+INVENTION_NEWS_SMALL;Researchers and engineers in $TAG_0_0$ are reported to have invented $STRING_0_1$. ;x
 INVENTION_SUFFIX1;Progress marches ever onwards!;x
 INVENTION_SUFFIX2;Truely the light of the future!;x
 INVENTION_SUFFIX3;This may doom us all!;x
@@ -5705,11 +5705,11 @@ PROVINCE_NEWS_MEDIUM;The province of $STRING_0_0$ now belongs to $TAG_0_1$. An e
 PROVINCE_NEWS_TITLE_SMALL;$TAG_0_1$ Expands!;x
 PROVINCE_NEWS_SMALL;The province of $STRING_0_0$ now belongs to $TAG_0_1$. An envoy from $TAG_0_1$ looked rather pleased in a recent interview.;x
 RESEARCH_NEWS_TITLE_LARGE;$TAG_0_0_ADJ$ research complete!;x
-RESEARCH_NEWS_LARGE;Scientists in $TAG_0_0$ have recently completed research into $STRING_0_1$. This breakthrough is sure to offer $TAG_0_0$ many advantages in the days to come as further inventions take place in this field.;x
+RESEARCH_NEWS_LARGE;Researchers in $TAG_0_0$ have recently completed research into $STRING_0_1$. This breakthrough is sure to offer $TAG_0_0$ many advantages in the days to come as further inventions take place in this field.;x
 RESEARCH_NEWS_TITLE_MEDIUM;$TAG_0_0_ADJ$ research complete!;x
-RESEARCH_NEWS_MEDIUM;Scientists in $TAG_0_0$ have recently completed research into $STRING_0_1$. This breakthrough is sure to offer $TAG_0_0$ many advantages in the days to come as further inventions take place in this field.;x
+RESEARCH_NEWS_MEDIUM;Researchers in $TAG_0_0$ have recently completed research into $STRING_0_1$. This breakthrough is sure to offer $TAG_0_0$ many advantages in the days to come as further inventions take place in this field.;x
 RESEARCH_NEWS_TITLE_SMALL;$TAG_0_0_ADJ$ research complete!;x
-RESEARCH_NEWS_SMALL;Scientists in $TAG_0_0$ have recently completed research into $STRING_0_1$.;x
+RESEARCH_NEWS_SMALL;Researchers in $TAG_0_0$ have recently completed research into $STRING_0_1$.;x
 WAR_NEWS_TITLE_LARGE;WAR BETWEEN $TAG_0_0_UPPER$ AND $TAG_0_1_UPPER$!;x
 WAR_NEWS_LARGE;On $DATE_LONG_0$ $TAG_0_0$ announced that a state of war now exists between them and $TAG_0_1$. An envoy from $TAG_0_0$, when asked for the reasons war had been declared stated the need to '$STRING_0_1$'. 'We only intend to reclaim what was unjustly claimed before and restore peace and order to the region', he added. 'This unlawful aggression will not stand' his counterpart in $TAG_0_1$ responded, demanding international community to condemn the aggressor. May God have mercy on them all.;x
 WAR_NEWS_TITLE_MEDIUM;$TAG_0_0_UPPER$ GOES TO WAR!;x
@@ -5725,9 +5725,9 @@ AI_FEARS_US_DESC2_LONG;A recent article in a $TAG_0_0_ADJ$ newspaper startled th
 AI_FEARS_US_DESC2_MEDIUM;A recent article in a $TAG_0_0_ADJ$ newspaper startled their realm! A detailed analysis of the chilly relations between our realms led the editor to the conclusion that absent new guarantees, our realms might soon find themselves in a state of war.;x
 AI_FEARS_US_DESC2_SHORT;A recent article in a $TAG_0_0_ADJ$ newspaper startled their realm! Analysis of chilly relations between our realms led the editor to the conclusion that war might be unavoidable.;x
 AI_FEARS_US_TITLE3;$TAG_0_0_ADJ$ insults!;x
-AI_FEARS_US_DESC3_LONG;Prejudice and hatred reign in $TAG_0_0$. The growing chorus of insults reached new lows on Monday as the $TAG_0_0_ADJ$ foreign minister slapped our ambassador on the lawn of our embassy in $TAG_0_0$. When asked for comment, our minister for foreign affairs said that this was 'More proof, as if any was needed, that they cannot be trusted to behave in a civilised manner. Savages and cads govern in $TAG_0_0$, and the sooner these wretches are rooted out the better'. Diplomatic channels remain open for now, but war may be inevitable.;x
-AI_FEARS_US_DESC3_MEDIUM;Prejudice and hatred reign supreme in $TAG_0_0$. On Monday the $TAG_0_0_ADJ$ foreign minister slapped our ambassador. Our minister for foreign affairs said that 'savages and cads govern in $TAG_0_0$, and the sooner these wretches are rooted out, the better'.;x
-AI_FEARS_US_DESC3_SHORT;On Monday the $TAG_0_0_ADJ$ foreign minister slapped our ambassador. Savages and bounders govern in $TAG_0_0$, and the sooner these wretches are rooted out, the better.;x
+AI_FEARS_US_DESC3_LONG;Prejudice and hatred reign in $TAG_0_0$. The growing chorus of insults reached new lows on Monday as the $TAG_0_0_ADJ$ official slapped our envoy in $TAG_0_0$. When asked for comment, our government said that this was 'More proof, as if any was needed, that they cannot be trusted to behave in a civilised manner. Savages and cads govern in $TAG_0_0$, and the sooner these wretches are rooted out the better'. Diplomatic channels remain open for now, but war may be inevitable.;x
+AI_FEARS_US_DESC3_MEDIUM;Prejudice and hatred reign supreme in $TAG_0_0$. On Monday the $TAG_0_0_ADJ$ official slapped our envoy. Our government said that 'savages and cads govern in $TAG_0_0$, and the sooner these wretches are rooted out, the better'.;x
+AI_FEARS_US_DESC3_SHORT;On Monday the $TAG_0_0_ADJ$ official slapped our envoy. Savages and bounders govern in $TAG_0_0$, and the sooner these wretches are rooted out, the better.;x
 AI_FEARS_OTHER_TITLE1;The fears of $TAG_0_0$;x
 AI_FEARS_OTHER_DESC1_LONG;A recent article in a $TAG_0_0_ADJ$ newspaper startled their realm! A detailed analysis of their chilly relations with $TAG_0_1$ and a comparison of their relative military strengths led the editor to the conclusion that both realms might soon find themselves in a state of war, and when that day comes, $TAG_0_0$'s very existence might be threatened. The elite and the commoners alike, the citizens of $TAG_0_0$ demand their government to seek alliances to diminish the unavoidable threat the $TAG_0_1_ADJ$ pose.;x
 AI_FEARS_OTHER_DESC1_MEDIUM;A recent article in a $TAG_0_0_ADJ$ newspaper startled their realm! A detailed analysis of their chilly relations with $TAG_0_1$ led the editor to the conclusion that absent new guarantees, both realms might soon find themselves in the state of war.;x
@@ -5745,7 +5745,7 @@ AI_LOVES_US_DESC2_LONG;An article in a $TAG_0_0_ADJ$ newspaper paints a picture 
 AI_LOVES_US_DESC2_MEDIUM;An article in a $TAG_0_0_ADJ$ newspaper paints a picture of amiable relations between our realms. Calling on numerous examples of peaceful cooperation based on trust and friendship, the editor declared both our realms to stand as friends and brothers.;x
 AI_LOVES_US_DESC2_SHORT;An article in a $TAG_0_0_ADJ$ newspaper paints a picture of amiable relations between our realms. Editor encouraged their government to continue aligning themselves with our policies.;x
 AI_LOVES_US_TITLE3;$TAG_0_0$ knows its place!;x
-AI_LOVES_US_DESC3_LONG;"Common sense is the order of the day in $TAG_0_0$, as their government and people continue to be enamoured with all things $OURCOUNTRY_ADJ$. In the political, military and cultural spheres, our obviously apparent superiority is readily acknowledged by the snivelling wretches. The $TAG_0_0_ADJ$ foreign minister, in a shameful attempt to ingratiate himself with our elites, said ""We welcome the paternal and guiding hand of $OURCOUNTRY_ADJ$. Long may our realms' friendship continue, to our mutual benefit"". Whether that will be the case remains to be seen.";x
+AI_LOVES_US_DESC3_LONG;"Common sense is the order of the day in $TAG_0_0$, as their government and people continue to be enamoured with all things $OURCOUNTRY_ADJ$. In the political, military and cultural spheres, our obviously apparent superiority is readily acknowledged by the snivelling wretches. The $TAG_0_0_ADJ$ government official, in a shameful attempt to ingratiate himself with our elites, said ""We welcome the paternal and guiding hand of $OURCOUNTRY_ADJ$. Long may our realms' friendship continue, to our mutual benefit"". Whether that will be the case remains to be seen.";x
 AI_LOVES_US_DESC3_MEDIUM;Common sense is the order of the day in the $TAG_0_0_ADJ$ capital, as their government and people continue to be enamoured with all things $OURCOUNTRY_ADJ$. In the political, military and cultural spheres, our obvious superiority is acknowledged by the wretches.;x
 AI_LOVES_US_DESC3_SHORT;The $TAG_0_0_ADJ$ government and people continue to be enamoured with $OURCOUNTRY$. In all spheres, our obvious superiority is readily acknowledged.;x
 AI_LOVES_OTHER_TITLE1;$TAG_0_0$'s relations;x

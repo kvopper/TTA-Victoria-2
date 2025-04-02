@@ -61,3 +61,6 @@ fake_news_pattern = { "34" "some_fake_ANY_title_34" "some_fake_ANY_34" }
 fake_news_pattern = { "35" "some_fake_ANY_title_35" "some_fake_ANY_35" }
 fake_news_pattern = { "36" "some_fake_ANY_title_36" "some_fake_ANY_36" }
 fake_news_pattern = { "37" "some_fake_ANY_title_37" "some_fake_ANY_37" }
+fake_news_pattern = { "38" "some_fake_ANY_title_38" "some_fake_ANY_38" }
+fake_news_pattern = { "39" "some_fake_ANY_title_39" "some_fake_ANY_39" }
+
