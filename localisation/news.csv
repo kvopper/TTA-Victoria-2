@@ -1,5 +1,11 @@
+##########################;x }
+##### DECISIONS NEWS #####;x {
+##########################;x
+shire_bree_unification_NEWS_LONG;The lands of the Shire and Bree have come together to form the Shire Bree Union. Seen in the major towns across both sides of the Brandywine, Men and Hobbits alike were reportedly holding festivals for many weeks as the news spread. Tremendous food was in abundance, and activities such as pipe smoking were enjoyed by all. This is undoubtedly the start of a new era for the north.;x
+shire_bree_unification_NEWS_MEDIUM;The lands of the Shire and Bree have come together to form the Shire Bree Union. Men and Hobbits alike across the region rejoiced with a tremendous week long fete, with food in abundance, and activities enjoyed by all.;x
+shire_bree_unification_NEWS_SHORT;The lands of the Shire and Bree have come together to form the Shire Bree Union. Men and Hobbits alike across the region rejoiced with a tremendous multi-day feast.;x
 #######################;x }
-##### FLAVOR NEWS #####;x {
+##### EVENTS NEWS #####;x {
 #######################;x
 EVTDESC3624_NEWS_LONG;News from Eriador as the Grey Pilgrim, known broadly as Gandalf, has been sighted visiting $COUNTRY$. His motives are unknown, but the locals spirits have been boosted in these dark times.;x
 EVTDESC3624_NEWS_MEDIUM;The Grey Wanderer, known as Gandalf, has been spotted visiting $COUNTRY$. The locals spirits have been boosted in these dark times.;x

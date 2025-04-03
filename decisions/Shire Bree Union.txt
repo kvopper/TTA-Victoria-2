@@ -3,6 +3,12 @@
 # }
 political_decisions = {
 	shire_bree_unification = {
+		picture = "brandywine"
+		news = yes
+		news_desc_long = "shire_bree_unification_NEWS_LONG"
+		news_desc_medium = "shire_bree_unification_NEWS_MEDIUM"
+		news_desc_short = "shire_bree_unification_NEWS_SHORT"
+		
 		potential = {
 			OR = {
 				tag = SHI
@@ -10,26 +16,27 @@ political_decisions = {
 			}
 		}
 		allow = {
-			war = no
-			expansion_1 = 1
-			OR = {
-				tag = BRE
-				BRE = {
-					in_sphere = THIS
-					war = no
-				}
-				BRE = {	vassal_of = THIS }
-				BRE = {	all_core = { owned_by = THIS } }
-			}
-			OR = {
-				tag = SHI
-				SHI = {
-					in_sphere = THIS
-					war = no
-				}
-				SHI = {	vassal_of = THIS }
-				SHI = {	all_core = { owned_by = THIS } }
-			}
+			ai=no
+			# war = no
+			# expansion_1 = 1
+			# OR = {
+			# 	tag = BRE
+			# 	BRE = {
+			# 		in_sphere = THIS
+			# 		war = no
+			# 	}
+			# 	BRE = {	vassal_of = THIS }
+			# 	BRE = {	all_core = { owned_by = THIS } }
+			# }
+			# OR = {
+			# 	tag = SHI
+			# 	SHI = {
+			# 		in_sphere = THIS
+			# 		war = no
+			# 	}
+			# 	SHI = {	vassal_of = THIS }
+			# 	SHI = {	all_core = { owned_by = THIS } }
+			# }
 		}
 		effect = {
 			prestige = 20
@@ -46,7 +53,7 @@ political_decisions = {
 		ai_will_do = { factor = 1 }
 	}
 	the_buckland_question = {
-	picture = "brandy_hall"
+		picture = "brandy_hall"
 		potential = {
 			tag = SBU
 			NOT = { has_country_flag = buckland_policy_decided }
