@@ -5776,11 +5776,11 @@ CRISIS_END_DESC_LONG1;It is peace for our time', great powers announce, emerging
 CRISIS_END_DESC_MEDIUM1;It is peace for our time', great powers announce, emerging from the summit negotiations with a diplomatic resolution to the brewing international crisis, which many claimed might have plunged them into the dreaded state of war if a compromise was not reached.;x
 CRISIS_END_DESC_SHORT1;It is peace for our time', great powers announce, emerging from the summit negotiations with a diplomatic resolution to the brewing international crisis, averting the possiblity of war.;x
 RESEARCH_NEWS_TITLE_LARGE2;Breakthrough in $TAG_0_0$!;x
-RESEARCH_NEWS_LARGE2;$TAG_0_0_ADJ$ scientists have announced yesterday that after months of dedicated and focused research, a new breakthrough in the field of $STRING_0_1$ has been made. It is expected that the entrepreneurs and government of $TAG_0_0$ will soon start putting this newly acquired knowledge to good use, applying it in practical ways throughout the realm.;x
+RESEARCH_NEWS_LARGE2;$TAG_0_0_ADJ$ researchers in $TAG_0_0$ have announced yesterday that after months of dedicated and focused research, a new breakthrough in the field of $STRING_0_1$ has been made. It is expected that the entrepreneurs and government of $TAG_0_0$ will soon start putting this newly acquired knowledge to good use, applying it in practical ways throughout the realm.;x
 RESEARCH_NEWS_TITLE_MEDIUM2;Breakthrough in $TAG_0_0$!;x
-RESEARCH_NEWS_MEDIUM2;$TAG_0_0_ADJ$ scientists have announced a breakthrough in the field of $STRING_0_1$. This new knowledge will soon be applied in practical ways, said one of the researchers.;x
+RESEARCH_NEWS_MEDIUM2;$TAG_0_0_ADJ$ researchers in $TAG_0_0$ have announced a breakthrough in the field of $STRING_0_1$. This new knowledge will soon be applied in practical ways, said one of the researchers.;x
 RESEARCH_NEWS_TITLE_SMALL2;Breakthrough in $TAG_0_0$!;x
-RESEARCH_NEWS_SMALL2;$TAG_0_0_ADJ$ scientists have recently announced a breakthrough in the field of $STRING_0_1$.;x
+RESEARCH_NEWS_SMALL2;$TAG_0_0_ADJ$ researchers in $TAG_0_0$ have recently announced a breakthrough in the field of $STRING_0_1$.;x
 COMMUNIST_REVOLUTION_NEWS_TITLE_LARGE_COMMUNIST;COMMUNISM TRIUMPHS IN $TAG_0_0_UPPER$!;x
 COMMUNIST_REVOLUTION_NEWS_LARGE_COMMUNIST;Workers of the world, unite!' Once more our rallying cry has proven fitting for such a victorious revolution. The corrupt powers of capitalism cannot stop the desire of the proletariat for a better future. We have received joyous news from our comrades in $TAG_0_0$, who managed to rise in rebellion against the crooks and thieves that mistreated and exploited the common folk. They seized the governmental powers, taking it back where it belongs: the hands of the people, represented by the people's committee: $STRING_0_0$!;x
 COMMUNIST_REVOLUTION_NEWS_TITLE_MEDIUM_COMMUNIST;COMMUNISM IN $TAG_0_0_UPPER$!;x
