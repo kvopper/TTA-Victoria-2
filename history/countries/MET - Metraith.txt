@@ -8,7 +8,9 @@ nationalvalue = no_heirloom
 literacy = 0
 
 slavery = no_slavery
-ruling_party = generic_nobilityupper_house = {
+ruling_party = generic_nobility
+
+upper_house = {
 	nobility = 100
 }
 
