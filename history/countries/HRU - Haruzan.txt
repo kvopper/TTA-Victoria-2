@@ -10,7 +10,9 @@ literacy = 0
 oob = "HRU_oob.txt"
 
 slavery = yes_slavery
-ruling_party = generic_nobilityupper_house = {
+ruling_party = generic_nobility
+
+upper_house = {
 	nobility = 100
 }
 
