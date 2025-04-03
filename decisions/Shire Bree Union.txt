@@ -16,27 +16,26 @@ political_decisions = {
 			}
 		}
 		allow = {
-			ai=no
-			# war = no
-			# expansion_1 = 1
-			# OR = {
-			# 	tag = BRE
-			# 	BRE = {
-			# 		in_sphere = THIS
-			# 		war = no
-			# 	}
-			# 	BRE = {	vassal_of = THIS }
-			# 	BRE = {	all_core = { owned_by = THIS } }
-			# }
-			# OR = {
-			# 	tag = SHI
-			# 	SHI = {
-			# 		in_sphere = THIS
-			# 		war = no
-			# 	}
-			# 	SHI = {	vassal_of = THIS }
-			# 	SHI = {	all_core = { owned_by = THIS } }
-			# }
+			war = no
+			expansion_1 = 1
+			OR = {
+				tag = BRE
+				BRE = {
+					in_sphere = THIS
+					war = no
+				}
+				BRE = {	vassal_of = THIS }
+				BRE = {	all_core = { owned_by = THIS } }
+			}
+			OR = {
+				tag = SHI
+				SHI = {
+					in_sphere = THIS
+					war = no
+				}
+				SHI = {	vassal_of = THIS }
+				SHI = {	all_core = { owned_by = THIS } }
+			}
 		}
 		effect = {
 			prestige = 20
