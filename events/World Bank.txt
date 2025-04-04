@@ -1766,6 +1766,16 @@ country_event = {
 		# }
 		
 		# Trading Mechanic Modifier Changes {
+		# Add back alignment restrictions if the Master of Laketown looses power
+		random_country = {
+			limit = {
+				has_country_flag = DAL_content
+				has_country_flag = DAL_cultivated_inland_trade
+				NOT = { ruling_party_ideology = master_of_laketown }
+			}
+			clr_country_flag = DAL_cultivated_inland_trade
+		}
+		
 		# Remove trading modifiers and flags if DAL doesn't exist or it doesn't own Esgaroth. Handles DAL, DAL-formed RHO and DAL-formed FFN
 		random_owned = {
 			limit = {
@@ -1829,6 +1839,7 @@ country_event = {
 		any_country = {
 			limit = {
 				has_country_modifier = trading_with_DAL
+				NOT = { DAL = { has_country_flag = DAL_cultivated_inland_trade } }
 				OR = {
 					is_vassal = yes
 					war_with = DAL

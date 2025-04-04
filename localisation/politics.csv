@@ -631,7 +631,7 @@ saurons_nine_uh;Sauron's Nine supporters will vote for all reforms while in powe
 #####################################;x }
 ##### COUNCIL OF THE REALM TEXT #####;x {
 #####################################;x
-POLITICS_SUPPORT_REFORM;$IDEOLOGY$: $POSITIVE$% votes yes, $NEGATIVE$% votes no.($PERCENT$% of Council of the Realm)\n;x
+POLITICS_SUPPORT_REFORM;$IDEOLOGY$: §G$POSITIVE$% votes yes§!, §R$NEGATIVE$% votes no§!.(§Y$PERCENT$%§! of Council of the Realm)\n;x
 POLITICS_UPPERHOUSE_CHART_TOOLTIP;$PERCENT$% of the Council of the Realm are $IDEOLOGY$\n;x
 POLITICS_IN_FAVOR_TOOLTIP;($PERCENT$% of of Council of the Realm in favor of reforms);x
 POLITICS_UPPERHOUSE;Council of the Realm;x
@@ -641,8 +641,8 @@ UPPERHOUSE_2;$MONARCHTITLE$, our Council of the Realm has been assembled.;x
 UPPERHOUSE_LOG;Council of the Realm changed.;x
 POLITICS_TOTAL_SUPPORT_REFORM;$PERCENT$% of Council of the Realm vote yes\n;x
 UPPER_HOUSE_EFFECT;$DIRECTION$ up to $VALUE$ $NAME$ in the Council of the Realm.\n;x
-NOT_UPPER_HOUSE_TR;There is less than $VAL$ percent $NAME$ in the Council of the Realm.\n;x
-UPPER_HOUSE_TR;There is at least $VAL$ percent $NAME$ in the Council of the Realm.\n;x
+NOT_UPPER_HOUSE_TR;There is less than §Y$VAL$§! percent §Y$NAME$§! in the Council of the Realm.\n;x
+UPPER_HOUSE_TR;There is at least §Y$VAL$§! percent §Y$NAME$§! in the Council of the Realm.\n;x
 MODIFIER_UNCIV_ECONOMIC_UH;Council of the Realm support;x
 MODIFIER_UNCIV_MILITARY_UH;Council of the Realm support;x
 ###############################;x }

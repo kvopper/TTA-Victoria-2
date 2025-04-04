@@ -965,6 +965,7 @@ country_event = {
 			
 			modifier = {
 				factor = 0
+				NOT = { FROM = { has_country_flag = DAL_cultivated_inland_trade } }
 				OR = {
 					NOT = { relation = { who = FROM value = 0 } }
 					AND = {
@@ -2768,7 +2769,7 @@ country_event = {
 # The Rebuilding of the Statue of Othur Calmar
 province_event = {
 	id = 50966
-	title = " The Rebuilding of the Statue of Othur Calmar"
+	title = "The Rebuilding of the Statue of Othur Calmar"
 	desc = "EVTDESC50966"
 	
 	fire_only_once = yes
@@ -2799,3 +2800,41 @@ province_event = {
 		add_province_modifier = { name = rebuilt_city duration = 365 }
 	}
 }
+
+# Anger Against the Master
+province_event = {
+	id = 50967
+	title = "Anger Against the Master"
+	desc = "EVTDESC50967"
+	
+	trigger = {
+		owner = {
+			has_country_flag = DAL
+			ruling_party_ideology = master_of_laketown
+			FOR = {
+				any_neighbor_country = {
+					is_culture_group = easterlings
+					has_country_modifier = trading_with_DAL
+				}
+			}
+		}
+		is_core = THIS
+	}
+	
+	mean_time_to_happen = {
+		days = 730
+	}
+	
+	option = {
+		name = "The peasantry know nothing"
+		
+		any_pop = {
+			limit = {
+				OR = {
+					is_culture_group = gramavuld_northmen
+					is_culture_group = northmen
+				}
+			}
+			militancy = 4
+		}
+	}

@@ -17,6 +17,7 @@
 #	Bard II Flavor
 #	Fishers Guild vs Merchants
 #	Fishers Guild Flavor
+#	Merchants Flavor
 #	Esgaroth Trade }
 
 # Starting Decision (Unseen) + Country Info (Seen)
@@ -2265,6 +2266,70 @@ political_decisions = {
 	}
 }
 
+# Merchants Flavor
+political_decisions = {
+	DAL_cultivate_inland_trade = {
+		picture = "Barding Realm/DAL_money"
+		potential = {
+			has_country_flag = DAL_content
+			ruling_party_ideology = master_of_laketown
+			NOT = { has_country_flag = DAL_cultivated_inland_trade }
+		}
+		
+		allow = {
+			guilds_3 = 1
+			infrastructure_tech_3 = 1
+			diplomacy_3 = 1
+		}
+		
+		effect = {
+			DAL_remove_trading_alignment_restrictions_loc = { }
+			set_country_flag = DAL_cultivated_inland_trade
+		}
+	}
+	
+	DAL_eternalize_office_master = {
+		picture = "Barding Realm/DAL_master_of_laketown"
+		potential = {
+			has_country_flag = DAL_content
+			ruling_party_ideology = master_of_laketown
+			NOT = { government = dictatorship }
+		}
+		
+		allow = {
+			upper_house = {
+				ideology = master_of_laketown
+				value = 0.50
+			}
+		}
+		
+		effect = {
+			government = dictatorship
+			political_reform = none_voting
+			political_reform = primary_voting
+			political_reform = first_past_the_post
+			political_reform = dictatorship
+			
+			scaled_militancy = {
+				factor = -10
+				ideology = master_of_laketown
+			}
+			
+			scaled_militancy = {
+				factor = 4
+				ideology = house_of_bard
+			}
+			
+			scaled_militancy = {
+				factor = 10
+				ideology = lakemen_fishers_guild
+			}
+			
+			plurality = -5
+		}
+	}
+}
+
 # Esgaroth Trade
 political_decisions = {
 	propose_trade_with_realm = {
@@ -2277,6 +2342,7 @@ political_decisions = {
 					is_vassal = no
 					NOT = { war_with = DAL }
 					OR = {
+						has_country_flag = DAL_cultivated_inland_trade
 						THIS = { good_evil_alignment = neutral_alignment }
 						good_evil_alignment = neutral_alignment
 						AND = {
@@ -2308,6 +2374,7 @@ political_decisions = {
 					is_vassal = no
 					NOT = { war_with = THIS }
 					OR = {
+						has_country_flag = DAL_cultivated_inland_trade
 						THIS = { good_evil_alignment = neutral_alignment }
 						good_evil_alignment = neutral_alignment
 						AND = {

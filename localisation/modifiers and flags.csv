@@ -743,6 +743,7 @@ vassal_of_gondor;Vassal of Gondor;x
 DAL_merchant_supported_by_realm;Barding Realm Flavor: We have supported the merchants over the Fisher's Guild;x
 DAL_guild_supported_by_realm;Barding Realm Flavor: We have supported the Fisher's Guild over the merchants;x
 DAL_united_gramavuld;Have taken decision §YThe United Northmen of Gramavuld§!;x
+DAL_cultivated_inland_trade;Have taken decision §YCultivate Inland Trade§!;x
 alliance_dwarves_men_voted_for;Voted for the current resolution;x
 alliance_dwarves_men_abstained;Abstained for the current resolution;x
 alliance_dwarves_men_voted_against;Voted against the current resolution;x

@@ -657,6 +657,8 @@ RIV_break_dal_hegemony_loc = { } # §GWe must win this war and get our CB fulfil
 DAL_increase_erebor_relations_5_loc = { } # §GErebor Alliance points increased by 5§!;x
 DAL_increase_erebor_relations_2_loc = { } # §GErebor Alliance points increased by 2§!;x
 
+DAL_remove_trading_alignment_restrictions_loc = { } # Removes the alignment restrictions of the §YPropose a Trade Agreement with Allied or Sphered Realm§! decision. The AI is gauranteed to accept your trade agreement
+
 # Static Tooltip Locs - Amov Clan
 AMO_sent_out_raiders_loc = { } # §GWe will send out raiding parties, occasionally decreasing the affected provinces wealth, and increasing our own
 
