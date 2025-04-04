@@ -1195,6 +1195,45 @@ ideologies = {
 				}
 			}
 		}
+		modifier = {
+			factor = 0.9
+			country = {
+				OR = {
+					AND = {
+						check_variable = { which = DAL_merchants_fishers_bop value = -8.1 }
+						NOT = { check_variable = { which = DAL_merchants_fishers_bop value = -7.9 } }
+					}
+					AND = {
+						check_variable = { which = DAL_merchants_fishers_bop value = 7.9 }
+						NOT = { check_variable = { which = DAL_merchants_fishers_bop value = 8.1 } }
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 0.75
+			country = {
+				OR = {
+					AND = {
+						check_variable = { which = DAL_merchants_fishers_bop value = -9.1 }
+						NOT = { check_variable = { which = DAL_merchants_fishers_bop value = -8.9 } }
+					}
+					AND = {
+						check_variable = { which = DAL_merchants_fishers_bop value = 8.9 }
+						NOT = { check_variable = { which = DAL_merchants_fishers_bop value = 9.1 } }
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 0.5
+			country = {
+				OR = {
+					NOT = { check_variable = { which = DAL_merchants_fishers_bop value = -9.9 } }
+					check_variable = { which = DAL_merchants_fishers_bop value = 9.9 }
+				}
+			}
+		}
 	}
 	
 	rivermen_thegans = {
@@ -1290,6 +1329,51 @@ ideologies = {
 				}
 			}
 		}
+		modifier = {
+			factor = 0.9
+			country = { check_variable = { which = DAL_merchants_fishers_bop value = 0.9 } }
+		}
+		modifier = {
+			factor = 0.9
+			country = { check_variable = { which = DAL_merchants_fishers_bop value = 1.9 } }
+		}
+		modifier = {
+			factor = 0.9
+			country = { check_variable = { which = DAL_merchants_fishers_bop value = 2.9 } }
+		}
+		modifier = {
+			factor = 0.9
+			country = { check_variable = { which = DAL_merchants_fishers_bop value = 3.9 } }
+		}
+		modifier = {
+			factor = 0.9
+			country = { check_variable = { which = DAL_merchants_fishers_bop value = 4.9 } }
+		}
+		modifier = {
+			factor = 0.9
+			country = { check_variable = { which = DAL_merchants_fishers_bop value = 5.9 } }
+		}
+		modifier = {
+			factor = 0.9
+			country = { check_variable = { which = DAL_merchants_fishers_bop value = 6.9 } }
+		}
+		modifier = {
+			factor = 0.9
+			country = { check_variable = { which = DAL_merchants_fishers_bop value = 7.9 } }
+		}
+		modifier = {
+			factor = 0.9
+			country = { check_variable = { which = DAL_merchants_fishers_bop value = 8.9 } }
+		}
+		modifier = {
+			factor = 0.9
+			country = {
+				OR = {
+					has_country_flag = DAL_guild_supported_by_realm
+					check_variable = { which = DAL_merchants_fishers_bop value = 9.9 }
+				}
+			}
+		}
 	}
 	
 	lakemen_fishers_guild = {
@@ -1353,7 +1437,57 @@ ideologies = {
 		}
 		modifier = {
 			factor = 1.1
-			country = { check_variable = { which = DAL_merchants_fishers_bop value = 9.9 } }
+			country = {
+				OR = {
+					has_country_flag = DAL_guild_supported_by_realm
+					check_variable = { which = DAL_merchants_fishers_bop value = 9.9 }
+				}
+			}
+		}
+		modifier = {
+			factor = 0.9
+			country = { NOT = { check_variable = { which = DAL_merchants_fishers_bop value = -0.9 } } }
+		}
+		modifier = {
+			factor = 0.9
+			country = { NOT = { check_variable = { which = DAL_merchants_fishers_bop value = -1.9 } } }
+		}
+		modifier = {
+			factor = 0.9
+			country = { NOT = { check_variable = { which = DAL_merchants_fishers_bop value = -2.9 } } }
+		}
+		modifier = {
+			factor = 0.9
+			country = { NOT = { check_variable = { which = DAL_merchants_fishers_bop value = -3.9 } } }
+		}
+		modifier = {
+			factor = 0.9
+			country = { NOT = { check_variable = { which = DAL_merchants_fishers_bop value = -4.9 } } }
+		}
+		modifier = {
+			factor = 0.9
+			country = { NOT = { check_variable = { which = DAL_merchants_fishers_bop value = -5.9 } } }
+		}
+		modifier = {
+			factor = 0.9
+			country = { NOT = { check_variable = { which = DAL_merchants_fishers_bop value = -6.9 } } }
+		}
+		modifier = {
+			factor = 0.9
+			country = { NOT = { check_variable = { which = DAL_merchants_fishers_bop value = -7.9 } } }
+		}
+		modifier = {
+			factor = 0.9
+			country = { NOT = { check_variable = { which = DAL_merchants_fishers_bop value = -8.9 } } }
+		}
+		modifier = {
+			factor = 0.9
+			country = {
+				OR = {
+					has_country_flag = DAL_merchant_supported_by_realm
+					NOT = { check_variable = { which = DAL_merchants_fishers_bop value = -9.9 } }
+				}
+			}
 		}
 	}
 	
