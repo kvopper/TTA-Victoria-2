@@ -632,6 +632,13 @@ EVTDESC50963;The rise of the Fishers Guild has been slow but steady. Rising out 
 EVTDESC50964;Since the Fishers Guild started leading the $COUNTRY$, they have worked to decrease the influence of the merchants. Recently, the last nobility privilege was stripped, leaving each individual noble as much legal power as any other man.;x
 EVTDESC50965;With the Merchant's rise back into power, the current lawmakers have raised the question of the capital of $COUNTRY$.Our capital, $CAPITAL$, is more representative of previous leadership, and some feel like Esgaroth is a better fitting location for the capital. After much debate, the ruling council decides that...;x
 EVTDESC50966;The reconstruction of $CAPITAL$ has finished. Among the many refurbishings includes a recreated status of Other Moneybags, the previous Master of Laketown.;x
+EVTDESC50968;$FROMCOUNTRY$ has requested some land to build a trading post. They undoubtedly hold sway over our realm and have convinced many of the Council of the Realm to support the initiative, but the final say belongs to us. Should we cede this land?;x
+EVTDESC50969;A new trading post in $PROVINCENAME$ has been created! This will create lots of wealth for our realm.;x
+EVTDESC50970;The trading post in $PROVINCENAME$ has been abandoned. As such, the province authority has switched the focus from Precious Goods towards more standard outputs.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n;x
+EVTDESC50971;$FROMCOUNTRY$ has refused! Our ambassador has pre-emptively cut all ties, and messangers have been sent out informing Middle Earth that $FROMCOUNTRY$ is no longer under our protection.;x
+EVTDESC50972;$FROMCOUNTRY$ has demanded Egil Dorn! Many believe that this island is rightfully ours, and that it should not be yielded without a fight. $FROMCOUNTRY$ will undoubtedly declare to take the land if we do not give it, however, if we concede without a fight, we will not only be conceding the land, but also our claims. How should we respond?;x
+EVTDESC50973;$FROMCOUNTRY$ refuses! They shall perish under our swords and arrow!;x
+EVTDESC50974;$FROMCOUNTRY$ has seen the light of peace and accepted our gracious offer. Egil Dorn is now ours.;x
 #######################################;x }
 ##### SHIRE-BREELAND UNION EVENTS #####;x {
 #######################################;x

@@ -544,6 +544,10 @@ province_target_looted_province_modifier = {
 province_target_raid_loot_modifier = {
 	icon = 36
 }
+# Province Modifier
+province_target_DAL_celduin_trade_post_removal_modifier = {
+	icon = 36
+}
 
 # }
 ##### PROVINCE WEALTH MODIFIERS ##### {
@@ -2304,6 +2308,15 @@ DAL_fishers_guild_immigration_reform_modifier = {
 	global_immigrant_attract = 1.5
 	
 	icon = 17
+}
+
+# Province Modifier
+DAL_trading_post_modifier = {
+	immigrant_attract = 1
+	local_RGO_output = 0.25
+	local_factory_throughput = 0.25
+	
+	icon = 11
 }
 
 # }

@@ -188,6 +188,7 @@ province_target_great_haul_modifier;Province Target;x
 province_target_rgo_change_modifier;Province Target;x
 province_target_looted_province_modifier;Province Target;x
 province_target_raid_loot_modifier;Province Target;x
+province_target_DAL_celduin_trade_post_removal_modifier;Province Target;x
 #####################################;x }
 ##### PROVINCE WEALTH MODIFIERS #####;x {
 #####################################;x
@@ -571,6 +572,7 @@ erebor_relations_modifier_desc;Since the founding of the Kingdom in TA 2944, the
 fishers_guild_rgo_reform;Fishers Guild RGO Reform;x
 DAL_fishers_guild_immigration_reform_modifier;Immigration Reform;x
 DAL_fishers_guild_immigration_reform_modifier_desc;We have reformed our immigration!;x
+DAL_trading_post_modifier;Trading Post;x
 ##############################;x }
 ##### BREELAND MODIFIERS #####;x {
 ##############################;x
@@ -744,6 +746,7 @@ DAL_merchant_supported_by_realm;Barding Realm Flavor: We have supported the merc
 DAL_guild_supported_by_realm;Barding Realm Flavor: We have supported the Fisher's Guild over the merchants;x
 DAL_united_gramavuld;Have taken decision §YThe United Northmen of Gramavuld§!;x
 DAL_cultivated_inland_trade;Have taken decision §YCultivate Inland Trade§!;x
+DAL_can_establish_celduin_trading_posts;Can Establish Celduin Trading Ports;x
 alliance_dwarves_men_voted_for;Voted for the current resolution;x
 alliance_dwarves_men_abstained;Abstained for the current resolution;x
 alliance_dwarves_men_voted_against;Voted against the current resolution;x

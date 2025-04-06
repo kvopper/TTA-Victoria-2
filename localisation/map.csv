@@ -2377,6 +2377,7 @@ claim_status_doesnt_own_RHU_1416_loc;§YNorthern Gazar Gord§!: §RUnowned§!§I
 claim_status_doesnt_own_KHA_364_loc;§YWizard's Wanderings§!: §RUnowned§!§I;x
 add_claim_LOR_769_loc;§WWe will gain claims over §!§YParth Celebrant§!§I;x
 claim_status_doesnt_own_DOR_558_loc;§YCairn Angle§!: §RUnowned§!§I;x
+DAL_unlock_establish_celduin_trading_post_cb_loc;Activates §YEstablish Trading Post§! cb§I;x
 remove_claim_GON_57_loc;§WWe will lose claims over §!§YEmyn Ernil§!§I;x
 add_claim_ENE_838_loc;§WWe will gain claims over §!§YWinterdowns§!§I;x
 claim_status_owns_GON_249_loc;§YEraguk§!: §GOwned§!§I;x

@@ -2284,7 +2284,9 @@ political_decisions = {
 		
 		effect = {
 			DAL_remove_trading_alignment_restrictions_loc = { }
+			DAL_unlock_establish_celduin_trading_post_cb_loc = { }
 			set_country_flag = DAL_cultivated_inland_trade
+			set_country_flag = DAL_can_establish_celduin_trading_posts
 		}
 	}
 	
@@ -2326,6 +2328,93 @@ political_decisions = {
 			}
 			
 			plurality = -5
+		}
+	}
+	
+	DAL_request_trading_port = {
+		picture = "Barding Realm/DAL_request_trade_post"
+		potential = {
+			has_country_flag = DAL_content
+			has_country_flag = DAL_can_establish_celduin_trading_posts
+			ruling_party_ideology = master_of_laketown
+			FOR = {
+				any_neighbor_country = {
+					in_sphere = THIS
+					OR = {
+						owns = 1476 # Burh Sagra
+						owns = 1477 # Burh Dacranamel
+						owns = 1478 # Burh Athorn
+						owns = 1479 # Vindorborg
+						owns = 1480 # Burh Ibar
+						owns = 1481 # Burh Agasha
+						owns = 1482 # Burh Lyst
+						owns = 1483 # Burh Sûrûbeki
+					}
+				}
+			}
+		}
+		allow = {
+			war = no
+			money = 50000
+		}
+		effect = {
+			random_country = {
+				limit = {
+					in_sphere = THIS
+					OR = {
+						owns = 1476 # Burh Sagra
+						owns = 1477 # Burh Dacranamel
+						owns = 1478 # Burh Athorn
+						owns = 1479 # Vindorborg
+						owns = 1480 # Burh Ibar
+						owns = 1481 # Burh Agasha
+						owns = 1482 # Burh Lyst
+						owns = 1483 # Burh Sûrûbeki
+					}
+				}
+				country_event = 50968
+			}
+			
+			badboy = 3
+		}
+		
+		# AI is stupid and doesn't check the effects to see if it would break the infamy limit
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				badboy = 0.8
+			}
+		}
+	}
+	
+	DAL_demand_egil_dorn = {
+		picture = "Barding Realm/DAL_demand_egil_dorn"
+		potential = {
+			ruling_party_ideology = master_of_laketown
+			any_owned_province = { has_province_modifier = DAL_trading_post_modifier }
+			NOT = { owns = 601 }
+			601 = { empty = no }
+		}
+		allow = {
+			war = no
+		}
+		effect = {
+			random_country = {
+				limit = { owns = 601 }
+				country_event = 50972
+			}
+			
+			badboy = 5
+		}
+		
+		# AI is stupid and doesn't check the effects to see if it would break the infamy limit
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				badboy = 0.8
+			}
 		}
 	}
 }

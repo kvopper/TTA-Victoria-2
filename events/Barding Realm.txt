@@ -2839,3 +2839,321 @@ province_event = {
 		}
 	}
 }
+
+# Trading Posts {
+# $FROMCOUNTRY$ Requests Trading Port
+country_event = {
+	id = 50968
+	title = "$FROMCOUNTRY$ Requests Trading Port"
+	desc = "EVTDESC50968"
+	picture = "gramavuld/market"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "We will concede"
+		
+		random_owned = {
+			limit = {
+				OR = {
+					province_id = 1476
+					province_id = 1477
+					province_id = 1478
+					province_id = 1479
+					province_id = 1480
+					province_id = 1481
+					province_id = 1482
+					province_id = 1483
+				}
+			}
+			secede_province = FROM
+			province_event = { id = 50969 days = 0 }
+		}
+		
+		treasury = 50000
+		FROM = { treasury = -50000 }
+		
+		ai_chance = { factor = 50 }
+	}
+	
+	option = {
+		name = "Our land is rightfully $COUNTRY_ADJ$, not $FROMCOUNTRY_ADJ"
+		
+		FROM = { country_event = 50971 }
+		prestige = 5
+		
+		ai_chance = {
+			factor = 50
+			
+			modifier = {
+				factor = 0
+				any_neighbor_country = { has_country_flag = DAL_can_establish_celduin_trading_posts }
+			}
+		}
+	}
+}
+
+# A New Trading Post
+province_event = {
+	id = 50969
+	title = "The $PROVINCENAME$ Trading Post"
+	desc = "EVTDESC50969"
+	
+	trigger = {
+		owner = {
+			has_country_flag = DAL_content
+			has_country_flag = DAL_can_establish_celduin_trading_posts
+		}
+		OR = {
+			province_id = 1476 # Burh Sagra
+			province_id = 1477 # Burh Dacranamel
+			province_id = 1478 # Burh Athorn
+			province_id = 1479 # Vindorborg
+			province_id = 1480 # Burh Ibar
+			province_id = 1481 # Burh Agasha
+			province_id = 1482 # Burh Lyst
+			province_id = 1483 # Burh Sûrûbeki
+		}
+		NOT = { has_province_modifier = DAL_trading_post_modifier }
+	}
+	
+	option = {
+		name = "May the trade keep flowing"
+		trade_goods = precious_goods
+		add_province_modifier = { name = DAL_trading_post_modifier days = -1 }
+	}
+}
+
+# The End of the Trading Post
+province_event = {
+	id = 50970
+	title = "The End of the $PROVINCENAME$ Trading Post"
+	desc = "EVTDESC50970"
+	
+	trigger = {
+		owner = { NOT = { has_country_flag = DAL_can_establish_celduin_trading_posts } }
+		OR = {
+			province_id = 1476 # Burh Sagra
+			province_id = 1477 # Burh Dacranamel
+			province_id = 1478 # Burh Athorn
+			province_id = 1479 # Vindorborg
+			province_id = 1480 # Burh Ibar
+			province_id = 1481 # Burh Agasha
+			province_id = 1482 # Burh Lyst
+			province_id = 1483 # Burh Sûrûbeki
+		}
+		trade_goods = precious_goods
+		NOT = { owner = { any_owned_province = { has_province_modifier = province_target_DAL_celduin_trade_post_removal_modifier } } }
+	}
+	
+	immediate = {
+		add_province_modifier = { name = province_target_DAL_celduin_trade_post_removal_modifier duration = -1 }
+	}
+	
+	option = {
+		name = "It could only last for so long"
+		
+		owner = {
+			random_owned = {
+				limit = {
+					has_province_modifier = province_target_DAL_celduin_trade_post_removal_modifier
+					OR = {
+						province_id = 1476 # Burh Sagra
+						province_id = 1478 # Burh Athorn
+						province_id = 1481 # Burh Agasha
+					}
+				}
+				trade_goods = timber
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = province_target_DAL_celduin_trade_post_removal_modifier
+					OR = {
+						province_id = 1477 # Burh Dacranamel
+						province_id = 1479 # Vindorborg
+						province_id = 1483 # Burh Sûrûbeki
+					}
+				}
+				trade_goods = food
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = province_target_DAL_celduin_trade_post_removal_modifier
+					province_id = 1480 # Burh Ibar
+				}
+				trade_goods = tea
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = province_target_DAL_celduin_trade_post_removal_modifier
+					province_id = 1482 # Burh Lyst
+				}
+				trade_goods = horses
+			}
+		}
+		
+		remove_province_modifier = DAL_trading_post_modifier
+	}
+}
+
+# FROMCOUNTRY Refuses
+country_event = {
+	id = 50971
+	title = "$FROMCOUNTRY$ Refuses"
+	desc = "EVTDESC50971"
+	picture = "gramavuld/market"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Then they have chosen war"
+		
+		casus_belli = {
+			target = FROM
+			type = establish_celduin_trading_post_cb
+			months = 24
+		}
+		
+		diplomatic_influence = { who = FROM value = -400 }
+		relation = { who = FROM value = -100 }
+		leave_alliance = FROM
+		end_military_access = FROM
+		
+		FROM = { end_military_access = THIS }
+	}
+}
+# }
+
+# Egil Dorn {
+# DAL Demands Egil Dorn
+country_event = {
+	id = 50972
+	title = "$FROMCOUNTRY$ Demand Egil Dorn"
+	desc = "EVTDESC50972"
+	picture = "gramavuld/egil_dorn"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "No! Egil Dorn is rightfully $COUNTRY_ADJ$'s"
+		
+		prestige = 15
+		FROM = { diplomatic_influence = { who = THIS value = -400 } }
+		relation = { who = FROM value = -400 }
+		leave_alliance = FROM
+		end_military_access = FROM
+		FROM = { end_military_access = THIS }
+		
+		FROM = { country_event = 50973 }
+		
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0
+				is_vassal = yes
+			}
+		}
+	}
+	
+	option = {
+		name = "We will concede"
+		
+		RHU_601 = { remove_core = THIS }
+		FROM = { country_event = 50974 }
+		
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0
+				is_vassal = no
+			}
+		}
+	}
+}
+
+# FROMCOUNTRY Refuses
+country_event = {
+	id = 50973
+	title = "$FROMCOUNTRY$ Refuses"
+	desc = "EVTDESC50973"
+	picture = "gramavuld/egil_dorn"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "To war!"
+		
+		random_owned = {
+			limit = {
+				owner = { FROM = { civilized = no } }
+			}
+			
+			owner = {
+				casus_belli = {
+					target = FROM
+					type = demand_concession_casus_belli
+					months = 12
+				}
+				
+				war = {
+					target = FROM
+					attacker_goal = { casus_belli = demand_concession_casus_belli state_province_id = 601 }
+					defender_goal = { casus_belli = status_quo }
+					call_ally = yes
+				}
+			}
+		}
+		
+		random_owned = {
+			limit = {
+				owner = { FROM = { civilized = yes } }
+			}
+			
+			owner = {
+				casus_belli = {
+					target = FROM
+					type = acquire_state
+					months = 12
+				}
+				
+				war = {
+					target = FROM
+					attacker_goal = { casus_belli = acquire_state state_province_id = 601 }
+					defender_goal = { casus_belli = status_quo }
+					call_ally = yes
+				}
+			}
+		}
+	}
+}
+
+# FROMCOUNTRY Accepts
+country_event = {
+	id = 50974
+	title = "$FROMCOUNTRY$ Accepts"
+	desc = "EVTDESC50974"
+	picture = "gramavuld/egil_dorn"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "As they should have "
+		
+		RHU_601 = {
+			add_core = THIS
+			secede_province = THIS
+		}
+		
+		random_country = {
+			limit = {
+				tag = FROM
+				NOT = { tag = RHU }
+				is_culture_group = easterlings
+			}
+			RHU_601 = { remove_core = RHU }
+		}
+		
+		prestige = 25
+	}
+}
+# }

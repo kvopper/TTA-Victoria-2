@@ -1770,10 +1770,14 @@ country_event = {
 		random_country = {
 			limit = {
 				has_country_flag = DAL_content
-				has_country_flag = DAL_cultivated_inland_trade
+				OR = {
+					has_country_flag = DAL_cultivated_inland_trade
+					has_country_flag = DAL_can_establish_celduin_trading_posts
+				}
 				NOT = { ruling_party_ideology = master_of_laketown }
 			}
 			clr_country_flag = DAL_cultivated_inland_trade
+			clr_country_flag = DAL_can_establish_celduin_trading_posts
 		}
 		
 		# Remove trading modifiers and flags if DAL doesn't exist or it doesn't own Esgaroth. Handles DAL, DAL-formed RHO and DAL-formed FFN
