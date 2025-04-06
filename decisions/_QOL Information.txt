@@ -3367,6 +3367,7 @@ political_decisions = {
 						owns = 545
 						owns = 546
 						owns = 547
+						owns = 1479
 						owns = 554
 						owns = 543
 					}
@@ -3383,6 +3384,7 @@ political_decisions = {
 							NOT = { owns = 545 }
 							NOT = { owns = 546 }
 							NOT = { owns = 547 }
+							NOT = { owns = 1479 }
 							NOT = { owns = 554 }
 							NOT = { owns = 543 }
 						}
@@ -3551,6 +3553,7 @@ political_decisions = {
 						owns = 563
 						owns = 564
 						owns = 565
+						owns = 1477
 					}
 				}
 				empty_line_decisions_loc = { }
@@ -3565,6 +3568,7 @@ political_decisions = {
 							NOT = { owns = 563 }
 							NOT = { owns = 564 }
 							NOT = { owns = 565 }
+							NOT = { owns = 1477 }
 						}
 					}
 				}
@@ -3579,6 +3583,7 @@ political_decisions = {
 						owns = 567
 						owns = 599
 						owns = 569
+						owns = 1483
 					}
 				}
 				empty_line_decisions_loc = { }
@@ -3593,6 +3598,7 @@ political_decisions = {
 							NOT = { owns = 567 }
 							NOT = { owns = 599 }
 							NOT = { owns = 569 }
+							NOT = { owns = 1483 }
 						}
 					}
 				}
@@ -3814,6 +3820,7 @@ political_decisions = {
 						owns = 596
 						owns = 1396
 						owns = 600
+						owns = 1482
 					}
 				}
 				empty_line_decisions_loc = { }
@@ -3829,6 +3836,7 @@ political_decisions = {
 							NOT = { owns = 596 }
 							NOT = { owns = 1396 }
 							NOT = { owns = 600 }
+							NOT = { owns = 1482 }
 						}
 					}
 				}
@@ -3916,6 +3924,7 @@ political_decisions = {
 					owner = {
 						has_country_flag = claimed_RHU_604
 						owns = 1401
+						owns = 1481
 						owns = 1402
 						owns = 1403
 						owns = 604
@@ -3931,6 +3940,7 @@ political_decisions = {
 						has_country_flag = claimed_RHU_604
 						OR = {
 							NOT = { owns = 1401 }
+							NOT = { owns = 1481 }
 							NOT = { owns = 1402 }
 							NOT = { owns = 1403 }
 							NOT = { owns = 604 }
@@ -4062,6 +4072,7 @@ political_decisions = {
 					owner = {
 						has_country_flag = claimed_RHU_622
 						owns = 624
+						owns = 1480
 						owns = 1404
 						owns = 622
 						owns = 623
@@ -4076,6 +4087,7 @@ political_decisions = {
 						has_country_flag = claimed_RHU_622
 						OR = {
 							NOT = { owns = 624 }
+							NOT = { owns = 1480 }
 							NOT = { owns = 1404 }
 							NOT = { owns = 622 }
 							NOT = { owns = 623 }
@@ -4092,6 +4104,7 @@ political_decisions = {
 						owns = 625
 						owns = 626
 						owns = 627
+						owns = 1478
 						owns = 1407
 					}
 				}
@@ -4106,6 +4119,7 @@ political_decisions = {
 							NOT = { owns = 625 }
 							NOT = { owns = 626 }
 							NOT = { owns = 627 }
+							NOT = { owns = 1478 }
 							NOT = { owns = 1407 }
 						}
 					}
@@ -4150,6 +4164,7 @@ political_decisions = {
 					owner = {
 						has_country_flag = claimed_RHU_629
 						owns = 1412
+						owns = 1476
 						owns = 629
 						owns = 630
 						owns = 631
@@ -4165,6 +4180,7 @@ political_decisions = {
 						has_country_flag = claimed_RHU_629
 						OR = {
 							NOT = { owns = 1412 }
+							NOT = { owns = 1476 }
 							NOT = { owns = 629 }
 							NOT = { owns = 630 }
 							NOT = { owns = 631 }

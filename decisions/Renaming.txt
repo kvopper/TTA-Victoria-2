@@ -964,6 +964,7 @@ political_decisions = {
 					owns = 545
 					owns = 546
 					owns = 547
+					owns = 1479
 					owns = 554
 					owns = 543
 					OR = {
@@ -1328,6 +1329,7 @@ political_decisions = {
 				}
 				546 = { change_province_name = "Pelobaurg" }
 				547 = { change_province_name = "Velenbaurg" }
+				1479 = { change_province_name = "Vindorbaurg" }
 				owner = { FOR = { set_variable = { which = dobok_rhin_name value = 0 } } }
 			}
 			# [easterlings] - Dobok Rhín
@@ -1342,6 +1344,7 @@ political_decisions = {
 				}
 				546 = { change_province_name = "Burh Pelod" }
 				547 = { change_province_name = "Burh Velen" }
+				1479 = { change_province_name = "Burh Vindor" }
 				owner = { FOR = { set_variable = { which = dobok_rhin_name value = 1 } } }
 			}
 			# [northmen, gramavuld_northmen] - Dobok Rhín
@@ -1362,6 +1365,7 @@ political_decisions = {
 				544 = { state_scope = { change_region_name = "Dobok Rhín" } }
 				546 = { change_province_name = "Peloborg" }
 				547 = { change_province_name = "Velenborg" }
+				1479 = { change_province_name = "Vindorborg" }
 				owner = { FOR = { set_variable = { which = dobok_rhin_name value = 2 } } }
 			}
 			# [rohirrim] - Dobok Rhín
@@ -1376,6 +1380,7 @@ political_decisions = {
 				}
 				546 = { change_province_name = "Peloburg" }
 				547 = { change_province_name = "Velenburg" }
+				1479 = { change_province_name = "Vindorburg" }
 				owner = { FOR = { set_variable = { which = dobok_rhin_name value = 3 } } }
 			}
 			# [teleri, dunedain, eldar] - Dobok Rhín
@@ -1395,6 +1400,7 @@ political_decisions = {
 					}
 				}
 				544 = { state_scope = { change_region_name = "Emyn Rhín" } }
+				1479 = { change_province_name = "Tir Vindor" }
 				owner = { FOR = { set_variable = { which = dobok_rhin_name value = 4 } } }
 			}
 		}
@@ -12046,7 +12052,7 @@ political_decisions = {
 				}
 				1186 = { state_scope = { change_region_name = "Lower Saerlann" } }
 				1187 = { change_province_name = "Clotrad" }
-				905 = { change_province_name = "Sudúri" }
+				905 = { change_province_name = "Súthure" }
 				owner = { FOR = { set_variable = { which = lower_saerlann_name value = 1 } } }
 			}
 			# [teleri, dunedain, eldar] - Enedbund
@@ -14955,17 +14961,26 @@ political_decisions = {
 				}
 				AND = {
 					owns = 1412
+					owns = 1476
 					owns = 629
 					owns = 630
 					owns = 631
 					owns = 636
 					OR = {
+						# [anduinrim] - Southern Gazar Narkad
+						AND = {
+							is_culture_group = anduinrim
+							OR = {
+								FOR = { NOT = { check_variable = { which = southern_gazar_narkad_name value = -0.1 } } }
+								FOR = { check_variable = { which = southern_gazar_narkad_name value = 0.1 } }
+							}
+						}
 						# [easterlings] - Southern Gazar Narkad
 						AND = {
 							is_culture_group = easterlings
 							OR = {
-								FOR = { NOT = { check_variable = { which = southern_gazar_narkad_name value = -0.1 } } }
-								FOR = { check_variable = { which = southern_gazar_narkad_name value = 0.1 } }
+								FOR = { NOT = { check_variable = { which = southern_gazar_narkad_name value = 0.9 } } }
+								FOR = { check_variable = { which = southern_gazar_narkad_name value = 1.1 } }
 							}
 						}
 						# [northmen, gramavuld_northmen] - Southern Gazar Narkad
@@ -14975,8 +14990,16 @@ political_decisions = {
 								is_culture_group = gramavuld_northmen
 							}
 							OR = {
-								FOR = { NOT = { check_variable = { which = southern_gazar_narkad_name value = 0.9 } } }
-								FOR = { check_variable = { which = southern_gazar_narkad_name value = 1.1 } }
+								FOR = { NOT = { check_variable = { which = southern_gazar_narkad_name value = 1.9 } } }
+								FOR = { check_variable = { which = southern_gazar_narkad_name value = 2.1 } }
+							}
+						}
+						# [rohirrim] - Southern Gazar Narkad
+						AND = {
+							is_culture_group = rohirrim
+							OR = {
+								FOR = { NOT = { check_variable = { which = southern_gazar_narkad_name value = 2.9 } } }
+								FOR = { check_variable = { which = southern_gazar_narkad_name value = 3.1 } }
 							}
 						}
 						# [teleri, dunedain, eldar] - Southern Gazar Narkad
@@ -14987,8 +15010,8 @@ political_decisions = {
 								is_culture_group = eldar
 							}
 							OR = {
-								FOR = { NOT = { check_variable = { which = southern_gazar_narkad_name value = 1.9 } } }
-								FOR = { check_variable = { which = southern_gazar_narkad_name value = 2.1 } }
+								FOR = { NOT = { check_variable = { which = southern_gazar_narkad_name value = 3.9 } } }
+								FOR = { check_variable = { which = southern_gazar_narkad_name value = 4.1 } }
 							}
 						}
 					}
@@ -15054,6 +15077,7 @@ political_decisions = {
 					owns = 625
 					owns = 626
 					owns = 627
+					owns = 1478
 					owns = 1407
 					OR = {
 						# [anduinrim] - Eastern Gazar Barak
@@ -15431,19 +15455,33 @@ political_decisions = {
 				634 = { change_province_name = "Lower Nan Sarkar" }
 				owner = { FOR = { set_variable = { which = northern_gazar_narkad_name value = 2 } } }
 			}
-			# [easterlings] - Southern Gazar Narkad
+			# [anduinrim] - Southern Gazar Narkad
 			random_owned = {
 				limit = {
-					owner = { is_culture_group = easterlings }
+					owner = { is_culture_group = anduinrim }
 					province_id = 629
 					OR = {
 						owner = { FOR = { NOT = { check_variable = { which = southern_gazar_narkad_name value = -0.1 } } } }
 						owner = { FOR = { check_variable = { which = southern_gazar_narkad_name value = 0.1 } } }
 					}
 				}
-				1412 = { state_scope = { change_region_name = "Southern Gazar Narkad" } }
-				631 = { change_province_name = "Szem Vale" }
+				1476 = { change_province_name = "Sagrabaurg" }
 				owner = { FOR = { set_variable = { which = southern_gazar_narkad_name value = 0 } } }
+			}
+			# [easterlings] - Southern Gazar Narkad
+			random_owned = {
+				limit = {
+					owner = { is_culture_group = easterlings }
+					province_id = 629
+					OR = {
+						owner = { FOR = { NOT = { check_variable = { which = southern_gazar_narkad_name value = 0.9 } } } }
+						owner = { FOR = { check_variable = { which = southern_gazar_narkad_name value = 1.1 } } }
+					}
+				}
+				1412 = { state_scope = { change_region_name = "Southern Gazar Narkad" } }
+				1476 = { change_province_name = "Burh Sagra" }
+				631 = { change_province_name = "Szem Vale" }
+				owner = { FOR = { set_variable = { which = southern_gazar_narkad_name value = 1 } } }
 			}
 			# [northmen, gramavuld_northmen] - Southern Gazar Narkad
 			random_owned = {
@@ -15456,12 +15494,26 @@ political_decisions = {
 					}
 					province_id = 629
 					OR = {
-						owner = { FOR = { NOT = { check_variable = { which = southern_gazar_narkad_name value = 0.9 } } } }
-						owner = { FOR = { check_variable = { which = southern_gazar_narkad_name value = 1.1 } } }
+						owner = { FOR = { NOT = { check_variable = { which = southern_gazar_narkad_name value = 1.9 } } } }
+						owner = { FOR = { check_variable = { which = southern_gazar_narkad_name value = 2.1 } } }
 					}
 				}
 				1412 = { state_scope = { change_region_name = "Southern Narkadavuld" } }
-				owner = { FOR = { set_variable = { which = southern_gazar_narkad_name value = 1 } } }
+				1476 = { change_province_name = "Sagraborg" }
+				owner = { FOR = { set_variable = { which = southern_gazar_narkad_name value = 2 } } }
+			}
+			# [rohirrim] - Southern Gazar Narkad
+			random_owned = {
+				limit = {
+					owner = { is_culture_group = rohirrim }
+					province_id = 629
+					OR = {
+						owner = { FOR = { NOT = { check_variable = { which = southern_gazar_narkad_name value = 2.9 } } } }
+						owner = { FOR = { check_variable = { which = southern_gazar_narkad_name value = 3.1 } } }
+					}
+				}
+				1476 = { change_province_name = "Sagraburg" }
+				owner = { FOR = { set_variable = { which = southern_gazar_narkad_name value = 3 } } }
 			}
 			# [teleri, dunedain, eldar] - Southern Gazar Narkad
 			random_owned = {
@@ -15475,13 +15527,14 @@ political_decisions = {
 					}
 					province_id = 629
 					OR = {
-						owner = { FOR = { NOT = { check_variable = { which = southern_gazar_narkad_name value = 1.9 } } } }
-						owner = { FOR = { check_variable = { which = southern_gazar_narkad_name value = 2.1 } } }
+						owner = { FOR = { NOT = { check_variable = { which = southern_gazar_narkad_name value = 3.9 } } } }
+						owner = { FOR = { check_variable = { which = southern_gazar_narkad_name value = 4.1 } } }
 					}
 				}
 				1412 = { state_scope = { change_region_name = "Harnarkador" } }
+				1476 = { change_province_name = "Tir Sagra" }
 				631 = { change_province_name = "Nan Szem" }
-				owner = { FOR = { set_variable = { which = southern_gazar_narkad_name value = 2 } } }
+				owner = { FOR = { set_variable = { which = southern_gazar_narkad_name value = 4 } } }
 			}
 			# [anduinrim] - Western Gazar Barak
 			random_owned = {
@@ -15572,6 +15625,7 @@ political_decisions = {
 					}
 				}
 				627 = { change_province_name = "Zutibaurg" }
+				1478 = { change_province_name = "Athornbaurg" }
 				owner = { FOR = { set_variable = { which = eastern_gazar_barak_name value = 0 } } }
 			}
 			# [easterlings] - Eastern Gazar Barak
@@ -15586,6 +15640,7 @@ political_decisions = {
 				}
 				625 = { state_scope = { change_region_name = "Eastern Gazar Barak" } }
 				627 = { change_province_name = "Burh Zuti" }
+				1478 = { change_province_name = "Burh Athorn" }
 				1407 = { change_province_name = "Athorn Vale" }
 				owner = { FOR = { set_variable = { which = eastern_gazar_barak_name value = 1 } } }
 			}
@@ -15606,6 +15661,7 @@ political_decisions = {
 				}
 				625 = { state_scope = { change_region_name = "Eastern Barakavuld" } }
 				627 = { change_province_name = "Zutiborg" }
+				1478 = { change_province_name = "Athornborg" }
 				owner = { FOR = { set_variable = { which = eastern_gazar_barak_name value = 2 } } }
 			}
 			# [rohirrim] - Eastern Gazar Barak
@@ -15619,6 +15675,7 @@ political_decisions = {
 					}
 				}
 				627 = { change_province_name = "Zutiburg" }
+				1478 = { change_province_name = "Athornburg" }
 				owner = { FOR = { set_variable = { which = eastern_gazar_barak_name value = 3 } } }
 			}
 			# [teleri, dunedain, eldar] - Eastern Gazar Barak
@@ -15638,6 +15695,7 @@ political_decisions = {
 					}
 				}
 				625 = { state_scope = { change_region_name = "Rhûbarakdor" } }
+				1478 = { change_province_name = "Tir Athorn" }
 				1407 = { change_province_name = "Nan Athorn" }
 				owner = { FOR = { set_variable = { which = eastern_gazar_barak_name value = 4 } } }
 			}
@@ -15775,6 +15833,7 @@ political_decisions = {
 					owns = 596
 					owns = 1396
 					owns = 600
+					owns = 1482
 					OR = {
 						# [anduinrim] - Northern Telaith Lyst
 						AND = {
@@ -15858,6 +15917,7 @@ political_decisions = {
 					owns = 567
 					owns = 599
 					owns = 569
+					owns = 1483
 					OR = {
 						# [anduinrim] - Ethir Sûrûbeki
 						AND = {
@@ -15892,6 +15952,18 @@ political_decisions = {
 							OR = {
 								FOR = { NOT = { check_variable = { which = ethir_surubeki_name value = 2.9 } } }
 								FOR = { check_variable = { which = ethir_surubeki_name value = 3.1 } }
+							}
+						}
+						# [teleri, dunedain, eldar] - Ethir Sûrûbeki
+						AND = {
+							OR = {
+								is_culture_group = teleri
+								is_culture_group = dunedain
+								is_culture_group = eldar
+							}
+							OR = {
+								FOR = { NOT = { check_variable = { which = ethir_surubeki_name value = 3.9 } } }
+								FOR = { check_variable = { which = ethir_surubeki_name value = 4.1 } }
 							}
 						}
 					}
@@ -15947,6 +16019,62 @@ political_decisions = {
 							OR = {
 								FOR = { NOT = { check_variable = { which = surubeki_vale_name value = 3.9 } } }
 								FOR = { check_variable = { which = surubeki_vale_name value = 4.1 } }
+							}
+						}
+					}
+				}
+				AND = {
+					owns = 562
+					owns = 563
+					owns = 564
+					owns = 565
+					owns = 1477
+					OR = {
+						# [anduinrim] - Dacranamel
+						AND = {
+							is_culture_group = anduinrim
+							OR = {
+								FOR = { NOT = { check_variable = { which = dacranamel_name value = -0.1 } } }
+								FOR = { check_variable = { which = dacranamel_name value = 0.1 } }
+							}
+						}
+						# [easterlings] - Dacranamel
+						AND = {
+							is_culture_group = easterlings
+							OR = {
+								FOR = { NOT = { check_variable = { which = dacranamel_name value = 0.9 } } }
+								FOR = { check_variable = { which = dacranamel_name value = 1.1 } }
+							}
+						}
+						# [northmen, gramavuld_northmen] - Dacranamel
+						AND = {
+							OR = {
+								is_culture_group = northmen
+								is_culture_group = gramavuld_northmen
+							}
+							OR = {
+								FOR = { NOT = { check_variable = { which = dacranamel_name value = 1.9 } } }
+								FOR = { check_variable = { which = dacranamel_name value = 2.1 } }
+							}
+						}
+						# [rohirrim] - Dacranamel
+						AND = {
+							is_culture_group = rohirrim
+							OR = {
+								FOR = { NOT = { check_variable = { which = dacranamel_name value = 2.9 } } }
+								FOR = { check_variable = { which = dacranamel_name value = 3.1 } }
+							}
+						}
+						# [teleri, dunedain, eldar] - Dacranamel
+						AND = {
+							OR = {
+								is_culture_group = teleri
+								is_culture_group = dunedain
+								is_culture_group = eldar
+							}
+							OR = {
+								FOR = { NOT = { check_variable = { which = dacranamel_name value = 3.9 } } }
+								FOR = { check_variable = { which = dacranamel_name value = 4.1 } }
 							}
 						}
 					}
@@ -16204,6 +16332,7 @@ political_decisions = {
 					}
 				}
 				593 = { change_province_name = "Usabaurg" }
+				1482 = { change_province_name = "Lystbaurg" }
 				owner = { FOR = { set_variable = { which = northern_telaith_lyst_name value = 0 } } }
 			}
 			# [easterlings] - Northern Telaith Lyst
@@ -16218,6 +16347,7 @@ political_decisions = {
 				}
 				593 = { state_scope = { change_region_name = "Northern Telaith Lyst" } }
 				593 = { change_province_name = "Burh Usor" }
+				1482 = { change_province_name = "Burh Lyst" }
 				owner = { FOR = { set_variable = { which = northern_telaith_lyst_name value = 1 } } }
 			}
 			# [northmen, gramavuld_northmen] - Northern Telaith Lyst
@@ -16236,6 +16366,7 @@ political_decisions = {
 					}
 				}
 				593 = { change_province_name = "Usaborg" }
+				1482 = { change_province_name = "Lystborg" }
 				owner = { FOR = { set_variable = { which = northern_telaith_lyst_name value = 2 } } }
 			}
 			# [rohirrim] - Northern Telaith Lyst
@@ -16249,6 +16380,7 @@ political_decisions = {
 					}
 				}
 				593 = { change_province_name = "Usaburg" }
+				1482 = { change_province_name = "Lystburg" }
 				owner = { FOR = { set_variable = { which = northern_telaith_lyst_name value = 3 } } }
 			}
 			# [teleri, dunedain, eldar] - Northern Telaith Lyst
@@ -16268,6 +16400,7 @@ political_decisions = {
 					}
 				}
 				593 = { state_scope = { change_region_name = "Fortelaith" } }
+				1482 = { change_province_name = "Tir Lyst" }
 				owner = { FOR = { set_variable = { which = northern_telaith_lyst_name value = 4 } } }
 			}
 			# [easterlings] - Western Gathod
@@ -16317,6 +16450,7 @@ political_decisions = {
 					}
 				}
 				569 = { change_province_name = "Borobaurg" }
+				1483 = { change_province_name = "Sûrûbekibaurg" }
 				owner = { FOR = { set_variable = { which = ethir_surubeki_name value = 0 } } }
 			}
 			# [easterlings] - Ethir Sûrûbeki
@@ -16330,6 +16464,7 @@ political_decisions = {
 					}
 				}
 				569 = { change_province_name = "Burh Boro" }
+				1483 = { change_province_name = "Burh Sûrûbeki" }
 				owner = { FOR = { set_variable = { which = ethir_surubeki_name value = 1 } } }
 			}
 			# [northmen, gramavuld_northmen] - Ethir Sûrûbeki
@@ -16348,6 +16483,7 @@ political_decisions = {
 					}
 				}
 				569 = { change_province_name = "Boroborg" }
+				1483 = { change_province_name = "Sûrûbekiborg" }
 				owner = { FOR = { set_variable = { which = ethir_surubeki_name value = 2 } } }
 			}
 			# [rohirrim] - Ethir Sûrûbeki
@@ -16361,7 +16497,27 @@ political_decisions = {
 					}
 				}
 				569 = { change_province_name = "Boroburg" }
+				1483 = { change_province_name = "Sûrûbekiburg" }
 				owner = { FOR = { set_variable = { which = ethir_surubeki_name value = 3 } } }
+			}
+			# [teleri, dunedain, eldar] - Ethir Sûrûbeki
+			random_owned = {
+				limit = {
+					owner = {
+						OR = {
+							is_culture_group = teleri
+							is_culture_group = dunedain
+							is_culture_group = eldar
+						}
+					}
+					province_id = 566
+					OR = {
+						owner = { FOR = { NOT = { check_variable = { which = ethir_surubeki_name value = 3.9 } } } }
+						owner = { FOR = { check_variable = { which = ethir_surubeki_name value = 4.1 } } }
+					}
+				}
+				1483 = { change_province_name = "Tir Sûrûbeki" }
+				owner = { FOR = { set_variable = { which = ethir_surubeki_name value = 4 } } }
 			}
 			# [anduinrim] - Sûrûbeki Vale
 			random_owned = {
@@ -16439,6 +16595,82 @@ political_decisions = {
 				}
 				597 = { state_scope = { change_region_name = "Nan Sûrûbeki" } }
 				owner = { FOR = { set_variable = { which = surubeki_vale_name value = 4 } } }
+			}
+			# [anduinrim] - Dacranamel
+			random_owned = {
+				limit = {
+					owner = { is_culture_group = anduinrim }
+					province_id = 562
+					OR = {
+						owner = { FOR = { NOT = { check_variable = { which = dacranamel_name value = -0.1 } } } }
+						owner = { FOR = { check_variable = { which = dacranamel_name value = 0.1 } } }
+					}
+				}
+				1477 = { change_province_name = "Dacranamelbaurg" }
+				owner = { FOR = { set_variable = { which = dacranamel_name value = 0 } } }
+			}
+			# [easterlings] - Dacranamel
+			random_owned = {
+				limit = {
+					owner = { is_culture_group = easterlings }
+					province_id = 562
+					OR = {
+						owner = { FOR = { NOT = { check_variable = { which = dacranamel_name value = 0.9 } } } }
+						owner = { FOR = { check_variable = { which = dacranamel_name value = 1.1 } } }
+					}
+				}
+				1477 = { change_province_name = "Burh Dacranamel" }
+				owner = { FOR = { set_variable = { which = dacranamel_name value = 1 } } }
+			}
+			# [northmen, gramavuld_northmen] - Dacranamel
+			random_owned = {
+				limit = {
+					owner = {
+						OR = {
+							is_culture_group = northmen
+							is_culture_group = gramavuld_northmen
+						}
+					}
+					province_id = 562
+					OR = {
+						owner = { FOR = { NOT = { check_variable = { which = dacranamel_name value = 1.9 } } } }
+						owner = { FOR = { check_variable = { which = dacranamel_name value = 2.1 } } }
+					}
+				}
+				1477 = { change_province_name = "Dacranamelborg" }
+				owner = { FOR = { set_variable = { which = dacranamel_name value = 2 } } }
+			}
+			# [rohirrim] - Dacranamel
+			random_owned = {
+				limit = {
+					owner = { is_culture_group = rohirrim }
+					province_id = 562
+					OR = {
+						owner = { FOR = { NOT = { check_variable = { which = dacranamel_name value = 2.9 } } } }
+						owner = { FOR = { check_variable = { which = dacranamel_name value = 3.1 } } }
+					}
+				}
+				1477 = { change_province_name = "Dacranamelburg" }
+				owner = { FOR = { set_variable = { which = dacranamel_name value = 3 } } }
+			}
+			# [teleri, dunedain, eldar] - Dacranamel
+			random_owned = {
+				limit = {
+					owner = {
+						OR = {
+							is_culture_group = teleri
+							is_culture_group = dunedain
+							is_culture_group = eldar
+						}
+					}
+					province_id = 562
+					OR = {
+						owner = { FOR = { NOT = { check_variable = { which = dacranamel_name value = 3.9 } } } }
+						owner = { FOR = { check_variable = { which = dacranamel_name value = 4.1 } } }
+					}
+				}
+				1477 = { change_province_name = "Tir Dacranamel" }
+				owner = { FOR = { set_variable = { which = dacranamel_name value = 4 } } }
 			}
 			# [anduinrim] - Southern Telaith Lyst
 			random_owned = {
@@ -16755,6 +16987,7 @@ political_decisions = {
 				}
 				AND = {
 					owns = 1401
+					owns = 1481
 					owns = 1402
 					owns = 1403
 					owns = 604
@@ -16819,6 +17052,7 @@ political_decisions = {
 				}
 				AND = {
 					owns = 624
+					owns = 1480
 					owns = 1404
 					owns = 622
 					owns = 623
@@ -16977,6 +17211,7 @@ political_decisions = {
 						owner = { FOR = { check_variable = { which = agasha_dag_name value = 0.1 } } }
 					}
 				}
+				1481 = { change_province_name = "Agashabaurg" }
 				1402 = { change_province_name = "Dragabaurg" }
 				1403 = { change_province_name = "Elyarbaurg" }
 				604 = { change_province_name = "Kugabaurg" }
@@ -16994,6 +17229,7 @@ political_decisions = {
 					}
 				}
 				1401 = { state_scope = { change_region_name = "Agasha Dag" } }
+				1481 = { change_province_name = "Burh Agasha" }
 				1402 = { change_province_name = "Burh Dragu" }
 				1403 = { change_province_name = "Burh Elya" }
 				604 = { change_province_name = "Burh Kuga" }
@@ -17015,6 +17251,7 @@ political_decisions = {
 						owner = { FOR = { check_variable = { which = agasha_dag_name value = 2.1 } } }
 					}
 				}
+				1481 = { change_province_name = "Agashaborg" }
 				1402 = { change_province_name = "Dragaborg" }
 				1403 = { change_province_name = "Elyarborg" }
 				604 = { change_province_name = "Kugaborg" }
@@ -17031,6 +17268,7 @@ political_decisions = {
 						owner = { FOR = { check_variable = { which = agasha_dag_name value = 3.1 } } }
 					}
 				}
+				1481 = { change_province_name = "Agashaburg" }
 				1402 = { change_province_name = "Dragaburg" }
 				1403 = { change_province_name = "Elyarburg" }
 				604 = { change_province_name = "Kugaburg" }
@@ -17067,6 +17305,7 @@ political_decisions = {
 					}
 				}
 				1401 = { state_scope = { change_region_name = "Eryn Rhûn" } }
+				1481 = { change_province_name = "Tir Agasha" }
 				owner = { FOR = { set_variable = { which = agasha_dag_name value = 5 } } }
 			}
 			# [anduinrim] - Gazar Ibar
@@ -17080,6 +17319,7 @@ political_decisions = {
 					}
 				}
 				624 = { change_province_name = "Spevobaurg" }
+				1480 = { change_province_name = "Ibarbaurg" }
 				owner = { FOR = { set_variable = { which = gazar_ibar_name value = 0 } } }
 			}
 			# [easterlings] - Gazar Ibar
@@ -17094,6 +17334,7 @@ political_decisions = {
 				}
 				624 = { state_scope = { change_region_name = "Gazar Ibar" } }
 				624 = { change_province_name = "Burh Spev" }
+				1480 = { change_province_name = "Burh Ibar" }
 				owner = { FOR = { set_variable = { which = gazar_ibar_name value = 1 } } }
 			}
 			# [northmen, gramavuld_northmen] - Gazar Ibar
@@ -17113,6 +17354,7 @@ political_decisions = {
 				}
 				624 = { state_scope = { change_region_name = "Ibaravuld" } }
 				624 = { change_province_name = "Spevoborg" }
+				1480 = { change_province_name = "Ibarborg" }
 				owner = { FOR = { set_variable = { which = gazar_ibar_name value = 2 } } }
 			}
 			# [rohirrim] - Gazar Ibar
@@ -17126,6 +17368,7 @@ political_decisions = {
 					}
 				}
 				624 = { change_province_name = "Spevoburg" }
+				1480 = { change_province_name = "Ibarburg" }
 				owner = { FOR = { set_variable = { which = gazar_ibar_name value = 3 } } }
 			}
 			# [teleri, dunedain, eldar] - Gazar Ibar
@@ -17145,6 +17388,7 @@ political_decisions = {
 					}
 				}
 				624 = { state_scope = { change_region_name = "Dor Ibar" } }
+				1480 = { change_province_name = "Tir Ibar" }
 				owner = { FOR = { set_variable = { which = gazar_ibar_name value = 4 } } }
 			}
 		}

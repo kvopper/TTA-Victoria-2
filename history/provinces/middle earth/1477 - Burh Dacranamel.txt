@@ -1,0 +1,8 @@
+owner = URG
+controller = URG
+add_core = URG
+add_core = RHU
+trade_goods = food
+life_rating = 30
+terrain = rhun_plains
+fort = 1

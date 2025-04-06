@@ -6334,3 +6334,67 @@
 	}
 }
 
+# Vindorborg
+1479 = {
+	aristocrats = {
+		culture = dorwinrim
+		religion = men
+		size = 18
+	}
+	artisans = {
+		culture = dorwinrim
+		religion = men
+		size = 360
+	}
+	artisans = {
+		culture = avari
+		religion = elven
+		size = 540
+	}
+	bureaucrats = {
+		culture = dorwinrim
+		religion = men
+		size = 54
+	}
+	capitalists = {
+		culture = dorwinrim
+		religion = men
+		size = 36
+	}
+	clergymen = {
+		culture = dorwinrim
+		religion = men
+		size = 72
+	}
+	clergymen = {
+		culture = avari
+		religion = elven
+		size = 18
+	}
+	craftsmen = {
+		culture = dorwinrim
+		religion = men
+		size = 432
+	}
+	craftsmen = {
+		culture = avari
+		religion = elven
+		size = 108
+	}
+	labourers = {
+		culture = dorwinrim
+		religion = men
+		size = 12657
+	}
+	labourers = {
+		culture = avari
+		religion = elven
+		size = 3164
+	}
+	soldiers = {
+		culture = dorwinrim
+		religion = men
+		size = 540
+	}
+}
+

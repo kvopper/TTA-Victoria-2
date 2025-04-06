@@ -748,7 +748,7 @@
         naval_base = 5.265683
     }
 
-} # Gildor's Halls
+} # Westmarch
 
 64 = {
     text_scale = 3
@@ -7332,7 +7332,7 @@
 
 904 = {
     text_scale = 3
-} # Sudï¿½ri
+} # Sï¿½thure
 
 905 = {
     text_scale = 3
@@ -8817,7 +8817,7 @@
 
 1124 = {
     text_scale = 3
-} # Sea of Belegaer
+} # Mar-nu-Falmar
 
 1125 = {
     text_scale = 3
@@ -10788,4 +10788,124 @@
 
 1475 = {
     text_scale = 3
+} # Burh Sagra
+
+1476 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 2172.400000
+            y = 1497.700000
+        }
+
+    }
+
+} # Burh Dacranamel
+
+1477 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 2381.300000
+            y = 1218.650000
+        }
+
+    }
+
+    building_rotation = {
+        naval_base = 0.870300
+    }
+
+} # Burh Athorn
+
+1478 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 2291.000000
+            y = 1447.200000
+        }
+
+    }
+
+    building_rotation = {
+        naval_base = 4.742531
+    }
+
+} # Vindorborg
+
+1479 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 2280.700000
+            y = 1439.650000
+        }
+
+    }
+
+    building_rotation = {
+        naval_base = 1.049178
+    }
+
+} # Burh Ibar
+
+1480 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 2379.200000
+            y = 1389.350000
+        }
+
+    }
+
+    building_rotation = {
+        naval_base = 5.409053
+    }
+
+} # Burh Agasha
+
+1481 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 2530.350000
+            y = 1420.850000
+        }
+
+    }
+
+    building_rotation = {
+        naval_base = 5.504879
+    }
+
+} # Burh Lyst
+
+1482 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 2507.900000
+            y = 1238.200000
+        }
+
+    }
+
+} # Burh Sï¿½rï¿½beki
+
+1483 = {
+    text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 2498.350000
+            y = 1197.100000
+        }
+
+    }
+
+    building_rotation = {
+        naval_base = 1.590794
+    }
+
 }

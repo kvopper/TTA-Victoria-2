@@ -3587,6 +3587,7 @@ country_event = {
 						owns = 545
 						owns = 546
 						owns = 547
+						owns = 1479
 						owns = 554
 						owns = 543
 					}
@@ -3600,6 +3601,7 @@ country_event = {
 							owns = 545
 							owns = 546
 							owns = 547
+							owns = 1479
 							owns = 554
 							owns = 543
 						}
@@ -3781,6 +3783,7 @@ country_event = {
 						owns = 563
 						owns = 564
 						owns = 565
+						owns = 1477
 					}
 				}
 			}
@@ -3792,6 +3795,7 @@ country_event = {
 							owns = 563
 							owns = 564
 							owns = 565
+							owns = 1477
 						}
 					}
 					add_casus_belli = {
@@ -3811,6 +3815,7 @@ country_event = {
 						owns = 567
 						owns = 599
 						owns = 569
+						owns = 1483
 					}
 				}
 			}
@@ -3822,6 +3827,7 @@ country_event = {
 							owns = 567
 							owns = 599
 							owns = 569
+							owns = 1483
 						}
 					}
 					add_casus_belli = {
@@ -4062,6 +4068,7 @@ country_event = {
 						owns = 596
 						owns = 1396
 						owns = 600
+						owns = 1482
 					}
 				}
 			}
@@ -4074,6 +4081,7 @@ country_event = {
 							owns = 596
 							owns = 1396
 							owns = 600
+							owns = 1482
 						}
 					}
 					add_casus_belli = {
@@ -4168,6 +4176,7 @@ country_event = {
 					has_country_flag = claimed_RHU_604
 					NOT = {
 						owns = 1401
+						owns = 1481
 						owns = 1402
 						owns = 1403
 						owns = 604
@@ -4180,6 +4189,7 @@ country_event = {
 					limit = {
 						OR = {
 							owns = 1401
+							owns = 1481
 							owns = 1402
 							owns = 1403
 							owns = 604
@@ -4324,6 +4334,7 @@ country_event = {
 					has_country_flag = claimed_RHU_622
 					NOT = {
 						owns = 624
+						owns = 1480
 						owns = 1404
 						owns = 622
 						owns = 623
@@ -4335,6 +4346,7 @@ country_event = {
 					limit = {
 						OR = {
 							owns = 624
+							owns = 1480
 							owns = 1404
 							owns = 622
 							owns = 623
@@ -4356,6 +4368,7 @@ country_event = {
 						owns = 625
 						owns = 626
 						owns = 627
+						owns = 1478
 						owns = 1407
 					}
 				}
@@ -4367,6 +4380,7 @@ country_event = {
 							owns = 625
 							owns = 626
 							owns = 627
+							owns = 1478
 							owns = 1407
 						}
 					}
@@ -4418,6 +4432,7 @@ country_event = {
 					has_country_flag = claimed_RHU_629
 					NOT = {
 						owns = 1412
+						owns = 1476
 						owns = 629
 						owns = 630
 						owns = 631
@@ -4430,6 +4445,7 @@ country_event = {
 					limit = {
 						OR = {
 							owns = 1412
+							owns = 1476
 							owns = 629
 							owns = 630
 							owns = 631
@@ -11605,6 +11621,7 @@ country_event = {
 					province_id = 545
 					province_id = 546
 					province_id = 547
+					province_id = 1479
 					province_id = 554
 					province_id = 543
 				}
@@ -11708,6 +11725,7 @@ country_event = {
 					province_id = 563
 					province_id = 564
 					province_id = 565
+					province_id = 1477
 				}
 			}
 			owner = {
@@ -11724,6 +11742,7 @@ country_event = {
 					province_id = 567
 					province_id = 599
 					province_id = 569
+					province_id = 1483
 				}
 			}
 			owner = {
@@ -11858,6 +11877,7 @@ country_event = {
 					province_id = 596
 					province_id = 1396
 					province_id = 600
+					province_id = 1482
 				}
 			}
 			owner = {
@@ -11912,6 +11932,7 @@ country_event = {
 			limit = {
 				OR = {
 					province_id = 1401
+					province_id = 1481
 					province_id = 1402
 					province_id = 1403
 					province_id = 604
@@ -11995,6 +12016,7 @@ country_event = {
 			limit = {
 				OR = {
 					province_id = 624
+					province_id = 1480
 					province_id = 1404
 					province_id = 622
 					province_id = 623
@@ -12013,6 +12035,7 @@ country_event = {
 					province_id = 625
 					province_id = 626
 					province_id = 627
+					province_id = 1478
 					province_id = 1407
 				}
 			}
@@ -12045,6 +12068,7 @@ country_event = {
 			limit = {
 				OR = {
 					province_id = 1412
+					province_id = 1476
 					province_id = 629
 					province_id = 630
 					province_id = 631
