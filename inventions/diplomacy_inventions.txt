@@ -810,6 +810,25 @@ grond = {
 	
 	effect = { shared_prestige = 15 }
 }
+katmuda = {
+	limit = { culture_3 = 1 }
+	
+	chance = {
+		base = 0
+		modifier = {
+			factor = 2
+			accepted_culture = orc_culture
+		}
+		modifier = {
+			factor = 1
+			any_neighbor_country = {
+				invention = katmuda
+			}
+		}
+	}
+	
+	effect = { shared_prestige = 15 }
+}
 where_theres_a_whip = {
 	limit = { culture_3 = 1 }
 	
