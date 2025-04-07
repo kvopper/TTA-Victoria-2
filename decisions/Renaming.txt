@@ -3998,6 +3998,7 @@ political_decisions = {
 					}
 				}
 				755 = { state_scope = { change_region_name = "Gladden Fields" } }
+				756 = { change_province_name = "Gladden Vale" }
 				owner = { FOR = { set_variable = { which = gladden_fields_name value = 1 } } }
 			}
 			# [northmen, gramavuld_northmen] - Gladden Fields
@@ -7272,7 +7273,7 @@ political_decisions = {
 						owner = { FOR = { check_variable = { which = lower_lebennin_name value = 0.1 } } }
 					}
 				}
-				46 = { change_province_name = "Bar Annúnaid" }
+				47 = { change_province_name = "Arnbâd" }
 				owner = { FOR = { set_variable = { which = lower_lebennin_name value = 0 } } }
 			}
 			# [wildmen] - Lower Lebennin
@@ -10390,6 +10391,18 @@ political_decisions = {
 								FOR = { check_variable = { which = numeriador_name value = 0.1 } }
 							}
 						}
+						# [teleri, dunedain, eldar] - Númeriador
+						AND = {
+							OR = {
+								is_culture_group = teleri
+								is_culture_group = dunedain
+								is_culture_group = eldar
+							}
+							OR = {
+								FOR = { NOT = { check_variable = { which = numeriador_name value = 0.9 } } }
+								FOR = { check_variable = { which = numeriador_name value = 1.1 } }
+							}
+						}
 					}
 				}
 				AND = {
@@ -10472,6 +10485,25 @@ political_decisions = {
 				}
 				946 = { change_province_name = "Thórin's Hall" }
 				owner = { FOR = { set_variable = { which = numeriador_name value = 0 } } }
+			}
+			# [teleri, dunedain, eldar] - Númeriador
+			random_owned = {
+				limit = {
+					owner = {
+						OR = {
+							is_culture_group = teleri
+							is_culture_group = dunedain
+							is_culture_group = eldar
+						}
+					}
+					province_id = 941
+					OR = {
+						owner = { FOR = { NOT = { check_variable = { which = numeriador_name value = 0.9 } } } }
+						owner = { FOR = { check_variable = { which = numeriador_name value = 1.1 } } }
+					}
+				}
+				946 = { change_province_name = "Talath Dûneriador" }
+				owner = { FOR = { set_variable = { which = numeriador_name value = 1 } } }
 			}
 			# [breelander, hobbits] - Dor Lelvin
 			random_owned = {
@@ -11020,6 +11052,7 @@ political_decisions = {
 				}
 				1157 = { state_scope = { change_region_name = "Talvi-mûri" } }
 				1157 = { change_province_name = "Kuru-Leiri" }
+				966 = { change_province_name = "Aamukuu" }
 				967 = { change_province_name = "Kuusila" }
 				owner = { FOR = { set_variable = { which = talvi-muri_name value = 0 } } }
 			}
@@ -19799,6 +19832,7 @@ political_decisions = {
 				372 = { state_scope = { change_region_name = "West-march" } }
 				807 = { change_province_name = "Frecasburg" }
 				808 = { change_province_name = "Hardscadu" }
+				809 = { change_province_name = "Adornas" }
 				810 = { change_province_name = "Fréaham" }
 				683 = { change_province_name = "Éodunburg" }
 				owner = { FOR = { set_variable = { which = west-march_name value = 0 } } }
