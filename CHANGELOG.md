@@ -31,6 +31,7 @@ All notable changes will be documented in this file.
  - Added Pretender Rebels, removed many others
  - Unaccepted bureaucrats automatically demote into labourers
  - Flavourful lore accurate newspapers, extra news articles
+ - Ahistorical Barding Realm flavor
 
 ## [v0.5 Bearers of the Black Arrow](https://github.com/The-Third-Age/TTA-Victoria-2/releases/tag/v0.5) - 2024-12-23
 
