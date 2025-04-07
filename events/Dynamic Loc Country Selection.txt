@@ -1434,7 +1434,10 @@ country_event = {
 				has_province_modifier = dynamic_loc_slot_selector
 				GON = {
 					has_country_flag = dynamic_loc_slot_selector
-					government = republic
+					OR = {
+						government = republic
+						government = merchant_republic
+					}
 				}
 			}
 			state_scope = { change_region_name = "@GON Republic of Gondor" }
@@ -1444,9 +1447,17 @@ country_event = {
 				has_province_modifier = dynamic_loc_slot_selector
 				GON = {
 					has_country_flag = dynamic_loc_slot_selector
-					OR = {
-						government = sauron_dictatorship
-					}
+					government = monarchy_2
+				}
+			}
+			state_scope = { change_region_name = "@GON Stewardship of Gondor" }
+		}
+		dynamic_loc_slots = {
+			limit = {
+				has_province_modifier = dynamic_loc_slot_selector
+				GON = {
+					has_country_flag = dynamic_loc_slot_selector
+					government = dominion_1
 				}
 			}
 			state_scope = { change_region_name = "@GON Kingdom of Adûnabâr" }
@@ -1458,7 +1469,12 @@ country_event = {
 					has_country_flag = dynamic_loc_slot_selector
 					OR = {
 						government = istari_kingdom
+						government = tribal
+						government = sauron_dictatorship
+						government = dictatorship
 						government = monarchy
+						government = nazgul_dictatorship
+						government = dominion_2
 					}
 				}
 			}
@@ -1471,8 +1487,12 @@ country_event = {
 					has_country_flag = dynamic_loc_slot_selector
 					OR = {
 						government = istari_kingdom
-						government = republic
+						government = tribal
+						government = sauron_dictatorship
+						government = dictatorship
 						government = monarchy
+						government = nazgul_dictatorship
+						government = monarchy_2
 					}
 				}
 			}
@@ -1483,9 +1503,7 @@ country_event = {
 				has_province_modifier = dynamic_loc_slot_selector
 				ITH = {
 					has_country_flag = dynamic_loc_slot_selector
-					OR = {
-						government = sauron_dictatorship
-					}
+					government = dominion_1
 				}
 			}
 			state_scope = { change_region_name = "@ITH Occupied Ithilien" }
@@ -1503,17 +1521,15 @@ country_event = {
 		dynamic_loc_slots = {
 			limit = {
 				has_province_modifier = dynamic_loc_slot_selector
-				LOS = {
+				ITH = {
 					has_country_flag = dynamic_loc_slot_selector
 					OR = {
-						government = istari_kingdom
 						government = republic
-						government = monarchy
-						government = sauron_dictatorship
+						government = merchant_republic
 					}
 				}
 			}
-			state_scope = { change_region_name = "@LOS Lossarnach" }
+			state_scope = { change_region_name = "@ITH Republic of Ithilien" }
 		}
 		dynamic_loc_slots = {
 			limit = {
@@ -1528,12 +1544,23 @@ country_event = {
 		dynamic_loc_slots = {
 			limit = {
 				has_province_modifier = dynamic_loc_slot_selector
-				LEB = {
+				LOS = {
 					has_country_flag = dynamic_loc_slot_selector
-					government = dominion_2
+					OR = {
+						government = republic
+						government = istari_kingdom
+						government = dominion_1
+						government = tribal
+						government = merchant_republic
+						government = sauron_dictatorship
+						government = dictatorship
+						government = monarchy
+						government = nazgul_dictatorship
+						government = monarchy_2
+					}
 				}
 			}
-			state_scope = { change_region_name = "@LEB Fiefdom of Lebennin" }
+			state_scope = { change_region_name = "@LOS Realm of Lossarnach" }
 		}
 		dynamic_loc_slots = {
 			limit = {
@@ -1541,14 +1568,30 @@ country_event = {
 				LEB = {
 					has_country_flag = dynamic_loc_slot_selector
 					OR = {
-						government = istari_kingdom
 						government = republic
-						government = monarchy
+						government = istari_kingdom
+						government = dominion_1
+						government = tribal
+						government = merchant_republic
 						government = sauron_dictatorship
+						government = dictatorship
+						government = monarchy
+						government = nazgul_dictatorship
+						government = monarchy_2
 					}
 				}
 			}
-			state_scope = { change_region_name = "@LEB Lebennin" }
+			state_scope = { change_region_name = "@LEB Realm of Lebennin" }
+		}
+		dynamic_loc_slots = {
+			limit = {
+				has_province_modifier = dynamic_loc_slot_selector
+				LEB = {
+					has_country_flag = dynamic_loc_slot_selector
+					government = dominion_2
+				}
+			}
+			state_scope = { change_region_name = "@LEB Fiefdom of Lebennin" }
 		}
 		dynamic_loc_slots = {
 			limit = {
@@ -1567,8 +1610,13 @@ country_event = {
 					has_country_flag = dynamic_loc_slot_selector
 					OR = {
 						government = istari_kingdom
-						government = monarchy
+						government = dominion_1
+						government = tribal
 						government = sauron_dictatorship
+						government = dictatorship
+						government = monarchy
+						government = nazgul_dictatorship
+						government = monarchy_2
 					}
 				}
 			}
@@ -1579,25 +1627,13 @@ country_event = {
 				has_province_modifier = dynamic_loc_slot_selector
 				AMR = {
 					has_country_flag = dynamic_loc_slot_selector
-					government = republic
-				}
-			}
-			state_scope = { change_region_name = "@AMR Republic of Belfalas" }
-		}
-		dynamic_loc_slots = {
-			limit = {
-				has_province_modifier = dynamic_loc_slot_selector
-				LAM = {
-					has_country_flag = dynamic_loc_slot_selector
 					OR = {
-						government = istari_kingdom
 						government = republic
-						government = monarchy
-						government = sauron_dictatorship
+						government = merchant_republic
 					}
 				}
 			}
-			state_scope = { change_region_name = "@LAM Lamedon" }
+			state_scope = { change_region_name = "@AMR Republic of Belfalas" }
 		}
 		dynamic_loc_slots = {
 			limit = {
@@ -1612,17 +1648,23 @@ country_event = {
 		dynamic_loc_slots = {
 			limit = {
 				has_province_modifier = dynamic_loc_slot_selector
-				ANF = {
+				LAM = {
 					has_country_flag = dynamic_loc_slot_selector
 					OR = {
-						government = istari_kingdom
 						government = republic
-						government = monarchy
+						government = istari_kingdom
+						government = dominion_1
+						government = tribal
+						government = merchant_republic
 						government = sauron_dictatorship
+						government = dictatorship
+						government = monarchy
+						government = nazgul_dictatorship
+						government = monarchy_2
 					}
 				}
 			}
-			state_scope = { change_region_name = "@ANF Anfalas" }
+			state_scope = { change_region_name = "@LAM Realm of Lamedon" }
 		}
 		dynamic_loc_slots = {
 			limit = {
@@ -1637,17 +1679,23 @@ country_event = {
 		dynamic_loc_slots = {
 			limit = {
 				has_province_modifier = dynamic_loc_slot_selector
-				ANO = {
+				ANF = {
 					has_country_flag = dynamic_loc_slot_selector
 					OR = {
-						government = istari_kingdom
 						government = republic
-						government = monarchy
+						government = istari_kingdom
+						government = dominion_1
+						government = tribal
+						government = merchant_republic
 						government = sauron_dictatorship
+						government = dictatorship
+						government = monarchy
+						government = nazgul_dictatorship
+						government = monarchy_2
 					}
 				}
 			}
-			state_scope = { change_region_name = "@ANO Anórien" }
+			state_scope = { change_region_name = "@ANF Realm of Anfalas" }
 		}
 		dynamic_loc_slots = {
 			limit = {
@@ -1662,13 +1710,40 @@ country_event = {
 		dynamic_loc_slots = {
 			limit = {
 				has_province_modifier = dynamic_loc_slot_selector
+				ANO = {
+					has_country_flag = dynamic_loc_slot_selector
+					OR = {
+						government = republic
+						government = istari_kingdom
+						government = dominion_1
+						government = tribal
+						government = merchant_republic
+						government = sauron_dictatorship
+						government = dictatorship
+						government = monarchy
+						government = nazgul_dictatorship
+						government = monarchy_2
+					}
+				}
+			}
+			state_scope = { change_region_name = "@ANO Realm of Anórien" }
+		}
+		dynamic_loc_slots = {
+			limit = {
+				has_province_modifier = dynamic_loc_slot_selector
 				TOL = {
 					has_country_flag = dynamic_loc_slot_selector
 					OR = {
-						government = istari_kingdom
 						government = republic
-						government = monarchy
+						government = istari_kingdom
+						government = dominion_1
+						government = tribal
+						government = merchant_republic
 						government = sauron_dictatorship
+						government = dictatorship
+						government = monarchy
+						government = nazgul_dictatorship
+						government = monarchy_2
 					}
 				}
 			}
@@ -1689,6 +1764,27 @@ country_event = {
 				has_province_modifier = dynamic_loc_slot_selector
 				MRN = {
 					has_country_flag = dynamic_loc_slot_selector
+					OR = {
+						government = republic
+						government = istari_kingdom
+						government = dominion_1
+						government = tribal
+						government = merchant_republic
+						government = sauron_dictatorship
+						government = dictatorship
+						government = monarchy
+						government = nazgul_dictatorship
+						government = monarchy_2
+					}
+				}
+			}
+			state_scope = { change_region_name = "@MRN Realm of Mornan" }
+		}
+		dynamic_loc_slots = {
+			limit = {
+				has_province_modifier = dynamic_loc_slot_selector
+				MRN = {
+					has_country_flag = dynamic_loc_slot_selector
 					government = dominion_2
 				}
 			}
@@ -1697,39 +1793,9 @@ country_event = {
 		dynamic_loc_slots = {
 			limit = {
 				has_province_modifier = dynamic_loc_slot_selector
-				MRN = {
-					has_country_flag = dynamic_loc_slot_selector
-					OR = {
-						government = istari_kingdom
-						government = republic
-						government = monarchy
-						government = sauron_dictatorship
-					}
-				}
-			}
-			state_scope = { change_region_name = "@MRN Mornan" }
-		}
-		dynamic_loc_slots = {
-			limit = {
-				has_province_modifier = dynamic_loc_slot_selector
 				DRU = { has_country_flag = dynamic_loc_slot_selector }
 			}
 			state_scope = { change_region_name = "@DRU Drúedain of Drúedain Forest" }
-		}
-		dynamic_loc_slots = {
-			limit = {
-				has_province_modifier = dynamic_loc_slot_selector
-				ADR = {
-					has_country_flag = dynamic_loc_slot_selector
-					OR = {
-						government = istari_kingdom
-						government = republic
-						government = monarchy
-						government = sauron_dictatorship
-					}
-				}
-			}
-			state_scope = { change_region_name = "@ADR Andrast" }
 		}
 		dynamic_loc_slots = {
 			limit = {
@@ -1744,9 +1810,33 @@ country_event = {
 		dynamic_loc_slots = {
 			limit = {
 				has_province_modifier = dynamic_loc_slot_selector
+				ADR = {
+					has_country_flag = dynamic_loc_slot_selector
+					OR = {
+						government = republic
+						government = istari_kingdom
+						government = dominion_1
+						government = tribal
+						government = merchant_republic
+						government = sauron_dictatorship
+						government = dictatorship
+						government = monarchy
+						government = nazgul_dictatorship
+						government = monarchy_2
+					}
+				}
+			}
+			state_scope = { change_region_name = "@ADR Realm of Andrast" }
+		}
+		dynamic_loc_slots = {
+			limit = {
+				has_province_modifier = dynamic_loc_slot_selector
 				GNR = {
 					has_country_flag = dynamic_loc_slot_selector
-					government = republic
+					OR = {
+						government = republic
+						government = merchant_republic
+					}
 				}
 			}
 			state_scope = { change_region_name = "@GNR Republic of Gondor" }
@@ -1756,9 +1846,7 @@ country_event = {
 				has_province_modifier = dynamic_loc_slot_selector
 				GNR = {
 					has_country_flag = dynamic_loc_slot_selector
-					OR = {
-						government = sauron_dictatorship
-					}
+					government = dominion_1
 				}
 			}
 			state_scope = { change_region_name = "@GNR Kingdom of Adûnabâr" }
@@ -1768,9 +1856,24 @@ country_event = {
 				has_province_modifier = dynamic_loc_slot_selector
 				GNR = {
 					has_country_flag = dynamic_loc_slot_selector
+					government = monarchy_2
+				}
+			}
+			state_scope = { change_region_name = "@GNR Stewardship of Gondir" }
+		}
+		dynamic_loc_slots = {
+			limit = {
+				has_province_modifier = dynamic_loc_slot_selector
+				GNR = {
+					has_country_flag = dynamic_loc_slot_selector
 					OR = {
 						government = istari_kingdom
+						government = tribal
+						government = sauron_dictatorship
+						government = dictatorship
 						government = monarchy
+						government = nazgul_dictatorship
+						government = dominion_2
 					}
 				}
 			}
@@ -1803,10 +1906,16 @@ country_event = {
 				PUK = {
 					has_country_flag = dynamic_loc_slot_selector
 					OR = {
-						government = istari_kingdom
 						government = republic
-						government = monarchy
+						government = istari_kingdom
+						government = dominion_1
+						government = tribal
+						government = merchant_republic
 						government = sauron_dictatorship
+						government = dictatorship
+						government = monarchy
+						government = nazgul_dictatorship
+						government = monarchy_2
 					}
 				}
 			}
@@ -1841,7 +1950,10 @@ country_event = {
 				has_province_modifier = dynamic_loc_slot_selector
 				RUN = {
 					has_country_flag = dynamic_loc_slot_selector
-					government = republic
+					OR = {
+						government = republic
+						government = merchant_republic
+					}
 				}
 			}
 			state_scope = { change_region_name = "@RUN Reunited Republic" }
@@ -1853,8 +1965,14 @@ country_event = {
 					has_country_flag = dynamic_loc_slot_selector
 					OR = {
 						government = istari_kingdom
-						government = monarchy
+						government = dominion_1
+						government = tribal
 						government = sauron_dictatorship
+						government = dictatorship
+						government = monarchy
+						government = nazgul_dictatorship
+						government = monarchy_2
+						government = dominion_2
 					}
 				}
 			}
@@ -1867,8 +1985,15 @@ country_event = {
 					has_country_flag = dynamic_loc_slot_selector
 					OR = {
 						government = istari_kingdom
-						government = monarchy
+						government = dominion_1
+						government = tribal
+						government = merchant_republic
 						government = sauron_dictatorship
+						government = dictatorship
+						government = monarchy
+						government = nazgul_dictatorship
+						government = monarchy_2
+						government = dominion_2
 					}
 				}
 			}
@@ -1890,9 +2015,16 @@ country_event = {
 				MOR = {
 					has_country_flag = dynamic_loc_slot_selector
 					OR = {
-						government = istari_kingdom
 						government = republic
+						government = istari_kingdom
+						government = dominion_1
+						government = tribal
+						government = merchant_republic
+						government = dictatorship
 						government = monarchy
+						government = nazgul_dictatorship
+						government = monarchy_2
+						government = dominion_2
 					}
 				}
 			}
@@ -1920,7 +2052,7 @@ country_event = {
 				has_province_modifier = dynamic_loc_slot_selector
 				SHE = { has_country_flag = dynamic_loc_slot_selector }
 			}
-			state_scope = { change_region_name = "@SHE Shelob's Domain" }
+			state_scope = { change_region_name = "@SHE Domain of Shelob" }
 		}
 		dynamic_loc_slots = {
 			limit = {
@@ -1934,25 +2066,31 @@ country_event = {
 				has_province_modifier = dynamic_loc_slot_selector
 				HRD = {
 					has_country_flag = dynamic_loc_slot_selector
-					OR = {
-						government = istari_kingdom
-						government = republic
-						government = monarchy
-						government = sauron_dictatorship
-					}
+					government = dominion_2
 				}
 			}
-			state_scope = { change_region_name = "@HRD Harondor" }
+			state_scope = { change_region_name = "@HRD Fiefdom of South Gondor" }
 		}
 		dynamic_loc_slots = {
 			limit = {
 				has_province_modifier = dynamic_loc_slot_selector
 				HRD = {
 					has_country_flag = dynamic_loc_slot_selector
-					government = dominion_2
+					OR = {
+						government = republic
+						government = istari_kingdom
+						government = dominion_1
+						government = tribal
+						government = merchant_republic
+						government = sauron_dictatorship
+						government = dictatorship
+						government = monarchy
+						government = nazgul_dictatorship
+						government = monarchy_2
+					}
 				}
 			}
-			state_scope = { change_region_name = "@HRD South Gondor" }
+			state_scope = { change_region_name = "@HRD Realm of Harondor" }
 		}
 		dynamic_loc_slots = {
 			limit = {
@@ -1966,35 +2104,35 @@ country_event = {
 				has_province_modifier = dynamic_loc_slot_selector
 				HRN = { has_country_flag = dynamic_loc_slot_selector }
 			}
-			state_scope = { change_region_name = "@HRN Harnendor" }
+			state_scope = { change_region_name = "@HRN Realm of Harnendor" }
 		}
 		dynamic_loc_slots = {
 			limit = {
 				has_province_modifier = dynamic_loc_slot_selector
 				HRU = { has_country_flag = dynamic_loc_slot_selector }
 			}
-			state_scope = { change_region_name = "@HRU Harûzan" }
+			state_scope = { change_region_name = "@HRU Realm of Harûzan" }
 		}
 		dynamic_loc_slots = {
 			limit = {
 				has_province_modifier = dynamic_loc_slot_selector
 				PEZ = { has_country_flag = dynamic_loc_slot_selector }
 			}
-			state_scope = { change_region_name = "@PEZ Pezarsan" }
+			state_scope = { change_region_name = "@PEZ Realm of Pezarsan" }
 		}
 		dynamic_loc_slots = {
 			limit = {
 				has_province_modifier = dynamic_loc_slot_selector
 				LUR = { has_country_flag = dynamic_loc_slot_selector }
 			}
-			state_scope = { change_region_name = "@LUR Lûrmsakûn" }
+			state_scope = { change_region_name = "@LUR Realm of Lûrmsakûn" }
 		}
 		dynamic_loc_slots = {
 			limit = {
 				has_province_modifier = dynamic_loc_slot_selector
 				ARY = { has_country_flag = dynamic_loc_slot_selector }
 			}
-			state_scope = { change_region_name = "@ARY Arysis" }
+			state_scope = { change_region_name = "@ARY Realm of Arysis" }
 		}
 		dynamic_loc_slots = {
 			limit = {
@@ -2127,14 +2265,17 @@ country_event = {
 				has_province_modifier = dynamic_loc_slot_selector
 				BSH = { has_country_flag = dynamic_loc_slot_selector }
 			}
-			state_scope = { change_region_name = "@BSH Bar Shûal" }
+			state_scope = { change_region_name = "@BSH Dwarves of Bar Shûal" }
 		}
 		dynamic_loc_slots = {
 			limit = {
 				has_province_modifier = dynamic_loc_slot_selector
 				DOR = {
 					has_country_flag = dynamic_loc_slot_selector
-					government = republic
+					OR = {
+						government = republic
+						government = merchant_republic
+					}
 				}
 			}
 			state_scope = { change_region_name = "@DOR Republic of Dorwinion" }
@@ -2146,8 +2287,14 @@ country_event = {
 					has_country_flag = dynamic_loc_slot_selector
 					OR = {
 						government = istari_kingdom
-						government = monarchy
+						government = dominion_1
+						government = tribal
 						government = sauron_dictatorship
+						government = dictatorship
+						government = monarchy
+						government = nazgul_dictatorship
+						government = monarchy_2
+						government = dominion_2
 					}
 				}
 			}
@@ -2158,7 +2305,7 @@ country_event = {
 				has_province_modifier = dynamic_loc_slot_selector
 				RME = { has_country_flag = dynamic_loc_slot_selector }
 			}
-			state_scope = { change_region_name = "@RME Rómenost" }
+			state_scope = { change_region_name = "@RME Realm of Rómenost" }
 		}
 		dynamic_loc_slots = {
 			limit = {
@@ -2219,9 +2366,60 @@ country_event = {
 		dynamic_loc_slots = {
 			limit = {
 				has_province_modifier = dynamic_loc_slot_selector
-				RHO = { has_country_flag = dynamic_loc_slot_selector }
+				RHO = {
+					has_country_flag = dynamic_loc_slot_selector
+					OR = {
+						government = republic
+						government = merchant_republic
+					}
+				}
 			}
-			state_scope = { change_region_name = "@RHO Rhovanion" }
+			state_scope = { change_region_name = "@RHO Republic of Rhovanion" }
+		}
+		dynamic_loc_slots = {
+			limit = {
+				has_province_modifier = dynamic_loc_slot_selector
+				RHO = {
+					has_country_flag = dynamic_loc_slot_selector
+					government = monarchy_2
+				}
+			}
+			state_scope = { change_region_name = "@RHO Barding Kingdom of Rhovanion" }
+		}
+		dynamic_loc_slots = {
+			limit = {
+				has_province_modifier = dynamic_loc_slot_selector
+				RHO = {
+					has_country_flag = dynamic_loc_slot_selector
+					government = dominion_2
+				}
+			}
+			state_scope = { change_region_name = "@RHO Fiefdom of Dor Rhúnen" }
+		}
+		dynamic_loc_slots = {
+			limit = {
+				has_province_modifier = dynamic_loc_slot_selector
+				RHO = {
+					has_country_flag = dynamic_loc_slot_selector
+					OR = {
+						government = istari_kingdom
+						government = dominion_1
+						government = tribal
+						government = sauron_dictatorship
+						government = dictatorship
+						government = monarchy
+						government = nazgul_dictatorship
+					}
+				}
+			}
+			state_scope = { change_region_name = "@RHO Kingdom of Rhovanion" }
+		}
+		dynamic_loc_slots = {
+			limit = {
+				has_province_modifier = dynamic_loc_slot_selector
+				FFN = { has_country_flag = dynamic_loc_slot_selector }
+			}
+			state_scope = { change_region_name = "@FFN Free Folk of the North" }
 		}
 		dynamic_loc_slots = {
 			limit = {
@@ -2235,11 +2433,7 @@ country_event = {
 				has_province_modifier = dynamic_loc_slot_selector
 				DAL = {
 					has_country_flag = dynamic_loc_slot_selector
-					OR = {
-						government = istari_kingdom
-						government = monarchy
-						government = sauron_dictatorship
-					}
+					government = monarchy
 				}
 			}
 			state_scope = { change_region_name = "@DAL Barding Realm" }
@@ -2249,7 +2443,29 @@ country_event = {
 				has_province_modifier = dynamic_loc_slot_selector
 				DAL = {
 					has_country_flag = dynamic_loc_slot_selector
-					government = republic
+					OR = {
+						government = istari_kingdom
+						government = dominion_1
+						government = tribal
+						government = sauron_dictatorship
+						government = dictatorship
+						government = nazgul_dictatorship
+						government = monarchy_2
+						government = dominion_2
+					}
+				}
+			}
+			state_scope = { change_region_name = "@DAL Kingdom of Dale" }
+		}
+		dynamic_loc_slots = {
+			limit = {
+				has_province_modifier = dynamic_loc_slot_selector
+				DAL = {
+					has_country_flag = dynamic_loc_slot_selector
+					OR = {
+						government = republic
+						government = merchant_republic
+					}
 				}
 			}
 			state_scope = { change_region_name = "@DAL Republic of Dale" }
@@ -2259,7 +2475,7 @@ country_event = {
 				has_province_modifier = dynamic_loc_slot_selector
 				ESG = { has_country_flag = dynamic_loc_slot_selector }
 			}
-			state_scope = { change_region_name = "@ESG Esgaroth-upon-the-Long-Lake" }
+			state_scope = { change_region_name = "@ESG Realm of Esgaroth-upon-the-Long-Lake" }
 		}
 		dynamic_loc_slots = {
 			limit = {
@@ -2301,7 +2517,7 @@ country_event = {
 				has_province_modifier = dynamic_loc_slot_selector
 				EDA = { has_country_flag = dynamic_loc_slot_selector }
 			}
-			state_scope = { change_region_name = "@EDA Vassal of Erebor" }
+			state_scope = { change_region_name = "@EDA Dwarvish Vassal of Erebor" }
 		}
 		dynamic_loc_slots = {
 			limit = {
@@ -2329,7 +2545,10 @@ country_event = {
 				has_province_modifier = dynamic_loc_slot_selector
 				ERE = {
 					has_country_flag = dynamic_loc_slot_selector
-					government = republic
+					OR = {
+						government = republic
+						government = merchant_republic
+					}
 				}
 			}
 			state_scope = { change_region_name = "@ERE Republic of Erebor" }
@@ -2341,8 +2560,14 @@ country_event = {
 					has_country_flag = dynamic_loc_slot_selector
 					OR = {
 						government = istari_kingdom
-						government = monarchy
+						government = dominion_1
+						government = tribal
 						government = sauron_dictatorship
+						government = dictatorship
+						government = monarchy
+						government = nazgul_dictatorship
+						government = monarchy_2
+						government = dominion_2
 					}
 				}
 			}
@@ -2416,7 +2641,7 @@ country_event = {
 				has_province_modifier = dynamic_loc_slot_selector
 				MTN = { has_country_flag = dynamic_loc_slot_selector }
 			}
-			state_scope = { change_region_name = "@MTN Urukdurbzagh" }
+			state_scope = { change_region_name = "@MTN United Tribles of Urukdurbzagh" }
 		}
 		dynamic_loc_slots = {
 			limit = {
@@ -2430,25 +2655,31 @@ country_event = {
 				has_province_modifier = dynamic_loc_slot_selector
 				GUL = {
 					has_country_flag = dynamic_loc_slot_selector
-					government = dominion_1
+					OR = {
+						government = republic
+						government = istari_kingdom
+						government = tribal
+						government = merchant_republic
+						government = sauron_dictatorship
+						government = dictatorship
+						government = monarchy
+						government = nazgul_dictatorship
+						government = monarchy_2
+						government = dominion_2
+					}
 				}
 			}
-			state_scope = { change_region_name = "@GUL Nazgûl Realm of Dol Guldur" }
+			state_scope = { change_region_name = "@GUL Realm of Dol Guldur" }
 		}
 		dynamic_loc_slots = {
 			limit = {
 				has_province_modifier = dynamic_loc_slot_selector
 				GUL = {
 					has_country_flag = dynamic_loc_slot_selector
-					OR = {
-						government = istari_kingdom
-						government = republic
-						government = monarchy
-						government = sauron_dictatorship
-					}
+					government = dominion_1
 				}
 			}
-			state_scope = { change_region_name = "@GUL Dol Guldur" }
+			state_scope = { change_region_name = "@GUL Nazgûl Realm of Dol Guldur" }
 		}
 		dynamic_loc_slots = {
 			limit = {
@@ -2518,21 +2749,21 @@ country_event = {
 				has_province_modifier = dynamic_loc_slot_selector
 				MEL = { has_country_flag = dynamic_loc_slot_selector }
 			}
-			state_scope = { change_region_name = "@MEL Mathleisbuarg" }
+			state_scope = { change_region_name = "@MEL Realm of Mathleisbuarg" }
 		}
 		dynamic_loc_slots = {
 			limit = {
 				has_province_modifier = dynamic_loc_slot_selector
 				FRA = { has_country_flag = dynamic_loc_slot_selector }
 			}
-			state_scope = { change_region_name = "@FRA Framsburg" }
+			state_scope = { change_region_name = "@FRA Realm of Framsburg" }
 		}
 		dynamic_loc_slots = {
 			limit = {
 				has_province_modifier = dynamic_loc_slot_selector
 				KHU = { has_country_flag = dynamic_loc_slot_selector }
 			}
-			state_scope = { change_region_name = "@KHU Annâk-khurfu" }
+			state_scope = { change_region_name = "@KHU Dwarves of Annâk-khurfu" }
 		}
 		dynamic_loc_slots = {
 			limit = {
@@ -2558,9 +2789,13 @@ country_event = {
 					has_country_flag = dynamic_loc_slot_selector
 					OR = {
 						government = istari_kingdom
-						government = republic
-						government = monarchy
+						government = dominion_1
+						government = tribal
 						government = sauron_dictatorship
+						government = dictatorship
+						government = monarchy
+						government = nazgul_dictatorship
+						government = monarchy_2
 					}
 				}
 			}
@@ -2569,13 +2804,32 @@ country_event = {
 		dynamic_loc_slots = {
 			limit = {
 				has_province_modifier = dynamic_loc_slot_selector
+				ROH = {
+					has_country_flag = dynamic_loc_slot_selector
+					OR = {
+						government = republic
+						government = merchant_republic
+					}
+				}
+			}
+			state_scope = { change_region_name = "@ROH Republic of Rohan" }
+		}
+		dynamic_loc_slots = {
+			limit = {
+				has_province_modifier = dynamic_loc_slot_selector
 				ISE = {
 					has_country_flag = dynamic_loc_slot_selector
 					OR = {
-						government = istari_kingdom
 						government = republic
-						government = monarchy
+						government = istari_kingdom
+						government = dominion_1
+						government = tribal
+						government = merchant_republic
 						government = sauron_dictatorship
+						government = dictatorship
+						government = monarchy
+						government = nazgul_dictatorship
+						government = monarchy_2
 					}
 				}
 			}
@@ -2596,63 +2850,63 @@ country_event = {
 				has_province_modifier = dynamic_loc_slot_selector
 				ENE = { has_country_flag = dynamic_loc_slot_selector }
 			}
-			state_scope = { change_region_name = "@ENE Enedwaithrim" }
+			state_scope = { change_region_name = "@ENE United Tribes of Enedwaith" }
 		}
 		dynamic_loc_slots = {
 			limit = {
 				has_province_modifier = dynamic_loc_slot_selector
 				DUN = { has_country_flag = dynamic_loc_slot_selector }
 			}
-			state_scope = { change_region_name = "@DUN United Dunland" }
+			state_scope = { change_region_name = "@DUN United Tribes of Dunland" }
 		}
 		dynamic_loc_slots = {
 			limit = {
 				has_province_modifier = dynamic_loc_slot_selector
 				DCA = { has_country_flag = dynamic_loc_slot_selector }
 			}
-			state_scope = { change_region_name = "@DCA Caru-Lûth" }
+			state_scope = { change_region_name = "@DCA Caru Tribe" }
 		}
 		dynamic_loc_slots = {
 			limit = {
 				has_province_modifier = dynamic_loc_slot_selector
 				DDR = { has_country_flag = dynamic_loc_slot_selector }
 			}
-			state_scope = { change_region_name = "@DDR Draig-Lûth" }
+			state_scope = { change_region_name = "@DDR Draig Tribe" }
 		}
 		dynamic_loc_slots = {
 			limit = {
 				has_province_modifier = dynamic_loc_slot_selector
 				DHE = { has_country_flag = dynamic_loc_slot_selector }
 			}
-			state_scope = { change_region_name = "@DHE Hebog-Lûth" }
+			state_scope = { change_region_name = "@DHE Hebog Tribe" }
 		}
 		dynamic_loc_slots = {
 			limit = {
 				has_province_modifier = dynamic_loc_slot_selector
 				DUC = { has_country_flag = dynamic_loc_slot_selector }
 			}
-			state_scope = { change_region_name = "@DUC Uch-Lûth" }
+			state_scope = { change_region_name = "@DUC Uch Tribe" }
 		}
 		dynamic_loc_slots = {
 			limit = {
 				has_province_modifier = dynamic_loc_slot_selector
 				DTU = { has_country_flag = dynamic_loc_slot_selector }
 			}
-			state_scope = { change_region_name = "@DTU Turch-Lûth" }
+			state_scope = { change_region_name = "@DTU Turch Tribe" }
 		}
 		dynamic_loc_slots = {
 			limit = {
 				has_province_modifier = dynamic_loc_slot_selector
 				ALG = { has_country_flag = dynamic_loc_slot_selector }
 			}
-			state_scope = { change_region_name = "@ALG Algraig" }
+			state_scope = { change_region_name = "@ALG Tribes of Algraig" }
 		}
 		dynamic_loc_slots = {
 			limit = {
 				has_province_modifier = dynamic_loc_slot_selector
 				GWA = { has_country_flag = dynamic_loc_slot_selector }
 			}
-			state_scope = { change_region_name = "@GWA Gwathirim" }
+			state_scope = { change_region_name = "@GWA Gwathirim Tribe" }
 		}
 		dynamic_loc_slots = {
 			limit = {
@@ -2688,10 +2942,16 @@ country_event = {
 				MAN = {
 					has_country_flag = dynamic_loc_slot_selector
 					OR = {
-						government = istari_kingdom
 						government = republic
-						government = monarchy
+						government = istari_kingdom
+						government = tribal
+						government = merchant_republic
 						government = sauron_dictatorship
+						government = dictatorship
+						government = monarchy
+						government = nazgul_dictatorship
+						government = monarchy_2
+						government = dominion_2
 					}
 				}
 			}
@@ -2740,7 +3000,10 @@ country_event = {
 				has_province_modifier = dynamic_loc_slot_selector
 				ARN = {
 					has_country_flag = dynamic_loc_slot_selector
-					government = republic
+					OR = {
+						government = republic
+						government = merchant_republic
+					}
 				}
 			}
 			state_scope = { change_region_name = "@ARN Republic of Arnor" }
@@ -2752,8 +3015,14 @@ country_event = {
 					has_country_flag = dynamic_loc_slot_selector
 					OR = {
 						government = istari_kingdom
-						government = monarchy
+						government = dominion_1
+						government = tribal
 						government = sauron_dictatorship
+						government = dictatorship
+						government = monarchy
+						government = nazgul_dictatorship
+						government = monarchy_2
+						government = dominion_2
 					}
 				}
 			}
@@ -2771,7 +3040,7 @@ country_event = {
 				has_province_modifier = dynamic_loc_slot_selector
 				THA = { has_country_flag = dynamic_loc_slot_selector }
 			}
-			state_scope = { change_region_name = "@THA Tharbad" }
+			state_scope = { change_region_name = "@THA Dúnedain of Tharbad" }
 		}
 		dynamic_loc_slots = {
 			limit = {
@@ -2780,8 +3049,14 @@ country_event = {
 					has_country_flag = dynamic_loc_slot_selector
 					OR = {
 						government = istari_kingdom
-						government = monarchy
+						government = dominion_1
+						government = tribal
 						government = sauron_dictatorship
+						government = dictatorship
+						government = monarchy
+						government = nazgul_dictatorship
+						government = monarchy_2
+						government = dominion_2
 					}
 				}
 			}
@@ -2792,7 +3067,10 @@ country_event = {
 				has_province_modifier = dynamic_loc_slot_selector
 				CAR = {
 					has_country_flag = dynamic_loc_slot_selector
-					government = republic
+					OR = {
+						government = republic
+						government = merchant_republic
+					}
 				}
 			}
 			state_scope = { change_region_name = "@CAR Republic of Cardolan" }
@@ -2802,7 +3080,7 @@ country_event = {
 				has_province_modifier = dynamic_loc_slot_selector
 				MET = { has_country_flag = dynamic_loc_slot_selector }
 			}
-			state_scope = { change_region_name = "@MET Metraith" }
+			state_scope = { change_region_name = "@MET Realm of Metraith" }
 		}
 		dynamic_loc_slots = {
 			limit = {
@@ -2828,9 +3106,49 @@ country_event = {
 		dynamic_loc_slots = {
 			limit = {
 				has_province_modifier = dynamic_loc_slot_selector
-				SAE = { has_country_flag = dynamic_loc_slot_selector }
+				LSR = { has_country_flag = dynamic_loc_slot_selector }
 			}
-			state_scope = { change_region_name = "@SAE Tribes of Saerlann" }
+			state_scope = { change_region_name = "@LSR Tribes of Lower Saerlann" }
+		}
+		dynamic_loc_slots = {
+			limit = {
+				has_province_modifier = dynamic_loc_slot_selector
+				USR = { has_country_flag = dynamic_loc_slot_selector }
+			}
+			state_scope = { change_region_name = "@USR Tribes of Upper Saerlann" }
+		}
+		dynamic_loc_slots = {
+			limit = {
+				has_province_modifier = dynamic_loc_slot_selector
+				SAE = {
+					has_country_flag = dynamic_loc_slot_selector
+					OR = {
+						government = istari_kingdom
+						government = dominion_1
+						government = tribal
+						government = sauron_dictatorship
+						government = dictatorship
+						government = monarchy
+						government = nazgul_dictatorship
+						government = monarchy_2
+						government = dominion_2
+					}
+				}
+			}
+			state_scope = { change_region_name = "@SAE Kingdom of Saerlann" }
+		}
+		dynamic_loc_slots = {
+			limit = {
+				has_province_modifier = dynamic_loc_slot_selector
+				SAE = {
+					has_country_flag = dynamic_loc_slot_selector
+					OR = {
+						government = republic
+						government = merchant_republic
+					}
+				}
+			}
+			state_scope = { change_region_name = "@SAE Republic of Saerlann" }
 		}
 		dynamic_loc_slots = {
 			limit = {
@@ -2932,21 +3250,40 @@ country_event = {
 				WEA = {
 					has_country_flag = dynamic_loc_slot_selector
 					OR = {
-						government = istari_kingdom
 						government = republic
-						government = monarchy
+						government = istari_kingdom
+						government = tribal
+						government = merchant_republic
 						government = sauron_dictatorship
+						government = dictatorship
+						government = monarchy
+						government = nazgul_dictatorship
+						government = monarchy_2
+						government = dominion_2
 					}
 				}
 			}
-			state_scope = { change_region_name = "@WEA Weathertop" }
+			state_scope = { change_region_name = "@WEA Realm of Weathertop" }
 		}
 		dynamic_loc_slots = {
 			limit = {
 				has_province_modifier = dynamic_loc_slot_selector
 				ROF = { has_country_flag = dynamic_loc_slot_selector }
 			}
-			state_scope = { change_region_name = "@ROF Royal Fold" }
+			state_scope = { change_region_name = "@ROF Dúnedain of the Royal Fold" }
+		}
+		dynamic_loc_slots = {
+			limit = {
+				has_province_modifier = dynamic_loc_slot_selector
+				ART = {
+					has_country_flag = dynamic_loc_slot_selector
+					OR = {
+						government = republic
+						government = merchant_republic
+					}
+				}
+			}
+			state_scope = { change_region_name = "@ART Republic of Arthedain" }
 		}
 		dynamic_loc_slots = {
 			limit = {
@@ -2955,8 +3292,14 @@ country_event = {
 					has_country_flag = dynamic_loc_slot_selector
 					OR = {
 						government = istari_kingdom
-						government = monarchy
+						government = dominion_1
+						government = tribal
 						government = sauron_dictatorship
+						government = dictatorship
+						government = monarchy
+						government = nazgul_dictatorship
+						government = monarchy_2
+						government = dominion_2
 					}
 				}
 			}
@@ -2965,26 +3308,16 @@ country_event = {
 		dynamic_loc_slots = {
 			limit = {
 				has_province_modifier = dynamic_loc_slot_selector
-				ART = {
-					has_country_flag = dynamic_loc_slot_selector
-					government = republic
-				}
-			}
-			state_scope = { change_region_name = "@ART Republic of Arthedain" }
-		}
-		dynamic_loc_slots = {
-			limit = {
-				has_province_modifier = dynamic_loc_slot_selector
 				SYL = { has_country_flag = dynamic_loc_slot_selector }
 			}
-			state_scope = { change_region_name = "@SYL Old Sylvana" }
+			state_scope = { change_region_name = "@SYL Realm of Old Sylvana" }
 		}
 		dynamic_loc_slots = {
 			limit = {
 				has_province_modifier = dynamic_loc_slot_selector
 				HRV = { has_country_flag = dynamic_loc_slot_selector }
 			}
-			state_scope = { change_region_name = "@HRV Harvaneth" }
+			state_scope = { change_region_name = "@HRV Realm of Harvaneth" }
 		}
 		dynamic_loc_slots = {
 			limit = {
@@ -3012,10 +3345,13 @@ country_event = {
 				has_province_modifier = dynamic_loc_slot_selector
 				SBU = {
 					has_country_flag = dynamic_loc_slot_selector
-					government = monarchy
+					OR = {
+						government = monarchy
+						government = monarchy_2
+					}
 				}
 			}
-			state_scope = { change_region_name = "@SBU United Kingdom of Shire and Breeland" }
+			state_scope = { change_region_name = "@SBU United Kingdoms of Shire and Breeland" }
 		}
 		dynamic_loc_slots = {
 			limit = {
@@ -3023,9 +3359,15 @@ country_event = {
 				SBU = {
 					has_country_flag = dynamic_loc_slot_selector
 					OR = {
-						government = istari_kingdom
 						government = republic
+						government = istari_kingdom
+						government = dominion_1
+						government = tribal
+						government = merchant_republic
 						government = sauron_dictatorship
+						government = dictatorship
+						government = nazgul_dictatorship
+						government = dominion_2
 					}
 				}
 			}
@@ -3043,7 +3385,7 @@ country_event = {
 				has_province_modifier = dynamic_loc_slot_selector
 				EMB = { has_country_flag = dynamic_loc_slot_selector }
 			}
-			state_scope = { change_region_name = "@EMB Emyn Beraid" }
+			state_scope = { change_region_name = "@EMB Elves of Emyn Beraid" }
 		}
 		dynamic_loc_slots = {
 			limit = {
@@ -3071,7 +3413,7 @@ country_event = {
 				has_province_modifier = dynamic_loc_slot_selector
 				BLG = { has_country_flag = dynamic_loc_slot_selector }
 			}
-			state_scope = { change_region_name = "@BLG Belegost" }
+			state_scope = { change_region_name = "@BLG Dwarves of Belegost" }
 		}
 		dynamic_loc_slots = {
 			limit = {
@@ -3092,28 +3434,28 @@ country_event = {
 				has_province_modifier = dynamic_loc_slot_selector
 				KHG = { has_country_flag = dynamic_loc_slot_selector }
 			}
-			state_scope = { change_region_name = "@KHG Khagolabbad Faraku" }
+			state_scope = { change_region_name = "@KHG Dwarves of Khagolabbad Faraku" }
 		}
 		dynamic_loc_slots = {
 			limit = {
 				has_province_modifier = dynamic_loc_slot_selector
 				KHZ = { has_country_flag = dynamic_loc_slot_selector }
 			}
-			state_scope = { change_region_name = "@KHZ Khazadbizar" }
+			state_scope = { change_region_name = "@KHZ Dwarves of Khazadbizar" }
 		}
 		dynamic_loc_slots = {
 			limit = {
 				has_province_modifier = dynamic_loc_slot_selector
 				NGD = { has_country_flag = dynamic_loc_slot_selector }
 			}
-			state_scope = { change_region_name = "@NGD Nogrod" }
+			state_scope = { change_region_name = "@NGD Dwarves of Nogrod" }
 		}
 		dynamic_loc_slots = {
 			limit = {
 				has_province_modifier = dynamic_loc_slot_selector
 				THO = { has_country_flag = dynamic_loc_slot_selector }
 			}
-			state_scope = { change_region_name = "@THO Thorin's Halls" }
+			state_scope = { change_region_name = "@THO Dwarves of Thorin's Halls" }
 		}
 		dynamic_loc_slots = {
 			limit = {
@@ -3141,7 +3483,7 @@ country_event = {
 				has_province_modifier = dynamic_loc_slot_selector
 				FOR = { has_country_flag = dynamic_loc_slot_selector }
 			}
-			state_scope = { change_region_name = "@FOR World Bank" }
+			state_scope = { change_region_name = "@FOR Northern Wastes" }
 		}
 		dynamic_loc_slots = {
 			limit = {
