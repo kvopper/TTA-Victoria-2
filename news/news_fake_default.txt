@@ -63,4 +63,11 @@ fake_news_pattern = { "36" "some_fake_ANY_title_36" "some_fake_ANY_36" }
 fake_news_pattern = { "37" "some_fake_ANY_title_37" "some_fake_ANY_37" }
 fake_news_pattern = { "38" "some_fake_ANY_title_38" "some_fake_ANY_38" }
 fake_news_pattern = { "39" "some_fake_ANY_title_39" "some_fake_ANY_39" }
-
+fake_news_pattern = { "40" "some_fake_ANY_title_40" "some_fake_ANY_40" }
+fake_news_pattern = { "41" "some_fake_ANY_title_41" "some_fake_ANY_41" }
+fake_news_pattern = { "42" "some_fake_ANY_title_42" "some_fake_ANY_42" }
+fake_news_pattern = { "43" "some_fake_ANY_title_43" "some_fake_ANY_43" }
+fake_news_pattern = { "44" "some_fake_ANY_title_44" "some_fake_ANY_44" }
+fake_news_pattern = { "45" "some_fake_ANY_title_45" "some_fake_ANY_45" }
+fake_news_pattern = { "46" "some_fake_ANY_title_46" "some_fake_ANY_46" }
+fake_news_pattern = { "47" "some_fake_ANY_title_47" "some_fake_ANY_47" }
