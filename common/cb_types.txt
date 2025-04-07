@@ -3972,11 +3972,89 @@ establish_celduin_trading_post_cb = {
 	# scope = country that had owned the provinces
 	# THIS = country that applied wargoal
 	on_po_accepted = {
-		# TODO: Set effects
-		#		If only one valid province, annex that to THIS
-		#		Otherwise, use dynamic loc to toss an event at the player for them to select the province they want
+		set_variable = { which = DAL_trading_post_count value = 0 }
+		any_owned = {
+			limit = {
+				OR = {
+					province_id = 1476 # Burh Sagra
+					province_id = 1477 # Burh Dacranamel
+					province_id = 1478 # Burh Athorn
+					province_id = 1479 # Vindorborg
+					province_id = 1480 # Burh Ibar
+					province_id = 1481 # Burh Agasha
+					province_id = 1482 # Burh Lyst
+					province_id = 1483 # Burh Sûrûbeki
+				}
+			}
+			owner = { change_variable = { which = DAL_trading_post_count value = 1 } }
+		}
 		
-		THIS = { capital_scope = { province_event = { id = 70007 days = 0 } } }
+		# Exactly one potential location, annex it directly to THIS
+		random_owned = {
+			limit = {
+				owner = {
+					check_variable = { which = DAL_trading_post_count value = 0.9 }
+					NOT = { check_variable = { which = DAL_trading_post_count value = 1.1 } }
+				}
+				OR = {
+					province_id = 1476 # Burh Sagra
+					province_id = 1477 # Burh Dacranamel
+					province_id = 1478 # Burh Athorn
+					province_id = 1479 # Vindorborg
+					province_id = 1480 # Burh Ibar
+					province_id = 1481 # Burh Agasha
+					province_id = 1482 # Burh Lyst
+					province_id = 1483 # Burh Sûrûbeki
+				}
+			}
+			secede_province = THIS
+			any_pop = {
+				limit = { type = soldiers }
+				pop_type = tribals
+				ideology = {
+					factor = 99
+					value = tribal_ideology
+				}
+			}
+			province_event = { id = 50969 days = 0 }
+		}
+		
+		# 2 or more potential locations
+		random_owned = {
+			limit = { owner = { check_variable = { which = DAL_trading_post_count value = 1.9 } } }
+			owner = {
+				set_country_flag = trade_port_target
+				FOR = {
+					set_variable = { which = dynamic_loc_province_count value = 0 }
+					
+					# Resets the naming count
+					set_variable = { which = dynamic_loc_names_province value = 0 }
+					
+					random_owned = {
+						any_neighbor_province = {
+							limit = {
+								OR = {
+									province_id = 1476 # Burh Sagra
+									province_id = 1477 # Burh Dacranamel
+									province_id = 1478 # Burh Athorn
+									province_id = 1479 # Vindorborg
+									province_id = 1480 # Burh Ibar
+									province_id = 1481 # Burh Agasha
+									province_id = 1482 # Burh Lyst
+									province_id = 1483 # Burh Sûrûbeki
+								}
+								owner = { has_country_flag = trade_port_target }
+							}
+							add_province_modifier = { name = dynamic_loc_potential_province_target duration = 1 }
+							owner = { FOR = { change_variable = { which = dynamic_loc_province_count value = 1 } } }
+						}
+					}
+					
+					country_event = { id = 300016 days = 0 } # Province Loc Setting
+				}
+				country_event = 70009
+			}
+		}
 	}
 }
 

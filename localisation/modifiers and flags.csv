@@ -87,6 +87,7 @@ alliance_dwarves_men_selected_region;Alliance of Dwarves and Men Selected Region
 alliance_dwarves_men_diplomacy_stalled;Alliance of Dwarves and Men Diplomacy Stalled;x
 ai_return_cores_alliance_men_dwarves;AI Return Cores Target;x
 dynamic_loc_potential_region_target;;x
+dynamic_loc_potential_province_target;;x
 dynamic_loc_slot_selector;;x
 dynamic_loc_region_target_1;;x
 dynamic_loc_region_target_2;;x
@@ -128,6 +129,46 @@ dynamic_loc_region_target_37;;x
 dynamic_loc_region_target_38;;x
 dynamic_loc_region_target_39;;x
 dynamic_loc_region_target_40;;x
+dynamic_loc_province_target_1;;x
+dynamic_loc_province_target_2;;x
+dynamic_loc_province_target_3;;x
+dynamic_loc_province_target_4;;x
+dynamic_loc_province_target_5;;x
+dynamic_loc_province_target_6;;x
+dynamic_loc_province_target_7;;x
+dynamic_loc_province_target_8;;x
+dynamic_loc_province_target_9;;x
+dynamic_loc_province_target_10;;x
+dynamic_loc_province_target_11;;x
+dynamic_loc_province_target_12;;x
+dynamic_loc_province_target_13;;x
+dynamic_loc_province_target_14;;x
+dynamic_loc_province_target_15;;x
+dynamic_loc_province_target_16;;x
+dynamic_loc_province_target_17;;x
+dynamic_loc_province_target_18;;x
+dynamic_loc_province_target_19;;x
+dynamic_loc_province_target_20;;x
+dynamic_loc_province_target_21;;x
+dynamic_loc_province_target_22;;x
+dynamic_loc_province_target_23;;x
+dynamic_loc_province_target_24;;x
+dynamic_loc_province_target_25;;x
+dynamic_loc_province_target_26;;x
+dynamic_loc_province_target_27;;x
+dynamic_loc_province_target_28;;x
+dynamic_loc_province_target_29;;x
+dynamic_loc_province_target_30;;x
+dynamic_loc_province_target_31;;x
+dynamic_loc_province_target_32;;x
+dynamic_loc_province_target_33;;x
+dynamic_loc_province_target_34;;x
+dynamic_loc_province_target_35;;x
+dynamic_loc_province_target_36;;x
+dynamic_loc_province_target_37;;x
+dynamic_loc_province_target_38;;x
+dynamic_loc_province_target_39;;x
+dynamic_loc_province_target_40;;x
 alliance_of_dwarves_and_men_cannot_join;Cannot join the Alliance of Dwarves and Men;x
 alliance_of_dwarves_and_men_cannot_join_desc;We have recently left or rejected an invite to the Alliance of Dwarves and Men. Until the cooldown wears off, we cannot (re)join the alliance.;x
 alliance_of_dwarves_and_men_union_countdown;Alliance of Dwarves and Men Union Cooldown;x

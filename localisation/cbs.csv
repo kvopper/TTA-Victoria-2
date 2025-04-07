@@ -163,8 +163,8 @@ conquer_gramavuld_cb_setup;Acquire all provinces in §YGramavuld§! owned by §Y
 conquer_gramavuld_cb_short;Acquire all provinces in §YGramavuld§! owned by §Y$RECIPIENT$§!;x
 establish_celduin_trading_post_cb;Establish Trading Post;x
 establish_celduin_trading_post_cb_desc;Establish a trading post;
-establish_celduin_trading_post_cb_setup;Establish a trading post in §Y$RECIPIENT$!§!;
-establish_celduin_trading_post_cb_short;Establish a trading post in §Y$RECIPIENT$!§!;
+establish_celduin_trading_post_cb_setup;Establish a trading post in §Y$RECIPIENT$§!;
+establish_celduin_trading_post_cb_short;Establish a trading post in §Y$RECIPIENT$§!;
 #####################;x
 ##### WAR NAMES #####;x {
 #####################;x

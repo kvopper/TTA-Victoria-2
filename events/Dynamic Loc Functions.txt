@@ -127,6 +127,33 @@ country_event = {
 	}
 }
 
+# Dynamic Loc Province Cleanup -- Clearing out old options only
+country_event = {
+	id = 401002
+	title = "Dynamic Loc Province Cleanup"
+	desc = ""
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Clean up"
+		
+		# Clean up for next time
+		random_owned = {
+			any_neighbor_province = {
+				remove_province_modifier = dynamic_loc_province_target_1
+				remove_province_modifier = dynamic_loc_province_target_2
+				remove_province_modifier = dynamic_loc_province_target_3
+				remove_province_modifier = dynamic_loc_province_target_4
+				remove_province_modifier = dynamic_loc_province_target_5
+				remove_province_modifier = dynamic_loc_province_target_6
+				remove_province_modifier = dynamic_loc_province_target_7
+				remove_province_modifier = dynamic_loc_province_target_8
+			}
+		}
+	}
+}
+
 # Reset Names
 country_event = {
 	id = 402000
@@ -162,6 +189,7 @@ country_event = {
 		country_event = 400001
 		country_event = 400002
 		country_event = 401001
+		country_event = 401002
 		country_event = 402000
 	}
 }

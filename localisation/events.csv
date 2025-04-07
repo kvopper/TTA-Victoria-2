@@ -673,6 +673,7 @@ EVTDESC70005;We have advanced enough technologically to start to be considered o
 EVTDESC70006;The ungrateful government of $FROMCOUNTRY$ has sized our investments and claimed them as their own!;;;;;;;;;;;;x
 EVTDESC70007;With any land acquisition, there are many changes that need to be made as a result. When the populace does not recognize their new rulers as their own, some will choose to turn away from what they see as an illegitimate rule.;x
 EVTDESC70008;We finally have the support of the people to become a monarchy. What should our leader's title be?\n\n§RThe different titles are just cosmetic changes. They are all functionally the same.§!;x
+EVTDESC70010;We have established a new trading post. Which province is it in?;x
 #############################;x }
 ##### GOVERNMENT EVENTS #####;x {
 #############################;x

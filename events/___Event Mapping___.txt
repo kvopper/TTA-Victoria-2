@@ -43,4 +43,5 @@
 # 300000 - 300001: Dynamic Loc Country Selection
 # 300002 - 300003: Dynamic Loc Culture Group Selection
 # 300008 - 300009: Dynamic Loc Region Selection
+# 300016 - 300017: Dynamic Loc Province Selection
 # 400000 - 499999: Dynamic Loc Functions

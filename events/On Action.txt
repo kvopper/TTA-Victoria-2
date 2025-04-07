@@ -2469,3 +2469,1477 @@ country_event = {
 		government = monarchy
 	}
 }
+
+# DAL Trading Post Selection
+country_event = {
+	id = 70009
+	title = "Choosing our New Trade Post - Province Callback"
+	desc = ""
+	picture = "gramavuld/market"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Continue"
+		
+		random_country = {
+			limit = {
+				has_country_flag = DAL_content
+				FOR = {
+					check_variable = { which = dynamic_loc_province_count value = 1.9 }
+					NOT = { check_variable = { which = dynamic_loc_province_count value = 2.1 } }
+				}
+			}
+			country_event = 70010
+		}
+		
+		random_country = {
+			limit = {
+				has_country_flag = DAL_content
+				FOR = {
+					check_variable = { which = dynamic_loc_province_count value = 2.9 }
+					NOT = { check_variable = { which = dynamic_loc_province_count value = 3.1 } }
+				}
+			}
+			country_event = 70011
+		}
+		
+		random_country = {
+			limit = {
+				has_country_flag = DAL_content
+				FOR = {
+					check_variable = { which = dynamic_loc_province_count value = 3.9 }
+					NOT = { check_variable = { which = dynamic_loc_province_count value = 4.1 } }
+				}
+			}
+			country_event = 70012
+		}
+		
+		random_country = {
+			limit = {
+				has_country_flag = DAL_content
+				FOR = {
+					check_variable = { which = dynamic_loc_province_count value = 4.9 }
+					NOT = { check_variable = { which = dynamic_loc_province_count value = 5.1 } }
+				}
+			}
+			country_event = 70013
+		}
+		
+		random_country = {
+			limit = {
+				has_country_flag = DAL_content
+				FOR = {
+					check_variable = { which = dynamic_loc_province_count value = 5.9 }
+					NOT = { check_variable = { which = dynamic_loc_province_count value = 6.1 } }
+				}
+			}
+			country_event = 70014
+		}
+		
+		random_country = {
+			limit = {
+				has_country_flag = DAL_content
+				FOR = {
+					check_variable = { which = dynamic_loc_province_count value = 6.9 }
+					NOT = { check_variable = { which = dynamic_loc_province_count value = 7.1 } }
+				}
+			}
+			country_event = 70015
+		}
+		
+		random_country = {
+			limit = {
+				has_country_flag = DAL_content
+				FOR = { check_variable = { which = dynamic_loc_province_count value = 7.9 } }
+			}
+			country_event = 70016
+		}
+	}
+}
+
+# DAL Trading Post Selection 2
+country_event = {
+	id = 70010
+	title = "Choosing our New Trade Post"
+	desc = "EVTDESC70010"
+	picture = "gramavuld/market_2"
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		end_color_loc = {}
+		
+		empty_line_loc = {}
+		empty_line_loc = {}
+		empty_line_loc = {}
+		empty_line_loc = {}
+		empty_line_loc = {}
+		empty_line_loc = {}
+		empty_line_loc = {}
+		empty_line_loc = {}
+		
+		empty_line_loc = {}
+		dynamic_loc_slot_1 = {}
+		empty_line_loc = {}
+		
+		empty_line_loc = {}
+		dynamic_loc_slot_2 = {}
+		empty_line_loc = {}
+	}
+	
+	# First
+	option = {
+		name = ""
+		
+		set_global_flag = hidden_effects
+		
+		FOR = {
+			random_owned = {
+				limit = { owner = { has_global_flag = hidden_effects } }
+				any_neighbor_province = {
+					limit = { has_province_modifier = dynamic_loc_province_target_1 }
+					remove_province_modifier = dynamic_loc_province_target_1
+					secede_province = THIS
+					any_pop = {
+						limit = { type = soldiers }
+						pop_type = tribals
+						ideology = {
+							factor = 99
+							value = tribal_ideology
+						}
+					}
+					province_event = { id = 50969 days = 0 }
+				}
+			}
+			
+			country_event = 402001 # Everything cleanup
+		}
+		
+		clr_global_flag = hidden_effects
+	}
+	
+	# Second
+	option = {
+		name = ""
+		
+		set_global_flag = hidden_effects
+		
+		FOR = {
+			random_owned = {
+				limit = { owner = { has_global_flag = hidden_effects } }
+				any_neighbor_province = {
+					limit = { has_province_modifier = dynamic_loc_province_target_2 }
+					remove_province_modifier = dynamic_loc_province_target_2
+					secede_province = THIS
+					any_pop = {
+						limit = { type = soldiers }
+						pop_type = tribals
+						ideology = {
+							factor = 99
+							value = tribal_ideology
+						}
+					}
+					province_event = { id = 50969 days = 0 }
+				}
+			}
+			
+			country_event = 402001 # Everything cleanup
+		}
+		
+		clr_global_flag = hidden_effects
+	}
+}
+
+# DAL Trading Post Selection 3
+country_event = {
+	id = 70011
+	title = "Choosing our New Trade Post"
+	desc = "EVTDESC70010"
+	picture = "gramavuld/market_3"
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		end_color_loc = {}
+		
+		empty_line_loc = {}
+		empty_line_loc = {}
+		empty_line_loc = {}
+		empty_line_loc = {}
+		empty_line_loc = {}
+		empty_line_loc = {}
+		empty_line_loc = {}
+		empty_line_loc = {}
+		
+		empty_line_loc = {}
+		dynamic_loc_slot_1 = {}
+		empty_line_loc = {}
+		
+		empty_line_loc = {}
+		dynamic_loc_slot_2 = {}
+		empty_line_loc = {}
+		
+		empty_line_loc = {}
+		dynamic_loc_slot_3 = {}
+		empty_line_loc = {}
+	}
+	
+	# First
+	option = {
+		name = ""
+		
+		set_global_flag = hidden_effects
+		
+		FOR = {
+			random_owned = {
+				limit = { owner = { has_global_flag = hidden_effects } }
+				any_neighbor_province = {
+					limit = { has_province_modifier = dynamic_loc_province_target_1 }
+					remove_province_modifier = dynamic_loc_province_target_1
+					secede_province = THIS
+					any_pop = {
+						limit = { type = soldiers }
+						pop_type = tribals
+						ideology = {
+							factor = 99
+							value = tribal_ideology
+						}
+					}
+					province_event = { id = 50969 days = 0 }
+				}
+			}
+			
+			country_event = 402001 # Everything cleanup
+		}
+		
+		clr_global_flag = hidden_effects
+	}
+	
+	# Second
+	option = {
+		name = ""
+		
+		set_global_flag = hidden_effects
+		
+		FOR = {
+			random_owned = {
+				limit = { owner = { has_global_flag = hidden_effects } }
+				any_neighbor_province = {
+					limit = { has_province_modifier = dynamic_loc_province_target_2 }
+					remove_province_modifier = dynamic_loc_province_target_2
+					secede_province = THIS
+					any_pop = {
+						limit = { type = soldiers }
+						pop_type = tribals
+						ideology = {
+							factor = 99
+							value = tribal_ideology
+						}
+					}
+					province_event = { id = 50969 days = 0 }
+				}
+			}
+			
+			country_event = 402001 # Everything cleanup
+		}
+		
+		clr_global_flag = hidden_effects
+	}
+	
+	# Third
+	option = {
+		name = ""
+		
+		set_global_flag = hidden_effects
+		
+		FOR = {
+			random_owned = {
+				limit = { owner = { has_global_flag = hidden_effects } }
+				any_neighbor_province = {
+					limit = { has_province_modifier = dynamic_loc_province_target_3 }
+					remove_province_modifier = dynamic_loc_province_target_3
+					secede_province = THIS
+					any_pop = {
+						limit = { type = soldiers }
+						pop_type = tribals
+						ideology = {
+							factor = 99
+							value = tribal_ideology
+						}
+					}
+					province_event = { id = 50969 days = 0 }
+				}
+			}
+			
+			country_event = 402001 # Everything cleanup
+		}
+		
+		clr_global_flag = hidden_effects
+	}
+}
+
+# DAL Trading Post Selection 4
+country_event = {
+	id = 70012
+	title = "Choosing our New Trade Post"
+	desc = "EVTDESC70010"
+	picture = "gramavuld/market_4"
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		end_color_loc = {}
+		
+		empty_line_loc = {}
+		empty_line_loc = {}
+		empty_line_loc = {}
+		empty_line_loc = {}
+		empty_line_loc = {}
+		empty_line_loc = {}
+		empty_line_loc = {}
+		empty_line_loc = {}
+		
+		empty_line_loc = {}
+		dynamic_loc_slot_1 = {}
+		empty_line_loc = {}
+		
+		empty_line_loc = {}
+		dynamic_loc_slot_2 = {}
+		empty_line_loc = {}
+		
+		empty_line_loc = {}
+		dynamic_loc_slot_3 = {}
+		empty_line_loc = {}
+		
+		empty_line_loc = {}
+		dynamic_loc_slot_4 = {}
+		empty_line_loc = {}
+	}
+	
+	# First
+	option = {
+		name = ""
+		
+		set_global_flag = hidden_effects
+		
+		FOR = {
+			random_owned = {
+				limit = { owner = { has_global_flag = hidden_effects } }
+				any_neighbor_province = {
+					limit = { has_province_modifier = dynamic_loc_province_target_1 }
+					remove_province_modifier = dynamic_loc_province_target_1
+					secede_province = THIS
+					any_pop = {
+						limit = { type = soldiers }
+						pop_type = tribals
+						ideology = {
+							factor = 99
+							value = tribal_ideology
+						}
+					}
+					province_event = { id = 50969 days = 0 }
+				}
+			}
+			
+			country_event = 402001 # Everything cleanup
+		}
+		
+		clr_global_flag = hidden_effects
+	}
+	
+	# Second
+	option = {
+		name = ""
+		
+		set_global_flag = hidden_effects
+		
+		FOR = {
+			random_owned = {
+				limit = { owner = { has_global_flag = hidden_effects } }
+				any_neighbor_province = {
+					limit = { has_province_modifier = dynamic_loc_province_target_2 }
+					remove_province_modifier = dynamic_loc_province_target_2
+					secede_province = THIS
+					any_pop = {
+						limit = { type = soldiers }
+						pop_type = tribals
+						ideology = {
+							factor = 99
+							value = tribal_ideology
+						}
+					}
+					province_event = { id = 50969 days = 0 }
+				}
+			}
+			
+			country_event = 402001 # Everything cleanup
+		}
+		
+		clr_global_flag = hidden_effects
+	}
+	
+	# Third
+	option = {
+		name = ""
+		
+		set_global_flag = hidden_effects
+		
+		FOR = {
+			random_owned = {
+				limit = { owner = { has_global_flag = hidden_effects } }
+				any_neighbor_province = {
+					limit = { has_province_modifier = dynamic_loc_province_target_3 }
+					remove_province_modifier = dynamic_loc_province_target_3
+					secede_province = THIS
+					any_pop = {
+						limit = { type = soldiers }
+						pop_type = tribals
+						ideology = {
+							factor = 99
+							value = tribal_ideology
+						}
+					}
+					province_event = { id = 50969 days = 0 }
+				}
+			}
+			
+			country_event = 402001 # Everything cleanup
+		}
+		
+		clr_global_flag = hidden_effects
+	}
+	
+	# Fourth
+	option = {
+		name = ""
+		
+		set_global_flag = hidden_effects
+		
+		FOR = {
+			random_owned = {
+				limit = { owner = { has_global_flag = hidden_effects } }
+				any_neighbor_province = {
+					limit = { has_province_modifier = dynamic_loc_province_target_4 }
+					remove_province_modifier = dynamic_loc_province_target_4
+					secede_province = THIS
+					any_pop = {
+						limit = { type = soldiers }
+						pop_type = tribals
+						ideology = {
+							factor = 99
+							value = tribal_ideology
+						}
+					}
+					province_event = { id = 50969 days = 0 }
+				}
+			}
+			
+			country_event = 402001 # Everything cleanup
+		}
+		
+		clr_global_flag = hidden_effects
+	}
+}
+
+# DAL Trading Post Selection 5
+country_event = {
+	id = 70013
+	title = "Choosing our New Trade Post"
+	desc = "EVTDESC70010"
+	picture = "gramavuld/market_5"
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		end_color_loc = {}
+		
+		empty_line_loc = {}
+		empty_line_loc = {}
+		empty_line_loc = {}
+		empty_line_loc = {}
+		empty_line_loc = {}
+		empty_line_loc = {}
+		empty_line_loc = {}
+		empty_line_loc = {}
+		
+		empty_line_loc = {}
+		dynamic_loc_slot_1 = {}
+		empty_line_loc = {}
+		
+		empty_line_loc = {}
+		dynamic_loc_slot_2 = {}
+		empty_line_loc = {}
+		
+		empty_line_loc = {}
+		dynamic_loc_slot_3 = {}
+		empty_line_loc = {}
+		
+		empty_line_loc = {}
+		dynamic_loc_slot_4 = {}
+		empty_line_loc = {}
+		
+		empty_line_loc = {}
+		dynamic_loc_slot_5 = {}
+		empty_line_loc = {}
+	}
+	
+	# First
+	option = {
+		name = ""
+		
+		set_global_flag = hidden_effects
+		
+		FOR = {
+			random_owned = {
+				limit = { owner = { has_global_flag = hidden_effects } }
+				any_neighbor_province = {
+					limit = { has_province_modifier = dynamic_loc_province_target_1 }
+					remove_province_modifier = dynamic_loc_province_target_1
+					secede_province = THIS
+					any_pop = {
+						limit = { type = soldiers }
+						pop_type = tribals
+						ideology = {
+							factor = 99
+							value = tribal_ideology
+						}
+					}
+					province_event = { id = 50969 days = 0 }
+				}
+			}
+			
+			country_event = 402001 # Everything cleanup
+		}
+		
+		clr_global_flag = hidden_effects
+	}
+	
+	# Second
+	option = {
+		name = ""
+		
+		set_global_flag = hidden_effects
+		
+		FOR = {
+			random_owned = {
+				limit = { owner = { has_global_flag = hidden_effects } }
+				any_neighbor_province = {
+					limit = { has_province_modifier = dynamic_loc_province_target_2 }
+					remove_province_modifier = dynamic_loc_province_target_2
+					secede_province = THIS
+					any_pop = {
+						limit = { type = soldiers }
+						pop_type = tribals
+						ideology = {
+							factor = 99
+							value = tribal_ideology
+						}
+					}
+					province_event = { id = 50969 days = 0 }
+				}
+			}
+			
+			country_event = 402001 # Everything cleanup
+		}
+		
+		clr_global_flag = hidden_effects
+	}
+	
+	# Third
+	option = {
+		name = ""
+		
+		set_global_flag = hidden_effects
+		
+		FOR = {
+			random_owned = {
+				limit = { owner = { has_global_flag = hidden_effects } }
+				any_neighbor_province = {
+					limit = { has_province_modifier = dynamic_loc_province_target_3 }
+					remove_province_modifier = dynamic_loc_province_target_3
+					secede_province = THIS
+					any_pop = {
+						limit = { type = soldiers }
+						pop_type = tribals
+						ideology = {
+							factor = 99
+							value = tribal_ideology
+						}
+					}
+					province_event = { id = 50969 days = 0 }
+				}
+			}
+			
+			country_event = 402001 # Everything cleanup
+		}
+		
+		clr_global_flag = hidden_effects
+	}
+	
+	# Fourth
+	option = {
+		name = ""
+		
+		set_global_flag = hidden_effects
+		
+		FOR = {
+			random_owned = {
+				limit = { owner = { has_global_flag = hidden_effects } }
+				any_neighbor_province = {
+					limit = { has_province_modifier = dynamic_loc_province_target_4 }
+					remove_province_modifier = dynamic_loc_province_target_4
+					secede_province = THIS
+					any_pop = {
+						limit = { type = soldiers }
+						pop_type = tribals
+						ideology = {
+							factor = 99
+							value = tribal_ideology
+						}
+					}
+					province_event = { id = 50969 days = 0 }
+				}
+			}
+			
+			country_event = 402001 # Everything cleanup
+		}
+		
+		clr_global_flag = hidden_effects
+	}
+	
+	# Five
+	option = {
+		name = ""
+		
+		set_global_flag = hidden_effects
+		
+		FOR = {
+			random_owned = {
+				limit = { owner = { has_global_flag = hidden_effects } }
+				any_neighbor_province = {
+					limit = { has_province_modifier = dynamic_loc_province_target_5 }
+					remove_province_modifier = dynamic_loc_province_target_5
+					secede_province = THIS
+					any_pop = {
+						limit = { type = soldiers }
+						pop_type = tribals
+						ideology = {
+							factor = 99
+							value = tribal_ideology
+						}
+					}
+					province_event = { id = 50969 days = 0 }
+				}
+			}
+			
+			country_event = 402001 # Everything cleanup
+		}
+		
+		clr_global_flag = hidden_effects
+	}
+}
+
+# DAL Trading Post Selection 6
+country_event = {
+	id = 70014
+	title = "Choosing our New Trade Post"
+	desc = "EVTDESC70010"
+	picture = "gramavuld/market_6"
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		end_color_loc = {}
+		
+		empty_line_loc = {}
+		empty_line_loc = {}
+		empty_line_loc = {}
+		empty_line_loc = {}
+		empty_line_loc = {}
+		empty_line_loc = {}
+		empty_line_loc = {}
+		empty_line_loc = {}
+		
+		empty_line_loc = {}
+		dynamic_loc_slot_1 = {}
+		empty_line_loc = {}
+		
+		empty_line_loc = {}
+		dynamic_loc_slot_2 = {}
+		empty_line_loc = {}
+		
+		empty_line_loc = {}
+		dynamic_loc_slot_3 = {}
+		empty_line_loc = {}
+		
+		empty_line_loc = {}
+		dynamic_loc_slot_4 = {}
+		empty_line_loc = {}
+		
+		empty_line_loc = {}
+		dynamic_loc_slot_5 = {}
+		empty_line_loc = {}
+		
+		empty_line_loc = {}
+		dynamic_loc_slot_6 = {}
+		empty_line_loc = {}
+	}
+	
+	# First
+	option = {
+		name = ""
+		
+		set_global_flag = hidden_effects
+		
+		FOR = {
+			random_owned = {
+				limit = { owner = { has_global_flag = hidden_effects } }
+				any_neighbor_province = {
+					limit = { has_province_modifier = dynamic_loc_province_target_1 }
+					remove_province_modifier = dynamic_loc_province_target_1
+					secede_province = THIS
+					any_pop = {
+						limit = { type = soldiers }
+						pop_type = tribals
+						ideology = {
+							factor = 99
+							value = tribal_ideology
+						}
+					}
+					province_event = { id = 50969 days = 0 }
+				}
+			}
+			
+			country_event = 402001 # Everything cleanup
+		}
+		
+		clr_global_flag = hidden_effects
+	}
+	
+	# Second
+	option = {
+		name = ""
+		
+		set_global_flag = hidden_effects
+		
+		FOR = {
+			random_owned = {
+				limit = { owner = { has_global_flag = hidden_effects } }
+				any_neighbor_province = {
+					limit = { has_province_modifier = dynamic_loc_province_target_2 }
+					remove_province_modifier = dynamic_loc_province_target_2
+					secede_province = THIS
+					any_pop = {
+						limit = { type = soldiers }
+						pop_type = tribals
+						ideology = {
+							factor = 99
+							value = tribal_ideology
+						}
+					}
+					province_event = { id = 50969 days = 0 }
+				}
+			}
+			
+			country_event = 402001 # Everything cleanup
+		}
+		
+		clr_global_flag = hidden_effects
+	}
+	
+	# Third
+	option = {
+		name = ""
+		
+		set_global_flag = hidden_effects
+		
+		FOR = {
+			random_owned = {
+				limit = { owner = { has_global_flag = hidden_effects } }
+				any_neighbor_province = {
+					limit = { has_province_modifier = dynamic_loc_province_target_3 }
+					remove_province_modifier = dynamic_loc_province_target_3
+					secede_province = THIS
+					any_pop = {
+						limit = { type = soldiers }
+						pop_type = tribals
+						ideology = {
+							factor = 99
+							value = tribal_ideology
+						}
+					}
+					province_event = { id = 50969 days = 0 }
+				}
+			}
+			
+			country_event = 402001 # Everything cleanup
+		}
+		
+		clr_global_flag = hidden_effects
+	}
+	
+	# Fourth
+	option = {
+		name = ""
+		
+		set_global_flag = hidden_effects
+		
+		FOR = {
+			random_owned = {
+				limit = { owner = { has_global_flag = hidden_effects } }
+				any_neighbor_province = {
+					limit = { has_province_modifier = dynamic_loc_province_target_4 }
+					remove_province_modifier = dynamic_loc_province_target_4
+					secede_province = THIS
+					any_pop = {
+						limit = { type = soldiers }
+						pop_type = tribals
+						ideology = {
+							factor = 99
+							value = tribal_ideology
+						}
+					}
+					province_event = { id = 50969 days = 0 }
+				}
+			}
+			
+			country_event = 402001 # Everything cleanup
+		}
+		
+		clr_global_flag = hidden_effects
+	}
+	
+	# Five
+	option = {
+		name = ""
+		
+		set_global_flag = hidden_effects
+		
+		FOR = {
+			random_owned = {
+				limit = { owner = { has_global_flag = hidden_effects } }
+				any_neighbor_province = {
+					limit = { has_province_modifier = dynamic_loc_province_target_5 }
+					remove_province_modifier = dynamic_loc_province_target_5
+					secede_province = THIS
+					any_pop = {
+						limit = { type = soldiers }
+						pop_type = tribals
+						ideology = {
+							factor = 99
+							value = tribal_ideology
+						}
+					}
+					province_event = { id = 50969 days = 0 }
+				}
+			}
+			
+			country_event = 402001 # Everything cleanup
+		}
+		
+		clr_global_flag = hidden_effects
+	}
+	
+	# Sixth
+	option = {
+		name = ""
+		
+		set_global_flag = hidden_effects
+		
+		FOR = {
+			random_owned = {
+				limit = { owner = { has_global_flag = hidden_effects } }
+				any_neighbor_province = {
+					limit = { has_province_modifier = dynamic_loc_province_target_6 }
+					remove_province_modifier = dynamic_loc_province_target_6
+					secede_province = THIS
+					any_pop = {
+						limit = { type = soldiers }
+						pop_type = tribals
+						ideology = {
+							factor = 99
+							value = tribal_ideology
+						}
+					}
+					province_event = { id = 50969 days = 0 }
+				}
+			}
+			
+			country_event = 402001 # Everything cleanup
+		}
+		
+		clr_global_flag = hidden_effects
+	}
+}
+
+# DAL Trading Post Selection 7
+country_event = {
+	id = 70015
+	title = "Choosing our New Trade Post"
+	desc = "EVTDESC70010"
+	picture = "gramavuld/market_7"
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		end_color_loc = {}
+		
+		empty_line_loc = {}
+		empty_line_loc = {}
+		empty_line_loc = {}
+		empty_line_loc = {}
+		empty_line_loc = {}
+		empty_line_loc = {}
+		empty_line_loc = {}
+		empty_line_loc = {}
+		
+		empty_line_loc = {}
+		dynamic_loc_slot_1 = {}
+		empty_line_loc = {}
+		
+		empty_line_loc = {}
+		dynamic_loc_slot_2 = {}
+		empty_line_loc = {}
+		
+		empty_line_loc = {}
+		dynamic_loc_slot_3 = {}
+		empty_line_loc = {}
+		
+		empty_line_loc = {}
+		dynamic_loc_slot_4 = {}
+		empty_line_loc = {}
+		
+		empty_line_loc = {}
+		dynamic_loc_slot_5 = {}
+		empty_line_loc = {}
+		
+		empty_line_loc = {}
+		dynamic_loc_slot_6 = {}
+		empty_line_loc = {}
+		
+		empty_line_loc = {}
+		dynamic_loc_slot_7 = {}
+		empty_line_loc = {}
+	}
+	
+	# First
+	option = {
+		name = ""
+		
+		set_global_flag = hidden_effects
+		
+		FOR = {
+			random_owned = {
+				limit = { owner = { has_global_flag = hidden_effects } }
+				any_neighbor_province = {
+					limit = { has_province_modifier = dynamic_loc_province_target_1 }
+					remove_province_modifier = dynamic_loc_province_target_1
+					secede_province = THIS
+					any_pop = {
+						limit = { type = soldiers }
+						pop_type = tribals
+						ideology = {
+							factor = 99
+							value = tribal_ideology
+						}
+					}
+					province_event = { id = 50969 days = 0 }
+				}
+			}
+			
+			country_event = 402001 # Everything cleanup
+		}
+		
+		clr_global_flag = hidden_effects
+	}
+	
+	# Second
+	option = {
+		name = ""
+		
+		set_global_flag = hidden_effects
+		
+		FOR = {
+			random_owned = {
+				limit = { owner = { has_global_flag = hidden_effects } }
+				any_neighbor_province = {
+					limit = { has_province_modifier = dynamic_loc_province_target_2 }
+					remove_province_modifier = dynamic_loc_province_target_2
+					secede_province = THIS
+					any_pop = {
+						limit = { type = soldiers }
+						pop_type = tribals
+						ideology = {
+							factor = 99
+							value = tribal_ideology
+						}
+					}
+					province_event = { id = 50969 days = 0 }
+				}
+			}
+			
+			country_event = 402001 # Everything cleanup
+		}
+		
+		clr_global_flag = hidden_effects
+	}
+	
+	# Third
+	option = {
+		name = ""
+		
+		set_global_flag = hidden_effects
+		
+		FOR = {
+			random_owned = {
+				limit = { owner = { has_global_flag = hidden_effects } }
+				any_neighbor_province = {
+					limit = { has_province_modifier = dynamic_loc_province_target_3 }
+					remove_province_modifier = dynamic_loc_province_target_3
+					secede_province = THIS
+					any_pop = {
+						limit = { type = soldiers }
+						pop_type = tribals
+						ideology = {
+							factor = 99
+							value = tribal_ideology
+						}
+					}
+					province_event = { id = 50969 days = 0 }
+				}
+			}
+			
+			country_event = 402001 # Everything cleanup
+		}
+		
+		clr_global_flag = hidden_effects
+	}
+	
+	# Fourth
+	option = {
+		name = ""
+		
+		set_global_flag = hidden_effects
+		
+		FOR = {
+			random_owned = {
+				limit = { owner = { has_global_flag = hidden_effects } }
+				any_neighbor_province = {
+					limit = { has_province_modifier = dynamic_loc_province_target_4 }
+					remove_province_modifier = dynamic_loc_province_target_4
+					secede_province = THIS
+					any_pop = {
+						limit = { type = soldiers }
+						pop_type = tribals
+						ideology = {
+							factor = 99
+							value = tribal_ideology
+						}
+					}
+					province_event = { id = 50969 days = 0 }
+				}
+			}
+			
+			country_event = 402001 # Everything cleanup
+		}
+		
+		clr_global_flag = hidden_effects
+	}
+	
+	# Five
+	option = {
+		name = ""
+		
+		set_global_flag = hidden_effects
+		
+		FOR = {
+			random_owned = {
+				limit = { owner = { has_global_flag = hidden_effects } }
+				any_neighbor_province = {
+					limit = { has_province_modifier = dynamic_loc_province_target_5 }
+					remove_province_modifier = dynamic_loc_province_target_5
+					secede_province = THIS
+					any_pop = {
+						limit = { type = soldiers }
+						pop_type = tribals
+						ideology = {
+							factor = 99
+							value = tribal_ideology
+						}
+					}
+					province_event = { id = 50969 days = 0 }
+				}
+			}
+			
+			country_event = 402001 # Everything cleanup
+		}
+		
+		clr_global_flag = hidden_effects
+	}
+	
+	# Sixth
+	option = {
+		name = ""
+		
+		set_global_flag = hidden_effects
+		
+		FOR = {
+			random_owned = {
+				limit = { owner = { has_global_flag = hidden_effects } }
+				any_neighbor_province = {
+					limit = { has_province_modifier = dynamic_loc_province_target_6 }
+					remove_province_modifier = dynamic_loc_province_target_6
+					secede_province = THIS
+					any_pop = {
+						limit = { type = soldiers }
+						pop_type = tribals
+						ideology = {
+							factor = 99
+							value = tribal_ideology
+						}
+					}
+					province_event = { id = 50969 days = 0 }
+				}
+			}
+			
+			country_event = 402001 # Everything cleanup
+		}
+		
+		clr_global_flag = hidden_effects
+	}
+	
+	# Seventh
+	option = {
+		name = ""
+		
+		set_global_flag = hidden_effects
+		
+		FOR = {
+			random_owned = {
+				limit = { owner = { has_global_flag = hidden_effects } }
+				any_neighbor_province = {
+					limit = { has_province_modifier = dynamic_loc_province_target_7 }
+					remove_province_modifier = dynamic_loc_province_target_7
+					secede_province = THIS
+					any_pop = {
+						limit = { type = soldiers }
+						pop_type = tribals
+						ideology = {
+							factor = 99
+							value = tribal_ideology
+						}
+					}
+					province_event = { id = 50969 days = 0 }
+				}
+			}
+			
+			country_event = 402001 # Everything cleanup
+		}
+		
+		clr_global_flag = hidden_effects
+	}
+}
+
+# DAL Trading Post Selection 8
+country_event = {
+	id = 70016
+	title = "Choosing our New Trade Post"
+	desc = "EVTDESC70010"
+	picture = "gramavuld/market_8"
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		end_color_loc = {}
+		
+		empty_line_loc = {}
+		empty_line_loc = {}
+		empty_line_loc = {}
+		empty_line_loc = {}
+		empty_line_loc = {}
+		empty_line_loc = {}
+		empty_line_loc = {}
+		empty_line_loc = {}
+		
+		empty_line_loc = {}
+		dynamic_loc_slot_1 = {}
+		empty_line_loc = {}
+		
+		empty_line_loc = {}
+		dynamic_loc_slot_2 = {}
+		empty_line_loc = {}
+		
+		empty_line_loc = {}
+		dynamic_loc_slot_3 = {}
+		empty_line_loc = {}
+		
+		empty_line_loc = {}
+		dynamic_loc_slot_4 = {}
+		empty_line_loc = {}
+		
+		empty_line_loc = {}
+		dynamic_loc_slot_5 = {}
+		empty_line_loc = {}
+		
+		empty_line_loc = {}
+		dynamic_loc_slot_6 = {}
+		empty_line_loc = {}
+		
+		empty_line_loc = {}
+		dynamic_loc_slot_7 = {}
+		empty_line_loc = {}
+		
+		empty_line_loc = {}
+		dynamic_loc_slot_8 = {}
+		empty_line_loc = {}
+	}
+	
+	# First
+	option = {
+		name = ""
+		
+		set_global_flag = hidden_effects
+		
+		FOR = {
+			random_owned = {
+				limit = { owner = { has_global_flag = hidden_effects } }
+				any_neighbor_province = {
+					limit = { has_province_modifier = dynamic_loc_province_target_1 }
+					remove_province_modifier = dynamic_loc_province_target_1
+					secede_province = THIS
+					any_pop = {
+						limit = { type = soldiers }
+						pop_type = tribals
+						ideology = {
+							factor = 99
+							value = tribal_ideology
+						}
+					}
+					province_event = { id = 50969 days = 0 }
+				}
+			}
+			
+			country_event = 402001 # Everything cleanup
+		}
+		
+		clr_global_flag = hidden_effects
+	}
+	
+	# Second
+	option = {
+		name = ""
+		
+		set_global_flag = hidden_effects
+		
+		FOR = {
+			random_owned = {
+				limit = { owner = { has_global_flag = hidden_effects } }
+				any_neighbor_province = {
+					limit = { has_province_modifier = dynamic_loc_province_target_2 }
+					remove_province_modifier = dynamic_loc_province_target_2
+					secede_province = THIS
+					any_pop = {
+						limit = { type = soldiers }
+						pop_type = tribals
+						ideology = {
+							factor = 99
+							value = tribal_ideology
+						}
+					}
+					province_event = { id = 50969 days = 0 }
+				}
+			}
+			
+			country_event = 402001 # Everything cleanup
+		}
+		
+		clr_global_flag = hidden_effects
+	}
+	
+	# Third
+	option = {
+		name = ""
+		
+		set_global_flag = hidden_effects
+		
+		FOR = {
+			random_owned = {
+				limit = { owner = { has_global_flag = hidden_effects } }
+				any_neighbor_province = {
+					limit = { has_province_modifier = dynamic_loc_province_target_3 }
+					remove_province_modifier = dynamic_loc_province_target_3
+					secede_province = THIS
+					any_pop = {
+						limit = { type = soldiers }
+						pop_type = tribals
+						ideology = {
+							factor = 99
+							value = tribal_ideology
+						}
+					}
+					province_event = { id = 50969 days = 0 }
+				}
+			}
+			
+			country_event = 402001 # Everything cleanup
+		}
+		
+		clr_global_flag = hidden_effects
+	}
+	
+	# Fourth
+	option = {
+		name = ""
+		
+		set_global_flag = hidden_effects
+		
+		FOR = {
+			random_owned = {
+				limit = { owner = { has_global_flag = hidden_effects } }
+				any_neighbor_province = {
+					limit = { has_province_modifier = dynamic_loc_province_target_4 }
+					remove_province_modifier = dynamic_loc_province_target_4
+					secede_province = THIS
+					any_pop = {
+						limit = { type = soldiers }
+						pop_type = tribals
+						ideology = {
+							factor = 99
+							value = tribal_ideology
+						}
+					}
+					province_event = { id = 50969 days = 0 }
+				}
+			}
+			
+			country_event = 402001 # Everything cleanup
+		}
+		
+		clr_global_flag = hidden_effects
+	}
+	
+	# Five
+	option = {
+		name = ""
+		
+		set_global_flag = hidden_effects
+		
+		FOR = {
+			random_owned = {
+				limit = { owner = { has_global_flag = hidden_effects } }
+				any_neighbor_province = {
+					limit = { has_province_modifier = dynamic_loc_province_target_5 }
+					remove_province_modifier = dynamic_loc_province_target_5
+					secede_province = THIS
+					any_pop = {
+						limit = { type = soldiers }
+						pop_type = tribals
+						ideology = {
+							factor = 99
+							value = tribal_ideology
+						}
+					}
+					province_event = { id = 50969 days = 0 }
+				}
+			}
+			
+			country_event = 402001 # Everything cleanup
+		}
+		
+		clr_global_flag = hidden_effects
+	}
+	
+	# Sixth
+	option = {
+		name = ""
+		
+		set_global_flag = hidden_effects
+		
+		FOR = {
+			random_owned = {
+				limit = { owner = { has_global_flag = hidden_effects } }
+				any_neighbor_province = {
+					limit = { has_province_modifier = dynamic_loc_province_target_6 }
+					remove_province_modifier = dynamic_loc_province_target_6
+					secede_province = THIS
+					any_pop = {
+						limit = { type = soldiers }
+						pop_type = tribals
+						ideology = {
+							factor = 99
+							value = tribal_ideology
+						}
+					}
+					province_event = { id = 50969 days = 0 }
+				}
+			}
+			
+			country_event = 402001 # Everything cleanup
+		}
+		
+		clr_global_flag = hidden_effects
+	}
+	
+	# Seventh
+	option = {
+		name = ""
+		
+		set_global_flag = hidden_effects
+		
+		FOR = {
+			random_owned = {
+				limit = { owner = { has_global_flag = hidden_effects } }
+				any_neighbor_province = {
+					limit = { has_province_modifier = dynamic_loc_province_target_7 }
+					remove_province_modifier = dynamic_loc_province_target_7
+					secede_province = THIS
+					any_pop = {
+						limit = { type = soldiers }
+						pop_type = tribals
+						ideology = {
+							factor = 99
+							value = tribal_ideology
+						}
+					}
+					province_event = { id = 50969 days = 0 }
+				}
+			}
+			
+			country_event = 402001 # Everything cleanup
+		}
+		
+		clr_global_flag = hidden_effects
+	}
+	
+	# Eighth
+	option = {
+		name = ""
+		
+		set_global_flag = hidden_effects
+		
+		FOR = {
+			random_owned = {
+				limit = { owner = { has_global_flag = hidden_effects } }
+				any_neighbor_province = {
+					limit = { has_province_modifier = dynamic_loc_province_target_8 }
+					remove_province_modifier = dynamic_loc_province_target_8
+					secede_province = THIS
+					any_pop = {
+						limit = { type = soldiers }
+						pop_type = tribals
+						ideology = {
+							factor = 99
+							value = tribal_ideology
+						}
+					}
+					province_event = { id = 50969 days = 0 }
+				}
+			}
+			
+			country_event = 402001 # Everything cleanup
+		}
+		
+		clr_global_flag = hidden_effects
+	}
+}
