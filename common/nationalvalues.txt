@@ -37,3 +37,24 @@ ring_of_barahir = {
 	population_tech_research_bonus = 0.01
 	diplomacy_tech_research_bonus = 0.01
 }
+
+durins_axe = {
+	army_tech_research_bonus = 0.01
+	commerce_tech_research_bonus = 0.01
+}
+
+arkenstone = {
+	population_tech_research_bonus = 0.02
+}
+
+star_of_elendil = {
+	population_tech_research_bonus = 0.02
+}
+
+sceptre_of_annuminas = {
+	diplomacy_tech_research_bonus = 0.02
+}
+
+narsil = {
+	army_tech_research_bonus = 0.02
+}
