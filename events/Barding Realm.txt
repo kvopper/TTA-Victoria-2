@@ -2459,6 +2459,7 @@ country_event = {
 		has_country_modifier = DAL_merchant_power_10
 		ruling_party_ideology = house_of_bard
 		government_type = monarchist
+		has_global_flag = railroading_disabled
 	}
 	
 	mean_time_to_happen = {
@@ -2526,6 +2527,7 @@ country_event = {
 		political_reform = republican
 		government = merchant_republic
 		ruling_party_ideology = master_of_laketown
+		nationalvalue = masters_gold_coin
 		
 		locks_voting_reform_loc = { }
 		
@@ -2535,10 +2537,6 @@ country_event = {
 		
 		ai_chance = {
 			factor = 50
-			modifier = {
-				factor = 0
-				has_global_flag = railroading_enabled
-			}
 		}
 	}
 	
@@ -2578,6 +2576,7 @@ country_event = {
 		has_country_modifier = DAL_guild_power_10
 		ruling_party_ideology = house_of_bard
 		government_type = monarchist
+		has_global_flag = railroading_disabled
 	}
 	
 	mean_time_to_happen = {
@@ -2650,6 +2649,7 @@ country_event = {
 		political_reform = republican
 		government = republic
 		ruling_party_ideology = lakemen_fishers_guild
+		nationalvalue = guildmasters_crest
 		
 		locks_voting_reform_loc = { }
 		
@@ -2659,10 +2659,6 @@ country_event = {
 		
 		ai_chance = {
 			factor = 50
-			modifier = {
-				factor = 0
-				has_global_flag = railroading_enabled
-			}
 		}
 	}
 	

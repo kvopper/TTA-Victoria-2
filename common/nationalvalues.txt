@@ -58,3 +58,12 @@ sceptre_of_annuminas = {
 narsil = {
 	army_tech_research_bonus = 0.02
 }
+
+masters_gold_coin = {
+	commerce_tech_research_bonus = 0.02
+}
+
+guildmasters_crest = {
+	commerce_tech_research_bonus = 0.01
+	population_tech_research_bonus = 0.01
+}
