@@ -2,36 +2,39 @@
 All notable changes will be documented in this file.
 
 ## v0.5.1 - In Development
+
+### Highlights
  - Political Rework
-   - Leaders become political parties
-   - Ideologies stay as interest groups, but interest groups are much more specific than "High Nobility", "Low Nobility", etc...
-	 - Upper House now votes for a reform when the ruling party has at least 50% of the UH
- - Alignments renamed
+ - Unit Models from CK2 by Trigori
+ - Newspaper remodel
+ - Ahistorical Barding Realm flavor
+
+### Political Rework
+ - Leaders become political parties
+ - Ideologies stay as interest groups, but interest groups are much more specific than "High Nobility", "Low Nobility", etc...
+   - Upper House renamed Council of the Realm
+   - Interest Groups support reforms only when they are in power
+ - Alignments Renamed and made a party reform
    - Good Alignment --> Anti-Sauron
    - Neutral Alignment --> Opportunistic
    - Evil Alignment --> Sauronite
  - Change Alignment cb removed
- - Party issues updated
-   - Guild Policy turned into a setting
-   - Trade and Tax Policy re-added (from vanilla)
  - Reforms rebalanced
    - Reforms are always better the farther you go down
      - This is done because pops cannot support reforms in the reverse (i.e., if you have wealth voting, pops will never want landed voting, even if it makes sense for them to want it)
-   - Upper house reforms removed in favor of your government type dictating how the UH populates
-     - Upper House rebranded "Council of the Realm"
  - Government Type consolidation
    - Governments used only by 1 or 2 tags have been removed and replaced by the standard generic type
+ - Old leader system (that replaced national value) replaced with heirloom system
+ - Dynamic Traits removed
+ - Added Pretender Rebels, removed many others
+ - Trade and Tax Policy re-added (from vanilla)
+
+### Mechanics/Content
  - More terrain descriptions and tweaks added
  - Some minor extra flavour
  - Myriad of bug fixes
  - New flags by SneakyDeer and Argelia4president
- - Imported models from CK2 by Trigori
- - Old leader system (that replaced national value) replaced with heirloom system
- - Dynamic Traits removed
- - Added Pretender Rebels, removed many others
  - Unaccepted bureaucrats automatically demote into labourers
- - Flavourful lore accurate newspapers, extra news articles
- - Ahistorical Barding Realm flavor
 
 ## [v0.5 Bearers of the Black Arrow](https://github.com/The-Third-Age/TTA-Victoria-2/releases/tag/v0.5) - 2024-12-23
 
