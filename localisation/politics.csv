@@ -515,15 +515,15 @@ Ideology;Interest Group;x
 ######################################;x }
 ##### National Value Descriptors #####;x {
 ######################################;x
-NOT_HAS_NATIONAL_VALUE;Ancestral Heirloom is NOT §Y$NATIONALVALUE$§!.;x
-HAS_NATIONAL_VALUE;Ancestral Heirloom is §Y$NATIONALVALUE$§!.;x
-CHANGE_NATIONALVALUE;Ancestral Heirloom changes to §Y$NATIONALVALUE$§!.\n;x
-POLITICS_NATIONALVALUE_TOOLTIP;Our ancestral heirloom is §Y$NATIONALVALUE$§!.\n;x
-LEDGER_COUNTRY_NATIONALVALUE;Ancestral Heirloom;x
+NOT_HAS_NATIONAL_VALUE;Cultural Heirloom is NOT §Y$NATIONALVALUE$§!.;x
+HAS_NATIONAL_VALUE;Cultural Heirloom is §Y$NATIONALVALUE$§!.;x
+CHANGE_NATIONALVALUE;Cultural Heirloom changes to §Y$NATIONALVALUE$§!.\n;x
+POLITICS_NATIONALVALUE_TOOLTIP;Our cultural heirloom is §Y$NATIONALVALUE$§!.\n;x
+LEDGER_COUNTRY_NATIONALVALUE;Cultural Heirloom;x
 ###########################;x }
 ##### National Values #####;x {
 ###########################;x
-no_heirloom;No Ancestral Heirloom;x
+no_heirloom;No Cultural Heirloom;x
 horn_of_gondor;§!the §YHorn of Gondor§!;x
 horn_of_the_mark;§!the §YHorn of the Mark§!;x
 red_book_of_the_westmarch;§!the §YRed Book of the Westmarch§!;x
