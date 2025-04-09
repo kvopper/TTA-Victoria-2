@@ -515,15 +515,15 @@ Ideology;Interest Group;x
 ######################################;x }
 ##### National Value Descriptors #####;x {
 ######################################;x
-NOT_HAS_NATIONAL_VALUE;Heirloom is NOT §Y$NATIONALVALUE$§!.;x
-HAS_NATIONAL_VALUE;Heirloom is §Y$NATIONALVALUE$§!.;x
-CHANGE_NATIONALVALUE;Heirloom changes to §Y$NATIONALVALUE$§!.\n;x
-POLITICS_NATIONALVALUE_TOOLTIP;Our heirloom is §Y$NATIONALVALUE$§!.\n;x
-LEDGER_COUNTRY_NATIONALVALUE;Heirloom;x
+NOT_HAS_NATIONAL_VALUE;Cultural Heirloom is NOT §Y$NATIONALVALUE$§!.;x
+HAS_NATIONAL_VALUE;Cultural Heirloom is §Y$NATIONALVALUE$§!.;x
+CHANGE_NATIONALVALUE;Cultural Heirloom changes to §Y$NATIONALVALUE$§!.\n;x
+POLITICS_NATIONALVALUE_TOOLTIP;Our cultural heirloom is §Y$NATIONALVALUE$§!.\n;x
+LEDGER_COUNTRY_NATIONALVALUE;Cultural Heirloom;x
 ###########################;x }
 ##### National Values #####;x {
 ###########################;x
-no_heirloom;No Heirloom;x
+no_heirloom;No Cultural Heirloom;x
 horn_of_gondor;§!the §YHorn of Gondor§!;x
 horn_of_the_mark;§!the §YHorn of the Mark§!;x
 red_book_of_the_westmarch;§!the §YRed Book of the Westmarch§!;x
@@ -533,6 +533,13 @@ nenya;Nenya;x
 vilya;Vilya;x
 one_ring_of_power;§!the §YOne Ring of Power§!;x
 ring_of_barahir;§!the §YRing of Barahir§!;x
+durins_axe;Durin's Axe;x
+arkenstone;§!the §YArkenstone§!;x
+star_of_elendil;§!the §YStar of Elendil§!;x
+sceptre_of_annuminas;§!the §YSceptre of Annúminas§!;x
+narsil;Narsil;x
+masters_gold_coin;§!the §YMaster's Gold Coin§!;x
+guildmasters_crest;§!the §YGuildmaster's Crest§!;x
 ######################################;x }
 ##### Burgher Reform Descriptors #####;x {
 ######################################;x

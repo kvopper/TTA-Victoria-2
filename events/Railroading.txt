@@ -281,6 +281,7 @@ country_event = {
 			dynamic_loc_slot_11 = { state_scope = { change_region_name = "@DA1 §GRiverrun will agree to any scripted diplomatic effects§!" } }
 			dynamic_loc_slot_12 = { state_scope = { change_region_name = "@DA4 §MNaertheiaborg will refuse any scripted diplomatic effects§!" } }
 			dynamic_loc_slot_13 = { state_scope = { change_region_name = "§MWe will be unable to pursue the scripted reclamation of §TDádhrik's Gap§M and §TMountainlands§!" } }
+			dynamic_loc_slot_14 = { state_scope = { change_region_name = "§MWe will be unable to get the scripted transitions to a Republic via a Guild or Merchants coup§!" } }
 		}
 		
 		random_country = {
