@@ -1170,7 +1170,7 @@ country_event = {
 
 	option = {
 		name = "Our people are great"
-		prestige = 1
-		any_pop = { militancy = -0.1 }
+		plurality = -2
+		any_pop = { militancy = -1 }
 	}
 }
