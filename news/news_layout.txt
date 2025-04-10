@@ -240,6 +240,30 @@ style =
 			}
 			picture = "news/newspaper_title_dunedain_tribal.dds" 
 		}
+		case = { # Dunedain default
+			trigger = { 
+				OR = {
+					AND = {
+						primary_culture = dunedain
+					}
+					AND = {
+						civilized = no
+						part_of_sphere = yes
+						sphere_owner = {
+							primary_culture = dunedain
+						}
+					}
+					AND = {
+						civilized = no
+						is_vassal = yes
+						overlord = {
+							primary_culture = dunedain
+						}
+					}					
+				}
+			}
+			picture = "news/newspaper_title_dunedain.dds" 
+		}
 		case = { # Rohirrim
 			trigger = { 
 				OR = {
