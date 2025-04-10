@@ -1147,3 +1147,30 @@ country_event = {
 		any_pop = { militancy = -0.1 }
 	}
 }
+
+# National value
+country_event = {
+	id = 3628
+	title = "Our national values"
+	desc = "EVTDESC3628"
+	picture = "administration"
+
+	is_triggered_only = yes
+	
+	trigger = {
+		NOT = {
+			nationalvalue = no_heirloom
+		}
+	}
+	
+	option = {
+		name = "We are great"
+		prestige = 5
+	}
+
+	option = {
+		name = "Our people are great"
+		prestige = 1
+		any_pop = { militancy = -0.1 }
+	}
+}
