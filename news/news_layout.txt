@@ -189,6 +189,30 @@ style =
 		}
 
 		# Culture specific pictures
+		case = { # Barding
+			trigger = { 
+				OR = {
+					AND = {
+						is_culture_group = gramavuld_northmen
+					}
+					AND = {
+						civilized = no
+						part_of_sphere = yes
+						sphere_owner = {
+							is_culture_group = gramavuld_northmen
+						}
+					}
+					AND = {
+						civilized = no
+						is_vassal = yes
+						overlord = {
+							is_culture_group = gramavuld_northmen
+						}
+					}					
+				}
+			}
+			picture = "news/newspaper_title_barding.dds" 
+		}
 		case = { # Bree
 			trigger = { 
 				OR = {
