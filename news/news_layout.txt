@@ -113,6 +113,32 @@ style =
 	{
 		# The first case that matches is the one that applies
 		# Ordered by priority - highest first
+
+		# Tag specific pictures
+		case = { # Bombadil
+			trigger = { 
+				OR = {
+					AND = {
+						tag = BOM
+					}
+					AND = {
+						civilized = no
+						part_of_sphere = yes
+						sphere_owner = {
+							tag = BOM
+						}
+					}
+					AND = {
+						civilized = no
+						is_vassal = yes
+						overlord = {
+							tag = BOM
+						}
+					}					
+				}
+			}
+			picture = "news/newspaper_title_bombadil.dds" 
+		}
 		
 		# Gvernment specific pictures
 		case = { # Sauron
@@ -189,7 +215,7 @@ style =
 		}
 
 		# Culture specific pictures
-		case = { # Barding
+		case = { # Gramavuld/Barding
 			trigger = { 
 				OR = {
 					AND = {
@@ -236,6 +262,30 @@ style =
 				}
 			}
 			picture = "news/newspaper_title_breelander.dds" 
+		}
+		case = { # Dorwinrim
+			trigger = { 
+				OR = {
+					AND = {
+						primary_culture = dorwinrim
+					}
+					AND = {
+						civilized = no
+						part_of_sphere = yes
+						sphere_owner = {
+							primary_culture = dorwinrim
+						}
+					}
+					AND = {
+						civilized = no
+						is_vassal = yes
+						overlord = {
+							primary_culture = dorwinrim
+						}
+					}					
+				}
+			}
+			picture = "news/newspaper_title_dorwinrim.dds" 
 		}
 		case = { # Dunedain rangers
 			trigger = { 
@@ -288,6 +338,30 @@ style =
 			}
 			picture = "news/newspaper_title_dunedain.dds" 
 		}
+		case = { # Longbeard
+			trigger = { 
+				OR = {
+					AND = {
+						primary_culture = longbeard
+					}
+					AND = {
+						civilized = no
+						part_of_sphere = yes
+						sphere_owner = {
+							primary_culture = longbeard
+						}
+					}
+					AND = {
+						civilized = no
+						is_vassal = yes
+						overlord = {
+							primary_culture = longbeard
+						}
+					}					
+				}
+			}
+			picture = "news/newspaper_title_longbeard.dds" 
+		}
 		case = { # Rohirrim
 			trigger = { 
 				OR = {
@@ -311,6 +385,30 @@ style =
 				}
 			}
 			picture = "news/newspaper_title_rohirrim.dds" 
+		}
+		case = { # Snow Orc
+			trigger = { 
+				OR = {
+					AND = {
+						primary_culture = snow_orc
+					}
+					AND = {
+						civilized = no
+						part_of_sphere = yes
+						sphere_owner = {
+							primary_culture = snow_orc
+						}
+					}
+					AND = {
+						civilized = no
+						is_vassal = yes
+						overlord = {
+							primary_culture = snow_orc
+						}
+					}					
+				}
+			}
+			picture = "news/newspaper_title_snow_orc.dds" 
 		}
 
 		# Generic race pictures
