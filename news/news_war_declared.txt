@@ -18,7 +18,7 @@ generate_article =
 	size = large
 	name = "default" 
 
-	picture_case = { picture = "news/news_war_01.dds" picture = "news/news_war_02.dds"  picture = "news/news_war_03.dds" picture = "news/news_war_04.dds" picture = "news/news_war_05.dds" picture = "news/news_war_06.dds" }
+	picture_case = { picture = "news/news_war_01.dds" picture = "news/news_war_02.dds"  picture = "news/news_war_03.dds" picture = "news/news_war_04.dds" picture = "news/news_war_05.dds" picture = "news/news_war_06.dds" picture = "news/news_war_07.dds" picture = "news/news_war_08.dds" picture = "news/news_war_09.dds" picture = "news/news_war_10.dds" picture = "news/news_war_11.dds" picture = "news/news_war_12.dds" picture = "news/news_war_13.dds" picture = "news/news_war_14.dds" }
 	title_case = { text_add = { WAR_NEWS_TITLE_LARGE } }
 	description_case = { text_add = { WAR_NEWS_LARGE } }
 	#description_case = 
@@ -53,7 +53,7 @@ generate_article =
 	size = medium
 	name = "default"
 
-	picture_case = { picture = "news/news_war_01.dds" picture = "news/news_war_02.dds"  picture = "news/news_war_03.dds" picture = "news/news_war_04.dds" picture = "news/news_war_05.dds" picture = "news/news_war_06.dds" }
+	picture_case = { picture = "news/news_war_01.dds" picture = "news/news_war_02.dds"  picture = "news/news_war_03.dds" picture = "news/news_war_04.dds" picture = "news/news_war_05.dds" picture = "news/news_war_06.dds" picture = "news/news_war_07.dds" picture = "news/news_war_08.dds" picture = "news/news_war_09.dds" picture = "news/news_war_10.dds" picture = "news/news_war_11.dds" picture = "news/news_war_12.dds" picture = "news/news_war_13.dds" picture = "news/news_war_14.dds" }
 	title_case = { text_add = { WAR_NEWS_TITLE_MEDIUM } }
 	description_case = { text_add = { WAR_NEWS_MEDIUM } }
 }
