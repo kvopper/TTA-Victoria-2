@@ -58,6 +58,7 @@ country_event = {
 	picture = "administration"
 	
 	trigger = {
+		NOT = { owner = { has_country_modifier = observer_mode } }
 		NOT = { has_country_modifier = great_advisor }
 	}
 	
@@ -78,6 +79,7 @@ country_event = {
 	picture = "administration"
 	
 	trigger = {
+		NOT = { owner = { has_country_modifier = observer_mode } }
 		NOT = { has_country_modifier = great_diplomat }
 	}
 	
