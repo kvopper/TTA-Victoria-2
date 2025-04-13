@@ -5711,7 +5711,7 @@ RESEARCH_NEWS_MEDIUM;Researchers in $TAG_0_0$ have recently completed research i
 RESEARCH_NEWS_TITLE_SMALL;$TAG_0_0_ADJ$ research complete!;x
 RESEARCH_NEWS_SMALL;Researchers in $TAG_0_0$ have recently completed research into $STRING_0_1$.;x
 WAR_NEWS_TITLE_LARGE;WAR BETWEEN $TAG_0_0_UPPER$ AND $TAG_0_1_UPPER$!;x
-WAR_NEWS_LARGE;On $DATE_LONG_0$ $TAG_0_0$ announced that a state of war now exists between them and $TAG_0_1$. An envoy from $TAG_0_0$, when asked for the reasons war had been declared stated the need to '$STRING_0_1$'. 'We only intend to reclaim what was unjustly claimed before and restore peace and order to the region', he added. 'This unlawful aggression will not stand' his counterpart in $TAG_0_1$ responded, demanding international community to condemn the aggressor. May God have mercy on them all.;x
+WAR_NEWS_LARGE;On $DATE_LONG_0$ $TAG_0_0$ announced that a state of war now exists between them and $TAG_0_1$. An envoy from $TAG_0_0$, when asked for the reasons war had been declared stated the need to '$STRING_0_1$'. 'We only intend to reclaim what was unjustly claimed before and restore peace and order to the region', he added. 'This unlawful aggression will not stand' his counterpart in $TAG_0_1$ responded, demanding international community to condemn the aggressor. May Eru have mercy on them all.;x
 WAR_NEWS_TITLE_MEDIUM;$TAG_0_0_UPPER$ GOES TO WAR!;x
 WAR_NEWS_MEDIUM;On $DATE_LONG_0$ $TAG_0_0$ announced that a state of war now exists with $TAG_0_1$. The stated reason for this declaration is to '$STRING_0_1$'. 'This unlawful aggression will not stand' an envoy from $TAG_0_1$ commented.;x
 WAR_NEWS_TITLE_SMALL;$TAG_0_0_$ at War!;x
