@@ -5817,12 +5817,12 @@ AI_LOVES_US_TITLE4;Warm Relations;x
 AI_LOVES_US_DESC4_LONG;Our correspondent has been told by his sources within the Foreign office that in the last few weeks, the leader of $TAG_0_0$ made a grand speech to his people praising our realm and the achievements of our people. It is believed that the speech is an attempt by $TAG_0_0$ to draw closer to our mighty realm and it we must response to these overtures with the courtesy typical of the $TAG_0_1_ADJ$ people. We praise these attempts and hope that they will lead to a continued period of collaboration between our two glorious realms.;x
 AI_LOVES_US_DESC4_MEDIUM;After a reportedly very productive meeting with our ambassador last week, a representative of the $TAG_0_0_ADJ$ people gave a speech on the steps of the Foreign office praising our realm and government, opening the door to a new dialogue of collaboration and partnership.;x
 AI_LOVES_US_DESC4_SHORT;A new era of Friendship between our nations has begun' These were the words of the $TAG_0_0_ADJ$ Ambassador as he spoke to assembled journalists following talks in the capital.;x
-INVENTION_NEWS_TITLE_LARGE2;New patent!;x
-INVENTION_NEWS_LARGE2;Science Report: Improvements and innovations in the field of $STRING_0_1$ have been patented and registered by researchers in $TAG_0_0$. The documentation of these advancements, although currently a secret kept behind closed doors, is expected to progressively spread to other lands and in time contribute to the progress of science in the world. ;x
-INVENTION_NEWS_TITLE_MEDIUM2;New patent!;x
-INVENTION_NEWS_MEDIUM2;Improvements and innovations in the field of $STRING_0_1$ have been registered in the National Patent Office of $TAG_0_0$. ;x
-INVENTION_NEWS_TITLE_SMALL2;New patent!;x
-INVENTION_NEWS_SMALL2;New improvements and innovations in the field of $STRING_0_1$ have been patented in $TAG_0_0$. ;x
+INVENTION_NEWS_TITLE_LARGE2;New invention!;x
+INVENTION_NEWS_LARGE2;Science Report: Improvements and innovations in the field of $STRING_0_1$ have been registered by researchers in $TAG_0_0$. The documentation of these advancements, although currently a secret kept behind closed doors, is expected to progressively spread to other lands and in time contribute to progress in the world. ;x
+INVENTION_NEWS_TITLE_MEDIUM2;New creation!;x
+INVENTION_NEWS_MEDIUM2;Improvements and innovations in the field of $STRING_0_1$ have been registered in $TAG_0_0$. ;x
+INVENTION_NEWS_TITLE_SMALL2;New improvement!;x
+INVENTION_NEWS_SMALL2;New improvements and innovations in the field of $STRING_0_1$ have been discovered in $TAG_0_0$. ;x
 EDITORIAL_ABSMON;Editorial: why it is right and proper to hate anti-legitimists - providence itself demands it! Why, these ne’er-do-wells would have the peasant rabble govern themselves (see page 10) ;x
 EDITORIAL_PRUCON;Editorial: why it is right to hate reformists of every stripe - the natural order demands it! Why, these liberal speculators and cosmopolitans would run our realm as a whorehouse (see page 10);x
 EDITORIAL_CONMON;Editorial: why it is right to hate republicans - stability demands it! Why, without a figurehead to smile benevolently upon us, intrigue and the guillotine will destroy us all (page 10);x
