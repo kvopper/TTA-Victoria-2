@@ -387,6 +387,10 @@ province_event = {
 	id = 50910
 	title = "Gold in Long Lake!"
 	desc = "EVTDESC50910"
+	news = yes
+	news_desc_long = "EVTDESC50910_NEWS"
+	news_desc_medium = "EVTDESC50910_NEWS"
+	news_desc_short = "EVTDESC50910_NEWS"
 	
 	trigger = {
 		OR = {
@@ -1110,6 +1114,10 @@ country_event = {
 	title = "The Death of Bard I"
 	desc = "EVTDESC50929"
 	picture = "generic/leader_death"
+	news = yes
+	news_desc_long = "EVTDESC50929_NEWS"
+	news_desc_medium = "EVTDESC50929_NEWS"
+	news_desc_short = "EVTDESC50929_NEWS"
 	
 	fire_only_once = yes
 	
@@ -1150,6 +1158,10 @@ country_event = {
 	title = "The Coronation of Bain I"
 	desc = "EVTDESC50930"
 	picture = "generic/coronation"
+	news = yes
+	news_desc_long = "EVTDESC50930_NEWS"
+	news_desc_medium = "EVTDESC50930_NEWS"
+	news_desc_short = "EVTDESC50930_NEWS"
 	
 	is_triggered_only = yes
 	
@@ -1167,6 +1179,10 @@ country_event = {
 	title = "The Death of Bain I"
 	desc = "EVTDESC50931"
 	picture = "generic/leader_death"
+	news = yes
+	news_desc_long = "EVTDESC50931_NEWS"
+	news_desc_medium = "EVTDESC50931_NEWS"
+	news_desc_short = "EVTDESC50931_NEWS"
 	
 	fire_only_once = yes
 	
@@ -1206,6 +1222,10 @@ country_event = {
 	title = "The Coronation of Brand I"
 	desc = "EVTDESC50932"
 	picture = "generic/coronation"
+	news = yes
+	news_desc_long = "EVTDESC50932_NEWS"
+	news_desc_medium = "EVTDESC50932_NEWS"
+	news_desc_short = "EVTDESC50932_NEWS"
 	
 	is_triggered_only = yes
 	
@@ -1223,6 +1243,10 @@ country_event = {
 	title = "The Death of Brand I"
 	desc = "EVTDESC50933"
 	picture = "generic/leader_death"
+	news = yes
+	news_desc_long = "EVTDESC50933_NEWS"
+	news_desc_medium = "EVTDESC50933_NEWS"
+	news_desc_short = "EVTDESC50933_NEWS"
 	
 	fire_only_once = yes
 	
@@ -1262,6 +1286,10 @@ country_event = {
 	title = "The Coronation of Bard II"
 	desc = "EVTDESC50934"
 	picture = "generic/coronation"
+	news = yes
+	news_desc_long = "EVTDESC50934_NEWS"
+	news_desc_medium = "EVTDESC50934_NEWS"
+	news_desc_short = "EVTDESC50934_NEWS"
 	
 	is_triggered_only = yes
 	
@@ -1279,6 +1307,10 @@ country_event = {
 	title = "The Death of Bard II"
 	desc = "EVTDESC50935"
 	picture = "generic/leader_death"
+	news = yes
+	news_desc_long = "EVTDESC50935_NEWS"
+	news_desc_medium = "EVTDESC50935_NEWS"
+	news_desc_short = "EVTDESC50935_NEWS"
 	
 	fire_only_once = yes
 	
@@ -1318,6 +1350,10 @@ country_event = {
 	title = "The Coronation of Girion II"
 	desc = "EVTDESC50916"
 	picture = "generic/coronation"
+	news = yes
+	news_desc_long = "EVTDESC50916_NEWS"
+	news_desc_medium = "EVTDESC50916_NEWS"
+	news_desc_short = "EVTDESC50916_NEWS"
 	
 	is_triggered_only = yes
 	
@@ -1337,6 +1373,10 @@ country_event = {
 	title = "A Royal Wedding"
 	desc = "EVTDESC50936"
 	picture = "generic/wedding"
+	news = yes
+	news_desc_long = "EVTDESC50936_NEWS"
+	news_desc_medium = "EVTDESC50936_NEWS"
+	news_desc_short = "EVTDESC50936_NEWS"
 	
 	fire_only_once = yes
 	
@@ -1444,6 +1484,10 @@ country_event = {
 	title = "A Royal Wedding"
 	desc = "EVTDESC50939"
 	picture = "generic/wedding"
+	news = yes
+	news_desc_long = "EVTDESC50939_NEWS"
+	news_desc_medium = "EVTDESC50939_NEWS"
+	news_desc_short = "EVTDESC50939_NEWS"
 	
 	fire_only_once = yes
 	
@@ -1553,6 +1597,10 @@ country_event = {
 	title = "A Royal Wedding"
 	desc = "EVTDESC50942"
 	picture = "generic/wedding"
+	news = yes
+	news_desc_long = "EVTDESC50942_NEWS"
+	news_desc_medium = "EVTDESC50942_NEWS"
+	news_desc_short = "EVTDESC50942_NEWS"
 	
 	fire_only_once = yes
 	
@@ -2451,6 +2499,10 @@ country_event = {
 	title = "Demands of the Merchants"
 	desc = "EVTDESC50962"
 	picture = "gramavuld/master_of_laketown"
+	news = yes
+	news_desc_long = "EVTDESC50962_NEWS"
+	news_desc_medium = "EVTDESC50962_NEWS"
+	news_desc_short = "EVTDESC50962_NEWS"
 	
 	fire_only_once = yes
 	
@@ -2568,6 +2620,10 @@ country_event = {
 	title = "Demands of the Fishers Guild"
 	desc = "EVTDESC50963"
 	picture = "gramavuld/fishers_guild"
+	news = yes
+	news_desc_long = "EVTDESC50963_NEWS"
+	news_desc_medium = "EVTDESC50963_NEWS"
+	news_desc_short = "EVTDESC50963_NEWS"
 	
 	fire_only_once = yes
 	

@@ -24,13 +24,30 @@ generate_article =
 	size = large
 	name = "default"
 
-	picture_case = { 
+	picture_case = {
 		trigger = {
-			or = {
+			OR = {
 				strings_eq = { 0 0 "shire_bree_unification" }
+				strings_eq = { 0 0 "form_rivermen" }
+				strings_eq = { 0 0 "proclaim_lordship_over_the_grammas" }
+				strings_eq = { 0 0 "proclaim_lordship_over_the_rivermen" }
+				strings_eq = { 0 0 "gramavuld_united" }
+				strings_eq = { 0 0 "form_rhovanion" }
 			}
 		}
 		picture = "news/news_union.dds"
+	}
+
+	picture_case = {
+		trigger = {
+			OR = {
+				strings_eq = { 0 0 "DAL_break_treaty_with_erebor" }
+				strings_eq = { 0 0 "DAL_claim_successor_to_vidugavia" }
+				strings_eq = { 0 0 "exterminate_the_wights" }
+				strings_eq = { 0 0 "DAL_dissolution_amov_clan" }
+			}
+		}
+		picture = "news/gramavuld/northmen_war.dds"
 	}
 
 	# Use the same title as decision
@@ -46,11 +63,30 @@ generate_article =
 	size = medium
 	name = "default"
 
-	picture_case = { 
+	picture_case = {
 		trigger = {
-			strings_eq = { 0 0 "shire_bree_unification" }
+			OR = {
+				strings_eq = { 0 0 "shire_bree_unification" }
+				strings_eq = { 0 0 "form_rivermen" }
+				strings_eq = { 0 0 "proclaim_lordship_over_the_grammas" }
+				strings_eq = { 0 0 "proclaim_lordship_over_the_rivermen" }
+				strings_eq = { 0 0 "gramavuld_united" }
+				strings_eq = { 0 0 "form_rhovanion" }
+			}
 		}
 		picture = "news/news_union.dds"
+	}
+
+	picture_case = {
+		trigger = {
+			OR = {
+				strings_eq = { 0 0 "DAL_break_treaty_with_erebor" }
+				strings_eq = { 0 0 "DAL_claim_successor_to_vidugavia" }
+				strings_eq = { 0 0 "exterminate_the_wights" }
+				strings_eq = { 0 0 "DAL_dissolution_amov_clan" }
+			}
+		}
+		picture = "news/gramavuld/northmen_war.dds"
 	}
 
 	# Use the same title as decision

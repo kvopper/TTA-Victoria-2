@@ -238,6 +238,11 @@ political_decisions = {
 	
 	form_rivermen = {
 		picture = "Barding Realm/RIV_rivermen_unite"
+		news = yes
+		news_desc_long = "form_rivermen_NEWS_LONG"
+		news_desc_medium = "form_rivermen_NEWS_MEDIUM"
+		news_desc_short = "form_rivermen_NEWS_SHORT"
+		
 		potential = {
 			primary_culture = rivermen
 			NOT = { tag = RIV }
@@ -644,6 +649,11 @@ political_decisions = {
 	
 	DAL_dissolution_amov_clan = {
 		picture = "Barding Realm/DAL_end_AMO"
+		news = yes
+		news_desc_long = "DAL_dissolution_amov_clan_NEWS_LONG"
+		news_desc_medium = "DAL_dissolution_amov_clan_NEWS_MEDIUM"
+		news_desc_short = "DAL_dissolution_amov_clan_NEWS_SHORT"
+		
 		potential = {
 			has_country_flag = DAL_content
 			AMO = { any_core = { owned_by = THIS } }
@@ -733,6 +743,11 @@ political_decisions = {
 	
 	exterminate_the_wights = {
 		picture = "Barding Realm/DAL_marsh_wights"
+		news = yes
+		news_desc_long = "exterminate_the_wights_NEWS_LONG"
+		news_desc_medium = "exterminate_the_wights_NEWS_MEDIUM"
+		news_desc_short = "exterminate_the_wights_NEWS_SHORT"
+		
 		potential = {
 			has_global_flag = DAL_marsh_wights_risen
 			LMW = {
@@ -800,6 +815,10 @@ political_decisions = {
 
 	proclaim_lordship_over_the_grammas = {
 		picture = "Barding Realm/DAL_barding_diplomats_grammas"
+		news = yes
+		news_desc_long = "proclaim_lordship_over_the_grammas_NEWS"
+		news_desc_medium = "proclaim_lordship_over_the_grammas_NEWS"
+		news_desc_short = "proclaim_lordship_over_the_grammas_NEWS"
 		
 		potential = {
 			has_country_flag = DAL_content
@@ -1008,6 +1027,10 @@ political_decisions = {
 	
 	proclaim_lordship_over_the_rivermen = {
 		picture = "Barding Realm/DAL_barding_diplomats_rivermen"
+		news = yes
+		news_desc_long = "proclaim_lordship_over_the_rivermen_NEWS"
+		news_desc_medium = "proclaim_lordship_over_the_rivermen_NEWS"
+		news_desc_short = "proclaim_lordship_over_the_rivermen_NEWS"
 		
 		potential = {
 			has_country_flag = DAL_content
@@ -1191,6 +1214,11 @@ political_decisions = {
 	
 	gramavuld_united = {
 		picture = "Barding Realm/DAL_map_of_gramavuld"
+		news = yes
+		news_desc_long = "gramavuld_united_NEWS_LONG"
+		news_desc_medium = "gramavuld_united_NEWS_MEDIUM"
+		news_desc_short = "gramavuld_united_NEWS_SHORT"
+		
 		potential = {
 			has_country_flag = DAL_content
 			NOT = { has_country_flag = DAL_united_gramavuld }
@@ -1367,6 +1395,11 @@ political_decisions = {
 political_decisions = {
 	DAL_break_treaty_with_erebor = {
 		picture = "Barding Realm/DAL_reconquer_north"
+		news = yes
+		news_desc_long = "DAL_break_treaty_with_erebor_NEWS_LONG"
+		news_desc_medium = "DAL_break_treaty_with_erebor_NEWS_MEDIUM"
+		news_desc_short = "DAL_break_treaty_with_erebor_NEWS_SHORT"
+		
 		potential = {
 			has_country_flag = DAL_content
 			has_global_flag = railroading_disabled
@@ -1541,6 +1574,11 @@ political_decisions = {
 	
 	DAL_claim_successor_to_vidugavia = {
 		picture = "Barding Realm/DAL_barding_claim_rhovanion"
+		news = yes
+		news_desc_long = "DAL_claim_successor_to_vidugavia_NEWS"
+		news_desc_medium = "DAL_claim_successor_to_vidugavia_NEWS"
+		news_desc_short = "DAL_claim_successor_to_vidugavia_NEWS"
+		
 		potential = {
 			has_country_flag = DAL_content
 			has_country_flag = DAL_claimed_southern_rivermen

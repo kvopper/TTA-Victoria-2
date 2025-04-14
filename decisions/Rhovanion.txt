@@ -25,6 +25,11 @@ political_decisions = {
 # Forming Rhovanion
 political_decisions = {
 	form_rhovanion = {
+		news = yes
+		news_desc_long = "form_rhovanion_NEWS"
+		news_desc_medium = "form_rhovanion_NEWS"
+		news_desc_short = "form_rhovanion_NEWS"
+		
 		potential = {
 			OR = {
 				is_culture_group = gramavuld_northmen

@@ -4,6 +4,25 @@
 shire_bree_unification_NEWS_LONG;The lands of the Shire and Bree have come together to form the Shire Bree Union. Seen in the major towns across both sides of the Brandywine, Men and Hobbits alike were reportedly holding festivals for many weeks as the news spread. Tremendous food was in abundance, and activities such as pipe smoking were enjoyed by all. This is undoubtedly the start of a new era for the north.;x
 shire_bree_unification_NEWS_MEDIUM;The lands of the Shire and Bree have come together to form the Shire Bree Union. Men and Hobbits alike across the region rejoiced with a tremendous week long fete, with food in abundance, and activities enjoyed by all.;x
 shire_bree_unification_NEWS_SHORT;The lands of the Shire and Bree have come together to form the Shire Bree Union. Men and Hobbits alike across the region rejoiced with a tremendous multi-day feast.;x
+form_rivermen_NEWS_LONG;The tribes of the Rivermen have united under one banner! Many outsiders speculate as to the reason, but our council believes it is due to the invasions. from the north and east. Despite the grave threat from two different peoples, the Rivermen still held a celebration in their capital.;x
+form_rivermen_NEWS_MEDIUM;The tribes of the Rivermen have united under one banner! Many outsiders speculate as to the reason, but our council believes it is due to the invasions. from the north and east. Despite the grave threat from two different peoples, the Rivermen still held a celebration in their capital.;x
+form_rivermen_NEWS_SHORT;The Rivermen tribes have united! Reports of their celebration have reached us, and many wonder if they should be celebrating considering the threat from the Lakemen and Easterlings.;x
+DAL_dissolution_amov_clan_NEWS_LONG;Ever since being conquered by the Lakemen, the Amov Clan has existed as an internal political construct for the Easterlings living in the $COUNTRY$. That is no more -- word has reached us that the Amov Clan has been fully dissolved, with the Easterlings being told to held back east, or adopt the rituals and traditions of the Lakemen.;x
+DAL_dissolution_amov_clan_NEWS_MEDIUM;Despite being conqered, the Amov Clan has still existed as an internal political construct within the $COUNTRY$. That is no more -- word has reached us that the Amov Clan has been fully dissolved.
+DAL_dissolution_amov_clan_NEWS_SHORT;Despite being conqered, the Amov Clan has still existed as an internal political construct within the $COUNTRY$. Word has reached us that the Amov Clan has been fully dissolved.
+exterminate_the_wights_NEWS_LONG;After a sudden rising, the $COUNTRY$ has defeated the Marsh-wights. So thorough has been the campaign, that the Marsh-wights are all but eliminated, their hollows destroy, bodies burned, and crypts exposed to daily sunlight.;x
+exterminate_the_wights_NEWS_MEDIUM;After a sudden rising, the $COUNTRY$ has defeated the Marsh-wights. So thorough has been the campaign, that the Marsh-wights are all but eliminated, their hollows destroy, bodies burned, and crypts exposed to daily sunlight.;x
+exterminate_the_wights_NEWS_SHORT;The $COUNTRY$ has defeated the Marsh-wights, destroying their hollows, burning their bodies, and exposing their crypts to daily sunlight.;x
+proclaim_lordship_over_the_grammas_NEWS;The $COUNTRY$ has fully integrated the Grammas! Their lands now stretch from the eaves of Mirkwood to the shores of the Carnen.;x
+proclaim_lordship_over_the_rivermen_NEWS;The $COUNTRY$ has fully integrated the Rivermen! Their lands now stretch across the northern shores of the Celduin until the confluence with the Carnen.;x
+gramavuld_united_NEWS_LONG;After years of diplomacy with between the Adhallings, Lakemen and Grammas, and even more years of wars with the Rivermen and Easterlings, Gramavuld is united under one banner. A week-long celebration was held in Dale, said to have fine wines, fresh fish and ornate decorations supplied by the artisans of Erebor.;x
+gramavuld_united_NEWS_MEDIUM;After years of diplomacy with between the Adhallings, Lakemen and Grammas, and even more years of wars with the Rivermen and Easterlings, Gramavuld is united under one banner. A week-long celebration was held in Dale, said to have fine wines, fresh fish and ornate decorations supplied by the artisans of Erebor.;x
+gramavuld_united_NEWS_SHORT;Gramavuld is united under the banner of the Lakemen! After years of diplomacy and war, the $COUNTRY$ has achieved its goal of uniting the Northmen of Gramavuld under one banner.;x
+DAL_break_treaty_with_erebor_NEWS_LONG;The Lakemwn have decided to break their millenia-old treaty with the Dwarves of Erebor. The Lakemen-Longbeard Treaty of TA 2008 ceded many of the lands north of Dale to the Kingdom of Erebor, to exist as a tributary state to the then-new Dwarven realm. Many speculate as to the reason, but the wise believe it's related to the ever-growing political differences between the realms.;x
+DAL_break_treaty_with_erebor_NEWS_MEDIUM;The Lakemen have decided to break their millenia-old treaty with the Dwarves of Erebor. Many speculate as to the reason, but the wise believe it's related to the ever-growing political differences between the realms.;x
+DAL_break_treaty_with_erebor_NEWS_SHORT;The Lakemen have decided to break their millenia-old treaty with the Dwarves of Erebor. The wise believe it's related to the ever-growing political differences between the realms.;x
+DAL_claim_successor_to_vidugavia_NEWS;Present day Rhovanion is shattered among differing tribes of Northmen, last united by the House of Vidugavia. The $COUNTRY$ has declared themselves to be the successors to Vidugavia!;x
+form_rhovanion_NEWS;The Northmen tribes of Rhovanion have united under one banner! The messenger reports that their celebration lasted for days, and was as intense as if they had won a war. Undoubtedly, they will be a new power to reckon with.;x
 #######################;x }
 ##### EVENTS NEWS #####;x {
 #######################;x
@@ -22,6 +41,20 @@ EVTDESC50500_NEWS_SHORT;Mount Doom has erupted after being dormant for thousands
 EVTDESC70005_NEWS_LONG;$COUNTRY$ has thrown off its tribal roots and centralised into a modern state. Her old traditions no longer serve as they used to, and she has faced increased influence from abroad. Now the country, bouyed on by her class of intellectual elite, has finally taken control of her own destiny. We may see this nation play a greater role in international affairs.;x
 EVTDESC70005_NEWS_MEDIUM;$COUNTRY$ has thrown off its tribal roots and centralised into a modern state. Her old traditions no longer serve as they used to, and she has faced increased influence from abroad. We may see it play a greater role in international affairs.;x
 EVTDESC70005_NEWS_SHORT;$COUNTRY$ has thrown off its tribal roots and centralised into a modern state. We may see it play a greater role in international affairs.;x
+EVTDESC50910_NEWS;A local fisherman has found a large amount of gold in Long Lake! Some surmise it was on Smaug's body when he died, or fell off while he flew and burned Lake Town. Others say that it's from the Master's attempt to smuggle the wealth of the city out during the attack.;x
+EVTDESC50929_NEWS;King Bard I of the $COUNTRY$ has died! The $COUNTRY$ mourns, and prepares for the coronation of his son, Bain I.;x
+EVTDESC50930_NEWS;Bain, son of Bard I, was coronated as King Bain I of the $COUNTRY$. May his reign be long and prosperous!;x
+EVTDESC50931_NEWS;King Bain I of the $COUNTRY$ has died! The $COUNTRY$ mourns, and prepares for the coronation of his son, Brand I.;x
+EVTDESC50932_NEWS;Brand, son of Bain I, was coronated as King Brand I of the $COUNTRY$. May his reign be long and prosperous!;x
+EVTDESC50933_NEWS;King Brand I of the $COUNTRY$ has died! The $COUNTRY$ mourns, and prepares for the coronation of his son, Bard II.;x;x
+EVTDESC50934_NEWS;Bard, son of Brand I, was coronated as King Bard II of the $COUNTRY$. May his reign be long and prosperous!;x
+EVTDESC50935_NEWS;King Bard II of the $COUNTRY$ has died! The $COUNTRY$ mourns, and prepares for the coronation of his son, Girion II.;x
+EVTDESC50916_NEWS;Girion, son of Bard II, was coronated as King Girion II of the $COUNTRY$. May his reign be long and prosperous!;x;x
+EVTDESC50936_NEWS;Bain, son of Bard I, has wed! It's said that the $COUNTRY$ held week long celebration for this momentous event.;x
+EVTDESC50939_NEWS;Brand, son of Bain I, has wed! It's said that the $COUNTRY$ held week long celebration for this momentous event.;x
+EVTDESC50942_NEWS;Bard, son of Brand I, has wed! It's said that the $COUNTRY$ held week long celebration for this momentous event.;x
+EVTDESC50962_NEWS;The Merchants of Laketown have regained much of their political clout in the $COUNTRY$. In fact, a messanger reports that they have demanded more power and protections. There is no estimate as to the effect of this on the $COUNTRY$'s politics yet.;x
+EVTDESC50963_NEWS;The Fisher's Guild has gained lots of political power in the $COUNTRY$ since Smaug's attack on Laketown. In fact, a messanger reports that they have demanded more power and protections. There is no estimate as to the effect of this on the $COUNTRY$'s politics yet.;x
 #####################;x }
 ##### FAKE NEWS #####;x {
 #####################;x

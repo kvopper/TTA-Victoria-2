@@ -98,9 +98,12 @@ generate_article =
 	name = "default"
 
 	# Use the same picture as event
-	picture_case =
-	{ 
-		# if province event (use general pics as those has no images defined)
+	picture_case = {
+		trigger = { values_eq = { 0 0 50910 } }
+		picture = "events/news/gramavuld/smaug_gold.tga"
+	}
+	# if province event (use general pics as those has no images defined)
+	picture_case = {
 		trigger = { values_eq = { 0 4 1 } }
 		picture = "news/revolution_01_news_image.dds"
 	}
@@ -120,9 +123,12 @@ generate_article =
 	name = "default"
 
 	# Use the same picture as event
-	picture_case =
-	{ 
-		# if province event (use general pics as those has no images defined)
+	picture_case = {
+		trigger = { values_eq = { 0 0 50910 } }
+		picture = "events/news/gramavuld/smaug_gold.tga"
+	}
+	# if province event (use general pics as those has no images defined)
+	picture_case = {
 		trigger = { values_eq = { 0 4 1 } }
 		picture = "news/revolution_01_news_image.dds"
 	}
@@ -132,7 +138,6 @@ generate_article =
 	title_case = { text_add = { "$STRING_0_0$" } }
 
 	# Generate description text (Use special key text generation for events)
-	#description_case = { text_add = { "$EVENT_DESC_0_0_LONG$" } }
 	description_case = { text_add = { "$EVENT_DESC_0_0_MEDIUM$" } } # If missing - will fallback to default text (the longest)
 }
 
@@ -146,7 +151,6 @@ generate_article =
 	title_case = { text_add = { "$STRING_0_0$" } }
 
 	# Generate description text (Use special key text generation for events)
-	#description_case = { text_add = { "$EVENT_DESC_0_0_LONG$" } }
 	description_case = { text_add = { "$EVENT_DESC_0_0_SHORT$" } } # If missing - will fallback to default text (the longest)
 }
 
