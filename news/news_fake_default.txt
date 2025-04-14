@@ -72,3 +72,6 @@ fake_news_pattern = { "45" "some_fake_ANY_title_45" "some_fake_ANY_45" }
 fake_news_pattern = { "46" "some_fake_ANY_title_46" "some_fake_ANY_46" }
 fake_news_pattern = { "47" "some_fake_ANY_title_47" "some_fake_ANY_47" }
 fake_news_pattern = { "48" "some_fake_ANY_title_48" "some_fake_ANY_48" }
+fake_news_pattern = { "49" "some_fake_ANY_title_49" "some_fake_ANY_49" }
+fake_news_pattern = { "50" "some_fake_ANY_title_50" "some_fake_ANY_50" }
+fake_news_pattern = { "51" "some_fake_ANY_title_51" "some_fake_ANY_51" }
