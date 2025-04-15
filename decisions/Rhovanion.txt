@@ -26,6 +26,7 @@ political_decisions = {
 political_decisions = {
 	form_rhovanion = {
 		news = yes
+		news_title = "new_union_NEWS_TITLE"
 		news_desc_long = "form_rhovanion_NEWS"
 		news_desc_medium = "form_rhovanion_NEWS"
 		news_desc_short = "form_rhovanion_NEWS"

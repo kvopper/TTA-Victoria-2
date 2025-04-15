@@ -1,26 +1,34 @@
 ##########################;x }
 ##### DECISIONS NEWS #####;x {
 ##########################;x
+new_union_NEWS_TITLE;New Union Realm!;x
 shire_bree_unification_NEWS_LONG;The lands of the Shire and Bree have come together to form the Shire Bree Union. Seen in the major towns across both sides of the Brandywine, Men and Hobbits alike were reportedly holding festivals for many weeks as the news spread. Tremendous food was in abundance, and activities such as pipe smoking were enjoyed by all. This is undoubtedly the start of a new era for the north.;x
 shire_bree_unification_NEWS_MEDIUM;The lands of the Shire and Bree have come together to form the Shire Bree Union. Men and Hobbits alike across the region rejoiced with a tremendous week long fete, with food in abundance, and activities enjoyed by all.;x
 shire_bree_unification_NEWS_SHORT;The lands of the Shire and Bree have come together to form the Shire Bree Union. Men and Hobbits alike across the region rejoiced with a tremendous multi-day feast.;x
 form_rivermen_NEWS_LONG;The tribes of the Rivermen have united under one banner! Many outsiders speculate as to the reason, but our council believes it is due to the invasions. from the north and east. Despite the grave threat from two different peoples, the Rivermen still held a celebration in their capital.;x
 form_rivermen_NEWS_MEDIUM;The tribes of the Rivermen have united under one banner! Many outsiders speculate as to the reason, but our council believes it is due to the invasions. from the north and east. Despite the grave threat from two different peoples, the Rivermen still held a celebration in their capital.;x
 form_rivermen_NEWS_SHORT;The Rivermen tribes have united! Reports of their celebration have reached us, and many wonder if they should be celebrating considering the threat from the Lakemen and Easterlings.;x
+DAL_dissolution_amov_clan_NEWS_TITLE;The Dissolution of the Amov Clan;x
 DAL_dissolution_amov_clan_NEWS_LONG;Ever since being conquered by the Lakemen, the Amov Clan has existed as an internal political construct for the Easterlings living in the $COUNTRY$. That is no more -- word has reached us that the Amov Clan has been fully dissolved, with the Easterlings being told to held back east, or adopt the rituals and traditions of the Lakemen.;x
 DAL_dissolution_amov_clan_NEWS_MEDIUM;Despite being conqered, the Amov Clan has still existed as an internal political construct within the $COUNTRY$. That is no more -- word has reached us that the Amov Clan has been fully dissolved.
 DAL_dissolution_amov_clan_NEWS_SHORT;Despite being conqered, the Amov Clan has still existed as an internal political construct within the $COUNTRY$. Word has reached us that the Amov Clan has been fully dissolved.
+exterminate_the_wights_NEWS_TITLE;The End of the Marsh-wights;x
 exterminate_the_wights_NEWS_LONG;After a sudden rising, the $COUNTRY$ has defeated the Marsh-wights. So thorough has been the campaign, that the Marsh-wights are all but eliminated, their hollows destroy, bodies burned, and crypts exposed to daily sunlight.;x
 exterminate_the_wights_NEWS_MEDIUM;After a sudden rising, the $COUNTRY$ has defeated the Marsh-wights. So thorough has been the campaign, that the Marsh-wights are all but eliminated, their hollows destroy, bodies burned, and crypts exposed to daily sunlight.;x
 exterminate_the_wights_NEWS_SHORT;The $COUNTRY$ has defeated the Marsh-wights, destroying their hollows, burning their bodies, and exposing their crypts to daily sunlight.;x
+proclaim_lordship_over_the_grammas_NEWS_TITLE;$COUNTRY$ unites with the Grammas!;x
 proclaim_lordship_over_the_grammas_NEWS;The $COUNTRY$ has fully integrated the Grammas! Their lands now stretch from the eaves of Mirkwood to the shores of the Carnen.;x
+proclaim_lordship_over_the_rivermen_NEWS_TITLE;$COUNTRY$ units with the Rivermen!;x
 proclaim_lordship_over_the_rivermen_NEWS;The $COUNTRY$ has fully integrated the Rivermen! Their lands now stretch across the northern shores of the Celduin until the confluence with the Carnen.;x
+gramavuld_united_NEWS_TITLE;A United Gramavuld;x
 gramavuld_united_NEWS_LONG;After years of diplomacy with between the Adhallings, Lakemen and Grammas, and even more years of wars with the Rivermen and Easterlings, Gramavuld is united under one banner. A week-long celebration was held in Dale, said to have fine wines, fresh fish and ornate decorations supplied by the artisans of Erebor.;x
 gramavuld_united_NEWS_MEDIUM;After years of diplomacy with between the Adhallings, Lakemen and Grammas, and even more years of wars with the Rivermen and Easterlings, Gramavuld is united under one banner. A week-long celebration was held in Dale, said to have fine wines, fresh fish and ornate decorations supplied by the artisans of Erebor.;x
 gramavuld_united_NEWS_SHORT;Gramavuld is united under the banner of the Lakemen! After years of diplomacy and war, the $COUNTRY$ has achieved its goal of uniting the Northmen of Gramavuld under one banner.;x
+DAL_break_treaty_with_erebor_NEWS_TITLE;War in the North!;x
 DAL_break_treaty_with_erebor_NEWS_LONG;The Lakemwn have decided to break their millenia-old treaty with the Dwarves of Erebor. The Lakemen-Longbeard Treaty of TA 2008 ceded many of the lands north of Dale to the Kingdom of Erebor, to exist as a tributary state to the then-new Dwarven realm. Many speculate as to the reason, but the wise believe it's related to the ever-growing political differences between the realms.;x
 DAL_break_treaty_with_erebor_NEWS_MEDIUM;The Lakemen have decided to break their millenia-old treaty with the Dwarves of Erebor. Many speculate as to the reason, but the wise believe it's related to the ever-growing political differences between the realms.;x
 DAL_break_treaty_with_erebor_NEWS_SHORT;The Lakemen have decided to break their millenia-old treaty with the Dwarves of Erebor. The wise believe it's related to the ever-growing political differences between the realms.;x
+DAL_claim_successor_to_vidugavia_NEWS_TITLE;The New Heir to Vidugavia;x
 DAL_claim_successor_to_vidugavia_NEWS;Present day Rhovanion is shattered among differing tribes of Northmen, last united by the House of Vidugavia. The $COUNTRY$ has declared themselves to be the successors to Vidugavia!;x
 form_rhovanion_NEWS;The Northmen tribes of Rhovanion have united under one banner! The messenger reports that their celebration lasted for days, and was as intense as if they had won a war. Undoubtedly, they will be a new power to reckon with.;x
 #######################;x }
