@@ -1542,6 +1542,7 @@ add_claim_RHO_528_loc;§WWe will gain claims over §!§YEast Dunheath§!§I;x
 add_claim_MOR_397_loc;§WWe will gain claims over §!§YEastern Desolation§!§I;x
 claim_status_doesnt_own_ERE_682_loc;§YCirith Himninond§!: §RUnowned§!§I;x
 claim_status_doesnt_own_CAR_1204_loc;§YGirithlin§!: §RUnowned§!§I;x
+DAL_appoint_bards_diplomats_erland_desc_loc;Erland was a great diplomat of Dale, working under the rule of Bard, Bain, Brand and Bard II's rule. He would be the primary negotiator with the Grammas, and would go onto lead the Barding delegation to the Council of Elrond.;x
 claim_status_doesnt_own_DND_307_loc;§YEmyn Sûl§!: §RUnowned§!§I;x
 remove_claim_MOR_408_loc;§WWe will lose claims over §!§YEphel Dûath§!§I;x
 add_claim_GON_16_loc;§WWe will gain claims over §!§YOld Anórien§!§I;x
@@ -1556,6 +1557,7 @@ remove_claim_RHU_859_loc;§WWe will lose claims over §!§YRann Gasta§!§I;x
 add_claim_RHU_634_loc;§WWe will gain claims over §!§YNorthern Gazar Narkad§!§I;x
 claim_status_owns_GON_57_loc;§YEmyn Ernil§!: §GOwned§!§I;x
 remove_claim_DUN_840_loc;§WWe will lose claims over §!§YFordirith§!§I;x
+DAL_master_inland_trade_loc;Cultivate Inland Trade;x
 add_claim_RHU_616_loc;§WWe will gain claims over §!§YBarren Wastes§!§I;x
 add_claim_GON_212_loc;§WWe will gain claims over §!§YHarithilien§!§I;x
 claim_status_owns_SHI_1034_loc;§YSarn Marches§!: §GOwned§!§I;x
@@ -1597,6 +1599,7 @@ remove_claim_MOR_397_loc;§WWe will lose claims over §!§YEastern Desolation§!
 add_claim_WRM_697_loc;§WWe will gain claims over §!§YAnnûneryn Galen§!§I;x
 claim_status_owns_RHU_616_loc;§YBarren Wastes§!: §GOwned§!§I;x
 DAL_king_of_adhalling_loc;§GAdhalling§!,;x
+DAL_barding_erebor_relations_desc_loc;As our alliance with Erebor ages, our peoples grow ever closer. When Bard II is our leader, if we are able to hit 100 points, we will be able to accept the Dwarves as citizens within our realm.;x
 claim_status_owns_UMB_256_loc;§YSakal an-Khar§!: §GOwned§!§I;x
 claim_status_owns_MOR_397_loc;§YEastern Desolation§!: §GOwned§!§I;x
 claim_status_owns_MOR_404_loc;§YSouthern Nurza-Shukh§!: §GOwned§!§I;x
@@ -1612,7 +1615,6 @@ claim_status_doesnt_own_GON_102_loc;§YBlackroot Vale§!: §RUnowned§!§I;x
 remove_claim_DUN_833_loc;§WWe will lose claims over §!§YCarreglyn§!§I;x
 claim_status_doesnt_own_CAR_893_loc;§YLittle Caledir§!: §RUnowned§!§I;x
 claim_status_doesnt_own_LIN_921_loc;§YDânwaith§!: §RUnowned§!§I;x
-diplomat_erland_flavor_loc;Appoint Erland of Esgaroth as Diplomat;x
 claim_status_owns_CAR_1204_loc;§YGirithlin§!: §GOwned§!§I;x
 add_claim_DAL_645_loc;§WWe will gain claims over §!§YNan Celduin§!§I;x
 DAL_king_of_the_northmen_currently_ruling_over_loc;§TWe currently rule over the following cultures§!|;x
@@ -1668,6 +1670,7 @@ claim_status_owns_UMB_270_loc;§YMarös§!: §GOwned§!§I;x
 claim_status_doesnt_own_RHU_590_loc;§YMenelothriand§!: §RUnowned§!§I;x
 remove_claim_RHU_580_loc;§WWe will lose claims over §!§YEastern Gathod§!§I;x
 remove_claim_DND_863_loc;§WWe will lose claims over §!§YDor-en-Egladil§!§I;x
+DAL_bard_i_reforms_desc_loc;A balance between security and freedom, Bard's reforms strive to keep the realm strong, while supporting the wellbeing of his people.;x
 DAL_military_leaders_lodin_loc;§LLodin, §MCaptain of the Royal Archers§!|;x
 claim_status_doesnt_own_DAL_645_loc;§YNan Celduin§!: §RUnowned§!§I;x
 remove_claim_FAN_773_loc;§WWe will lose claims over §!§YFangorn§!§I;x
@@ -1683,9 +1686,11 @@ remove_claim_IML_1239_loc;§WWe will lose claims over §!§YCirith Narugorch§!�
 claim_status_doesnt_own_RHO_520_loc;§YAustrabuht§!: §RUnowned§!§I;x
 add_claim_DAL_652_loc;§WWe will gain claims over §!§YDalelands§!§I;x
 add_claim_DND_1025_loc;§WWe will gain claims over §!§YEketyaménya§!§I;x
+DAL_appoint_bards_council_lifstan_loc;Lifstan the Chancellor;x
 claim_status_owns_ROH_808_loc;§YWest-march§!: §GOwned§!§I;x
 remove_claim_DND_1023_loc;§WWe will lose claims over §!§YEmyn Uial§!§I;x
 add_claim_GON_165_loc;§WWe will gain claims over §!§YAngast§!§I;x
+DAL_barding_erebor_relations_loc;Barding-Erebor Relations;x
 claim_status_doesnt_own_GON_14_loc;§YTalath Anór§!: §RUnowned§!§I;x
 remove_claim_UMB_270_loc;§WWe will lose claims over §!§YMarös§!§I;x
 settings_toggle_infamy_removal_loc;This option effectively removes infamy. When disabled, at the start of the next month, every realm will get a modifier that increases infamy reduction to 999 per month.§I;x
@@ -1791,7 +1796,7 @@ claim_status_owns_RHU_598_loc;§YSouthern Telaith Lyst§!: §GOwned§!§I;x
 claim_status_owns_ERE_668_loc;§YNan Morsereg§!: §GOwned§!§I;x
 remove_claim_DND_1025_loc;§WWe will lose claims over §!§YEketyaménya§!§I;x
 claim_status_doesnt_own_BRE_1284_loc;§YUimirrildor§!: §RUnowned§!§I;x
-unique_flavor_loc;§MUnique Flavor§!;x
+unique_flavor_loc;§TUnique Flavor§!;x
 add_claim_RHU_603_loc;§WWe will gain claims over §!§YKug Valley§!§I;x
 DAL_increase_erebor_relations_5_loc;§GErebor Alliance points increased by 5§!;x§I;x
 add_claim_KHA_361_loc;§WWe will gain claims over §!§YDesert of Khand§!§I;x
@@ -1799,6 +1804,7 @@ claim_status_doesnt_own_HAR_288_loc;§YHarwan§!: §RUnowned§!§I;x
 FFN_core_refusers_loc;§RWe will gain cores on all core provinces of existing realms that abstained or voted against the formation of the §YFree Folk of the North§!§!§I;x
 remove_claim_RHO_515_loc;§WWe will lose claims over §!§YUpper Sekelavuld§!§I;x
 remove_claim_GON_81_loc;§WWe will lose claims over §!§YTarnost§!§I;x
+DAL_leader_traits_peaceful_loc;§TPeaceful§!| RGO Output §G+25%§!, Supply Consumption §G-50%§!, Research Points Modifier §G+10%§!;x
 claim_status_owns_ANV_745_loc;§YRónen-in-Anduin§!: §GOwned§!§I;x
 claim_status_owns_IML_871_loc;§YTalath Dindal§!: §GOwned§!§I;x
 fourth_age_year_loc;The Fourth Age hasn't started yet§I;x
@@ -1953,7 +1959,6 @@ DAL_northman_generals_rivermen_not_gotton_loc;§TThe following Rivermen Thegans 
 add_claim_CAR_902_loc;§WWe will gain claims over §!§YUpper Saerlann§!§I;x
 claim_status_owns_RHU_1257_loc;§YGlenn Crec§!: §GOwned§!§I;x
 add_claim_WOO_709_loc;§WWe will gain claims over §!§YWoodman's Realm§!§I;x
-diplomat_tilda_flavor_loc;Appoint Tilda Ambassador to Erebor;x
 claim_status_doesnt_own_GON_63_loc;§YCape Belfalas§!: §RUnowned§!§I;x
 add_claim_DUN_839_loc;§WWe will gain claims over §!§YMournshaws§!§I;x
 claim_status_doesnt_own_RHO_462_loc;§YNindalf§!: §RUnowned§!§I;x
@@ -2079,6 +2084,7 @@ add_claim_ROH_786_loc;§WWe will gain claims over §!§YLower Eastfold§!§I;x
 claim_status_doesnt_own_RHU_616_loc;§YBarren Wastes§!: §RUnowned§!§I;x
 add_claim_UMB_270_loc;§WWe will gain claims over §!§YMarös§!§I;x
 remove_claim_LIN_111_loc;§WWe will lose claims over §!§YForlindon§!§I;x
+DAL_appoint_bards_diplomats_tilda_desc_loc;The youngest child of Bard, Tilda grew up a royal heir, privy to the inner workings of the realm. As the realm grew, she quickly began the understand the Barding regional position, and the importance of their alliance with Erebor.;x
 claim_status_owns_ENE_838_loc;§YWinterdowns§!: §GOwned§!§I;x
 remove_claim_GUL_1436_loc;§WWe will lose claims over §!§YSouthern Mirkwood§!§I;x
 claim_status_owns_CAR_1207_loc;§YSarnladen§!: §GOwned§!§I;x
@@ -2242,6 +2248,7 @@ add_claim_DND_1355_loc;§WWe will gain claims over §!§YRammas Forod§!§I;x
 DAL_military_leaders_unrecruited_bryn_loc;§MHe will be recruited around the year 3005 if§!;x
 claim_status_doesnt_own_GMO_1443_loc;§YMisty Mountain Tunnels§!: §RUnowned§!§I;x
 add_claim_CAR_1208_loc;§WWe will gain claims over §!§YDol Tinereb§!§I;x
+DAL_bard_i_reforms_loc;The Reforms of Bard I;x
 add_claim_GGT_849_loc;§WWe will gain claims over §!§YHigh Pass§!§I;x
 claim_status_owns_GON_72_loc;§YEred Tarthonion§!: §GOwned§!§I;x
 remove_claim_UMB_273_loc;§WWe will lose claims over §!§YSakal-Pharaz§!§I;x
@@ -2259,6 +2266,7 @@ eight_loc;8;x
 DAL_trading_realm_count_loc;§TWe are currently trading with §G2§! realms:\n§I;x
 remove_claim_DOR_551_loc;§WWe will lose claims over §!§YEastern Hills§!§I;x
 DAL_military_leaders_brand_i_an_adult_loc;Brand I is an adult§!,;x
+DAL_girion_ii_no_flavor_loc;There is no specific flavor for Girion II.;x
 claim_status_doesnt_own_ENE_830_loc;§YDor Wathui§!: §RUnowned§!§I;x
 add_claim_ANG_985_loc;§WWe will gain claims over §!§YNan Angmar§!§I;x
 add_claim_RHU_1257_loc;§WWe will gain claims over §!§YGlenn Crec§!§I;x
@@ -2290,6 +2298,7 @@ triggered_event_alliance_of_dwarves_and_men_loc;get the 'Alliance of Dwarves and
 add_claim_DAL_1377_loc;§WWe will gain claims over §!§YMedes§!§I;x
 remove_claim_GON_249_loc;§WWe will lose claims over §!§YEraguk§!§I;x
 remove_claim_ROH_775_loc;§WWe will lose claims over §!§YThe Wold§!§I;x
+DAL_brand_i_flavor_not_done_loc;Brand I's flavor is tied behind the flavor of other realms -- namely that of Mordor's. Unfortunately, this does mean that he doesn't have any unique flavor at the moment.;x
 add_claim_GON_123_loc;§WWe will gain claims over §!§YPinnath Gelin§!§I;x
 remove_claim_ANV_748_loc;§WWe will lose claims over §!§YLangflood§!§I;x
 add_claim_LIN_953_loc;§WWe will gain claims over §!§YGalfalas§!§I;x
@@ -2315,6 +2324,7 @@ alliance_of_dwarves_and_men_country_selection_return_cores_loc;We will cede the 
 claim_status_owns_BLU_914_loc;§YHarvaneth§!: §GOwned§!§I;x
 add_claim_GON_175_loc;§WWe will gain claims over §!§YPerth Iaur§!§I;x
 claim_status_doesnt_own_CAR_1207_loc;§YSarnladen§!: §RUnowned§!§I;x
+DAL_girion_bainson_austriborg_desc_loc;Girion, son of Bain, was never in line to inherit the throne. Instead, he moved to the reaches of the realm, supporting his older brother Brand by functioning both as the Lord of Austriborg, and as the presiding royal in the eastern half of the Barding Realm.;x
 claim_status_doesnt_own_GON_51_loc;§YMethed Lebennin§!: §RUnowned§!§I;x
 remove_claim_ROH_780_loc;§WWe will lose claims over §!§YLower East Emnet§!§I;x
 claim_status_doesnt_own_BLU_914_loc;§YHarvaneth§!: §RUnowned§!§I;x
@@ -2470,7 +2480,6 @@ remove_claim_KHA_380_loc;§WWe will lose claims over §!§YKhandu Prakhod§!§I;
 claim_status_doesnt_own_ROH_805_loc;§YGap of Rohan§!: §RUnowned§!§I;x
 add_claim_GON_37_loc;§WWe will gain claims over §!§YUpper Lebennin§!§I;x
 remove_claim_MOR_429_loc;§WWe will lose claims over §!§YThark Kûfnaz§!§I;x
-chancellor_lifstan_flavor_loc;Appoint Lifstan as Chancellor;x
 dynamic_loc_slot_40;§I;x
 remove_claim_CAR_1204_loc;§WWe will lose claims over §!§YGirithlin§!§I;x
 claim_status_doesnt_own_LOR_765_loc;§YLothlórien§!: §RUnowned§!§I;x
@@ -2501,7 +2510,7 @@ claim_status_owns_GON_146_loc;§YParth Feren§!: §GOwned§!§I;x
 add_claim_RHO_523_loc;§WWe will gain claims over §!§YHigh Hand§!§I;x
 claim_status_owns_ROH_802_loc;§YUpper West Emnet§!: §GOwned§!§I;x
 claim_status_owns_CAR_878_loc;§YFaerdor§!: §GOwned§!§I;x
-traits_loc;§MTraits§!;x
+traits_loc;§TTraits§!;x
 add_claim_LIN_964_loc;§WWe will gain claims over §!§YForthargelion§!§I;x
 remove_claim_ANG_1371_loc;§WWe will lose claims over §!§YDur-Kosha§!§I;x
 add_claim_GON_134_loc;§WWe will gain claims over §!§YLangstrand§!§I;x
@@ -2509,11 +2518,11 @@ add_claim_GON_51_loc;§WWe will gain claims over §!§YMethed Lebennin§!§I;x
 claim_status_doesnt_own_MOR_421_loc;§YGap of Nurza-Shûk§!: §RUnowned§!§I;x
 claim_status_doesnt_own_DOR_551_loc;§YEastern Hills§!: §RUnowned§!§I;x
 claim_status_doesnt_own_RHU_622_loc;§YGazar Ibar§!: §RUnowned§!§I;x
+DAL_appoint_bards_diplomats_tilda_loc;Tilda the Ambassador;x
 add_claim_ANG_1371_loc;§WWe will gain claims over §!§YDur-Kosha§!§I;x
 return_cores_loc;Return Cores;x
 claim_status_doesnt_own_GON_216_loc;§YEredtir§!: §RUnowned§!§I;x
 claim_status_owns_ERE_681_loc;§YCirith Gondmaeglorn§!: §GOwned§!§I;x
-bard_i_reforms_loc;The Reforms of Bard I;x
 claim_status_owns_GON_114_loc;§YUpper Morthond Vale§!: §GOwned§!§I;x
 claim_status_doesnt_own_KHA_366_loc;§YKhandu Amú§!: §RUnowned§!§I;x
 remove_claim_KHA_362_loc;§WWe will lose claims over §!§YKhandu Itakh§!§I;x
@@ -2530,6 +2539,7 @@ remove_claim_LOS_980_loc;§WWe will lose claims over §!§YEmyn Helch§!§I;x
 add_claim_RHO_525_loc;§WWe will gain claims over §!§YWest Dunheath§!§I;x
 claim_status_owns_DND_1023_loc;§YEmyn Uial§!: §GOwned§!§I;x
 add_claim_DND_1028_loc;§WWe will gain claims over §!§YLuinardhon§!§I;x
+DAL_guild_political_reforms_loc;Establish new Reforms;x
 claim_status_doesnt_own_DND_1009_loc;§YFérroen§!: §RUnowned§!§I;x
 remove_claim_SHI_1041_loc;§WWe will lose claims over §!§YNorthfarthing§!§I;x
 claim_status_owns_GGT_849_loc;§YHigh Pass§!: §GOwned§!§I;x
@@ -2572,10 +2582,12 @@ claim_status_owns_KHA_342_loc;§YMuzeida Vale§!: §GOwned§!§I;x
 claim_status_doesnt_own_GON_98_loc;§YTarlang§!: §RUnowned§!§I;x
 claim_status_owns_RHO_507_loc;§YDor Rhúnen§!: §GOwned§!§I;x
 claim_status_owns_ANG_999_loc;§YDur-Lûgata§!: §GOwned§!§I;x
+DAL_appoint_bards_diplomats_erland_loc;Erland the Diplomat;x
 claim_status_owns_DAL_642_loc;§YSalenin Vale§!: §GOwned§!§I;x
 claim_status_owns_ERE_665_loc;§YTalath Huz§!: §GOwned§!§I;x
 claim_status_owns_GMO_1443_loc;§YMisty Mountain Tunnels§!: §GOwned§!§I;x
 remove_claim_BEO_751_loc;§WWe will lose claims over §!§YMiddle Vales§!§I;x
+DAL_guild_political_reforms_desc_loc;Completely revamp the rights of citizens and tear down the old and corrupt institutions.;x
 add_claim_LIN_933_loc;§WWe will gain claims over §!§YEmyn Beraid§!§I;x
 add_claim_BLU_968_loc;§WWe will gain claims over §!§YEred Luin§!§I;x
 add_claim_LOS_979_loc;§WWe will gain claims over §!§YTalath Uichel§!§I;x
@@ -2618,6 +2630,7 @@ claim_status_owns_ROH_805_loc;§YGap of Rohan§!: §GOwned§!§I;x
 claim_status_doesnt_own_CAR_907_loc;§YFonntir§!: §RUnowned§!§I;x
 claim_status_owns_ANG_985_loc;§YNan Angmar§!: §GOwned§!§I;x
 DAL_proclaim_lord_of_rivermen_loc;§GThe Thegens of our Rivermen puppets will willingly join our army.§!§I;x
+DAL_master_inland_trade_desc_loc;Money is power! The more trading partners that we have, and the more trading posts we have, the better.;x
 add_claim_LOS_1346_loc;§WWe will gain claims over §!§YHyvämetsästyksen Maa§!§I;x
 DAL_northman_generals_grammas_gotten_loc;§TWe have recruited the following Lords of Riding§!|;x
 claim_status_doesnt_own_CAR_890_loc;§YRohwaen§!: §RUnowned§!§I;x
@@ -2665,6 +2678,7 @@ add_claim_RHO_520_loc;§WWe will gain claims over §!§YAustrabuht§!§I;x
 remove_claim_CAR_894_loc;§WWe will lose claims over §!§YDol Caledir§!§I;x
 remove_claim_ROH_808_loc;§WWe will lose claims over §!§YWest-march§!§I;x
 claim_status_owns_KHA_387_loc;§YKhandu Khûrvesra§!: §GOwned§!§I;x
+DAL_appoint_bards_council_lifstan_desc_loc;Lifstan was a good friend before Bard's rule, and trusted advisor during.;x
 claim_status_doesnt_own_LIN_953_loc;§YGalfalas§!: §RUnowned§!§I;x
 claim_status_doesnt_own_RHU_619_loc;§YNorthern Gazar Utal§!: §RUnowned§!§I;x
 claim_status_doesnt_own_GON_56_loc;§YTolfalas§!: §RUnowned§!§I;x
@@ -2703,6 +2717,7 @@ DAL_military_leaders_brand_i_married_loc;Brand I has been married§!,;x
 alliance_of_dwarves_and_men_country_selection_loc;The named realm will be chosen§I;x
 remove_claim_CAR_912_loc;§WWe will lose claims over §!§YRast Vorn§!§I;x
 claim_status_owns_IML_1239_loc;§YCirith Narugorch§!: §GOwned§!§I;x
+DAL_guild_land_reforms_desc_loc;Take the lessons the Guild has learned and apply them country wide for RGO bonuses.;x
 claim_status_owns_LIN_955_loc;§YGeleidhien§!: §GOwned§!§I;x
 add_claim_GON_72_loc;§WWe will gain claims over §!§YEred Tarthonion§!§I;x
 claim_status_doesnt_own_DOR_545_loc;§YDobok Rhín§!: §RUnowned§!§I;x
@@ -2716,11 +2731,14 @@ claim_status_owns_DND_862_loc;§YNan Brethil§!: §GOwned§!§I;x
 claim_status_owns_GON_133_loc;§YAnfalas§!: §GOwned§!§I;x
 claim_status_doesnt_own_RHO_458_loc;§YDagorlad§!: §RUnowned§!§I;x
 claim_status_doesnt_own_ANG_988_loc;§YTulban§!: §RUnowned§!§I;x
+DAL_guild_land_reforms_loc;Standardize RGO Practices;x
 DAL_northman_generals_rivermen_nomrel_loc;Nomrel (Myrrborg)§!,;x
 claim_status_doesnt_own_LIN_936_loc;§YRhûlindon§!: §RUnowned§!§I;x
 DAL_military_leaders_bryn_loc;§LBryn, §MRoyal Warrior§!|;x
 add_claim_GON_198_loc;§WWe will gain claims over §!§YForithilien§!§I;x
+DAL_guild_immigration_reforms_loc;Migrant Reform;x
 claim_status_owns_DAL_1377_loc;§YMedes§!: §GOwned§!§I;x
+DAL_guild_immigration_reforms_desc_loc;Attract more migrants with new policies dedicated to becoming a migrant hub.;x
 claim_status_owns_RHU_571_loc;§YWestern Gathod§!: §GOwned§!§I;x
 claim_status_owns_MOR_455_loc;§YUdûn§!: §GOwned§!§I;x
 claim_status_doesnt_own_GON_169_loc;§YRas Morthil§!: §RUnowned§!§I;x
@@ -2763,7 +2781,6 @@ add_claim_MIR_717_loc;§WWe will gain claims over §!§YAngaladh§!§I;x
 claim_status_owns_DOR_545_loc;§YDobok Rhín§!: §GOwned§!§I;x
 claim_status_doesnt_own_DND_1028_loc;§YLuinardhon§!: §RUnowned§!§I;x
 claim_status_owns_CAR_882_loc;§YTyrn Harn§!: §GOwned§!§I;x
-girion_bainson_austriborg_loc;Send Girion Bainson to Austriborg;x
 add_claim_GON_253_loc;§WWe will gain claims over §!§YCarnentir§!§I;x
 claim_status_doesnt_own_RHU_634_loc;§YNorthern Gazar Narkad§!: §RUnowned§!§I;x
 add_claim_ISE_811_loc;§WWe will gain claims over §!§YNan Curunír§!§I;x
@@ -2908,6 +2925,7 @@ add_claim_LIN_926_loc;§WWe will gain claims over §!§YElvaedhorien§!§I;x
 claim_status_doesnt_own_ANG_1374_loc;§YEphel Angmar§!: §RUnowned§!§I;x
 claim_status_doesnt_own_CAR_900_loc;§YEnedbund§!: §RUnowned§!§I;x
 claim_status_doesnt_own_RHO_524_loc;§YArkran§!: §RUnowned§!§I;x
+DAL_girion_bainson_austriborg_loc;Send Girion Bainson to Austriborg;x
 DAL_king_of_lakemen_loc;§GLakemen§!,;x
 claim_status_doesnt_own_RHU_602_loc;§YLeshen§!: §RUnowned§!§I;x
 add_claim_DND_1323_loc;§WWe will gain claims over §!§YOroménya§!§I;x

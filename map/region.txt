@@ -398,8 +398,8 @@ general_loc = { } # §TGenerals§!
 military_leader_started_with_loc = { } # §GWe started with this military leader§!
 military_leader_recruited_loc = { } # §GThis leader has been recruited§!
 military_leader_not_recruited_loc = { } # §MThis leader has not yet been recruited.§!
-traits_loc = { } # §MTraits§!
-unique_flavor_loc = { } # §MUnique Flavor§!
+traits_loc = { } # §TTraits§!
+unique_flavor_loc = { } # §TUnique Flavor§!
 
 zero_loc = { } # 0
 one_loc = { } # 1
@@ -493,6 +493,7 @@ DAL_military_leaders_bard_ii_an_adult_loc = { } # Bard II is an adult§!,
 DAL_military_leaders_bard_ii_married_loc = { } # Bard II has been married§!,
 DAL_military_leaders_girion_ii_born_loc = { } # Girion II has been born§!,
 DAL_military_leaders_girloth_born_loc = { } # Girloth has been born§!
+
 DAL_leader_traits_first_king_of_dale_loc = { } # §TFirst King of Dale§!| Prestige §G+0.010§!, Pop Militancy §G-0.01§!, Pop Consciousness §G-0.01§!, Organization Regain Rate §G+5.0%§!
 DAL_leader_traits_the_bowman_loc = { } # §TThe Bowman§!| Army Tech Research §G+2.0%§!
 DAL_leader_traits_dragon_slayer_loc = { } # §TDragon Slayer§!| Prestige §G+0.025§!, Pop Militancy §G-0.01§!, Pop Consciousness §G-0.01§!
@@ -500,11 +501,33 @@ DAL_leader_traits_house_of_bard_loc = { } # §TOf the House of Bard§!| Pop Cons
 DAL_leader_traits_expansive_loc = { } # §TExpansive§!| Supply Consumption §R+25.0%§!, Organization Regain Rate §G+5.0%§!, Land Organisation §G+5.0%§!, Minimum Military Spending §G+25.0%§!, Infamy §R+0.01§!, Casus Belli Acquisition Speed §G+25.0%§!
 DAL_leader_traits_productive_loc = { } # §TProductive§!| Guild Output §G+10.0%§!, RGO Output §G+10.0%§!, Administrative Efficiency §G+10.0%§!
 DAL_leader_traits_dwarf_friend_loc = { } # §TDwarf-friend§!| Diplomatic Points §G+15.0%§!
-chancellor_lifstan_flavor_loc = { } # Appoint Lifstan as Chancellor
-diplomat_erland_flavor_loc = { } # Appoint Erland of Esgaroth as Diplomat
-diplomat_tilda_flavor_loc = { } # Appoint Tilda Ambassador to Erebor
-bard_i_reforms_loc = { } # The Reforms of Bard I
-girion_bainson_austriborg_loc = { } # Send Girion Bainson to Austriborg
+DAL_leader_traits_peaceful_loc = { } # §TPeaceful§!| RGO Output §G+25%§!, Supply Consumption §G-50%§!, Research Points Modifier §G+10%§!
+
+DAL_appoint_bards_council_lifstan_loc = { } # Lifstan the Chancellor
+DAL_appoint_bards_council_lifstan_desc_loc = { } # Lifstan was a good friend before Bard's rule, and trusted advisor during.
+DAL_appoint_bards_diplomats_erland_loc = { } # Erland the Diplomat
+DAL_appoint_bards_diplomats_erland_desc_loc = { } # Erland was a great diplomat of Dale, working under the rule of Bard, Bain, Brand and Bard II's rule. He would be the primary negotiator with the Grammas, and would go onto lead the Barding delegation to the Council of Elrond.
+DAL_appoint_bards_diplomats_tilda_loc = { } # Tilda the Ambassador
+DAL_appoint_bards_diplomats_tilda_desc_loc = { } # The youngest child of Bard, Tilda grew up a royal heir, privy to the inner workings of the realm. As the realm grew, she quickly began the understand the Barding regional position, and the importance of their alliance with Erebor.
+DAL_bard_i_reforms_loc = { } # The Reforms of Bard I
+DAL_bard_i_reforms_desc_loc = { } # A balance between security and freedom, Bard's reforms strive to keep the realm strong, while supporting the wellbeing of his people.
+DAL_girion_bainson_austriborg_loc = { } # Send Girion Bainson to Austriborg
+DAL_girion_bainson_austriborg_desc_loc = { } # Girion, son of Bain, was never in line to inherit the throne. Instead, he moved to the reaches of the realm, supporting his older brother Brand by functioning both as the Lord of Austriborg, and as the presiding royal in the eastern half of the Barding Realm.
+DAL_brand_i_flavor_not_done_loc = { } # Brand I's flavor is tied behind the flavor of other realms -- namely that of Mordor's. Unfortunately, this does mean that he doesn't have any unique flavor at the moment.
+DAL_barding_erebor_relations_loc = { } # Barding-Erebor Relations
+DAL_barding_erebor_relations_desc_loc = { } # As our alliance with Erebor ages, our peoples grow ever closer. When Bard II is our leader, if we are able to hit 100 points, we will be able to accept the Dwarves as citizens within our realm.
+DAL_girion_ii_no_flavor_loc = { } # There is no specific flavor for Girion II.
+DAL_master_inland_trade_loc = { } # Cultivate Inland Trade
+DAL_master_inland_trade_desc_loc = { } # Money is power! The more trading partners that we have, and the more trading posts we have, the better.
+DAL_guild_political_reforms_loc = { } # Establish new Reforms
+DAL_guild_political_reforms_desc_loc = { } # Completely revamp the rights of citizens and tear down the old and corrupt institutions.
+DAL_guild_land_reforms_loc = { } # Standardize RGO Practices
+DAL_guild_land_reforms_desc_loc = { } # Take the lessons the Guild has learned and apply them country wide for RGO bonuses.
+DAL_guild_immigration_reforms_loc = { } # Migrant Reform
+DAL_guild_immigration_reforms_desc_loc = { } # Attract more migrants with new policies dedicated to becoming a migrant hub.
+# }
+
+# Static Tooltip locs - Harondor, event description { 
 colonize_harondor_province_loc = { } # §GA random uncolonized core of Harondor that is adjacent to our realm will join!§!
 # }
 # }

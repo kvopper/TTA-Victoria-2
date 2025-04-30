@@ -11,7 +11,7 @@
 #	Gramavuld Consolidation
 #	Southern Rhovanion Conquests
 #	Province Flavor
-#	Royal Family
+#	Leader Overview
 #	Bard I Flavor
 #	Bain I Flavor
 #	Bard II Flavor
@@ -1742,7 +1742,7 @@ political_decisions = {
 	}
 }
 
-# Royal Family
+# Leader Overview
 political_decisions = {
 	DAL_line_of_bard = {
 		alert = no
@@ -1754,6 +1754,923 @@ political_decisions = {
 		}
 		
 		effect = {
+			set_global_flag = hidden_effects
+			
+			random_owned = {
+				limit = { owner = { has_global_flag = hidden_effects } }
+				owner = {
+					random_owned = {
+						limit = { owner = { NOT = { check_variable = { which = erebor_relations value = 0.1 } } } }
+						owner = { dynamic_loc_slot_31 = { state_scope = { change_region_name = "Barding - Erebor relations are currently §Tless than 1§!" } } }
+					}
+					random_owned = {
+						limit = {
+							owner = {
+								check_variable = { which = erebor_relations value = 0.9 }
+								NOT = { check_variable = { which = erebor_relations value = 1.1 } }
+							}
+						}
+						owner = { dynamic_loc_slot_31 = { state_scope = { change_region_name = "Barding - Erebor relations are currently at §T1§!" } } }
+					}
+					random_owned = {
+						limit = {
+							owner = {
+								check_variable = { which = erebor_relations value = 1.9 }
+								NOT = { check_variable = { which = erebor_relations value = 2.1 } }
+							}
+						}
+						owner = { dynamic_loc_slot_31 = { state_scope = { change_region_name = "Barding - Erebor relations are currently at §T2§!" } } }
+					}
+					random_owned = {
+						limit = {
+							owner = {
+								check_variable = { which = erebor_relations value = 2.9 }
+								NOT = { check_variable = { which = erebor_relations value = 3.1 } }
+							}
+						}
+						owner = { dynamic_loc_slot_31 = { state_scope = { change_region_name = "Barding - Erebor relations are currently at §T3§!" } } }
+					}
+					random_owned = {
+						limit = {
+							owner = {
+								check_variable = { which = erebor_relations value = 3.9 }
+								NOT = { check_variable = { which = erebor_relations value = 4.1 } }
+							}
+						}
+						owner = { dynamic_loc_slot_31 = { state_scope = { change_region_name = "Barding - Erebor relations are currently at §T4§!" } } }
+					}
+					random_owned = {
+						limit = {
+							owner = {
+								check_variable = { which = erebor_relations value = 4.9 }
+								NOT = { check_variable = { which = erebor_relations value = 5.1 } }
+							}
+						}
+						owner = { dynamic_loc_slot_31 = { state_scope = { change_region_name = "Barding - Erebor relations are currently at §T5§!" } } }
+					}
+					random_owned = {
+						limit = {
+							owner = {
+								check_variable = { which = erebor_relations value = 5.9 }
+								NOT = { check_variable = { which = erebor_relations value = 6.1 } }
+							}
+						}
+						owner = { dynamic_loc_slot_31 = { state_scope = { change_region_name = "Barding - Erebor relations are currently at §T6§!" } } }
+					}
+					random_owned = {
+						limit = {
+							owner = {
+								check_variable = { which = erebor_relations value = 6.9 }
+								NOT = { check_variable = { which = erebor_relations value = 7.1 } }
+							}
+						}
+						owner = { dynamic_loc_slot_31 = { state_scope = { change_region_name = "Barding - Erebor relations are currently at §T7§!" } } }
+					}
+					random_owned = {
+						limit = {
+							owner = {
+								check_variable = { which = erebor_relations value = 7.9 }
+								NOT = { check_variable = { which = erebor_relations value = 8.1 } }
+							}
+						}
+						owner = { dynamic_loc_slot_31 = { state_scope = { change_region_name = "Barding - Erebor relations are currently at §T8§!" } } }
+					}
+					random_owned = {
+						limit = {
+							owner = {
+								check_variable = { which = erebor_relations value = 8.9 }
+								NOT = { check_variable = { which = erebor_relations value = 9.1 } }
+							}
+						}
+						owner = { dynamic_loc_slot_31 = { state_scope = { change_region_name = "Barding - Erebor relations are currently at §T9§!" } } }
+					}
+					random_owned = {
+						limit = {
+							owner = {
+								check_variable = { which = erebor_relations value = 9.9 }
+								NOT = { check_variable = { which = erebor_relations value = 10.1 } }
+							}
+						}
+						owner = { dynamic_loc_slot_31 = { state_scope = { change_region_name = "Barding - Erebor relations are currently at §T10§!" } } }
+					}
+					random_owned = {
+						limit = {
+							owner = {
+								check_variable = { which = erebor_relations value = 10.9 }
+								NOT = { check_variable = { which = erebor_relations value = 11.1 } }
+							}
+						}
+						owner = { dynamic_loc_slot_31 = { state_scope = { change_region_name = "Barding - Erebor relations are currently at §T11§!" } } }
+					}
+					random_owned = {
+						limit = {
+							owner = {
+								check_variable = { which = erebor_relations value = 11.9 }
+								NOT = { check_variable = { which = erebor_relations value = 12.1 } }
+							}
+						}
+						owner = { dynamic_loc_slot_31 = { state_scope = { change_region_name = "Barding - Erebor relations are currently at §T12§!" } } }
+					}
+					random_owned = {
+						limit = {
+							owner = {
+								check_variable = { which = erebor_relations value = 12.9 }
+								NOT = { check_variable = { which = erebor_relations value = 13.1 } }
+							}
+						}
+						owner = { dynamic_loc_slot_31 = { state_scope = { change_region_name = "Barding - Erebor relations are currently at §T13§!" } } }
+					}
+					random_owned = {
+						limit = {
+							owner = {
+								check_variable = { which = erebor_relations value = 13.9 }
+								NOT = { check_variable = { which = erebor_relations value = 14.1 } }
+							}
+						}
+						owner = { dynamic_loc_slot_31 = { state_scope = { change_region_name = "Barding - Erebor relations are currently at §T14§!" } } }
+					}
+					random_owned = {
+						limit = {
+							owner = {
+								check_variable = { which = erebor_relations value = 14.9 }
+								NOT = { check_variable = { which = erebor_relations value = 15.1 } }
+							}
+						}
+						owner = { dynamic_loc_slot_31 = { state_scope = { change_region_name = "Barding - Erebor relations are currently at §T15§!" } } }
+					}
+					random_owned = {
+						limit = {
+							owner = {
+								check_variable = { which = erebor_relations value = 15.9 }
+								NOT = { check_variable = { which = erebor_relations value = 16.1 } }
+							}
+						}
+						owner = { dynamic_loc_slot_31 = { state_scope = { change_region_name = "Barding - Erebor relations are currently at §T16§!" } } }
+					}
+					random_owned = {
+						limit = {
+							owner = {
+								check_variable = { which = erebor_relations value = 16.9 }
+								NOT = { check_variable = { which = erebor_relations value = 17.1 } }
+							}
+						}
+						owner = { dynamic_loc_slot_31 = { state_scope = { change_region_name = "Barding - Erebor relations are currently at §T17§!" } } }
+					}
+					random_owned = {
+						limit = {
+							owner = {
+								check_variable = { which = erebor_relations value = 17.9 }
+								NOT = { check_variable = { which = erebor_relations value = 18.1 } }
+							}
+						}
+						owner = { dynamic_loc_slot_31 = { state_scope = { change_region_name = "Barding - Erebor relations are currently at §T18§!" } } }
+					}
+					random_owned = {
+						limit = {
+							owner = {
+								check_variable = { which = erebor_relations value = 18.9 }
+								NOT = { check_variable = { which = erebor_relations value = 19.1 } }
+							}
+						}
+						owner = { dynamic_loc_slot_31 = { state_scope = { change_region_name = "Barding - Erebor relations are currently at §T19§!" } } }
+					}
+					random_owned = {
+						limit = {
+							owner = {
+								check_variable = { which = erebor_relations value = 19.9 }
+								NOT = { check_variable = { which = erebor_relations value = 20.1 } }
+							}
+						}
+						owner = { dynamic_loc_slot_31 = { state_scope = { change_region_name = "Barding - Erebor relations are currently at §T20§!" } } }
+					}
+					random_owned = {
+						limit = {
+							owner = {
+								check_variable = { which = erebor_relations value = 20.9 }
+								NOT = { check_variable = { which = erebor_relations value = 21.1 } }
+							}
+						}
+						owner = { dynamic_loc_slot_31 = { state_scope = { change_region_name = "Barding - Erebor relations are currently at §T21§!" } } }
+					}
+					random_owned = {
+						limit = {
+							owner = {
+								check_variable = { which = erebor_relations value = 21.9 }
+								NOT = { check_variable = { which = erebor_relations value = 22.1 } }
+							}
+						}
+						owner = { dynamic_loc_slot_31 = { state_scope = { change_region_name = "Barding - Erebor relations are currently at §T22§!" } } }
+					}
+					random_owned = {
+						limit = {
+							owner = {
+								check_variable = { which = erebor_relations value = 22.9 }
+								NOT = { check_variable = { which = erebor_relations value = 23.1 } }
+							}
+						}
+						owner = { dynamic_loc_slot_31 = { state_scope = { change_region_name = "Barding - Erebor relations are currently at §T23§!" } } }
+					}
+					random_owned = {
+						limit = {
+							owner = {
+								check_variable = { which = erebor_relations value = 23.9 }
+								NOT = { check_variable = { which = erebor_relations value = 24.1 } }
+							}
+						}
+						owner = { dynamic_loc_slot_31 = { state_scope = { change_region_name = "Barding - Erebor relations are currently at §T24§!" } } }
+					}
+					random_owned = {
+						limit = {
+							owner = {
+								check_variable = { which = erebor_relations value = 24.9 }
+								NOT = { check_variable = { which = erebor_relations value = 25.1 } }
+							}
+						}
+						owner = { dynamic_loc_slot_31 = { state_scope = { change_region_name = "Barding - Erebor relations are currently at §T25§!" } } }
+					}
+					random_owned = {
+						limit = {
+							owner = {
+								check_variable = { which = erebor_relations value = 25.9 }
+								NOT = { check_variable = { which = erebor_relations value = 26.1 } }
+							}
+						}
+						owner = { dynamic_loc_slot_31 = { state_scope = { change_region_name = "Barding - Erebor relations are currently at §T26§!" } } }
+					}
+					random_owned = {
+						limit = {
+							owner = {
+								check_variable = { which = erebor_relations value = 26.9 }
+								NOT = { check_variable = { which = erebor_relations value = 27.1 } }
+							}
+						}
+						owner = { dynamic_loc_slot_31 = { state_scope = { change_region_name = "Barding - Erebor relations are currently at §T27§!" } } }
+					}
+					random_owned = {
+						limit = {
+							owner = {
+								check_variable = { which = erebor_relations value = 27.9 }
+								NOT = { check_variable = { which = erebor_relations value = 28.1 } }
+							}
+						}
+						owner = { dynamic_loc_slot_31 = { state_scope = { change_region_name = "Barding - Erebor relations are currently at §T28§!" } } }
+					}
+					random_owned = {
+						limit = {
+							owner = {
+								check_variable = { which = erebor_relations value = 28.9 }
+								NOT = { check_variable = { which = erebor_relations value = 29.1 } }
+							}
+						}
+						owner = { dynamic_loc_slot_31 = { state_scope = { change_region_name = "Barding - Erebor relations are currently at §T29§!" } } }
+					}
+					random_owned = {
+						limit = {
+							owner = {
+								check_variable = { which = erebor_relations value = 29.9 }
+								NOT = { check_variable = { which = erebor_relations value = 30.1 } }
+							}
+						}
+						owner = { dynamic_loc_slot_31 = { state_scope = { change_region_name = "Barding - Erebor relations are currently at §T30§!" } } }
+					}
+					random_owned = {
+						limit = {
+							owner = {
+								check_variable = { which = erebor_relations value = 30.9 }
+								NOT = { check_variable = { which = erebor_relations value = 31.1 } }
+							}
+						}
+						owner = { dynamic_loc_slot_31 = { state_scope = { change_region_name = "Barding - Erebor relations are currently at §T31§!" } } }
+					}
+					random_owned = {
+						limit = {
+							owner = {
+								check_variable = { which = erebor_relations value = 31.9 }
+								NOT = { check_variable = { which = erebor_relations value = 32.1 } }
+							}
+						}
+						owner = { dynamic_loc_slot_31 = { state_scope = { change_region_name = "Barding - Erebor relations are currently at §T32§!" } } }
+					}
+					random_owned = {
+						limit = {
+							owner = {
+								check_variable = { which = erebor_relations value = 32.9 }
+								NOT = { check_variable = { which = erebor_relations value = 33.1 } }
+							}
+						}
+						owner = { dynamic_loc_slot_31 = { state_scope = { change_region_name = "Barding - Erebor relations are currently at §T33§!" } } }
+					}
+					random_owned = {
+						limit = {
+							owner = {
+								check_variable = { which = erebor_relations value = 33.9 }
+								NOT = { check_variable = { which = erebor_relations value = 34.1 } }
+							}
+						}
+						owner = { dynamic_loc_slot_31 = { state_scope = { change_region_name = "Barding - Erebor relations are currently at §T34§!" } } }
+					}
+					random_owned = {
+						limit = {
+							owner = {
+								check_variable = { which = erebor_relations value = 34.9 }
+								NOT = { check_variable = { which = erebor_relations value = 35.1 } }
+							}
+						}
+						owner = { dynamic_loc_slot_31 = { state_scope = { change_region_name = "Barding - Erebor relations are currently at §T35§!" } } }
+					}
+					random_owned = {
+						limit = {
+							owner = {
+								check_variable = { which = erebor_relations value = 35.9 }
+								NOT = { check_variable = { which = erebor_relations value = 36.1 } }
+							}
+						}
+						owner = { dynamic_loc_slot_31 = { state_scope = { change_region_name = "Barding - Erebor relations are currently at §T36§!" } } }
+					}
+					random_owned = {
+						limit = {
+							owner = {
+								check_variable = { which = erebor_relations value = 36.9 }
+								NOT = { check_variable = { which = erebor_relations value = 37.1 } }
+							}
+						}
+						owner = { dynamic_loc_slot_31 = { state_scope = { change_region_name = "Barding - Erebor relations are currently at §T37§!" } } }
+					}
+					random_owned = {
+						limit = {
+							owner = {
+								check_variable = { which = erebor_relations value = 37.9 }
+								NOT = { check_variable = { which = erebor_relations value = 38.1 } }
+							}
+						}
+						owner = { dynamic_loc_slot_31 = { state_scope = { change_region_name = "Barding - Erebor relations are currently at §T38§!" } } }
+					}
+					random_owned = {
+						limit = {
+							owner = {
+								check_variable = { which = erebor_relations value = 38.9 }
+								NOT = { check_variable = { which = erebor_relations value = 39.1 } }
+							}
+						}
+						owner = { dynamic_loc_slot_31 = { state_scope = { change_region_name = "Barding - Erebor relations are currently at §T39§!" } } }
+					}
+					random_owned = {
+						limit = {
+							owner = {
+								check_variable = { which = erebor_relations value = 39.9 }
+								NOT = { check_variable = { which = erebor_relations value = 40.1 } }
+							}
+						}
+						owner = { dynamic_loc_slot_31 = { state_scope = { change_region_name = "Barding - Erebor relations are currently at §T40§!" } } }
+					}
+					random_owned = {
+						limit = {
+							owner = {
+								check_variable = { which = erebor_relations value = 40.9 }
+								NOT = { check_variable = { which = erebor_relations value = 41.1 } }
+							}
+						}
+						owner = { dynamic_loc_slot_31 = { state_scope = { change_region_name = "Barding - Erebor relations are currently at §T41§!" } } }
+					}
+					random_owned = {
+						limit = {
+							owner = {
+								check_variable = { which = erebor_relations value = 41.9 }
+								NOT = { check_variable = { which = erebor_relations value = 42.1 } }
+							}
+						}
+						owner = { dynamic_loc_slot_31 = { state_scope = { change_region_name = "Barding - Erebor relations are currently at §T42§!" } } }
+					}
+					random_owned = {
+						limit = {
+							owner = {
+								check_variable = { which = erebor_relations value = 42.9 }
+								NOT = { check_variable = { which = erebor_relations value = 43.1 } }
+							}
+						}
+						owner = { dynamic_loc_slot_31 = { state_scope = { change_region_name = "Barding - Erebor relations are currently at §T43§!" } } }
+					}
+					random_owned = {
+						limit = {
+							owner = {
+								check_variable = { which = erebor_relations value = 43.9 }
+								NOT = { check_variable = { which = erebor_relations value = 44.1 } }
+							}
+						}
+						owner = { dynamic_loc_slot_31 = { state_scope = { change_region_name = "Barding - Erebor relations are currently at §T44§!" } } }
+					}
+					random_owned = {
+						limit = {
+							owner = {
+								check_variable = { which = erebor_relations value = 44.9 }
+								NOT = { check_variable = { which = erebor_relations value = 45.1 } }
+							}
+						}
+						owner = { dynamic_loc_slot_31 = { state_scope = { change_region_name = "Barding - Erebor relations are currently at §T45§!" } } }
+					}
+					random_owned = {
+						limit = {
+							owner = {
+								check_variable = { which = erebor_relations value = 45.9 }
+								NOT = { check_variable = { which = erebor_relations value = 46.1 } }
+							}
+						}
+						owner = { dynamic_loc_slot_31 = { state_scope = { change_region_name = "Barding - Erebor relations are currently at §T46§!" } } }
+					}
+					random_owned = {
+						limit = {
+							owner = {
+								check_variable = { which = erebor_relations value = 46.9 }
+								NOT = { check_variable = { which = erebor_relations value = 47.1 } }
+							}
+						}
+						owner = { dynamic_loc_slot_31 = { state_scope = { change_region_name = "Barding - Erebor relations are currently at §T47§!" } } }
+					}
+					random_owned = {
+						limit = {
+							owner = {
+								check_variable = { which = erebor_relations value = 47.9 }
+								NOT = { check_variable = { which = erebor_relations value = 48.1 } }
+							}
+						}
+						owner = { dynamic_loc_slot_31 = { state_scope = { change_region_name = "Barding - Erebor relations are currently at §T48§!" } } }
+					}
+					random_owned = {
+						limit = {
+							owner = {
+								check_variable = { which = erebor_relations value = 48.9 }
+								NOT = { check_variable = { which = erebor_relations value = 49.1 } }
+							}
+						}
+						owner = { dynamic_loc_slot_31 = { state_scope = { change_region_name = "Barding - Erebor relations are currently at §T49§!" } } }
+					}
+					random_owned = {
+						limit = {
+							owner = {
+								check_variable = { which = erebor_relations value = 49.9 }
+								NOT = { check_variable = { which = erebor_relations value = 50.1 } }
+							}
+						}
+						owner = { dynamic_loc_slot_31 = { state_scope = { change_region_name = "Barding - Erebor relations are currently at §T50§!" } } }
+					}
+					random_owned = {
+						limit = {
+							owner = {
+								check_variable = { which = erebor_relations value = 50.9 }
+								NOT = { check_variable = { which = erebor_relations value = 51.1 } }
+							}
+						}
+						owner = { dynamic_loc_slot_31 = { state_scope = { change_region_name = "Barding - Erebor relations are currently at §T51§!" } } }
+					}
+					random_owned = {
+						limit = {
+							owner = {
+								check_variable = { which = erebor_relations value = 51.9 }
+								NOT = { check_variable = { which = erebor_relations value = 52.1 } }
+							}
+						}
+						owner = { dynamic_loc_slot_31 = { state_scope = { change_region_name = "Barding - Erebor relations are currently at §T52§!" } } }
+					}
+					random_owned = {
+						limit = {
+							owner = {
+								check_variable = { which = erebor_relations value = 52.9 }
+								NOT = { check_variable = { which = erebor_relations value = 53.1 } }
+							}
+						}
+						owner = { dynamic_loc_slot_31 = { state_scope = { change_region_name = "Barding - Erebor relations are currently at §T53§!" } } }
+					}
+					random_owned = {
+						limit = {
+							owner = {
+								check_variable = { which = erebor_relations value = 53.9 }
+								NOT = { check_variable = { which = erebor_relations value = 54.1 } }
+							}
+						}
+						owner = { dynamic_loc_slot_31 = { state_scope = { change_region_name = "Barding - Erebor relations are currently at §T54§!" } } }
+					}
+					random_owned = {
+						limit = {
+							owner = {
+								check_variable = { which = erebor_relations value = 54.9 }
+								NOT = { check_variable = { which = erebor_relations value = 55.1 } }
+							}
+						}
+						owner = { dynamic_loc_slot_31 = { state_scope = { change_region_name = "Barding - Erebor relations are currently at §T55§!" } } }
+					}
+					random_owned = {
+						limit = {
+							owner = {
+								check_variable = { which = erebor_relations value = 55.9 }
+								NOT = { check_variable = { which = erebor_relations value = 56.1 } }
+							}
+						}
+						owner = { dynamic_loc_slot_31 = { state_scope = { change_region_name = "Barding - Erebor relations are currently at §T56§!" } } }
+					}
+					random_owned = {
+						limit = {
+							owner = {
+								check_variable = { which = erebor_relations value = 56.9 }
+								NOT = { check_variable = { which = erebor_relations value = 57.1 } }
+							}
+						}
+						owner = { dynamic_loc_slot_31 = { state_scope = { change_region_name = "Barding - Erebor relations are currently at §T57§!" } } }
+					}
+					random_owned = {
+						limit = {
+							owner = {
+								check_variable = { which = erebor_relations value = 57.9 }
+								NOT = { check_variable = { which = erebor_relations value = 58.1 } }
+							}
+						}
+						owner = { dynamic_loc_slot_31 = { state_scope = { change_region_name = "Barding - Erebor relations are currently at §T58§!" } } }
+					}
+					random_owned = {
+						limit = {
+							owner = {
+								check_variable = { which = erebor_relations value = 58.9 }
+								NOT = { check_variable = { which = erebor_relations value = 59.1 } }
+							}
+						}
+						owner = { dynamic_loc_slot_31 = { state_scope = { change_region_name = "Barding - Erebor relations are currently at §T59§!" } } }
+					}
+					random_owned = {
+						limit = {
+							owner = {
+								check_variable = { which = erebor_relations value = 59.9 }
+								NOT = { check_variable = { which = erebor_relations value = 60.1 } }
+							}
+						}
+						owner = { dynamic_loc_slot_31 = { state_scope = { change_region_name = "Barding - Erebor relations are currently at §T60§!" } } }
+					}
+					random_owned = {
+						limit = {
+							owner = {
+								check_variable = { which = erebor_relations value = 60.9 }
+								NOT = { check_variable = { which = erebor_relations value = 61.1 } }
+							}
+						}
+						owner = { dynamic_loc_slot_31 = { state_scope = { change_region_name = "Barding - Erebor relations are currently at §T61§!" } } }
+					}
+					random_owned = {
+						limit = {
+							owner = {
+								check_variable = { which = erebor_relations value = 61.9 }
+								NOT = { check_variable = { which = erebor_relations value = 62.1 } }
+							}
+						}
+						owner = { dynamic_loc_slot_31 = { state_scope = { change_region_name = "Barding - Erebor relations are currently at §T62§!" } } }
+					}
+					random_owned = {
+						limit = {
+							owner = {
+								check_variable = { which = erebor_relations value = 62.9 }
+								NOT = { check_variable = { which = erebor_relations value = 63.1 } }
+							}
+						}
+						owner = { dynamic_loc_slot_31 = { state_scope = { change_region_name = "Barding - Erebor relations are currently at §T63§!" } } }
+					}
+					random_owned = {
+						limit = {
+							owner = {
+								check_variable = { which = erebor_relations value = 63.9 }
+								NOT = { check_variable = { which = erebor_relations value = 64.1 } }
+							}
+						}
+						owner = { dynamic_loc_slot_31 = { state_scope = { change_region_name = "Barding - Erebor relations are currently at §T64§!" } } }
+					}
+					random_owned = {
+						limit = {
+							owner = {
+								check_variable = { which = erebor_relations value = 64.9 }
+								NOT = { check_variable = { which = erebor_relations value = 65.1 } }
+							}
+						}
+						owner = { dynamic_loc_slot_31 = { state_scope = { change_region_name = "Barding - Erebor relations are currently at §T65§!" } } }
+					}
+					random_owned = {
+						limit = {
+							owner = {
+								check_variable = { which = erebor_relations value = 65.9 }
+								NOT = { check_variable = { which = erebor_relations value = 66.1 } }
+							}
+						}
+						owner = { dynamic_loc_slot_31 = { state_scope = { change_region_name = "Barding - Erebor relations are currently at §T66§!" } } }
+					}
+					random_owned = {
+						limit = {
+							owner = {
+								check_variable = { which = erebor_relations value = 66.9 }
+								NOT = { check_variable = { which = erebor_relations value = 67.1 } }
+							}
+						}
+						owner = { dynamic_loc_slot_31 = { state_scope = { change_region_name = "Barding - Erebor relations are currently at §T67§!" } } }
+					}
+					random_owned = {
+						limit = {
+							owner = {
+								check_variable = { which = erebor_relations value = 67.9 }
+								NOT = { check_variable = { which = erebor_relations value = 68.1 } }
+							}
+						}
+						owner = { dynamic_loc_slot_31 = { state_scope = { change_region_name = "Barding - Erebor relations are currently at §T68§!" } } }
+					}
+					random_owned = {
+						limit = {
+							owner = {
+								check_variable = { which = erebor_relations value = 68.9 }
+								NOT = { check_variable = { which = erebor_relations value = 69.1 } }
+							}
+						}
+						owner = { dynamic_loc_slot_31 = { state_scope = { change_region_name = "Barding - Erebor relations are currently at §T69§!" } } }
+					}
+					random_owned = {
+						limit = {
+							owner = {
+								check_variable = { which = erebor_relations value = 69.9 }
+								NOT = { check_variable = { which = erebor_relations value = 70.1 } }
+							}
+						}
+						owner = { dynamic_loc_slot_31 = { state_scope = { change_region_name = "Barding - Erebor relations are currently at §T70§!" } } }
+					}
+					random_owned = {
+						limit = {
+							owner = {
+								check_variable = { which = erebor_relations value = 70.9 }
+								NOT = { check_variable = { which = erebor_relations value = 71.1 } }
+							}
+						}
+						owner = { dynamic_loc_slot_31 = { state_scope = { change_region_name = "Barding - Erebor relations are currently at §T71§!" } } }
+					}
+					random_owned = {
+						limit = {
+							owner = {
+								check_variable = { which = erebor_relations value = 71.9 }
+								NOT = { check_variable = { which = erebor_relations value = 72.1 } }
+							}
+						}
+						owner = { dynamic_loc_slot_31 = { state_scope = { change_region_name = "Barding - Erebor relations are currently at §T72§!" } } }
+					}
+					random_owned = {
+						limit = {
+							owner = {
+								check_variable = { which = erebor_relations value = 72.9 }
+								NOT = { check_variable = { which = erebor_relations value = 73.1 } }
+							}
+						}
+						owner = { dynamic_loc_slot_31 = { state_scope = { change_region_name = "Barding - Erebor relations are currently at §T73§!" } } }
+					}
+					random_owned = {
+						limit = {
+							owner = {
+								check_variable = { which = erebor_relations value = 73.9 }
+								NOT = { check_variable = { which = erebor_relations value = 74.1 } }
+							}
+						}
+						owner = { dynamic_loc_slot_31 = { state_scope = { change_region_name = "Barding - Erebor relations are currently at §T74§!" } } }
+					}
+					random_owned = {
+						limit = {
+							owner = {
+								check_variable = { which = erebor_relations value = 74.9 }
+								NOT = { check_variable = { which = erebor_relations value = 75.1 } }
+							}
+						}
+						owner = { dynamic_loc_slot_31 = { state_scope = { change_region_name = "Barding - Erebor relations are currently at §T75§!" } } }
+					}
+					random_owned = {
+						limit = {
+							owner = {
+								check_variable = { which = erebor_relations value = 75.9 }
+								NOT = { check_variable = { which = erebor_relations value = 76.1 } }
+							}
+						}
+						owner = { dynamic_loc_slot_31 = { state_scope = { change_region_name = "Barding - Erebor relations are currently at §T76§!" } } }
+					}
+					random_owned = {
+						limit = {
+							owner = {
+								check_variable = { which = erebor_relations value = 76.9 }
+								NOT = { check_variable = { which = erebor_relations value = 77.1 } }
+							}
+						}
+						owner = { dynamic_loc_slot_31 = { state_scope = { change_region_name = "Barding - Erebor relations are currently at §T77§!" } } }
+					}
+					random_owned = {
+						limit = {
+							owner = {
+								check_variable = { which = erebor_relations value = 77.9 }
+								NOT = { check_variable = { which = erebor_relations value = 78.1 } }
+							}
+						}
+						owner = { dynamic_loc_slot_31 = { state_scope = { change_region_name = "Barding - Erebor relations are currently at §T78§!" } } }
+					}
+					random_owned = {
+						limit = {
+							owner = {
+								check_variable = { which = erebor_relations value = 78.9 }
+								NOT = { check_variable = { which = erebor_relations value = 79.1 } }
+							}
+						}
+						owner = { dynamic_loc_slot_31 = { state_scope = { change_region_name = "Barding - Erebor relations are currently at §T79§!" } } }
+					}
+					random_owned = {
+						limit = {
+							owner = {
+								check_variable = { which = erebor_relations value = 79.9 }
+								NOT = { check_variable = { which = erebor_relations value = 80.1 } }
+							}
+						}
+						owner = { dynamic_loc_slot_31 = { state_scope = { change_region_name = "Barding - Erebor relations are currently at §T80§!" } } }
+					}
+					random_owned = {
+						limit = {
+							owner = {
+								check_variable = { which = erebor_relations value = 80.9 }
+								NOT = { check_variable = { which = erebor_relations value = 81.1 } }
+							}
+						}
+						owner = { dynamic_loc_slot_31 = { state_scope = { change_region_name = "Barding - Erebor relations are currently at §T81§!" } } }
+					}
+					random_owned = {
+						limit = {
+							owner = {
+								check_variable = { which = erebor_relations value = 81.9 }
+								NOT = { check_variable = { which = erebor_relations value = 82.1 } }
+							}
+						}
+						owner = { dynamic_loc_slot_31 = { state_scope = { change_region_name = "Barding - Erebor relations are currently at §T82§!" } } }
+					}
+					random_owned = {
+						limit = {
+							owner = {
+								check_variable = { which = erebor_relations value = 82.9 }
+								NOT = { check_variable = { which = erebor_relations value = 83.1 } }
+							}
+						}
+						owner = { dynamic_loc_slot_31 = { state_scope = { change_region_name = "Barding - Erebor relations are currently at §T83§!" } } }
+					}
+					random_owned = {
+						limit = {
+							owner = {
+								check_variable = { which = erebor_relations value = 83.9 }
+								NOT = { check_variable = { which = erebor_relations value = 84.1 } }
+							}
+						}
+						owner = { dynamic_loc_slot_31 = { state_scope = { change_region_name = "Barding - Erebor relations are currently at §T84§!" } } }
+					}
+					random_owned = {
+						limit = {
+							owner = {
+								check_variable = { which = erebor_relations value = 84.9 }
+								NOT = { check_variable = { which = erebor_relations value = 85.1 } }
+							}
+						}
+						owner = { dynamic_loc_slot_31 = { state_scope = { change_region_name = "Barding - Erebor relations are currently at §T85§!" } } }
+					}
+					random_owned = {
+						limit = {
+							owner = {
+								check_variable = { which = erebor_relations value = 85.9 }
+								NOT = { check_variable = { which = erebor_relations value = 86.1 } }
+							}
+						}
+						owner = { dynamic_loc_slot_31 = { state_scope = { change_region_name = "Barding - Erebor relations are currently at §T86§!" } } }
+					}
+					random_owned = {
+						limit = {
+							owner = {
+								check_variable = { which = erebor_relations value = 86.9 }
+								NOT = { check_variable = { which = erebor_relations value = 87.1 } }
+							}
+						}
+						owner = { dynamic_loc_slot_31 = { state_scope = { change_region_name = "Barding - Erebor relations are currently at §T87§!" } } }
+					}
+					random_owned = {
+						limit = {
+							owner = {
+								check_variable = { which = erebor_relations value = 87.9 }
+								NOT = { check_variable = { which = erebor_relations value = 88.1 } }
+							}
+						}
+						owner = { dynamic_loc_slot_31 = { state_scope = { change_region_name = "Barding - Erebor relations are currently at §T88§!" } } }
+					}
+					random_owned = {
+						limit = {
+							owner = {
+								check_variable = { which = erebor_relations value = 88.9 }
+								NOT = { check_variable = { which = erebor_relations value = 89.1 } }
+							}
+						}
+						owner = { dynamic_loc_slot_31 = { state_scope = { change_region_name = "Barding - Erebor relations are currently at §T89§!" } } }
+					}
+					random_owned = {
+						limit = {
+							owner = {
+								check_variable = { which = erebor_relations value = 89.9 }
+								NOT = { check_variable = { which = erebor_relations value = 90.1 } }
+							}
+						}
+						owner = { dynamic_loc_slot_31 = { state_scope = { change_region_name = "Barding - Erebor relations are currently at §T90§!" } } }
+					}
+					random_owned = {
+						limit = {
+							owner = {
+								check_variable = { which = erebor_relations value = 90.9 }
+								NOT = { check_variable = { which = erebor_relations value = 91.1 } }
+							}
+						}
+						owner = { dynamic_loc_slot_31 = { state_scope = { change_region_name = "Barding - Erebor relations are currently at §T91§!" } } }
+					}
+					random_owned = {
+						limit = {
+							owner = {
+								check_variable = { which = erebor_relations value = 91.9 }
+								NOT = { check_variable = { which = erebor_relations value = 92.1 } }
+							}
+						}
+						owner = { dynamic_loc_slot_31 = { state_scope = { change_region_name = "Barding - Erebor relations are currently at §T92§!" } } }
+					}
+					random_owned = {
+						limit = {
+							owner = {
+								check_variable = { which = erebor_relations value = 92.9 }
+								NOT = { check_variable = { which = erebor_relations value = 93.1 } }
+							}
+						}
+						owner = { dynamic_loc_slot_31 = { state_scope = { change_region_name = "Barding - Erebor relations are currently at §T93§!" } } }
+					}
+					random_owned = {
+						limit = {
+							owner = {
+								check_variable = { which = erebor_relations value = 93.9 }
+								NOT = { check_variable = { which = erebor_relations value = 94.1 } }
+							}
+						}
+						owner = { dynamic_loc_slot_31 = { state_scope = { change_region_name = "Barding - Erebor relations are currently at §T94§!" } } }
+					}
+					random_owned = {
+						limit = {
+							owner = {
+								check_variable = { which = erebor_relations value = 94.9 }
+								NOT = { check_variable = { which = erebor_relations value = 95.1 } }
+							}
+						}
+						owner = { dynamic_loc_slot_31 = { state_scope = { change_region_name = "Barding - Erebor relations are currently at §T95§!" } } }
+					}
+					random_owned = {
+						limit = {
+							owner = {
+								check_variable = { which = erebor_relations value = 95.9 }
+								NOT = { check_variable = { which = erebor_relations value = 96.1 } }
+							}
+						}
+						owner = { dynamic_loc_slot_31 = { state_scope = { change_region_name = "Barding - Erebor relations are currently at §T96§!" } } }
+					}
+					random_owned = {
+						limit = {
+							owner = {
+								check_variable = { which = erebor_relations value = 96.9 }
+								NOT = { check_variable = { which = erebor_relations value = 97.1 } }
+							}
+						}
+						owner = { dynamic_loc_slot_31 = { state_scope = { change_region_name = "Barding - Erebor relations are currently at §T97§!" } } }
+					}
+					random_owned = {
+						limit = {
+							owner = {
+								check_variable = { which = erebor_relations value = 97.9 }
+								NOT = { check_variable = { which = erebor_relations value = 98.1 } }
+							}
+						}
+						owner = { dynamic_loc_slot_31 = { state_scope = { change_region_name = "Barding - Erebor relations are currently at §T98§!" } } }
+					}
+					random_owned = {
+						limit = {
+							owner = {
+								check_variable = { which = erebor_relations value = 98.9 }
+								NOT = { check_variable = { which = erebor_relations value = 99.1 } }
+							}
+						}
+						owner = { dynamic_loc_slot_31 = { state_scope = { change_region_name = "Barding - Erebor relations are currently at §T99§!" } } }
+					}
+					random_owned = {
+						limit = {
+							owner = {
+								check_variable = { which = erebor_relations value = 99.9 }
+								NOT = { check_variable = { which = erebor_relations value = 100.1 } }
+							}
+						}
+						owner = { dynamic_loc_slot_31 = { state_scope = { change_region_name = "Barding - Erebor relations are currently at §T100§!" } } }
+					}
+					random_owned = {
+						limit = { owner = { check_variable = { which = erebor_relations value = 100.9 } } }
+						owner = { dynamic_loc_slot_31 = { state_scope = { change_region_name = "Barding - Erebor relations are currently at §Thigher than 100§!" } } }
+					}
+				}
+			}
+			
+			clr_global_flag = hidden_effects
 			country_event = 30032
 		}
 	}
