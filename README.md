@@ -33,15 +33,21 @@ There is no more need for confusion just because you don't have the map entirely
 <br>
 
 <br>
+<br>
 
 <img src="better_tooltips.jpg"/>
-
 Utilizing the static portion of Dynamic Loc, TTA creates tooltips that actually tell you the full picture of what will happen. No more being surprised by decision effects changing as game conditions change!
 
-<img src="dynamic_loc_left.png" align="left"/>
-<img src="dynamic_loc_right.png" align="right"/>
+<br>
+<br>
 
-Feeling lost amid all of the flavor? See the [player documentation folder](/player_documentation) for a "flavor chart"! Alternatively, there are "fluff" events within the mod that will dynamically update as your progress, telling you of your progress with both text color changes and description updates
+<img src="dynamic_loc_left.png" align="left" width="48%"/>
+<img src="dynamic_loc_right.png" align="right" width="48%"/>
+<br>
+<br>
+<br>
+
+Feeling lost amid all of the flavor? See the [player documentation folder](https://github.com/The-Third-Age/TTA/tree/main/playerdocumentation) for a "flavor chart"! Alternatively, there are "fluff" events within the mod that will dynamically update as your progress, telling you of your progress with both text color changes and description updates
 
 ## Installation Instructions
 1. Download the mod by clicking [here](https://github.com/The-Third-Age/TTA-Victoria-2/archive/main.zip) or click the the green Code button, then Download ZIP.
