@@ -13,7 +13,7 @@ Join the [Victoria 2: The Third Age Discord](https://discord.gg/t98UUdHETw)! Joi
 
 Static modifiers are the modifiers that get applied via a pop up on the first of the month, with there being no good way to view them normally. TTA resolves this by displaying them within the standard modifier view, with the icons make greyscale so they aren't lost.
 
-<br> clear = "right"/>
+<br clear = "right"/>
 
 ![Static Modifiers](/map_locations.jpg)
 
