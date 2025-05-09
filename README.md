@@ -5,19 +5,34 @@ This is the GitHub Repo of the best Lord of the Rings mod for Victoria 2. This m
 
 Join the [Victoria 2: The Third Age Discord](https://discord.gg/t98UUdHETw)! Join the [Victoria 2 Modding Discord](https://discord.gg/EbY7qaA)!
 
-## Static Modifiers
+## QoL Improvements
 
-<br clear="left"/>
+<img src="static_modifiers.jpg" align="left"/>
 
-![Static Modifiers](/static_modifiers.jpg)
-
+<br>
+<br>
+<br>
 Static modifiers are the modifiers that get applied via a pop up on the first of the month, with there being no good way to view them normally. TTA resolves this by displaying them within the standard modifier view, with the icons make greyscale so they aren't lost.
+<br>
+<br>
+<br>
 
-<br clear = "right"/>
+<br>
 
-![Static Modifiers](/map_locations.jpg)
+<img src="map_locations.jpg" align="right"/>
 
+<br>
+<br>
+<br>
+<br>
 Ever uncertain about the provinces a decision is talking about? Rather than exiting out of the decisions just to forget what you were looking for, TTA displays the overarching area in black, with the targets overlayed in white.
+<br>
+<br>
+There is no more need for confusion just because you don't have the map entirely memorized.
+<br>
+<br>
+<br>
+<br>
 
 <br>
 
