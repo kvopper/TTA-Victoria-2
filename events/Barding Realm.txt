@@ -2453,7 +2453,7 @@ country_event = {
 		has_country_flag = DAL_content
 		alliance_with = ERE
 		has_country_modifier = erebor_relations_modifier
-		money = 500000
+		money = 50000
 	}
 	
 	mean_time_to_happen = {

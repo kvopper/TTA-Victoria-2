@@ -165,220 +165,220 @@ promotion_focus = {
 promotion_ideologies = {
 	promote_nobility = {
 		ideology = nobility
-		loyalty_value = 0.003
+		loyalty_value = 0.005
 	}
 	promote_burgher = {
 		ideology = burgher
-		loyalty_value = 0.003
+		loyalty_value = 0.005
 	}
 	promote_loremaster = {
 		ideology = loremaster
-		loyalty_value = 0.003
+		loyalty_value = 0.005
 	}
 	promote_line_of_isildur = {
 		ideology = line_of_isildur
-		loyalty_value = 0.003
+		loyalty_value = 0.005
 	}
 	promote_house_of_stewards = {
 		ideology = house_of_stewards
-		loyalty_value = 0.003
+		loyalty_value = 0.005
 	}
 	promote_house_of_dol_amroth = {
 		ideology = house_of_dol_amroth
-		loyalty_value = 0.003
+		loyalty_value = 0.005
 	}
 	promote_house_half_elven = {
 		ideology = house_half_elven
-		loyalty_value = 0.003
+		loyalty_value = 0.005
 	}
 	promote_lords_of_mithlond = {
 		ideology = lords_of_mithlond
-		loyalty_value = 0.003
+		loyalty_value = 0.005
 	}
 	promote_house_of_oropher = {
 		ideology = house_of_oropher
-		loyalty_value = 0.003
+		loyalty_value = 0.005
 	}
 	promote_house_of_finarfin = {
 		ideology = house_of_finarfin
-		loyalty_value = 0.003
+		loyalty_value = 0.005
 	}
 	promote_house_of_bard = {
 		ideology = house_of_bard
-		loyalty_value = 0.003
+		loyalty_value = 0.005
 	}
 	promote_rivermen_thegans = {
 		ideology = rivermen_thegans
-		loyalty_value = 0.003
+		loyalty_value = 0.005
 	}
 	promote_master_of_laketown = {
 		ideology = master_of_laketown
-		loyalty_value = 0.003
+		loyalty_value = 0.005
 	}
 	promote_lakemen_fishers_guild = {
 		ideology = lakemen_fishers_guild
-		loyalty_value = 0.003
+		loyalty_value = 0.005
 	}
 	promote_house_of_koldana = {
 		ideology = house_of_koldana
-		loyalty_value = 0.003
+		loyalty_value = 0.005
 	}
 	promote_line_of_durin = {
 		ideology = line_of_durin
-		loyalty_value = 0.003
+		loyalty_value = 0.005
 	}
 	promote_house_of_beorn = {
 		ideology = house_of_beorn
-		loyalty_value = 0.003
+		loyalty_value = 0.005
 	}
 	promote_lords_of_fangorn = {
 		ideology = lords_of_fangorn
-		loyalty_value = 0.003
+		loyalty_value = 0.005
 	}
 	promote_house_of_eorl = {
 		ideology = house_of_eorl
-		loyalty_value = 0.003
+		loyalty_value = 0.005
 	}
 	promote_flightlords_of_the_mountains = {
 		ideology = flightlords_of_the_mountains
-		loyalty_value = 0.003
+		loyalty_value = 0.005
 	}
 	promote_lords_of_ravens = {
 		ideology = lords_of_ravens
-		loyalty_value = 0.003
+		loyalty_value = 0.005
 	}
 	promote_great_brood_mothers = {
 		ideology = great_brood_mothers
-		loyalty_value = 0.003
+		loyalty_value = 0.005
 	}
 	promote_kings_of_the_dead = {
 		ideology = kings_of_the_dead
-		loyalty_value = 0.003
+		loyalty_value = 0.005
 	}
 	promote_lords_of_isengard = {
 		ideology = lords_of_isengard
-		loyalty_value = 0.003
+		loyalty_value = 0.005
 	}
 	promote_lords_of_rhosgobel = {
 		ideology = lords_of_rhosgobel
-		loyalty_value = 0.003
+		loyalty_value = 0.005
 	}
 	promote_lords_of_mordor = {
 		ideology = lords_of_mordor
-		loyalty_value = 0.003
+		loyalty_value = 0.005
 	}
 	promote_saurons_nine = {
 		ideology = saurons_nine
-		loyalty_value = 0.003
+		loyalty_value = 0.005
 	}
 }
 demotion_ideologies = {
 	demote_nobility = {
 		ideology = nobility
-		loyalty_value = -0.003
+		loyalty_value = -0.005
 	}
 	demote_burgher = {
 		ideology = burgher
-		loyalty_value = -0.003
+		loyalty_value = -0.005
 	}
 	demote_loremaster = {
 		ideology = loremaster
-		loyalty_value = -0.003
+		loyalty_value = -0.005
 	}
 	demote_line_of_isildur = {
 		ideology = line_of_isildur
-		loyalty_value = -0.003
+		loyalty_value = -0.005
 	}
 	demote_house_of_stewards = {
 		ideology = house_of_stewards
-		loyalty_value = -0.003
+		loyalty_value = -0.005
 	}
 	demote_house_of_dol_amroth = {
 		ideology = house_of_dol_amroth
-		loyalty_value = -0.003
+		loyalty_value = -0.005
 	}
 	demote_house_half_elven = {
 		ideology = house_half_elven
-		loyalty_value = -0.003
+		loyalty_value = -0.005
 	}
 	demote_lords_of_mithlond = {
 		ideology = lords_of_mithlond
-		loyalty_value = -0.003
+		loyalty_value = -0.005
 	}
 	demote_house_of_oropher = {
 		ideology = house_of_oropher
-		loyalty_value = -0.003
+		loyalty_value = -0.005
 	}
 	demote_house_of_finarfin = {
 		ideology = house_of_finarfin
-		loyalty_value = -0.003
+		loyalty_value = -0.005
 	}
 	demote_house_of_bard = {
 		ideology = house_of_bard
-		loyalty_value = -0.003
+		loyalty_value = -0.005
 	}
 	demote_rivermen_thegans = {
 		ideology = rivermen_thegans
-		loyalty_value = -0.003
+		loyalty_value = -0.005
 	}
 	demote_master_of_laketown = {
 		ideology = master_of_laketown
-		loyalty_value = -0.003
+		loyalty_value = -0.005
 	}
 	demote_lakemen_fishers_guild = {
 		ideology = lakemen_fishers_guild
-		loyalty_value = -0.003
+		loyalty_value = -0.005
 	}
 	demote_house_of_koldana = {
 		ideology = house_of_koldana
-		loyalty_value = -0.003
+		loyalty_value = -0.005
 	}
 	demote_line_of_durin = {
 		ideology = line_of_durin
-		loyalty_value = -0.003
+		loyalty_value = -0.005
 	}
 	demote_house_of_beorn = {
 		ideology = house_of_beorn
-		loyalty_value = -0.003
+		loyalty_value = -0.005
 	}
 	demote_lords_of_fangorn = {
 		ideology = lords_of_fangorn
-		loyalty_value = -0.003
+		loyalty_value = -0.005
 	}
 	demote_house_of_eorl = {
 		ideology = house_of_eorl
-		loyalty_value = -0.003
+		loyalty_value = -0.005
 	}
 	demote_flightlords_of_the_mountains = {
 		ideology = flightlords_of_the_mountains
-		loyalty_value = -0.003
+		loyalty_value = -0.005
 	}
 	demote_lords_of_ravens = {
 		ideology = lords_of_ravens
-		loyalty_value = -0.003
+		loyalty_value = -0.005
 	}
 	demote_great_brood_mothers = {
 		ideology = great_brood_mothers
-		loyalty_value = -0.003
+		loyalty_value = -0.005
 	}
 	demote_kings_of_the_dead = {
 		ideology = kings_of_the_dead
-		loyalty_value = -0.003
+		loyalty_value = -0.005
 	}
 	demote_lords_of_isengard = {
 		ideology = lords_of_isengard
-		loyalty_value = -0.003
+		loyalty_value = -0.005
 	}
 	demote_lords_of_rhosgobel = {
 		ideology = lords_of_rhosgobel
-		loyalty_value = -0.003
+		loyalty_value = -0.005
 	}
 	demote_lords_of_mordor = {
 		ideology = lords_of_mordor
-		loyalty_value = -0.003
+		loyalty_value = -0.005
 	}
 	demote_saurons_nine = {
 		ideology = saurons_nine
-		loyalty_value = -0.003
+		loyalty_value = -0.005
 	}
 }
