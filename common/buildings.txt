@@ -417,3 +417,80 @@ railroad = {
 	pop_build_factory = yes
 	spawn_railway_track = yes
 }
+
+barracks = {
+	type = barracks
+	goods_cost = {
+		# TODO
+	}
+	time = 365
+	visibility = yes
+	onmap = no
+	max_level = 6
+	province = yes
+	
+	supply_limit = 1
+	
+	pop_build_factory = yes
+}
+
+merchant_wharf = {
+	type = merchant_wharf
+	goods_cost = {
+		# TODO
+	}
+	time = 180
+	visibility = yes
+	onmap = no
+	max_level = 6
+	province = yes
+	port = yes
+	
+	local_rgo_output = 0.75
+	
+	pop_build_factory = yes
+}
+
+market_square = {
+	type = market_square
+	goods_cost = {
+		# TODO
+	}
+	time = 180
+	visibility = yes
+	onmap = no
+	max_level = 6
+	province = yes
+	
+	local_rgo_output = 0.5
+	
+	pop_build_factory = yes
+}
+
+public_house = {
+	type = public_house
+	goods_cost = {
+		# TODO
+	}
+	time = 180
+	visibility = yes
+	onmap = no
+	max_level = 6
+	province = yes
+	
+	pop_militancy_modifier  = -0.01
+	
+	pop_build_factory = yes
+}
+
+province_selector = {
+	type = province_selector
+	goods_cost = {
+		# Purposefully empty
+	}
+	time = 1
+	visibility = yes
+	onmap = no
+	max_level = 6
+	province = yes
+}
