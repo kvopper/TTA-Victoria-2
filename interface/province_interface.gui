@@ -1451,31 +1451,31 @@ guiTypes = {
 		
 		iconType = {
 			name = "build_icon7"
-			spriteType = "GFX_province_infra_strip" # province_selector
+			spriteType = "GFX_province_generic_strip" # province_selector
 			position = { x= 23 y = -4 }
 			Orientation = "UPPER_LEFT"
 		}
 		iconType = {
 			name = "build_icon6"
-			spriteType = "GFX_province_infra_strip" # public_house
+			spriteType = "GFX_province_generic_strip" # public_house
 			position = { x= 23 y = -4 }
 			Orientation = "UPPER_LEFT"
 		}
 		iconType = {
 			name = "build_icon5"
-			spriteType = "GFX_province_infra_strip" # market_square
+			spriteType = "GFX_province_generic_strip" # market_square
 			position = { x= 23 y = -4 }
 			Orientation = "UPPER_LEFT"
 		}
 		iconType = {
 			name = "build_icon4"
-			spriteType = "GFX_province_navalbase_strip" # merchant_wharf
+			spriteType = "GFX_province_generic_strip" # scriptorium
 			position = { x= 23 y = -4 }
 			Orientation = "UPPER_LEFT"
 		}
 		iconType = {
 			name = "build_icon3"
-			spriteType = "GFX_province_fort_strip" # barracks
+			spriteType = "GFX_province_generic_strip" # barracks
 			position = { x= 23 y = -4 }
 			Orientation = "UPPER_LEFT"
 		}

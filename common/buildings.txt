@@ -434,8 +434,8 @@ barracks = {
 	pop_build_factory = yes
 }
 
-merchant_wharf = {
-	type = merchant_wharf
+scriptorium = {
+	type = scriptorium
 	goods_cost = {
 		# TODO
 	}
@@ -444,9 +444,10 @@ merchant_wharf = {
 	onmap = no
 	max_level = 6
 	province = yes
-	port = yes
+	one_per_state = yes
 	
-	local_rgo_output = 0.75
+	research_points = 0.01
+	# research_points_modifier  = 0.001 # From TGC
 	
 	pop_build_factory = yes
 }
@@ -462,7 +463,7 @@ market_square = {
 	max_level = 6
 	province = yes
 	
-	local_rgo_output = 0.5
+	local_rgo_output = 0.25
 	
 	pop_build_factory = yes
 }
