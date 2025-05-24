@@ -25,5 +25,5 @@ serfdom = banned_serfdom
 schools = traditional_academic
 #tech
 education_1 = 1
-mining_tech_1 = 1
+rgo_tech_1 = 1
 magic_1 = 1

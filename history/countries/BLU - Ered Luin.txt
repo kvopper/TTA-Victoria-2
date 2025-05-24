@@ -20,5 +20,5 @@ slavery = no_slavery
 schools = traditional_academic
 
 #tech
-mining_tech_1 = 1
+rgo_tech_1 = 1
 infantry_tech_1 = 1

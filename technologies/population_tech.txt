@@ -5,7 +5,6 @@ taxes_1 = {
 	cost = 3600
 	
 	tax_eff = 3
-	administrative_efficiency = 0.05
 	
 	ai_chance = {
 		factor = 1
@@ -38,7 +37,6 @@ taxes_2 = {
 	cost = 7200
 	
 	tax_eff = 3
-	administrative_efficiency = 0.05
 	
 	ai_chance = {
 		factor = 1
@@ -71,7 +69,6 @@ taxes_3 = {
 	cost = 10800
 	
 	tax_eff = 4
-	administrative_efficiency = 0.05
 	
 	ai_chance = {
 		factor = 1
@@ -104,7 +101,6 @@ taxes_4 = {
 	cost = 14400
 	
 	tax_eff = 4
-	administrative_efficiency = 0.05
 	
 	ai_chance = {
 		factor = 1
@@ -137,6 +133,166 @@ taxes_5 = {
 	cost = 18000
 	
 	tax_eff = 6
+	
+	ai_chance = {
+		factor = 1
+		
+		modifier = {
+			factor = 1.5
+			OR = {
+				is_greater_power = yes
+				is_secondary_power = yes
+			}
+		}
+		modifier = {
+			factor = 1.1
+			literacy = 0.3
+		}
+		modifier = {
+			factor = 1.1
+			literacy = 0.6
+		}
+		modifier = {
+			factor = 1.1
+			year = 3010
+		}
+	}
+}
+
+#administration
+administration_1 = {
+	area = administration
+	year = 2954
+	cost = 3600
+	
+	administrative_efficiency = 0.05
+	
+	ai_chance = {
+		factor = 1
+		
+		modifier = {
+			factor = 1.5
+			OR = {
+				is_greater_power = yes
+				is_secondary_power = yes
+			}
+		}
+		modifier = {
+			factor = 1.1
+			literacy = 0.3
+		}
+		modifier = {
+			factor = 1.1
+			literacy = 0.6
+		}
+		modifier = {
+			factor = 1.1
+			year = 2960
+		}
+	}
+}
+
+administration_2 = {
+	area = administration
+	year = 2954
+	cost = 7200
+	
+	administrative_efficiency = 0.05
+	
+	ai_chance = {
+		factor = 1
+		
+		modifier = {
+			factor = 1.5
+			OR = {
+				is_greater_power = yes
+				is_secondary_power = yes
+			}
+		}
+		modifier = {
+			factor = 1.1
+			literacy = 0.3
+		}
+		modifier = {
+			factor = 1.1
+			literacy = 0.6
+		}
+		modifier = {
+			factor = 1.1
+			year = 2965
+		}
+	}
+}
+
+administration_3 = {
+	area = administration
+	year = 2965
+	cost = 10800
+	
+	administrative_efficiency = 0.05
+	
+	ai_chance = {
+		factor = 1
+		
+		modifier = {
+			factor = 1.5
+			OR = {
+				is_greater_power = yes
+				is_secondary_power = yes
+			}
+		}
+		modifier = {
+			factor = 1.1
+			literacy = 0.3
+		}
+		modifier = {
+			factor = 1.1
+			literacy = 0.6
+		}
+		modifier = {
+			factor = 1.1
+			year = 2980
+		}
+	}
+}
+
+administration_4 = {
+	area = administration
+	year = 2980
+	cost = 14400
+	
+	administrative_efficiency = 0.05
+	
+	ai_chance = {
+		factor = 1
+		
+		modifier = {
+			factor = 1.5
+			OR = {
+				is_greater_power = yes
+				is_secondary_power = yes
+			}
+		}
+		modifier = {
+			factor = 1.1
+			literacy = 0.3
+		}
+		modifier = {
+			factor = 1.1
+			literacy = 0.6
+		}
+		modifier = {
+			factor = 1.1
+			year = 3000
+		}
+	}
+}
+
+administration_5 = {
+	area = administration
+	year = 3000
+	cost = 18000
+	
 	administrative_efficiency = 0.1
 	
 	ai_chance = {
@@ -323,29 +479,30 @@ population_5 = {
 	}
 }
 
-#education
-education_1 = {
-	area = education
+#entertainment_tech
+entertainment_tech_1 = {
+	area = entertainment_tech
 	year = 2954
 	cost = 3600
 	
-	increase_research = 0.25
-	education_efficiency = 0.1
+	pop_growth = 0.0001
+	max_national_focus = 1
+	suppression_points_modifier = 0.05
 	
 	ai_chance = {
-		factor = 10
+		factor = 1
 		
 		modifier = {
-			factor = 2
-			is_greater_power = yes
-		}
-		modifier = {
-			factor = 1.5
-			is_secondary_power = yes
+			factor = 0
+			NOT = { total_pops = 800000 }
 		}
 		modifier = {
 			factor = 3
-			NOT = { literacy = 0.3 }
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 2
+			is_secondary_power = yes
 		}
 		modifier = {
 			factor = 1.1
@@ -354,28 +511,26 @@ education_1 = {
 	}
 }
 
-education_2 = {
-	area = education
+entertainment_tech_2 = {
+	area = entertainment_tech
 	year = 2954
 	cost = 7200
 	
-	increase_research = 0.25
-	education_efficiency = 0.1
 	
 	ai_chance = {
-		factor = 10
+		factor = 1
 		
 		modifier = {
-			factor = 2
-			is_greater_power = yes
-		}
-		modifier = {
-			factor = 1.5
-			is_secondary_power = yes
+			factor = 0
+			NOT = { total_pops = 1200000 }
 		}
 		modifier = {
 			factor = 3
-			NOT = { literacy = 0.3 }
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 2
+			is_secondary_power = yes
 		}
 		modifier = {
 			factor = 1.1
@@ -384,28 +539,25 @@ education_2 = {
 	}
 }
 
-education_3 = {
-	area = education
+entertainment_tech_3 = {
+	area = entertainment_tech
 	year = 2965
 	cost = 10800
 	
-	increase_research = 0.5
-	education_efficiency = 0.2
-	
 	ai_chance = {
-		factor = 10
+		factor = 1
 		
 		modifier = {
-			factor = 2
-			is_greater_power = yes
-		}
-		modifier = {
-			factor = 1.5
-			is_secondary_power = yes
+			factor = 0
+			NOT = { total_pops = 1600000 }
 		}
 		modifier = {
 			factor = 3
-			NOT = { literacy = 0.3 }
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 2
+			is_secondary_power = yes
 		}
 		modifier = {
 			factor = 1.1
@@ -414,28 +566,25 @@ education_3 = {
 	}
 }
 
-education_4 = {
-	area = education
+entertainment_tech_4 = {
+	area = entertainment_tech
 	year = 2980
 	cost = 14400
 	
-	increase_research = 0.5
-	education_efficiency = 0.2
-	
 	ai_chance = {
-		factor = 10
+		factor = 1
 		
 		modifier = {
-			factor = 2
-			is_greater_power = yes
-		}
-		modifier = {
-			factor = 1.5
-			is_secondary_power = yes
+			factor = 0
+			NOT = { total_pops = 2000000 }
 		}
 		modifier = {
 			factor = 3
-			NOT = { literacy = 0.3 }
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 2
+			is_secondary_power = yes
 		}
 		modifier = {
 			factor = 1.1
@@ -444,184 +593,25 @@ education_4 = {
 	}
 }
 
-education_5 = {
-	area = education
+entertainment_tech_5 = {
+	area = entertainment_tech
 	year = 3000
 	cost = 18000
 	
-	increase_research = 1
-	education_efficiency = 0.4
-	
 	ai_chance = {
-		factor = 10
+		factor = 1
 		
 		modifier = {
-			factor = 2
-			is_greater_power = yes
-		}
-		modifier = {
-			factor = 1.5
-			is_secondary_power = yes
+			factor = 0
+			NOT = { total_pops = 2800000 }
 		}
 		modifier = {
 			factor = 3
-			NOT = { literacy = 0.3 }
-		}
-		modifier = {
-			factor = 1.1
-			year = 3010
-		}
-	}
-}
-
-#magic
-magic_1 = {
-	area = magic
-	year = 2954
-	cost = 3600
-	
-	ai_chance = {
-		factor = 0.1
-		
-		modifier = {
-			factor = 2
 			is_greater_power = yes
 		}
 		modifier = {
-			factor = 1.5
-			is_secondary_power = yes
-		}
-		modifier = {
-			factor = 10
-			government = istari_kingdom
-		}
-		modifier = {
-			factor = 10
-			government = sauron_dictatorship
-		}
-		modifier = {
-			factor = 1.1
-			year = 2960
-		}
-	}
-}
-
-magic_2 = {
-	area = magic
-	year = 2954
-	cost = 7200
-	
-	ai_chance = {
-		factor = 0.1
-		
-		modifier = {
 			factor = 2
-			is_greater_power = yes
-		}
-		modifier = {
-			factor = 1.5
 			is_secondary_power = yes
-		}
-		modifier = {
-			factor = 10
-			government = istari_kingdom
-		}
-		modifier = {
-			factor = 10
-			government = sauron_dictatorship
-		}
-		modifier = {
-			factor = 1.1
-			year = 2965
-		}
-	}
-}
-
-magic_3 = {
-	area = magic
-	year = 2965
-	cost = 10800
-	
-	ai_chance = {
-		factor = 0.1
-		
-		modifier = {
-			factor = 2
-			is_greater_power = yes
-		}
-		modifier = {
-			factor = 1.5
-			is_secondary_power = yes
-		}
-		modifier = {
-			factor = 10
-			government = istari_kingdom
-		}
-		modifier = {
-			factor = 10
-			government = sauron_dictatorship
-		}
-		modifier = {
-			factor = 1.1
-			year = 2980
-		}
-	}
-}
-
-magic_4 = {
-	area = magic
-	year = 2980
-	cost = 14400
-	
-	ai_chance = {
-		factor = 0.1
-		
-		modifier = {
-			factor = 2
-			is_greater_power = yes
-		}
-		modifier = {
-			factor = 1.5
-			is_secondary_power = yes
-		}
-		modifier = {
-			factor = 10
-			government = istari_kingdom
-		}
-		modifier = {
-			factor = 10
-			government = sauron_dictatorship
-		}
-		modifier = {
-			factor = 1.1
-			year = 3000
-		}
-	}
-}
-
-magic_5 = {
-	area = magic
-	year = 3000
-	cost = 18000
-	
-	ai_chance = {
-		factor = 0.1
-		
-		modifier = {
-			factor = 2
-			is_greater_power = yes
-		}
-		modifier = {
-			factor = 1.5
-			is_secondary_power = yes
-		}
-		modifier = {
-			factor = 10
-			government = istari_kingdom
-		}
-		modifier = {
-			factor = 10
-			government = sauron_dictatorship
 		}
 		modifier = {
 			factor = 1.1

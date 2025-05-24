@@ -21,16 +21,22 @@ folders = {
 		naval_construction
 	}
 	commerce_tech = {
-		farming_tech
-		mining_tech
+		rgo_tech
 		guilds
+		trade_tech
 		infrastructure_tech
 	}
 	population_tech = {
 		taxes
+		administration_tech
 		population
-		education
+		entertainment_tech
+	}
+	knowledge_tech = {
+		herblore_tech
 		magic
+		education
+		scholarship_tech
 	}
 	diplomacy_tech = {
 		expansion
@@ -54,6 +60,7 @@ schools = {
 		navy_tech_research_bonus = 0.01
 		commerce_tech_research_bonus = 0.01
 		population_tech_research_bonus = 0.01
+		knowledge_tech_research_bonus = 0.01
 		diplomacy_tech_research_bonus = 0.01
 		unciv_economic_modifier = -0.01
 		unciv_military_modifier = -0.01
@@ -63,7 +70,8 @@ schools = {
 		military_theory_tech_research_bonus = 0.1
 		navy_tech_research_bonus = -0.05
 		commerce_tech_research_bonus = 0.0
-		population_tech_research_bonus = -0.1
+		population_tech_research_bonus = -0.05
+		knowledge_tech_research_bonus = -0.05
 		diplomacy_tech_research_bonus = -0.1
 		unciv_economic_modifier = 0.02
 		unciv_military_modifier = -0.02
@@ -74,7 +82,8 @@ schools = {
 		navy_tech_research_bonus = 0.15
 		commerce_tech_research_bonus = 0.0
 		population_tech_research_bonus = -0.1
-		diplomacy_tech_research_bonus = -0.1
+		knowledge_tech_research_bonus = -0.05
+		diplomacy_tech_research_bonus = -0.05
 		unciv_economic_modifier = 0.02
 		unciv_military_modifier = -0.02
 	}
@@ -82,8 +91,9 @@ schools = {
 		army_tech_research_bonus = -0.05
 		military_theory_tech_research_bonus = -0.1
 		navy_tech_research_bonus = -0.1
-		commerce_tech_research_bonus = 0.15
+		commerce_tech_research_bonus = 0.1
 		population_tech_research_bonus = 0.05
+		knowledge_tech_research_bonus = 0.05
 		diplomacy_tech_research_bonus = 0.05
 		unciv_economic_modifier = -0.02
 		unciv_military_modifier = 0.02

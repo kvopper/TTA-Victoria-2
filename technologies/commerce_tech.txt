@@ -1,11 +1,13 @@
-#farming_tech
-farming_tech_1 = {
-	area = farming_tech
+#rgo_tech
+rgo_tech_1 = {
+	area = rgo_tech
 	year = 2954
 	cost = 3600
 	
 	farm_rgo_size = 0.1
+	mine_rgo_size = 0.1
 	farm_rgo_eff = 0.2
+	mine_rgo_eff = 0.2
 	rgo_goods_output = {
 		timber = 0.1
 	}
@@ -20,18 +22,6 @@ farming_tech_1 = {
 		modifier = {
 			factor = 1.25
 			NOT = { industrial_score = 25 }
-		}
-		modifier = {
-			factor = 2
-			OR = {
-				big_producer = cotton
-				big_producer = dye
-				big_producer = wool
-				big_producer = food
-				big_producer = tobacco
-				big_producer = tea
-				big_producer = horses
-			}
 		}
 		modifier = {
 			factor = 1.1
@@ -40,13 +30,15 @@ farming_tech_1 = {
 	}
 }
 
-farming_tech_2 = {
-	area = farming_tech
+rgo_tech_2 = {
+	area = rgo_tech
 	year = 2954
 	cost = 7200
 	
 	farm_rgo_size = 0.1
+	mine_rgo_size = 0.1
 	farm_rgo_eff = 0.2
+	mine_rgo_eff = 0.2
 	rgo_goods_output = {
 		timber = 0.1
 	}
@@ -63,31 +55,21 @@ farming_tech_2 = {
 			NOT = { industrial_score = 25 }
 		}
 		modifier = {
-			factor = 2
-			OR = {
-				big_producer = cotton
-				big_producer = dye
-				big_producer = wool
-				big_producer = food
-				big_producer = tobacco
-				big_producer = tea
-				big_producer = horses
-			}
-		}
-		modifier = {
 			factor = 1.1
 			year = 2965
 		}
 	}
 }
 
-farming_tech_3 = {
-	area = farming_tech
+rgo_tech_3 = {
+	area = rgo_tech
 	year = 2965
 	cost = 10800
 	
 	farm_rgo_size = 0.2
+	mine_rgo_size = 0.2
 	farm_rgo_eff = 0.4
+	mine_rgo_eff = 0.4
 	rgo_goods_output = {
 		timber = 0.2
 	}
@@ -102,18 +84,6 @@ farming_tech_3 = {
 		modifier = {
 			factor = 1.25
 			NOT = { industrial_score = 25 }
-		}
-		modifier = {
-			factor = 2
-			OR = {
-				big_producer = cotton
-				big_producer = dye
-				big_producer = wool
-				big_producer = food
-				big_producer = tobacco
-				big_producer = tea
-				big_producer = horses
-			}
 		}
 		modifier = {
 			factor = 1.1
@@ -122,13 +92,15 @@ farming_tech_3 = {
 	}
 }
 
-farming_tech_4 = {
-	area = farming_tech
+rgo_tech_4 = {
+	area = rgo_tech
 	year = 2980
 	cost = 14400
 	
 	farm_rgo_size = 0.2
+	mine_rgo_size = 0.2
 	farm_rgo_eff = 0.4
+	mine_rgo_eff = 0.4
 	rgo_goods_output = {
 		timber = 0.2
 	}
@@ -145,31 +117,21 @@ farming_tech_4 = {
 			NOT = { industrial_score = 25 }
 		}
 		modifier = {
-			factor = 2
-			OR = {
-				big_producer = cotton
-				big_producer = dye
-				big_producer = wool
-				big_producer = food
-				big_producer = tobacco
-				big_producer = tea
-				big_producer = horses
-			}
-		}
-		modifier = {
 			factor = 1.1
 			year = 3000
 		}
 	}
 }
 
-farming_tech_5 = {
-	area = farming_tech
+rgo_tech_5 = {
+	area = rgo_tech
 	year = 3000
 	cost = 18000
 	
 	farm_rgo_size = 0.4
+	mine_rgo_size = 0.4
 	farm_rgo_eff = 0.8
+	mine_rgo_eff = 0.8
 	rgo_goods_output = {
 		timber = 0.4
 	}
@@ -184,194 +146,6 @@ farming_tech_5 = {
 		modifier = {
 			factor = 1.25
 			NOT = { industrial_score = 25 }
-		}
-		modifier = {
-			factor = 2
-			OR = {
-				big_producer = cotton
-				big_producer = dye
-				big_producer = wool
-				big_producer = food
-				big_producer = tobacco
-				big_producer = tea
-				big_producer = horses
-			}
-		}
-		modifier = {
-			factor = 1.1
-			year = 3010
-		}
-	}
-}
-
-#mining_tech
-mining_tech_1 = {
-	area = mining_tech
-	year = 2954
-	cost = 3600
-	
-	mine_rgo_size = 0.1
-	mine_rgo_eff = 0.2
-	
-	ai_chance = {
-		factor = 1
-		
-		modifier = {
-			factor = 1.1
-			tech_school = commerce_tech_school
-		}
-		modifier = {
-			factor = 1.25
-			NOT = { industrial_score = 25 }
-		}
-		modifier = {
-			factor = 2
-			OR = {
-				big_producer = rock
-				big_producer = coal
-				big_producer = iron
-				big_producer = timber
-			}
-		}
-		modifier = {
-			factor = 1.1
-			year = 2960
-		}
-	}
-}
-
-mining_tech_2 = {
-	area = mining_tech
-	year = 2954
-	cost = 7200
-	
-	mine_rgo_size = 0.1
-	mine_rgo_eff = 0.2
-	
-	ai_chance = {
-		factor = 1
-		
-		modifier = {
-			factor = 1.1
-			tech_school = commerce_tech_school
-		}
-		modifier = {
-			factor = 1.25
-			NOT = { industrial_score = 25 }
-		}
-		modifier = {
-			factor = 2
-			OR = {
-				big_producer = rock
-				big_producer = coal
-				big_producer = iron
-				big_producer = timber
-			}
-		}
-		modifier = {
-			factor = 1.1
-			year = 2965
-		}
-	}
-}
-
-mining_tech_3 = {
-	area = mining_tech
-	year = 2965
-	cost = 10800
-	
-	mine_rgo_size = 0.2
-	mine_rgo_eff = 0.4
-	
-	ai_chance = {
-		factor = 1
-		
-		modifier = {
-			factor = 1.1
-			tech_school = commerce_tech_school
-		}
-		modifier = {
-			factor = 1.25
-			NOT = { industrial_score = 25 }
-		}
-		modifier = {
-			factor = 2
-			OR = {
-				big_producer = rock
-				big_producer = coal
-				big_producer = iron
-				big_producer = timber
-			}
-		}
-		modifier = {
-			factor = 1.1
-			year = 2980
-		}
-	}
-}
-
-mining_tech_4 = {
-	area = mining_tech
-	year = 2980
-	cost = 14400
-	
-	mine_rgo_size = 0.2
-	mine_rgo_eff = 0.4
-	
-	ai_chance = {
-		factor = 1
-		
-		modifier = {
-			factor = 1.1
-			tech_school = commerce_tech_school
-		}
-		modifier = {
-			factor = 1.25
-			NOT = { industrial_score = 25 }
-		}
-		modifier = {
-			factor = 2
-			OR = {
-				big_producer = rock
-				big_producer = coal
-				big_producer = iron
-				big_producer = timber
-			}
-		}
-		modifier = {
-			factor = 1.1
-			year = 3000
-		}
-	}
-}
-
-mining_tech_5 = {
-	area = mining_tech
-	year = 3000
-	cost = 18000
-	
-	mine_rgo_size = 0.4
-	mine_rgo_eff = 0.8
-	
-	ai_chance = {
-		factor = 1
-		
-		modifier = {
-			factor = 1.1
-			tech_school = commerce_tech_school
-		}
-		modifier = {
-			factor = 1.25
-			NOT = { industrial_score = 25 }
-		}
-		modifier = {
-			factor = 2
-			OR = {
-				big_producer = rock
-				big_producer = coal
-				big_producer = iron
-				big_producer = timber
-			}
 		}
 		modifier = {
 			factor = 1.1
@@ -583,6 +357,122 @@ guilds_5 = {
 		modifier = {
 			factor = 1.25
 			industrial_score = 25
+		}
+		modifier = {
+			factor = 1.1
+			year = 3010
+		}
+	}
+}
+
+#trade_tech
+trade_tech_1 = {
+	area = trade_tech
+	year = 2954
+	cost = 3600
+	
+	ai_chance = {
+		factor = 1
+		
+		modifier = {
+			factor = 1.1
+			tech_school = commerce_tech_school
+		}
+		modifier = {
+			factor = 1.25
+			NOT = { industrial_score = 25 }
+		}
+		modifier = {
+			factor = 1.1
+			year = 2960
+		}
+	}
+}
+
+trade_tech_2 = {
+	area = trade_tech
+	year = 2954
+	cost = 7200
+	
+	ai_chance = {
+		factor = 1
+		
+		modifier = {
+			factor = 1.1
+			tech_school = commerce_tech_school
+		}
+		modifier = {
+			factor = 1.25
+			NOT = { industrial_score = 25 }
+		}
+		modifier = {
+			factor = 1.1
+			year = 2965
+		}
+	}
+}
+
+trade_tech_3 = {
+	area = trade_tech
+	year = 2965
+	cost = 10800
+	
+	ai_chance = {
+		factor = 1
+		
+		modifier = {
+			factor = 1.1
+			tech_school = commerce_tech_school
+		}
+		modifier = {
+			factor = 1.25
+			NOT = { industrial_score = 25 }
+		}
+		modifier = {
+			factor = 1.1
+			year = 2980
+		}
+	}
+}
+
+trade_tech_4 = {
+	area = trade_tech
+	year = 2980
+	cost = 14400
+	
+	ai_chance = {
+		factor = 1
+		
+		modifier = {
+			factor = 1.1
+			tech_school = commerce_tech_school
+		}
+		modifier = {
+			factor = 1.25
+			NOT = { industrial_score = 25 }
+		}
+		modifier = {
+			factor = 1.1
+			year = 3000
+		}
+	}
+}
+
+trade_tech_5 = {
+	area = trade_tech
+	year = 3000
+	cost = 18000
+	
+	ai_chance = {
+		factor = 1
+		
+		modifier = {
+			factor = 1.1
+			tech_school = commerce_tech_school
+		}
+		modifier = {
+			factor = 1.25
+			NOT = { industrial_score = 25 }
 		}
 		modifier = {
 			factor = 1.1

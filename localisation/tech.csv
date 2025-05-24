@@ -17,16 +17,21 @@ light_ships;Light Ships;x
 heavy_ships;Heavy Ships;x
 naval_construction;Naval Construction;x
 commerce_tech;Commerce;x
-farming_tech;Farming;x
-mining_tech;Mining;x
+rgo_tech;RGO;x
 guilds;Guilds;x
+trade_tech;Trade;x
 infrastructure_tech;Infrastructure;x
 population_tech;Population;x
 taxes;Taxes;x
+administration_tech;Administration;x
 population;Population;x
-education;Education;x
-magic;Magical Secrets;x
+entertainment_tech;Entertainment;x
 diplomacy_tech;Diplomacy;x
+knowledge_tech;Knowledge;x
+herblore_tech;Herblore;x
+magic;Magical Secrets;x
+education;Education;x
+scholarship_tech;Scholarship;x
 expansion;Expansion;x
 diplomacy;Diplomacy;x
 wilderness;Wilderness;x
@@ -99,21 +104,31 @@ naval_construction_2;Naval Equipment;x
 naval_construction_3;Drydocks;x
 naval_construction_4;Shipyards;x
 naval_construction_5;Grand shipyards;x
-farming_tech_1;Herding & Gathering;x
-farming_tech_2;Farming;x
-farming_tech_3;Granary System;x
-farming_tech_4;Crop Rotation;x
-farming_tech_5;Agricultural Revolution;x
-mining_tech_1;Surface Mining;x
-mining_tech_2;Open-cast Mines;x
-mining_tech_3;Tunnels;x
-mining_tech_4;Shafts;x
-mining_tech_5;Deep Level Extraction;x
+# farming_tech_1;Herding & Gathering;x
+# farming_tech_2;Farming;x
+# farming_tech_3;Granary System;x
+# farming_tech_4;Crop Rotation;x
+# farming_tech_5;Agricultural Revolution;x
+# mining_tech_1;Surface Mining;x
+# mining_tech_2;Open-cast Mines;x
+# mining_tech_3;Tunnels;x
+# mining_tech_4;Shafts;x
+# mining_tech_5;Deep Level Extraction;x
+rgo_tech_1;RGO 1;x
+rgo_tech_2;RGO 2;x
+rgo_tech_3;RGO 3;x
+rgo_tech_4;RGO 4;x
+rgo_tech_5;RGO 5;x
 guilds_1;Trade Associations;x
 guilds_2;Merchant Guilds;x
 guilds_3;Craft Guilds;x
 guilds_4;Mechanisation;x
 guilds_5;Manufacturing;x
+trade_tech_1;Trade 1;x
+trade_tech_2;Trade 2;x
+trade_tech_3;Trade 3;x
+trade_tech_4;Trade 4;x
+trade_tech_5;Trade 5;x
 infrastructure_tech_1;Land Clearing;x
 infrastructure_tech_2;Pathways;x
 infrastructure_tech_3;Roads;x
@@ -124,21 +139,41 @@ taxes_2;Levies & Tithes;x
 taxes_3;Ad-hoc Taxation;x
 taxes_4;Organised Taxation;x
 taxes_5;Tax System;x
+administration_tech_1;Administration 1;x
+administration_tech_2;Administration 2;x
+administration_tech_3;Administration 3;x
+administration_tech_4;Administration 4;x
+administration_tech_5;Administration 5;x
 population_1;Right to Rule;x
 population_2;Administration & Institutions;x
 population_3;Rights & Responsibilities;x
 population_4;Citizenship;x
 population_5;State & Government;x
-education_1;Home Education;x
-education_2;Tutelage;x
-education_3;Ad-hoc Schooling;x
-education_4;Private Schools;x
-education_5;Formal Education;x
+entertainment_tech_1;Entertainment 1;x
+entertainment_tech_2;Entertainment 2;x
+entertainment_tech_3;Entertainment 3;x
+entertainment_tech_4;Entertainment 4;x
+entertainment_tech_5;Entertainment 5;x
+herblore_tech_1;Herblore 1;x
+herblore_tech_2;Herblore 2;x
+herblore_tech_3;Herblore 3;x
+herblore_tech_4;Herblore 4;x
+herblore_tech_5;Herblore 5;x
 magic_1;Magia and Goeteia;x
 magic_2;Sources of Power;x
 magic_3;The Seen and Unseen;x
 magic_4;Artefacts of Lost Ages;x
 magic_5;Enchantment;x
+education_1;Home Education;x
+education_2;Tutelage;x
+education_3;Ad-hoc Schooling;x
+education_4;Private Schools;x
+education_5;Formal Education;x
+scholarship_tech_1;Scholarship 1;x
+scholarship_tech_2;Scholarship 2;x
+scholarship_tech_3;Scholarship 3;x
+scholarship_tech_4;Scholarship 4;x
+scholarship_tech_5;Scholarship 5;x
 expansion_1;Territorial Ambitions;x
 expansion_2;Expansion;x
 expansion_3;Just War;x
@@ -187,6 +222,7 @@ military_theory_tech_research_bonus;Military Theory Tech Research;x
 navy_tech_research_bonus;Navy Tech Research;x
 commerce_tech_research_bonus;Commerce Tech Research;x
 population_tech_research_bonus;Population Tech Research;x
+knowledge_tech_research_bonus;Knowledge Tech Research;x
 diplomacy_tech_research_bonus;Diplomacy Tech Research;x
 ###################;x }
 ##### SCHOOLS #####;x {

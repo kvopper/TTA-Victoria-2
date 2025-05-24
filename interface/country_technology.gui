@@ -108,7 +108,7 @@ guiTypes = {
 		
 		OverlappingElementsBoxType = {
 			name = "school_bonus_icons"
-			position = { x = 340 y = 18 }
+			position = { x = 325 y = 18 }
 			size = { x=300 y= 15 }
 			Orientation = "UPPER_LEFT"
 			format = left
@@ -336,8 +336,8 @@ guiTypes = {
 		
 		iconType = {
 			name = "folder_icon"
-			spriteType = "GFX_tech_fake_icons"
-			position = { x = -5 y = -1 }
+			spriteType = "GFX_tech_folder_strip"
+			position = { x = -2 y = -1 }
 			Orientation = "UPPER_LEFT"
 		}
 		

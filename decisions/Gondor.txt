@@ -1936,7 +1936,7 @@ political_decisions = {
 		}
 		
 		allow = {
-			farming_tech_3 = 1
+			rgo_tech_3 = 1
 			owns = 44
 		}
 		
