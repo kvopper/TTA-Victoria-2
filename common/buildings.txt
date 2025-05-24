@@ -492,6 +492,6 @@ province_selector = {
 	time = 1
 	visibility = yes
 	onmap = no
-	max_level = 6
+	max_level = 1
 	province = yes
 }

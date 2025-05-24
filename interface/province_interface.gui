@@ -1450,38 +1450,8 @@ guiTypes = {
 		Orientation = "UPPER_LEFT"
 		
 		iconType = {
-			name = "build_icon7"
-			spriteType = "GFX_province_generic_strip" # province_selector
-			position = { x= 23 y = -4 }
-			Orientation = "UPPER_LEFT"
-		}
-		iconType = {
-			name = "build_icon6"
-			spriteType = "GFX_province_generic_strip" # public_house
-			position = { x= 23 y = -4 }
-			Orientation = "UPPER_LEFT"
-		}
-		iconType = {
-			name = "build_icon5"
-			spriteType = "GFX_province_generic_strip" # market_square
-			position = { x= 23 y = -4 }
-			Orientation = "UPPER_LEFT"
-		}
-		iconType = {
-			name = "build_icon4"
-			spriteType = "GFX_province_generic_strip" # scriptorium
-			position = { x= 23 y = -4 }
-			Orientation = "UPPER_LEFT"
-		}
-		iconType = {
-			name = "build_icon3"
-			spriteType = "GFX_province_generic_strip" # barracks
-			position = { x= 23 y = -4 }
-			Orientation = "UPPER_LEFT"
-		}
-		iconType = {
-			name = "build_icon2"
-			spriteType = "GFX_province_infra_strip" # road
+			name = "build_icon0"
+			spriteType = "GFX_province_fort_strip" # fort
 			position = { x= 23 y = -4 }
 			Orientation = "UPPER_LEFT"
 		}
@@ -1492,8 +1462,38 @@ guiTypes = {
 			Orientation = "UPPER_LEFT"
 		}
 		iconType = {
-			name = "build_icon0"
-			spriteType = "GFX_province_fort_strip" # fort
+			name = "build_icon2"
+			spriteType = "GFX_province_infra_strip" # road
+			position = { x= 23 y = -4 }
+			Orientation = "UPPER_LEFT"
+		}
+		iconType = {
+			name = "build_icon3"
+			spriteType = "GFX_province_generic_strip" # barracks
+			position = { x= 23 y = -4 }
+			Orientation = "UPPER_LEFT"
+		}
+		iconType = {
+			name = "build_icon4"
+			spriteType = "GFX_province_generic_strip" # scriptorium
+			position = { x= 23 y = -4 }
+			Orientation = "UPPER_LEFT"
+		}
+		iconType = {
+			name = "build_icon5"
+			spriteType = "GFX_province_generic_strip" # market_square
+			position = { x= 23 y = -4 }
+			Orientation = "UPPER_LEFT"
+		}
+		iconType = {
+			name = "build_icon6"
+			spriteType = "GFX_province_generic_strip" # public_house
+			position = { x= 23 y = -4 }
+			Orientation = "UPPER_LEFT"
+		}
+		iconType = {
+			name = "build_icon7"
+			spriteType = "GFX_province_province_selector_strip" # province_selector
 			position = { x= 23 y = -4 }
 			Orientation = "UPPER_LEFT"
 		}
