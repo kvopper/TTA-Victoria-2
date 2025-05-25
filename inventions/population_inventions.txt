@@ -13,6 +13,19 @@ anarrima = {
 	
 	effect = { permanent_prestige = 1 }
 }
+houses_of_healing_invention = {
+	limit = { population_1 = 1 }
+	chance = {
+		base = 0
+		modifier = {
+			factor = 100
+			has_country_flag = houses_of_healing_unlock
+		}
+	}
+	effect = {
+		soldier_to_pop_loss = 0.01
+	}
+}
 ##########################
 # EDUCATION_1 INVENTIONS #
 ##########################

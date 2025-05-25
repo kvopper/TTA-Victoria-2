@@ -936,7 +936,7 @@ houses_of_healing_song = {
 		modifier = {
 			factor = 2
 			accepted_culture = men_culture
-			flavor_1 = 1
+			invention = houses_of_healing_invention
 		}
 		modifier = {
 			factor = 1

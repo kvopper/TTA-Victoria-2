@@ -42,6 +42,16 @@ competition_artillery_desc;Engineering achievements must be rewarded and thus to
 ######################################;x
 menelmacar;Menelmacar;x
 menelmacar_desc;Menelmacar, the Swordsman of the Sky, is one of the constellations of Arda;x
+eagles_invention;Eagles;x
+eagles_invention_desc;From Tolkien Gateway:\n\n"Eagles, also known as Great Eagles, were immense, sentient birds that served as messengers of Manwë. They were capable of speech and often helped Men, Elves and Wizards in their efforts to defeat foes such as Morgoth and Sauron.";x
+fellbeasts_invention;Fellbeasts;x
+fellbeasts_invention_desc;From Tolkien Gateway:\n\n"Fell beasts were huge winged creatures with a beak and claws and were described as similar to carrion birds but much greater and more monstrous than any kind of bird, including Eagles. They were dark and appeared shadow-like even at night. Their body was plain and naked, lacking any quills or feathers. They had a long neck as well as vast pinions consisting of a web-like "hide between horned fingers". They possessed a "fell speed" which allowed them to fly faster than the wind. Furthermore, fell beasts also gave off a stench. In battle they swooped upon prey with their feet to drop foes from the sky, crushed enemies under their sheer weight, and used their vast wings to blow foul gusts of wind.";x
+aerial_combat;Air-to-air combat;x
+aerial_combat_desc;Our enemy's aerial support can now be countered.;x
+soronume;Soronúmë;x
+soronume_desc;Soronúmë, the Eagle of the West, is one of the constellations of Arda;x
+minasdirith_invention;Minasdirith;x
+minasdirith_invention_desc;The Minasdirath, otherwise known as the Order of the Guard, is a military order that all beacon guards belong to. Besides remaining vigilant and protecting/lighting beacons, members of the Minasdirath also conscripts young men from nearby villages and trains them to be beacon-guards to help ease up on Gondor's soldier shortage.;x
 ###########################;x }
 ##### NAVY INVENTIONS #####;x {
 ###########################;x
@@ -52,6 +62,8 @@ shipbuilding_desc;Commercial shipbuilding is key to ensuring a strong naval pres
 ###############################;x
 wilwarin;Wilwarin;x
 wilwarin_desc;Wilwarin, the Butterfly, is one of the constellations of Arda;x
+lembas_bread_invention;Lembas Bread;
+lembas_bread_invention_desc;From Tolkien Gateway:\n\n"Lembas, Elvish Waybread were very nutritious, stayed fresh for months when wrapped in leaves, and were used for sustenance on long journeys. Lembas had a brownish colour on the outside and a cream colour on the inside.\n\nAccording to Gimli, it was a food of the same kind as Cram, although one of the Elves of Lothlórien commented that it was more pleasant, and more strengthening than any food made by Men.\n\nLike other products of the Elves, it was offensive to evil creatures; Gollum refused outright to eat of it. When Frodo was captured by Orcs in Mordor, the Orcs hated the look of the lembas even more than Gollum had.";x
 valacirca;Valacirca;x
 valacirca_desc;Valacirca, the Sickle of the Valar, is one of the constellations of Arda;x
 great_roads;Great Roads;x
@@ -61,6 +73,8 @@ great_roads_desc;The most well-traversed roads in Middle-Earth are known as "Gre
 #################################;x
 anarrima;Anarríma;x
 anarrima_desc;Anarríma, Sun-border, is one of the constellations of Arda;x
+houses_of_healing_invention;Houses of Healing;x
+houses_of_healing_invention_desc;From Tolkien Gateway:\n\n"The Houses of Healing was an infirmary in Minas Tirith.\n\nThe Houses were surrounded by lawns and trees, set near to the Citadel-gate and the southward wall in the sixth circle of Minas Tirith. The chief healer was the Warden of the Houses of Healing.";x
 scriptoriums;Scriptoriums;x
 scriptoriums_desc;Scriptoriums are dedicated places for scholars to copy and share manuscripts.;x
 magical_secrets;Magical Secrets;x
@@ -204,12 +218,3 @@ ioreths_song;Ioreth's song;x
 ioreths_song_desc;On winds and waters may you cross, See mountains white and blue. But on your road, let's not forget, The love I have for you Dance on beaches in Anfalas, Sleep in moonlit fields of view, May you cross another golden age, With preciousness free-flowing, With Halfling, Elves, and Dwarves engage, Their wisdom on you bestowing.;x
 fires_of_war;Fires of War;x
 fires_of_war_desc;Stone by stone... Cracked, crushed, fallen... Beauty burned, erased... But not forgotten... I’ll take your melodies... May your last breath... Fill the air with embers... I... inhale. In their blood, I will stand! Let the waning light of Man, Cast my shadow on the Fires of War, Till our time burns away, Till our embers fade to grey, Cast my shadow on the Fires of War!;x
-##############################;x }
-##### FLAVOUR INVENTIONS #####;x {
-##############################;x
-eagles_aerial_combat;Air-to-air combat;x
-eagles_aerial_combat_desc;Our enemy's aerial support can now be countered.;x
-fellbeasts_aerial_combat;Air-to-air combat;x
-fellbeasts_aerial_combat_desc;Our enemy's aerial support can now be countered.;x
-soronume;Soronúmë;x
-soronume_desc;Soronúmë, the Eagle of the West, is one of the constellations of Arda;x

@@ -1,6 +1,6 @@
-######################
-# FARMING INVENTIONS #
-######################
+##################
+# RGO INVENTIONS #
+##################
 wilwarin = {
 	limit = { rgo_tech_1 = 1 }
 	chance = {
@@ -12,6 +12,23 @@ wilwarin = {
 	}
 	
 	effect = { permanent_prestige = 1 }
+}
+lembas_bread_invention = {
+	limit = { rgo_tech_1 = 1 }
+	chance = {
+		base = 0
+		modifier = {
+			factor = 100
+			has_country_flag = lembas_bread_unlock
+		}
+	}
+	
+	effect = {
+		rgo_output = 0.05
+		army_base = {
+			supply_consumption = -0.1
+		}
+	}
 }
 valacirca = {
 	limit = { rgo_tech_2 = 1 }

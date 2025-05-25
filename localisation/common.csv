@@ -4797,7 +4797,7 @@ INVENTION_1;Major Discovery;x
 INVENTION_2;Loremasters in our realm have discovered;x
 INVENTION_3;$INVENTION$;x
 INVENTION_4;$DESC$;x
-INVENTION_5;EFFECT:;x
+INVENTION_5;§YEFFECT§!:;x
 INVENTION_6;$EFFECT$;x
 INVENTION_LOG;We have discovered how $INVENTION$ works.;x
 INVENTION_BTN1;OK;x

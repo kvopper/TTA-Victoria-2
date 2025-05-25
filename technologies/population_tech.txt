@@ -159,9 +159,9 @@ taxes_5 = {
 	}
 }
 
-#administration
-administration_1 = {
-	area = administration
+#administration_tech
+administration_tech_1 = {
+	area = administration_tech
 	year = 2954
 	cost = 3600
 	
@@ -192,8 +192,8 @@ administration_1 = {
 	}
 }
 
-administration_2 = {
-	area = administration
+administration_tech_2 = {
+	area = administration_tech
 	year = 2954
 	cost = 7200
 	
@@ -224,8 +224,8 @@ administration_2 = {
 	}
 }
 
-administration_3 = {
-	area = administration
+administration_tech_3 = {
+	area = administration_tech
 	year = 2965
 	cost = 10800
 	
@@ -256,8 +256,8 @@ administration_3 = {
 	}
 }
 
-administration_4 = {
-	area = administration
+administration_tech_4 = {
+	area = administration_tech
 	year = 2980
 	cost = 14400
 	
@@ -288,8 +288,8 @@ administration_4 = {
 	}
 }
 
-administration_5 = {
-	area = administration
+administration_tech_5 = {
+	area = administration_tech
 	year = 3000
 	cost = 18000
 	

@@ -13,3 +13,86 @@ menelmacar = {
 	
 	effect = { permanent_prestige = 1 }
 }
+eagles_invention = {
+	limit = { army_tactics_5 = 1 }
+	chance = {
+		base = 0
+		modifier = {
+			factor = 100
+			has_country_flag = eagles_unlock
+			NOT = { invention = fellbeasts_invention }
+		}
+	}
+	effect = {
+		prestige = 0.05
+		gas_attack = yes
+	}
+}
+
+fellbeasts_invention = {
+	limit = { army_tactics_5 = 1 }
+	chance = {
+		base = 0
+		modifier = {
+			factor = 100
+			has_country_flag = fellbeasts_unlock
+			NOT = { invention = eagles_invention }
+		}
+	}
+	effect = {
+		prestige = 0.05
+		gas_attack = yes
+	}
+}
+aerial_combat = {
+	limit = { army_tactics_5 = 1 }
+	chance = {
+		base = 0
+		
+		modifier = {
+			factor = 1
+			war = yes
+			OR = {
+				invention = eagles_invention
+				invention = fellbeasts_invention
+			}
+			war_countries = {
+				OR = {
+					invention = eagles_invention
+					invention = fellbeasts_invention
+				}
+			}
+		}
+	}
+	
+	effect = { gas_defence = yes }
+}
+soronume = {
+	limit = { army_tactics_5 = 1 }
+	chance = {
+		base = 0
+		modifier = {
+			factor = 1
+			invention = astronomy
+		}
+	}
+	
+	effect = { permanent_prestige = 1 }
+}
+minasdirith_invention = {
+	limit = { training_1 = 1 }
+	chance = {
+		base = 0
+		modifier = {
+			factor = 100
+			has_country_flag = minasdirith_unlock
+		}
+	}
+	
+	effect = {
+		rgo_output = 0.05
+		army_base = {
+			supply_consumption = -0.1
+		}
+	}
+}

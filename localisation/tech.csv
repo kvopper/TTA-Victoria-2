@@ -36,11 +36,6 @@ expansion;Expansion;x
 diplomacy;Diplomacy;x
 wilderness;Wilderness;x
 culture;Culture;x
-flavor_tech;Unique;x
-flavor_cat_1;Unique;x
-flavor_cat_2;Unique;x
-flavor_cat_3;Unique;x
-flavor_cat_4;Unique;x
 ########################;x }
 ##### TECHNOLOGIES #####;x {
 ########################;x
@@ -194,26 +189,6 @@ culture_2;Period Music;x
 culture_3;Marching Songs;x
 culture_4;Lamentations;x
 culture_5;Last Songs;x
-flavor_1;Houses of Healing;x
-flavor_2; ;x
-flavor_3; ;x
-flavor_4; ;x
-flavor_5; ;x
-flavor_6;Lembas Bread;x
-flavor_7; ;x
-flavor_8; ;x
-flavor_9; ;x
-flavor_10; ;x
-flavor_11;Minasdirath;x
-flavor_12; ;x
-flavor_13; ;x
-flavor_14; ;x
-flavor_15; ;x
-flavor_16; ;x
-flavor_17; ;x
-flavor_18; ;x
-flavor_19;Eagles;x
-flavor_20;Fellbeasts;x
 ############################;x }
 ##### RESEARCH BONUSES #####;x {
 ############################;x
