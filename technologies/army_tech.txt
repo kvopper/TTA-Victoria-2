@@ -1,4 +1,4 @@
-#infantry_tech
+#infantry_tech -- base 6, stat boost of 2, 4, 6, 8, 10 = 36 total stats (18 for levies [infantry])
 infantry_tech_1 = {
 	area = infantry_tech
 	year = 2954
@@ -6,20 +6,13 @@ infantry_tech_1 = {
 	unciv_military = yes
 
 	pikemen = {
-		attack = 2
-		defence = 4
-		supply_consumption = 0.1
+		default_organisation = 2
 	}
 	swordsmen = {
-		attack = 3
-		defence = 3
-		supply_consumption = 0.1
+		default_organisation = 2
 	}
-	
 	infantry = {
-		attack = 2
-		defence = 2
-		supply_consumption = 0.1
+		default_organisation = 2
 	}
 	
 	ai_chance = {
@@ -72,20 +65,13 @@ infantry_tech_2 = {
 	unciv_military = yes
 
 	pikemen = {
-		attack = 2
-		defence = 4
-		supply_consumption = 0.1
+		default_organisation = 3
 	}
 	swordsmen = {
-		attack = 3
-		defence = 3
-		supply_consumption = 0.1
+		default_organisation = 3
 	}
-	
 	infantry = {
-		attack = 2
-		defence = 2
-		supply_consumption = 0.1
+		default_organisation = 3
 	}
 	
 	ai_chance = {
@@ -138,20 +124,13 @@ infantry_tech_3 = {
 	unciv_military = yes
 
 	pikemen = {
-		attack = 4
-		defence = 8
-		supply_consumption = 0.2
+		default_organisation = 5
 	}
 	swordsmen = {
-		attack = 6
-		defence = 6
-		supply_consumption = 0.2
+		default_organisation = 5
 	}
-	
 	infantry = {
-		attack = 4
-		defence = 4
-		supply_consumption = 0.2
+		default_organisation = 5
 	}
 	
 	ai_chance = {
@@ -204,20 +183,13 @@ infantry_tech_4 = {
 	unciv_military = yes
 
 	pikemen = {
-		attack = 4
-		defence = 8
-		supply_consumption = 0.2
+		default_organisation = 5
 	}
 	swordsmen = {
-		attack = 6
-		defence = 6
-		supply_consumption = 0.2
+		default_organisation = 5
 	}
-	
 	infantry = {
-		attack = 4
-		defence = 4
-		supply_consumption = 0.2
+		default_organisation = 5
 	}
 	
 	ai_chance = {
@@ -270,20 +242,13 @@ infantry_tech_5 = {
 	unciv_military = yes
 
 	pikemen = {
-		attack = 8
-		defence = 12
-		supply_consumption = 0.4
+		default_organisation = 5
 	}
 	swordsmen = {
-		attack = 12
-		defence = 12
-		supply_consumption = 0.4
+		default_organisation = 5
 	}
-	
 	infantry = {
-		attack = 8
-		defence = 8
-		supply_consumption = 0.4
+		default_organisation = 5
 	}
 	
 	ai_chance = {
@@ -329,7 +294,7 @@ infantry_tech_5 = {
 	}
 }
 
-#archer_tech
+#archer_tech -- base 2, stat boost of 1, 1.5, 1,5, 2, 3 = 11 total stats (500% support max, total backline 55)
 archer_tech_1 = {
 	area = archer_tech
 	year = 2954
@@ -337,8 +302,7 @@ archer_tech_1 = {
 	unciv_military = yes
 
 	archers = {
-		attack = 0.5
-		defence = 0.5
+		default_organisation = 2
 	}
 	
 	ai_chance = {
@@ -391,8 +355,7 @@ archer_tech_2 = {
 	unciv_military = yes
 
 	archers = {
-		attack = 0.5
-		defence = 0.5
+		default_organisation = 3
 	}
 	
 	ai_chance = {
@@ -445,8 +408,7 @@ archer_tech_3 = {
 	unciv_military = yes
 
 	archers = {
-		attack = 0.5
-		defence = 0.5
+		default_organisation = 5
 	}
 	
 	ai_chance = {
@@ -499,8 +461,7 @@ archer_tech_4 = {
 	unciv_military = yes
 
 	archers = {
-		attack = 0.5
-		defence = 0.5
+		default_organisation = 5
 	}
 	
 	ai_chance = {
@@ -553,8 +514,7 @@ archer_tech_5 = {
 	unciv_military = yes
 
 	archers = {
-		attack = 1
-		defence = 1
+		default_organisation = 5
 	}
 	
 	ai_chance = {
