@@ -286,7 +286,7 @@ bodkin_arrows = {
 	}
 	effect = {
 		archers = {
-			support = 0.5
+			support = 0.25
 			supply_consumption = 0.3
 		}
 	}
@@ -325,7 +325,7 @@ war_arrows = {
 	}
 	effect = {
 		archers = {
-			support = 0.25
+			support = 0.5
 			supply_consumption = 0.3
 		}
 	}
