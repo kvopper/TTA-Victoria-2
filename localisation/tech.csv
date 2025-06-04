@@ -21,10 +21,10 @@ rgo_tech;RGO;x
 guilds;Guilds;x
 trade_tech;Trade;x
 infrastructure_tech;Infrastructure;x
-population_tech;Population;x
+population_tech;Society;x
 taxes;Taxes;x
 administration_tech;Administration;x
-population;Population;x
+population;Government;x
 entertainment_tech;Entertainment;x
 diplomacy_tech;Diplomacy;x
 knowledge_tech;Knowledge;x
@@ -196,7 +196,7 @@ army_tech_research_bonus;Army Tech Research;x
 military_theory_tech_research_bonus;Military Theory Tech Research;x
 navy_tech_research_bonus;Navy Tech Research;x
 commerce_tech_research_bonus;Commerce Tech Research;x
-population_tech_research_bonus;Population Tech Research;x
+population_tech_research_bonus;Society Tech Research;x
 knowledge_tech_research_bonus;Knowledge Tech Research;x
 diplomacy_tech_research_bonus;Diplomacy Tech Research;x
 ###################;x }
