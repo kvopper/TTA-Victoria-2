@@ -345,6 +345,30 @@ fire_arrows = {
 ###########################
 # CAVALRY_TECH INVENTIONS #
 ###########################
+cavalry_tech_1_equipment = {
+	limit = { cavalry_tech_1 = 1 }
+	chance = {
+		base = 2
+	}
+	effect = {
+		heavy_cavalry = {
+			attack = 1.5
+			defence = 0.5
+			supply_consumption = 0.1
+		}
+		horse_archers = {
+			attack = 1
+			defence = 1
+			support = 0.2
+			supply_consumption = 0.1
+		}
+		scouts = {
+			attack = 1
+			defence = 1
+			supply_consumption = 0.1
+		}
+	}
+}
 animal_husbandry = {
 	limit = { cavalry_tech_1 = 1 }
 	chance = {
@@ -352,6 +376,30 @@ animal_husbandry = {
 	}
 	effect = {
 		farm_rgo_eff = 0.05
+	}
+}
+cavalry_tech_2_equipment = {
+	limit = { cavalry_tech_2 = 1 }
+	chance = {
+		base = 2
+	}
+	effect = {
+		heavy_cavalry = {
+			attack = 3
+			defence = 1
+			supply_consumption = 0.1
+		}
+		horse_archers = {
+			attack = 1
+			defence = 1
+			support = 0.2
+			supply_consumption = 0.1
+		}
+		scouts = {
+			attack = 2
+			defence = 1
+			supply_consumption = 0.1
+		}
 	}
 }
 standardised_horse_rearing = {
@@ -365,6 +413,41 @@ standardised_horse_rearing = {
 		}
 	}
 }
+cavalry_tech_3_equipment = {
+	limit = { cavalry_tech_3 = 1 }
+	chance = {
+		base = 2
+	}
+	effect = {
+		heavy_cavalry = {
+			attack = 4
+			defence = 2
+			supply_consumption = 0.2
+		}
+		horse_archers = {
+			attack = 2
+			defence = 2
+			support = 0.2
+			supply_consumption = 0.2
+		}
+		scouts = {
+			attack = 2
+			defence = 2
+			supply_consumption = 0.2
+		}
+	}
+}
+outriders = {
+	limit = { cavalry_tech_3 = 1 }
+	chance = {
+		base = 1
+	}
+	effect = {
+		scouts = {
+			reconnaissance = 1
+		}
+	}
+}
 competition_cavalry = {
 	limit = { cavalry_tech_3 = 1 }
 	chance = {
@@ -374,9 +457,139 @@ competition_cavalry = {
 		permanent_prestige = 1
 	}
 }
+cavalry_tech_4_equipment = {
+	limit = { cavalry_tech_4 = 1 }
+	chance = {
+		base = 2
+	}
+	effect = {
+		heavy_cavalry = {
+			attack = 5
+			defence = 3
+			support = 0.2
+			supply_consumption = 0.3
+		}
+		horse_archers = {
+			attack = 2
+			defence = 2
+			supply_consumption = 0.3
+		}
+		scouts = {
+			attack = 3
+			defence = 3
+			supply_consumption = 0.3
+		}
+	}
+}
+cavalry_tech_5_equipment = {
+	limit = { cavalry_tech_5 = 1 }
+	chance = {
+		base = 2
+	}
+	effect = {
+		heavy_cavalry = {
+			attack = 6
+			defence = 4
+			supply_consumption = 0.3
+		}
+		horse_archers = {
+			attack = 3
+			defence = 3
+			support = 0.2
+			supply_consumption = 0.3
+		}
+		scouts = {
+			attack = 4
+			defence = 4
+			supply_consumption = 0.3
+		}
+	}
+}
+maeras_riders = {
+	limit = { cavalry_tech_5 = 1 }
+	chance = {
+		base = 2
+		modifier = {
+			factor = 8
+			is_culture_group = rohirrim
+		}
+	}
+	effect = {
+		scouts = {
+			reconnaissance = 1
+		}
+	}
+}
 #############################
 # ARTILLERY_TECH INVENTIONS #
 #############################
+artillery_tech_1_equipment = {
+	limit = { artillery_tech_1 = 1 }
+	chance = {
+		base = 2
+	}
+	effect = {
+		artillery = {
+			attack = 1
+			defence = 1
+			supply_consumption = 0.1
+		}
+	}
+}
+artillery_tech_2_equipment = {
+	limit = { artillery_tech_2 = 1 }
+	chance = {
+		base = 2
+	}
+	effect = {
+		artillery = {
+			attack = 1
+			defence = 1
+			supply_consumption = 0.1
+		}
+	}
+}
+artillery_tech_3_equipment = {
+	limit = { artillery_tech_3 = 1 }
+	chance = {
+		base = 2
+	}
+	effect = {
+		artillery = {
+			attack = 2
+			defence = 2
+			siege = 1
+			supply_consumption = 0.2
+		}
+	}
+}
+artillery_tech_4_equipment = {
+	limit = { artillery_tech_4 = 1 }
+	chance = {
+		base = 2
+	}
+	effect = {
+		artillery = {
+			attack = 2
+			defence = 2
+			supply_consumption = 0.3
+		}
+	}
+}
+artillery_tech_5_equipment = {
+	limit = { artillery_tech_5 = 1 }
+	chance = {
+		base = 2
+	}
+	effect = {
+		artillery = {
+			attack = 3
+			defence = 3
+			siege = 1
+			supply_consumption = 0.3
+		}
+	}
+}
 standardised_artillery_construction = {
 	limit = { artillery_tech_2 = 1 }
 	chance = {

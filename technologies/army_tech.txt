@@ -560,7 +560,9 @@ archer_tech_5 = {
 	}
 }
 
-#cavalry_tech
+#cavalry_tech -- heavy cav 6, stat boost of 2, 4, 6, 8, 10 = 36 total stats
+			# -- horse arc 6, stat boost of 2, 2, 4, 4, 6 = 24 total stats (200% support max, total backline 48)
+			# -- scouts    3, stat boost of 2, 3, 4, 6, 8 = 26 total stats
 cavalry_tech_1 = {
 	area = cavalry_tech
 	year = 2954
@@ -568,21 +570,13 @@ cavalry_tech_1 = {
 	unciv_military = yes
 
 	heavy_cavalry = {
-		attack = 4
-		defence = 1
-		supply_consumption = 0.1
+		default_organisation = 2
 	}
-	
 	horse_archers = {
-		attack = 2
-		defence = 2
-		supply_consumption = 0.1
+		default_organisation = 2
 	}
-	
 	scouts = {
-		attack = 3
-		defence = 1
-		supply_consumption = 0.1
+		default_organisation = 2
 	}
 	
 	ai_chance = {
@@ -635,21 +629,13 @@ cavalry_tech_2 = {
 	unciv_military = yes
 
 	heavy_cavalry = {
-		attack = 4
-		defence = 1
-		supply_consumption = 0.1
+		default_organisation = 3
 	}
-	
 	horse_archers = {
-		attack = 2
-		defence = 2
-		supply_consumption = 0.1
+		default_organisation = 3
 	}
-	
 	scouts = {
-		attack = 3
-		defence = 1
-		supply_consumption = 0.1
+		default_organisation = 3
 	}
 	
 	ai_chance = {
@@ -702,22 +688,13 @@ cavalry_tech_3 = {
 	unciv_military = yes
 
 	heavy_cavalry = {
-		attack = 8
-		defence = 4
-		supply_consumption = 0.2
+		default_organisation = 5
 	}
-	
 	horse_archers = {
-		attack = 4
-		defence = 4
-		supply_consumption = 0.2
+		default_organisation = 5
 	}
-	
 	scouts = {
-		attack = 6
-		defence = 2
-		supply_consumption = 0.2
-		reconnaissance = 1
+		default_organisation = 5
 	}
 	
 	ai_chance = {
@@ -770,21 +747,13 @@ cavalry_tech_4 = {
 	unciv_military = yes
 
 	heavy_cavalry = {
-		attack = 8
-		defence = 4
-		supply_consumption = 0.2
+		default_organisation = 5
 	}
-	
 	horse_archers = {
-		attack = 4
-		defence = 4
-		supply_consumption = 0.2
+		default_organisation = 5
 	}
-	
 	scouts = {
-		attack = 6
-		defence = 2
-		supply_consumption = 0.2
+		default_organisation = 5
 	}
 	
 	ai_chance = {
@@ -837,21 +806,13 @@ cavalry_tech_5 = {
 	unciv_military = yes
 
 	heavy_cavalry = {
-		attack = 16
-		defence = 8
-		supply_consumption = 0.2
+		default_organisation = 5
 	}
-	
 	horse_archers = {
-		attack = 8
-		defence = 8
-		supply_consumption = 0.2
+		default_organisation = 5
 	}
-	
 	scouts = {
-		attack = 12
-		defence = 4
-		supply_consumption = 0.2
+		default_organisation = 5
 	}
 	
 	ai_chance = {
@@ -897,7 +858,7 @@ cavalry_tech_5 = {
 	}
 }
 
-#artillery_tech
+#artillery_tech -- 2, stat boost of 2, 2, 4, 4, 6 = 20 (200% support max, total backline 40)
 artillery_tech_1 = {
 	area = artillery_tech
 	year = 2954
@@ -905,8 +866,7 @@ artillery_tech_1 = {
 	unciv_military = yes
 
 	artillery = {
-		supply_consumption = 0.1
-		siege = 1
+		default_organisation = 2
 	}
 	
 	ai_chance = {
@@ -955,9 +915,7 @@ artillery_tech_2 = {
 	unciv_military = yes
 
 	artillery = {
-		attack = 1
-		defence = 1
-		supply_consumption = 0.1
+		default_organisation = 3
 	}
 	
 	ai_chance = {
@@ -1006,9 +964,7 @@ artillery_tech_3 = {
 	unciv_military = yes
 
 	artillery = {
-		attack = 1
-		defence = 1
-		supply_consumption = 0.2
+		default_organisation = 5
 	}
 	
 	ai_chance = {
@@ -1057,9 +1013,7 @@ artillery_tech_4 = {
 	unciv_military = yes
 
 	artillery = {
-		attack = 1
-		defence = 1
-		supply_consumption = 0.2
+		default_organisation = 5
 	}
 	
 	ai_chance = {
@@ -1108,10 +1062,7 @@ artillery_tech_5 = {
 	unciv_military = yes
 
 	artillery = {
-		attack = 2
-		defence = 2
-		siege = 1
-		supply_consumption = 0.4
+		default_organisation = 5
 	}
 	
 	ai_chance = {
