@@ -5,8 +5,10 @@ fortifications_1 = {
 	cost = 3600
 	unciv_military = yes
 
-	dig_in_cap = 1
 	activate_building = fort
+	army_base = {
+		supply_consumption = 0.1
+	}
 	
 	ai_chance = {
 		factor = 1
@@ -59,8 +61,10 @@ fortifications_2 = {
 	cost = 7200
 	unciv_military = yes
 
-	dig_in_cap = 1
 	max_fort = 1
+	army_base = {
+		supply_consumption = 0.1
+	}
 	
 	ai_chance = {
 		factor = 1
@@ -113,8 +117,10 @@ fortifications_3 = {
 	cost = 10800
 	unciv_military = yes
 
-	dig_in_cap = 1
 	max_fort = 1
+	army_base = {
+		supply_consumption = 0.2
+	}
 	
 	ai_chance = {
 		factor = 1
@@ -167,7 +173,10 @@ fortifications_4 = {
 	cost = 14400
 	unciv_military = yes
 
-	dig_in_cap = 1
+	max_fort = 1
+	army_base = {
+		supply_consumption = 0.3
+	}
 	
 	ai_chance = {
 		factor = 1
@@ -214,7 +223,10 @@ fortifications_5 = {
 	cost = 18000
 	unciv_military = yes
 
-	dig_in_cap = 1
+	max_fort = 1
+	army_base = {
+		supply_consumption = 0.3
+	}
 	
 	ai_chance = {
 		factor = 1
@@ -264,20 +276,6 @@ army_tactics_1 = {
 
 	morale = 0.25
 	military_tactics = 0.25
-	combat_width = 1
-	
-	army_base = {
-		default_organisation = 5
-		supply_consumption = 0.1
-	}
-	
-	heavy_cavalry = {
-		default_organisation = 5
-	}
-	
-	pikemen = {
-		default_organisation = 5
-	}
 	
 	ai_chance = {
 		factor = 1
@@ -326,20 +324,6 @@ army_tactics_2 = {
 
 	morale = 0.25
 	military_tactics = 0.25
-	combat_width = 2
-	
-	army_base = {
-		default_organisation = 5
-		supply_consumption = 0.1
-	}
-	
-	heavy_cavalry = {
-		default_organisation = 5
-	}
-	
-	pikemen = {
-		default_organisation = 5
-	}
 	
 	ai_chance = {
 		factor = 1
@@ -388,20 +372,6 @@ army_tactics_3 = {
 
 	morale = 0.25
 	military_tactics = 0.25
-	combat_width = 4
-	
-	army_base = {
-		default_organisation = 5
-		supply_consumption = 0.2
-	}
-	
-	heavy_cavalry = {
-		default_organisation = 5
-	}
-	
-	pikemen = {
-		default_organisation = 5
-	}
 	
 	ai_chance = {
 		factor = 1
@@ -450,20 +420,6 @@ army_tactics_4 = {
 
 	morale = 0.25
 	military_tactics = 0.25
-	combat_width = 6
-	
-	army_base = {
-		default_organisation = 5
-		supply_consumption = 0.2
-	}
-	
-	heavy_cavalry = {
-		default_organisation = 5
-	}
-	
-	pikemen = {
-		default_organisation = 5
-	}
 	
 	ai_chance = {
 		factor = 1
@@ -511,22 +467,7 @@ army_tactics_5 = {
 	unciv_military = yes
 
 	morale = 0.5
-	military_tactics = 0.5
-	combat_width = 7
-	
-	army_base = {
-		maneuver = 1
-		default_organisation = 10
-		supply_consumption = 0.4
-	}
-	
-	heavy_cavalry = {
-		default_organisation = 10
-	}
-	
-	pikemen = {
-		default_organisation = 10
-	}
+	military_tactics = 0.25
 	
 	ai_chance = {
 		factor = 1

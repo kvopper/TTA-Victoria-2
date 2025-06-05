@@ -1,6 +1,72 @@
-############################
+#############################
+# FORTIFICATIONS INVENTIONS #
+#############################
+caltrops = {
+	limit = { fortifications_1 = 1 }
+	chance = {
+		base = 2
+	}
+	effect = {
+		dig_in_cap = 1
+	}
+}
+archer_towers = {
+	limit = { fortifications_2 = 1 }
+	chance = {
+		base = 2
+	}
+	effect = {
+		dig_in_cap = 1
+	}
+}
+flaming_bolts = {
+	limit = { fortifications_3 = 1 }
+	chance = {
+		base = 2
+	}
+	effect = {
+		dig_in_cap = 1
+	}
+}
+boiling_tar = {
+	limit = { fortifications_4 = 1 }
+	chance = {
+		base = 2
+	}
+	effect = {
+		dig_in_cap = 1
+	}
+}
+archers_stake = {
+	limit = { fortifications_5 = 1 }
+	chance = {
+		base = 2
+	}
+	effect = {
+		dig_in_cap = 1
+	}
+}
+chevaux_de_frise = {
+	limit = { fortifications_5 = 1 }
+	chance = {
+		base = 2
+	}
+	effect = {
+		dig_in_cap = 1
+	}
+}
+field_fortifications = {
+	limit = { fortifications_5 = 1 }
+	chance = {
+		base = 2
+	}
+	effect = {
+		max_fort = 1
+	}
+}
+###########################
 # ARMY_TACTICS INVENTIONS #
-############################
+###########################
 menelmacar = {
 	limit = { army_tactics_1 = 1 }
 	chance = {
@@ -12,6 +78,52 @@ menelmacar = {
 	}
 	
 	effect = { permanent_prestige = 1 }
+}
+forced_march = {
+	limit = { army_tactics_2 = 1 }
+	chance = {
+		base = 2
+	}
+	
+	effect = {
+		army_base = {
+			maximum_speed = 1
+		}
+	}
+}
+focused_attacks = {
+	limit = { army_tactics_3 = 1 }
+	chance = {
+		base = 2
+	}
+	effect = {
+		army_base = {
+			maneuver = 1
+		}
+	}
+}
+rapid_redeployment = {
+	limit = { army_tactics_4 = 1 }
+	chance = {
+		base = 2
+	}
+	
+	effect = {
+		army_base = {
+			maximum_speed = 1
+		}
+	}
+}
+battlefield_mobility = {
+	limit = { army_tactics_5 = 1 }
+	chance = {
+		base = 2
+	}
+	effect = {
+		army_base = {
+			maneuver = 1
+		}
+	}
 }
 eagles_invention = {
 	limit = { army_tactics_5 = 1 }
@@ -79,6 +191,9 @@ soronume = {
 	
 	effect = { permanent_prestige = 1 }
 }
+#######################
+# TRAINING INVENTIONS #
+#######################
 minasdirith_invention = {
 	limit = { training_1 = 1 }
 	chance = {
