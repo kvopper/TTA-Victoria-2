@@ -806,7 +806,7 @@ RD;rd;x
 ##################################################;;x
 TRAIT_ATTACK;Attack;x
 TRAIT_DEFEND;Defence;x
-TRAIT_MORALE;Morale;x
+TRAIT_MORALE;Organization Regain;x
 TRAIT_ORGANISATION;Organisation;x
 TRAIT_RECONAISSANCE;Reconnaissance;x
 TRAIT_SPEED;Speed;x
@@ -1010,7 +1010,7 @@ MILITARY_CREATE_ADMIRAL;Create Admiral($VALUE$);x
 MILITARY_AUTOCREATE;Auto-Create Leaders;x
 MILITARY_AUTOASSIGN;Auto-Assign Leaders;x
 MILITARY_LEADER_TOOLTIP;§Y$NAME$§W\nSkill: §Y$SKILL$§W;x
-MILITARY_MORALE_TOOLTIP;Morale: §Y$VALUE$%§W;x
+MILITARY_MORALE_TOOLTIP;Organization Regain: §Y$VALUE$%§W;x
 MILITARY_MOVING_TOOLTIP;This unit is moving.\nIt will arrive in §Y$LOCATION$§W at §Y$DATE$§W.;x
 MILITARY_DIGIN_TOOLTIP;This unit digging in.\nSo far, it has spent §Y$DAYS$ days§W doing so.;x
 MILITARY_GENERAL_TOOLTIP;General;x
@@ -2810,7 +2810,7 @@ GAIN;Gain;x
 LOSE;Lose;x
 SM_COUNTERS;Use Counters;x
 NO_COMMANDER;(No Commander);x
-MORALE;Morale;x
+MORALE;Organization Regain;x
 Owned by $owner$, but currently occupied by $control$;Owned by $owner$, but currently occupied by $control$;x
 Owned by $owner$.;Owned by $owner$.;x
 CATEGORY;($TYPE$)\n;x
@@ -2901,7 +2901,7 @@ pti;Permanent Terra Incognita;x
 nobuilding;nobuilding;x
 nogovernment;nogovernment;x
 nogovernment_ruler;nogovernment_ruler;x
-COMBAT_MORALE;Morale:;x
+COMBAT_MORALE;Organization Regain:;x
 COMBAT_BREAKING;Breaking;x
 MAPMODE;Map-mode;x
 LEDGER_CORE;Core;x
@@ -3694,7 +3694,7 @@ ENABLE_BUILDING_TECH;Allows;x
 REPAIR_RATE_TECH;Repair Rate;x
 ACTIVATE_GOODS;Activate: ;x
 TECH_TAX_EFF;Tax Efficiency: ;x
-MORALE_TECH;Morale;x
+MORALE_TECH;Organization Regain;x
 REINFORCE_TECH;Reinforcement;x
 SOLDIER_TO_POP_LOSS_TECH;Military Hospitals;x
 REGULAR_EXP_TECH;Reg. Experience;x
@@ -5127,7 +5127,7 @@ CONFIRM_CREATE_STATE_DESC2;(All local effects will be removed.);x
 UNIT_ENABLE_REBEL_HUNT;Hunt Rebels;x
 UNIT_DISABLE_REBEL_HUNT;(hunting rebels);x
 UNIT_REBEL_HUNT_WILL_HUNT;§GArmy is ready for rebel hunting.§!;x
-UNIT_REBEL_HUNT_LOW_MORALE;§RArmy has too low morale, and will not hunt any rebels right now.§!;x
+UNIT_REBEL_HUNT_LOW_MORALE;§RArmy has too low organization, and will not hunt any rebels right now.§!;x
 UNIT_REBEL_HUNT_NO_VALID;§REnemy rebels has been detected, but our army will not attack them, because they are too strong for us, or couldn't find a safe path to get there.§!;x
 NOT_RELEASE_AT_WAR;§R(It is not possible to release realms when at war.)§W;x
 COLONY_SUCCESS_5;§Y$PRESTIGE$§! prestige gained.;x
@@ -5174,7 +5174,7 @@ CONFIRM_REMOVE_COLONY_NF_DESC;Your colonization progress will be lost. Do you wa
 CB_ALLOWED_INSTALL_COMMUNIST_GOV_TYPE;Install communist government;x
 po_install_communist_gov_type;Install communist government;x
 CB_ALLOWED_UNINSTALL_COMMUNIST_GOV_TYPE;Uninstall communist government;x
-PRESTIGE_MORALE_BONUS;Morale bonus: §Y$VAL$§!;x
+PRESTIGE_MORALE_BONUS;Organization Regain bonus: §Y$VAL$§!;x
 PRESTIGE_MAX_ORG_BONUS;Organization bonus: §Y$VAL$§!;x
 PRESTIGE_PENALTY_ON_LEADER_TRANSFER_TITLE;Prestige penalty.;x
 PRESTIGE_PENALTY_ON_LEADER_TRANSFER_DESC;Our realm will suffer §R$VAL$§! prestige loss, if we unassign the current leader §Y$NAME$§! from that unit, while at war.\nDo you still want to do that?;x
