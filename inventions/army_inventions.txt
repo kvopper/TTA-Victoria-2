@@ -466,18 +466,31 @@ cavalry_tech_4_equipment = {
 		heavy_cavalry = {
 			attack = 5
 			defence = 3
-			support = 0.2
 			supply_consumption = 0.3
 		}
 		horse_archers = {
 			attack = 2
 			defence = 2
-			supply_consumption = 0.3
+			support = 0.2
+			supply_consumption = 0.2
 		}
 		scouts = {
 			attack = 3
 			defence = 3
 			supply_consumption = 0.3
+		}
+	}
+}
+nomad_bows = {
+	limit = { cavalry_tech_4 = 1 }
+	chance = {
+		base = 2
+	}
+	effect = {
+		horse_archers = {
+			attack = 1
+			defence = 1
+			supply_consumption = 0.1
 		}
 	}
 }
