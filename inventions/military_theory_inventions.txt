@@ -211,3 +211,74 @@ minasdirith_invention = {
 		}
 	}
 }
+unlock_barracks = {
+	limit = { training_1 = 1 }
+	chance = {
+		base = 2
+	}
+	effect = {
+		activate_building = barracks
+		mobilisation_size = 0.01
+	}
+}
+pressed_service = {
+	limit = { training_2 = 1 }
+	chance = {
+		base = 2
+	}
+	effect = {
+		mobilisation_size = 0.02
+		max_barracks = 1
+	}
+}
+recruitment_campaigns = {
+	limit = { training_3 = 1 }
+	chance = {
+		base = 2
+	}
+	effect = {
+		mobilisation_size = 0.03
+		max_barracks = 1
+	}
+}
+standing_armies = {
+	limit = { training_4 = 1 }
+	chance = {
+		base = 2
+	}
+	effect = {
+		mobilisation_size = 0.04
+		max_barracks = 1
+	}
+}
+military_schools = {
+	limit = { training_4 = 1 }
+	chance = {
+		base = 2
+	}
+	effect = {
+		enable_crime = military_schools_effect
+	}
+}
+professional_armies = {
+	limit = { training_5 = 1 }
+	chance = {
+		base = 2
+	}
+	effect = {
+		mobilisation_size = 0.05
+		max_barracks = 1
+	}
+}
+outposts = {
+	limit = { training_5 = 1 }
+	chance = {
+		base = 2
+	}
+	effect = {
+		max_barracks = 1
+	}
+}
+###########################
+# NAVAL THEORY INVENTIONS #
+###########################

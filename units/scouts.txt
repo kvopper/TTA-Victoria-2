@@ -21,7 +21,7 @@ scouts = {
 	weighted_value = 4.0
 
 	#Building Costs
-	build_time = 30
+	build_time = 25
 	build_cost = {
 		horses = 10
 		food = 10

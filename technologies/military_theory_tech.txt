@@ -515,15 +515,10 @@ training_1 = {
 	cost = 3600
 	unciv_military = yes
 
-	regular_experience_level = 5
-	org_regain = 0.05
+	regular_experience_level = 2
 	
 	army_base = {
-		# Audax Validator "." Ignore_1007
-		build_time = 1
-		default_organisation = 5
-		supply_consumption = -0.05
-		maximum_speed = 1
+		discipline = 0.02
 	}
 	
 	ai_chance = {
@@ -571,16 +566,10 @@ training_2 = {
 	cost = 7200
 	unciv_military = yes
 
-	unit = 1
-	regular_experience_level = 5
-	org_regain = 0.05
+	regular_experience_level = 3
 	
 	army_base = {
-		# Audax Validator "." Ignore_1007
-		build_time = 2
-		default_organisation = 5
-		supply_consumption = -0.05
-		discipline = 0.05
+		discipline = 0.03
 	}
 	
 	ai_chance = {
@@ -628,14 +617,11 @@ training_3 = {
 	cost = 10800
 	unciv_military = yes
 
+	unit = 1
 	regular_experience_level = 5
-	org_regain = 0.05
 	
 	army_base = {
-		# Audax Validator "." Ignore_1007
-		build_time = 3
-		default_organisation = 5
-		supply_consumption = -0.1
+		discipline = 0.05
 	}
 	
 	ai_chance = {
@@ -684,13 +670,8 @@ training_4 = {
 	unciv_military = yes
 
 	regular_experience_level = 5
-	org_regain = 0.05
 	
 	army_base = {
-		# Audax Validator "." Ignore_1007
-		build_time = 4
-		default_organisation = 5
-		supply_consumption = -0.1
 		discipline = 0.05
 	}
 	
@@ -741,15 +722,9 @@ training_5 = {
 
 	unit = 2
 	regular_experience_level = 5
-	org_regain = 0.05
 	
 	army_base = {
-		# Audax Validator "." Ignore_1007
-		build_time = 5
-		default_organisation = 10
-		supply_consumption = -0.1
-		discipline = 0.1
-		maximum_speed = 1
+		discipline = 0.05
 	}
 	
 	ai_chance = {
@@ -858,11 +833,11 @@ naval_theory_2 = {
 	unciv_military = yes
 
 	navy_base = {
-		default_organisation = 5
-		gun_power = 1
+		default_organisation = 10
+		gun_power = 2
 	}
 	transport = {
-		gun_power = -1
+		gun_power = -2
 	}
 	
 	ai_chance = {
@@ -917,11 +892,11 @@ naval_theory_3 = {
 	unciv_military = yes
 
 	navy_base = {
-		default_organisation = 10
-		gun_power = 2
+		default_organisation = 12
+		gun_power = 3
 	}
 	transport = {
-		gun_power = -2
+		gun_power = -3
 	}
 	
 	ai_chance = {
@@ -976,11 +951,11 @@ naval_theory_4 = {
 	unciv_military = yes
 
 	navy_base = {
-		default_organisation = 10
-		gun_power = 2
+		default_organisation = 18
+		gun_power = 4
 	}
 	transport = {
-		gun_power = -2
+		gun_power = -4
 	}
 	
 	ai_chance = {
@@ -1035,11 +1010,11 @@ naval_theory_5 = {
 	unciv_military = yes
 
 	navy_base = {
-		default_organisation = 20
-		gun_power = 3
+		default_organisation = 25
+		gun_power = 5
 	}
 	transport = {
-		gun_power = -3
+		gun_power = -5
 	}
 	
 	ai_chance = {

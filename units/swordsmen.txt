@@ -16,7 +16,7 @@ swordsmen = {
 	weighted_value = 2.0
 
 	#Building Costs
-	build_time = 40
+	build_time = 50
 	build_cost = {
 		food = 10
 		melee_gear = 10

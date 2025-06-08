@@ -16,7 +16,7 @@ archers = {
 	weighted_value = 5.0
 
 	#Building Costs
-	build_time = 40
+	build_time = 50
 	build_cost = {
 		food = 10
 		ranged_gear = 10

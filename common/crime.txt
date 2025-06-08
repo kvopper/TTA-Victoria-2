@@ -124,3 +124,5 @@ province_wealth_5 = {
 	immigrant_attract = 0.25
 	pop_militancy_modifier = -0.05
 }
+
+military_schools_effect = { }
