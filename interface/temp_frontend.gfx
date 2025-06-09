@@ -1,5 +1,55 @@
 spriteTypes = {
 	spriteType = {
+		name = "GFX_primary_highlight_1"
+		texturefile = "gfx\\interface\\tutorial\\DAL_highlight.dds"
+		loadType = "FRONTEND"
+	}
+	spriteType = {
+		name = "GFX_secondary_highlight_1"
+		texturefile = "gfx\\interface\\tutorial\\DA1_secondary_highlight.dds"
+		loadType = "FRONTEND"
+	}
+	spriteType = {
+		name = "GFX_secondary_highlight_2"
+		texturefile = "gfx\\interface\\tutorial\\AMO_secondary_highlight.dds"
+		loadType = "FRONTEND"
+	}
+	spriteType = {
+		name = "GFX_mechanic_highlight_icon"
+		texturefile = "gfx\\interface\\tutorial\\alliance_dwarves_men.dds"
+		loadType = "FRONTEND"
+	}
+	spriteType = {
+		name = "GFX_text_background_310_238"
+		texturefile = "gfx\\interface\\tutorial\\text_background_310_238.dds"
+		loadType = "FRONTEND"
+	}
+	spriteType = {
+		name = "GFX_text_background_310_481"
+		texturefile = "gfx\\interface\\tutorial\\text_background_310_481.dds"
+		loadType = "FRONTEND"
+	}
+	spriteType = {
+		name = "GFX_recommend_GON"
+		texturefile = "gfx\\interface\\tutorial\\recommend_GON.dds"
+		loadType = "FRONTEND"
+	}
+	spriteType = {
+		name = "GFX_recommend_DAL"
+		texturefile = "gfx\\interface\\tutorial\\recommend_DAL.dds"
+		loadType = "FRONTEND"
+	}
+	spriteType = {
+		name = "GFX_recommend_RIV"
+		texturefile = "gfx\\interface\\tutorial\\recommend_RIV.dds"
+		loadType = "FRONTEND"
+	}
+	spriteType = {
+		name = "GFX_recommend_AMO"
+		texturefile = "gfx\\interface\\tutorial\\recommend_AMO.dds"
+		loadType = "FRONTEND"
+	}
+	spriteType = {
 		name = "GFX_frontend_mpmenu_bg_02"
 		texturefile = "gfx\\interface\\frontend_mpmenu_bg_02.dds"
 		loadType = "FRONTEND"
@@ -48,63 +98,9 @@ spriteTypes = {
 		loadType = "FRONTEND"
 	}
 	spriteType = {
-		name = "GFX_frontend_tutorial_military"
-		texturefile = "gfx\\interface\\frontend_tutorial_military.dds"
+		name = "GFX_frontend_EMPTY"
+		texturefile = "gfx\\interface\\frontend_tutorial_empty.dds" # 1 transparent pixel
 		loadType = "FRONTEND"
-	}
-	spriteType = {
-		name = "GFX_frontend_tutorial_image_1"
-		texturefile = "gfx\\interface\\frontend_tutorial_image_1.dds"
-		loadType = "FRONTEND"
-		allwaystransparent = yes
-	}
-	spriteType = {
-		name = "GFX_frontend_tutorial_image_2"
-		texturefile = "gfx\\interface\\frontend_tutorial_image_2.dds"
-		loadType = "FRONTEND"
-		allwaystransparent = yes
-	}
-	spriteType = {
-		name = "GFX_frontend_tutorial_image_3"
-		texturefile = "gfx\\interface\\frontend_tutorial_image_3.dds"
-		loadType = "FRONTEND"
-		allwaystransparent = yes
-	}
-	spriteType = {
-		name = "GFX_frontend_tutorial_image_4"
-		texturefile = "gfx\\interface\\frontend_tutorial_image_4.dds"
-		loadType = "FRONTEND"
-		allwaystransparent = yes
-	}
-	spriteType = {
-		name = "GFX_frontend_tutorial_image_5"
-		texturefile = "gfx\\interface\\frontend_tutorial_image_5.dds"
-		loadType = "FRONTEND"
-		allwaystransparent = yes
-	}
-	spriteType = {
-		name = "GFX_frontend_tutorial_image_6"
-		texturefile = "gfx\\interface\\frontend_tutorial_image_6.dds"
-		loadType = "FRONTEND"
-		allwaystransparent = yes
-	}
-	spriteType = {
-		name = "GFX_frontend_tutorial_image_7"
-		texturefile = "gfx\\interface\\frontend_tutorial_image_7.dds"
-		loadType = "FRONTEND"
-		allwaystransparent = yes
-	}
-	spriteType = {
-		name = "GFX_frontend_tutorial_image_8"
-		texturefile = "gfx\\interface\\frontend_tutorial_image_8.dds"
-		loadType = "FRONTEND"
-		allwaystransparent = yes
-	}
-	spriteType = {
-		name = "GFX_frontend_tutorial_image_9"
-		texturefile = "gfx\\interface\\frontend_tutorial_image_9.dds"
-		loadType = "FRONTEND"
-		allwaystransparent = yes
 	}
 	spriteType = {
 		name = "GFX_frontend_tutorial_tab"
@@ -145,10 +141,6 @@ spriteTypes = {
 	textSpriteType = {
 		name = "GFX_frontend_button_236"
 		texturefile = "gfx\\interface\\frontend_button_236.dds"
-	}
-	textSpriteType = {
-		name = "GFX_tutorial_button"
-		texturefile = "gfx\\interface\\tutorial_button.dds"
 	}
 	
 	spriteType = {
@@ -217,6 +209,14 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_frontend_campaign_entry"
 		texturefile = "gfx\\interface\\frontend_campaign_entry.dds"
+		noOfFrames = 2
+		effectFile = "gfx\\FX\\buttonstate.fx"
+		loadType = "FRONTEND"
+	}
+
+	spriteType = {
+		name = "GFX_frontend_savegame_entry"
+		texturefile = "gfx\\interface\\frontend_savegame_entry.dds"
 		noOfFrames = 1
 		effectFile = "gfx\\FX\\buttonstate.fx"
 		loadType = "FRONTEND"

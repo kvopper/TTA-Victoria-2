@@ -1,0 +1,188 @@
+graphical_culture = Generic
+color = { 80 40 0 }
+
+party = {
+	name = "DAL_bard_i"
+	start_date = 2954.1.1
+	end_date = 2977.6.13
+	
+	ideology = house_of_bard
+	
+	trade_policy = protectionism
+	tax_policy = interventionism
+	language_policy = regional_autonomy
+	diplomatic_policy = reactive
+	war_policy = jingoism
+	good_evil_alignment = good_alignment
+}
+
+party = {
+	name = "DAL_bain_i"
+	start_date = 2977.6.14
+	end_date = 3007.3.5
+	
+	ideology = house_of_bard
+	
+	trade_policy = protectionism
+	tax_policy = interventionism
+	language_policy = regional_autonomy
+	diplomatic_policy = reactive
+	war_policy = jingoism
+	good_evil_alignment = good_alignment
+}
+
+party = {
+	name = "DAL_brand_i"
+	start_date = 3007.3.6
+	end_date = 3037.11.29
+	
+	ideology = house_of_bard
+	
+	trade_policy = protectionism
+	tax_policy = interventionism
+	language_policy = regional_autonomy
+	diplomatic_policy = reactive
+	war_policy = jingoism
+	good_evil_alignment = good_alignment
+}
+
+party = {
+	name = "DAL_bard_ii"
+	start_date = 3037.11.30
+	end_date = 3067.5.13
+	
+	ideology = house_of_bard
+	
+	trade_policy = protectionism
+	tax_policy = interventionism
+	language_policy = regional_autonomy
+	diplomatic_policy = reactive
+	war_policy = jingoism
+	good_evil_alignment = good_alignment
+}
+
+party = {
+	name = "DAL_girion_ii"
+	start_date = 3067.5.14
+	end_date = 4000.1.1
+	
+	ideology = house_of_bard
+	
+	trade_policy = protectionism
+	tax_policy = interventionism
+	language_policy = regional_autonomy
+	diplomatic_policy = reactive
+	war_policy = jingoism
+	good_evil_alignment = good_alignment
+}
+
+party = {
+	name = "DAL_master_of_laketown"
+	start_date = 2954.1.1
+	end_date = 4000.1.1
+	
+	ideology = master_of_laketown
+	
+	trade_policy = protectionism
+	tax_policy = interventionism
+	language_policy = regional_autonomy
+	diplomatic_policy = reactive
+	war_policy = jingoism
+	good_evil_alignment = neutral_alignment
+}
+
+party = {
+	name = "DAL_lakemen_fishers_guild"
+	start_date = 2954.1.1
+	end_date = 4000.1.1
+	
+	ideology = lakemen_fishers_guild
+	
+	trade_policy = protectionism
+	tax_policy = state_capitalism
+	language_policy = regional_autonomy
+	diplomatic_policy = reactive
+	war_policy = anti_military
+	good_evil_alignment = good_alignment
+}
+
+party = {
+	name = "ERE_dain_ii"
+	start_date = 2954.1.1
+	end_date = 4000.1.1
+	
+	ideology = line_of_durin
+	
+	trade_policy = protectionism
+	tax_policy = interventionism
+	language_policy = regional_autonomy
+	diplomatic_policy = reactive
+	war_policy = jingoism
+	good_evil_alignment = good_alignment
+}
+
+party = {
+	name = "generic_nobility"
+	start_date = 2954.1.1
+	end_date = 4000.1.1
+	
+	ideology = nobility
+	
+	trade_policy = protectionism
+	tax_policy = state_capitalism
+	language_policy = official_only
+	diplomatic_policy = reactive
+	war_policy = jingoism
+	good_evil_alignment = good_alignment
+}
+
+party = {
+	name = "generic_burgher"
+	start_date = 2954.1.1
+	end_date = 4000.1.1
+	
+	ideology = burgher
+	
+	trade_policy = free_trade
+	tax_policy = laissez_faire
+	language_policy = minority_toleration
+	diplomatic_policy = interactive
+	war_policy = pro_military
+	good_evil_alignment = good_alignment
+}
+
+party = {
+	name = "generic_loremaster"
+	start_date = 2954.1.1
+	end_date = 4000.1.1
+	
+	ideology = loremaster
+	
+	trade_policy = free_trade
+	tax_policy = interventionism
+	language_policy = regional_autonomy
+	diplomatic_policy = proactive
+	war_policy = anti_military
+	good_evil_alignment = good_alignment
+}
+
+party = {
+	name = "generic_servants"
+	start_date = 2954.1.1
+	end_date = 4000.1.1
+	
+	ideology = servants
+	
+	trade_policy = vassal_protectionism
+	tax_policy = vassal_interventionism
+	language_policy = vassal_regional_autonomy
+	diplomatic_policy = vassal_reactive
+	war_policy = vassal_pro_military
+	good_evil_alignment = vassal_alignment
+}
+
+unit_names = {
+	#example = {
+	#	name "multi word name"
+	#}
+}

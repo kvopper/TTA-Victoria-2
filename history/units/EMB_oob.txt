@@ -2,17 +2,17 @@ army = {
 	name = "Elostirion Garrison"
 	location = 933
 	regiment = {
-		name = "1st Emyn Beriad Horse Archers"
+		name = "1st Emyn Beraid Horse Archers"
 		type = horse_archers
 		home = 933
 	}
 	regiment = {
-		name = "2nd Emyn Beriad Horse Archers"
+		name = "2nd Emyn Beraid Horse Archers"
 		type = horse_archers
 		home = 933
 	}
 	regiment = {
-		name = "1st Emyn Beriad Scouts"
+		name = "1st Emyn Beraid Scouts"
 		type = scouts
 		home = 933
 	}

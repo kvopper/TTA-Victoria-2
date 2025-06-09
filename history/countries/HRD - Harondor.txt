@@ -3,20 +3,14 @@ capital = 228
 primary_culture = harnendan
 culture = men_culture
 religion = men
-government = man_tribe
-nationalvalue = generic_leader
+government = tribal
+nationalvalue = no_heirloom
 literacy = 0
 
 slavery = yes_slavery
-upper_house_composition = appointed
-ruling_party = HRD_high_nobility
+ruling_party = generic_nobility
 upper_house = {
-	high_nobility = 100
+	nobility = 100
 }
 
 schools = traditional_academic
-
-govt_flag = {
-	government = fiefdom
-	flag = cosmetic_1_govt
-}

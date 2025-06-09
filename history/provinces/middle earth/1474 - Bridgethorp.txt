@@ -1,0 +1,17 @@
+owner = DA1
+controller = DA1
+add_core = DA1
+add_core = RIV
+trade_goods = food
+life_rating = 30
+terrain = gramavuld_plains
+
+party_loyalty = {
+	ideology = rivermen_thegans
+	loyalty_value = 10.0
+}
+
+party_loyalty = {
+	ideology = house_of_bard
+	loyalty_value = 2.0
+}

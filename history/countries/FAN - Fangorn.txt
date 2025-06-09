@@ -4,26 +4,25 @@ primary_culture = ent
 culture = ent_culture
 culture = huorn
 religion = ent
-government = democracy
-nationalvalue = treebeard
+government = republic
+nationalvalue = no_heirloom
 civilized = yes
 
 oob = "FAN_oob.txt"
 
 prestige = 5
 
-ruling_party = generic_high_nobility
+ruling_party = FAN_treebeard
 
 upper_house = {
-	high_nobility = 45
-	low_nobility = 26
-	burgher = 14
-	loremaster = 15
+	lords_of_fangorn = 100
 }
+
+decision = FAN_start_decision
+
 penal_reform = hard_labor
 slavery = no_slavery
 serfdom = banned_serfdom
-upper_house_composition = population_equal_weight
 vote_franschise = universal_voting
 
 schools = traditional_academic

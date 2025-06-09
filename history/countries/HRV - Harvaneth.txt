@@ -4,17 +4,17 @@ primary_culture = arthedani
 culture = men_culture
 culture = siredain
 religion = men
-government = man_tribe
-nationalvalue = generic_leader
+government = tribal
+nationalvalue = no_heirloom
 literacy = 0
 
 oob = "HRV_oob.txt"
 
 slavery = no_slavery
-upper_house_composition = appointed
-ruling_party = generic_high_nobility
+ruling_party = generic_nobility
+
 upper_house = {
-	high_nobility = 100
+	nobility = 100
 }
 
 schools = traditional_academic

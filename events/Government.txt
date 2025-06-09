@@ -1,0 +1,52 @@
+# Remove this line to have the validator check for strings in localisation
+# Audax Validator "!" Ignore_1004
+
+# Government Events: {
+#	72000 - 72999 }
+
+# Transition to Merchant Republic
+country_event = {
+	id = 72000
+	title = "The Council of Nobles"
+	desc = "EVTDESC72000"
+	picture = "administration"
+	
+	trigger = {
+		NOT = { government = merchant_republic }
+		OR = {
+			vote_franschise = landed_voting
+			vote_franschise = wealth_weighted_voting
+			vote_franschise = wealth_voting
+		}
+	}
+	
+	option = {
+		name = "And the election of $COUNTRY$ begins"
+		
+		government = merchant_republic
+		election = yes
+	}
+}
+
+# Transition to Republic
+country_event = {
+	id = 72001
+	title = "The Vote of the Poor"
+	desc = "EVTDESC72001"
+	picture = "administration"
+	
+	trigger = {
+		NOT = { government = republic }
+		OR = {
+			vote_franschise = universal_weighted_voting
+			vote_franschise = universal_voting
+		}
+	}
+	
+	option = {
+		name = "And the election of $COUNTRY$ begins"
+		
+		government = republic
+		election = yes
+	}
+}

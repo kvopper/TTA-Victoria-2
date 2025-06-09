@@ -1,73 +1,6 @@
-building_focus = {
-	military_goods_focus = {
-		melee_gear = 18.3
-		ranged_gear = 18.3
-		artillery = 18.3
-		icon = 2
-		limit = {
-			civilized = yes
-		}
-	}
-	shipping_focus = {
-		clipper_convoy = 18.3
-		icon = 3
-		limit = {
-			civilized = yes
-			state_scope = { any_owned_province = { port = yes } }
-		}
-	}
-	basic_industry_focus = {
-		steel = 18.3
-		cut_stone = 18.3
-		lumber = 18.3
-		coal = 18.3
-		icon = 4
-		limit = {
-			civilized = yes
-		}
-	}
-	textile_focus = {
-		clothes = 18.3
-		fabric = 18.3
-		icon = 5
-		limit = {
-			civilized = yes
-		}
-	}
-	consumer_goods_focus = {
-		furniture = 18.3
-		liquor = 18.3
-		paper = 18.3
-		glass = 18.3
-		icon = 6
-		limit = {
-			civilized = yes
-		}
-	}
-}
-
 production_focus = {
-	artisan_prod_focus = {
-		# Audax Validator "!" Ignore_1007
-		local_artisan_throughput = 0.25
-		pop_militancy_modifier = 0.03
-		limit = {
-			is_colonial = no
-		}
-		icon = 7
-	}
-	artisan_prod_colony_focus = {
-		# Audax Validator "!" Ignore_1007
-		local_artisan_throughput = 0.5
-		pop_militancy_modifier = 0.05
-		icon = 8
-		limit = {
-			is_colonial = yes
-		}
-	}
 	factory_prod_focus = {
 		local_factory_throughput = 0.25
-		pop_militancy_modifier = 0.03
 		icon = 9
 		limit = {
 			is_colonial = no
@@ -76,19 +9,7 @@ production_focus = {
 	}
 	rgo_prod_focus = {
 		local_RGO_output = 0.25
-		pop_militancy_modifier = 0.03
 		icon = 10
-		limit = {
-			is_colonial = no
-		}
-	}
-	rgo_prod_colony_focus = {
-		local_RGO_output = 0.5
-		pop_militancy_modifier = 0.05
-		icon = 11
-		limit = {
-			is_colonial = yes
-		}
 	}
 	ship_focus = {
 		local_repair = 0.25
@@ -162,13 +83,6 @@ population_focus = {
 		limit = {
 			is_colonial = yes
 		}
-	}
-	social_programs = {
-		population_growth = 0.001
-		pop_militancy_modifier = -0.01
-		pop_consciousness_modifier = -0.01
-		local_RGO_output = -0.1
-		icon = 22
 	}
 }
 
@@ -248,29 +162,223 @@ promotion_focus = {
 	}
 }
 
-party_loyalty_focus = {
-	high_nobility_focus = {
-		ideology = high_nobility
-		loyalty_value = 0.001
-		icon = 32
+promotion_ideologies = {
+	promote_nobility = {
+		ideology = nobility
+		loyalty_value = 0.005
 	}
-	low_nobility_focus = {
-		ideology = low_nobility
-		loyalty_value = 0.001
-		icon = 33
-	}
-	burgher_focus = {
+	promote_burgher = {
 		ideology = burgher
-		loyalty_value = 0.001
-		icon = 34
+		loyalty_value = 0.005
 	}
-	loremaster_focus = {
+	promote_loremaster = {
 		ideology = loremaster
-		loyalty_value = 0.001
-		icon = 35
+		loyalty_value = 0.005
 	}
-	ruling_party_focus = {
-		local_ruling_party_support = 0.25
-		icon = 37
+	promote_line_of_isildur = {
+		ideology = line_of_isildur
+		loyalty_value = 0.005
+	}
+	promote_house_of_stewards = {
+		ideology = house_of_stewards
+		loyalty_value = 0.005
+	}
+	promote_house_of_dol_amroth = {
+		ideology = house_of_dol_amroth
+		loyalty_value = 0.005
+	}
+	promote_house_half_elven = {
+		ideology = house_half_elven
+		loyalty_value = 0.005
+	}
+	promote_lords_of_mithlond = {
+		ideology = lords_of_mithlond
+		loyalty_value = 0.005
+	}
+	promote_house_of_oropher = {
+		ideology = house_of_oropher
+		loyalty_value = 0.005
+	}
+	promote_house_of_finarfin = {
+		ideology = house_of_finarfin
+		loyalty_value = 0.005
+	}
+	promote_house_of_bard = {
+		ideology = house_of_bard
+		loyalty_value = 0.005
+	}
+	promote_rivermen_thegans = {
+		ideology = rivermen_thegans
+		loyalty_value = 0.005
+	}
+	promote_master_of_laketown = {
+		ideology = master_of_laketown
+		loyalty_value = 0.005
+	}
+	promote_lakemen_fishers_guild = {
+		ideology = lakemen_fishers_guild
+		loyalty_value = 0.005
+	}
+	promote_house_of_koldana = {
+		ideology = house_of_koldana
+		loyalty_value = 0.005
+	}
+	promote_line_of_durin = {
+		ideology = line_of_durin
+		loyalty_value = 0.005
+	}
+	promote_house_of_beorn = {
+		ideology = house_of_beorn
+		loyalty_value = 0.005
+	}
+	promote_lords_of_fangorn = {
+		ideology = lords_of_fangorn
+		loyalty_value = 0.005
+	}
+	promote_house_of_eorl = {
+		ideology = house_of_eorl
+		loyalty_value = 0.005
+	}
+	promote_flightlords_of_the_mountains = {
+		ideology = flightlords_of_the_mountains
+		loyalty_value = 0.005
+	}
+	promote_lords_of_ravens = {
+		ideology = lords_of_ravens
+		loyalty_value = 0.005
+	}
+	promote_great_brood_mothers = {
+		ideology = great_brood_mothers
+		loyalty_value = 0.005
+	}
+	promote_kings_of_the_dead = {
+		ideology = kings_of_the_dead
+		loyalty_value = 0.005
+	}
+	promote_lords_of_isengard = {
+		ideology = lords_of_isengard
+		loyalty_value = 0.005
+	}
+	promote_lords_of_rhosgobel = {
+		ideology = lords_of_rhosgobel
+		loyalty_value = 0.005
+	}
+	promote_lords_of_mordor = {
+		ideology = lords_of_mordor
+		loyalty_value = 0.005
+	}
+	promote_saurons_nine = {
+		ideology = saurons_nine
+		loyalty_value = 0.005
+	}
+}
+demotion_ideologies = {
+	demote_nobility = {
+		ideology = nobility
+		loyalty_value = -0.005
+	}
+	demote_burgher = {
+		ideology = burgher
+		loyalty_value = -0.005
+	}
+	demote_loremaster = {
+		ideology = loremaster
+		loyalty_value = -0.005
+	}
+	demote_line_of_isildur = {
+		ideology = line_of_isildur
+		loyalty_value = -0.005
+	}
+	demote_house_of_stewards = {
+		ideology = house_of_stewards
+		loyalty_value = -0.005
+	}
+	demote_house_of_dol_amroth = {
+		ideology = house_of_dol_amroth
+		loyalty_value = -0.005
+	}
+	demote_house_half_elven = {
+		ideology = house_half_elven
+		loyalty_value = -0.005
+	}
+	demote_lords_of_mithlond = {
+		ideology = lords_of_mithlond
+		loyalty_value = -0.005
+	}
+	demote_house_of_oropher = {
+		ideology = house_of_oropher
+		loyalty_value = -0.005
+	}
+	demote_house_of_finarfin = {
+		ideology = house_of_finarfin
+		loyalty_value = -0.005
+	}
+	demote_house_of_bard = {
+		ideology = house_of_bard
+		loyalty_value = -0.005
+	}
+	demote_rivermen_thegans = {
+		ideology = rivermen_thegans
+		loyalty_value = -0.005
+	}
+	demote_master_of_laketown = {
+		ideology = master_of_laketown
+		loyalty_value = -0.005
+	}
+	demote_lakemen_fishers_guild = {
+		ideology = lakemen_fishers_guild
+		loyalty_value = -0.005
+	}
+	demote_house_of_koldana = {
+		ideology = house_of_koldana
+		loyalty_value = -0.005
+	}
+	demote_line_of_durin = {
+		ideology = line_of_durin
+		loyalty_value = -0.005
+	}
+	demote_house_of_beorn = {
+		ideology = house_of_beorn
+		loyalty_value = -0.005
+	}
+	demote_lords_of_fangorn = {
+		ideology = lords_of_fangorn
+		loyalty_value = -0.005
+	}
+	demote_house_of_eorl = {
+		ideology = house_of_eorl
+		loyalty_value = -0.005
+	}
+	demote_flightlords_of_the_mountains = {
+		ideology = flightlords_of_the_mountains
+		loyalty_value = -0.005
+	}
+	demote_lords_of_ravens = {
+		ideology = lords_of_ravens
+		loyalty_value = -0.005
+	}
+	demote_great_brood_mothers = {
+		ideology = great_brood_mothers
+		loyalty_value = -0.005
+	}
+	demote_kings_of_the_dead = {
+		ideology = kings_of_the_dead
+		loyalty_value = -0.005
+	}
+	demote_lords_of_isengard = {
+		ideology = lords_of_isengard
+		loyalty_value = -0.005
+	}
+	demote_lords_of_rhosgobel = {
+		ideology = lords_of_rhosgobel
+		loyalty_value = -0.005
+	}
+	demote_lords_of_mordor = {
+		ideology = lords_of_mordor
+		loyalty_value = -0.005
+	}
+	demote_saurons_nine = {
+		ideology = saurons_nine
+		loyalty_value = -0.005
 	}
 }

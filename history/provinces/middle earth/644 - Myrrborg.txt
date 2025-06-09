@@ -2,8 +2,17 @@ owner = DA3
 controller = DA3
 add_core = DA3
 add_core = RIV
-add_core = RHO
 trade_goods = food
 life_rating = 30
 terrain = gramavuld_plains
 naval_base = 1
+state_building = {
+	level = 1
+	building = liquor_distillery
+	upgrade = yes
+}
+
+party_loyalty = {
+	ideology = rivermen_thegans
+	loyalty_value = 10.0
+}

@@ -11,7 +11,7 @@ country_event = { # First attempt
 	id = 50700
 	title = "Search for a Lesser Ring"
 	desc = "EVTDESC50700"
-	picture = "acquire_ring"
+	picture = "lesser_ring"
 
 	trigger = {
 		NOT = { has_country_flag = searching_for_lesser_ring }
@@ -32,7 +32,7 @@ country_event = { # First attempt
 		NOT = { has_country_flag = rejected_searching_for_lesser_ring }
 	}
 
-	mean_time_to_happen = { months = 12 }
+	mean_time_to_happen = { months = 24 }
 
 	option = {
 		name = "Support the mission"
@@ -57,13 +57,13 @@ country_event = { # Attempt fails, try again?
 	id = 50701
 	title = "Failure to find a Lesser Ring"
 	desc = "EVTDESC50701"
-	picture = "acquire_ring"
+	picture = "lesser_ring"
 	
 	trigger = {
 		has_country_flag = searching_for_lesser_ring
 	}
 	
-	mean_time_to_happen = { months = 12 }
+	mean_time_to_happen = { months = 24 }
 
 	option = {
 		name = "Try again" # Fund second attempt
@@ -83,7 +83,7 @@ country_event = { # Lesser Ring of Might
 	id = 50702
 	title = "The Lesser Ring of Might"
 	desc = "Our search for a Lesser Ring is over. One has finally been found."
-	picture = "acquire_ring"
+	picture = "lesser_ring"
 
 	trigger = {
 		has_country_flag = searching_for_lesser_ring
@@ -104,7 +104,7 @@ country_event = { # Lesser Ring of Might
 		NOT = { has_country_modifier = lesser_ring_of_might }
 	}
 
-	mean_time_to_happen = { months = 12 }
+	mean_time_to_happen = { months = 24 }
 
 	option = {
 		name = "Excellent"
@@ -157,7 +157,7 @@ country_event = { # Lesser Ring of Courage
 	id = 50703
 	title = "The Lesser Ring of Courage"
 	desc = "Our search for a Lesser Ring is over. One has finally been found."
-	picture = "acquire_ring"
+	picture = "lesser_ring"
 
 	trigger = {
 		has_country_flag = searching_for_lesser_ring
@@ -178,7 +178,7 @@ country_event = { # Lesser Ring of Courage
 		NOT = { has_country_modifier = lesser_ring_of_courage }
 	}
 
-	mean_time_to_happen = { months = 12 }
+	mean_time_to_happen = { months = 24 }
 
 	option = {
 		name = "Excellent"
@@ -231,7 +231,7 @@ country_event = { # Lesser Ring of Wit
 	id = 50704
 	title = "The Lesser Ring of Wit"
 	desc = "Our search for a Lesser Ring is over. One has finally been found."
-	picture = "acquire_ring"
+	picture = "lesser_ring"
 
 	trigger = {
 		has_country_flag = searching_for_lesser_ring
@@ -252,7 +252,7 @@ country_event = { # Lesser Ring of Wit
 		NOT = { has_country_modifier = lesser_ring_of_wit }
 	}
 
-	mean_time_to_happen = { months = 12 }
+	mean_time_to_happen = { months = 24 }
 
 	option = {
 		name = "Excellent"
@@ -305,7 +305,7 @@ country_event = { # Lesser Ring of Calm
 	id = 50705
 	title = "The Lesser Ring of Calm"
 	desc = "Our search for a Lesser Ring is over. One has finally been found."
-	picture = "acquire_ring"
+	picture = "lesser_ring"
 
 	trigger = {
 		has_country_flag = searching_for_lesser_ring
@@ -326,7 +326,7 @@ country_event = { # Lesser Ring of Calm
 		NOT = { has_country_modifier = lesser_ring_of_calm }
 	}
 
-	mean_time_to_happen = { months = 12 }
+	mean_time_to_happen = { months = 24 }
 
 	option = {
 		name = "Excellent"
@@ -379,7 +379,7 @@ country_event = { # Lesser Ring of Plenty
 	id = 50706
 	title = "The Lesser Ring of Plenty"
 	desc = "Our search for a Lesser Ring is over. One has finally been found."
-	picture = "acquire_ring"
+	picture = "lesser_ring"
 
 	trigger = {
 		has_country_flag = searching_for_lesser_ring
@@ -400,7 +400,7 @@ country_event = { # Lesser Ring of Plenty
 		NOT = { has_country_modifier = lesser_ring_of_plenty }
 	}
 
-	mean_time_to_happen = { months = 12 }
+	mean_time_to_happen = { months = 24 }
 
 	option = {
 		name = "Excellent"
@@ -453,7 +453,7 @@ country_event = { # Lesser Ring of Glory
 	id = 50707
 	title = "The Lesser Ring of Glory"
 	desc = "Our search for a Lesser Ring is over. One has finally been found."
-	picture = "acquire_ring"
+	picture = "lesser_ring"
 
 	trigger = {
 		has_country_flag = searching_for_lesser_ring
@@ -474,7 +474,7 @@ country_event = { # Lesser Ring of Glory
 		NOT = { has_country_modifier = lesser_ring_of_glory }
 	}
 
-	mean_time_to_happen = { months = 12 }
+	mean_time_to_happen = { months = 24 }
 
 	option = {
 		name = "Excellent"
@@ -539,7 +539,7 @@ country_event = { # First attempt
 		NOT = { has_country_flag = rejected_searching_for_entwives }
 	}
 
-	mean_time_to_happen = { months = 12 }
+	mean_time_to_happen = { months = 24 }
 	
 	option = {
 		name = "Support the mission"
@@ -571,7 +571,7 @@ country_event = { # Attempt fails, try again?
 		has_country_flag = searching_for_entwives
 	}
 	
-	mean_time_to_happen = { months = 12 }
+	mean_time_to_happen = { months = 24 }
 
 	option = {
 		name = "Try again" # Fund second attempt
@@ -672,7 +672,7 @@ country_event = { # Helper event to say you can't find a silmaril unless you can
 		}
 	}
 
-	mean_time_to_happen = { months = 12 }
+	mean_time_to_happen = { months = 24 }
 	
 	option = {
 		name = "Hmm, deep and greedily..."
@@ -699,7 +699,7 @@ country_event = { # First attempt
 		}
 	}
 
-	mean_time_to_happen = { months = 12 }
+	mean_time_to_happen = { months = 24 }
 	
 	option = {
 		name = "Dig deep and greedily!"
@@ -730,7 +730,7 @@ country_event = { # Attempt fails, try again?
 		has_country_flag = searching_for_silmaril
 	}
 	
-	mean_time_to_happen = { months = 12 }
+	mean_time_to_happen = { months = 24 }
 
 	option = {
 		name = "Try again" # Fund second attempt
@@ -762,7 +762,7 @@ country_event = { # Finding Silmaril is now impossible
 		}
 	}
 	
-	mean_time_to_happen = { months = 12 }
+	mean_time_to_happen = { months = 24 }
 
 	option = {
 		name = "Forget it"
@@ -833,8 +833,8 @@ country_event = { # First attempt
 	picture = "blue_wizards"
 
 	trigger = {
-		invention = blue_wizards
 		is_greater_power = yes
+		invention = blue_wizards
 		OR = {
 			NOT = { has_global_flag = alatar_activated }
 			NOT = { has_global_flag = pallando_activated }
@@ -843,7 +843,7 @@ country_event = { # First attempt
 		NOT = { has_country_flag = rejected_searching_for_blue_wizards }
 	}
 
-	mean_time_to_happen = { months = 12 }
+	mean_time_to_happen = { months = 24 }
 	
 	option = {
 		name = "Support the mission"
@@ -871,8 +871,8 @@ country_event = { # Found one but not the other
 	picture = "blue_wizards"
 
 	trigger = {
-		invention = blue_wizards
 		is_greater_power = yes
+		invention = blue_wizards
 		OR = {
 			OR = {
 				NOT = { has_global_flag = alatar_activated }
@@ -887,7 +887,7 @@ country_event = { # Found one but not the other
 		NOT = { has_country_flag = rejected_searching_for_blue_wizards }
 	}
 
-	mean_time_to_happen = { months = 12 }
+	mean_time_to_happen = { months = 24 }
 	
 	option = {
 		name = "Support the mission"
@@ -918,7 +918,7 @@ country_event = { # Attempt fails, try again?
 		has_country_flag = searching_for_blue_wizards
 	}
 	
-	mean_time_to_happen = { months = 12 }
+	mean_time_to_happen = { months = 24 }
 
 	option = {
 		name = "Try again" # Fund second attempt
@@ -988,7 +988,7 @@ country_event = { # Alatar found
 					good_evil_alignment = good_alignment
 				}
 				ALA = {
-					political_reform = good_alignment
+					ruling_party_ideology = servants
 					add_accepted_culture = good_culture
 					remove_accepted_culture = evil_culture
 					remove_accepted_culture = neutral_culture
@@ -1000,7 +1000,7 @@ country_event = { # Alatar found
 					good_evil_alignment = evil_alignment
 				}
 				ALA = {
-					political_reform = evil_alignment
+					ruling_party_ideology = servants
 					add_accepted_culture = evil_culture
 					remove_accepted_culture = good_culture
 					remove_accepted_culture = neutral_culture
@@ -1012,7 +1012,7 @@ country_event = { # Alatar found
 					good_evil_alignment = neutral_alignment
 				}
 				ALA = {
-					political_reform = neutral_alignment
+					ruling_party_ideology = servants
 					add_accepted_culture = neutral_culture
 					remove_accepted_culture = good_culture
 					remove_accepted_culture = evil_culture
@@ -1100,7 +1100,7 @@ country_event = { # Get anor_palantir
 		NOT = { has_country_modifier = anor_palantir }
 	}
 
-	mean_time_to_happen = { months = 12 }
+	mean_time_to_happen = { months = 1 }
 
 	option = {
 		name = "Excellent"
@@ -1124,7 +1124,7 @@ country_event = { # Get orthanc_palantir
 		NOT = { has_country_modifier = orthanc_palantir }
 	}
 
-	mean_time_to_happen = { months = 12 }
+	mean_time_to_happen = { months = 1 }
 
 	option = {
 		name = "Excellent"
@@ -1148,7 +1148,7 @@ country_event = { # Get ithil_palantir
 		NOT = { has_country_modifier = ithil_palantir }
 	}
 
-	mean_time_to_happen = { months = 12 }
+	mean_time_to_happen = { months = 1 }
 
 	option = {
 		name = "Excellent"
@@ -1172,7 +1172,7 @@ country_event = { # Get elostirion_palantir
 		owns = 933
 	}
 
-	mean_time_to_happen = { months = 12 }
+	mean_time_to_happen = { months = 1 }
 
 	option = {
 		name = "Excellent"
@@ -1191,8 +1191,8 @@ country_event = { # First attempt
 	picture = "palantir"
 
 	trigger = {
-		invention = palantiri
 		is_greater_power = yes
+		invention = palantiri
 		OR = {
 			NOT = { has_global_flag = osgiliath_palantir_activated }
 			NOT = { has_global_flag = amonsul_palantir_activated }
@@ -1207,9 +1207,10 @@ country_event = { # First attempt
 		NOT = { has_country_modifier = annuminas_palantir }
 		NOT = { has_country_flag = searching_for_palantiri }
 		NOT = { has_country_flag = rejected_searching_palantiri }
+		year = 2960 # guarantees that Mordor will get Ithil palantir by event instead of searching for one
 	}
 
-	mean_time_to_happen = { months = 12 }
+	mean_time_to_happen = { months = 24 }
 
 	option = {
 		name = "Support the mission!"
@@ -1266,6 +1267,9 @@ country_event = { # Palantir found - osgiliath_palantir
 		is_greater_power = yes
 		has_country_flag = searching_for_palantiri
 		NOT = { has_global_flag = osgiliath_palantir_activated }
+		any_owned_province = {
+			is_coastal = yes
+		}
 	}
 
 	mean_time_to_happen = { months = 240 }
@@ -1301,6 +1305,9 @@ country_event = { # Palantir found - amonsul_palantir
 		is_greater_power = yes
 		has_country_flag = searching_for_palantiri
 		NOT = { has_global_flag = amonsul_palantir_activated }
+		any_owned_province = {
+			is_coastal = yes
+		}
 	}
 
 	mean_time_to_happen = { months = 240 }
@@ -1336,6 +1343,9 @@ country_event = { # Palantir found - annuminas_palantir
 		is_greater_power = yes
 		has_country_flag = searching_for_palantiri
 		NOT = { has_global_flag = annuminas_palantir_activated }
+		any_owned_province = {
+			is_coastal = yes
+		}
 	}
 
 	mean_time_to_happen = { months = 240 }

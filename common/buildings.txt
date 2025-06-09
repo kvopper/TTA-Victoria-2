@@ -17,47 +17,6 @@ will_never_be_unlocked = {
 	pop_build_factory = no
 }
 
-##### RAW MATERIALS FACTORIES #####
-
-charcoal_factory = {
-	type = factory
-	
-	on_completion = factory
-	completion_size = 0.2
-	max_level = 99
-	goods_cost = {
-		cut_stone = 50
-		iron = 5
-		lumber = 25
-	}
-	time = 180
-	visibility = yes
-	onmap = no
-	
-	production_type = charcoal_factory
-	pop_build_factory = yes
-	default_enabled = yes
-}
-
-dye_factory = {
-	type = factory
-	on_completion = factory
-	completion_size = 0.2
-	max_level = 99
-	goods_cost = {
-		cut_stone = 50
-		iron = 5
-		lumber = 25
-	}
-	time = 180
-	visibility = yes
-	onmap = no
-	
-	production_type = dye_factory
-	pop_build_factory = yes
-	default_enabled = yes
-}
-
 ##### INDUSTRIAL GOODS FACTORIES #####
 
 cut_stone_factory = {
@@ -174,25 +133,6 @@ fabric_factory = {
 }
 
 ##### CONSUMER GOODS FACTORIES #####
-
-horse_abattoir = {
-	type = factory
-	on_completion = factory
-	completion_size = 0.2
-	max_level = 99
-	goods_cost = {
-		cut_stone = 50
-		iron = 5
-		lumber = 25
-	}
-	time = 180
-	visibility = yes
-	onmap = no
-	
-	production_type = horse_abattoir
-	pop_build_factory = yes
-	default_enabled = yes
-}
 
 liquor_distillery = {
 	type = factory

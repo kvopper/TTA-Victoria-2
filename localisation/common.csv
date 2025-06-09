@@ -1,11 +1,11 @@
 #############################;x
 ##### Country Selection #####;x {
 #############################;x
-GC_DESC;Year 2954, of the Third Age. It is a time of great sorrow for the Men of the West. In the past year, both King Fengel of Rohan and Steward Turgon have died. In TA 2951, Sauron declared his return to Mordor, started rebuilding his Dark Tower of Barad-dûr and sent three Nazgûl off to unknown places. In the north, Goblin raids have slowly been increasing, despite their losses in the Battle of the Five Armies. The Elves, as always, look to their own borders, caring not for the troubles of Men, and the Dwarves delve ever deeper into their mountains, too concerned about their riches to be of help. A new great Calamity is coming.;x
 GC_NAME;The Lord of the Rings;x
+GC_DESC;Year 2954, of the Third Age. It is a time of great sorrow for the Men of the West. In the past year, both King Fengel of Rohan and Steward Turgon have died. In TA 2951, Sauron declared his return to Mordor, started rebuilding his Dark Tower of Barad-dûr and sent three Nazgûl off to unknown places. In the north, Goblin raids have slowly been increasing, despite their losses in the Battle of the Five Armies. The Elves, as always, look to their own borders, caring not for the troubles of Men, and the Dwarves delve ever deeper into their mountains, too concerned about their riches to be of help. A new great Calamity is coming.;x
+BOTBA_NAME;Bearers of the Black Arrow;x
+BOTBA_DESC;TTA v0.5 brings a heavy focus on new mechanics and modding techniques. Showcasing these new features is the Barding Realm and the other tags in Gramavuld.\n\nLed by King Bard I the Dragonslayer, the Barding Realm is tucked nicely between friends to the north and west, and enemies to the south and east.\n\nIn the east lie the conquering Amov Clan. Nearly every month that goes by, their strength grows, until they are strong enough to challenge all others in the region.\n\nFinally, in the south, lie the Rivermen of the Celduin. Always ones to prefer freedom over confederation, the Rivermen have remained independent of each other, and of outsiders since they settled the area centuries ago. Now, they face their greatest two threats to this freedom.\n\nHow will you decide the fate of Gramavuld?;x
 WORLD_YEAR;Middle Earth: TA $YEAR$;x
-INTERESTING_COUNTRIES_TITLE;§WInteresting Realms§!;x
-INTERESTING_COUNTRIES;@GON Kingdom of Gondor\n@DAL Barding Realm;x
 ################;x }
 ##### Time #####;x {
 ################;x
@@ -42,7 +42,7 @@ CANT_CREATE_PROTECTORATE_COST;You need to have §Y$VALUE$§! free territorial po
 ACTIVATE_TECH_EFFECT;Activate technology: §Y$NAME$§!;x
 REFORM_RESEARCH_COST;Research Cost: §Y$COST$§!;x
 ADD_RELATIVE_INCOME_EFFECT;Treasury: $VALUE$§!;x
-SUPPLY_LOAD_STATUS_DESC_BASIC;The total §Ysupply throughput§! of all our §Yports§! is $TOT$.\nAll our ships requires in total §Y$REQ$§!.;x
+SUPPLY_LOAD_STATUS_DESC_BASIC;The total §Ysailor capacity§! of all our §Yports§! is §Y$TOT$§Yk§!.\nAll our ships requires in total §Y$REQ$§Yk§!.;x
 NF_OVERWRITE_HEADER;To set the new national focus §Y$NF$§! you must remove another one.;x
 NF_OVERWRITE_ENTRY;§Y$NF$§!\nin §G$STATE$§!;x
 POP_INTERNAL_MIGRATION;§Y$NUM$§! people intend to move to other national provinces.;x
@@ -107,7 +107,7 @@ COLONIAL_PRESTIGE_MODIFIER_TECH;Territorial prestige;x
 PROVINCEVIEW_UNCOLONIZED;Unsettled;x
 PV_UNCOLONIZED;Unsettled;x
 PV_COLONY_PROG;Settlement progress: §Y$VAL$§!%. Estimated completion: §Y$TIME$§!;x
-PW_COLONY;Territorial Province;x
+PW_COLONY;Territorial Region;x
 PW_COLONY_STATE;Click to convert to state. This requires §R$VALUE$§! free territorial power points.;x
 POP_COLONIAL_MIGRATION_FACTORS;Territorial migration factors:;x
 POP_COLONIAL_MIGRATION_NONE;No territorial migration.;x
@@ -150,6 +150,7 @@ HAS_GOODS_IN_STATE;Producing $GOODS$ in state.;x
 HAS_NO_GOODS_IN_STATE;Is not producing $GOODS$ in state.;x
 HAS_GOODS;Province RGO is;x
 HAS_NO_GOODS;Province RGO is not;x
+HAS_NOT_GOODS;Province RGO is not;x
 IS_NOT_IN_THE_REGION; Is NOT in the region ;x
 IS_IN_REGION; Is in the region ;x
 POP_NOT_OF_CULTURE;doesn't have $WHAT$ culture;x
@@ -240,7 +241,7 @@ MODIFY_RELATION_EFFECT;§Y$SOURCE$§!'s relation with §Y$TARGET$§! changed wit
 RANK_PRESTIGE;Prestige;x
 RANK_PRESTIGE_D;Prestige is accumulated through cultural development and performing well with your realm;x
 RANK_INDUSTRY;Industrial Power;x
-RANK_INDUSTRY_D;Industry score is a measure of your level of industrialization. It is a combination of the number of factories and the total value of the goods output of your realm. §RYou gain 1 point for every 2500 Guild Artisans employed§!;x
+RANK_INDUSTRY_D;Industry score is a measure of your level of industrialization. It is a combination of the number of guilds and the total value of the goods output of your realm. §RYou gain 1 point for every 2500 Guild Artisans employed§!;x
 RANK_MILITARY;Military Power;x
 RANK_MILITARY_D;The Military score is a measure of the power of your army, it scores your military by both size and equipment.;x
 TYPE_SPECIAL;Other;x
@@ -309,19 +310,19 @@ COLONIAL_INVESTMENT;Currently invested: §R$VALUE$§!;x
 COLONIAL_MAINTENANCE;Power tied up in maintenance: §R$VALUE$§!;x
 PW_PROTECTORATE;Protectorate;x
 CREATE_DOMINION;Release Dominion;x
-MAPMODE_NAVAL_TOOLTIP_LEVEL;Naval base level §G$LVL$§!;x
-MAPMODE_NAVAL_TOOLTIP_NO_BASE;There is not any naval base in this state.;x
-MAPMODE_NAVAL_TOOLTIP_CAP;This province §Ynaval supply throughput§! is §G$CAP$§! of total §G$TOT$§!.;x
-MAPMODE_NAVAL_TOOLTIP_IN_OTHER;A naval base already exists in this state, in §Y$PROV$§!.;x
-MAPMODE_NAVAL_TOOLTIP_UNDER_CON;A naval base is already under construction here.;
-SUPPLY_LOAD;Supplies weight;x
+MAPMODE_NAVAL_TOOLTIP_LEVEL;Port level §G$LVL$§!;x
+MAPMODE_NAVAL_TOOLTIP_NO_BASE;There is not any port in this state.;x
+MAPMODE_NAVAL_TOOLTIP_CAP;This province §Ysailor capacity§! is §G$CAP$§Yk§! of total §G$TOT$§Yk§!.;x
+MAPMODE_NAVAL_TOOLTIP_IN_OTHER;A port already exists in this state, in §Y$PROV$§!.;x
+MAPMODE_NAVAL_TOOLTIP_UNDER_CON;A port is already under construction here.;
+SUPPLY_LOAD;Sailors required (in thousands);x
 SUPPLY_LOAD_STATUS_DESC_PENALTY;Our ships suffer $PEN$ penalty of supplying them.;x
-SUPPLY_LOAD_STATUS_DESC_HINT;Consider building naval bases, or disband some ships.;x
+SUPPLY_LOAD_STATUS_DESC_HINT;Consider building ports, or disband some ships.;x
 SUPPLY_LOAD_STATUS_DESC_UPCOMING_PENALTY;New ships are under construction, that will exceed the supply limits by $EXC$.;x
-SUPPLY_LOAD_STATUS_DESC_DETAILED_LIST;The following report shows the supply throughput demands:;x
+SUPPLY_LOAD_STATUS_DESC_DETAILED_LIST;The following report shows the §Ysailor capacity§! demands (in thousands):;x
 SHIP_BUILD_MIN_BASE_LEVEL;Requires naval port with level §Y$LVL$§! or greater.;x
 SHIP_BUILD_LIMIT_PER_BASE;Limited to §Y$LIM$§! units per each port that supports this ship.;x
-SHIP_BUILD_LIMIT_PER_BASE_HINT;§RConsider building more naval bases of level at least §G$LVL$§R.§!;x
+SHIP_BUILD_LIMIT_PER_BASE_HINT;§RConsider building more ports of level at least §G$LVL$§R.§!;x
 SHIP_BUILD_LIMIT_MAX;§Y(Limit: $LIM$)§!;x
 BUILDING_ONE_PER_STATE;Only one per state;x
 DIPLOMACY_CRISIS_INFO;Crisis;x
@@ -350,7 +351,7 @@ LEDGER_COUNTRY_STATUS;Status;x
 LEDGER_HEADER_COUNTRYCOMPARE;National Comparison;x
 LEDGER_COUNTRY_TOTAL_POP;Total pop.;x
 LEDGER_COUNTRY_PROVCOUNT;Provinces;x
-LEDGER_COUNTRY_FACTORYCOUNT;Factories;x
+LEDGER_COUNTRY_FACTORYCOUNT;Guilds;x
 LEDGER_COUNTRY_LITERACY;Literacy;x
 LEDGER_COUNTRY_LEADERSHIP;Leadership;x
 LEDGER_COUNTRY_DIVISIONS;Brigades;x
@@ -461,7 +462,7 @@ LOADING_SOUNDS;Loading Sounds...;x
 PROC_FLAGS;Processing Flags...;x
 LOAD_FLAGS;Loading Flags...;x
 LOAD_GFX;Loading Graphics...;x
-CREATING_THE_WORLD;Creating the World...;x
+CREATING_THE_WORLD;Creating Arda...;x
 CREATING_TREES;Creating Trees...;x
 CREATING_BORDERS;Creating Borders...;x
 CREATING_RIVERS;Creating Rivers...;x
@@ -522,11 +523,41 @@ FE_METASERVER;Metaserver;x
 FE_BACK;Back;x
 FE_PLAYER;Player;x
 FE_PLAYER_NAME;Player name:;x
-FE_SINGLE_PLAYER;Single Player;x
-FE_MULTI_PLAYER;Multi Player;x
-FE_OPTIONS;Options;x
+FE_SINGLE_PLAYER;Adventure Alone;x
+FE_MULTI_PLAYER;Join a Fellowship;x
+FE_TUTORIAL;TTA Information;x
+FE_OPTIONS;Settings;x
 FE_CREDITS;Credits;x
-FE_EXIT;Exit;x
+FE_EXIT;Leave Middle Earth;x
+FE_BASIC;Highlights;x
+FE_SECONDARY_REALM_1;The Rivermen of the Celduin;x
+FE_SECONDARY_REALM_DESCRIPTION_1;Nestled along the banks of the Celduin River, the Rivermen are scattered among various kingdoms centered around larger settlements. Unite them to face the ever growing threats from the Amov Clan and the Barding Realm!;x
+FE_SECONDARY_REALM_2;The Amov Clan;x
+FE_SECONDARY_REALM_DESCRIPTION_2;The dawn breaks, and warhorns sound. The formerly migrating tribe of the Amov Clan has finally settled on the western banks of the Carnen. The local Northmen bested, the Khan turns his gaze father west, towards the unoccupied lands directly adjacent, and the Northmen kingdoms beyond. Can you take command and lead the clan to glory?;x
+FE_PRIMARY_REALM_1;The Barding Realm;x
+FE_PRIMARY_REALM_DESCRIPTION_1;Rising like a phoenix out of the ashes of Smaug's desolation is the Barding Realm. Having united all Lakemen and their Adhalling brothers under one banner, the Bardings look east to unite with all of Gramavuld.\n\nTo the east, lies the lands of the leaderless Grammas and to the southeast along the Celdiun, lie the Rivermen. To unite Gramavuld, both culture will need to join the realm.\n\nFinally, to the south, lies the old Northmen home of Rhovanion. Depopulated and weak, a stronger realm could claim themselves the heir to Vidugavia and unite the Northmen of Rhovanion.\n\nWill you be able to bring justice to the Grammas, subjugate the Rivermen, and lay claim to Rhovanion?;;x
+FE_MECHANIC_1;The Alliance of Dwarves and Men;x
+FE_MECHANIC_DESCRIPTION_1;Starting off just containing the Dwarves of Erebor and the Barding Realm, the Alliance of Dwarves and Men in a new diplomatic mechanic for any good-aligned realm within Rhovanion, Mirkwood and the Anduin Vale.\n\nMembership brings a number of benefits, including the ability to tranfer cores, call alliance members into wars, unlock flavor specific to your realm, and even take steps towards a powerful unification tag, the Free Folk of the North!\n\nDespite the name, the alliance is not limited to just Dwarves and Men -- Elves and Hobbits can join too assuming they are good-aligned. Will you be able to expand the alliance across Rhovanion, and the unite them into the Free Folk of the North?;x
+FE_MEDIUM;Changelog;
+FE_CHANGELOG_HIGHLIGHTS;Highlights;x
+FE_CHANGELOG_HIGHLIGHTS_DESCRIPTION;• Ahistorical Barding Realm flavor\n• Political Rework;x
+FE_CHANGELOG_GRAPHICS_CONTENT;Graphics;x
+FE_CHANGELOG_GRAPHICS_CONTENT_DESCRIPTION;• Unit Models from CK2 by Trigori\n• Newspaper remodel\n• More terrain descriptions and tweaks;x
+FE_CHANGELOG_MECHANICS_CONTENT;Political Rework;x
+FE_CHANGELOG_MECHANICS_CONTENT_DESCRIPTION;• Leaders become political parties\n• Ideologies stay as interest groups, but interest groups are much more specific than "High Nobility", "Low Nobility", etc...\n• Upper House renamed Council of the Realm\n• Interest Groups support reforms only when they are in power\n• Alignments Renamed and made a party reform\n• Good Alignment renamed Anti-Sauron\n• Neutral Alignment renamed Opportunistic\n• Evil Alignment renamed Sauronite\n• Change Alignment cb removed\n• Reforms rebalanced\n• Government Type consolidation\n• Old leader system (that replaced national value) replaced with heirloom system\n• Dynamic Traits removed\n• Added Pretender Rebels, removed many others\n• Trade and Tax Policy re-added (from vanilla);x
+FE_TAGS_CONTENT;Content;x
+FE_TAGS_CONTENT_DESCRIPTION;• Extra minor flavor\n• Myriad of bug fixes\n• Unaccepted bureaucrats automatically demote into labourers\n• New flags by SneakyDeer and Argelia4President;x
+FE_CULTURES_CONTENT; ;x
+FE_CULTURES_CONTENT_DESCRIPTION; ;x
+FE_ADVANCED;Recommended Realms;x
+FE_LEGACY_FLAVOR;Legacy Flavor;x
+FE_LEGACY_FLAVOR_1;Kingdom of Gondor;x
+FE_MINOR_FLAVOR;Minor Flavor;x
+FE_MINOR_FLAVOR_1;Kaupaborg;x
+FE_MINOR_FLAVOR_2;Amov Clan;x
+FE_MAJOR_FLAVOR;Major Flavor;x
+FE_MAJOR_FLAVOR_1;Barding Realm;x
+FE_TTA_VERSION;V0.5.1: Bearers of the Black Arrow, Political Rework Edition;x
 FE_NATION_TO_PLAY;Click the realm you wish to play...;x
 FE_NEW_GAME;New Game;x
 FE_SAVE_GAME;Save Games;x
@@ -745,7 +776,7 @@ SUPPLY_CONSUMPTION;Supply Consumption;x
 COMBAT_WIDTH;Combat Width;x
 TRANSPORT_CAPABILITY;Transport Capability;x
 HULL;Hull;x
-FORT_ADJUSTER;Fort;x
+FORT_ADJUSTER;Castle;x
 RIVER_ADJUSTER;River;x
 UA_ATTACK;Attack;x
 UA_DEFENCE;Defence;x
@@ -824,7 +855,7 @@ MILITARY_SCORE;Military: §Y$VAL$§W;x
 INDUSTRIAL_SCORE;Industry: §Y$VAL$§W;x
 BE_POPULATION;Population:;x
 BE_PROVINCES;Provinces:;x
-BE_FACTORIES;Factories:;x
+BE_FACTORIES;Guilds:;x
 BE_LITERACY;Literacy:;x
 BE_NAVY;Warships:;x
 BE_ARMY;Brigades:;x
@@ -1047,8 +1078,8 @@ PRODUCTION_CANNOT_BUILD_MISSING_MONEY_TOOLTIP;You need more money to set up a ne
 PRODUCTION_CANNOT_BUILD_MISSING_SELECTION;Select a Guild from the list\n;x
 PRODUCTION_BUILD_FACTORY_TOOLTIP;Set up a new $GUILD$\n;x
 PRODUCTION_CLOSE_TOOLTIP;Close window\n;x
-PRODUCTION_NOT_ALLOWED_TO_BUILD_TOOLTIP;We are not allowed to build factories because:\n;x
-PRODUCTION_NOT_ALLOWED_TO_BUILD_MAX_FACTORIES_TOOLTIP;We can only build $NUMBER$ factories in each state\n;x
+PRODUCTION_NOT_ALLOWED_TO_BUILD_TOOLTIP;We are not allowed to build guilds because:\n;x
+PRODUCTION_NOT_ALLOWED_TO_BUILD_MAX_FACTORIES_TOOLTIP;We can only build $NUMBER$ guilds in each state\n;x
 PRODUCTION_NOT_ALLOWED_TO_CHANGE_PRIO_TOOLTIP;We cannot change hire priority for this Guild because:\n;x
 PRODUCTION_NOT_ALLOWED_TO_SUBSIDISE_TOOLTIP;We cannot subsidise this Guild because:\n;x
 PRODUCTION_NOT_ALLOWED_TO_CLOSE_TOOLTIP;We cannot close this Guild because:\n;x
@@ -1075,7 +1106,7 @@ PRODUCTION_MUST_PRODUCE_GOODS_TOOLTIP;State must produce one of the following: ;
 PRODUCTION_FACTOR_FROM;From;x
 PRODUCTION_FACTOR_OWNER;Owners;x
 PRODUCTION_FACTOR_WORKER;Workers;x
-PRODUCTION_FACTORY_COUNT_TOOLTIP;State factories: $CURRENT$/$MAX$\n;x
+PRODUCTION_FACTORY_COUNT_TOOLTIP;State guilds: $CURRENT$/$MAX$\n;x
 PRODUCTION_FACTORY_UNIQUE_TOOLTIP;No §Y$NAME$§W in state\n;x
 GOODS_PROJECT_COMPLETE;All goods needs fulfilled;x
 GOODS_PROJECT_LACK_GOODS;Gathering the following goods before construction can begin:;x
@@ -1295,13 +1326,13 @@ CW_WARNWARN;We have been warned by $COUNTRY$, so they may intervene.;x
 CW_WARNALLIES2;$ENEMY$ is allied with $COUNTRY$.;x
 CW_WARNGUARANTEED2;$ENEMY$ is guaranteed by $COUNTRY$.;x
 CW_WARNWARN2;$FRIEND$ has been warned by $COUNTRY$, so they may intervene.;x
-CW_WARNOVERLORD2;$ENEMY$ is a puppet of $COUNTRY$, who will protect them.;x
+CW_WARNOVERLORD2;$ENEMY$ is a vassal of $COUNTRY$, who will protect them.;x
 PW_SEND;Send;x
 NEED;Need;x
 PW_I_DO;I do;x
 PW_RUN_AWAY;Rather not;x
 INDEPENDANT;Independent Nation;x
-VASSAL_SUBJECT;Puppet of $LORD$;x
+VASSAL_SUBJECT;Vassal of $LORD$;x
 DIPRELCH_WAR;War;x
 DIPRELCH_NBOR_PEACE;Neighbours at Peace;x
 DIPRELCH_GUARANTEE;Guarantees;x
@@ -2240,7 +2271,7 @@ REMOVE_PROVINCE_SUPPLIES_EFFECT;Lose §R$VALUE$§W supplies in §Y$PROVINCE$§W.
 ADD_PROVINCE_SUPPLIES_EFFECT;Gain §G$VALUE$§W supplies in §Y$PROVINCE$§W.\n;x
 REMOVE_PROVINCE_MONEY_EFFECT;Lose §R$VALUE$§W in §Y$PROVINCE$§W.\n;x
 ADD_PROVINCE_MONEY_EFFECT;Gain §G$VALUE$§W in §Y$PROVINCE$§W.\n;x
-CREATE_VASSAL_EFFECT;§Y$TARGET_COUNTRY$§W becomes a puppet of §Y$COUNTRY$§W.\n;x
+CREATE_VASSAL_EFFECT;§Y$TARGET_COUNTRY$§W becomes a vassal of §Y$COUNTRY$§W.\n;x
 ADD_BUILDING_EFFECT;Gain a §Y$BUILDING$§W with level §Y$VALUE$§W in §Y$PROVINCE$§W.\n;x
 REMOVE_BUILDING_EFFECT;Set §Y$BUILDING$§W to level §Y$VALUE$§W in §Y$PROVINCE$§W.\n;x
 ADD_ORGANISATION_POPULARITY_EFFECT;§Y$IDEOLOGY$§W gains §G$ORGANISATION$§W in organisation and §G$POPULARITY$§W in popularity§W.\n;x
@@ -2265,8 +2296,10 @@ REMOVE_BADBOY_EFFECT;$DIRECTION$ $VALUE$ reputation.\n;x
 CAPITAL_CHANGE;§Y$NEW$§W will become the new capital.\n;x
 NEW_CORE_EFFECT;Gain core on §Y$NEW$§W.\n;x
 LOSE_CORE_EFFECT;Lose core on §Y$LOSE$§W.\n;x
-GAIN_CB;Gain $TYPE$ Casus-Belli on §Y$WHO$§W.\n;x
+GAIN_CB;Gain §Y$TYPE$§! Casus-Belli on §Y$WHO$§W.\n;x
 REV_GAIN_CB;§Y$ACTIVE$§W gains a $TYPE$ Casus-Belli on §Y$PASSIVE$§W.\n;x
+LOSE_CB;Lose §Y$TYPE$§! Casus-Belli on §Y$WHO$§W.\n;x
+REV_LOSE_CB;§Y$ACTIVE$§W loses a $TYPE$ Casus-Belli on §Y$PASSIVE$§W.\n;x
 RELATION_CHANGE;Relation between §Y$ACTIVE$§W and §Y$PASSIVE$§W changed by $MUCH$.\n;x
 GOV_CHANGE;The type of government changes to §Y$GOV$§W.\n;x
 CHANGE_TAG;Become §Y$NEW$§W.\n;x
@@ -2326,7 +2359,7 @@ FACTORY_NEED_DETAIL;Need $VAL$ for producers;x
 POP_NEED_DETAIL;Need $VAL$ for pops;x
 PRODUCED_DETAIL_REMOVE;$VAL$ produced in our realm;x
 PLURALITY_CHANGE;Monthly Change;x
-TOO_SOON_FOR_REFORM;The Upper House can only enact a new reform once every six months. We have to wait until §Y$DATE$§W until we can enact another reform.;x
+TOO_SOON_FOR_REFORM;The Council of the Realm can only enact a new reform once every six months. We have to wait until §Y$DATE$§W until we can enact another reform.;x
 IS_NEXT_STEP_ONLY;In this category of reforms, only gradual change can be done, so only one step back or forward can be done at any time.;x
 PERC_OF_PARLAMENT;$PERC$% of Parliament.;x
 VOTERS_LABEL;Voters;x
@@ -2347,14 +2380,14 @@ SOLMP_NO_SOLDIER_POPS;There are no soldier pops in this province that can be rec
 SOLMP_OVER_RECRUITED;This province has no longer the amount of soldier pops needed to support the troops it has raised.;x
 SOLMP_DETAILS;There is currently §Y$CURRENT$§W brigades recruited from this province, and the soldier pops can support §Y$ALLOWED$§W brigades at maximum.;x
 #;;x
-PROVTIP_NAVAL_BASE;Closest Naval Base: ;x
-COLONIZE_CLOSEST_BASE_TO_FAR;No naval base close enough;x
+PROVTIP_NAVAL_BASE;Closest Port: ;x
+COLONIZE_CLOSEST_BASE_TO_FAR;No port close enough;x
 CONFIRM_CREATE_STATE_TITLE;Create State;x
-BUILDTYPE_FACTORY;Factory;x
+BUILDTYPE_FACTORY;Guild;x
 BUILDTYPE_RGO;Rgo;x
 BUILDTYPE_INFRASTRUCTURE;Infrastructure;x
-BUILDTYPE_NAVALBASE;Naval Base;x
-BUILDTYPE_FORT;Fort;x
+BUILDTYPE_NAVALBASE;Port;x
+BUILDTYPE_FORT;Castle;x
 UV_BACKGROUND;Background: $VAL$;x
 UV_BACKGROUND_LABEL;Background;x
 MOB_FROM_TECH;From technology: §G+$VALUE$§W;x
@@ -2367,8 +2400,8 @@ ALLIED_WITH;Allied with:;x
 SEND_DIPLOMAT;Send Diplomat;x
 PV_CONTROLLER;Controller:;x
 PV_SIEGE_PROGRESS;Occupation progress:;x
-PV_FORT;Fort;x
-PV_NAVALBASE;Naval base;x
+PV_FORT;Castle;x
+PV_NAVALBASE;Port;x
 PV_RAILROAD;Road;x
 AVG_STATE_BONUS;Average in state:;x
 PW_SUPPLY_LIMIT;Supply Limit;x
@@ -2512,8 +2545,8 @@ MODIFIER_MIDDLE_VOTE;Middle Vote;x
 MODIFIER_POOR_VOTE;Poor Vote;x
 MODIFIER_MINIMUN_WAGE;Minimum Wage;x
 MODIFIER_POOR_LUXURY_NEEDS;Luxury Needs for Poor Strata;x
-MODIFIER_FACTORY_EFFICIENCY;Factory Efficiency;x
-MODIFIER_FACTORY_MAINTENANCE;Factory Maintenance;x
+MODIFIER_FACTORY_EFFICIENCY;Guild Efficiency;x
+MODIFIER_FACTORY_MAINTENANCE;Guild Maintenance;x
 MODIFIER_RICH_EVERYDAY_NEEDS;Everyday Needs for Rich Strata;x
 MODIFIER_MIDDLE_EVERYDAY_NEEDS;Everyday Needs for Middle Strata;x
 MODIFIER_POOR_EVERYDAY_NEEDS;Everyday Needs for Poor Strata;x
@@ -2567,8 +2600,8 @@ ALLIEDWITH;Allied with $LIST$.;x
 LEADUNIONS;Lead Personal Union with $LIST$.;x
 INUNION;In Personal Union with $LIST$.;x
 ROYALMARRIAGE;Royal Marriage with $LIST$.;x
-LEADVASSAL;Has the following puppets: $LIST$.;x
-AMVASSAL;Is a puppet of $LIST$.;x
+LEADVASSAL;Has the following vassals: $LIST$.;x
+AMVASSAL;Is a vassal of $LIST$.;x
 HASCBON;Has claims on $LIST$.;x
 GUARANTEED;Independence guaranteed by $LIST$.;x
 GUARANTING;Guaranteeing the Independence of $LIST$.;x
@@ -2723,8 +2756,8 @@ UTM_NOT_LEGAL_RETREAT;§YWe can not retreat into territory where there are hosti
 OV_NO_VALID_ORDER;No valid order is selected.;x
 OV_NO_VALID_PROVINCES;No valid provinces selected;x
 VASSALPROVNUM;They will receive $NUMBER$ provinces.;x
-IS_NOT_VASSAL_OF;Is NOT a puppet of ;x
-IS_VASSAL_OF;Is a puppet of ;x
+IS_NOT_VASSAL_OF;Is NOT a vassal of ;x
+IS_VASSAL_OF;Is a vassal of ;x
 FE_NONE_FOUND;None;x
 SAVED_GAMES;Saved Game;x
 FE_PAUSED_TEXT;Paused;x
@@ -2732,7 +2765,7 @@ PV_OCEAN;Ocean;x
 PV_OCEAN_DESC;Only ships can enter this province;x
 CONFIRM_CANCEL_CONSTRUCTION_TITLE;Cancel Construction?;x
 CONFIRM_CANCEL_CONSTRUCTION_DESC;Are you sure you wish to cancel this construction?;x
-DIP_THEY_PUPPET;They are a puppet state of §Y$OVERLORD$§W;x
+DIP_THEY_PUPPET;They are a vassal of §Y$OVERLORD$§W;x
 UV_UNDER_ATTACK;This unit is under attack;x
 UV_ATTACKING;This unit is attacking;x
 UV_MOVING;This unit is moving;x
@@ -2841,7 +2874,7 @@ BUILDING_YEAR;Built in §Y$DATE$§W.;x
 BEFORE_START;Before the game's timeframe.;x
 MIL_CONST_TIP;A §Y$TYPE$§W will be fielded here on §Y$DATE$§W.;x
 BUILD_CONST_TIP;A §Y$BUILDING$§W will be finished here in §Y$DATE$§W.;x
-PORT;This is a naval base from which our fleets can operate.;x
+PORT;This is a port from which our fleets can operate.;x
 WARTAX_TIP;Raise War Taxes;x
 INCREASED;increased;x
 DECREASED;decreased;x
@@ -2903,7 +2936,6 @@ AMBIENT;Ambient;x
 WCRD_ATT;This is a war that they have started.;x
 WCRD_DEF;This is a defensive war, where we need to help our ally.;x
 TRIGGER_OVERLORD;Liege;x
-FE_TUTORIAL;Tutorial;x
 city;City;x
 NO_EFFECT;No Effect;x
 NONE_AVAILABLE;None available.;x
@@ -3181,7 +3213,7 @@ OL_COMMANDER;is under the command of $COMMANDER$;x
 OL_ARMY_MOVE;It is on the move towards §Y$DEST$§W.;x
 OL_NAVY;This navy currently $COMMANDER$ and is located in §Y$PROV$§W.;x
 OL_NAVY_MOVE;It has set sail towards §Y$DEST$§W.;x
-OL_NAVAL_BASE;The $PROV$ naval base currently has $NUM$ units assigned;x
+OL_NAVAL_BASE;The $PROV$ port currently has $NUM$ units assigned;x
 OL_AIR_UNITS;Air Units;x
 OL_AIR;This air unit currently $COMMANDER$ and is located in §Y$PROV$§W.;x
 OL_AIR_MOVE;It has set flying towards §Y$DEST$§W.;x
@@ -3209,7 +3241,7 @@ ANY_CORE_PROVINCE;Any Core;x
 OL_COMBAT;Combats;x
 OL_ARMIES;Armies;x
 OL_NAVIES;Navies;x
-OL_STATEBUILDING_CONSTRUCTION;Factory construction;x
+OL_STATEBUILDING_CONSTRUCTION;Guild construction;x
 OL_PROVINCE_CONSTRUCTION;Province construction;x
 OL_ARMY_CONSTRUCTION;Army construction;x
 OL_NAVY_CONSTRUCITON;Navy construction;x
@@ -3227,7 +3259,7 @@ OL_VIEW_COMBAT;Toggles §YCombat§W view.;x
 OL_VIEW_NAVALCOMBAT;Toggles §YNaval Combat§W view.;x
 OL_VIEW_ARMIES;Toggles §YArmy§W view.;x
 OL_VIEW_NAVIES;Toggles §YNavy§W view.;x
-OL_VIEW_FACTORIES;Toggles §YFactory Construction§W view.;x
+OL_VIEW_FACTORIES;Toggles §YGuild Construction§W view.;x
 OL_VIEW_BUILDINGS;Toggles §YBuilding Construction§W view.;x
 OL_VIEW_ARMY_CONSTRUCTION;Toggles §YArmy Construction§W view.;x
 OL_VIEW_NAVY_CONSTRUCTION;Toggles §YNavy Construction§W view.;x
@@ -3745,10 +3777,10 @@ POPULATION;Population;x
 TRADE;Trade;x
 TB_PRODUCTION_PRODUCED;Top produced:;x
 TB_PRODUCTION_LOSING_MONEY;Losing money;x
-TB_PRODUCTION_SHOULD_EXPAND;Factory at full capacity;x
+TB_PRODUCTION_SHOULD_EXPAND;Guild at full capacity;x
 TB_PRODUCTION_IS_SUBSIDIZING;Is subsidizing;x
-TB_PRODUCTION_CAN_OPEN;Can open factory;x
-TB_PRODUCTION_MOST_PROFITABLE;Most profitable factories:;x
+TB_PRODUCTION_CAN_OPEN;Can open guild;x
+TB_PRODUCTION_MOST_PROFITABLE;Most profitable guilds:;x
 TB_BUDGET_INCOME;Income: $PARAM$;x
 TB_BUDGET_EXPENSE;Expense: $PARAM$;x
 TB_BUDGET_DAILY_BALANCE;Daily balance: $PARAM$;x
@@ -3778,7 +3810,7 @@ TB_NATIONALFOCUS_NONE;There are currently no provinces with national focus;x
 TB_MAX_FOCUS;Technology limits you to a maximum of §Y$FOCUS$§W National focus points.;x
 NAT_IN;in ;x
 UNITY_IS_ATLEAST_TRIGGER;Unity is at least §Y$VALUE$§W.\n;x
-AMOUNT_OF_DIVISIONS_IS_ATLEAST_TRIGGER;§Y$COUNTRY$§W Number of divisions is at least §Y$VALUE$§W.\n;x
+AMOUNT_OF_DIVISIONS_IS_ATLEAST_TRIGGER;§Y$COUNTRY$§W Number of armies with 2 or more units is at least §Y$VALUE$§W.\n;x
 IDEOLOGY_IS_EQUAL_TO_TRIGGER;Ruling party is §Y$NAME$§W.\n;x
 MINISTER_ALIVE_TRIGGER;§Y$NAME$§W is alive§W.\n;x
 MONEY_IS_ATLEAST_TRIGGER;Money is at least §Y$VALUE$§W.\n;x
@@ -3801,7 +3833,7 @@ POPULARITY_IS_ATLEAST_TRIGGER;§Y$IDEOLOGY$§W has popularity at least §Y$VALUE
 IS_THREATEND_TRIGGER;§Y$COUNTRY$§W is threatened by realms with threat value at least §Y$VALUE$§W.\n;x
 THREAT_IS_NOT_TRIGGER;§Y$COUNTRY$§W threat with §Y$TARGET_COUNTRY$§W is not §Y$VALUE$§W.\n;x
 UNITY_IS_NOT_TRIGGER;Unity is not §Y$VALUE$§W.\n;x
-AMOUNT_OF_DIVISIONS_IS_NOT_TRIGGER;§Y$COUNTRY$§W number of divisions is not §Y$VALUE$§W.\n;x
+AMOUNT_OF_DIVISIONS_IS_NOT_TRIGGER;§Y$COUNTRY$§W number of armies with 2 or more units is less than §Y$VALUE$§W.\n;x
 IDEOLOGY_IS_NOT_TRIGGER;Ruling Party is NOT §Y$NAME$§W.\n;x
 MINISTER_IS_NOT_ALIVE_TRIGGER;§Y$NAME$§W is not alive§W.\n;x
 MONEY_IS_NOT_TRIGGER;Money is not §Y$VALUE$§W.\n;x
@@ -3819,8 +3851,8 @@ ORGANISATION_IS_NOT_TRIGGER;§Y$IDEOLOGY$§W does not have §Y$VALUE$§W in orga
 POPULARITY_IS_NOT_TRIGGER;§Y$IDEOLOGY$§W does not have §Y$VALUE$§W in popularity§W.\n;x
 IS_NOT_THREATEND_TRIGGER;§Y$COUNTRY$§W Is not threatened by realms with threat value §Y$VALUE$§W.\n;x
 IS_NOT_GUARANTEEING_TRIGGER;§Y$COUNTRY$§W is not guaranteeing §Y$TARGET_COUNTRY$§W.\n;x
-COUNTRY_HAS_UNITS_IN_PROVINCE_TRIGGER;§Y$COUNTRY$§W has units in province §Y$PROVINCE$§W.\n;x
-COUNTRY_HAS_NO_UNITS_IN_PROVINCE_TRIGGER;§Y$COUNTRY$§W has no units in province §Y$PROVINCE$§W.\n;x
+COUNTRY_HAS_UNITS_IN_PROVINCE_TRIGGER;has units from §Y$COUNTRY$§W in the province.\n;x
+COUNTRY_HAS_NO_UNITS_IN_PROVINCE_TRIGGER;does not have units from §Y$COUNTRY$§W in the province.\n;x
 ALL_ORG_POP_IS_NOT_TRIGGER;§Y$IDEOLOGY$§W does not have§Y$ORGANISATION$§W in organisation and §Y$POPULARITY$§W in popularity§W.\n;x
 ALL_ORG_POP_IS_ATLEAST_TRIGGER;§Y$IDEOLOGY$§W has organisation of at least §Y$ORGANISATION$§W or popularity above §Y$POPULARITY$§W.\n;x
 IS_NOT_LAW_TRIGGER;§Y$LAW$§W is NOT the $GROUP$.;x
@@ -3838,11 +3870,11 @@ IS_MEMBER_OF_FACTION_TRIGGER;Is member of §Y$FACTION$§W.;x
 POP_DONT_HAVE_X_INY;$TYPE$ in $PROV$ does not have $WHAT$.;x
 POP_HAVE_X_INY;$TYPE$ in $PROV$ have $WHAT$;x
 IS_NOT_CULTURE;Culture is not;x
-IS_CULTURE;Any pop in province;x
+IS_CULTURE;Is culture group;x
 HAS_TERRAIN;Terrain is;x
 HAS_NOT_TERRAIN;Terrain is not;x
-IS_OF_POPTYPE;Pop is of type;x
-IS_NOT_OF_POPTYPE;Pop is not of type;x
+IS_OF_POPTYPE;is;x
+IS_NOT_OF_POPTYPE;is not;x
 MORE_THAN_NEEDS_COST;Money to cover §Y$VAL$§W of needs.\n;x
 NOT_MORE_THAN_NEEDS_COST;Not enough money to cover §Y$VAL$§W% of needs.\n;x
 MORE_THAN_NEEDS;Getting more than §Y$VAL$§W% of their §Y$TYPE$§W.\n;x
@@ -3909,8 +3941,8 @@ NOT_WORK_AVAILABLE;No work available for;x
 WORK_AVAILABLE;Work available for;x
 HAVE_PRESTIGE_LESS_THAN;Prestige less than;x
 HAVE_PRESTIGE_MORE_THAN;Prestige at least;x
-CAN_NOT_BUILD_FACTORY;Can not build factory.\n;x
-CAN_BUILD_FACTORY;Can not build factory.\n;x
+CAN_NOT_BUILD_FACTORY;Can not build guild.\n;x
+CAN_BUILD_FACTORY;Can not build guild.\n;x
 GEN_POP_HAVE;Must have $WHAT$;x
 GEN_POP_NOT_HAVE;Must not have $WHAT$.;x
 IS_NOT_SPHERELEADER_OF;Has NOT $ADJ$ in sphere of influence.;x
@@ -4149,9 +4181,9 @@ DATE_DIFF_A;$Y$ years, $M$ months and $D$ days;x
 DATE_DIFF_B;$M$ months and $D$ days;x
 DATE_DIFF_C;$D$ days;x
 CB_DESTROY_FORTS;Destroy fortifications;x
-CB_DESTROY_NAVAL_BASES;Destroy naval bases;x
-po_destroy_forts;Destroy all forts in $STATE$.;x
-po_destroy_naval_bases;Destroy naval base in $STATE$.;x
+CB_DESTROY_NAVAL_BASES;Destroy ports;x
+po_destroy_forts;Destroy all fortifications in $STATE$.;x
+po_destroy_naval_bases;Destroy port in $STATE$.;x
 ALL_CORE_PROVINCES;all states with core provinces;x
 ALL_SATES;all states;x
 HAS_FLASHPOINT;Has flashpoint;x
@@ -4485,7 +4517,7 @@ BP_TOOL_ICON_INFANTRY;Infantry icon;x
 BP_TOOL_ICON_COMBAT;Battle icon;x
 BP_TOOL_ICON_CAVALRY;Cavalry icon;x
 BP_TOOL_ICON_ARTILLERY;Artillery icon;x
-BP_TOOL_ICON_NAVAL;Naval base icon;x
+BP_TOOL_ICON_NAVAL;Port icon;x
 BP_TOOL_ICON_INVASION;Invasion icon;x
 BP_TOOL_ICON_WOODEN_SHIP;Ship icon;x
 BP_TOOL_ICON_IRONCLAD;Ironclad icon;x
@@ -4498,7 +4530,7 @@ PRODUCTION_BONUS;$BON$ bonus from:;x
 MODIFIER_LOCAL_SHIP_BUILD;Local Ship Build Time;x
 CB_ALLOWED_ANNEX;Allow Annexation;x
 CB_ALLOWED_ADD_TO_SPHERE;Add to Sphere;x
-CB_ALLOWED_RELEASE_PUPPET;Release of Puppet;x
+CB_ALLOWED_RELEASE_PUPPET;Release of Vassal;x
 CB_ALLOWED_STATUS_QUO;Return to Status Quo;x
 CB_ALLOWED_TRANSFER_PROVINCES;Transfer of provinces;x
 CB_ALLOWED_PRESTIGE;Reduction of Prestige;x
@@ -4506,12 +4538,12 @@ CB_ALLOWED_CONCESSION;Concede Defeat;x
 MAINTENANCE_DESC;Maintenance goods need:;x
 PROCEED;Proceed;x
 ENDGAME_HEADLINE;Game Over;x
-ENDGAME_DESC;One hundred Momentous years have passed and we have entered the fourth age. The world is a radically different place, how did your realm do?;x
+ENDGAME_DESC;Over one hundred momentous years have passed and we have entered the Fourth Age. The world is a radically different place, how did your realm do?;x
 NEEDS_BOUGHT;Estimated needs for today:;x
 TOTAL_NEEDS_BOUGHT;Estimated needs cost:;x
 TOTAL_SOLD_FOR;Yesterday we produced $NUM$ §Y$GOOD$§W which sold for $CASH$;x
-COULDNT_AFFORD;Factory couldn't afford to buy all its inputs yesterday;x
-INPUT_LACKING;There's not enough §Y$GOOD$§W on the market to satisfy factory input needs;x
+COULDNT_AFFORD;Guild couldn't afford to buy all its inputs yesterday;x
+INPUT_LACKING;There's not enough §Y$GOOD$§W on the market to satisfy guild input needs;x
 OUTPUT_WASTED;$NUM$ of $PRODUCED$ §Y$GOOD$§W didn't get sold yesterday;x
 TRADE_CONFIRM_DESC;Setting a manual trade means we might end up taking loans to afford purchases.;x
 BUDGET_TAX_EFFICIENCY;Tax Efficiency: §Y$VALUE$%§W;x
@@ -4555,8 +4587,8 @@ MAY_GAS_DEFEND;Can defend against Aerial Support\n;x
 IMMIGRANTS_FROM;There were §G$VAL$§W immigrants from $NAME$.;x
 EMIGRANTS_TO;§R$VAL$§W emigrated to $NAME$.;x
 PW_ALL_FOCUSES_USED;All national focuses are already used.;x
-HAS_NO_FACTORIES;Has NO factories.\n;x
-HAS_FACTORIES;Has factories.\n;x
+HAS_NO_FACTORIES;Has NO guilds.\n;x
+HAS_FACTORIES;Has guilds.\n;x
 RETREAT_DELAY_IRO;There is still §Y$VAL$§W day(s) left until a voluntary retreat can be made.;x
 CULTURE_IS_NOT;Culture is NOT;x
 CULTURE_IS;Culture is;x
@@ -4603,8 +4635,8 @@ MILITARY_MILITARY_TACTICS;Military tactics;x
 COUNTRYALERT_NO_CanDoDecisions;There are no decisions that presently demand our attention.;x
 POP_OTHER_LABEL;Other;x
 WARSUBSIDIES_DESC;Offer §Y$MONEY$§W each day to help this realm;x
-IS_NOT_OUR_VASSAL; is NOT our Puppet;x
-IS_OUR_VASSAL; is our Puppet;x
+IS_NOT_OUR_VASSAL; is NOT our Vassal;x
+IS_OUR_VASSAL; is our Vassal;x
 COUNTRYALERT_HaveOrganizingRebels;Rebel Factions are organizing in our realm!;x
 TOTAL_REBEL_POP;Rebel Faction Members;x
 NUMBER_OF_EMIREES;§Y$NUM$§W have left our realm for other realms this month;x
@@ -4704,7 +4736,7 @@ WEGAINCB_BTN1;OK;x
 WEGAINCB_BTN2;OK;x
 WEGAINCB_BTN3;Goto;x
 WEGAINCB_MAP;*;x
-ADJ_FORT_EXTRA_ATTR;And §R+$VAL$%§W from hostile adjacent forts.;x
+ADJ_FORT_EXTRA_ATTR;And §R+$VAL$%§W from hostile adjacent castles.;x
 IS_NOT_ACCEPTED_CULTURE_POP;does not belong to an accepted culture.\n;x
 IS_ACCEPTED_CULTURE_POP;belong to an accepted culture.\n;x
 IS_NOT_PRIMARY_CULTURE_POP;Is not §Y$NAME$§W\n;x
@@ -4880,7 +4912,7 @@ POLITICS_REFORMS;Reforms;x
 POLITICS_RELEASE_NATIONS;Release realms;x
 MILITARY_LEADER_NAME_TOOLTIP;§Y$NAME$§W is in command of §Y$ARMY$§W in §Y$LOCATION$§W;x
 BE_SECOND_RANK;Secondary Power;x
-COUNTRYALERT_HasUnemployedWorkers;The following states have unemployed factory workers:;x
+COUNTRYALERT_HasUnemployedWorkers;The following states have unemployed guild workers:;x
 TOPBAR_POPULATION_VISUAL;Our total population times four is $CURR$.;x
 REL_SPHERE_OF_INFLUENCE;In Sphere;x
 TOTAL_AMOUNT_OF_SHIPS;Total amount of ships: $COUNT$;x
@@ -5069,15 +5101,15 @@ SM_SHORTCUT;Shortcut tooltip;x
 OL_REBEL_OCCUPATIONS;Rebel occupations;x
 OL_REBEL_OCCUPATIONS_TOOLTIP;Our province of §Y$PROVINCE$§W is being occupied by the rebels!;x
 OL_VIEW_REBEL_OCCUPATIONS;Toggles §YRebel Occupations§W view;x
-POP_MIL_CHANGE_REBEL;This pop is living in §Y$PROV$§W that is under §RRebels§W control.\nIt's militancy change cannot be estimated.;x
-POP_CON_CHANGE_REBEL;This pop is living in §Y$PROV$§W that is under §RRebels§W control.\nIt's consciousness change cannot be estimated.;x
+POP_MIL_CHANGE_REBEL;This pop is living in §Y$PROV$§W that is under §RRebels§W control.\nIts militancy change cannot be estimated.;x
+POP_CON_CHANGE_REBEL;This pop is living in §Y$PROV$§W that is under §RRebels§W control.\nIts consciousness change cannot be estimated.;x
 PROJECT_STATE_NAME_DESC;Planning to build in §Y$PROV$§W.;x
 MIL_FROM_TROOPS;Soldiers & Army;x
 MIL_FROM_CAP_SHIPS;Capital Ships;x
 MIL_FROM_LEADERS;Leaders;x
 OCCUPATION_SCORE;Occupation: ;x
 BLOCKADE_SCORE;Blockade: ;x
-OUTLINER_TOOLTIP_EMPLOYED;§Y$COUNT$§! Employed in factories (§Y$PERC$§!%);x
+OUTLINER_TOOLTIP_EMPLOYED;§Y$COUNT$§! Employed in guilds (§Y$PERC$§!%);x
 TRADE_SUPPLY_NEED_A;$VAL$ to supply army each day.\n;x
 TRADE_SUPPLY_NEED_N;$VAL$ to supply navy each day.\n;x
 DIPLOMACY_CANNOT_SET_PRIO_WAR;We cannot influence this realm while we have a war with them.;x
@@ -5125,7 +5157,7 @@ HAS_LESS_STATE_THAN;Has number of States < ;x
 HAS_STATES_GREATER_EQ;Has number of States >= ;x
 HAVE_MORE_SUBSTATES_THEN;Have more substates than ;x
 HAVE_LESS_SUBSTATES_THEN;Have less substates than ;x
-HAVE_MORE_VASSALS_THAN;Have more puppets than ;x
+HAVE_MORE_VASSALS_THAN;Have more vassals than ;x
 HAS_UNION_TAG;has culture union;x
 HAS_NO_UNION_TAG;has NO culture union;x
 HAS_CULTURE_UNION;Has culture union;x
@@ -5219,11 +5251,11 @@ REMOVE_RANDOM_ECO_REFORMS_EFFECT;Remove §R$VAL$§! economic reforms.\n;x
 REMOVE_RANDOM_MIL_REFORMS_EFFECT;Remove §R$VAL$§! military reforms.\n;x
 PRODUCTION_FACTORY_PURE_INCOME;Last day's pure income: $VALUE$;x
 PRODUCTION_FACTORY_MARKET_SPENDINGS;Market spendings: $VALUE$;x
-PRODUCTION_FACTORY_POP_PAYCHECKS;Workers and capitalists paychecks: $VALUE$;x
+PRODUCTION_FACTORY_POP_PAYCHECKS;Workers and Guild Masters paychecks: $VALUE$;x
 PRODUCTION_FACTORY_TOTAL_BALANCE;Last day's balance: $VALUE$;x
 PRODUCTION_FACTORY_TODAY_PROFIT;Last day's profitability: $VALUE$;x
 PRODUCTION_FACTORY_PROFITABILITY;Avg. profitability (last $DAYS$ days): $VALUE$;x
-PRODUCTION_FACTORY_CURRENT_BUDGET;Current factory budget: $VALUE$;x
+PRODUCTION_FACTORY_CURRENT_BUDGET;Current guild budget: $VALUE$;x
 PRODUCTION_FACTORY_INVESTMENT;From investments: $VALUE$;x
 PRODUCTION_FACTORY_SUBSIDIES;From investments: $VALUE$;x
 INFLUENCE_OVERFLOW_TOOLTIP;We are spending §Y$VALUE$§! of influence points each day, to reduce the influence of other realm.;x
@@ -5286,7 +5318,7 @@ NATIONAL_FOCUS_PARTY_LOYALTY_DESC;Daily loyalty change by: §Y$VAL$§W.;x
 NATIONAL_FOCUS_PARTY_LOYALTY_EFFECT;From national focus, daily change $VAL$ towards $PARTY$.;x
 SUBSTATE_OF_NOCOLOR;Substate of:;x
 SUBSTATE;Substate;x
-SUBSTATE_JOIN_WAR_DESC;is a substate of §Y$COUNTRY$§W and will always join it's wars.;x
+SUBSTATE_JOIN_WAR_DESC;is a substate of §Y$COUNTRY$§W and will always join its wars.;x
 IS_NOT_SUBSTATE_OF;Is NOT a substate of ;x
 IS_SUBSTATE_OF;Is a substate of ;x
 IS_NOT_SUBSTATE;Is NOT a substate;x
@@ -5297,7 +5329,7 @@ RALLY_POINT_ENABLE_INFO;Enable or Disable this province as a rally point.;x
 RALLY_POINT_MERGE_INFO;Enable or Disable units merging at destination.\n(Armies will merge up to the local supply limit.);x
 RALLY_POINT_PROVINCE_INFO;$PROV$ is a §Yrally point§!;x
 RALLY_POINT_PROVINCE_MERGE_INFO;All recruited units will merge up to §Y$LIMIT$§! when arrive here.;x
-CB_ALLOWED_MAKE_PUPPET;Make a Puppet;x
+CB_ALLOWED_MAKE_PUPPET;Make a Vassal;x
 DIPLOMACY_NEGOTIATE_SUBSTATE;We are not allowed to negotiate with §YSubstates§W;x
 DIPLOMACY_NEGOTIATE_WE_SUBSTATE;We are not allowed to negotiate with realms if we are a §YSubstate§W;x
 DECL_WAR_NO_SUBSTATE;We are not allowed to declare war against §Ysubstates§W;x
@@ -5307,7 +5339,7 @@ SELECT_CB_CREATION_TYPE;Select the type of justification we want to manufacture;
 CB_MANUFACTURE_TECH;War justification efficiency;x
 CB_CREATE_TECH;War justification efficiency: $VAL$;x
 SUPPRESSION_TECH_DESC;Suppression efficiency: $VAL$;x
-CB_NOT_ON_PUPPETS;We can't justify war against §Ypuppets§W and §Ysubstates§W.;x
+CB_NOT_ON_PUPPETS;We can't justify war against §Yvassals§W.;x
 CB_NOT_ON_SPHERES;We can't justify war against a realm that is in our sphere.;x
 NO_WAR_JUSTIFICATION;We are missing a valid justification for declaring war on them.;x
 NOT_HOSTILE_BUILD;Not Hostile;x
@@ -5361,7 +5393,7 @@ MESSAGE_SEARCH_TOOLTIP;Enter key words separated by §Yspace§! to filter the li
 SIDEMENU_menubar_msg_settings;Click to open message filter settings.;x
 RULE_BUILD_RAILWAY_INVEST;Investors can build foreign railways;x
 RULE_CAN_INVEST_IN_POP_PROJECTS;Invest in pop projects;x
-RULE_POP_OPEN_FACTORY_INVEST;Investors can open foreign factory;x
+RULE_POP_OPEN_FACTORY_INVEST;Investors can open foreign guilds;x
 MSG_FILTER_HEADER;Messages filter settings;x
 MSG_FILTER_TITLE;We are interested in:;x
 MSG_FILTER_DESELECT;Deselect All;x
@@ -5488,7 +5520,7 @@ SET_ECONOMIC_REFORM_EFFECT;Economic reform selected: §Y$NAME$§W.\n;x
 SET_MILITARY_REFORM_EFFECT;Military reform selected: §Y$NAME$§W.\n;x
 NATIONALIZE_INDUSTRY_EFFECT;Perform Nationalization;x
 TB_NATIONALFOCUS_CULTURE;§Y$NUM$§W people of primary/accepted cultures give us §Y$FOCUS$§W focus points;x
-OTHER_PORT;This is a naval base that we do not have access to;x
+OTHER_PORT;This is a port that we do not have access to;x
 MOVEMENT_RADICALISM_ADJUST;§Y$MOVEMENT$§! Radicalism: $AMOUNT$;x
 MILITARY_REFORM_COST_DESC;Cost modifier for military reforms: ;x
 ECONOMIC_REFORM_COST_DESC;Cost modifier for economic reforms: ;x
@@ -5518,9 +5550,9 @@ SPLITINHALF;Split in Half;x
 SPLITINHALF_DRO;Split in half will split the current unit into two roughly even-sized units and select the larger of the two units.;x
 GIVE_UNIT_COMMAND_BUTTON;Command Units;x
 GIVE_UNIT_COMMANDTITLE;Command Units;x
-GIVE_UNIT_COMMAND_DESC;While fighting a war together, a puppet's overlord may take command of their units.;x
-GIVE_UNIT_COMMAND_OK;Ask your puppet to take back command over their own units.;x
-GIVE_UNIT_COMMAND_CANT_CONTROL;You can command units of your §Ypuppets§! only when you are fighting in a war together.;x
+GIVE_UNIT_COMMAND_DESC;While fighting a war together, a vassal's overlord may take command of their units.;x
+GIVE_UNIT_COMMAND_OK;Ask your vassal to take back command over their own units.;x
+GIVE_UNIT_COMMAND_CANT_CONTROL;You can command units of your §Yvassals§! only when you are fighting in a war together.;x
 GIVE_UNIT_COMMAND_ALREADY_CONTROL;You are already in command of their units.;x
 CANCEL_UNIT_COMMAND_BUTTON;Give Back Units;x
 CANCEL_UNIT_COMMANDTITLE;Give Back Units;x
@@ -5580,7 +5612,7 @@ IW_SUPPLY_COST;You need §Y$VAL$§W every day to pay for supplies of this unit.;
 HAS_NOT_CULTURE_CORE;$CUL$ is NOT a core-culture of $WHERE$.\n;x
 HAS_CULTURE_CORE;$CUL$ is a core-culture of $WHERE$.\n;x
 PROMOTION_EFFECT_FROM_ADMIN;Admin. efficiency effect on promotion speed: §Y$PERCENTAGE$§!;x
-OUTLINER_TOOLTIP_FACTORY_OCCUPANCY;Local factories employment: $PERC$;x
+OUTLINER_TOOLTIP_FACTORY_OCCUPANCY;Local guild employment: $PERC$;x
 REVOLTALLIANCE_LOG;A revolution! Our alliance is broken!;x
 Workforce;Workforce;x
 SELL;SELL;x
@@ -5631,9 +5663,9 @@ war_we_lose_small_desc;$STRING_0_0$ has ended with our defeat at the hands of $T
 rebels_win_small_title;Revolution!;x
 rebels_win_small_desc;$STRING_0_0$ have defeated $TAG_0_0$ and broken the realm, what will the $STRING_0_3$ $STRING_0_4$ do now?;x
 GOODS_PRICE_UP_TITLE_LARGE;PRICES RISE!;x
-GOODS_PRICE_UP_LARGE;In the last $VALUE_INT_0_0$ months the price of $STRING_0_1$ has steadily risen. Capitalists and Artisans worldwide scramble to produce more $STRING_0_1$ to meet the ever-increasing demands of the market.;x
+GOODS_PRICE_UP_LARGE;In the last $VALUE_INT_0_0$ months the price of $STRING_0_1$ has steadily risen. Guild Masters and Artisans worldwide scramble to produce more $STRING_0_1$ to meet the ever-increasing demands of the market.;x
 GOODS_PRICE_UP_TITLE_MEDIUM;PRICES RISE!;x
-GOODS_PRICE_UP_MEDIUM;In the last $VALUE_INT_0_0$ months the price of $STRING_0_1$ has steadily risen. Capitalists and Artisans worldwide scramble to produce more $STRING_0_1$ to meet the ever-increasing demands of the market.;x
+GOODS_PRICE_UP_MEDIUM;In the last $VALUE_INT_0_0$ months the price of $STRING_0_1$ has steadily risen. Guild Masters and Artisans worldwide scramble to produce more $STRING_0_1$ to meet the ever-increasing demands of the market.;x
 GOODS_PRICE_UP_TITLE_SMALL;PRICES RISE!;x
 GOODS_PRICE_UP_SMALL;In the last $VALUE_INT_0_0$ months the price of $STRING_0_1$ has steadily risen!;x
 GOODS_PRICE_DOWN_TITLE_LARGE;PRICES COLLAPSE!;x
@@ -5649,11 +5681,11 @@ REVOLUTION_NEWS_MEDIUM;A revolution has taken place in $TAG_0_0$! $STRING_0_0$ h
 REVOLUTION_NEWS_TITLE_SMALL;REVOLUTION!;x
 REVOLUTION_NEWS_SMALL;A revolution has taken place in $TAG_0_0$! $STRING_0_0$ have defeated the government's forces and broken the realm.;x
 INVENTION_NEWS_TITLE_LARGE;INVENTION!;x
-INVENTION_NEWS_LARGE;Scientists and engineers in $TAG_0_0$ are reported to have invented $STRING_0_1$. ;x
+INVENTION_NEWS_LARGE;Researchers and engineers in $TAG_0_0$ are reported to have invented $STRING_0_1$. ;x
 INVENTION_NEWS_TITLE_MEDIUM;INVENTION!;x
-INVENTION_NEWS_MEDIUM;Scientists and engineers in $TAG_0_0$ are reported to have invented $STRING_0_1$. ;x
+INVENTION_NEWS_MEDIUM;Researchers and engineers in $TAG_0_0$ are reported to have invented $STRING_0_1$. ;x
 INVENTION_NEWS_TITLE_SMALL;Invention!;x
-INVENTION_NEWS_SMALL;Scientists and engineers in $TAG_0_0$ are reported to have invented $STRING_0_1$. ;x
+INVENTION_NEWS_SMALL;Researchers and engineers in $TAG_0_0$ are reported to have invented $STRING_0_1$. ;x
 INVENTION_SUFFIX1;Progress marches ever onwards!;x
 INVENTION_SUFFIX2;Truely the light of the future!;x
 INVENTION_SUFFIX3;This may doom us all!;x
@@ -5667,21 +5699,21 @@ INVENTION_SUFFIX_LONG2; Whatever will they think of next?;x
 INVENTION_SUFFIX_LONG3; It will never catch on.;x
 INVENTION_SUFFIX_LONG4; They clearly stole the idea from us.;x
 PROVINCE_NEWS_TITLE_LARGE;$TAG_0_1_UPPER$ EXPANDS!;x
-PROVINCE_NEWS_LARGE;The province of $STRING_0_0$ now belongs to $TAG_0_1$. The foreign minister of $TAG_0_1$ has stated that '$STRING_0_0$ is an integral part of $TAG_0_1$' and that '$TAG_0_0$ has no claim to it now it is back in our rightful hands'.;x
+PROVINCE_NEWS_LARGE;The province of $STRING_0_0$ now belongs to $TAG_0_1$. An envoy from $TAG_0_1$ has stated that '$STRING_0_0$ is an integral part of $TAG_0_1$' and that '$TAG_0_0$ has no claim to it now it is back in our rightful hands'.;x
 PROVINCE_NEWS_TITLE_MEDIUM;$TAG_0_1_UPPER$ EXPANDS!;x
-PROVINCE_NEWS_MEDIUM;The province of $STRING_0_0$ now belongs to $TAG_0_1$. The foreign minister of $TAG_0_1$ has stated that '$STRING_0_0$ is an integral part of $TAG_0_1$'.;x
+PROVINCE_NEWS_MEDIUM;The province of $STRING_0_0$ now belongs to $TAG_0_1$. An envoy from $TAG_0_1$ has stated that '$STRING_0_0$ is an integral part of $TAG_0_1$'.;x
 PROVINCE_NEWS_TITLE_SMALL;$TAG_0_1$ Expands!;x
-PROVINCE_NEWS_SMALL;The province of $STRING_0_0$ now belongs to $TAG_0_1$. The foreign minister of $TAG_0_1$ looked rather pleased in a recent interview.;x
+PROVINCE_NEWS_SMALL;The province of $STRING_0_0$ now belongs to $TAG_0_1$. An envoy from $TAG_0_1$ looked rather pleased in a recent interview.;x
 RESEARCH_NEWS_TITLE_LARGE;$TAG_0_0_ADJ$ research complete!;x
-RESEARCH_NEWS_LARGE;Scientists in $TAG_0_0$ have recently completed research into $STRING_0_1$. This breakthrough is sure to offer $TAG_0_0$ many advantages in the days to come as further inventions take place in this field.;x
+RESEARCH_NEWS_LARGE;Researchers in $TAG_0_0$ have recently completed research into $STRING_0_1$. This breakthrough is sure to offer $TAG_0_0$ many advantages in the days to come as further inventions take place in this field.;x
 RESEARCH_NEWS_TITLE_MEDIUM;$TAG_0_0_ADJ$ research complete!;x
-RESEARCH_NEWS_MEDIUM;Scientists in $TAG_0_0$ have recently completed research into $STRING_0_1$. This breakthrough is sure to offer $TAG_0_0$ many advantages in the days to come as further inventions take place in this field.;x
+RESEARCH_NEWS_MEDIUM;Researchers in $TAG_0_0$ have recently completed research into $STRING_0_1$. This breakthrough is sure to offer $TAG_0_0$ many advantages in the days to come as further inventions take place in this field.;x
 RESEARCH_NEWS_TITLE_SMALL;$TAG_0_0_ADJ$ research complete!;x
-RESEARCH_NEWS_SMALL;Scientists in $TAG_0_0$ have recently completed research into $STRING_0_1$.;x
+RESEARCH_NEWS_SMALL;Researchers in $TAG_0_0$ have recently completed research into $STRING_0_1$.;x
 WAR_NEWS_TITLE_LARGE;WAR BETWEEN $TAG_0_0_UPPER$ AND $TAG_0_1_UPPER$!;x
-WAR_NEWS_LARGE;On $DATE_LONG_0$ $TAG_0_0$ announced that a state of war now exists between them and $TAG_0_1$. The foreign minister of $TAG_0_0$, when asked for the reasons war had been declared stated the need to '$STRING_0_1$'. 'We only intend to reclaim what was unjustly claimed before and restore peace and order to the region', he added. 'This unlawful aggression will not stand' his counterpart in $TAG_0_1$ responded, demanding international community to condemn the aggressor. May God have mercy on them all.;x
+WAR_NEWS_LARGE;On $DATE_LONG_0$ $TAG_0_0$ announced that a state of war now exists between them and $TAG_0_1$. An envoy from $TAG_0_0$, when asked for the reasons war had been declared stated the need to '$STRING_0_1$'. 'We only intend to reclaim what was unjustly claimed before and restore peace and order to the region', he added. 'This unlawful aggression will not stand' his counterpart in $TAG_0_1$ responded, demanding international community to condemn the aggressor. May Eru have mercy on them all.;x
 WAR_NEWS_TITLE_MEDIUM;$TAG_0_0_UPPER$ GOES TO WAR!;x
-WAR_NEWS_MEDIUM;On $DATE_LONG_0$ $TAG_0_0$ announced that a state of war now exists with $TAG_0_1$. The stated reason for this declaration is to '$STRING_0_1$'. 'This unlawful aggression will not stand' the foreign minister of $TAG_0_1$ commented.;x
+WAR_NEWS_MEDIUM;On $DATE_LONG_0$ $TAG_0_0$ announced that a state of war now exists with $TAG_0_1$. The stated reason for this declaration is to '$STRING_0_1$'. 'This unlawful aggression will not stand' an envoy from $TAG_0_1$ commented.;x
 WAR_NEWS_TITLE_SMALL;$TAG_0_0_$ at War!;x
 WAR_NEWS_SMALL;On $DATE_LONG_0$ $TAG_0_0$ announced that a state of war now exists with $TAG_0_1$.;x
 AI_FEARS_US_TITLE1;$TAG_0_0_UPPER$ FEARS OUR MIGHT!;x
@@ -5693,9 +5725,9 @@ AI_FEARS_US_DESC2_LONG;A recent article in a $TAG_0_0_ADJ$ newspaper startled th
 AI_FEARS_US_DESC2_MEDIUM;A recent article in a $TAG_0_0_ADJ$ newspaper startled their realm! A detailed analysis of the chilly relations between our realms led the editor to the conclusion that absent new guarantees, our realms might soon find themselves in a state of war.;x
 AI_FEARS_US_DESC2_SHORT;A recent article in a $TAG_0_0_ADJ$ newspaper startled their realm! Analysis of chilly relations between our realms led the editor to the conclusion that war might be unavoidable.;x
 AI_FEARS_US_TITLE3;$TAG_0_0_ADJ$ insults!;x
-AI_FEARS_US_DESC3_LONG;Prejudice and hatred reign in $TAG_0_0$. The growing chorus of insults reached new lows on Monday as the $TAG_0_0_ADJ$ foreign minister slapped our ambassador on the lawn of our embassy in $TAG_0_0$. When asked for comment, our minister for foreign affairs said that this was 'More proof, as if any was needed, that they cannot be trusted to behave in a civilised manner. Savages and cads govern in $TAG_0_0$, and the sooner these wretches are rooted out the better'. Diplomatic channels remain open for now, but war may be inevitable.;x
-AI_FEARS_US_DESC3_MEDIUM;Prejudice and hatred reign supreme in $TAG_0_0$. On Monday the $TAG_0_0_ADJ$ foreign minister slapped our ambassador. Our minister for foreign affairs said that 'savages and cads govern in $TAG_0_0$, and the sooner these wretches are rooted out, the better'.;x
-AI_FEARS_US_DESC3_SHORT;On Monday the $TAG_0_0_ADJ$ foreign minister slapped our ambassador. Savages and bounders govern in $TAG_0_0$, and the sooner these wretches are rooted out, the better.;x
+AI_FEARS_US_DESC3_LONG;Prejudice and hatred reign in $TAG_0_0$. The growing chorus of insults reached new lows on Monday as the $TAG_0_0_ADJ$ official slapped our envoy in $TAG_0_0$. When asked for comment, our government said that this was 'More proof, as if any was needed, that they cannot be trusted to behave in a civilised manner. Savages and cads govern in $TAG_0_0$, and the sooner these wretches are rooted out the better'. Diplomatic channels remain open for now, but war may be inevitable.;x
+AI_FEARS_US_DESC3_MEDIUM;Prejudice and hatred reign supreme in $TAG_0_0$. On Monday the $TAG_0_0_ADJ$ official slapped our envoy. Our government said that 'savages and cads govern in $TAG_0_0$, and the sooner these wretches are rooted out, the better'.;x
+AI_FEARS_US_DESC3_SHORT;On Monday the $TAG_0_0_ADJ$ official slapped our envoy. Savages and bounders govern in $TAG_0_0$, and the sooner these wretches are rooted out, the better.;x
 AI_FEARS_OTHER_TITLE1;The fears of $TAG_0_0$;x
 AI_FEARS_OTHER_DESC1_LONG;A recent article in a $TAG_0_0_ADJ$ newspaper startled their realm! A detailed analysis of their chilly relations with $TAG_0_1$ and a comparison of their relative military strengths led the editor to the conclusion that both realms might soon find themselves in a state of war, and when that day comes, $TAG_0_0$'s very existence might be threatened. The elite and the commoners alike, the citizens of $TAG_0_0$ demand their government to seek alliances to diminish the unavoidable threat the $TAG_0_1_ADJ$ pose.;x
 AI_FEARS_OTHER_DESC1_MEDIUM;A recent article in a $TAG_0_0_ADJ$ newspaper startled their realm! A detailed analysis of their chilly relations with $TAG_0_1$ led the editor to the conclusion that absent new guarantees, both realms might soon find themselves in the state of war.;x
@@ -5713,7 +5745,7 @@ AI_LOVES_US_DESC2_LONG;An article in a $TAG_0_0_ADJ$ newspaper paints a picture 
 AI_LOVES_US_DESC2_MEDIUM;An article in a $TAG_0_0_ADJ$ newspaper paints a picture of amiable relations between our realms. Calling on numerous examples of peaceful cooperation based on trust and friendship, the editor declared both our realms to stand as friends and brothers.;x
 AI_LOVES_US_DESC2_SHORT;An article in a $TAG_0_0_ADJ$ newspaper paints a picture of amiable relations between our realms. Editor encouraged their government to continue aligning themselves with our policies.;x
 AI_LOVES_US_TITLE3;$TAG_0_0$ knows its place!;x
-AI_LOVES_US_DESC3_LONG;"Common sense is the order of the day in $TAG_0_0$, as their government and people continue to be enamoured with all things $OURCOUNTRY_ADJ$. In the political, military and cultural spheres, our obviously apparent superiority is readily acknowledged by the snivelling wretches. The $TAG_0_0_ADJ$ foreign minister, in a shameful attempt to ingratiate himself with our elites, said ""We welcome the paternal and guiding hand of $OURCOUNTRY_ADJ$. Long may our realms' friendship continue, to our mutual benefit"". Whether that will be the case remains to be seen.";x
+AI_LOVES_US_DESC3_LONG;"Common sense is the order of the day in $TAG_0_0$, as their government and people continue to be enamoured with all things $OURCOUNTRY_ADJ$. In the political, military and cultural spheres, our obviously apparent superiority is readily acknowledged by the snivelling wretches. The $TAG_0_0_ADJ$ government official, in a shameful attempt to ingratiate himself with our elites, said ""We welcome the paternal and guiding hand of $OURCOUNTRY_ADJ$. Long may our realms' friendship continue, to our mutual benefit"". Whether that will be the case remains to be seen.";x
 AI_LOVES_US_DESC3_MEDIUM;Common sense is the order of the day in the $TAG_0_0_ADJ$ capital, as their government and people continue to be enamoured with all things $OURCOUNTRY_ADJ$. In the political, military and cultural spheres, our obvious superiority is acknowledged by the wretches.;x
 AI_LOVES_US_DESC3_SHORT;The $TAG_0_0_ADJ$ government and people continue to be enamoured with $OURCOUNTRY$. In all spheres, our obvious superiority is readily acknowledged.;x
 AI_LOVES_OTHER_TITLE1;$TAG_0_0$'s relations;x
@@ -5744,17 +5776,17 @@ CRISIS_END_DESC_LONG1;It is peace for our time', great powers announce, emerging
 CRISIS_END_DESC_MEDIUM1;It is peace for our time', great powers announce, emerging from the summit negotiations with a diplomatic resolution to the brewing international crisis, which many claimed might have plunged them into the dreaded state of war if a compromise was not reached.;x
 CRISIS_END_DESC_SHORT1;It is peace for our time', great powers announce, emerging from the summit negotiations with a diplomatic resolution to the brewing international crisis, averting the possiblity of war.;x
 RESEARCH_NEWS_TITLE_LARGE2;Breakthrough in $TAG_0_0$!;x
-RESEARCH_NEWS_LARGE2;$TAG_0_0_ADJ$ scientists have announced yesterday that after months of dedicated and focused research, a new breakthrough in the field of $STRING_0_1$ has been made. It is expected that the entrepreneurs and government of $TAG_0_0$ will soon start putting this newly acquired knowledge to good use, applying it in practical ways throughout the realm.;x
+RESEARCH_NEWS_LARGE2;$TAG_0_0_ADJ$ researchers in $TAG_0_0$ have announced yesterday that after months of dedicated and focused research, a new breakthrough in the field of $STRING_0_1$ has been made. It is expected that the entrepreneurs and government of $TAG_0_0$ will soon start putting this newly acquired knowledge to good use, applying it in practical ways throughout the realm.;x
 RESEARCH_NEWS_TITLE_MEDIUM2;Breakthrough in $TAG_0_0$!;x
-RESEARCH_NEWS_MEDIUM2;$TAG_0_0_ADJ$ scientists have announced a breakthrough in the field of $STRING_0_1$. This new knowledge will soon be applied in practical ways, said one of the researchers.;x
+RESEARCH_NEWS_MEDIUM2;$TAG_0_0_ADJ$ researchers in $TAG_0_0$ have announced a breakthrough in the field of $STRING_0_1$. This new knowledge will soon be applied in practical ways, said one of the researchers.;x
 RESEARCH_NEWS_TITLE_SMALL2;Breakthrough in $TAG_0_0$!;x
-RESEARCH_NEWS_SMALL2;$TAG_0_0_ADJ$ scientists have recently announced a breakthrough in the field of $STRING_0_1$.;x
+RESEARCH_NEWS_SMALL2;$TAG_0_0_ADJ$ researchers in $TAG_0_0$ have recently announced a breakthrough in the field of $STRING_0_1$.;x
 COMMUNIST_REVOLUTION_NEWS_TITLE_LARGE_COMMUNIST;COMMUNISM TRIUMPHS IN $TAG_0_0_UPPER$!;x
 COMMUNIST_REVOLUTION_NEWS_LARGE_COMMUNIST;Workers of the world, unite!' Once more our rallying cry has proven fitting for such a victorious revolution. The corrupt powers of capitalism cannot stop the desire of the proletariat for a better future. We have received joyous news from our comrades in $TAG_0_0$, who managed to rise in rebellion against the crooks and thieves that mistreated and exploited the common folk. They seized the governmental powers, taking it back where it belongs: the hands of the people, represented by the people's committee: $STRING_0_0$!;x
 COMMUNIST_REVOLUTION_NEWS_TITLE_MEDIUM_COMMUNIST;COMMUNISM IN $TAG_0_0_UPPER$!;x
 COMMUNIST_REVOLUTION_NEWS_MEDIUM_COMMUNIST;Workers of the world, unite!' This rallying cry can been heard today throughout $TAG_0_0$, where our communist comrades have been victorious in overthrowing the government and establishing the one and true people's party: $STRING_0_0$!;x
 COMMUNIST_REVOLUTION_NEWS_TITLE_SMALL_COMMUNIST;REVOLUTION!;x
-COMMUNIST_REVOLUTION_NEWS_SMALL_COMMUNIST;Workers of the world, unite!' This rallying cry can been heard today throughout $TAG_0_0$, where our comrades have been victorious in overthrowing the corrupt capitalist crooks!;x
+COMMUNIST_REVOLUTION_NEWS_SMALL_COMMUNIST;Workers of the world, unite!' This rallying cry can been heard today throughout $TAG_0_0$, where our comrades have been victorious in overthrowing the corrupt Guild Master crooks!;x
 battle_we_lose_large_censored_press;Reports from the field tell us that on $DATE_LONG_0$, our courageous troops have made a tactical retreat from the battle against $TAG_0_3$ in $STRING_0_3$. This has been proven necessary to maximise our element of unpredictability and surprise. $VALUE_INT_0_4$ enemy soldiers have been killed by our valiant boys. Although $VALUE_INT_0_2$ of our soldiers are yet to report back for duty, it's worth noting that many of our troops remain hidden to surprise the enemy in an ambush, showing true courage and resilience!;x
 battle_we_lose_medium_censored_press;On $DATE_LONG_0$, a tactical retreat from the battle against $TAG_0_3$ has been proven necessary, in order to maximise our element of surprise! $VALUE_INT_0_2$ of our soldiers are said to be hiding for an ambush, while $VALUE_INT_0_4$ enemy troops have been killed!;x
 battle_we_lose_small_censored_press;On $DATE_LONG_0$, a tactical retreat has been conducted from the battle against $TAG_0_3$. It is thought $VALUE_INT_0_2$ of our troops are in hiding, preparing for an ambush!;x
@@ -5785,12 +5817,12 @@ AI_LOVES_US_TITLE4;Warm Relations;x
 AI_LOVES_US_DESC4_LONG;Our correspondent has been told by his sources within the Foreign office that in the last few weeks, the leader of $TAG_0_0$ made a grand speech to his people praising our realm and the achievements of our people. It is believed that the speech is an attempt by $TAG_0_0$ to draw closer to our mighty realm and it we must response to these overtures with the courtesy typical of the $TAG_0_1_ADJ$ people. We praise these attempts and hope that they will lead to a continued period of collaboration between our two glorious realms.;x
 AI_LOVES_US_DESC4_MEDIUM;After a reportedly very productive meeting with our ambassador last week, a representative of the $TAG_0_0_ADJ$ people gave a speech on the steps of the Foreign office praising our realm and government, opening the door to a new dialogue of collaboration and partnership.;x
 AI_LOVES_US_DESC4_SHORT;A new era of Friendship between our nations has begun' These were the words of the $TAG_0_0_ADJ$ Ambassador as he spoke to assembled journalists following talks in the capital.;x
-INVENTION_NEWS_TITLE_LARGE2;New patent!;x
-INVENTION_NEWS_LARGE2;Science Report: Improvements and innovations in the field of $STRING_0_1$ have been patented and registered by researchers in $TAG_0_0$. The documentation of these advancements, although currently a secret kept behind closed doors, is expected to progressively spread to other lands and in time contribute to the progress of science in the world. ;x
-INVENTION_NEWS_TITLE_MEDIUM2;New patent!;x
-INVENTION_NEWS_MEDIUM2;Improvements and innovations in the field of $STRING_0_1$ have been registered in the National Patent Office of $TAG_0_0$. ;x
-INVENTION_NEWS_TITLE_SMALL2;New patent!;x
-INVENTION_NEWS_SMALL2;New improvements and innovations in the field of $STRING_0_1$ have been patented in $TAG_0_0$. ;x
+INVENTION_NEWS_TITLE_LARGE2;New invention!;x
+INVENTION_NEWS_LARGE2;Science Report: Improvements and innovations in the field of $STRING_0_1$ have been registered by researchers in $TAG_0_0$. The documentation of these advancements, although currently a secret kept behind closed doors, is expected to progressively spread to other lands and in time contribute to progress in the world. ;x
+INVENTION_NEWS_TITLE_MEDIUM2;New creation!;x
+INVENTION_NEWS_MEDIUM2;Improvements and innovations in the field of $STRING_0_1$ have been registered in $TAG_0_0$. ;x
+INVENTION_NEWS_TITLE_SMALL2;New improvement!;x
+INVENTION_NEWS_SMALL2;New improvements and innovations in the field of $STRING_0_1$ have been discovered in $TAG_0_0$. ;x
 EDITORIAL_ABSMON;Editorial: why it is right and proper to hate anti-legitimists - providence itself demands it! Why, these ne’er-do-wells would have the peasant rabble govern themselves (see page 10) ;x
 EDITORIAL_PRUCON;Editorial: why it is right to hate reformists of every stripe - the natural order demands it! Why, these liberal speculators and cosmopolitans would run our realm as a whorehouse (see page 10);x
 EDITORIAL_CONMON;Editorial: why it is right to hate republicans - stability demands it! Why, without a figurehead to smile benevolently upon us, intrigue and the guillotine will destroy us all (page 10);x
@@ -5912,7 +5944,7 @@ TOTAL_TAX_EFFICIENCY;Tax Efficiency: §Y$VAL$§W;x
 TOTAL_TAX_EFFICIENCY_BASED;Calculated from:;x
 TAX_POOR_DESC;This controls how much of the poor strata's income will be collected as tax. Too heavy taxation will leave them less money to spend on their own needs.;x
 TAX_MIDDLE_DESC;This controls how much of the middle strata's income will be collected as tax. Too heavy taxation will leave them less money to spend on their own needs or businesses;x
-TAX_RICH_DESC;This controls how much of the rich strata's income will be collected as tax. Too heavy taxation will leave them less money to spend on their own needs and less likely to invest in projects like building new factories.;x
+TAX_RICH_DESC;This controls how much of the rich strata's income will be collected as tax. Too heavy taxation will leave them less money to spend on their own needs and less likely to invest in projects like building new guilds.;x
 MIL_COST_DESC;Supply costs for your military.;x
 NAT_STOCK_DESC;Costs of trades to fill our national stockpile.;x
 TARIFFS_DESC;Tariffs impose an extra cost on imported goods, with the proceeds going to the national treasury. Negative tariffs can be used to help subsidize imports for anyone in your realm;x
@@ -5930,7 +5962,7 @@ PRODUCTION_OUTPUT_YESTERDAY;Produced §Y$VALUE$§W yesterday.;x
 PRODUCTION_OUTPUT_GOODS_TOOLTIP2;Max output: §Y$CURR$§W;x
 PRODUCTION_CURRENT_STOCKPILE;Current stockpile: §Y$VALUE$§W;x
 POP_DAILY_INTEREST;Savings Interest: §Y$VAL$§W Interets d'epargne : §Y$VAL$§W Sparzinsen: §Y$VAL$§W;x
-MODIFIER_OVERSEAS_PRODUCTION_PENALTY;Overseas Factory/RGO penalty: $VALUE$;x
+MODIFIER_OVERSEAS_PRODUCTION_PENALTY;Overseas Guild/RGO penalty: $VALUE$;x
 PRODUCTION_FACTORY_EMPLOYEECOUNT_TOOLTIP2;Current employees: $EMPLOYEES$/$EMPLOYEE_MAX$;x
 LIFERATING_EFFECT;$DIRECTION$ $VALUE$ Life rating\n;x
 MILITARY_ARMY_COUNT_TOOLTIP;Number of armies: §Y$VALUE$§W;x
@@ -5988,8 +6020,8 @@ BUDGET_NO_LOANS_TO_REPAY;We have no loans to pay back;x
 POPDETAIL_NO_REBEL;No rebel affiliation;x
 PRODUCTION_STOCKPILE_LACK_COST;Stockpile lack cost:;x
 DIPLOMACY_AT_WAR_WITH;At war with:;x
-COLONIZE_CLOSEST_BASE_TO_FAR_SPEC;Closest naval base in §Y$PROV$§W is not close enough.\n(Naval range: §R$NEED$§W/§Y$CURR$§W needed);x
-COLONIZE_CLOSEST_BASE_SPEC;Closest naval base is in §Y$PROV$§W.\n(Naval range: §G$NEED$§W/§Y$CURR$§W needed);x
+COLONIZE_CLOSEST_BASE_TO_FAR_SPEC;Closest port in §Y$PROV$§W is not close enough.\n(Naval range: §R$NEED$§W/§Y$CURR$§W needed);x
+COLONIZE_CLOSEST_BASE_SPEC;Closest port is in §Y$PROV$§W.\n(Naval range: §G$NEED$§W/§Y$CURR$§W needed);x
 BUILDING_INFRASTRUCTURE;Infrastructure: §Y$VALUE$§W;x
 UNITVIEW_POP_INFO;§Y$TYPE$§W from §Y$LOC$§W.;x
 UNITVIEW_POP_INFO_FACTION;Part of §Y$FACTION$§W.;x
@@ -6002,7 +6034,7 @@ DIPLOMACY_NEGOTIATE_VASSAL;We are not allowed to negotiate with §YVassals§W or
 DIPLOMACY_NEGOTIATE_WE_VASSAL;We are not allowed to negotiate with realms if we are a §YVassal§W or §YDominion§W;x
 PW_OPEN_POPSCREEN;View population statistics for §Y$LOC$§W;x
 HAVE_MILITARY_SCORE_MORE_THAN;Have a higher Military Score than: ;x
-PRODUCTIONVIEW_FACTORY;§YFactory§W;x
+PRODUCTIONVIEW_FACTORY;§YGuild§W;x
 PRODUCTIONVIEW_RGO;§YRGO§W;x
 PRODUCTIONVIEW_ARTISAN;§YArtisan§W;x
 PROVINCE_NEXT_LEVEL;§YNext level:§W;x
@@ -6133,7 +6165,7 @@ DIPLO_WE_DOMINION;We are a dominion of theirs;x
 DIPLO_WE_SATELLITE;We are a vassal of theirs;x
 DIPLO_THEY_DOMINION;They are a dominion of our realm;x
 DIPLO_THEY_SATELLITE;They are a vassal of our realm;x
-BUY_FROM_STOCKPILE_DESC;Allow pops/factories to buy from realm stockpile;x
+BUY_FROM_STOCKPILE_DESC;Allow pops/guilds to buy from realm stockpile;x
 FOCUS_OWNED_BY;You can not place national focus in someone elses province unless it is a potential flashpoint for your cores.;x
 NO_CB_EFFECT;§RWe lack proper justification for this and will incur an infamy penalty§W;x
 M_GOTO_BUTTON;Find realm or Province;x

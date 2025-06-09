@@ -2,8 +2,24 @@
 # Audax Validator "!" Ignore_1009
 
 # Oathbreakers' Decisions {
+#	Starting Decisions (Unseen)
 #	Expansion
 #	Haunting }
+
+# Starting Decisions (Unseen)
+political_decisions = {
+	OBS_start_decision = {
+		potential = { always = no }
+		effect = {
+			# Set allowed leaders
+			set_country_flag = ideologies_kings_of_the_dead_active
+			set_country_flag = nobility_deactivated
+			
+			set_country_flag = OBS_content
+			add_country_modifier = { name = king_of_the_dead_modifier duration = -1 }
+		}
+	}
+}
 
 # Expansion
 political_decisions = {
@@ -40,11 +56,11 @@ political_decisions = {
 			NOT = { has_global_flag = OBS_expanded_haunt }
 		}
 		allow = {
-			all_core = { owned_by = THIS }
 			OR = {
 				is_secondary_power = yes
 				is_greater_power = yes
 			}
+			all_core = { owned_by = THIS }
 		}
 		effect = {
 			91 = { add_core = OBS }
@@ -73,7 +89,6 @@ political_decisions = {
 				}
 			}
 		}
-		allow = {}
 		effect = {
 			OBS = {
 				all_core = {

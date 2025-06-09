@@ -1,0 +1,7 @@
+# Dunedain of the North Decisions: {
+#	Starting Decisions (Unseen)
+#	}
+
+# Starting Decisions (Unseen)
+political_decisions = {
+}

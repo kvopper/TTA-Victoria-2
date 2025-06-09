@@ -2,21 +2,9 @@
 # Audax Validator "!" Ignore_1009
 
 # Shire Decisions: {
-#	Starting Decision
-#	Expansion }
+#	Expansion
+#	Flavour }
 
-# Starting Decision
-political_decisions = {
-	# Audax Validator "." Ignore_1004
-	shire_start_decision = {
-		potential = {
-			tag = SHI
-			always = no
-		}
-		allow = {}
-		effect = {}
-	}
-}
 # Expansion
 political_decisions = {
 	annex_buckland = {
@@ -39,6 +27,30 @@ political_decisions = {
 		}
 		effect = {
 			inherit = BCK
+		}
+	}
+}
+# Flavour
+political_decisions = {
+	high_hay = {
+		picture = "brandy_hall"
+		potential = {
+			is_culture_group = hobbits
+			owns = 365
+			NOT = {
+				365 = {
+					has_building = fort
+				}
+			}
+		}
+		allow = {
+			fortifications_1 = 1
+			war = no
+		}
+		effect = {
+			365 = {
+				fort = 1
+			}
 		}
 	}
 }

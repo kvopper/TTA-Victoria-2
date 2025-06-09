@@ -1,8 +1,14 @@
 # Shire Bree Union decisions: {
 # Form Shire Bree Union
-#  }
+# }
 political_decisions = {
 	shire_bree_unification = {
+		picture = "brandywine"
+		news = yes
+		news_desc_long = "shire_bree_unification_NEWS_LONG"
+		news_desc_medium = "shire_bree_unification_NEWS_MEDIUM"
+		news_desc_short = "shire_bree_unification_NEWS_SHORT"
+		
 		potential = {
 			OR = {
 				tag = SHI
@@ -32,6 +38,7 @@ political_decisions = {
 			}
 		}
 		effect = {
+			prestige = 20
 			change_tag = SBU
 			BRE = { all_core = { add_core = SBU } }
 			SHI = { all_core = { add_core = SBU } }
@@ -45,7 +52,7 @@ political_decisions = {
 		ai_will_do = { factor = 1 }
 	}
 	the_buckland_question = {
-	picture = "brandy_hall"
+		picture = "brandy_hall"
 		potential = {
 			tag = SBU
 			NOT = { has_country_flag = buckland_policy_decided }

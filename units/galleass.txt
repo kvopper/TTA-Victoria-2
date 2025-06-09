@@ -6,7 +6,7 @@ galleass = {
 	sail = yes
 	
 	type = naval
-	sprite = Frigate
+	sprite = Galleass
 	unit_type = light_ship
 	floating_flag = yes
 	active = no

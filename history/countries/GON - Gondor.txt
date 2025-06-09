@@ -5,9 +5,9 @@ culture = men_culture
 culture = gondorian
 culture = amrothian
 religion = men
-government = stewardship
+government = monarchy_2
 plurality = 5
-nationalvalue = ecthelion_ii
+nationalvalue = horn_of_gondor
 literacy = 0.2
 civilized = yes
 
@@ -15,17 +15,13 @@ oob = "GON_oob.txt"
 
 prestige = 100
 
-ruling_party = GON_high_nobility
+ruling_party = GON_ecthelion_ii
 
 upper_house = {
-	high_nobility = 60
-	low_nobility = 29
-	burgher = 6
-	loremaster = 5
+	house_of_stewards = 100
 }
 
 slavery = no_slavery
-upper_house_composition = appointed
 penal_reform = hard_labor
 
 decision = gondor_start_decision

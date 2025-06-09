@@ -79,6 +79,102 @@ desc_province_wealth_5; ;x
 ##################################;x
 alliance_of_dwarves_and_men;Alliance of Dwarves and Men;x
 alliance_of_dwarves_and_men_desc;From Tolkien Gateway, Alliance of Dwarves and Men:\n\n"The Men and Dwarves in the north had coexisted peacefully ever since the ancestors of the Northmen settled in the area [the Mirkwood narrows] in the First Age. When Angband fell, multitudes of Orcs fled east reaching the lands occupied by the Dwarves and Men. The Orcs far outnumbered the Dwarves in battles but their Mannish neighbours helped them overcome the Orcs' superiority of numbers and together they were able to drive them back. Thus began a warm friendship between the two races, the Dwarves supplied them with better arms while the Men, who were fierce and skilled riders, sent scouts to look for enemy movement and there was relative peace in the region.\n\nWhen Sauron invaded Eriador in S.A. 1695, hordes of Orcs invaded the mountains again. Gundabad was taken and Ered Mithrin was raided. It was not only Orcs the Alliance fought but also other savage Men that came from the east. When Sauron was finally driven back from Eriador in S.A. 1701, the Alliance ended. The Men were heavily diminished in number and remained scattered and impoverished living in caves or the edges of the forest. The Longbeards still maintained Khazad-dûm but their communication to the Iron Hills were cut off for some time since the enemy now occupied their former lands.\n\nThe two peoples continued to occupy the same regions and be neighbours. The same kind of friendship and coexistence would be seen again centuries later, between the Men of Dale and the Dwarves of Erebor."\n\nWe are members of the Alliance of Dwarves and Men!;x
+################################################;x }
+##### ORGANIZATION SUPPLEMENTARY MODIFIERS #####;x {
+################################################;x
+province_target_alliance_men_dwarves_request_return_of_cores;;x
+alliance_dwarves_men_selected_region;Alliance of Dwarves and Men Selected Region;x
+alliance_dwarves_men_diplomacy_stalled;Alliance of Dwarves and Men Diplomacy Stalled;x
+ai_return_cores_alliance_men_dwarves;AI Return Cores Target;x
+dynamic_loc_potential_region_target;;x
+dynamic_loc_potential_province_target;;x
+dynamic_loc_slot_selector;;x
+dynamic_loc_region_target_1;;x
+dynamic_loc_region_target_2;;x
+dynamic_loc_region_target_3;;x
+dynamic_loc_region_target_4;;x
+dynamic_loc_region_target_5;;x
+dynamic_loc_region_target_6;;x
+dynamic_loc_region_target_7;;x
+dynamic_loc_region_target_8;;x
+dynamic_loc_region_target_9;;x
+dynamic_loc_region_target_10;;x
+dynamic_loc_region_target_11;;x
+dynamic_loc_region_target_12;;x
+dynamic_loc_region_target_13;;x
+dynamic_loc_region_target_14;;x
+dynamic_loc_region_target_15;;x
+dynamic_loc_region_target_16;;x
+dynamic_loc_region_target_17;;x
+dynamic_loc_region_target_18;;x
+dynamic_loc_region_target_19;;x
+dynamic_loc_region_target_20;;x
+dynamic_loc_region_target_21;;x
+dynamic_loc_region_target_22;;x
+dynamic_loc_region_target_23;;x
+dynamic_loc_region_target_24;;x
+dynamic_loc_region_target_25;;x
+dynamic_loc_region_target_26;;x
+dynamic_loc_region_target_27;;x
+dynamic_loc_region_target_28;;x
+dynamic_loc_region_target_29;;x
+dynamic_loc_region_target_30;;x
+dynamic_loc_region_target_31;;x
+dynamic_loc_region_target_32;;x
+dynamic_loc_region_target_33;;x
+dynamic_loc_region_target_34;;x
+dynamic_loc_region_target_35;;x
+dynamic_loc_region_target_36;;x
+dynamic_loc_region_target_37;;x
+dynamic_loc_region_target_38;;x
+dynamic_loc_region_target_39;;x
+dynamic_loc_region_target_40;;x
+dynamic_loc_province_target_1;;x
+dynamic_loc_province_target_2;;x
+dynamic_loc_province_target_3;;x
+dynamic_loc_province_target_4;;x
+dynamic_loc_province_target_5;;x
+dynamic_loc_province_target_6;;x
+dynamic_loc_province_target_7;;x
+dynamic_loc_province_target_8;;x
+dynamic_loc_province_target_9;;x
+dynamic_loc_province_target_10;;x
+dynamic_loc_province_target_11;;x
+dynamic_loc_province_target_12;;x
+dynamic_loc_province_target_13;;x
+dynamic_loc_province_target_14;;x
+dynamic_loc_province_target_15;;x
+dynamic_loc_province_target_16;;x
+dynamic_loc_province_target_17;;x
+dynamic_loc_province_target_18;;x
+dynamic_loc_province_target_19;;x
+dynamic_loc_province_target_20;;x
+dynamic_loc_province_target_21;;x
+dynamic_loc_province_target_22;;x
+dynamic_loc_province_target_23;;x
+dynamic_loc_province_target_24;;x
+dynamic_loc_province_target_25;;x
+dynamic_loc_province_target_26;;x
+dynamic_loc_province_target_27;;x
+dynamic_loc_province_target_28;;x
+dynamic_loc_province_target_29;;x
+dynamic_loc_province_target_30;;x
+dynamic_loc_province_target_31;;x
+dynamic_loc_province_target_32;;x
+dynamic_loc_province_target_33;;x
+dynamic_loc_province_target_34;;x
+dynamic_loc_province_target_35;;x
+dynamic_loc_province_target_36;;x
+dynamic_loc_province_target_37;;x
+dynamic_loc_province_target_38;;x
+dynamic_loc_province_target_39;;x
+dynamic_loc_province_target_40;;x
+alliance_of_dwarves_and_men_cannot_join;Cannot join the Alliance of Dwarves and Men;x
+alliance_of_dwarves_and_men_cannot_join_desc;We have recently left or rejected an invite to the Alliance of Dwarves and Men. Until the cooldown wears off, we cannot (re)join the alliance.;x
+alliance_of_dwarves_and_men_union_countdown;Alliance of Dwarves and Men Union Cooldown;x
+alliance_of_dwarves_and_men_union_countdown_desc;We recently had a vote within the Alliance of Dwarves and Men;x
+alliance_of_dwarves_and_men_recently_voted;Alliance of Dwarves and Men Recently Voted;x
+alliance_of_dwarves_and_men_recently_voted_desc;We recently had a vote within the Alliance of Dwarves and Men;x
 #############################################;x }
 ##### ORGANIZATION SEPARATION MODIFIERS #####;x {
 #############################################;x
@@ -127,9 +223,13 @@ organization_separator_21_desc; ;x
 ################################;x }
 ##### TARGETTING MODIFIERS #####;x {
 ################################;x
+province_target_generic;Province Target;x
 province_target_bovine_fever_modifier;Province Target;x
 province_target_great_haul_modifier;Province Target;x
 province_target_rgo_change_modifier;Province Target;x
+province_target_looted_province_modifier;Province Target;x
+province_target_raid_loot_modifier;Province Target;x
+province_target_DAL_celduin_trade_post_removal_modifier;Province Target;x
 #####################################;x }
 ##### PROVINCE WEALTH MODIFIERS #####;x {
 #####################################;x
@@ -144,19 +244,24 @@ province_wealth_investing_in_province;Investing in Province;x
 ##### RGO CHANGING MODIFIERS #####;x {
 ##################################;x
 locked_rgo;Locked RGO;x
+awaiting_economic_direction;Awaiting Economic Direction;x
 #############################;x }
 ##### SEASONS MODIFIERS #####;x {
 #############################;x
 summer_modifier_north;Summer;x
 summer_modifier_south;Summer;x
+summer_modifier_mordor;Summer;x
 autumn_modifier_north;Autumn;x
 autumn_modifier_rhun;Autumn;x
 autumn_modifier_south;Autumn;x
+autumn_modifier_mordor;Autumn;x
 winter_modifier_north;Winter;x
 winter_modifier_south;Winter;x
+winter_modifier_mordor;Winter;x
 spring_modifier_north;Spring;x
 spring_modifier_rhun;Spring;x
 spring_modifier_south;Spring;x
+spring_modifier_mordor;Spring;x
 dry_season_modifier;Dry Season;x
 wet_season_modifier;Wet Season;x
 #############################;x }
@@ -165,6 +270,7 @@ wet_season_modifier;Wet Season;x
 sunny_modifier_4_season;Sunny;x
 sunny_modifier_desert;Sunny;x
 cloudy_modifier;Cloudy;x
+ash_cloudy_modifier;Ash Cloudy;x
 rainy_modifier_4_season;Rainy;x
 rainy_modifier_desert;Rainy;x
 snowy_modifier;Snowy;x
@@ -188,16 +294,15 @@ sacked_major_road;Ruined Major Road;x
 great_road;Great Road;x
 sacked_great_road;Ruined Large Road;x
 orc_raids;Orc Raids;x
-tribal_outpost;Tribal Outpost;x
-military_hunting_tribals;Military Hunting Wild Tribals;x
-military_hunting_tribals_slavery;Military Hunting Tribals (Enslavement);x
 recent_raid;Recent Raid;x
+building_capital;Building Capital;x
 rebuilt_city;Rebuilt City;x
+rebuilt_city_5;Rebuilt City;x
 dome_of_stars;Dome of Stars;x
 stonewain_valley_modifier;Stonewain Valley;x
-outlaws;Outlaws;x
-hunting_outlaws;Hunting Outlaws;x
-##############################;x
+outlaws;Outlaws§!\n\nMonthly Raid Chance: §R0.8%§!\nNeighbor Province Monthly Raid Chance: §R0.8%§!;x
+hunting_outlaws;Hunting Outlaws§!\n\nMonthly Outlaw Removal Chance:§G1.6%§!;x
+##############################;x }
 ##### COLONIAL MODIFIERS #####;x {
 ##############################;x
 colonial_push;Territorial Push;x
@@ -250,17 +355,19 @@ recruited_admirals;Recently Recruited Admirals;x
 recruited_admirals_desc;Recently we have recruited leaders from out nobility and outstanding officers. In order to allow the recruitment pool to swell in ranks again to a sizeable level, we ought to wait before recruiting any more admirals.;x
 low_military_recruitment;Low Military Recruitment;x
 low_military_recruitment_desc;The number of soldiers joining the realm's armed forces has waned in recent years. §RThis modifier lets you know that you have a country flag that limits soldier pops to 3% until it is removed§!;x
+call_to_arms_cooldown;Call to Arms Cooldown;x
+call_to_arms_cooldown_desc;We recently had some flavor that called our allies to arms. This modifier is present to prevent spamming;x
 #####################################;x }
 ##### WAR OF THE RING MODIFIERS #####;x {
 #####################################;x
 one_ring;The One Ring;x
-one_ring_desc;We are in possession of the One Ring. §RThis powerful artefact makes our pops more evil, and gives all other realms free cbs on us.§!;x
+one_ring_desc;We are in possession of the One Ring. §RThis powerful artefact makes our pops more aligned with Sauron, and gives all other realms free cbs on us.§!;x
 ring_hunters;Ring Hunters;x
 ring_hunters_desc;We have sent a hunting party searching for the rumored One Ring near Hobbiton.;x
 fellowship_member;Fellowship Member;x
 fellowship_member_desc;A member of our realm is part of the Fellowship of the Ring!;x
 remembered_sacrifice;Remembered Sacrifice;x
-remembered_sacrifice_desc;Our member of the Fellowship of the Ring sacrified themselves in the Mines of Moria to save the Fellowship from certain doom. They single-handedly fought an unbeatable foe - a Balrog of Morgoth - to buy time for the rest to escape. §RThis modifier makes you pops slightly more good-aligned§!.;x
+remembered_sacrifice_desc;Our member of the Fellowship of the Ring sacrified themselves in the Mines of Moria to save the Fellowship from certain doom. They single-handedly fought an unbeatable foe - a Balrog of Morgoth - to buy time for the rest to escape. §RThis modifier makes you pops slightly more Anti-Sauron§!.;x
 dont_peace_out;Don't Peace Out;x
 dont_peace_out_desc;This prevents us from Utility Tag peacing out.;x
 wotr_countdown;War of the Ring Countdown;x
@@ -269,45 +376,6 @@ wotr_end_countdown;War of the Ring End Countdown;x
 wotr_end_countdown_desc;When this modifier disappears, the War of the Ring will end!;x
 no_more_war;No More War;x
 no_more_war_desc;Our people are tired of war. It will be difficult to get their enthusiasm for another anytime soon, so in the meantime our ability to wage war will be very limited.;x
-##########################################;x }
-##### DYNAMIC LEADER TRAIT MODIFIERS #####;x {
-##########################################;x
-kind;Kind;x
-kind_desc;Our ruler has a kind personaility.;x
-smart_modifier;Smart;x
-smart_modifier_desc;Our ruler is smart.;x
-of_noble_house;Of a Noble House;x
-of_noble_house_desc;Our ruler was born into a noble house.;x
-defensive_modifier;Defensive;x
-defensive_modifier_desc;Our ruler is defensive-minded.;x
-aggressive_modifier;Aggressive;x
-aggressive_modifier_desc;Our ruler is offensive-minded.;x
-strong;Strong;x
-strong_desc;Our ruler is stubborn and usually gets his way.;x
-honest;Honest;x
-honest_desc;Our ruler is honest.;x
-deceitful;Deceitful;x
-deceitful_desc;Our ruler tends to lie.;x
-aristocrat_modifier;Aristocrat;x
-aristocrat_modifier_desc;Our ruler tends to side with the nobles over the people.;x
-of_the_people;Of the People;x
-of_the_people_desc;Our ruler tends to side with the people over the nobles.;x
-charlatan;Charlatan;x
-charlatan_desc;Our ruler is not wise and many consider him a joke.;x
-wise_ruler;Wise;x
-wise_ruler_desc;Our ruler is wise and is taken seriously.;x
-lazy;Lazy;x
-lazy_desc;Our ruler is so lazy that they are unwilling to partake in a game of golf.;x
-diligent;Diligent;x
-diligent_desc;Our ruler is diligent in their duties.;x
-greedy;Greedy;x
-greedy_desc;Our ruler is greedy and always looking for more ways to make money.;x
-generous;Generous;x
-generous_desc;Our ruler is generous and likes to freely give away belongings to the people.;x
-corrupt;Corrupt;x
-corrupt_desc;Getting rich is more important than the rule of law to our ruler.;x
-just;Just;x
-just_desc;The rule of law is more important than money to our ruler.;x
 #####################################;x }
 ##### ARTEFACTS AND EXPLORATION #####;x {
 #####################################;x
@@ -352,6 +420,56 @@ great_advisor;Great Advisor;x
 great_advisor_desc;One of our current advisors is much better than the average.;x
 great_diplomat;Great Diplomat;x
 great_diplomat_desc;One of our diplomats is much better than the average.;x
+stirrings_of_dissent;Stirrings of Dissent;x
+stirrings_of_dissent_desc;Driven by high anxiety about the realm and its future, the people are outwardly questioning their ruling government and their leader. If we are not careful, this could turn into outright rebellion.;x
+ecthelion_ii_modifier;Ecthelion II;x
+ecthelion_ii_modifier_desc; ;x
+denethor_ii_modifier;Denethor II;x
+denethor_ii_modifier_desc; ;x
+boromir_ii_modifier;Boromir II;x
+boromir_ii_modifier_desc; ;x
+faramir_i_modifier;Faramir II;x
+faramir_i_modifier_desc; ;x
+aragorn_elessar_modifier;Aragorn Elessar;x
+aragorn_elessar_modifier_desc; ;x
+angelimir_modifier;Angelimir;x
+angelimir_modifier_desc; ;x
+sauron_modifier;Sauron the Great;x
+sauron_modifier_desc; ;x
+hegon_koldana_modifier;Hegon Koldana;x
+hegon_koldana_modifier_desc; ;x
+bard_i_modifier;Bard I;x
+bard_i_modifier_desc;We are ruled by Bard, first of his name, the Bowman, King of Dale, wielder of the Black Arrow and the Dragon-slayer!\n\nIn TA 2941, he helped Thorin's company reclaim the Lonely Mountain, slew the dragon Smaug, fought in the Battle of the Five Armies and using his portion of Smaug's hoard, refounded the city of Dale.\n\nDue to its proximity and friendship with Erebor, Dale began to thrive under Bard's rule. This in turn started to draw Lakemen from other towns and villages, and eventually, the descendents of the other Northmen in Gramavuld. Seeing his growing people, Bard turned his gaze to the other Northmen settlements in the area, and his kingdom began to expand.\n\nBy TA 2954, Bard had consolidated many of the towns of the Adhallings, the men living among the northeastern eaves of Mirkwood, and most of the Lakemen, the men living around Long Lake.\n\nHe had made it his goal to unite the Northmen of Gramavuld under one banner. Unfortunately, he passed in TA 2977 before his plans came to fruition, allowing his son Bain I to complete the task.;x
+bain_i_modifier;Bain I;x
+bain_i_modifier_desc;We are ruled by Bain, first of his name, King of Gramavuld!\n\nAfter taking the throne in TA 2977 with the death of his father, Bard I, Bain was left with an unfinished kingdom. His father had meant to unite the Northmen of Gramavuld under the leadership of the House of Bard, but the Grammas, the Northmen of the plains of Gramavuld, and the Rivermen, the Northmen on the northmen shores of the Celduin, had not fully sworn fealty to the realm.\n\nOver the years of his reign, Bain led both diplomatic and military campaigns against the Grammas and Rivermen, fulfilling his father's legacy, and cementing the House of Bard's rule over Gramavuld. Twelve years into his reign, in TA 2989, Balin and his company came to Dale requesting support in their expedition to retake Moria. Bain provided no troops, but helped supply the Dwarves.\n\nIn TA 3007, the realm had been at peace for a handful of years, and Bain could finally rest. He was succeeded by his son, Brand I.;x
+brand_i_modifier;Brand I;x
+brand_i_modifier_desc;We are ruled by Brand, first of of his name, King of the Barding Realm!\n\nWhen Brand took the throne in TA 3007, he inherited a powerful kingdom that had seen some years of peace. Over his father's reign, there had been messages coming from the south, warning of the growing power of Sauron and his allies. As such, Brand began to forge alliances with the independent peoples south of the Celduin. Some joined the realm, while others remained as military allies, ready to come to each others aid should war break out.\n\nIn TA 3017, the war looming in Brand's mind started to come into fruition. He received messengers from Mordor, requesting information regarding the Ring of Power and Bilbo Baggins.\n\nEven under the threat of war and ruin, Brand refused to cooperate, and Easterlings started to gather in the Logathavuld borderlands. In TA 3019, the Easterling host crossed into Gramavuld. Brand met them on the field with Dain I but was defeated and pushed back to Dale. During the ensuing Battle of Dale, Brand was slain in battle on March 17th, TA 3019.\n\nHis son Bard would take up command of the Barding army, and would refuse to be coronated until the kingdom had been freed, and war had been won.;x
+bard_ii_modifier;Bard II;x
+bard_ii_modifier_desc;We are ruled by Bard, second of his name, King of the Barding Realm!\n\nBard would become the de-facto King in TA 3019 with his father's death in battle. After the breaking of the Seige of Dale, Bard vowed to lead the kingdom to victory before he would be worthy of the throne. As such, he was not coronated until the first year of the Fourth Age, when the Easterlings had been driven from Gramavuld, and the war had been won.\n\nAround the same time, King Aragorn Elessar's was crowned king of the Reuntied Kingdom. Bard sent an ambassador to Aragorn's coronation, and maintained friendly relationships with the Dûnedain through his entire reign.\n\nYears after taking the throne and the kingdom had recovered strength, Bard began to mount invasions into the Easterling lands in Logathavuld. By his death in FA 48 (TA 3067), Bard had greatly expanded the kingdom.;x
+girion_ii_modifier;Girion II;x
+girion_ii_modifier_desc;We are ruled by Girion, second of his name, King of the Barding Realm!\n\nGirion would take the throne in FA 48 (TA 3067), inheriting an expanded kingdom rife with instability in the easternmost lands recently annexed by Easterlings.\n\nWhile he would expand the realm further into the realms of the Easterlings, much of his time would be spent putting down Easterling revolts and engaging in diplomacy with Erebor, the Woodland Realm and the Reunited Kingdom.;x
+thranduil_modifier;Thranduil;x
+thranduil_modifier_desc; ;x
+khamul_modifier;Khamûl the Easterling;x
+khamul_modifier_desc; ;x
+celeborn_n_galadriel_modifier;Lord Celeborn and Lady Galadriel;x
+celeborn_n_galadriel_modifier_desc; ;x
+saruman_modifier;Saruman the White;x
+saruman_modifier_desc; ;x
+aragorn_modifier;Aragorn;x
+aragorn_modifier_desc; ;x
+elrond_modifier;Elrond;x
+elrond_modifier_desc; ;x
+cirdan_modifier;Círdan;x
+cirdan_modifier_desc; ;x
+king_of_the_dead_modifier;King of the Dead;x
+king_of_the_dead_modifier_desc; ;x
+radagast_modifier;Radagast the Brown;x
+radagast_modifier_desc; ;x
+roac_modifier;Roac;x
+roac_modifier_desc; ;x
+witch_king_of_angmar_modifier;Witch King of Angmar;x
+witch_king_of_angmar_modifier_desc; ;x
 ############################;x }
 ##### GONDOR MODIFIERS #####;x {
 ############################;x
@@ -396,6 +514,12 @@ major_slave_hub;Major Slave Hub;x
 ##### RHUN MODIFIERS #####;x {
 ##########################;x
 legacy_of_the_wainriders;Legacy of the Wainriders;x
+AMO_easterling_war_camp;Amov War Camp§!\n\nMonthly Logath Immigration Chance: §G12.5%§!;x
+AMO_established_clan_guard;Amov Clan Guard;x
+AMO_established_clan_guard_desc;With the bolstered Logath population within our realm, we have begun to field militias in our camps -- a guard not loyal to any city or lord, but the clan itself.;x
+AMO_easterling_raiders;Amov Raiders§!\n\nMonthly Amov Raid Chance: §R2%§!;x
+AMO_upcoming_conquest;The Call to War§!\n\nMonthly Popular Anxiety Gain: §R0.50%§!;x
+AMO_upcoming_conquest_desc;When we first came to the Salenin Vale, our Khan invited all other Logath to join in the upcoming conquest of Gramavuld. As new migrants come, the people become more and more unruly and uncertain of the future. While we may grow our strength, the longer our Khan waits to fulfill the promise of riches and glory, the greater the risk of societal collapse.;x
 ############################;x }
 ##### EREBOR MODIFIERS #####;x {
 ############################;x
@@ -476,10 +600,20 @@ DAL_guild_power_10;Guild Power (+10);x
 DAL_guild_power_10_desc;The Guild has a distinct power advantage over the merchants -- the merchant's power is negligible. At this point, they reasonably could lobby to get the support of the realm (assuming the realm has not already supported them).;x
 marsh_wights;Marsh Wight Infestation;x
 hunting_marsh_wights;Hunting Marsh Wights;x
-celduin_pirates;Pirates;x
+celduin_pirates;Celduin Pirates§!\n\nMonthly Pirate Raid Chance: §R2%§!;x
 smaugs_desolation;Smaug's Desolation;x
 smaugs_desolation_country;Smaug's Desolation;x
 smaugs_desolation_country_desc;We have at least one province with the province modifier §YSmaug's Desolation§!. Increase the province wealth to at least §WAverage§! to clear the modifier;x
+unfinished_vidugavia_successorship;Unfulfilled Claim to Vidugavia's Legacy§!\n\nMonthly Popular Anxiety Gain: §R0.25§!;x
+unfinished_vidugavia_successorship_desc;We have proclaimed ourselves heir to Vidugavia, but the promise of a united Northmen Kingdom has not yet come into fruition.;x
+vidugavia_successorship;Vidugavia's Legacy§!\n\nMonthly Popular Anxiety Loss: §G0.1§!;x
+vidugavia_successorship_desc;We have successfully fulfilled Vidugavia's legacy and reunited the Northmen of Rhovanion.;x
+erebor_relations_modifier;Barding - Erebor Relations;x
+erebor_relations_modifier_desc;Since the founding of the Kingdom in TA 2944, the Barding Realm has had a strong relationship with Erebor. At some point in the future, it may be possible to strengthen this relationship to the point that Dwarves are accepted within our borders.\n\n§RThis modifier is present to inform you of what is needed to get Longbeard accepted. Every year that we are allied to Erebor, our "alliance points" increases by 1. Additionally, there is other flavor that may increase or decrease these alliance points.\n\nIn order to accept Longbeard, we need to have at least 100 alliance points and Bard II (the Dwarf-friend) needs to be our leader. You can check Bard II's entry in the leaders fluff event to see what the point value is.;x
+fishers_guild_rgo_reform;Fishers Guild RGO Reform;x
+DAL_fishers_guild_immigration_reform_modifier;Immigration Reform;x
+DAL_fishers_guild_immigration_reform_modifier_desc;We have reformed our immigration!;x
+DAL_trading_post_modifier;Trading Post;x
 ##############################;x }
 ##### BREELAND MODIFIERS #####;x {
 ##############################;x
@@ -553,18 +687,9 @@ money_hoarder_7_desc;This modifier is put in place to prevent the late-game liqu
 #########################;x }
 ##### NATIONAL FOCI #####;x {
 #########################;x
-building_focus;Constructions;x
-military_goods_focus;Military Goods Production;x
-shipping_focus;Ship Production;x
-basic_industry_focus;Construction Goods Production;x
-textile_focus;Textile Production;x
-consumer_goods_focus;Everyday Goods Focus;x
 production_focus;Production;x
-artisan_prod_focus;Artisan Output;x
-artisan_prod_colony_focus;Territorial Artisan Output;x
 factory_prod_focus;Guild Output;x
 rgo_prod_focus;RGO Output;x
-rgo_prod_colony_focus;Territorial RGO Output;x
 ship_focus;Naval Construction;x
 diplomatic_focus;Diplomacy;x
 increase_tension;Increase Tension;x
@@ -578,7 +703,6 @@ assimilation_increase;Increase Assimilation;x
 immigration_increase;Increase Immigration;x
 immigration_focus_desc;Migrants §Y$VAL$§!% more likely to choose region.;x
 colonial_immigration;Increase Territorial Immigration;x
-social_programs;Improve Amenity Access;x
 promotion_focus;Promotion;x
 promote_aristocrats;Promote Nobles;x
 promote_artisans;Promote Independent Artisans;x
@@ -588,12 +712,62 @@ promote_clergymen;Promote Loremasters;x
 promote_craftsmen;Promote Guild Artisans;x
 promote_labourers;Promote Labourers;x
 promote_soldiers;Promote Soldiers;x
-party_loyalty_focus;Interest Group Loyalty;x
-high_nobility_focus;Promote High Nobility;x
-low_nobility_focus;Promote Low Nobility;x
-burgher_focus;Promote Burghers;x
-loremaster_focus;Promote Loremasters;x
-ruling_party_focus;Promote Leading Interesting Group Loyalty;x
+promotion_ideologies;Promote Interest Groups (only affects election results)
+promote_nobility;Promote Nobility;x
+promote_burgher;Promote Burgher;x
+promote_loremaster;Promote Loremaster;x
+promote_line_of_isildur;Promote Line of Isildur;x
+promote_house_of_stewards;Promote House of Stewards;x
+promote_house_of_dol_amroth;Promote House of Dol Amroth;x
+promote_house_half_elven;Promote House Half Elven;x
+promote_lords_of_mithlond;Promote Lords of Mithlond;x
+promote_house_of_oropher;Promote House of Oropher;x
+promote_house_of_finarfin;Promote House of Finarfin;x
+promote_house_of_bard;Promote House of Bard;x
+promote_rivermen_thegans;Promote Rivermen Thegans;x
+promote_master_of_laketown;Promote Master of Laketown;x
+promote_lakemen_fishers_guild;Promote Lakemen Fishers Guild;x
+promote_house_of_koldana;Promote House of Koldana;x
+promote_line_of_durin;Promote Line of Durin;x
+promote_house_of_beorn;Promote House of Beorn;x
+promote_lords_of_fangorn;Promote Lords of Fangorn;x
+promote_house_of_eorl;Promote House of Eorl;x
+promote_flightlords_of_the_mountains;Promote Flightlords of the Mountains;x
+promote_lords_of_ravens;Promote Lords of Ravens;x
+promote_great_brood_mothers;Promote Great Brood Mothers;x
+promote_kings_of_the_dead;Promote Kings of the Dead;x
+promote_lords_of_isengard;Promote Lords of Isengard;x
+promote_lords_of_rhosgobel;Promote Lords of Rhosgobel;x
+promote_lords_of_mordor;Promote Lords of Mordor;x
+promote_saurons_nine;Promote Saurons Nine;x
+demotion_ideologies;Reduce Interest Groups (only affects election results)
+demote_nobility;Slander Nobility;x
+demote_burgher;Slander Burgher;x
+demote_loremaster;Slander Loremaster;x
+demote_line_of_isildur;Slander Line of Isildur;x
+demote_house_of_stewards;Slander House of Stewards;x
+demote_house_of_dol_amroth;Slander House of Dol Amroth;x
+demote_house_half_elven;Slander House Half Elven;x
+demote_lords_of_mithlond;Slander Lords of Mithlond;x
+demote_house_of_oropher;Slander House of Oropher;x
+demote_house_of_finarfin;Slander House of Finarfin;x
+demote_house_of_bard;Slander House of Bard;x
+demote_rivermen_thegans;Slander Rivermen Thegans;x
+demote_master_of_laketown;Slander Master of Laketown;x
+demote_lakemen_fishers_guild;Slander Lakemen Fishers Guild;x
+demote_house_of_koldana;Slander House of Koldana;x
+demote_line_of_durin;Slander Line of Durin;x
+demote_house_of_beorn;Slander House of Beorn;x
+demote_lords_of_fangorn;Slander Lords of Fangorn;x
+demote_house_of_eorl;Slander House of Eorl;x
+demote_flightlords_of_the_mountains;Slander Flightlords of the Mountains;x
+demote_lords_of_ravens;Slander Lords of Ravens;x
+demote_great_brood_mothers;Slander Great Brood Mothers;x
+demote_kings_of_the_dead;Slander Kings of the Dead;x
+demote_lords_of_isengard;Slander Lords of Isengard;x
+demote_lords_of_rhosgobel;Slander Lords of Rhosgobel;x
+demote_lords_of_mordor;Slander Lords of Mordor;x
+demote_saurons_nine;Slander Saurons Nine;x
 #########################;x }
 ##### COUNTRY FLAGS #####;x {
 #########################;x
@@ -602,15 +776,67 @@ HAVE_NOT_COUNTRY_FLAG;§RNOT§! ;x
 unciv_5;Uncentralized Recruitment Limit 5%;x
 unciv_7;Uncentralized Recruitment Limit 7.5%;x
 unciv_10;Uncentralized Recruitment Limit 10%;x
-attempting_to_good;Attempts to become a good nation;x
-attempting_to_neutral;Attempts to become a neutral nation;x
-attempting_to_evil;Attempts to become a evil nation;x
+locked_voting;Voting Laws Locked;x
 has_one_ring;Has the One Ring;x
 frodo_chose_us;Frodo arrived in our lands;x
 the_council_of_elrond_host;Hosted the Council of Elrond;x
 GON_reclaimed_calednardhon;§GWe have reclaimed Caledhardhon§!;x
 leader_visited_tomb_of_elendil;Our leader has visited the Tomb of Elendil§!;x
 vassal_of_gondor;Vassal of Gondor;x
-rejected_trade_with_DAL;Rejected Trade with the Barding Realm;x
 DAL_merchant_supported_by_realm;Barding Realm Flavor: We have supported the merchants over the Fisher's Guild;x
 DAL_guild_supported_by_realm;Barding Realm Flavor: We have supported the Fisher's Guild over the merchants;x
+DAL_united_gramavuld;Have taken decision §YThe United Northmen of Gramavuld§!;x
+DAL_cultivated_inland_trade;Have taken decision §YCultivate Inland Trade§!;x
+DAL_can_establish_celduin_trading_posts;Can Establish Celduin Trading Ports;x
+alliance_dwarves_men_voted_for;Voted for the current resolution;x
+alliance_dwarves_men_abstained;Abstained for the current resolution;x
+alliance_dwarves_men_voted_against;Voted against the current resolution;x
+BEO_content;Original tag is BEO (Beornings of the Vale);x
+DAL_content;Original tag is DAL (Barding Realm);x
+DOR_content;Original tag is DOR (Kingdom of Dorwinion);x
+EAG_content;Original tag is EAG (Eagles of the Eyrie);x
+EEL_content;Original tag is EEL (Eagles of Ered Luin);x
+ERE_content;Original tag is ERE (Kingdom of Erebor);x
+FAN_content;Original tag is FAN (Ents of Fangorn);x
+GON_content;Original tag is GON (Kingdom of Gondor);x
+GUL_content;Original tag is GUL (Nazgûl Realm of Dol Guldur);x
+IML_content;Original tag is IML (Realm of Imladris);x
+ISE_content;Original tag is ISE (Realm of Isengard);x
+LIN_content;Original tag is LIN (Realm of Lindon);x
+LOR_content;Original tag is LOR (Realm of Lothlórien);x
+MOR_content;Original tag is MOR (Shadow of Mordor);x
+OBS_content;Original tag is OBS (Oathbreakers);x
+RAD_content;Original tag is RAD (Radagast of Rhosgobel);x
+RAV_content;Original tag is RAV (Ravens of Erebor);x
+SHE_content;Original tag is SHE (Shelob's Domain);x
+WRM_content;Original tag is WRM (Woodland Realm);x
+##################################;x }
+##### IDEOLOGY COUNTRY FLAGS #####;x {
+##################################;x
+ideologies_line_of_isildur_active;Line of Isildur Active;x
+ideologies_house_of_stewards_active;House of Stewards Active;x
+ideologies_house_of_dol_amroth_active;House of Dol Amroth Active;x
+ideologies_house_half_elven_active;House Half-Elven Active;x
+ideologies_lords_of_mithlond_active;Lords of Mithlond Active;x
+ideologies_house_of_oropher_active;House of Oropher Active;x
+ideologies_house_of_finarfin_active;House of Finarfin Active;x
+ideologies_house_of_bard_active;House of Bard Active;x
+ideologies_rivermen_thegans_active;Rivermen Thegans Active;x
+ideologies_master_of_laketown_active;Master of Laketown Active;x
+ideologies_lakemen_fishers_guild_active;Fishers' Guild Active;x
+ideologies_house_of_koldana_active;House of Koldana Active;x
+ideologies_line_of_durin_active;Line of Durin Active;x
+ideologies_house_of_beorn_active;House of Beorn Active;x
+ideologies_lords_of_fangorn_active;Lords of Fangorn Active;x
+ideologies_house_of_eorl_active;House of Eorl Active;x
+ideologies_flightlords_of_the_mountains_active;Flightlords of the Mountains Active;x
+ideologies_lords_of_ravens_active;Lords of the Ravens Active;x
+ideologies_great_brood_mothers_active;Great Brood Mothers Active;x
+ideologies_kings_of_the_dead_active;Kings of the Dead Active;x
+ideologies_lords_of_isengard_active;Lords of Isengard Active;x
+ideologies_lords_of_rhosgobel_active;Lords of Rhosgobel Active;x
+ideologies_lords_of_mordor_active;Lords of Mordor Active;x
+ideologies_saurons_nine_active;Sauron's Nine Active;x
+nobility_deactivated;Nobility Deactivated;x
+burgher_deactivated;Burghers Deactivated;x
+loremaster_deactivated;Loremasters Deactivated;x

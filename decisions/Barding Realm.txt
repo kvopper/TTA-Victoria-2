@@ -1,16 +1,23 @@
 # Remove this line to have the claim get that interior arguments are correct
 # Audax Validator "!" Ignore_1009
 
+# Has flavor related to tag in Gramavuld -- Barding Realm, the Rivermen minors and the Amov Clan
+
 # Barding Realm Decisions: {
 #	Starting Decision (Unseen) + Country Info (Seen)
 #	Rivermen Minors
+#	Amov Clan
 #	Marsh Wights
 #	Gramavuld Consolidation
+#	Southern Rhovanion Conquests
 #	Province Flavor
-#	Royal Family
+#	Leader Overview
 #	Bard I Flavor
 #	Bain I Flavor
+#	Bard II Flavor
 #	Fishers Guild vs Merchants
+#	Fishers Guild Flavor
+#	Merchants Flavor
 #	Esgaroth Trade }
 
 # Starting Decision (Unseen) + Country Info (Seen)
@@ -18,13 +25,13 @@ political_decisions = {
 	# Audax Validator "." Ignore_1004
 	DAL_start_decision = {
 		potential = {
-			tag = DAL
 			always = no
 		}
 		
-		allow = {}
-		
 		effect = {
+			# Allowing access to DAL flavor -- given that DAL should pretty easily become Rhovanion or the Free Folk of the North, it's easier (from a dev standpoint) and more efficient on the actual engine to do a country flag check instead of an OR block checkign the 3 potential tags
+			set_country_flag = DAL_content
+			
 			# Setting up Gramavuld Expansion
 			add_country_modifier = {
 				name = king_of_lakemen
@@ -75,20 +82,15 @@ political_decisions = {
 			ERE = { add_country_modifier = { name = trading_with_DAL duration = -1 } }
 			WRM = { add_country_modifier = { name = trading_with_DAL duration = -1 } }
 			
-			654 = { add_province_modifier = { name = esgaroth_trade_ii duration = -1 } }
+			654 = { add_province_modifier = { name = esgaroth_trade_i duration = -1 } }
 			
 			# Setting up Merchants vs Guild
 			add_country_modifier = { name = DAL_merchant_power_4 duration = -1 }
 			set_variable = { which = DAL_merchants_fishers_bop value = -4 } # 4 in favor of the Merchants
 			
-			# Setting up Leaders (-1 = unborn)
-			FOR = { set_variable = { which = bard_i_age value = 55 } }
-			FOR = { set_variable = { which = bain_i_age value = 25 } }
-			FOR = { set_variable = { which = brand_i_age value = -1 } }
-			FOR = { set_variable = { which = bard_ii_age value = -1 } }
-			
-			FOR = { country_event = { id = 33000 days = 152 } } # June 1
-			FOR = { country_event = { id = 33001 days = 182 } } # June 1
+			# Setting up Erebor relations tracker
+			add_country_modifier = { name = erebor_relations_modifier duration = -1 }
+			set_variable = { which = erebor_relations value = 10 } # Allied for 10 years
 			
 			# Firing the fluff events -- order reversed so the realm event gets overlayed on top of the leader event
 			country_event = { id = 30032 days = 3 } # Leader Description
@@ -96,6 +98,41 @@ political_decisions = {
 			
 			# Start Flavor Cleanup event loop -- not starting it immediately to time reform flags correctly
 			FOR = { country_event = { id = 99001 days = 3 } }
+			
+			# Setting up AMO
+			AMO = {
+				all_core = { add_province_modifier = { name = AMO_easterling_war_camp duration = 3650 } }
+				add_country_modifier = { name = AMO_upcoming_conquest duration = -1 }
+			}
+			
+			# Set allowed leaders
+			set_country_flag = ideologies_house_of_bard_active
+			set_country_flag = ideologies_master_of_laketown_active
+			set_country_flag = ideologies_lakemen_fishers_guild_active
+			add_country_modifier = { name = bard_i_modifier duration = -1 }
+			
+			set_country_flag = nobility_deactivated
+			set_country_flag = burgher_deactivated
+			set_country_flag = loremaster_deactivated
+			
+			# Set allowed leaders for Rivermen realms
+			any_country = {
+				limit = {
+					OR = {
+						tag = DA1
+						tag = DA2
+						tag = DA3
+						tag = DA4
+					}
+				}
+				set_country_flag = ideologies_rivermen_thegans_active
+				set_country_flag = RIV_content
+				set_country_flag = nobility_deactivated
+			}
+			
+			# Set up leaders
+			set_global_flag = DAL_bard_i_alive
+			set_global_flag = DAL_bain_i_alive
 		}
 	}
 	
@@ -103,12 +140,10 @@ political_decisions = {
 		alert = no
 		picture = "kingdom_of_dale"
 		potential = {
-			tag = DAL
+			has_country_flag = DAL_content
 			ai = no
 			NOT = { has_global_flag = fluff_disabled }
 		}
-		
-		allow = {}
 		
 		effect = {
 			country_event = 35017
@@ -177,6 +212,7 @@ political_decisions = {
 			primary_culture = rivermen
 			ai = yes
 		}
+		# Allowing the Rivermen minors to join DAL if both are part of the Alliance of Dwarves and Men is highly abuseable by both the player and the ai. This functionality has been moved to the ultimatum (50901) triggered by invite_the_rivermen
 		allow = {
 			OR = {
 				vassal_of = DAL
@@ -195,12 +231,19 @@ political_decisions = {
 			modifier = {
 				factor = 0
 				tag = DA4
+				has_global_flag = railroading_enabled
 			}
 		}
 	}
 	
 	form_rivermen = {
 		picture = "Barding Realm/RIV_rivermen_unite"
+		news = yes
+		news_title = "new_union_NEWS_TITLE"
+		news_desc_long = "form_rivermen_NEWS_LONG"
+		news_desc_medium = "form_rivermen_NEWS_MEDIUM"
+		news_desc_short = "form_rivermen_NEWS_SHORT"
+		
 		potential = {
 			primary_culture = rivermen
 			NOT = { tag = RIV }
@@ -259,11 +302,15 @@ political_decisions = {
 			NOT = { has_global_flag = DAL_rivermen_claimed_nether_marches }
 		}
 		
-		allow = { }
-		
 		effect = {
-			DAL_643 = { add_core = THIS }
 			badboy = 3
+			
+			country_event = 2900 # CB giving event
+			
+			set_country_flag = claimed_DAL_643
+			add_claim_DAL_643_loc = {}
+			
+			set_country_flag = should_apply_acquire_claim_cb
 			set_global_flag = DAL_rivermen_claimed_nether_marches
 		}
 	}
@@ -278,7 +325,7 @@ political_decisions = {
 		}
 		
 		allow = {
-			has_unclaimed_cores = no
+			NOT  = { DAL_643 = { NOT = { owned_by = THIS } } } # Owns the whole region, not just one province
 			war = no
 			NOT = { truce_with = DAL }
 		}
@@ -297,6 +344,8 @@ political_decisions = {
 				months = 12
 			}
 			
+			any_pop = { ideology = { factor = -0.05 value = house_of_bard } }
+			
 			war = {
 				target = DAL
 				attacker_goal = { casus_belli = make_puppet }
@@ -314,15 +363,350 @@ political_decisions = {
 	}
 }
 
+# Amov Clan
+political_decisions = {
+	support_amov_clan = {
+		picture = "Rhun/logath_easterlings_marching"
+		potential = {
+			primary_culture = logath
+			NOT = { has_country_flag = supported_amov_clan }
+			exists = AMO
+			NOT = { tag = AMO }
+		}
+		allow = {
+			money = 20000
+		}
+		effect = {
+			treasury = -20000
+			set_country_flag = supported_amov_clan
+			AMO = { country_event = 50952 }
+			
+			any_country = {
+				limit = {
+					OR = {
+						primary_culture = barding
+						primary_culture = adhalling
+						primary_culture = grammas
+						primary_culture = rivermen
+					}
+				}
+				relation = { who = THIS value = -50 }
+			}
+			
+			relation = { who = AMO value = 50 }
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = { alliance_with = AMO }
+			}
+		}
+	}
+	
+	AMO_claim_burh_austris = {
+		picture = "Rhun/AMO_burh_austris"
+		potential = {
+			tag = AMO
+			642 = { empty = yes } # Burh Austris
+		}
+		
+		allow = {
+			OR = {
+				642 = {
+					country_units_in_province = THIS
+					empty = yes # Repeated for the sake of the player
+				}
+				year = 2957
+			}
+			war = no
+		}
+		
+		effect = {
+			badboy = 1
+			prestige = 5
+			
+			642 = {
+				secede_province = THIS
+				add_core = THIS
+				add_province_modifier = { name = AMO_easterling_war_camp duration = 1825 }
+				random_pop = {
+					limit = {
+						# has_pop_culture functions differently in random_pop when compared to any_pop
+						is_culture_group = THIS
+						pop_type = soldiers
+					}
+					reduce_pop = 0.90
+				}
+				random_pop = {
+					limit = {
+						# has_pop_culture functions differently in random_pop when compared to any_pop
+						NOT = { is_culture_group = THIS }
+						pop_type = soldiers
+					}
+					reduce_pop = 0.75
+				}
+				any_pop = {
+					limit = {
+						pop_type = soldiers
+						is_primary_culture = no
+						is_accepted_culture = no
+					}
+					pop_type = tribals
+				}
+			}
+			
+			# The above block for some reason breaks the rgo. Fixing it silently
+			random_owned = {
+				limit = { province_id = 642 }
+				trade_goods = wool
+			}
+			
+			any_country = {
+				limit = {
+					OR = {
+						primary_culture = barding
+						primary_culture = adhalling
+						primary_culture = grammas
+						primary_culture = rivermen
+					}
+				}
+				relation = { who = THIS value = -50 }
+				capital_scope = { province_event = { id = 50953 days = 0 } }
+			}
+		}
+	}
+	
+	AMO_establish_clan_guard = {
+		picture = "Rhun/AMO_clan_guard"
+		potential = {
+			tag = AMO
+			NOT = { has_country_modifier = AMO_established_clan_guard }
+		}
+		
+		allow = {
+			all_core = { NOT = { has_province_modifier = AMO_easterling_war_camp } }
+		}
+		
+		effect = {
+			add_country_modifier = { name = AMO_established_clan_guard duration = -1 }
+		}
+	}
+	
+	AMO_send_out_raiding_parties = {
+		picture = "Rhun/AMO_raiders"
+		potential = {
+			tag = AMO
+			NOT = { has_country_flag = AMO_sent_out_raiders }
+		}
+		
+		allow = {
+			OR = {
+				total_amount_of_divisions = 2 # At least 4 units
+				AND = {
+					ai = yes
+					year = 2960
+				}
+			}
+		}
+		
+		effect = {
+			set_country_flag = AMO_sent_out_raiders
+			
+			define_general = { name = "§LAnddreki the Wolf, §MAmov Raider§!" personality = relentless background = AMO_easterling_raider_trait }
+			
+			GRA = {
+				all_core = {
+					limit = {
+						NOT = { region = ERE_660 } # Mountainlands
+						NOT = { owned_by = THIS }
+					}
+					add_province_modifier = { name = AMO_easterling_raiders duration = -1 }
+				}
+			}
+			
+			AMO_sent_out_raiders_loc = {}
+		}
+	}
+	
+	AMO_claim_gramavuld = {
+		picture = "Rhun/AMO_claim_gramavuld"
+		potential = {
+			tag = AMO
+			has_country_flag = AMO_sent_out_raiders
+			NOT = { has_country_flag = AMO_claimed_gramavuld }
+		}
+		
+		allow = {
+			all_core = { NOT = { has_province_modifier = AMO_easterling_war_camp } }
+		}
+		
+		effect = {
+			set_country_flag = AMO_claimed_gramavuld
+			badboy = 12
+			random_owned = {
+				limit = { owner = { 642 = { NOT = { is_core = THIS } } } }
+				owner = { 642 = { add_core = THIS } } # Burh Austris
+			}
+			country_event = 2900 # CB giving event
+			
+			set_country_flag = claimed_DAL_640
+			set_country_flag = claimed_DAL_643
+			set_country_flag = claimed_DAL_645
+			set_country_flag = claimed_DAL_1377
+			set_country_flag = claimed_DAL_652
+			set_country_flag = claimed_DAL_654
+			
+			add_claim_DAL_640_loc = {}
+			empty_line_decisions_loc = {}
+			add_claim_DAL_643_loc = {}
+			empty_line_decisions_loc = {}
+			add_claim_DAL_645_loc = {}
+			empty_line_decisions_loc = {}
+			add_claim_DAL_652_loc = {}
+			empty_line_decisions_loc = {}
+			add_claim_DAL_654_loc = {}
+			empty_line_decisions_loc = {}
+			add_claim_DAL_1377_loc = {}
+			
+			set_country_flag = should_apply_acquire_claim_cb
+		}
+	}
+	
+	AMO_take_gramavuld = {
+		picture = "Rhun/logath_easterlings_marching";
+		potential = {
+			tag = AMO
+			has_country_flag = AMO_claimed_gramavuld
+			NOT = { has_country_flag = AMO_taking_gramavuld }
+			NOT = { DAL = { has_country_flag = DAL_annex_AMO } }
+		}
+		allow = {
+			war = no
+		}
+		effect = {
+			set_country_flag = AMO_taking_gramavuld
+			DAL = { set_country_flag = DAL_annex_AMO }
+			remove_country_modifier = AMO_upcoming_conquest
+			country_event = 50958
+		}
+		
+		# Wait for the Rivermen minors to be annexed into DAL or RIV -- will make the war substantially easier
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 0
+				OR = {
+					exists = DA1
+					exists = DA2
+					exists = DA3
+					exists = DA4
+				}
+			}
+		}
+	}
+	
+	DAL_conquer_AMO = {
+		picture = "Barding Realm/DAL_barding_diplomats_AMO"
+		potential = {
+			has_country_flag = DAL_content
+			NOT = { has_country_flag = DAL_annex_AMO }
+			exists = AMO
+			NOT = { AMO = { has_country_flag = AMO_taking_gramavuld } }
+			AMO = {
+				OR = {
+					owns = 1475 # Ironhold
+					owns = 639 # Lar-Huil
+					owns = 638 # Northwatch
+					owns = 642 # Burh Austris
+				}
+			}
+		}
+		
+		allow = {
+			accepted_culture = grammas
+			accepted_culture = rivermen
+			expansion_2 = 1
+		}
+		
+		effect = {
+			badboy = 3
+			
+			1475 = { add_core = THIS }
+			639 = { add_core = THIS }
+			638 = { add_core = THIS }
+			
+			random_owned = {
+				limit = { owner = { 642 = { NOT = { owned_by = THIS } } } }
+				owner = { 642 = { add_core = THIS } }
+			}
+			
+			AMO = { country_event = 50959 }
+			AMO = { set_country_flag = AMO_taking_gramavuld }
+			set_country_flag = DAL_annex_AMO
+		}
+	}
+	
+	DAL_dissolution_amov_clan = {
+		picture = "Barding Realm/DAL_end_AMO"
+		news = yes
+		news_title = "DAL_dissolution_amov_clan_NEWS_TITLE"
+		news_desc_long = "DAL_dissolution_amov_clan_NEWS_LONG"
+		news_desc_medium = "DAL_dissolution_amov_clan_NEWS_MEDIUM"
+		news_desc_short = "DAL_dissolution_amov_clan_NEWS_SHORT"
+		
+		potential = {
+			has_country_flag = DAL_content
+			AMO = { any_core = { owned_by = THIS } }
+		}
+		
+		allow = {
+			AMO = {
+				all_core = {
+					owned_by = THIS
+					is_core = THIS
+					province_control_days = 3650
+					OR = {
+						is_colonial = no
+						culture = barding
+						culture = adhalling
+						culture = grammas
+						culture = rivermen
+					}
+				}
+			}
+		}
+		
+		effect = {
+			badboy = 3
+			prestige = 10
+			
+			any_owned = {
+				limit = { is_core = AMO }
+				remove_core = AMO
+				any_pop = {
+					limit = { is_culture_group = gramavuld_northmen }
+					ideology = { factor = 0.05 value = house_of_bard }
+				}
+				any_pop = {
+					limit = { is_culture_group = easterlings }
+					militancy = 5
+					ideology = { factor = -0.05 value = house_of_bard }
+				}
+			}
+		}
+	}
+}
+
 # Marsh Wights
 political_decisions = {
 	awaken_the_marsh_wights = {
 		picture = "Barding Realm/DAL_marsh_wights_rise"
 		potential = {
 			OR = {
-				nationalvalue = sauron
-				nationalvalue = witch_king_of_angmar
-				nationalvalue = khamul
+				ruling_party = MOR_sauron
+				ruling_party_ideology = saurons_nine
 			}
 			LMW = {
 				any_core = {
@@ -361,6 +745,12 @@ political_decisions = {
 	
 	exterminate_the_wights = {
 		picture = "Barding Realm/DAL_marsh_wights"
+		news = yes
+		news = "exterminate_the_wights_NEWS_TITLE"
+		news_desc_long = "exterminate_the_wights_NEWS_LONG"
+		news_desc_medium = "exterminate_the_wights_NEWS_MEDIUM"
+		news_desc_short = "exterminate_the_wights_NEWS_SHORT"
+		
 		potential = {
 			has_global_flag = DAL_marsh_wights_risen
 			LMW = {
@@ -380,12 +770,14 @@ political_decisions = {
 				all_core = {
 					remove_core = LMW
 					any_pop = {
-						limit = {
-							has_pop_culture = wight
-						}
+						limit = { has_pop_culture = wight }
 						reduce_pop = 0
 					}
-					add_province_modifier = { name = rebuilt_city duration = 365 }
+					any_pop = {
+						limit = { NOT = { has_pop_culture = wight } }
+						ideology = { factor = 0.05 value = house_of_bard }
+					}
+					add_province_modifier = { name = rebuilt_city_5 duration = 1825 }
 				}
 			}
 			
@@ -400,7 +792,7 @@ political_decisions = {
 	invite_the_grammas = {
 		picture = "Barding Realm/DAL_map_of_gramavuld_grammas"
 		potential = {
-			tag = DAL
+			has_country_flag = DAL_content
 			NOT = { has_global_flag = DAL_invited_the_grammas }
 		}
 		
@@ -415,7 +807,7 @@ political_decisions = {
 		}
 		
 		effect = {
-			badboy = 2
+			badboy = 4
 			
 			set_global_flag = DAL_invited_the_grammas
 			
@@ -426,9 +818,14 @@ political_decisions = {
 
 	proclaim_lordship_over_the_grammas = {
 		picture = "Barding Realm/DAL_barding_diplomats_grammas"
+		news = yes
+		news_title = "proclaim_lordship_over_the_grammas_NEWS_TITLE"
+		news_desc_long = "proclaim_lordship_over_the_grammas_NEWS"
+		news_desc_medium = "proclaim_lordship_over_the_grammas_NEWS"
+		news_desc_short = "proclaim_lordship_over_the_grammas_NEWS"
 		
 		potential = {
-			tag = DAL
+			has_country_flag = DAL_content
 			has_global_flag = DAL_invited_the_grammas
 			NOT = { has_global_flag = DAL_proclaimed_lordship_over_the_gramas }
 		}
@@ -458,8 +855,10 @@ political_decisions = {
 				all_core = {
 					limit = {
 						owned_by = THIS
+						NOT = { is_core = THIS }
 					}
-					add_core = THIS
+					add_province_modifier = { name = cultural_core_integration duration = -1 } # Average of 5 years to get a core per province
+					any_pop = { ideology = { factor = 0.05 value = house_of_bard } }
 				}
 			}
 			
@@ -474,7 +873,7 @@ political_decisions = {
 		picture = "Barding Realm/DAL_map_of_gramavuld_rivermen"
 		
 		potential = {
-			tag = DAL
+			has_country_flag = DAL_content
 			NOT = { has_global_flag = invited_the_rivermen }
 			OR = {
 				exists = DA1
@@ -489,14 +888,14 @@ political_decisions = {
 			OR = {
 				has_country_modifier = king_of_grammas
 				diplomacy_1 = 1
-				wilderness_1 = 1
+				expansion_1 = 1
 			}
 			war = no
 			has_unclaimed_cores = no
 		}
 		
 		effect = {
-			badboy = 5
+			badboy = 4
 			
 			# United Rivermen
 			random_country = {
@@ -568,7 +967,7 @@ political_decisions = {
 		picture = "Barding Realm/DAL_barding_diplomats_rivermen"
 		
 		potential = {
-			tag = DAL
+			has_country_flag = DAL_content
 			RIV = {
 				any_core = {
 					NOT = {
@@ -608,7 +1007,7 @@ political_decisions = {
 							is_core = THIS
 						}
 					}
-					add_core = THIS
+					add_province_modifier = { name = cultural_core_integration duration = -1 } # Average of 5 years to get a core per province
 				}
 			}
 			
@@ -632,12 +1031,24 @@ political_decisions = {
 	
 	proclaim_lordship_over_the_rivermen = {
 		picture = "Barding Realm/DAL_barding_diplomats_rivermen"
+		news = yes
+		news_title = "proclaim_lordship_over_the_rivermen_NEWS_TITLE"
+		news_desc_long = "proclaim_lordship_over_the_rivermen_NEWS"
+		news_desc_medium = "proclaim_lordship_over_the_rivermen_NEWS"
+		news_desc_short = "proclaim_lordship_over_the_rivermen_NEWS"
 		
 		potential = {
-			tag = DAL
+			has_country_flag = DAL_content
 			OR = {
 				has_global_flag = invited_the_rivermen
 				has_global_flag = protect_the_rivermen
+				AND = {
+					RIV = { exists = no }
+					DA1 = { exists = no }
+					DA2 = { exists = no }
+					DA3 = { exists = no }
+					DA4 = { exists = no }
+				}
 			}
 			NOT = { has_global_flag = DAL_proclaimed_lordship_over_the_rivermen }
 		}
@@ -672,30 +1083,38 @@ political_decisions = {
 			
 			DA1 = {
 				all_core = {
-					add_core = THIS
-					remove_core = DA1
+					limit = { NOT = { is_core = THIS } }
+					add_province_modifier = { name = cultural_core_integration duration = -1 } # Average of 5 years to get a core per province
+					any_pop = { ideology = { factor = 0.05 value = house_of_bard } }
 				}
+				all_core = { remove_core = DA1 }
 			}
 			
 			DA2 = {
 				all_core = {
-					add_core = THIS
-					remove_core = DA2
+					limit = { NOT = { is_core = THIS } }
+					add_province_modifier = { name = cultural_core_integration duration = -1 } # Average of 5 years to get a core per province
+					any_pop = { ideology = { factor = 0.05 value = house_of_bard } }
 				}
+				all_core = { remove_core = DA2 }
 			}
 			
 			DA3 = {
 				all_core = {
-					add_core = THIS
-					remove_core = DA3
+					limit = { NOT = { is_core = THIS } }
+					add_province_modifier = { name = cultural_core_integration duration = -1 } # Average of 5 years to get a core per province
+					any_pop = { ideology = { factor = 0.05 value = house_of_bard } }
 				}
+				all_core = { remove_core = DA3 }
 			}
 			
 			DA4 = {
 				all_core = {
-					add_core = THIS
-					remove_core = DA4
+					limit = { NOT = { is_core = THIS } }
+					add_province_modifier = { name = cultural_core_integration duration = -1 } # Average of 5 years to get a core per province
+					any_pop = { ideology = { factor = 0.05 value = house_of_bard } }
 				}
+				all_core = { remove_core = DA4 }
 			}
 			
 			random_owned = {
@@ -797,14 +1216,199 @@ political_decisions = {
 			DAL_proclaim_lord_of_rivermen_loc = {}
 		}
 	}
+	
+	gramavuld_united = {
+		picture = "Barding Realm/DAL_map_of_gramavuld"
+		news = yes
+		news_title = "gramavuld_united_NEWS_TITLE"
+		news_desc_long = "gramavuld_united_NEWS_LONG"
+		news_desc_medium = "gramavuld_united_NEWS_MEDIUM"
+		news_desc_short = "gramavuld_united_NEWS_SHORT"
+		
+		potential = {
+			has_country_flag = DAL_content
+			NOT = { has_country_flag = DAL_united_gramavuld }
+			OR = {
+				accepted_culture = grammas
+				accepted_culture = rivermen
+			}
+		}
+		
+		allow = {
+			war = no
+			ADH = {
+				all_core = {
+					OR = {
+						region = ERE_657
+						AND = {
+							is_core = THIS
+							owned_by = THIS
+						}
+					}
+				}
+			}
+			GRA = {
+				all_core = {
+					OR = {
+						region = ERE_660
+						AND = {
+							is_core = THIS
+							owned_by = THIS
+						}
+					}
+				}
+			}
+			RIV = {
+				all_core = {
+					is_core = THIS
+					owned_by = THIS
+				}
+			}
+			ESG = {
+				all_core = {
+					is_core = THIS
+					owned_by = THIS
+				}
+			}
+		}
+		
+		effect = {
+			prestige = 20
+			
+			any_owned = {
+				limit = { is_core = ADH is_core = THIS }
+				remove_core = ADH
+			}
+			any_owned = {
+				limit = { is_core = GRA is_core = THIS }
+				remove_core = GRA
+			}
+			any_owned = {
+				limit = { is_core = RIV is_core = THIS }
+				remove_core = RIV
+			}
+			any_owned = {
+				limit = { is_core = ESG is_core = THIS }
+				remove_core = ESG
+			}
+			
+			random_owned = {
+				limit = { owner = { has_country_flag = claimed_DAL_640 } }
+				owner = {
+					clr_country_flag = claimed_DAL_640
+					remove_claim_DAL_640_loc = {}
+				}
+			}
+			
+			random_owned = {
+				limit = { owner = { has_country_flag = claimed_DAL_643 } }
+				owner = {
+					clr_country_flag = claimed_DAL_643
+					remove_claim_DAL_643_loc = {}
+				}
+			}
+			
+			random_owned = {
+				limit = { owner = { has_country_flag = claimed_DAL_645 } }
+				owner = {
+					clr_country_flag = claimed_DAL_645
+					remove_claim_DAL_645_loc = {}
+				}
+			}
+			
+			random_owned = {
+				limit = { owner = { has_country_flag = claimed_DAL_1377 } }
+				owner = {
+					clr_country_flag = claimed_DAL_1377
+					remove_claim_DAL_1377_loc = {}
+				}
+			}
+			
+			random_owned = {
+				limit = { owner = { has_country_flag = claimed_DAL_652 } }
+				owner = {
+					clr_country_flag = claimed_DAL_652
+					remove_claim_DAL_652_loc = {}
+				}
+			}
+			
+			random_owned = {
+				limit = { owner = { has_country_flag = claimed_DAL_654 } }
+				owner = {
+					clr_country_flag = claimed_DAL_654
+					remove_claim_DAL_654_loc = {}
+				}
+			}
+			
+			set_country_flag = DAL_united_gramavuld
+		}
+	}
+	
+	steering_gravamuld_economics = {
+		picture = "Barding Realm/DAL_economy"
+		potential = {
+			ai = no
+			has_country_flag = DAL_content
+			NOT = { has_country_flag = DAL_set_gramavuld_economics }
+			OR = {
+				accepted_culture = grammas
+				accepted_culture = rivermen
+			}
+		}
+		
+		allow = {
+			has_country_flag = DAL_united_gramavuld
+			NOT = { 478 = { has_province_modifier = outlaws } }
+			NOT = { 641 = { has_province_modifier = outlaws } }
+		}
+		
+		effect = {
+			any_owned = {
+				limit = {
+					is_core = THIS
+					OR = {
+						region = DAL_640
+						region = DAL_643
+						region = DAL_645
+						region = DAL_1377
+						region = DAL_652
+						region = DAL_654
+						province_id = 642
+						province_id = 638
+						province_id = 639
+						province_id = 1475
+					}
+					NOT = { trade_goods = precious_goods }
+					NOT = { trade_goods = precious_metal }
+					NOT = { has_province_modifier = locked_rgo }
+				}
+				add_province_modifier = { name = awaiting_economic_direction duration = -1 }
+			}
+			
+			random_owned = {
+				limit = { has_province_modifier = awaiting_economic_direction }
+				province_event = { id = 12057 days = 0 }
+			}
+			
+			DAL_economics_reform_explanation_loc = {}
+			
+			set_country_flag = DAL_set_gramavuld_economics
+		}
+	}
 }
 
 # Reclamation of Northern Lands
 political_decisions = {
 	DAL_break_treaty_with_erebor = {
 		picture = "Barding Realm/DAL_reconquer_north"
+		news = yes
+		news_title = "DAL_break_treaty_with_erebor_NEWS_TITLE"
+		news_desc_long = "DAL_break_treaty_with_erebor_NEWS_LONG"
+		news_desc_medium = "DAL_break_treaty_with_erebor_NEWS_MEDIUM"
+		news_desc_short = "DAL_break_treaty_with_erebor_NEWS_SHORT"
+		
 		potential = {
-			tag = DAL
+			has_country_flag = DAL_content
 			has_global_flag = railroading_disabled
 			NOT = { has_global_flag = DAL_reclaimed_northern_lands }
 			OR = {
@@ -817,14 +1421,12 @@ political_decisions = {
 		}
 		
 		allow = {
-			war = no
 			is_greater_power = yes
+			war = no
 			expansion_4 = 1
 		}
 		
 		effect = {
-			ERE_657 = { add_core = THIS }
-			ERE_660 = { add_core = THIS }
 			
 			any_country = {
 				limit = {
@@ -841,6 +1443,20 @@ political_decisions = {
 			
 			badboy = 8
 			
+			country_event = 2900 # CB giving event
+			
+			set_country_flag = claimed_ERE_657
+			set_country_flag = claimed_ERE_660
+			
+			add_claim_ERE_657_loc = {}
+			empty_line_decisions_loc = {}
+			add_claim_ERE_660_loc = {}
+			
+			# Turning off the Erebor relations tracker
+			remove_country_modifier = erebor_relations_modifier
+			set_variable = { which = erebor_relations value = 0 }
+			
+			set_country_flag = should_apply_acquire_claim_cb
 			set_global_flag = DAL_reclaimed_northern_lands
 		}
 		
@@ -882,6 +1498,172 @@ political_decisions = {
 	}
 }
 
+# Southern Rhovanion Conquests
+political_decisions = {
+	DAL_southern_rivermen = {
+		picture = "Barding Realm/DAL_barding_diplomats_northern_rivermen"
+		potential = {
+			OR = {
+				tag = RIV
+				AND = {
+					has_country_flag = DAL_content
+					accepted_culture = rivermen
+				}
+			}
+			NOT = { has_country_flag = DAL_claimed_southern_rivermen }
+		}
+		allow = {
+			AMO = { exists = no }
+		}
+		
+		effect = {
+			
+			# 2 infamy per region
+			badboy = 6
+			
+			set_country_flag = claimed_RHO_524
+			set_country_flag = claimed_RHO_525
+			set_country_flag = claimed_RHO_528
+			
+			country_event = 2900 # CB giving event
+			
+			add_claim_RHO_524_loc = {}
+			empty_line_decisions_loc = {}
+			add_claim_RHO_525_loc = {}
+			empty_line_decisions_loc = {}
+			add_claim_RHO_528_loc = {}
+			
+			set_country_flag = should_apply_acquire_claim_cb
+			set_country_flag = DAL_claimed_southern_rivermen
+		}
+	}
+	
+	DAL_integrate_southern_rivermen = {
+		picture = "Barding Realm/DAL_barding_diplomats_core_northern_rivermen"
+		potential = {
+			OR = {
+				tag = RIV
+				AND = {
+					has_country_flag = DAL_content
+					accepted_culture = rivermen
+				}
+			}
+			has_country_flag = DAL_claimed_southern_rivermen
+			NOT = { has_country_flag = DAL_cored_southern_rivermen }
+		}
+		
+		allow = {
+			owns = 526
+			owns = 528
+			owns = 530
+			owns = 524
+		}
+		
+		effect = {
+			prestige = 5
+			
+			any_owned = {
+				limit = {
+					OR = {
+						province_id = 524
+						province_id = 526
+						province_id = 528
+						province_id = 530
+					}
+				}
+				add_province_modifier = { name = cultural_core_integration duration = -1 } # Average of 5 years to get a core per province
+				any_pop = { ideology = { factor = 0.05 value = house_of_bard } }
+			}
+			
+			set_country_flag = DAL_cored_southern_rivermen
+		}
+	}
+	
+	DAL_claim_successor_to_vidugavia = {
+		picture = "Barding Realm/DAL_barding_claim_rhovanion"
+		news = yes
+		news_title = "DAL_claim_successor_to_vidugavia_NEWS_TITLE"
+		news_desc_long = "DAL_claim_successor_to_vidugavia_NEWS"
+		news_desc_medium = "DAL_claim_successor_to_vidugavia_NEWS"
+		news_desc_short = "DAL_claim_successor_to_vidugavia_NEWS"
+		
+		potential = {
+			has_country_flag = DAL_content
+			has_country_flag = DAL_claimed_southern_rivermen
+			NOT = { has_country_flag = DAL_claimed_successor_vidugavia }
+			NOT = { exists = RHO }
+			NOT = { tag = FFN }
+		}
+		
+		allow = {
+			owns = 527
+			owns = 529
+			owns = 531
+			expansion_4 = 1
+		}
+		
+		effect = {
+			badboy = 25 # technically should be 26, but given that breaking 25 gives containment....
+			
+			set_country_flag = claimed_RHO_500
+			set_country_flag = claimed_RHO_507
+			set_country_flag = claimed_RHO_523
+			set_country_flag = claimed_RHO_520
+			set_country_flag = claimed_RHO_535
+			set_country_flag = claimed_RHO_1382
+			set_country_flag = claimed_RHO_515
+			set_country_flag = claimed_RHO_508
+			set_country_flag = claimed_RHO_1379
+			set_country_flag = claimed_RHO_491
+			set_country_flag = claimed_RHO_474
+			set_country_flag = claimed_RHO_472
+			set_country_flag = claimed_RHO_476
+			
+			country_event = 2900 # CB giving event
+			add_country_modifier = { name = unfinished_vidugavia_successorship duration = -1 }
+			
+			add_claim_RHO_500_loc = {}
+			empty_line_decisions_loc = {}
+			add_claim_RHO_507_loc = {}
+			empty_line_decisions_loc = {}
+			add_claim_RHO_523_loc = {}
+			empty_line_decisions_loc = {}
+			add_claim_RHO_520_loc = {}
+			empty_line_decisions_loc = {}
+			add_claim_RHO_535_loc = {}
+			empty_line_decisions_loc = {}
+			add_claim_RHO_1382_loc = {}
+			empty_line_decisions_loc = {}
+			add_claim_RHO_515_loc = {}
+			empty_line_decisions_loc = {}
+			add_claim_RHO_508_loc = {}
+			empty_line_decisions_loc = {}
+			add_claim_RHO_1379_loc = {}
+			empty_line_decisions_loc = {}
+			add_claim_RHO_491_loc = {}
+			empty_line_decisions_loc = {}
+			add_claim_RHO_474_loc = {}
+			empty_line_decisions_loc = {}
+			add_claim_RHO_472_loc = {}
+			empty_line_decisions_loc = {}
+			add_claim_RHO_476_loc = {}
+			
+			set_country_flag = should_apply_acquire_claim_cb
+			set_country_flag = DAL_claimed_successor_vidugavia
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 0
+				
+				badboy = 0.01 # AI won't take the decision if it has any infamy
+			}
+		}
+	}
+}
+
 # Province Flavor
 political_decisions = {
 	build_meres_end_boatlift = {
@@ -898,7 +1680,7 @@ political_decisions = {
 					naval_construction_3 = 1
 				}
 				AND = {
-					is_culture_group = northmen
+					is_culture_group = gramavuld_northmen
 					ERE = {
 						owns = 660
 						merchant_marine_3 = 1
@@ -936,8 +1718,8 @@ political_decisions = {
 	rebuild_dale_toy_market = {
 		picture = "Barding Realm/DAL_dale"
 		potential = {
-			is_culture_group = northmen
 			owns = 652 # Dale
+			is_culture_group = gramavuld_northmen
 			NOT = { 652 = { has_province_modifier = wonder_of_the_north } }
 		}
 		
@@ -960,20 +1742,935 @@ political_decisions = {
 	}
 }
 
-# Royal Family
+# Leader Overview
 political_decisions = {
 	DAL_line_of_bard = {
 		alert = no
 		picture = "Barding Realm/DAL_line_of_bard"
 		potential = {
-			tag = DAL
+			has_country_flag = DAL_content
 			ai = no
 			NOT = { has_global_flag = fluff_disabled }
 		}
 		
-		allow = {}
-		
 		effect = {
+			set_global_flag = hidden_effects
+			
+			random_owned = {
+				limit = { owner = { has_global_flag = hidden_effects } }
+				owner = {
+					random_owned = {
+						limit = { owner = { NOT = { check_variable = { which = erebor_relations value = 0.1 } } } }
+						owner = { dynamic_loc_slot_31 = { state_scope = { change_region_name = "Barding - Erebor relations are currently §Tless than 1§!" } } }
+					}
+					random_owned = {
+						limit = {
+							owner = {
+								check_variable = { which = erebor_relations value = 0.9 }
+								NOT = { check_variable = { which = erebor_relations value = 1.1 } }
+							}
+						}
+						owner = { dynamic_loc_slot_31 = { state_scope = { change_region_name = "Barding - Erebor relations are currently at §T1§!" } } }
+					}
+					random_owned = {
+						limit = {
+							owner = {
+								check_variable = { which = erebor_relations value = 1.9 }
+								NOT = { check_variable = { which = erebor_relations value = 2.1 } }
+							}
+						}
+						owner = { dynamic_loc_slot_31 = { state_scope = { change_region_name = "Barding - Erebor relations are currently at §T2§!" } } }
+					}
+					random_owned = {
+						limit = {
+							owner = {
+								check_variable = { which = erebor_relations value = 2.9 }
+								NOT = { check_variable = { which = erebor_relations value = 3.1 } }
+							}
+						}
+						owner = { dynamic_loc_slot_31 = { state_scope = { change_region_name = "Barding - Erebor relations are currently at §T3§!" } } }
+					}
+					random_owned = {
+						limit = {
+							owner = {
+								check_variable = { which = erebor_relations value = 3.9 }
+								NOT = { check_variable = { which = erebor_relations value = 4.1 } }
+							}
+						}
+						owner = { dynamic_loc_slot_31 = { state_scope = { change_region_name = "Barding - Erebor relations are currently at §T4§!" } } }
+					}
+					random_owned = {
+						limit = {
+							owner = {
+								check_variable = { which = erebor_relations value = 4.9 }
+								NOT = { check_variable = { which = erebor_relations value = 5.1 } }
+							}
+						}
+						owner = { dynamic_loc_slot_31 = { state_scope = { change_region_name = "Barding - Erebor relations are currently at §T5§!" } } }
+					}
+					random_owned = {
+						limit = {
+							owner = {
+								check_variable = { which = erebor_relations value = 5.9 }
+								NOT = { check_variable = { which = erebor_relations value = 6.1 } }
+							}
+						}
+						owner = { dynamic_loc_slot_31 = { state_scope = { change_region_name = "Barding - Erebor relations are currently at §T6§!" } } }
+					}
+					random_owned = {
+						limit = {
+							owner = {
+								check_variable = { which = erebor_relations value = 6.9 }
+								NOT = { check_variable = { which = erebor_relations value = 7.1 } }
+							}
+						}
+						owner = { dynamic_loc_slot_31 = { state_scope = { change_region_name = "Barding - Erebor relations are currently at §T7§!" } } }
+					}
+					random_owned = {
+						limit = {
+							owner = {
+								check_variable = { which = erebor_relations value = 7.9 }
+								NOT = { check_variable = { which = erebor_relations value = 8.1 } }
+							}
+						}
+						owner = { dynamic_loc_slot_31 = { state_scope = { change_region_name = "Barding - Erebor relations are currently at §T8§!" } } }
+					}
+					random_owned = {
+						limit = {
+							owner = {
+								check_variable = { which = erebor_relations value = 8.9 }
+								NOT = { check_variable = { which = erebor_relations value = 9.1 } }
+							}
+						}
+						owner = { dynamic_loc_slot_31 = { state_scope = { change_region_name = "Barding - Erebor relations are currently at §T9§!" } } }
+					}
+					random_owned = {
+						limit = {
+							owner = {
+								check_variable = { which = erebor_relations value = 9.9 }
+								NOT = { check_variable = { which = erebor_relations value = 10.1 } }
+							}
+						}
+						owner = { dynamic_loc_slot_31 = { state_scope = { change_region_name = "Barding - Erebor relations are currently at §T10§!" } } }
+					}
+					random_owned = {
+						limit = {
+							owner = {
+								check_variable = { which = erebor_relations value = 10.9 }
+								NOT = { check_variable = { which = erebor_relations value = 11.1 } }
+							}
+						}
+						owner = { dynamic_loc_slot_31 = { state_scope = { change_region_name = "Barding - Erebor relations are currently at §T11§!" } } }
+					}
+					random_owned = {
+						limit = {
+							owner = {
+								check_variable = { which = erebor_relations value = 11.9 }
+								NOT = { check_variable = { which = erebor_relations value = 12.1 } }
+							}
+						}
+						owner = { dynamic_loc_slot_31 = { state_scope = { change_region_name = "Barding - Erebor relations are currently at §T12§!" } } }
+					}
+					random_owned = {
+						limit = {
+							owner = {
+								check_variable = { which = erebor_relations value = 12.9 }
+								NOT = { check_variable = { which = erebor_relations value = 13.1 } }
+							}
+						}
+						owner = { dynamic_loc_slot_31 = { state_scope = { change_region_name = "Barding - Erebor relations are currently at §T13§!" } } }
+					}
+					random_owned = {
+						limit = {
+							owner = {
+								check_variable = { which = erebor_relations value = 13.9 }
+								NOT = { check_variable = { which = erebor_relations value = 14.1 } }
+							}
+						}
+						owner = { dynamic_loc_slot_31 = { state_scope = { change_region_name = "Barding - Erebor relations are currently at §T14§!" } } }
+					}
+					random_owned = {
+						limit = {
+							owner = {
+								check_variable = { which = erebor_relations value = 14.9 }
+								NOT = { check_variable = { which = erebor_relations value = 15.1 } }
+							}
+						}
+						owner = { dynamic_loc_slot_31 = { state_scope = { change_region_name = "Barding - Erebor relations are currently at §T15§!" } } }
+					}
+					random_owned = {
+						limit = {
+							owner = {
+								check_variable = { which = erebor_relations value = 15.9 }
+								NOT = { check_variable = { which = erebor_relations value = 16.1 } }
+							}
+						}
+						owner = { dynamic_loc_slot_31 = { state_scope = { change_region_name = "Barding - Erebor relations are currently at §T16§!" } } }
+					}
+					random_owned = {
+						limit = {
+							owner = {
+								check_variable = { which = erebor_relations value = 16.9 }
+								NOT = { check_variable = { which = erebor_relations value = 17.1 } }
+							}
+						}
+						owner = { dynamic_loc_slot_31 = { state_scope = { change_region_name = "Barding - Erebor relations are currently at §T17§!" } } }
+					}
+					random_owned = {
+						limit = {
+							owner = {
+								check_variable = { which = erebor_relations value = 17.9 }
+								NOT = { check_variable = { which = erebor_relations value = 18.1 } }
+							}
+						}
+						owner = { dynamic_loc_slot_31 = { state_scope = { change_region_name = "Barding - Erebor relations are currently at §T18§!" } } }
+					}
+					random_owned = {
+						limit = {
+							owner = {
+								check_variable = { which = erebor_relations value = 18.9 }
+								NOT = { check_variable = { which = erebor_relations value = 19.1 } }
+							}
+						}
+						owner = { dynamic_loc_slot_31 = { state_scope = { change_region_name = "Barding - Erebor relations are currently at §T19§!" } } }
+					}
+					random_owned = {
+						limit = {
+							owner = {
+								check_variable = { which = erebor_relations value = 19.9 }
+								NOT = { check_variable = { which = erebor_relations value = 20.1 } }
+							}
+						}
+						owner = { dynamic_loc_slot_31 = { state_scope = { change_region_name = "Barding - Erebor relations are currently at §T20§!" } } }
+					}
+					random_owned = {
+						limit = {
+							owner = {
+								check_variable = { which = erebor_relations value = 20.9 }
+								NOT = { check_variable = { which = erebor_relations value = 21.1 } }
+							}
+						}
+						owner = { dynamic_loc_slot_31 = { state_scope = { change_region_name = "Barding - Erebor relations are currently at §T21§!" } } }
+					}
+					random_owned = {
+						limit = {
+							owner = {
+								check_variable = { which = erebor_relations value = 21.9 }
+								NOT = { check_variable = { which = erebor_relations value = 22.1 } }
+							}
+						}
+						owner = { dynamic_loc_slot_31 = { state_scope = { change_region_name = "Barding - Erebor relations are currently at §T22§!" } } }
+					}
+					random_owned = {
+						limit = {
+							owner = {
+								check_variable = { which = erebor_relations value = 22.9 }
+								NOT = { check_variable = { which = erebor_relations value = 23.1 } }
+							}
+						}
+						owner = { dynamic_loc_slot_31 = { state_scope = { change_region_name = "Barding - Erebor relations are currently at §T23§!" } } }
+					}
+					random_owned = {
+						limit = {
+							owner = {
+								check_variable = { which = erebor_relations value = 23.9 }
+								NOT = { check_variable = { which = erebor_relations value = 24.1 } }
+							}
+						}
+						owner = { dynamic_loc_slot_31 = { state_scope = { change_region_name = "Barding - Erebor relations are currently at §T24§!" } } }
+					}
+					random_owned = {
+						limit = {
+							owner = {
+								check_variable = { which = erebor_relations value = 24.9 }
+								NOT = { check_variable = { which = erebor_relations value = 25.1 } }
+							}
+						}
+						owner = { dynamic_loc_slot_31 = { state_scope = { change_region_name = "Barding - Erebor relations are currently at §T25§!" } } }
+					}
+					random_owned = {
+						limit = {
+							owner = {
+								check_variable = { which = erebor_relations value = 25.9 }
+								NOT = { check_variable = { which = erebor_relations value = 26.1 } }
+							}
+						}
+						owner = { dynamic_loc_slot_31 = { state_scope = { change_region_name = "Barding - Erebor relations are currently at §T26§!" } } }
+					}
+					random_owned = {
+						limit = {
+							owner = {
+								check_variable = { which = erebor_relations value = 26.9 }
+								NOT = { check_variable = { which = erebor_relations value = 27.1 } }
+							}
+						}
+						owner = { dynamic_loc_slot_31 = { state_scope = { change_region_name = "Barding - Erebor relations are currently at §T27§!" } } }
+					}
+					random_owned = {
+						limit = {
+							owner = {
+								check_variable = { which = erebor_relations value = 27.9 }
+								NOT = { check_variable = { which = erebor_relations value = 28.1 } }
+							}
+						}
+						owner = { dynamic_loc_slot_31 = { state_scope = { change_region_name = "Barding - Erebor relations are currently at §T28§!" } } }
+					}
+					random_owned = {
+						limit = {
+							owner = {
+								check_variable = { which = erebor_relations value = 28.9 }
+								NOT = { check_variable = { which = erebor_relations value = 29.1 } }
+							}
+						}
+						owner = { dynamic_loc_slot_31 = { state_scope = { change_region_name = "Barding - Erebor relations are currently at §T29§!" } } }
+					}
+					random_owned = {
+						limit = {
+							owner = {
+								check_variable = { which = erebor_relations value = 29.9 }
+								NOT = { check_variable = { which = erebor_relations value = 30.1 } }
+							}
+						}
+						owner = { dynamic_loc_slot_31 = { state_scope = { change_region_name = "Barding - Erebor relations are currently at §T30§!" } } }
+					}
+					random_owned = {
+						limit = {
+							owner = {
+								check_variable = { which = erebor_relations value = 30.9 }
+								NOT = { check_variable = { which = erebor_relations value = 31.1 } }
+							}
+						}
+						owner = { dynamic_loc_slot_31 = { state_scope = { change_region_name = "Barding - Erebor relations are currently at §T31§!" } } }
+					}
+					random_owned = {
+						limit = {
+							owner = {
+								check_variable = { which = erebor_relations value = 31.9 }
+								NOT = { check_variable = { which = erebor_relations value = 32.1 } }
+							}
+						}
+						owner = { dynamic_loc_slot_31 = { state_scope = { change_region_name = "Barding - Erebor relations are currently at §T32§!" } } }
+					}
+					random_owned = {
+						limit = {
+							owner = {
+								check_variable = { which = erebor_relations value = 32.9 }
+								NOT = { check_variable = { which = erebor_relations value = 33.1 } }
+							}
+						}
+						owner = { dynamic_loc_slot_31 = { state_scope = { change_region_name = "Barding - Erebor relations are currently at §T33§!" } } }
+					}
+					random_owned = {
+						limit = {
+							owner = {
+								check_variable = { which = erebor_relations value = 33.9 }
+								NOT = { check_variable = { which = erebor_relations value = 34.1 } }
+							}
+						}
+						owner = { dynamic_loc_slot_31 = { state_scope = { change_region_name = "Barding - Erebor relations are currently at §T34§!" } } }
+					}
+					random_owned = {
+						limit = {
+							owner = {
+								check_variable = { which = erebor_relations value = 34.9 }
+								NOT = { check_variable = { which = erebor_relations value = 35.1 } }
+							}
+						}
+						owner = { dynamic_loc_slot_31 = { state_scope = { change_region_name = "Barding - Erebor relations are currently at §T35§!" } } }
+					}
+					random_owned = {
+						limit = {
+							owner = {
+								check_variable = { which = erebor_relations value = 35.9 }
+								NOT = { check_variable = { which = erebor_relations value = 36.1 } }
+							}
+						}
+						owner = { dynamic_loc_slot_31 = { state_scope = { change_region_name = "Barding - Erebor relations are currently at §T36§!" } } }
+					}
+					random_owned = {
+						limit = {
+							owner = {
+								check_variable = { which = erebor_relations value = 36.9 }
+								NOT = { check_variable = { which = erebor_relations value = 37.1 } }
+							}
+						}
+						owner = { dynamic_loc_slot_31 = { state_scope = { change_region_name = "Barding - Erebor relations are currently at §T37§!" } } }
+					}
+					random_owned = {
+						limit = {
+							owner = {
+								check_variable = { which = erebor_relations value = 37.9 }
+								NOT = { check_variable = { which = erebor_relations value = 38.1 } }
+							}
+						}
+						owner = { dynamic_loc_slot_31 = { state_scope = { change_region_name = "Barding - Erebor relations are currently at §T38§!" } } }
+					}
+					random_owned = {
+						limit = {
+							owner = {
+								check_variable = { which = erebor_relations value = 38.9 }
+								NOT = { check_variable = { which = erebor_relations value = 39.1 } }
+							}
+						}
+						owner = { dynamic_loc_slot_31 = { state_scope = { change_region_name = "Barding - Erebor relations are currently at §T39§!" } } }
+					}
+					random_owned = {
+						limit = {
+							owner = {
+								check_variable = { which = erebor_relations value = 39.9 }
+								NOT = { check_variable = { which = erebor_relations value = 40.1 } }
+							}
+						}
+						owner = { dynamic_loc_slot_31 = { state_scope = { change_region_name = "Barding - Erebor relations are currently at §T40§!" } } }
+					}
+					random_owned = {
+						limit = {
+							owner = {
+								check_variable = { which = erebor_relations value = 40.9 }
+								NOT = { check_variable = { which = erebor_relations value = 41.1 } }
+							}
+						}
+						owner = { dynamic_loc_slot_31 = { state_scope = { change_region_name = "Barding - Erebor relations are currently at §T41§!" } } }
+					}
+					random_owned = {
+						limit = {
+							owner = {
+								check_variable = { which = erebor_relations value = 41.9 }
+								NOT = { check_variable = { which = erebor_relations value = 42.1 } }
+							}
+						}
+						owner = { dynamic_loc_slot_31 = { state_scope = { change_region_name = "Barding - Erebor relations are currently at §T42§!" } } }
+					}
+					random_owned = {
+						limit = {
+							owner = {
+								check_variable = { which = erebor_relations value = 42.9 }
+								NOT = { check_variable = { which = erebor_relations value = 43.1 } }
+							}
+						}
+						owner = { dynamic_loc_slot_31 = { state_scope = { change_region_name = "Barding - Erebor relations are currently at §T43§!" } } }
+					}
+					random_owned = {
+						limit = {
+							owner = {
+								check_variable = { which = erebor_relations value = 43.9 }
+								NOT = { check_variable = { which = erebor_relations value = 44.1 } }
+							}
+						}
+						owner = { dynamic_loc_slot_31 = { state_scope = { change_region_name = "Barding - Erebor relations are currently at §T44§!" } } }
+					}
+					random_owned = {
+						limit = {
+							owner = {
+								check_variable = { which = erebor_relations value = 44.9 }
+								NOT = { check_variable = { which = erebor_relations value = 45.1 } }
+							}
+						}
+						owner = { dynamic_loc_slot_31 = { state_scope = { change_region_name = "Barding - Erebor relations are currently at §T45§!" } } }
+					}
+					random_owned = {
+						limit = {
+							owner = {
+								check_variable = { which = erebor_relations value = 45.9 }
+								NOT = { check_variable = { which = erebor_relations value = 46.1 } }
+							}
+						}
+						owner = { dynamic_loc_slot_31 = { state_scope = { change_region_name = "Barding - Erebor relations are currently at §T46§!" } } }
+					}
+					random_owned = {
+						limit = {
+							owner = {
+								check_variable = { which = erebor_relations value = 46.9 }
+								NOT = { check_variable = { which = erebor_relations value = 47.1 } }
+							}
+						}
+						owner = { dynamic_loc_slot_31 = { state_scope = { change_region_name = "Barding - Erebor relations are currently at §T47§!" } } }
+					}
+					random_owned = {
+						limit = {
+							owner = {
+								check_variable = { which = erebor_relations value = 47.9 }
+								NOT = { check_variable = { which = erebor_relations value = 48.1 } }
+							}
+						}
+						owner = { dynamic_loc_slot_31 = { state_scope = { change_region_name = "Barding - Erebor relations are currently at §T48§!" } } }
+					}
+					random_owned = {
+						limit = {
+							owner = {
+								check_variable = { which = erebor_relations value = 48.9 }
+								NOT = { check_variable = { which = erebor_relations value = 49.1 } }
+							}
+						}
+						owner = { dynamic_loc_slot_31 = { state_scope = { change_region_name = "Barding - Erebor relations are currently at §T49§!" } } }
+					}
+					random_owned = {
+						limit = {
+							owner = {
+								check_variable = { which = erebor_relations value = 49.9 }
+								NOT = { check_variable = { which = erebor_relations value = 50.1 } }
+							}
+						}
+						owner = { dynamic_loc_slot_31 = { state_scope = { change_region_name = "Barding - Erebor relations are currently at §T50§!" } } }
+					}
+					random_owned = {
+						limit = {
+							owner = {
+								check_variable = { which = erebor_relations value = 50.9 }
+								NOT = { check_variable = { which = erebor_relations value = 51.1 } }
+							}
+						}
+						owner = { dynamic_loc_slot_31 = { state_scope = { change_region_name = "Barding - Erebor relations are currently at §T51§!" } } }
+					}
+					random_owned = {
+						limit = {
+							owner = {
+								check_variable = { which = erebor_relations value = 51.9 }
+								NOT = { check_variable = { which = erebor_relations value = 52.1 } }
+							}
+						}
+						owner = { dynamic_loc_slot_31 = { state_scope = { change_region_name = "Barding - Erebor relations are currently at §T52§!" } } }
+					}
+					random_owned = {
+						limit = {
+							owner = {
+								check_variable = { which = erebor_relations value = 52.9 }
+								NOT = { check_variable = { which = erebor_relations value = 53.1 } }
+							}
+						}
+						owner = { dynamic_loc_slot_31 = { state_scope = { change_region_name = "Barding - Erebor relations are currently at §T53§!" } } }
+					}
+					random_owned = {
+						limit = {
+							owner = {
+								check_variable = { which = erebor_relations value = 53.9 }
+								NOT = { check_variable = { which = erebor_relations value = 54.1 } }
+							}
+						}
+						owner = { dynamic_loc_slot_31 = { state_scope = { change_region_name = "Barding - Erebor relations are currently at §T54§!" } } }
+					}
+					random_owned = {
+						limit = {
+							owner = {
+								check_variable = { which = erebor_relations value = 54.9 }
+								NOT = { check_variable = { which = erebor_relations value = 55.1 } }
+							}
+						}
+						owner = { dynamic_loc_slot_31 = { state_scope = { change_region_name = "Barding - Erebor relations are currently at §T55§!" } } }
+					}
+					random_owned = {
+						limit = {
+							owner = {
+								check_variable = { which = erebor_relations value = 55.9 }
+								NOT = { check_variable = { which = erebor_relations value = 56.1 } }
+							}
+						}
+						owner = { dynamic_loc_slot_31 = { state_scope = { change_region_name = "Barding - Erebor relations are currently at §T56§!" } } }
+					}
+					random_owned = {
+						limit = {
+							owner = {
+								check_variable = { which = erebor_relations value = 56.9 }
+								NOT = { check_variable = { which = erebor_relations value = 57.1 } }
+							}
+						}
+						owner = { dynamic_loc_slot_31 = { state_scope = { change_region_name = "Barding - Erebor relations are currently at §T57§!" } } }
+					}
+					random_owned = {
+						limit = {
+							owner = {
+								check_variable = { which = erebor_relations value = 57.9 }
+								NOT = { check_variable = { which = erebor_relations value = 58.1 } }
+							}
+						}
+						owner = { dynamic_loc_slot_31 = { state_scope = { change_region_name = "Barding - Erebor relations are currently at §T58§!" } } }
+					}
+					random_owned = {
+						limit = {
+							owner = {
+								check_variable = { which = erebor_relations value = 58.9 }
+								NOT = { check_variable = { which = erebor_relations value = 59.1 } }
+							}
+						}
+						owner = { dynamic_loc_slot_31 = { state_scope = { change_region_name = "Barding - Erebor relations are currently at §T59§!" } } }
+					}
+					random_owned = {
+						limit = {
+							owner = {
+								check_variable = { which = erebor_relations value = 59.9 }
+								NOT = { check_variable = { which = erebor_relations value = 60.1 } }
+							}
+						}
+						owner = { dynamic_loc_slot_31 = { state_scope = { change_region_name = "Barding - Erebor relations are currently at §T60§!" } } }
+					}
+					random_owned = {
+						limit = {
+							owner = {
+								check_variable = { which = erebor_relations value = 60.9 }
+								NOT = { check_variable = { which = erebor_relations value = 61.1 } }
+							}
+						}
+						owner = { dynamic_loc_slot_31 = { state_scope = { change_region_name = "Barding - Erebor relations are currently at §T61§!" } } }
+					}
+					random_owned = {
+						limit = {
+							owner = {
+								check_variable = { which = erebor_relations value = 61.9 }
+								NOT = { check_variable = { which = erebor_relations value = 62.1 } }
+							}
+						}
+						owner = { dynamic_loc_slot_31 = { state_scope = { change_region_name = "Barding - Erebor relations are currently at §T62§!" } } }
+					}
+					random_owned = {
+						limit = {
+							owner = {
+								check_variable = { which = erebor_relations value = 62.9 }
+								NOT = { check_variable = { which = erebor_relations value = 63.1 } }
+							}
+						}
+						owner = { dynamic_loc_slot_31 = { state_scope = { change_region_name = "Barding - Erebor relations are currently at §T63§!" } } }
+					}
+					random_owned = {
+						limit = {
+							owner = {
+								check_variable = { which = erebor_relations value = 63.9 }
+								NOT = { check_variable = { which = erebor_relations value = 64.1 } }
+							}
+						}
+						owner = { dynamic_loc_slot_31 = { state_scope = { change_region_name = "Barding - Erebor relations are currently at §T64§!" } } }
+					}
+					random_owned = {
+						limit = {
+							owner = {
+								check_variable = { which = erebor_relations value = 64.9 }
+								NOT = { check_variable = { which = erebor_relations value = 65.1 } }
+							}
+						}
+						owner = { dynamic_loc_slot_31 = { state_scope = { change_region_name = "Barding - Erebor relations are currently at §T65§!" } } }
+					}
+					random_owned = {
+						limit = {
+							owner = {
+								check_variable = { which = erebor_relations value = 65.9 }
+								NOT = { check_variable = { which = erebor_relations value = 66.1 } }
+							}
+						}
+						owner = { dynamic_loc_slot_31 = { state_scope = { change_region_name = "Barding - Erebor relations are currently at §T66§!" } } }
+					}
+					random_owned = {
+						limit = {
+							owner = {
+								check_variable = { which = erebor_relations value = 66.9 }
+								NOT = { check_variable = { which = erebor_relations value = 67.1 } }
+							}
+						}
+						owner = { dynamic_loc_slot_31 = { state_scope = { change_region_name = "Barding - Erebor relations are currently at §T67§!" } } }
+					}
+					random_owned = {
+						limit = {
+							owner = {
+								check_variable = { which = erebor_relations value = 67.9 }
+								NOT = { check_variable = { which = erebor_relations value = 68.1 } }
+							}
+						}
+						owner = { dynamic_loc_slot_31 = { state_scope = { change_region_name = "Barding - Erebor relations are currently at §T68§!" } } }
+					}
+					random_owned = {
+						limit = {
+							owner = {
+								check_variable = { which = erebor_relations value = 68.9 }
+								NOT = { check_variable = { which = erebor_relations value = 69.1 } }
+							}
+						}
+						owner = { dynamic_loc_slot_31 = { state_scope = { change_region_name = "Barding - Erebor relations are currently at §T69§!" } } }
+					}
+					random_owned = {
+						limit = {
+							owner = {
+								check_variable = { which = erebor_relations value = 69.9 }
+								NOT = { check_variable = { which = erebor_relations value = 70.1 } }
+							}
+						}
+						owner = { dynamic_loc_slot_31 = { state_scope = { change_region_name = "Barding - Erebor relations are currently at §T70§!" } } }
+					}
+					random_owned = {
+						limit = {
+							owner = {
+								check_variable = { which = erebor_relations value = 70.9 }
+								NOT = { check_variable = { which = erebor_relations value = 71.1 } }
+							}
+						}
+						owner = { dynamic_loc_slot_31 = { state_scope = { change_region_name = "Barding - Erebor relations are currently at §T71§!" } } }
+					}
+					random_owned = {
+						limit = {
+							owner = {
+								check_variable = { which = erebor_relations value = 71.9 }
+								NOT = { check_variable = { which = erebor_relations value = 72.1 } }
+							}
+						}
+						owner = { dynamic_loc_slot_31 = { state_scope = { change_region_name = "Barding - Erebor relations are currently at §T72§!" } } }
+					}
+					random_owned = {
+						limit = {
+							owner = {
+								check_variable = { which = erebor_relations value = 72.9 }
+								NOT = { check_variable = { which = erebor_relations value = 73.1 } }
+							}
+						}
+						owner = { dynamic_loc_slot_31 = { state_scope = { change_region_name = "Barding - Erebor relations are currently at §T73§!" } } }
+					}
+					random_owned = {
+						limit = {
+							owner = {
+								check_variable = { which = erebor_relations value = 73.9 }
+								NOT = { check_variable = { which = erebor_relations value = 74.1 } }
+							}
+						}
+						owner = { dynamic_loc_slot_31 = { state_scope = { change_region_name = "Barding - Erebor relations are currently at §T74§!" } } }
+					}
+					random_owned = {
+						limit = {
+							owner = {
+								check_variable = { which = erebor_relations value = 74.9 }
+								NOT = { check_variable = { which = erebor_relations value = 75.1 } }
+							}
+						}
+						owner = { dynamic_loc_slot_31 = { state_scope = { change_region_name = "Barding - Erebor relations are currently at §T75§!" } } }
+					}
+					random_owned = {
+						limit = {
+							owner = {
+								check_variable = { which = erebor_relations value = 75.9 }
+								NOT = { check_variable = { which = erebor_relations value = 76.1 } }
+							}
+						}
+						owner = { dynamic_loc_slot_31 = { state_scope = { change_region_name = "Barding - Erebor relations are currently at §T76§!" } } }
+					}
+					random_owned = {
+						limit = {
+							owner = {
+								check_variable = { which = erebor_relations value = 76.9 }
+								NOT = { check_variable = { which = erebor_relations value = 77.1 } }
+							}
+						}
+						owner = { dynamic_loc_slot_31 = { state_scope = { change_region_name = "Barding - Erebor relations are currently at §T77§!" } } }
+					}
+					random_owned = {
+						limit = {
+							owner = {
+								check_variable = { which = erebor_relations value = 77.9 }
+								NOT = { check_variable = { which = erebor_relations value = 78.1 } }
+							}
+						}
+						owner = { dynamic_loc_slot_31 = { state_scope = { change_region_name = "Barding - Erebor relations are currently at §T78§!" } } }
+					}
+					random_owned = {
+						limit = {
+							owner = {
+								check_variable = { which = erebor_relations value = 78.9 }
+								NOT = { check_variable = { which = erebor_relations value = 79.1 } }
+							}
+						}
+						owner = { dynamic_loc_slot_31 = { state_scope = { change_region_name = "Barding - Erebor relations are currently at §T79§!" } } }
+					}
+					random_owned = {
+						limit = {
+							owner = {
+								check_variable = { which = erebor_relations value = 79.9 }
+								NOT = { check_variable = { which = erebor_relations value = 80.1 } }
+							}
+						}
+						owner = { dynamic_loc_slot_31 = { state_scope = { change_region_name = "Barding - Erebor relations are currently at §T80§!" } } }
+					}
+					random_owned = {
+						limit = {
+							owner = {
+								check_variable = { which = erebor_relations value = 80.9 }
+								NOT = { check_variable = { which = erebor_relations value = 81.1 } }
+							}
+						}
+						owner = { dynamic_loc_slot_31 = { state_scope = { change_region_name = "Barding - Erebor relations are currently at §T81§!" } } }
+					}
+					random_owned = {
+						limit = {
+							owner = {
+								check_variable = { which = erebor_relations value = 81.9 }
+								NOT = { check_variable = { which = erebor_relations value = 82.1 } }
+							}
+						}
+						owner = { dynamic_loc_slot_31 = { state_scope = { change_region_name = "Barding - Erebor relations are currently at §T82§!" } } }
+					}
+					random_owned = {
+						limit = {
+							owner = {
+								check_variable = { which = erebor_relations value = 82.9 }
+								NOT = { check_variable = { which = erebor_relations value = 83.1 } }
+							}
+						}
+						owner = { dynamic_loc_slot_31 = { state_scope = { change_region_name = "Barding - Erebor relations are currently at §T83§!" } } }
+					}
+					random_owned = {
+						limit = {
+							owner = {
+								check_variable = { which = erebor_relations value = 83.9 }
+								NOT = { check_variable = { which = erebor_relations value = 84.1 } }
+							}
+						}
+						owner = { dynamic_loc_slot_31 = { state_scope = { change_region_name = "Barding - Erebor relations are currently at §T84§!" } } }
+					}
+					random_owned = {
+						limit = {
+							owner = {
+								check_variable = { which = erebor_relations value = 84.9 }
+								NOT = { check_variable = { which = erebor_relations value = 85.1 } }
+							}
+						}
+						owner = { dynamic_loc_slot_31 = { state_scope = { change_region_name = "Barding - Erebor relations are currently at §T85§!" } } }
+					}
+					random_owned = {
+						limit = {
+							owner = {
+								check_variable = { which = erebor_relations value = 85.9 }
+								NOT = { check_variable = { which = erebor_relations value = 86.1 } }
+							}
+						}
+						owner = { dynamic_loc_slot_31 = { state_scope = { change_region_name = "Barding - Erebor relations are currently at §T86§!" } } }
+					}
+					random_owned = {
+						limit = {
+							owner = {
+								check_variable = { which = erebor_relations value = 86.9 }
+								NOT = { check_variable = { which = erebor_relations value = 87.1 } }
+							}
+						}
+						owner = { dynamic_loc_slot_31 = { state_scope = { change_region_name = "Barding - Erebor relations are currently at §T87§!" } } }
+					}
+					random_owned = {
+						limit = {
+							owner = {
+								check_variable = { which = erebor_relations value = 87.9 }
+								NOT = { check_variable = { which = erebor_relations value = 88.1 } }
+							}
+						}
+						owner = { dynamic_loc_slot_31 = { state_scope = { change_region_name = "Barding - Erebor relations are currently at §T88§!" } } }
+					}
+					random_owned = {
+						limit = {
+							owner = {
+								check_variable = { which = erebor_relations value = 88.9 }
+								NOT = { check_variable = { which = erebor_relations value = 89.1 } }
+							}
+						}
+						owner = { dynamic_loc_slot_31 = { state_scope = { change_region_name = "Barding - Erebor relations are currently at §T89§!" } } }
+					}
+					random_owned = {
+						limit = {
+							owner = {
+								check_variable = { which = erebor_relations value = 89.9 }
+								NOT = { check_variable = { which = erebor_relations value = 90.1 } }
+							}
+						}
+						owner = { dynamic_loc_slot_31 = { state_scope = { change_region_name = "Barding - Erebor relations are currently at §T90§!" } } }
+					}
+					random_owned = {
+						limit = {
+							owner = {
+								check_variable = { which = erebor_relations value = 90.9 }
+								NOT = { check_variable = { which = erebor_relations value = 91.1 } }
+							}
+						}
+						owner = { dynamic_loc_slot_31 = { state_scope = { change_region_name = "Barding - Erebor relations are currently at §T91§!" } } }
+					}
+					random_owned = {
+						limit = {
+							owner = {
+								check_variable = { which = erebor_relations value = 91.9 }
+								NOT = { check_variable = { which = erebor_relations value = 92.1 } }
+							}
+						}
+						owner = { dynamic_loc_slot_31 = { state_scope = { change_region_name = "Barding - Erebor relations are currently at §T92§!" } } }
+					}
+					random_owned = {
+						limit = {
+							owner = {
+								check_variable = { which = erebor_relations value = 92.9 }
+								NOT = { check_variable = { which = erebor_relations value = 93.1 } }
+							}
+						}
+						owner = { dynamic_loc_slot_31 = { state_scope = { change_region_name = "Barding - Erebor relations are currently at §T93§!" } } }
+					}
+					random_owned = {
+						limit = {
+							owner = {
+								check_variable = { which = erebor_relations value = 93.9 }
+								NOT = { check_variable = { which = erebor_relations value = 94.1 } }
+							}
+						}
+						owner = { dynamic_loc_slot_31 = { state_scope = { change_region_name = "Barding - Erebor relations are currently at §T94§!" } } }
+					}
+					random_owned = {
+						limit = {
+							owner = {
+								check_variable = { which = erebor_relations value = 94.9 }
+								NOT = { check_variable = { which = erebor_relations value = 95.1 } }
+							}
+						}
+						owner = { dynamic_loc_slot_31 = { state_scope = { change_region_name = "Barding - Erebor relations are currently at §T95§!" } } }
+					}
+					random_owned = {
+						limit = {
+							owner = {
+								check_variable = { which = erebor_relations value = 95.9 }
+								NOT = { check_variable = { which = erebor_relations value = 96.1 } }
+							}
+						}
+						owner = { dynamic_loc_slot_31 = { state_scope = { change_region_name = "Barding - Erebor relations are currently at §T96§!" } } }
+					}
+					random_owned = {
+						limit = {
+							owner = {
+								check_variable = { which = erebor_relations value = 96.9 }
+								NOT = { check_variable = { which = erebor_relations value = 97.1 } }
+							}
+						}
+						owner = { dynamic_loc_slot_31 = { state_scope = { change_region_name = "Barding - Erebor relations are currently at §T97§!" } } }
+					}
+					random_owned = {
+						limit = {
+							owner = {
+								check_variable = { which = erebor_relations value = 97.9 }
+								NOT = { check_variable = { which = erebor_relations value = 98.1 } }
+							}
+						}
+						owner = { dynamic_loc_slot_31 = { state_scope = { change_region_name = "Barding - Erebor relations are currently at §T98§!" } } }
+					}
+					random_owned = {
+						limit = {
+							owner = {
+								check_variable = { which = erebor_relations value = 98.9 }
+								NOT = { check_variable = { which = erebor_relations value = 99.1 } }
+							}
+						}
+						owner = { dynamic_loc_slot_31 = { state_scope = { change_region_name = "Barding - Erebor relations are currently at §T99§!" } } }
+					}
+					random_owned = {
+						limit = {
+							owner = {
+								check_variable = { which = erebor_relations value = 99.9 }
+								NOT = { check_variable = { which = erebor_relations value = 100.1 } }
+							}
+						}
+						owner = { dynamic_loc_slot_31 = { state_scope = { change_region_name = "Barding - Erebor relations are currently at §T100§!" } } }
+					}
+					random_owned = {
+						limit = { owner = { check_variable = { which = erebor_relations value = 100.9 } } }
+						owner = { dynamic_loc_slot_31 = { state_scope = { change_region_name = "Barding - Erebor relations are currently at §Thigher than 100§!" } } }
+					}
+				}
+			}
+			
+			clr_global_flag = hidden_effects
 			country_event = 30032
 		}
 	}
@@ -984,9 +2681,9 @@ political_decisions = {
 	appoint_lifstan_the_chancellor = {
 		picture = "Barding Realm/DAL_minor_barding_diplomats"
 		potential = {
-			tag = DAL
+			has_country_flag = DAL_content
 			NOT = { has_global_flag = DAL_appointed_lifstan }
-			nationalvalue = bard_i
+			ruling_party = DAL_bard_i
 		}
 		
 		allow = {
@@ -1006,9 +2703,9 @@ political_decisions = {
 	appoint_erland_of_esgaroth = {
 		picture = "Barding Realm/DAL_minor_barding_diplomats"
 		potential = {
-			tag = DAL
+			has_country_flag = DAL_content
 			NOT = { has_global_flag = DAL_appointed_erland }
-			nationalvalue = bard_i
+			ruling_party = DAL_bard_i
 		}
 		
 		allow = {
@@ -1028,9 +2725,9 @@ political_decisions = {
 	appoint_tilda_to_erebor = {
 		picture = "Barding Realm/DAL_minor_barding_diplomats"
 		potential = {
-			tag = DAL
+			has_country_flag = DAL_content
 			NOT = { has_global_flag = DAL_appointed_tilda }
-			nationalvalue = bard_i
+			ruling_party = DAL_bard_i
 			exists = ERE
 		}
 		
@@ -1048,7 +2745,7 @@ political_decisions = {
 						ERE = { is_greater_power = no }
 					}
 				}
-				owner = { diplomatic_influence  = { who = ERE value = 200 } }
+				owner = { diplomatic_influence = { who = ERE value = 200 } }
 			}
 			any_pop = {
 				limit = {
@@ -1060,6 +2757,10 @@ political_decisions = {
 			
 			plurality = -1
 			
+			change_variable = { which = erebor_relations value = 5 }
+			
+			empty_line_decisions_loc = {}
+			DAL_increase_erebor_relations_5_loc = {}
 			empty_line_decisions_loc = {}
 			DAL_bard_i_only_loc = {}
 			
@@ -1070,8 +2771,8 @@ political_decisions = {
 	reforms_of_bard_i = {
 		picture = "Barding Realm/DAL_reforms_bard_i"
 		potential = {
-			tag = DAL
-			nationalvalue = bard_i
+			has_country_flag = DAL_content
+			ruling_party = DAL_bard_i
 			NOT = { has_global_flag = DAL_reforms_bard_i }
 		}
 		
@@ -1079,13 +2780,42 @@ political_decisions = {
 			OR = {
 				population_2 = 1
 				AND = {
-					ai = yes
 					year = 2970
+					ai = yes
+				}
+				AND = {
+					NOT = { nobility_autonomy = large_noble_autonomy }
+					NOT = { noble_tax_contribution = small_tax_contribution }
+					NOT = { serfdom = enforced_serfdom }
+					NOT = { crown_land_ownership = five_land_ownership }
+					NOT = { crown_land_ownership = ten_land_ownership }
+					NOT = { city_jurisdiction = independent_cities }
+					NOT = { pensions = no_pensions }
 				}
 			}
 		}
 		
 		effect = {
+			# At the top to only fire when the reforms are taken before the decision is taken
+			random_owned = {
+				limit = {
+					owner = {
+						NOT = { nobility_autonomy = large_noble_autonomy }
+						NOT = { noble_tax_contribution = small_tax_contribution }
+						NOT = { serfdom = enforced_serfdom }
+						NOT = { crown_land_ownership = five_land_ownership }
+						NOT = { crown_land_ownership = ten_land_ownership }
+						NOT = { city_jurisdiction = independent_cities }
+						NOT = { pensions = no_pensions }
+					}
+				}
+				owner = {
+					prestige = 15
+					plurality = -1
+					any_pop = { ideology = { factor = 0.05 value = house_of_bard } }
+				}
+			}
+			
 			random_owned = {
 				limit = {
 					owner = { nobility_autonomy = large_noble_autonomy }
@@ -1121,43 +2851,19 @@ political_decisions = {
 			
 			random_owned = {
 				limit = {
-					owner = {
-						city_jurisdiction = independent_cities
-						NOT = { has_country_flag = DAL_merchant_supported_by_realm }
-						NOT = { has_country_flag = DAL_guild_supported_by_realm }
-					}
+					owner = { city_jurisdiction = independent_cities }
 				}
 				owner = { social_reform = chartered_cities }
 			}
 			
 			random_owned = {
 				limit = {
-					owner = {
-						pensions = no_pensions
-						NOT = { has_country_flag = DAL_merchant_supported_by_realm }
-						NOT = { has_country_flag = DAL_guild_supported_by_realm }
-					}
+					owner = { pensions = no_pensions }
 				}
 				owner = { social_reform = trinket_pensions }
 			}
 			
-			random_owned = {
-				limit = {
-					owner = {
-						NOT = { nobility_autonomy = large_noble_autonomy }
-						NOT = { noble_tax_contribution = small_tax_contribution }
-						NOT = { serfdom = enforced_serfdom }
-						NOT = { crown_land_ownership = five_land_ownership }
-						NOT = { crown_land_ownership = ten_land_ownership }
-						NOT = { city_jurisdiction = independent_cities }
-						NOT = { pensions = no_pensions }
-					}
-				}
-				owner = {
-					prestige = 15
-					plurality = -1
-				}
-			}
+			any_pop = { ideology = { factor = 0.05 value = house_of_bard } }
 			
 			empty_line_decisions_loc = {}
 			DAL_reforms_bard_i_loc = {}
@@ -1174,10 +2880,10 @@ political_decisions = {
 	send_girion_bainson_to_austriborg = {
 		picture = "Barding Realm/DAL_girion_bainson"
 		potential = {
-			tag = DAL
+			has_country_flag = DAL_content
 			has_global_flag = DAL_girion_bainson_born
 			NOT = { has_global_flag = DAL_girion_bainson_sent_to_austriborg }
-			nationalvalue = bain_i
+			ruling_party = DAL_bain_i
 		}
 		
 		allow = {
@@ -1196,12 +2902,34 @@ political_decisions = {
 	}
 }
 
+# Bard II Flavor
+political_decisions = {
+	DAL_everlasting_friendship_with_erebor = {
+		picture = "Barding Realm/DAL_dwarves"
+		potential = {
+			has_country_flag = DAL_content
+			ruling_party = DAL_bard_ii
+			NOT = { accepted_culture = longbeard }
+			check_variable = { which = erebor_relations value = 99.99 }
+		}
+		
+		allow = {
+			alliance_with = ERE
+		}
+		
+		effect = {
+			add_accepted_culture = longbeard
+		}
+	}
+}
+
 # Fishers Guild vs Merchants
 political_decisions = {
 	DAL_support_merchants = {
 		picture = "Barding Realm/merchants"
 		potential = {
-			tag = DAL
+			has_country_flag = DAL_content
+			ruling_party_ideology = house_of_bard
 			NOT = { has_country_flag = DAL_merchant_supported_by_realm }
 			NOT = { has_country_flag = DAL_guild_supported_by_realm }
 		}
@@ -1266,53 +2994,19 @@ political_decisions = {
 				militancy = -10
 			}
 			
-			random_owned = {
-				limit = {
-					NOT = { owner = { exclusive_trading_rights = granted_exclusive_tr } }
-				}
-				owner = { social_reform = granted_exclusive_tr }
-			}
-			
-			random_owned = {
-				limit = {
-					NOT = { owner = { state_supplies_monopoly = privileged_state_supplies } }
-				}
-				owner = { social_reform = privileged_state_supplies }
-			}
-			
-			random_owned = {
-				limit = {
-					NOT = { owner = { city_jurisdiction = independent_cities } }
-				}
-				owner = { social_reform = independent_cities }
-			}
-			
-			random_owned = {
-				limit = {
-					NOT = { owner = { pensions = no_pensions } }
-				}
-				owner = { social_reform = no_pensions }
-			}
-			
-			random_owned = {
-				limit = {
-					NOT = { owner = { apprenticeship = hereditary } }
-				}
-				owner = { social_reform = hereditary }
-			}
+			any_pop = { ideology = { factor = 0.05 value = master_of_laketown } }
 			
 			set_country_flag = DAL_merchant_supported_by_realm
 			
 			plurality = -2
-			
-			DAL_supported_merchants_loc = {}
 		}
 	}
 	
 	DAL_support_fishers_guild = {
 		picture = "Barding Realm/fishers_guild"
 		potential = {
-			tag = DAL
+			has_country_flag = DAL_content
+			ruling_party_ideology = house_of_bard
 			NOT = { has_country_flag = DAL_merchant_supported_by_realm }
 			NOT = { has_country_flag = DAL_guild_supported_by_realm }
 		}
@@ -1377,46 +3071,313 @@ political_decisions = {
 				militancy = 6
 			}
 			
-			random_owned = {
-				limit = {
-					NOT = { owner = { exclusive_trading_rights = abolished_exclusive_tr } }
-				}
-				owner = { social_reform = abolished_exclusive_tr }
-			}
-			
-			random_owned = {
-				limit = {
-					NOT = { owner = { state_supplies_monopoly = restricted_state_supplies } }
-				}
-				owner = { social_reform = restricted_state_supplies }
-			}
-			
-			random_owned = {
-				limit = {
-					NOT = { owner = { city_jurisdiction = royal_cities } }
-				}
-				owner = { social_reform = royal_cities }
-			}
-			
-			random_owned = {
-				limit = {
-					NOT = { owner = { pensions = good_pensions } }
-				}
-				owner = { social_reform = good_pensions }
-			}
-			
-			random_owned = {
-				limit = {
-					NOT = { owner = { apprenticeship = guild_school } }
-				}
-				owner = { social_reform = guild_school }
-			}
+			any_pop = { ideology = { factor = 0.05 value = lakemen_fishers_guild } }
 			
 			set_country_flag = DAL_guild_supported_by_realm
 			
 			plurality = -2
+		}
+	}
+}
+
+# Fishers Guild Flavor
+political_decisions = {
+	DAL_fishers_guild_political_reforms = {
+		picture = "Barding Realm/fishers_guild"
+		potential = {
+			has_country_flag = DAL_content
+			ruling_party_ideology = lakemen_fishers_guild
+			NOT = { has_country_flag = DAL_fishers_guild_political_reformed }
+		}
+		allow = {
+			OR = {
+				population_2 = 1
+				AND = {
+					year = 2970
+					ai = yes
+				}
+				AND = {
+					exclusive_trading_rights = abolished_exclusive_tr
+					state_supplies_monopoly = restricted_state_supplies
+					city_jurisdiction = royal_cities
+					pensions = good_pensions
+					apprenticeship = guild_school
+				}
+			}
+		}
+		effect = {
+			# At the top to only fire when the reforms are taken before the decision is taken
+			random_owned = {
+				limit = {
+					owner = {
+						exclusive_trading_rights = abolished_exclusive_tr
+						state_supplies_monopoly = restricted_state_supplies
+						city_jurisdiction = royal_cities
+						pensions = good_pensions
+						apprenticeship = guild_school
+					}
+				}
+				owner = {
+					prestige = 15
+					plurality = -1
+				}
+			}
 			
-			DAL_supported_guild_loc = {}
+			random_owned = {
+				limit = { NOT = { owner = { exclusive_trading_rights = abolished_exclusive_tr } } }
+				owner = { social_reform = abolished_exclusive_tr }
+			}
+			random_owned = {
+				limit = { NOT = { owner = { state_supplies_monopoly = restricted_state_supplies } } }
+				owner = { social_reform = restricted_state_supplies }
+			}
+			random_owned = {
+				limit = { NOT = { owner = { city_jurisdiction = royal_cities } } }
+				owner = { social_reform = royal_cities }
+			}
+			random_owned = {
+				limit = { NOT = { owner = { pensions = good_pensions } } }
+				owner = { social_reform = good_pensions }
+			}
+			random_owned = {
+				limit = { NOT = { owner = { apprenticeship = guild_school } } }
+				owner = { social_reform = guild_school }
+			}
+			
+			any_pop = {
+				limit = { strata = poor }
+				ideology = { factor = 0.05 value = lakemen_fishers_guild }
+			}
+			
+			empty_line_decisions_loc = {}
+			DAL_reforms_fishers_guild_loc = {}
+			empty_line_decisions_loc = {}
+			DAL_fishers_guild_only_loc = {}
+			
+			set_country_flag = DAL_fishers_guild_political_reformed
+		}
+	}
+	
+	DAL_fishers_guild_land_reforms = {
+		picture = "Barding Realm/fishers_guild"
+		potential = {
+			has_country_flag = DAL_content
+			ruling_party_ideology = lakemen_fishers_guild
+			NOT = { has_country_flag = DAL_fishers_guild_land_reformed }
+		}
+		allow = {
+			money = 250000
+			farming_tech_4 = 1
+			mining_tech_4 = 1
+		}
+		effect = {
+			treasury = -250000
+			
+			any_owned = {
+				limit = {
+					OR = {
+						region = DAL_640 # Upper Marches
+						region = DAL_643 # Nether Marches
+						region = DAL_645 # Nan Celduin
+						region = DAL_1377 # Medes
+						region = DAL_652 # Dalelands
+						region = DAL_654 # Nan Annen
+						province_id = 1475 # Ironhold
+						province_id = 639 # Lar Huil
+						province_id = 638 # Northwatch
+						province_id = 642 # Burh Austris
+					}
+				}
+				add_province_modifier = { name = fishers_guild_rgo_reform duration = -1 }
+			}
+			
+			any_pop = {
+				limit = {
+					OR = {
+						type = labourers
+						type = aristocrats
+					}
+				}
+				militancy = 2
+			}
+			
+			empty_line_decisions_loc = {}
+			DAL_fishers_guild_only_loc = {}
+			
+			set_country_flag = DAL_fishers_guild_land_reformed
+		}
+	}
+	
+	DAL_fishers_guild_immigration_reform = {
+		picture = "Barding Realm/fishers_guild"
+		potential = {
+			has_country_flag = DAL_content
+			ruling_party_ideology = lakemen_fishers_guild
+			NOT = { border_policy = closed_borders }
+			NOT = { has_country_modifier = DAL_fishers_guild_immigration_reform_modifier }
+		}
+		
+		allow = {
+			money = 100000
+			population_3 = 1
+		}
+		
+		effect = {
+			treasury = -100000
+			add_country_modifier = { name = DAL_fishers_guild_immigration_reform_modifier duration = -1 }
+		}
+	}
+}
+
+# Merchants Flavor
+political_decisions = {
+	DAL_cultivate_inland_trade = {
+		picture = "Barding Realm/DAL_money"
+		potential = {
+			has_country_flag = DAL_content
+			ruling_party_ideology = master_of_laketown
+			NOT = { has_country_flag = DAL_cultivated_inland_trade }
+		}
+		
+		allow = {
+			guilds_3 = 1
+			infrastructure_tech_3 = 1
+			diplomacy_3 = 1
+		}
+		
+		effect = {
+			DAL_remove_trading_alignment_restrictions_loc = { }
+			DAL_unlock_establish_celduin_trading_post_cb_loc = { }
+			set_country_flag = DAL_cultivated_inland_trade
+			set_country_flag = DAL_can_establish_celduin_trading_posts
+		}
+	}
+	
+	DAL_eternalize_office_master = {
+		picture = "Barding Realm/DAL_master_of_laketown"
+		potential = {
+			has_country_flag = DAL_content
+			ruling_party_ideology = master_of_laketown
+			NOT = { government = dictatorship }
+		}
+		
+		allow = {
+			upper_house = {
+				ideology = master_of_laketown
+				value = 0.50
+			}
+		}
+		
+		effect = {
+			government = dictatorship
+			political_reform = none_voting
+			political_reform = primary_voting
+			political_reform = first_past_the_post
+			political_reform = dictatorship
+			
+			scaled_militancy = {
+				factor = -10
+				ideology = master_of_laketown
+			}
+			
+			scaled_militancy = {
+				factor = 4
+				ideology = house_of_bard
+			}
+			
+			scaled_militancy = {
+				factor = 10
+				ideology = lakemen_fishers_guild
+			}
+			
+			plurality = -5
+		}
+	}
+	
+	DAL_request_trading_port = {
+		picture = "Barding Realm/DAL_request_trade_post"
+		potential = {
+			has_country_flag = DAL_content
+			has_country_flag = DAL_can_establish_celduin_trading_posts
+			ruling_party_ideology = master_of_laketown
+			FOR = {
+				any_neighbor_country = {
+					in_sphere = THIS
+					OR = {
+						owns = 1476 # Burh Sagra
+						owns = 1477 # Burh Dacranamel
+						owns = 1478 # Burh Athorn
+						owns = 1479 # Vindorborg
+						owns = 1480 # Burh Ibar
+						owns = 1481 # Burh Agasha
+						owns = 1482 # Burh Lyst
+						owns = 1483 # Burh Sûrûbeki
+					}
+				}
+			}
+		}
+		allow = {
+			war = no
+			money = 50000
+		}
+		effect = {
+			random_country = {
+				limit = {
+					in_sphere = THIS
+					OR = {
+						owns = 1476 # Burh Sagra
+						owns = 1477 # Burh Dacranamel
+						owns = 1478 # Burh Athorn
+						owns = 1479 # Vindorborg
+						owns = 1480 # Burh Ibar
+						owns = 1481 # Burh Agasha
+						owns = 1482 # Burh Lyst
+						owns = 1483 # Burh Sûrûbeki
+					}
+				}
+				country_event = 50968
+			}
+			
+			badboy = 3
+		}
+		
+		# AI is stupid and doesn't check the effects to see if it would break the infamy limit
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				badboy = 0.8
+			}
+		}
+	}
+	
+	DAL_demand_egil_dorn = {
+		picture = "Barding Realm/DAL_demand_egil_dorn"
+		potential = {
+			ruling_party_ideology = master_of_laketown
+			any_owned_province = { has_province_modifier = DAL_trading_post_modifier }
+			NOT = { owns = 601 }
+			601 = { empty = no }
+		}
+		allow = {
+			war = no
+		}
+		effect = {
+			random_country = {
+				limit = { owns = 601 }
+				country_event = 50972
+			}
+			
+			badboy = 5
+		}
+		
+		# AI is stupid and doesn't check the effects to see if it would break the infamy limit
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				badboy = 0.8
+			}
 		}
 	}
 }
@@ -1426,38 +3387,14 @@ political_decisions = {
 	propose_trade_with_realm = {
 		picture = "Barding Realm/DAL_money"
 		potential = {
-			tag = DAL
+			has_country_flag = DAL_content
 			owns = 654
-		}
-		
-		allow = {
-			any_neighbor_country = {
-				is_vassal = no
-				NOT = { war_with = DAL }
-				OR = {
-					THIS = { good_evil_alignment = neutral_alignment }
-					good_evil_alignment = neutral_alignment
-					AND = {
-						good_evil_alignment = good_alignment
-						THIS = { good_evil_alignment = good_alignment }
-					}
-					AND = {
-						good_evil_alignment = evil_alignment
-						THIS = { good_evil_alignment = evil_alignment }
-					}
-				}
-				NOT = { has_country_modifier = trading_with_DAL }
-				NOT = { has_country_flag = rejected_trade_with_DAL }
-				NOT = { tag = FOR }
-			}
-		}
-		
-		effect = {
-			any_neighbor_country = {
-				limit = {
+			FOR = {
+				any_neighbor_country = {
 					is_vassal = no
 					NOT = { war_with = DAL }
 					OR = {
+						has_country_flag = DAL_cultivated_inland_trade
 						THIS = { good_evil_alignment = neutral_alignment }
 						good_evil_alignment = neutral_alignment
 						AND = {
@@ -1470,1179 +3407,49 @@ political_decisions = {
 						}
 					}
 					NOT = { has_country_modifier = trading_with_DAL }
-					NOT = { has_country_flag = rejected_trade_with_DAL }
 					NOT = { tag = FOR }
+					OR = {
+						alliance_with = THIS
+						in_sphere = THIS
+					}
+				}
+			}
+		}
+		
+		allow = {
+			war = no
+		}
+		
+		effect = {
+			any_country = {
+				limit = {
+					is_vassal = no
+					NOT = { war_with = THIS }
+					OR = {
+						has_country_flag = DAL_cultivated_inland_trade
+						THIS = { good_evil_alignment = neutral_alignment }
+						good_evil_alignment = neutral_alignment
+						AND = {
+							good_evil_alignment = good_alignment
+							THIS = { good_evil_alignment = good_alignment }
+						}
+						AND = {
+							good_evil_alignment = evil_alignment
+							THIS = { good_evil_alignment = evil_alignment }
+						}
+					}
+					NOT = { has_country_modifier = trading_with_DAL }
+					NOT = { tag = FOR }
+					OR = {
+						alliance_with = THIS
+						in_sphere = THIS
+					}
 				}
 				country_event = 50925
 			}
 			
 			empty_line_decisions_loc = {}
-			DAL_trading_mechanic_notes_loc = {}
-			empty_line_decisions_loc = {}
 			DAL_trading_realm_count_loc = {}
-			empty_line_decisions_loc = {}
-			
-			# Displays the realms currently being traded with
-			random_owned = {
-				limit = {
-					owner = {
-						ADH = { has_country_modifier = trading_with_DAL }
-					}
-				}
-				owner = { ADH_loc = {} }
-			}
-			
-			random_owned = {
-				limit = {
-					owner = {
-						ADB = { has_country_modifier = trading_with_DAL }
-					}
-				}
-				owner = { ADB_loc = {} }
-			}
-			
-			random_owned = {
-				limit = {
-					owner = {
-						ADR = { has_country_modifier = trading_with_DAL }
-					}
-				}
-				owner = { ADR_loc = {} }
-			}
-			
-			random_owned = {
-				limit = {
-					owner = {
-						ALA = { has_country_modifier = trading_with_DAL }
-					}
-				}
-				owner = { ALA_loc = {} }
-			}
-			
-			random_owned = {
-				limit = {
-					owner = {
-						ALG = { has_country_modifier = trading_with_DAL }
-					}
-				}
-				owner = { ALG_loc = {} }
-			}
-			
-			random_owned = {
-				limit = {
-					owner = {
-						AMO = { has_country_modifier = trading_with_DAL }
-					}
-				}
-				owner = { AMO_loc = {} }
-			}
-			
-			random_owned = {
-				limit = {
-					owner = {
-						AMR = { has_country_modifier = trading_with_DAL }
-					}
-				}
-				owner = { AMR_loc = {} }
-			}
-			
-			random_owned = {
-				limit = {
-					owner = {
-						ANF = { has_country_modifier = trading_with_DAL }
-					}
-				}
-				owner = { ANF_loc = {} }
-			}
-			
-			random_owned = {
-				limit = {
-					owner = {
-						ANO = { has_country_modifier = trading_with_DAL }
-					}
-				}
-				owner = { ANO_loc = {} }
-			}
-			
-			random_owned = {
-				limit = {
-					owner = {
-						ARN = { has_country_modifier = trading_with_DAL }
-					}
-				}
-				owner = { ARN_loc = {} }
-			}
-			
-			random_owned = {
-				limit = {
-					owner = {
-						ART = { has_country_modifier = trading_with_DAL }
-					}
-				}
-				owner = { ART_loc = {} }
-			}
-			
-			random_owned = {
-				limit = {
-					owner = {
-						ARY = { has_country_modifier = trading_with_DAL }
-					}
-				}
-				owner = { ARY_loc = {} }
-			}
-			
-			random_owned = {
-				limit = {
-					owner = {
-						BAR = { has_country_modifier = trading_with_DAL }
-					}
-				}
-				owner = { BAR_loc = {} }
-			}
-			
-			random_owned = {
-				limit = {
-					owner = {
-						BCK = { has_country_modifier = trading_with_DAL }
-					}
-				}
-				owner = { BCK_loc = {} }
-			}
-			
-			random_owned = {
-				limit = {
-					owner = {
-						BOM = { has_country_modifier = trading_with_DAL }
-					}
-				}
-				owner = { BOM_loc = {} }
-			}
-			
-			random_owned = {
-				limit = {
-					owner = {
-						BEO = { has_country_modifier = trading_with_DAL }
-					}
-				}
-				owner = { BEO_loc = {} }
-			}
-			
-			random_owned = {
-				limit = {
-					owner = {
-						BLG = { has_country_modifier = trading_with_DAL }
-					}
-				}
-				owner = { BLG_loc = {} }
-			}
-			
-			random_owned = {
-				limit = {
-					owner = {
-						BLU = { has_country_modifier = trading_with_DAL }
-					}
-				}
-				owner = { BLU_loc = {} }
-			}
-			
-			random_owned = {
-				limit = {
-					owner = {
-						BRK = { has_country_modifier = trading_with_DAL }
-					}
-				}
-				owner = { BRK_loc = {} }
-			}
-			
-			random_owned = {
-				limit = {
-					owner = {
-						BRE = { has_country_modifier = trading_with_DAL }
-					}
-				}
-				owner = { BRE_loc = {} }
-			}
-			
-			random_owned = {
-				limit = {
-					owner = {
-						CAR = { has_country_modifier = trading_with_DAL }
-					}
-				}
-				owner = { CAR_loc = {} }
-			}
-			
-			random_owned = {
-				limit = {
-					owner = {
-						CHE = { has_country_modifier = trading_with_DAL }
-					}
-				}
-				owner = { CHE_loc = {} }
-			}
-			
-			random_owned = {
-				limit = {
-					owner = {
-						DA1 = { has_country_modifier = trading_with_DAL }
-					}
-				}
-				owner = { DA1_loc = {} }
-			}
-			
-			random_owned = {
-				limit = {
-					owner = {
-						DA2 = { has_country_modifier = trading_with_DAL }
-					}
-				}
-				owner = { DA2_loc = {} }
-			}
-			
-			random_owned = {
-				limit = {
-					owner = {
-						DA3 = { has_country_modifier = trading_with_DAL }
-					}
-				}
-				owner = { DA3_loc = {} }
-			}
-			
-			random_owned = {
-				limit = {
-					owner = {
-						DA4 = { has_country_modifier = trading_with_DAL }
-					}
-				}
-				owner = { DA4_loc = {} }
-			}
-			
-			random_owned = {
-				limit = {
-					owner = {
-						DND = { has_country_modifier = trading_with_DAL }
-					}
-				}
-				owner = { DND_loc = {} }
-			}
-			
-			random_owned = {
-				limit = {
-					owner = {
-						DOR = { has_country_modifier = trading_with_DAL }
-					}
-				}
-				owner = { DOR_loc = {} }
-			}
-			
-			random_owned = {
-				limit = {
-					owner = {
-						DRA = { has_country_modifier = trading_with_DAL }
-					}
-				}
-				owner = { DRA_loc = {} }
-			}
-			
-			random_owned = {
-				limit = {
-					owner = {
-						DRH = { has_country_modifier = trading_with_DAL }
-					}
-				}
-				owner = { DRH_loc = {} }
-			}
-			
-			random_owned = {
-				limit = {
-					owner = {
-						DRU = { has_country_modifier = trading_with_DAL }
-					}
-				}
-				owner = { DRU_loc = {} }
-			}
-			
-			random_owned = {
-				limit = {
-					owner = {
-						DUN = { has_country_modifier = trading_with_DAL }
-					}
-				}
-				owner = { DUN_loc = {} }
-			}
-			
-			random_owned = {
-				limit = {
-					owner = {
-						DWM = { has_country_modifier = trading_with_DAL }
-					}
-				}
-				owner = { DWM_loc = {} }
-			}
-			
-			random_owned = {
-				limit = {
-					owner = {
-						DCA = { has_country_modifier = trading_with_DAL }
-					}
-				}
-				owner = { DCA_loc = {} }
-			}
-			
-			random_owned = {
-				limit = {
-					owner = {
-						DDR = { has_country_modifier = trading_with_DAL }
-					}
-				}
-				owner = { DDR_loc = {} }
-			}
-			
-			random_owned = {
-				limit = {
-					owner = {
-						DEV = { has_country_modifier = trading_with_DAL }
-					}
-				}
-				owner = { DEV_loc = {} }
-			}
-			
-			random_owned = {
-				limit = {
-					owner = {
-						DHE = { has_country_modifier = trading_with_DAL }
-					}
-				}
-				owner = { DHE_loc = {} }
-			}
-			
-			random_owned = {
-				limit = {
-					owner = {
-						DOU = { has_country_modifier = trading_with_DAL }
-					}
-				}
-				owner = { DOU_loc = {} }
-			}
-			
-			random_owned = {
-				limit = {
-					owner = {
-						DTU = { has_country_modifier = trading_with_DAL }
-					}
-				}
-				owner = { DTU_loc = {} }
-			}
-			
-			random_owned = {
-				limit = {
-					owner = {
-						DUC = { has_country_modifier = trading_with_DAL }
-					}
-				}
-				owner = { DUC_loc = {} }
-			}
-			
-			random_owned = {
-				limit = {
-					owner = {
-						EAG = { has_country_modifier = trading_with_DAL }
-					}
-				}
-				owner = { EAG_loc = {} }
-			}
-			
-			random_owned = {
-				limit = {
-					owner = {
-						EDH = { has_country_modifier = trading_with_DAL }
-					}
-				}
-				owner = { EDH_loc = {} }
-			}
-			
-			random_owned = {
-				limit = {
-					owner = {
-						EEL = { has_country_modifier = trading_with_DAL }
-					}
-				}
-				owner = { EEL_loc = {} }
-			}
-			
-			random_owned = {
-				limit = {
-					owner = {
-						EHW = { has_country_modifier = trading_with_DAL }
-					}
-				}
-				owner = { EHW_loc = {} }
-			}
-			
-			random_owned = {
-				limit = {
-					owner = {
-						EMB = { has_country_modifier = trading_with_DAL }
-					}
-				}
-				owner = { EMB_loc = {} }
-			}
-			
-			random_owned = {
-				limit = {
-					owner = {
-						ENE = { has_country_modifier = trading_with_DAL }
-					}
-				}
-				owner = { ENE_loc = {} }
-			}
-			
-			random_owned = {
-				limit = {
-					owner = {
-						ERE = { has_country_modifier = trading_with_DAL }
-					}
-				}
-				owner = { ERE_loc = {} }
-			}
-			
-			random_owned = {
-				limit = {
-					owner = {
-						ESG = { has_country_modifier = trading_with_DAL }
-					}
-				}
-				owner = { ESG_loc = {} }
-			}
-			
-			random_owned = {
-				limit = {
-					owner = {
-						ETT = { has_country_modifier = trading_with_DAL }
-					}
-				}
-				owner = { ETT_loc = {} }
-			}
-			
-			random_owned = {
-				limit = {
-					owner = {
-						FAN = { has_country_modifier = trading_with_DAL }
-					}
-				}
-				owner = { FAN_loc = {} }
-			}
-			
-			random_owned = {
-				limit = {
-					owner = {
-						FRA = { has_country_modifier = trading_with_DAL }
-					}
-				}
-				owner = { FRA_loc = {} }
-			}
-			
-			random_owned = {
-				limit = {
-					owner = {
-						GGT = { has_country_modifier = trading_with_DAL }
-					}
-				}
-				owner = { GGT_loc = {} }
-			}
-			
-			random_owned = {
-				limit = {
-					owner = {
-						GMG = { has_country_modifier = trading_with_DAL }
-					}
-				}
-				owner = { GMG_loc = {} }
-			}
-			
-			random_owned = {
-				limit = {
-					owner = {
-						GMO = { has_country_modifier = trading_with_DAL }
-					}
-				}
-				owner = { GMO_loc = {} }
-			}
-			
-			random_owned = {
-				limit = {
-					owner = {
-						GNR = { has_country_modifier = trading_with_DAL }
-					}
-				}
-				owner = { GNR_loc = {} }
-			}
-			
-			random_owned = {
-				limit = {
-					owner = {
-						GON = { has_country_modifier = trading_with_DAL }
-					}
-				}
-				owner = { GON_loc = {} }
-			}
-			
-			random_owned = {
-				limit = {
-					owner = {
-						GRA = { has_country_modifier = trading_with_DAL }
-					}
-				}
-				owner = { GRA_loc = {} }
-			}
-			
-			random_owned = {
-				limit = {
-					owner = {
-						GUL = { has_country_modifier = trading_with_DAL }
-					}
-				}
-				owner = { GUL_loc = {} }
-			}
-			
-			random_owned = {
-				limit = {
-					owner = {
-						GUN = { has_country_modifier = trading_with_DAL }
-					}
-				}
-				owner = { GUN_loc = {} }
-			}
-			
-			random_owned = {
-				limit = {
-					owner = {
-						GWA = { has_country_modifier = trading_with_DAL }
-					}
-				}
-				owner = { GWA_loc = {} }
-			}
-			
-			random_owned = {
-				limit = {
-					owner = {
-						HAR = { has_country_modifier = trading_with_DAL }
-					}
-				}
-				owner = { HAR_loc = {} }
-			}
-			
-			random_owned = {
-				limit = {
-					owner = {
-						HRD = { has_country_modifier = trading_with_DAL }
-					}
-				}
-				owner = { HRD_loc = {} }
-			}
-			
-			random_owned = {
-				limit = {
-					owner = {
-						HRN = { has_country_modifier = trading_with_DAL }
-					}
-				}
-				owner = { HRN_loc = {} }
-			}
-			
-			random_owned = {
-				limit = {
-					owner = {
-						HRU = { has_country_modifier = trading_with_DAL }
-					}
-				}
-				owner = { HRU_loc = {} }
-			}
-			
-			random_owned = {
-				limit = {
-					owner = {
-						HRV = { has_country_modifier = trading_with_DAL }
-					}
-				}
-				owner = { HRV_loc = {} }
-			}
-			
-			random_owned = {
-				limit = {
-					owner = {
-						HWD = { has_country_modifier = trading_with_DAL }
-					}
-				}
-				owner = { HWD_loc = {} }
-			}
-			
-			random_owned = {
-				limit = {
-					owner = {
-						IML = { has_country_modifier = trading_with_DAL }
-					}
-				}
-				owner = { IML_loc = {} }
-			}
-			
-			random_owned = {
-				limit = {
-					owner = {
-						IRO = { has_country_modifier = trading_with_DAL }
-					}
-				}
-				owner = { IRO_loc = {} }
-			}
-			
-			random_owned = {
-				limit = {
-					owner = {
-						ISE = { has_country_modifier = trading_with_DAL }
-					}
-				}
-				owner = { ISE_loc = {} }
-			}
-			
-			random_owned = {
-				limit = {
-					owner = {
-						ITH = { has_country_modifier = trading_with_DAL }
-					}
-				}
-				owner = { ITH_loc = {} }
-			}
-			
-			random_owned = {
-				limit = {
-					owner = {
-						KHA = { has_country_modifier = trading_with_DAL }
-					}
-				}
-				owner = { KHA_loc = {} }
-			}
-			
-			random_owned = {
-				limit = {
-					owner = {
-						KHG = { has_country_modifier = trading_with_DAL }
-					}
-				}
-				owner = { KHG_loc = {} }
-			}
-			
-			random_owned = {
-				limit = {
-					owner = {
-						KHU = { has_country_modifier = trading_with_DAL }
-					}
-				}
-				owner = { KHU_loc = {} }
-			}
-			
-			random_owned = {
-				limit = {
-					owner = {
-						KHZ = { has_country_modifier = trading_with_DAL }
-					}
-				}
-				owner = { KHZ_loc = {} }
-			}
-			
-			random_owned = {
-				limit = {
-					owner = {
-						KUG = { has_country_modifier = trading_with_DAL }
-					}
-				}
-				owner = { KUG_loc = {} }
-			}
-			
-			random_owned = {
-				limit = {
-					owner = {
-						LAM = { has_country_modifier = trading_with_DAL }
-					}
-				}
-				owner = { LAM_loc = {} }
-			}
-			
-			random_owned = {
-				limit = {
-					owner = {
-						LAR = { has_country_modifier = trading_with_DAL }
-					}
-				}
-				owner = { LAR_loc = {} }
-			}
-			
-			random_owned = {
-				limit = {
-					owner = {
-						LEB = { has_country_modifier = trading_with_DAL }
-					}
-				}
-				owner = { LEB_loc = {} }
-			}
-			
-			random_owned = {
-				limit = {
-					owner = {
-						LSF = { has_country_modifier = trading_with_DAL }
-					}
-				}
-				owner = { LSF_loc = {} }
-			}
-			
-			random_owned = {
-				limit = {
-					owner = {
-						LGV = { has_country_modifier = trading_with_DAL }
-					}
-				}
-				owner = { LGV_loc = {} }
-			}
-			
-			random_owned = {
-				limit = {
-					owner = {
-						LIN = { has_country_modifier = trading_with_DAL }
-					}
-				}
-				owner = { LIN_loc = {} }
-			}
-			
-			random_owned = {
-				limit = {
-					owner = {
-						LMW = { has_country_modifier = trading_with_DAL }
-					}
-				}
-				owner = { LMW_loc = {} }
-			}
-			
-			random_owned = {
-				limit = {
-					owner = {
-						LOR = { has_country_modifier = trading_with_DAL }
-					}
-				}
-				owner = { LOR_loc = {} }
-			}
-			
-			random_owned = {
-				limit = {
-					owner = {
-						LOS = { has_country_modifier = trading_with_DAL }
-					}
-				}
-				owner = { LOS_loc = {} }
-			}
-			
-			random_owned = {
-				limit = {
-					owner = {
-						LUR = { has_country_modifier = trading_with_DAL }
-					}
-				}
-				owner = { LUR_loc = {} }
-			}
-			
-			random_owned = {
-				limit = {
-					owner = {
-						LYN = { has_country_modifier = trading_with_DAL }
-					}
-				}
-				owner = { LYN_loc = {} }
-			}
-			
-			random_owned = {
-				limit = {
-					owner = {
-						MAN = { has_country_modifier = trading_with_DAL }
-					}
-				}
-				owner = { MAN_loc = {} }
-			}
-			
-			random_owned = {
-				limit = {
-					owner = {
-						MAU = { has_country_modifier = trading_with_DAL }
-					}
-				}
-				owner = { MAU_loc = {} }
-			}
-			
-			random_owned = {
-				limit = {
-					owner = {
-						MEL = { has_country_modifier = trading_with_DAL }
-					}
-				}
-				owner = { MEL_loc = {} }
-			}
-			
-			random_owned = {
-				limit = {
-					owner = {
-						MET = { has_country_modifier = trading_with_DAL }
-					}
-				}
-				owner = { MET_loc = {} }
-			}
-			
-			random_owned = {
-				limit = {
-					owner = {
-						MIR = { has_country_modifier = trading_with_DAL }
-					}
-				}
-				owner = { MIR_loc = {} }
-			}
-			
-			random_owned = {
-				limit = {
-					owner = {
-						MOR = { has_country_modifier = trading_with_DAL }
-					}
-				}
-				owner = { MOR_loc = {} }
-			}
-			
-			random_owned = {
-				limit = {
-					owner = {
-						MRN = { has_country_modifier = trading_with_DAL }
-					}
-				}
-				owner = { MRN_loc = {} }
-			}
-			
-			random_owned = {
-				limit = {
-					owner = {
-						MTN = { has_country_modifier = trading_with_DAL }
-					}
-				}
-				owner = { MTN_loc = {} }
-			}
-			
-			random_owned = {
-				limit = {
-					owner = {
-						NGD = { has_country_modifier = trading_with_DAL }
-					}
-				}
-				owner = { NGD_loc = {} }
-			}
-			
-			random_owned = {
-				limit = {
-					owner = {
-						NRN = { has_country_modifier = trading_with_DAL }
-					}
-				}
-				owner = { NRN_loc = {} }
-			}
-			
-			random_owned = {
-				limit = {
-					owner = {
-						NUM = { has_country_modifier = trading_with_DAL }
-					}
-				}
-				owner = { NUM_loc = {} }
-			}
-			
-			random_owned = {
-				limit = {
-					owner = {
-						NUR = { has_country_modifier = trading_with_DAL }
-					}
-				}
-				owner = { NUR_loc = {} }
-			}
-			
-			random_owned = {
-				limit = {
-					owner = {
-						OBS = { has_country_modifier = trading_with_DAL }
-					}
-				}
-				owner = { OBS_loc = {} }
-			}
-			
-			random_owned = {
-				limit = {
-					owner = {
-						OST = { has_country_modifier = trading_with_DAL }
-					}
-				}
-				owner = { OST_loc = {} }
-			}
-			
-			random_owned = {
-				limit = {
-					owner = {
-						PEZ = { has_country_modifier = trading_with_DAL }
-					}
-				}
-				owner = { PEZ_loc = {} }
-			}
-			
-			random_owned = {
-				limit = {
-					owner = {
-						PUK = { has_country_modifier = trading_with_DAL }
-					}
-				}
-				owner = { PUK_loc = {} }
-			}
-			
-			random_owned = {
-				limit = {
-					owner = {
-						RAD = { has_country_modifier = trading_with_DAL }
-					}
-				}
-				owner = { RAD_loc = {} }
-			}
-			
-			random_owned = {
-				limit = {
-					owner = {
-						RAV = { has_country_modifier = trading_with_DAL }
-					}
-				}
-				owner = { RAV_loc = {} }
-			}
-			
-			random_owned = {
-				limit = {
-					owner = {
-						RHO = { has_country_modifier = trading_with_DAL }
-					}
-				}
-				owner = { RHO_loc = {} }
-			}
-			
-			random_owned = {
-				limit = {
-					owner = {
-						RIV = { has_country_modifier = trading_with_DAL }
-					}
-				}
-				owner = { RIV_loc = {} }
-			}
-			
-			random_owned = {
-				limit = {
-					owner = {
-						ROH = { has_country_modifier = trading_with_DAL }
-					}
-				}
-				owner = { ROH_loc = {} }
-			}
-			
-			random_owned = {
-				limit = {
-					owner = {
-						RME = { has_country_modifier = trading_with_DAL }
-					}
-				}
-				owner = { RME_loc = {} }
-			}
-			
-			random_owned = {
-				limit = {
-					owner = {
-						RHU = { has_country_modifier = trading_with_DAL }
-					}
-				}
-				owner = { RHU_loc = {} }
-			}
-			
-			random_owned = {
-				limit = {
-					owner = {
-						RHR = { has_country_modifier = trading_with_DAL }
-					}
-				}
-				owner = { RHR_loc = {} }
-			}
-			
-			random_owned = {
-				limit = {
-					owner = {
-						RUN = { has_country_modifier = trading_with_DAL }
-					}
-				}
-				owner = { RUN_loc = {} }
-			}
-			
-			random_owned = {
-				limit = {
-					owner = {
-						SAG = { has_country_modifier = trading_with_DAL }
-					}
-				}
-				owner = { SAG_loc = {} }
-			}
-			
-			random_owned = {
-				limit = {
-					owner = {
-						SBU = { has_country_modifier = trading_with_DAL }
-					}
-				}
-				owner = { SBU_loc = {} }
-			}
-			
-			random_owned = {
-				limit = {
-					owner = {
-						SEK = { has_country_modifier = trading_with_DAL }
-					}
-				}
-				owner = { SEK_loc = {} }
-			}
-			
-			random_owned = {
-				limit = {
-					owner = {
-						SHE = { has_country_modifier = trading_with_DAL }
-					}
-				}
-				owner = { SHE_loc = {} }
-			}
-			
-			random_owned = {
-				limit = {
-					owner = {
-						SHI = { has_country_modifier = trading_with_DAL }
-					}
-				}
-				owner = { SHI_loc = {} }
-			}
-			
-			random_owned = {
-				limit = {
-					owner = {
-						SNO = { has_country_modifier = trading_with_DAL }
-					}
-				}
-				owner = { SNO_loc = {} }
-			}
-			
-			random_owned = {
-				limit = {
-					owner = {
-						STF = { has_country_modifier = trading_with_DAL }
-					}
-				}
-				owner = { STF_loc = {} }
-			}
-			
-			random_owned = {
-				limit = {
-					owner = {
-						STO = { has_country_modifier = trading_with_DAL }
-					}
-				}
-				owner = { STO_loc = {} }
-			}
-			
-			random_owned = {
-				limit = {
-					owner = {
-						SYL = { has_country_modifier = trading_with_DAL }
-					}
-				}
-				owner = { SYL_loc = {} }
-			}
-			
-			random_owned = {
-				limit = {
-					owner = {
-						THO = { has_country_modifier = trading_with_DAL }
-					}
-				}
-				owner = { THO_loc = {} }
-			}
-			
-			random_owned = {
-				limit = {
-					owner = {
-						TRO = { has_country_modifier = trading_with_DAL }
-					}
-				}
-				owner = { TRO_loc = {} }
-			}
-			
-			random_owned = {
-				limit = {
-					owner = {
-						TOL = { has_country_modifier = trading_with_DAL }
-					}
-				}
-				owner = { TOL_loc = {} }
-			}
-			
-			random_owned = {
-				limit = {
-					owner = {
-						UMB = { has_country_modifier = trading_with_DAL }
-					}
-				}
-				owner = { UMB_loc = {} }
-			}
-			
-			random_owned = {
-				limit = {
-					owner = {
-						URG = { has_country_modifier = trading_with_DAL }
-					}
-				}
-				owner = { URG_loc = {} }
-			}
-			
-			random_owned = {
-				limit = {
-					owner = {
-						WEA = { has_country_modifier = trading_with_DAL }
-					}
-				}
-				owner = { WEA_loc = {} }
-			}
-			
-			random_owned = {
-				limit = {
-					owner = {
-						WND = { has_country_modifier = trading_with_DAL }
-					}
-				}
-				owner = { WND_loc = {} }
-			}
-			
-			random_owned = {
-				limit = {
-					owner = {
-						WOO = { has_country_modifier = trading_with_DAL }
-					}
-				}
-				owner = { WOO_loc = {} }
-			}
-			
-			random_owned = {
-				limit = {
-					owner = {
-						WRM = { has_country_modifier = trading_with_DAL }
-					}
-				}
-				owner = { WRM_loc = {} }
-			}
 		}
 	}
 }

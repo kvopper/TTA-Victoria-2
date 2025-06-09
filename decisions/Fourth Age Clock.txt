@@ -5,7 +5,6 @@ political_decisions = {
 			ai = no
 			has_global_flag = fourth_age_flag
 		}
-		allow = {}
 		effect = {
 			fourth_age_start_date_loc = {}
 			fourth_age_year_loc = {}
@@ -17,9 +16,21 @@ political_decisions = {
 			ai = no
 			accepted_culture = hobbit_culture
 		}
-		allow = {}
 		effect = {
 			shire_reckoning_loc = {}
+		}
+	}
+	show_bree_reckoning_date = {
+		picture = "clock"
+		potential = {
+			ai = no
+			OR = {
+				primary_culture = breelander
+				accepted_culture = breelander
+			}
+		}
+		effect = {
+			bree_reckoning_loc = {}
 		}
 	}
 }

@@ -2,39 +2,7 @@
 # Audax Validator "!" Ignore_1004
 
 # National Leader Events: {
-#	30000 - 32999, 34999 (8 events per leader) }
-
-### WILL BE REMOVED EVENTUALLY
-# Generic Leader
-country_event = {
-	id = 34999
-	picture = "introduction"
-	title = "Generic Leader"
-	desc = "EVTDESC34999"
-	
-	is_triggered_only = yes
-	major = yes
-	
-	option = {
-		name = "EVTOPTE30000"
-	}
-	
-	option = {
-		name = "EVTOPTE30000"
-	}
-	
-	option = {
-		name = "EVTOPTE30000"
-	}
-	
-	option = {
-		name = "EVTOPTE30000"
-	}
-	
-	option = {
-		name = "EVTOPTE30000"
-	}
-}
+#	30000 - 32999 (8 events per leader) }
 
 # Ecthelion II
 country_event = {
@@ -1157,11 +1125,10 @@ country_event = {
 }
 
 # The House of Bard Fluff Events {
-# NOTE: Events 30033, 30038 and 30039 unused
 # The House of Bard
 country_event = {
 	id = 30032
-	picture = "bard_i_info"
+	picture = "gramavuld/bard_i_info"
 	title = "The House of Bard"
 	desc = "EVTDESC30032"
 
@@ -1192,6 +1159,21 @@ country_event = {
 		name = "§TBard II§!"
 		country_event = 30037
 	}
+
+	option = {
+		name = "§TGirion II§!"
+		country_event = 30038
+	}
+
+	option = {
+		name = "§TMaster of Laketown§!"
+		country_event = 30039
+	}
+
+	option = {
+		name = "§TFishers' Guild§!"
+		country_event = 30033
+	}
 	
 	option = {
 		name = "§RClose§!"
@@ -1201,19 +1183,11 @@ country_event = {
 # Bard I
 country_event = {
 	id = 30034
-	picture = "bard_i_info"
+	picture = "gramavuld/bard_i_info"
 	title = "$MONARCHTITLE$ Bard I"
 	desc = "EVTDESC30034"
 	
 	immediate = {
-		empty_line_loc = {}
-		DAL_bard_i_born_loc = {}
-		
-		empty_line_loc = {}
-		DAL_bard_i_age_loc = {}
-		
-		empty_line_loc = {}
-		
 		empty_line_loc = {}
 		traits_loc = {}
 		
@@ -1239,8 +1213,11 @@ country_event = {
 			}
 			green_color_loc = {}
 		}
-		chancellor_lifstan_flavor_loc = {}
+		DAL_appoint_bards_council_lifstan_loc = {}
 		end_color_loc = {}
+		DAL_appoint_bards_council_lifstan_desc_loc = {}
+		
+		empty_line_loc = {}
 		
 		empty_line_loc = {}
 		maroon_color_loc = {}
@@ -1250,8 +1227,11 @@ country_event = {
 			}
 			green_color_loc = {}
 		}
-		diplomat_erland_flavor_loc = {}
+		DAL_appoint_bards_diplomats_erland_loc = {}
 		end_color_loc = {}
+		DAL_appoint_bards_diplomats_erland_desc_loc = {}
+		
+		empty_line_loc = {}
 		
 		empty_line_loc = {}
 		maroon_color_loc = {}
@@ -1261,8 +1241,11 @@ country_event = {
 			}
 			green_color_loc = {}
 		}
-		diplomat_tilda_flavor_loc = {}
+		DAL_appoint_bards_diplomats_tilda_loc = {}
 		end_color_loc = {}
+		DAL_appoint_bards_diplomats_tilda_desc_loc = {}
+		
+		empty_line_loc = {}
 		
 		empty_line_loc = {}
 		maroon_color_loc = {}
@@ -1272,7 +1255,9 @@ country_event = {
 			}
 			green_color_loc = {}
 		}
-		bard_i_reforms_loc = {}
+		DAL_bard_i_reforms_loc = {}
+		end_color_loc = {}
+		DAL_bard_i_reforms_desc_loc = {}
 		end_color_loc = {}
 	}
 
@@ -1303,6 +1288,21 @@ country_event = {
 		name = "§TBard II§!"
 		country_event = 30037
 	}
+
+	option = {
+		name = "§TGirion II§!"
+		country_event = 30038
+	}
+
+	option = {
+		name = "§TMaster of Laketown§!"
+		country_event = 30039
+	}
+
+	option = {
+		name = "§TFishers' Guild§!"
+		country_event = 30033
+	}
 	
 	option = {
 		name = "§RClose§!"
@@ -1312,19 +1312,11 @@ country_event = {
 # Bain I
 country_event = {
 	id = 30035
-	picture = "bard_i_info"
+	picture = "gramavuld/bard_i_info"
 	title = "$MONARCHTITLE$ Bain I"
 	desc = "EVTDESC30035"
 	
 	immediate = {
-		empty_line_loc = {}
-		DAL_bain_i_born_loc = {}
-		
-		empty_line_loc = {}
-		DAL_bain_i_age_loc = {}
-		
-		empty_line_loc = {}
-		
 		empty_line_loc = {}
 		traits_loc = {}
 		
@@ -1347,8 +1339,9 @@ country_event = {
 			}
 			green_color_loc = {}
 		}
-		girion_bainson_austriborg_loc = {}
+		DAL_girion_bainson_austriborg_loc = {}
 		end_color_loc = {}
+		DAL_girion_bainson_austriborg_desc_loc = {}
 	}
 
 	is_triggered_only = yes
@@ -1377,6 +1370,21 @@ country_event = {
 	option = {
 		name = "§TBard II§!"
 		country_event = 30037
+	}
+
+	option = {
+		name = "§TGirion II§!"
+		country_event = 30038
+	}
+
+	option = {
+		name = "§TMaster of Laketown§!"
+		country_event = 30039
+	}
+
+	option = {
+		name = "§TFishers' Guild§!"
+		country_event = 30033
 	}
 	
 	option = {
@@ -1387,22 +1395,27 @@ country_event = {
 # Brand I
 country_event = {
 	id = 30036
-	picture = "bard_i_info"
+	picture = "gramavuld/bard_i_info"
 	title = "$MONARCHTITLE$ Brand I"
 	desc = "EVTDESC30036"
 	
 	immediate = {
 		empty_line_loc = {}
-		DAL_brand_i_born_loc = {}
-		empty_line_loc = {}
-		DAL_brand_i_age_loc = {}
-		empty_line_loc = {}
-		empty_line_loc = {}
 		traits_loc = {}
+		
 		empty_line_loc = {}
 		DAL_leader_traits_house_of_bard_loc = {}
+		
 		empty_line_loc = {}
 		DAL_leader_traits_productive_loc = {}
+		
+		empty_line_loc = {}
+		
+		empty_line_loc = {}
+		unique_flavor_loc = {}
+		
+		empty_line_loc = {}
+		DAL_brand_i_flavor_not_done_loc = {}
 	}
 
 	is_triggered_only = yes
@@ -1431,6 +1444,21 @@ country_event = {
 	option = {
 		name = "§TBard II§!"
 		country_event = 30037
+	}
+
+	option = {
+		name = "§TGirion II§!"
+		country_event = 30038
+	}
+
+	option = {
+		name = "§TMaster of Laketown§!"
+		country_event = 30039
+	}
+
+	option = {
+		name = "§TFishers' Guild§!"
+		country_event = 30033
 	}
 	
 	option = {
@@ -1441,22 +1469,41 @@ country_event = {
 # Bard II
 country_event = {
 	id = 30037
-	picture = "bard_i_info"
+	picture = "gramavuld/bard_i_info"
 	title = "$MONARCHTITLE$ Bard II"
 	desc = "EVTDESC30037"
 	
 	immediate = {
 		empty_line_loc = {}
-		DAL_bard_ii_born_loc = {}
-		empty_line_loc = {}
-		DAL_bard_ii_age_loc = {}
-		empty_line_loc = {}
-		empty_line_loc = {}
 		traits_loc = {}
+		
 		empty_line_loc = {}
 		DAL_leader_traits_house_of_bard_loc = {}
+		
 		empty_line_loc = {}
 		DAL_leader_traits_dwarf_friend_loc = {}
+		
+		empty_line_loc = {}
+		
+		empty_line_loc = {}
+		unique_flavor_loc = {}
+		
+		empty_line_loc = {}
+		maroon_color_loc = {}
+		random_owned = {
+			limit = {
+				owner = { accepted_culture = longbeard }
+			}
+			green_color_loc = {}
+		}
+		DAL_barding_erebor_relations_loc = {}
+		end_color_loc = {}
+		DAL_barding_erebor_relations_desc_loc = {}
+		
+		empty_line_loc = {}
+		
+		empty_line_loc = {}
+		dynamic_loc_slot_31 = {}
 	}
 
 	is_triggered_only = yes
@@ -1485,6 +1532,263 @@ country_event = {
 	option = {
 		name = "§TBard II§!"
 		country_event = 30037
+	}
+
+	option = {
+		name = "§TGirion II§!"
+		country_event = 30038
+	}
+
+	option = {
+		name = "§TMaster of Laketown§!"
+		country_event = 30039
+	}
+
+	option = {
+		name = "§TFishers' Guild§!"
+		country_event = 30033
+	}
+	
+	option = {
+		name = "§RClose§!"
+	}
+}
+
+# Girion II
+country_event = {
+	id = 30038
+	picture = "gramavuld/bard_i_info"
+	title = "$MONARCHTITLE$ Girion II"
+	desc = "EVTDESC30038"
+	
+	immediate = {
+		empty_line_loc = {}
+		traits_loc = {}
+		
+		empty_line_loc = {}
+		DAL_leader_traits_house_of_bard_loc = {}
+		
+		empty_line_loc = {}
+		DAL_leader_traits_peaceful_loc = {}
+		
+		empty_line_loc = {}
+		
+		empty_line_loc = {}
+		unique_flavor_loc = {}
+		
+		empty_line_loc = {}
+		DAL_girion_ii_no_flavor_loc = {}
+	}
+
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = "§BThe House of Bard§!"
+		country_event = 30032
+	}
+
+	option = {
+		name = "§TBard I§!"
+		country_event = 30034
+	}
+
+	option = {
+		name = "§TBain I§!"
+		country_event = 30035
+	}
+
+	option = {
+		name = "§TBrand I§!"
+		country_event = 30036
+	}
+
+	option = {
+		name = "§TBard II§!"
+		country_event = 30037
+	}
+
+	option = {
+		name = "§TGirion II§!"
+		country_event = 30038
+	}
+
+	option = {
+		name = "§TMaster of Laketown§!"
+		country_event = 30039
+	}
+
+	option = {
+		name = "§TFishers' Guild§!"
+		country_event = 30033
+	}
+	
+	option = {
+		name = "§RClose§!"
+	}
+}
+
+# Master of Laketown
+country_event = {
+	id = 30039
+	picture = "gramavuld/bard_i_info"
+	title = "Master of Laketown"
+	desc = "EVTDESC30039"
+	
+	immediate = {
+		empty_line_loc = {}
+		unique_flavor_loc = {}
+		
+		empty_line_loc = {}
+		maroon_color_loc = {}
+		random_owned = {
+			limit = {
+				owner = { has_global_flag = DAL_cultivated_inland_trade }
+			}
+			green_color_loc = {}
+		}
+		DAL_master_inland_trade_loc = {}
+		end_color_loc = {}
+		DAL_master_inland_trade_desc_loc = {}
+	}
+
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = "§BThe House of Bard§!"
+		country_event = 30032
+	}
+
+	option = {
+		name = "§TBard I§!"
+		country_event = 30034
+	}
+
+	option = {
+		name = "§TBain I§!"
+		country_event = 30035
+	}
+
+	option = {
+		name = "§TBrand I§!"
+		country_event = 30036
+	}
+
+	option = {
+		name = "§TBard II§!"
+		country_event = 30037
+	}
+
+	option = {
+		name = "§TGirion II§!"
+		country_event = 30038
+	}
+
+	option = {
+		name = "§TMaster of Laketown§!"
+		country_event = 30039
+	}
+
+	option = {
+		name = "§TFishers' Guild§!"
+		country_event = 30033
+	}
+	
+	option = {
+		name = "§RClose§!"
+	}
+}
+
+# Fishers' Guild
+country_event = {
+	id = 30033
+	picture = "gramavuld/bard_i_info"
+	title = "Fishers' Guild"
+	desc = "EVTDESC30033"
+	
+	immediate = {
+		empty_line_loc = {}
+		unique_flavor_loc = {}
+		
+		empty_line_loc = {}
+		maroon_color_loc = {}
+		random_owned = {
+			limit = {
+				owner = { has_global_flag = DAL_fishers_guild_political_reformed }
+			}
+			green_color_loc = {}
+		}
+		DAL_guild_political_reforms_loc = {}
+		end_color_loc = {}
+		DAL_guild_political_reforms_desc_loc = {}
+		
+		empty_line_loc = {}
+		maroon_color_loc = {}
+		random_owned = {
+			limit = {
+				owner = { has_global_flag = DAL_fishers_guild_land_reformed }
+			}
+			green_color_loc = {}
+		}
+		DAL_guild_land_reforms_loc = {}
+		end_color_loc = {}
+		DAL_guild_land_reforms_desc_loc = {}
+		
+		empty_line_loc = {}
+		maroon_color_loc = {}
+		random_owned = {
+			limit = {
+				owner = { has_global_flag = DAL_fishers_guild_immigration_reform_modifier }
+			}
+			green_color_loc = {}
+		}
+		DAL_guild_immigration_reforms_loc = {}
+		end_color_loc = {}
+		DAL_guild_immigration_reforms_desc_loc = {}
+	}
+
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = "§BThe House of Bard§!"
+		country_event = 30032
+	}
+
+	option = {
+		name = "§TBard I§!"
+		country_event = 30034
+	}
+
+	option = {
+		name = "§TBain I§!"
+		country_event = 30035
+	}
+
+	option = {
+		name = "§TBrand I§!"
+		country_event = 30036
+	}
+
+	option = {
+		name = "§TBard II§!"
+		country_event = 30037
+	}
+
+	option = {
+		name = "§TGirion II§!"
+		country_event = 30038
+	}
+
+	option = {
+		name = "§TMaster of Laketown§!"
+		country_event = 30039
+	}
+
+	option = {
+		name = "§TFishers' Guild§!"
+		country_event = 30033
 	}
 	
 	option = {

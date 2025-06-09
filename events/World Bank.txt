@@ -427,7 +427,6 @@ country_event = {
 		
 		# Investing in Province: 8% chance of +1 (average of a increase of 1 per year)
 		# Do not need to worry about the above changes as the province needs to be controlled by the owner with no battles in it + repairing province should not overlap with investing in province
-		# TODO: May want to consider moving this to a quarterly event -- it seems like the same provinces get favored every month
 		random_owned = {
 			any_neighbor_province = {
 				limit = {
@@ -445,7 +444,7 @@ country_event = {
 		
 		# Seasons
 		random_owned = {
-			# December, January, February
+			# December, January, February - Eriador, Rhovanion, Rhun
 			any_neighbor_province = {
 				limit = {
 					OR = {
@@ -465,7 +464,7 @@ country_event = {
 				remove_province_modifier = autumn_modifier_north
 				remove_province_modifier = autumn_modifier_rhun
 			}
-			# March, April, May
+			# March, April, May - Eriador, Rhovanion
 			any_neighbor_province = {
 				limit = {
 					month = 2
@@ -482,7 +481,7 @@ country_event = {
 				remove_province_modifier = autumn_modifier_north
 				remove_province_modifier = autumn_modifier_rhun
 			}
-			# March, April, May
+			# March, April, May - Rhun
 			any_neighbor_province = {
 				limit = {
 					month = 2
@@ -496,7 +495,7 @@ country_event = {
 				remove_province_modifier = autumn_modifier_north
 				remove_province_modifier = autumn_modifier_rhun
 			}
-			# June, July, August
+			# June, July, August - Eriador, Rhovanion, Rhun
 			any_neighbor_province = {
 				limit = {
 					month = 5
@@ -514,7 +513,7 @@ country_event = {
 				remove_province_modifier = autumn_modifier_north
 				remove_province_modifier = autumn_modifier_rhun
 			}
-			# September October, November
+			# September October, November - Eriador, Rhovanion
 			any_neighbor_province = {
 				limit = {
 					month = 8
@@ -531,7 +530,7 @@ country_event = {
 				add_province_modifier = { name = autumn_modifier_north duration = -1 }
 				remove_province_modifier = autumn_modifier_rhun
 			}
-			# September October, November
+			# September October, November - Rhun
 			any_neighbor_province = {
 				limit = {
 					month = 8
@@ -545,7 +544,7 @@ country_event = {
 				remove_province_modifier = autumn_modifier_north
 				add_province_modifier = { name = autumn_modifier_rhun duration = -1 }
 			}
-			# December, January, February
+			# December, January, February - Gondor/Rohan, calm Mordor
 			any_neighbor_province = {
 				limit = {
 					OR = {
@@ -554,60 +553,166 @@ country_event = {
 					}
 					OR = {
 						continent = south_america # Gondor/Rohan
-						continent = africa # Mordor
+						AND = {
+							continent = africa # Mordor
+							NOT = { has_global_flag = mount_doom_erupting }
+						}
 					}
 				}
 				add_province_modifier = { name = winter_modifier_south duration = -1 }
 				remove_province_modifier = spring_modifier_south
 				remove_province_modifier = summer_modifier_south
 				remove_province_modifier = autumn_modifier_south
+				
+				remove_province_modifier = winter_modifier_mordor
+				remove_province_modifier = spring_modifier_mordor
+				remove_province_modifier = summer_modifier_mordor
+				remove_province_modifier = autumn_modifier_mordor
 			}
-			# March, April, May
+			# March, April, May - Gondor/Rohan, calm Mordor
 			any_neighbor_province = {
 				limit = {
 					month = 2
 					NOT = { month = 5 }
 					OR = {
 						continent = south_america # Gondor/Rohan
-						continent = africa # Mordor
+						AND = {
+							continent = africa # Mordor
+							NOT = { has_global_flag = mount_doom_erupting }
+						}
 					}
 				}
 				remove_province_modifier = winter_modifier_south
 				add_province_modifier = { name = spring_modifier_south duration = -1 }
 				remove_province_modifier = summer_modifier_south
 				remove_province_modifier = autumn_modifier_south
+				
+				remove_province_modifier = winter_modifier_mordor
+				remove_province_modifier = spring_modifier_mordor
+				remove_province_modifier = summer_modifier_mordor
+				remove_province_modifier = autumn_modifier_mordor
 			}
-			# June, July, August
+			# June, July, August - Gondor/Rohan, calm Mordor
 			any_neighbor_province = {
 				limit = {
 					month = 5
 					NOT = { month = 8 }
 					OR = {
 						continent = south_america # Gondor/Rohan
-						continent = africa # Mordor
+						AND = {
+							continent = africa # Mordor
+							NOT = { has_global_flag = mount_doom_erupting }
+						}
 					}
 				}
 				remove_province_modifier = winter_modifier_south
 				remove_province_modifier = spring_modifier_south
 				add_province_modifier = { name = summer_modifier_south duration = -1 }
 				remove_province_modifier = autumn_modifier_south
+				
+				remove_province_modifier = winter_modifier_mordor
+				remove_province_modifier = spring_modifier_mordor
+				remove_province_modifier = summer_modifier_mordor
+				remove_province_modifier = autumn_modifier_mordor
 			}
-			# September October, November
+			# September October, November - Gondor/Rohan, calm Mordor
 			any_neighbor_province = {
 				limit = {
 					month = 8
 					NOT = { month = 11 }
 					OR = {
 						continent = south_america # Gondor/Rohan
-						continent = africa # Mordor
+						AND = {
+							continent = africa # Mordor
+							NOT = { has_global_flag = mount_doom_erupting }
+						}
 					}
 				}
 				remove_province_modifier = winter_modifier_south
 				remove_province_modifier = spring_modifier_south
 				remove_province_modifier = summer_modifier_south
 				add_province_modifier = { name = autumn_modifier_south duration = -1 }
+				
+				remove_province_modifier = winter_modifier_mordor
+				remove_province_modifier = spring_modifier_mordor
+				remove_province_modifier = summer_modifier_mordor
+				remove_province_modifier = autumn_modifier_mordor
 			}
-			# October, November, December, January, February, March
+			# December, January, February - Mordor
+			any_neighbor_province = {
+				limit = {
+					OR = {
+						month = 11
+						NOT = { month = 2 }
+					}
+					continent = africa # Mordor
+					has_global_flag = mount_doom_erupting
+				}
+				add_province_modifier = { name = winter_modifier_mordor duration = -1 }
+				remove_province_modifier = spring_modifier_mordor
+				remove_province_modifier = summer_modifier_mordor
+				remove_province_modifier = autumn_modifier_mordor
+				
+				remove_province_modifier = winter_modifier_south
+				remove_province_modifier = spring_modifier_south
+				remove_province_modifier = summer_modifier_south
+				remove_province_modifier = autumn_modifier_south
+			}
+			# March, April, May - Mordor
+			any_neighbor_province = {
+				limit = {
+					month = 2
+					NOT = { month = 5 }
+					continent = africa # Mordor
+					has_global_flag = mount_doom_erupting
+				}
+				remove_province_modifier = winter_modifier_mordor
+				add_province_modifier = { name = spring_modifier_mordor duration = -1 }
+				remove_province_modifier = summer_modifier_mordor
+				remove_province_modifier = autumn_modifier_mordor
+				
+				remove_province_modifier = winter_modifier_south
+				remove_province_modifier = spring_modifier_south
+				remove_province_modifier = summer_modifier_south
+				remove_province_modifier = autumn_modifier_south
+			}
+			# June, July, August - Mordor
+			any_neighbor_province = {
+				limit = {
+					month = 5
+					NOT = { month = 8 }
+					continent = africa # Mordor
+					has_global_flag = mount_doom_erupting
+				}
+				remove_province_modifier = winter_modifier_mordor
+				remove_province_modifier = spring_modifier_mordor
+				add_province_modifier = { name = summer_modifier_mordor duration = -1 }
+				remove_province_modifier = autumn_modifier_mordor
+				
+				remove_province_modifier = winter_modifier_south
+				remove_province_modifier = spring_modifier_south
+				remove_province_modifier = summer_modifier_south
+				remove_province_modifier = autumn_modifier_south
+			}
+			# September October, November - Mordor
+			any_neighbor_province = {
+				limit = {
+					month = 8
+					NOT = { month = 11 }
+					continent = africa # Mordor
+					has_global_flag = mount_doom_erupting
+				}
+				remove_province_modifier = winter_modifier_mordor
+				remove_province_modifier = spring_modifier_mordor
+				remove_province_modifier = summer_modifier_mordor
+				add_province_modifier = { name = autumn_modifier_mordor duration = -1 }
+				
+				remove_province_modifier = winter_modifier_south
+				remove_province_modifier = spring_modifier_south
+				remove_province_modifier = summer_modifier_south
+				remove_province_modifier = autumn_modifier_south
+			}
+			# October, November, December, January, February, March - Harad
 			any_neighbor_province = {
 				limit = {
 					OR = {
@@ -619,7 +724,7 @@ country_event = {
 				add_province_modifier = { name = dry_season_modifier duration = -1 }
 				remove_province_modifier = wet_season_modifier
 			}
-			# April, May, June, July, August, September
+			# April, May, June, July, August, September - Harad
 			any_neighbor_province = {
 				limit = {
 					month = 3
@@ -1147,6 +1252,317 @@ country_event = {
 		}
 		# }
 		
+		# Apply Acquire Claim CB
+		any_country = {
+			limit = {
+				has_country_flag = should_apply_acquire_claim_cb
+				ai = yes
+			}
+			country_event = 2900
+		}
+		
+		# Clearing Acquire Claim CB
+		any_country = {
+			limit = {
+				NOT = { has_country_flag = should_apply_acquire_claim_cb }
+				ai = yes
+			}
+			country_event = 2901
+		}
+		
+		# Ends wars where one side no longer exists
+		any_country = {
+			limit = {
+				exists = no
+				war = yes
+				NOT = { tag = REB }
+			}
+			country_event = 99005
+		}
+		
+		# Ends vassal relationships if the overlord no longer exists
+		any_country = {
+			limit = {
+				exists = yes
+				is_vassal = yes
+				overlord = { exists = no }
+			}
+			country_event = 99006
+		}
+		
+		# Leader alignment/accepted culture mismatch {
+		any_country = {
+			limit = {
+				OR = {
+					good_evil_alignment = good_alignment
+					AND = {
+						good_evil_alignment = vassal_alignment
+						overlord = { good_evil_alignment = good_alignment }
+					}
+				}
+				OR = {
+					NOT = { accepted_culture = good_culture }
+					accepted_culture = neutral_culture
+					accepted_culture = evil_culture
+				}
+			}
+			add_accepted_culture = good_culture
+			remove_accepted_culture = neutral_culture
+			remove_accepted_culture = evil_culture
+		}
+		any_country = {
+			limit = {
+				OR = {
+					good_evil_alignment = neutral_alignment
+					AND = {
+						good_evil_alignment = vassal_alignment
+						overlord = { good_evil_alignment = neutral_alignment }
+					}
+				}
+				OR = {
+					accepted_culture = good_culture
+					NOT = { accepted_culture = neutral_culture }
+					accepted_culture = evil_culture
+				}
+			}
+			remove_accepted_culture = good_culture
+			add_accepted_culture = neutral_culture
+			remove_accepted_culture = evil_culture
+		}
+		any_country = {
+			limit = {
+				OR = {
+					good_evil_alignment = evil_alignment
+					AND = {
+						good_evil_alignment = vassal_alignment
+						overlord = { good_evil_alignment = evil_alignment }
+					}
+				}
+				OR = {
+					accepted_culture = good_culture
+					accepted_culture = neutral_culture
+					NOT = { accepted_culture = evil_culture }
+				}
+			}
+			remove_accepted_culture = good_culture
+			remove_accepted_culture = neutral_culture
+			add_accepted_culture = evil_culture
+		}
+		# }
+		
+		# Government Clean up
+		# This must come before reform assignment because it depends upon government {
+		# Vassals of Mordor become dominion_1
+		any_country = {
+			limit = {
+				overlord = { government = sauron_dictatorship }
+				NOT = { government = dominion_1 }
+			}
+			government = dominion_1
+			ruling_party_ideology = servants
+		}
+		# dominion_2
+		any_country = {
+			limit = {
+				NOT = { government = dominion_2 }
+				OR = {
+					# Fiefdoms of Gondor
+					AND = {
+						OR = {
+							vassal_of = GON
+							vassal_of = RUN
+						}
+						OR = {
+							tag = ITH
+							tag = LOS
+							tag = LEB
+							tag = AMR
+							tag = LAM
+							tag = ANF
+							tag = ANO
+							tag = TOL
+							tag = MRN
+							tag = ADR
+						}
+					}
+					# Rohan
+					AND = {
+						vassal_of = ROH
+						tag = FRA
+					}
+				}
+			}
+			government = dominion_2
+		}
+		# Dominions that are now free
+		any_country = {
+			limit = {
+				OR = {
+					government = dominion_1
+					government = dominion_2
+				}
+				is_vassal = no
+			}
+			government = monarchy
+			ruling_party_ideology = nobility
+			
+			random_owned = {
+				limit = { has_country_flag = DAL_content }
+				owner = { ruling_party_ideology = house_of_bard }
+			}
+		}
+		# Republics without voting become monarchies
+		any_country = {
+			limit = {
+				OR = {
+					government = republic
+					government = merchant_republic
+				}
+				vote_franschise = none_voting
+			}
+			government = dictatorship
+		}
+		# }
+		
+		# Setting the ruler of vassals {
+		any_country = {
+			limit = {
+				is_vassal = yes
+				NOT = { has_country_flag = vassal_can_have_own_ruler }
+				NOT = { ruling_party_ideology = servants }
+			}
+			ruling_party_ideology = servants
+		}
+		any_country = {
+			limit = { is_vassal = no }
+			clr_country_flag = vassal_can_have_own_ruler
+		}
+		# }
+		
+		# Upper House Reform Assignment {
+		any_country = {
+			limit = {
+				OR = {
+					government = republic
+					government = merchant_republic
+				}
+			}
+			political_reform = republican
+		}
+		any_country = {
+			limit = {
+				OR = {
+					government = monarchy
+					government = monarchy_2
+					government = tribal
+				}
+			}
+			political_reform = monarchist
+		}
+		any_country = {
+			limit = {
+				OR = {
+					government = dictatorship
+					government = sauron_dictatorship
+					government = nazgul_dictatorship
+					government = istari_kingdom
+					government = dominion_1
+					government = dominion_2
+				}
+			}
+			political_reform = dictatorship
+		}
+		# }
+		
+		# stirrings_of_dissent Cleanup
+		any_country = {
+			limit = {
+				has_country_modifier = stirrings_of_dissent
+				NOT = { plurality = 90 }
+			}
+			remove_country_modifier = stirrings_of_dissent
+		}
+		
+		# Border Policy Reform Assignment {
+		any_country = {
+			limit = { has_global_flag = borders_closed }
+			political_reform = closed_borders
+		}
+		any_country = {
+			limit = { has_global_flag = borders_alignment }
+			political_reform = alignment_borders
+		}
+		any_country = {
+			limit = { has_global_flag = borders_race }
+			political_reform = race_borders
+		}
+		any_country = {
+			limit = { has_global_flag = borders_open }
+			political_reform = open_borders
+		}
+		# }
+		
+		# Clean up locked_voting
+		any_country = {
+			limit = {
+				has_country_flag = locked_voting
+				election = no
+				OR = {
+					NOT = { government_type = republican }
+					# Barding Realm that took the Merchants path, but no longer ruled by the Merchants
+					AND = {
+						has_country_flag = DAL_content
+						government = merchant_republic
+						NOT = { ruling_party_ideology = master_of_laketown }
+					}
+					# Barding Realm that took the Guild path, but no longer ruled by the Guild
+					AND = {
+						has_country_flag = DAL_content
+						government = republic
+						NOT = { ruling_party_ideology = lakemen_fishers_guild }
+					}
+				}
+			}
+			country_event = 99007
+		}
+		
+		# Realm attempting to do stuff with the utility tag {
+		any_country = {
+			leave_alliance = FOR
+			relation = { who = FOR value = -400 }
+			end_war = FOR
+		}
+		any_greater_power = { diplomatic_influence = { who = FOR value = -400 } }
+		# }
+		
+		# Slavery Rules {
+		any_country = {
+			limit = { slavery = non_accepted_slavery }
+			any_pop = {
+				limit = {
+					OR = {
+						is_primary_culture = yes
+						is_accepted_culture = yes
+					}
+				}
+				pop_type = labourers
+			}
+		}
+		# }
+		
+		# Demote unaccepted bureaucrats to labourers
+		any_country = {
+			limit = { exists = yes }
+			any_pop = {
+				limit = {
+					type = bureaucrats
+					is_primary_culture = no
+					is_accepted_culture = no
+				}
+				pop_type = labourers
+			}
+		}
+		
 		# Refire the cleanup event next month {
 		random_owned = {
 			limit = {
@@ -1224,26 +1640,6 @@ country_event = {
 	
 	option = {
 		name = "Fix it please"
-		
-		# If turned in a Republic of some kind, Bard's line no longer rules
-		random_country = {
-			limit = {
-				OR = {
-					nationalvalue = bard_i
-					nationalvalue = bain_i
-					nationalvalue = brand_i
-					nationalvalue = bard_ii
-					nationalvalue = regency
-				}
-				OR = {
-					government = democracy
-					government = hobbit_realm
-					government = northmen_democracy
-				}
-			}
-			
-			country_event = 3508
-		}
 		
 		# Building Mere's End Boat Life {
 		random_country = { # Boat lift started building, then province switched hands
@@ -1370,41 +1766,84 @@ country_event = {
 		# }
 		
 		# Trading Mechanic Modifier Changes {
-		# Remove trading modifiers and flags if DAL doesn't exist or it doesn't own Esgaroth
+		# Add back alignment restrictions if the Master of Laketown looses power
+		random_country = {
+			limit = {
+				has_country_flag = DAL_content
+				OR = {
+					has_country_flag = DAL_cultivated_inland_trade
+					has_country_flag = DAL_can_establish_celduin_trading_posts
+				}
+				NOT = { ruling_party_ideology = master_of_laketown }
+			}
+			clr_country_flag = DAL_cultivated_inland_trade
+			clr_country_flag = DAL_can_establish_celduin_trading_posts
+		}
+		
+		# Remove trading modifiers and flags if DAL doesn't exist or it doesn't own Esgaroth. Handles DAL, DAL-formed RHO and DAL-formed FFN
 		random_owned = {
 			limit = {
 				owner = {
 					OR = {
-						NOT = { exists = DAL }
-						NOT = { DAL = { owns = 654 } }
+						AND = {
+							NOT = { exists = DAL }
+							OR = {
+								NOT = { exists = RHO }
+								NOT = { RHO = { has_country_flag = DAL_content } }
+							}
+							OR = {
+								NOT = { exists = FFN }
+								NOT = { FFN = { has_country_flag = DAL_content } }
+							}
+						}
+						AND = {
+							NOT = { DAL = { owns = 654 } }
+							OR = {
+								NOT = { RHO = { owns = 654 } }
+								NOT = { RHO = { has_country_flag = DAL_content } }
+							}
+							OR = {
+								NOT = { FFN = { owns = 654 } }
+								NOT = { FFN = { has_country_flag = DAL_content } }
+							}
+						}
 					}
 				}
 			}
-			owner = {
-				any_country = {
-					remove_country_modifier = trading_with_DAL
-					clr_country_flag = rejected_trade_with_DAL
-				}
-			}
+			owner = { any_country = { remove_country_modifier = trading_with_DAL } }
 		}
 		
-		# Remove trading modifiers and flags from nonexistant countries
+		# Remove trading modifiers and flags from nonexistant countries or countries that are no longer allied/spheres by Dale. Handles DAL, DAL-formed RHO and DAL-formed FFN
 		any_country = {
 			limit = {
-				exists = no
+				has_country_modifier = trading_with_DAL
 				OR = {
-					has_country_modifier = trading_with_DAL
-					has_country_flag = rejected_trade_with_DAL
+					exists = no
+					AND = {
+						exists = DAL
+						NOT = { alliance_with = DAL }
+						NOT = { in_sphere = DAL }
+					}
+					AND = {
+						RHO = { has_country_flag = DAL_content }
+						NOT = { alliance_with = RHO }
+						NOT = { in_sphere = RHO }
+					}
+					AND = {
+						FFN = { has_country_flag = DAL_content }
+						NOT = { alliance_with = FFN }
+						NOT = { in_sphere = FFN }
+					}
 				}
 			}
 			remove_country_modifier = trading_with_DAL
-			clr_country_flag = rejected_trade_with_DAL
 		}
 		
 		# Remove trading modifiers and flags from existing realms that no longer fit the requirements
 		any_country = {
 			limit = {
 				has_country_modifier = trading_with_DAL
+				NOT = { DAL = { has_country_flag = DAL_cultivated_inland_trade } }
 				OR = {
 					is_vassal = yes
 					war_with = DAL
@@ -1419,6 +1858,15 @@ country_event = {
 				}
 			}
 			remove_country_modifier = trading_with_DAL
+		}
+		
+		random_country = {
+			limit = {
+				has_country_flag = DAL_content
+				NOT = { ruling_party_ideology = lakemen_fishers_guild }
+				has_country_modifier = DAL_fishers_guild_immigration_reform_modifier
+			}
+			remove_country_modifier = DAL_fishers_guild_immigration_reform_modifier
 		}
 		
 		# Recalculate the number of realms trading
@@ -1503,438 +1951,10 @@ country_event = {
 		# }
 		
 		# Merchants vs Fishers Guild {
-		# Updating the variable based upon the previous reform
-		random_country = {
-			limit = {
-				tag = DAL
-				NOT = { has_country_flag = DAL_merchant_supported_by_realm }
-				NOT = { has_country_flag = DAL_guild_supported_by_realm }
-				has_country_flag = reforms_cache_had_good_pensions
-				pensions = no_pensions
-			}
-			change_variable = { which = DAL_merchants_fishers_bop value = -8 } # Shift 8 in favor of the Merchants
-		}
-		
-		random_country = {
-			limit = {
-				tag = DAL
-				NOT = { has_country_flag = DAL_merchant_supported_by_realm }
-				NOT = { has_country_flag = DAL_guild_supported_by_realm }
-				has_country_flag = reforms_cache_had_royal_cities
-				city_jurisdiction = independent_cities
-			}
-			change_variable = { which = DAL_merchants_fishers_bop value = -6 } # Shift 6 in favor of the Merchants
-		}
-		
-		random_country = {
-			limit = {
-				tag = DAL
-				NOT = { has_country_flag = DAL_merchant_supported_by_realm }
-				NOT = { has_country_flag = DAL_guild_supported_by_realm }
-				has_country_flag = reforms_cache_had_abolished_exclusive_tr
-				exclusive_trading_rights = granted_exclusive_tr
-			}
-			change_variable = { which = DAL_merchants_fishers_bop value = -4 } # Shift 4 in favor of the Merchants
-		}
-		
-		random_country = {
-			limit = {
-				tag = DAL
-				NOT = { has_country_flag = DAL_merchant_supported_by_realm }
-				NOT = { has_country_flag = DAL_guild_supported_by_realm }
-				has_country_flag = reforms_cache_had_restricted_state_supplies
-				state_supplies_monopoly = privileged_state_supplies
-			}
-			change_variable = { which = DAL_merchants_fishers_bop value = -4 } # Shift 4 in favor of the Merchants
-		}
-		
-		random_country = {
-			limit = {
-				tag = DAL
-				NOT = { has_country_flag = DAL_merchant_supported_by_realm }
-				NOT = { has_country_flag = DAL_guild_supported_by_realm }
-				OR = {
-					AND = {
-						has_country_flag = reforms_cache_had_territorial_cities
-						city_jurisdiction = independent_cities
-					}
-					AND = {
-						has_country_flag = reforms_cache_had_royal_cities
-						city_jurisdiction = chartered_cities
-					}
-				}
-			}
-			change_variable = { which = DAL_merchants_fishers_bop value = -4 } # Shift 4 in favor of the Merchants
-		}
-		
-		random_country = {
-			limit = {
-				tag = DAL
-				NOT = { has_country_flag = DAL_merchant_supported_by_realm }
-				NOT = { has_country_flag = DAL_guild_supported_by_realm }
-				OR = {
-					AND = {
-						has_country_flag = reforms_cache_had_low_pensions
-						pensions = no_pensions
-					}
-					AND = {
-						has_country_flag = reforms_cache_had_acceptable_pensions
-						pensions = trinket_pensions
-					}
-					AND = {
-						has_country_flag = reforms_cache_had_good_pensions
-						pensions = low_pensions
-					}
-				}
-			}
-			change_variable = { which = DAL_merchants_fishers_bop value = -4 } # Shift 4 in favor of the Merchants
-		}
-		
-		random_country = {
-			limit = {
-				tag = DAL
-				NOT = { has_country_flag = DAL_merchant_supported_by_realm }
-				NOT = { has_country_flag = DAL_guild_supported_by_realm }
-				has_country_flag = reforms_cache_had_guild_school
-				apprenticeship = hereditary
-			}
-			change_variable = { which = DAL_merchants_fishers_bop value = -4 } # Shift 4 in favor of the Merchants
-		}
-		
-		random_country = {
-			limit = {
-				tag = DAL
-				NOT = { has_country_flag = DAL_merchant_supported_by_realm }
-				NOT = { has_country_flag = DAL_guild_supported_by_realm }
-				OR = {
-					AND = {
-						has_country_flag = reforms_cache_had_limited_exclusive_tr
-						exclusive_trading_rights = granted_exclusive_tr
-					}
-					AND = {
-						has_country_flag = reforms_cache_had_abolished_exclusive_tr
-						exclusive_trading_rights = limited_exclusive_tr
-					}
-				}
-			}
-			change_variable = { which = DAL_merchants_fishers_bop value = -2 } # Shift 2 in favor of the Merchants
-		}
-		
-		random_country = {
-			limit = {
-				tag = DAL
-				NOT = { has_country_flag = DAL_merchant_supported_by_realm }
-				NOT = { has_country_flag = DAL_guild_supported_by_realm }
-				OR = {
-					AND = {
-						has_country_flag = reforms_cache_had_allowed_state_supplies
-						state_supplies_monopoly = privileged_state_supplies
-					}
-					AND = {
-						has_country_flag = reforms_cache_had_restricted_state_supplies
-						state_supplies_monopoly = allowed_state_supplies
-					}
-				}
-			}
-			change_variable = { which = DAL_merchants_fishers_bop value = -2 } # Shift 2 in favor of the Merchants
-		}
-		
-		random_country = {
-			limit = {
-				tag = DAL
-				NOT = { has_country_flag = DAL_merchant_supported_by_realm }
-				NOT = { has_country_flag = DAL_guild_supported_by_realm }
-				OR = {
-					AND = {
-						has_country_flag = reforms_cache_had_chartered_cities
-						city_jurisdiction = independent_cities
-					}
-					AND = {
-						has_country_flag = reforms_cache_had_territorial_cities
-						city_jurisdiction = chartered_cities
-					}
-					AND = {
-						has_country_flag = reforms_cache_had_royal_cities
-						city_jurisdiction = territorial_cities
-					}
-				}
-			}
-			change_variable = { which = DAL_merchants_fishers_bop value = -2 } # Shift 2 in favor of the Merchants
-		}
-		
-		random_country = {
-			limit = {
-				tag = DAL
-				NOT = { has_country_flag = DAL_merchant_supported_by_realm }
-				NOT = { has_country_flag = DAL_guild_supported_by_realm }
-				OR = {
-					AND = {
-						has_country_flag = reforms_cache_had_trinket_pensions
-						pensions = no_pensions
-					}
-					AND = {
-						has_country_flag = reforms_cache_had_low_pensions
-						pensions = trinket_pensions
-					}
-					AND = {
-						has_country_flag = reforms_cache_had_acceptable_pensions
-						pensions = low_pensions
-					}
-					AND = {
-						has_country_flag = reforms_cache_had_good_pensions
-						pensions = acceptable_pensions
-					}
-				}
-			}
-			change_variable = { which = DAL_merchants_fishers_bop value = -2 } # Shift 2 in favor of the Merchants
-		}
-		
-		random_country = {
-			limit = {
-				tag = DAL
-				NOT = { has_country_flag = DAL_merchant_supported_by_realm }
-				NOT = { has_country_flag = DAL_guild_supported_by_realm }
-				OR = {
-					AND = {
-						has_country_flag = reforms_cache_had_appointment
-						apprenticeship = hereditary
-					}
-					AND = {
-						has_country_flag = reforms_cache_had_guild_school
-						apprenticeship = appointment
-					}
-				}
-			}
-			change_variable = { which = DAL_merchants_fishers_bop value = -2 } # Shift 2 in favor of the Merchants
-		}
-		
-		random_country = {
-			limit = {
-				tag = DAL
-				NOT = { has_country_flag = DAL_merchant_supported_by_realm }
-				NOT = { has_country_flag = DAL_guild_supported_by_realm }
-				OR = {
-					AND = {
-						has_country_flag = reforms_cache_had_granted_exclusive_tr
-						exclusive_trading_rights = limited_exclusive_tr
-					}
-					AND = {
-						has_country_flag = reforms_cache_had_limited_exclusive_tr
-						exclusive_trading_rights = abolished_exclusive_tr
-					}
-				}
-			}
-			change_variable = { which = DAL_merchants_fishers_bop value = 2 } # Shift 2 in favor of the Fisher's Guild
-		}
-		
-		random_country = {
-			limit = {
-				tag = DAL
-				NOT = { has_country_flag = DAL_merchant_supported_by_realm }
-				NOT = { has_country_flag = DAL_guild_supported_by_realm }
-				OR = {
-					AND = {
-						has_country_flag = reforms_cache_had_privileged_state_supplies
-						state_supplies_monopoly = allowed_state_supplies
-					}
-					AND = {
-						has_country_flag = reforms_cache_had_allowed_state_supplies
-						state_supplies_monopoly = restricted_state_supplies
-					}
-				}
-			}
-			change_variable = { which = DAL_merchants_fishers_bop value = 2 } # Shift 2 in favor of the Fisher's Guild
-		}
-		
-		random_country = {
-			limit = {
-				tag = DAL
-				NOT = { has_country_flag = DAL_merchant_supported_by_realm }
-				NOT = { has_country_flag = DAL_guild_supported_by_realm }
-				OR = {
-					AND = {
-						has_country_flag = reforms_cache_had_independent_cities
-						city_jurisdiction = chartered_cities
-					}
-					AND = {
-						has_country_flag = reforms_cache_had_chartered_cities
-						city_jurisdiction = territorial_cities
-					}
-					AND = {
-						has_country_flag = reforms_cache_had_territorial_cities
-						city_jurisdiction = royal_cities
-					}
-				}
-			}
-			change_variable = { which = DAL_merchants_fishers_bop value = 2 } # Shift 2 in favor of the Fisher's Guild
-		}
-		
-		random_country = {
-			limit = {
-				tag = DAL
-				NOT = { has_country_flag = DAL_merchant_supported_by_realm }
-				NOT = { has_country_flag = DAL_guild_supported_by_realm }
-				OR = {
-					AND = {
-						has_country_flag = reforms_cache_had_no_pensions
-						pensions = trinket_pensions
-					}
-					AND = {
-						has_country_flag = reforms_cache_had_trinket_pensions
-						pensions = low_pensions
-					}
-					AND = {
-						has_country_flag = reforms_cache_had_low_pensions
-						pensions = acceptable_pensions
-					}
-					AND = {
-						has_country_flag = reforms_cache_had_acceptable_pensions
-						pensions = good_pensions
-					}
-				}
-			}
-			change_variable = { which = DAL_merchants_fishers_bop value = 2 } # Shift 2 in favor of the Fisher's Guild
-		}
-		
-		random_country = {
-			limit = {
-				tag = DAL
-				NOT = { has_country_flag = DAL_merchant_supported_by_realm }
-				NOT = { has_country_flag = DAL_guild_supported_by_realm }
-				OR = {
-					AND = {
-						has_country_flag = reforms_cache_had_hereditary
-						apprenticeship = appointment
-					}
-					AND = {
-						has_country_flag = reforms_cache_had_appointment
-						apprenticeship = guild_school
-					}
-				}
-			}
-			change_variable = { which = DAL_merchants_fishers_bop value = 2 } # Shift 2 in favor of the Fisher's Guild
-		}
-		
-		random_country = {
-			limit = {
-				tag = DAL
-				NOT = { has_country_flag = DAL_merchant_supported_by_realm }
-				NOT = { has_country_flag = DAL_guild_supported_by_realm }
-				has_country_flag = reforms_cache_had_granted_exclusive_tr
-				exclusive_trading_rights = abolished_exclusive_tr
-			}
-			change_variable = { which = DAL_merchants_fishers_bop value = 4 } # Shift 4 in favor of the Fisher's Guild
-		}
-		
-		random_country = {
-			limit = {
-				tag = DAL
-				NOT = { has_country_flag = DAL_merchant_supported_by_realm }
-				NOT = { has_country_flag = DAL_guild_supported_by_realm }
-				has_country_flag = reforms_cache_had_privileged_state_supplies
-				state_supplies_monopoly = restricted_state_supplies
-			}
-			change_variable = { which = DAL_merchants_fishers_bop value = 4 } # Shift 4 in favor of the Fisher's Guild
-		}
-		
-		random_country = {
-			limit = {
-				tag = DAL
-				NOT = { has_country_flag = DAL_merchant_supported_by_realm }
-				NOT = { has_country_flag = DAL_guild_supported_by_realm }
-				OR = {
-					AND = {
-						has_country_flag = reforms_cache_had_independent_cities
-						city_jurisdiction = territorial_cities
-					}
-					AND = {
-						has_country_flag = reforms_cache_had_chartered_cities
-						city_jurisdiction = royal_cities
-					}
-				}
-			}
-			change_variable = { which = DAL_merchants_fishers_bop value = 4 } # Shift 4 in favor of the Fisher's Guild
-		}
-		
-		random_country = {
-			limit = {
-				tag = DAL
-				NOT = { has_country_flag = DAL_merchant_supported_by_realm }
-				NOT = { has_country_flag = DAL_guild_supported_by_realm }
-				OR = {
-					AND = {
-						has_country_flag = reforms_cache_had_no_pensions
-						pensions = low_pensions
-					}
-					AND = {
-						has_country_flag = reforms_cache_had_trinket_pensions
-						pensions = acceptable_pensions
-					}
-					AND = {
-						has_country_flag = reforms_cache_had_low_pensions
-						pensions = good_pensions
-					}
-				}
-			}
-			change_variable = { which = DAL_merchants_fishers_bop value = 4 } # Shift 4 in favor of the Fisher's Guild
-		}
-		
-		random_country = {
-			limit = {
-				tag = DAL
-				NOT = { has_country_flag = DAL_merchant_supported_by_realm }
-				NOT = { has_country_flag = DAL_guild_supported_by_realm }
-				has_country_flag = reforms_cache_had_hereditary
-				apprenticeship = guild_school
-			}
-			change_variable = { which = DAL_merchants_fishers_bop value = 4 } # Shift 4 in favor of the Fisher's Guild
-		}
-		
-		random_country = {
-			limit = {
-				tag = DAL
-				NOT = { has_country_flag = DAL_merchant_supported_by_realm }
-				NOT = { has_country_flag = DAL_guild_supported_by_realm }
-				has_country_flag = reforms_cache_had_independent_cities
-				city_jurisdiction = royal_cities
-			}
-			change_variable = { which = DAL_merchants_fishers_bop value = 6 } # Shift 6 in favor of the Fisher's Guild
-		}
-		
-		random_country = {
-			limit = {
-				tag = DAL
-				NOT = { has_country_flag = DAL_merchant_supported_by_realm }
-				NOT = { has_country_flag = DAL_guild_supported_by_realm }
-				OR = {
-					AND = {
-						has_country_flag = reforms_cache_had_no_pensions
-						pensions = acceptable_pensions
-					}
-					AND = {
-						has_country_flag = reforms_cache_had_trinket_pensions
-						pensions = good_pensions
-					}
-				}
-			}
-			change_variable = { which = DAL_merchants_fishers_bop value = 6 } # Shift 6 in favor of the Fisher's Guild
-		}
-		
-		random_country = {
-			limit = {
-				tag = DAL
-				NOT = { has_country_flag = DAL_merchant_supported_by_realm }
-				NOT = { has_country_flag = DAL_guild_supported_by_realm }
-				has_country_flag = reforms_cache_had_no_pensions
-				pensions = good_pensions
-			}
-			change_variable = { which = DAL_merchants_fishers_bop value = 8 } # Shift 8 in favor of the Fisher's Guild
-		}
-		
 		# Detecting if the modifier needs to change
 		random_country = {
 			limit = {
-				tag = DAL
+				has_country_flag = DAL_content
 				OR = {
 					AND = { # Merchants have been supported by the realm, or the bop is 10+ in favor of the Merchants
 						NOT = { has_country_modifier = DAL_merchant_power_10 }
@@ -2047,11 +2067,245 @@ country_event = {
 					}
 				}
 			}
-			country_event = 50949
+			remove_country_modifier = DAL_merchant_power_10
+			remove_country_modifier = DAL_merchant_power_9
+			remove_country_modifier = DAL_merchant_power_8
+			remove_country_modifier = DAL_merchant_power_7
+			remove_country_modifier = DAL_merchant_power_6
+			remove_country_modifier = DAL_merchant_power_5
+			remove_country_modifier = DAL_merchant_power_4
+			remove_country_modifier = DAL_merchant_power_3
+			remove_country_modifier = DAL_merchant_power_2
+			remove_country_modifier = DAL_merchant_power_1
+			remove_country_modifier = DAL_merchant_guild_balanced
+			remove_country_modifier = DAL_guild_power_1
+			remove_country_modifier = DAL_guild_power_2
+			remove_country_modifier = DAL_guild_power_3
+			remove_country_modifier = DAL_guild_power_4
+			remove_country_modifier = DAL_guild_power_5
+			remove_country_modifier = DAL_guild_power_6
+			remove_country_modifier = DAL_guild_power_7
+			remove_country_modifier = DAL_guild_power_8
+			remove_country_modifier = DAL_guild_power_9
+			remove_country_modifier = DAL_guild_power_10
+			
+			random_owned = {
+				limit = {
+					owner = {
+						OR = {
+							has_country_flag = DAL_merchant_supported_by_realm
+							NOT = { check_variable = { which = DAL_merchants_fishers_bop value = -9.9 } }
+						}
+					}
+				}
+				owner = { add_country_modifier = { name = DAL_merchant_power_10 duration = -1 } }
+			}
+			
+			random_owned = {
+				limit = {
+					owner = {
+						check_variable = { which = DAL_merchants_fishers_bop value = -9.1 }
+						NOT = { check_variable = { which = DAL_merchants_fishers_bop value = -8.9 } }
+					}
+				}
+				owner = { add_country_modifier = { name = DAL_merchant_power_9 duration = -1 } }
+			}
+			
+			random_owned = {
+				limit = {
+					owner = {
+						check_variable = { which = DAL_merchants_fishers_bop value = -8.1 }
+						NOT = { check_variable = { which = DAL_merchants_fishers_bop value = -7.9 } }
+					}
+				}
+				owner = { add_country_modifier = { name = DAL_merchant_power_8 duration = -1 } }
+			}
+			
+			random_owned = {
+				limit = {
+					owner = {
+						check_variable = { which = DAL_merchants_fishers_bop value = -7.1 }
+						NOT = { check_variable = { which = DAL_merchants_fishers_bop value = -6.9 } }
+					}
+				}
+				owner = { add_country_modifier = { name = DAL_merchant_power_7 duration = -1 } }
+			}
+			
+			random_owned = {
+				limit = {
+					owner = {
+						check_variable = { which = DAL_merchants_fishers_bop value = -6.1 }
+						NOT = { check_variable = { which = DAL_merchants_fishers_bop value = -5.9 } }
+					}
+				}
+				owner = { add_country_modifier = { name = DAL_merchant_power_6 duration = -1 } }
+			}
+			
+			random_owned = {
+				limit = {
+					owner = {
+						check_variable = { which = DAL_merchants_fishers_bop value = -5.1 }
+						NOT = { check_variable = { which = DAL_merchants_fishers_bop value = -4.9 } }
+					}
+				}
+				owner = { add_country_modifier = { name = DAL_merchant_power_5 duration = -1 } }
+			}
+			
+			random_owned = {
+				limit = {
+					owner = {
+						check_variable = { which = DAL_merchants_fishers_bop value = -4.1 }
+						NOT = { check_variable = { which = DAL_merchants_fishers_bop value = -3.9 } }
+					}
+				}
+				owner = { add_country_modifier = { name = DAL_merchant_power_4 duration = -1 } }
+			}
+			
+			random_owned = {
+				limit = {
+					owner = {
+						check_variable = { which = DAL_merchants_fishers_bop value = -3.1 }
+						NOT = { check_variable = { which = DAL_merchants_fishers_bop value = -2.9 } }
+					}
+				}
+				owner = { add_country_modifier = { name = DAL_merchant_power_3 duration = -1 } }
+			}
+			
+			random_owned = {
+				limit = {
+					owner = {
+						check_variable = { which = DAL_merchants_fishers_bop value = -2.1 }
+						NOT = { check_variable = { which = DAL_merchants_fishers_bop value = -1.9 } }
+					}
+				}
+				owner = { add_country_modifier = { name = DAL_merchant_power_2 duration = -1 } }
+			}
+			
+			random_owned = {
+				limit = {
+					owner = {
+						check_variable = { which = DAL_merchants_fishers_bop value = -1.1 }
+						NOT = { check_variable = { which = DAL_merchants_fishers_bop value = -0.9 } }
+					}
+				}
+				owner = { add_country_modifier = { name = DAL_merchant_power_1 duration = -1 } }
+			}
+			
+			random_owned = {
+				limit = {
+					owner = {
+						check_variable = { which = DAL_merchants_fishers_bop value = -0.1 }
+						NOT = { check_variable = { which = DAL_merchants_fishers_bop value = 0.1 } }
+					}
+				}
+				owner = { add_country_modifier = { name = DAL_merchant_guild_balanced duration = -1 } }
+			}
+			
+			random_owned = {
+				limit = {
+					owner = {
+						check_variable = { which = DAL_merchants_fishers_bop value = 0.9 }
+						NOT = { check_variable = { which = DAL_merchants_fishers_bop value = 1.1 } }
+					}
+				}
+				owner = { add_country_modifier = { name = DAL_guild_power_1 duration = -1 } }
+			}
+			
+			random_owned = {
+				limit = {
+					owner = {
+						check_variable = { which = DAL_merchants_fishers_bop value = 1.9 }
+						NOT = { check_variable = { which = DAL_merchants_fishers_bop value = 2.1 } }
+					}
+				}
+				owner = { add_country_modifier = { name = DAL_guild_power_2 duration = -1 } }
+			}
+			
+			random_owned = {
+				limit = {
+					owner = {
+						check_variable = { which = DAL_merchants_fishers_bop value = 2.9 }
+						NOT = { check_variable = { which = DAL_merchants_fishers_bop value = 3.1 } }
+					}
+				}
+				owner = { add_country_modifier = { name = DAL_guild_power_3 duration = -1 } }
+			}
+			
+			random_owned = {
+				limit = {
+					owner = {
+						check_variable = { which = DAL_merchants_fishers_bop value = 3.9 }
+						NOT = { check_variable = { which = DAL_merchants_fishers_bop value = 4.1 } }
+					}
+				}
+				owner = { add_country_modifier = { name = DAL_guild_power_4 duration = -1 } }
+			}
+			
+			random_owned = {
+				limit = {
+					owner = {
+						check_variable = { which = DAL_merchants_fishers_bop value = 4.9 }
+						NOT = { check_variable = { which = DAL_merchants_fishers_bop value = 5.1 } }
+					}
+				}
+				owner = { add_country_modifier = { name = DAL_guild_power_5 duration = -1 } }
+			}
+			
+			random_owned = {
+				limit = {
+					owner = {
+						check_variable = { which = DAL_merchants_fishers_bop value = 5.9 }
+						NOT = { check_variable = { which = DAL_merchants_fishers_bop value = 6.1 } }
+					}
+				}
+				owner = { add_country_modifier = { name = DAL_guild_power_6 duration = -1 } }
+			}
+			
+			random_owned = {
+				limit = {
+					owner = {
+						check_variable = { which = DAL_merchants_fishers_bop value = 6.9 }
+						NOT = { check_variable = { which = DAL_merchants_fishers_bop value = 7.1 } }
+					}
+				}
+				owner = { add_country_modifier = { name = DAL_guild_power_7 duration = -1 } }
+			}
+			
+			random_owned = {
+				limit = {
+					owner = {
+						check_variable = { which = DAL_merchants_fishers_bop value = 7.9 }
+						NOT = { check_variable = { which = DAL_merchants_fishers_bop value = 8.1 } }
+					}
+				}
+				owner = { add_country_modifier = { name = DAL_guild_power_8 duration = -1 } }
+			}
+			
+			random_owned = {
+				limit = {
+					owner = {
+						check_variable = { which = DAL_merchants_fishers_bop value = 8.9 }
+						NOT = { check_variable = { which = DAL_merchants_fishers_bop value = 9.1 } }
+					}
+				}
+				owner = { add_country_modifier = { name = DAL_guild_power_9 duration = -1 } }
+			}
+			
+			random_owned = {
+				limit = {
+					owner = {
+						OR = {
+							check_variable = { which = DAL_merchants_fishers_bop value = 9.9 }
+							has_country_flag = DAL_guild_supported_by_realm
+						}
+					}
+				}
+				owner = { add_country_modifier = { name = DAL_guild_power_10 duration = -1 } }
+			}
 		}
 		# }
 		
-		# Smaug's Desolation (Country Modifier)
+		# Smaug's Desolation (Country Modifier) {
 		# Removing Smaug's Desolation
 		any_neighbor_country = {
 			limit = {
@@ -2071,8 +2325,145 @@ country_event = {
 		}
 		# }
 		
-		# Refire the cleanup event next month
-		country_event = { id = 99001 days = 30 }
+		# Applying Upcoming Conquest
+		any_country = {
+			limit = { has_country_modifier = AMO_upcoming_conquest }
+			plurality = 0.5
+		}
+		
+		# Applying Unfinished Vidugavia Successorship
+		any_country = {
+			limit = { has_country_modifier = unfinished_vidugavia_successorship }
+			plurality = 0.25
+		}
+		
+		# Applying Vidugavia Successorship
+		any_country = {
+			limit = { has_country_modifier = vidugavia_successorship }
+			plurality = -0.1
+		}
+		
+		# Getting Monarchy Name Right {
+		random_country = {
+			limit = {
+				tag = DAL
+				government = monarchy_2
+				ruling_party_ideology = house_of_bard
+			}
+			government = monarchy
+		}
+		random_country = {
+			limit = {
+				tag = DAL
+				government = monarchy
+				NOT = { ruling_party_ideology = house_of_bard }
+			}
+			government = monarchy_2
+		}
+		random_country = {
+			limit = {
+				tag = RHO
+				government = monarchy
+				ruling_party_ideology = house_of_bard
+			}
+			government = monarchy_2
+		}
+		random_country = {
+			limit = {
+				tag = RHO
+				government = monarchy_2
+				NOT = { ruling_party_ideology = house_of_bard }
+			}
+			government = monarchy
+		}
+		# }
+		
+		# fishers_guild_rgo_reform clean up
+		random_country = {
+			limit = { has_country_flag = DAL_fishers_guild_land_reformed }
+			any_owned = {
+				limit = {
+					OR = {
+						region = DAL_640 # Upper Marches
+						region = DAL_643 # Nether Marches
+						region = DAL_645 # Nan Celduin
+						region = DAL_1377 # Medes
+						region = DAL_652 # Dalelands
+						region = DAL_654 # Nan Annen
+						province_id = 1475 # Ironhold
+						province_id = 639 # Lar Huil
+						province_id = 638 # Northwatch
+						province_id = 642 # Burh Austris
+					}
+					NOT = { has_province_modifier = fishers_guild_rgo_reform }
+				}
+				add_province_modifier = { name = fishers_guild_rgo_reform duration = -1 }
+			}
+		}
+		
+		# Refire the cleanup event next month {
+		random_owned = {
+			limit = {
+				OR = {
+					# January
+					NOT = { month = 1 }
+					AND = { # March
+						month = 2
+						NOT = { month = 3 }
+					}
+					AND = { # May
+						month = 4
+						NOT = { month = 5 }
+					}
+					AND = { # July
+						month = 6
+						NOT = { month = 7 }
+					}
+					AND = { # August
+						month = 7
+						NOT = { month = 8 }
+					}
+					AND = { # October
+						month = 9
+						NOT = { month = 10 }
+					}
+					# December
+					month = 11
+				}
+			}
+			owner = { country_event = { id = 99001 days = 31 } }
+		}
+		random_owned = {
+			limit = { # February
+				month = 1
+				NOT = { month = 2 }
+			}
+			owner = { country_event = { id = 99001 days = 28 } }
+		}
+		random_owned = {
+			limit = {
+				OR = {
+					AND = { # April
+						month = 3
+						NOT = { month = 4 }
+					}
+					AND = { # June
+						month = 5
+						NOT = { month = 6 }
+					}
+					AND = { # September
+						month = 8
+						NOT = { month = 9 }
+					}
+					AND = { # November
+						month = 10
+						NOT = { month = 11 }
+					}
+				}
+			}
+			owner = { country_event = { id = 99001 days = 30 } }
+		}
+		# }
 	}
 }
 
@@ -2126,6 +2517,20 @@ country_event = {
 					5 = { add_province_modifier = { name = windy_modifier duration = 7 } }
 				}
 			}
+
+			# Summer - Mordor
+			any_neighbor_province = {
+				limit = {
+					has_province_modifier = summer_modifier_mordor
+				}
+				random_list = {
+					10 = { add_province_modifier = { name = sunny_modifier_4_season duration = 7 } }
+					35 = { add_province_modifier = { name = cloudy_modifier duration = 7 } }
+					5 = { add_province_modifier = { name = rainy_modifier_4_season duration = 7 } }
+					5 = { add_province_modifier = { name = windy_modifier duration = 7 } }
+					45 = { add_province_modifier = { name = ash_cloudy_modifier duration = 7 } }
+				}
+			}
 			
 			# Autumn/Spring - North
 			any_neighbor_province = {
@@ -2161,6 +2566,23 @@ country_event = {
 					45 = { add_province_modifier = { name = windy_modifier duration = 7 } }
 				}
 			}
+
+			# Autumn/Spring - Mordor
+			any_neighbor_province = {
+				limit = {
+					OR = {
+						has_province_modifier = autumn_modifier_mordor
+						has_province_modifier = spring_modifier_mordor
+					}
+				}
+				random_list = {
+					5 = { add_province_modifier = { name = sunny_modifier_4_season duration = 7 } }
+					30 = { add_province_modifier = { name = cloudy_modifier duration = 7 } }
+					10 = { add_province_modifier = { name = rainy_modifier_4_season duration = 7 } }
+					10 = { add_province_modifier = { name = windy_modifier duration = 7 } }
+					45 = { add_province_modifier = { name = ash_cloudy_modifier duration = 7 } }
+				}
+			}
 			
 			# Winter - North
 			any_neighbor_province = {
@@ -2187,6 +2609,20 @@ country_event = {
 					25 = { add_province_modifier = { name = rainy_modifier_4_season duration = 7 } }
 					10 = { add_province_modifier = { name = snowy_modifier duration = 7 } }
 					25 = { add_province_modifier = { name = windy_modifier duration = 7 } }
+				}
+			}
+
+			# Winter - Mordor
+			any_neighbor_province = {
+				limit = {
+					has_province_modifier = winter_modifier_mordor
+				}
+				random_list = {
+					35 = { add_province_modifier = { name = cloudy_modifier duration = 7 } }
+					5 = { add_province_modifier = { name = rainy_modifier_4_season duration = 7 } }
+					5 = { add_province_modifier = { name = windy_modifier duration = 7 } }
+					10 = { add_province_modifier = { name = snowy_modifier duration = 7 } }
+					45 = { add_province_modifier = { name = ash_cloudy_modifier duration = 7 } }
 				}
 			}
 			
@@ -2246,23 +2682,18 @@ country_event = {
 				# DO NOT REMOVE THESE RANDOMS - THEY ARE WHAT MAKE THE RESULTS DIFFERENT IN EACH RANDOM_OWNED
 				random = { chance = 1 }
 			}
-			
-			# Autumn/Spring - North
+
+			# Summer - Mordor
 			any_neighbor_province = {
 				limit = {
-					OR = {
-						has_province_modifier = autumn_modifier_north
-						has_province_modifier = autumn_modifier_rhun
-						has_province_modifier = spring_modifier_north
-						has_province_modifier = spring_modifier_rhun
-					}
+					has_province_modifier = summer_modifier_mordor
 				}
 				random_list = {
-					20 = { add_province_modifier = { name = sunny_modifier_4_season duration = 7 } }
-					10 = { add_province_modifier = { name = cloudy_modifier duration = 7 } }
-					20 = { add_province_modifier = { name = rainy_modifier_4_season duration = 7 } }
-					5 = { add_province_modifier = { name = snowy_modifier duration = 7 } }
-					45 = { add_province_modifier = { name = windy_modifier duration = 7 } }
+					10 = { add_province_modifier = { name = sunny_modifier_4_season duration = 7 } }
+					35 = { add_province_modifier = { name = cloudy_modifier duration = 7 } }
+					5 = { add_province_modifier = { name = rainy_modifier_4_season duration = 7 } }
+					5 = { add_province_modifier = { name = windy_modifier duration = 7 } }
+					45 = { add_province_modifier = { name = ash_cloudy_modifier duration = 7 } }
 				}
 				
 				# DO NOT REMOVE THESE RANDOMS - THEY ARE WHAT MAKE THE RESULTS DIFFERENT IN EACH RANDOM_OWNED
@@ -2309,6 +2740,26 @@ country_event = {
 				# DO NOT REMOVE THESE RANDOMS - THEY ARE WHAT MAKE THE RESULTS DIFFERENT IN EACH RANDOM_OWNED
 				random = { chance = 1 }
 			}
+
+			# Autumn/Spring - Mordor
+			any_neighbor_province = {
+				limit = {
+					OR = {
+						has_province_modifier = autumn_modifier_mordor
+						has_province_modifier = spring_modifier_mordor
+					}
+				}
+				random_list = {
+					5 = { add_province_modifier = { name = sunny_modifier_4_season duration = 7 } }
+					30 = { add_province_modifier = { name = cloudy_modifier duration = 7 } }
+					10 = { add_province_modifier = { name = rainy_modifier_4_season duration = 7 } }
+					10 = { add_province_modifier = { name = windy_modifier duration = 7 } }
+					45 = { add_province_modifier = { name = ash_cloudy_modifier duration = 7 } }
+				}
+				
+				# DO NOT REMOVE THESE RANDOMS - THEY ARE WHAT MAKE THE RESULTS DIFFERENT IN EACH RANDOM_OWNED
+				random = { chance = 1 }
+			}
 			
 			# Winter - North
 			any_neighbor_province = {
@@ -2338,6 +2789,23 @@ country_event = {
 					25 = { add_province_modifier = { name = rainy_modifier_4_season duration = 7 } }
 					10 = { add_province_modifier = { name = snowy_modifier duration = 7 } }
 					25 = { add_province_modifier = { name = windy_modifier duration = 7 } }
+				}
+				
+				# DO NOT REMOVE THESE RANDOMS - THEY ARE WHAT MAKE THE RESULTS DIFFERENT IN EACH RANDOM_OWNED
+				random = { chance = 1 }
+			}
+
+			# Winter - Mordor
+			any_neighbor_province = {
+				limit = {
+					has_province_modifier = winter_modifier_mordor
+				}
+				random_list = {
+					35 = { add_province_modifier = { name = cloudy_modifier duration = 7 } }
+					5 = { add_province_modifier = { name = rainy_modifier_4_season duration = 7 } }
+					5 = { add_province_modifier = { name = windy_modifier duration = 7 } }
+					10 = { add_province_modifier = { name = snowy_modifier duration = 7 } }
+					45 = { add_province_modifier = { name = ash_cloudy_modifier duration = 7 } }
 				}
 				
 				# DO NOT REMOVE THESE RANDOMS - THEY ARE WHAT MAKE THE RESULTS DIFFERENT IN EACH RANDOM_OWNED
@@ -2407,6 +2875,24 @@ country_event = {
 				random = { chance = 2 }
 				random = { chance = 2 }
 			}
+
+			# Summer - Mordor
+			any_neighbor_province = {
+				limit = {
+					has_province_modifier = summer_modifier_mordor
+				}
+				random_list = {
+					10 = { add_province_modifier = { name = sunny_modifier_4_season duration = 7 } }
+					35 = { add_province_modifier = { name = cloudy_modifier duration = 7 } }
+					5 = { add_province_modifier = { name = rainy_modifier_4_season duration = 7 } }
+					5 = { add_province_modifier = { name = windy_modifier duration = 7 } }
+					45 = { add_province_modifier = { name = ash_cloudy_modifier duration = 7 } }
+				}
+				
+				# DO NOT REMOVE THESE RANDOMS - THEY ARE WHAT MAKE THE RESULTS DIFFERENT IN EACH RANDOM_OWNED
+				random = { chance = 2 }
+				random = { chance = 2 }
+			}
 			
 			# Autumn/Spring - North
 			any_neighbor_province = {
@@ -2450,6 +2936,27 @@ country_event = {
 				random = { chance = 2 }
 				random = { chance = 2 }
 			}
+
+			# Autumn/Spring - Mordor
+			any_neighbor_province = {
+				limit = {
+					OR = {
+						has_province_modifier = autumn_modifier_mordor
+						has_province_modifier = spring_modifier_mordor
+					}
+				}
+				random_list = {
+					5 = { add_province_modifier = { name = sunny_modifier_4_season duration = 7 } }
+					30 = { add_province_modifier = { name = cloudy_modifier duration = 7 } }
+					10 = { add_province_modifier = { name = rainy_modifier_4_season duration = 7 } }
+					10 = { add_province_modifier = { name = windy_modifier duration = 7 } }
+					45 = { add_province_modifier = { name = ash_cloudy_modifier duration = 7 } }
+				}
+				
+				# DO NOT REMOVE THESE RANDOMS - THEY ARE WHAT MAKE THE RESULTS DIFFERENT IN EACH RANDOM_OWNED
+				random = { chance = 2 }
+				random = { chance = 2 }
+			}
 			
 			# Winter - North
 			any_neighbor_province = {
@@ -2480,6 +2987,24 @@ country_event = {
 					25 = { add_province_modifier = { name = rainy_modifier_4_season duration = 7 } }
 					10 = { add_province_modifier = { name = snowy_modifier duration = 7 } }
 					25 = { add_province_modifier = { name = windy_modifier duration = 7 } }
+				}
+				
+				# DO NOT REMOVE THESE RANDOMS - THEY ARE WHAT MAKE THE RESULTS DIFFERENT IN EACH RANDOM_OWNED
+				random = { chance = 2 }
+				random = { chance = 2 }
+			}
+
+			# Winter - Mordor
+			any_neighbor_province = {
+				limit = {
+					has_province_modifier = winter_modifier_mordor
+				}
+				random_list = {
+					35 = { add_province_modifier = { name = cloudy_modifier duration = 7 } }
+					5 = { add_province_modifier = { name = rainy_modifier_4_season duration = 7 } }
+					5 = { add_province_modifier = { name = windy_modifier duration = 7 } }
+					10 = { add_province_modifier = { name = snowy_modifier duration = 7 } }
+					45 = { add_province_modifier = { name = ash_cloudy_modifier duration = 7 } }
 				}
 				
 				# DO NOT REMOVE THESE RANDOMS - THEY ARE WHAT MAKE THE RESULTS DIFFERENT IN EACH RANDOM_OWNED
@@ -2553,6 +3078,25 @@ country_event = {
 				random = { chance = 3 }
 				random = { chance = 3 }
 			}
+
+			# Summer - Mordor
+			any_neighbor_province = {
+				limit = {
+					has_province_modifier = summer_modifier_mordor
+				}
+				random_list = {
+					10 = { add_province_modifier = { name = sunny_modifier_4_season duration = 7 } }
+					35 = { add_province_modifier = { name = cloudy_modifier duration = 7 } }
+					5 = { add_province_modifier = { name = rainy_modifier_4_season duration = 7 } }
+					5 = { add_province_modifier = { name = windy_modifier duration = 7 } }
+					45 = { add_province_modifier = { name = ash_cloudy_modifier duration = 7 } }
+				}
+				
+				# DO NOT REMOVE THESE RANDOMS - THEY ARE WHAT MAKE THE RESULTS DIFFERENT IN EACH RANDOM_OWNED
+				random = { chance = 3 }
+				random = { chance = 3 }
+				random = { chance = 3 }
+			}
 			
 			# Autumn/Spring - North
 			any_neighbor_province = {
@@ -2598,6 +3142,28 @@ country_event = {
 				random = { chance = 3 }
 				random = { chance = 3 }
 			}
+
+			# Autumn/Spring - Mordor
+			any_neighbor_province = {
+				limit = {
+					OR = {
+						has_province_modifier = autumn_modifier_mordor
+						has_province_modifier = spring_modifier_mordor
+					}
+				}
+				random_list = {
+					5 = { add_province_modifier = { name = sunny_modifier_4_season duration = 7 } }
+					30 = { add_province_modifier = { name = cloudy_modifier duration = 7 } }
+					10 = { add_province_modifier = { name = rainy_modifier_4_season duration = 7 } }
+					10 = { add_province_modifier = { name = windy_modifier duration = 7 } }
+					45 = { add_province_modifier = { name = ash_cloudy_modifier duration = 7 } }
+				}
+				
+				# DO NOT REMOVE THESE RANDOMS - THEY ARE WHAT MAKE THE RESULTS DIFFERENT IN EACH RANDOM_OWNED
+				random = { chance = 3 }
+				random = { chance = 3 }
+				random = { chance = 3 }
+			}
 			
 			# Winter - North
 			any_neighbor_province = {
@@ -2629,6 +3195,25 @@ country_event = {
 					25 = { add_province_modifier = { name = rainy_modifier_4_season duration = 7 } }
 					10 = { add_province_modifier = { name = snowy_modifier duration = 7 } }
 					25 = { add_province_modifier = { name = windy_modifier duration = 7 } }
+				}
+				
+				# DO NOT REMOVE THESE RANDOMS - THEY ARE WHAT MAKE THE RESULTS DIFFERENT IN EACH RANDOM_OWNED
+				random = { chance = 3 }
+				random = { chance = 3 }
+				random = { chance = 3 }
+			}
+
+			# Winter - Mordor
+			any_neighbor_province = {
+				limit = {
+					has_province_modifier = winter_modifier_mordor
+				}
+				random_list = {
+					35 = { add_province_modifier = { name = cloudy_modifier duration = 7 } }
+					5 = { add_province_modifier = { name = rainy_modifier_4_season duration = 7 } }
+					5 = { add_province_modifier = { name = windy_modifier duration = 7 } }
+					10 = { add_province_modifier = { name = snowy_modifier duration = 7 } }
+					45 = { add_province_modifier = { name = ash_cloudy_modifier duration = 7 } }
 				}
 				
 				# DO NOT REMOVE THESE RANDOMS - THEY ARE WHAT MAKE THE RESULTS DIFFERENT IN EACH RANDOM_OWNED
@@ -2706,6 +3291,26 @@ country_event = {
 				random = { chance = 4 }
 				random = { chance = 4 }
 			}
+
+			# Summer - Mordor
+			any_neighbor_province = {
+				limit = {
+					has_province_modifier = summer_modifier_mordor
+				}
+				random_list = {
+					10 = { add_province_modifier = { name = sunny_modifier_4_season duration = 7 } }
+					35 = { add_province_modifier = { name = cloudy_modifier duration = 7 } }
+					5 = { add_province_modifier = { name = rainy_modifier_4_season duration = 7 } }
+					5 = { add_province_modifier = { name = windy_modifier duration = 7 } }
+					45 = { add_province_modifier = { name = ash_cloudy_modifier duration = 7 } }
+				}
+				
+				# DO NOT REMOVE THESE RANDOMS - THEY ARE WHAT MAKE THE RESULTS DIFFERENT IN EACH RANDOM_OWNED
+				random = { chance = 4 }
+				random = { chance = 4 }
+				random = { chance = 4 }
+				random = { chance = 4 }
+			}
 			
 			# Autumn/Spring - North
 			any_neighbor_province = {
@@ -2753,6 +3358,29 @@ country_event = {
 				random = { chance = 4 }
 				random = { chance = 4 }
 			}
+
+			# Autumn/Spring - Mordor
+			any_neighbor_province = {
+				limit = {
+					OR = {
+						has_province_modifier = autumn_modifier_mordor
+						has_province_modifier = spring_modifier_mordor
+					}
+				}
+				random_list = {
+					5 = { add_province_modifier = { name = sunny_modifier_4_season duration = 7 } }
+					30 = { add_province_modifier = { name = cloudy_modifier duration = 7 } }
+					10 = { add_province_modifier = { name = rainy_modifier_4_season duration = 7 } }
+					10 = { add_province_modifier = { name = windy_modifier duration = 7 } }
+					45 = { add_province_modifier = { name = ash_cloudy_modifier duration = 7 } }
+				}
+				
+				# DO NOT REMOVE THESE RANDOMS - THEY ARE WHAT MAKE THE RESULTS DIFFERENT IN EACH RANDOM_OWNED
+				random = { chance = 4 }
+				random = { chance = 4 }
+				random = { chance = 4 }
+				random = { chance = 4 }
+			}
 			
 			# Winter - North
 			any_neighbor_province = {
@@ -2785,6 +3413,26 @@ country_event = {
 					25 = { add_province_modifier = { name = rainy_modifier_4_season duration = 7 } }
 					10 = { add_province_modifier = { name = snowy_modifier duration = 7 } }
 					25 = { add_province_modifier = { name = windy_modifier duration = 7 } }
+				}
+				
+				# DO NOT REMOVE THESE RANDOMS - THEY ARE WHAT MAKE THE RESULTS DIFFERENT IN EACH RANDOM_OWNED
+				random = { chance = 4 }
+				random = { chance = 4 }
+				random = { chance = 4 }
+				random = { chance = 4 }
+			}
+
+			# Winter - Mordor
+			any_neighbor_province = {
+				limit = {
+					has_province_modifier = winter_modifier_mordor
+				}
+				random_list = {
+					35 = { add_province_modifier = { name = cloudy_modifier duration = 7 } }
+					5 = { add_province_modifier = { name = rainy_modifier_4_season duration = 7 } }
+					5 = { add_province_modifier = { name = windy_modifier duration = 7 } }
+					10 = { add_province_modifier = { name = snowy_modifier duration = 7 } }
+					45 = { add_province_modifier = { name = ash_cloudy_modifier duration = 7 } }
 				}
 				
 				# DO NOT REMOVE THESE RANDOMS - THEY ARE WHAT MAKE THE RESULTS DIFFERENT IN EACH RANDOM_OWNED
@@ -2866,6 +3514,27 @@ country_event = {
 				random = { chance = 5 }
 				random = { chance = 5 }
 			}
+
+			# Summer - Mordor
+			any_neighbor_province = {
+				limit = {
+					has_province_modifier = summer_modifier_mordor
+				}
+				random_list = {
+					10 = { add_province_modifier = { name = sunny_modifier_4_season duration = 7 } }
+					35 = { add_province_modifier = { name = cloudy_modifier duration = 7 } }
+					5 = { add_province_modifier = { name = rainy_modifier_4_season duration = 7 } }
+					5 = { add_province_modifier = { name = windy_modifier duration = 7 } }
+					45 = { add_province_modifier = { name = ash_cloudy_modifier duration = 7 } }
+				}
+				
+				# DO NOT REMOVE THESE RANDOMS - THEY ARE WHAT MAKE THE RESULTS DIFFERENT IN EACH RANDOM_OWNED
+				random = { chance = 5 }
+				random = { chance = 5 }
+				random = { chance = 5 }
+				random = { chance = 5 }
+				random = { chance = 5 }
+			}
 			
 			# Autumn/Spring - North
 			any_neighbor_province = {
@@ -2915,6 +3584,30 @@ country_event = {
 				random = { chance = 5 }
 				random = { chance = 5 }
 			}
+
+			# Autumn/Spring - Mordor
+			any_neighbor_province = {
+				limit = {
+					OR = {
+						has_province_modifier = autumn_modifier_mordor
+						has_province_modifier = spring_modifier_mordor
+					}
+				}
+				random_list = {
+					5 = { add_province_modifier = { name = sunny_modifier_4_season duration = 7 } }
+					30 = { add_province_modifier = { name = cloudy_modifier duration = 7 } }
+					10 = { add_province_modifier = { name = rainy_modifier_4_season duration = 7 } }
+					10 = { add_province_modifier = { name = windy_modifier duration = 7 } }
+					45 = { add_province_modifier = { name = ash_cloudy_modifier duration = 7 } }
+				}
+				
+				# DO NOT REMOVE THESE RANDOMS - THEY ARE WHAT MAKE THE RESULTS DIFFERENT IN EACH RANDOM_OWNED
+				random = { chance = 5 }
+				random = { chance = 5 }
+				random = { chance = 5 }
+				random = { chance = 5 }
+				random = { chance = 5 }
+			}
 			
 			# Winter - North
 			any_neighbor_province = {
@@ -2948,6 +3641,27 @@ country_event = {
 					25 = { add_province_modifier = { name = rainy_modifier_4_season duration = 7 } }
 					10 = { add_province_modifier = { name = snowy_modifier duration = 7 } }
 					25 = { add_province_modifier = { name = windy_modifier duration = 7 } }
+				}
+				
+				# DO NOT REMOVE THESE RANDOMS - THEY ARE WHAT MAKE THE RESULTS DIFFERENT IN EACH RANDOM_OWNED
+				random = { chance = 5 }
+				random = { chance = 5 }
+				random = { chance = 5 }
+				random = { chance = 5 }
+				random = { chance = 5 }
+			}
+
+			# Winter - Mordor
+			any_neighbor_province = {
+				limit = {
+					has_province_modifier = winter_modifier_mordor
+				}
+				random_list = {
+					35 = { add_province_modifier = { name = cloudy_modifier duration = 7 } }
+					5 = { add_province_modifier = { name = rainy_modifier_4_season duration = 7 } }
+					5 = { add_province_modifier = { name = windy_modifier duration = 7 } }
+					10 = { add_province_modifier = { name = snowy_modifier duration = 7 } }
+					45 = { add_province_modifier = { name = ash_cloudy_modifier duration = 7 } }
 				}
 				
 				# DO NOT REMOVE THESE RANDOMS - THEY ARE WHAT MAKE THE RESULTS DIFFERENT IN EACH RANDOM_OWNED
@@ -3033,6 +3747,28 @@ country_event = {
 				random = { chance = 6 }
 				random = { chance = 6 }
 			}
+
+			# Summer - Mordor
+			any_neighbor_province = {
+				limit = {
+					has_province_modifier = summer_modifier_mordor
+				}
+				random_list = {
+					10 = { add_province_modifier = { name = sunny_modifier_4_season duration = 7 } }
+					35 = { add_province_modifier = { name = cloudy_modifier duration = 7 } }
+					5 = { add_province_modifier = { name = rainy_modifier_4_season duration = 7 } }
+					5 = { add_province_modifier = { name = windy_modifier duration = 7 } }
+					45 = { add_province_modifier = { name = ash_cloudy_modifier duration = 7 } }
+				}
+				
+				# DO NOT REMOVE THESE RANDOMS - THEY ARE WHAT MAKE THE RESULTS DIFFERENT IN EACH RANDOM_OWNED
+				random = { chance = 6 }
+				random = { chance = 6 }
+				random = { chance = 6 }
+				random = { chance = 6 }
+				random = { chance = 6 }
+				random = { chance = 6 }
+			}
 			
 			# Autumn/Spring - North
 			any_neighbor_province = {
@@ -3084,6 +3820,31 @@ country_event = {
 				random = { chance = 6 }
 				random = { chance = 6 }
 			}
+
+			# Autumn/Spring - Mordor
+			any_neighbor_province = {
+				limit = {
+					OR = {
+						has_province_modifier = autumn_modifier_mordor
+						has_province_modifier = spring_modifier_mordor
+					}
+				}
+				random_list = {
+					5 = { add_province_modifier = { name = sunny_modifier_4_season duration = 7 } }
+					30 = { add_province_modifier = { name = cloudy_modifier duration = 7 } }
+					10 = { add_province_modifier = { name = rainy_modifier_4_season duration = 7 } }
+					10 = { add_province_modifier = { name = windy_modifier duration = 7 } }
+					45 = { add_province_modifier = { name = ash_cloudy_modifier duration = 7 } }
+				}
+				
+				# DO NOT REMOVE THESE RANDOMS - THEY ARE WHAT MAKE THE RESULTS DIFFERENT IN EACH RANDOM_OWNED
+				random = { chance = 6 }
+				random = { chance = 6 }
+				random = { chance = 6 }
+				random = { chance = 6 }
+				random = { chance = 6 }
+				random = { chance = 6 }
+			}
 			
 			# Winter - North
 			any_neighbor_province = {
@@ -3118,6 +3879,28 @@ country_event = {
 					25 = { add_province_modifier = { name = rainy_modifier_4_season duration = 7 } }
 					10 = { add_province_modifier = { name = snowy_modifier duration = 7 } }
 					25 = { add_province_modifier = { name = windy_modifier duration = 7 } }
+				}
+				
+				# DO NOT REMOVE THESE RANDOMS - THEY ARE WHAT MAKE THE RESULTS DIFFERENT IN EACH RANDOM_OWNED
+				random = { chance = 6 }
+				random = { chance = 6 }
+				random = { chance = 6 }
+				random = { chance = 6 }
+				random = { chance = 6 }
+				random = { chance = 6 }
+			}
+
+			# Winter - Mordor
+			any_neighbor_province = {
+				limit = {
+					has_province_modifier = winter_modifier_mordor
+				}
+				random_list = {
+					35 = { add_province_modifier = { name = cloudy_modifier duration = 7 } }
+					5 = { add_province_modifier = { name = rainy_modifier_4_season duration = 7 } }
+					5 = { add_province_modifier = { name = windy_modifier duration = 7 } }
+					10 = { add_province_modifier = { name = snowy_modifier duration = 7 } }
+					45 = { add_province_modifier = { name = ash_cloudy_modifier duration = 7 } }
 				}
 				
 				# DO NOT REMOVE THESE RANDOMS - THEY ARE WHAT MAKE THE RESULTS DIFFERENT IN EACH RANDOM_OWNED
@@ -3207,6 +3990,29 @@ country_event = {
 				random = { chance = 7 }
 				random = { chance = 7 }
 			}
+
+			# Summer - Mordor
+			any_neighbor_province = {
+				limit = {
+					has_province_modifier = summer_modifier_mordor
+				}
+				random_list = {
+					10 = { add_province_modifier = { name = sunny_modifier_4_season duration = 7 } }
+					35 = { add_province_modifier = { name = cloudy_modifier duration = 7 } }
+					5 = { add_province_modifier = { name = rainy_modifier_4_season duration = 7 } }
+					5 = { add_province_modifier = { name = windy_modifier duration = 7 } }
+					45 = { add_province_modifier = { name = ash_cloudy_modifier duration = 7 } }
+				}
+				
+				# DO NOT REMOVE THESE RANDOMS - THEY ARE WHAT MAKE THE RESULTS DIFFERENT IN EACH RANDOM_OWNED
+				random = { chance = 7 }
+				random = { chance = 7 }
+				random = { chance = 7 }
+				random = { chance = 7 }
+				random = { chance = 7 }
+				random = { chance = 7 }
+				random = { chance = 7 }
+			}
 			
 			# Autumn/Spring - North
 			any_neighbor_province = {
@@ -3260,6 +4066,32 @@ country_event = {
 				random = { chance = 7 }
 				random = { chance = 7 }
 			}
+
+			# Autumn/Spring - Mordor
+			any_neighbor_province = {
+				limit = {
+					OR = {
+						has_province_modifier = autumn_modifier_mordor
+						has_province_modifier = spring_modifier_mordor
+					}
+				}
+				random_list = {
+					5 = { add_province_modifier = { name = sunny_modifier_4_season duration = 7 } }
+					30 = { add_province_modifier = { name = cloudy_modifier duration = 7 } }
+					10 = { add_province_modifier = { name = rainy_modifier_4_season duration = 7 } }
+					10 = { add_province_modifier = { name = windy_modifier duration = 7 } }
+					45 = { add_province_modifier = { name = ash_cloudy_modifier duration = 7 } }
+				}
+				
+				# DO NOT REMOVE THESE RANDOMS - THEY ARE WHAT MAKE THE RESULTS DIFFERENT IN EACH RANDOM_OWNED
+				random = { chance = 7 }
+				random = { chance = 7 }
+				random = { chance = 7 }
+				random = { chance = 7 }
+				random = { chance = 7 }
+				random = { chance = 7 }
+				random = { chance = 7 }
+			}
 			
 			# Winter - North
 			any_neighbor_province = {
@@ -3295,6 +4127,29 @@ country_event = {
 					25 = { add_province_modifier = { name = rainy_modifier_4_season duration = 7 } }
 					10 = { add_province_modifier = { name = snowy_modifier duration = 7 } }
 					25 = { add_province_modifier = { name = windy_modifier duration = 7 } }
+				}
+				
+				# DO NOT REMOVE THESE RANDOMS - THEY ARE WHAT MAKE THE RESULTS DIFFERENT IN EACH RANDOM_OWNED
+				random = { chance = 7 }
+				random = { chance = 7 }
+				random = { chance = 7 }
+				random = { chance = 7 }
+				random = { chance = 7 }
+				random = { chance = 7 }
+				random = { chance = 7 }
+			}
+
+			# Winter - Mordor
+			any_neighbor_province = {
+				limit = {
+					has_province_modifier = winter_modifier_mordor
+				}
+				random_list = {
+					35 = { add_province_modifier = { name = cloudy_modifier duration = 7 } }
+					5 = { add_province_modifier = { name = rainy_modifier_4_season duration = 7 } }
+					5 = { add_province_modifier = { name = windy_modifier duration = 7 } }
+					10 = { add_province_modifier = { name = snowy_modifier duration = 7 } }
+					45 = { add_province_modifier = { name = ash_cloudy_modifier duration = 7 } }
 				}
 				
 				# DO NOT REMOVE THESE RANDOMS - THEY ARE WHAT MAKE THE RESULTS DIFFERENT IN EACH RANDOM_OWNED
@@ -3388,6 +4243,30 @@ country_event = {
 				random = { chance = 8 }
 				random = { chance = 8 }
 			}
+
+			# Summer - Mordor
+			any_neighbor_province = {
+				limit = {
+					has_province_modifier = summer_modifier_mordor
+				}
+				random_list = {
+					10 = { add_province_modifier = { name = sunny_modifier_4_season duration = 7 } }
+					35 = { add_province_modifier = { name = cloudy_modifier duration = 7 } }
+					5 = { add_province_modifier = { name = rainy_modifier_4_season duration = 7 } }
+					5 = { add_province_modifier = { name = windy_modifier duration = 7 } }
+					45 = { add_province_modifier = { name = ash_cloudy_modifier duration = 7 } }
+				}
+				
+				# DO NOT REMOVE THESE RANDOMS - THEY ARE WHAT MAKE THE RESULTS DIFFERENT IN EACH RANDOM_OWNED
+				random = { chance = 8 }
+				random = { chance = 8 }
+				random = { chance = 8 }
+				random = { chance = 8 }
+				random = { chance = 8 }
+				random = { chance = 8 }
+				random = { chance = 8 }
+				random = { chance = 8 }
+			}
 			
 			# Autumn/Spring - North
 			any_neighbor_province = {
@@ -3443,6 +4322,33 @@ country_event = {
 				random = { chance = 8 }
 				random = { chance = 8 }
 			}
+
+			# Autumn/Spring - Mordor
+			any_neighbor_province = {
+				limit = {
+					OR = {
+						has_province_modifier = autumn_modifier_mordor
+						has_province_modifier = spring_modifier_mordor
+					}
+				}
+				random_list = {
+					5 = { add_province_modifier = { name = sunny_modifier_4_season duration = 7 } }
+					30 = { add_province_modifier = { name = cloudy_modifier duration = 7 } }
+					10 = { add_province_modifier = { name = rainy_modifier_4_season duration = 7 } }
+					10 = { add_province_modifier = { name = windy_modifier duration = 7 } }
+					45 = { add_province_modifier = { name = ash_cloudy_modifier duration = 7 } }
+				}
+				
+				# DO NOT REMOVE THESE RANDOMS - THEY ARE WHAT MAKE THE RESULTS DIFFERENT IN EACH RANDOM_OWNED
+				random = { chance = 8 }
+				random = { chance = 8 }
+				random = { chance = 8 }
+				random = { chance = 8 }
+				random = { chance = 8 }
+				random = { chance = 8 }
+				random = { chance = 8 }
+				random = { chance = 8 }
+			}
 			
 			# Winter - North
 			any_neighbor_province = {
@@ -3479,6 +4385,30 @@ country_event = {
 					25 = { add_province_modifier = { name = rainy_modifier_4_season duration = 7 } }
 					10 = { add_province_modifier = { name = snowy_modifier duration = 7 } }
 					25 = { add_province_modifier = { name = windy_modifier duration = 7 } }
+				}
+				
+				# DO NOT REMOVE THESE RANDOMS - THEY ARE WHAT MAKE THE RESULTS DIFFERENT IN EACH RANDOM_OWNED
+				random = { chance = 8 }
+				random = { chance = 8 }
+				random = { chance = 8 }
+				random = { chance = 8 }
+				random = { chance = 8 }
+				random = { chance = 8 }
+				random = { chance = 8 }
+				random = { chance = 8 }
+			}
+
+			# Winter - Mordor
+			any_neighbor_province = {
+				limit = {
+					has_province_modifier = winter_modifier_mordor
+				}
+				random_list = {
+					35 = { add_province_modifier = { name = cloudy_modifier duration = 7 } }
+					5 = { add_province_modifier = { name = rainy_modifier_4_season duration = 7 } }
+					5 = { add_province_modifier = { name = windy_modifier duration = 7 } }
+					10 = { add_province_modifier = { name = snowy_modifier duration = 7 } }
+					45 = { add_province_modifier = { name = ash_cloudy_modifier duration = 7 } }
 				}
 				
 				# DO NOT REMOVE THESE RANDOMS - THEY ARE WHAT MAKE THE RESULTS DIFFERENT IN EACH RANDOM_OWNED
@@ -3576,6 +4506,31 @@ country_event = {
 				random = { chance = 9 }
 				random = { chance = 9 }
 			}
+
+			# Summer - Mordor
+			any_neighbor_province = {
+				limit = {
+					has_province_modifier = summer_modifier_mordor
+				}
+				random_list = {
+					10 = { add_province_modifier = { name = sunny_modifier_4_season duration = 7 } }
+					35 = { add_province_modifier = { name = cloudy_modifier duration = 7 } }
+					5 = { add_province_modifier = { name = rainy_modifier_4_season duration = 7 } }
+					5 = { add_province_modifier = { name = windy_modifier duration = 7 } }
+					45 = { add_province_modifier = { name = ash_cloudy_modifier duration = 7 } }
+				}
+				
+				# DO NOT REMOVE THESE RANDOMS - THEY ARE WHAT MAKE THE RESULTS DIFFERENT IN EACH RANDOM_OWNED
+				random = { chance = 9 }
+				random = { chance = 9 }
+				random = { chance = 9 }
+				random = { chance = 9 }
+				random = { chance = 9 }
+				random = { chance = 9 }
+				random = { chance = 9 }
+				random = { chance = 9 }
+				random = { chance = 9 }
+			}
 			
 			# Autumn/Spring - North
 			any_neighbor_province = {
@@ -3633,6 +4588,34 @@ country_event = {
 				random = { chance = 9 }
 				random = { chance = 9 }
 			}
+
+			# Autumn/Spring - Mordor
+			any_neighbor_province = {
+				limit = {
+					OR = {
+						has_province_modifier = autumn_modifier_mordor
+						has_province_modifier = spring_modifier_mordor
+					}
+				}
+				random_list = {
+					5 = { add_province_modifier = { name = sunny_modifier_4_season duration = 7 } }
+					30 = { add_province_modifier = { name = cloudy_modifier duration = 7 } }
+					10 = { add_province_modifier = { name = rainy_modifier_4_season duration = 7 } }
+					10 = { add_province_modifier = { name = windy_modifier duration = 7 } }
+					45 = { add_province_modifier = { name = ash_cloudy_modifier duration = 7 } }
+				}
+				
+				# DO NOT REMOVE THESE RANDOMS - THEY ARE WHAT MAKE THE RESULTS DIFFERENT IN EACH RANDOM_OWNED
+				random = { chance = 9 }
+				random = { chance = 9 }
+				random = { chance = 9 }
+				random = { chance = 9 }
+				random = { chance = 9 }
+				random = { chance = 9 }
+				random = { chance = 9 }
+				random = { chance = 9 }
+				random = { chance = 9 }
+			}
 			
 			# Winter - North
 			any_neighbor_province = {
@@ -3670,6 +4653,31 @@ country_event = {
 					25 = { add_province_modifier = { name = rainy_modifier_4_season duration = 7 } }
 					10 = { add_province_modifier = { name = snowy_modifier duration = 7 } }
 					25 = { add_province_modifier = { name = windy_modifier duration = 7 } }
+				}
+				
+				# DO NOT REMOVE THESE RANDOMS - THEY ARE WHAT MAKE THE RESULTS DIFFERENT IN EACH RANDOM_OWNED
+				random = { chance = 9 }
+				random = { chance = 9 }
+				random = { chance = 9 }
+				random = { chance = 9 }
+				random = { chance = 9 }
+				random = { chance = 9 }
+				random = { chance = 9 }
+				random = { chance = 9 }
+				random = { chance = 9 }
+			}
+
+			# Winter - Mordor
+			any_neighbor_province = {
+				limit = {
+					has_province_modifier = winter_modifier_mordor
+				}
+				random_list = {
+					35 = { add_province_modifier = { name = cloudy_modifier duration = 7 } }
+					5 = { add_province_modifier = { name = rainy_modifier_4_season duration = 7 } }
+					5 = { add_province_modifier = { name = windy_modifier duration = 7 } }
+					10 = { add_province_modifier = { name = snowy_modifier duration = 7 } }
+					45 = { add_province_modifier = { name = ash_cloudy_modifier duration = 7 } }
 				}
 				
 				# DO NOT REMOVE THESE RANDOMS - THEY ARE WHAT MAKE THE RESULTS DIFFERENT IN EACH RANDOM_OWNED
@@ -3770,6 +4778,20 @@ country_event = {
 				random = { chance = 10 }
 				random = { chance = 10 }
 			}
+
+			# Summer - Mordor
+			any_neighbor_province = {
+				limit = {
+					has_province_modifier = summer_modifier_mordor
+				}
+				random_list = {
+					10 = { add_province_modifier = { name = sunny_modifier_4_season duration = 7 } }
+					35 = { add_province_modifier = { name = cloudy_modifier duration = 7 } }
+					5 = { add_province_modifier = { name = rainy_modifier_4_season duration = 7 } }
+					5 = { add_province_modifier = { name = windy_modifier duration = 7 } }
+					45 = { add_province_modifier = { name = ash_cloudy_modifier duration = 7 } }
+				}
+			}
 			
 			# Autumn/Spring - North
 			any_neighbor_province = {
@@ -3829,6 +4851,23 @@ country_event = {
 				random = { chance = 10 }
 				random = { chance = 10 }
 			}
+
+			# Autumn/Spring - Mordor
+			any_neighbor_province = {
+				limit = {
+					OR = {
+						has_province_modifier = autumn_modifier_mordor
+						has_province_modifier = spring_modifier_mordor
+					}
+				}
+				random_list = {
+					5 = { add_province_modifier = { name = sunny_modifier_4_season duration = 7 } }
+					30 = { add_province_modifier = { name = cloudy_modifier duration = 7 } }
+					10 = { add_province_modifier = { name = rainy_modifier_4_season duration = 7 } }
+					10 = { add_province_modifier = { name = windy_modifier duration = 7 } }
+					45 = { add_province_modifier = { name = ash_cloudy_modifier duration = 7 } }
+				}
+			}
 			
 			# Winter - North
 			any_neighbor_province = {
@@ -3880,6 +4919,20 @@ country_event = {
 				random = { chance = 10 }
 				random = { chance = 10 }
 				random = { chance = 10 }
+			}
+
+			# Winter - Mordor
+			any_neighbor_province = {
+				limit = {
+					has_province_modifier = winter_modifier_mordor
+				}
+				random_list = {
+					35 = { add_province_modifier = { name = cloudy_modifier duration = 7 } }
+					5 = { add_province_modifier = { name = rainy_modifier_4_season duration = 7 } }
+					5 = { add_province_modifier = { name = windy_modifier duration = 7 } }
+					10 = { add_province_modifier = { name = snowy_modifier duration = 7 } }
+					45 = { add_province_modifier = { name = ash_cloudy_modifier duration = 7 } }
+				}
 			}
 			
 			# Dry
@@ -3941,6 +4994,269 @@ country_event = {
 		
 		# Refire the cleanup event in a week
 		country_event = { id = 99002 days = 7 }
+	}
+}
+
+# Alliance of Dwarves and Men Monthly Cleanup
+country_event = {
+	id = 99003
+	title = "Alliance of Dwarves and Men Monthly Cleanup"
+	desc = "EVTDESC99003"
+	picture = "production"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Fix it please"
+		
+		# Resetting from previous month's ai selection
+		clr_global_flag = alliance_dwarves_men_ai_make_voting_selection
+		any_country = { clr_country_flag = alliance_dwarves_men_attempted_voting_selection }
+		
+		# Enforcing the economic union {
+		clr_global_flag = alliance_of_dwarves_and_men_gp_detected
+		
+		any_greater_power = {
+			limit = { has_country_modifier = alliance_of_dwarves_and_men }
+			set_global_flag = alliance_of_dwarves_and_men_gp_detected
+		}
+		
+		any_country = {
+			limit = {
+				has_country_modifier = alliance_of_dwarves_and_men
+				has_global_flag = alliance_of_dwarves_and_men_economic_union_enacted
+				has_global_flag = alliance_of_dwarves_and_men_gp_detected
+				is_greater_power = no
+				OR = {
+					ai = yes # hitting every ai realm in case a new alliance member GP shows up. This won't cover a player, but it'll be rare that a not hitting a player-realm will actually affect gameplay
+					sphere_owner = { NOT = { has_country_modifier = alliance_of_dwarves_and_men } }
+					part_of_sphere = no
+				}
+			}
+			sphere_owner = { diplomatic_influence = { who = THIS value = -200 } }
+			country_event = 110160 # Enforcing spheres
+		}
+		# }
+		
+		# Kicking members who no longer fit the requirements
+		any_country = {
+			limit = {
+				has_country_modifier = alliance_of_dwarves_and_men
+				OR = {
+					is_vassal = yes
+					good_evil_alignment = evil_alignment
+					exists = no
+				}
+			}
+			country_event = 110170 # Leaving the Alliance
+		}
+		
+		# Detecting the collapse of the Alliance (0 or 1 members) {
+		set_variable = { which = alliance_of_dwarves_and_men_count value = 0 }
+		
+		any_country = {
+			limit = { has_country_modifier = alliance_of_dwarves_and_men }
+			THIS = { change_variable = { which = alliance_of_dwarves_and_men_count value = 1 } }
+		}
+		
+		random_owned = {
+			limit = {
+				owner = {
+					NOT = { check_variable = { which = alliance_of_dwarves_and_men_count value = 1.9 } }
+					NOT = { exists = FFN }
+				}
+			}
+			owner = {
+				any_country = {
+					limit = {
+						OR = {
+							has_country_modifier = alliance_of_dwarves_and_men
+							ai = no
+						}
+					}
+					country_event = 110171 # The end of the Alliance of Dwarves and Men
+				}
+				set_global_flag = end_of_the_alliance_of_dwarves_and_men
+				country_event = 110110
+			}
+		}
+		
+		random_owned = {
+			limit = { owner = { exists = FFN } }
+			owner = {
+				set_global_flag = end_of_the_alliance_of_dwarves_and_men
+				country_event = 110110
+			}
+		}
+		# }
+		
+		# Having the ai decide to do things
+		random_country = {
+			limit = {
+				has_country_modifier = alliance_of_dwarves_and_men
+				ai = yes
+				NOT = { has_global_flag = end_of_the_alliance_of_dwarves_and_men }
+			}
+			country_event = 110177
+		}
+		
+		# Refire the cleanup event next month {
+		random_owned = {
+			limit = { owner = { NOT = { has_global_flag = end_of_the_alliance_of_dwarves_and_men } } }
+			owner = {
+				random_owned = {
+					limit = {
+						OR = {
+							# January
+							NOT = { month = 1 }
+							AND = { # March
+								month = 2
+								NOT = { month = 3 }
+							}
+							AND = { # May
+								month = 4
+								NOT = { month = 5 }
+							}
+							AND = { # July
+								month = 6
+								NOT = { month = 7 }
+							}
+							AND = { # August
+								month = 7
+								NOT = { month = 8 }
+							}
+							AND = { # October
+								month = 9
+								NOT = { month = 10 }
+							}
+							# December
+							month = 11
+						}
+					}
+					owner = { country_event = { id = 99003 days = 31 } }
+				}
+				random_owned = {
+					limit = { # February
+						month = 1
+						NOT = { month = 2 }
+					}
+					owner = { country_event = { id = 99003 days = 28 } }
+				}
+				random_owned = {
+					limit = {
+						OR = {
+							AND = { # April
+								month = 3
+								NOT = { month = 4 }
+							}
+							AND = { # June
+								month = 5
+								NOT = { month = 6 }
+							}
+							AND = { # September
+								month = 8
+								NOT = { month = 9 }
+							}
+							AND = { # November
+								month = 10
+								NOT = { month = 11 }
+							}
+						}
+					}
+					owner = { country_event = { id = 99003 days = 30 } }
+				}
+			}
+		}
+		# }
+	}
+}
+
+# Generic Yearly Cleanup 1
+country_event = {
+	id = 99004
+	title = "Generic Cleanup - Yearly 1"
+	desc = "EVTDESC99004"
+	picture = "production"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Fix it please"
+		
+		# Increase DAL-ERE Alliance points by 1 every year they are allied
+		random_country = {
+			limit = {
+				has_country_flag = DAL_content
+				has_country_modifier = erebor_relations_modifier
+				alliance_with = ERE
+			}
+			change_variable = { name = erebor_relations value = 1 }
+		}
+		
+		# Guild-led DAL
+		random_country = {
+			limit = {
+				has_country_flag = DAL_content
+				ruling_party_ideology = lakemen_fishers_guild
+			}
+			upper_house = { ideology = lakemen_fishers_guild value = 0.5 }
+		}
+		
+		# Refire the cleanup event next year
+		country_event = { id = 99004 days = 365 }
+	}
+}
+
+# End Wars for Nonexistant Realms
+country_event = {
+	id = 99005
+	title = "Generic Cleanup -- Monthly Nonexistant Realms End Wars"
+	desc = "EVTDESC99000"
+	picture = "production"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Fix it please"
+		
+		any_country = {
+			limit = { war_with = THIS }
+			end_war = THIS
+		}
+	}
+}
+
+# Clean up overlords that no longer exist
+country_event = {
+	id = 99006
+	title = "Generic Cleanup -- Clean up Nonexistant Overlords"
+	desc = "EVTDESC99006"
+	picture = "production"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Let us be rid of it!"
+		
+		overlord = { release_vassal = THIS }
+	}
+}
+
+# Clean up overlords that no longer exist
+country_event = {
+	id = 99007
+	title = "Removal of Voting Reform Restrictions"
+	desc = "EVTDESC99007"
+	picture = "administration"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "I understand"
+		
+		unlocks_voting_reform_loc = { }
+		
+		clr_country_flag = locked_voting
 	}
 }
 
@@ -4075,6 +5391,30 @@ country_event = {
 			}
 			
 			random_owned = {
+				limit = { owner = { has_country_modifier = alliance_of_dwarves_and_men_cannot_join } }
+				owner = {
+					change_variable = { which = modifier_count value = 1 }
+					change_variable = { which = total_modifier_count value = 1 }
+				}
+			}
+			
+			random_owned = {
+				limit = { owner = { has_country_modifier = alliance_of_dwarves_and_men_union_countdown } }
+				owner = {
+					change_variable = { which = modifier_count value = 1 }
+					change_variable = { which = total_modifier_count value = 1 }
+				}
+			}
+			
+			random_owned = {
+				limit = { owner = { has_country_modifier = alliance_of_dwarves_and_men_recently_voted } }
+				owner = {
+					change_variable = { which = modifier_count value = 1 }
+					change_variable = { which = total_modifier_count value = 1 }
+				}
+			}
+			
+			random_owned = {
 				limit = { owner = { has_country_modifier = no_points_for_you } }
 				owner = {
 					change_variable = { which = modifier_count value = 1 }
@@ -4108,6 +5448,14 @@ country_event = {
 			
 			random_owned = {
 				limit = { owner = { has_country_modifier = low_military_recruitment } }
+				owner = {
+					change_variable = { which = modifier_count value = 1 }
+					change_variable = { which = total_modifier_count value = 1 }
+				}
+			}
+			
+			random_owned = {
+				limit = { owner = { has_country_modifier = call_to_arms_cooldown } }
 				owner = {
 					change_variable = { which = modifier_count value = 1 }
 					change_variable = { which = total_modifier_count value = 1 }
@@ -4172,150 +5520,6 @@ country_event = {
 			
 			random_owned = {
 				limit = { owner = { has_country_modifier = no_more_war } }
-				owner = {
-					change_variable = { which = modifier_count value = 1 }
-					change_variable = { which = total_modifier_count value = 1 }
-				}
-			}
-			
-			random_owned = {
-				limit = { owner = { has_country_modifier = kind } }
-				owner = {
-					change_variable = { which = modifier_count value = 1 }
-					change_variable = { which = total_modifier_count value = 1 }
-				}
-			}
-			
-			random_owned = {
-				limit = { owner = { has_country_modifier = smart_modifier } }
-				owner = {
-					change_variable = { which = modifier_count value = 1 }
-					change_variable = { which = total_modifier_count value = 1 }
-				}
-			}
-			
-			random_owned = {
-				limit = { owner = { has_country_modifier = of_noble_house } }
-				owner = {
-					change_variable = { which = modifier_count value = 1 }
-					change_variable = { which = total_modifier_count value = 1 }
-				}
-			}
-			
-			random_owned = {
-				limit = { owner = { has_country_modifier = defensive_modifier } }
-				owner = {
-					change_variable = { which = modifier_count value = 1 }
-					change_variable = { which = total_modifier_count value = 1 }
-				}
-			}
-			
-			random_owned = {
-				limit = { owner = { has_country_modifier = aggressive_modifier } }
-				owner = {
-					change_variable = { which = modifier_count value = 1 }
-					change_variable = { which = total_modifier_count value = 1 }
-				}
-			}
-			
-			random_owned = {
-				limit = { owner = { has_country_modifier = strong } }
-				owner = {
-					change_variable = { which = modifier_count value = 1 }
-					change_variable = { which = total_modifier_count value = 1 }
-				}
-			}
-			
-			random_owned = {
-				limit = { owner = { has_country_modifier = honest } }
-				owner = {
-					change_variable = { which = modifier_count value = 1 }
-					change_variable = { which = total_modifier_count value = 1 }
-				}
-			}
-			
-			random_owned = {
-				limit = { owner = { has_country_modifier = deceitful } }
-				owner = {
-					change_variable = { which = modifier_count value = 1 }
-					change_variable = { which = total_modifier_count value = 1 }
-				}
-			}
-			
-			random_owned = {
-				limit = { owner = { has_country_modifier = aristocrat_modifier } }
-				owner = {
-					change_variable = { which = modifier_count value = 1 }
-					change_variable = { which = total_modifier_count value = 1 }
-				}
-			}
-			
-			random_owned = {
-				limit = { owner = { has_country_modifier = of_the_people } }
-				owner = {
-					change_variable = { which = modifier_count value = 1 }
-					change_variable = { which = total_modifier_count value = 1 }
-				}
-			}
-			
-			random_owned = {
-				limit = { owner = { has_country_modifier = charlatan } }
-				owner = {
-					change_variable = { which = modifier_count value = 1 }
-					change_variable = { which = total_modifier_count value = 1 }
-				}
-			}
-			
-			random_owned = {
-				limit = { owner = { has_country_modifier = wise_ruler } }
-				owner = {
-					change_variable = { which = modifier_count value = 1 }
-					change_variable = { which = total_modifier_count value = 1 }
-				}
-			}
-			
-			random_owned = {
-				limit = { owner = { has_country_modifier = lazy } }
-				owner = {
-					change_variable = { which = modifier_count value = 1 }
-					change_variable = { which = total_modifier_count value = 1 }
-				}
-			}
-			
-			random_owned = {
-				limit = { owner = { has_country_modifier = diligent } }
-				owner = {
-					change_variable = { which = modifier_count value = 1 }
-					change_variable = { which = total_modifier_count value = 1 }
-				}
-			}
-			
-			random_owned = {
-				limit = { owner = { has_country_modifier = greedy } }
-				owner = {
-					change_variable = { which = modifier_count value = 1 }
-					change_variable = { which = total_modifier_count value = 1 }
-				}
-			}
-			
-			random_owned = {
-				limit = { owner = { has_country_modifier = generous } }
-				owner = {
-					change_variable = { which = modifier_count value = 1 }
-					change_variable = { which = total_modifier_count value = 1 }
-				}
-			}
-			
-			random_owned = {
-				limit = { owner = { has_country_modifier = corrupt } }
-				owner = {
-					change_variable = { which = modifier_count value = 1 }
-					change_variable = { which = total_modifier_count value = 1 }
-				}
-			}
-			
-			random_owned = {
-				limit = { owner = { has_country_modifier = just } }
 				owner = {
 					change_variable = { which = modifier_count value = 1 }
 					change_variable = { which = total_modifier_count value = 1 }
@@ -4475,6 +5679,206 @@ country_event = {
 			}
 			
 			random_owned = {
+				limit = { owner = { has_country_modifier = stirrings_of_dissent } }
+				owner = {
+					change_variable = { which = modifier_count value = 1 }
+					change_variable = { which = total_modifier_count value = 1 }
+				}
+			}
+			
+			random_owned = {
+				limit = { owner = { has_country_modifier = ecthelion_ii_modifier } }
+				owner = {
+					change_variable = { which = modifier_count value = 1 }
+					change_variable = { which = total_modifier_count value = 1 }
+				}
+			}
+			
+			random_owned = {
+				limit = { owner = { has_country_modifier = denethor_ii_modifier } }
+				owner = {
+					change_variable = { which = modifier_count value = 1 }
+					change_variable = { which = total_modifier_count value = 1 }
+				}
+			}
+			
+			random_owned = {
+				limit = { owner = { has_country_modifier = boromir_ii_modifier } }
+				owner = {
+					change_variable = { which = modifier_count value = 1 }
+					change_variable = { which = total_modifier_count value = 1 }
+				}
+			}
+			
+			random_owned = {
+				limit = { owner = { has_country_modifier = faramir_i_modifier } }
+				owner = {
+					change_variable = { which = modifier_count value = 1 }
+					change_variable = { which = total_modifier_count value = 1 }
+				}
+			}
+			
+			random_owned = {
+				limit = { owner = { has_country_modifier = aragorn_elessar_modifier } }
+				owner = {
+					change_variable = { which = modifier_count value = 1 }
+					change_variable = { which = total_modifier_count value = 1 }
+				}
+			}
+			
+			random_owned = {
+				limit = { owner = { has_country_modifier = angelimir_modifier } }
+				owner = {
+					change_variable = { which = modifier_count value = 1 }
+					change_variable = { which = total_modifier_count value = 1 }
+				}
+			}
+			
+			random_owned = {
+				limit = { owner = { has_country_modifier = sauron_modifier } }
+				owner = {
+					change_variable = { which = modifier_count value = 1 }
+					change_variable = { which = total_modifier_count value = 1 }
+				}
+			}
+			
+			random_owned = {
+				limit = { owner = { has_country_modifier = hegon_koldana_modifier } }
+				owner = {
+					change_variable = { which = modifier_count value = 1 }
+					change_variable = { which = total_modifier_count value = 1 }
+				}
+			}
+			
+			random_owned = {
+				limit = { owner = { has_country_modifier = bard_i_modifier } }
+				owner = {
+					change_variable = { which = modifier_count value = 1 }
+					change_variable = { which = total_modifier_count value = 1 }
+				}
+			}
+			
+			random_owned = {
+				limit = { owner = { has_country_modifier = bain_i_modifier } }
+				owner = {
+					change_variable = { which = modifier_count value = 1 }
+					change_variable = { which = total_modifier_count value = 1 }
+				}
+			}
+			
+			random_owned = {
+				limit = { owner = { has_country_modifier = brand_i_modifier } }
+				owner = {
+					change_variable = { which = modifier_count value = 1 }
+					change_variable = { which = total_modifier_count value = 1 }
+				}
+			}
+			
+			random_owned = {
+				limit = { owner = { has_country_modifier = bard_ii_modifier } }
+				owner = {
+					change_variable = { which = modifier_count value = 1 }
+					change_variable = { which = total_modifier_count value = 1 }
+				}
+			}
+			
+			random_owned = {
+				limit = { owner = { has_country_modifier = girion_ii_modifier } }
+				owner = {
+					change_variable = { which = modifier_count value = 1 }
+					change_variable = { which = total_modifier_count value = 1 }
+				}
+			}
+			
+			random_owned = {
+				limit = { owner = { has_country_modifier = thranduil_modifier } }
+				owner = {
+					change_variable = { which = modifier_count value = 1 }
+					change_variable = { which = total_modifier_count value = 1 }
+				}
+			}
+			
+			random_owned = {
+				limit = { owner = { has_country_modifier = khamul_modifier } }
+				owner = {
+					change_variable = { which = modifier_count value = 1 }
+					change_variable = { which = total_modifier_count value = 1 }
+				}
+			}
+			
+			random_owned = {
+				limit = { owner = { has_country_modifier = celeborn_n_galadriel_modifier } }
+				owner = {
+					change_variable = { which = modifier_count value = 1 }
+					change_variable = { which = total_modifier_count value = 1 }
+				}
+			}
+			
+			random_owned = {
+				limit = { owner = { has_country_modifier = saruman_modifier } }
+				owner = {
+					change_variable = { which = modifier_count value = 1 }
+					change_variable = { which = total_modifier_count value = 1 }
+				}
+			}
+			
+			random_owned = {
+				limit = { owner = { has_country_modifier = aragorn_modifier } }
+				owner = {
+					change_variable = { which = modifier_count value = 1 }
+					change_variable = { which = total_modifier_count value = 1 }
+				}
+			}
+			
+			random_owned = {
+				limit = { owner = { has_country_modifier = elrond_modifier } }
+				owner = {
+					change_variable = { which = modifier_count value = 1 }
+					change_variable = { which = total_modifier_count value = 1 }
+				}
+			}
+			
+			random_owned = {
+				limit = { owner = { has_country_modifier = cirdan_modifier } }
+				owner = {
+					change_variable = { which = modifier_count value = 1 }
+					change_variable = { which = total_modifier_count value = 1 }
+				}
+			}
+			
+			random_owned = {
+				limit = { owner = { has_country_modifier = king_of_the_dead_modifier } }
+				owner = {
+					change_variable = { which = modifier_count value = 1 }
+					change_variable = { which = total_modifier_count value = 1 }
+				}
+			}
+			
+			random_owned = {
+				limit = { owner = { has_country_modifier = radagast_modifier } }
+				owner = {
+					change_variable = { which = modifier_count value = 1 }
+					change_variable = { which = total_modifier_count value = 1 }
+				}
+			}
+			
+			random_owned = {
+				limit = { owner = { has_country_modifier = roac_modifier } }
+				owner = {
+					change_variable = { which = modifier_count value = 1 }
+					change_variable = { which = total_modifier_count value = 1 }
+				}
+			}
+			
+			random_owned = {
+				limit = { owner = { has_country_modifier = witch_king_of_angmar_modifier } }
+				owner = {
+					change_variable = { which = modifier_count value = 1 }
+					change_variable = { which = total_modifier_count value = 1 }
+				}
+			}
+			
+			random_owned = {
 				limit = { owner = { has_country_modifier = encouraging_outside_military_recruitment } }
 				owner = {
 					change_variable = { which = modifier_count value = 1 }
@@ -4548,6 +5952,22 @@ country_event = {
 			
 			random_owned = {
 				limit = { owner = { has_country_modifier = legacy_of_the_wainriders } }
+				owner = {
+					change_variable = { which = modifier_count value = 1 }
+					change_variable = { which = total_modifier_count value = 1 }
+				}
+			}
+			
+			random_owned = {
+				limit = { owner = { has_country_modifier = AMO_established_clan_guard } }
+				owner = {
+					change_variable = { which = modifier_count value = 1 }
+					change_variable = { which = total_modifier_count value = 1 }
+				}
+			}
+			
+			random_owned = {
+				limit = { owner = { has_country_modifier = AMO_upcoming_conquest } }
 				owner = {
 					change_variable = { which = modifier_count value = 1 }
 					change_variable = { which = total_modifier_count value = 1 }
@@ -4812,6 +6232,38 @@ country_event = {
 			
 			random_owned = {
 				limit = { owner = { has_country_modifier = smaugs_desolation_country } }
+				owner = {
+					change_variable = { which = modifier_count value = 1 }
+					change_variable = { which = total_modifier_count value = 1 }
+				}
+			}
+			
+			random_owned = {
+				limit = { owner = { has_country_modifier = unfinished_vidugavia_successorship } }
+				owner = {
+					change_variable = { which = modifier_count value = 1 }
+					change_variable = { which = total_modifier_count value = 1 }
+				}
+			}
+			
+			random_owned = {
+				limit = { owner = { has_country_modifier = vidugavia_successorship } }
+				owner = {
+					change_variable = { which = modifier_count value = 1 }
+					change_variable = { which = total_modifier_count value = 1 }
+				}
+			}
+			
+			random_owned = {
+				limit = { owner = { has_country_modifier = erebor_relations_modifier } }
+				owner = {
+					change_variable = { which = modifier_count value = 1 }
+					change_variable = { which = total_modifier_count value = 1 }
+				}
+			}
+			
+			random_owned = {
+				limit = { owner = { has_country_modifier = DAL_fishers_guild_immigration_reform_modifier } }
 				owner = {
 					change_variable = { which = modifier_count value = 1 }
 					change_variable = { which = total_modifier_count value = 1 }
@@ -5208,6 +6660,22 @@ country_event = {
 				}
 			}
 			# }
+		}
+		
+		any_country = {
+			limit = {
+				exists = yes
+				NOT = { has_country_flag = existing_country }
+			}
+			set_country_flag = existing_country
+		}
+		
+		any_country = {
+			limit = {
+				exists = no
+				has_country_flag = existing_country
+			}
+			clr_country_flag = existing_country
 		}
 		
 		# Refire the cleanup event tomorrow

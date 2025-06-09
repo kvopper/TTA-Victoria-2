@@ -6,8 +6,8 @@ culture = hobbit_culture
 culture = stoor
 culture = harfoot
 religion = hobbit
-government = hobbit_realm
-nationalvalue = generic_leader
+government = republic
+nationalvalue = red_book_of_the_westmarch
 literacy = 0.2
 civilized = yes
 
@@ -15,20 +15,14 @@ oob = "SHI_oob.txt"
 
 prestige = 5
 
-ruling_party = generic_high_nobility
-
-decision = shire_start_decision
-
+ruling_party = generic_nobility
 upper_house = {
-	high_nobility = 50
-	low_nobility = 23
-	burgher = 14
-	loremaster = 13
+	nobility = 100
 }
 penal_reform = hard_labor
 slavery = no_slavery
 serfdom = banned_serfdom
-upper_house_composition = population_equal_weight
 vote_franschise = wealth_weighted_voting
+cultural_rights = accepted_voting
 
 schools = traditional_academic

@@ -507,22 +507,17 @@
 	labourers = {
 		culture = druedain
 		religion = men
-		size = 37094
+		size = 110694
 	}
 	labourers = {
 		culture = gondorian
 		religion = men
-		size = 3225
+		size = 9625
 	}
 	soldiers = {
 		culture = druedain
 		religion = men
 		size = 800
-	}
-	tribals = {
-		culture = druedain
-		religion = men
-		size = 80000
 	}
 }
 
@@ -674,17 +669,17 @@
 	labourers = {
 		culture = marshmen
 		religion = men
-		size = 5280
+		size = 5580
 	}
 	labourers = {
 		culture = gondorian
 		religion = men
-		size = 7040
+		size = 7440
 	}
 	labourers = {
 		culture = harnendan
 		religion = men
-		size = 5280
+		size = 5580
 	}
 	soldiers = {
 		culture = gondorian
@@ -695,21 +690,6 @@
 		culture = harnendan
 		religion = men
 		size = 80
-	}
-	tribals = {
-		culture = marshmen
-		religion = men
-		size = 750
-	}
-	tribals = {
-		culture = gondorian
-		religion = men
-		size = 200
-	}
-	tribals = {
-		culture = harnendan
-		religion = men
-		size = 50
 	}
 }
 
@@ -971,20 +951,35 @@
 		religion = men
 		size = 800
 	}
+	capitalists = {
+		culture = dunedain
+		religion = men
+		size = 200
+	}
 	clergymen = {
 		culture = dunedain
 		religion = men
 		size = 1250
 	}
+	craftsmen = {
+		culture = gondorian
+		religion = men
+		size = 2400
+	}
+	craftsmen = {
+		culture = dunedain
+		religion = men
+		size = 600
+	}
 	labourers = {
 		culture = gondorian
 		religion = men
-		size = 69240
+		size = 66680
 	}
 	labourers = {
 		culture = dunedain
 		religion = men
-		size = 17310
+		size = 16670
 	}
 	soldiers = {
 		culture = gondorian
@@ -1020,6 +1015,11 @@
 		religion = men
 		size = 279
 	}
+	capitalists = {
+		culture = dunedain
+		religion = men
+		size = 80
+	}
 	clergymen = {
 		culture = dunedain
 		religion = men
@@ -1030,10 +1030,15 @@
 		religion = men
 		size = 200
 	}
+	craftsmen = {
+		culture = gondorian
+		religion = men
+		size = 1200
+	}
 	labourers = {
 		culture = gondorian
 		religion = men
-		size = 35520
+		size = 34240
 	}
 	soldiers = {
 		culture = gondorian
@@ -1064,6 +1069,11 @@
 		religion = men
 		size = 419
 	}
+	capitalists = {
+		culture = dunedain
+		religion = men
+		size = 120
+	}
 	clergymen = {
 		culture = dunedain
 		religion = men
@@ -1074,10 +1084,15 @@
 		religion = men
 		size = 150
 	}
+	craftsmen = {
+		culture = gondorian
+		religion = men
+		size = 1800
+	}
 	labourers = {
 		culture = gondorian
 		religion = men
-		size = 55559
+		size = 53640
 	}
 	soldiers = {
 		culture = gondorian
@@ -1108,6 +1123,11 @@
 		religion = men
 		size = 300
 	}
+	capitalists = {
+		culture = dunedain
+		religion = men
+		size = 120
+	}
 	clergymen = {
 		culture = dunedain
 		religion = men
@@ -1118,10 +1138,15 @@
 		religion = men
 		size = 150
 	}
+	craftsmen = {
+		culture = gondorian
+		religion = men
+		size = 1800
+	}
 	labourers = {
 		culture = gondorian
 		religion = men
-		size = 55679
+		size = 53760
 	}
 	soldiers = {
 		culture = gondorian
@@ -1147,15 +1172,25 @@
 		religion = men
 		size = 559
 	}
+	capitalists = {
+		culture = dunedain
+		religion = men
+		size = 160
+	}
 	clergymen = {
 		culture = gondorian
 		religion = men
 		size = 800
 	}
+	craftsmen = {
+		culture = gondorian
+		religion = men
+		size = 2400
+	}
 	labourers = {
 		culture = gondorian
 		religion = men
-		size = 71200
+		size = 68640
 	}
 	soldiers = {
 		culture = gondorian
@@ -1181,6 +1216,11 @@
 		religion = men
 		size = 1600
 	}
+	capitalists = {
+		culture = dunedain
+		religion = men
+		size = 400
+	}
 	clergymen = {
 		culture = gondorian
 		religion = men
@@ -1189,17 +1229,17 @@
 	craftsmen = {
 		culture = dunedain
 		religion = men
-		size = 400
+		size = 2000
 	}
 	craftsmen = {
 		culture = gondorian
 		religion = men
-		size = 1600
+		size = 8000
 	}
 	labourers = {
 		culture = gondorian
 		religion = men
-		size = 169899
+		size = 161500
 	}
 	soldiers = {
 		culture = gondorian
@@ -1225,15 +1265,25 @@
 		religion = men
 		size = 1399
 	}
+	capitalists = {
+		culture = dunedain
+		religion = men
+		size = 400
+	}
 	clergymen = {
 		culture = gondorian
 		religion = men
 		size = 2000
 	}
+	craftsmen = {
+		culture = gondorian
+		religion = men
+		size = 6000
+	}
 	labourers = {
 		culture = gondorian
 		religion = men
-		size = 177400
+		size = 171000
 	}
 	soldiers = {
 		culture = gondorian
@@ -1259,15 +1309,25 @@
 		religion = men
 		size = 500
 	}
+	capitalists = {
+		culture = dunedain
+		religion = men
+		size = 200
+	}
 	clergymen = {
 		culture = gondorian
 		religion = men
 		size = 750
 	}
+	craftsmen = {
+		culture = gondorian
+		religion = men
+		size = 3000
+	}
 	labourers = {
 		culture = gondorian
 		religion = men
-		size = 92750
+		size = 89550
 	}
 	soldiers = {
 		culture = gondorian
@@ -1293,15 +1353,25 @@
 		religion = men
 		size = 210
 	}
+	capitalists = {
+		culture = dunedain
+		religion = men
+		size = 140
+	}
 	clergymen = {
 		culture = gondorian
 		religion = men
 		size = 244
 	}
+	craftsmen = {
+		culture = gondorian
+		religion = men
+		size = 2100
+	}
 	labourers = {
 		culture = gondorian
 		religion = men
-		size = 67795
+		size = 65555
 	}
 	soldiers = {
 		culture = gondorian
@@ -1327,15 +1397,25 @@
 		religion = men
 		size = 400
 	}
+	capitalists = {
+		culture = dunedain
+		religion = men
+		size = 200
+	}
 	clergymen = {
 		culture = gondorian
 		religion = men
 		size = 500
 	}
+	craftsmen = {
+		culture = gondorian
+		religion = men
+		size = 3000
+	}
 	labourers = {
 		culture = gondorian
 		religion = men
-		size = 94400
+		size = 91200
 	}
 	soldiers = {
 		culture = gondorian
@@ -1361,20 +1441,35 @@
 		religion = men
 		size = 699
 	}
+	capitalists = {
+		culture = dunedain
+		religion = men
+		size = 200
+	}
 	clergymen = {
 		culture = gondorian
 		religion = men
 		size = 750
 	}
+	craftsmen = {
+		culture = amrothian
+		religion = men
+		size = 600
+	}
+	craftsmen = {
+		culture = gondorian
+		religion = men
+		size = 2400
+	}
 	labourers = {
 		culture = amrothian
 		religion = men
-		size = 18490
+		size = 17850
 	}
 	labourers = {
 		culture = gondorian
 		religion = men
-		size = 73960
+		size = 71400
 	}
 	soldiers = {
 		culture = gondorian
@@ -1400,15 +1495,25 @@
 		religion = men
 		size = 559
 	}
+	capitalists = {
+		culture = dunedain
+		religion = men
+		size = 160
+	}
 	clergymen = {
 		culture = gondorian
 		religion = men
 		size = 600
 	}
+	craftsmen = {
+		culture = gondorian
+		religion = men
+		size = 2400
+	}
 	labourers = {
 		culture = gondorian
 		religion = men
-		size = 73800
+		size = 71240
 	}
 	soldiers = {
 		culture = gondorian
@@ -1434,15 +1539,25 @@
 		religion = men
 		size = 1600
 	}
+	capitalists = {
+		culture = dunedain
+		religion = men
+		size = 400
+	}
 	clergymen = {
 		culture = gondorian
 		religion = men
 		size = 2000
 	}
+	craftsmen = {
+		culture = gondorian
+		religion = men
+		size = 6000
+	}
 	labourers = {
 		culture = gondorian
 		religion = men
-		size = 172900
+		size = 166500
 	}
 	soldiers = {
 		culture = gondorian
@@ -1476,27 +1591,17 @@
 	labourers = {
 		culture = druedain
 		religion = men
-		size = 24318
+		size = 33318
 	}
 	labourers = {
 		culture = enedwaithrim
 		religion = men
-		size = 16212
+		size = 22212
 	}
 	soldiers = {
 		culture = druedain
 		religion = men
 		size = 300
-	}
-	tribals = {
-		culture = druedain
-		religion = men
-		size = 14250
-	}
-	tribals = {
-		culture = enedwaithrim
-		religion = men
-		size = 750
 	}
 }
 
@@ -1767,15 +1872,25 @@
 		religion = men
 		size = 559
 	}
+	capitalists = {
+		culture = dunedain
+		religion = men
+		size = 160
+	}
 	clergymen = {
 		culture = gondorian
 		religion = men
 		size = 640
 	}
+	craftsmen = {
+		culture = gondorian
+		religion = men
+		size = 2400
+	}
 	labourers = {
 		culture = gondorian
 		religion = men
-		size = 71120
+		size = 68560
 	}
 	soldiers = {
 		culture = gondorian
@@ -1801,15 +1916,25 @@
 		religion = men
 		size = 800
 	}
+	capitalists = {
+		culture = dunedain
+		religion = men
+		size = 200
+	}
 	clergymen = {
 		culture = gondorian
 		religion = men
 		size = 1000
 	}
+	craftsmen = {
+		culture = gondorian
+		religion = men
+		size = 3000
+	}
 	labourers = {
 		culture = gondorian
 		religion = men
-		size = 86400
+		size = 83200
 	}
 	soldiers = {
 		culture = gondorian
@@ -1835,30 +1960,40 @@
 		religion = men
 		size = 419
 	}
+	capitalists = {
+		culture = dunedain
+		religion = men
+		size = 120
+	}
 	clergymen = {
 		culture = gondorian
 		religion = men
 		size = 480
 	}
+	craftsmen = {
+		culture = marshmen
+		religion = men
+		size = 180
+	}
+	craftsmen = {
+		culture = gondorian
+		religion = men
+		size = 1620
+	}
 	labourers = {
 		culture = marshmen
 		religion = men
-		size = 5316
+		size = 5142
 	}
 	labourers = {
 		culture = gondorian
 		religion = men
-		size = 47844
+		size = 46278
 	}
 	soldiers = {
 		culture = gondorian
 		religion = men
 		size = 419
-	}
-	tribals = {
-		culture = marshmen
-		religion = men
-		size = 180
 	}
 }
 
@@ -1879,30 +2014,40 @@
 		religion = men
 		size = 300
 	}
+	capitalists = {
+		culture = dunedain
+		religion = men
+		size = 120
+	}
 	clergymen = {
 		culture = gondorian
 		religion = men
 		size = 450
 	}
+	craftsmen = {
+		culture = marshmen
+		religion = men
+		size = 180
+	}
+	craftsmen = {
+		culture = gondorian
+		religion = men
+		size = 1620
+	}
 	labourers = {
 		culture = marshmen
 		religion = men
-		size = 5472
+		size = 5295
 	}
 	labourers = {
 		culture = gondorian
 		religion = men
-		size = 49248
+		size = 47655
 	}
 	soldiers = {
 		culture = gondorian
 		religion = men
 		size = 360
-	}
-	tribals = {
-		culture = marshmen
-		religion = men
-		size = 150
 	}
 }
 
@@ -1923,28 +2068,38 @@
 		religion = men
 		size = 300
 	}
+	capitalists = {
+		culture = dunedain
+		religion = men
+		size = 120
+	}
 	clergymen = {
 		culture = gondorian
 		religion = men
 		size = 450
 	}
-	labourers = {
+	craftsmen = {
 		culture = marshmen
-		religion = men
-		size = 10902
-	}
-	labourers = {
-		culture = gondorian
-		religion = men
-		size = 43608
-	}
-	soldiers = {
-		culture = gondorian
 		religion = men
 		size = 360
 	}
-	tribals = {
+	craftsmen = {
+		culture = gondorian
+		religion = men
+		size = 1440
+	}
+	labourers = {
 		culture = marshmen
+		religion = men
+		size = 10590
+	}
+	labourers = {
+		culture = gondorian
+		religion = men
+		size = 42360
+	}
+	soldiers = {
+		culture = gondorian
 		religion = men
 		size = 360
 	}
@@ -1967,30 +2122,40 @@
 		religion = men
 		size = 100
 	}
+	capitalists = {
+		culture = dunedain
+		religion = men
+		size = 40
+	}
 	clergymen = {
 		culture = gondorian
 		religion = men
 		size = 100
 	}
+	craftsmen = {
+		culture = marshmen
+		religion = men
+		size = 240
+	}
+	craftsmen = {
+		culture = gondorian
+		religion = men
+		size = 360
+	}
 	labourers = {
 		culture = marshmen
 		religion = men
-		size = 7380
+		size = 7184
 	}
 	labourers = {
 		culture = gondorian
 		religion = men
-		size = 11070
+		size = 10776
 	}
 	soldiers = {
 		culture = gondorian
 		religion = men
 		size = 100
-	}
-	tribals = {
-		culture = marshmen
-		religion = men
-		size = 150
 	}
 }
 
@@ -2011,30 +2176,40 @@
 		religion = men
 		size = 3000
 	}
+	capitalists = {
+		culture = dunedain
+		religion = men
+		size = 600
+	}
 	clergymen = {
 		culture = gondorian
 		religion = men
 		size = 3000
 	}
+	craftsmen = {
+		culture = marshmen
+		religion = men
+		size = 900
+	}
+	craftsmen = {
+		culture = gondorian
+		religion = men
+		size = 8100
+	}
 	labourers = {
 		culture = marshmen
 		religion = men
-		size = 25740
+		size = 24840
 	}
 	labourers = {
 		culture = gondorian
 		religion = men
-		size = 231660
+		size = 223560
 	}
 	soldiers = {
 		culture = gondorian
 		religion = men
 		size = 3000
-	}
-	tribals = {
-		culture = marshmen
-		religion = men
-		size = 600
 	}
 }
 
@@ -2055,20 +2230,35 @@
 		religion = men
 		size = 480
 	}
+	capitalists = {
+		culture = dunedain
+		religion = men
+		size = 120
+	}
 	clergymen = {
 		culture = gondorian
 		religion = men
 		size = 480
 	}
+	craftsmen = {
+		culture = amrothian
+		religion = men
+		size = 360
+	}
+	craftsmen = {
+		culture = gondorian
+		religion = men
+		size = 1440
+	}
 	labourers = {
 		culture = amrothian
 		religion = men
-		size = 10680
+		size = 10296
 	}
 	labourers = {
 		culture = gondorian
 		religion = men
-		size = 42720
+		size = 41184
 	}
 	soldiers = {
 		culture = gondorian
@@ -2094,20 +2284,35 @@
 		religion = men
 		size = 320
 	}
+	capitalists = {
+		culture = dunedain
+		religion = men
+		size = 80
+	}
 	clergymen = {
 		culture = gondorian
 		religion = men
 		size = 320
 	}
+	craftsmen = {
+		culture = amrothian
+		religion = men
+		size = 240
+	}
+	craftsmen = {
+		culture = gondorian
+		religion = men
+		size = 960
+	}
 	labourers = {
 		culture = amrothian
 		religion = men
-		size = 7104
+		size = 6848
 	}
 	labourers = {
 		culture = gondorian
 		religion = men
-		size = 28416
+		size = 27392
 	}
 	soldiers = {
 		culture = gondorian
@@ -2143,6 +2348,11 @@
 		religion = men
 		size = 320
 	}
+	capitalists = {
+		culture = dunedain
+		religion = men
+		size = 100
+	}
 	clergymen = {
 		culture = amrothian
 		religion = men
@@ -2153,15 +2363,25 @@
 		religion = men
 		size = 200
 	}
+	craftsmen = {
+		culture = amrothian
+		religion = men
+		size = 675
+	}
+	craftsmen = {
+		culture = gondorian
+		religion = men
+		size = 825
+	}
 	labourers = {
 		culture = amrothian
 		religion = men
-		size = 19890
+		size = 19170
 	}
 	labourers = {
 		culture = gondorian
 		religion = men
-		size = 24310
+		size = 23430
 	}
 	soldiers = {
 		culture = amrothian
@@ -2202,6 +2422,11 @@
 		religion = men
 		size = 120
 	}
+	capitalists = {
+		culture = dunedain
+		religion = men
+		size = 60
+	}
 	clergymen = {
 		culture = amrothian
 		religion = men
@@ -2212,15 +2437,25 @@
 		religion = men
 		size = 60
 	}
+	craftsmen = {
+		culture = amrothian
+		religion = men
+		size = 405
+	}
+	craftsmen = {
+		culture = gondorian
+		religion = men
+		size = 495
+	}
 	labourers = {
 		culture = amrothian
 		religion = men
-		size = 12480
+		size = 12048
 	}
 	labourers = {
 		culture = gondorian
 		religion = men
-		size = 15254
+		size = 14726
 	}
 	soldiers = {
 		culture = amrothian
@@ -2261,6 +2496,11 @@
 		religion = men
 		size = 320
 	}
+	capitalists = {
+		culture = dunedain
+		religion = men
+		size = 160
+	}
 	clergymen = {
 		culture = amrothian
 		religion = men
@@ -2271,15 +2511,25 @@
 		religion = men
 		size = 160
 	}
+	craftsmen = {
+		culture = amrothian
+		religion = men
+		size = 1080
+	}
+	craftsmen = {
+		culture = gondorian
+		religion = men
+		size = 1320
+	}
 	labourers = {
 		culture = amrothian
 		religion = men
-		size = 33282
+		size = 32130
 	}
 	labourers = {
 		culture = gondorian
 		religion = men
-		size = 40678
+		size = 39270
 	}
 	soldiers = {
 		culture = amrothian
@@ -2310,20 +2560,35 @@
 		religion = men
 		size = 2400
 	}
+	capitalists = {
+		culture = dunedain
+		religion = men
+		size = 480
+	}
 	clergymen = {
 		culture = gondorian
 		religion = men
 		size = 2400
 	}
+	craftsmen = {
+		culture = amrothian
+		religion = men
+		size = 5040
+	}
+	craftsmen = {
+		culture = gondorian
+		religion = men
+		size = 2160
+	}
 	labourers = {
 		culture = amrothian
 		religion = men
-		size = 136080
+		size = 130703
 	}
 	labourers = {
 		culture = gondorian
 		religion = men
-		size = 58320
+		size = 56016
 	}
 	soldiers = {
 		culture = amrothian
@@ -2349,15 +2614,25 @@
 		religion = men
 		size = 480
 	}
+	capitalists = {
+		culture = amrothian
+		religion = men
+		size = 120
+	}
 	clergymen = {
 		culture = amrothian
 		religion = men
 		size = 480
 	}
+	craftsmen = {
+		culture = amrothian
+		religion = men
+		size = 1800
+	}
 	labourers = {
 		culture = amrothian
 		religion = men
-		size = 53400
+		size = 51480
 	}
 	soldiers = {
 		culture = amrothian
@@ -2383,15 +2658,25 @@
 		religion = men
 		size = 200
 	}
+	capitalists = {
+		culture = amrothian
+		religion = men
+		size = 80
+	}
 	clergymen = {
 		culture = amrothian
 		religion = men
 		size = 240
 	}
+	craftsmen = {
+		culture = amrothian
+		religion = men
+		size = 1200
+	}
 	labourers = {
 		culture = amrothian
 		religion = men
-		size = 36360
+		size = 35080
 	}
 	soldiers = {
 		culture = amrothian
@@ -2417,15 +2702,25 @@
 		religion = men
 		size = 240
 	}
+	capitalists = {
+		culture = amrothian
+		religion = men
+		size = 80
+	}
 	clergymen = {
 		culture = amrothian
 		religion = men
 		size = 320
 	}
+	craftsmen = {
+		culture = amrothian
+		religion = men
+		size = 1200
+	}
 	labourers = {
 		culture = amrothian
 		religion = men
-		size = 36120
+		size = 34840
 	}
 	soldiers = {
 		culture = amrothian
@@ -2451,15 +2746,25 @@
 		religion = men
 		size = 600
 	}
+	capitalists = {
+		culture = amrothian
+		religion = men
+		size = 200
+	}
 	clergymen = {
 		culture = amrothian
 		religion = men
 		size = 800
 	}
+	craftsmen = {
+		culture = amrothian
+		religion = men
+		size = 3000
+	}
 	labourers = {
 		culture = amrothian
 		religion = men
-		size = 90300
+		size = 87100
 	}
 	soldiers = {
 		culture = amrothian
@@ -2485,15 +2790,25 @@
 		religion = men
 		size = 240
 	}
+	capitalists = {
+		culture = amrothian
+		religion = men
+		size = 80
+	}
 	clergymen = {
 		culture = amrothian
 		religion = men
 		size = 320
 	}
+	craftsmen = {
+		culture = amrothian
+		religion = men
+		size = 1200
+	}
 	labourers = {
 		culture = amrothian
 		religion = men
-		size = 36120
+		size = 34840
 	}
 	soldiers = {
 		culture = amrothian
@@ -2519,15 +2834,25 @@
 		religion = men
 		size = 240
 	}
+	capitalists = {
+		culture = amrothian
+		religion = men
+		size = 80
+	}
 	clergymen = {
 		culture = amrothian
 		religion = men
 		size = 320
 	}
+	craftsmen = {
+		culture = amrothian
+		religion = men
+		size = 1200
+	}
 	labourers = {
 		culture = amrothian
 		religion = men
-		size = 36120
+		size = 34840
 	}
 	soldiers = {
 		culture = amrothian
@@ -2553,15 +2878,25 @@
 		religion = men
 		size = 240
 	}
+	capitalists = {
+		culture = amrothian
+		religion = men
+		size = 80
+	}
 	clergymen = {
 		culture = amrothian
 		religion = men
 		size = 320
 	}
+	craftsmen = {
+		culture = amrothian
+		religion = men
+		size = 1200
+	}
 	labourers = {
 		culture = amrothian
 		religion = men
-		size = 35600
+		size = 34320
 	}
 	soldiers = {
 		culture = amrothian
@@ -2587,15 +2922,25 @@
 		religion = men
 		size = 480
 	}
+	capitalists = {
+		culture = amrothian
+		religion = men
+		size = 120
+	}
 	clergymen = {
 		culture = amrothian
 		religion = men
 		size = 600
 	}
+	craftsmen = {
+		culture = amrothian
+		religion = men
+		size = 1800
+	}
 	labourers = {
 		culture = amrothian
 		religion = men
-		size = 51600
+		size = 49680
 	}
 	soldiers = {
 		culture = amrothian
@@ -2614,7 +2959,7 @@
 	artisans = {
 		culture = amrothian
 		religion = men
-		size = 72000
+		size = 54000
 	}
 	bureaucrats = {
 		culture = dunedain
@@ -2624,7 +2969,7 @@
 	capitalists = {
 		culture = dunedain
 		religion = men
-		size = 360
+		size = 720
 	}
 	clergymen = {
 		culture = amrothian
@@ -2634,17 +2979,22 @@
 	craftsmen = {
 		culture = amrothian
 		religion = men
-		size = 900
+		size = 16200
+	}
+	craftsmen = {
+		culture = gondorian
+		religion = men
+		size = 1800
 	}
 	labourers = {
 		culture = amrothian
 		religion = men
-		size = 242676
+		size = 243162
 	}
 	labourers = {
 		culture = gondorian
 		religion = men
-		size = 26964
+		size = 27018
 	}
 	soldiers = {
 		culture = amrothian
@@ -2670,15 +3020,25 @@
 		religion = men
 		size = 150
 	}
+	capitalists = {
+		culture = amrothian
+		religion = men
+		size = 60
+	}
 	clergymen = {
 		culture = amrothian
 		religion = men
 		size = 150
 	}
+	craftsmen = {
+		culture = amrothian
+		religion = men
+		size = 900
+	}
 	labourers = {
 		culture = amrothian
 		religion = men
-		size = 27870
+		size = 26910
 	}
 	soldiers = {
 		culture = amrothian
@@ -2704,15 +3064,25 @@
 		religion = men
 		size = 100
 	}
+	capitalists = {
+		culture = amrothian
+		religion = men
+		size = 40
+	}
 	clergymen = {
 		culture = amrothian
 		religion = men
 		size = 100
 	}
+	craftsmen = {
+		culture = amrothian
+		religion = men
+		size = 600
+	}
 	labourers = {
 		culture = amrothian
 		religion = men
-		size = 18580
+		size = 17940
 	}
 	soldiers = {
 		culture = amrothian
@@ -2738,15 +3108,25 @@
 		religion = men
 		size = 150
 	}
+	capitalists = {
+		culture = amrothian
+		religion = men
+		size = 60
+	}
 	clergymen = {
 		culture = amrothian
 		religion = men
 		size = 150
 	}
+	craftsmen = {
+		culture = amrothian
+		religion = men
+		size = 900
+	}
 	labourers = {
 		culture = amrothian
 		religion = men
-		size = 27870
+		size = 26910
 	}
 	soldiers = {
 		culture = amrothian
@@ -2772,15 +3152,25 @@
 		religion = men
 		size = 96
 	}
+	capitalists = {
+		culture = amrothian
+		religion = men
+		size = 32
+	}
 	clergymen = {
 		culture = amrothian
 		religion = men
 		size = 128
 	}
+	craftsmen = {
+		culture = amrothian
+		religion = men
+		size = 480
+	}
 	labourers = {
 		culture = amrothian
 		religion = men
-		size = 14736
+		size = 14224
 	}
 	soldiers = {
 		culture = amrothian
@@ -2806,20 +3196,35 @@
 		religion = men
 		size = 96
 	}
+	capitalists = {
+		culture = amrothian
+		religion = men
+		size = 32
+	}
 	clergymen = {
 		culture = amrothian
 		religion = men
 		size = 128
 	}
+	craftsmen = {
+		culture = amrothian
+		religion = men
+		size = 384
+	}
+	craftsmen = {
+		culture = gondorian
+		religion = men
+		size = 96
+	}
 	labourers = {
 		culture = amrothian
 		religion = men
-		size = 11788
+		size = 11379
 	}
 	labourers = {
 		culture = gondorian
 		religion = men
-		size = 2947
+		size = 2844
 	}
 	soldiers = {
 		culture = amrothian
@@ -2845,15 +3250,25 @@
 		religion = men
 		size = 240
 	}
+	capitalists = {
+		culture = amrothian
+		religion = men
+		size = 80
+	}
 	clergymen = {
 		culture = amrothian
 		religion = men
 		size = 320
 	}
+	craftsmen = {
+		culture = amrothian
+		religion = men
+		size = 1200
+	}
 	labourers = {
 		culture = amrothian
 		religion = men
-		size = 35600
+		size = 34320
 	}
 	soldiers = {
 		culture = amrothian
@@ -2917,22 +3332,22 @@
 	craftsmen = {
 		culture = galadhrim
 		religion = elven
-		size = 1200
+		size = 2400
 	}
 	craftsmen = {
 		culture = amrothian
 		religion = men
-		size = 1800
+		size = 3600
 	}
 	labourers = {
 		culture = amrothian
 		religion = men
-		size = 131200
+		size = 128800
 	}
 	labourers = {
 		culture = gondorian
 		religion = men
-		size = 32800
+		size = 32200
 	}
 	soldiers = {
 		culture = amrothian
@@ -2958,20 +3373,35 @@
 		religion = men
 		size = 960
 	}
+	capitalists = {
+		culture = amrothian
+		religion = men
+		size = 240
+	}
 	clergymen = {
 		culture = amrothian
 		religion = men
 		size = 1200
 	}
+	craftsmen = {
+		culture = amrothian
+		religion = men
+		size = 2880
+	}
+	craftsmen = {
+		culture = gondorian
+		religion = men
+		size = 720
+	}
 	labourers = {
 		culture = amrothian
 		religion = men
-		size = 88128
+		size = 85056
 	}
 	labourers = {
 		culture = gondorian
 		religion = men
-		size = 22032
+		size = 21264
 	}
 	soldiers = {
 		culture = amrothian
@@ -2997,20 +3427,35 @@
 		religion = men
 		size = 960
 	}
+	capitalists = {
+		culture = amrothian
+		religion = men
+		size = 240
+	}
 	clergymen = {
 		culture = amrothian
 		religion = men
 		size = 960
 	}
+	craftsmen = {
+		culture = amrothian
+		religion = men
+		size = 2880
+	}
+	craftsmen = {
+		culture = gondorian
+		religion = men
+		size = 720
+	}
 	labourers = {
 		culture = amrothian
 		religion = men
-		size = 88320
+		size = 85248
 	}
 	labourers = {
 		culture = gondorian
 		religion = men
-		size = 22080
+		size = 21312
 	}
 	soldiers = {
 		culture = amrothian
@@ -3036,20 +3481,35 @@
 		religion = men
 		size = 800
 	}
+	capitalists = {
+		culture = gondorian
+		religion = men
+		size = 200
+	}
 	clergymen = {
 		culture = gondorian
 		religion = men
 		size = 800
 	}
+	craftsmen = {
+		culture = amrothian
+		religion = men
+		size = 600
+	}
+	craftsmen = {
+		culture = gondorian
+		religion = men
+		size = 2400
+	}
 	labourers = {
 		culture = amrothian
 		religion = men
-		size = 17800
+		size = 17160
 	}
 	labourers = {
 		culture = gondorian
 		religion = men
-		size = 71200
+		size = 68640
 	}
 	soldiers = {
 		culture = gondorian
@@ -3075,15 +3535,25 @@
 		religion = men
 		size = 480
 	}
+	capitalists = {
+		culture = gondorian
+		religion = men
+		size = 120
+	}
 	clergymen = {
 		culture = gondorian
 		religion = men
 		size = 480
 	}
+	craftsmen = {
+		culture = gondorian
+		religion = men
+		size = 1800
+	}
 	labourers = {
 		culture = gondorian
 		religion = men
-		size = 55200
+		size = 53280
 	}
 	soldiers = {
 		culture = gondorian
@@ -3109,20 +3579,35 @@
 		religion = men
 		size = 240
 	}
+	capitalists = {
+		culture = gondorian
+		religion = men
+		size = 60
+	}
 	clergymen = {
 		culture = gondorian
 		religion = men
 		size = 240
 	}
+	craftsmen = {
+		culture = amrothian
+		religion = men
+		size = 180
+	}
+	craftsmen = {
+		culture = gondorian
+		religion = men
+		size = 720
+	}
 	labourers = {
 		culture = amrothian
 		religion = men
-		size = 5538
+		size = 5346
 	}
 	labourers = {
 		culture = gondorian
 		religion = men
-		size = 22152
+		size = 21384
 	}
 	soldiers = {
 		culture = gondorian
@@ -3148,15 +3633,25 @@
 		religion = men
 		size = 480
 	}
+	capitalists = {
+		culture = gondorian
+		religion = men
+		size = 120
+	}
 	clergymen = {
 		culture = gondorian
 		religion = men
 		size = 480
 	}
+	craftsmen = {
+		culture = gondorian
+		religion = men
+		size = 1800
+	}
 	labourers = {
 		culture = gondorian
 		religion = men
-		size = 55439
+		size = 53520
 	}
 	soldiers = {
 		culture = gondorian
@@ -3182,20 +3677,35 @@
 		religion = men
 		size = 1120
 	}
+	capitalists = {
+		culture = gondorian
+		religion = men
+		size = 280
+	}
 	clergymen = {
 		culture = gondorian
 		religion = men
 		size = 1120
 	}
+	craftsmen = {
+		culture = amrothian
+		religion = men
+		size = 840
+	}
+	craftsmen = {
+		culture = gondorian
+		religion = men
+		size = 3360
+	}
 	labourers = {
 		culture = amrothian
 		religion = men
-		size = 24920
+		size = 24024
 	}
 	labourers = {
 		culture = gondorian
 		religion = men
-		size = 99680
+		size = 96096
 	}
 	soldiers = {
 		culture = gondorian
@@ -3221,15 +3731,25 @@
 		religion = men
 		size = 320
 	}
+	capitalists = {
+		culture = gondorian
+		religion = men
+		size = 80
+	}
 	clergymen = {
 		culture = gondorian
 		religion = men
 		size = 320
 	}
+	craftsmen = {
+		culture = gondorian
+		religion = men
+		size = 1200
+	}
 	labourers = {
 		culture = gondorian
 		religion = men
-		size = 36960
+		size = 35680
 	}
 	soldiers = {
 		culture = gondorian
@@ -3255,15 +3775,25 @@
 		religion = men
 		size = 240
 	}
+	capitalists = {
+		culture = gondorian
+		religion = men
+		size = 60
+	}
 	clergymen = {
 		culture = gondorian
 		religion = men
 		size = 240
 	}
+	craftsmen = {
+		culture = gondorian
+		religion = men
+		size = 900
+	}
 	labourers = {
 		culture = gondorian
 		religion = men
-		size = 27719
+		size = 26760
 	}
 	soldiers = {
 		culture = gondorian
@@ -3289,15 +3819,25 @@
 		religion = men
 		size = 1600
 	}
+	capitalists = {
+		culture = dunedain
+		religion = men
+		size = 320
+	}
 	clergymen = {
 		culture = gondorian
 		religion = men
 		size = 1600
 	}
+	craftsmen = {
+		culture = gondorian
+		religion = men
+		size = 4800
+	}
 	labourers = {
 		culture = gondorian
 		religion = men
-		size = 138400
+		size = 133280
 	}
 	soldiers = {
 		culture = gondorian
@@ -3323,15 +3863,25 @@
 		religion = men
 		size = 2000
 	}
+	capitalists = {
+		culture = gondorian
+		religion = men
+		size = 400
+	}
 	clergymen = {
 		culture = gondorian
 		religion = men
 		size = 2000
 	}
+	craftsmen = {
+		culture = gondorian
+		religion = men
+		size = 6000
+	}
 	labourers = {
 		culture = gondorian
 		religion = men
-		size = 172800
+		size = 166400
 	}
 	soldiers = {
 		culture = gondorian
@@ -3357,15 +3907,25 @@
 		religion = men
 		size = 480
 	}
+	capitalists = {
+		culture = gondorian
+		religion = men
+		size = 120
+	}
 	clergymen = {
 		culture = gondorian
 		religion = men
 		size = 480
 	}
+	craftsmen = {
+		culture = gondorian
+		religion = men
+		size = 1800
+	}
 	labourers = {
 		culture = gondorian
 		religion = men
-		size = 53520
+		size = 51600
 	}
 	soldiers = {
 		culture = gondorian
@@ -3501,27 +4061,17 @@
 	labourers = {
 		culture = druedain
 		religion = men
-		size = 26220
+		size = 27720
 	}
 	labourers = {
 		culture = enedwaithrim
 		religion = men
-		size = 17480
+		size = 18480
 	}
 	soldiers = {
 		culture = druedain
 		religion = men
 		size = 400
-	}
-	tribals = {
-		culture = enedwaithrim
-		religion = men
-		size = 1500
-	}
-	tribals = {
-		culture = dunnish
-		religion = men
-		size = 1000
 	}
 }
 
@@ -3550,17 +4100,12 @@
 	labourers = {
 		culture = gondorian
 		religion = men
-		size = 15400
+		size = 17800
 	}
 	soldiers = {
 		culture = gondorian
 		religion = men
 		size = 120
-	}
-	tribals = {
-		culture = white_mountain_goblin
-		religion = orc
-		size = 2400
 	}
 }
 
@@ -3793,17 +4338,12 @@
 	labourers = {
 		culture = oathbreaker
 		religion = undead
-		size = 9030
+		size = 9160
 	}
 	soldiers = {
 		culture = oathbreaker
 		religion = undead
 		size = 250
-	}
-	tribals = {
-		culture = oathbreaker
-		religion = undead
-		size = 130
 	}
 }
 
@@ -3941,6 +4481,11 @@
 		religion = men
 		size = 144
 	}
+	capitalists = {
+		culture = gondorian
+		religion = men
+		size = 80
+	}
 	clergymen = {
 		culture = gondorian
 		religion = men
@@ -3950,21 +4495,36 @@
 		culture = dunir
 		religion = men
 		size = 96
+	}
+	craftsmen = {
+		culture = broadbeam
+		religion = dwarven
+		size = 90
+	}
+	craftsmen = {
+		culture = gondorian
+		religion = men
+		size = 540
+	}
+	craftsmen = {
+		culture = dunir
+		religion = men
+		size = 570
 	}
 	labourers = {
 		culture = broadbeam
 		religion = dwarven
-		size = 2400
+		size = 2694
 	}
 	labourers = {
 		culture = gondorian
 		religion = men
-		size = 14400
+		size = 16164
 	}
 	labourers = {
 		culture = dunir
 		religion = men
-		size = 15200
+		size = 17062
 	}
 	soldiers = {
 		culture = gondorian
@@ -3975,11 +4535,6 @@
 		culture = dunir
 		religion = men
 		size = 96
-	}
-	tribals = {
-		culture = dunir
-		religion = men
-		size = 5200
 	}
 }
 
@@ -4009,25 +4564,45 @@
 		religion = men
 		size = 120
 	}
+	capitalists = {
+		culture = dunir
+		religion = men
+		size = 40
+	}
 	clergymen = {
 		culture = dunir
 		religion = men
 		size = 80
 	}
+	craftsmen = {
+		culture = broadbeam
+		religion = dwarven
+		size = 30
+	}
+	craftsmen = {
+		culture = gondorian
+		religion = men
+		size = 210
+	}
+	craftsmen = {
+		culture = dunir
+		religion = men
+		size = 360
+	}
 	labourers = {
 		culture = broadbeam
 		religion = dwarven
-		size = 780
+		size = 898
 	}
 	labourers = {
 		culture = gondorian
 		religion = men
-		size = 5460
+		size = 6286
 	}
 	labourers = {
 		culture = dunir
 		religion = men
-		size = 9360
+		size = 10776
 	}
 	soldiers = {
 		culture = gondorian
@@ -4038,11 +4613,6 @@
 		culture = dunir
 		religion = men
 		size = 60
-	}
-	tribals = {
-		culture = dunir
-		religion = men
-		size = 3000
 	}
 }
 
@@ -4073,6 +4643,11 @@
 		religion = men
 		size = 144
 	}
+	capitalists = {
+		culture = gondorian
+		religion = men
+		size = 60
+	}
 	clergymen = {
 		culture = gondorian
 		religion = men
@@ -4083,15 +4658,25 @@
 		religion = men
 		size = 108
 	}
+	craftsmen = {
+		culture = gondorian
+		religion = men
+		size = 855
+	}
+	craftsmen = {
+		culture = dunir
+		religion = men
+		size = 45
+	}
 	labourers = {
 		culture = gondorian
 		religion = men
-		size = 12824
+		size = 24453
 	}
 	labourers = {
 		culture = dunir
 		religion = men
-		size = 675
+		size = 1287
 	}
 	soldiers = {
 		culture = gondorian
@@ -4102,11 +4687,6 @@
 		culture = dunir
 		religion = men
 		size = 144
-	}
-	tribals = {
-		culture = dunir
-		religion = men
-		size = 13200
 	}
 }
 
@@ -4137,6 +4717,11 @@
 		religion = men
 		size = 128
 	}
+	capitalists = {
+		culture = gondorian
+		religion = men
+		size = 80
+	}
 	clergymen = {
 		culture = gondorian
 		religion = men
@@ -4147,15 +4732,25 @@
 		religion = men
 		size = 96
 	}
+	craftsmen = {
+		culture = gondorian
+		religion = men
+		size = 1140
+	}
+	craftsmen = {
+		culture = dunir
+		religion = men
+		size = 60
+	}
 	labourers = {
 		culture = gondorian
 		religion = men
-		size = 16719
+		size = 32604
 	}
 	labourers = {
 		culture = dunir
 		religion = men
-		size = 879
+		size = 1716
 	}
 	soldiers = {
 		culture = gondorian
@@ -4166,11 +4761,6 @@
 		culture = dunir
 		religion = men
 		size = 128
-	}
-	tribals = {
-		culture = dunir
-		religion = men
-		size = 18000
 	}
 }
 
@@ -4194,7 +4784,7 @@
 	capitalists = {
 		culture = gondorian
 		religion = men
-		size = 60
+		size = 120
 	}
 	clergymen = {
 		culture = gondorian
@@ -4204,12 +4794,12 @@
 	craftsmen = {
 		culture = gondorian
 		religion = men
-		size = 600
+		size = 1800
 	}
 	labourers = {
 		culture = gondorian
 		religion = men
-		size = 51060
+		size = 49800
 	}
 	soldiers = {
 		culture = gondorian
@@ -4238,7 +4828,7 @@
 	capitalists = {
 		culture = gondorian
 		religion = men
-		size = 60
+		size = 120
 	}
 	clergymen = {
 		culture = gondorian
@@ -4248,12 +4838,12 @@
 	craftsmen = {
 		culture = gondorian
 		religion = men
-		size = 600
+		size = 1800
 	}
 	labourers = {
 		culture = gondorian
 		religion = men
-		size = 51060
+		size = 49800
 	}
 	soldiers = {
 		culture = gondorian
@@ -4279,30 +4869,40 @@
 		religion = men
 		size = 320
 	}
+	capitalists = {
+		culture = gondorian
+		religion = men
+		size = 80
+	}
 	clergymen = {
 		culture = gondorian
 		religion = men
 		size = 240
 	}
+	craftsmen = {
+		culture = gondorian
+		religion = men
+		size = 1080
+	}
+	craftsmen = {
+		culture = dunir
+		religion = men
+		size = 120
+	}
 	labourers = {
 		culture = gondorian
 		religion = men
-		size = 30420
+		size = 30888
 	}
 	labourers = {
 		culture = dunir
 		religion = men
-		size = 3380
+		size = 3432
 	}
 	soldiers = {
 		culture = gondorian
 		religion = men
 		size = 320
-	}
-	tribals = {
-		culture = dunir
-		religion = men
-		size = 1800
 	}
 }
 
@@ -4323,30 +4923,40 @@
 		religion = men
 		size = 240
 	}
+	capitalists = {
+		culture = gondorian
+		religion = men
+		size = 60
+	}
 	clergymen = {
 		culture = gondorian
 		religion = men
 		size = 180
 	}
+	craftsmen = {
+		culture = gondorian
+		religion = men
+		size = 810
+	}
+	craftsmen = {
+		culture = dunir
+		religion = men
+		size = 90
+	}
 	labourers = {
 		culture = gondorian
 		religion = men
-		size = 22734
+		size = 23166
 	}
 	labourers = {
 		culture = dunir
 		religion = men
-		size = 2526
+		size = 2574
 	}
 	soldiers = {
 		culture = gondorian
 		religion = men
 		size = 240
-	}
-	tribals = {
-		culture = dunir
-		religion = men
-		size = 1440
 	}
 }
 
@@ -4370,7 +4980,7 @@
 	capitalists = {
 		culture = gondorian
 		religion = men
-		size = 40
+		size = 80
 	}
 	clergymen = {
 		culture = gondorian
@@ -4380,12 +4990,12 @@
 	craftsmen = {
 		culture = gondorian
 		religion = men
-		size = 400
+		size = 1200
 	}
 	labourers = {
 		culture = gondorian
 		religion = men
-		size = 34680
+		size = 33840
 	}
 	soldiers = {
 		culture = gondorian
@@ -4414,7 +5024,7 @@
 	capitalists = {
 		culture = gondorian
 		religion = men
-		size = 50
+		size = 100
 	}
 	clergymen = {
 		culture = gondorian
@@ -4424,12 +5034,12 @@
 	craftsmen = {
 		culture = gondorian
 		religion = men
-		size = 500
+		size = 1500
 	}
 	labourers = {
 		culture = gondorian
 		religion = men
-		size = 43350
+		size = 42300
 	}
 	soldiers = {
 		culture = gondorian
@@ -4455,15 +5065,25 @@
 		religion = men
 		size = 400
 	}
+	capitalists = {
+		culture = gondorian
+		religion = men
+		size = 100
+	}
 	clergymen = {
 		culture = gondorian
 		religion = men
 		size = 300
 	}
+	craftsmen = {
+		culture = gondorian
+		religion = men
+		size = 1500
+	}
 	labourers = {
 		culture = gondorian
 		religion = men
-		size = 45900
+		size = 44300
 	}
 	soldiers = {
 		culture = gondorian
@@ -4489,15 +5109,25 @@
 		religion = men
 		size = 480
 	}
+	capitalists = {
+		culture = gondorian
+		religion = men
+		size = 120
+	}
 	clergymen = {
 		culture = gondorian
 		religion = men
 		size = 360
 	}
+	craftsmen = {
+		culture = gondorian
+		religion = men
+		size = 1800
+	}
 	labourers = {
 		culture = gondorian
 		religion = men
-		size = 55080
+		size = 53160
 	}
 	soldiers = {
 		culture = gondorian
@@ -4523,15 +5153,25 @@
 		religion = men
 		size = 1600
 	}
+	capitalists = {
+		culture = gondorian
+		religion = men
+		size = 400
+	}
 	clergymen = {
 		culture = gondorian
 		religion = men
 		size = 1200
 	}
+	craftsmen = {
+		culture = gondorian
+		religion = men
+		size = 6000
+	}
 	labourers = {
 		culture = gondorian
 		religion = men
-		size = 177200
+		size = 170800
 	}
 	soldiers = {
 		culture = gondorian
@@ -4560,7 +5200,7 @@
 	capitalists = {
 		culture = gondorian
 		religion = men
-		size = 160
+		size = 320
 	}
 	clergymen = {
 		culture = gondorian
@@ -4570,27 +5210,27 @@
 	craftsmen = {
 		culture = gondorian
 		religion = men
-		size = 1600
+		size = 4320
+	}
+	craftsmen = {
+		culture = dunir
+		religion = men
+		size = 480
 	}
 	labourers = {
 		culture = gondorian
 		religion = men
-		size = 112463
+		size = 123840
 	}
 	labourers = {
 		culture = dunir
 		religion = men
-		size = 12496
+		size = 13760
 	}
 	soldiers = {
 		culture = gondorian
 		religion = men
 		size = 960
-	}
-	tribals = {
-		culture = dunir
-		religion = men
-		size = 16000
 	}
 }
 
@@ -4611,30 +5251,40 @@
 		religion = men
 		size = 240
 	}
+	capitalists = {
+		culture = gondorian
+		religion = men
+		size = 80
+	}
 	clergymen = {
 		culture = gondorian
 		religion = men
 		size = 160
 	}
+	craftsmen = {
+		culture = gondorian
+		religion = men
+		size = 1080
+	}
+	craftsmen = {
+		culture = dunir
+		religion = men
+		size = 120
+	}
 	labourers = {
 		culture = gondorian
 		religion = men
-		size = 29376
+		size = 32184
 	}
 	labourers = {
 		culture = dunir
 		religion = men
-		size = 3264
+		size = 3576
 	}
 	soldiers = {
 		culture = gondorian
 		religion = men
 		size = 240
-	}
-	tribals = {
-		culture = dunir
-		religion = men
-		size = 4400
 	}
 }
 
@@ -4658,7 +5308,7 @@
 	capitalists = {
 		culture = gondorian
 		religion = men
-		size = 60
+		size = 120
 	}
 	clergymen = {
 		culture = gondorian
@@ -4668,27 +5318,27 @@
 	craftsmen = {
 		culture = gondorian
 		religion = men
-		size = 600
+		size = 1620
+	}
+	craftsmen = {
+		culture = dunir
+		religion = men
+		size = 180
 	}
 	labourers = {
 		culture = gondorian
 		religion = men
-		size = 45711
+		size = 49977
 	}
 	labourers = {
 		culture = dunir
 		religion = men
-		size = 5079
+		size = 5553
 	}
 	soldiers = {
 		culture = gondorian
 		religion = men
 		size = 300
-	}
-	tribals = {
-		culture = dunir
-		religion = men
-		size = 6000
 	}
 }
 
@@ -4712,7 +5362,7 @@
 	capitalists = {
 		culture = gondorian
 		religion = men
-		size = 50
+		size = 100
 	}
 	clergymen = {
 		culture = gondorian
@@ -4722,27 +5372,27 @@
 	craftsmen = {
 		culture = gondorian
 		religion = men
-		size = 500
+		size = 1350
+	}
+	craftsmen = {
+		culture = dunir
+		religion = men
+		size = 150
 	}
 	labourers = {
 		culture = gondorian
 		religion = men
-		size = 37642
+		size = 41647
 	}
 	labourers = {
 		culture = dunir
 		religion = men
-		size = 4182
+		size = 4627
 	}
 	soldiers = {
 		culture = gondorian
 		religion = men
 		size = 250
-	}
-	tribals = {
-		culture = dunir
-		religion = men
-		size = 5500
 	}
 }
 
@@ -4766,7 +5416,7 @@
 	capitalists = {
 		culture = gondorian
 		religion = men
-		size = 30
+		size = 60
 	}
 	clergymen = {
 		culture = gondorian
@@ -4776,27 +5426,27 @@
 	craftsmen = {
 		culture = gondorian
 		religion = men
-		size = 300
+		size = 810
+	}
+	craftsmen = {
+		culture = dunir
+		religion = men
+		size = 90
 	}
 	labourers = {
 		culture = gondorian
 		religion = men
-		size = 22855
+		size = 24988
 	}
 	labourers = {
 		culture = dunir
 		religion = men
-		size = 2539
+		size = 2776
 	}
 	soldiers = {
 		culture = gondorian
 		religion = men
 		size = 150
-	}
-	tribals = {
-		culture = dunir
-		religion = men
-		size = 3000
 	}
 }
 
@@ -4820,7 +5470,7 @@
 	capitalists = {
 		culture = gondorian
 		religion = men
-		size = 120
+		size = 240
 	}
 	clergymen = {
 		culture = gondorian
@@ -4830,27 +5480,27 @@
 	craftsmen = {
 		culture = gondorian
 		religion = men
-		size = 1200
+		size = 3240
+	}
+	craftsmen = {
+		culture = dunir
+		religion = men
+		size = 360
 	}
 	labourers = {
 		culture = gondorian
 		religion = men
-		size = 86075
+		size = 95688
 	}
 	labourers = {
 		culture = dunir
 		religion = men
-		size = 9563
+		size = 10632
 	}
 	soldiers = {
 		culture = gondorian
 		religion = men
 		size = 839
-	}
-	tribals = {
-		culture = dunir
-		religion = men
-		size = 13200
 	}
 }
 
@@ -4881,6 +5531,11 @@
 		religion = men
 		size = 64
 	}
+	capitalists = {
+		culture = gondorian
+		religion = men
+		size = 80
+	}
 	clergymen = {
 		culture = gondorian
 		religion = men
@@ -4891,15 +5546,25 @@
 		religion = men
 		size = 64
 	}
+	craftsmen = {
+		culture = gondorian
+		religion = men
+		size = 720
+	}
+	craftsmen = {
+		culture = dunir
+		religion = men
+		size = 480
+	}
 	labourers = {
 		culture = gondorian
 		religion = men
-		size = 22656
+		size = 21888
 	}
 	labourers = {
 		culture = dunir
 		religion = men
-		size = 15104
+		size = 14592
 	}
 	soldiers = {
 		culture = gondorian
@@ -4940,6 +5605,11 @@
 		religion = men
 		size = 140
 	}
+	capitalists = {
+		culture = gondorian
+		religion = men
+		size = 140
+	}
 	clergymen = {
 		culture = gondorian
 		religion = men
@@ -4950,15 +5620,25 @@
 		religion = men
 		size = 140
 	}
+	craftsmen = {
+		culture = gondorian
+		religion = men
+		size = 1365
+	}
+	craftsmen = {
+		culture = dunir
+		religion = men
+		size = 735
+	}
 	labourers = {
 		culture = gondorian
 		religion = men
-		size = 36127
+		size = 41496
 	}
 	labourers = {
 		culture = dunir
 		religion = men
-		size = 19453
+		size = 22344
 	}
 	soldiers = {
 		culture = gondorian
@@ -4969,11 +5649,6 @@
 		culture = dunir
 		religion = men
 		size = 210
-	}
-	tribals = {
-		culture = dunir
-		religion = men
-		size = 10500
 	}
 }
 
@@ -5004,6 +5679,11 @@
 		religion = men
 		size = 72
 	}
+	capitalists = {
+		culture = gondorian
+		religion = men
+		size = 80
+	}
 	clergymen = {
 		culture = gondorian
 		religion = men
@@ -5014,15 +5694,25 @@
 		religion = men
 		size = 72
 	}
+	craftsmen = {
+		culture = gondorian
+		religion = men
+		size = 840
+	}
+	craftsmen = {
+		culture = dunir
+		religion = men
+		size = 360
+	}
 	labourers = {
 		culture = gondorian
 		religion = men
-		size = 18452
+		size = 25956
 	}
 	labourers = {
 		culture = dunir
 		religion = men
-		size = 7908
+		size = 11124
 	}
 	soldiers = {
 		culture = gondorian
@@ -5033,11 +5723,6 @@
 		culture = dunir
 		religion = men
 		size = 120
-	}
-	tribals = {
-		culture = dunir
-		religion = men
-		size = 12000
 	}
 }
 
@@ -5068,6 +5753,11 @@
 		religion = men
 		size = 24
 	}
+	capitalists = {
+		culture = gondorian
+		religion = men
+		size = 60
+	}
 	clergymen = {
 		culture = gondorian
 		religion = men
@@ -5078,15 +5768,25 @@
 		religion = men
 		size = 12
 	}
+	craftsmen = {
+		culture = gondorian
+		religion = men
+		size = 720
+	}
+	craftsmen = {
+		culture = dunir
+		religion = men
+		size = 180
+	}
 	labourers = {
 		culture = gondorian
 		religion = men
-		size = 18096
+		size = 22368
 	}
 	labourers = {
 		culture = dunir
 		religion = men
-		size = 4524
+		size = 5592
 	}
 	soldiers = {
 		culture = gondorian
@@ -5097,11 +5797,6 @@
 		culture = dunir
 		religion = men
 		size = 36
-	}
-	tribals = {
-		culture = dunir
-		religion = men
-		size = 6300
 	}
 }
 
@@ -5122,30 +5817,40 @@
 		religion = men
 		size = 40
 	}
+	capitalists = {
+		culture = gondorian
+		religion = men
+		size = 40
+	}
 	clergymen = {
 		culture = gondorian
 		religion = men
 		size = 20
 	}
+	craftsmen = {
+		culture = gondorian
+		religion = men
+		size = 540
+	}
+	craftsmen = {
+		culture = dunir
+		religion = men
+		size = 60
+	}
 	labourers = {
 		culture = gondorian
 		religion = men
-		size = 15552
+		size = 16776
 	}
 	labourers = {
 		culture = dunir
 		religion = men
-		size = 1728
+		size = 1864
 	}
 	soldiers = {
 		culture = gondorian
 		religion = men
 		size = 60
-	}
-	tribals = {
-		culture = dunir
-		religion = men
-		size = 2000
 	}
 }
 
@@ -5176,6 +5881,11 @@
 		religion = men
 		size = 24
 	}
+	capitalists = {
+		culture = gondorian
+		religion = men
+		size = 60
+	}
 	clergymen = {
 		culture = gondorian
 		religion = men
@@ -5186,15 +5896,25 @@
 		religion = men
 		size = 12
 	}
+	craftsmen = {
+		culture = gondorian
+		religion = men
+		size = 720
+	}
+	craftsmen = {
+		culture = dunir
+		religion = men
+		size = 180
+	}
 	labourers = {
 		culture = gondorian
 		religion = men
-		size = 18096
+		size = 22368
 	}
 	labourers = {
 		culture = dunir
 		religion = men
-		size = 4524
+		size = 5592
 	}
 	soldiers = {
 		culture = gondorian
@@ -5205,11 +5925,6 @@
 		culture = dunir
 		religion = men
 		size = 36
-	}
-	tribals = {
-		culture = dunir
-		religion = men
-		size = 6300
 	}
 }
 
@@ -5240,6 +5955,11 @@
 		religion = men
 		size = 83
 	}
+	capitalists = {
+		culture = gondorian
+		religion = men
+		size = 80
+	}
 	clergymen = {
 		culture = gondorian
 		religion = men
@@ -5250,15 +5970,25 @@
 		religion = men
 		size = 72
 	}
+	craftsmen = {
+		culture = gondorian
+		religion = men
+		size = 840
+	}
+	craftsmen = {
+		culture = dunir
+		religion = men
+		size = 360
+	}
 	labourers = {
 		culture = gondorian
 		religion = men
-		size = 17513
+		size = 25018
 	}
 	labourers = {
 		culture = dunir
 		religion = men
-		size = 7505
+		size = 10722
 	}
 	soldiers = {
 		culture = gondorian
@@ -5269,11 +5999,6 @@
 		culture = dunir
 		religion = men
 		size = 96
-	}
-	tribals = {
-		culture = dunir
-		religion = men
-		size = 12000
 	}
 }
 
@@ -5294,30 +6019,40 @@
 		religion = men
 		size = 60
 	}
+	capitalists = {
+		culture = dunir
+		religion = men
+		size = 60
+	}
 	clergymen = {
 		culture = dunir
 		religion = men
 		size = 30
 	}
+	craftsmen = {
+		culture = gondorian
+		religion = men
+		size = 495
+	}
+	craftsmen = {
+		culture = dunir
+		religion = men
+		size = 405
+	}
 	labourers = {
 		culture = gondorian
 		religion = men
-		size = 8481
+		size = 15378
 	}
 	labourers = {
 		culture = dunir
 		religion = men
-		size = 6939
+		size = 12582
 	}
 	soldiers = {
 		culture = dunir
 		religion = men
 		size = 90
-	}
-	tribals = {
-		culture = dunir
-		religion = men
-		size = 13500
 	}
 }
 
@@ -5338,20 +6073,35 @@
 		religion = men
 		size = 40
 	}
+	capitalists = {
+		culture = dunir
+		religion = men
+		size = 40
+	}
 	clergymen = {
 		culture = dunir
 		religion = men
 		size = 20
 	}
+	craftsmen = {
+		culture = gondorian
+		religion = men
+		size = 390
+	}
+	craftsmen = {
+		culture = dunir
+		religion = men
+		size = 210
+	}
 	labourers = {
 		culture = gondorian
 		religion = men
-		size = 7657
+		size = 12116
 	}
 	labourers = {
 		culture = dunir
 		religion = men
-		size = 4123
+		size = 6524
 	}
 	soldiers = {
 		culture = gondorian
@@ -5362,11 +6112,6 @@
 		culture = dunir
 		religion = men
 		size = 45
-	}
-	tribals = {
-		culture = dunir
-		religion = men
-		size = 7500
 	}
 }
 
@@ -5387,30 +6132,40 @@
 		religion = men
 		size = 60
 	}
+	capitalists = {
+		culture = dunir
+		religion = men
+		size = 60
+	}
 	clergymen = {
 		culture = dunir
 		religion = men
 		size = 30
 	}
+	craftsmen = {
+		culture = gondorian
+		religion = men
+		size = 495
+	}
+	craftsmen = {
+		culture = dunir
+		religion = men
+		size = 405
+	}
 	labourers = {
 		culture = gondorian
 		religion = men
-		size = 8481
+		size = 15378
 	}
 	labourers = {
 		culture = dunir
 		religion = men
-		size = 6939
+		size = 12582
 	}
 	soldiers = {
 		culture = dunir
 		religion = men
 		size = 90
-	}
-	tribals = {
-		culture = dunir
-		religion = men
-		size = 13500
 	}
 }
 
@@ -5439,17 +6194,12 @@
 	labourers = {
 		culture = dunir
 		religion = men
-		size = 9120
+		size = 19120
 	}
 	soldiers = {
 		culture = dunir
 		religion = men
 		size = 200
-	}
-	tribals = {
-		culture = dunir
-		religion = men
-		size = 10000
 	}
 }
 
@@ -5478,17 +6228,12 @@
 	labourers = {
 		culture = dunir
 		religion = men
-		size = 8859
+		size = 18860
 	}
 	soldiers = {
 		culture = dunir
 		religion = men
 		size = 200
-	}
-	tribals = {
-		culture = dunir
-		religion = men
-		size = 10000
 	}
 }
 
@@ -5517,12 +6262,12 @@
 	labourers = {
 		culture = gondorian
 		religion = men
-		size = 7465
+		size = 12730
 	}
 	labourers = {
 		culture = dunir
 		religion = men
-		size = 9124
+		size = 15559
 	}
 	soldiers = {
 		culture = gondorian
@@ -5533,11 +6278,6 @@
 		culture = dunir
 		religion = men
 		size = 225
-	}
-	tribals = {
-		culture = dunir
-		religion = men
-		size = 11700
 	}
 }
 
@@ -5566,12 +6306,12 @@
 	labourers = {
 		culture = gondorian
 		religion = men
-		size = 9000
+		size = 9510
 	}
 	labourers = {
 		culture = dunir
 		religion = men
-		size = 27000
+		size = 28530
 	}
 	soldiers = {
 		culture = gondorian
@@ -5582,11 +6322,6 @@
 		culture = dunir
 		religion = men
 		size = 300
-	}
-	tribals = {
-		culture = dunir
-		religion = men
-		size = 2039
 	}
 }
 
@@ -5615,22 +6350,17 @@
 	labourers = {
 		culture = gondorian
 		religion = men
-		size = 2697
+		size = 2853
 	}
 	labourers = {
 		culture = dunir
 		religion = men
-		size = 24273
+		size = 25677
 	}
 	soldiers = {
 		culture = dunir
 		religion = men
 		size = 300
-	}
-	tribals = {
-		culture = dunir
-		religion = men
-		size = 1560
 	}
 }
 
@@ -5659,22 +6389,17 @@
 	labourers = {
 		culture = gondorian
 		religion = men
-		size = 3592
+		size = 3804
 	}
 	labourers = {
 		culture = dunir
 		religion = men
-		size = 32328
+		size = 34236
 	}
 	soldiers = {
 		culture = dunir
 		religion = men
 		size = 400
-	}
-	tribals = {
-		culture = dunir
-		religion = men
-		size = 2120
 	}
 }
 
@@ -5703,12 +6428,12 @@
 	labourers = {
 		culture = gondorian
 		religion = men
-		size = 17080
+		size = 18160
 	}
 	labourers = {
 		culture = dunir
 		religion = men
-		size = 51240
+		size = 54480
 	}
 	soldiers = {
 		culture = gondorian
@@ -5719,11 +6444,6 @@
 		culture = dunir
 		religion = men
 		size = 900
-	}
-	tribals = {
-		culture = dunir
-		religion = men
-		size = 4320
 	}
 }
 
@@ -5752,17 +6472,12 @@
 	labourers = {
 		culture = dunir
 		religion = men
-		size = 44650
+		size = 47400
 	}
 	soldiers = {
 		culture = dunir
 		religion = men
 		size = 500
-	}
-	tribals = {
-		culture = dunir
-		religion = men
-		size = 2750
 	}
 }
 
@@ -5791,22 +6506,17 @@
 	labourers = {
 		culture = gondorian
 		religion = men
-		size = 1790
+		size = 1902
 	}
 	labourers = {
 		culture = dunir
 		religion = men
-		size = 16110
+		size = 17118
 	}
 	soldiers = {
 		culture = dunir
 		religion = men
 		size = 200
-	}
-	tribals = {
-		culture = dunir
-		religion = men
-		size = 1119
 	}
 }
 
@@ -5835,22 +6545,17 @@
 	labourers = {
 		culture = gondorian
 		religion = men
-		size = 2706
+		size = 2853
 	}
 	labourers = {
 		culture = dunir
 		religion = men
-		size = 24354
+		size = 25677
 	}
 	soldiers = {
 		culture = dunir
 		religion = men
 		size = 300
-	}
-	tribals = {
-		culture = dunir
-		religion = men
-		size = 1470
 	}
 }
 
@@ -5879,12 +6584,12 @@
 	labourers = {
 		culture = gondorian
 		religion = men
-		size = 4515
+		size = 4755
 	}
 	labourers = {
 		culture = dunir
 		religion = men
-		size = 13545
+		size = 14265
 	}
 	soldiers = {
 		culture = gondorian
@@ -5895,11 +6600,6 @@
 		culture = dunir
 		religion = men
 		size = 150
-	}
-	tribals = {
-		culture = dunir
-		religion = men
-		size = 960
 	}
 }
 
@@ -5928,22 +6628,17 @@
 	labourers = {
 		culture = gondorian
 		religion = men
-		size = 1356
+		size = 1426
 	}
 	labourers = {
 		culture = dunir
 		religion = men
-		size = 25764
+		size = 27103
 	}
 	soldiers = {
 		culture = dunir
 		religion = men
 		size = 300
-	}
-	tribals = {
-		culture = dunir
-		religion = men
-		size = 1410
 	}
 }
 
@@ -5972,22 +6667,17 @@
 	labourers = {
 		culture = gondorian
 		religion = men
-		size = 1807
+		size = 1902
 	}
 	labourers = {
 		culture = dunir
 		religion = men
-		size = 34333
+		size = 36138
 	}
 	soldiers = {
 		culture = dunir
 		religion = men
 		size = 400
-	}
-	tribals = {
-		culture = dunir
-		religion = men
-		size = 1900
 	}
 }
 
@@ -6016,17 +6706,12 @@
 	labourers = {
 		culture = dunir
 		religion = men
-		size = 26490
+		size = 28005
 	}
 	soldiers = {
 		culture = dunir
 		religion = men
 		size = 375
-	}
-	tribals = {
-		culture = dunir
-		religion = men
-		size = 1515
 	}
 }
 
@@ -6055,22 +6740,17 @@
 	labourers = {
 		culture = gondorian
 		religion = men
-		size = 1768
+		size = 1867
 	}
 	labourers = {
 		culture = dunir
 		religion = men
-		size = 33592
+		size = 35473
 	}
 	soldiers = {
 		culture = dunir
 		religion = men
 		size = 500
-	}
-	tribals = {
-		culture = dunir
-		religion = men
-		size = 1980
 	}
 }
 
@@ -6099,22 +6779,17 @@
 	labourers = {
 		culture = gondorian
 		religion = men
-		size = 1764
+		size = 1867
 	}
 	labourers = {
 		culture = dunir
 		religion = men
-		size = 33516
+		size = 35473
 	}
 	soldiers = {
 		culture = dunir
 		religion = men
 		size = 500
-	}
-	tribals = {
-		culture = dunir
-		religion = men
-		size = 2060
 	}
 }
 
@@ -6143,22 +6818,17 @@
 	labourers = {
 		culture = gondorian
 		religion = men
-		size = 3540
+		size = 3734
 	}
 	labourers = {
 		culture = dunir
 		religion = men
-		size = 67260
+		size = 70946
 	}
 	soldiers = {
 		culture = dunir
 		religion = men
 		size = 1000
-	}
-	tribals = {
-		culture = dunir
-		religion = men
-		size = 3879
 	}
 }
 
@@ -6187,17 +6857,12 @@
 	labourers = {
 		culture = dunir
 		religion = men
-		size = 17620
+		size = 18670
 	}
 	soldiers = {
 		culture = dunir
 		religion = men
 		size = 250
-	}
-	tribals = {
-		culture = dunir
-		religion = men
-		size = 1050
 	}
 }
 
@@ -6226,12 +6891,12 @@
 	labourers = {
 		culture = gondorian
 		religion = men
-		size = 6487
+		size = 6862
 	}
 	labourers = {
 		culture = dunir
 		religion = men
-		size = 19462
+		size = 20587
 	}
 	soldiers = {
 		culture = gondorian
@@ -6242,11 +6907,6 @@
 		culture = dunir
 		religion = men
 		size = 270
-	}
-	tribals = {
-		culture = dunir
-		religion = men
-		size = 1500
 	}
 }
 
@@ -6275,12 +6935,12 @@
 	labourers = {
 		culture = druedain
 		religion = men
-		size = 4512
+		size = 4780
 	}
 	labourers = {
 		culture = dunir
 		religion = men
-		size = 13537
+		size = 14340
 	}
 	soldiers = {
 		culture = druedain
@@ -6291,11 +6951,6 @@
 		culture = dunir
 		religion = men
 		size = 120
-	}
-	tribals = {
-		culture = dunir
-		religion = men
-		size = 1070
 	}
 }
 
@@ -6324,17 +6979,12 @@
 	labourers = {
 		culture = druedain
 		religion = men
-		size = 13522
+		size = 14340
 	}
 	soldiers = {
 		culture = druedain
 		religion = men
 		size = 120
-	}
-	tribals = {
-		culture = dunir
-		religion = men
-		size = 817
 	}
 }
 
@@ -6378,12 +7028,12 @@
 	labourers = {
 		culture = druedain
 		religion = men
-		size = 14408
+		size = 15296
 	}
 	labourers = {
 		culture = dunir
 		religion = men
-		size = 3602
+		size = 3824
 	}
 	soldiers = {
 		culture = druedain
@@ -6394,16 +7044,6 @@
 		culture = dunir
 		religion = men
 		size = 32
-	}
-	tribals = {
-		culture = druedain
-		religion = men
-		size = 499
-	}
-	tribals = {
-		culture = dunir
-		religion = men
-		size = 610
 	}
 }
 
@@ -6447,12 +7087,12 @@
 	labourers = {
 		culture = druedain
 		religion = men
-		size = 10914
+		size = 11472
 	}
 	labourers = {
 		culture = dunir
 		religion = men
-		size = 7276
+		size = 7648
 	}
 	soldiers = {
 		culture = druedain
@@ -6463,16 +7103,6 @@
 		culture = dunir
 		religion = men
 		size = 64
-	}
-	tribals = {
-		culture = druedain
-		religion = men
-		size = 418
-	}
-	tribals = {
-		culture = dunir
-		religion = men
-		size = 511
 	}
 }
 
@@ -6501,22 +7131,17 @@
 	labourers = {
 		culture = gondorian
 		religion = men
-		size = 1304
+		size = 1372
 	}
 	labourers = {
 		culture = dunir
 		religion = men
-		size = 24780
+		size = 26077
 	}
 	soldiers = {
 		culture = dunir
 		religion = men
 		size = 360
-	}
-	tribals = {
-		culture = dunir
-		religion = men
-		size = 1365
 	}
 }
 
@@ -6545,22 +7170,17 @@
 	labourers = {
 		culture = gondorian
 		religion = men
-		size = 3476
+		size = 3660
 	}
 	labourers = {
 		culture = dunir
 		religion = men
-		size = 31284
+		size = 32940
 	}
 	soldiers = {
 		culture = dunir
 		religion = men
 		size = 480
-	}
-	tribals = {
-		culture = dunir
-		religion = men
-		size = 1840
 	}
 }
 
@@ -6589,22 +7209,17 @@
 	labourers = {
 		culture = gondorian
 		religion = men
-		size = 1654
+		size = 1744
 	}
 	labourers = {
 		culture = dunir
 		religion = men
-		size = 31426
+		size = 33136
 	}
 	soldiers = {
 		culture = dunir
 		religion = men
 		size = 800
-	}
-	tribals = {
-		culture = dunir
-		religion = men
-		size = 1800
 	}
 }
 
@@ -6653,12 +7268,12 @@
 	labourers = {
 		culture = druedain
 		religion = men
-		size = 19728
+		size = 20928
 	}
 	labourers = {
 		culture = dunir
 		religion = men
-		size = 13152
+		size = 13952
 	}
 	soldiers = {
 		culture = druedain
@@ -6669,11 +7284,6 @@
 		culture = dunir
 		religion = men
 		size = 320
-	}
-	tribals = {
-		culture = dunir
-		religion = men
-		size = 2000
 	}
 }
 
@@ -6702,27 +7312,17 @@
 	labourers = {
 		culture = druedain
 		religion = men
-		size = 13842
+		size = 14742
 	}
 	labourers = {
 		culture = enedwaithrim
 		religion = men
-		size = 9228
+		size = 9828
 	}
 	soldiers = {
 		culture = druedain
 		religion = men
 		size = 1500
-	}
-	tribals = {
-		culture = druedain
-		religion = men
-		size = 900
-	}
-	tribals = {
-		culture = enedwaithrim
-		religion = men
-		size = 600
 	}
 }
 
@@ -6751,22 +7351,17 @@
 	labourers = {
 		culture = druedain
 		religion = men
-		size = 45936
+		size = 47375
 	}
 	labourers = {
 		culture = enedwaithrim
 		religion = men
-		size = 5104
+		size = 5264
 	}
 	soldiers = {
 		culture = druedain
 		religion = men
 		size = 8000
-	}
-	tribals = {
-		culture = enedwaithrim
-		religion = men
-		size = 1600
 	}
 }
 
@@ -6849,12 +7444,12 @@
 	labourers = {
 		culture = druedain
 		religion = men
-		size = 20760
+		size = 21984
 	}
 	labourers = {
 		culture = dunir
 		religion = men
-		size = 5190
+		size = 5496
 	}
 	soldiers = {
 		culture = druedain
@@ -6865,16 +7460,6 @@
 		culture = dunir
 		religion = men
 		size = 90
-	}
-	tribals = {
-		culture = druedain
-		religion = men
-		size = 688
-	}
-	tribals = {
-		culture = dunir
-		religion = men
-		size = 841
 	}
 }
 
@@ -6927,12 +7512,12 @@
 	labourers = {
 		culture = druedain
 		religion = men
-		size = 3564
+		size = 3772
 	}
 	labourers = {
 		culture = dunir
 		religion = men
-		size = 891
+		size = 943
 	}
 	soldiers = {
 		culture = druedain
@@ -6943,16 +7528,6 @@
 		culture = dunir
 		religion = men
 		size = 20
-	}
-	tribals = {
-		culture = druedain
-		religion = men
-		size = 117
-	}
-	tribals = {
-		culture = dunir
-		religion = men
-		size = 143
 	}
 }
 
@@ -7024,22 +7599,12 @@
 	labourers = {
 		culture = druedain
 		religion = men
-		size = 11145
+		size = 13395
 	}
 	soldiers = {
 		culture = druedain
 		religion = men
 		size = 600
-	}
-	tribals = {
-		culture = rohirrim
-		religion = men
-		size = 562
-	}
-	tribals = {
-		culture = isenmen
-		religion = men
-		size = 1687
 	}
 }
 
@@ -7068,22 +7633,12 @@
 	labourers = {
 		culture = druedain
 		religion = men
-		size = 12920
+		size = 15920
 	}
 	soldiers = {
 		culture = druedain
 		religion = men
 		size = 1600
-	}
-	tribals = {
-		culture = rohirrim
-		religion = men
-		size = 750
-	}
-	tribals = {
-		culture = isenmen
-		religion = men
-		size = 2250
 	}
 }
 
@@ -7112,22 +7667,12 @@
 	labourers = {
 		culture = druedain
 		religion = men
-		size = 19170
+		size = 23669
 	}
 	soldiers = {
 		culture = druedain
 		religion = men
 		size = 2400
-	}
-	tribals = {
-		culture = rohirrim
-		religion = men
-		size = 1125
-	}
-	tribals = {
-		culture = isenmen
-		religion = men
-		size = 3375
 	}
 }
 
@@ -7616,22 +8161,17 @@
 	labourers = {
 		culture = marshmen
 		religion = men
-		size = 826
+		size = 845
 	}
 	labourers = {
 		culture = gondorian
 		religion = men
-		size = 164374
+		size = 168155
 	}
 	soldiers = {
 		culture = gondorian
 		religion = men
 		size = 3000
-	}
-	tribals = {
-		culture = marshmen
-		religion = men
-		size = 3800
 	}
 }
 
@@ -7660,22 +8200,17 @@
 	labourers = {
 		culture = marshmen
 		religion = men
-		size = 871
+		size = 920
 	}
 	labourers = {
 		culture = gondorian
 		religion = men
-		size = 86229
+		size = 91080
 	}
 	soldiers = {
 		culture = gondorian
 		religion = men
 		size = 1000
-	}
-	tribals = {
-		culture = marshmen
-		religion = men
-		size = 4900
 	}
 }
 
@@ -7704,17 +8239,12 @@
 	labourers = {
 		culture = harnendan
 		religion = men
-		size = 16500
+		size = 18300
 	}
 	soldiers = {
 		culture = harnendan
 		religion = men
 		size = 400
-	}
-	tribals = {
-		culture = harnendan
-		religion = men
-		size = 1800
 	}
 }
 
@@ -7743,17 +8273,12 @@
 	labourers = {
 		culture = harnendan
 		religion = men
-		size = 90240
+		size = 99840
 	}
 	soldiers = {
 		culture = harnendan
 		religion = men
 		size = 4800
-	}
-	tribals = {
-		culture = harnendan
-		religion = men
-		size = 9600
 	}
 }
 
@@ -7782,17 +8307,12 @@
 	labourers = {
 		culture = harnendan
 		religion = men
-		size = 25350
+		size = 27450
 	}
 	soldiers = {
 		culture = harnendan
 		religion = men
 		size = 600
-	}
-	tribals = {
-		culture = harnendan
-		religion = men
-		size = 2100
 	}
 }
 
@@ -7821,17 +8341,12 @@
 	labourers = {
 		culture = harnendan
 		religion = men
-		size = 33400
+		size = 36600
 	}
 	soldiers = {
 		culture = harnendan
 		religion = men
 		size = 800
-	}
-	tribals = {
-		culture = harnendan
-		religion = men
-		size = 3200
 	}
 }
 
@@ -7860,17 +8375,12 @@
 	labourers = {
 		culture = harnendan
 		religion = men
-		size = 41000
+		size = 45500
 	}
 	soldiers = {
 		culture = harnendan
 		religion = men
 		size = 1000
-	}
-	tribals = {
-		culture = harnendan
-		religion = men
-		size = 4500
 	}
 }
 
@@ -7899,17 +8409,12 @@
 	labourers = {
 		culture = harnendan
 		religion = men
-		size = 23549
+		size = 26550
 	}
 	soldiers = {
 		culture = harnendan
 		religion = men
 		size = 600
-	}
-	tribals = {
-		culture = harnendan
-		religion = men
-		size = 3000
 	}
 }
 
@@ -7938,17 +8443,12 @@
 	labourers = {
 		culture = harnendan
 		religion = men
-		size = 32199
+		size = 36600
 	}
 	soldiers = {
 		culture = harnendan
 		religion = men
 		size = 800
-	}
-	tribals = {
-		culture = harnendan
-		religion = men
-		size = 4400
 	}
 }
 
@@ -7977,17 +8477,12 @@
 	labourers = {
 		culture = harnendan
 		religion = men
-		size = 15899
+		size = 18300
 	}
 	soldiers = {
 		culture = harnendan
 		religion = men
 		size = 400
-	}
-	tribals = {
-		culture = harnendan
-		religion = men
-		size = 2400
 	}
 }
 
@@ -8016,22 +8511,17 @@
 	labourers = {
 		culture = marshmen
 		religion = men
-		size = 990
+		size = 1098
 	}
 	labourers = {
 		culture = harnendan
 		religion = men
-		size = 48510
+		size = 53802
 	}
 	soldiers = {
 		culture = harnendan
 		religion = men
 		size = 1200
-	}
-	tribals = {
-		culture = marshmen
-		religion = men
-		size = 5400
 	}
 }
 
@@ -8060,12 +8550,12 @@
 	labourers = {
 		culture = marshmen
 		religion = men
-		size = 3072
+		size = 3984
 	}
 	labourers = {
 		culture = harnendan
 		religion = men
-		size = 48128
+		size = 62416
 	}
 	soldiers = {
 		culture = gondorian
@@ -8076,11 +8566,6 @@
 		culture = harnendan
 		religion = men
 		size = 1600
-	}
-	tribals = {
-		culture = marshmen
-		religion = men
-		size = 15200
 	}
 }
 
@@ -8109,17 +8594,12 @@
 	labourers = {
 		culture = harnendan
 		religion = men
-		size = 57600
+		size = 66400
 	}
 	soldiers = {
 		culture = harnendan
 		religion = men
 		size = 3200
-	}
-	tribals = {
-		culture = harnendan
-		religion = men
-		size = 8800
 	}
 }
 
@@ -8148,17 +8628,12 @@
 	labourers = {
 		culture = harnendan
 		religion = men
-		size = 73000
+		size = 83000
 	}
 	soldiers = {
 		culture = harnendan
 		religion = men
 		size = 4000
-	}
-	tribals = {
-		culture = harnendan
-		religion = men
-		size = 10000
 	}
 }
 
@@ -8187,17 +8662,12 @@
 	labourers = {
 		culture = harnendan
 		religion = men
-		size = 33040
+		size = 36640
 	}
 	soldiers = {
 		culture = harnendan
 		religion = men
 		size = 800
-	}
-	tribals = {
-		culture = harnendan
-		religion = men
-		size = 3600
 	}
 }
 
@@ -8226,17 +8696,12 @@
 	labourers = {
 		culture = harnendan
 		religion = men
-		size = 33440
+		size = 36640
 	}
 	soldiers = {
 		culture = harnendan
 		religion = men
 		size = 800
-	}
-	tribals = {
-		culture = harnendan
-		religion = men
-		size = 3200
 	}
 }
 
@@ -8265,17 +8730,12 @@
 	labourers = {
 		culture = harnendan
 		religion = men
-		size = 45600
+		size = 49800
 	}
 	soldiers = {
 		culture = harnendan
 		religion = men
 		size = 2400
-	}
-	tribals = {
-		culture = harnendan
-		religion = men
-		size = 4200
 	}
 }
 
@@ -8304,27 +8764,17 @@
 	labourers = {
 		culture = umbarrim
 		religion = men
-		size = 26480
+		size = 28880
 	}
 	labourers = {
 		culture = harnendan
 		religion = men
-		size = 105920
+		size = 115520
 	}
 	soldiers = {
 		culture = harnendan
 		religion = men
 		size = 16000
-	}
-	tribals = {
-		culture = umbarrim
-		religion = men
-		size = 600
-	}
-	tribals = {
-		culture = harnendan
-		religion = men
-		size = 11400
 	}
 }
 
@@ -8353,7 +8803,7 @@
 	labourers = {
 		culture = harnendan
 		religion = men
-		size = 42600
+		size = 46800
 	}
 	slaves = {
 		culture = harnendan
@@ -8364,11 +8814,6 @@
 		culture = harnendan
 		religion = men
 		size = 2400
-	}
-	tribals = {
-		culture = harnendan
-		religion = men
-		size = 4200
 	}
 }
 
@@ -8431,17 +8876,12 @@
 	labourers = {
 		culture = harnendan
 		religion = men
-		size = 33040
+		size = 36640
 	}
 	soldiers = {
 		culture = harnendan
 		religion = men
 		size = 800
-	}
-	tribals = {
-		culture = harnendan
-		religion = men
-		size = 3600
 	}
 }
 
@@ -8982,17 +9422,12 @@
 	labourers = {
 		culture = harnendan
 		religion = men
-		size = 8560
+		size = 9460
 	}
 	soldiers = {
 		culture = harnendan
 		religion = men
 		size = 200
-	}
-	tribals = {
-		culture = harnendan
-		religion = men
-		size = 900
 	}
 }
 
@@ -9055,27 +9490,17 @@
 	labourers = {
 		culture = chelkiag
 		religion = men
-		size = 1578
+		size = 1798
 	}
 	labourers = {
 		culture = harnendan
 		religion = men
-		size = 6312
+		size = 7192
 	}
 	soldiers = {
 		culture = harnendan
 		religion = men
 		size = 300
-	}
-	tribals = {
-		culture = chelkiag
-		religion = men
-		size = 220
-	}
-	tribals = {
-		culture = harnendan
-		religion = men
-		size = 880
 	}
 }
 

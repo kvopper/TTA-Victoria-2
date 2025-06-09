@@ -2,7 +2,7 @@
 # Audax Validator "!" Ignore_1004
 
 # CB and Cores Events: {
-#	2500 - 2999 }
+#	2500 - 2899 }
 
 # Ambassador Insulted
 country_event = {
@@ -125,15 +125,13 @@ country_event = {
 	
 	trigger = {
 		is_greater_power = yes
-		guild_autonomy_policy = independent_guilds
 		OR = {
 			war_policy = jingoism
 			war_policy = pro_military
 		}
 		any_neighbor_country = {
-			NOT = {
-				guild_autonomy_policy = independent_guilds
-			}
+			trade_policy = protectionism
+			NOT = { vassal_of = THIS }
 		}
 	}
 	
@@ -190,10 +188,9 @@ country_event = {
 		name = "Intolerable!"
 		random_country = {
 			limit = {
-				NOT = {
-					tag = THIS
-					guild_autonomy_policy = independent_guilds
-				}
+				neighbour = THIS
+				trade_policy = protectionism
+				NOT = { vassal_of = THIS }
 			}
 			add_casus_belli = {
 				target = THIS
@@ -325,6 +322,30 @@ province_event = {
 		modifier = {
 			factor = 0.9
 			NOT = { average_consciousness = 4 }
+		}
+		modifier = {
+			factor = 0.9
+			bureaucrats = 0.005
+		}
+		modifier = {
+			factor = 0.9
+			bureaucrats = 0.006
+		}
+		modifier = {
+			factor = 0.9
+			bureaucrats = 0.007
+		}
+		modifier = {
+			factor = 0.9
+			bureaucrats = 0.008
+		}
+		modifier = {
+			factor = 0.9
+			bureaucrats = 0.009
+		}
+		modifier = {
+			factor = 0.9
+			bureaucrats = 0.01
 		}
 	}
 	
@@ -492,15 +513,12 @@ country_event = {
 				NOT = { owner = { good_evil_alignment = good_alignment } }
 			}
 			owner = {
-				political_reform = good_alignment
+				ruling_party_ideology = servants
 				add_accepted_culture = good_culture
 				remove_accepted_culture = neutral_culture
 				remove_accepted_culture = evil_culture
-				clr_country_flag = attempting_to_good
-				clr_country_flag = attempting_to_neutral
-				clr_country_flag = attempting_to_evil
 					
-				any_pop = { dominant_issue = { value = good_alignment_fake factor = 0.2 } }
+				any_pop = { dominant_issue = { value = good_alignment factor = 0.2 } }
 			}
 		}
 		random_owned = {
@@ -509,15 +527,12 @@ country_event = {
 				NOT = { owner = { good_evil_alignment = neutral_alignment } }
 			}
 			owner = {
-				political_reform = neutral_alignment
+				ruling_party_ideology = servants
 				remove_accepted_culture = good_culture
 				add_accepted_culture = neutral_culture
 				remove_accepted_culture = evil_culture
-				clr_country_flag = attempting_to_good
-				clr_country_flag = attempting_to_neutral
-				clr_country_flag = attempting_to_evil
 					
-				any_pop = { dominant_issue = { value = neutral_alignment_fake factor = 0.2 } }
+				any_pop = { dominant_issue = { value = neutral_alignment factor = 0.2 } }
 			}
 		}
 		random_owned = {
@@ -526,15 +541,12 @@ country_event = {
 				NOT = { owner = { good_evil_alignment = evil_alignment } }
 			}
 			owner = {
-				political_reform = evil_alignment
+				ruling_party_ideology = servants
 				remove_accepted_culture = good_culture
 				remove_accepted_culture = neutral_culture
 				add_accepted_culture = evil_culture
-				clr_country_flag = attempting_to_good
-				clr_country_flag = attempting_to_neutral
-				clr_country_flag = attempting_to_evil
 					
-				any_pop = { dominant_issue = { value = evil_alignment_fake factor = 0.2 } }
+				any_pop = { dominant_issue = { value = evil_alignment factor = 0.2 } }
 				any_state = { is_slave = yes }
 			}
 		}
@@ -571,18 +583,6 @@ country_event = {
 				who = THIS
 				value = 400
 			}
-		}
-		
-		random_country = {
-			limit = {
-				is_our_vassal = THIS
-				OR = {
-					tag = GON
-					tag = RUN
-					tag = GNR
-				}
-			}
-			THIS = { government = fiefdom }
 		}
 	}
 }
@@ -655,5 +655,38 @@ country_event = {
 	option = {
 		name = "We will keep everything we've gained."
 		ai_chance = { factor = 0 }
+	}
+}
+
+# Clearing Coring Modifiers on Cored Provinces
+province_event = {
+	id = 2513
+	title = "The Integration of $PROVINCENAME$"
+	desc = "EVTDESC2513"
+	
+	trigger = {
+		is_core = THIS
+		OR = {
+			has_province_modifier = cultural_core_integration
+			has_province_modifier = core_integration
+		}
+	}
+	
+	option = {
+		name = "For the glory of the $COUNTRY$"
+		
+		owner = {
+			all_core = {
+				limit = {
+					owned_by = THIS
+					OR = {
+						has_province_modifier = cultural_core_integration
+						has_province_modifier = core_integration
+					}
+				}
+				remove_province_modifier = cultural_core_integration
+				remove_province_modifier = core_integration
+			}
+		}
 	}
 }

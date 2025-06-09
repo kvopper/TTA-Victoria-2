@@ -1,5 +1,6 @@
-owner = SAE
-controller = SAE
+owner = USR
+controller = USR
+add_core = USR
 add_core = SAE
 add_core = CAR
 add_core = ARN

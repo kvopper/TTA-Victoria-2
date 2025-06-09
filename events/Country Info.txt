@@ -5,7 +5,7 @@
 # Audax Validator "!" Ignore_NEXT
 
 # Country Information Events: {
-#	35000 - 39999 (4 per country) }
+#	35000 - 36999 }
 
 # { The Kingdom of Gondor
 # The Kingdom of Gondor
@@ -622,6 +622,13 @@ country_event = {
 	}
 
 	option = {
+		name = "EVTOPTH35000"
+		country_event = 35023
+		
+		ai_chance = { factor = 0 }
+	}
+
+	option = {
 		name = "EVTOPTD35000"
 		country_event = 35020
 		
@@ -675,6 +682,11 @@ country_event = {
 	}
 
 	option = {
+		name = "EVTOPTH35000"
+		country_event = 35023
+	}
+
+	option = {
 		name = "EVTOPTD35000"
 		country_event = 35020
 	}
@@ -694,7 +706,7 @@ country_event = {
 	}
 }
 
-# Kingdom of Dale (Barding Realm) - Government
+# Kingdom of Dale (Barding Realm) - Historical Leaders
 country_event = {
 	id = 35019
 	title = "EVTNAME35002"
@@ -717,6 +729,11 @@ country_event = {
 	option = {
 		name = "EVTOPTC35000"
 		country_event = 35019
+	}
+
+	option = {
+		name = "EVTOPTH35000"
+		country_event = 35023
 	}
 
 	option = {
@@ -1122,6 +1139,8 @@ country_event = {
 		
 		empty_line_loc = {}
 		DAL_trade_with_other_realms_desc_loc = {}
+		empty_line_loc = {}
+		DAL_trading_realm_count_loc = {}
 	}
 
 	option = {
@@ -1137,6 +1156,11 @@ country_event = {
 	option = {
 		name = "EVTOPTC35000"
 		country_event = 35019
+	}
+
+	option = {
+		name = "EVTOPTH35000"
+		country_event = 35023
 	}
 
 	option = {
@@ -1218,13 +1242,6 @@ country_event = {
 		random_owned = {
 			limit = {
 				owner = { NOT = { has_global_flag = DAL_recruited_bryn } }
-				owner = { FOR = { check_variable = { which = brand_i_age value = 15.9 } } }
-			}
-			green_color_loc = {}
-		}
-		random_owned = {
-			limit = {
-				owner = { NOT = { has_global_flag = DAL_recruited_bryn } }
 			}
 			DAL_military_leaders_brand_i_an_adult_loc = {}
 			maroon_color_loc = {}
@@ -1242,13 +1259,6 @@ country_event = {
 			}
 			DAL_military_leaders_brand_i_married_loc = {}
 			maroon_color_loc = {}
-		}
-		random_owned = {
-			limit = {
-				owner = { NOT = { has_global_flag = DAL_recruited_bryn } }
-				owner = { FOR = { check_variable = { which = bard_ii_age value = 0.9 } } }
-			}
-			green_color_loc = {}
 		}
 		random_owned = {
 			limit = {
@@ -1290,13 +1300,6 @@ country_event = {
 		random_owned = {
 			limit = {
 				owner = { NOT = { has_global_flag = DAL_recruited_girloth } }
-				owner = { FOR = { check_variable = { which = bard_ii_age value = 15.9 } } }
-			}
-			green_color_loc = {}
-		}
-		random_owned = {
-			limit = {
-				owner = { NOT = { has_global_flag = DAL_recruited_girloth } }
 			}
 			DAL_military_leaders_bard_ii_an_adult_loc = {}
 			maroon_color_loc = {}
@@ -1318,7 +1321,7 @@ country_event = {
 		random_owned = {
 			limit = {
 				owner = { NOT = { has_global_flag = DAL_recruited_girloth } }
-				owner = { has_global_flag = DAL_girion_ii_born }
+				owner = { has_global_flag = DAL_girion_ii_alive }
 			}
 			green_color_loc = {}
 		}
@@ -1363,6 +1366,11 @@ country_event = {
 	option = {
 		name = "EVTOPTC35000"
 		country_event = 35019
+	}
+
+	option = {
+		name = "EVTOPTH35000"
+		country_event = 35023
 	}
 
 	option = {
@@ -1627,6 +1635,61 @@ country_event = {
 	option = {
 		name = "EVTOPTC35000"
 		country_event = 35019
+	}
+
+	option = {
+		name = "EVTOPTH35000"
+		country_event = 35023
+	}
+
+	option = {
+		name = "EVTOPTD35000"
+		country_event = 35020
+	}
+
+	option = {
+		name = "EVTOPTG35000"
+		country_event = 35022
+	}
+
+	option = {
+		name = "EVTOPTF35000"
+		country_event = 35021
+	}
+
+	option = {
+		name = "EVTOPTE35000"
+	}
+}
+
+# Kingdom of Dale (Barding Realm) - Ahistorical Leaders
+country_event = {
+	id = 35023
+	title = "EVTNAME35002"
+	desc = "EVTDESC35023"
+	picture = "kingdom_of_dale"
+
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA35000"
+		country_event = 35017
+	}
+
+	option = {
+		name = "EVTOPTB35000"
+		country_event = 35018
+	}
+
+	option = {
+		name = "EVTOPTC35000"
+		country_event = 35019
+	}
+
+	option = {
+		name = "EVTOPTH35000"
+		country_event = 35023
 	}
 
 	option = {

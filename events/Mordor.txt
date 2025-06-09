@@ -27,7 +27,7 @@ country_event = {
 		
 		modifier = {
 			factor = 3
-			NOT = { nationalvalue = sauron }
+			NOT = { ruling_party = MOR_sauron }
 		}
 	}
 	
@@ -88,6 +88,7 @@ country_event = {
 			add_province_modifier = { name = ithilien_immigrants duration = 3650 }
 		}
 		set_global_flag = ithilien_depopulating
+		set_global_flag = mount_doom_erupting
 	}
 }
 
@@ -97,16 +98,12 @@ country_event = {
 	title = "The Occupation of Ithilien"
 	desc = "EVTDESC50502"
 	picture = "fellowship_in_ithilien"
-	news = yes
-	news_desc_long = "EVTDESC50502_NEWS_LONG"
-	news_desc_medium = "EVTDESC50502_NEWS_MEDIUM"
-	news_desc_short = "EVTDESC50502_NEWS_SHORT"
 	
 	fire_only_once = yes
 	
 	trigger = {
 		tag = MOR
-		nationalvalue = sauron
+		ruling_party = MOR_sauron
 		has_global_flag = ithilien_depopulating
 		
 		GON_198 = {
@@ -160,7 +157,6 @@ country_event = {
 	desc = "EVTDESC50503"
 	picture = "fellowship_in_ithilien"
 	
-	major = yes
 	is_triggered_only = yes
 	
 	option = {
@@ -176,7 +172,6 @@ country_event = {
 	desc = "EVTDESC50504"
 	picture = "harad/map"
 	
-	major = yes
 	is_triggered_only = yes
 	
 	option = {
@@ -458,7 +453,7 @@ country_event = {
 		create_alliance = HRD
 		HRD = {
 			country_event = 2510
-			political_reform = evil_alignment
+			ruling_party_ideology = servants
 			capital = 255
 		}
 		diplomatic_influence = {
@@ -700,7 +695,6 @@ country_event = {
 	desc = "EVTDESC50506"
 	picture = "harad/map"
 	
-	major = yes
 	is_triggered_only = yes
 	
 	option = {
@@ -781,7 +775,6 @@ country_event = {
 	desc = "EVTDESC50507"
 	picture = "harad/map"
 	
-	major = yes
 	is_triggered_only = yes
 	
 	option = {

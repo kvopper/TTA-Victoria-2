@@ -3,8 +3,8 @@
 
 # Isengard Decisions:
 #	Starting Decision (Unseen)
-#   Dunland Shenanigans
-#   Uruk Hai
+#	Dunland Shenanigans
+#	Uruk Hai
 
 # Starting Decision
 political_decisions = {
@@ -14,15 +14,20 @@ political_decisions = {
 			tag = ISE
 			always = no
 		}
-		allow = {}
-		effect = {}
+		effect = {
+			# Set allowed leaders
+			set_country_flag = ideologies_lords_of_isengard_active
+			set_country_flag = nobility_deactivated
+			
+			set_country_flag = ISE_content
+		}
 	}
 	lord_of_isengard = {
 		picture = "lord_of_isengard"
 		potential = {
 			tag = ISE
 			vassal_of = GON
-			nationalvalue = saruman
+			ruling_party = ISE_saruman
 		}
 		allow = {
 			NOT = { year = 2955 }
@@ -40,8 +45,8 @@ political_decisions = {
 				release_vassal = ISE
 				country_event = 50100
 			}
-			political_reform = neutral_alignment
-			any_pop = { dominant_issue = { value = neutral_alignment_fake factor = 0.4 } }
+			add_country_modifier = { name = saruman_modifier duration = -1 }
+			any_pop = { dominant_issue = { value = neutral_alignment factor = 0.4 } }
 		}
 	}
 }
@@ -52,7 +57,7 @@ political_decisions = {
 		potential = {
 			tag = ISE
 			is_vassal = no
-			nationalvalue = saruman
+			ruling_party = ISE_saruman
 			814 = {
 				owner = {
 					is_vassal = no
@@ -87,8 +92,9 @@ political_decisions = {
 		potential = {
 			tag = ISE
 			is_vassal = no
-			nationalvalue = saruman
+			ruling_party = ISE_saruman
 			NOT = { has_country_modifier = breeding_uruk_hai }
+			NOT = { has_global_flag = bred_uruk_hai }
 		}
 		allow = {
 			magic_3 = 1
@@ -102,7 +108,7 @@ political_decisions = {
 				name = breeding_uruk_hai
 				duration = -1
 			}
-			any_pop = { dominant_issue = { value = evil_alignment_fake factor = 0.4 } }
+			any_pop = { dominant_issue = { value = evil_alignment factor = 0.4 } }
 		}
 	}
 }

@@ -3,6 +3,21 @@
 
 # Rohan Decisions:
 #	Colonise
+
+# Starting Decisions (Unseen)
+political_decisions = {
+	ROH_start_decision = {
+		potential = { always = no }
+		effect = {
+			# Set allowed leaders
+			set_country_flag = ideologies_house_of_eorl_active
+			set_country_flag = nobility_deactivated
+			
+			set_country_flag = ROH_content
+		}
+	}
+}
+
 political_decisions = {
 	colonise_amon_hen = {
 		picture = "druwaith_iaur"
@@ -51,7 +66,7 @@ political_decisions = {
 					is_culture_group = rohirrim
 					in_sphere = THIS
 				}
-				country_event = 100003
+				country_event = 3502
 				all_core = { add_core = ROH }
 			}
 			primary_culture = rohirrim

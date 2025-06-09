@@ -1,0 +1,44 @@
+# Imladris Decisions: {
+#	Starting Decisions (Unseen)
+# Flavour
+# }
+
+# Starting Decisions (Unseen)
+political_decisions = {
+	LIN_start_decision = {
+		potential = { always = no }
+		effect = {
+			# Set allowed leaders
+			set_country_flag = ideologies_lords_of_mithlond_active
+			set_country_flag = nobility_deactivated
+			
+			set_country_flag = LIN_content
+			add_country_modifier = { name = cirdan_modifier duration = -1 }
+		}
+	}
+}
+
+# Flavour
+political_decisions = {
+  restore_himring_fortress = {
+    picture = "realm_of_lindon"
+    potential = {
+            accepted_culture = elven_culture
+      owns = 963
+      NOT = {
+        963 = {
+          has_building = fort
+        }
+      }
+    }
+    allow = {
+      fortifications_2 = 1
+      war = no
+    }
+    effect = {
+      963 = {
+        fort = 2
+      }
+    }
+  }
+}

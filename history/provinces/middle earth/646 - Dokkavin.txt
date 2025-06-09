@@ -2,7 +2,11 @@ owner = DA2
 controller = DA2
 add_core = DA2
 add_core = RIV
-add_core = RHO
 trade_goods = food
 life_rating = 30
 terrain = gramavuld_plains
+
+party_loyalty = {
+	ideology = rivermen_thegans
+	loyalty_value = 10.0
+}

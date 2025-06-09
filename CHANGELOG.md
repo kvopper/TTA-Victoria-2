@@ -1,16 +1,51 @@
 # Changelog
 All notable changes will be documented in this file.
 
-## [v0.5]() - In Development
-
+## v0.5.1 - In Development
 
 ### Highlights
- - Barding Realm flavor complete (In development)
+ - Political Rework
+ - Unit Models from CK2 by Trigori
+ - Newspaper remodel
+ - Ahistorical Barding Realm flavor
+
+### Political Rework
+ - Leaders become political parties
+ - Ideologies stay as interest groups, but interest groups are much more specific than "High Nobility", "Low Nobility", etc...
+   - Upper House renamed Council of the Realm
+   - Interest Groups support reforms only when they are in power
+ - Alignments Renamed and made a party reform
+   - Good Alignment --> Anti-Sauron
+   - Neutral Alignment --> Opportunistic
+   - Evil Alignment --> Sauronite
+ - Change Alignment cb removed
+ - Reforms rebalanced
+   - Reforms are always better the farther you go down
+     - This is done because pops cannot support reforms in the reverse (i.e., if you have wealth voting, pops will never want landed voting, even if it makes sense for them to want it)
+ - Government Type consolidation
+   - Governments used only by 1 or 2 tags have been removed and replaced by the standard generic type
+ - Old leader system (that replaced national value) replaced with heirloom system
+ - Dynamic Traits removed
+ - Added Pretender Rebels, removed many others
+ - Trade and Tax Policy re-added (from vanilla)
+
+### Mechanics/Content
+ - More terrain descriptions and tweaks added
+ - Some minor extra flavour
+ - Myriad of bug fixes
+ - New flags by SneakyDeer and Argelia4president
+ - Unaccepted bureaucrats automatically demote into labourers
+
+## [v0.5 Bearers of the Black Arrow](https://github.com/The-Third-Age/TTA-Victoria-2/releases/tag/v0.5) - 2024-12-23
+
+### Highlights
+ - Historical Barding Realm flavor
  - Map rework completed -- over 300 new provinces and many unique terrains (split between v0.4 and v0.5)
  - Plurality reworked into Popular Anxiety
  - Dynamic Localisation for select events
  - Province Wealth mechanic
  - Seasons and Weather mechanics
+ - The ability to claim regions (through flavor), yielding reduced warscore cost, but no other benefits related to cores
 
 ### New Tags
  - In Eriador: House of the Wind, Windan Elves, Dourhands of Ered Luin, Emyn Beriad, Eagles of the Eerie, Girithlin, Henlan, Fonntir, Saerlann, Caladir, Enedbund, Dol Tinereb, Mirobel, Mount Gram, Skuthruga Clan, Kosh Clan, Snow Orcs of Angmar
@@ -32,6 +67,7 @@ All notable changes will be documented in this file.
  - Railroading is starting to be fleshed out
  - Scripted Harondor colonization for Umbar, Haruzan, Chelkar and Mordor
  - Barding Realm flavor
+ - Amov Clan and Rivermen minor flavor
  - Dynamic Localisation
  - Popular Anxiety (replacing Plurality)
  - Province Wealth (replacing Crime)

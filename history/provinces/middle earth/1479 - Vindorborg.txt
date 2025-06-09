@@ -1,0 +1,7 @@
+owner = DOR
+controller = DOR
+add_core = DOR
+trade_goods = food
+life_rating = 30
+terrain = dorwinion_plains
+fort = 1

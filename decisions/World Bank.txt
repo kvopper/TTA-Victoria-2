@@ -3,13 +3,8 @@
 
 # World Bank Decisions: {
 #	Starting Decision (unseen)
-#	Good/Evil Clean Up
-#	Leave FOR Alone
-#	Government Flags Clean Up
 #	Realm Leaders
-#	Tribals
-#	Debug
-#	Tech Clean Up }
+# }
 
 # Starting Decision
 political_decisions = {
@@ -19,9 +14,6 @@ political_decisions = {
 			always = no
 			tag = FOR
 		}
-		
-		allow = {}
-		
 		effect = {
 			# For the World Bank
 #			any_owned = {
@@ -42,67 +34,20 @@ political_decisions = {
 			
 			# For Good Realms
 			any_country = {
-				limit = {
-					OR = {
-						is_culture_group = eldar
-						is_culture_group = teleri
-						is_culture_group = avari
-						is_culture_group = northmen
-						is_culture_group = anduinrim
-						is_culture_group = ents
-						is_culture_group = eagles
-						is_culture_group = rohirrim
-						is_culture_group = lossoth
-						primary_culture = dunedain
-						primary_culture = gondorian
-						primary_culture = amrothian
-						primary_culture = longbeard
-						primary_culture = firebeard
-						primary_culture = broadbeam
-					}
-				}
-				political_reform = good_alignment
+				limit = { good_evil_alignment = good_alignment }
 				add_accepted_culture = good_culture
 			}
 			
 			# For Neutral Realms
 			any_country = {
-				limit = {
-					OR = {
-						is_culture_group = breelander
-						is_culture_group = hobbits
-						is_culture_group = wildmen
-						primary_culture = kingsmen
-						primary_culture = ironfist
-						primary_culture = arthedani
-						primary_culture = cardolandrim
-						primary_culture = haeranedain
-						primary_culture = oathbreaker
-					}
-				}
+				limit = { good_evil_alignment = neutral_alignment }
 				add_accepted_culture = neutral_culture
-				political_reform = neutral_alignment
 			}
 			
 			# For Evil Realms
 			any_country = {
-				limit = {
-					OR = {
-						is_culture_group = haradrim
-						primary_culture = black_numenorean
-						is_culture_group = khandish
-						is_culture_group = mordorian
-						is_culture_group = easterlings
-						is_culture_group = spiders
-						is_culture_group = uruk_hai
-						is_culture_group = northern_goblins
-						is_culture_group = angmarrim
-						primary_culture = wight
-						is_culture_group = trolls
-					}
-				}
+				limit = { good_evil_alignment = evil_alignment }
 				add_accepted_culture = evil_culture
-				political_reform = evil_alignment
 			}
 			
 			# Literacy boost for Loremasters
@@ -152,6 +97,7 @@ political_decisions = {
 						is_culture_group = teleri
 						is_culture_group = avari
 						is_culture_group = northmen
+						is_culture_group = gramavuld_northmen
 						AND = {
 							is_culture_group = wildmen
 							NOT = { tag = DUN }
@@ -186,62 +132,18 @@ political_decisions = {
 				value = 0 # Bilbo
 			}
 			
-			# Democratic country flag for democracies
-			any_country = {
-				limit = {
-					OR = {
-						government = democracy
-						government = hobbit_realm
-						government = northmen_democracy
-					}
-				}
-				set_country_flag = democratic
-			}
-			
-			# Noble Autonomy flags for noble militancy
-			any_country = {
-				limit = {
-					nobility_autonomy = large_noble_autonomy
-				}
-				set_country_flag = na_large
-			}
-			
-			# Noble Autonomy flags for noble militancy
-			any_country = {
-				limit = {
-					nobility_autonomy = medium_noble_autonomy
-				}
-				set_country_flag = na_medium
-			}
-			
-			# Noble Autonomy flags for noble militancy
-			any_country = {
-				limit = {
-					nobility_autonomy = small_noble_autonomy
-				}
-				set_country_flag = na_small
-			}
-			
-			# Slavery flags for yes_slavery
-			any_country = {
-				limit = {
-					slavery = yes_slavery
-				}
-				set_country_flag = has_all_slavery
-				any_state = { is_slave = yes }
-			}
-			
-			# Set Railroading Localisation
-			country_event = 91005
+			# Start Yearly Generic Cleanup Event
+			country_event = 99004
 			
 			# Start Monthly Generic Cleanup Event
 			country_event = 99000
-
-			# Start Shire Reckoning event loop
-			country_event = 99903
 			
-			# Start Government Type Cleanup event loop
-			country_event = 100100
+			# Start Monthly Alliance of Dwarves and Men Cleanup Event
+			country_event = { id = 99003 days = 33 } # Due to the order of how things get fired, bad things happen if this is going right away. Starting this on 2/1/2954
+
+			# Start Shire/Bree Reckoning event loop
+			country_event = 99903
+			country_event = 99904
 			
 			# Start Daily Generic Cleanup Event
 			country_event = 99250
@@ -281,31 +183,36 @@ political_decisions = {
 			478 = { add_province_modifier = { name = outlaws duration = -1 } }
 			641 = { add_province_modifier = { name = outlaws duration = -1 } }
 			
+			# Setting up Dynamic Loc
+			dynamic_loc_slots = { secede_province = THIS }
+			dynamic_loc_slots = { secede_province = --- }
+			
 			# Province/State Renaming variables
-			set_variable = { which = iron_hills_name value = 2 }
+			set_variable = { which = iron_hills_name value = 1 }
 			set_variable = { which = nan_brethil_name value = 2 }
 			set_variable = { which = lodalf_name value = 1 }
 			set_variable = { which = khandu_khur_name value = 1 }
-			set_variable = { which = nether_marches_name value = 0 }
+			set_variable = { which = nether_marches_name value = 2 }
 			set_variable = { which = danwaith_name value = 0 }
-			set_variable = { which = salenin_vale_name value = 2 }
+			set_variable = { which = salenin_vale_name value = 1 }
 			set_variable = { which = rann_gasta_name value = 5 }
-			set_variable = { which = nan_celduin_name value = 0 }
-			set_variable = { which = northern_gazar_utal_name value = 1 }
+			set_variable = { which = nan_celduin_name value = 2 }
+			set_variable = { which = northern_gazar_utal_name value = 0 }
 			set_variable = { which = muir_cairn_name value = 2 }
 			set_variable = { which = barren_wastes_name value = 0 }
-			set_variable = { which = upper_marches_name value = 0 }
+			set_variable = { which = upper_marches_name value = 1 }
 			set_variable = { which = harlindon_name value = 0 }
-			set_variable = { which = mountainlands_name value = 1 }
+			set_variable = { which = medes_name value = 0 }
+			set_variable = { which = mountainlands_name value = 0 }
 			set_variable = { which = dor-en-egladil_name value = 0 }
-			set_variable = { which = dadhrik's_gap_name value = 1 }
-			set_variable = { which = mayzri_name value = 1 }
-			set_variable = { which = northern_telaith_lyst_name value = 2 }
-			set_variable = { which = cairn_angle_name value = 0 }
-			set_variable = { which = southern_gazar_utal_name value = 2 }
+			set_variable = { which = dadhrik's_gap_name value = 0 }
+			set_variable = { which = mayzri_name value = 0 }
+			set_variable = { which = northern_telaith_lyst_name value = 1 }
+			set_variable = { which = cairn_angle_name value = 2 }
+			set_variable = { which = southern_gazar_utal_name value = 1 }
 			set_variable = { which = kug_valley_name value = 0 }
-			set_variable = { which = leshen_name value = 2 }
-			set_variable = { which = agasha_dag_name value = 2 }
+			set_variable = { which = leshen_name value = 1 }
+			set_variable = { which = agasha_dag_name value = 1 }
 			set_variable = { which = sarnladen_name value = 1 }
 			set_variable = { which = girithlin_name value = 0 }
 			set_variable = { which = dol_tinereb_name value = 1 }
@@ -335,8 +242,9 @@ political_decisions = {
 			set_variable = { which = angast_name value = 1 }
 			set_variable = { which = ras_morthil_name value = 1 }
 			set_variable = { which = foreregion_name value = 1 }
-			set_variable = { which = brown_lands_name value = 0 }
-			set_variable = { which = talath_harroch_name value = 2 }
+			set_variable = { which = elven_fells_name value = 1 }
+			set_variable = { which = brown_lands_name value = 1 }
+			set_variable = { which = talath_harroch_name value = 1 }
 			set_variable = { which = velarith_name value = 0 }
 			set_variable = { which = far_anorien_name value = 1 }
 			set_variable = { which = forithilien_name value = 1 }
@@ -345,7 +253,7 @@ political_decisions = {
 			set_variable = { which = south_hollin_name value = 0 }
 			set_variable = { which = sakal_an-khar_name value = 0 }
 			set_variable = { which = emyn_sul_name value = 1 }
-			set_variable = { which = southern_mirkwood_name value = 1 }
+			set_variable = { which = southern_mirkwood_name value = 0 }
 			set_variable = { which = the_desolation_name value = 0 }
 			set_variable = { which = talath_uichel_name value = 0 }
 			set_variable = { which = talvi-muri_name value = 0 }
@@ -356,37 +264,38 @@ political_decisions = {
 			set_variable = { which = central_druwaith_iaur_name value = 2 }
 			set_variable = { which = udun_name value = 0 }
 			set_variable = { which = high_pass_name value = 0 }
-			set_variable = { which = southern_gazar_gord_name value = 1 }
+			set_variable = { which = southern_gazar_gord_name value = 0 }
 			set_variable = { which = coiced_caradaingen_name value = 3 }
-			set_variable = { which = northern_gazar_narkad_name value = 1 }
+			set_variable = { which = northern_gazar_narkad_name value = 0 }
 			set_variable = { which = coiced_ciall_name value = 3 }
-			set_variable = { which = sagathavuld_name value = 2 }
+			set_variable = { which = sagathavuld_name value = 1 }
 			set_variable = { which = old_sylvana_name value = 0 }
 			set_variable = { which = harvaneth_name value = 0 }
 			set_variable = { which = southern_ered_luin_name value = 0 }
 			set_variable = { which = rast_vorn_name value = 1 }
-			set_variable = { which = austronei_hallus_name value = 2 }
+			set_variable = { which = austronei_hallus_name value = 1 }
 			set_variable = { which = sakal-pharaz_name value = 0 }
 			set_variable = { which = glenn_crec_name value = 2 }
-			set_variable = { which = uldona_vale_name value = 0 }
+			set_variable = { which = uldona_vale_name value = 2 }
 			set_variable = { which = parta_rokantha_name value = 0 }
 			set_variable = { which = caill_na_trowe_name value = 2 }
-			set_variable = { which = gazar_ibar_name value = 2 }
+			set_variable = { which = gazar_ibar_name value = 1 }
 			set_variable = { which = dor_leithan_name value = 1 }
-			set_variable = { which = folyavuld_name value = 0 }
-			set_variable = { which = nan_annen_name value = 0 }
+			set_variable = { which = folyavuld_name value = 1 }
+			set_variable = { which = nan_annen_name value = 2 }
 			set_variable = { which = southern_gazar_narkad_name value = 1 }
-			set_variable = { which = emyn_beraid_name value = 2 }
-			set_variable = { which = western_gazar_barak_name value = 2 }
+			set_variable = { which = emyn_beraid_name value = 1 }
+			set_variable = { which = western_gazar_barak_name value = 1 }
 			set_variable = { which = upper_othnen_vale_name value = 0 }
 			set_variable = { which = rhulindon_name value = 3 }
-			set_variable = { which = eastern_gazar_barak_name value = 2 }
-			set_variable = { which = lower_othnen_vale_name value = 2 }
+			set_variable = { which = eastern_gazar_barak_name value = 1 }
+			set_variable = { which = lower_othnen_vale_name value = 1 }
 			set_variable = { which = glinfalas_name value = 0 }
 			set_variable = { which = dor-en-ernil_name value = 1 }
-			set_variable = { which = dobok_rhin_name value = 0 }
+			set_variable = { which = dobok_rhin_name value = 2 }
 			set_variable = { which = cirith_narugorch_name value = 2 }
 			set_variable = { which = hyvametsastyksen_maa_name value = 0 }
+			set_variable = { which = greylin_vale_name value = 0 }
 			set_variable = { which = henlan_name value = 1 }
 			set_variable = { which = thark_kufnaz_name value = 0 }
 			set_variable = { which = northern_march_name value = 1 }
@@ -396,13 +305,16 @@ political_decisions = {
 			set_variable = { which = gap_of_rohan_name value = 0 }
 			set_variable = { which = gap_of_nurza-shuk_name value = 1 }
 			set_variable = { which = western_gathod_name value = 0 }
-			set_variable = { which = lower_carrock_name value = 1 }
+			set_variable = { which = lower_carrock_name value = 0 }
+			set_variable = { which = white_mountains_name value = 2 }
 			set_variable = { which = west-march_name value = 0 }
-			set_variable = { which = ethir_surubeki_name value = 2 }
-			set_variable = { which = surubeki_vale_name value = 2 }
+			set_variable = { which = ethir_surubeki_name value = 1 }
+			set_variable = { which = far_downs_name value = 0 }
+			set_variable = { which = surubeki_vale_name value = 1 }
+			set_variable = { which = dacranamel_name value = 1 }
 			set_variable = { which = fonntir_name value = 1 }
-			set_variable = { which = woodman's_realm_name value = 1 }
-			set_variable = { which = taj-ures_name value = 2 }
+			set_variable = { which = woodman's_realm_name value = 0 }
+			set_variable = { which = taj-ures_name value = 1 }
 			set_variable = { which = upper_saerlann_name value = 1 }
 			set_variable = { which = dur-kosha_name value = 1 }
 			set_variable = { which = lower_saerlann_name value = 1 }
@@ -418,7 +330,7 @@ political_decisions = {
 			set_variable = { which = haruzan_name value = 0 }
 			set_variable = { which = magur_name value = 1 }
 			set_variable = { which = harithilien_name value = 0 }
-			set_variable = { which = necromancer's_realm_name value = 2 }
+			set_variable = { which = necromancer's_realm_name value = 1 }
 			set_variable = { which = lower_lebennin_name value = 0 }
 			set_variable = { which = eredtir_name value = 0 }
 			set_variable = { which = middle_vales_name value = 1 }
@@ -428,7 +340,7 @@ political_decisions = {
 			set_variable = { which = gravenwood_name value = 1 }
 			set_variable = { which = trum_dreng_name value = 1 }
 			set_variable = { which = dol_caledir_name value = 0 }
-			set_variable = { which = mirkwood_narrows_name value = 1 }
+			set_variable = { which = mirkwood_narrows_name value = 0 }
 			set_variable = { which = mournshaws_name value = 1 }
 			set_variable = { which = forethir_name value = 2 }
 			set_variable = { which = rohwaen_name value = 0 }
@@ -441,718 +353,42 @@ political_decisions = {
 			set_variable = { which = isendale_name value = 2 }
 			set_variable = { which = muzeida_vale_name value = 1 }
 			set_variable = { which = kajbah_name value = 0 }
-			set_variable = { which = dor_rewinion_name value = 0 }
+			set_variable = { which = dor_rewinion_name value = 2 }
 			set_variable = { which = ninzayan_name value = 0 }
 			set_variable = { which = westfold_name value = 0 }
-			set_variable = { which = lower_sekelavuld_name value = 2 }
+			set_variable = { which = lower_sekelavuld_name value = 1 }
 			set_variable = { which = harwan_name value = 0 }
-			set_variable = { which = dor_rhunen_name value = 0 }
+			set_variable = { which = dor_rhunen_name value = 2 }
 			set_variable = { which = reedwater_vale_name value = 1 }
 			set_variable = { which = greyflood_vale_name value = 1 }
 			set_variable = { which = lower_morthond_vale_name value = 0 }
 			set_variable = { which = laergaladrin_name value = 2 }
 			set_variable = { which = harfalas_name value = 2 }
-			set_variable = { which = southern_telaith_lyst_name value = 2 }
-			set_variable = { which = northern_gazar_gord_name value = 2 }
+			set_variable = { which = southern_telaith_lyst_name value = 1 }
+			set_variable = { which = northern_gazar_gord_name value = 1 }
 			set_variable = { which = carnentir_name value = 0 }
 			set_variable = { which = southern_nurza-shukh_name value = 1 }
 			set_variable = { which = anfalas_name value = 0 }
 			set_variable = { which = uilad_name value = 1 }
-			set_variable = { which = menelothriand_name value = 2 }
+			set_variable = { which = menelothriand_name value = 1 }
 			set_variable = { which = tir_or_name value = 1 }
 			set_variable = { which = ferroen_name value = 0 }
 			set_variable = { which = the_narrows_name value = 2 }
 			set_variable = { which = morad_name value = 0 }
-			set_variable = { which = gladden_fields_name value = 2 }
-			set_variable = { which = austrabuht_name value = 0 }
-			set_variable = { which = arkran_name value = 0 }
-			set_variable = { which = high_hand_name value = 0 }
+			set_variable = { which = gladden_fields_name value = 1 }
+			set_variable = { which = austrabuht_name value = 2 }
+			set_variable = { which = arkran_name value = 2 }
+			set_variable = { which = high_hand_name value = 2 }
 			set_variable = { which = lothlorien_name value = 1 }
-			set_variable = { which = west_dunheath_name value = 0 }
-			set_variable = { which = east_dunheath_name value = 0 }
+			set_variable = { which = west_dunheath_name value = 2 }
+			set_variable = { which = langflood_name value = 0 }
+			set_variable = { which = east_dunheath_name value = 2 }
 			set_variable = { which = ronen-in-anduin_name value = 4 }
 			set_variable = { which = eastern_gathod_name value = 0 }
 			set_variable = { which = fordirith_name value = 1 }
 			set_variable = { which = tyrn_harn_name value = 1 }
 			set_variable = { which = parth_celebrant_name value = 4 }
 			set_variable = { which = eraguk_name value = 0 }
-		}
-	}
-}
-
-# Good/Evil Clean Up
-political_decisions = {
-	good_evil_messed_up = {
-		potential = {
-			tag = FOR
-			OR = {
-				any_neighbor_country = {
-					good_evil_alignment = good_alignment
-					OR = {
-						NOT = { accepted_culture = good_culture }
-						accepted_culture = neutral_culture
-						accepted_culture = evil_culture
-					}
-				}
-				any_neighbor_country = {
-					good_evil_alignment = neutral_alignment
-					OR = {
-						accepted_culture = good_culture
-						NOT = { accepted_culture = neutral_culture }
-						accepted_culture = evil_culture
-					}
-				}
-				any_neighbor_country = {
-					good_evil_alignment = evil_alignment
-					OR = {
-						accepted_culture = good_culture
-						accepted_culture = neutral_culture
-						NOT = { accepted_culture = evil_culture }
-					}
-				}
-			}
-		}
-		
-		allow = {}
-		
-		effect = {
-			any_neighbor_country = {
-				limit = {
-					good_evil_alignment = good_alignment
-					OR = {
-						NOT = { accepted_culture = good_culture }
-						accepted_culture = neutral_culture
-						accepted_culture = evil_culture
-					}
-				}
-				add_accepted_culture = good_culture
-				remove_accepted_culture = neutral_culture
-				remove_accepted_culture = evil_culture
-			}
-			any_neighbor_country = {
-				limit = {
-					good_evil_alignment = neutral_alignment
-					OR = {
-						accepted_culture = good_culture
-						NOT = { accepted_culture = neutral_culture }
-						accepted_culture = evil_culture
-					}
-				}
-				remove_accepted_culture = good_culture
-				add_accepted_culture = neutral_culture
-				remove_accepted_culture = evil_culture
-			}
-			any_neighbor_country = {
-				limit = {
-					good_evil_alignment = evil_alignment
-					OR = {
-						accepted_culture = good_culture
-						accepted_culture = neutral_culture
-						NOT = { accepted_culture = evil_culture }
-					}
-				}
-				remove_accepted_culture = good_culture
-				remove_accepted_culture = neutral_culture
-				add_accepted_culture = evil_culture
-			}
-		}
-	}
-	
-	good_evil_wrong_sphere = {
-		potential = {
-			tag = FOR
-			any_neighbor_country = {
-				ai = yes
-				part_of_sphere = yes
-				OR = {
-					AND = {
-						good_evil_alignment = good_alignment
-						sphere_owner = { good_evil_alignment = evil_alignment }
-					}
-					AND = {
-						good_evil_alignment = evil_alignment
-						sphere_owner = { good_evil_alignment = good_alignment }
-					}
-				}
-			}
-		}
-		
-		allow = {}
-		
-		effect = {
-			any_neighbor_country = {
-				limit = {
-					ai = yes
-					part_of_sphere = yes
-					OR = {
-						AND = {
-							good_evil_alignment = good_alignment
-							sphere_owner = { good_evil_alignment = evil_alignment }
-						}
-						AND = {
-							good_evil_alignment = evil_alignment
-							sphere_owner = { good_evil_alignment = good_alignment }
-						}
-					}
-				}
-				country_event = 2504
-			}
-		}
-	}
-}
-
-# Leave FOR Alone
-political_decisions = {
-	break_alliance_with_FOR = {
-		picture = "dont_do_that"
-		
-		potential = {
-			FOR = { any_neighbor_country = { alliance_with = FOR } }
-			OR = {
-				tag = FOR
-				AND = {
-					alliance_with = FOR
-					ai = yes
-				}
-			}
-		}
-		
-		allow = {}
-		
-		effect = {
-			any_country = {
-				limit = {
-					alliance_with = FOR
-				}
-				leave_alliance = FOR
-				relation = {
-					who = FOR
-					value = -400
-				}
-			}
-		}
-	}
-	
-	leave_sphere_FOR = {
-		picture = "dont_do_that"
-		
-		potential = {
-			FOR = { part_of_sphere = yes }
-			OR = {
-				tag = FOR
-				AND = {
-					is_sphere_leader_of = FOR
-					ai = yes
-				}
-			}
-		}
-		
-		allow = {}
-		
-		effect = {
-			any_country = {
-				limit = {
-					is_sphere_leader_of = FOR
-				}
-				diplomatic_influence = {
-					who = FOR
-					value = -400
-				}
-			}
-		}
-	}
-	
-	end_war_FOR = {
-		picture = "dont_do_that"
-		
-		potential = {
-			tag = FOR
-			war = yes
-			NOT = { has_country_modifier = dont_peace_out }
-		}
-		
-		allow = {}
-		
-		effect = {
-			any_neighbor_country = {
-				limit = {
-					war_with = FOR
-				}
-				end_war = FOR
-			}
-		}
-	}
-}
-
-# Government Flags Clean Up
-political_decisions = {
-	democratic_flag_clean_up = {
-		potential = {
-			tag = FOR
-			OR = {
-				# Has democratic flag but not a democracy
-				any_neighbor_country = {
-					has_country_flag = democratic
-					NOT = {
-						government = hobbit_realm
-						government = democracy
-						government = northmen_democracy
-					}
-				}
-				# A democracy without democratic flag
-				any_neighbor_country = {
-					NOT = { has_country_flag = democratic }
-					OR = {
-						government = hobbit_realm
-						government = democracy
-						government = northmen_democracy
-					}
-				}
-			}
-		}
-		
-		allow = {}
-		
-		effect = {
-			any_neighbor_country = {
-				limit = {
-					has_country_flag = democratic
-					OR = {
-						AND = {
-							NOT = { government = hobbit_realm }
-							is_culture_group = hobbits
-						}
-						AND = {
-							NOT = { government = northmen_democracy }
-							is_culture_group = northmen
-						}
-						AND = {
-							NOT = { government = democracy }
-							NOT = { is_culture_group = hobbits }
-							NOT = { is_culture_group = northmen }
-						}
-					}
-				}
-				clr_country_flag = democratic
-			}
-			any_neighbor_country = {
-				limit = {
-					NOT = { has_country_flag = democratic }
-					OR = {
-						government = hobbit_realm
-						government = democracy
-						government = northmen_democracy
-					}
-				}
-				set_country_flag = democratic
-			}
-		}
-	}
-	
-	something_to_democracy = {
-		potential = {
-			tag = FOR
-			any_neighbor_country = {
-				has_country_flag = attempting_to_democratic
-				vote_franschise = landed_voting
-				NOT = {
-					OR = {
-						government = hobbit_realm
-						government = democracy
-						government = northmen_democracy
-					}
-				}
-			}
-		}
-		
-		allow = {}
-		
-		effect = {
-			any_neighbor_country = {
-				limit = {
-					has_country_flag = attempting_to_democratic
-					vote_franschise = landed_voting
-					is_culture_group = hobbits
-					NOT = { government = hobbit_realm }
-				}
-				clr_country_flag = attempting_to_democratic
-				set_country_flag = democratic
-				government = hobbit_realm
-				election = yes
-			}
-			any_neighbor_country = {
-				limit = {
-					has_country_flag = attempting_to_democratic
-					vote_franschise = landed_voting
-					is_culture_group = northmen
-					NOT = { government = northmen_democracy }
-				}
-				clr_country_flag = attempting_to_democratic
-				set_country_flag = democratic
-				government = northmen_democracy
-				election = yes
-			}
-			any_neighbor_country = {
-				limit = {
-					has_country_flag = attempting_to_democratic
-					vote_franschise = landed_voting
-					NOT = { is_culture_group = hobbits }
-					NOT = { is_culture_group = northmen }
-					NOT = { government = democracy }
-				}
-				clr_country_flag = attempting_to_democratic
-				set_country_flag = democratic
-				government = democracy
-				election = yes
-			}
-		}
-	}
-	
-	monarchize_flag_cleanup = {
-		potential = {
-			tag = FOR
-			any_neighbor_country = {
-				has_country_flag = attempting_to_monarchize
-				OR = {
-					government = monarchy
-					government = principality
-					government = stewardship
-					government = fiefdom
-					government = galadhrim_monarchy
-					government = lord_monarchy
-				}
-			}
-		}
-		
-		allow = {}
-		
-		effect = {
-			any_neighbor_country = {
-				limit = {
-					has_country_flag = attempting_to_monarchize
-					OR = {
-						government = monarchy
-						government = principality
-						government = stewardship
-						government = fiefdom
-						government = galadhrim_monarchy
-						government = lord_monarchy
-					}
-				}
-				clr_country_flag = attempting_to_monarchize
-			}
-		}
-	}
-	
-	noble_autonomy_flag_clean_up = {
-		potential = {
-			tag = FOR
-			OR = {
-				# Has large_noble_autonomy but not the country flag
-				any_neighbor_country = {
-					nobility_autonomy = large_noble_autonomy
-					NOT = { has_country_flag = na_large }
-				}
-				# Has medium_noble_autonomy but not the country flag
-				any_neighbor_country = {
-					nobility_autonomy = medium_noble_autonomy
-					NOT = { has_country_flag = na_medium }
-				}
-				# Has small_noble_autonomy but not the country flag
-				any_neighbor_country = {
-					nobility_autonomy = small_noble_autonomy
-					NOT = { has_country_flag = na_small }
-				}
-			}
-		}
-		
-		allow = {}
-		
-		effect = {
-			any_neighbor_country = {
-				limit = {
-					nobility_autonomy = large_noble_autonomy
-					NOT = { has_country_flag = na_large }
-					OR = {
-						has_country_flag = na_small
-						has_country_flag = na_medium
-					}
-				}
-				country_event = 100001
-				set_country_flag = na_large
-				clr_country_flag = na_medium
-				clr_country_flag = na_small
-			}
-			any_neighbor_country = {
-				limit = {
-					nobility_autonomy = medium_noble_autonomy
-					has_country_flag = na_large
-				}
-				country_event = 100000
-				clr_country_flag = na_large
-				set_country_flag = na_medium
-			}
-			any_neighbor_country = {
-				limit = {
-					nobility_autonomy = medium_noble_autonomy
-					has_country_flag = na_small
-				}
-				country_event = 100001
-				set_country_flag = na_medium
-				clr_country_flag = na_small
-			}
-			any_neighbor_country = {
-				limit = {
-					nobility_autonomy = small_noble_autonomy
-					NOT = { has_country_flag = na_small }
-					OR = {
-						has_country_flag = na_medium
-						has_country_flag = na_large
-					}
-				}
-				country_event = 100000
-				clr_country_flag = na_large
-				clr_country_flag = na_medium
-				set_country_flag = na_small
-			}
-			any_neighbor_country = {
-				limit = {
-					nobility_autonomy = large_noble_autonomy
-					NOT = { has_country_flag = na_large }
-				}
-				set_country_flag = na_large
-			}
-			any_neighbor_country = {
-				limit = {
-					nobility_autonomy = medium_noble_autonomy
-					NOT = { has_country_flag = na_medium }
-				}
-				set_country_flag = na_medium
-			}
-			any_neighbor_country = {
-				limit = {
-					nobility_autonomy = small_noble_autonomy
-					NOT = { has_country_flag = na_small }
-				}
-				set_country_flag = na_small
-			}
-		}
-	}
-	
-	non_accepted_slavery_clean_up = {
-		potential = {
-			tag = FOR
-			OR = {
-				# Has has_all_slavery flag but doesn't have yes_slavery
-				any_neighbor_country = {
-					has_country_flag = has_all_slavery
-					NOT = { slavery = yes_slavery }
-				}
-				# Has yes_slavery but not has_all_slavery
-				any_neighbor_country = {
-					NOT = { has_country_flag = has_all_slavery }
-					slavery = yes_slavery
-				}
-			}
-		}
-		
-		allow = {}
-		
-		effect = {
-			any_neighbor_country = {
-				limit = {
-					has_country_flag = has_all_slavery
-					slavery = non_accepted_slavery
-				}
-				clr_country_flag = has_all_slavery
-				country_event = 100002
-			}
-			any_neighbor_country = {
-				limit = {
-					has_country_flag = has_all_slavery
-					slavery = no_slavery
-				}
-				clr_country_flag = has_all_slavery
-			}
-			any_neighbor_country = {
-				limit = {
-					NOT = { has_country_flag = has_all_slavery }
-					slavery = yes_slavery
-				}
-				set_country_flag = has_all_slavery
-			}
-		}
-	}
-	
-	border_laws_clean_up = {
-		potential = {
-			tag = FOR
-			OR = {
-				AND = {
-					has_global_flag = borders_closed
-					any_neighbor_country = { NOT = { border_policy = closed_borders } }
-				}
-				AND = {
-					has_global_flag = borders_alignment
-					any_neighbor_country = { NOT = { border_policy = alignment_borders } }
-				}
-				AND = {
-					has_global_flag = borders_race
-					any_neighbor_country = { NOT = { border_policy = race_borders } }
-				}
-				AND = {
-					has_global_flag = borders_open
-					any_neighbor_country = { NOT = { border_policy = open_borders } }
-				}
-			}
-		}
-		
-		allow = {}
-		
-		effect = {
-			any_neighbor_country = {
-				limit = { has_global_flag = borders_closed }
-				political_reform = closed_borders
-			}
-			any_neighbor_country = {
-				limit = { has_global_flag = borders_alignment }
-				political_reform = alignment_borders
-			}
-			any_neighbor_country = {
-				limit = { has_global_flag = borders_race }
-				political_reform = race_borders
-			}
-			any_neighbor_country = {
-				limit = { has_global_flag = borders_open }
-				political_reform = open_borders
-			}
-		}
-	}
-}
-
-# Realm Leaders
-political_decisions = {
-	set_initial_leader = {
-		potential = {
-			tag = FOR
-			any_neighbor_country = { NOT = { has_country_flag = existing_country } }
-		}
-		
-		allow = {}
-		
-		effect = {
-			any_neighbor_country = {
-				limit = {
-					NOT = { has_country_flag = existing_country }
-					nationalvalue = generic_leader
-				}
-				set_country_flag = existing_country
-				country_event = 3500
-			}
-			any_neighbor_country = {
-				limit = {
-					NOT = { has_country_flag = existing_country }
-				}
-				set_country_flag = existing_country
-			}
-		}
-	}
-}
-
-# Tribals
-political_decisions = {
-	update_tribals_modifiers = {
-		potential = {
-			tag = FOR
-			any_owned_province = {
-				any_neighbor_province = {
-					OR = {
-						# Has tribals, but doesn't have tribal_outpost
-						AND = {
-							any_pop = {
-								type = tribals
-								is_accepted_culture = no
-								is_primary_culture = no
-							}
-							NOT = { has_province_modifier = tribal_outpost }
-						}
-						# Doesn't have any tribals, but has a modifier
-						AND = {
-							NOT = {
-								any_pop = {
-									type = tribals
-									is_accepted_culture = no
-									is_primary_culture = no
-								}
-							}
-							has_province_modifier = tribal_outpost
-						}
-					}
-				}
-			}
-		}
-		
-		allow = {}
-		
-		effect = {			
-			# Setting up Tribal Outpost
-			random_owned = {
-				any_neighbor_province = {
-					limit = {
-						any_pop = {
-							type = tribals
-							is_accepted_culture = no
-							is_primary_culture = no
-						}
-					}
-					add_province_modifier = { name = tribal_outpost duration = -1 }
-				}
-			}
-			
-			# Removing modifiers from provinces without Wild Goblins
-			random_owned = {
-				any_neighbor_province = {
-					limit = {
-						NOT = {
-							any_pop = {
-								type = tribals
-								is_accepted_culture = no
-								is_primary_culture = no
-							}
-						}
-						has_province_modifier = tribal_outpost
-					}
-					remove_province_modifier = tribal_outpost
-				}
-			}
-		}
-	}
-}
-
-# Debug
-political_decisions = {
-	debug_research_flags = {
-		potential = {
-			tag = FOR
-			ai = no
-			any_neighbor_country = {
-				NOT = { has_country_flag = infantry_focused }
-				NOT = { has_country_flag = ranged_focused }
-				NOT = { has_country_flag = cavalry_focused }
-			}
-		}
-		
-		allow = {}
-		
-		effect = {
-			any_neighbor_country = {
-				limit = {
-					NOT = { has_country_flag = infantry_focused }
-					NOT = { has_country_flag = ranged_focused }
-					NOT = { has_country_flag = cavalry_focused }
-				}
-				treasury = 1
-			}
 		}
 	}
 }

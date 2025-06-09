@@ -89,6 +89,8 @@ ANT		= "countries/Antharsborg.txt"
 GAD		= "countries/Gadraughtsborg.txt"
 
 RHO		= "countries/Rhovanion.txt"
+FFN		= "countries/Free Folk of the North.txt"
+
 NRN		= "countries/Nurunkkhizdin.txt"
 
 # Barding Realm (Still technically Rhovanion)
@@ -179,6 +181,8 @@ MET		= "countries/Metraith.txt"
 DEV		= "countries/Eryn Vorn.txt"
 HEN		= "countries/Henlan.txt"
 FON		= "countries/Fonntir.txt"
+LSR		= "countries/Lower Saerlann.txt"
+USR		= "countries/Upper Saerlann.txt"
 SAE		= "countries/Saerlann.txt"
 CAL		= "countries/Caladir.txt"
 EDB		= "countries/Enedbund.txt"
@@ -233,7 +237,7 @@ ALA		= "countries/Alatar.txt"
 FOR		= "countries/Bank.txt"
 
 ##HoD Dominions
-dynamic_tags  = yes # any tags after this is considered dynamic dominions
+dynamic_tags = yes # any tags after this is considered dynamic dominions
 D01		= "countries/D01.txt"
 D02		= "countries/D02.txt"
 D03		= "countries/D03.txt"

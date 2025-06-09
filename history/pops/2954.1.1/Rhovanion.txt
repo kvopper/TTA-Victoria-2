@@ -11,16 +11,6 @@
 
 # Holmgeirstadur
 140 = {
-	aristocrats = {
-		culture = adhalling
-		religion = men
-		size = 300
-	}
-	aristocrats = {
-		culture = barding
-		religion = men
-		size = 200
-	}
 	artisans = {
 		culture = adhalling
 		religion = men
@@ -30,16 +20,6 @@
 		culture = barding
 		religion = men
 		size = 400
-	}
-	bureaucrats = {
-		culture = adhalling
-		religion = men
-		size = 120
-	}
-	bureaucrats = {
-		culture = barding
-		religion = men
-		size = 80
 	}
 	clergymen = {
 		culture = adhalling
@@ -51,20 +31,30 @@
 		religion = men
 		size = 69
 	}
+	craftsmen = {
+		culture = adhalling
+		religion = men
+		size = 600
+	}
+	craftsmen = {
+		culture = barding
+		religion = men
+		size = 400
+	}
 	labourers = {
 		culture = adhalling
 		religion = men
-		size = 25643
+		size = 25478
 	}
 	labourers = {
 		culture = rivermen
 		religion = men
-		size = 4662
+		size = 4632
 	}
 	labourers = {
 		culture = barding
 		religion = men
-		size = 16318
+		size = 16213
 	}
 	soldiers = {
 		culture = adhalling
@@ -80,65 +70,55 @@
 
 # Kotstó
 141 = {
-	aristocrats = {
-		culture = adhalling
-		religion = men
-		size = 1280
-	}
-	aristocrats = {
-		culture = barding
-		religion = men
-		size = 320
-	}
 	artisans = {
 		culture = adhalling
 		religion = men
-		size = 2560
+		size = 1600
 	}
 	artisans = {
 		culture = barding
 		religion = men
-		size = 640
-	}
-	bureaucrats = {
-		culture = adhalling
-		religion = men
-		size = 512
-	}
-	bureaucrats = {
-		culture = barding
-		religion = men
-		size = 128
+		size = 400
 	}
 	clergymen = {
 		culture = adhalling
 		religion = men
-		size = 447
+		size = 279
 	}
 	clergymen = {
 		culture = barding
 		religion = men
-		size = 111
+		size = 69
+	}
+	craftsmen = {
+		culture = adhalling
+		religion = men
+		size = 4000
+	}
+	craftsmen = {
+		culture = barding
+		religion = men
+		size = 1000
 	}
 	labourers = {
 		culture = adhalling
 		religion = men
-		size = 119360
+		size = 71720
 	}
 	labourers = {
 		culture = barding
 		religion = men
-		size = 29840
+		size = 17930
 	}
 	soldiers = {
 		culture = adhalling
 		religion = men
-		size = 3840
+		size = 2400
 	}
 	soldiers = {
 		culture = barding
 		religion = men
-		size = 960
+		size = 600
 	}
 }
 
@@ -167,17 +147,12 @@
 	labourers = {
 		culture = anthar
 		religion = men
-		size = 1572
+		size = 1932
 	}
 	soldiers = {
 		culture = anthar
 		religion = men
 		size = 20
-	}
-	tribals = {
-		culture = anthar
-		religion = men
-		size = 360
 	}
 }
 
@@ -206,17 +181,12 @@
 	labourers = {
 		culture = anthar
 		religion = men
-		size = 7860
+		size = 9660
 	}
 	soldiers = {
 		culture = anthar
 		religion = men
 		size = 100
-	}
-	tribals = {
-		culture = anthar
-		religion = men
-		size = 1800
 	}
 }
 
@@ -265,12 +235,12 @@
 	labourers = {
 		culture = grammas
 		religion = men
-		size = 20568
+		size = 22248
 	}
 	labourers = {
 		culture = rivermen
 		religion = men
-		size = 13712
+		size = 14832
 	}
 	soldiers = {
 		culture = grammas
@@ -282,25 +252,10 @@
 		religion = men
 		size = 160
 	}
-	tribals = {
-		culture = grammas
-		religion = men
-		size = 1680
-	}
-	tribals = {
-		culture = rivermen
-		religion = men
-		size = 1120
-	}
 }
 
 # Flyiarstadur
 355 = {
-	aristocrats = {
-		culture = barding
-		religion = men
-		size = 100
-	}
 	artisans = {
 		culture = longbeard
 		religion = dwarven
@@ -316,21 +271,6 @@
 		religion = men
 		size = 200
 	}
-	bureaucrats = {
-		culture = longbeard
-		religion = dwarven
-		size = 10
-	}
-	bureaucrats = {
-		culture = grammas
-		religion = men
-		size = 30
-	}
-	bureaucrats = {
-		culture = barding
-		religion = men
-		size = 60
-	}
 	clergymen = {
 		culture = grammas
 		religion = men
@@ -340,6 +280,16 @@
 		culture = barding
 		religion = men
 		size = 36
+	}
+	craftsmen = {
+		culture = grammas
+		religion = men
+		size = 80
+	}
+	craftsmen = {
+		culture = barding
+		religion = men
+		size = 120
 	}
 	labourers = {
 		culture = longbeard
@@ -370,16 +320,6 @@
 
 # Wagnuholl
 442 = {
-	aristocrats = {
-		culture = grammas
-		religion = men
-		size = 60
-	}
-	aristocrats = {
-		culture = rivermen
-		religion = men
-		size = 240
-	}
 	artisans = {
 		culture = grammas
 		religion = men
@@ -389,16 +329,6 @@
 		culture = rivermen
 		religion = men
 		size = 4800
-	}
-	bureaucrats = {
-		culture = grammas
-		religion = men
-		size = 60
-	}
-	bureaucrats = {
-		culture = rivermen
-		religion = men
-		size = 240
 	}
 	clergymen = {
 		culture = grammas
@@ -410,15 +340,25 @@
 		religion = men
 		size = 96
 	}
+	craftsmen = {
+		culture = grammas
+		religion = men
+		size = 360
+	}
+	craftsmen = {
+		culture = rivermen
+		religion = men
+		size = 1440
+	}
 	labourers = {
 		culture = grammas
 		religion = men
-		size = 10296
+		size = 10056
 	}
 	labourers = {
 		culture = rivermen
 		religion = men
-		size = 41184
+		size = 40224
 	}
 	soldiers = {
 		culture = grammas
@@ -477,17 +417,17 @@
 	labourers = {
 		culture = logath
 		religion = men
-		size = 5499
+		size = 7749
 	}
 	labourers = {
 		culture = grammas
 		religion = men
-		size = 18330
+		size = 25830
 	}
 	labourers = {
 		culture = rivermen
 		religion = men
-		size = 12831
+		size = 18081
 	}
 	soldiers = {
 		culture = grammas
@@ -499,35 +439,10 @@
 		religion = men
 		size = 720
 	}
-	tribals = {
-		culture = logath
-		religion = men
-		size = 2250
-	}
-	tribals = {
-		culture = grammas
-		religion = men
-		size = 7500
-	}
-	tribals = {
-		culture = rivermen
-		religion = men
-		size = 5250
-	}
 }
 
 # Long Marshes
 451 = {
-	aristocrats = {
-		culture = adhalling
-		religion = men
-		size = 175
-	}
-	aristocrats = {
-		culture = barding
-		religion = men
-		size = 75
-	}
 	artisans = {
 		culture = adhalling
 		religion = men
@@ -538,16 +453,6 @@
 		religion = men
 		size = 750
 	}
-	bureaucrats = {
-		culture = adhalling
-		religion = men
-		size = 175
-	}
-	bureaucrats = {
-		culture = barding
-		religion = men
-		size = 75
-	}
 	clergymen = {
 		culture = adhalling
 		religion = men
@@ -557,6 +462,16 @@
 		culture = barding
 		religion = men
 		size = 45
+	}
+	craftsmen = {
+		culture = adhalling
+		religion = men
+		size = 350
+	}
+	craftsmen = {
+		culture = barding
+		religion = men
+		size = 150
 	}
 	labourers = {
 		culture = adhalling
@@ -610,27 +525,17 @@
 	labourers = {
 		culture = sagath
 		religion = men
-		size = 1012
+		size = 1932
 	}
 	labourers = {
 		culture = mordor_orc
 		religion = orc
-		size = 4048
+		size = 7728
 	}
 	soldiers = {
 		culture = mordor_orc
 		religion = orc
 		size = 100
-	}
-	tribals = {
-		culture = sagath
-		religion = men
-		size = 920
-	}
-	tribals = {
-		culture = mordor_orc
-		religion = orc
-		size = 3680
 	}
 }
 
@@ -659,12 +564,12 @@
 	labourers = {
 		culture = sagath
 		religion = men
-		size = 3036
+		size = 5796
 	}
 	labourers = {
 		culture = mordor_orc
 		religion = orc
-		size = 4554
+		size = 8694
 	}
 	soldiers = {
 		culture = sagath
@@ -675,16 +580,6 @@
 		culture = mordor_orc
 		religion = orc
 		size = 90
-	}
-	tribals = {
-		culture = sagath
-		religion = men
-		size = 2760
-	}
-	tribals = {
-		culture = mordor_orc
-		religion = orc
-		size = 4140
 	}
 }
 
@@ -713,22 +608,17 @@
 	labourers = {
 		culture = sagath
 		religion = men
-		size = 2011
+		size = 3852
 	}
 	labourers = {
 		culture = mordor_orc
 		religion = orc
-		size = 8047
+		size = 15408
 	}
 	soldiers = {
 		culture = mordor_orc
 		religion = orc
 		size = 200
-	}
-	tribals = {
-		culture = mordor_orc
-		religion = orc
-		size = 9200
 	}
 }
 
@@ -757,17 +647,12 @@
 	labourers = {
 		culture = mordor_orc
 		religion = orc
-		size = 2430
+		size = 4830
 	}
 	soldiers = {
 		culture = mordor_orc
 		religion = orc
 		size = 50
-	}
-	tribals = {
-		culture = mordor_orc
-		religion = orc
-		size = 2400
 	}
 }
 
@@ -796,17 +681,12 @@
 	labourers = {
 		culture = mordor_orc
 		religion = orc
-		size = 2530
+		size = 4830
 	}
 	soldiers = {
 		culture = mordor_orc
 		religion = orc
 		size = 50
-	}
-	tribals = {
-		culture = mordor_orc
-		religion = orc
-		size = 2300
 	}
 }
 
@@ -835,17 +715,12 @@
 	labourers = {
 		culture = mordor_orc
 		religion = orc
-		size = 5060
+		size = 9660
 	}
 	soldiers = {
 		culture = mordor_orc
 		religion = orc
 		size = 100
-	}
-	tribals = {
-		culture = mordor_orc
-		religion = orc
-		size = 4600
 	}
 }
 
@@ -874,17 +749,12 @@
 	labourers = {
 		culture = marshmen
 		religion = men
-		size = 3580
+		size = 4830
 	}
 	soldiers = {
 		culture = marshmen
 		religion = men
 		size = 50
-	}
-	tribals = {
-		culture = marshmen
-		religion = men
-		size = 1250
 	}
 }
 
@@ -913,17 +783,12 @@
 	labourers = {
 		culture = marshmen
 		religion = men
-		size = 3855
+		size = 4830
 	}
 	soldiers = {
 		culture = marshmen
 		religion = men
 		size = 50
-	}
-	tribals = {
-		culture = marshmen
-		religion = men
-		size = 975
 	}
 }
 
@@ -952,17 +817,12 @@
 	labourers = {
 		culture = marshmen
 		religion = men
-		size = 3880
+		size = 4830
 	}
 	soldiers = {
 		culture = marshmen
 		religion = men
 		size = 50
-	}
-	tribals = {
-		culture = marshmen
-		religion = men
-		size = 950
 	}
 }
 
@@ -991,22 +851,17 @@
 	labourers = {
 		culture = anthar
 		religion = men
-		size = 3851
+		size = 4733
 	}
 	labourers = {
 		culture = mordor_orc
 		religion = orc
-		size = 1650
+		size = 2028
 	}
 	soldiers = {
 		culture = anthar
 		religion = men
 		size = 70
-	}
-	tribals = {
-		culture = anthar
-		religion = men
-		size = 1260
 	}
 }
 
@@ -1035,22 +890,17 @@
 	labourers = {
 		culture = anthar
 		religion = men
-		size = 4401
+		size = 5409
 	}
 	labourers = {
 		culture = mordor_orc
 		religion = orc
-		size = 1886
+		size = 2318
 	}
 	soldiers = {
 		culture = anthar
 		religion = men
 		size = 80
-	}
-	tribals = {
-		culture = anthar
-		religion = men
-		size = 1440
 	}
 }
 
@@ -1079,17 +929,12 @@
 	labourers = {
 		culture = mordor_orc
 		religion = orc
-		size = 5060
+		size = 9660
 	}
 	soldiers = {
 		culture = mordor_orc
 		religion = orc
 		size = 100
-	}
-	tribals = {
-		culture = mordor_orc
-		religion = orc
-		size = 4600
 	}
 }
 
@@ -1118,22 +963,17 @@
 	labourers = {
 		culture = anthar
 		religion = men
-		size = 5502
+		size = 6762
 	}
 	labourers = {
 		culture = mordor_orc
 		religion = orc
-		size = 2358
+		size = 2898
 	}
 	soldiers = {
 		culture = anthar
 		religion = men
 		size = 100
-	}
-	tribals = {
-		culture = anthar
-		religion = men
-		size = 1800
 	}
 }
 
@@ -1162,17 +1002,12 @@
 	labourers = {
 		culture = anthar
 		religion = men
-		size = 7860
+		size = 9660
 	}
 	soldiers = {
 		culture = anthar
 		religion = men
 		size = 100
-	}
-	tribals = {
-		culture = anthar
-		religion = men
-		size = 1800
 	}
 }
 
@@ -1201,27 +1036,17 @@
 	labourers = {
 		culture = anthar
 		religion = men
-		size = 10632
+		size = 11592
 	}
 	labourers = {
 		culture = guldurrim
 		religion = orc
-		size = 2658
+		size = 2898
 	}
 	soldiers = {
 		culture = anthar
 		religion = men
 		size = 150
-	}
-	tribals = {
-		culture = herimundi
-		religion = men
-		size = 300
-	}
-	tribals = {
-		culture = guldurrim
-		religion = orc
-		size = 900
 	}
 }
 
@@ -1250,22 +1075,17 @@
 	labourers = {
 		culture = anthar
 		religion = men
-		size = 11084
+		size = 12364
 	}
 	labourers = {
 		culture = guldurrim
 		religion = orc
-		size = 2771
+		size = 3091
 	}
 	soldiers = {
 		culture = anthar
 		religion = men
 		size = 160
-	}
-	tribals = {
-		culture = guldurrim
-		religion = orc
-		size = 1600
 	}
 }
 
@@ -1294,27 +1114,22 @@
 	labourers = {
 		culture = anthar
 		religion = men
-		size = 7503
+		size = 13524
 	}
 	labourers = {
 		culture = gadraught
 		religion = men
-		size = 2144
+		size = 3864
 	}
 	labourers = {
 		culture = sagath
 		religion = men
-		size = 1072
+		size = 1932
 	}
 	soldiers = {
 		culture = anthar
 		religion = men
 		size = 200
-	}
-	tribals = {
-		culture = anthar
-		religion = men
-		size = 8600
 	}
 }
 
@@ -1343,22 +1158,17 @@
 	labourers = {
 		culture = anthar
 		religion = men
-		size = 5502
+		size = 6762
 	}
 	labourers = {
 		culture = mordor_orc
 		religion = orc
-		size = 2358
+		size = 2898
 	}
 	soldiers = {
 		culture = anthar
 		religion = men
 		size = 100
-	}
-	tribals = {
-		culture = anthar
-		religion = men
-		size = 1800
 	}
 }
 
@@ -1387,27 +1197,22 @@
 	labourers = {
 		culture = anthar
 		religion = men
-		size = 4716
+		size = 5796
 	}
 	labourers = {
 		culture = sagath
 		religion = men
-		size = 2358
+		size = 2898
 	}
 	labourers = {
 		culture = mordor_orc
 		religion = orc
-		size = 786
+		size = 966
 	}
 	soldiers = {
 		culture = anthar
 		religion = men
 		size = 100
-	}
-	tribals = {
-		culture = anthar
-		religion = men
-		size = 1800
 	}
 }
 
@@ -1598,25 +1403,15 @@
 	labourers = {
 		culture = grammas
 		religion = men
-		size = 29312
+		size = 30912
 	}
 	labourers = {
 		culture = rivermen
 		religion = men
-		size = 7328
+		size = 7728
 	}
 	soldiers = {
 		culture = grammas
-		religion = men
-		size = 400
-	}
-	tribals = {
-		culture = grammas
-		religion = men
-		size = 1600
-	}
-	tribals = {
-		culture = rivermen
 		religion = men
 		size = 400
 	}
@@ -3303,7 +3098,12 @@
 	labourers = {
 		culture = aivathiuda
 		religion = men
-		size = 18920
+		size = 12298
+	}
+	labourers = {
+		culture = rivermen
+		religion = men
+		size = 6622
 	}
 	soldiers = {
 		culture = aivathiuda
@@ -3371,7 +3171,12 @@
 	labourers = {
 		culture = aivathiuda
 		religion = men
-		size = 54420
+		size = 35373
+	}
+	labourers = {
+		culture = rivermen
+		religion = men
+		size = 19047
 	}
 	soldiers = {
 		culture = aivathiuda
@@ -3439,7 +3244,12 @@
 	labourers = {
 		culture = aivathiuda
 		religion = men
-		size = 48300
+		size = 36225
+	}
+	labourers = {
+		culture = rivermen
+		religion = men
+		size = 12075
 	}
 	soldiers = {
 		culture = aivathiuda
@@ -3507,7 +3317,12 @@
 	labourers = {
 		culture = aivathiuda
 		religion = men
-		size = 50340
+		size = 42789
+	}
+	labourers = {
+		culture = rivermen
+		religion = men
+		size = 7551
 	}
 	soldiers = {
 		culture = aivathiuda
@@ -4966,12 +4781,12 @@
 	aristocrats = {
 		culture = logath
 		religion = men
-		size = 8
+		size = 264
 	}
 	aristocrats = {
 		culture = grammas
 		religion = men
-		size = 12
+		size = 36
 	}
 	artisans = {
 		culture = logath
@@ -4986,12 +4801,7 @@
 	bureaucrats = {
 		culture = logath
 		religion = men
-		size = 8
-	}
-	bureaucrats = {
-		culture = grammas
-		religion = men
-		size = 12
+		size = 498
 	}
 	clergymen = {
 		culture = logath
@@ -5006,62 +4816,37 @@
 	labourers = {
 		culture = logath
 		religion = men
-		size = 9470
+		size = 8491
 	}
 	labourers = {
 		culture = grammas
 		religion = men
-		size = 9470
+		size = 8491
 	}
 	soldiers = {
 		culture = logath
 		religion = men
-		size = 240
+		size = 200
 	}
-	soldiers = {
+	tribals = {
 		culture = grammas
 		religion = men
-		size = 360
+		size = 1600
 	}
 }
 
 # Lar-Huil
 639 = {
-	aristocrats = {
-		culture = logath
-		religion = men
-		size = 24
-	}
-	aristocrats = {
-		culture = grammas
-		religion = men
-		size = 16
-	}
-	artisans = {
-		culture = longbeard
-		religion = dwarven
-		size = 400
-	}
 	artisans = {
 		culture = logath
 		religion = men
-		size = 1000
+		size = 1400
 	}
 	artisans = {
 		culture = grammas
 		religion = men
 		size = 600
 	}
-	bureaucrats = {
-		culture = logath
-		religion = men
-		size = 24
-	}
-	bureaucrats = {
-		culture = grammas
-		religion = men
-		size = 16
-	}
 	clergymen = {
 		culture = logath
 		religion = men
@@ -5073,29 +4858,24 @@
 		size = 16
 	}
 	labourers = {
-		culture = longbeard
-		religion = dwarven
-		size = 7336
-	}
-	labourers = {
 		culture = logath
 		religion = men
-		size = 18340
+		size = 24052
 	}
 	labourers = {
 		culture = grammas
 		religion = men
-		size = 11004
+		size = 10308
 	}
 	soldiers = {
 		culture = logath
 		religion = men
-		size = 720
+		size = 400
 	}
-	soldiers = {
+	tribals = {
 		culture = grammas
 		religion = men
-		size = 480
+		size = 3200
 	}
 }
 
@@ -5124,17 +4904,12 @@
 	labourers = {
 		culture = grammas
 		religion = men
-		size = 67360
+		size = 72560
 	}
 	soldiers = {
 		culture = grammas
 		religion = men
 		size = 2400
-	}
-	tribals = {
-		culture = grammas
-		religion = men
-		size = 5200
 	}
 }
 
@@ -5163,17 +4938,12 @@
 	labourers = {
 		culture = grammas
 		religion = men
-		size = 36480
+		size = 38680
 	}
 	soldiers = {
 		culture = grammas
 		religion = men
 		size = 400
-	}
-	tribals = {
-		culture = grammas
-		religion = men
-		size = 2200
 	}
 }
 
@@ -5202,27 +4972,22 @@
 	labourers = {
 		culture = logath
 		religion = men
-		size = 5442
+		size = 5802
 	}
 	labourers = {
 		culture = grammas
 		religion = men
-		size = 48978
+		size = 52218
+	}
+	soldiers = {
+		culture = logath
+		religion = men
+		size = 60
 	}
 	soldiers = {
 		culture = grammas
 		religion = men
-		size = 600
-	}
-	tribals = {
-		culture = logath
-		religion = men
-		size = 360
-	}
-	tribals = {
-		culture = grammas
-		religion = men
-		size = 3240
+		size = 540
 	}
 }
 
@@ -5231,7 +4996,7 @@
 	aristocrats = {
 		culture = rivermen
 		religion = men
-		size = 400
+		size = 800
 	}
 	artisans = {
 		culture = rivermen
@@ -5241,22 +5006,32 @@
 	bureaucrats = {
 		culture = rivermen
 		religion = men
-		size = 400
+		size = 624
+	}
+	capitalists = {
+		culture = rivermen
+		religion = men
+		size = 80
 	}
 	clergymen = {
 		culture = rivermen
 		religion = men
 		size = 240
 	}
+	craftsmen = {
+		culture = rivermen
+		religion = men
+		size = 3200
+	}
 	labourers = {
 		culture = logath
 		religion = men
-		size = 7256
+		size = 6865
 	}
 	labourers = {
 		culture = rivermen
 		religion = men
-		size = 65304
+		size = 61790
 	}
 	soldiers = {
 		culture = rivermen
@@ -5270,7 +5045,7 @@
 	aristocrats = {
 		culture = rivermen
 		religion = men
-		size = 400
+		size = 800
 	}
 	artisans = {
 		culture = rivermen
@@ -5280,17 +5055,27 @@
 	bureaucrats = {
 		culture = rivermen
 		religion = men
-		size = 400
+		size = 624
+	}
+	capitalists = {
+		culture = rivermen
+		religion = men
+		size = 80
 	}
 	clergymen = {
 		culture = rivermen
 		religion = men
 		size = 240
 	}
+	craftsmen = {
+		culture = rivermen
+		religion = men
+		size = 3200
+	}
 	labourers = {
 		culture = rivermen
 		religion = men
-		size = 72560
+		size = 68656
 	}
 	soldiers = {
 		culture = rivermen
@@ -5302,9 +5087,14 @@
 # Kaupaborg
 645 = {
 	aristocrats = {
+		culture = grammas
+		religion = men
+		size = 64
+	}
+	aristocrats = {
 		culture = rivermen
 		religion = men
-		size = 400
+		size = 736
 	}
 	artisans = {
 		culture = rivermen
@@ -5312,19 +5102,34 @@
 		size = 4000
 	}
 	bureaucrats = {
+		culture = grammas
+		religion = men
+		size = 309
+	}
+	bureaucrats = {
 		culture = rivermen
 		religion = men
-		size = 400
+		size = 1410
+	}
+	capitalists = {
+		culture = rivermen
+		religion = men
+		size = 80
 	}
 	clergymen = {
 		culture = rivermen
 		religion = men
 		size = 240
 	}
+	craftsmen = {
+		culture = rivermen
+		religion = men
+		size = 3200
+	}
 	labourers = {
 		culture = rivermen
 		religion = men
-		size = 72560
+		size = 67560
 	}
 	soldiers = {
 		culture = rivermen
@@ -5335,30 +5140,25 @@
 
 # Dokkavin
 646 = {
-	aristocrats = {
-		culture = rivermen
-		religion = men
-		size = 640
-	}
 	artisans = {
 		culture = rivermen
 		religion = men
 		size = 4000
-	}
-	bureaucrats = {
-		culture = rivermen
-		religion = men
-		size = 400
 	}
 	clergymen = {
 		culture = rivermen
 		religion = men
 		size = 240
 	}
+	craftsmen = {
+		culture = rivermen
+		religion = men
+		size = 3200
+	}
 	labourers = {
 		culture = rivermen
 		religion = men
-		size = 72320
+		size = 70160
 	}
 	soldiers = {
 		culture = rivermen
@@ -5372,7 +5172,7 @@
 	aristocrats = {
 		culture = rivermen
 		religion = men
-		size = 240
+		size = 640
 	}
 	aristocrats = {
 		culture = barding
@@ -5382,86 +5182,66 @@
 	artisans = {
 		culture = rivermen
 		religion = men
-		size = 2400
-	}
-	artisans = {
-		culture = barding
-		religion = men
-		size = 1600
+		size = 4000
 	}
 	bureaucrats = {
+		culture = rivermen
+		religion = men
+		size = 920
+	}
+	capitalists = {
+		culture = rivermen
+		religion = men
+		size = 80
+	}
+	clergymen = {
 		culture = rivermen
 		religion = men
 		size = 240
 	}
-	bureaucrats = {
-		culture = barding
-		religion = men
-		size = 160
-	}
-	clergymen = {
+	craftsmen = {
 		culture = rivermen
 		religion = men
-		size = 144
-	}
-	clergymen = {
-		culture = barding
-		religion = men
-		size = 96
+		size = 3200
 	}
 	labourers = {
 		culture = rivermen
 		religion = men
-		size = 58048
-	}
-	labourers = {
-		culture = barding
-		religion = men
-		size = 14512
+		size = 68360
 	}
 	soldiers = {
 		culture = rivermen
 		religion = men
-		size = 1440
-	}
-	soldiers = {
-		culture = barding
-		religion = men
-		size = 960
+		size = 2400
 	}
 }
 
 # Londaroth
 648 = {
-	aristocrats = {
-		culture = barding
-		religion = men
-		size = 300
-	}
 	artisans = {
 		culture = barding
 		religion = men
 		size = 3000
-	}
-	bureaucrats = {
-		culture = barding
-		religion = men
-		size = 300
 	}
 	clergymen = {
 		culture = barding
 		religion = men
 		size = 180
 	}
+	craftsmen = {
+		culture = barding
+		religion = men
+		size = 1800
+	}
 	labourers = {
 		culture = rivermen
 		religion = men
-		size = 10884
+		size = 10644
 	}
 	labourers = {
 		culture = barding
 		religion = men
-		size = 43536
+		size = 42576
 	}
 	soldiers = {
 		culture = barding
@@ -5472,30 +5252,25 @@
 
 # Elliborg
 649 = {
-	aristocrats = {
-		culture = barding
-		religion = men
-		size = 400
-	}
 	artisans = {
 		culture = barding
 		religion = men
 		size = 4000
-	}
-	bureaucrats = {
-		culture = barding
-		religion = men
-		size = 400
 	}
 	clergymen = {
 		culture = barding
 		religion = men
 		size = 240
 	}
+	craftsmen = {
+		culture = barding
+		religion = men
+		size = 1600
+	}
 	labourers = {
 		culture = barding
 		religion = men
-		size = 72560
+		size = 71760
 	}
 	soldiers = {
 		culture = barding
@@ -5570,16 +5345,6 @@
 
 # Withibord
 651 = {
-	aristocrats = {
-		culture = grammas
-		religion = men
-		size = 20
-	}
-	aristocrats = {
-		culture = barding
-		religion = men
-		size = 80
-	}
 	artisans = {
 		culture = grammas
 		religion = men
@@ -5590,16 +5355,6 @@
 		religion = men
 		size = 800
 	}
-	bureaucrats = {
-		culture = grammas
-		religion = men
-		size = 20
-	}
-	bureaucrats = {
-		culture = barding
-		religion = men
-		size = 80
-	}
 	clergymen = {
 		culture = grammas
 		religion = men
@@ -5609,6 +5364,16 @@
 		culture = barding
 		religion = men
 		size = 48
+	}
+	craftsmen = {
+		culture = grammas
+		religion = men
+		size = 40
+	}
+	craftsmen = {
+		culture = barding
+		religion = men
+		size = 160
 	}
 	labourers = {
 		culture = grammas
@@ -5637,107 +5402,102 @@
 	aristocrats = {
 		culture = adhalling
 		religion = men
-		size = 80
+		size = 1190
 	}
 	aristocrats = {
 		culture = barding
 		religion = men
-		size = 1520
+		size = 2210
 	}
 	artisans = {
 		culture = adhalling
 		religion = men
-		size = 640
+		size = 800
 	}
 	artisans = {
 		culture = longbeard
 		religion = dwarven
-		size = 25600
+		size = 32000
 	}
 	artisans = {
 		culture = barding
 		religion = men
-		size = 5760
+		size = 7200
 	}
 	bureaucrats = {
 		culture = adhalling
 		religion = men
-		size = 32
-	}
-	bureaucrats = {
-		culture = grammas
-		religion = men
-		size = 80
-	}
-	bureaucrats = {
-		culture = rivermen
-		religion = men
-		size = 80
+		size = 1274
 	}
 	bureaucrats = {
 		culture = barding
 		religion = men
-		size = 1408
+		size = 2366
+	}
+	capitalists = {
+		culture = barding
+		religion = men
+		size = 1000
 	}
 	clergymen = {
 		culture = adhalling
 		religion = men
-		size = 80
+		size = 100
 	}
 	clergymen = {
 		culture = barding
 		religion = men
-		size = 1520
+		size = 1900
+	}
+	craftsmen = {
+		culture = longbeard
+		religion = dwarven
+		size = 2400
+	}
+	craftsmen = {
+		culture = barding
+		religion = men
+		size = 13600
 	}
 	labourers = {
 		culture = adhalling
 		religion = men
-		size = 2304
+		size = 2479
 	}
 	labourers = {
 		culture = longbeard
 		religion = dwarven
-		size = 46080
+		size = 49584
 	}
 	labourers = {
 		culture = grammas
 		religion = men
-		size = 3456
+		size = 3718
 	}
 	labourers = {
 		culture = rivermen
 		religion = men
-		size = 2304
+		size = 2479
 	}
 	labourers = {
 		culture = barding
 		religion = men
-		size = 61056
+		size = 65698
 	}
 	soldiers = {
 		culture = adhalling
 		religion = men
-		size = 400
+		size = 500
 	}
 	soldiers = {
 		culture = barding
 		religion = men
-		size = 7600
+		size = 9500
 	}
 }
 
 # Hafborg
 653 = {
-	aristocrats = {
-		culture = adhalling
-		religion = men
-		size = 25
-	}
-	aristocrats = {
-		culture = barding
-		religion = men
-		size = 475
-	}
 	artisans = {
 		culture = adhalling
 		religion = men
@@ -5748,30 +5508,25 @@
 		religion = men
 		size = 4750
 	}
-	bureaucrats = {
-		culture = adhalling
-		religion = men
-		size = 25
-	}
-	bureaucrats = {
-		culture = barding
-		religion = men
-		size = 475
-	}
 	clergymen = {
 		culture = barding
 		religion = men
 		size = 300
 	}
+	craftsmen = {
+		culture = barding
+		religion = men
+		size = 3000
+	}
 	labourers = {
 		culture = adhalling
 		religion = men
-		size = 4535
+		size = 4435
 	}
 	labourers = {
 		culture = barding
 		religion = men
-		size = 86165
+		size = 84265
 	}
 	soldiers = {
 		culture = adhalling
@@ -5790,12 +5545,12 @@
 	aristocrats = {
 		culture = adhalling
 		religion = men
-		size = 150
+		size = 2040
 	}
 	aristocrats = {
 		culture = barding
 		religion = men
-		size = 2850
+		size = 3060
 	}
 	artisans = {
 		culture = adhalling
@@ -5810,22 +5565,17 @@
 	bureaucrats = {
 		culture = adhalling
 		religion = men
-		size = 150
-	}
-	bureaucrats = {
-		culture = grammas
-		religion = men
-		size = 300
-	}
-	bureaucrats = {
-		culture = rivermen
-		religion = men
-		size = 300
+		size = 2400
 	}
 	bureaucrats = {
 		culture = barding
 		religion = men
-		size = 2250
+		size = 3600
+	}
+	capitalists = {
+		culture = barding
+		religion = men
+		size = 1500
 	}
 	clergymen = {
 		culture = adhalling
@@ -5837,25 +5587,35 @@
 		religion = men
 		size = 2280
 	}
+	craftsmen = {
+		culture = adhalling
+		religion = men
+		size = 1200
+	}
+	craftsmen = {
+		culture = barding
+		religion = men
+		size = 22800
+	}
 	labourers = {
 		culture = adhalling
 		religion = men
-		size = 11655
+		size = 10125
 	}
 	labourers = {
 		culture = grammas
 		religion = men
-		size = 11655
+		size = 10125
 	}
 	labourers = {
 		culture = rivermen
 		religion = men
-		size = 11655
+		size = 10125
 	}
 	labourers = {
 		culture = barding
 		religion = men
-		size = 198135
+		size = 172125
 	}
 	soldiers = {
 		culture = adhalling
@@ -5871,16 +5631,6 @@
 
 # Felagsgard
 655 = {
-	aristocrats = {
-		culture = adhalling
-		religion = men
-		size = 320
-	}
-	aristocrats = {
-		culture = barding
-		religion = men
-		size = 80
-	}
 	artisans = {
 		culture = adhalling
 		religion = men
@@ -5896,16 +5646,6 @@
 		religion = men
 		size = 2400
 	}
-	bureaucrats = {
-		culture = adhalling
-		religion = men
-		size = 320
-	}
-	bureaucrats = {
-		culture = barding
-		religion = men
-		size = 80
-	}
 	clergymen = {
 		culture = adhalling
 		religion = men
@@ -5916,20 +5656,30 @@
 		religion = men
 		size = 24
 	}
+	craftsmen = {
+		culture = adhalling
+		religion = men
+		size = 2880
+	}
+	craftsmen = {
+		culture = barding
+		religion = men
+		size = 320
+	}
 	labourers = {
 		culture = adhalling
 		religion = men
-		size = 50792
+		size = 49112
 	}
 	labourers = {
 		culture = longbeard
 		religion = dwarven
-		size = 14512
+		size = 14032
 	}
 	labourers = {
 		culture = barding
 		religion = men
-		size = 7256
+		size = 7016
 	}
 	soldiers = {
 		culture = adhalling
@@ -5945,16 +5695,6 @@
 
 # Alduringard
 656 = {
-	aristocrats = {
-		culture = adhalling
-		religion = men
-		size = 5
-	}
-	aristocrats = {
-		culture = barding
-		religion = men
-		size = 95
-	}
 	artisans = {
 		culture = adhalling
 		religion = men
@@ -5970,16 +5710,6 @@
 		religion = men
 		size = 750
 	}
-	bureaucrats = {
-		culture = adhalling
-		religion = men
-		size = 5
-	}
-	bureaucrats = {
-		culture = barding
-		religion = men
-		size = 95
-	}
 	clergymen = {
 		culture = adhalling
 		religion = men
@@ -5989,6 +5719,16 @@
 		culture = barding
 		religion = men
 		size = 57
+	}
+	craftsmen = {
+		culture = adhalling
+		religion = men
+		size = 10
+	}
+	craftsmen = {
+		culture = barding
+		religion = men
+		size = 190
 	}
 	labourers = {
 		culture = adhalling
@@ -6019,16 +5759,6 @@
 
 # Pennstó
 661 = {
-	aristocrats = {
-		culture = grammas
-		religion = men
-		size = 40
-	}
-	aristocrats = {
-		culture = barding
-		religion = men
-		size = 60
-	}
 	artisans = {
 		culture = longbeard
 		religion = dwarven
@@ -6044,21 +5774,6 @@
 		religion = men
 		size = 200
 	}
-	bureaucrats = {
-		culture = longbeard
-		religion = dwarven
-		size = 20
-	}
-	bureaucrats = {
-		culture = grammas
-		religion = men
-		size = 20
-	}
-	bureaucrats = {
-		culture = barding
-		religion = men
-		size = 60
-	}
 	clergymen = {
 		culture = grammas
 		religion = men
@@ -6068,6 +5783,16 @@
 		culture = barding
 		religion = men
 		size = 36
+	}
+	craftsmen = {
+		culture = grammas
+		religion = men
+		size = 80
+	}
+	craftsmen = {
+		culture = barding
+		religion = men
+		size = 120
 	}
 	labourers = {
 		culture = longbeard
@@ -6101,12 +5826,12 @@
 	aristocrats = {
 		culture = grammas
 		religion = men
-		size = 20
+		size = 80
 	}
 	aristocrats = {
 		culture = barding
 		religion = men
-		size = 80
+		size = 320
 	}
 	artisans = {
 		culture = grammas
@@ -6119,14 +5844,9 @@
 		size = 800
 	}
 	bureaucrats = {
-		culture = grammas
-		religion = men
-		size = 20
-	}
-	bureaucrats = {
 		culture = barding
 		religion = men
-		size = 80
+		size = 242
 	}
 	clergymen = {
 		culture = grammas
@@ -6138,15 +5858,25 @@
 		religion = men
 		size = 48
 	}
+	craftsmen = {
+		culture = grammas
+		religion = men
+		size = 40
+	}
+	craftsmen = {
+		culture = barding
+		religion = men
+		size = 160
+	}
 	labourers = {
 		culture = grammas
 		religion = men
-		size = 3628
+		size = 3499
 	}
 	labourers = {
 		culture = barding
 		religion = men
-		size = 14512
+		size = 13998
 	}
 	soldiers = {
 		culture = grammas
@@ -6185,17 +5915,12 @@
 	labourers = {
 		culture = anthar
 		religion = men
-		size = 3930
+		size = 4830
 	}
 	soldiers = {
 		culture = anthar
 		religion = men
 		size = 50
-	}
-	tribals = {
-		culture = anthar
-		religion = men
-		size = 900
 	}
 }
 
@@ -6469,6 +6194,207 @@
 		culture = sekel
 		religion = men
 		size = 1200
+	}
+}
+
+# Altheiborg
+1473 = {
+	artisans = {
+		culture = barding
+		religion = men
+		size = 1250
+	}
+	clergymen = {
+		culture = barding
+		religion = men
+		size = 75
+	}
+	craftsmen = {
+		culture = barding
+		religion = men
+		size = 250
+	}
+	labourers = {
+		culture = barding
+		religion = men
+		size = 22675
+	}
+	soldiers = {
+		culture = barding
+		religion = men
+		size = 750
+	}
+}
+
+# Bridgethorp
+1474 = {
+	artisans = {
+		culture = rivermen
+		religion = men
+		size = 1200
+	}
+	artisans = {
+		culture = barding
+		religion = men
+		size = 800
+	}
+	clergymen = {
+		culture = rivermen
+		religion = men
+		size = 72
+	}
+	clergymen = {
+		culture = barding
+		religion = men
+		size = 48
+	}
+	craftsmen = {
+		culture = rivermen
+		religion = men
+		size = 480
+	}
+	craftsmen = {
+		culture = barding
+		religion = men
+		size = 320
+	}
+	labourers = {
+		culture = rivermen
+		religion = men
+		size = 28704
+	}
+	labourers = {
+		culture = barding
+		religion = men
+		size = 7176
+	}
+	soldiers = {
+		culture = rivermen
+		religion = men
+		size = 720
+	}
+	soldiers = {
+		culture = barding
+		religion = men
+		size = 480
+	}
+}
+
+# Ironhold
+1475 = {
+	artisans = {
+		culture = longbeard
+		religion = dwarven
+		size = 200
+	}
+	artisans = {
+		culture = logath
+		religion = men
+		size = 500
+	}
+	artisans = {
+		culture = grammas
+		religion = men
+		size = 300
+	}
+	clergymen = {
+		culture = logath
+		religion = men
+		size = 12
+	}
+	clergymen = {
+		culture = grammas
+		religion = men
+		size = 8
+	}
+	labourers = {
+		culture = longbeard
+		religion = dwarven
+		size = 3436
+	}
+	labourers = {
+		culture = logath
+		religion = men
+		size = 8590
+	}
+	labourers = {
+		culture = grammas
+		religion = men
+		size = 5154
+	}
+	soldiers = {
+		culture = logath
+		religion = men
+		size = 200
+	}
+	tribals = {
+		culture = grammas
+		religion = men
+		size = 1600
+	}
+}
+
+# Vindorborg
+1479 = {
+	aristocrats = {
+		culture = dorwinrim
+		religion = men
+		size = 18
+	}
+	artisans = {
+		culture = dorwinrim
+		religion = men
+		size = 360
+	}
+	artisans = {
+		culture = avari
+		religion = elven
+		size = 540
+	}
+	bureaucrats = {
+		culture = dorwinrim
+		religion = men
+		size = 54
+	}
+	capitalists = {
+		culture = dorwinrim
+		religion = men
+		size = 36
+	}
+	clergymen = {
+		culture = dorwinrim
+		religion = men
+		size = 72
+	}
+	clergymen = {
+		culture = avari
+		religion = elven
+		size = 18
+	}
+	craftsmen = {
+		culture = dorwinrim
+		religion = men
+		size = 432
+	}
+	craftsmen = {
+		culture = avari
+		religion = elven
+		size = 108
+	}
+	labourers = {
+		culture = dorwinrim
+		religion = men
+		size = 12657
+	}
+	labourers = {
+		culture = avari
+		religion = elven
+		size = 3164
+	}
+	soldiers = {
+		culture = dorwinrim
+		religion = men
+		size = 540
 	}
 }
 

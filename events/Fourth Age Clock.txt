@@ -9,7 +9,7 @@ country_event = {
 	desc = " "
 	picture = administration
 	is_triggered_only = yes
-	
+
 	option = {
 		name = "Yep"
 		fourth_age_start_date_loc = { secede_province = THIS }
@@ -24542,10 +24542,7 @@ country_event = {
 			}
 		}
 
-		fourth_age_start_date_loc = {
-			# Audax Validator "." Ignore_NEXT
-			secede_province = ---
-		}
+		fourth_age_start_date_loc = { secede_province = --- }
 	}
 }
 
@@ -24570,7 +24567,7 @@ country_event = {
 			}
 			FOR = {
 				set_variable = { which = year_of_fourth_age value = 146 }
-				fourth_age_year_loc = { state_scope = { change_region_name = "§WIt is the year §Y145§W of the Fourth Age" } }
+				fourth_age_year_loc  = { state_scope = { change_region_name = "§WIt is the year §Y145§W of the Fourth Age" } }
 			}
 		}
 
@@ -24583,7 +24580,7 @@ country_event = {
 			}
 			FOR = {
 				set_variable = { which = year_of_fourth_age value = 145 }
-				fourth_age_year_loc = { state_scope = { change_region_name = "§WIt is the year §Y144§W of the Fourth Age" } }
+				fourth_age_year_loc  = { state_scope = { change_region_name = "§WIt is the year §Y144§W of the Fourth Age" } }
 			}
 		}
 
@@ -24596,7 +24593,7 @@ country_event = {
 			}
 			FOR = {
 				set_variable = { which = year_of_fourth_age value = 144 }
-				fourth_age_year_loc = { state_scope = { change_region_name = "§WIt is the year §Y143§W of the Fourth Age" } }
+				fourth_age_year_loc  = { state_scope = { change_region_name = "§WIt is the year §Y143§W of the Fourth Age" } }
 			}
 		}
 
@@ -24609,7 +24606,7 @@ country_event = {
 			}
 			FOR = {
 				set_variable = { which = year_of_fourth_age value = 143 }
-				fourth_age_year_loc = { state_scope = { change_region_name = "§WIt is the year §Y142§W of the Fourth Age" } }
+				fourth_age_year_loc  = { state_scope = { change_region_name = "§WIt is the year §Y142§W of the Fourth Age" } }
 			}
 		}
 
@@ -24622,7 +24619,7 @@ country_event = {
 			}
 			FOR = {
 				set_variable = { which = year_of_fourth_age value = 142 }
-				fourth_age_year_loc = { state_scope = { change_region_name = "§WIt is the year §Y141§W of the Fourth Age" } }
+				fourth_age_year_loc  = { state_scope = { change_region_name = "§WIt is the year §Y141§W of the Fourth Age" } }
 			}
 		}
 
@@ -24635,7 +24632,7 @@ country_event = {
 			}
 			FOR = {
 				set_variable = { which = year_of_fourth_age value = 141 }
-				fourth_age_year_loc = { state_scope = { change_region_name = "§WIt is the year §Y140§W of the Fourth Age" } }
+				fourth_age_year_loc  = { state_scope = { change_region_name = "§WIt is the year §Y140§W of the Fourth Age" } }
 			}
 		}
 
@@ -24648,7 +24645,7 @@ country_event = {
 			}
 			FOR = {
 				set_variable = { which = year_of_fourth_age value = 140 }
-				fourth_age_year_loc = { state_scope = { change_region_name = "§WIt is the year §Y139§W of the Fourth Age" } }
+				fourth_age_year_loc  = { state_scope = { change_region_name = "§WIt is the year §Y139§W of the Fourth Age" } }
 			}
 		}
 
@@ -24661,7 +24658,7 @@ country_event = {
 			}
 			FOR = {
 				set_variable = { which = year_of_fourth_age value = 139 }
-				fourth_age_year_loc = { state_scope = { change_region_name = "§WIt is the year §Y138§W of the Fourth Age" } }
+				fourth_age_year_loc  = { state_scope = { change_region_name = "§WIt is the year §Y138§W of the Fourth Age" } }
 			}
 		}
 
@@ -24674,7 +24671,7 @@ country_event = {
 			}
 			FOR = {
 				set_variable = { which = year_of_fourth_age value = 138 }
-				fourth_age_year_loc = { state_scope = { change_region_name = "§WIt is the year §Y137§W of the Fourth Age" } }
+				fourth_age_year_loc  = { state_scope = { change_region_name = "§WIt is the year §Y137§W of the Fourth Age" } }
 			}
 		}
 
@@ -24687,7 +24684,7 @@ country_event = {
 			}
 			FOR = {
 				set_variable = { which = year_of_fourth_age value = 137 }
-				fourth_age_year_loc = { state_scope = { change_region_name = "§WIt is the year §Y136§W of the Fourth Age" } }
+				fourth_age_year_loc  = { state_scope = { change_region_name = "§WIt is the year §Y136§W of the Fourth Age" } }
 			}
 		}
 
@@ -24700,7 +24697,7 @@ country_event = {
 			}
 			FOR = {
 				set_variable = { which = year_of_fourth_age value = 136 }
-				fourth_age_year_loc = { state_scope = { change_region_name = "§WIt is the year §Y135§W of the Fourth Age" } }
+				fourth_age_year_loc  = { state_scope = { change_region_name = "§WIt is the year §Y135§W of the Fourth Age" } }
 			}
 		}
 
@@ -24713,7 +24710,7 @@ country_event = {
 			}
 			FOR = {
 				set_variable = { which = year_of_fourth_age value = 135 }
-				fourth_age_year_loc = { state_scope = { change_region_name = "§WIt is the year §Y134§W of the Fourth Age" } }
+				fourth_age_year_loc  = { state_scope = { change_region_name = "§WIt is the year §Y134§W of the Fourth Age" } }
 			}
 		}
 
@@ -24726,7 +24723,7 @@ country_event = {
 			}
 			FOR = {
 				set_variable = { which = year_of_fourth_age value = 134 }
-				fourth_age_year_loc = { state_scope = { change_region_name = "§WIt is the year §Y133§W of the Fourth Age" } }
+				fourth_age_year_loc  = { state_scope = { change_region_name = "§WIt is the year §Y133§W of the Fourth Age" } }
 			}
 		}
 
@@ -24739,7 +24736,7 @@ country_event = {
 			}
 			FOR = {
 				set_variable = { which = year_of_fourth_age value = 133 }
-				fourth_age_year_loc = { state_scope = { change_region_name = "§WIt is the year §Y132§W of the Fourth Age" } }
+				fourth_age_year_loc  = { state_scope = { change_region_name = "§WIt is the year §Y132§W of the Fourth Age" } }
 			}
 		}
 
@@ -24752,7 +24749,7 @@ country_event = {
 			}
 			FOR = {
 				set_variable = { which = year_of_fourth_age value = 132 }
-				fourth_age_year_loc = { state_scope = { change_region_name = "§WIt is the year §Y131§W of the Fourth Age" } }
+				fourth_age_year_loc  = { state_scope = { change_region_name = "§WIt is the year §Y131§W of the Fourth Age" } }
 			}
 		}
 
@@ -24765,7 +24762,7 @@ country_event = {
 			}
 			FOR = {
 				set_variable = { which = year_of_fourth_age value = 131 }
-				fourth_age_year_loc = { state_scope = { change_region_name = "§WIt is the year §Y130§W of the Fourth Age" } }
+				fourth_age_year_loc  = { state_scope = { change_region_name = "§WIt is the year §Y130§W of the Fourth Age" } }
 			}
 		}
 
@@ -24778,7 +24775,7 @@ country_event = {
 			}
 			FOR = {
 				set_variable = { which = year_of_fourth_age value = 130 }
-				fourth_age_year_loc = { state_scope = { change_region_name = "§WIt is the year §Y129§W of the Fourth Age" } }
+				fourth_age_year_loc  = { state_scope = { change_region_name = "§WIt is the year §Y129§W of the Fourth Age" } }
 			}
 		}
 
@@ -24791,7 +24788,7 @@ country_event = {
 			}
 			FOR = {
 				set_variable = { which = year_of_fourth_age value = 129 }
-				fourth_age_year_loc = { state_scope = { change_region_name = "§WIt is the year §Y128§W of the Fourth Age" } }
+				fourth_age_year_loc  = { state_scope = { change_region_name = "§WIt is the year §Y128§W of the Fourth Age" } }
 			}
 		}
 
@@ -24804,7 +24801,7 @@ country_event = {
 			}
 			FOR = {
 				set_variable = { which = year_of_fourth_age value = 128 }
-				fourth_age_year_loc = { state_scope = { change_region_name = "§WIt is the year §Y127§W of the Fourth Age" } }
+				fourth_age_year_loc  = { state_scope = { change_region_name = "§WIt is the year §Y127§W of the Fourth Age" } }
 			}
 		}
 
@@ -24817,7 +24814,7 @@ country_event = {
 			}
 			FOR = {
 				set_variable = { which = year_of_fourth_age value = 127 }
-				fourth_age_year_loc = { state_scope = { change_region_name = "§WIt is the year §Y126§W of the Fourth Age" } }
+				fourth_age_year_loc  = { state_scope = { change_region_name = "§WIt is the year §Y126§W of the Fourth Age" } }
 			}
 		}
 
@@ -24830,7 +24827,7 @@ country_event = {
 			}
 			FOR = {
 				set_variable = { which = year_of_fourth_age value = 126 }
-				fourth_age_year_loc = { state_scope = { change_region_name = "§WIt is the year §Y125§W of the Fourth Age" } }
+				fourth_age_year_loc  = { state_scope = { change_region_name = "§WIt is the year §Y125§W of the Fourth Age" } }
 			}
 		}
 
@@ -24843,7 +24840,7 @@ country_event = {
 			}
 			FOR = {
 				set_variable = { which = year_of_fourth_age value = 125 }
-				fourth_age_year_loc = { state_scope = { change_region_name = "§WIt is the year §Y124§W of the Fourth Age" } }
+				fourth_age_year_loc  = { state_scope = { change_region_name = "§WIt is the year §Y124§W of the Fourth Age" } }
 			}
 		}
 
@@ -24856,7 +24853,7 @@ country_event = {
 			}
 			FOR = {
 				set_variable = { which = year_of_fourth_age value = 124 }
-				fourth_age_year_loc = { state_scope = { change_region_name = "§WIt is the year §Y123§W of the Fourth Age" } }
+				fourth_age_year_loc  = { state_scope = { change_region_name = "§WIt is the year §Y123§W of the Fourth Age" } }
 			}
 		}
 
@@ -24869,7 +24866,7 @@ country_event = {
 			}
 			FOR = {
 				set_variable = { which = year_of_fourth_age value = 123 }
-				fourth_age_year_loc = { state_scope = { change_region_name = "§WIt is the year §Y122§W of the Fourth Age" } }
+				fourth_age_year_loc  = { state_scope = { change_region_name = "§WIt is the year §Y122§W of the Fourth Age" } }
 			}
 		}
 
@@ -24882,7 +24879,7 @@ country_event = {
 			}
 			FOR = {
 				set_variable = { which = year_of_fourth_age value = 122 }
-				fourth_age_year_loc = { state_scope = { change_region_name = "§WIt is the year §Y121§W of the Fourth Age" } }
+				fourth_age_year_loc  = { state_scope = { change_region_name = "§WIt is the year §Y121§W of the Fourth Age" } }
 			}
 		}
 
@@ -24895,7 +24892,7 @@ country_event = {
 			}
 			FOR = {
 				set_variable = { which = year_of_fourth_age value = 121 }
-				fourth_age_year_loc = { state_scope = { change_region_name = "§WIt is the year §Y120§W of the Fourth Age" } }
+				fourth_age_year_loc  = { state_scope = { change_region_name = "§WIt is the year §Y120§W of the Fourth Age" } }
 			}
 		}
 
@@ -24908,7 +24905,7 @@ country_event = {
 			}
 			FOR = {
 				set_variable = { which = year_of_fourth_age value = 120 }
-				fourth_age_year_loc = { state_scope = { change_region_name = "§WIt is the year §Y119§W of the Fourth Age" } }
+				fourth_age_year_loc  = { state_scope = { change_region_name = "§WIt is the year §Y119§W of the Fourth Age" } }
 			}
 		}
 
@@ -24921,7 +24918,7 @@ country_event = {
 			}
 			FOR = {
 				set_variable = { which = year_of_fourth_age value = 119 }
-				fourth_age_year_loc = { state_scope = { change_region_name = "§WIt is the year §Y118§W of the Fourth Age" } }
+				fourth_age_year_loc  = { state_scope = { change_region_name = "§WIt is the year §Y118§W of the Fourth Age" } }
 			}
 		}
 
@@ -24934,7 +24931,7 @@ country_event = {
 			}
 			FOR = {
 				set_variable = { which = year_of_fourth_age value = 118 }
-				fourth_age_year_loc = { state_scope = { change_region_name = "§WIt is the year §Y117§W of the Fourth Age" } }
+				fourth_age_year_loc  = { state_scope = { change_region_name = "§WIt is the year §Y117§W of the Fourth Age" } }
 			}
 		}
 
@@ -24947,7 +24944,7 @@ country_event = {
 			}
 			FOR = {
 				set_variable = { which = year_of_fourth_age value = 117 }
-				fourth_age_year_loc = { state_scope = { change_region_name = "§WIt is the year §Y116§W of the Fourth Age" } }
+				fourth_age_year_loc  = { state_scope = { change_region_name = "§WIt is the year §Y116§W of the Fourth Age" } }
 			}
 		}
 
@@ -24960,7 +24957,7 @@ country_event = {
 			}
 			FOR = {
 				set_variable = { which = year_of_fourth_age value = 116 }
-				fourth_age_year_loc = { state_scope = { change_region_name = "§WIt is the year §Y115§W of the Fourth Age" } }
+				fourth_age_year_loc  = { state_scope = { change_region_name = "§WIt is the year §Y115§W of the Fourth Age" } }
 			}
 		}
 
@@ -24973,7 +24970,7 @@ country_event = {
 			}
 			FOR = {
 				set_variable = { which = year_of_fourth_age value = 115 }
-				fourth_age_year_loc = { state_scope = { change_region_name = "§WIt is the year §Y114§W of the Fourth Age" } }
+				fourth_age_year_loc  = { state_scope = { change_region_name = "§WIt is the year §Y114§W of the Fourth Age" } }
 			}
 		}
 
@@ -24986,7 +24983,7 @@ country_event = {
 			}
 			FOR = {
 				set_variable = { which = year_of_fourth_age value = 114 }
-				fourth_age_year_loc = { state_scope = { change_region_name = "§WIt is the year §Y113§W of the Fourth Age" } }
+				fourth_age_year_loc  = { state_scope = { change_region_name = "§WIt is the year §Y113§W of the Fourth Age" } }
 			}
 		}
 
@@ -24999,7 +24996,7 @@ country_event = {
 			}
 			FOR = {
 				set_variable = { which = year_of_fourth_age value = 113 }
-				fourth_age_year_loc = { state_scope = { change_region_name = "§WIt is the year §Y112§W of the Fourth Age" } }
+				fourth_age_year_loc  = { state_scope = { change_region_name = "§WIt is the year §Y112§W of the Fourth Age" } }
 			}
 		}
 
@@ -25012,7 +25009,7 @@ country_event = {
 			}
 			FOR = {
 				set_variable = { which = year_of_fourth_age value = 112 }
-				fourth_age_year_loc = { state_scope = { change_region_name = "§WIt is the year §Y111§W of the Fourth Age" } }
+				fourth_age_year_loc  = { state_scope = { change_region_name = "§WIt is the year §Y111§W of the Fourth Age" } }
 			}
 		}
 
@@ -25025,7 +25022,7 @@ country_event = {
 			}
 			FOR = {
 				set_variable = { which = year_of_fourth_age value = 111 }
-				fourth_age_year_loc = { state_scope = { change_region_name = "§WIt is the year §Y110§W of the Fourth Age" } }
+				fourth_age_year_loc  = { state_scope = { change_region_name = "§WIt is the year §Y110§W of the Fourth Age" } }
 			}
 		}
 
@@ -25038,7 +25035,7 @@ country_event = {
 			}
 			FOR = {
 				set_variable = { which = year_of_fourth_age value = 110 }
-				fourth_age_year_loc = { state_scope = { change_region_name = "§WIt is the year §Y109§W of the Fourth Age" } }
+				fourth_age_year_loc  = { state_scope = { change_region_name = "§WIt is the year §Y109§W of the Fourth Age" } }
 			}
 		}
 
@@ -25051,7 +25048,7 @@ country_event = {
 			}
 			FOR = {
 				set_variable = { which = year_of_fourth_age value = 109 }
-				fourth_age_year_loc = { state_scope = { change_region_name = "§WIt is the year §Y108§W of the Fourth Age" } }
+				fourth_age_year_loc  = { state_scope = { change_region_name = "§WIt is the year §Y108§W of the Fourth Age" } }
 			}
 		}
 
@@ -25064,7 +25061,7 @@ country_event = {
 			}
 			FOR = {
 				set_variable = { which = year_of_fourth_age value = 108 }
-				fourth_age_year_loc = { state_scope = { change_region_name = "§WIt is the year §Y107§W of the Fourth Age" } }
+				fourth_age_year_loc  = { state_scope = { change_region_name = "§WIt is the year §Y107§W of the Fourth Age" } }
 			}
 		}
 
@@ -25077,7 +25074,7 @@ country_event = {
 			}
 			FOR = {
 				set_variable = { which = year_of_fourth_age value = 107 }
-				fourth_age_year_loc = { state_scope = { change_region_name = "§WIt is the year §Y106§W of the Fourth Age" } }
+				fourth_age_year_loc  = { state_scope = { change_region_name = "§WIt is the year §Y106§W of the Fourth Age" } }
 			}
 		}
 
@@ -25090,7 +25087,7 @@ country_event = {
 			}
 			FOR = {
 				set_variable = { which = year_of_fourth_age value = 106 }
-				fourth_age_year_loc = { state_scope = { change_region_name = "§WIt is the year §Y105§W of the Fourth Age" } }
+				fourth_age_year_loc  = { state_scope = { change_region_name = "§WIt is the year §Y105§W of the Fourth Age" } }
 			}
 		}
 
@@ -25103,7 +25100,7 @@ country_event = {
 			}
 			FOR = {
 				set_variable = { which = year_of_fourth_age value = 105 }
-				fourth_age_year_loc = { state_scope = { change_region_name = "§WIt is the year §Y104§W of the Fourth Age" } }
+				fourth_age_year_loc  = { state_scope = { change_region_name = "§WIt is the year §Y104§W of the Fourth Age" } }
 			}
 		}
 
@@ -25116,7 +25113,7 @@ country_event = {
 			}
 			FOR = {
 				set_variable = { which = year_of_fourth_age value = 104 }
-				fourth_age_year_loc = { state_scope = { change_region_name = "§WIt is the year §Y103§W of the Fourth Age" } }
+				fourth_age_year_loc  = { state_scope = { change_region_name = "§WIt is the year §Y103§W of the Fourth Age" } }
 			}
 		}
 
@@ -25129,7 +25126,7 @@ country_event = {
 			}
 			FOR = {
 				set_variable = { which = year_of_fourth_age value = 103 }
-				fourth_age_year_loc = { state_scope = { change_region_name = "§WIt is the year §Y102§W of the Fourth Age" } }
+				fourth_age_year_loc  = { state_scope = { change_region_name = "§WIt is the year §Y102§W of the Fourth Age" } }
 			}
 		}
 
@@ -25142,7 +25139,7 @@ country_event = {
 			}
 			FOR = {
 				set_variable = { which = year_of_fourth_age value = 102 }
-				fourth_age_year_loc = { state_scope = { change_region_name = "§WIt is the year §Y101§W of the Fourth Age" } }
+				fourth_age_year_loc  = { state_scope = { change_region_name = "§WIt is the year §Y101§W of the Fourth Age" } }
 			}
 		}
 
@@ -25155,7 +25152,7 @@ country_event = {
 			}
 			FOR = {
 				set_variable = { which = year_of_fourth_age value = 101 }
-				fourth_age_year_loc = { state_scope = { change_region_name = "§WIt is the year §Y100§W of the Fourth Age" } }
+				fourth_age_year_loc  = { state_scope = { change_region_name = "§WIt is the year §Y100§W of the Fourth Age" } }
 			}
 		}
 
@@ -25168,7 +25165,7 @@ country_event = {
 			}
 			FOR = {
 				set_variable = { which = year_of_fourth_age value = 100 }
-				fourth_age_year_loc = { state_scope = { change_region_name = "§WIt is the year §Y99§W of the Fourth Age" } }
+				fourth_age_year_loc  = { state_scope = { change_region_name = "§WIt is the year §Y99§W of the Fourth Age" } }
 			}
 		}
 
@@ -25181,7 +25178,7 @@ country_event = {
 			}
 			FOR = {
 				set_variable = { which = year_of_fourth_age value = 99 }
-				fourth_age_year_loc = { state_scope = { change_region_name = "§WIt is the year §Y98§W of the Fourth Age" } }
+				fourth_age_year_loc  = { state_scope = { change_region_name = "§WIt is the year §Y98§W of the Fourth Age" } }
 			}
 		}
 
@@ -25194,7 +25191,7 @@ country_event = {
 			}
 			FOR = {
 				set_variable = { which = year_of_fourth_age value = 98 }
-				fourth_age_year_loc = { state_scope = { change_region_name = "§WIt is the year §Y97§W of the Fourth Age" } }
+				fourth_age_year_loc  = { state_scope = { change_region_name = "§WIt is the year §Y97§W of the Fourth Age" } }
 			}
 		}
 
@@ -25207,7 +25204,7 @@ country_event = {
 			}
 			FOR = {
 				set_variable = { which = year_of_fourth_age value = 97 }
-				fourth_age_year_loc = { state_scope = { change_region_name = "§WIt is the year §Y96§W of the Fourth Age" } }
+				fourth_age_year_loc  = { state_scope = { change_region_name = "§WIt is the year §Y96§W of the Fourth Age" } }
 			}
 		}
 
@@ -25220,7 +25217,7 @@ country_event = {
 			}
 			FOR = {
 				set_variable = { which = year_of_fourth_age value = 96 }
-				fourth_age_year_loc = { state_scope = { change_region_name = "§WIt is the year §Y95§W of the Fourth Age" } }
+				fourth_age_year_loc  = { state_scope = { change_region_name = "§WIt is the year §Y95§W of the Fourth Age" } }
 			}
 		}
 
@@ -25233,7 +25230,7 @@ country_event = {
 			}
 			FOR = {
 				set_variable = { which = year_of_fourth_age value = 95 }
-				fourth_age_year_loc = { state_scope = { change_region_name = "§WIt is the year §Y94§W of the Fourth Age" } }
+				fourth_age_year_loc  = { state_scope = { change_region_name = "§WIt is the year §Y94§W of the Fourth Age" } }
 			}
 		}
 
@@ -25246,7 +25243,7 @@ country_event = {
 			}
 			FOR = {
 				set_variable = { which = year_of_fourth_age value = 94 }
-				fourth_age_year_loc = { state_scope = { change_region_name = "§WIt is the year §Y93§W of the Fourth Age" } }
+				fourth_age_year_loc  = { state_scope = { change_region_name = "§WIt is the year §Y93§W of the Fourth Age" } }
 			}
 		}
 
@@ -25259,7 +25256,7 @@ country_event = {
 			}
 			FOR = {
 				set_variable = { which = year_of_fourth_age value = 93 }
-				fourth_age_year_loc = { state_scope = { change_region_name = "§WIt is the year §Y92§W of the Fourth Age" } }
+				fourth_age_year_loc  = { state_scope = { change_region_name = "§WIt is the year §Y92§W of the Fourth Age" } }
 			}
 		}
 
@@ -25272,7 +25269,7 @@ country_event = {
 			}
 			FOR = {
 				set_variable = { which = year_of_fourth_age value = 92 }
-				fourth_age_year_loc = { state_scope = { change_region_name = "§WIt is the year §Y91§W of the Fourth Age" } }
+				fourth_age_year_loc  = { state_scope = { change_region_name = "§WIt is the year §Y91§W of the Fourth Age" } }
 			}
 		}
 
@@ -25285,7 +25282,7 @@ country_event = {
 			}
 			FOR = {
 				set_variable = { which = year_of_fourth_age value = 91 }
-				fourth_age_year_loc = { state_scope = { change_region_name = "§WIt is the year §Y90§W of the Fourth Age" } }
+				fourth_age_year_loc  = { state_scope = { change_region_name = "§WIt is the year §Y90§W of the Fourth Age" } }
 			}
 		}
 
@@ -25298,7 +25295,7 @@ country_event = {
 			}
 			FOR = {
 				set_variable = { which = year_of_fourth_age value = 90 }
-				fourth_age_year_loc = { state_scope = { change_region_name = "§WIt is the year §Y89§W of the Fourth Age" } }
+				fourth_age_year_loc  = { state_scope = { change_region_name = "§WIt is the year §Y89§W of the Fourth Age" } }
 			}
 		}
 
@@ -25311,7 +25308,7 @@ country_event = {
 			}
 			FOR = {
 				set_variable = { which = year_of_fourth_age value = 89 }
-				fourth_age_year_loc = { state_scope = { change_region_name = "§WIt is the year §Y88§W of the Fourth Age" } }
+				fourth_age_year_loc  = { state_scope = { change_region_name = "§WIt is the year §Y88§W of the Fourth Age" } }
 			}
 		}
 
@@ -25324,7 +25321,7 @@ country_event = {
 			}
 			FOR = {
 				set_variable = { which = year_of_fourth_age value = 88 }
-				fourth_age_year_loc = { state_scope = { change_region_name = "§WIt is the year §Y87§W of the Fourth Age" } }
+				fourth_age_year_loc  = { state_scope = { change_region_name = "§WIt is the year §Y87§W of the Fourth Age" } }
 			}
 		}
 
@@ -25337,7 +25334,7 @@ country_event = {
 			}
 			FOR = {
 				set_variable = { which = year_of_fourth_age value = 87 }
-				fourth_age_year_loc = { state_scope = { change_region_name = "§WIt is the year §Y86§W of the Fourth Age" } }
+				fourth_age_year_loc  = { state_scope = { change_region_name = "§WIt is the year §Y86§W of the Fourth Age" } }
 			}
 		}
 
@@ -25350,7 +25347,7 @@ country_event = {
 			}
 			FOR = {
 				set_variable = { which = year_of_fourth_age value = 86 }
-				fourth_age_year_loc = { state_scope = { change_region_name = "§WIt is the year §Y85§W of the Fourth Age" } }
+				fourth_age_year_loc  = { state_scope = { change_region_name = "§WIt is the year §Y85§W of the Fourth Age" } }
 			}
 		}
 
@@ -25363,7 +25360,7 @@ country_event = {
 			}
 			FOR = {
 				set_variable = { which = year_of_fourth_age value = 85 }
-				fourth_age_year_loc = { state_scope = { change_region_name = "§WIt is the year §Y84§W of the Fourth Age" } }
+				fourth_age_year_loc  = { state_scope = { change_region_name = "§WIt is the year §Y84§W of the Fourth Age" } }
 			}
 		}
 
@@ -25376,7 +25373,7 @@ country_event = {
 			}
 			FOR = {
 				set_variable = { which = year_of_fourth_age value = 84 }
-				fourth_age_year_loc = { state_scope = { change_region_name = "§WIt is the year §Y83§W of the Fourth Age" } }
+				fourth_age_year_loc  = { state_scope = { change_region_name = "§WIt is the year §Y83§W of the Fourth Age" } }
 			}
 		}
 
@@ -25389,7 +25386,7 @@ country_event = {
 			}
 			FOR = {
 				set_variable = { which = year_of_fourth_age value = 83 }
-				fourth_age_year_loc = { state_scope = { change_region_name = "§WIt is the year §Y82§W of the Fourth Age" } }
+				fourth_age_year_loc  = { state_scope = { change_region_name = "§WIt is the year §Y82§W of the Fourth Age" } }
 			}
 		}
 
@@ -25402,7 +25399,7 @@ country_event = {
 			}
 			FOR = {
 				set_variable = { which = year_of_fourth_age value = 82 }
-				fourth_age_year_loc = { state_scope = { change_region_name = "§WIt is the year §Y81§W of the Fourth Age" } }
+				fourth_age_year_loc  = { state_scope = { change_region_name = "§WIt is the year §Y81§W of the Fourth Age" } }
 			}
 		}
 
@@ -25415,7 +25412,7 @@ country_event = {
 			}
 			FOR = {
 				set_variable = { which = year_of_fourth_age value = 81 }
-				fourth_age_year_loc = { state_scope = { change_region_name = "§WIt is the year §Y80§W of the Fourth Age" } }
+				fourth_age_year_loc  = { state_scope = { change_region_name = "§WIt is the year §Y80§W of the Fourth Age" } }
 			}
 		}
 
@@ -25428,7 +25425,7 @@ country_event = {
 			}
 			FOR = {
 				set_variable = { which = year_of_fourth_age value = 80 }
-				fourth_age_year_loc = { state_scope = { change_region_name = "§WIt is the year §Y79§W of the Fourth Age" } }
+				fourth_age_year_loc  = { state_scope = { change_region_name = "§WIt is the year §Y79§W of the Fourth Age" } }
 			}
 		}
 
@@ -25441,7 +25438,7 @@ country_event = {
 			}
 			FOR = {
 				set_variable = { which = year_of_fourth_age value = 79 }
-				fourth_age_year_loc = { state_scope = { change_region_name = "§WIt is the year §Y78§W of the Fourth Age" } }
+				fourth_age_year_loc  = { state_scope = { change_region_name = "§WIt is the year §Y78§W of the Fourth Age" } }
 			}
 		}
 
@@ -25454,7 +25451,7 @@ country_event = {
 			}
 			FOR = {
 				set_variable = { which = year_of_fourth_age value = 78 }
-				fourth_age_year_loc = { state_scope = { change_region_name = "§WIt is the year §Y77§W of the Fourth Age" } }
+				fourth_age_year_loc  = { state_scope = { change_region_name = "§WIt is the year §Y77§W of the Fourth Age" } }
 			}
 		}
 
@@ -25467,7 +25464,7 @@ country_event = {
 			}
 			FOR = {
 				set_variable = { which = year_of_fourth_age value = 77 }
-				fourth_age_year_loc = { state_scope = { change_region_name = "§WIt is the year §Y76§W of the Fourth Age" } }
+				fourth_age_year_loc  = { state_scope = { change_region_name = "§WIt is the year §Y76§W of the Fourth Age" } }
 			}
 		}
 
@@ -25480,7 +25477,7 @@ country_event = {
 			}
 			FOR = {
 				set_variable = { which = year_of_fourth_age value = 76 }
-				fourth_age_year_loc = { state_scope = { change_region_name = "§WIt is the year §Y75§W of the Fourth Age" } }
+				fourth_age_year_loc  = { state_scope = { change_region_name = "§WIt is the year §Y75§W of the Fourth Age" } }
 			}
 		}
 
@@ -25493,7 +25490,7 @@ country_event = {
 			}
 			FOR = {
 				set_variable = { which = year_of_fourth_age value = 75 }
-				fourth_age_year_loc = { state_scope = { change_region_name = "§WIt is the year §Y74§W of the Fourth Age" } }
+				fourth_age_year_loc  = { state_scope = { change_region_name = "§WIt is the year §Y74§W of the Fourth Age" } }
 			}
 		}
 
@@ -25506,7 +25503,7 @@ country_event = {
 			}
 			FOR = {
 				set_variable = { which = year_of_fourth_age value = 74 }
-				fourth_age_year_loc = { state_scope = { change_region_name = "§WIt is the year §Y73§W of the Fourth Age" } }
+				fourth_age_year_loc  = { state_scope = { change_region_name = "§WIt is the year §Y73§W of the Fourth Age" } }
 			}
 		}
 
@@ -25519,7 +25516,7 @@ country_event = {
 			}
 			FOR = {
 				set_variable = { which = year_of_fourth_age value = 73 }
-				fourth_age_year_loc = { state_scope = { change_region_name = "§WIt is the year §Y72§W of the Fourth Age" } }
+				fourth_age_year_loc  = { state_scope = { change_region_name = "§WIt is the year §Y72§W of the Fourth Age" } }
 			}
 		}
 
@@ -25532,7 +25529,7 @@ country_event = {
 			}
 			FOR = {
 				set_variable = { which = year_of_fourth_age value = 72 }
-				fourth_age_year_loc = { state_scope = { change_region_name = "§WIt is the year §Y71§W of the Fourth Age" } }
+				fourth_age_year_loc  = { state_scope = { change_region_name = "§WIt is the year §Y71§W of the Fourth Age" } }
 			}
 		}
 
@@ -25545,7 +25542,7 @@ country_event = {
 			}
 			FOR = {
 				set_variable = { which = year_of_fourth_age value = 71 }
-				fourth_age_year_loc = { state_scope = { change_region_name = "§WIt is the year §Y70§W of the Fourth Age" } }
+				fourth_age_year_loc  = { state_scope = { change_region_name = "§WIt is the year §Y70§W of the Fourth Age" } }
 			}
 		}
 
@@ -25558,7 +25555,7 @@ country_event = {
 			}
 			FOR = {
 				set_variable = { which = year_of_fourth_age value = 70 }
-				fourth_age_year_loc = { state_scope = { change_region_name = "§WIt is the year §Y69§W of the Fourth Age" } }
+				fourth_age_year_loc  = { state_scope = { change_region_name = "§WIt is the year §Y69§W of the Fourth Age" } }
 			}
 		}
 
@@ -25571,7 +25568,7 @@ country_event = {
 			}
 			FOR = {
 				set_variable = { which = year_of_fourth_age value = 69 }
-				fourth_age_year_loc = { state_scope = { change_region_name = "§WIt is the year §Y68§W of the Fourth Age" } }
+				fourth_age_year_loc  = { state_scope = { change_region_name = "§WIt is the year §Y68§W of the Fourth Age" } }
 			}
 		}
 
@@ -25584,7 +25581,7 @@ country_event = {
 			}
 			FOR = {
 				set_variable = { which = year_of_fourth_age value = 68 }
-				fourth_age_year_loc = { state_scope = { change_region_name = "§WIt is the year §Y67§W of the Fourth Age" } }
+				fourth_age_year_loc  = { state_scope = { change_region_name = "§WIt is the year §Y67§W of the Fourth Age" } }
 			}
 		}
 
@@ -25597,7 +25594,7 @@ country_event = {
 			}
 			FOR = {
 				set_variable = { which = year_of_fourth_age value = 67 }
-				fourth_age_year_loc = { state_scope = { change_region_name = "§WIt is the year §Y66§W of the Fourth Age" } }
+				fourth_age_year_loc  = { state_scope = { change_region_name = "§WIt is the year §Y66§W of the Fourth Age" } }
 			}
 		}
 
@@ -25610,7 +25607,7 @@ country_event = {
 			}
 			FOR = {
 				set_variable = { which = year_of_fourth_age value = 66 }
-				fourth_age_year_loc = { state_scope = { change_region_name = "§WIt is the year §Y65§W of the Fourth Age" } }
+				fourth_age_year_loc  = { state_scope = { change_region_name = "§WIt is the year §Y65§W of the Fourth Age" } }
 			}
 		}
 
@@ -25623,7 +25620,7 @@ country_event = {
 			}
 			FOR = {
 				set_variable = { which = year_of_fourth_age value = 65 }
-				fourth_age_year_loc = { state_scope = { change_region_name = "§WIt is the year §Y64§W of the Fourth Age" } }
+				fourth_age_year_loc  = { state_scope = { change_region_name = "§WIt is the year §Y64§W of the Fourth Age" } }
 			}
 		}
 
@@ -25636,7 +25633,7 @@ country_event = {
 			}
 			FOR = {
 				set_variable = { which = year_of_fourth_age value = 64 }
-				fourth_age_year_loc = { state_scope = { change_region_name = "§WIt is the year §Y63§W of the Fourth Age" } }
+				fourth_age_year_loc  = { state_scope = { change_region_name = "§WIt is the year §Y63§W of the Fourth Age" } }
 			}
 		}
 
@@ -25649,7 +25646,7 @@ country_event = {
 			}
 			FOR = {
 				set_variable = { which = year_of_fourth_age value = 63 }
-				fourth_age_year_loc = { state_scope = { change_region_name = "§WIt is the year §Y62§W of the Fourth Age" } }
+				fourth_age_year_loc  = { state_scope = { change_region_name = "§WIt is the year §Y62§W of the Fourth Age" } }
 			}
 		}
 
@@ -25662,7 +25659,7 @@ country_event = {
 			}
 			FOR = {
 				set_variable = { which = year_of_fourth_age value = 62 }
-				fourth_age_year_loc = { state_scope = { change_region_name = "§WIt is the year §Y61§W of the Fourth Age" } }
+				fourth_age_year_loc  = { state_scope = { change_region_name = "§WIt is the year §Y61§W of the Fourth Age" } }
 			}
 		}
 
@@ -25675,7 +25672,7 @@ country_event = {
 			}
 			FOR = {
 				set_variable = { which = year_of_fourth_age value = 61 }
-				fourth_age_year_loc = { state_scope = { change_region_name = "§WIt is the year §Y60§W of the Fourth Age" } }
+				fourth_age_year_loc  = { state_scope = { change_region_name = "§WIt is the year §Y60§W of the Fourth Age" } }
 			}
 		}
 
@@ -25688,7 +25685,7 @@ country_event = {
 			}
 			FOR = {
 				set_variable = { which = year_of_fourth_age value = 60 }
-				fourth_age_year_loc = { state_scope = { change_region_name = "§WIt is the year §Y59§W of the Fourth Age" } }
+				fourth_age_year_loc  = { state_scope = { change_region_name = "§WIt is the year §Y59§W of the Fourth Age" } }
 			}
 		}
 
@@ -25701,7 +25698,7 @@ country_event = {
 			}
 			FOR = {
 				set_variable = { which = year_of_fourth_age value = 59 }
-				fourth_age_year_loc = { state_scope = { change_region_name = "§WIt is the year §Y58§W of the Fourth Age" } }
+				fourth_age_year_loc  = { state_scope = { change_region_name = "§WIt is the year §Y58§W of the Fourth Age" } }
 			}
 		}
 
@@ -25714,7 +25711,7 @@ country_event = {
 			}
 			FOR = {
 				set_variable = { which = year_of_fourth_age value = 58 }
-				fourth_age_year_loc = { state_scope = { change_region_name = "§WIt is the year §Y57§W of the Fourth Age" } }
+				fourth_age_year_loc  = { state_scope = { change_region_name = "§WIt is the year §Y57§W of the Fourth Age" } }
 			}
 		}
 
@@ -25727,7 +25724,7 @@ country_event = {
 			}
 			FOR = {
 				set_variable = { which = year_of_fourth_age value = 57 }
-				fourth_age_year_loc = { state_scope = { change_region_name = "§WIt is the year §Y56§W of the Fourth Age" } }
+				fourth_age_year_loc  = { state_scope = { change_region_name = "§WIt is the year §Y56§W of the Fourth Age" } }
 			}
 		}
 
@@ -25740,7 +25737,7 @@ country_event = {
 			}
 			FOR = {
 				set_variable = { which = year_of_fourth_age value = 56 }
-				fourth_age_year_loc = { state_scope = { change_region_name = "§WIt is the year §Y55§W of the Fourth Age" } }
+				fourth_age_year_loc  = { state_scope = { change_region_name = "§WIt is the year §Y55§W of the Fourth Age" } }
 			}
 		}
 
@@ -25753,7 +25750,7 @@ country_event = {
 			}
 			FOR = {
 				set_variable = { which = year_of_fourth_age value = 55 }
-				fourth_age_year_loc = { state_scope = { change_region_name = "§WIt is the year §Y54§W of the Fourth Age" } }
+				fourth_age_year_loc  = { state_scope = { change_region_name = "§WIt is the year §Y54§W of the Fourth Age" } }
 			}
 		}
 
@@ -25766,7 +25763,7 @@ country_event = {
 			}
 			FOR = {
 				set_variable = { which = year_of_fourth_age value = 54 }
-				fourth_age_year_loc = { state_scope = { change_region_name = "§WIt is the year §Y53§W of the Fourth Age" } }
+				fourth_age_year_loc  = { state_scope = { change_region_name = "§WIt is the year §Y53§W of the Fourth Age" } }
 			}
 		}
 
@@ -25779,7 +25776,7 @@ country_event = {
 			}
 			FOR = {
 				set_variable = { which = year_of_fourth_age value = 53 }
-				fourth_age_year_loc = { state_scope = { change_region_name = "§WIt is the year §Y52§W of the Fourth Age" } }
+				fourth_age_year_loc  = { state_scope = { change_region_name = "§WIt is the year §Y52§W of the Fourth Age" } }
 			}
 		}
 
@@ -25792,7 +25789,7 @@ country_event = {
 			}
 			FOR = {
 				set_variable = { which = year_of_fourth_age value = 52 }
-				fourth_age_year_loc = { state_scope = { change_region_name = "§WIt is the year §Y51§W of the Fourth Age" } }
+				fourth_age_year_loc  = { state_scope = { change_region_name = "§WIt is the year §Y51§W of the Fourth Age" } }
 			}
 		}
 
@@ -25805,7 +25802,7 @@ country_event = {
 			}
 			FOR = {
 				set_variable = { which = year_of_fourth_age value = 51 }
-				fourth_age_year_loc = { state_scope = { change_region_name = "§WIt is the year §Y50§W of the Fourth Age" } }
+				fourth_age_year_loc  = { state_scope = { change_region_name = "§WIt is the year §Y50§W of the Fourth Age" } }
 			}
 		}
 
@@ -25818,7 +25815,7 @@ country_event = {
 			}
 			FOR = {
 				set_variable = { which = year_of_fourth_age value = 50 }
-				fourth_age_year_loc = { state_scope = { change_region_name = "§WIt is the year §Y49§W of the Fourth Age" } }
+				fourth_age_year_loc  = { state_scope = { change_region_name = "§WIt is the year §Y49§W of the Fourth Age" } }
 			}
 		}
 
@@ -25831,7 +25828,7 @@ country_event = {
 			}
 			FOR = {
 				set_variable = { which = year_of_fourth_age value = 49 }
-				fourth_age_year_loc = { state_scope = { change_region_name = "§WIt is the year §Y48§W of the Fourth Age" } }
+				fourth_age_year_loc  = { state_scope = { change_region_name = "§WIt is the year §Y48§W of the Fourth Age" } }
 			}
 		}
 
@@ -25844,7 +25841,7 @@ country_event = {
 			}
 			FOR = {
 				set_variable = { which = year_of_fourth_age value = 48 }
-				fourth_age_year_loc = { state_scope = { change_region_name = "§WIt is the year §Y47§W of the Fourth Age" } }
+				fourth_age_year_loc  = { state_scope = { change_region_name = "§WIt is the year §Y47§W of the Fourth Age" } }
 			}
 		}
 
@@ -25857,7 +25854,7 @@ country_event = {
 			}
 			FOR = {
 				set_variable = { which = year_of_fourth_age value = 47 }
-				fourth_age_year_loc = { state_scope = { change_region_name = "§WIt is the year §Y46§W of the Fourth Age" } }
+				fourth_age_year_loc  = { state_scope = { change_region_name = "§WIt is the year §Y46§W of the Fourth Age" } }
 			}
 		}
 
@@ -25870,7 +25867,7 @@ country_event = {
 			}
 			FOR = {
 				set_variable = { which = year_of_fourth_age value = 46 }
-				fourth_age_year_loc = { state_scope = { change_region_name = "§WIt is the year §Y45§W of the Fourth Age" } }
+				fourth_age_year_loc  = { state_scope = { change_region_name = "§WIt is the year §Y45§W of the Fourth Age" } }
 			}
 		}
 
@@ -25883,7 +25880,7 @@ country_event = {
 			}
 			FOR = {
 				set_variable = { which = year_of_fourth_age value = 45 }
-				fourth_age_year_loc = { state_scope = { change_region_name = "§WIt is the year §Y44§W of the Fourth Age" } }
+				fourth_age_year_loc  = { state_scope = { change_region_name = "§WIt is the year §Y44§W of the Fourth Age" } }
 			}
 		}
 
@@ -25896,7 +25893,7 @@ country_event = {
 			}
 			FOR = {
 				set_variable = { which = year_of_fourth_age value = 44 }
-				fourth_age_year_loc = { state_scope = { change_region_name = "§WIt is the year §Y43§W of the Fourth Age" } }
+				fourth_age_year_loc  = { state_scope = { change_region_name = "§WIt is the year §Y43§W of the Fourth Age" } }
 			}
 		}
 
@@ -25909,7 +25906,7 @@ country_event = {
 			}
 			FOR = {
 				set_variable = { which = year_of_fourth_age value = 43 }
-				fourth_age_year_loc = { state_scope = { change_region_name = "§WIt is the year §Y42§W of the Fourth Age" } }
+				fourth_age_year_loc  = { state_scope = { change_region_name = "§WIt is the year §Y42§W of the Fourth Age" } }
 			}
 		}
 
@@ -25922,7 +25919,7 @@ country_event = {
 			}
 			FOR = {
 				set_variable = { which = year_of_fourth_age value = 42 }
-				fourth_age_year_loc = { state_scope = { change_region_name = "§WIt is the year §Y41§W of the Fourth Age" } }
+				fourth_age_year_loc  = { state_scope = { change_region_name = "§WIt is the year §Y41§W of the Fourth Age" } }
 			}
 		}
 
@@ -25935,7 +25932,7 @@ country_event = {
 			}
 			FOR = {
 				set_variable = { which = year_of_fourth_age value = 41 }
-				fourth_age_year_loc = { state_scope = { change_region_name = "§WIt is the year §Y40§W of the Fourth Age" } }
+				fourth_age_year_loc  = { state_scope = { change_region_name = "§WIt is the year §Y40§W of the Fourth Age" } }
 			}
 		}
 
@@ -25948,7 +25945,7 @@ country_event = {
 			}
 			FOR = {
 				set_variable = { which = year_of_fourth_age value = 40 }
-				fourth_age_year_loc = { state_scope = { change_region_name = "§WIt is the year §Y39§W of the Fourth Age" } }
+				fourth_age_year_loc  = { state_scope = { change_region_name = "§WIt is the year §Y39§W of the Fourth Age" } }
 			}
 		}
 
@@ -25961,7 +25958,7 @@ country_event = {
 			}
 			FOR = {
 				set_variable = { which = year_of_fourth_age value = 39 }
-				fourth_age_year_loc = { state_scope = { change_region_name = "§WIt is the year §Y38§W of the Fourth Age" } }
+				fourth_age_year_loc  = { state_scope = { change_region_name = "§WIt is the year §Y38§W of the Fourth Age" } }
 			}
 		}
 
@@ -25974,7 +25971,7 @@ country_event = {
 			}
 			FOR = {
 				set_variable = { which = year_of_fourth_age value = 38 }
-				fourth_age_year_loc = { state_scope = { change_region_name = "§WIt is the year §Y37§W of the Fourth Age" } }
+				fourth_age_year_loc  = { state_scope = { change_region_name = "§WIt is the year §Y37§W of the Fourth Age" } }
 			}
 		}
 
@@ -25987,7 +25984,7 @@ country_event = {
 			}
 			FOR = {
 				set_variable = { which = year_of_fourth_age value = 37 }
-				fourth_age_year_loc = { state_scope = { change_region_name = "§WIt is the year §Y36§W of the Fourth Age" } }
+				fourth_age_year_loc  = { state_scope = { change_region_name = "§WIt is the year §Y36§W of the Fourth Age" } }
 			}
 		}
 
@@ -26000,7 +25997,7 @@ country_event = {
 			}
 			FOR = {
 				set_variable = { which = year_of_fourth_age value = 36 }
-				fourth_age_year_loc = { state_scope = { change_region_name = "§WIt is the year §Y35§W of the Fourth Age" } }
+				fourth_age_year_loc  = { state_scope = { change_region_name = "§WIt is the year §Y35§W of the Fourth Age" } }
 			}
 		}
 
@@ -26013,7 +26010,7 @@ country_event = {
 			}
 			FOR = {
 				set_variable = { which = year_of_fourth_age value = 35 }
-				fourth_age_year_loc = { state_scope = { change_region_name = "§WIt is the year §Y34§W of the Fourth Age" } }
+				fourth_age_year_loc  = { state_scope = { change_region_name = "§WIt is the year §Y34§W of the Fourth Age" } }
 			}
 		}
 
@@ -26026,7 +26023,7 @@ country_event = {
 			}
 			FOR = {
 				set_variable = { which = year_of_fourth_age value = 34 }
-				fourth_age_year_loc = { state_scope = { change_region_name = "§WIt is the year §Y33§W of the Fourth Age" } }
+				fourth_age_year_loc  = { state_scope = { change_region_name = "§WIt is the year §Y33§W of the Fourth Age" } }
 			}
 		}
 
@@ -26039,7 +26036,7 @@ country_event = {
 			}
 			FOR = {
 				set_variable = { which = year_of_fourth_age value = 33 }
-				fourth_age_year_loc = { state_scope = { change_region_name = "§WIt is the year §Y32§W of the Fourth Age" } }
+				fourth_age_year_loc  = { state_scope = { change_region_name = "§WIt is the year §Y32§W of the Fourth Age" } }
 			}
 		}
 
@@ -26052,7 +26049,7 @@ country_event = {
 			}
 			FOR = {
 				set_variable = { which = year_of_fourth_age value = 32 }
-				fourth_age_year_loc = { state_scope = { change_region_name = "§WIt is the year §Y31§W of the Fourth Age" } }
+				fourth_age_year_loc  = { state_scope = { change_region_name = "§WIt is the year §Y31§W of the Fourth Age" } }
 			}
 		}
 
@@ -26065,7 +26062,7 @@ country_event = {
 			}
 			FOR = {
 				set_variable = { which = year_of_fourth_age value = 31 }
-				fourth_age_year_loc = { state_scope = { change_region_name = "§WIt is the year §Y30§W of the Fourth Age" } }
+				fourth_age_year_loc  = { state_scope = { change_region_name = "§WIt is the year §Y30§W of the Fourth Age" } }
 			}
 		}
 
@@ -26078,7 +26075,7 @@ country_event = {
 			}
 			FOR = {
 				set_variable = { which = year_of_fourth_age value = 30 }
-				fourth_age_year_loc = { state_scope = { change_region_name = "§WIt is the year §Y29§W of the Fourth Age" } }
+				fourth_age_year_loc  = { state_scope = { change_region_name = "§WIt is the year §Y29§W of the Fourth Age" } }
 			}
 		}
 
@@ -26091,7 +26088,7 @@ country_event = {
 			}
 			FOR = {
 				set_variable = { which = year_of_fourth_age value = 29 }
-				fourth_age_year_loc = { state_scope = { change_region_name = "§WIt is the year §Y28§W of the Fourth Age" } }
+				fourth_age_year_loc  = { state_scope = { change_region_name = "§WIt is the year §Y28§W of the Fourth Age" } }
 			}
 		}
 
@@ -26104,7 +26101,7 @@ country_event = {
 			}
 			FOR = {
 				set_variable = { which = year_of_fourth_age value = 28 }
-				fourth_age_year_loc = { state_scope = { change_region_name = "§WIt is the year §Y27§W of the Fourth Age" } }
+				fourth_age_year_loc  = { state_scope = { change_region_name = "§WIt is the year §Y27§W of the Fourth Age" } }
 			}
 		}
 
@@ -26117,7 +26114,7 @@ country_event = {
 			}
 			FOR = {
 				set_variable = { which = year_of_fourth_age value = 27 }
-				fourth_age_year_loc = { state_scope = { change_region_name = "§WIt is the year §Y26§W of the Fourth Age" } }
+				fourth_age_year_loc  = { state_scope = { change_region_name = "§WIt is the year §Y26§W of the Fourth Age" } }
 			}
 		}
 
@@ -26130,7 +26127,7 @@ country_event = {
 			}
 			FOR = {
 				set_variable = { which = year_of_fourth_age value = 26 }
-				fourth_age_year_loc = { state_scope = { change_region_name = "§WIt is the year §Y25§W of the Fourth Age" } }
+				fourth_age_year_loc  = { state_scope = { change_region_name = "§WIt is the year §Y25§W of the Fourth Age" } }
 			}
 		}
 
@@ -26143,7 +26140,7 @@ country_event = {
 			}
 			FOR = {
 				set_variable = { which = year_of_fourth_age value = 25 }
-				fourth_age_year_loc = { state_scope = { change_region_name = "§WIt is the year §Y24§W of the Fourth Age" } }
+				fourth_age_year_loc  = { state_scope = { change_region_name = "§WIt is the year §Y24§W of the Fourth Age" } }
 			}
 		}
 
@@ -26156,7 +26153,7 @@ country_event = {
 			}
 			FOR = {
 				set_variable = { which = year_of_fourth_age value = 24 }
-				fourth_age_year_loc = { state_scope = { change_region_name = "§WIt is the year §Y23§W of the Fourth Age" } }
+				fourth_age_year_loc  = { state_scope = { change_region_name = "§WIt is the year §Y23§W of the Fourth Age" } }
 			}
 		}
 
@@ -26169,7 +26166,7 @@ country_event = {
 			}
 			FOR = {
 				set_variable = { which = year_of_fourth_age value = 23 }
-				fourth_age_year_loc = { state_scope = { change_region_name = "§WIt is the year §Y22§W of the Fourth Age" } }
+				fourth_age_year_loc  = { state_scope = { change_region_name = "§WIt is the year §Y22§W of the Fourth Age" } }
 			}
 		}
 
@@ -26182,7 +26179,7 @@ country_event = {
 			}
 			FOR = {
 				set_variable = { which = year_of_fourth_age value = 22 }
-				fourth_age_year_loc = { state_scope = { change_region_name = "§WIt is the year §Y21§W of the Fourth Age" } }
+				fourth_age_year_loc  = { state_scope = { change_region_name = "§WIt is the year §Y21§W of the Fourth Age" } }
 			}
 		}
 
@@ -26195,7 +26192,7 @@ country_event = {
 			}
 			FOR = {
 				set_variable = { which = year_of_fourth_age value = 21 }
-				fourth_age_year_loc = { state_scope = { change_region_name = "§WIt is the year §Y20§W of the Fourth Age" } }
+				fourth_age_year_loc  = { state_scope = { change_region_name = "§WIt is the year §Y20§W of the Fourth Age" } }
 			}
 		}
 
@@ -26208,7 +26205,7 @@ country_event = {
 			}
 			FOR = {
 				set_variable = { which = year_of_fourth_age value = 20 }
-				fourth_age_year_loc = { state_scope = { change_region_name = "§WIt is the year §Y19§W of the Fourth Age" } }
+				fourth_age_year_loc  = { state_scope = { change_region_name = "§WIt is the year §Y19§W of the Fourth Age" } }
 			}
 		}
 
@@ -26221,7 +26218,7 @@ country_event = {
 			}
 			FOR = {
 				set_variable = { which = year_of_fourth_age value = 19 }
-				fourth_age_year_loc = { state_scope = { change_region_name = "§WIt is the year §Y18§W of the Fourth Age" } }
+				fourth_age_year_loc  = { state_scope = { change_region_name = "§WIt is the year §Y18§W of the Fourth Age" } }
 			}
 		}
 
@@ -26234,7 +26231,7 @@ country_event = {
 			}
 			FOR = {
 				set_variable = { which = year_of_fourth_age value = 18 }
-				fourth_age_year_loc = { state_scope = { change_region_name = "§WIt is the year §Y17§W of the Fourth Age" } }
+				fourth_age_year_loc  = { state_scope = { change_region_name = "§WIt is the year §Y17§W of the Fourth Age" } }
 			}
 		}
 
@@ -26247,7 +26244,7 @@ country_event = {
 			}
 			FOR = {
 				set_variable = { which = year_of_fourth_age value = 17 }
-				fourth_age_year_loc = { state_scope = { change_region_name = "§WIt is the year §Y16§W of the Fourth Age" } }
+				fourth_age_year_loc  = { state_scope = { change_region_name = "§WIt is the year §Y16§W of the Fourth Age" } }
 			}
 		}
 
@@ -26260,7 +26257,7 @@ country_event = {
 			}
 			FOR = {
 				set_variable = { which = year_of_fourth_age value = 16 }
-				fourth_age_year_loc = { state_scope = { change_region_name = "§WIt is the year §Y15§W of the Fourth Age" } }
+				fourth_age_year_loc  = { state_scope = { change_region_name = "§WIt is the year §Y15§W of the Fourth Age" } }
 			}
 		}
 
@@ -26273,7 +26270,7 @@ country_event = {
 			}
 			FOR = {
 				set_variable = { which = year_of_fourth_age value = 15 }
-				fourth_age_year_loc = { state_scope = { change_region_name = "§WIt is the year §Y14§W of the Fourth Age" } }
+				fourth_age_year_loc  = { state_scope = { change_region_name = "§WIt is the year §Y14§W of the Fourth Age" } }
 			}
 		}
 
@@ -26286,7 +26283,7 @@ country_event = {
 			}
 			FOR = {
 				set_variable = { which = year_of_fourth_age value = 14 }
-				fourth_age_year_loc = { state_scope = { change_region_name = "§WIt is the year §Y13§W of the Fourth Age" } }
+				fourth_age_year_loc  = { state_scope = { change_region_name = "§WIt is the year §Y13§W of the Fourth Age" } }
 			}
 		}
 
@@ -26299,7 +26296,7 @@ country_event = {
 			}
 			FOR = {
 				set_variable = { which = year_of_fourth_age value = 13 }
-				fourth_age_year_loc = { state_scope = { change_region_name = "§WIt is the year §Y12§W of the Fourth Age" } }
+				fourth_age_year_loc  = { state_scope = { change_region_name = "§WIt is the year §Y12§W of the Fourth Age" } }
 			}
 		}
 
@@ -26312,7 +26309,7 @@ country_event = {
 			}
 			FOR = {
 				set_variable = { which = year_of_fourth_age value = 12 }
-				fourth_age_year_loc = { state_scope = { change_region_name = "§WIt is the year §Y11§W of the Fourth Age" } }
+				fourth_age_year_loc  = { state_scope = { change_region_name = "§WIt is the year §Y11§W of the Fourth Age" } }
 			}
 		}
 
@@ -26325,7 +26322,7 @@ country_event = {
 			}
 			FOR = {
 				set_variable = { which = year_of_fourth_age value = 11 }
-				fourth_age_year_loc = { state_scope = { change_region_name = "§WIt is the year §Y10§W of the Fourth Age" } }
+				fourth_age_year_loc  = { state_scope = { change_region_name = "§WIt is the year §Y10§W of the Fourth Age" } }
 			}
 		}
 
@@ -26338,7 +26335,7 @@ country_event = {
 			}
 			FOR = {
 				set_variable = { which = year_of_fourth_age value = 10 }
-				fourth_age_year_loc = { state_scope = { change_region_name = "§WIt is the year §Y9§W of the Fourth Age" } }
+				fourth_age_year_loc  = { state_scope = { change_region_name = "§WIt is the year §Y9§W of the Fourth Age" } }
 			}
 		}
 
@@ -26351,7 +26348,7 @@ country_event = {
 			}
 			FOR = {
 				set_variable = { which = year_of_fourth_age value = 9 }
-				fourth_age_year_loc = { state_scope = { change_region_name = "§WIt is the year §Y8§W of the Fourth Age" } }
+				fourth_age_year_loc  = { state_scope = { change_region_name = "§WIt is the year §Y8§W of the Fourth Age" } }
 			}
 		}
 
@@ -26364,7 +26361,7 @@ country_event = {
 			}
 			FOR = {
 				set_variable = { which = year_of_fourth_age value = 8 }
-				fourth_age_year_loc = { state_scope = { change_region_name = "§WIt is the year §Y7§W of the Fourth Age" } }
+				fourth_age_year_loc  = { state_scope = { change_region_name = "§WIt is the year §Y7§W of the Fourth Age" } }
 			}
 		}
 
@@ -26377,7 +26374,7 @@ country_event = {
 			}
 			FOR = {
 				set_variable = { which = year_of_fourth_age value = 7 }
-				fourth_age_year_loc = { state_scope = { change_region_name = "§WIt is the year §Y6§W of the Fourth Age" } }
+				fourth_age_year_loc  = { state_scope = { change_region_name = "§WIt is the year §Y6§W of the Fourth Age" } }
 			}
 		}
 
@@ -26390,7 +26387,7 @@ country_event = {
 			}
 			FOR = {
 				set_variable = { which = year_of_fourth_age value = 6 }
-				fourth_age_year_loc = { state_scope = { change_region_name = "§WIt is the year §Y5§W of the Fourth Age" } }
+				fourth_age_year_loc  = { state_scope = { change_region_name = "§WIt is the year §Y5§W of the Fourth Age" } }
 			}
 		}
 
@@ -26403,7 +26400,7 @@ country_event = {
 			}
 			FOR = {
 				set_variable = { which = year_of_fourth_age value = 5 }
-				fourth_age_year_loc = { state_scope = { change_region_name = "§WIt is the year §Y4§W of the Fourth Age" } }
+				fourth_age_year_loc  = { state_scope = { change_region_name = "§WIt is the year §Y4§W of the Fourth Age" } }
 			}
 		}
 
@@ -26416,7 +26413,7 @@ country_event = {
 			}
 			FOR = {
 				set_variable = { which = year_of_fourth_age value = 4 }
-				fourth_age_year_loc = { state_scope = { change_region_name = "§WIt is the year §Y3§W of the Fourth Age" } }
+				fourth_age_year_loc  = { state_scope = { change_region_name = "§WIt is the year §Y3§W of the Fourth Age" } }
 			}
 		}
 
@@ -26429,7 +26426,7 @@ country_event = {
 			}
 			FOR = {
 				set_variable = { which = year_of_fourth_age value = 3 }
-				fourth_age_year_loc = { state_scope = { change_region_name = "§WIt is the year §Y2§W of the Fourth Age" } }
+				fourth_age_year_loc  = { state_scope = { change_region_name = "§WIt is the year §Y2§W of the Fourth Age" } }
 			}
 		}
 
@@ -26442,14 +26439,11 @@ country_event = {
 			}
 			FOR = {
 				set_variable = { which = year_of_fourth_age value = 2 }
-				fourth_age_year_loc = { state_scope = { change_region_name = "§WIt is the year §Y1§W of the Fourth Age" } }
+				fourth_age_year_loc  = { state_scope = { change_region_name = "§WIt is the year §Y1§W of the Fourth Age" } }
 			}
 		}
 
-		fourth_age_year_loc = {
-			# Audax Validator "." Ignore_NEXT
-			secede_province = ---
-		}
+		fourth_age_year_loc = { secede_province = --- }
 		country_event = {
 			id = 99901
 			days = 365
@@ -28221,12 +28215,1781 @@ country_event = {
 			}
 		}
 
-		shire_reckoning_loc = {
-			# Audax Validator "." Ignore_NEXT
-			secede_province = ---
-		}
+		shire_reckoning_loc = { secede_province = --- }
 		country_event = {
 			id = 99903
+			days = 365
+		}
+	}
+}
+
+# What year is it in Bree Reckoning?
+country_event = {
+	id = 99904
+	title = "What year is it in Bree Reckoning?"
+	desc = " "
+	picture = administration
+	is_triggered_only = yes
+
+	option = {
+		name = "This"
+		bree_reckoning_loc = { secede_province = THIS }
+
+		random_owned = {
+			limit = {
+				owner = {
+					year = 2954
+					NOT = { year = 2955 }
+				}
+			}
+			owner = {
+				bree_reckoning_loc = { state_scope = { change_region_name = "§WThe year is §Y1654§W by Bree Reckoning" } }
+			}
+		}
+
+		random_owned = {
+			limit = {
+				owner = {
+					year = 2955
+					NOT = { year = 2956 }
+				}
+			}
+			owner = {
+				bree_reckoning_loc = { state_scope = { change_region_name = "§WThe year is §Y1655§W by Bree Reckoning" } }
+			}
+		}
+
+		random_owned = {
+			limit = {
+				owner = {
+					year = 2956
+					NOT = { year = 2957 }
+				}
+			}
+			owner = {
+				bree_reckoning_loc = { state_scope = { change_region_name = "§WThe year is §Y1656§W by Bree Reckoning" } }
+			}
+		}
+
+		random_owned = {
+			limit = {
+				owner = {
+					year = 2957
+					NOT = { year = 2958 }
+				}
+			}
+			owner = {
+				bree_reckoning_loc = { state_scope = { change_region_name = "§WThe year is §Y1657§W by Bree Reckoning" } }
+			}
+		}
+
+		random_owned = {
+			limit = {
+				owner = {
+					year = 2958
+					NOT = { year = 2959 }
+				}
+			}
+			owner = {
+				bree_reckoning_loc = { state_scope = { change_region_name = "§WThe year is §Y1658§W by Bree Reckoning" } }
+			}
+		}
+
+		random_owned = {
+			limit = {
+				owner = {
+					year = 2959
+					NOT = { year = 2960 }
+				}
+			}
+			owner = {
+				bree_reckoning_loc = { state_scope = { change_region_name = "§WThe year is §Y1659§W by Bree Reckoning" } }
+			}
+		}
+
+		random_owned = {
+			limit = {
+				owner = {
+					year = 2960
+					NOT = { year = 2961 }
+				}
+			}
+			owner = {
+				bree_reckoning_loc = { state_scope = { change_region_name = "§WThe year is §Y1660§W by Bree Reckoning" } }
+			}
+		}
+
+		random_owned = {
+			limit = {
+				owner = {
+					year = 2961
+					NOT = { year = 2962 }
+				}
+			}
+			owner = {
+				bree_reckoning_loc = { state_scope = { change_region_name = "§WThe year is §Y1661§W by Bree Reckoning" } }
+			}
+		}
+
+		random_owned = {
+			limit = {
+				owner = {
+					year = 2962
+					NOT = { year = 2963 }
+				}
+			}
+			owner = {
+				bree_reckoning_loc = { state_scope = { change_region_name = "§WThe year is §Y1662§W by Bree Reckoning" } }
+			}
+		}
+
+		random_owned = {
+			limit = {
+				owner = {
+					year = 2963
+					NOT = { year = 2964 }
+				}
+			}
+			owner = {
+				bree_reckoning_loc = { state_scope = { change_region_name = "§WThe year is §Y1663§W by Bree Reckoning" } }
+			}
+		}
+
+		random_owned = {
+			limit = {
+				owner = {
+					year = 2964
+					NOT = { year = 2965 }
+				}
+			}
+			owner = {
+				bree_reckoning_loc = { state_scope = { change_region_name = "§WThe year is §Y1664§W by Bree Reckoning" } }
+			}
+		}
+
+		random_owned = {
+			limit = {
+				owner = {
+					year = 2965
+					NOT = { year = 2966 }
+				}
+			}
+			owner = {
+				bree_reckoning_loc = { state_scope = { change_region_name = "§WThe year is §Y1665§W by Bree Reckoning" } }
+			}
+		}
+
+		random_owned = {
+			limit = {
+				owner = {
+					year = 2966
+					NOT = { year = 2967 }
+				}
+			}
+			owner = {
+				bree_reckoning_loc = { state_scope = { change_region_name = "§WThe year is §Y1666§W by Bree Reckoning" } }
+			}
+		}
+
+		random_owned = {
+			limit = {
+				owner = {
+					year = 2967
+					NOT = { year = 2968 }
+				}
+			}
+			owner = {
+				bree_reckoning_loc = { state_scope = { change_region_name = "§WThe year is §Y1667§W by Bree Reckoning" } }
+			}
+		}
+
+		random_owned = {
+			limit = {
+				owner = {
+					year = 2968
+					NOT = { year = 2969 }
+				}
+			}
+			owner = {
+				bree_reckoning_loc = { state_scope = { change_region_name = "§WThe year is §Y1668§W by Bree Reckoning" } }
+			}
+		}
+
+		random_owned = {
+			limit = {
+				owner = {
+					year = 2969
+					NOT = { year = 2970 }
+				}
+			}
+			owner = {
+				bree_reckoning_loc = { state_scope = { change_region_name = "§WThe year is §Y1669§W by Bree Reckoning" } }
+			}
+		}
+
+		random_owned = {
+			limit = {
+				owner = {
+					year = 2970
+					NOT = { year = 2971 }
+				}
+			}
+			owner = {
+				bree_reckoning_loc = { state_scope = { change_region_name = "§WThe year is §Y1670§W by Bree Reckoning" } }
+			}
+		}
+
+		random_owned = {
+			limit = {
+				owner = {
+					year = 2971
+					NOT = { year = 2972 }
+				}
+			}
+			owner = {
+				bree_reckoning_loc = { state_scope = { change_region_name = "§WThe year is §Y1671§W by Bree Reckoning" } }
+			}
+		}
+
+		random_owned = {
+			limit = {
+				owner = {
+					year = 2972
+					NOT = { year = 2973 }
+				}
+			}
+			owner = {
+				bree_reckoning_loc = { state_scope = { change_region_name = "§WThe year is §Y1672§W by Bree Reckoning" } }
+			}
+		}
+
+		random_owned = {
+			limit = {
+				owner = {
+					year = 2973
+					NOT = { year = 2974 }
+				}
+			}
+			owner = {
+				bree_reckoning_loc = { state_scope = { change_region_name = "§WThe year is §Y1673§W by Bree Reckoning" } }
+			}
+		}
+
+		random_owned = {
+			limit = {
+				owner = {
+					year = 2974
+					NOT = { year = 2975 }
+				}
+			}
+			owner = {
+				bree_reckoning_loc = { state_scope = { change_region_name = "§WThe year is §Y1674§W by Bree Reckoning" } }
+			}
+		}
+
+		random_owned = {
+			limit = {
+				owner = {
+					year = 2975
+					NOT = { year = 2976 }
+				}
+			}
+			owner = {
+				bree_reckoning_loc = { state_scope = { change_region_name = "§WThe year is §Y1675§W by Bree Reckoning" } }
+			}
+		}
+
+		random_owned = {
+			limit = {
+				owner = {
+					year = 2976
+					NOT = { year = 2977 }
+				}
+			}
+			owner = {
+				bree_reckoning_loc = { state_scope = { change_region_name = "§WThe year is §Y1676§W by Bree Reckoning" } }
+			}
+		}
+
+		random_owned = {
+			limit = {
+				owner = {
+					year = 2977
+					NOT = { year = 2978 }
+				}
+			}
+			owner = {
+				bree_reckoning_loc = { state_scope = { change_region_name = "§WThe year is §Y1677§W by Bree Reckoning" } }
+			}
+		}
+
+		random_owned = {
+			limit = {
+				owner = {
+					year = 2978
+					NOT = { year = 2979 }
+				}
+			}
+			owner = {
+				bree_reckoning_loc = { state_scope = { change_region_name = "§WThe year is §Y1678§W by Bree Reckoning" } }
+			}
+		}
+
+		random_owned = {
+			limit = {
+				owner = {
+					year = 2979
+					NOT = { year = 2980 }
+				}
+			}
+			owner = {
+				bree_reckoning_loc = { state_scope = { change_region_name = "§WThe year is §Y1679§W by Bree Reckoning" } }
+			}
+		}
+
+		random_owned = {
+			limit = {
+				owner = {
+					year = 2980
+					NOT = { year = 2981 }
+				}
+			}
+			owner = {
+				bree_reckoning_loc = { state_scope = { change_region_name = "§WThe year is §Y1680§W by Bree Reckoning" } }
+			}
+		}
+
+		random_owned = {
+			limit = {
+				owner = {
+					year = 2981
+					NOT = { year = 2982 }
+				}
+			}
+			owner = {
+				bree_reckoning_loc = { state_scope = { change_region_name = "§WThe year is §Y1681§W by Bree Reckoning" } }
+			}
+		}
+
+		random_owned = {
+			limit = {
+				owner = {
+					year = 2982
+					NOT = { year = 2983 }
+				}
+			}
+			owner = {
+				bree_reckoning_loc = { state_scope = { change_region_name = "§WThe year is §Y1682§W by Bree Reckoning" } }
+			}
+		}
+
+		random_owned = {
+			limit = {
+				owner = {
+					year = 2983
+					NOT = { year = 2984 }
+				}
+			}
+			owner = {
+				bree_reckoning_loc = { state_scope = { change_region_name = "§WThe year is §Y1683§W by Bree Reckoning" } }
+			}
+		}
+
+		random_owned = {
+			limit = {
+				owner = {
+					year = 2984
+					NOT = { year = 2985 }
+				}
+			}
+			owner = {
+				bree_reckoning_loc = { state_scope = { change_region_name = "§WThe year is §Y1684§W by Bree Reckoning" } }
+			}
+		}
+
+		random_owned = {
+			limit = {
+				owner = {
+					year = 2985
+					NOT = { year = 2986 }
+				}
+			}
+			owner = {
+				bree_reckoning_loc = { state_scope = { change_region_name = "§WThe year is §Y1685§W by Bree Reckoning" } }
+			}
+		}
+
+		random_owned = {
+			limit = {
+				owner = {
+					year = 2986
+					NOT = { year = 2987 }
+				}
+			}
+			owner = {
+				bree_reckoning_loc = { state_scope = { change_region_name = "§WThe year is §Y1686§W by Bree Reckoning" } }
+			}
+		}
+
+		random_owned = {
+			limit = {
+				owner = {
+					year = 2987
+					NOT = { year = 2988 }
+				}
+			}
+			owner = {
+				bree_reckoning_loc = { state_scope = { change_region_name = "§WThe year is §Y1687§W by Bree Reckoning" } }
+			}
+		}
+
+		random_owned = {
+			limit = {
+				owner = {
+					year = 2988
+					NOT = { year = 2989 }
+				}
+			}
+			owner = {
+				bree_reckoning_loc = { state_scope = { change_region_name = "§WThe year is §Y1688§W by Bree Reckoning" } }
+			}
+		}
+
+		random_owned = {
+			limit = {
+				owner = {
+					year = 2989
+					NOT = { year = 2990 }
+				}
+			}
+			owner = {
+				bree_reckoning_loc = { state_scope = { change_region_name = "§WThe year is §Y1689§W by Bree Reckoning" } }
+			}
+		}
+
+		random_owned = {
+			limit = {
+				owner = {
+					year = 2990
+					NOT = { year = 2991 }
+				}
+			}
+			owner = {
+				bree_reckoning_loc = { state_scope = { change_region_name = "§WThe year is §Y1690§W by Bree Reckoning" } }
+			}
+		}
+
+		random_owned = {
+			limit = {
+				owner = {
+					year = 2991
+					NOT = { year = 2992 }
+				}
+			}
+			owner = {
+				bree_reckoning_loc = { state_scope = { change_region_name = "§WThe year is §Y1691§W by Bree Reckoning" } }
+			}
+		}
+
+		random_owned = {
+			limit = {
+				owner = {
+					year = 2992
+					NOT = { year = 2993 }
+				}
+			}
+			owner = {
+				bree_reckoning_loc = { state_scope = { change_region_name = "§WThe year is §Y1692§W by Bree Reckoning" } }
+			}
+		}
+
+		random_owned = {
+			limit = {
+				owner = {
+					year = 2993
+					NOT = { year = 2994 }
+				}
+			}
+			owner = {
+				bree_reckoning_loc = { state_scope = { change_region_name = "§WThe year is §Y1693§W by Bree Reckoning" } }
+			}
+		}
+
+		random_owned = {
+			limit = {
+				owner = {
+					year = 2994
+					NOT = { year = 2995 }
+				}
+			}
+			owner = {
+				bree_reckoning_loc = { state_scope = { change_region_name = "§WThe year is §Y1694§W by Bree Reckoning" } }
+			}
+		}
+
+		random_owned = {
+			limit = {
+				owner = {
+					year = 2995
+					NOT = { year = 2996 }
+				}
+			}
+			owner = {
+				bree_reckoning_loc = { state_scope = { change_region_name = "§WThe year is §Y1695§W by Bree Reckoning" } }
+			}
+		}
+
+		random_owned = {
+			limit = {
+				owner = {
+					year = 2996
+					NOT = { year = 2997 }
+				}
+			}
+			owner = {
+				bree_reckoning_loc = { state_scope = { change_region_name = "§WThe year is §Y1696§W by Bree Reckoning" } }
+			}
+		}
+
+		random_owned = {
+			limit = {
+				owner = {
+					year = 2997
+					NOT = { year = 2998 }
+				}
+			}
+			owner = {
+				bree_reckoning_loc = { state_scope = { change_region_name = "§WThe year is §Y1697§W by Bree Reckoning" } }
+			}
+		}
+
+		random_owned = {
+			limit = {
+				owner = {
+					year = 2998
+					NOT = { year = 2999 }
+				}
+			}
+			owner = {
+				bree_reckoning_loc = { state_scope = { change_region_name = "§WThe year is §Y1698§W by Bree Reckoning" } }
+			}
+		}
+
+		random_owned = {
+			limit = {
+				owner = {
+					year = 2999
+					NOT = { year = 3000 }
+				}
+			}
+			owner = {
+				bree_reckoning_loc = { state_scope = { change_region_name = "§WThe year is §Y1699§W by Bree Reckoning" } }
+			}
+		}
+
+		random_owned = {
+			limit = {
+				owner = {
+					year = 3000
+					NOT = { year = 3001 }
+				}
+			}
+			owner = {
+				bree_reckoning_loc = { state_scope = { change_region_name = "§WThe year is §Y1700§W by Bree Reckoning" } }
+			}
+		}
+
+		random_owned = {
+			limit = {
+				owner = {
+					year = 3001
+					NOT = { year = 3002 }
+				}
+			}
+			owner = {
+				bree_reckoning_loc = { state_scope = { change_region_name = "§WThe year is §Y1701§W by Bree Reckoning" } }
+			}
+		}
+
+		random_owned = {
+			limit = {
+				owner = {
+					year = 3002
+					NOT = { year = 3003 }
+				}
+			}
+			owner = {
+				bree_reckoning_loc = { state_scope = { change_region_name = "§WThe year is §Y1702§W by Bree Reckoning" } }
+			}
+		}
+
+		random_owned = {
+			limit = {
+				owner = {
+					year = 3003
+					NOT = { year = 3004 }
+				}
+			}
+			owner = {
+				bree_reckoning_loc = { state_scope = { change_region_name = "§WThe year is §Y1703§W by Bree Reckoning" } }
+			}
+		}
+
+		random_owned = {
+			limit = {
+				owner = {
+					year = 3004
+					NOT = { year = 3005 }
+				}
+			}
+			owner = {
+				bree_reckoning_loc = { state_scope = { change_region_name = "§WThe year is §Y1704§W by Bree Reckoning" } }
+			}
+		}
+
+		random_owned = {
+			limit = {
+				owner = {
+					year = 3005
+					NOT = { year = 3006 }
+				}
+			}
+			owner = {
+				bree_reckoning_loc = { state_scope = { change_region_name = "§WThe year is §Y1705§W by Bree Reckoning" } }
+			}
+		}
+
+		random_owned = {
+			limit = {
+				owner = {
+					year = 3006
+					NOT = { year = 3007 }
+				}
+			}
+			owner = {
+				bree_reckoning_loc = { state_scope = { change_region_name = "§WThe year is §Y1706§W by Bree Reckoning" } }
+			}
+		}
+
+		random_owned = {
+			limit = {
+				owner = {
+					year = 3007
+					NOT = { year = 3008 }
+				}
+			}
+			owner = {
+				bree_reckoning_loc = { state_scope = { change_region_name = "§WThe year is §Y1707§W by Bree Reckoning" } }
+			}
+		}
+
+		random_owned = {
+			limit = {
+				owner = {
+					year = 3008
+					NOT = { year = 3009 }
+				}
+			}
+			owner = {
+				bree_reckoning_loc = { state_scope = { change_region_name = "§WThe year is §Y1708§W by Bree Reckoning" } }
+			}
+		}
+
+		random_owned = {
+			limit = {
+				owner = {
+					year = 3009
+					NOT = { year = 3010 }
+				}
+			}
+			owner = {
+				bree_reckoning_loc = { state_scope = { change_region_name = "§WThe year is §Y1709§W by Bree Reckoning" } }
+			}
+		}
+
+		random_owned = {
+			limit = {
+				owner = {
+					year = 3010
+					NOT = { year = 3011 }
+				}
+			}
+			owner = {
+				bree_reckoning_loc = { state_scope = { change_region_name = "§WThe year is §Y1710§W by Bree Reckoning" } }
+			}
+		}
+
+		random_owned = {
+			limit = {
+				owner = {
+					year = 3011
+					NOT = { year = 3012 }
+				}
+			}
+			owner = {
+				bree_reckoning_loc = { state_scope = { change_region_name = "§WThe year is §Y1711§W by Bree Reckoning" } }
+			}
+		}
+
+		random_owned = {
+			limit = {
+				owner = {
+					year = 3012
+					NOT = { year = 3013 }
+				}
+			}
+			owner = {
+				bree_reckoning_loc = { state_scope = { change_region_name = "§WThe year is §Y1712§W by Bree Reckoning" } }
+			}
+		}
+
+		random_owned = {
+			limit = {
+				owner = {
+					year = 3013
+					NOT = { year = 3014 }
+				}
+			}
+			owner = {
+				bree_reckoning_loc = { state_scope = { change_region_name = "§WThe year is §Y1713§W by Bree Reckoning" } }
+			}
+		}
+
+		random_owned = {
+			limit = {
+				owner = {
+					year = 3014
+					NOT = { year = 3015 }
+				}
+			}
+			owner = {
+				bree_reckoning_loc = { state_scope = { change_region_name = "§WThe year is §Y1714§W by Bree Reckoning" } }
+			}
+		}
+
+		random_owned = {
+			limit = {
+				owner = {
+					year = 3015
+					NOT = { year = 3016 }
+				}
+			}
+			owner = {
+				bree_reckoning_loc = { state_scope = { change_region_name = "§WThe year is §Y1715§W by Bree Reckoning" } }
+			}
+		}
+
+		random_owned = {
+			limit = {
+				owner = {
+					year = 3016
+					NOT = { year = 3017 }
+				}
+			}
+			owner = {
+				bree_reckoning_loc = { state_scope = { change_region_name = "§WThe year is §Y1716§W by Bree Reckoning" } }
+			}
+		}
+
+		random_owned = {
+			limit = {
+				owner = {
+					year = 3017
+					NOT = { year = 3018 }
+				}
+			}
+			owner = {
+				bree_reckoning_loc = { state_scope = { change_region_name = "§WThe year is §Y1717§W by Bree Reckoning" } }
+			}
+		}
+
+		random_owned = {
+			limit = {
+				owner = {
+					year = 3018
+					NOT = { year = 3019 }
+				}
+			}
+			owner = {
+				bree_reckoning_loc = { state_scope = { change_region_name = "§WThe year is §Y1718§W by Bree Reckoning" } }
+			}
+		}
+
+		random_owned = {
+			limit = {
+				owner = {
+					year = 3019
+					NOT = { year = 3020 }
+				}
+			}
+			owner = {
+				bree_reckoning_loc = { state_scope = { change_region_name = "§WThe year is §Y1719§W by Bree Reckoning" } }
+			}
+		}
+
+		random_owned = {
+			limit = {
+				owner = {
+					year = 3020
+					NOT = { year = 3021 }
+				}
+			}
+			owner = {
+				bree_reckoning_loc = { state_scope = { change_region_name = "§WThe year is §Y1720§W by Bree Reckoning" } }
+			}
+		}
+
+		random_owned = {
+			limit = {
+				owner = {
+					year = 3021
+					NOT = { year = 3022 }
+				}
+			}
+			owner = {
+				bree_reckoning_loc = { state_scope = { change_region_name = "§WThe year is §Y1721§W by Bree Reckoning" } }
+			}
+		}
+
+		random_owned = {
+			limit = {
+				owner = {
+					year = 3022
+					NOT = { year = 3023 }
+				}
+			}
+			owner = {
+				bree_reckoning_loc = { state_scope = { change_region_name = "§WThe year is §Y1722§W by Bree Reckoning" } }
+			}
+		}
+
+		random_owned = {
+			limit = {
+				owner = {
+					year = 3023
+					NOT = { year = 3024 }
+				}
+			}
+			owner = {
+				bree_reckoning_loc = { state_scope = { change_region_name = "§WThe year is §Y1723§W by Bree Reckoning" } }
+			}
+		}
+
+		random_owned = {
+			limit = {
+				owner = {
+					year = 3024
+					NOT = { year = 3025 }
+				}
+			}
+			owner = {
+				bree_reckoning_loc = { state_scope = { change_region_name = "§WThe year is §Y1724§W by Bree Reckoning" } }
+			}
+		}
+
+		random_owned = {
+			limit = {
+				owner = {
+					year = 3025
+					NOT = { year = 3026 }
+				}
+			}
+			owner = {
+				bree_reckoning_loc = { state_scope = { change_region_name = "§WThe year is §Y1725§W by Bree Reckoning" } }
+			}
+		}
+
+		random_owned = {
+			limit = {
+				owner = {
+					year = 3026
+					NOT = { year = 3027 }
+				}
+			}
+			owner = {
+				bree_reckoning_loc = { state_scope = { change_region_name = "§WThe year is §Y1726§W by Bree Reckoning" } }
+			}
+		}
+
+		random_owned = {
+			limit = {
+				owner = {
+					year = 3027
+					NOT = { year = 3028 }
+				}
+			}
+			owner = {
+				bree_reckoning_loc = { state_scope = { change_region_name = "§WThe year is §Y1727§W by Bree Reckoning" } }
+			}
+		}
+
+		random_owned = {
+			limit = {
+				owner = {
+					year = 3028
+					NOT = { year = 3029 }
+				}
+			}
+			owner = {
+				bree_reckoning_loc = { state_scope = { change_region_name = "§WThe year is §Y1728§W by Bree Reckoning" } }
+			}
+		}
+
+		random_owned = {
+			limit = {
+				owner = {
+					year = 3029
+					NOT = { year = 3030 }
+				}
+			}
+			owner = {
+				bree_reckoning_loc = { state_scope = { change_region_name = "§WThe year is §Y1729§W by Bree Reckoning" } }
+			}
+		}
+
+		random_owned = {
+			limit = {
+				owner = {
+					year = 3030
+					NOT = { year = 3031 }
+				}
+			}
+			owner = {
+				bree_reckoning_loc = { state_scope = { change_region_name = "§WThe year is §Y1730§W by Bree Reckoning" } }
+			}
+		}
+
+		random_owned = {
+			limit = {
+				owner = {
+					year = 3031
+					NOT = { year = 3032 }
+				}
+			}
+			owner = {
+				bree_reckoning_loc = { state_scope = { change_region_name = "§WThe year is §Y1731§W by Bree Reckoning" } }
+			}
+		}
+
+		random_owned = {
+			limit = {
+				owner = {
+					year = 3032
+					NOT = { year = 3033 }
+				}
+			}
+			owner = {
+				bree_reckoning_loc = { state_scope = { change_region_name = "§WThe year is §Y1732§W by Bree Reckoning" } }
+			}
+		}
+
+		random_owned = {
+			limit = {
+				owner = {
+					year = 3033
+					NOT = { year = 3034 }
+				}
+			}
+			owner = {
+				bree_reckoning_loc = { state_scope = { change_region_name = "§WThe year is §Y1733§W by Bree Reckoning" } }
+			}
+		}
+
+		random_owned = {
+			limit = {
+				owner = {
+					year = 3034
+					NOT = { year = 3035 }
+				}
+			}
+			owner = {
+				bree_reckoning_loc = { state_scope = { change_region_name = "§WThe year is §Y1734§W by Bree Reckoning" } }
+			}
+		}
+
+		random_owned = {
+			limit = {
+				owner = {
+					year = 3035
+					NOT = { year = 3036 }
+				}
+			}
+			owner = {
+				bree_reckoning_loc = { state_scope = { change_region_name = "§WThe year is §Y1735§W by Bree Reckoning" } }
+			}
+		}
+
+		random_owned = {
+			limit = {
+				owner = {
+					year = 3036
+					NOT = { year = 3037 }
+				}
+			}
+			owner = {
+				bree_reckoning_loc = { state_scope = { change_region_name = "§WThe year is §Y1736§W by Bree Reckoning" } }
+			}
+		}
+
+		random_owned = {
+			limit = {
+				owner = {
+					year = 3037
+					NOT = { year = 3038 }
+				}
+			}
+			owner = {
+				bree_reckoning_loc = { state_scope = { change_region_name = "§WThe year is §Y1737§W by Bree Reckoning" } }
+			}
+		}
+
+		random_owned = {
+			limit = {
+				owner = {
+					year = 3038
+					NOT = { year = 3039 }
+				}
+			}
+			owner = {
+				bree_reckoning_loc = { state_scope = { change_region_name = "§WThe year is §Y1738§W by Bree Reckoning" } }
+			}
+		}
+
+		random_owned = {
+			limit = {
+				owner = {
+					year = 3039
+					NOT = { year = 3040 }
+				}
+			}
+			owner = {
+				bree_reckoning_loc = { state_scope = { change_region_name = "§WThe year is §Y1739§W by Bree Reckoning" } }
+			}
+		}
+
+		random_owned = {
+			limit = {
+				owner = {
+					year = 3040
+					NOT = { year = 3041 }
+				}
+			}
+			owner = {
+				bree_reckoning_loc = { state_scope = { change_region_name = "§WThe year is §Y1740§W by Bree Reckoning" } }
+			}
+		}
+
+		random_owned = {
+			limit = {
+				owner = {
+					year = 3041
+					NOT = { year = 3042 }
+				}
+			}
+			owner = {
+				bree_reckoning_loc = { state_scope = { change_region_name = "§WThe year is §Y1741§W by Bree Reckoning" } }
+			}
+		}
+
+		random_owned = {
+			limit = {
+				owner = {
+					year = 3042
+					NOT = { year = 3043 }
+				}
+			}
+			owner = {
+				bree_reckoning_loc = { state_scope = { change_region_name = "§WThe year is §Y1742§W by Bree Reckoning" } }
+			}
+		}
+
+		random_owned = {
+			limit = {
+				owner = {
+					year = 3043
+					NOT = { year = 3044 }
+				}
+			}
+			owner = {
+				bree_reckoning_loc = { state_scope = { change_region_name = "§WThe year is §Y1743§W by Bree Reckoning" } }
+			}
+		}
+
+		random_owned = {
+			limit = {
+				owner = {
+					year = 3044
+					NOT = { year = 3045 }
+				}
+			}
+			owner = {
+				bree_reckoning_loc = { state_scope = { change_region_name = "§WThe year is §Y1744§W by Bree Reckoning" } }
+			}
+		}
+
+		random_owned = {
+			limit = {
+				owner = {
+					year = 3045
+					NOT = { year = 3046 }
+				}
+			}
+			owner = {
+				bree_reckoning_loc = { state_scope = { change_region_name = "§WThe year is §Y1745§W by Bree Reckoning" } }
+			}
+		}
+
+		random_owned = {
+			limit = {
+				owner = {
+					year = 3046
+					NOT = { year = 3047 }
+				}
+			}
+			owner = {
+				bree_reckoning_loc = { state_scope = { change_region_name = "§WThe year is §Y1746§W by Bree Reckoning" } }
+			}
+		}
+
+		random_owned = {
+			limit = {
+				owner = {
+					year = 3047
+					NOT = { year = 3048 }
+				}
+			}
+			owner = {
+				bree_reckoning_loc = { state_scope = { change_region_name = "§WThe year is §Y1747§W by Bree Reckoning" } }
+			}
+		}
+
+		random_owned = {
+			limit = {
+				owner = {
+					year = 3048
+					NOT = { year = 3049 }
+				}
+			}
+			owner = {
+				bree_reckoning_loc = { state_scope = { change_region_name = "§WThe year is §Y1748§W by Bree Reckoning" } }
+			}
+		}
+
+		random_owned = {
+			limit = {
+				owner = {
+					year = 3049
+					NOT = { year = 3050 }
+				}
+			}
+			owner = {
+				bree_reckoning_loc = { state_scope = { change_region_name = "§WThe year is §Y1749§W by Bree Reckoning" } }
+			}
+		}
+
+		random_owned = {
+			limit = {
+				owner = {
+					year = 3050
+					NOT = { year = 3051 }
+				}
+			}
+			owner = {
+				bree_reckoning_loc = { state_scope = { change_region_name = "§WThe year is §Y1750§W by Bree Reckoning" } }
+			}
+		}
+
+		random_owned = {
+			limit = {
+				owner = {
+					year = 3051
+					NOT = { year = 3052 }
+				}
+			}
+			owner = {
+				bree_reckoning_loc = { state_scope = { change_region_name = "§WThe year is §Y1751§W by Bree Reckoning" } }
+			}
+		}
+
+		random_owned = {
+			limit = {
+				owner = {
+					year = 3052
+					NOT = { year = 3053 }
+				}
+			}
+			owner = {
+				bree_reckoning_loc = { state_scope = { change_region_name = "§WThe year is §Y1752§W by Bree Reckoning" } }
+			}
+		}
+
+		random_owned = {
+			limit = {
+				owner = {
+					year = 3053
+					NOT = { year = 3054 }
+				}
+			}
+			owner = {
+				bree_reckoning_loc = { state_scope = { change_region_name = "§WThe year is §Y1753§W by Bree Reckoning" } }
+			}
+		}
+
+		random_owned = {
+			limit = {
+				owner = {
+					year = 3054
+					NOT = { year = 3055 }
+				}
+			}
+			owner = {
+				bree_reckoning_loc = { state_scope = { change_region_name = "§WThe year is §Y1754§W by Bree Reckoning" } }
+			}
+		}
+
+		random_owned = {
+			limit = {
+				owner = {
+					year = 3055
+					NOT = { year = 3056 }
+				}
+			}
+			owner = {
+				bree_reckoning_loc = { state_scope = { change_region_name = "§WThe year is §Y1755§W by Bree Reckoning" } }
+			}
+		}
+
+		random_owned = {
+			limit = {
+				owner = {
+					year = 3056
+					NOT = { year = 3057 }
+				}
+			}
+			owner = {
+				bree_reckoning_loc = { state_scope = { change_region_name = "§WThe year is §Y1756§W by Bree Reckoning" } }
+			}
+		}
+
+		random_owned = {
+			limit = {
+				owner = {
+					year = 3057
+					NOT = { year = 3058 }
+				}
+			}
+			owner = {
+				bree_reckoning_loc = { state_scope = { change_region_name = "§WThe year is §Y1757§W by Bree Reckoning" } }
+			}
+		}
+
+		random_owned = {
+			limit = {
+				owner = {
+					year = 3058
+					NOT = { year = 3059 }
+				}
+			}
+			owner = {
+				bree_reckoning_loc = { state_scope = { change_region_name = "§WThe year is §Y1758§W by Bree Reckoning" } }
+			}
+		}
+
+		random_owned = {
+			limit = {
+				owner = {
+					year = 3059
+					NOT = { year = 3060 }
+				}
+			}
+			owner = {
+				bree_reckoning_loc = { state_scope = { change_region_name = "§WThe year is §Y1759§W by Bree Reckoning" } }
+			}
+		}
+
+		random_owned = {
+			limit = {
+				owner = {
+					year = 3060
+					NOT = { year = 3061 }
+				}
+			}
+			owner = {
+				bree_reckoning_loc = { state_scope = { change_region_name = "§WThe year is §Y1760§W by Bree Reckoning" } }
+			}
+		}
+
+		random_owned = {
+			limit = {
+				owner = {
+					year = 3061
+					NOT = { year = 3062 }
+				}
+			}
+			owner = {
+				bree_reckoning_loc = { state_scope = { change_region_name = "§WThe year is §Y1761§W by Bree Reckoning" } }
+			}
+		}
+
+		random_owned = {
+			limit = {
+				owner = {
+					year = 3062
+					NOT = { year = 3063 }
+				}
+			}
+			owner = {
+				bree_reckoning_loc = { state_scope = { change_region_name = "§WThe year is §Y1762§W by Bree Reckoning" } }
+			}
+		}
+
+		random_owned = {
+			limit = {
+				owner = {
+					year = 3063
+					NOT = { year = 3064 }
+				}
+			}
+			owner = {
+				bree_reckoning_loc = { state_scope = { change_region_name = "§WThe year is §Y1763§W by Bree Reckoning" } }
+			}
+		}
+
+		random_owned = {
+			limit = {
+				owner = {
+					year = 3064
+					NOT = { year = 3065 }
+				}
+			}
+			owner = {
+				bree_reckoning_loc = { state_scope = { change_region_name = "§WThe year is §Y1764§W by Bree Reckoning" } }
+			}
+		}
+
+		random_owned = {
+			limit = {
+				owner = {
+					year = 3065
+					NOT = { year = 3066 }
+				}
+			}
+			owner = {
+				bree_reckoning_loc = { state_scope = { change_region_name = "§WThe year is §Y1765§W by Bree Reckoning" } }
+			}
+		}
+
+		random_owned = {
+			limit = {
+				owner = {
+					year = 3066
+					NOT = { year = 3067 }
+				}
+			}
+			owner = {
+				bree_reckoning_loc = { state_scope = { change_region_name = "§WThe year is §Y1766§W by Bree Reckoning" } }
+			}
+		}
+
+		random_owned = {
+			limit = {
+				owner = {
+					year = 3067
+					NOT = { year = 3068 }
+				}
+			}
+			owner = {
+				bree_reckoning_loc = { state_scope = { change_region_name = "§WThe year is §Y1767§W by Bree Reckoning" } }
+			}
+		}
+
+		random_owned = {
+			limit = {
+				owner = {
+					year = 3068
+					NOT = { year = 3069 }
+				}
+			}
+			owner = {
+				bree_reckoning_loc = { state_scope = { change_region_name = "§WThe year is §Y1768§W by Bree Reckoning" } }
+			}
+		}
+
+		random_owned = {
+			limit = {
+				owner = {
+					year = 3069
+					NOT = { year = 3070 }
+				}
+			}
+			owner = {
+				bree_reckoning_loc = { state_scope = { change_region_name = "§WThe year is §Y1769§W by Bree Reckoning" } }
+			}
+		}
+
+		random_owned = {
+			limit = {
+				owner = {
+					year = 3070
+					NOT = { year = 3071 }
+				}
+			}
+			owner = {
+				bree_reckoning_loc = { state_scope = { change_region_name = "§WThe year is §Y1770§W by Bree Reckoning" } }
+			}
+		}
+
+		random_owned = {
+			limit = {
+				owner = {
+					year = 3071
+					NOT = { year = 3072 }
+				}
+			}
+			owner = {
+				bree_reckoning_loc = { state_scope = { change_region_name = "§WThe year is §Y1771§W by Bree Reckoning" } }
+			}
+		}
+
+		random_owned = {
+			limit = {
+				owner = {
+					year = 3072
+					NOT = { year = 3073 }
+				}
+			}
+			owner = {
+				bree_reckoning_loc = { state_scope = { change_region_name = "§WThe year is §Y1772§W by Bree Reckoning" } }
+			}
+		}
+
+		random_owned = {
+			limit = {
+				owner = {
+					year = 3073
+					NOT = { year = 3074 }
+				}
+			}
+			owner = {
+				bree_reckoning_loc = { state_scope = { change_region_name = "§WThe year is §Y1773§W by Bree Reckoning" } }
+			}
+		}
+
+		random_owned = {
+			limit = {
+				owner = {
+					year = 3074
+					NOT = { year = 3075 }
+				}
+			}
+			owner = {
+				bree_reckoning_loc = { state_scope = { change_region_name = "§WThe year is §Y1774§W by Bree Reckoning" } }
+			}
+		}
+
+		random_owned = {
+			limit = {
+				owner = {
+					year = 3075
+					NOT = { year = 3076 }
+				}
+			}
+			owner = {
+				bree_reckoning_loc = { state_scope = { change_region_name = "§WThe year is §Y1775§W by Bree Reckoning" } }
+			}
+		}
+
+		random_owned = {
+			limit = {
+				owner = {
+					year = 3076
+					NOT = { year = 3077 }
+				}
+			}
+			owner = {
+				bree_reckoning_loc = { state_scope = { change_region_name = "§WThe year is §Y1776§W by Bree Reckoning" } }
+			}
+		}
+
+		random_owned = {
+			limit = {
+				owner = {
+					year = 3077
+					NOT = { year = 3078 }
+				}
+			}
+			owner = {
+				bree_reckoning_loc = { state_scope = { change_region_name = "§WThe year is §Y1777§W by Bree Reckoning" } }
+			}
+		}
+
+		random_owned = {
+			limit = {
+				owner = {
+					year = 3078
+					NOT = { year = 3079 }
+				}
+			}
+			owner = {
+				bree_reckoning_loc = { state_scope = { change_region_name = "§WThe year is §Y1778§W by Bree Reckoning" } }
+			}
+		}
+
+		random_owned = {
+			limit = {
+				owner = {
+					year = 3079
+					NOT = { year = 3080 }
+				}
+			}
+			owner = {
+				bree_reckoning_loc = { state_scope = { change_region_name = "§WThe year is §Y1779§W by Bree Reckoning" } }
+			}
+		}
+
+		random_owned = {
+			limit = {
+				owner = {
+					year = 3080
+					NOT = { year = 3081 }
+				}
+			}
+			owner = {
+				bree_reckoning_loc = { state_scope = { change_region_name = "§WThe year is §Y1780§W by Bree Reckoning" } }
+			}
+		}
+
+		random_owned = {
+			limit = {
+				owner = {
+					year = 3081
+					NOT = { year = 3082 }
+				}
+			}
+			owner = {
+				bree_reckoning_loc = { state_scope = { change_region_name = "§WThe year is §Y1781§W by Bree Reckoning" } }
+			}
+		}
+
+		random_owned = {
+			limit = {
+				owner = {
+					year = 3082
+					NOT = { year = 3083 }
+				}
+			}
+			owner = {
+				bree_reckoning_loc = { state_scope = { change_region_name = "§WThe year is §Y1782§W by Bree Reckoning" } }
+			}
+		}
+
+		random_owned = {
+			limit = {
+				owner = {
+					year = 3083
+					NOT = { year = 3084 }
+				}
+			}
+			owner = {
+				bree_reckoning_loc = { state_scope = { change_region_name = "§WThe year is §Y1783§W by Bree Reckoning" } }
+			}
+		}
+
+		random_owned = {
+			limit = {
+				owner = {
+					year = 3084
+					NOT = { year = 3085 }
+				}
+			}
+			owner = {
+				bree_reckoning_loc = { state_scope = { change_region_name = "§WThe year is §Y1784§W by Bree Reckoning" } }
+			}
+		}
+
+		random_owned = {
+			limit = {
+				owner = {
+					year = 3085
+					NOT = { year = 3086 }
+				}
+			}
+			owner = {
+				bree_reckoning_loc = { state_scope = { change_region_name = "§WThe year is §Y1785§W by Bree Reckoning" } }
+			}
+		}
+
+		random_owned = {
+			limit = {
+				owner = {
+					year = 3086
+					NOT = { year = 3087 }
+				}
+			}
+			owner = {
+				bree_reckoning_loc = { state_scope = { change_region_name = "§WThe year is §Y1786§W by Bree Reckoning" } }
+			}
+		}
+
+		random_owned = {
+			limit = {
+				owner = {
+					year = 3087
+					NOT = { year = 3088 }
+				}
+			}
+			owner = {
+				bree_reckoning_loc = { state_scope = { change_region_name = "§WThe year is §Y1787§W by Bree Reckoning" } }
+			}
+		}
+
+		random_owned = {
+			limit = {
+				owner = {
+					year = 3088
+					NOT = { year = 3089 }
+				}
+			}
+			owner = {
+				bree_reckoning_loc = { state_scope = { change_region_name = "§WThe year is §Y1788§W by Bree Reckoning" } }
+			}
+		}
+
+		random_owned = {
+			limit = {
+				owner = {
+					year = 3089
+					NOT = { year = 3090 }
+				}
+			}
+			owner = {
+				bree_reckoning_loc = { state_scope = { change_region_name = "§WThe year is §Y1789§W by Bree Reckoning" } }
+			}
+		}
+
+		random_owned = {
+			limit = {
+				owner = {
+					year = 3090
+					NOT = { year = 3091 }
+				}
+			}
+			owner = {
+				bree_reckoning_loc = { state_scope = { change_region_name = "§WThe year is §Y1790§W by Bree Reckoning" } }
+			}
+		}
+
+		random_owned = {
+			limit = {
+				owner = {
+					year = 3091
+					NOT = { year = 3092 }
+				}
+			}
+			owner = {
+				bree_reckoning_loc = { state_scope = { change_region_name = "§WThe year is §Y1791§W by Bree Reckoning" } }
+			}
+		}
+
+		random_owned = {
+			limit = {
+				owner = {
+					year = 3092
+					NOT = { year = 3093 }
+				}
+			}
+			owner = {
+				bree_reckoning_loc = { state_scope = { change_region_name = "§WThe year is §Y1792§W by Bree Reckoning" } }
+			}
+		}
+
+		random_owned = {
+			limit = {
+				owner = {
+					year = 3093
+					NOT = { year = 3094 }
+				}
+			}
+			owner = {
+				bree_reckoning_loc = { state_scope = { change_region_name = "§WThe year is §Y1793§W by Bree Reckoning" } }
+			}
+		}
+
+		random_owned = {
+			limit = {
+				owner = {
+					year = 3094
+					NOT = { year = 3095 }
+				}
+			}
+			owner = {
+				bree_reckoning_loc = { state_scope = { change_region_name = "§WThe year is §Y1794§W by Bree Reckoning" } }
+			}
+		}
+
+		random_owned = {
+			limit = {
+				owner = {
+					year = 3095
+					NOT = { year = 3096 }
+				}
+			}
+			owner = {
+				bree_reckoning_loc = { state_scope = { change_region_name = "§WThe year is §Y1795§W by Bree Reckoning" } }
+			}
+		}
+
+		random_owned = {
+			limit = {
+				owner = {
+					year = 3096
+					NOT = { year = 3097 }
+				}
+			}
+			owner = {
+				bree_reckoning_loc = { state_scope = { change_region_name = "§WThe year is §Y1796§W by Bree Reckoning" } }
+			}
+		}
+
+		random_owned = {
+			limit = {
+				owner = {
+					year = 3097
+					NOT = { year = 3098 }
+				}
+			}
+			owner = {
+				bree_reckoning_loc = { state_scope = { change_region_name = "§WThe year is §Y1797§W by Bree Reckoning" } }
+			}
+		}
+
+		random_owned = {
+			limit = {
+				owner = {
+					year = 3098
+					NOT = { year = 3099 }
+				}
+			}
+			owner = {
+				bree_reckoning_loc = { state_scope = { change_region_name = "§WThe year is §Y1798§W by Bree Reckoning" } }
+			}
+		}
+
+		random_owned = {
+			limit = {
+				owner = {
+					year = 3099
+					NOT = { year = 3100 }
+				}
+			}
+			owner = {
+				bree_reckoning_loc = { state_scope = { change_region_name = "§WThe year is §Y1799§W by Bree Reckoning" } }
+			}
+		}
+
+		bree_reckoning_loc = { secede_province = --- }
+		country_event = {
+			id = 99904
 			days = 365
 		}
 	}

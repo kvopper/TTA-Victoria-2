@@ -58,4 +58,7 @@ ideologies = {
 }
 
 issues = {
+	good_alignment = {
+		factor = 1
+	}
 }

@@ -115,7 +115,7 @@ political_decisions = {
 						tag = ARY
 					}
 				}
-				country_event = 100003
+				country_event = 3502
 				
 				all_core = { add_core = HAR }
 			}
@@ -192,9 +192,9 @@ political_decisions = {
 		}
 		
 		allow = {
+			is_greater_power = yes
 			# If the owner is one of the tribes, it has to be itself, a vassal or a sphereling
 			# Otherwise, it isn't counted
-			is_greater_power = yes
 		}
 		
 		effect = {
@@ -209,7 +209,7 @@ political_decisions = {
 					}
 					NOT = { tag = THIS }
 				}
-				country_event = 100005
+				country_event = 3504
 			}
 			
 			prestige = 5
@@ -224,7 +224,6 @@ political_decisions = {
 		potential = {
 			is_culture_group = khandish
 			NOT = { exists = HAR }
-			# TODO: NOT some country flag about greater Khand/Chelkar
 		}
 		
 		allow = {
@@ -325,7 +324,7 @@ political_decisions = {
 						tag = ARY
 					}
 				}
-				country_event = 100003
+				country_event = 3502
 				
 				all_core = { add_core = HAR }
 			}
@@ -370,9 +369,10 @@ political_decisions = {
 	form_harad_GP = {
 		picture = "form_harad"
 		potential = {
+			is_greater_power = yes
 			NOT = { is_culture_group = haradrim }
 			NOT = { is_culture_group = khandish }
-			is_greater_power = yes
+			NOT = { tag = UMB }
 			NOT = { exists = HAR }
 			OR = {
 				HRN = {
@@ -635,11 +635,8 @@ political_decisions = {
 				HAR = {
 					remove_accepted_culture = evil_culture
 					remove_accepted_culture = neutral_culture
-					political_reform = good_alignment
+					ruling_party_ideology = servants
 					add_accepted_culture = good_culture
-					clr_country_flag = attempting_to_good
-					clr_country_flag = attempting_to_neutral
-					clr_country_flag = attempting_to_evil
 				}
 			}
 			
@@ -650,11 +647,8 @@ political_decisions = {
 				HAR = {
 					remove_accepted_culture = good_culture
 					remove_accepted_culture = neutral_culture
-					political_reform = evil_alignment
+					ruling_party_ideology = servants
 					add_accepted_culture = evil_culture
-					clr_country_flag = attempting_to_good
-					clr_country_flag = attempting_to_neutral
-					clr_country_flag = attempting_to_evil
 				}
 			}
 			
@@ -665,11 +659,8 @@ political_decisions = {
 				HAR = {
 					remove_accepted_culture = good_culture
 					remove_accepted_culture = evil_culture
-					political_reform = neutral_alignment
+					ruling_party_ideology = servants
 					add_accepted_culture = neutral_culture
-					clr_country_flag = attempting_to_good
-					clr_country_flag = attempting_to_neutral
-					clr_country_flag = attempting_to_evil
 				}
 			}
 		}
@@ -895,20 +886,20 @@ political_decisions = {
 						tag = CHE
 					}
 					OR = {
-						owns = 241
-						owns = 235
-						owns = 238
-						owns = 239
+						owns = 241 # Ausk Harmaka
+						owns = 235 # Korb Ugarta
+						owns = 238 # Tharven
+						owns = 239 # Athrad Hingren
 					}
 				}
 				AND = {
 					tag = UMB
 					OR = {
-						owns = 235
-						owns = 233
-						owns = 232
-						owns = 234
-						owns = 236
+						owns = 235 # Korb Ugarta
+						owns = 233 # An Sakal
+						owns = 232 # Kas Marzuk
+						owns = 234 # Has Yayb
+						owns = 236 # Has Sebiya
 					}
 				}
 			}
@@ -921,16 +912,16 @@ political_decisions = {
 			diplomacy_1 = 1
 			OR = {
 				AND = {
-					owns = 241
-					owns = 235
-					owns = 233
-					owns = 232
+					owns = 241 # Ausk Harmaka
+					owns = 235 # Korb Ugarta
+					owns = 233 # An Sakal
+					owns = 232 # Kas Marzuk
 				}
 				AND = {
-					owns = 234
-					owns = 236
-					owns = 238
-					owns = 239
+					owns = 234 # Has Yayb
+					owns = 236 # Has Sebiya
+					owns = 238 # Tharven
+					owns = 239 # Athrad Hingren
 				}
 			}
 			NOT = { truce_with = HRN }
@@ -1075,7 +1066,7 @@ political_decisions = {
 		
 		effect = {
 			CHE = {
-				country_event = 100004
+				country_event = 3503
 				all_core = { add_core = HAR }
 			}
 			
@@ -1106,7 +1097,7 @@ political_decisions = {
 		
 		effect = {
 			KHA = {
-				country_event = 100004
+				country_event = 3503
 				all_core = { add_core = HAR }
 			}
 			
@@ -1137,7 +1128,7 @@ political_decisions = {
 		
 		effect = {
 			KHA = {
-				country_event = 100004
+				country_event = 3503
 				all_core = { add_core = HAR }
 			}
 			
@@ -1168,7 +1159,7 @@ political_decisions = {
 		
 		effect = {
 			UMB = {
-				country_event = 100004
+				country_event = 3503
 				all_core = { add_core = HAR }
 			}
 			
@@ -1181,6 +1172,7 @@ political_decisions = {
 political_decisions = {
 	HAR_core_removal = {
 		potential = {
+			tag = HAR
 			OR = {
 				HRN = { all_core = { owned_by = HAR is_core = HAR } }
 				HRU = { all_core = { owned_by = HAR is_core = HAR } }
@@ -1188,7 +1180,6 @@ political_decisions = {
 				LUR = { all_core = { owned_by = HAR is_core = HAR } }
 				ARY = { all_core = { owned_by = HAR is_core = HAR } }
 			}
-			tag = HAR
 		}
 		
 		allow = {

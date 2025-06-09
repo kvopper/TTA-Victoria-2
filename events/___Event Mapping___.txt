@@ -1,8 +1,10 @@
 # Event Mapping
 
-# 2500 - 2999: CBs and Cores
+# 1000 - 1999: Capitals clean up
+# 2500 - 2899: CBs and Cores
+# 2900 - 2999: Claim CBs
 # 3000 - 3499: Revolt Events
-# 3500 - 3599: Dynamic Traits
+# 3500 - 3599: Triggered Functions
 # 3600 - 3999: Random Events
 # 5000 - 5999: Small Mechanics
 # 9500 - 9999: Pop Management
@@ -13,8 +15,7 @@
 # 18000 - 18999: Crises
 # 19000 - 19999: Great Powers
 # 29000 - 29999: Introduction
-# 30000 - 32999, 34999: National Leaders
-# 33000 - 34998: Leader Age Calculations
+# 30000 - 32999: National Leaders
 # 35000 - 35999: Country Info
 # 40000 - 40999: Military Leader Recruitment
 # 50000 - 50099: Gondor
@@ -30,11 +31,17 @@
 # 60100 - 60199: Umbar
 # 60200 - 60299: Harad
 # 70000 - 71999: On Action
+# 72000 - 72999: Government
 # 90000 - 90999: CB Generation
 # 91000 - 91999: Railroading
 # 98000 - 98999: Colonization
 # 99000 - 99899: World Bank
 # 99900 - 99999: Fourth Age Clock
-# 100000 - 149999: Clean Up
+# 110000 - 110199: Alliance of Dwarves and Men
 # 150000 - 199999: War (and Peace)
 # 200000: Esgaroth Trade Mechanic Clean Up
+# 300000 - 300001: Dynamic Loc Country Selection
+# 300002 - 300003: Dynamic Loc Culture Group Selection
+# 300008 - 300009: Dynamic Loc Region Selection
+# 300016 - 300017: Dynamic Loc Province Selection
+# 400000 - 499999: Dynamic Loc Functions

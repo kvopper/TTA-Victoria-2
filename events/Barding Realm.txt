@@ -4,6 +4,8 @@
 # Remove this line to have the validator check this file
 # Audax Validator "!" Ignore_NEXT
 
+# Has flavor related to tag in Gramavuld -- Barding Realm, the Rivermen minors and the Amov Clan
+
 # Barding Realm Events
 # 50900 - 50999
 
@@ -17,7 +19,7 @@ province_event = {
 	
 	trigger = {
 		province_id = 652 # Dale
-		owner = { tag = DAL }
+		owner = { has_country_flag = DAL_content }
 		650 = { empty = yes } # Odriksdun
 	}
 	
@@ -26,7 +28,10 @@ province_event = {
 	option = {
 		name = "Another village joins the realm"
 		
-		650 = { secede_province = THIS } # Odriksdun
+		650 = { # Odriksdun
+			secede_province = THIS
+			any_pop = { ideology = { factor = 0.05 value = house_of_bard } }
+		}
 	}
 }
 
@@ -68,6 +73,11 @@ country_event = {
 					alliance_with = DAL
 					in_sphere = DAL
 				}
+			}
+			modifier = {
+				factor = 5
+				has_country_modifier = alliance_of_dwarves_and_men
+				DAL = { has_country_modifier = alliance_of_dwarves_and_men }
 			}
 		}
 	}
@@ -171,7 +181,7 @@ province_event = {
 	trigger = {
 		province_id = 652 # Dale
 		owner = {
-			tag = DAL
+			has_country_flag = DAL_content
 			has_global_flag = DAL_invited_the_grammas
 			
 			# Grammas has core provinces that are uncolonized
@@ -189,43 +199,61 @@ province_event = {
 		}
 	}
 	
-	mean_time_to_happen = { months = 12 }
+	mean_time_to_happen = {
+		months = 12
+		
+		modifier = {
+			factor = 0.5
+			642 = { owned_by = AMO }
+		}
+	}
 	
 	option = {
 		name = "We welcome our brothers"
 		
+		owner = { set_global_flag = hidden_effects }
+		
 		owner = {
-			# Adds a targetting modifier to all eligible provinces
-			GRA = {
-				all_core = {
-					limit = {
-						empty = yes
-						OR = {
-							region = DAL_643
-							region = DAL_642
-							region = DAL_640
+			random_owned = {
+				limit = { owner = { has_global_flag = hidden_effects } }
+				# Adds a targeting modifier to all eligible provinces
+				owner = {
+					GRA = {
+						all_core = {
+							limit = {
+								empty = yes
+								OR = {
+									region = DAL_643
+									region = DAL_642
+									region = DAL_640
+								}
+								any_neighbor_province = { owned_by = THIS }
+							}
+							add_province_modifier = { name = colonization_target duration = -1 }
 						}
-						any_neighbor_province = { owned_by = THIS }
 					}
-					add_province_modifier = { name = colonization_target duration = -1 }
+					
+					# Randomly grabs one of the marked provinces and annexes a random neighbor uncolonized core
+					FOR = {
+						random_owned = {
+							random_empty_neighbor_province = {
+								limit = { has_province_modifier = colonization_target }
+								secede_province = THIS
+								any_pop = { ideology = { factor = 0.05 value = house_of_bard } }
+							}
+						}
+					}
+					
+					# Clears the targeting modifiers to clear the path for the next time this event fires
+					GRA = { all_core = { remove_province_modifier = colonization_target } }
+					
 				}
 			}
-			
-			# Randomly grabs one of the marked provinces and annexes a random neighbor uncolonized core
-			FOR = {
-				random_owned = {
-					random_empty_neighbor_province = {
-						limit = { has_province_modifier = colonization_target }
-						secede_province = THIS
-					}
-				}
-			}
-			
-			# Clears the targeting modifiers to clear the path for the next time this event fires
-			GRA = { all_core = { remove_province_modifier = colonization_target } }
-			
-			DAL_colonize_grammas_province_loc = {}
 		}
+		
+		DAL_colonize_grammas_province_loc = {}
+		
+		owner = { clr_global_flag = hidden_effects }
 	}
 }
 
@@ -295,7 +323,7 @@ province_event = {
 	
 	trigger = {
 		province_id = 652 # Dale
-		owner = { is_culture_group = northmen }
+		owner = { is_culture_group = gramavuld_northmen }
 	}
 	
 	mean_time_to_happen = {
@@ -359,6 +387,10 @@ province_event = {
 	id = 50910
 	title = "Gold in Long Lake!"
 	desc = "EVTDESC50910"
+	news = yes
+	news_desc_long = "EVTDESC50910_NEWS"
+	news_desc_medium = "EVTDESC50910_NEWS"
+	news_desc_short = "EVTDESC50910_NEWS"
 	
 	trigger = {
 		OR = {
@@ -418,7 +450,7 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
-		tag = DAL
+		has_country_flag = DAL_content
 		accepted_culture = grammas
 	}
 	
@@ -446,7 +478,7 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
-		tag = DAL
+		has_country_flag = DAL_content
 		accepted_culture = grammas
 		year = 2970
 		owns = 640 # Grasgarda
@@ -476,7 +508,7 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
-		tag = DAL
+		has_country_flag = DAL_content
 		accepted_culture = grammas
 		year = 2990
 		owns = 446 # Erland's Ferry
@@ -507,7 +539,7 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
-		tag = DAL
+		has_country_flag = DAL_content
 		owns = 652 # Dale
 		year = 3005
 	}
@@ -540,78 +572,8 @@ country_event = {
 	}
 }
 
-# Celduin Pirate Raid
-province_event = {
-	id = 50916
-	title = "Pirate Raid"
-	desc = "EVTDESC50916"
-	
-	trigger = {
-		has_province_modifier = celduin_pirates
-		owner = { money = 5000 }
-	}
-	
-	mean_time_to_happen = {
-		months = 75
-		
-		modifier = {
-			factor = 0.25
-			owner = { war = yes }
-		}
-	}
-	
-	immediate = {
-		random = {
-			chance = 10
-			add_province_modifier = { name = province_wealth_decrease_1_target_modifier duration = -1 }
-		}
-	}
-	
-	option = {
-		name = "We ought to do something"
-		
-		any_pop = {
-			limit = {
-				strata = poor
-			}
-			reduce_pop = 0.999
-		}
-		any_pop = {
-			militancy = 4
-			consciousness = 2
-		}
-		owner = {
-			treasury = -5000
-			
-			random_country = {
-				limit = { has_country_modifier = funding_celduin_pirates }
-				country_event = 50917
-				relation = { who = THIS value = -50 }
-			}
-		}
-		
-		random = {
-			chance = 10 # Make sure this percentage matches the immediate
-			province_wealth_decrease_1_loc = {}
-		}
-	}
-}
-
-# Celduin Pirate Raid, Raid Support
-country_event = {
-	id = 50917
-	title = "Successful raid in $FROMPROVINCE$"
-	desc = "EVTDESC50917"
-	picture = "gramavuld/celduin_river"
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = "A toast to the victors!"
-		
-		treasury = 2500
-	}
-}
+# Event 50916 below in Leader Deaths and Coronations
+# Event 50917 removed (was Pirate Raid events -- on generic raid events now)
 
 # Rivermen Join Dale (prior to Bard's Ultimatum)
 country_event = {
@@ -635,6 +597,8 @@ country_event = {
 				remove_core = DA3
 				remove_core = DA4
 			}
+			
+			any_pop = { ideology = { factor = 0.05 value = house_of_bard } }
 		}
 		
 		inherit = FROM
@@ -675,7 +639,7 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
-		tag = DAL
+		has_country_flag = DAL_content
 		has_global_flag = RIV_break_DAL_hegemony
 		war = no
 		NOT = { vassal_of = RIV }
@@ -989,7 +953,7 @@ country_event = {
 # Open Trade with the Barding Realm?
 country_event = {
 	id = 50925
-	title = "Trade With the $FROMCOUNTRY$?"
+	title = "Trade With the $FROMCOUNTRY$"
 	desc = "EVTDESC50925"
 	picture = "gramavuld/market"
 	
@@ -999,13 +963,13 @@ country_event = {
 		name = "An offer graciously accepted"
 		
 		add_country_modifier = { name = trading_with_DAL duration = -1 }
-		FROM = { country_event = 50926 }
 		
 		ai_chance = {
 			factor = 80
 			
 			modifier = {
 				factor = 0
+				NOT = { FROM = { has_country_flag = DAL_cultivated_inland_trade } }
 				OR = {
 					NOT = { relation = { who = FROM value = 0 } }
 					AND = {
@@ -1020,63 +984,9 @@ country_event = {
 			}
 		}
 	}
-	
-	option = {
-		name = "An offer graciously rejected"
-		
-		set_country_flag = rejected_trade_with_DAL
-		FROM = { country_event = 50927 }
-		
-		ai_chance = {
-			factor = 20
-			
-			modifier = {
-				factor = 0
-				OR = {
-					in_sphere = FROM
-					AND = {
-						has_global_flag = railroading_enabled
-						tag = DA1
-					}
-				}
-			}
-		}
-	}
 }
 
-# Accepted
-country_event = {
-	id = 50926
-	title = "Trade with the $FROMCOUNTRY$ Accepted"
-	desc = "EVTDESC50926"
-	picture = "gramavuld/market"
-	
-	is_triggered_only = yes
-	allow_multiple_instances = yes
-	
-	option = {
-		name = "Good"
-		
-		prestige = 5
-	}
-}
-
-# Rejected
-country_event = {
-	id = 50927
-	title = "Trade with the $FROMCOUNTRY$ Rejected"
-	desc = "EVTDESC50927"
-	picture = "gramavuld/market"
-	
-	is_triggered_only = yes
-	allow_multiple_instances = yes
-	
-	option = {
-		name = "No"
-		
-		prestige = -5
-	}
-}
+# Event 50926 and 50927 removed
 
 # Esgaroth Trade Level Update
 province_event = {
@@ -1204,148 +1114,41 @@ country_event = {
 	title = "The Death of Bard I"
 	desc = "EVTDESC50929"
 	picture = "generic/leader_death"
+	news = yes
+	news_desc_long = "EVTDESC50929_NEWS"
+	news_desc_medium = "EVTDESC50929_NEWS"
+	news_desc_short = "EVTDESC50929_NEWS"
 	
 	fire_only_once = yes
 	
 	trigger = {
-		nationalvalue = bard_i
-		OR = {
-			AND = {
-				has_global_flag = railroading_enabled
-				year = 2977
-			}
-			AND = {
-				has_global_flag = railroading_disabled
-				year = 2974
-			}
-		}
-	}
-	
-	mean_time_to_happen = {
-		months = 36
-		
-		modifier = {
-			factor = 0.15 # Cut it down to ~6 months if railroading is enabled
-			has_global_flag = railroading_enabled
-		}
-		
-		modifier = {
-			factor = 0.01 # Cut it down to essentially immediately if getting to the edge of the date range the dynamic loc event handles
-			year = 2980
-			month = 10
-		}
+		NOT = { ruling_party = DAL_bard_i }
+		ruling_party_ideology = house_of_bard
+		year = 2977
+		NOT = { year = 2978 }
+		has_global_flag = DAL_bard_i_alive
 	}
 	
 	option = {
 		name = "He will be missed"
 		
-		# If Bain is at least 16, he becomes king
-		random_owned = {
-			limit = {
-				owner = { FOR = { check_variable = { which = bain_i_age value = 15.9 } } }
-			}
-			owner = {
-				set_country_flag = knows_next_leader
-				set_country_flag = bain_i_next_leader
-			}
-		}
+		# Bard I's death hits harder than the standard leader [due to him being a good ruler and being the start of the dynasty]
+		plurality = 10
 		
-		# If Bain is dead, and Brand is at least 16, he becomes king
-		random_owned = {
-			limit = {
-				owner = {
-					NOT = { FOR = { check_variable = { which = bain_i_age value = -1.9 } } }
-					FOR = { check_variable = { which = brand_i_age value = 15.9 } }
-				}
-			}
-			owner = {
-				set_country_flag = knows_next_leader
-				set_country_flag = brand_i_next_leader
-		}
-		
-		# If Bain and Brand are dead, and Bard II is at least 16, he becomes king
-		random_owned = {
-			limit = {
-					NOT = { FOR = { check_variable = { which = bain_i_age value = -1.9 } } }
-					NOT = { FOR = { check_variable = { which = brand_i_age value = -1.9 } } }
-					FOR = { check_variable = { which = bard_ii_age value = 15.9 } }
-				}
-			}
-			owner = {
-				set_country_flag = knows_next_leader
-				set_country_flag = bard_ii_next_leader
-			}
-		}
-		
-		# If Bain, Brand or Bard II is alive, but not of age yet, the next leader will be a regency council
-		random_owned = {
-			limit = {
-				owner = {
-					NOT = { has_country_flag = knows_next_leader }
-					OR = {
-						AND = {
-							FOR = { check_variable = { which = bain_i_age value = -0.1 } }
-							NOT = { FOR = { check_variable = { which = bain_i_age value = 15.1 } } }
-						}
-						AND = {
-							FOR = { check_variable = { which = brand_i_age value = -0.1 } }
-							NOT = { FOR = { check_variable = { which = brand_i_age value = 15.1 } } }
-						}
-						AND = {
-							FOR = { check_variable = { which = bard_ii_age value = -0.1 } }
-							NOT = { FOR = { check_variable = { which = bard_ii_age value = 15.1 } } }
-						}
-					}
-				}
-			}
-			owner = {
-				set_country_flag = knows_next_leader
-				set_country_flag = regency_next_leader
-			}
-		}
-		
-		# Clears leader-specific modifiers (generic and specific) and handles standard popular anxiety changes
-		country_event = 3501
-		
-		# Bard I's death hits harder than the standard leader [due to him being a good ruler and being the start of the dynasty
-		plurality = 5
-		
-		# Set the next leader
-		random_owned = {
-			limit = {
-				owner = { has_country_flag = bain_i_next_leader }
-			}
-			owner = { country_event = 50930 }
-		}
+		clr_global_flag = bard_i_alive
+		remove_country_modifier = bard_i_modifier
 		
 		random_owned = {
-			limit = {
-				owner = { has_country_flag = brand_i_next_leader }
-			}
-			owner = { country_event = 50932 }
+			limit = { owner = { ruling_party = DAL_bain_i } }
+			owner = { country_event = { id = 50930 days = 7 } }
 		}
 		
+		set_global_flag = hidden_effects
 		random_owned = {
-			limit = {
-				owner = { has_country_flag = bard_ii_next_leader }
-			}
-			owner = { country_event = 50934 }
+			limit = { owner = { has_global_flag = hidden_effects } }
+			owner = { FOR = { country_event = 3500 } } # Generic Leader Died Cleanup + resetting once-per-leader effects
 		}
-		
-		random_owned = {
-			limit = {
-				owner = { has_country_flag = regency_next_leader }
-			}
-			owner = { country_event = 50945 }
-		}
-		
-		# Clean up to make sure we don't break something with a flag being left around
-		clr_country_flag = bain_i_next_leader
-		clr_country_flag = brand_i_next_leader
-		clr_country_flag = bard_ii_next_leader
-		clr_country_flag = regency_next_leader
-		
-		FOR = { country_event = 33006 }
+		clr_global_flag = hidden_effects
 	}
 }
 
@@ -1355,22 +1158,18 @@ country_event = {
 	title = "The Coronation of Bain I"
 	desc = "EVTDESC50930"
 	picture = "generic/coronation"
+	news = yes
+	news_desc_long = "EVTDESC50930_NEWS"
+	news_desc_medium = "EVTDESC50930_NEWS"
+	news_desc_short = "EVTDESC50930_NEWS"
 	
-	fire_only_once = yes
-	
-	trigger = {
-		tag = DAL
-		nationalvalue = regency
-		FOR = { check_variable = { which = bain_i_age value = 15.9 } }
-	}
+	is_triggered_only = yes
 	
 	option = {
 		name = "Long live the King!"
 		
-		prestige = 5
-		nationalvalue = bain_i
-		
 		plurality = -3
+		add_country_modifier = { name = bain_i_modifier duration = -1 }
 	}
 }
 
@@ -1380,117 +1179,40 @@ country_event = {
 	title = "The Death of Bain I"
 	desc = "EVTDESC50931"
 	picture = "generic/leader_death"
+	news = yes
+	news_desc_long = "EVTDESC50931_NEWS"
+	news_desc_medium = "EVTDESC50931_NEWS"
+	news_desc_short = "EVTDESC50931_NEWS"
 	
 	fire_only_once = yes
 	
 	trigger = {
-		nationalvalue = bain_i
-		OR = {
-			AND = {
-				has_global_flag = railroading_enabled
-				year = 3007
-			}
-			AND = {
-				has_global_flag = railroading_disabled
-				year = 3004
-			}
-		}
-	}
-	
-	mean_time_to_happen = {
-		months = 36
-		
-		modifier = {
-			factor = 0.15 # Cut it down to ~6 months if railroading is enabled
-			has_global_flag = railroading_enabled
-		}
-		modifier = {
-			factor = 0.01 # Cut it down to essentially immediately if getting to the edge of the date range the dynamic loc event handles
-			year = 3010
-			month = 10
-		}
+		NOT = { ruling_party = DAL_bain_i }
+		ruling_party_ideology = house_of_bard
+		year = 3007
+		NOT = { year = 3008 }
+		has_global_flag = DAL_bain_i_alive
 	}
 	
 	option = {
 		name = "He will be missed"
 		
-		# If Brand is at least 16, he becomes king
-		random_owned = {
-			limit = {
-				owner = { FOR = { check_variable = { which = brand_i_age value = 15.9 } } }
-			}
-			owner = {
-				set_country_flag = knows_next_leader
-				set_country_flag = brand_i_next_leader
-		}
+		plurality = 5
 		
-		# If Brand is dead, and Bard II is at least 16, he becomes king
-		random_owned = {
-			limit = {
-					NOT = { FOR = { check_variable = { which = brand_i_age value = -1.9 } } }
-					FOR = { check_variable = { which = bard_ii_age value = 15.9 } }
-				}
-			}
-			owner = {
-				set_country_flag = knows_next_leader
-				set_country_flag = bard_ii_next_leader
-			}
-		}
-		
-		# If Brand or Bard II is alive, but not of age yet, the next leader will be a regency council
-		random_owned = {
-			limit = {
-				owner = {
-					NOT = { has_country_flag = knows_next_leader }
-					OR = {
-						AND = {
-							FOR = { check_variable = { which = brand_i_age value = -0.1 } }
-							NOT = { FOR = { check_variable = { which = brand_i_age value = 15.1 } } }
-						}
-						AND = {
-							FOR = { check_variable = { which = bard_ii_age value = -0.1 } }
-							NOT = { FOR = { check_variable = { which = bard_ii_age value = 15.1 } } }
-						}
-					}
-				}
-			}
-			owner = {
-				set_country_flag = knows_next_leader
-				set_country_flag = regency_next_leader
-			}
-		}
-		
-		# Clears leader-specific modifiers (generic and specific) and handles standard popular anxiety changes
-		country_event = 3501
-		
-		# Set the next leader
-		random_owned = {
-			limit = {
-				owner = { has_country_flag = brand_i_next_leader }
-			}
-			owner = { country_event = 50932 }
-		}
+		clr_global_flag = DAL_bain_i_alive
+		remove_country_modifier = bain_i_modifier
 		
 		random_owned = {
-			limit = {
-				owner = { has_country_flag = bard_ii_next_leader }
-			}
-			owner = { country_event = 50934 }
+			limit = { owner = { ruling_party = DAL_brand_i } }
+			owner = { country_event = { id = 50932 days = 7 } }
 		}
 		
+		set_global_flag = hidden_effects
 		random_owned = {
-			limit = {
-				owner = { has_country_flag = regency_next_leader }
-			}
-			owner = { country_event = 50945 }
+			limit = { owner = { has_global_flag = hidden_effects } }
+			owner = { FOR = { country_event = 3500 } } # Generic Leader Died Cleanup + resetting once-per-leader effects
 		}
-		
-		# Clean up to make sure we don't break something with a flag being left around
-		clr_country_flag = brand_i_next_leader
-		clr_country_flag = bard_ii_next_leader
-		clr_country_flag = regency_next_leader
-		
-		FOR = { country_event = 33007 }
+		clr_global_flag = hidden_effects
 	}
 }
 
@@ -1500,22 +1222,18 @@ country_event = {
 	title = "The Coronation of Brand I"
 	desc = "EVTDESC50932"
 	picture = "generic/coronation"
+	news = yes
+	news_desc_long = "EVTDESC50932_NEWS"
+	news_desc_medium = "EVTDESC50932_NEWS"
+	news_desc_short = "EVTDESC50932_NEWS"
 	
-	fire_only_once = yes
-	
-	trigger = {
-		tag = DAL
-		nationalvalue = regency
-		FOR = { check_variable = { which = brand_i_age value = 15.9 } }
-	}
+	is_triggered_only = yes
 	
 	option = {
 		name = "Long live the King!"
 		
-		prestige = 5
-		nationalvalue = brand_i
-		
 		plurality = -3
+		add_country_modifier = { name = brand_i_modifier duration = -1 }
 	}
 }
 
@@ -1525,104 +1243,40 @@ country_event = {
 	title = "The Death of Brand I"
 	desc = "EVTDESC50933"
 	picture = "generic/leader_death"
+	news = yes
+	news_desc_long = "EVTDESC50933_NEWS"
+	news_desc_medium = "EVTDESC50933_NEWS"
+	news_desc_short = "EVTDESC50933_NEWS"
 	
 	fire_only_once = yes
 	
 	trigger = {
-		nationalvalue = bain_i
-		OR = {
-			AND = {
-				has_global_flag = railroading_enabled
-				year = 3030
-			}
-			AND = {
-				has_global_flag = railroading_disabled
-				year = 3027
-			}
-			AND = {
-				has_global_flag = railroading_enabled
-				has_global_flag = wotr_started
-				NOT = { controls = 652 } # Dale
-			}
-		}
-	}
-	
-	mean_time_to_happen = {
-		months = 36
-		
-		modifier = {
-			factor = 0.15 # Cut it down to ~6 months if railroading is enabled
-			has_global_flag = railroading_enabled
-		}
-		modifier = {
-			factor = 0.01 # Cut it down to essentially immediately if getting to the edge of the date range the dynamic loc event handles
-			OR = {
-				AND = {
-					year = 3033
-					month = 10
-				}
-				AND = {
-					has_global_flag = wotr_started
-					NOT = { controls = 652 } # Dale
-				}
-			}
-		}
+		NOT = { ruling_party = DAL_brand_i }
+		ruling_party_ideology = house_of_bard
+		year = 3037
+		NOT = { year = 3038 }
+		has_global_flag = DAL_brand_i_alive
 	}
 	
 	option = {
 		name = "He will be missed"
 		
-		# If Bard II is at least 16, he becomes king
-		random_owned = {
-			limit = {
-				owner = { FOR = { check_variable = { which = bard_ii_age value = 15.9 } } }
-			}
-			owner = {
-				set_country_flag = knows_next_leader
-				set_country_flag = bard_ii_next_leader
-			}
-		}
+		plurality = 5
 		
-		# If Bard II is alive, but not of age yet, the next leader will be a regency council
-		random_owned = {
-			limit = {
-				owner = {
-					NOT = { has_country_flag = knows_next_leader }
-					AND = {
-						FOR = { check_variable = { which = bard_ii_age value = -0.1 } }
-						NOT = { FOR = { check_variable = { which = bard_ii_age value = 15.1 } } }
-					}
-				}
-			}
-			owner = {
-				set_country_flag = knows_next_leader
-				set_country_flag = regency_next_leader
-			}
-		}
-		
-		# Clears leader-specific modifiers (generic and specific) and handles standard popular anxiety changes
-		country_event = 3501
-		
-		# Set the next leader
-		random_owned = {
-			limit = {
-				owner = { has_country_flag = bard_ii_next_leader }
-			}
-			owner = { country_event = 50934 }
-		}
+		clr_global_flag = DAL_brand_i_alive
+		remove_country_modifier = brand_i_modifier
 		
 		random_owned = {
-			limit = {
-				owner = { has_country_flag = regency_next_leader }
-			}
-			owner = { country_event = 50945 }
+			limit = { owner = { ruling_party = DAL_bard_ii } }
+			owner = { country_event = { id = 50934 days = 7 } }
 		}
 		
-		# Clean up to make sure we don't break something with a flag being left around
-		clr_country_flag = bard_ii_next_leader
-		clr_country_flag = regency_next_leader
-		
-		FOR = { country_event = 33008 }
+		set_global_flag = hidden_effects
+		random_owned = {
+			limit = { owner = { has_global_flag = hidden_effects } }
+			owner = { FOR = { country_event = 3500 } } # Generic Leader Died Cleanup + resetting once-per-leader effects
+		}
+		clr_global_flag = hidden_effects
 	}
 }
 
@@ -1632,22 +1286,18 @@ country_event = {
 	title = "The Coronation of Bard II"
 	desc = "EVTDESC50934"
 	picture = "generic/coronation"
+	news = yes
+	news_desc_long = "EVTDESC50934_NEWS"
+	news_desc_medium = "EVTDESC50934_NEWS"
+	news_desc_short = "EVTDESC50934_NEWS"
 	
-	fire_only_once = yes
-	
-	trigger = {
-		tag = DAL
-		nationalvalue = regency
-		FOR = { check_variable = { which = bard_ii_age value = 15.9 } }
-	}
+	is_triggered_only = yes
 	
 	option = {
 		name = "Long live the King!"
 		
-		prestige = 5
-		nationalvalue = bard_ii
-		
 		plurality = -3
+		add_country_modifier = { name = bard_ii_modifier duration = -1 }
 	}
 }
 
@@ -1657,45 +1307,61 @@ country_event = {
 	title = "The Death of Bard II"
 	desc = "EVTDESC50935"
 	picture = "generic/leader_death"
+	news = yes
+	news_desc_long = "EVTDESC50935_NEWS"
+	news_desc_medium = "EVTDESC50935_NEWS"
+	news_desc_short = "EVTDESC50935_NEWS"
 	
 	fire_only_once = yes
 	
 	trigger = {
-		nationalvalue = bard_ii
-		OR = {
-			AND = {
-				has_global_flag = railroading_enabled
-				year = 3059
-			}
-			AND = {
-				has_global_flag = railroading_disabled
-				year = 3056
-			}
-		}
-	}
-	
-	mean_time_to_happen = {
-		months = 36
-		
-		modifier = {
-			factor = 0.15 # Cut it down to ~6 months if railroading is enabled
-			has_global_flag = railroading_enabled
-		}
-		
-		modifier = {
-			factor = 0.01 # Cut it down to essentially immediately if getting to the edge of the date range the dynamic loc event handles
-			year = 3062
-			month = 10
-		}
+		NOT = { ruling_party = DAL_bard_ii }
+		ruling_party_ideology = house_of_bard
+		year = 3067
+		NOT = { year = 3068 }
+		has_global_flag = DAL_bard_ii_alive
 	}
 	
 	option = {
 		name = "He will be missed"
 		
-		# Clears leader-specific modifiers (generic and specific), sets Generic Leader as leader and handles standard popular anxiety changes
-		country_event = 3501
+		plurality = 5
 		
-		FOR = { country_event = 33009 }
+		clr_global_flag = DAL_bard_ii_alive
+		remove_country_modifier = bard_ii_modifier
+		
+		random_owned = {
+			limit = { owner = { ruling_party = DAL_girion_ii } }
+			owner = { country_event = { id = 50916 days = 7 } }
+		}
+		
+		set_global_flag = hidden_effects
+		random_owned = {
+			limit = { owner = { has_global_flag = hidden_effects } }
+			owner = { FOR = { country_event = 3500 } } # Generic Leader Died Cleanup + resetting once-per-leader effects
+		}
+		clr_global_flag = hidden_effects
+	}
+}
+
+# Coronation of Girion II
+country_event = {
+	id = 50916
+	title = "The Coronation of Girion II"
+	desc = "EVTDESC50916"
+	picture = "generic/coronation"
+	news = yes
+	news_desc_long = "EVTDESC50916_NEWS"
+	news_desc_medium = "EVTDESC50916_NEWS"
+	news_desc_short = "EVTDESC50916_NEWS"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Long live the King!"
+		
+		plurality = -3
+		add_country_modifier = { name = girion_ii_modifier duration = -1 }
 	}
 }
 # }
@@ -1707,13 +1373,16 @@ country_event = {
 	title = "A Royal Wedding"
 	desc = "EVTDESC50936"
 	picture = "generic/wedding"
+	news = yes
+	news_desc_long = "EVTDESC50936_NEWS"
+	news_desc_medium = "EVTDESC50936_NEWS"
+	news_desc_short = "EVTDESC50936_NEWS"
 	
 	fire_only_once = yes
 	
 	trigger = {
-		tag = DAL
-		FOR = { check_variable = { which = bain_i_age value = 15.9 } } # Making sure Bain is of age
-		NOT = { has_global_flag = DAL_bain_i_married }
+		has_country_flag = DAL_content
+		has_global_flag = DAL_bain_i_alive
 	}
 	
 	mean_time_to_happen = {
@@ -1747,9 +1416,9 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
-		tag = DAL
-		FOR = { check_variable = { which = bain_i_age value = 15.9 } } # Making sure Bain is still alive
+		has_country_flag = DAL_content
 		has_global_flag = DAL_bain_i_married
+		has_global_flag = DAL_bain_i_alive
 	}
 	
 	mean_time_to_happen = {
@@ -1777,13 +1446,8 @@ country_event = {
 		}
 		
 		prestige = 1
-		
-		FOR = {
-			country_event = 33002 # Age Calculation Loop
-			country_event = 33004 # Birth Calculation
-		}
-		
 		plurality = -2
+		set_global_flag = DAL_brand_i_alive
 	}
 }
 
@@ -1797,12 +1461,11 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
-		tag = DAL
-		FOR = { check_variable = { which = bain_i_age value = 15.9 } } # Making sure Bain is still alive
-		FOR = { check_variable = { which = brand_i_age value = 0.9 } } # Making sure Brand has been born
+		has_country_flag = DAL_content
 		has_global_flag = DAL_bain_i_married
+		has_global_flag = DAL_bain_i_alive
+		has_global_flag = DAL_brand_i_alive  # Making sure the kids are born in order
 		year = 2960
-		NOT = { has_global_flag = DAL_girion_bainson_born }
 	}
 	
 	mean_time_to_happen = { months = 24 }
@@ -1821,13 +1484,16 @@ country_event = {
 	title = "A Royal Wedding"
 	desc = "EVTDESC50939"
 	picture = "generic/wedding"
+	news = yes
+	news_desc_long = "EVTDESC50939_NEWS"
+	news_desc_medium = "EVTDESC50939_NEWS"
+	news_desc_short = "EVTDESC50939_NEWS"
 	
 	fire_only_once = yes
 	
 	trigger = {
-		tag = DAL
-		FOR = { check_variable = { which = brand_i_age value = 15.9 } } # Making sure Brand is of age
-		NOT = { has_global_flag = DAL_brand_i_married }
+		has_country_flag = DAL_content
+		has_global_flag = DAL_brand_i_alive
 		year = 2979
 	}
 	
@@ -1862,9 +1528,9 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
-		tag = DAL
-		FOR = { check_variable = { which = brand_i_age value = 15.9 } } # Making sure Brand is still alive
+		has_country_flag = DAL_content
 		has_global_flag = DAL_brand_i_married
+		has_global_flag = DAL_brand_i_alive
 		year = 2982
 	}
 	
@@ -1893,13 +1559,8 @@ country_event = {
 		}
 		
 		prestige = 1
-		
 		plurality = -2
-		
-		FOR = {
-			country_event = 33003 # Age Calculation Loop
-			country_event = 33005 # Birth Calculation
-		}
+		set_global_flag = DAL_bard_ii_alive
 	}
 }
 
@@ -1913,12 +1574,11 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
-		tag = DAL
-		FOR = { check_variable = { which = brand_i_age value = 15.9 } } # Making sure Brand is still alive
-		FOR = { check_variable = { which = bard_ii_age value = 0.9 } } # Making sure Bard II has been born
+		has_country_flag = DAL_content
 		has_global_flag = DAL_brand_i_married
+		has_global_flag = DAL_brand_i_alive
+		has_global_flag = DAL_bard_ii_alive # Making sure the kids are born in order
 		year = 2985
-		NOT = { has_global_flag = DAL_bryn_brandson_born }
 	}
 	
 	mean_time_to_happen = { months = 24 }
@@ -1937,13 +1597,16 @@ country_event = {
 	title = "A Royal Wedding"
 	desc = "EVTDESC50942"
 	picture = "generic/wedding"
+	news = yes
+	news_desc_long = "EVTDESC50942_NEWS"
+	news_desc_medium = "EVTDESC50942_NEWS"
+	news_desc_short = "EVTDESC50942_NEWS"
 	
 	fire_only_once = yes
 	
 	trigger = {
-		tag = DAL
-		FOR = { check_variable = { which = bard_ii_age value = 15.9 } } # Making sure Bard II is of age
-		NOT = { has_global_flag = DAL_bard_ii_married }
+		has_country_flag = DAL_content
+		has_global_flag = bard_ii_alive
 		year = 3010
 	}
 	
@@ -1978,11 +1641,10 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
-		tag = DAL
-		FOR = { check_variable = { which = bard_ii_age value = 15.9 } } # Making sure Bard is still alive
+		has_country_flag = DAL_content
 		has_global_flag = DAL_bard_ii_married
+		has_global_flag = bard_ii_alive
 		year = 3020
-		NOT = { has_global_flag = DAL_girion_ii_born }
 	}
 	
 	mean_time_to_happen = {
@@ -2010,7 +1672,7 @@ country_event = {
 		}
 		
 		prestige = 1
-		set_global_flag = DAL_girion_ii_born
+		set_global_flag = DAL_girion_ii_alive
 		
 		plurality = -2
 	}
@@ -2026,12 +1688,11 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
-		tag = DAL
-		FOR = { check_variable = { which = bard_ii_age value = 15.9 } } # Making sure Bard is still alive
+		has_country_flag = DAL_content
 		has_global_flag = DAL_bard_ii_married
-		has_global_flag = DAL_girion_ii_born
+		has_global_flag = bard_ii_alive
+		has_global_flag = DAL_girion_ii_alive
 		year = 3025
-		NOT = { has_global_flag = DAL_girloth_bard2son_born }
 	}
 	
 	mean_time_to_happen = { months = 24 }
@@ -2045,24 +1706,7 @@ country_event = {
 }
 # }
 
-# Regency
-country_event = {
-	id = 50945
-	title = "Regency!"
-	desc = "EVTDESC50945"
-	picture = "generic/coronation"
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = "At least we have an heir"
-		
-		prestige = -5
-		nationalvalue = regency
-		
-		plurality = -2
-	}
-}
+# Event 50945 made obselete by political rework. Removed
 
 # Bryn, Royal Warrior
 country_event = {
@@ -2076,7 +1720,7 @@ country_event = {
 	mean_time_to_happen = { months = 6 }
 	
 	trigger = {
-		tag = DAL
+		has_country_flag = DAL_content
 		year = 3005
 		has_global_flag = DAL_bryn_brandson_born
 	}
@@ -2123,7 +1767,7 @@ country_event = {
 	mean_time_to_happen = { months = 6 }
 	
 	trigger = {
-		tag = DAL
+		has_country_flag = DAL_content
 		year = 3045
 		has_global_flag = DAL_girloth_bard2son_born
 	}
@@ -2168,7 +1812,9 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
-		tag = DAL
+		has_country_flag = DAL_content
+		NOT = { tag = FFN }
+		NOT = { accepted_culture = longbeard }
 		owns = 660 # Erebor
 	}
 	
@@ -2264,255 +1910,7 @@ country_event = {
 	}
 }
 
-# A Shift in the Balance of Power of the Merchants and Fishers Guild
-country_event = {
-	id = 50949
-	title = "A Shift in the Balance of Power"
-	desc = "EVTDESC50949"
-	picture = "gramavuld/market"
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = "The power shifts"
-		
-		remove_country_modifier = DAL_merchant_power_10
-		remove_country_modifier = DAL_merchant_power_9
-		remove_country_modifier = DAL_merchant_power_8
-		remove_country_modifier = DAL_merchant_power_7
-		remove_country_modifier = DAL_merchant_power_6
-		remove_country_modifier = DAL_merchant_power_5
-		remove_country_modifier = DAL_merchant_power_4
-		remove_country_modifier = DAL_merchant_power_3
-		remove_country_modifier = DAL_merchant_power_2
-		remove_country_modifier = DAL_merchant_power_1
-		remove_country_modifier = DAL_merchant_guild_balanced
-		remove_country_modifier = DAL_guild_power_1
-		remove_country_modifier = DAL_guild_power_2
-		remove_country_modifier = DAL_guild_power_3
-		remove_country_modifier = DAL_guild_power_4
-		remove_country_modifier = DAL_guild_power_5
-		remove_country_modifier = DAL_guild_power_6
-		remove_country_modifier = DAL_guild_power_7
-		remove_country_modifier = DAL_guild_power_8
-		remove_country_modifier = DAL_guild_power_9
-		remove_country_modifier = DAL_guild_power_10
-		
-		random_owned = {
-			limit = {
-				owner = {
-					OR = {
-						has_country_flag = DAL_merchant_supported_by_realm
-						NOT = { check_variable = { which = DAL_merchants_fishers_bop value = -9.9 } }
-					}
-				}
-			}
-			owner = { add_country_modifier = { name = DAL_merchant_power_10 duration = -1 } }
-		}
-		
-		random_owned = {
-			limit = {
-				owner = {
-					check_variable = { which = DAL_merchants_fishers_bop value = -9.1 }
-					NOT = { check_variable = { which = DAL_merchants_fishers_bop value = -8.9 } }
-				}
-			}
-			owner = { add_country_modifier = { name = DAL_merchant_power_9 duration = -1 } }
-		}
-		
-		random_owned = {
-			limit = {
-				owner = {
-					check_variable = { which = DAL_merchants_fishers_bop value = -8.1 }
-					NOT = { check_variable = { which = DAL_merchants_fishers_bop value = -7.9 } }
-				}
-			}
-			owner = { add_country_modifier = { name = DAL_merchant_power_8 duration = -1 } }
-		}
-		
-		random_owned = {
-			limit = {
-				owner = {
-					check_variable = { which = DAL_merchants_fishers_bop value = -7.1 }
-					NOT = { check_variable = { which = DAL_merchants_fishers_bop value = -6.9 } }
-				}
-			}
-			owner = { add_country_modifier = { name = DAL_merchant_power_7 duration = -1 } }
-		}
-		
-		random_owned = {
-			limit = {
-				owner = {
-					check_variable = { which = DAL_merchants_fishers_bop value = -6.1 }
-					NOT = { check_variable = { which = DAL_merchants_fishers_bop value = -5.9 } }
-				}
-			}
-			owner = { add_country_modifier = { name = DAL_merchant_power_6 duration = -1 } }
-		}
-		
-		random_owned = {
-			limit = {
-				owner = {
-					check_variable = { which = DAL_merchants_fishers_bop value = -5.1 }
-					NOT = { check_variable = { which = DAL_merchants_fishers_bop value = -4.9 } }
-				}
-			}
-			owner = { add_country_modifier = { name = DAL_merchant_power_5 duration = -1 } }
-		}
-		
-		random_owned = {
-			limit = {
-				owner = {
-					check_variable = { which = DAL_merchants_fishers_bop value = -4.1 }
-					NOT = { check_variable = { which = DAL_merchants_fishers_bop value = -3.9 } }
-				}
-			}
-			owner = { add_country_modifier = { name = DAL_merchant_power_4 duration = -1 } }
-		}
-		
-		random_owned = {
-			limit = {
-				owner = {
-					check_variable = { which = DAL_merchants_fishers_bop value = -3.1 }
-					NOT = { check_variable = { which = DAL_merchants_fishers_bop value = -2.9 } }
-				}
-			}
-			owner = { add_country_modifier = { name = DAL_merchant_power_3 duration = -1 } }
-		}
-		
-		random_owned = {
-			limit = {
-				owner = {
-					check_variable = { which = DAL_merchants_fishers_bop value = -2.1 }
-					NOT = { check_variable = { which = DAL_merchants_fishers_bop value = -1.9 } }
-				}
-			}
-			owner = { add_country_modifier = { name = DAL_merchant_power_2 duration = -1 } }
-		}
-		
-		random_owned = {
-			limit = {
-				owner = {
-					check_variable = { which = DAL_merchants_fishers_bop value = -1.1 }
-					NOT = { check_variable = { which = DAL_merchants_fishers_bop value = -0.9 } }
-				}
-			}
-			owner = { add_country_modifier = { name = DAL_merchant_power_1 duration = -1 } }
-		}
-		
-		random_owned = {
-			limit = {
-				owner = {
-					check_variable = { which = DAL_merchants_fishers_bop value = -0.1 }
-					NOT = { check_variable = { which = DAL_merchants_fishers_bop value = 0.1 } }
-				}
-			}
-			owner = { add_country_modifier = { name = DAL_merchant_guild_balanced duration = -1 } }
-		}
-		
-		random_owned = {
-			limit = {
-				owner = {
-					check_variable = { which = DAL_merchants_fishers_bop value = 0.9 }
-					NOT = { check_variable = { which = DAL_merchants_fishers_bop value = 1.1 } }
-				}
-			}
-			owner = { add_country_modifier = { name = DAL_guild_power_1 duration = -1 } }
-		}
-		
-		random_owned = {
-			limit = {
-				owner = {
-					check_variable = { which = DAL_merchants_fishers_bop value = 1.9 }
-					NOT = { check_variable = { which = DAL_merchants_fishers_bop value = 2.1 } }
-				}
-			}
-			owner = { add_country_modifier = { name = DAL_guild_power_2 duration = -1 } }
-		}
-		
-		random_owned = {
-			limit = {
-				owner = {
-					check_variable = { which = DAL_merchants_fishers_bop value = 2.9 }
-					NOT = { check_variable = { which = DAL_merchants_fishers_bop value = 3.1 } }
-				}
-			}
-			owner = { add_country_modifier = { name = DAL_guild_power_3 duration = -1 } }
-		}
-		
-		random_owned = {
-			limit = {
-				owner = {
-					check_variable = { which = DAL_merchants_fishers_bop value = 3.9 }
-					NOT = { check_variable = { which = DAL_merchants_fishers_bop value = 4.1 } }
-				}
-			}
-			owner = { add_country_modifier = { name = DAL_guild_power_4 duration = -1 } }
-		}
-		
-		random_owned = {
-			limit = {
-				owner = {
-					check_variable = { which = DAL_merchants_fishers_bop value = 4.9 }
-					NOT = { check_variable = { which = DAL_merchants_fishers_bop value = 5.1 } }
-				}
-			}
-			owner = { add_country_modifier = { name = DAL_guild_power_5 duration = -1 } }
-		}
-		
-		random_owned = {
-			limit = {
-				owner = {
-					check_variable = { which = DAL_merchants_fishers_bop value = 5.9 }
-					NOT = { check_variable = { which = DAL_merchants_fishers_bop value = 6.1 } }
-				}
-			}
-			owner = { add_country_modifier = { name = DAL_guild_power_6 duration = -1 } }
-		}
-		
-		random_owned = {
-			limit = {
-				owner = {
-					check_variable = { which = DAL_merchants_fishers_bop value = 6.9 }
-					NOT = { check_variable = { which = DAL_merchants_fishers_bop value = 7.1 } }
-				}
-			}
-			owner = { add_country_modifier = { name = DAL_guild_power_7 duration = -1 } }
-		}
-		
-		random_owned = {
-			limit = {
-				owner = {
-					check_variable = { which = DAL_merchants_fishers_bop value = 7.9 }
-					NOT = { check_variable = { which = DAL_merchants_fishers_bop value = 8.1 } }
-				}
-			}
-			owner = { add_country_modifier = { name = DAL_guild_power_8 duration = -1 } }
-		}
-		
-		random_owned = {
-			limit = {
-				owner = {
-					check_variable = { which = DAL_merchants_fishers_bop value = 8.9 }
-					NOT = { check_variable = { which = DAL_merchants_fishers_bop value = 9.1 } }
-				}
-			}
-			owner = { add_country_modifier = { name = DAL_guild_power_9 duration = -1 } }
-		}
-		
-		random_owned = {
-			limit = {
-				owner = {
-					OR = {
-						check_variable = { which = DAL_merchants_fishers_bop value = 9.9 }
-						has_country_flag = DAL_guild_supported_by_realm
-					}
-				}
-			}
-			owner = { add_country_modifier = { name = DAL_guild_power_10 duration = -1 } }
-		}
-	}
-}
+# Event 50949 removed (handled by monthly cleanup event)
 
 # Merchants-Fisher Guild Tensions Flare Up
 province_event = {
@@ -2563,6 +1961,36 @@ province_event = {
 		name = "Agree with the Merchants"
 		
 		owner = {
+			any_pop = {
+				limit = {
+					location = {
+						province_id = 140 # Holmgeirstadur
+						province_id = 648 # Londaroth
+						province_id = 649 # Elliborg
+						province_id = 653 # Hafborg
+						province_id = 654 # Esgaroth
+					}
+				}
+				ideology = {
+					factor = 0.03
+					value = master_of_laketown
+				}
+			}
+			any_pop = {
+				limit = {
+					location = {
+						NOT = { province_id = 140 } # Holmgeirstadur
+						NOT = { province_id = 648 } # Londaroth
+						NOT = { province_id = 649 } # Elliborg
+						NOT = { province_id = 653 } # Hafborg
+						NOT = { province_id = 654 } # Esgaroth
+					}
+				}
+				ideology = {
+					factor = 0.02
+					value = master_of_laketown
+				}
+			}
 			change_variable = { which = DAL_merchants_fishers_bop value = -1 } # Shift 1 in favor of the Merchants
 			DAL_merchant_guild_bop_shift_merchants_1_loc = {}
 		}
@@ -2576,6 +2004,36 @@ province_event = {
 		name = "Agree with the Fisher's Guild"
 		
 		owner = {
+			any_pop = {
+				limit = {
+					location = {
+						province_id = 140 # Holmgeirstadur
+						province_id = 648 # Londaroth
+						province_id = 649 # Elliborg
+						province_id = 653 # Hafborg
+						province_id = 654 # Esgaroth
+					}
+				}
+				ideology = {
+					factor = 0.03
+					value = lakemen_fishers_guild
+				}
+			}
+			any_pop = {
+				limit = {
+					location = {
+						NOT = { province_id = 140 } # Holmgeirstadur
+						NOT = { province_id = 648 } # Londaroth
+						NOT = { province_id = 649 } # Elliborg
+						NOT = { province_id = 653 } # Hafborg
+						NOT = { province_id = 654 } # Esgaroth
+					}
+				}
+				ideology = {
+					factor = 0.02
+					value = lakemen_fishers_guild
+				}
+			}
 			change_variable = { which = DAL_merchants_fishers_bop value = 1 } # Shift 1 in favor of the Fisher's Guild
 			DAL_merchant_guild_bop_shift_guild_1_loc = {}
 		}
@@ -2586,20 +2044,1168 @@ province_event = {
 	}
 	
 	option = {
-		name = "Take no sides"
+		name = "Forge a compromise"
 		
 		owner = {
-			random_list = {
-				1 = {
-					change_variable = { which = DAL_merchants_fishers_bop value = -1 } # Shift 1 in favor of the Merchants
-					DAL_merchant_guild_bop_shift_merchants_1_loc = {}
-				}
-				1 = {
-					change_variable = { which = DAL_merchants_fishers_bop value = 1 } # Shift 1 in favor of the Fisher's Guild
-					DAL_merchant_guild_bop_shift_guild_1_loc = {}
+			any_pop = {
+				limit = {
+					location = {
+						province_id = 140 # Holmgeirstadur
+						province_id = 648 # Londaroth
+						province_id = 649 # Elliborg
+						province_id = 653 # Hafborg
+						province_id = 654 # Esgaroth
 					}
+				}
+				ideology = {
+					factor = 0.03
+					value = house_of_bard
+				}
 			}
-			plurality = 1
+			any_pop = {
+				limit = {
+					location = {
+						NOT = { province_id = 140 } # Holmgeirstadur
+						NOT = { province_id = 648 } # Londaroth
+						NOT = { province_id = 649 } # Elliborg
+						NOT = { province_id = 653 } # Hafborg
+						NOT = { province_id = 654 } # Esgaroth
+					}
+				}
+				ideology = {
+					factor = 0.02
+					value = house_of_bard
+				}
+			}
+			plurality = -1
 		}
 	}
 }
+
+# An Influx of Tribesmen
+province_event = {
+	id = 50951
+	title = "An Influx of Tribesmen"
+	desc = "EVTDESC50951"
+	
+	trigger = {
+		owner = { tag = AMO }
+		has_province_modifier = AMO_easterling_war_camp
+	}
+	
+	mean_time_to_happen = {
+		months = 8
+	}
+	
+	option = {
+		name = "A new group of migrants"
+		
+		any_pop = {
+			limit = { has_pop_culture = logath }
+			reduce_pop = 1.2
+		}
+	}
+}
+
+# Support from $FROMCOUNTRY$
+country_event = {
+	id = 50952
+	title = "Support from the $FROMCOUNTRY$"
+	desc = "EVTDESC50952"
+	picture = "rhun/easterlings_marching"
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		set_global_flag = hidden_effects
+		
+		random_owned = {
+			limit = {
+				has_province_modifier = AMO_easterling_war_camp
+				owner = { has_global_flag = hidden_effects }
+			}
+			add_province_modifier = { name = province_target_generic duration = 1 }
+		}
+		
+		clr_global_flag = hidden_effects
+	}
+	
+	option = {
+		name = "We will remember their support"
+		
+		treasury = 50000
+		
+		set_global_flag = hidden_effects
+		
+		# To prevent pops merging incorrectly
+		random_owned = {
+			limit = {
+				has_province_modifier = province_target_generic
+				owner = { has_global_flag = hidden_effects }
+			}
+			any_pop = {
+				limit = {
+					pop_type = soldiers
+					NOT = { has_pop_culture = logath }
+				}
+				pop_type = bankers
+			}
+		}
+		
+		# One for each potential province that it could be
+		random_owned = {
+			limit = {
+				has_province_modifier = province_target_generic
+				province_id = 638 # Northwatch
+			}
+			owner = {
+				1067 = {
+					random_pop = {
+						limit = {
+							# has_pop_culture functions differently in random_pop when compared to any_pop
+							is_culture_group = THIS
+							pop_type = soldiers
+						}
+						move_pop = 638
+					}
+				}
+			}
+		}
+		random_owned = {
+			limit = {
+				has_province_modifier = province_target_generic
+				province_id = 639 # Lar Huil
+			}
+			owner = {
+				1067 = {
+					random_pop = {
+						limit = {
+							# has_pop_culture functions differently in random_pop when compared to any_pop
+							is_culture_group = THIS
+							pop_type = soldiers
+						}
+						move_pop = 639
+					}
+				}
+			}
+		}
+		random_owned = {
+			limit = {
+				has_province_modifier = province_target_generic
+				province_id = 642 # Burh Austris
+			}
+			owner = {
+				1067 = {
+					random_pop = {
+						limit = {
+							# has_pop_culture functions differently in random_pop when compared to any_pop
+							is_culture_group = THIS
+							pop_type = soldiers
+						}
+						move_pop = 642
+					}
+				}
+			}
+		}
+		random_owned = {
+			limit = {
+				has_province_modifier = province_target_generic
+				province_id = 1475 # Ironhold
+			}
+			owner = {
+				1067 = {
+					random_pop = {
+						limit = {
+							# has_pop_culture functions differently in random_pop when compared to any_pop
+							is_culture_group = THIS
+							pop_type = soldiers
+						}
+						move_pop = 1475
+					}
+				}
+			}
+		}
+		
+		random_owned = {
+			limit = {
+				has_province_modifier = province_target_generic
+				owner = { has_global_flag = hidden_effects }
+			}
+			any_pop = {
+				limit = { pop_type = bankers }
+				pop_type = soldiers
+			}
+		}
+		
+		random_owned = {
+			limit = {
+				has_province_modifier = province_target_generic
+				owner = { has_global_flag = hidden_effects }
+			}
+			remove_province_modifier = province_target_generic
+		}
+		
+		clr_global_flag = hidden_effects
+	}
+}
+
+# The Occupation of Burh Austris
+province_event = {
+	id = 50953
+	title = "The Occupation of Burh Austris"
+	desc = "EVTDESC50953"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "A grave message"
+		
+		owner = {
+			plurality = 0.5
+			any_pop = {
+				limit = {
+					OR = {
+						is_primary_culture = yes
+						is_accepted_culture = yes
+					}
+				}
+				consciousness = 1
+				ideology = { factor = -0.01 value = house_of_bard }
+			}
+		}
+	}
+}
+
+# Event 50954, 50955 removed (was Amov Raid events -- on generic raid events now)
+
+# The End of the Amov Raids
+province_event = {
+	id = 50956
+	title = "The End of the Amov Raids"
+	desc = "EVTDESC50956"
+	
+	trigger = {
+		has_province_modifier = AMO_easterling_raiders
+		NOT = { exists = AMO }
+	}
+	
+	option = {
+		name = "Hail the Victorious Dead!"
+		
+		owner = { any_owned = { remove_province_modifier = AMO_easterling_raiders } }
+	}
+}
+
+# Declaration of the Conquest of Gramavuld (not Amov Clan)
+country_event = {
+	id = 50957
+	title = "The Invasion of the $FROMCOUNTRY$"
+	desc = "EVTDESC50957"
+	picture = "gramavuld/amov_invasion"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "They have incurred our wrath"
+		
+		random_owned = {
+			limit = {
+				owner = {
+					tag = DAL
+					NOT = { is_core = 638 }
+				}
+			}
+			owner = { 638 = { add_core = THIS } }
+		}
+		
+		random_owned = {
+			limit = {
+				owner = {
+					tag = DAL
+					NOT = { is_core = 639 }
+				}
+			}
+			owner = { 639 = { add_core = THIS } }
+		}
+		
+		random_owned = {
+			limit = {
+				owner = {
+					tag = DAL
+					NOT = { is_core = 1475 }
+				}
+			}
+			owner = { 1475 = { add_core = THIS } }
+		}
+		
+		random_owned = {
+			limit = {
+				owner = {
+					tag = DAL
+					NOT = { is_core = 642 }
+				}
+			}
+			owner = { 642 = { add_core = THIS } }
+		}
+		
+		FROM = {
+			war = {
+				target = THIS
+				attacker_goal = { casus_belli = conquer_gramavuld_cb }
+				defender_goal = { casus_belli = conquer_gramavuld_cb }
+				call_ally = yes
+			}
+			
+		}
+	}
+}
+
+# Declaration of the Conquest of Gramavuld (Amov Clan)
+country_event = {
+	id = 50958
+	title = "The Conquest of Gramavuld"
+	desc = "EVTDESC50958"
+	picture = "gramavuld/amov_invasion"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "For the glory of the $COUNTRY$"
+		
+		plurality = -10
+		
+		capital_scope = {
+			sub_unit = { type = archers value = current }
+			sub_unit = { type = archers value = current }
+			sub_unit = { type = archers value = current }
+			sub_unit = { type = archers value = current }
+			sub_unit = { type = swordsmen value = current }
+			sub_unit = { type = swordsmen value = current }
+			sub_unit = { type = swordsmen value = current }
+			sub_unit = { type = swordsmen value = current }
+			sub_unit = { type = scouts value = current }
+			sub_unit = { type = artillery value = current }
+		}
+		
+		any_country = {
+			limit = {
+				any_owned_province = {
+					OR = {
+						region = DAL_640
+						region = DAL_643
+						region = DAL_645
+						region = DAL_1377
+						region = DAL_652
+						region = DAL_654
+					}
+				}
+			}
+			country_event = 50957
+		}
+	}
+}
+
+# Declaration of the Conquest of Gramavuld (Barding Realm)
+country_event = {
+	id = 50959
+	title = "The Attack of the $FROMCOUNTRY$"
+	desc = "EVTDESC50959"
+	picture = "gramavuld/amov_invasion"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "For the glory of the $COUNTRY$"
+		
+		capital_scope = {
+			sub_unit = { type = archers value = current }
+			sub_unit = { type = archers value = current }
+			sub_unit = { type = archers value = current }
+			sub_unit = { type = archers value = current }
+			sub_unit = { type = swordsmen value = current }
+			sub_unit = { type = swordsmen value = current }
+			sub_unit = { type = swordsmen value = current }
+			sub_unit = { type = swordsmen value = current }
+			sub_unit = { type = scouts value = current }
+			sub_unit = { type = artillery value = current }
+		}
+		
+		FROM = {
+			war = {
+				target = THIS
+				attacker_goal = { casus_belli = conquer_gramavuld_cb }
+				defender_goal = { casus_belli = conquer_gramavuld_cb }
+				call_ally = yes
+			}
+			
+		}
+	}
+}
+
+# Gifts to Erebor
+country_event = {
+	id = 50960
+	title = "Gifts to Erebor?"
+	desc = "EVTDESC50960"
+	picture = "gramavuld/market"
+	
+	trigger = {
+		has_country_flag = DAL_content
+		alliance_with = ERE
+		has_country_modifier = erebor_relations_modifier
+		money = 50000
+	}
+	
+	mean_time_to_happen = {
+		months = 120
+	}
+	
+	option = {
+		name = "To friendship!"
+		
+		treasury = -50000
+		ERE = { country_event = 50961 }
+		
+		change_variable = { which = erebor_relations value = 2 }
+		
+		DAL_increase_erebor_relations_2_loc = {}
+		
+	}
+	
+	option = {
+		name = "Our gold is ours"
+	}
+}
+
+# Gifts from DAL
+country_event = {
+	id = 50961
+	title = "Gifts From $FROMCOUNTRY$"
+	desc = "EVTDESC50961"
+	picture = "gramavuld/market"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "To good friends!"
+		
+		treasury = 50000
+	}
+}
+
+# The Demands of the Merchants
+country_event = {
+	id = 50962
+	title = "Demands of the Merchants"
+	desc = "EVTDESC50962"
+	picture = "gramavuld/master_of_laketown"
+	news = yes
+	news_desc_long = "EVTDESC50962_NEWS"
+	news_desc_medium = "EVTDESC50962_NEWS"
+	news_desc_short = "EVTDESC50962_NEWS"
+	
+	fire_only_once = yes
+	
+	trigger = {
+		has_country_flag = DAL_content
+		has_country_modifier = DAL_merchant_power_10
+		ruling_party_ideology = house_of_bard
+		government_type = monarchist
+		has_global_flag = railroading_disabled
+	}
+	
+	mean_time_to_happen = {
+		months = 60
+		modifier = {
+			modifier = 0.5
+			average_militancy = 4
+		}
+	}
+	
+	option = {
+		name = "We must concede"
+		
+		prestige = -5
+		
+		any_pop = {
+			limit = { is_primary_culture = yes }
+			ideology = {
+				factor = 0.15
+				value = master_of_laketown
+			}
+		}
+		
+		# Mimicking the effects of DAL_support_merchants (decision)
+		random_owned = {
+			limit = { owner = { NOT = { has_country_flag = DAL_merchant_supported_by_realm } } }
+			owner = {
+				remove_country_modifier = DAL_guild_power_10
+				remove_country_modifier = DAL_guild_power_9
+				remove_country_modifier = DAL_guild_power_8
+				remove_country_modifier = DAL_guild_power_7
+				remove_country_modifier = DAL_guild_power_6
+				remove_country_modifier = DAL_guild_power_5
+				remove_country_modifier = DAL_guild_power_4
+				remove_country_modifier = DAL_guild_power_3
+				remove_country_modifier = DAL_guild_power_2
+				remove_country_modifier = DAL_guild_power_1
+				remove_country_modifier = DAL_merchant_guild_balanced
+				remove_country_modifier = DAL_merchant_power_1
+				remove_country_modifier = DAL_merchant_power_2
+				remove_country_modifier = DAL_merchant_power_3
+				remove_country_modifier = DAL_merchant_power_4
+				remove_country_modifier = DAL_merchant_power_5
+				remove_country_modifier = DAL_merchant_power_6
+				remove_country_modifier = DAL_merchant_power_7
+				remove_country_modifier = DAL_merchant_power_8
+				remove_country_modifier = DAL_merchant_power_9
+				
+				set_variable = { which = DAL_merchants_fishers_bop value = -10 } # 10 in favor of the Merchants
+				
+				random_owned = {
+					limit = {
+						NOT = { owner = { has_country_modifier = DAL_merchant_power_10 } }
+					}
+					owner = { add_country_modifier = { name = DAL_merchant_power_10 duration = -1 } }
+				}
+				
+				set_country_flag = DAL_merchant_supported_by_realm
+			}
+		}
+		
+		political_reform = landed_voting
+		political_reform = primary_voting
+		political_reform = first_past_the_post
+		political_reform = republican
+		government = merchant_republic
+		ruling_party_ideology = master_of_laketown
+		nationalvalue = masters_gold_coin
+		
+		locks_voting_reform_loc = { }
+		
+		election = yes # Last thing that shows text because it doesn't have a newline for some reason
+		
+		set_country_flag = locked_voting
+		
+		ai_chance = {
+			factor = 50
+		}
+	}
+	
+	option = {
+		name = "The House of Bard rules this realm! Not the merchants"
+		
+		prestige = 5
+		
+		any_pop = {
+			limit = {
+				is_primary_culture = yes
+				is_accepted_culture = yes
+			}
+			ideology = {
+				factor = 0.025
+				value = house_of_bard
+			}
+		}
+		
+		ai_chance = {
+			factor = 50
+		}
+	}
+}
+
+# The Demands of the Fishers Guild
+country_event = {
+	id = 50963
+	title = "Demands of the Fishers Guild"
+	desc = "EVTDESC50963"
+	picture = "gramavuld/fishers_guild"
+	news = yes
+	news_desc_long = "EVTDESC50963_NEWS"
+	news_desc_medium = "EVTDESC50963_NEWS"
+	news_desc_short = "EVTDESC50963_NEWS"
+	
+	fire_only_once = yes
+	
+	trigger = {
+		has_country_flag = DAL_content
+		has_country_modifier = DAL_guild_power_10
+		ruling_party_ideology = house_of_bard
+		government_type = monarchist
+		has_global_flag = railroading_disabled
+	}
+	
+	mean_time_to_happen = {
+		months = 60
+		modifier = {
+			modifier = 0.5
+			average_militancy = 4
+		}
+	}
+	
+	option = {
+		name = "We must concede"
+		
+		prestige = -5
+		
+		any_pop = {
+			limit = {
+				OR = {
+					is_primary_culture = yes
+					is_accepted_culture = yes
+				}
+			}
+			ideology = {
+				factor = 0.15
+				value = lakemen_fishers_guild
+			}
+		}
+		
+		# Mimicking the effects of DAL_support_merchants (decision)
+		random_owned = {
+			limit = { owner = { NOT = { has_country_flag = DAL_merchant_supported_by_realm } } }
+			owner = {
+				remove_country_modifier = DAL_merchant_power_10
+				remove_country_modifier = DAL_merchant_power_9
+				remove_country_modifier = DAL_merchant_power_8
+				remove_country_modifier = DAL_merchant_power_7
+				remove_country_modifier = DAL_merchant_power_6
+				remove_country_modifier = DAL_merchant_power_5
+				remove_country_modifier = DAL_merchant_power_4
+				remove_country_modifier = DAL_merchant_power_3
+				remove_country_modifier = DAL_merchant_power_2
+				remove_country_modifier = DAL_merchant_power_1
+				remove_country_modifier = DAL_merchant_guild_balanced
+				remove_country_modifier = DAL_guild_power_1
+				remove_country_modifier = DAL_guild_power_2
+				remove_country_modifier = DAL_guild_power_3
+				remove_country_modifier = DAL_guild_power_4
+				remove_country_modifier = DAL_guild_power_5
+				remove_country_modifier = DAL_guild_power_6
+				remove_country_modifier = DAL_guild_power_7
+				remove_country_modifier = DAL_guild_power_8
+				remove_country_modifier = DAL_guild_power_9
+				
+				set_variable = { which = DAL_merchants_fishers_bop value = 10 } # 10 in favor of the Fishers Guild
+				
+				random_owned = {
+					limit = {
+						NOT = { owner = { has_country_modifier = DAL_guild_power_10 } }
+					}
+					owner = { add_country_modifier = { name = DAL_guild_power_10 duration = -1 } }
+				}
+				
+				set_country_flag = DAL_guild_supported_by_realm
+			}
+		}
+		
+		political_reform = universal_voting
+		political_reform = accepted_voting
+		political_reform = first_past_the_post
+		political_reform = republican
+		government = republic
+		ruling_party_ideology = lakemen_fishers_guild
+		nationalvalue = guildmasters_crest
+		
+		locks_voting_reform_loc = { }
+		
+		election = yes # Last thing that shows text because it doesn't have a newline for some reason
+		
+		set_country_flag = locked_voting
+		
+		ai_chance = {
+			factor = 50
+		}
+	}
+	
+	option = {
+		name = "The House of Bard rules this realm! Not the guild"
+		
+		prestige = 5
+		
+		any_pop = {
+			limit = {
+				is_primary_culture = yes
+				is_accepted_culture = yes
+			}
+			ideology = {
+				factor = 0.025
+				value = house_of_bard
+			}
+		}
+		
+		ai_chance = {
+			factor = 50
+		}
+	}
+}
+
+# The Dismantlement of Merchant Power
+country_event = {
+	id = 50964
+	title = "The Dismantlement of Merchant Power"
+	desc = "EVTDESC50964"
+	picture = "gramavuld/fishers_guild"
+	
+	fire_only_once = yes
+	
+	trigger = {
+		has_country_flag = DAL_content
+		ruling_party_ideology = lakemen_fishers_guild
+		nobility_autonomy = small_noble_autonomy
+		noble_levy_contribution = small_levy_contribution
+		noble_tax_contribution = large_tax_contribution
+		knighting_rights = royal_knighting_rights
+	}
+	
+	option = {
+		name = "We welcome the end of their power"
+		
+		prestige = 25
+		plurality = -5
+		
+		any_pop = {
+			limit = { strata = poor }
+			ideology = {
+				factor = 0.10
+				value = lakemen_fishers_guild
+			}
+		}
+		
+		any_pop = {
+			ideology = {
+				factor = -0.25
+				value = master_of_laketown
+			}
+		}
+		
+		any_pop = {
+			limit = { strata = rich }
+			militancy = 6
+		}
+	}
+}
+
+# The Capital of $COUNTRY$
+country_event = {
+	id = 50965
+	title = "The Capital of $COUNTRY$"
+	desc = "EVTDESC50965"
+	picture = "gramavuld/dale_or_esgaroth"
+	
+	fire_only_once = yes
+	
+	trigger = {
+		has_country_flag = DAL_content
+		ruling_party_ideology = master_of_laketown
+		NOT = { capital = 654 } # Esgaroth
+	}
+	
+	mean_time_to_happen = {
+		days = 365
+	}
+	
+	option = {
+		name = "... the capital will move to Esgaroth"
+		
+		capital = 654 # Esgaroth
+		654 = { add_province_modifier = { name = building_capital duration = -1 } }
+	}
+	
+	option = {
+		name = "... the capital will remain in $CAPITAL$"
+		plurality = -1
+	}
+}
+
+# The Rebuilding of the Statue of Othur Calmar
+province_event = {
+	id = 50966
+	title = "The Rebuilding of the Statue of Othur Calmar"
+	desc = "EVTDESC50966"
+	
+	fire_only_once = yes
+	
+	trigger = {
+		owner = {
+			has_country_flag = DAL
+			ruling_party_ideology = master_of_laketown
+			capital = 654 # Esgaroth
+		}
+		province_id = 654 # Esgaroth
+		has_province_modifier = building_capital
+	}
+	
+	mean_time_to_happen = {
+		days = 1825
+	}
+	
+	option = {
+		name = "A great man deserves recognition"
+		
+		owner = {
+			prestige = 10
+			plurality = -3
+		}
+		
+		remove_province_modifier = building_capital
+		add_province_modifier = { name = rebuilt_city duration = 365 }
+	}
+}
+
+# Anger Against the Master
+province_event = {
+	id = 50967
+	title = "Anger Against the Master"
+	desc = "EVTDESC50967"
+	
+	trigger = {
+		owner = {
+			has_country_flag = DAL
+			ruling_party_ideology = master_of_laketown
+			FOR = {
+				any_neighbor_country = {
+					is_culture_group = easterlings
+					has_country_modifier = trading_with_DAL
+				}
+			}
+		}
+		is_core = THIS
+	}
+	
+	mean_time_to_happen = {
+		days = 730
+	}
+	
+	option = {
+		name = "The peasantry know nothing"
+		
+		any_pop = {
+			limit = {
+				OR = {
+					is_culture_group = gramavuld_northmen
+					is_culture_group = northmen
+				}
+			}
+			militancy = 4
+		}
+	}
+}
+
+# Trading Posts {
+# $FROMCOUNTRY$ Requests Trading Port
+country_event = {
+	id = 50968
+	title = "$FROMCOUNTRY$ Requests Trading Port"
+	desc = "EVTDESC50968"
+	picture = "gramavuld/market"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "We will concede"
+		
+		random_owned = {
+			limit = {
+				OR = {
+					province_id = 1476
+					province_id = 1477
+					province_id = 1478
+					province_id = 1479
+					province_id = 1480
+					province_id = 1481
+					province_id = 1482
+					province_id = 1483
+				}
+			}
+			secede_province = FROM
+			province_event = { id = 50969 days = 0 }
+		}
+		
+		treasury = 50000
+		FROM = { treasury = -50000 }
+		
+		ai_chance = { factor = 50 }
+	}
+	
+	option = {
+		name = "Our land is rightfully $COUNTRY_ADJ$, not $FROMCOUNTRY_ADJ"
+		
+		FROM = { country_event = 50971 }
+		prestige = 5
+		
+		ai_chance = {
+			factor = 50
+			
+			modifier = {
+				factor = 0
+				any_neighbor_country = { has_country_flag = DAL_can_establish_celduin_trading_posts }
+			}
+		}
+	}
+}
+
+# A New Trading Post
+province_event = {
+	id = 50969
+	title = "The $PROVINCENAME$ Trading Post"
+	desc = "EVTDESC50969"
+	
+	trigger = {
+		owner = {
+			has_country_flag = DAL_content
+			has_country_flag = DAL_can_establish_celduin_trading_posts
+		}
+		OR = {
+			province_id = 1476 # Burh Sagra
+			province_id = 1477 # Burh Dacranamel
+			province_id = 1478 # Burh Athorn
+			province_id = 1479 # Vindorborg
+			province_id = 1480 # Burh Ibar
+			province_id = 1481 # Burh Agasha
+			province_id = 1482 # Burh Lyst
+			province_id = 1483 # Burh Sûrûbeki
+		}
+		NOT = { has_province_modifier = DAL_trading_post_modifier }
+	}
+	
+	option = {
+		name = "May the trade keep flowing"
+		trade_goods = precious_goods
+		add_province_modifier = { name = DAL_trading_post_modifier days = -1 }
+	}
+}
+
+# The End of the Trading Post
+province_event = {
+	id = 50970
+	title = "The End of the $PROVINCENAME$ Trading Post"
+	desc = "EVTDESC50970"
+	
+	trigger = {
+		owner = { NOT = { has_country_flag = DAL_can_establish_celduin_trading_posts } }
+		OR = {
+			province_id = 1476 # Burh Sagra
+			province_id = 1477 # Burh Dacranamel
+			province_id = 1478 # Burh Athorn
+			province_id = 1479 # Vindorborg
+			province_id = 1480 # Burh Ibar
+			province_id = 1481 # Burh Agasha
+			province_id = 1482 # Burh Lyst
+			province_id = 1483 # Burh Sûrûbeki
+		}
+		trade_goods = precious_goods
+		NOT = { owner = { any_owned_province = { has_province_modifier = province_target_DAL_celduin_trade_post_removal_modifier } } }
+	}
+	
+	immediate = {
+		add_province_modifier = { name = province_target_DAL_celduin_trade_post_removal_modifier duration = -1 }
+	}
+	
+	option = {
+		name = "It could only last for so long"
+		
+		owner = {
+			random_owned = {
+				limit = {
+					has_province_modifier = province_target_DAL_celduin_trade_post_removal_modifier
+					OR = {
+						province_id = 1476 # Burh Sagra
+						province_id = 1478 # Burh Athorn
+						province_id = 1481 # Burh Agasha
+					}
+				}
+				trade_goods = timber
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = province_target_DAL_celduin_trade_post_removal_modifier
+					OR = {
+						province_id = 1477 # Burh Dacranamel
+						province_id = 1479 # Vindorborg
+						province_id = 1483 # Burh Sûrûbeki
+					}
+				}
+				trade_goods = food
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = province_target_DAL_celduin_trade_post_removal_modifier
+					province_id = 1480 # Burh Ibar
+				}
+				trade_goods = tea
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = province_target_DAL_celduin_trade_post_removal_modifier
+					province_id = 1482 # Burh Lyst
+				}
+				trade_goods = horses
+			}
+		}
+		
+		remove_province_modifier = DAL_trading_post_modifier
+	}
+}
+
+# FROMCOUNTRY Refuses
+country_event = {
+	id = 50971
+	title = "$FROMCOUNTRY$ Refuses"
+	desc = "EVTDESC50971"
+	picture = "gramavuld/market"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Then they have chosen war"
+		
+		casus_belli = {
+			target = FROM
+			type = establish_celduin_trading_post_cb
+			months = 24
+		}
+		
+		diplomatic_influence = { who = FROM value = -400 }
+		relation = { who = FROM value = -100 }
+		leave_alliance = FROM
+		end_military_access = FROM
+		
+		FROM = { end_military_access = THIS }
+	}
+}
+# }
+
+# Egil Dorn {
+# DAL Demands Egil Dorn
+country_event = {
+	id = 50972
+	title = "$FROMCOUNTRY$ Demand Egil Dorn"
+	desc = "EVTDESC50972"
+	picture = "gramavuld/egil_dorn"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "No! Egil Dorn is rightfully $COUNTRY_ADJ$'s"
+		
+		prestige = 15
+		FROM = { diplomatic_influence = { who = THIS value = -400 } }
+		relation = { who = FROM value = -400 }
+		leave_alliance = FROM
+		end_military_access = FROM
+		FROM = { end_military_access = THIS }
+		
+		FROM = { country_event = 50973 }
+		
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0
+				is_vassal = yes
+			}
+		}
+	}
+	
+	option = {
+		name = "We will concede"
+		
+		RHU_601 = { remove_core = THIS }
+		FROM = { country_event = 50974 }
+		
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0
+				is_vassal = no
+			}
+		}
+	}
+}
+
+# FROMCOUNTRY Refuses
+country_event = {
+	id = 50973
+	title = "$FROMCOUNTRY$ Refuses"
+	desc = "EVTDESC50973"
+	picture = "gramavuld/egil_dorn"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "To war!"
+		
+		random_owned = {
+			limit = {
+				owner = { FROM = { civilized = no } }
+			}
+			
+			owner = {
+				casus_belli = {
+					target = FROM
+					type = demand_concession_casus_belli
+					months = 12
+				}
+				
+				war = {
+					target = FROM
+					attacker_goal = { casus_belli = demand_concession_casus_belli state_province_id = 601 }
+					defender_goal = { casus_belli = status_quo }
+					call_ally = yes
+				}
+			}
+		}
+		
+		random_owned = {
+			limit = {
+				owner = { FROM = { civilized = yes } }
+			}
+			
+			owner = {
+				casus_belli = {
+					target = FROM
+					type = acquire_state
+					months = 12
+				}
+				
+				war = {
+					target = FROM
+					attacker_goal = { casus_belli = acquire_state state_province_id = 601 }
+					defender_goal = { casus_belli = status_quo }
+					call_ally = yes
+				}
+			}
+		}
+	}
+}
+
+# FROMCOUNTRY Accepts
+country_event = {
+	id = 50974
+	title = "$FROMCOUNTRY$ Accepts"
+	desc = "EVTDESC50974"
+	picture = "gramavuld/egil_dorn"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "As they should have "
+		
+		RHU_601 = {
+			add_core = THIS
+			secede_province = THIS
+		}
+		
+		random_country = {
+			limit = {
+				tag = FROM
+				NOT = { tag = RHU }
+				is_culture_group = easterlings
+			}
+			RHU_601 = { remove_core = RHU }
+		}
+		
+		prestige = 25
+	}
+}
+# }

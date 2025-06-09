@@ -1,4 +1,4 @@
-graphical_culture = UsGC
+graphical_culture = Generic
 color = { 0 0 0 }
 
 party = {
@@ -8,10 +8,16 @@ party = {
 	
 	ideology = servants
 	
-	guild_autonomy_policy = controlled_guilds
-	racial_policy = all_peoples
-	language_policy = regional_autonomy
-	diplomatic_policy = reactive
-	war_policy = jingoism
-	good_evil_alignment_fake = no_alignment	
+	trade_policy = vassal_protectionism
+	tax_policy = vassal_interventionism
+	language_policy = vassal_regional_autonomy
+	diplomatic_policy = vassal_reactive
+	war_policy = vassal_pro_military
+	good_evil_alignment = vassal_alignment
+}
+
+unit_names = {
+	#example = {
+	#	name "multi word name"
+	#}
 }

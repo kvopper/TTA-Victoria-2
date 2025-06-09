@@ -63,3 +63,10 @@ alliance = {
 	start_date = 1.1.1
 	end_date = 9999.1.1
 }
+# Lindon
+alliance = {
+	first = LIN
+	second = EMB
+	start_date = 1.1.1
+	end_date = 9999.1.1
+}

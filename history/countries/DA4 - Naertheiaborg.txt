@@ -3,8 +3,8 @@ capital = 643
 primary_culture = rivermen
 culture = men_culture
 religion = men
-government = northmen_tribe
-nationalvalue = generic_leader
+government = tribal
+nationalvalue = no_heirloom
 literacy = 0.2
 civilized = yes
 
@@ -12,18 +12,14 @@ prestige = 10
 
 oob = "DA4_oob.txt"
 
-ruling_party = rivermen_high_nobility
+ruling_party = DA4_rivermen_thegans
 
 upper_house = {
-	high_nobility = 60
-	low_nobility = 29
-	burgher = 6
-	loremaster = 5
+	rivermen_thegans = 50
+	nobility = 50
 }
 
-govt_flag = { government = sauron_puppet flag = cosmetic_1_govt }
 penal_reform = hard_labor
 slavery = no_slavery
-upper_house_composition = appointed
 
 schools = traditional_academic

@@ -1,12 +1,10 @@
 # Remove this line to have the validator check for strings in localisation
 # Audax Validator "!" Ignore_1004
 
+# TODO: Remove this file with Gondor Rework
+
 # War Events: {
 # 150000 - 199999 }
-
-# TODO: Group event chains together
-# TODO: Make DRU and PUK rebellions more likely if one of the rebellions is existing
-#			Also if Gondor at war in general
 
 # Gondor Expanding {
 # Start Andrast war

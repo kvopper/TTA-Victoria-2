@@ -1,0 +1,9 @@
+owner = LSR
+controller = LSR
+add_core = LSR
+add_core = SAE
+add_core = CAR
+add_core = ARN
+trade_goods = tea
+life_rating = 30
+terrain = cardolan_plains

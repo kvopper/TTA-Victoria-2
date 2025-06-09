@@ -25,6 +25,10 @@ on_yearly_pulse = {
 	10 = 3622
 	10 = 3623
 	10 = 3624
+	10 = 3625
+	10 = 3626
+	10 = 3627
+	10 = 3628
 }
 
 on_quarterly_pulse = {
@@ -53,6 +57,7 @@ on_election_tick = {
 	100 = 14002
 	100 = 14003
 	100 = 14004
+	100 = 14005
 }
 
 # Note: remember to use tag (allow_multiple_instances = yes)
@@ -63,9 +68,8 @@ on_colony_to_state = {
 	100 = 70001 # removal of cores (flavor)
 }
 
+# Fires only when conquering states -- colonies and lands taken from uncivs do not get affected by this on action
 on_state_conquest = {
-	100 = 70000 # yes_slavery
-	100 = 70007 # non_accepted_slavery
 }
 
 on_colony_to_state_free_slaves = {

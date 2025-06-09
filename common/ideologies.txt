@@ -1,400 +1,390 @@
 # Audax Validator "!" Ignore_1007
 # Audax Validator "!" Ignore_1009
 
-# If you add types, and use those tags, do not change them without changing everywhere they are used.
+# Originally grouping ideologies (ruling houses and interest groups) by the culture groups they are associated with
+# Change as needed to get the right "coalitions" for republics (speciifally related to how votes for ideologies of the same ideology_group can combine to become the plurality)
+
+# Note, when adding new ideologies (barring special cases like slave or tribal, the following updates are needed (outside of this file)
+#	Generally speaking, colors are the color or the associated tag
+#	Update localisation/modifiers and flavs.csv to define the ideologies_[ideology name]_active flag
+#	Update localisation/politics.csv with the ideology and the _uh
+#	Update each of the pops that can support the ideology in the poptypes folder
+#	Update the country definitions (common/countries folder) to define the parties as needed
+#	Update the country history files (history/countries) as needed to get the right ruling party, starting upper house and starting decision
+#	Update starting decisions (or whatever flavor unlocks the ideology) to set the ideologies_[ideology name]_active on the tags in question
+#	Update events 14006 and 14007 in events/Election.txt
+#	Update common/governments.txt to allow the ideology in the various government types (only needed on appoint_ruling_party = yes governments)
+#	Update the monthly update event (# Dominions that are now free) to set the government when puppets are freed
+#	Add an associated promote and demote national focus
 
 # cosmetic. Does nothing in game except define slaves for pop_types
 disenfranchised_group = {
 	slave_ideology = {
 		color = { 17 17 17 }
 		
-		add_political_reform = {
-			base = 1
-		}
-		remove_political_reform = {
-			base = 1
-		}
-		add_social_reform = {
-			base = 1
-		}
-		remove_social_reform = {
-			base = 1
-		}
-		add_military_reform = {
-			base = 1
-		}
-		add_economic_reform = {
-			base = 1
-		}
+		add_political_reform = { base = 0 }
+		remove_political_reform = { base = 0 }
+		add_social_reform = { base = 0 }
+		remove_social_reform = { base = 0 }
+		add_military_reform = { base = 0 }
+		add_economic_reform = { base = 0 }
 	}
 
 	tribal_ideology = {
 		color = { 88 68 147 }
 		
-		add_political_reform = {
-			base = 1
-		}
-		remove_political_reform = {
-			base = 1
-		}
-		add_social_reform = {
-			base = 1
-		}
-		remove_social_reform = {
-			base = 1
-		}
-		add_military_reform = {
-			base = 1
-		}
-		add_economic_reform = {
-			base = 1
-		}
+		add_political_reform = { base = 0 }
+		remove_political_reform = { base = 0 }
+		add_social_reform = { base = 0 }
+		remove_social_reform = { base = 0 }
+		add_military_reform = { base = 0 }
+		add_economic_reform = { base = 0 }
 	}
 }
 
-prosauron_group = {
-	# always supports political reform. Always wants to remove them
-	# always supports social reform. Always wants to remove them
+# Only for puppets.
+vassal_group = {
 	servants = {
 		color = { 30 144 255 }
 		
-		add_political_reform = {
-			base = 1
-		}
-		remove_political_reform = {
-			base = 1
-		}
-		add_social_reform = {
-			base = 1
-		}
-		remove_social_reform = {
-			base = 1
-		}
-		add_military_reform = {
-			base = 1
-		}
-		add_economic_reform = {
-			base = 1
-		}
+		add_political_reform = { base = 0 }
+		remove_political_reform = { base = 0 }
+		add_social_reform = { base = 0 }
+		remove_social_reform = { base = 0 }
+		add_military_reform = { base = 0 }
+		add_economic_reform = { base = 0 }
 	}
 }
 
 nobility_group = {
-	# always opposes political reform. Always want to remove them
-	# normally opposes social reform, supports with high militancy. Always want to remove them
-	high_nobility = {
-		color = { 138 43 226 }
-		
-		add_political_reform = {
-			base = 0
-			
-			modifier = {
-				factor = 0.25
-				ai = yes
-			}
-		}
-		remove_political_reform = {
-			base = 1
-		}
-		add_social_reform = {
-			base = 0
-			
-			group = {
-				modifier = {
-						factor = 0.2
-						OR = {
-							militancy = 1
-							political_movement_strength = 0.1
-							ai = yes
-						}
-					}
-				modifier = {
-					factor = 0.2
-					OR = {
-						militancy = 2
-						political_movement_strength = 0.2
-						ai = yes
-					}
-				}
-				modifier = {
-					factor = 0.2
-					OR = {
-						militancy = 3
-						political_movement_strength = 0.3
-						AND = {
-							militancy = 1
-							ai = yes
-						}
-					}
-				}
-				modifier = {
-					factor = 0.2
-					OR = {
-						militancy = 4
-						political_movement_strength = 0.4
-						AND = {
-							militancy = 2
-							ai = yes
-						}
-					}
-				}
-				modifier = {
-					factor = 0.2
-					OR = {
-						militancy = 5
-						political_movement_strength = 0.5
-						AND = {
-							militancy = 3
-							ai = yes
-						}
-					}
-				}
-			}
-		}
-		remove_social_reform = {
-			base = 1
-		}
-		add_military_reform = {
-			base = -1
-		}
-		add_economic_reform = {
-			base = -1
-		}
-	}
-	
-	# normally opposes political reform, supports with high militancy. Never want to remove them
-	# normally opposes social reform, supports with high militancy. Never want to remove them
-	low_nobility = {
+	nobility = {
 		color = { 147 112 219 }
 		
-		can_reduce_militancy = yes
-		
-		add_political_reform = {
-			base = 0
-			group = {
-				modifier = {
-					factor = 0.2
-					OR = {
-						militancy = 1
-						political_movement_strength = 0.1
-						ai = yes
-					}
-				}
-				modifier = {
-					factor = 0.2
-					OR = {
-						militancy = 2
-						political_movement_strength = 0.2
-						ai = yes
-					}
-				}
-				modifier = {
-					factor = 0.2
-					OR = {
-						militancy = 3
-						political_movement_strength = 0.3
-						AND = {
-							militancy = 1
-							ai = yes
-						}
-					}
-				}
-				modifier = {
-					factor = 0.2
-					OR = {
-						militancy = 4
-						political_movement_strength = 0.4
-						AND = {
-							militancy = 2
-							ai = yes
-						}
-					}
-				}
-				modifier = {
-					factor = 0.2
-					OR = {
-						militancy = 5
-						political_movement_strength = 0.5
-						AND = {
-							militancy = 3
-							ai = yes
-						}
-					}
-				}
-			}
-		}
-		remove_political_reform = {
-			base = 0
-		}
-		add_social_reform = {
-			base = 0
-			
-			group = {
-				modifier = {
-					factor = 0.2
-					OR = {
-						militancy = 1
-						political_movement_strength = 0.1
-						ai = yes
-					}
-				}
-				modifier = {
-					factor = 0.2
-					OR = {
-						militancy = 2
-						political_movement_strength = 0.2
-						ai = yes
-					}
-				}
-				modifier = {
-					factor = 0.2
-					OR = {
-						militancy = 3
-						political_movement_strength = 0.3
-						AND = {
-							militancy = 1
-							ai = yes
-						}
-					}
-				}
-				modifier = {
-					factor = 0.2
-					OR = {
-						militancy = 4
-						political_movement_strength = 0.4
-						AND = {
-							militancy = 2
-							ai = yes
-						}
-					}
-				}
-				modifier = {
-					factor = 0.2
-					OR = {
-						militancy = 5
-						political_movement_strength = 0.5
-						AND = {
-							militancy = 3
-							ai = yes
-						}
-					}
-				}
-			}
-		}
-		remove_social_reform = {
-			base = 0
-		}
-		add_military_reform = {
-			base = 0.5
-		}
-		add_economic_reform = {
-			base = -0.5
-		}
+		add_political_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = nobility } }
+		remove_political_reform = { base = 0 }
+		add_social_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = nobility } }
+		remove_social_reform = { base = 0 }
+		add_military_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = nobility } }
+		add_economic_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = nobility } }
 	}
 }
 
 burgher_group = {
-	# normally opposes political reform, supports with high militancy. Never want to remove them
-	# always supports social reform. Never want to remove them.
 	burgher = {
 		color = { 255 127 80 }
 		
-		add_political_reform = {
-			base = 0
-			
-			group = {
-				modifier = {
-					factor = 0.2
-					OR = {
-						militancy = 1
-						political_movement_strength = 0.1
-						ai = yes
-					}
-				}
-				modifier = {
-					factor = 0.2
-					OR = {
-						militancy = 2
-						political_movement_strength = 0.2
-						ai = yes
-					}
-				}
-				modifier = {
-					factor = 0.2
-					OR = {
-						militancy = 3
-						political_movement_strength = 0.3
-						AND = {
-							militancy = 1
-							ai = yes
-						}
-					}
-				}
-				modifier = {
-					factor = 0.2
-					OR = {
-						militancy = 4
-						political_movement_strength = 0.4
-						AND = {
-							militancy = 2
-							ai = yes
-						}
-					}
-				}
-				modifier = {
-					factor = 0.2
-					OR = {
-						militancy = 5
-						political_movement_strength = 0.5
-						AND = {
-							militancy = 3
-							ai = yes
-						}
-					}
-				}
-			}
-		}
-		remove_political_reform = {
-			base = 0
-		}
-		add_social_reform = {
-			base = 1
-		}
-		remove_social_reform = {
-			base = 0
-		}
-		add_military_reform = {
-			base = 1
-		}
-		add_economic_reform = {
-			base = 1
-		}
+		add_political_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = burgher } }
+		remove_political_reform = { base = 0 }
+		add_social_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = burgher } }
+		remove_social_reform = { base = 0 }
+		add_military_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = burgher } }
+		add_economic_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = burgher } }
 	}
 }
 
 loremaster_group = {
-	# always supports political reform. Never want to remove them.
-	# always supports social reform. Never want to remove them.
 	loremaster = {
 		color = { 255 255 0 }
 		
-		add_political_reform = {
-			base = 1
-		}
-		remove_political_reform = {
-			base = 0
-		}
-		add_social_reform = {
-			base = 1
-		}
-		remove_social_reform = {
-			base = 0
-		}
-		add_military_reform = {
-			base = 1
-		}
-		add_economic_reform = {
-			base = 1
-		}
+		add_political_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = loremaster } }
+		remove_political_reform = { base = 0 }
+		add_social_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = loremaster } }
+		remove_social_reform = { base = 0 }
+		add_military_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = loremaster } }
+		add_economic_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = loremaster } }
+	}
+}
+
+dunedain_nobility = {
+	line_of_isildur = {
+		color = { 240 238 227 }
+		
+		add_political_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = line_of_isildur } }
+		remove_political_reform = { base = 0 }
+		add_social_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = line_of_isildur } }
+		remove_social_reform = { base = 0 }
+		add_military_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = line_of_isildur } }
+		add_economic_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = line_of_isildur } }
+	}
+	
+	house_of_stewards = {
+		color = { 10 15 65 }
+		
+		add_political_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = house_of_stewards } }
+		remove_political_reform = { base = 0 }
+		add_social_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = house_of_stewards } }
+		remove_social_reform = { base = 0 }
+		add_military_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = house_of_stewards } }
+		add_economic_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = house_of_stewards } }
+	}
+	
+	house_of_dol_amroth = {
+		color = { 3 3 131 }
+		
+		add_political_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = house_of_dol_amroth } }
+		remove_political_reform = { base = 0 }
+		add_social_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = house_of_dol_amroth } }
+		remove_social_reform = { base = 0 }
+		add_military_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = house_of_dol_amroth } }
+		add_economic_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = house_of_dol_amroth } }
+	}
+}
+
+noldor_nobility = {
+	house_half_elven = {
+		color = { 0 0 139 }
+		
+		add_political_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = house_half_elven } }
+		remove_political_reform = { base = 0 }
+		add_social_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = house_half_elven } }
+		remove_social_reform = { base = 0 }
+		add_military_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = house_half_elven } }
+		add_economic_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = house_half_elven } }
+	}
+}
+
+teleri_nobility = {
+	lords_of_mithlond = {
+		color = { 54 17 89 }
+		
+		add_political_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = lords_of_mithlond } }
+		remove_political_reform = { base = 0 }
+		add_social_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = lords_of_mithlond } }
+		remove_social_reform = { base = 0 }
+		add_military_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = lords_of_mithlond } }
+		add_economic_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = lords_of_mithlond } }
+	}
+	
+	house_of_oropher = {
+		color = { 0 102 51 }
+		
+		add_political_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = house_of_oropher } }
+		remove_political_reform = { base = 0 }
+		add_social_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = house_of_oropher } }
+		remove_social_reform = { base = 0 }
+		add_military_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = house_of_oropher } }
+		add_economic_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = house_of_oropher } }
+	}
+	
+	house_of_finarfin = {
+		color = { 255 255 51 }
+		
+		add_political_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = house_of_finarfin } }
+		remove_political_reform = { base = 0 }
+		add_social_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = house_of_finarfin } }
+		remove_social_reform = { base = 0 }
+		add_military_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = house_of_finarfin } }
+		add_economic_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = house_of_finarfin } }
+	}
+}
+
+gramavuld_northmen_nobility = {
+	house_of_bard = {
+		color = { 100 149 237 }
+		
+		add_political_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = house_of_bard } }
+		remove_political_reform = { base = 0 }
+		add_social_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = house_of_bard } }
+		remove_social_reform = { base = 0 }
+		add_military_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = house_of_bard } }
+		add_economic_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = house_of_bard } }
+	}
+	
+	rivermen_thegans = {
+		color = { 110 130 205 }
+		
+		add_political_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = rivermen_thegans } }
+		remove_political_reform = { base = 0 }
+		add_social_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = rivermen_thegans } }
+		remove_social_reform = { base = 0 }
+		add_military_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = rivermen_thegans } }
+		add_economic_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = rivermen_thegans } }
+	}
+}
+
+gramavuld_northmen_merchants = {
+	master_of_laketown = {
+		color = { 90 135 200 }
+		
+		add_political_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = master_of_laketown } }
+		remove_political_reform = { base = 0 }
+		add_social_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = master_of_laketown } }
+		remove_social_reform = { base = 0 }
+		add_military_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = master_of_laketown } }
+		add_economic_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = master_of_laketown } }
+	}
+}
+
+gramavuld_northmen_guilds = {
+	lakemen_fishers_guild = {
+		color = { 90 135 255 }
+		
+		add_political_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = lakemen_fishers_guild } }
+		remove_political_reform = { base = 0 }
+		add_social_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = lakemen_fishers_guild } }
+		remove_social_reform = { base = 0 }
+		add_military_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = lakemen_fishers_guild } }
+		add_economic_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = lakemen_fishers_guild } }
+	}
+}
+
+northmen_nobility = {
+	house_of_koldana = {
+		color = { 128 0 128 }
+		
+		add_political_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = house_of_koldana } }
+		remove_political_reform = { base = 0 }
+		add_social_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = house_of_koldana } }
+		remove_social_reform = { base = 0 }
+		add_military_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = house_of_koldana } }
+		add_economic_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = house_of_koldana } }
+	}
+}
+
+dwarves_nobility = {
+	line_of_durin = {
+		color = { 25 25 112 }
+		
+		add_political_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = line_of_durin } }
+		remove_political_reform = { base = 0 }
+		add_social_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = line_of_durin } }
+		remove_social_reform = { base = 0 }
+		add_military_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = line_of_durin } }
+		add_economic_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = line_of_durin } }
+	}
+}
+
+anduinrim_nobility = {
+	house_of_beorn = {
+		color = { 149 63 53 }
+		
+		add_political_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = house_of_beorn } }
+		remove_political_reform = { base = 0 }
+		add_social_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = house_of_beorn } }
+		remove_social_reform = { base = 0 }
+		add_military_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = house_of_beorn } }
+		add_economic_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = house_of_beorn } }
+	}
+}
+
+ents_nobility = {
+	lords_of_fangorn = {
+		color = { 0 75 0 }
+		
+		add_political_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = lords_of_fangorn } }
+		remove_political_reform = { base = 0 }
+		add_social_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = lords_of_fangorn } }
+		remove_social_reform = { base = 0 }
+		add_military_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = lords_of_fangorn } }
+		add_economic_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = lords_of_fangorn } }
+	}
+}
+
+rohirrim_nobility = {
+	house_of_eorl = {
+		color = { 90 110 30 }
+		
+		add_political_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = house_of_eorl } }
+		remove_political_reform = { base = 0 }
+		add_social_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = house_of_eorl } }
+		remove_social_reform = { base = 0 }
+		add_military_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = house_of_eorl } }
+		add_economic_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = house_of_eorl } }
+	}
+}
+
+eagles_nobility = {
+	flightlords_of_the_mountains = {
+		color = { 20 130 230 }
+		
+		add_political_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = flightlord_of_the_mountains } }
+		remove_political_reform = { base = 0 }
+		add_social_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = flightlord_of_the_mountains } }
+		remove_social_reform = { base = 0 }
+		add_military_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = flightlord_of_the_mountains } }
+		add_economic_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = flightlord_of_the_mountains } }
+	}
+	
+	lords_of_ravens = {
+		color = { 20 40 180 }
+		
+		add_political_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = lords_of_ravens } }
+		remove_political_reform = { base = 0 }
+		add_social_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = lords_of_ravens } }
+		remove_social_reform = { base = 0 }
+		add_military_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = lords_of_ravens } }
+		add_economic_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = lords_of_ravens } }
+	}
+}
+
+spiders_nobility = {
+	great_brood_mothers = {
+		color = { 116 5 5 }
+		
+		add_political_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = great_brood_mothers } }
+		remove_political_reform = { base = 0 }
+		add_social_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = great_brood_mothers } }
+		remove_social_reform = { base = 0 }
+		add_military_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = great_brood_mothers } }
+		add_economic_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = great_brood_mothers } }
+	}
+}
+
+undead_nobility = {
+	kings_of_the_dead = {
+		color = { 20 45 15 }
+		
+		add_political_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = kings_of_the_dead } }
+		remove_political_reform = { base = 0 }
+		add_social_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = kings_of_the_dead } }
+		remove_social_reform = { base = 0 }
+		add_military_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = kings_of_the_dead } }
+		add_economic_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = kings_of_the_dead } }
+	}
+}
+
+immortal_beings = {
+	lords_of_isengard = {
+		color = { 32 32 32 }
+		
+		add_political_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = lords_of_isengard } }
+		remove_political_reform = { base = 0 }
+		add_social_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = lords_of_isengard } }
+		remove_social_reform = { base = 0 }
+		add_military_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = lords_of_isengard } }
+		add_economic_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = lords_of_isengard } }
+	}
+	
+	lords_of_rhosgobel = {
+		color = { 86 46 19 }
+		
+		add_political_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = lords_of_rhosgobel } }
+		remove_political_reform = { base = 0 }
+		add_social_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = lords_of_rhosgobel } }
+		remove_social_reform = { base = 0 }
+		add_military_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = lords_of_rhosgobel } }
+		add_economic_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = lords_of_rhosgobel } }
+	}
+	
+	lords_of_mordor = {
+		color = { 110 10 30 }
+		
+		add_political_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = lords_of_mordor } }
+		remove_political_reform = { base = 0 }
+		add_social_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = lords_of_mordor } }
+		remove_social_reform = { base = 0 }
+		add_military_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = lords_of_mordor } }
+		add_economic_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = lords_of_mordor } }
+	}
+	
+	saurons_nine = {
+		color = { 38 24 24 }
+		
+		add_political_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = saurons_nine } }
+		remove_political_reform = { base = 0 }
+		add_social_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = saurons_nine } }
+		remove_social_reform = { base = 0 }
+		add_military_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = saurons_nine } }
+		add_economic_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = saurons_nine } }
 	}
 }

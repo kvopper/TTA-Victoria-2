@@ -5,24 +5,21 @@ culture = men_culture
 culture = gondorian
 culture = amrothian
 religion = men
-government = fiefdom
-nationalvalue = ecthelion_ii
+government = dominion_2
+nationalvalue = no_heirloom
 literacy = 0.2
 civilized = yes
 
 oob = "TOL_oob.txt"
 
-ruling_party = generic_high_nobility
+ruling_party = TOL_nobles_of_tolfalas
 
 upper_house = {
-	high_nobility = 60
-	low_nobility = 29
-	burgher = 6
-	loremaster = 5
+	nobility = 100
 }
+
 penal_reform = hard_labor
 slavery = no_slavery
-upper_house_composition = appointed
 
 schools = traditional_academic
 #technologies

@@ -2,9 +2,9 @@
 primary_culture = gondorian
 religion = men
 government = monarchy
-nationalvalue = generic_leader
+nationalvalue = no_heirloom
 civilized = yes
 
-ruling_party = generic_high_nobility
+ruling_party = generic_servants
 upper_house = { # inherit
 }

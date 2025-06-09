@@ -1,0 +1,135 @@
+generator_selector = {
+	type = "BATTLE_OVER"
+	name = "battle_over_win"
+	case = { value = 0 }
+	case = { 
+		trigger = { 
+			tags_eq = { 0 2 PLAYER }
+			strings_eq = { 0 0 "land" }
+			} 
+			value = 100
+		}
+}
+
+news_priority = {
+	type = "BATTLE_OVER"
+	name = "battle_over_win"
+	case = { priority_add = 10 }
+}
+
+generate_article = {
+	type = "BATTLE_OVER"
+	size = large
+	name = "battle_over_win"
+
+	picture_case = { picture = "news/news_battle_01.dds" picture = "news/news_battle_02.dds" picture = "news/news_battle_03.dds" picture = "news/news_battle_04.dds" picture = "news/news_battle_05.dds" picture = "news/news_battle_06.dds" picture = "news/news_battle_07.dds" }
+	
+	title_case = { 
+		text_add = { battle_we_win_title_large } 
+		}
+		
+	description_case = { 
+		text_add = { battle_we_win_large } 
+	}
+}
+
+generate_article = {
+	type = "BATTLE_OVER"
+	size = medium
+	name = "battle_over_win"
+
+	picture_case = { picture = "news/news_battle_01.dds" picture = "news/news_battle_02.dds" picture = "news/news_battle_03.dds" picture = "news/news_battle_04.dds" picture = "news/news_battle_05.dds" picture = "news/news_battle_06.dds" picture = "news/news_battle_07.dds" }
+	
+	title_case = { 
+		text_add = { battle_we_win_title_medium } 
+		}
+		
+	description_case = { 
+		text_add = { battle_we_win_medium } 
+	}
+}
+
+generate_article = {
+	type = "BATTLE_OVER"
+	size = small
+	name = "battle_over_win"
+
+	title_case = { 
+		text_add = { battle_we_win_title_small } 
+		}
+		
+	description_case = {
+		text_add = { battle_we_win_small } 
+	}
+}
+
+generator_selector = {
+	type = "BATTLE_OVER"
+	name = "battle_over_lose"
+	case = { value = 0 }
+	case = { 
+		trigger = { 
+			tags_eq = { 0 3 PLAYER }
+			strings_eq = { 0 0 "land" }
+			} 
+			value = 90 
+		}
+}
+
+news_priority = {
+	type = "BATTLE_OVER"
+	name = "battle_over_lose"
+	case = { priority_add = 10 }
+	case = { 
+		trigger = {
+			#
+		}
+		#priority_add = 100 
+	}
+}
+
+generate_article = {
+	type = "BATTLE_OVER"
+	size = large
+	name = "battle_over_lose"
+
+	picture_case = { picture = "news/news_battle_01.dds" picture = "news/news_battle_02.dds" picture = "news/news_battle_03.dds" picture = "news/news_battle_04.dds" picture = "news/news_battle_05.dds" picture = "news/news_battle_06.dds" picture = "news/news_battle_07.dds" }
+	
+	title_case = { 
+		text_add = { battle_we_lose_title_large} 
+		}
+		
+	description_case = { 
+		text_add = { battle_we_lose_large } 
+	}
+}
+
+generate_article = {
+	type = "BATTLE_OVER"
+	size = medium
+	name = "battle_over_lose"
+
+	picture_case = { picture = "news/news_battle_01.dds" picture = "news/news_battle_02.dds" picture = "news/news_battle_03.dds" picture = "news/news_battle_04.dds" picture = "news/news_battle_05.dds" picture = "news/news_battle_06.dds" picture = "news/news_battle_07.dds" }
+	
+	title_case = { 
+		text_add = { battle_we_lose_title_medium } 
+		}
+		
+	description_case = { 
+		text_add = { battle_we_lose_medium } 
+	}
+}
+
+generate_article = {
+	type = "BATTLE_OVER"
+	size = small
+	name = "battle_over_lose"
+
+	title_case = { 
+		text_add = { battle_we_lose_title_small } 
+		}
+		
+	description_case = {
+		text_add = { battle_we_lose_small } 
+	}
+}

@@ -1,36 +1,20 @@
-nationalist_rebels_title;Nativists;x
-nationalist_rebels_name;$INDEP$ Nativists;x
-nationalist_rebels_desc;Nativist rebels seek freedom for their people. They are well led and equipped, and they will focus on achieving independence for their countrz.;x
-nationalist_rebels_army;$INDEP$ Nativist;x
-slave_revolt_title;Slave;x
+nationalist_rebels_title;Nationalist Rebels;x
+nationalist_rebels_name;$INDEP$ Nationalists;x
+nationalist_rebels_desc;Nationalist rebels seek freedom for their people. They are well led and equipped, and they will focus on achieving independence for their countrz.;x
+nationalist_rebels_army;$INDEP$ Nationalists;x
+patriot_rebels_title;Separatist Rebels;x
+patriot_rebels_name;$CULTURE$ Separatists;x
+patriot_rebels_desc;Separatist rebels dream of unification with their cultural kin under a free banner. Beware! Provinces taken by them may defect.;x
+patriot_rebels_army;$CULTURE$ Separatists;x
+slave_revolt_title;Slave Revolters;x
 slave_revolt_name;Slave Revolters;x
 slave_revolt_desc;Slave revolters seek to free all slaves in $COUNTRY$.;x
 slave_revolt_army;Slave Revolters;x
-democratic_rebels_title;Militant Democrats;x
-democratic_rebels_name;Militant Democratic Reformists;x
-democratic_rebels_desc;Militant Democratic Reformists seek to improve or introduce the voting franschise in a realm.;x
-democratic_rebels_army;Militant Democratic Reformists;x
-noble_rebels_title;Noble Rebels;x
-noble_rebels_name;Noble Rebels;x
-noble_rebels_desc;Noble Rebels are middle and upper class pops who are attempting to reaquire nobility priveleges.;x
-noble_rebels_army;Noble Rebels;x
-patriot_rebels_title;Separatists;x
-patriot_rebels_name;$CULTURE$ Separatists;x
-patriot_rebels_desc;Separatist rebels dream of unification with their cultural kin under a free banner. Beware, for provinces taken by them may defect.;x
-patriot_rebels_army;$CULTURE$ Separatists;x
-serf_rebels_title;Serf Rebels;x
-serf_rebels_name;Serf Rebels;x
-serf_rebels_desc;Serf Rebels seek to abolish serfdom within their realm.;x
-serf_rebels_army;Serf Rebels;x
-good_rebels_title;Good Rebels;x
-good_rebels_name;Good Rebels;x
-good_rebels_desc;Good Rebels seek to turn their realm into a good realm.;x
-good_rebels_army;Good Rebels;x
-evil_rebels_title;Evil Rebels;x
-evil_rebels_name;Evil Rebels;x
-evil_rebels_desc;Evil Rebels seek to turn their realm into an evil realm.;x
-evil_rebels_army;Evil Rebels;x
-neutral_rebels_title;Neutral Rebels;x
-neutral_rebels_name;Neutral Rebels;x
-neutral_rebels_desc;Neutral Rebels seek to turn their realm into a neutral realm.;x
-neutral_rebels_army;Neutral Rebels;x
+republican_rebels_title;Militant Republicans;x
+republican_rebels_name;Militant Republican Reformists;x
+republican_rebels_desc;Militant Republican Reformists seek to improve or introduce the voting franschise in a realm.;x
+republican_rebels_army;Militant Republican Reformists;x
+pretender_rebels_title;Pretender Rebels;x
+pretender_rebels_name;Pretender Rebels;x
+pretender_rebels_desc;Pretender Rebels support another interest group's claim to their realm, and seek to install them as their ruler.;x
+pretender_rebels_army;Pretender Rebels;x

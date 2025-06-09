@@ -113,14 +113,47 @@ promotion_chance = {
 			strata = poor
 		}
 	}
+	group = {
+		modifier = {
+			factor = 0.2
+			OR = {
+				country = { apprenticeship = appointment }
+				country = { apprenticeship = guild_school }
+			}
+		}
+		modifier = {
+			factor = 0.2
+			country = { apprenticeship = guild_school }
+		}
+	}
 	modifier = {
 		factor = -100
 		location = { NOT = { controlled_by = owner } }
 	}
 	modifier = {
+		factor = 0.5
+		pop_majority_ideology = tribal_ideology
+		country = { good_evil_alignment = good_alignment }
+		pop_majority_issue = good_alignment
+	}
+	modifier = {
+		factor = 0.5
+		pop_majority_ideology = tribal_ideology
+		country = { good_evil_alignment = neutral_alignment }
+		pop_majority_issue = neutral_alignment
+	}
+	modifier = {
+		factor = 0.5
+		pop_majority_ideology = tribal_ideology
+		country = { good_evil_alignment = evil_alignment }
+		pop_majority_issue = evil_alignment
+	}
+	modifier = { # Angry unaccepted tribals won't promote out of tribals
 		factor = -100
 		pop_majority_ideology = tribal_ideology
-		country = { civilized = no }
+		is_accepted_culture = no
+		is_primary_culture = no
+		militancy = 4
 	}
 }
 
@@ -289,10 +322,12 @@ demotion_chance = {
 		factor = -100
 		location = { NOT = { controlled_by = owner } }
 	}
-	modifier = {
+	modifier = { # Angry unaccepted tribals won't demote out of tribals
 		factor = -100
 		pop_majority_ideology = tribal_ideology
-		country = { civilized = no }
+		is_accepted_culture = no
+		is_primary_culture = no
+		militancy = 4
 	}
 }
 
@@ -323,6 +358,7 @@ migration_chance = {
 		OR = {
 			NOT = { location = { total_pops = 5000 } }
 			NOT = { location = { controlled_by = owner } }
+			pop_majority_ideology = slave_ideology
 		}
 	}
 	group = {
@@ -489,7 +525,10 @@ colonialmigration_chance = {
 	}
 	modifier = {
 		factor = -100
-		pop_majority_ideology = tribal_ideology
+		OR = {
+			pop_majority_ideology = tribal_ideology
+			pop_majority_ideology = slave_ideology
+		}
 	}
 }
 
@@ -499,11 +538,10 @@ emigration_chance = {
 
 	modifier = {
 		factor = -100
-		country = { border_policy = closed_borders }
-	}
-	modifier = {
-		factor = -100
-		NOT = { agree_with_ruling_party = 0.02 }
+		OR = {
+			country = { border_policy = closed_borders }
+			pop_majority_ideology = slave_ideology
+		}
 	}
 	group = {
 		modifier = {
@@ -721,7 +759,12 @@ assimilation_chance = {
 	modifier = {
 		factor = -10
 		location = {
-			any_core = { is_primary_culture = THIS }
+			any_core = {
+				OR = {
+					is_primary_culture = THIS
+					is_accepted_culture = THIS
+				}
+			}
 		}
 	}
 	modifier = {
@@ -760,6 +803,7 @@ assimilation_chance = {
 			}
 		}
 	}
+	
 	# These last group modifiers handle both the massive debuff for pops that don't match the realm's race, and the removal of that debuff if there is an accepted culture of that race present in the province. Hopefully, since these are grouped together by race, it won't have too large of a performance impact.
 	# NOTE: This does not guarantee that assimilation will not happen between races. However, it severely decreases the chance of it happening.
 	group = {
@@ -826,7 +870,7 @@ assimilation_chance = {
 			location = {
 				any_pop = {
 					is_accepted_culture = yes
-					has_pop_religion = men
+					religion = men
 				}
 			}
 		}
@@ -852,7 +896,7 @@ assimilation_chance = {
 			location = {
 				any_pop = {
 					is_accepted_culture = yes
-					has_pop_religion = elven
+					religion = elven
 				}
 			}
 		}
@@ -879,7 +923,7 @@ assimilation_chance = {
 			location = {
 				any_pop = {
 					is_accepted_culture = yes
-					has_pop_religion = dwarven
+					religion = dwarven
 				}
 			}
 		}
@@ -912,7 +956,7 @@ assimilation_chance = {
 			location = {
 				any_pop = {
 					is_accepted_culture = yes
-					has_pop_religion = orc
+					religion = orc
 				}
 			}
 		}
@@ -936,7 +980,7 @@ assimilation_chance = {
 			location = {
 				any_pop = {
 					is_accepted_culture = yes
-					has_pop_religion = hobbit
+					religion = hobbit
 				}
 			}
 		}
@@ -960,7 +1004,7 @@ assimilation_chance = {
 			location = {
 				any_pop = {
 					is_accepted_culture = yes
-					has_pop_religion = ent
+					religion = ent
 				}
 			}
 		}
@@ -987,7 +1031,7 @@ assimilation_chance = {
 			location = {
 				any_pop = {
 					is_accepted_culture = yes
-					has_pop_religion = troll
+					religion = troll
 				}
 			}
 		}
@@ -1010,7 +1054,7 @@ assimilation_chance = {
 			location = {
 				any_pop = {
 					is_accepted_culture = yes
-					has_pop_religion = eagle
+					religion = eagle
 				}
 			}
 		}
@@ -1034,7 +1078,7 @@ assimilation_chance = {
 			location = {
 				any_pop = {
 					is_accepted_culture = yes
-					has_pop_religion = spider
+					religion = spider
 				}
 			}
 		}
@@ -1057,7 +1101,7 @@ assimilation_chance = {
 			location = {
 				any_pop = {
 					is_accepted_culture = yes
-					has_pop_religion = undead
+					religion = undead
 				}
 			}
 		}

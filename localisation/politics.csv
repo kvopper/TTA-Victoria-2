@@ -6,36 +6,6 @@ NATIONALIST_UNION_MOVEMENT_DESC;Movement calling for the forming of §Y$COUNTRY$
 NATIONALIST_LIBERATION_MOVEMENT_DESC;Movement calling for the liberation of §Y$COUNTRY$§!;x
 political_reforms;Political Reforms;x
 POLITICS_NOBILITY_PRIVILEGE;Nobility Privilege;x
-good_evil_alignment;Alignment;x
-good_alignment;§GGood Alignment§!;x
-good_alignment_l;Good Alignment;x
-good_alignment_desc;We are considered a Good Realm;x
-movement_good_alignment;Movement to become a Good Realm;x
-neutral_alignment;§PNeutral Alignment§!;x
-neutral_alignment_l;Neutral Alignment;x
-neutral_alignment_desc;We are considered a Neutral Realm;x
-movement_neutral_alignment;Movement to become a Neutral Realm;x
-evil_alignment;§REvil Alignment§!;x
-evil_alignment_l;Evil Alignment;x
-evil_alignment_desc;We are considered an Evil Realm;x
-movement_evil_alignment;Movement to become an Evil Realm;x
-good_evil_alignment_fake;Alignment;x
-good_alignment_fake;§GGood Alignment§!;x
-good_alignment_fake_l;Good Alignment;x
-good_alignment_fake_desc;Our Leading Interest Group is Good.;x
-movement_good_alignment_fake;Movement to become a Good Realm;x
-neutral_alignment_fake;§PNeutral Alignment§!;x
-neutral_alignment_fake_l;Neutral Alignment;x
-neutral_alignment_fake_desc;Our Leading Interest Group is Neutral.;x
-movement_neutral_alignment_fake;Movement to become a Neutral Realm;x
-evil_alignment_fake;§REvil Alignment§!;x
-evil_alignment_fake_l;Evil Alignment;x
-evil_alignment_fake_desc;Our Leading Interest Group is Evil.;x
-movement_evil_alignment_fake;Movement to become an Evil Realm;x
-no_alignment;No Alignment;x
-no_alignment_l;No Alignment;x
-no_alignment_desc;Our Leading Interest Group doesn't have an alignment.;x
-movement_no_alignment;Movement to have no alignment;x
 border_policy;Borders;x
 closed_borders;Closed Borders;x
 closed_borders_l;Closed Borders;x
@@ -134,11 +104,11 @@ movement_all_land_ownership;Movement to increase realm land control;x
 serfdom;Serfdom;
 enforced_serfdom;Enforced Serfdom;
 enforced_serfdom_l;Enforced Serfdom;x
-enforced_serfdom_desc;Serfdom is enforced. Serfs are bound to the land they work unless they are specifically granted leave or property by their master.\n\n§RThis will massively decrease promotion for the poor§!;x
+enforced_serfdom_desc;Serfdom is enforced. Serfs are bound to the land they work unless they are specifically granted leave or property by their master.\nPoor Pop Promotion Rate: §R1.0%§!;x
 movement_enforced_serfdom;Movement to enforce serfdom;x
 discouraged_serfdom;Discouraged Serfdom;
 discouraged_serfdom_l;Discouraged Serfdom;x
-discouraged_serfdom_desc;Serfdom is legal but discouraged. The rulers want to bring the realm on the way towards abolishing serfdom, be it because of the aspirations of their own or because of practical reasons. Serfdom appears to be a unliked institution that will mostly be replaced by a system of indentured servitude or through ownership of land by freeholding peasants.\n\n§RThis will mildly decrease promotion for the poor§!;x
+discouraged_serfdom_desc;Serfdom is legal but discouraged. The rulers want to bring the realm on the way towards abolishing serfdom, be it because of the aspirations of their own or because of practical reasons. Serfdom appears to be a unliked institution that will mostly be replaced by a system of indentured servitude or through ownership of land by freeholding peasants.\nPoor Pop Promotion Rate: §R0.5%§!;x
 movement_discouraged_serfdom;Movement to restrict serfdom;x
 banned_serfdom;Serfdom Banned;
 banned_serfdom_l;Serfdom Banned;x
@@ -151,11 +121,11 @@ yes_slavery_desc;Slavery is allowed. Slaves are used from manual labor to variou
 movement_yes_slavery;Movement to expand slavery;x
 non_accepted_slavery;Non-Accepted Slavery;x
 non_accepted_slavery_l;Non-Accepted Slavery;x
-non_accepted_slavery_desc;Only pops that are not primary or accepted cultures are slaves.;x
+non_accepted_slavery_desc;Only pops that are not primary or accepted cultures are slaves.\nPrimary culture and Accepted culture pop §YSlaves§! become §YLabourers§! (on first of month): §GYes§!;x
 movement_non_accepted_slavery;Movement to free cultural brethrin from slavery;x
 no_slavery;Outlawed;x
 no_slavery_l;Outlaw Slavery;x
-no_slavery_desc;Slavery is forbidden and punished by law.;x
+no_slavery_desc;Slavery is forbidden and punished by law.\nAll §YSlaves§! become §YLabourers§!: §GYes§!;x
 movement_no_slavery;Movement to abolish slavery;x
 POLITICS_VOTING_REFORM;Voting Reform;x
 vote_franschise;Vote Franchise;x
@@ -165,7 +135,7 @@ none_voting_desc;No one is allowed to vote.;x
 movement_none_voting;Movement to abolish voting;x
 landed_voting;Only Landed;x
 landed_voting_l;Landed Voting;x
-landed_voting_desc;Only Nobles and Guild Masters may vote.;x
+landed_voting_desc;Only Nobles and Guild Masters may vote.\nNew Government Form: §YMerchant Republic§!;x
 movement_landed_voting;Movement to expand voting franschise;x
 wealth_weighted_voting;Weighted Wealth;x
 wealth_weighted_voting_l;Wealth Weighted Voting;x
@@ -177,7 +147,7 @@ wealth_voting_desc;Only the middle and upper classes may vote.;x
 movement_wealth_voting;Movement to expand voting franschise;x
 universal_weighted_voting;Weighted Universal;x
 universal_weighted_voting_l;Universal Weighted Voting;x
-universal_weighted_voting_desc;Everyone is allowed to vote, but the rich men's votes are worth more.;x
+universal_weighted_voting_desc;Everyone is allowed to vote, but the rich men's votes are worth more.\nNew Government Form: §YRepublic§!;x
 movement_universal_weighted_voting;Movement to expand voting franschise;x
 universal_voting;Universal;x
 universal_voting_l;Universal Voting;x
@@ -210,23 +180,19 @@ proportional_representation_l;Proportional Representation;x
 proportional_representation_desc;The percentage of votes that groups of candidates obtain in elections equals the percentage of seats they receive;x
 movement_proportional_representation;Movement to change the voting system;x
 POLITICS_OTHER_POLITICAL_REFORMS;Other Political Reforms;x
-upper_house_composition;Advisors;x
-appointed;Appointed;x
-appointed_l;Appointed UH;x
-appointed_desc;Aristocrats or guild masters have been assigned advising positions by the leader of the realm.;x
-movement_appionted;Movement to change Advisor composition;x
-party_appointed;Leading Interest Group Only;x
-party_appointed_l;UH same as Ruling Party;x
-party_appointed_desc;Only members of the leading interest group can be appointed to the ruler's advisors.;x
-movement_party_appointed;Movement to change Advisor composition;x
-state_equal_weight;Two per State;x
-state_equal_weight_l;Two per state in UH;x
-state_equal_weight_desc;Each state has two votes to appoint advisors.;x
-movement_state_equal_weight;Movement to change Advisor composition;x
-population_equal_weight;Based on Population;x
-population_equal_weight_l;Population equal in UH;x
-population_equal_weight_desc;Advisors are determined by the collected interest groups of the population.;x
-movement_population_equal_weight;Movement to change Advisor composition;x
+government_type;Government Type;x
+dictatorship;Dictatorship;x
+dictatorship_l;Dictatorship Government Type;x
+dictatorship_desc;Only members of the ruler's interest group can be appointed to the ruler's advisors.;x
+movement_dictatorship;Movement to change Council of the Realm composition;x
+monarchist;Monarchist;x
+monarchist_l;Monarchist Government Type;x
+monarchist_desc;Aristocrats or guild masters have been assigned advising positions by the leader of the realm.;x
+movement_monarchist;Movement to change Council of the Realm composition;x
+republican;Republican;x
+republican_l;Republican Government Type;x
+republican_desc;Council of the Realm is determined by the collected interest groups of the population.;x
+movement_republican;Movement to change Council of the Realm composition;x
 penal_reform;Punishments;x
 capital_punishment;Capital Punishment;x
 capital_punishment_l;Capital Punishment;x
@@ -277,11 +243,11 @@ hereditary_desc;Apprentices are determined by a person's bloodline. A son will b
 movement_hereditary;Movement to make apprenticeships based upon family;x
 appointment;Appointment;x
 appointment_l;Appointed Apprenticeship;x
-appointment_desc;Apprentices can either be hereditary or appointed.;x
+appointment_desc;Apprentices can either be hereditary or appointed.\nPop Promotion Rate: §G0.2%§!;x
 movement_appointment;Movement to allow apprentices to be appointed;x
 guild_school;Guild School;x
 guild_school_l;Guild School;x
-guild_school_desc;Existing guilds have schools in which students can learn their trade. From here, these students can get apprenticeships with guild members.;x
+guild_school_desc;Existing guilds have schools in which students can learn their trade. From here, these students can get apprenticeships with guild members.\nPop Promotion Rate: §G0.4%§!;x
 movement_guild_school;Movement to create guild schools;x
 state_supplies_monopoly;State Supplies;x
 privileged_state_supplies;Privileged;x
@@ -400,26 +366,32 @@ new_guilds_desc;Guilds are starting to gain traction among the upper class.;x
 ##### INTEREST GROUP ISSUES #####;x {
 #################################;x
 party_issues;Interest Group Issues;x
-guild_autonomy_policy;Guild Autonomy Policy;x
-independent_guilds;Independent;x
-independent_guilds_desc;Guilds are completely independent of the ruler of the realm. The realm has no influence over guilds whatsoever.;x
-independent_guilds_l;Independent;x
-oversight_guilds;Oversight;x
-oversight_guilds_desc;Guilds are overseen by servants of the realm. The realm cannot tell guilds where they should be or what their economic goals should be. However, they can enforce rules and support important guilds as needed.;x
-oversight_guilds_l;Oversight;x
-controlled_guilds;Controlled;x
-controlled_guilds_desc;Guilds are completely controlled by the realm.;x
-controlled_guilds_l;Controlled;x
-racial_policy;Racial Policy;x
-all_peoples;All Peoples;x
-all_peoples_desc;Every person, regardless of their race, is accepted by the realm.;x
-all_peoples_l;All Peoples;x
-alignment_acceptance;Alignment Acceptance;x
-alignment_acceptance_desc;Every person, as long as they follow our alignment, is accepted by the realm.;x
-alignment_acceptance_l;Alignment Acceptance;x
-racial_unity;Unity;x
-racial_unity_desc;Only those of the ruling race are accepted by the realm.;x
-racial_unity_l;Racial Unity;x
+trade_policy;Trade Policy;x
+vassal_protectionism;Protectionism;x
+vassal_protectionism_desc;Trade between realms is restricted.;x
+vassal_protectionism_l;Protectionism;x
+protectionism;Protectionism;x
+protectionism_desc;Trade between realms is restricted.;x
+protectionism_l;Protectionism;x
+free_trade;Free Trade;x
+free_trade_desc;Traders are able to act and transact without interference from the realm.;x
+free_trade_l;Free Trade;x
+tax_policy;Tax Policy;x
+laissez_faire;Laissez Faire;x
+laissez_faire_desc;The realm reduces taxes as much as possible, even incurring debt if it serves the best interests of the people.;x
+laissez_faire_l;Laissez Faire;x
+vassal_interventionism;Interventionism;x
+vassal_interventionism_desc;The realm reduces taxes as much as possible, but will not go into debt unless at the utmost need.;x
+vassal_interventionism_l;Interventionism;x
+interventionism;Interventionism;x
+interventionism_desc;The realm reduces taxes as much as possible, but will not go into debt unless at the utmost need.;x
+interventionism_l;Interventionism;x
+state_capitalism;State Capitalism;x
+state_capitalism_desc;The realm reduces taxes when possible, but places the economic health of the realm over that of its people.;x
+state_capitalism_l;State Capitalism;x
+planned_economy;Planned Economy;x
+planned_economy_desc;The realm spares no pity for its people - they are but another resource.;x
+planned_economy_l;Planned Economy;x
 language_policy;Language Policy;x
 official_only;Official Only;x
 official_only_desc;Only the official language of the realm is allowed in public settings.;x
@@ -427,6 +399,9 @@ official_only_l;Official Only;x
 minority_toleration;Minority Toleration;x
 minority_toleration_desc;Minority languages are allowed in public as long as it does not involve matters of realm.;x
 minority_toleration_l;Minority Toleration;x
+vassal_regional_autonomy;Regional Autonomy;x
+vassal_regional_autonomy_desc;All languages are allowed in every setting.;x
+vassal_regional_autonomy_l;Regional Autonomy;x
 regional_autonomy;Regional Autonomy;x
 regional_autonomy_desc;All languages are allowed in every setting.;x
 regional_autonomy_l;Regional Autonomy;x
@@ -434,6 +409,9 @@ diplomatic_policy;Diplomatic Policy;x
 isolationist;Isolationist;x
 isolationist_desc;Who cares what happens in the outside world? Our realm is great!;x
 isolationist_l;Isolationist;x
+vassal_reactive;Reactive;x
+vassal_reactive_desc;The ruler reacts to things that happens outside the realm after news of it arrives. No proactive actions occur.;x
+vassal_reactive_l;Reactive;x
 reactive;Reactive;x
 reactive_desc;The ruler reacts to things that happens outside the realm after news of it arrives. No proactive actions occur.;x
 reactive_l;Reactive;x
@@ -447,6 +425,9 @@ war_policy;War Policy;x
 jingoism;Jingoism;x
 jingoism_desc;The military is the centrepiece of the state and military spending is prioritised.;x
 jingoism_l;Jingoism;x
+vassal_pro_military;Pro Military;x
+vassal_pro_military_desc;The government is a strong supporter of the armed services.;x
+vassal_pro_military_l;Pro Military;x
 pro_military;Pro Military;x
 pro_military_desc;The government is a strong supporter of the armed services.;x
 pro_military_l;Pro Military;x
@@ -456,42 +437,59 @@ anti_military_l;Anti Military;x
 pacifism;Pacifism;x
 pacifism_desc;The government is actively hostile to the interests of the military, feeling they are opposed to the government policies.;x
 pacifism_l;Pacifism;x
+good_evil_alignment;Alignment;x
+good_alignment;Anti-Sauron;x
+good_alignment_l;Anti-Sauron;x
+good_alignment_desc;We are aligned against Sauron;x
+movement_good_alignment;Movement to become a realm aligned against Sauron;x
+neutral_alignment;Opportunistic;x
+neutral_alignment_l;Opportunistic;x
+neutral_alignment_desc;We are considered a realm indifferent to Sauron;x
+movement_neutral_alignment;Movement to become a realm indifferent to Sauron;x
+evil_alignment;Sauronite;x
+evil_alignment_l;Sauronite;x
+evil_alignment_desc;We are considered a realm aligned with Sauron;x
+movement_evil_alignment;Movement to become a realm aligned with Sauron;x
+vassal_alignment;Overlord;x
+vassal_alignment_l;Overlord;x
+vassal_alignment_desc;We are considered a realm aligned with our overlord;x
+movement_vassal_alignment;Movement to become a realm aligned with our overlord;x
 ###############################;x }
 ##### INTEREST GROUP TEXT #####;x {
 ###############################;x
-LEDGER_COUNTRY_RULINGPARTY;Leading Interest Group;x
+LEDGER_COUNTRY_RULINGPARTY;Ruler;x
 LEDGER_COUNTRY_RULINGIDEOLOGY;Interest Group;x
-BE_PARTY;Leading Interest Group:;x
-POLITICS_VIEW_ALL_PARTIES_TOOLTIP;View all interest groups\n;x
-POLITICS_CURRENT_RULING_PARTY_TOOLTIP;Current leading interest group: $PARTY$\n;x
+BE_PARTY;Ruler:;x
+POLITICS_VIEW_ALL_PARTIES_TOOLTIP;View all allowed rulers\n;x
+POLITICS_CURRENT_RULING_PARTY_TOOLTIP;Current ruler: $PARTY$\n;x
 POLITICS_VOTERS_CHART_TOOLTIP;$PERCENT$% of the voters are part of $IDEOLOGY$\n;x
 POLITICS_PEOPLE_CHART_TOOLTIP;$PERCENT$% of our population are part of $IDEOLOGY$\n;x
-POLITICS_SET_RULING_PARTY_TOOLTIP;Select $PARTY$ as our leading interest group\n;x
-POLITICS_CANNOT_SET_RULING_PARTY_TOOLTIP;We cannot select $PARTY$ as our leading interest group because:\n;x
-POLITICS_HOLD_ELECTION_TOOLTIP;Hold election to appoint a new leading interest group.\n;x
-POLITICS_SELECT_NEW_RULER_PARTY;Select New Leading Interest Group;x
-RIP_EFFECT;$NAME$ will become the new leading interest group.\n;x
-MODIFIER_RULING_PARTY_SUPPORT;Leading Interest Group Support;x
-CAN_APPOINT_RULING_PARTY;Can appoint leading interest group.;x
-ELECTIONDONE_3;$WINNER$ is now the new leading interest group.;x
+POLITICS_SET_RULING_PARTY_TOOLTIP;Select $PARTY$ as our ruler\n;x
+POLITICS_CANNOT_SET_RULING_PARTY_TOOLTIP;We cannot select $PARTY$ as our ruler because:\n;x
+POLITICS_HOLD_ELECTION_TOOLTIP;Hold election to appoint a new ruler.\n;x
+POLITICS_SELECT_NEW_RULER_PARTY;Select New Ruler;x
+RIP_EFFECT;§Y$NAME$§! will become the new ruler.\n;x
+MODIFIER_RULING_PARTY_SUPPORT;Ruler Support;x
+CAN_APPOINT_RULING_PARTY;Can appoint ruler.;x
+ELECTIONDONE_3;$WINNER$ is now the new ruler.;x
 SETPARTY_SETUP;When changing leading interset group.;x
-SETPARTY_1;New Leading Interest Group in $COUNTRY$;x
-SETPARTY_2;$MONARCHTITLE$, we have now changed leading interest group to;x
+SETPARTY_1;New ruler in $COUNTRY$;x
+SETPARTY_2;$MONARCHTITLE$, we have now changed ruler to;x
 SETPARTY_4;They are a $IDEOLOGY$ interest group and have the following policies.;x
-POP_MIL_RULING;Agrees with Leading Interest Group;x
-RULE_SAME_AS_RULING_PARTY;Same As Leading Interest Group;x
-IS_NOT_RULING_PARTY;is NOT the Leading Interest Group.;x
-IS_RULING_PARTY;is the Leading Interest Group.;x
-RUL_PARTY_IS_NOT;Current Leading Interest Group is NOT;x
-RUL_PARTY_IS;Current Leading Interest Group is;x
-AGREE_RP_TR;At least §Y$VAL$%§! is of the same interest group as the leading interest group.;x
-NOT_AGREE_RP_TR;Less than §Y$VAL$%§! is of the same interest group as the leading interest group.;x
-POLITICS_CANNOT_SET_RULING_PARTY_IN_ELECTION;It is not possible to switch leading interest groups in the middle of an election.;x
-TOPBAR_RULING_PARTY;Our current leading interest group is $CURR$;x
-COUNTRYALERT_IsInElection;There's currently an election being held in our country. By $DATE$, a new leading interest group will be elected.;x
-POLITICS_ALREADY_RULING_PARTY;$PARTY$ is already the leading interest group.;x
-POLITICS_CANNOT_SET_RULING_PARTY_RULE;Our government form does not allow us to appoint leading interest groups;x
-AI_LOVES_OTHER_DESC2_SHORT;Prosperity for the Future with our $TAG_0_1_ADJ$ brothers!' is $TAG_0_0_ADJ$ leading interest group's newest slogan. Many say this is an indication of a future military alliance.;x
+POP_MIL_RULING;Supports ruler;x
+RULE_SAME_AS_RULING_PARTY;Same As ruler;x
+IS_NOT_RULING_PARTY;is NOT the ruler.;x
+IS_RULING_PARTY;is the ruler.;x
+RUL_PARTY_IS_NOT;Current ruler is NOT;x
+RUL_PARTY_IS;Current ruler is;x
+AGREE_RP_TR;At least §Y$VAL$%§! is of the same interest group as the ruler.;x
+NOT_AGREE_RP_TR;Less than §Y$VAL$%§! is of the same interest group as the ruler.;x
+POLITICS_CANNOT_SET_RULING_PARTY_IN_ELECTION;It is not possible to switch rules in the middle of an election.;x
+TOPBAR_RULING_PARTY;Our current ruler is $CURR$;x
+COUNTRYALERT_IsInElection;There's currently an election being held in our country. By $DATE$, a new ruler will be elected.;x
+POLITICS_ALREADY_RULING_PARTY;$PARTY$ is already the ruler.;x
+POLITICS_CANNOT_SET_RULING_PARTY_RULE;Our government form does not allow us to appoint ruler;x
+AI_LOVES_OTHER_DESC2_SHORT;Prosperity for the Future with our $TAG_0_1_ADJ$ brothers!' is $TAG_0_0_ADJ$ ruler's newest slogan. Many say this is an indication of a future military alliance.;x
 PARTY_NEWS_TITLE_LARGE;NEW INTEREST GROUP IN $TAG_0_0_UPPER$;x
 PARTY_NEWS_LARGE;A new $STRING_0_2$ interest group, the $STRING_0_0$, has been formed in $TAG_0_0$. 'We're currently in the process of recruiting new members and organizing the support structure every modern political unit requires', a party official commented. Uniting disgruntled activists and disillusioned members of other outfits, the new party announced to have scheduled a national convention, where they plan to elect their representatives and agree on the platform. They claim to remain optimistic about ever coming to power despite all odds.;x
 PARTY_NEWS_TITLE_MEDIUM;NEW INTEREST GROUP IN $TAG_0_0_UPPER$;x
@@ -508,8 +506,8 @@ PARTY_UNAVAIL_SETUP;Interest group defunct;x
 PARTY_UNAVAIL_HEADER;Interest group defunct;x
 NEW_PARTY_AVAIL_SETUP;New interest group;x
 NEW_PARTY_AVAIL_HEADER;New interest group formed;x
-POLITICS_NOT_BEFORE;We can not change leading interest group again before §Y$DATE$§!.;x
-POLITICS_NOT_ACCEPTED;Our form of government does not allow §Y$WHICH$§! interest groups.;x
+POLITICS_NOT_BEFORE;We can not change ruler again before §Y$DATE$§!.;x
+POLITICS_NOT_ACCEPTED;Our form of government does not allow §Y$WHICH$§! rulers.;x
 LEDGER_PROVINCE_IDEOLOGY;Interest Group;x
 IDEOLOGY_LABEL;Interest Group;x
 IDEOLOGY_DISTTITLE;Interest Group;x
@@ -517,44 +515,31 @@ Ideology;Interest Group;x
 ######################################;x }
 ##### National Value Descriptors #####;x {
 ######################################;x
-NOT_HAS_NATIONAL_VALUE;Leader is NOT §Y$NATIONALVALUE$§!.;x
-HAS_NATIONAL_VALUE;Leader is §Y$NATIONALVALUE$§!.;x
-CHANGE_NATIONALVALUE;Leader changes to §Y$NATIONALVALUE$§!.\n;x
-POLITICS_NATIONALVALUE_TOOLTIP;Our leader is §Y$NATIONALVALUE$§!.\n;x
-LEDGER_COUNTRY_NATIONALVALUE;Leader;x
+NOT_HAS_NATIONAL_VALUE;Cultural Heirloom is NOT §Y$NATIONALVALUE$§!.;x
+HAS_NATIONAL_VALUE;Cultural Heirloom is §Y$NATIONALVALUE$§!.;x
+CHANGE_NATIONALVALUE;Cultural Heirloom changes to §Y$NATIONALVALUE$§!.\n;x
+POLITICS_NATIONALVALUE_TOOLTIP;Our cultural heirloom is §Y$NATIONALVALUE$§!.\n;x
+LEDGER_COUNTRY_NATIONALVALUE;Cultural Heirloom;x
 ###########################;x }
 ##### National Values #####;x {
 ###########################;x
-generic_leader;Generic Leader;x
-regency;Regency Council;x
-ecthelion_ii;Ecthelion II;x
-denethor_ii;Denethor II;x
-boromir_ii;Boromir II;x
-faramir_i;Faramir I;x
-aragorn_elessar;Aragorn II Elessar;x
-angelimir;Angelimir;x
-sauron;Sauron;x
-hegon_koldana;Hegon I;x
-bard_i;Bard I;x
-bain_i;Bain I;x
-brand_i;Brand I;x
-bard_ii;Bard II;x
-dain_ironfoot_ii;Dain Ironfoot II;x
-thranduil;Thranduil;x
-khamul;Khamûl the Easterling;x
-beorn;Beorn;x
-celeborn_n_galadriel;Celeborn and Galadriel;x
-treebeard;Treebeard;x
-thengel;Thengel;x
-saruman;Saruman;x
-aragorn;Aragorn II;x
-elrond;Elrond;x
-cirdan;Círdan;x
-king_of_the_dead;King of the Dead;x
-radagast;Radagast;x
-roac;Roäc the Raven;x
-gwaihir;Gwaihir the Windlord;x
-witch_king_of_angmar;Witch-king of Angmar;x
+no_heirloom;No Cultural Heirloom;x
+horn_of_gondor;§!the §YHorn of Gondor§!;x
+horn_of_the_mark;§!the §YHorn of the Mark§!;x
+red_book_of_the_westmarch;§!the §YRed Book of the Westmarch§!;x
+black_arrow;§!the §YBlack Arrow§!;x
+narya;Narya;x
+nenya;Nenya;x
+vilya;Vilya;x
+one_ring_of_power;§!the §YOne Ring of Power§!;x
+ring_of_barahir;§!the §YRing of Barahir§!;x
+durins_axe;Durin's Axe;x
+arkenstone;§!the §YArkenstone§!;x
+star_of_elendil;§!the §YStar of Elendil§!;x
+sceptre_of_annuminas;§!the §YSceptre of Annúminas§!;x
+narsil;Narsil;x
+masters_gold_coin;§!the §YMaster's Gold Coin§!;x
+guildmasters_crest;§!the §YGuildmaster's Crest§!;x
 ######################################;x }
 ##### Burgher Reform Descriptors #####;x {
 ######################################;x
@@ -572,40 +557,101 @@ POLITICS_CAN_DO_SOCIAL_REFROMS;Can enact burgher reforms;x
 ######################;x
 disenfranchised_group;Disenfranchised;x
 slave_ideology;Slaves;x
-slave_ideology_uh;Slave advisors will vote to follow whatever the realm wants.;x
+slave_ideology_uh;Slave ideology supporters will vote to follow whatever the realm wants.;x
 tribal_ideology;Tribal;x
-tribal_ideology_uh;Tribal advisors will vote to follow whatever the realm wants.;x
-prosauron_group;Servants;x
+tribal_ideology_uh;Tribal ideology supporters will vote against progress in the realm and active look to reverse it.;x
+vassal_group;Servants;x
 servants;Servants;x
-servants_uh;Servants advisors will vote to follow whatever the realm wants.;x
-nobility_group;Nobles;x
-high_nobility;High Nobility;x
-high_nobility_uh;High Nobility advisors will never vote for political reforms. Instead, they hope to repeal them. They will vote for burgher reforms with high enough militancy.;x
-low_nobility;Low Nobility;x
-low_nobility_uh;Low Nobility advisors will vote for political and burgher reforms with high enough militancy;x
-burgher_group;Burgers;x
+servants_uh;Servants supporters will never vote to reform the realm. They only serve our overlord.;x
+nobility_group;Nobility;x
+nobility;Nobility;x
+nobility_uh;Nobility supporters will vote for all reforms while in power.;x
+burgher_group;Burghers;x
 burgher;Burghers;x
-burgher_uh;Burgher advisors will vote for political reforms with high enough militancy. They will always vote for burgher reforms.;x
+burgher_uh;Burgher supporters will vote for all reforms while in power.;x
 loremaster_group;Loremasters;x
 loremaster;Loremasters;x
-loremaster_uh;Loremaster advisors will always vote for political and burgher reforms.;x
-#########################;x }
-##### ADVISORS TEXT #####;x {
-#########################;x
-POLITICS_SUPPORT_REFORM;$IDEOLOGY$: $POSITIVE$% votes yes, $NEGATIVE$% votes no.($PERCENT$% of advisors)\n;x
-POLITICS_UPPERHOUSE_CHART_TOOLTIP;$PERCENT$% of the advisors are $IDEOLOGY$\n;x
-POLITICS_IN_FAVOR_TOOLTIP;($PERCENT$% of of advisors in favor of reforms);x
-POLITICS_UPPERHOUSE;Advisors;x
-UPPERHOUSE_SETUP;When our Advisors have assembled.;x
-UPPERHOUSE_1;Advisors changed;x
-UPPERHOUSE_2;$MONARCHTITLE$, our advisors been assembled.;x
-UPPERHOUSE_LOG;Advisors changed.;x
-POLITICS_TOTAL_SUPPORT_REFORM;$PERCENT$% of advisors vote yes\n;x
-UPPER_HOUSE_EFFECT;$DIRECTION$ up to $VALUE$ $NAME$ in the advisors.\n;x
-NOT_UPPER_HOUSE_TR;There is less than $VAL$ percent $NAME$ in the advisors.\n;x
-UPPER_HOUSE_TR;There is at least $VAL$ percent $NAME$ in the advisors.\n;x
-MODIFIER_UNCIV_ECONOMIC_UH;Advisor support;x
-MODIFIER_UNCIV_MILITARY_UH;Advisor support;x
+loremaster_uh;Loremasters= supporters will vote for all reforms while in power.;x
+dunedain_nobility;Dúnedain Nobility;x
+line_of_isildur;Line of Isildur;x
+line_of_isildur_uh;Line of Isildur supporters will vote for all reforms while in power.;x
+house_of_stewards;House of Stewards;x
+house_of_stewards_uh;House of Stewards supporters will vote for all reforms while in power.;x
+house_of_dol_amroth;House of Dol Amroth;x
+house_of_dol_amroth_uh;House of Dol Amroth supporters will vote for all reforms while in power.;x
+noldor_nobility;Ñoldor Nobility;x
+house_half_elven;House Half-Elven;x
+house_half_elven_uh;House Half-Elven supporters will vote for all reforms while in power.;x
+lords_of_mithlond;Lords of Mithlond;x
+lords_of_mithlond_uh;Lords of Mithlond supporters will vote for all reforms while in power.;x
+teleri_nobility;Teleri Nobility;x
+house_of_oropher;House of Oropher;x
+house_of_oropher_uh;House of Oropher supporters will vote for all reforms while in power.;x
+house_of_finarfin;House of Finarfin;x
+house_of_finarfin_uh;House of Finarfin supporters will vote for all reforms while in power.;x
+gramavuld_northmen_nobility;Gramavuld Northmen Nobility;x
+house_of_bard;House of Bard;x
+house_of_bard_uh;House of Bard supporters will vote for all reforms while in power.;x
+rivermen_thegans;Rivermen Thegans;x
+rivermen_thegans_uh;Rivermen Thegans supporters will vote for all reforms while in power.;x
+gramavuld_northmen_merchants;Northmen Merchants;x
+master_of_laketown;Master of Laketown;x
+master_of_laketown_uh;Master of Laketown supporters will vote for all reforms while in power.;x
+gramavuld_northmen_guilds;Northmen Guilds;x
+lakemen_fishers_guild;Fishers' Guild;x
+lakemen_fishers_guild_uh;Fishers' Guild supporters will vote for all reforms while in power.;x
+northmen_nobility;Northmen Nobility;x
+house_of_koldana;House of Koldana;x
+house_of_koldana_uh;House of Koldana supporters will vote for all reforms while in power.;x
+dwarves_nobility;Dwarves Nobility;x
+line_of_durin;Line of Durin;x
+line_of_durin_uh;Line of Durin supporters will vote for all reforms while in power.;x
+anduinrim_nobility;Anduinrim Nobility;x
+house_of_beorn;House of Beorn;x
+house_of_beorn_uh;House of Beorn supporters will vote for all reforms while in power.;x
+ents_nobility;Ents Nobility;x
+lords_of_fangorn;Lords of Fangorn;x
+lords_of_fangorn_uh;Lords of Fangorn supporters will vote for all reforms while in power.;x
+rohirrim_nobility;Rohirrim Nobility;x
+house_of_eorl;House of Eorl;x
+house_of_eorl_uh;House of Eorl supporters will vote for all reforms while in power.;x
+eagles_nobility;Eagles Nobility;x
+flightlords_of_the_mountains;Flightlords of the Mountains;x
+flightlords_of_the_mountains_uh;Flightlords of the Mountains supporters will vote for all reforms while in power.;x
+lords_of_ravens;Lords of Ravens;x
+lords_of_ravens_uh;Lords of Ravens supporters will vote for all reforms while in power.;x
+spiders_nobility;Spiders Nobility;x
+great_brood_mothers;Great Brood Mothers;x
+great_brood_mothers_uh;Great Brood Mothers supporters will vote for all reforms while in power.;x
+undead_nobility;Undead Nobility;x
+kings_of_the_dead;Kings of the Dead;x
+kings_of_the_dead_uh;Kinds of the Dead supporters will vote for all reforms while in power.;x
+immortal_beings;Immortal Beings;x
+lords_of_isengard;Lords of Isengard;x
+lords_of_isengard_uh;Lords of Isengard supporters will vote for all reforms while in power.;x
+lords_of_rhosgobel;Lords of Rhosgobel;x
+lords_of_rhosgobel_uh;Lords of Rhosgobel supporters will vote for all reforms while in power.;x
+lords_of_mordor;Lords of Mordor;x
+lords_of_mordor_uh;Lords of Mordor supporters will vote for all reforms while in power.;x
+saurons_nine;Sauron's Nine;x
+saurons_nine_uh;Sauron's Nine supporters will vote for all reforms while in power.;x
+#####################################;x }
+##### COUNCIL OF THE REALM TEXT #####;x {
+#####################################;x
+POLITICS_SUPPORT_REFORM;$IDEOLOGY$: §G$POSITIVE$% votes yes§!, §R$NEGATIVE$% votes no§!.(§Y$PERCENT$%§! of Council of the Realm)\n;x
+POLITICS_UPPERHOUSE_CHART_TOOLTIP;$PERCENT$% of the Council of the Realm are $IDEOLOGY$\n;x
+POLITICS_IN_FAVOR_TOOLTIP;($PERCENT$% of of Council of the Realm in favor of reforms);x
+POLITICS_UPPERHOUSE;Council of the Realm;x
+UPPERHOUSE_SETUP;When our Council of the Realm have assembled.;x
+UPPERHOUSE_1;Council of the Realm changed;x
+UPPERHOUSE_2;$MONARCHTITLE$, our Council of the Realm has been assembled.;x
+UPPERHOUSE_LOG;Council of the Realm changed.;x
+POLITICS_TOTAL_SUPPORT_REFORM;$PERCENT$% of Council of the Realm vote yes\n;x
+UPPER_HOUSE_EFFECT;$DIRECTION$ up to $VALUE$ $NAME$ in the Council of the Realm.\n;x
+NOT_UPPER_HOUSE_TR;There is less than §Y$VAL$§! percent §Y$NAME$§! in the Council of the Realm.\n;x
+UPPER_HOUSE_TR;There is at least §Y$VAL$§! percent §Y$NAME$§! in the Council of the Realm.\n;x
+MODIFIER_UNCIV_ECONOMIC_UH;Council of the Realm support;x
+MODIFIER_UNCIV_MILITARY_UH;Council of the Realm support;x
 ###############################;x }
 ##### CENTRALIZATION TEXT #####;x {
 ###############################;x

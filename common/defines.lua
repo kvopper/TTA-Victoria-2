@@ -19,7 +19,7 @@ country = {
 	MIN_CRIMEFIGHT_PERCENT = 0,
 	MAX_CRIMEFIGHT_PERCENT = 0,
 	ADMIN_EFFICIENCY_CRIMEFIGHT_PERCENT = 0, -- Crimefight depends on both state admin eff. and admin spending, admin spending percent effect is set to (1-ADMIN_EFFICIENCY_CRIMEFIGHT_PERCENT)
-	CONSERVATIVE_INCREASE_AFTER_REFORM = 0.25, -- how many more conservatives in a upper house.
+	CONSERVATIVE_INCREASE_AFTER_REFORM = 0.0, -- how many more conservatives in a upper house.
 	CAMPAIGN_EVENT_BASE_TIME = 80, -- Roughly twice per campaign
 	CAMPAIGN_EVENT_MIN_TIME = 21 ,-- never more often than 3 weeks between (NOT USED)
 	CAMPAIGN_EVENT_STATE_SCALE = -3,	-- every non-colonial state reduces by 3 days (NOT USED)
@@ -57,7 +57,7 @@ country = {
 	PRESTIGE_HIT_ON_BREAK_COUNTRY = -0.20, -- percentage reduction when country gets taken by rebels
 	MIN_MOBILIZE_LIMIT = 3,
 	POP_GROWTH_COUNTRY_CACHE_DAYS = 30, -- period of cached pop growth (used for player)
-	NEWSPAPER_PRINTING_FREQUENCY = 1, -- days frequency when the news attempt to be printed (may not print if not enough facts collected, and retry after another X days)
+	NEWSPAPER_PRINTING_FREQUENCY = 350, -- days frequency when the news attempt to be printed (may not print if not enough facts collected, and retry after another X days)
 	NEWSPAPER_TIMEOUT_PERIOD = 890, -- the max period for news that may be printed. The probability is decreased with time.
 	NEWSPAPER_MAX_TENSION = 750, -- when tension of printing gets this high, the newspaper will attempt to be printed immediately.
 	NAVAL_BASE_SUPPLY_SCORE_BASE = 10, -- base value that is powered by level of naval base. Determines the naval supplying capabilities.
@@ -150,7 +150,7 @@ military = {
 	LEADER_AGE_DEATH_FACTOR = 4, -- higher value means leaders live longer
 	LEADER_PRESTIGE_TO_MORALE_FACTOR = 0.8, -- f.ex. 100% of prestige = +10% morale
 	LEADER_PRESTIGE_TO_MAX_ORG_FACTOR = 0.7, -- f.ex. 100% of prestige = +10 max org
-	LEADER_TRANSFER_PENALTY_ON_COUNTRY_PRESTIGE = 0.05, -- country prestige penalty on unassign leader (f.ex if leader has 100% prestige, the country loose 4% of its prestige)
+	LEADER_TRANSFER_PENALTY_ON_COUNTRY_PRESTIGE = 0.00, -- country prestige penalty on unassign leader (f.ex if leader has 100% prestige, the country loose 4% of its prestige)
 	LEADER_PRESTIGE_LAND_GAIN =0.3, -- extra speed gain on prestige for land combat
 	LEADER_PRESTIGE_NAVAL_GAIN =0.3, -- extra speed gain on prestige for naval combat
 	NAVAL_COMBAT_SEEKING_CHANCE = 0.5, -- base chance of picking a target (increased by leader reconaissance)

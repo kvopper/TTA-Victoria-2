@@ -2,13 +2,13 @@ horse_archers = {
 	icon = 15
 	
 	type = land
-	sprite = Cavalry
+	sprite = HorseArchers
 	active = yes
 	unit_type = cavalry
 	primary_culture = yes
 	
 	#Avatar
-	sprite_override = Cavalry
+	sprite_override = HorseArchers
 	sprite_mount = GenericMount
 	sprite_mount_attach_node = Saddle_Node
 	floating_flag = yes

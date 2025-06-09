@@ -1,0 +1,67 @@
+pattern =
+{
+	name = "AiAfraidOf"
+
+	generator_selector =
+	{
+		type = "AI_AFRAID_OF"
+		name = "%1%"
+		@2@
+	}
+	news_priority = 
+	{
+		type = "AI_AFRAID_OF"
+		name = "%1%"
+		case = { priority_add = 50 }
+	}
+	generate_article =
+	{
+		type = "AI_AFRAID_OF"
+		size = large
+		name = "%1%"
+		picture_case = { picture = "news/news_war_01.dds" picture = "news/news_war_02.dds"  picture = "news/news_war_03.dds" picture = "news/news_war_04.dds" picture = "news/news_war_05.dds" picture = "news/news_war_06.dds" picture = "news/news_war_07.dds" picture = "news/news_war_08.dds" picture = "news/news_war_09.dds" picture = "news/news_war_10.dds" picture = "news/news_war_11.dds" picture = "news/news_war_12.dds" picture = "news/news_war_13.dds" picture = "news/news_war_14.dds" }
+		title_case = { text_add = { @3@ } }
+		description_case = { text_add = { @4@ } }
+	}
+	generate_article =
+	{
+		type = "AI_AFRAID_OF"
+		size = medium
+		name = "%1%"
+		picture_case = { picture = "news/news_war_01.dds" picture = "news/news_war_02.dds"  picture = "news/news_war_03.dds" picture = "news/news_war_04.dds" picture = "news/news_war_05.dds" picture = "news/news_war_06.dds" picture = "news/news_war_07.dds" picture = "news/news_war_08.dds" picture = "news/news_war_09.dds" picture = "news/news_war_10.dds" picture = "news/news_war_11.dds" picture = "news/news_war_12.dds" picture = "news/news_war_13.dds" picture = "news/news_war_14.dds" }
+		title_case = { text_add = { @3@ } }
+		description_case = { text_add = { @5@ } }
+	}
+	generate_article =
+	{
+		type = "AI_AFRAID_OF"
+		size = small
+		name = "%1%"
+		title_case = { text_add = { @3@ } }
+		description_case = { text_add = { @6@ } }
+	}
+}
+
+# Default afraid of other
+AiAfraidOf = 
+{
+	"default"
+	"case = { value = 10 } case = { trigger = { news_printing_count = 1 } value = -999 }"
+	"AI_FEARS_OTHER_TITLE1 AI_FEARS_OTHER_TITLE2"
+	"AI_FEARS_OTHER_DESC1_LONG AI_FEARS_OTHER_DESC2_LONG"
+	"AI_FEARS_OTHER_DESC1_MEDIUM AI_FEARS_OTHER_DESC2_MEDIUM"
+	"AI_FEARS_OTHER_DESC1_SHORT AI_FEARS_OTHER_DESC2_SHORT"
+
+}
+
+# AI afraid of player
+AiAfraidOf = 
+{
+	"player"
+	"case = { trigger = { tags_eq = { 0 1 PLAYER } } value = 100 } case = { trigger = { news_printing_count = 1 } value = -999 }"
+	"AI_FEARS_US_TITLE1 AI_FEARS_US_TITLE2 AI_FEARS_US_TITLE3" #TAG_0_0$ afraid of $TAG_0_1$
+	"AI_FEARS_US_DESC1_LONG AI_FEARS_US_DESC2_LONG AI_FEARS_US_DESC3_LONG"
+	"AI_FEARS_US_DESC1_MEDIUM AI_FEARS_US_DESC2_MEDIUM AI_FEARS_US_DESC3_MEDIUM"
+	"AI_FEARS_US_DESC1_SHORT AI_FEARS_US_DESC2_SHORT AI_FEARS_US_DESC3_SHORT"
+	
+}

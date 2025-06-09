@@ -60,36 +60,6 @@ will_never_be_unlocked = {
 	value = 0.1
 }
 
-##### RAW MATERIALS FACTORIES #####
-
-charcoal_factory = {
-	template = factory_template
-	input_goods = {
-		timber = 25
-	}
-	output_goods = coal
-	value = 60
-	
-	bonus = {
-		trigger = { trade_goods_in_state = timber }
-		value = 0.25
-	}
-}
-
-dye_factory = {
-	template = factory_template
-	input_goods = {
-		food = 10
-	}
-	output_goods = dye
-	value = 2.5
-	
-	bonus = {
-		trigger = { trade_goods_in_state = food }
-		value = 0.25
-	}
-}
-
 ##### INDUSTRIAL GOODS FACTORIES #####
 
 cut_stone_factory = {
@@ -118,7 +88,6 @@ glass_factory = {
 		trigger = {
 			OR = {
 				trade_goods_in_state = coal
-				has_building = charcoal_factory
 			}
 		}
 		value = 0.25
@@ -147,7 +116,6 @@ steel_factory = {
 		trigger = {
 			OR = {
 				trade_goods_in_state = coal
-				has_building = charcoal_factory
 				state_id = 449
 			}
 		}
@@ -190,7 +158,6 @@ fabric_factory_wool = {
 		trigger = {
 			OR = {
 				trade_goods_in_state = dye
-				has_building = dye_factory
 			}
 		}
 		value = 0.05
@@ -219,7 +186,6 @@ fabric_factory = {
 		trigger = {
 			OR = {
 				trade_goods_in_state = dye
-				has_building = dye_factory
 				state_id = 16
 			}
 		}
@@ -232,20 +198,6 @@ fabric_factory = {
 }
 
 ##### CONSUMER GOODS FACTORIES #####
-
-horse_abattoir = {
-	template = factory_template
-	input_goods = {
-		horses = 2.5
-	}
-	output_goods = food
-	value = 15
-	
-	bonus = {
-		trigger = { trade_goods_in_state = horses }
-		value = 0.25
-	}
-}
 
 liquor_distillery = {
 	template = factory_template
@@ -307,7 +259,6 @@ literature_factory = {
 		trigger = {
 			OR = {
 				trade_goods_in_state = dye
-				has_building = dye_factory
 				state_id = 865
 			}
 		}
@@ -356,7 +307,6 @@ luxury_furniture_factory = {
 		trigger = {
 			OR = {
 				trade_goods_in_state = dye
-				has_building = dye_factory
 			}
 		}
 		value = 0.05
@@ -413,7 +363,6 @@ luxury_clothes_factory = {
 		trigger = {
 			OR = {
 				trade_goods_in_state = dye
-				has_building = dye_factory
 				state_id = 16
 			}
 		}

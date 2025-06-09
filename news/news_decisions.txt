@@ -1,0 +1,111 @@
+generator_selector =
+{
+	type = "DECISION"
+	name = "default"
+	case = { value = 15 }
+	case =
+	{
+		trigger = { news_printing_count = 1 }
+		value = -999
+	}
+}
+
+news_priority = 
+{
+	type = "DECISION"
+	name = "default"
+	case = { priority_add = 30 }
+}
+
+
+generate_article =
+{
+	type = "DECISION"
+	size = large
+	name = "default"
+
+	picture_case = {
+		trigger = {
+			OR = {
+				strings_eq = { 0 0 "shire_bree_unification" }
+				strings_eq = { 0 0 "form_rivermen" }
+				strings_eq = { 0 0 "proclaim_lordship_over_the_grammas" }
+				strings_eq = { 0 0 "proclaim_lordship_over_the_rivermen" }
+				strings_eq = { 0 0 "gramavuld_united" }
+				strings_eq = { 0 0 "form_rhovanion" }
+			}
+		}
+		picture = "news/news_union.dds"
+	}
+
+	picture_case = {
+		trigger = {
+			OR = {
+				strings_eq = { 0 0 "DAL_break_treaty_with_erebor" }
+				strings_eq = { 0 0 "DAL_claim_successor_to_vidugavia" }
+				strings_eq = { 0 0 "exterminate_the_wights" }
+				strings_eq = { 0 0 "DAL_dissolution_amov_clan" }
+			}
+		}
+		picture = "news/gramavuld/northmen_war.dds"
+	}
+
+	# Use the same title as decision
+	title_case = { text_add = { "$STRING_0_1$" } }
+
+	# Generate description text (Use special key text generation for events)
+	description_case = { text_add = { "$DECISION_DESC_0_0_LONG$" } } # If missing - will fallback to default text (the longest)
+}
+
+generate_article =
+{
+	type = "DECISION"
+	size = medium
+	name = "default"
+
+	picture_case = {
+		trigger = {
+			OR = {
+				strings_eq = { 0 0 "shire_bree_unification" }
+				strings_eq = { 0 0 "form_rivermen" }
+				strings_eq = { 0 0 "proclaim_lordship_over_the_grammas" }
+				strings_eq = { 0 0 "proclaim_lordship_over_the_rivermen" }
+				strings_eq = { 0 0 "gramavuld_united" }
+				strings_eq = { 0 0 "form_rhovanion" }
+			}
+		}
+		picture = "news/news_union.dds"
+	}
+
+	picture_case = {
+		trigger = {
+			OR = {
+				strings_eq = { 0 0 "DAL_break_treaty_with_erebor" }
+				strings_eq = { 0 0 "DAL_claim_successor_to_vidugavia" }
+				strings_eq = { 0 0 "exterminate_the_wights" }
+				strings_eq = { 0 0 "DAL_dissolution_amov_clan" }
+			}
+		}
+		picture = "news/gramavuld/northmen_war.dds"
+	}
+
+	# Use the same title as decision
+	title_case = { text_add = { "$STRING_0_1$" } }
+
+	# Generate description text (Use special key text generation for events)
+	description_case = { text_add = { "$DECISION_DESC_0_0_MEDIUM$" } } # If missing - will fallback to default text (the longest)
+}
+
+generate_article =
+{
+	type = "DECISION"
+	size = small
+	name = "default"
+
+	# Use the same title as decision
+	title_case = { text_add = { "$STRING_0_1$" } }
+
+	# Generate description text (Use special key text generation for events)
+	description_case = { text_add = { "$DECISION_DESC_0_0_SHORT$" } } # If missing - will fallback to default text (the longest)
+}
+

@@ -5,18 +5,27 @@
 # 60200 - 60299 }
 
 # Harondor colonisation by the Haradrim/Corsairs/Chelkiags
-country_event = {
+province_event = {
 	id = 60200
-	title = "The colonisation of Harondor"
+	title = "The Colonization of Harondor"
 	desc = "EVTDESC60200"
-	picture = "harad/map"
 	
 	trigger = {
-		has_country_flag = colonizing_harondor
-		NOT = { has_country_flag = colonized_harondor }
-		any_owned_province = {
-			has_empty_adjacent_province = yes
-			is_core = HRD
+		OR = {
+			province_id = 270 #Umbar
+			province_id = 286 #Gobel Ancalimon
+			province_id = 334 #Korb Traskal
+			province_id = 376 #Ikh'ahôn
+		}
+		owner = {
+			has_country_flag = colonizing_harondor
+			NOT = { has_country_flag = colonized_harondor }
+			HRD = {
+				any_core = {
+					empty = yes
+					any_neighbor_province = { owned_by = THIS }
+				}
+			}
 		}
 	}
 	
@@ -24,21 +33,42 @@ country_event = {
 	
 	option = {
 		name = "We are expanding"
-		random_owned = {
-			limit = {
-				has_empty_adjacent_province = yes
-				is_core = HRD
-				owner = { tag = THIS }
-			}
-			random_empty_neighbor_province = {
-				limit = { is_core = HRD }
-				random_owned = {
-					limit = { THIS = { NOT = { slavery = no_slavery } } }
-					state_scope = { is_slave = yes }
+		
+		owner = {
+			set_global_flag = hidden_effects
+			random_owned = {
+				limit = { owner = { has_global_flag = hidden_effects } }
+				# Adds a targeting modifier to all eligible provinces
+				owner = {
+					HRD = {
+						all_core = {
+							limit = {
+								empty = yes
+								any_neighbor_province = { owned_by = THIS }
+							}
+							add_province_modifier = { name = colonization_target duration = -1 }
+						}
+					}
+					
+					# Randomly grabs one of the marked provinces and annexes a random neighbor uncolonized core
+					FOR = {
+						random_owned = {
+							random_empty_neighbor_province = {
+								limit = { has_province_modifier = colonization_target }
+								secede_province = THIS
+							}
+						}
+					}
+					
+					# Clears the targeting modifiers to clear the path for the next time this event fires
+					HRD = { all_core = { remove_province_modifier = colonization_target } }
 				}
-				secede_province = THIS
 			}
 		}
+		
+		colonize_harondor_province_loc = {}
+		
+		owner = { clr_global_flag = hidden_effects }
 	}
 }
 
@@ -88,7 +118,6 @@ country_event = {
 	desc = "EVTDESC60202"
 	picture = "harad/map"
 	
-	major = yes
 	is_triggered_only = yes
 	
 	option = {
@@ -106,7 +135,6 @@ country_event = {
 	desc = "EVTDESC60203"
 	picture = "harad/map"
 	
-	major = yes
 	is_triggered_only = yes
 	
 	option = {
@@ -211,7 +239,6 @@ country_event = {
 	desc = "EVTDESC60205"
 	picture = "harad/map"
 	
-	major = yes
 	is_triggered_only = yes
 	
 	option = {
@@ -233,7 +260,6 @@ country_event = {
 	desc = "EVTDESC60206"
 	picture = "harad/map"
 	
-	major = yes
 	is_triggered_only = yes
 	
 	option = {
@@ -286,8 +312,6 @@ country_event = {
 	desc = "EVTDESC60207"
 	picture = "harad/map"
 	
-	major = yes
-	
 	trigger = {
 		OR = {
 			tag = UMB
@@ -338,8 +362,6 @@ country_event = {
 	title = "We won!"
 	desc = "EVTDESC60209"
 	picture = "harad/map"
-	
-	major = yes
 	
 	trigger = {
 		has_country_flag = harondor_core_owner
@@ -416,8 +438,6 @@ country_event = {
 	desc = "EVTDESC60211"
 	picture = "harad/map"
 	
-	major = yes
-	
 	trigger = {
 		OR = {
 			tag = UMB
@@ -453,14 +473,14 @@ country_event = {
 		any_owned = {
 			limit = {
 				OR = {
-					province_id = 234
-					province_id = 236
-					province_id = 238
-					province_id = 239
-					province_id = 284
-					province_id = 285
-					province_id = 286
-					province_id = 287
+					province_id = 234 # Has Yayb
+					province_id = 236 # Has Sebiya
+					province_id = 238 # Tharven
+					province_id = 239 # Athrad Hingren
+					province_id = 284 # Ausk Parch
+					province_id = 285 # Blacksand Vale
+					province_id = 286 # Gobel Ancalimon
+					province_id = 287 # Sok Abarrim
 					is_core	= HRN
 				}
 			}
@@ -471,12 +491,15 @@ country_event = {
 		random_owned = {
 			limit = {
 				THIS = {
-					tag = UMB
-					owns = 232
+					OR = {
+						tag = HRU
+						tag = CHE
+						tag = UMB
+					}
+					owns = 235 # Korb Ugarta
 				}
 			}
-			232 = {
-				remove_core = THIS
+			235 = {
 				add_core = HRN
 				secede_province = HRN
 			}
@@ -487,16 +510,81 @@ country_event = {
 					OR = {
 						tag = HRU
 						tag = CHE
+						tag = UMB
 					}
-					owns = 235
+					owns = 233 # An Sakal
 				}
 			}
-			235 = {
-				remove_core = THIS
+			233 = {
 				add_core = HRN
 				secede_province = HRN
 			}
 		}
+		random_owned = {
+			limit = {
+				THIS = {
+					OR = {
+						tag = HRU
+						tag = CHE
+						tag = UMB
+					}
+					owns = 234 # Has Yayb
+				}
+			}
+			234 = {
+				add_core = HRN
+				secede_province = HRN
+			}
+		}
+		random_owned = {
+			limit = {
+				THIS = {
+					OR = {
+						tag = HRU
+						tag = CHE
+						tag = UMB
+					}
+					owns = 233 # Has Sebiya
+				}
+			}
+			236 = {
+				add_core = HRN
+				secede_province = HRN
+			}
+		}
+		random_owned = {
+			limit = {
+				THIS = {
+					OR = {
+						tag = HRU
+						tag = CHE
+						tag = UMB
+					}
+					owns = 238 # Tharven
+				}
+			}
+			238 = {
+				add_core = HRN
+				secede_province = HRN
+			}
+		}
+		random_owned = {
+			limit = {
+				THIS = {
+					OR = {
+						tag = HRU
+						tag = CHE
+						tag = UMB
+					}
+					owns = 239 # Athrad Hingren
+				}
+			}
+			239 = {
+				add_core = HRN
+				secede_province = HRN
+			}
+		}
+		HRN = {	all_core = { remove_core = THIS } }
 		clr_country_flag = HRN_ultimatum_sent
 	}
 }
@@ -507,8 +595,6 @@ country_event = {
 	title = "We won!"
 	desc = "EVTDESC60209"
 	picture = "harad/map"
-	
-	major = yes
 	
 	trigger = {
 		tag = HRN

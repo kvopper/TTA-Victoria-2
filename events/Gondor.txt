@@ -7,23 +7,6 @@
 # Gondor Events: {
 # 50000 - 50099 }
 
-# TODO: Update event 50001 to remove the trigger
-#			May need to refactor to handle multiple potential wargoals
-#			Or refactor into it's own wargoal
-
-# TODO: Update events 50002/50003 so they don't fire outside of ending the war
-
-# TODO: Update event 50005 to add a general (Gotta figure out which one it would be, Adrahil or Imrahil)
-
-# TODO: Update event 50015 to handle Gondor not being good
-
-# TODO: Update event 50016 to have a better system for determining the cores of GNR
-#			May need multiple events
-#			Ensure that certain regions/ares got to GNR and certain regions/areas stay with Gondor
-
-# TODO: Update 50036 to target only region capitals
-#			And then target the capitals of adjacent regions
-
 # The Tolfalas Question
 country_event = {
 	id = 50000
@@ -34,14 +17,13 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = "ßLTo Dol Amrothß!"
+		name = "¬ßLTo Dol Amroth¬ß!"
 		AMR = {
 			inherit = TOL
 			any_owned = {
 				limit = {
 					is_core = TOL
 				}
-				remove_core = TOL
 				add_core = AMR
 			}
 			prestige = 5
@@ -63,7 +45,6 @@ country_event = {
 			limit = {
 				is_core = TOL
 			}
-			remove_core = TOL
 			add_core = AMR
 		}
 		relation = {
@@ -306,7 +287,7 @@ country_event = {
 	trigger = {
 		tag = GON
 		year = 2976
-		nationalvalue = ecthelion_ii
+		ruling_party = GON_ecthelion_ii
 		OR = {
 			AND = {
 				owns = 71
@@ -435,7 +416,7 @@ country_event = {
 	trigger = {
 		tag = GON
 		has_country_modifier = encouraging_outside_military_recruitment
-		nationalvalue = ecthelion_ii
+		ruling_party = GON_ecthelion_ii
 	}
 	
 	mean_time_to_happen = {
@@ -635,7 +616,7 @@ country_event = {
 			add_core = GNR
 		}
 		
-		GNR = { government = stewardship }
+		GNR = { government = monarchy_2 }
 		
 		any_country = {
 			limit = {
@@ -836,109 +817,43 @@ country_event = {
 	}
 }
 
-# The Death of Ecthelion II and Coronation of Denethor II {
-#	Currently it is assumed that Denethor II will succeed Ecthelion II as there is no way for him to die early or do other things
 # The Death of Ecthelion II
 country_event = {
 	id = 50021
 	title = "The Death of Ecthelion II"
 	desc = "EVTDESC50021"
-	picture = "gondor/leader_death"
+	picture = "gondor/leader_death_major"
 	
 	major = yes
 	fire_only_once = yes
 	
 	trigger = {
-		nationalvalue = ecthelion_ii
+		has_country_flag = GON_content
+		has_global_flag = ecthelion_ii_alive
 		year = 2980
-		NOT = { is_substate = yes }
-	}
-	
-	mean_time_to_happen = {
-		months = 96
-		
-		modifier = {
-			factor = 0.75
-			year = 2982
-			NOT = { year = 2983 }
-		}
-		modifier = {
-			factor = 0.5
-			year = 2983
-			NOT = { year = 2984 }
-		}
-		modifier = {
-			factor = 0.25
-			year = 2984
-		}
-		modifier = {
-			factor = 0.01
-			year = 2985
-		}
+		NOT = { ruling_party = GON_ecthelion_ii }
+		ruling_party_ideology = house_of_stewards
 	}
 	
 	option = {
 		name = "He will be missed"
 		
-		# If Denethor II is alive, we know the next leader
-		random_owned = {
-			limit = {
-				owner = { has_global_flag = denethor_ii_alive }
-			}
-			owner = {
-				set_country_flag = knows_next_leader
-				
-				any_country = {
-					limit = {
-						exists = yes
-						nationalvalue = ecthelion_ii
-					}
-					set_country_flag = knows_next_leader
-				}
-			}
-		}
+		plurality = 5
 		
-		# Kills Ecthelion II and coronates the new leader
-		country_event = 3501
+		FOR = { country_event = 3500 } # Generic Leader Died Cleanup
 		
-		any_country = {
-			limit = {
-				exists = yes
-				nationalvalue = ecthelion_ii
-			}
-			country_event = 3501
-		}
-		
-		random_owned = {
-			limit = {
-				owner = { has_global_flag = denethor_ii_alive }
-			}
-			owner = {
-				nationalvalue = denethor_ii
-				
-				any_country = {
-					limit = {
-						exists = yes
-						nationalvalue = ecthelion_ii
-					}
-					nationalvalue = denethor_ii
-				}
-			}
-		}
+		ruling_party_ideology = house_of_stewards
 		
 		clr_global_flag = ecthelion_ii_alive
 		
-		# Invites non-puppet allies to the coronation
-		any_country = {
-			limit = {
-				alliance_with = THIS
-				NOT = { is_substate = yes }
-			}
-			country_event = 3507
-		}
-		
 		# Denethor hated and was jealous of Thorongil. If Thorongil was still an advisor when Ecthelion II died, he would have left/been expelled from the court
 		remove_country_modifier = thorongil
+		remove_country_modifier = ecthelion_ii_modifier
+		
+		random_owned = {
+			limit = { owner = { ruling_party = GON_denethor_ii } }
+			owner = { add_country_modifier = { name = denethor_ii_modifier duration = -1 } }
+		}
 	}
 }
 
@@ -986,7 +901,7 @@ country_event = {
 		
 		# Audax Validator "." Ignore_1007
 		define_general = {
-			name = "ßLFarlong, ßMLord of Lossarnachß!"
+			name = "¬ßLForlong, ¬ßMLord of Lossarnach¬ß!"
 			background = lord_of_lossarnach
 			personality = stalwart
 		}
@@ -1038,7 +953,7 @@ country_event = {
 			}
 		}
 		
-		# Owns all of the regions in Lamedon except the RinglùÛ Vale
+		# Owns all of the regions in Lamedon except the Ringl√≥ Vale
 		GON_81 = { owned_by = THIS }
 		GON_89 = { owned_by = THIS }
 		
@@ -1059,7 +974,7 @@ country_event = {
 		
 		# Audax Validator "." Ignore_1007
 		define_general = {
-			name = "ßLAngbor, ßMLord of Lamedonß!"
+			name = "¬ßLAngbor, ¬ßMLord of Lamedon¬ß!"
 			background = lord_of_lamedon
 			personality = fearless
 		}
@@ -1088,10 +1003,10 @@ country_event = {
 	}
 }
 
-# The Death of Borhador and new Lord of the RinglÛ Vale
+# The Death of Borhador and new Lord of the Ringl√≥ Vale
 country_event = {
 	id = 50028
-	title = "The New Lord of the RinglÛ Vale"
+	title = "The New Lord of the Ringl√≥ Vale"
 	desc = "EVTDESC50028"
 	picture = "gondor/leader_death"
 	
@@ -1109,7 +1024,7 @@ country_event = {
 			}
 		}
 		
-		# Owns the RinglÛ Vale
+		# Owns the Ringl√≥ Vale
 		GON_92 = { owned_by = THIS }
 		
 		NOT = { has_global_flag = dervorin_lord_of_the_ringlo_vale }
@@ -1125,11 +1040,11 @@ country_event = {
 	}
 	
 	option = {
-		name = "Long live Dervorin, Lord of the RinglÛ Vale!"
+		name = "Long live Dervorin, Lord of the Ringl√≥ Vale!"
 		
 		# Audax Validator "." Ignore_1007
 		define_general = {
-			name = "ßLDervorin, ßMLord of the RinglÛ Valeß!"
+			name = "¬ßLDervorin, ¬ßMLord of the Ringl√≥ Vale¬ß!"
 			background = lord_of_ringlo_vale
 			personality = stalwart
 		}
@@ -1144,17 +1059,17 @@ country_event = {
 	}
 }
 
-# Informing Overlord that Dervorin is now the Lord of the RinglÛ Vale
+# Informing Overlord that Dervorin is now the Lord of the Ringl√≥ Vale
 country_event = {
 	id = 50029
-	title = "The New Lord of the RinglÛ Vale"
+	title = "The New Lord of the Ringl√≥ Vale"
 	desc = "EVTDESC50028"
 	picture = "gondor/leader_death"
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = "Long live Dervorin, Lord of the RinglÛ Vale!"
+		name = "Long live Dervorin, Lord of the Ringl√≥ Vale!"
 	}
 }
 
@@ -1203,11 +1118,11 @@ country_event = {
 	}
 	
 	option = {
-		name = "Long live Duinhir, Lord of the RinglÛ Vale!"
+		name = "Long live Duinhir, Lord of the Ringl√≥ Vale!"
 		
 		# Audax Validator "." Ignore_1007
 		define_general = {
-			name = "ßLDuinhir, ßMLord of the RinglÛ Valeß!"
+			name = "¬ßLDuinhir, ¬ßMLord of the Ringl√≥ Vale¬ß!"
 			background = lord_of_ringlo_vale
 			personality = stalwart
 		}
@@ -1223,17 +1138,17 @@ country_event = {
 	}
 }
 
-# Informing Overlord that Duinhir is now the Lord of the RinglÛ Vale
+# Informing Overlord that Duinhir is now the Lord of the Ringl√≥ Vale
 country_event = {
 	id = 50031
-	title = "The New Lord of the RinglÛ Vale"
+	title = "The New Lord of the Ringl√≥ Vale"
 	desc = "EVTDESC50030"
 	picture = "gondor/leader_death"
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = "Long live Duinhir, Lord of the RinglÛ Vale!"
+		name = "Long live Duinhir, Lord of the Ringl√≥ Vale!"
 	}
 }
 
@@ -1281,7 +1196,7 @@ country_event = {
 		
 		# Audax Validator "." Ignore_1007
 		define_general = {
-			name = "ßLHirluin, ßMLord of Pinnath Gelinß!"
+			name = "¬ßLHirluin, ¬ßMLord of Pinnath Gelin¬ß!"
 			background = lord_of_pinnath_gelin
 			personality = persistent
 		}
@@ -1355,7 +1270,7 @@ country_event = {
 		
 		# Audax Validator "." Ignore_1007
 		define_general = {
-			name = "ßLGolasgil, ßMLord of Anfalasß!"
+			name = "¬ßLGolasgil, ¬ßMLord of Anfalas¬ß!"
 			background = lord_of_anfalas
 			personality = stout
 		}
@@ -1409,7 +1324,7 @@ province_event = {
 	mean_time_to_happen = { months = 4800 }
 	
 	option = {
-		name = "We agree with ßB$PROVINCENAME$"
+		name = "We agree with ¬ßB$PROVINCENAME$"
 		
 		random_neighbor_province = {
 			limit = {
@@ -1421,7 +1336,7 @@ province_event = {
 	}
 	
 	option = {
-		name = "We do not agree with ßB$PROVINCENAME$"
+		name = "We do not agree with ¬ßB$PROVINCENAME$"
 		
 		aristocrats = { militancy = 5 }
 	}
@@ -1452,21 +1367,26 @@ province_event = {
 
 # { Expansion of the Harondor Puppet
 # Harondor Puppet Expands
-country_event = {
+province_event = {
 	id = 50038
 	title = "Harondor Expands"
 	desc = "EVTDESC50038"
-	picture = "harad/map"
 	
 	trigger = {
-		tag = HRD
 		OR = {
-			vassal_of = GON
-			vassal_of = MOR
+			province_id = 226 #Methir
+			province_id = 255 #Gilin
 		}
-		any_owned_province = {
-			has_empty_adjacent_province = yes
-			is_core = HRD
+		owner = {
+			tag = HRD
+			OR = {
+				vassal_of = GON
+				vassal_of = MOR
+			}
+			any_core = {
+				empty = yes
+				any_neighbor_province = { owned_by = THIS }
+			}
 		}
 	}
 	
@@ -1475,19 +1395,42 @@ country_event = {
 	option = {
 		name = "We are reclaiming what is rightfully ours"
 		
-		random_owned = {
-			limit = {
-				has_empty_adjacent_province = yes
-				is_core = HRD
-			}
-			
-			random_empty_neighbor_province = {
-				limit = {
-					is_core = HRD
+		owner = {
+			set_global_flag = hidden_effects
+			random_owned = {
+				limit = { owner = { has_global_flag = hidden_effects } }
+				# Adds a targeting modifier to all eligible provinces
+				owner = {
+					HRD = {
+						all_core = {
+							limit = {
+								empty = yes
+								any_neighbor_province = { owned_by = THIS }
+							}
+							add_province_modifier = { name = colonization_target duration = -1 }
+						}
+					}
+					
+					# Randomly grabs one of the marked provinces and annexes a random neighbor uncolonized core
+					FOR = {
+						random_owned = {
+							random_empty_neighbor_province = {
+								limit = { has_province_modifier = colonization_target }
+								secede_province = THIS
+							}
+						}
+					}
+					
+					# Clears the targeting modifiers to clear the path for the next time this event fires
+					HRD = { all_core = { remove_province_modifier = colonization_target } }
+					
 				}
-				secede_province = THIS
 			}
 		}
+		
+		colonize_harondor_province_loc = {}
+		
+		owner = { clr_global_flag = hidden_effects }
 	}
 }
 
@@ -1510,7 +1453,7 @@ country_event = {
 	option = {
 		name = "We are reclaiming what is rightfully ours"
 		
-		HRD = { country_event = 100006 }
+		HRD = { country_event = 3501 }
 	}
 }
 # }
@@ -1581,7 +1524,7 @@ country_event = {
 			add_province_modifier = { name = the_mesta duration = -1 }
 		}
 		
-		# Add the Mesta to any horse or woll province in Anfalas any puppet owns
+		# Add the Mesta to any horse or wool province in Anfalas any puppet owns
 		any_country = {
 			limit = {
 				vassal_of = THIS
@@ -1602,7 +1545,7 @@ country_event = {
 						trade_goods = horses
 						trade_goods = wool
 					}
-				}			
+				}
 				add_province_modifier = { name = the_mesta duration = -1 }
 			}
 		}
@@ -1649,7 +1592,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "ßLAndrast is a separate province!ß!"
+		name = "¬ßLAndrast is a separate province!¬ß!"
 		
 		ADR = {
 			all_core = {
@@ -1723,10 +1666,10 @@ country_event = {
 	}
 }
 
-# E‰rcaraxÎ
+# E√§rcarax√´
 province_event = {
 	id = 50042
-	title = "A Sighting of E‰rcaraxÎ"
+	title = "A Sighting of E√§rcarax√´"
 	desc = "EVTDESC50042"
 	
 	fire_only_once = yes
@@ -1750,7 +1693,7 @@ province_event = {
 # The Andrast-Druwaith Iaur Border
 country_event = {
 	id = 50043
-	title = "The Andrast - Dr˙waith Iaur Border"
+	title = "The Andrast - Dr√∫waith Iaur Border"
 	desc = "EVTDESC50043"
 	picture = "gondor/andrast_map"
 	
@@ -1844,7 +1787,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "The Ahasirith is the border, but Haerawreigion is in Dr˙waith Iaur"
+		name = "The Ahasirith is the border, but Haerawreigion is in Dr√∫waith Iaur"
 		
 		GON_183 = { add_core = PUK }
 		
@@ -1895,7 +1838,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "The L˚rollÛ is the border"
+		name = "The L√ªroll√≥ is the border"
 		
 		GON_183 = { add_core = PUK }
 		GON_160 = { add_core = PUK }
@@ -2130,8 +2073,7 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
-		nationalvalue = denethor_ii
-		# TODO: OR about Boromir being killed (don't want it to fire before he comes of age)
+		ruling_party = GON_denethor_ii
 		has_country_modifier = palantir_madness
 		NOT = { controls = 16 }
 		OR = {
@@ -2157,130 +2099,28 @@ country_event = {
 	id = 50049
 	title = "The Passing of Denethor II"
 	desc = "EVTDESC50049"
-	picture = "gondor/leader_death"
+	picture = "gondor/leader_death_major"
 	
 	major = yes
 	fire_only_once = yes
 	
 	trigger = {
-		nationalvalue = denethor_ii
-		year = 3025
-		NOT = { is_substate = yes }
-	}
-	
-	mean_time_to_happen = {
-		months = 96
-		
-		modifier = {
-			factor = 0.75
-			year = 3027
-			NOT = { year = 3028 }
-		}
-		modifier = {
-			factor = 0.5
-			year = 3028
-			NOT = { year = 3029 }
-		}
-		modifier = {
-			factor = 0.25
-			year = 3029
-		}
-		modifier = {
-			factor = 0.01
-			year = 3030
-		}
+		has_country_flag = GON_content
+		has_global_flag = denethor_ii_alive
+		year = 3019
+		NOT = { ruling_party = GON_denethor_ii }
+		ruling_party_ideology = house_of_stewards
 	}
 	
 	option = {
 		name = "He will be missed"
 		
-		# If one of Denethor II's successors is alive, we know the next leader
-		random_owned = {
-			limit = {
-				owner = {
-					OR = {
-						has_global_flag = boromir_ii_alive
-						has_global_flag = faramir_i_alive
-						# TODO: global flag about Aragorn coming to Gondor (being available to be King)
-					}
-				}
-			}
-			owner = {
-				set_country_flag = knows_next_leader
-				
-				any_country = {
-					limit = {
-						exists = yes
-						nationalvalue = denethor_ii
-					}
-					set_country_flag = knows_next_leader
-				}
-			}
-		}
+		plurality = 5
 		
-		# Kills Denethor II and coronates the new leader
-		country_event = 3501
-		
-		any_country = {
-			limit = {
-				exists = yes
-				nationalvalue = denethor_ii
-			}
-			country_event = 3501
-		}
-		
-		# Boromir II highest priority
-		random_owned = {
-			limit = {
-				owner = { has_global_flag = boromir_ii_alive }
-			}
-			owner = {
-				nationalvalue = boromir_ii
-				
-				any_country = {
-					limit = {
-						exists = yes
-						nationalvalue = denethor_ii
-					}
-					nationalvalue = boromir_ii
-				}
-			}
-		}
-		
-		# Faramir I next
-		random_owned = {
-			limit = {
-				owner = {
-					NOT = { has_global_flag = boromir_ii_alive }
-					has_global_flag = faramir_i_alive
-				}
-			}
-			owner = {
-				nationalvalue = faramir_i
-				
-				any_country = {
-					limit = {
-						exists = yes
-						nationalvalue = denethor_ii
-					}
-					nationalvalue = faramir_i
-				}
-			}
-		}
-		
-		# Aragorn Elessar last
-		# TODO: Setup the check for Aragorn
+		FOR = { country_event = 3500 } # Generic Leader Died Cleanup
 		
 		clr_country_flag = denethor_ii_alive
-		
-		# Invites non-puppet allies to the coronation
-		any_country = {
-			limit = {
-				alliance_with = THIS
-				NOT = { is_substate = yes }
-			}
-			country_event = 3507
-		}
+		remove_country_modifier = denethor_ii_modifier
 	}
 }
 # }
@@ -2356,13 +2196,11 @@ country_event = {
 		
 		# Audax Validator "." Ignore_1007
 		define_general = {
-			name = "ßLBoromir, ßMWarden of the White Towerß!"
+			name = "¬ßLBoromir, ¬ßMWarden of the White Tower¬ß!"
 			background = warden_of_white_tower
 			personality = heroic
 		}
 		primary_culture = dunedain
-		
-		set_global_flag = boromir_ii_alive
 	}
 }
 
@@ -2383,13 +2221,11 @@ country_event = {
 		
 		# Audax Validator "." Ignore_1007
 		define_general = {
-			name = "ßLFaramir, ßMCaptain of Gondorß!"
+			name = "¬ßLFaramir, ¬ßMCaptain of Gondor¬ß!"
 			background = captain_of_gondor
 			personality = heroic
 		}
 		primary_culture = dunedain
-		
-		set_global_flag = faramir_i_alive
 	}
 }
 
@@ -2407,11 +2243,10 @@ country_event = {
 		
 		# Audax Validator "." Ignore_1007
 		define_general = {
-			name = "ßLImrahil, ßMPrince of Belfalasß!"
+			name = "¬ßLImrahil, ¬ßMPrince of Belfalas¬ß!"
 			background = prince_of_belfalas
 			personality = tactical
 		}
-		set_global_flag = imrahil_i_alive
 	}
 }
 
@@ -2439,7 +2274,7 @@ country_event = {
 		
 		# Audax Validator "." Ignore_1007
 		define_general = {
-			name = "ßLMadril, ßMRanger of Ithilienß!"
+			name = "¬ßLMadril, ¬ßMRanger of Ithilien¬ß!"
 			background = ranger_of_ithilien
 			personality = persistent
 		}
@@ -2470,7 +2305,7 @@ country_event = {
 		
 		# Audax Validator "." Ignore_1007
 		define_general = {
-			name = "ßLBeregond, ßMCitadel Guardß!"
+			name = "¬ßLBeregond, ¬ßMCitadel Guard¬ß!"
 			background = citadel_guard
 			personality = resolute
 		}
@@ -2505,7 +2340,7 @@ country_event = {
 		
 		# Audax Validator "." Ignore_1007
 		define_admiral = {
-			name = "ßLBaranor, ßMCaptain of Shipsß!"
+			name = "¬ßLBaranor, ¬ßMCaptain of Ships¬ß!"
 			background = captain_of_ships
 			personality = tactical
 		}
@@ -2516,7 +2351,7 @@ country_event = {
 		
 		# Audax Validator "." Ignore_1007
 		define_admiral = {
-			name = "ßLFingon, ßMCaptain of Shipsß!"
+			name = "¬ßLFingon, ¬ßMCaptain of Ships¬ß!"
 			background = captain_of_ships
 			personality = stalwart
 		}
@@ -2527,7 +2362,7 @@ country_event = {
 		
 		# Audax Validator "." Ignore_1007
 		define_admiral = {
-			name = "ßLMalvegil, ßMCaptain of Shipsß!"
+			name = "¬ßLMalvegil, ¬ßMCaptain of Ships¬ß!"
 			background = captain_of_ships
 			personality = heroic
 		}
@@ -2541,15 +2376,37 @@ country_event = {
 	desc = "EVTDESC50058"
 	picture = "harad/map"
 	
-	major = yes
 	is_triggered_only = yes
 	
 	option = {
 		name = "We will not surrender to the Shadow!"
 		prestige = -10
+		plurality = 2
 		add_country_modifier = {
 			name = harondor_lost
 			duration = -1
 		}
+	}
+}
+
+# Bonuses from Thorongil go away after he has left
+country_event = {
+	id = 50059
+	title = "The Thorongil Departs"
+	desc = "EVTDESC50059"
+	picture = "gondor/thorongil"
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = GON
+		has_country_modifier = GON_increased_naval_concern
+		NOT = { has_country_modifier = thorongil }
+	}
+	
+	option = {
+		name = "Drat"
+		
+		remove_country_modifier = GON_increased_naval_concern
 	}
 }

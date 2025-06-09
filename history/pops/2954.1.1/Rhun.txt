@@ -1848,17 +1848,12 @@
 	labourers = {
 		culture = logath
 		religion = men
-		size = 17140
+		size = 18140
 	}
 	soldiers = {
 		culture = kuga
 		religion = men
 		size = 600
-	}
-	tribals = {
-		culture = logath
-		religion = men
-		size = 1000
 	}
 }
 
@@ -1887,17 +1882,12 @@
 	labourers = {
 		culture = logath
 		religion = men
-		size = 17940
+		size = 19340
 	}
 	soldiers = {
 		culture = logath
 		religion = men
 		size = 200
-	}
-	tribals = {
-		culture = logath
-		religion = men
-		size = 1400
 	}
 }
 
@@ -1960,17 +1950,12 @@
 	labourers = {
 		culture = logath
 		religion = men
-		size = 18040
+		size = 19340
 	}
 	soldiers = {
 		culture = logath
 		religion = men
 		size = 200
-	}
-	tribals = {
-		culture = logath
-		religion = men
-		size = 1300
 	}
 }
 
@@ -4179,6 +4164,244 @@
 		culture = logath
 		religion = men
 		size = 450
+	}
+}
+
+# Burh Sagra
+1476 = {
+	aristocrats = {
+		culture = logath
+		religion = men
+		size = 18
+	}
+	artisans = {
+		culture = logath
+		religion = men
+		size = 1800
+	}
+	bureaucrats = {
+		culture = logath
+		religion = men
+		size = 144
+	}
+	clergymen = {
+		culture = logath
+		religion = men
+		size = 90
+	}
+	labourers = {
+		culture = logath
+		religion = men
+		size = 15408
+	}
+	soldiers = {
+		culture = logath
+		religion = men
+		size = 540
+	}
+}
+
+# Burh Dacranamel
+1477 = {
+	aristocrats = {
+		culture = urgath
+		religion = men
+		size = 18
+	}
+	artisans = {
+		culture = urgath
+		religion = men
+		size = 1800
+	}
+	bureaucrats = {
+		culture = urgath
+		religion = men
+		size = 144
+	}
+	clergymen = {
+		culture = urgath
+		religion = men
+		size = 90
+	}
+	labourers = {
+		culture = urgath
+		religion = men
+		size = 15228
+	}
+	soldiers = {
+		culture = urgath
+		religion = men
+		size = 720
+	}
+}
+
+# Burh Athorn
+1478 = {
+	aristocrats = {
+		culture = logath
+		religion = men
+		size = 18
+	}
+	artisans = {
+		culture = logath
+		religion = men
+		size = 360
+	}
+	bureaucrats = {
+		culture = logath
+		religion = men
+		size = 18
+	}
+	clergymen = {
+		culture = logath
+		religion = men
+		size = 18
+	}
+	labourers = {
+		culture = logath
+		religion = men
+		size = 17406
+	}
+	soldiers = {
+		culture = logath
+		religion = men
+		size = 180
+	}
+}
+
+# Burh Ibar
+1480 = {
+	aristocrats = {
+		culture = kuga
+		religion = men
+		size = 18
+	}
+	artisans = {
+		culture = kuga
+		religion = men
+		size = 360
+	}
+	bureaucrats = {
+		culture = kuga
+		religion = men
+		size = 18
+	}
+	clergymen = {
+		culture = kuga
+		religion = men
+		size = 18
+	}
+	labourers = {
+		culture = kuga
+		religion = men
+		size = 17406
+	}
+	soldiers = {
+		culture = kuga
+		religion = men
+		size = 180
+	}
+}
+
+# Burh Agasha
+1481 = {
+	aristocrats = {
+		culture = kuga
+		religion = men
+		size = 18
+	}
+	artisans = {
+		culture = kuga
+		religion = men
+		size = 360
+	}
+	bureaucrats = {
+		culture = kuga
+		religion = men
+		size = 18
+	}
+	clergymen = {
+		culture = kuga
+		religion = men
+		size = 18
+	}
+	labourers = {
+		culture = kuga
+		religion = men
+		size = 17406
+	}
+	soldiers = {
+		culture = kuga
+		religion = men
+		size = 180
+	}
+}
+
+# Burh Lyst
+1482 = {
+	aristocrats = {
+		culture = urgath
+		religion = men
+		size = 18
+	}
+	artisans = {
+		culture = urgath
+		religion = men
+		size = 360
+	}
+	bureaucrats = {
+		culture = urgath
+		religion = men
+		size = 18
+	}
+	clergymen = {
+		culture = urgath
+		religion = men
+		size = 18
+	}
+	labourers = {
+		culture = urgath
+		religion = men
+		size = 17406
+	}
+	soldiers = {
+		culture = urgath
+		religion = men
+		size = 180
+	}
+}
+
+# Burh Sûrûbeki
+1483 = {
+	aristocrats = {
+		culture = urgath
+		religion = men
+		size = 18
+	}
+	artisans = {
+		culture = urgath
+		religion = men
+		size = 900
+	}
+	bureaucrats = {
+		culture = urgath
+		religion = men
+		size = 90
+	}
+	clergymen = {
+		culture = urgath
+		religion = men
+		size = 54
+	}
+	labourers = {
+		culture = urgath
+		religion = men
+		size = 16398
+	}
+	soldiers = {
+		culture = urgath
+		religion = men
+		size = 540
 	}
 }
 
