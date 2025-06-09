@@ -36,8 +36,8 @@ brigantine = {
 	}
 	
 	#Naval Abilties
-	hull = 12
-	gun_power = 20
+	hull = 46
+	gun_power = 60
 	fire_range = 0.58
 	evasion = 0
 }

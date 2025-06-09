@@ -8,9 +8,8 @@ merchant_marine_1 = {
 	transport = {
 		hull = 1
 	}
-	supply_range = 0.05
+	supply_range = 0.1
 	naval_attrition = -0.01
-	activate_building = naval_base
 	
 	ai_chance = {
 		factor = 1
@@ -64,11 +63,10 @@ merchant_marine_2 = {
 	unciv_military = yes
 
 	transport = {
-		hull = 1
+		hull = 2
 	}
-	supply_range = 0.05
-	naval_attrition = -0.01
-	max_naval_base = 1
+	supply_range = 0.1
+	naval_attrition = -0.02
 	
 	ai_chance = {
 		factor = 1
@@ -122,11 +120,10 @@ merchant_marine_3 = {
 	unciv_military = yes
 
 	transport = {
-		hull = 1
+		hull = 3
 	}
 	supply_range = 0.1
-	naval_attrition = -0.02
-	max_naval_base = 1
+	naval_attrition = -0.03
 	
 	ai_chance = {
 		factor = 1
@@ -180,10 +177,10 @@ merchant_marine_4 = {
 	unciv_military = yes
 
 	transport = {
-		hull = 1
+		hull = 4
 	}
 	supply_range = 0.1
-	naval_attrition = -0.02
+	naval_attrition = -0.04
 	
 	ai_chance = {
 		factor = 1
@@ -237,10 +234,10 @@ merchant_marine_5 = {
 	unciv_military = yes
 
 	transport = {
-		hull = 1
+		hull = 5
 	}
-	supply_range = 0.2
-	naval_attrition = -0.04
+	supply_range = 0.1
+	naval_attrition = -0.05
 	
 	ai_chance = {
 		factor = 1
@@ -295,16 +292,16 @@ light_ships_1 = {
 	unciv_military = yes
 
 	galley = {
-		hull = 4
-		gun_power = 1
+		hull = 1
+		gun_power = 3
 	}
 	galleass = {
-		hull = 4
-		gun_power = 1
+		hull = 1
+		gun_power = 3
 	}
 	galiot = {
-		hull = 4
-		gun_power = 1
+		hull = 1
+		gun_power = 3
 	}
 	
 	ai_chance = {
@@ -359,16 +356,16 @@ light_ships_2 = {
 	unciv_military = yes
 
 	galley = {
-		hull = 4
-		gun_power = 1
+		hull = 2
+		gun_power = 6
 	}
 	galleass = {
-		hull = 4
-		gun_power = 1
+		hull = 2
+		gun_power = 6
 	}
 	galiot = {
-		hull = 4
-		gun_power = 1
+		hull = 2
+		gun_power = 6
 	}
 	
 	ai_chance = {
@@ -423,16 +420,16 @@ light_ships_3 = {
 	unciv_military = yes
 
 	galley = {
-		hull = 8
-		gun_power = 2
+		hull = 3
+		gun_power = 9
 	}
 	galleass = {
-		hull = 8
-		gun_power = 2
+		hull = 3
+		gun_power = 9
 	}
 	galiot = {
-		hull = 8
-		gun_power = 2
+		hull = 3
+		gun_power = 9
 	}
 	activate_unit = galleass
 	
@@ -488,18 +485,16 @@ light_ships_4 = {
 	unciv_military = yes
 
 	galley = {
-		hull = 8
-		gun_power = 2
+		hull = 4
+		gun_power = 12
 	}
 	galleass = {
-		hull = 8
-		gun_power = 2
-		torpedo_attack = 2
+		hull = 4
+		gun_power = 12
 	}
 	galiot = {
-		hull = 8
-		gun_power = 2
-		torpedo_attack = 2
+		hull = 4
+		gun_power = 12
 	}
 	
 	ai_chance = {
@@ -554,18 +549,16 @@ light_ships_5 = {
 	unciv_military = yes
 
 	galley = {
-		hull = 16
-		gun_power = 4
+		hull = 5
+		gun_power = 15
 	}
 	galleass = {
-		hull = 16
-		gun_power = 4
-		torpedo_attack = 2
+		hull = 5
+		gun_power = 15
 	}
 	galiot = {
-		hull = 16
-		gun_power = 4
-		torpedo_attack = 8
+		hull = 5
+		gun_power = 15
 	}
 	activate_unit = galiot
 	
@@ -622,16 +615,16 @@ heavy_ships_1 = {
 	unciv_military = yes
 
 	cog = {
-		hull = 6
-		gun_power = 2
+		hull = 1
+		gun_power = 3
 	}
 	caravel = {
-		hull = 6
-		gun_power = 2
+		hull = 1
+		gun_power = 3
 	}
 	brigantine = {
-		hull = 6
-		gun_power = 2
+		hull = 1
+		gun_power = 3
 	}
 	
 	ai_chance = {
@@ -686,16 +679,16 @@ heavy_ships_2 = {
 	unciv_military = yes
 
 	cog = {
-		hull = 6
-		gun_power = 2
+		hull = 2
+		gun_power = 6
 	}
 	caravel = {
-		hull = 6
-		gun_power = 2
+		hull = 2
+		gun_power = 6
 	}
 	brigantine = {
-		hull = 6
-		gun_power = 2
+		hull = 2
+		gun_power = 6
 	}
 	
 	ai_chance = {
@@ -750,16 +743,16 @@ heavy_ships_3 = {
 	unciv_military = yes
 
 	cog = {
-		hull = 12
-		gun_power = 4
+		hull = 3
+		gun_power = 9
 	}
 	caravel = {
-		hull = 12
-		gun_power = 4
+		hull = 3
+		gun_power = 9
 	}
 	brigantine = {
-		hull = 12
-		gun_power = 4
+		hull = 3
+		gun_power = 9
 	}
 	activate_unit = caravel
 	
@@ -815,16 +808,16 @@ heavy_ships_4 = {
 	unciv_military = yes
 
 	cog = {
-		hull = 12
-		gun_power = 4
+		hull = 4
+		gun_power = 12
 	}
 	caravel = {
-		hull = 12
-		gun_power = 4
+		hull = 4
+		gun_power = 12
 	}
 	brigantine = {
-		hull = 12
-		gun_power = 4
+		hull = 4
+		gun_power = 12
 	}
 	
 	ai_chance = {
@@ -879,16 +872,16 @@ heavy_ships_5 = {
 	unciv_military = yes
 
 	cog = {
-		hull = 24
-		gun_power = 8
+		hull = 5
+		gun_power = 15
 	}
 	caravel = {
-		hull = 24
-		gun_power = 8
+		hull = 5
+		gun_power = 15
 	}
 	brigantine = {
-		hull = 24
-		gun_power = 8
+		hull = 5
+		gun_power = 15
 	}
 	activate_unit = brigantine
 	
@@ -945,12 +938,10 @@ naval_construction_1 = {
 	unciv_military = yes
 
 	navy_base = {
-		hull = 1
 		maximum_speed = 1
 		build_time = -10
 	}
-	supply_range = 0.1
-	naval_attrition = -0.02
+	activate_building = naval_base
 	
 	ai_chance = {
 		factor = 1
@@ -1004,12 +995,10 @@ naval_construction_2 = {
 	unciv_military = yes
 
 	navy_base = {
-		hull = 1
-		maximum_speed = 1
+		maximum_speed = 2
 		build_time = -10
 	}
-	supply_range = 0.1
-	naval_attrition = -0.02
+	max_naval_base = 1
 	
 	ai_chance = {
 		factor = 1
@@ -1063,12 +1052,10 @@ naval_construction_3 = {
 	unciv_military = yes
 
 	navy_base = {
-		hull = 2
-		maximum_speed = 2
+		maximum_speed = 3
 		build_time = -10
 	}
-	supply_range = 0.2
-	naval_attrition = -0.04
+	max_naval_base = 1
 	
 	ai_chance = {
 		factor = 1
@@ -1082,12 +1069,10 @@ naval_construction_4 = {
 	unciv_military = yes
 
 	navy_base = {
-		hull = 2
-		maximum_speed = 2
+		maximum_speed = 4
 		build_time = -10
 	}
-	supply_range = 0.2
-	naval_attrition = -0.04
+	max_naval_base = 1
 	
 	ai_chance = {
 		factor = 1
@@ -1141,12 +1126,10 @@ naval_construction_5 = {
 	unciv_military = yes
 
 	navy_base = {
-		hull = 4
-		maximum_speed = 4
+		maximum_speed = 5
 		build_time = -10
 	}
-	supply_range = 0.4
-	naval_attrition = -0.08
+	max_naval_base = 1
 	
 	ai_chance = {
 		factor = 1

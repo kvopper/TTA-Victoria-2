@@ -34,8 +34,8 @@ galiot = {
 	}
 	
 	#Naval Abilties
-	hull = 9
-	gun_power = 12
+	hull = 22
+	gun_power = 22
 	fire_range = 0.50
 	evasion = 0.35
 	torpedo_attack = 0

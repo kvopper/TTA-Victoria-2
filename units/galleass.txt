@@ -34,8 +34,8 @@ galleass = {
 	}
 	
 	#Naval Abilties
-	hull = 6
-	gun_power = 8
+	hull = 18
+	gun_power = 13
 	fire_range = 0.50
 	evasion = 0.30
 	torpedo_attack = 0
