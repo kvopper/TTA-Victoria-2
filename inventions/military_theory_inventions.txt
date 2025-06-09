@@ -114,6 +114,16 @@ rapid_redeployment = {
 		}
 	}
 }
+banners_of_command = {
+	limit = { army_tactics_4 = 1 }
+	chance = {
+		base = 2
+	}
+	
+	effect = {
+		morale = 0.25
+	}
+}
 battlefield_mobility = {
 	limit = { army_tactics_5 = 1 }
 	chance = {
@@ -123,6 +133,16 @@ battlefield_mobility = {
 		army_base = {
 			maneuver = 1
 		}
+	}
+}
+rally_points = {
+	limit = { army_tactics_5 = 1 }
+	chance = {
+		base = 2
+	}
+	
+	effect = {
+		morale = 0.25
 	}
 }
 eagles_invention = {

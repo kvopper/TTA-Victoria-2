@@ -274,7 +274,7 @@ army_tactics_1 = {
 	cost = 3600
 	unciv_military = yes
 
-	morale = 0.25
+	morale = 0.1
 	military_tactics = 0.25
 	
 	ai_chance = {
@@ -322,7 +322,7 @@ army_tactics_2 = {
 	cost = 7200
 	unciv_military = yes
 
-	morale = 0.25
+	morale = 0.15
 	military_tactics = 0.25
 	
 	ai_chance = {
@@ -466,7 +466,7 @@ army_tactics_5 = {
 	cost = 18000
 	unciv_military = yes
 
-	morale = 0.5
+	morale = 0.25
 	military_tactics = 0.25
 	
 	ai_chance = {
