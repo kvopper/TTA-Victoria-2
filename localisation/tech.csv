@@ -69,11 +69,11 @@ army_tactics_2;Improved Army Tactics;x
 army_tactics_3;Advanced Army Tactics;x
 army_tactics_4;Elite Army Tactics;x
 army_tactics_5;Supreme Army Tactics;x
-training_1;Militias;x
-training_2;Lance Retinues;x
-training_3;Basic Training;x
-training_4;Military Drill;x
-training_5;Discipline;x
+training_1;Barracks;x
+training_2;Pressed Service;x
+training_3;Recruitment Campaigns;x
+training_4;Standing Armies;x
+training_5;Professional Armies;x
 naval_theory_1;Basic Naval Theory;x
 naval_theory_2;Improved Naval Theory;x
 naval_theory_3;Advanced Naval Theory;x

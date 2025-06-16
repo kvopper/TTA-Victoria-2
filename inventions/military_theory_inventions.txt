@@ -231,44 +231,52 @@ minasdirith_invention = {
 		}
 	}
 }
-unlock_barracks = {
+militias = {
 	limit = { training_1 = 1 }
 	chance = {
 		base = 2
 	}
 	effect = {
-		activate_building = barracks
-		mobilisation_size = 0.01
+		regular_experience_level = 2
+		army_base = {
+			discipline = 0.02
+		}
 	}
 }
-pressed_service = {
+lance_retinues = {
 	limit = { training_2 = 1 }
 	chance = {
 		base = 2
 	}
 	effect = {
-		mobilisation_size = 0.02
-		max_barracks = 1
+		regular_experience_level = 3
+		army_base = {
+			discipline = 0.03
+		}
 	}
 }
-recruitment_campaigns = {
+basic_training = {
 	limit = { training_3 = 1 }
 	chance = {
 		base = 2
 	}
 	effect = {
-		mobilisation_size = 0.03
-		max_barracks = 1
+		regular_experience_level = 5
+		army_base = {
+			discipline = 0.05
+		}
 	}
 }
-standing_armies = {
+military_drill = {
 	limit = { training_4 = 1 }
 	chance = {
 		base = 2
 	}
 	effect = {
-		mobilisation_size = 0.04
-		max_barracks = 1
+		regular_experience_level = 5
+		army_base = {
+			discipline = 0.05
+		}
 	}
 }
 military_schools = {
@@ -280,14 +288,16 @@ military_schools = {
 		enable_crime = military_schools_effect
 	}
 }
-professional_armies = {
+discipline_invention = {
 	limit = { training_5 = 1 }
 	chance = {
 		base = 2
 	}
 	effect = {
-		mobilisation_size = 0.05
-		max_barracks = 1
+		regular_experience_level = 5
+		army_base = {
+			discipline = 0.05
+		}
 	}
 }
 outposts = {
