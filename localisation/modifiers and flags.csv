@@ -74,7 +74,7 @@ province_wealth_4;§OProvince Wealth:§! §GBountiful (+4)§!;x
 desc_province_wealth_4; ;x
 province_wealth_5;§OProvince Wealth:§! §GRich (+5)§!;x
 desc_province_wealth_5; ;x
-military_schools_effect;Recruit Generals §Wevent will no longer give generals with negative stats;x
+military_schools_effect;Recruit Generals §Wand §YRecruit Admirals §Wevent will no longer give generals with negative stats;x
 ##################################;x }
 ##### ORGANIZATION MODIFIERS #####;x {
 ##################################;x
