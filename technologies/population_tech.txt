@@ -4,7 +4,7 @@ taxes_1 = {
 	year = 2954
 	cost = 3600
 	
-	tax_eff = 3
+	tax_eff = 5
 	
 	ai_chance = {
 		factor = 1
@@ -36,7 +36,7 @@ taxes_2 = {
 	year = 2954
 	cost = 7200
 	
-	tax_eff = 3
+	tax_eff = 5
 	
 	ai_chance = {
 		factor = 1
@@ -68,7 +68,7 @@ taxes_3 = {
 	year = 2965
 	cost = 10800
 	
-	tax_eff = 4
+	tax_eff = 5
 	
 	ai_chance = {
 		factor = 1
@@ -100,7 +100,7 @@ taxes_4 = {
 	year = 2980
 	cost = 14400
 	
-	tax_eff = 4
+	tax_eff = 5
 	
 	ai_chance = {
 		factor = 1
@@ -132,7 +132,7 @@ taxes_5 = {
 	year = 3000
 	cost = 18000
 	
-	tax_eff = 6
+	tax_eff = 5
 	
 	ai_chance = {
 		factor = 1
@@ -293,7 +293,7 @@ administration_tech_5 = {
 	year = 3000
 	cost = 18000
 	
-	administrative_efficiency = 0.1
+	administrative_efficiency = 0.05
 	
 	ai_chance = {
 		factor = 1
@@ -326,9 +326,9 @@ population_1 = {
 	year = 2954
 	cost = 3600
 	
-	pop_growth = 0.0001
 	max_national_focus = 1
 	suppression_points_modifier = 0.05
+	plurality = -0.01
 	
 	ai_chance = {
 		factor = 1
@@ -357,10 +357,9 @@ population_2 = {
 	year = 2954
 	cost = 7200
 	
-	pop_growth = 0.0001
 	max_national_focus = 1
 	suppression_points_modifier = 0.05
-	seperatism = -0.01
+	plurality = -0.02
 	
 	ai_chance = {
 		factor = 1
@@ -389,9 +388,9 @@ population_3 = {
 	year = 2965
 	cost = 10800
 	
-	pop_growth = 0.0001
 	max_national_focus = 1
 	suppression_points_modifier = 0.05
+	plurality = -0.03
 	
 	ai_chance = {
 		factor = 1
@@ -420,10 +419,9 @@ population_4 = {
 	year = 2980
 	cost = 14400
 	
-	pop_growth = 0.0001
 	max_national_focus = 1
 	suppression_points_modifier = 0.05
-	seperatism = -0.01
+	plurality = -0.04
 	
 	ai_chance = {
 		factor = 1
@@ -452,10 +450,9 @@ population_5 = {
 	year = 3000
 	cost = 18000
 	
-	pop_growth = 0.0002
 	max_national_focus = 2
 	suppression_points_modifier = 0.05
-	seperatism = -0.01
+	plurality = -0.05
 	
 	ai_chance = {
 		factor = 1
@@ -485,9 +482,7 @@ entertainment_tech_1 = {
 	year = 2954
 	cost = 3600
 	
-	pop_growth = 0.0001
-	max_national_focus = 1
-	suppression_points_modifier = 0.05
+	activate_building = public_house
 	
 	ai_chance = {
 		factor = 1
@@ -516,6 +511,7 @@ entertainment_tech_2 = {
 	year = 2954
 	cost = 7200
 	
+	max_public_house = 1
 	
 	ai_chance = {
 		factor = 1
@@ -544,6 +540,8 @@ entertainment_tech_3 = {
 	year = 2965
 	cost = 10800
 	
+	max_public_house = 1
+	
 	ai_chance = {
 		factor = 1
 		
@@ -571,6 +569,8 @@ entertainment_tech_4 = {
 	year = 2980
 	cost = 14400
 	
+	max_public_house = 1
+	
 	ai_chance = {
 		factor = 1
 		
@@ -597,6 +597,8 @@ entertainment_tech_5 = {
 	area = entertainment_tech
 	year = 3000
 	cost = 18000
+	
+	max_public_house = 1
 	
 	ai_chance = {
 		factor = 1
