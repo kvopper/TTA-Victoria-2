@@ -52,6 +52,19 @@ rationing = {
 		army_base = { supply_consumption = -0.1 }
 	}
 }
+breeding_pits = {
+	limit = { population_3 = 1 }
+	chance = {
+		base = 0
+		modifier = {
+			factor = 2
+			accepted_culture = orc_culture
+		}
+	}
+	effect = {
+		pop_growth = 0.0001
+	}
+}
 ############################
 # ENTERTAINMENT INVENTIONS #
 ############################
