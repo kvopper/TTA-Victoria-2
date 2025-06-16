@@ -1,6 +1,18 @@
 #########################
 # GOVERNMENT INVENTIONS #
 #########################
+province_selector_unlock = {
+	limit = { population_1 = 1 }
+	chance = {
+		base = 0
+		modifier = {
+			factor = 100
+			ai = no
+		}
+	}
+	
+	effect = { activate_building = province_selector }
+}
 anarrima = {
 	limit = { population_1 = 1 }
 	chance = {
