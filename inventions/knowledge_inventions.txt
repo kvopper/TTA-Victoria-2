@@ -1,3 +1,32 @@
+#######################
+# HERBLORE INVENTIONS #
+#######################
+athelas = {
+	limit = { herblore_tech_2 = 1 }
+	chance = {
+		base = 0
+		modifier = {
+			factor = 2
+			NOT = { accepted_culture = orc_culture }
+		}
+	}
+	effect = {
+		pop_growth = 0.0001
+	}
+}
+orc_draught = {
+	limit = { herblore_tech_2 = 1 }
+	chance = {
+		base = 0
+		modifier = {
+			factor = 2
+			accepted_culture = orc_culture
+		}
+	}
+	effect = {
+		pop_growth = 0.0001
+	}
+}
 ##############################
 # MAGICAL SECRETS INVENTIONS #
 ##############################
@@ -153,15 +182,15 @@ third_lesser_ring = { # Search and find a lesser ring
 	
 	effect = { shared_prestige = 5 }
 }
-########################
-# EDUCATION INVENTIONS #
-########################
-scriptoriums = {
-	limit = { education_2 = 1 }
+##########################
+# SCHOLARSHIP INVENTIONS #
+##########################
+universities = {
+	limit = { scholarship_tech_5 = 1 }
 	
 	chance = {
-		base = 1
+		base = 2
 	}
 	
-	effect = { education_efficiency = 0.1 }
+	effect = { max_scriptorium = 1 }
 }
