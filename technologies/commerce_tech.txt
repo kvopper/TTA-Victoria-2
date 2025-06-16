@@ -6,11 +6,8 @@ rgo_tech_1 = {
 	
 	farm_rgo_size = 0.1
 	mine_rgo_size = 0.1
-	farm_rgo_eff = 0.2
-	mine_rgo_eff = 0.2
-	rgo_goods_output = {
-		timber = 0.1
-	}
+	farm_rgo_eff = 0.05
+	mine_rgo_eff = 0.05
 	
 	ai_chance = {
 		factor = 1
@@ -35,13 +32,10 @@ rgo_tech_2 = {
 	year = 2954
 	cost = 7200
 	
-	farm_rgo_size = 0.1
-	mine_rgo_size = 0.1
-	farm_rgo_eff = 0.2
-	mine_rgo_eff = 0.2
-	rgo_goods_output = {
-		timber = 0.1
-	}
+	farm_rgo_size = 0.2
+	mine_rgo_size = 0.2
+	farm_rgo_eff = 0.1
+	mine_rgo_eff = 0.1
 	
 	ai_chance = {
 		factor = 1
@@ -66,13 +60,10 @@ rgo_tech_3 = {
 	year = 2965
 	cost = 10800
 	
-	farm_rgo_size = 0.2
-	mine_rgo_size = 0.2
-	farm_rgo_eff = 0.4
-	mine_rgo_eff = 0.4
-	rgo_goods_output = {
-		timber = 0.2
-	}
+	farm_rgo_size = 0.3
+	mine_rgo_size = 0.3
+	farm_rgo_eff = 0.15
+	mine_rgo_eff = 0.15
 	
 	ai_chance = {
 		factor = 1
@@ -97,13 +88,10 @@ rgo_tech_4 = {
 	year = 2980
 	cost = 14400
 	
-	farm_rgo_size = 0.2
-	mine_rgo_size = 0.2
-	farm_rgo_eff = 0.4
-	mine_rgo_eff = 0.4
-	rgo_goods_output = {
-		timber = 0.2
-	}
+	farm_rgo_size = 0.4
+	mine_rgo_size = 0.4
+	farm_rgo_eff = 0.2
+	mine_rgo_eff = 0.2
 	
 	ai_chance = {
 		factor = 1
@@ -128,13 +116,10 @@ rgo_tech_5 = {
 	year = 3000
 	cost = 18000
 	
-	farm_rgo_size = 0.4
-	mine_rgo_size = 0.4
-	farm_rgo_eff = 0.8
-	mine_rgo_eff = 0.8
-	rgo_goods_output = {
-		timber = 0.4
-	}
+	farm_rgo_size = 0.5
+	mine_rgo_size = 0.5
+	farm_rgo_eff = 0.25
+	mine_rgo_eff = 0.25
 	
 	ai_chance = {
 		factor = 1
@@ -162,7 +147,7 @@ guilds_1 = {
 	
 	factory_output = 0.01
 	factory_input = -0.01
-	factory_throughput = 0.1
+	factory_throughput = 0.03
 	
 	ai_chance = {
 		factor = 1
@@ -204,7 +189,7 @@ guilds_2 = {
 	
 	factory_output = 0.01
 	factory_input = -0.01
-	factory_throughput = 0.1
+	factory_throughput = 0.03
 	
 	ai_chance = {
 		factor = 1
@@ -244,9 +229,9 @@ guilds_3 = {
 	year = 2965
 	cost = 10800
 	
-	factory_output = 0.02
-	factory_input = -0.02
-	factory_throughput = 0.2
+	factory_output = 0.01
+	factory_input = -0.01
+	factory_throughput = 0.03
 	
 	ai_chance = {
 		factor = 1
@@ -286,9 +271,9 @@ guilds_4 = {
 	year = 2980
 	cost = 14400
 	
-	factory_output = 0.02
-	factory_input = -0.02
-	factory_throughput = 0.2
+	factory_output = 0.01
+	factory_input = -0.01
+	factory_throughput = 0.03
 	
 	ai_chance = {
 		factor = 1
@@ -328,9 +313,9 @@ guilds_5 = {
 	year = 3000
 	cost = 18000
 	
-	factory_output = 0.04
-	factory_input = -0.04
-	factory_throughput = 0.4
+	factory_output = 0.01
+	factory_input = -0.01
+	factory_throughput = 0.03
 	
 	ai_chance = {
 		factor = 1
@@ -371,6 +356,9 @@ trade_tech_1 = {
 	year = 2954
 	cost = 3600
 	
+	loan_interest = -0.01
+	activate_building = market_square
+	
 	ai_chance = {
 		factor = 1
 		
@@ -393,6 +381,9 @@ trade_tech_2 = {
 	area = trade_tech
 	year = 2954
 	cost = 7200
+	
+	loan_interest = -0.01
+	max_market_square = 1
 	
 	ai_chance = {
 		factor = 1
@@ -417,6 +408,9 @@ trade_tech_3 = {
 	year = 2965
 	cost = 10800
 	
+	loan_interest = -0.01
+	max_market_square = 1
+	
 	ai_chance = {
 		factor = 1
 		
@@ -440,6 +434,9 @@ trade_tech_4 = {
 	year = 2980
 	cost = 14400
 	
+	loan_interest = -0.01
+	max_market_square = 1
+	
 	ai_chance = {
 		factor = 1
 		
@@ -462,6 +459,9 @@ trade_tech_5 = {
 	area = trade_tech
 	year = 3000
 	cost = 18000
+	
+	loan_interest = -0.01
+	max_market_square = 1
 	
 	ai_chance = {
 		factor = 1
@@ -488,12 +488,6 @@ infrastructure_tech_1 = {
 	cost = 3600
 	
 	activate_building = railroad
-	supply_limit = 0.1
-	mobilisation_size = 0.01
-	mobilisation_economy_impact = -0.01
-	land_attrition = -0.01
-	soldier_to_pop_loss = 0.01
-	reinforce_rate = 0.02
 	
 	ai_chance = {
 		factor = 1
@@ -523,12 +517,6 @@ infrastructure_tech_2 = {
 	cost = 7200
 	
 	max_railroad = 1
-	supply_limit = 0.1
-	mobilisation_size = 0.01
-	mobilisation_economy_impact = -0.01
-	land_attrition = -0.01
-	soldier_to_pop_loss = 0.01
-	reinforce_rate = 0.02
 	
 	ai_chance = {
 		factor = 1
@@ -558,12 +546,6 @@ infrastructure_tech_3 = {
 	cost = 10800
 	
 	max_railroad = 1
-	supply_limit = 0.2
-	mobilisation_size = 0.01
-	mobilisation_economy_impact = -0.01
-	land_attrition = -0.02
-	soldier_to_pop_loss = 0.01
-	reinforce_rate = 0.04
 	
 	ai_chance = {
 		factor = 1
@@ -592,12 +574,7 @@ infrastructure_tech_4 = {
 	year = 2980
 	cost = 14400
 	
-	supply_limit = 0.2
-	mobilisation_size = 0.01
-	mobilisation_economy_impact = -0.01
-	land_attrition = -0.02
-	soldier_to_pop_loss = 0.01
-	reinforce_rate = 0.04
+	max_railroad = 1
 	
 	ai_chance = {
 		factor = 1
@@ -626,12 +603,7 @@ infrastructure_tech_5 = {
 	year = 3000
 	cost = 18000
 	
-	supply_limit = 0.4
-	mobilisation_size = 0.01
-	mobilisation_economy_impact = -0.01
-	land_attrition = -0.04
-	soldier_to_pop_loss = 0.01
-	reinforce_rate = 0.08
+	max_railroad = 1
 	
 	ai_chance = {
 		factor = 1
