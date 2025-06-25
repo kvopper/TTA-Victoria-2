@@ -102,6 +102,19 @@ focused_attacks = {
 		}
 	}
 }
+mountain_hordes = {
+	limit = { army_tactics_3 = 1 }
+	chance = {
+		base = 0
+		modifier = {
+			factor = 2
+			is_culture_group = northern_goblins
+		}
+	}
+	effect = {
+		mobilisation_size = 0.1
+	}
+}
 rapid_redeployment = {
 	limit = { army_tactics_4 = 1 }
 	chance = {
@@ -264,6 +277,22 @@ basic_training = {
 		regular_experience_level = 5
 		army_base = {
 			discipline = 0.05
+		}
+	}
+}
+snaga_skirmishers = {
+	limit = { training_3 = 1 }
+	chance = {
+		base = 0
+		modifier = {
+			factor = 2
+			is_culture_group = northern_goblins
+		}
+	}
+	effect = {
+		levies = {
+			support = 0.5
+			supply_consumption = 0.5
 		}
 	}
 }
