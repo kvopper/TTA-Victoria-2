@@ -115,7 +115,7 @@ mountain_hordes = {
 		mobilisation_size = 0.1
 	}
 }
-rapid_redeployment = {
+rapid_deployment = {
 	limit = { army_tactics_4 = 1 }
 	chance = {
 		base = 2
@@ -290,7 +290,7 @@ snaga_skirmishers = {
 		}
 	}
 	effect = {
-		levies = {
+		infantry = {
 			support = 0.5
 			supply_consumption = 0.5
 		}

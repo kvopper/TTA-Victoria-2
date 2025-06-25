@@ -440,7 +440,7 @@ cavalry_tech_3_equipment = {
 outriders = {
 	limit = { cavalry_tech_3 = 1 }
 	chance = {
-		base = 1
+		base = 2
 	}
 	effect = {
 		scouts = {
@@ -518,18 +518,41 @@ cavalry_tech_5_equipment = {
 		}
 	}
 }
-maeras_riders = {
+scout_waystations = {
 	limit = { cavalry_tech_5 = 1 }
 	chance = {
 		base = 2
-		modifier = {
-			factor = 8
-			is_culture_group = rohirrim
-		}
 	}
 	effect = {
 		scouts = {
 			reconnaissance = 1
+		}
+	}
+}
+maeras_riders = {
+	limit = { cavalry_tech_5 = 1 }
+	chance = {
+		base = 0
+		modifier = {
+			factor = 2
+			is_culture_group = rohirrim
+		}
+	}
+	effect = {
+		heavy_cavalry = {
+			attack = 2
+			defence = 2
+			supply_consumption = 0.3
+		}
+		horse_archers = {
+			attack = 2
+			defence = 2
+			supply_consumption = 0.3
+		}
+		scouts = {
+			attack = 1
+			defence = 1
+			supply_consumption = 0.3
 		}
 	}
 }
@@ -562,6 +585,17 @@ artillery_tech_2_equipment = {
 		}
 	}
 }
+standardised_artillery_construction = {
+	limit = { artillery_tech_2 = 1 }
+	chance = {
+		base = 1
+	}
+	effect = {
+		factory_goods_throughput = {
+			artillery = 0.10
+		}
+	}
+}
 artillery_tech_3_equipment = {
 	limit = { artillery_tech_3 = 1 }
 	chance = {
@@ -574,6 +608,15 @@ artillery_tech_3_equipment = {
 			siege = 1
 			supply_consumption = 0.2
 		}
+	}
+}
+competition_artillery = {
+	limit = { artillery_tech_3 = 1 }
+	chance = {
+		base = 1
+	}
+	effect = {
+		permanent_prestige = 1
 	}
 }
 artillery_tech_4_equipment = {
@@ -601,25 +644,5 @@ artillery_tech_5_equipment = {
 			siege = 1
 			supply_consumption = 0.3
 		}
-	}
-}
-standardised_artillery_construction = {
-	limit = { artillery_tech_2 = 1 }
-	chance = {
-		base = 1
-	}
-	effect = {
-		factory_goods_throughput = {
-			artillery = 0.10
-		}
-	}
-}
-competition_artillery = {
-	limit = { artillery_tech_3 = 1 }
-	chance = {
-		base = 1
-	}
-	effect = {
-		permanent_prestige = 1
 	}
 }
