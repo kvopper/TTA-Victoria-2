@@ -99,31 +99,21 @@ naval_construction_2;Naval Equipment;x
 naval_construction_3;Drydocks;x
 naval_construction_4;Shipyards;x
 naval_construction_5;Expanded Shipyards;x
-# farming_tech_1;Herding & Gathering;x
-# farming_tech_2;Farming;x
-# farming_tech_3;Granary System;x
-# farming_tech_4;Crop Rotation;x
-# farming_tech_5;Agricultural Revolution;x
-# mining_tech_1;Surface Mining;x
-# mining_tech_2;Open-cast Mines;x
-# mining_tech_3;Tunnels;x
-# mining_tech_4;Shafts;x
-# mining_tech_5;Deep Level Extraction;x
-rgo_tech_1;RGO 1;x
-rgo_tech_2;RGO 2;x
-rgo_tech_3;RGO 3;x
-rgo_tech_4;RGO 4;x
-rgo_tech_5;RGO 5;x
+rgo_tech_1;Herding, Gathering & Surface Mining;x
+rgo_tech_2;Farming & Open-cast Mines;x
+rgo_tech_3;Granary System & Tunnels;x
+rgo_tech_4;Crop Rotation & Shafts;x
+rgo_tech_5;Agricultural Revolution & Deep Level Extraction;x
 guilds_1;Trade Associations;x
 guilds_2;Merchant Guilds;x
 guilds_3;Craft Guilds;x
 guilds_4;Mechanisation;x
 guilds_5;Manufacturing;x
-trade_tech_1;Trade 1;x
-trade_tech_2;Trade 2;x
-trade_tech_3;Trade 3;x
-trade_tech_4;Trade 4;x
-trade_tech_5;Trade 5;x
+trade_tech_1;Grain Exchanges;x
+trade_tech_2;Caravanaserai;x
+trade_tech_3;Trading Posts;x
+trade_tech_4;Market Squares;x
+trade_tech_5;Grand Markets;x
 infrastructure_tech_1;Land Clearing;x
 infrastructure_tech_2;Pathways;x
 infrastructure_tech_3;Roads;x
@@ -144,11 +134,11 @@ population_2;Administration & Institutions;x
 population_3;Rights & Responsibilities;x
 population_4;Citizenship;x
 population_5;State & Government;x
-entertainment_tech_1;Entertainment 1;x
-entertainment_tech_2;Entertainment 2;x
-entertainment_tech_3;Entertainment 3;x
-entertainment_tech_4;Entertainment 4;x
-entertainment_tech_5;Entertainment 5;x
+entertainment_tech_1;Brothels;x
+entertainment_tech_2;Public Houses;x
+entertainment_tech_3;Bars;x
+entertainment_tech_4;Pubs;x
+entertainment_tech_5;Taverns;x
 herblore_tech_1;Herblore 1;x
 herblore_tech_2;Herblore 2;x
 herblore_tech_3;Herblore 3;x
@@ -164,11 +154,11 @@ education_2;Tutelage;x
 education_3;Ad-hoc Schooling;x
 education_4;Private Schools;x
 education_5;Formal Education;x
-scholarship_tech_1;Scholarship 1;x
-scholarship_tech_2;Scholarship 2;x
-scholarship_tech_3;Scholarship 3;x
-scholarship_tech_4;Scholarship 4;x
-scholarship_tech_5;Scholarship 5;x
+scholarship_tech_1;Scriptoria;x
+scholarship_tech_2;Archives;x
+scholarship_tech_3;Athenaea;x
+scholarship_tech_4;Libraries;x
+scholarship_tech_5;Academies;x
 expansion_1;Territorial Ambitions;x
 expansion_2;Expansion;x
 expansion_3;Just War;x
