@@ -2,7 +2,7 @@
 rgo_tech_1 = {
 	area = rgo_tech
 	year = 2954
-	cost = 3600
+	cost = 2500
 	
 	farm_rgo_size = 0.1
 	mine_rgo_size = 0.1
@@ -30,7 +30,7 @@ rgo_tech_1 = {
 rgo_tech_2 = {
 	area = rgo_tech
 	year = 2954
-	cost = 7200
+	cost = 3000
 	
 	farm_rgo_size = 0.2
 	mine_rgo_size = 0.2
@@ -58,7 +58,7 @@ rgo_tech_2 = {
 rgo_tech_3 = {
 	area = rgo_tech
 	year = 2965
-	cost = 10800
+	cost = 4000
 	
 	farm_rgo_size = 0.3
 	mine_rgo_size = 0.3
@@ -86,7 +86,7 @@ rgo_tech_3 = {
 rgo_tech_4 = {
 	area = rgo_tech
 	year = 2980
-	cost = 14400
+	cost = 5500
 	
 	farm_rgo_size = 0.4
 	mine_rgo_size = 0.4
@@ -114,7 +114,7 @@ rgo_tech_4 = {
 rgo_tech_5 = {
 	area = rgo_tech
 	year = 3000
-	cost = 18000
+	cost = 7000
 	
 	farm_rgo_size = 0.5
 	mine_rgo_size = 0.5
@@ -143,7 +143,7 @@ rgo_tech_5 = {
 guilds_1 = {
 	area = guilds
 	year = 2954
-	cost = 3600
+	cost = 2500
 	
 	factory_output = 0.01
 	factory_input = -0.01
@@ -185,7 +185,7 @@ guilds_1 = {
 guilds_2 = {
 	area = guilds
 	year = 2954
-	cost = 7200
+	cost = 3000
 	
 	factory_output = 0.01
 	factory_input = -0.01
@@ -227,7 +227,7 @@ guilds_2 = {
 guilds_3 = {
 	area = guilds
 	year = 2965
-	cost = 10800
+	cost = 4000
 	
 	factory_output = 0.01
 	factory_input = -0.01
@@ -269,7 +269,7 @@ guilds_3 = {
 guilds_4 = {
 	area = guilds
 	year = 2980
-	cost = 14400
+	cost = 5500
 	
 	factory_output = 0.01
 	factory_input = -0.01
@@ -311,7 +311,7 @@ guilds_4 = {
 guilds_5 = {
 	area = guilds
 	year = 3000
-	cost = 18000
+	cost = 7000
 	
 	factory_output = 0.01
 	factory_input = -0.01
@@ -354,7 +354,7 @@ guilds_5 = {
 trade_tech_1 = {
 	area = trade_tech
 	year = 2954
-	cost = 3600
+	cost = 2500
 	
 	loan_interest = -0.01
 	activate_building = market_square
@@ -380,7 +380,7 @@ trade_tech_1 = {
 trade_tech_2 = {
 	area = trade_tech
 	year = 2954
-	cost = 7200
+	cost = 3000
 	
 	loan_interest = -0.01
 	max_market_square = 1
@@ -406,7 +406,7 @@ trade_tech_2 = {
 trade_tech_3 = {
 	area = trade_tech
 	year = 2965
-	cost = 10800
+	cost = 4000
 	
 	loan_interest = -0.01
 	max_market_square = 1
@@ -432,7 +432,7 @@ trade_tech_3 = {
 trade_tech_4 = {
 	area = trade_tech
 	year = 2980
-	cost = 14400
+	cost = 5500
 	
 	loan_interest = -0.01
 	max_market_square = 1
@@ -458,7 +458,7 @@ trade_tech_4 = {
 trade_tech_5 = {
 	area = trade_tech
 	year = 3000
-	cost = 18000
+	cost = 7000
 	
 	loan_interest = -0.01
 	max_market_square = 1
@@ -485,7 +485,7 @@ trade_tech_5 = {
 infrastructure_tech_1 = {
 	area = infrastructure_tech
 	year = 2954
-	cost = 3600
+	cost = 2500
 	
 	activate_building = railroad
 	
@@ -514,7 +514,7 @@ infrastructure_tech_1 = {
 infrastructure_tech_2 = {
 	area = infrastructure_tech
 	year = 2954
-	cost = 7200
+	cost = 3000
 	
 	max_railroad = 1
 	
@@ -543,7 +543,7 @@ infrastructure_tech_2 = {
 infrastructure_tech_3 = {
 	area = infrastructure_tech
 	year = 2965
-	cost = 10800
+	cost = 4000
 	
 	max_railroad = 1
 	
@@ -572,7 +572,7 @@ infrastructure_tech_3 = {
 infrastructure_tech_4 = {
 	area = infrastructure_tech
 	year = 2980
-	cost = 14400
+	cost = 5500
 	
 	max_railroad = 1
 	
@@ -601,7 +601,7 @@ infrastructure_tech_4 = {
 infrastructure_tech_5 = {
 	area = infrastructure_tech
 	year = 3000
-	cost = 18000
+	cost = 7000
 	
 	max_railroad = 1
 	

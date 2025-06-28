@@ -2,7 +2,7 @@
 herblore_tech_1 = {
 	area = herblore_tech
 	year = 2954
-	cost = 3600
+	cost = 2500
 	
 	pop_growth = 0.0001
 	land_attrition = -0.01
@@ -29,7 +29,7 @@ herblore_tech_1 = {
 herblore_tech_2 = {
 	area = herblore_tech
 	year = 2954
-	cost = 7200
+	cost = 3000
 	
 	pop_growth = 0.0001
 	land_attrition = -0.02
@@ -56,7 +56,7 @@ herblore_tech_2 = {
 herblore_tech_3 = {
 	area = herblore_tech
 	year = 2965
-	cost = 10800
+	cost = 4000
 	
 	pop_growth = 0.0001
 	land_attrition = -0.03
@@ -83,7 +83,7 @@ herblore_tech_3 = {
 herblore_tech_4 = {
 	area = herblore_tech
 	year = 2980
-	cost = 14400
+	cost = 5500
 	
 	pop_growth = 0.0001
 	land_attrition = -0.04
@@ -110,7 +110,7 @@ herblore_tech_4 = {
 herblore_tech_5 = {
 	area = herblore_tech
 	year = 3000
-	cost = 18000
+	cost = 7000
 	
 	pop_growth = 0.0001
 	land_attrition = -0.05
@@ -138,7 +138,7 @@ herblore_tech_5 = {
 magic_1 = {
 	area = magic
 	year = 2954
-	cost = 3600
+	cost = 2500
 	
 	ai_chance = {
 		factor = 0.1
@@ -169,7 +169,7 @@ magic_1 = {
 magic_2 = {
 	area = magic
 	year = 2954
-	cost = 7200
+	cost = 3000
 	
 	ai_chance = {
 		factor = 0.1
@@ -200,7 +200,7 @@ magic_2 = {
 magic_3 = {
 	area = magic
 	year = 2965
-	cost = 10800
+	cost = 4000
 	
 	ai_chance = {
 		factor = 0.1
@@ -231,7 +231,7 @@ magic_3 = {
 magic_4 = {
 	area = magic
 	year = 2980
-	cost = 14400
+	cost = 5500
 	
 	ai_chance = {
 		factor = 0.1
@@ -262,7 +262,7 @@ magic_4 = {
 magic_5 = {
 	area = magic
 	year = 3000
-	cost = 18000
+	cost = 7000
 	
 	ai_chance = {
 		factor = 0.1
@@ -294,7 +294,7 @@ magic_5 = {
 education_1 = {
 	area = education
 	year = 2954
-	cost = 3600
+	cost = 2500
 	
 	education_efficiency = 0.1
 	
@@ -323,7 +323,7 @@ education_1 = {
 education_2 = {
 	area = education
 	year = 2954
-	cost = 7200
+	cost = 3000
 	
 	education_efficiency = 0.1
 	
@@ -352,7 +352,7 @@ education_2 = {
 education_3 = {
 	area = education
 	year = 2965
-	cost = 10800
+	cost = 4000
 	
 	education_efficiency = 0.2
 	
@@ -381,7 +381,7 @@ education_3 = {
 education_4 = {
 	area = education
 	year = 2980
-	cost = 14400
+	cost = 5500
 	
 	education_efficiency = 0.3
 	
@@ -410,7 +410,7 @@ education_4 = {
 education_5 = {
 	area = education
 	year = 3000
-	cost = 18000
+	cost = 7000
 	
 	education_efficiency = 0.3
 	
@@ -440,7 +440,7 @@ education_5 = {
 scholarship_tech_1 = {
 	area = scholarship_tech
 	year = 2954
-	cost = 3600
+	cost = 2500
 	
 	increase_research = 0.1
 	activate_building = scriptorium
@@ -466,7 +466,7 @@ scholarship_tech_1 = {
 scholarship_tech_2 = {
 	area = scholarship_tech
 	year = 2954
-	cost = 7200
+	cost = 3000
 	
 	increase_research = 0.1
 	max_scriptorium = 1
@@ -492,7 +492,7 @@ scholarship_tech_2 = {
 scholarship_tech_3 = {
 	area = scholarship_tech
 	year = 2965
-	cost = 10800
+	cost = 4000
 	
 	increase_research = 0.2
 	max_scriptorium = 1
@@ -518,7 +518,7 @@ scholarship_tech_3 = {
 scholarship_tech_4 = {
 	area = scholarship_tech
 	year = 2980
-	cost = 14400
+	cost = 5500
 	
 	increase_research = 0.3
 	max_scriptorium = 1
@@ -544,7 +544,7 @@ scholarship_tech_4 = {
 scholarship_tech_5 = {
 	area = scholarship_tech
 	year = 3000
-	cost = 18000
+	cost = 7000
 	
 	increase_research = 0.3
 	max_scriptorium = 1

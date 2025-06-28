@@ -2,7 +2,7 @@
 infantry_tech_1 = {
 	area = infantry_tech
 	year = 2954
-	cost = 3600
+	cost = 2500
 	unciv_military = yes
 
 	pikemen = {
@@ -61,7 +61,7 @@ infantry_tech_1 = {
 infantry_tech_2 = {
 	area = infantry_tech
 	year = 2954
-	cost = 7200
+	cost = 3000
 	unciv_military = yes
 
 	pikemen = {
@@ -120,7 +120,7 @@ infantry_tech_2 = {
 infantry_tech_3 = {
 	area = infantry_tech
 	year = 2965
-	cost = 10800
+	cost = 4000
 	unciv_military = yes
 
 	pikemen = {
@@ -179,7 +179,7 @@ infantry_tech_3 = {
 infantry_tech_4 = {
 	area = infantry_tech
 	year = 2980
-	cost = 14400
+	cost = 5500
 	unciv_military = yes
 
 	pikemen = {
@@ -238,7 +238,7 @@ infantry_tech_4 = {
 infantry_tech_5 = {
 	area = infantry_tech
 	year = 3000
-	cost = 18000
+	cost = 7000
 	unciv_military = yes
 
 	pikemen = {
@@ -298,7 +298,7 @@ infantry_tech_5 = {
 archer_tech_1 = {
 	area = archer_tech
 	year = 2954
-	cost = 3600
+	cost = 2500
 	unciv_military = yes
 
 	archers = {
@@ -351,7 +351,7 @@ archer_tech_1 = {
 archer_tech_2 = {
 	area = archer_tech
 	year = 2954
-	cost = 7200
+	cost = 3000
 	unciv_military = yes
 
 	archers = {
@@ -404,7 +404,7 @@ archer_tech_2 = {
 archer_tech_3 = {
 	area = archer_tech
 	year = 2965
-	cost = 10800
+	cost = 4000
 	unciv_military = yes
 
 	archers = {
@@ -457,7 +457,7 @@ archer_tech_3 = {
 archer_tech_4 = {
 	area = archer_tech
 	year = 2980
-	cost = 14400
+	cost = 5500
 	unciv_military = yes
 
 	archers = {
@@ -510,7 +510,7 @@ archer_tech_4 = {
 archer_tech_5 = {
 	area = archer_tech
 	year = 3000
-	cost = 18000
+	cost = 7000
 	unciv_military = yes
 
 	archers = {
@@ -566,7 +566,7 @@ archer_tech_5 = {
 cavalry_tech_1 = {
 	area = cavalry_tech
 	year = 2954
-	cost = 3600
+	cost = 2500
 	unciv_military = yes
 
 	heavy_cavalry = {
@@ -625,7 +625,7 @@ cavalry_tech_1 = {
 cavalry_tech_2 = {
 	area = cavalry_tech
 	year = 2954
-	cost = 7200
+	cost = 3000
 	unciv_military = yes
 
 	heavy_cavalry = {
@@ -684,7 +684,7 @@ cavalry_tech_2 = {
 cavalry_tech_3 = {
 	area = cavalry_tech
 	year = 2965
-	cost = 10800
+	cost = 4000
 	unciv_military = yes
 
 	heavy_cavalry = {
@@ -743,7 +743,7 @@ cavalry_tech_3 = {
 cavalry_tech_4 = {
 	area = cavalry_tech
 	year = 2980
-	cost = 14400
+	cost = 5500
 	unciv_military = yes
 
 	heavy_cavalry = {
@@ -802,7 +802,7 @@ cavalry_tech_4 = {
 cavalry_tech_5 = {
 	area = cavalry_tech
 	year = 2954
-	cost = 18000
+	cost = 7000
 	unciv_military = yes
 
 	heavy_cavalry = {
@@ -862,7 +862,7 @@ cavalry_tech_5 = {
 artillery_tech_1 = {
 	area = artillery_tech
 	year = 2954
-	cost = 3600
+	cost = 2500
 	unciv_military = yes
 
 	artillery = {
@@ -911,7 +911,7 @@ artillery_tech_1 = {
 artillery_tech_2 = {
 	area = artillery_tech
 	year = 2954
-	cost = 7200
+	cost = 3000
 	unciv_military = yes
 
 	artillery = {
@@ -960,7 +960,7 @@ artillery_tech_2 = {
 artillery_tech_3 = {
 	area = artillery_tech
 	year = 2965
-	cost = 10800
+	cost = 4000
 	unciv_military = yes
 
 	artillery = {
@@ -1009,7 +1009,7 @@ artillery_tech_3 = {
 artillery_tech_4 = {
 	area = artillery_tech
 	year = 2980
-	cost = 14400
+	cost = 5500
 	unciv_military = yes
 
 	artillery = {
@@ -1058,7 +1058,7 @@ artillery_tech_4 = {
 artillery_tech_5 = {
 	area = artillery_tech
 	year = 3000
-	cost = 18000
+	cost = 7000
 	unciv_military = yes
 
 	artillery = {

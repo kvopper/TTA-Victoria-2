@@ -2,7 +2,7 @@
 fortifications_1 = {
 	area = fortifications
 	year = 2954
-	cost = 3600
+	cost = 2500
 	unciv_military = yes
 
 	activate_building = fort
@@ -58,7 +58,7 @@ fortifications_1 = {
 fortifications_2 = {
 	area = fortifications
 	year = 2954
-	cost = 7200
+	cost = 3000
 	unciv_military = yes
 
 	max_fort = 1
@@ -114,7 +114,7 @@ fortifications_2 = {
 fortifications_3 = {
 	area = fortifications
 	year = 2965
-	cost = 10800
+	cost = 4000
 	unciv_military = yes
 
 	max_fort = 1
@@ -170,7 +170,7 @@ fortifications_3 = {
 fortifications_4 = {
 	area = fortifications
 	year = 2980
-	cost = 14400
+	cost = 5500
 	unciv_military = yes
 
 	max_fort = 1
@@ -220,7 +220,7 @@ fortifications_4 = {
 fortifications_5 = {
 	area = fortifications
 	year = 3000
-	cost = 18000
+	cost = 7000
 	unciv_military = yes
 
 	max_fort = 1
@@ -271,7 +271,7 @@ fortifications_5 = {
 army_tactics_1 = {
 	area = army_tactics
 	year = 2954
-	cost = 3600
+	cost = 2500
 	unciv_military = yes
 
 	morale = 0.1
@@ -319,7 +319,7 @@ army_tactics_1 = {
 army_tactics_2 = {
 	area = army_tactics
 	year = 2954
-	cost = 7200
+	cost = 3000
 	unciv_military = yes
 
 	morale = 0.15
@@ -367,7 +367,7 @@ army_tactics_2 = {
 army_tactics_3 = {
 	area = army_tactics
 	year = 2965
-	cost = 10800
+	cost = 4000
 	unciv_military = yes
 
 	morale = 0.25
@@ -415,7 +415,7 @@ army_tactics_3 = {
 army_tactics_4 = {
 	area = army_tactics
 	year = 2980
-	cost = 14400
+	cost = 5500
 	unciv_military = yes
 
 	morale = 0.25
@@ -463,7 +463,7 @@ army_tactics_4 = {
 army_tactics_5 = {
 	area = army_tactics
 	year = 3000
-	cost = 18000
+	cost = 7000
 	unciv_military = yes
 
 	morale = 0.25
@@ -512,7 +512,7 @@ army_tactics_5 = {
 training_1 = {
 	area = training
 	year = 2954
-	cost = 3600
+	cost = 2500
 	unciv_military = yes
 	
 	activate_building = barracks
@@ -560,7 +560,7 @@ training_1 = {
 training_2 = {
 	area = training
 	year = 2954
-	cost = 7200
+	cost = 3000
 	unciv_military = yes
 	
 	mobilisation_size = 0.02
@@ -608,7 +608,7 @@ training_2 = {
 training_3 = {
 	area = training
 	year = 2965
-	cost = 10800
+	cost = 4000
 	unciv_military = yes
 	
 	mobilisation_size = 0.03
@@ -657,7 +657,7 @@ training_3 = {
 training_4 = {
 	area = training
 	year = 2980
-	cost = 14400
+	cost = 5500
 	unciv_military = yes
 	
 	mobilisation_size = 0.04
@@ -705,7 +705,7 @@ training_4 = {
 training_5 = {
 	area = training
 	year = 3000
-	cost = 18000
+	cost = 7000
 	unciv_military = yes
 	
 	mobilisation_size = 0.05
@@ -755,7 +755,7 @@ training_5 = {
 naval_theory_1 = {
 	area = naval_theory
 	year = 2954
-	cost = 3600
+	cost = 2500
 	unciv_military = yes
 
 	navy_base = {
@@ -814,7 +814,7 @@ naval_theory_1 = {
 naval_theory_2 = {
 	area = naval_theory
 	year = 2954
-	cost = 7200
+	cost = 3000
 	unciv_military = yes
 
 	navy_base = {
@@ -873,7 +873,7 @@ naval_theory_2 = {
 naval_theory_3 = {
 	area = naval_theory
 	year = 2965
-	cost = 10800
+	cost = 4000
 	unciv_military = yes
 
 	navy_base = {
@@ -932,7 +932,7 @@ naval_theory_3 = {
 naval_theory_4 = {
 	area = naval_theory
 	year = 2980
-	cost = 14400
+	cost = 5500
 	unciv_military = yes
 
 	navy_base = {
@@ -991,7 +991,7 @@ naval_theory_4 = {
 naval_theory_5 = {
 	area = naval_theory
 	year = 3000
-	cost = 18000
+	cost = 7000
 	unciv_military = yes
 
 	navy_base = {
