@@ -1,7 +1,9 @@
 # Changelog
 All notable changes will be documented in this file.
 
-## v0.5.1 - In Development
+## v0.6 - In Development
+
+## [v0.5.1](https://github.com/The-Third-Age/TTA/releases/tag/v0.5.1) - 2025-05-11
 
 ### Highlights
  - Political Rework
