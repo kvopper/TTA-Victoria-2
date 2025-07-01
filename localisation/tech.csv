@@ -17,7 +17,7 @@ light_ships;Light Ships;x
 heavy_ships;Heavy Ships;x
 naval_construction;Naval Construction;x
 commerce_tech;Commerce;x
-rgo_tech;RGO;x
+rgo_tech;Extraction;x
 guilds;Guilds;x
 trade_tech;Trade;x
 infrastructure_tech;Infrastructure;x
@@ -124,26 +124,26 @@ taxes_2;Levies & Tithes;x
 taxes_3;Ad-hoc Taxation;x
 taxes_4;Organised Taxation;x
 taxes_5;Tax System;x
-administration_tech_1;Administration 1;x
-administration_tech_2;Administration 2;x
-administration_tech_3;Administration 3;x
-administration_tech_4;Administration 4;x
-administration_tech_5;Administration 5;x
+administration_tech_1;Administration;x
+administration_tech_2;Institutions;x
+administration_tech_3;Ministries;x
+administration_tech_4;Meritocracy;x
+administration_tech_5;Bureaucracy;x
 population_1;Right to Rule;x
-population_2;Administration & Institutions;x
+population_2;Mandate;x
 population_3;Rights & Responsibilities;x
 population_4;Citizenship;x
 population_5;State & Government;x
-entertainment_tech_1;Brothels;x
-entertainment_tech_2;Public Houses;x
-entertainment_tech_3;Bars;x
-entertainment_tech_4;Pubs;x
-entertainment_tech_5;Taverns;x
-herblore_tech_1;Herblore 1;x
-herblore_tech_2;Herblore 2;x
-herblore_tech_3;Herblore 3;x
-herblore_tech_4;Herblore 4;x
-herblore_tech_5;Herblore 5;x
+entertainment_tech_1;Taverns;x
+entertainment_tech_2;Alehouses;x
+entertainment_tech_3;Social Clubs;x
+entertainment_tech_4;Public Entertainment;x
+entertainment_tech_5;Bread & Circuses;x
+herblore_tech_1;Herbalism;x
+herblore_tech_2;Healers;x
+herblore_tech_3;Apothecaries;x
+herblore_tech_4;Physicians & Dentists;x
+herblore_tech_5;Medicine;x
 magic_1;Magia and Goeteia;x
 magic_2;Sources of Power;x
 magic_3;The Seen and Unseen;x
