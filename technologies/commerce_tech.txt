@@ -11,11 +11,6 @@ rgo_tech_1 = {
 	
 	ai_chance = {
 		factor = 1
-		
-		modifier = {
-			factor = 1.1
-			tech_school = commerce_tech_school
-		}
 		modifier = {
 			factor = 1.25
 			NOT = { industrial_score = 25 }
@@ -39,11 +34,6 @@ rgo_tech_2 = {
 	
 	ai_chance = {
 		factor = 1
-		
-		modifier = {
-			factor = 1.1
-			tech_school = commerce_tech_school
-		}
 		modifier = {
 			factor = 1.25
 			NOT = { industrial_score = 25 }
@@ -67,11 +57,6 @@ rgo_tech_3 = {
 	
 	ai_chance = {
 		factor = 1
-		
-		modifier = {
-			factor = 1.1
-			tech_school = commerce_tech_school
-		}
 		modifier = {
 			factor = 1.25
 			NOT = { industrial_score = 25 }
@@ -95,11 +80,6 @@ rgo_tech_4 = {
 	
 	ai_chance = {
 		factor = 1
-		
-		modifier = {
-			factor = 1.1
-			tech_school = commerce_tech_school
-		}
 		modifier = {
 			factor = 1.25
 			NOT = { industrial_score = 25 }
@@ -123,11 +103,6 @@ rgo_tech_5 = {
 	
 	ai_chance = {
 		factor = 1
-		
-		modifier = {
-			factor = 1.1
-			tech_school = commerce_tech_school
-		}
 		modifier = {
 			factor = 1.25
 			NOT = { industrial_score = 25 }
@@ -168,10 +143,6 @@ guilds_1 = {
 			literacy = 0.6
 		}
 		modifier = {
-			factor = 1.1
-			tech_school = commerce_tech_school
-		}
-		modifier = {
 			factor = 1.25
 			industrial_score = 25
 		}
@@ -208,10 +179,6 @@ guilds_2 = {
 		modifier = {
 			factor = 1.05
 			literacy = 0.6
-		}
-		modifier = {
-			factor = 1.1
-			tech_school = commerce_tech_school
 		}
 		modifier = {
 			factor = 1.25
@@ -252,10 +219,6 @@ guilds_3 = {
 			literacy = 0.6
 		}
 		modifier = {
-			factor = 1.1
-			tech_school = commerce_tech_school
-		}
-		modifier = {
 			factor = 1.25
 			industrial_score = 25
 		}
@@ -292,10 +255,6 @@ guilds_4 = {
 		modifier = {
 			factor = 1.05
 			literacy = 0.6
-		}
-		modifier = {
-			factor = 1.1
-			tech_school = commerce_tech_school
 		}
 		modifier = {
 			factor = 1.25
@@ -336,10 +295,6 @@ guilds_5 = {
 			literacy = 0.6
 		}
 		modifier = {
-			factor = 1.1
-			tech_school = commerce_tech_school
-		}
-		modifier = {
 			factor = 1.25
 			industrial_score = 25
 		}
@@ -361,11 +316,6 @@ trade_tech_1 = {
 	
 	ai_chance = {
 		factor = 1
-		
-		modifier = {
-			factor = 1.1
-			tech_school = commerce_tech_school
-		}
 		modifier = {
 			factor = 1.25
 			NOT = { industrial_score = 25 }
@@ -387,11 +337,6 @@ trade_tech_2 = {
 	
 	ai_chance = {
 		factor = 1
-		
-		modifier = {
-			factor = 1.1
-			tech_school = commerce_tech_school
-		}
 		modifier = {
 			factor = 1.25
 			NOT = { industrial_score = 25 }
@@ -413,11 +358,6 @@ trade_tech_3 = {
 	
 	ai_chance = {
 		factor = 1
-		
-		modifier = {
-			factor = 1.1
-			tech_school = commerce_tech_school
-		}
 		modifier = {
 			factor = 1.25
 			NOT = { industrial_score = 25 }
@@ -439,11 +379,6 @@ trade_tech_4 = {
 	
 	ai_chance = {
 		factor = 1
-		
-		modifier = {
-			factor = 1.1
-			tech_school = commerce_tech_school
-		}
 		modifier = {
 			factor = 1.25
 			NOT = { industrial_score = 25 }
@@ -465,11 +400,6 @@ trade_tech_5 = {
 	
 	ai_chance = {
 		factor = 1
-		
-		modifier = {
-			factor = 1.1
-			tech_school = commerce_tech_school
-		}
 		modifier = {
 			factor = 1.25
 			NOT = { industrial_score = 25 }
@@ -491,11 +421,6 @@ infrastructure_tech_1 = {
 	
 	ai_chance = {
 		factor = 1
-
-		modifier = {
-			factor = 1.1
-			tech_school = commerce_tech_school
-		}
 		modifier = {
 			factor = 1.5
 			is_greater_power = yes
@@ -522,10 +447,6 @@ infrastructure_tech_2 = {
 		factor = 1
 		
 		modifier = {
-			factor = 1.1
-			tech_school = commerce_tech_school
-		}
-		modifier = {
 			factor = 1.5
 			is_greater_power = yes
 		}
@@ -550,10 +471,6 @@ infrastructure_tech_3 = {
 	ai_chance = {
 		factor = 1
 		
-		modifier = {
-			factor = 1.1
-			tech_school = commerce_tech_school
-		}
 		modifier = {
 			factor = 1.5
 			is_greater_power = yes
@@ -580,10 +497,6 @@ infrastructure_tech_4 = {
 		factor = 1
 		
 		modifier = {
-			factor = 1.1
-			tech_school = commerce_tech_school
-		}
-		modifier = {
 			factor = 1.5
 			is_greater_power = yes
 		}
@@ -608,10 +521,6 @@ infrastructure_tech_5 = {
 	ai_chance = {
 		factor = 1
 		
-		modifier = {
-			factor = 1.1
-			tech_school = commerce_tech_school
-		}
 		modifier = {
 			factor = 1.5
 			is_greater_power = yes

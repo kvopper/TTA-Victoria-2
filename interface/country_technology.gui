@@ -90,7 +90,7 @@ guiTypes = {
 		
 		instantTextBoxType = {
 			name = "administration"
-			position = { x = 40 y = 30 }
+			position = { x = 40 y = -9999 }
 			font = "vic_18_black"
 			text = "TECHNOLOGYVIEW_ADMINISTRATION"
 			maxWidth = 110
@@ -98,7 +98,7 @@ guiTypes = {
 		}
 		instantTextBoxType = {
 			name = "administration_type"
-			position = { x = 135 y = 30 }
+			position = { x = 135 y = -9999 }
 			font = "vic_18_black"
 			text = "administration_type"
 			maxWidth = 200
@@ -108,7 +108,7 @@ guiTypes = {
 		
 		OverlappingElementsBoxType = {
 			name = "school_bonus_icons"
-			position = { x = 325 y = 18 }
+			position = { x = 325 y = -9999 }
 			size = { x=300 y= 15 }
 			Orientation = "UPPER_LEFT"
 			format = left

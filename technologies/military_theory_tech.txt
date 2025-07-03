@@ -12,11 +12,6 @@ fortifications_1 = {
 	
 	ai_chance = {
 		factor = 1
-		
-		modifier = {
-			factor = 1.05
-			tech_school = army_tech_school
-		}
 		modifier = {
 			factor = 1.2
 			civilized = yes
@@ -68,11 +63,6 @@ fortifications_2 = {
 	
 	ai_chance = {
 		factor = 1
-		
-		modifier = {
-			factor = 1.05
-			tech_school = army_tech_school
-		}
 		modifier = {
 			factor = 1.2
 			civilized = yes
@@ -124,11 +114,6 @@ fortifications_3 = {
 	
 	ai_chance = {
 		factor = 1
-		
-		modifier = {
-			factor = 1.05
-			tech_school = army_tech_school
-		}
 		modifier = {
 			factor = 1.2
 			civilized = yes
@@ -180,11 +165,6 @@ fortifications_4 = {
 	
 	ai_chance = {
 		factor = 1
-		
-		modifier = {
-			factor = 1.05
-			tech_school = army_tech_school
-		}
 		modifier = {
 			factor = 1.2
 			civilized = yes
@@ -230,11 +210,6 @@ fortifications_5 = {
 	
 	ai_chance = {
 		factor = 1
-		
-		modifier = {
-			factor = 1.05
-			tech_school = army_tech_school
-		}
 		modifier = {
 			factor = 1.2
 			civilized = yes
@@ -279,11 +254,6 @@ army_tactics_1 = {
 	
 	ai_chance = {
 		factor = 1
-		
-		modifier = {
-			factor = 1.05
-			tech_school = army_tech_school
-		}
 		modifier = {
 			factor = 1.2
 			civilized = yes
@@ -327,11 +297,6 @@ army_tactics_2 = {
 	
 	ai_chance = {
 		factor = 1
-		
-		modifier = {
-			factor = 1.05
-			tech_school = army_tech_school
-		}
 		modifier = {
 			factor = 1.2
 			civilized = yes
@@ -375,11 +340,6 @@ army_tactics_3 = {
 	
 	ai_chance = {
 		factor = 1
-		
-		modifier = {
-			factor = 1.05
-			tech_school = army_tech_school
-		}
 		modifier = {
 			factor = 1.2
 			civilized = yes
@@ -423,11 +383,6 @@ army_tactics_4 = {
 	
 	ai_chance = {
 		factor = 1
-		
-		modifier = {
-			factor = 1.05
-			tech_school = army_tech_school
-		}
 		modifier = {
 			factor = 1.2
 			civilized = yes
@@ -471,11 +426,6 @@ army_tactics_5 = {
 	
 	ai_chance = {
 		factor = 1
-		
-		modifier = {
-			factor = 1.05
-			tech_school = army_tech_school
-		}
 		modifier = {
 			factor = 1.2
 			civilized = yes
@@ -520,11 +470,6 @@ training_1 = {
 	
 	ai_chance = {
 		factor = 1
-		
-		modifier = {
-			factor = 1.05
-			tech_school = army_tech_school
-		}
 		modifier = {
 			factor = 1.2
 			civilized = yes
@@ -568,11 +513,6 @@ training_2 = {
 	
 	ai_chance = {
 		factor = 1
-		
-		modifier = {
-			factor = 1.05
-			tech_school = army_tech_school
-		}
 		modifier = {
 			factor = 1.2
 			civilized = yes
@@ -617,11 +557,6 @@ training_3 = {
 	
 	ai_chance = {
 		factor = 1
-		
-		modifier = {
-			factor = 1.05
-			tech_school = army_tech_school
-		}
 		modifier = {
 			factor = 1.2
 			civilized = yes
@@ -665,11 +600,6 @@ training_4 = {
 	
 	ai_chance = {
 		factor = 1
-		
-		modifier = {
-			factor = 1.05
-			tech_school = army_tech_school
-		}
 		modifier = {
 			factor = 1.2
 			civilized = yes
@@ -714,11 +644,6 @@ training_5 = {
 	
 	ai_chance = {
 		factor = 1
-		
-		modifier = {
-			factor = 1.05
-			tech_school = army_tech_school
-		}
 		modifier = {
 			factor = 1.2
 			civilized = yes
@@ -772,10 +697,6 @@ naval_theory_1 = {
 		modifier = {
 			factor = 0
 			NOT = { total_num_of_ports = 1 }
-		}
-		modifier = {
-			factor = 1.05
-			tech_school = navy_tech_school
 		}
 		modifier = {
 			factor = 1.25
@@ -833,10 +754,6 @@ naval_theory_2 = {
 			NOT = { total_num_of_ports = 1 }
 		}
 		modifier = {
-			factor = 1.05
-			tech_school = navy_tech_school
-		}
-		modifier = {
 			factor = 1.25
 			total_num_of_ports = 20
 			rank = 12
@@ -890,10 +807,6 @@ naval_theory_3 = {
 		modifier = {
 			factor = 0
 			NOT = { total_num_of_ports = 1 }
-		}
-		modifier = {
-			factor = 1.05
-			tech_school = navy_tech_school
 		}
 		modifier = {
 			factor = 1.25
@@ -951,10 +864,6 @@ naval_theory_4 = {
 			NOT = { total_num_of_ports = 1 }
 		}
 		modifier = {
-			factor = 1.05
-			tech_school = navy_tech_school
-		}
-		modifier = {
 			factor = 1.25
 			total_num_of_ports = 20
 			rank = 12
@@ -1008,10 +917,6 @@ naval_theory_5 = {
 		modifier = {
 			factor = 0
 			NOT = { total_num_of_ports = 1 }
-		}
-		modifier = {
-			factor = 1.05
-			tech_school = navy_tech_school
 		}
 		modifier = {
 			factor = 1.25

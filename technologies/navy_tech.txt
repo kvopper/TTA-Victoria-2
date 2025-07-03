@@ -19,10 +19,6 @@ merchant_marine_1 = {
 			NOT = { total_num_of_ports = 1 }
 		}
 		modifier = {
-			factor = 1.05
-			tech_school = navy_tech_school
-		}
-		modifier = {
 			factor = 1.25
 			total_num_of_ports = 20
 			rank = 12
@@ -74,10 +70,6 @@ merchant_marine_2 = {
 		modifier = {
 			factor = 0
 			NOT = { total_num_of_ports = 1 }
-		}
-		modifier = {
-			factor = 1.05
-			tech_school = navy_tech_school
 		}
 		modifier = {
 			factor = 1.25
@@ -133,10 +125,6 @@ merchant_marine_3 = {
 			NOT = { total_num_of_ports = 1 }
 		}
 		modifier = {
-			factor = 1.05
-			tech_school = navy_tech_school
-		}
-		modifier = {
 			factor = 1.25
 			total_num_of_ports = 20
 			rank = 12
@@ -190,10 +178,6 @@ merchant_marine_4 = {
 			NOT = { total_num_of_ports = 1 }
 		}
 		modifier = {
-			factor = 1.05
-			tech_school = navy_tech_school
-		}
-		modifier = {
 			factor = 1.25
 			total_num_of_ports = 20
 			rank = 12
@@ -245,10 +229,6 @@ merchant_marine_5 = {
 		modifier = {
 			factor = 0
 			NOT = { total_num_of_ports = 1 }
-		}
-		modifier = {
-			factor = 1.05
-			tech_school = navy_tech_school
 		}
 		modifier = {
 			factor = 1.25
@@ -312,10 +292,6 @@ light_ships_1 = {
 			NOT = { total_num_of_ports = 1 }
 		}
 		modifier = {
-			factor = 1.05
-			tech_school = navy_tech_school
-		}
-		modifier = {
 			factor = 1.25
 			total_num_of_ports = 20
 			rank = 12
@@ -374,10 +350,6 @@ light_ships_2 = {
 		modifier = {
 			factor = 0
 			NOT = { total_num_of_ports = 1 }
-		}
-		modifier = {
-			factor = 1.05
-			tech_school = navy_tech_school
 		}
 		modifier = {
 			factor = 1.25
@@ -441,10 +413,6 @@ light_ships_3 = {
 			NOT = { total_num_of_ports = 1 }
 		}
 		modifier = {
-			factor = 1.05
-			tech_school = navy_tech_school
-		}
-		modifier = {
 			factor = 1.25
 			total_num_of_ports = 20
 			rank = 12
@@ -503,10 +471,6 @@ light_ships_4 = {
 		modifier = {
 			factor = 0
 			NOT = { total_num_of_ports = 1 }
-		}
-		modifier = {
-			factor = 1.05
-			tech_school = navy_tech_school
 		}
 		modifier = {
 			factor = 1.25
@@ -570,10 +534,6 @@ light_ships_5 = {
 			NOT = { total_num_of_ports = 1 }
 		}
 		modifier = {
-			factor = 1.05
-			tech_school = navy_tech_school
-		}
-		modifier = {
 			factor = 1.25
 			total_num_of_ports = 20
 			rank = 12
@@ -635,10 +595,6 @@ heavy_ships_1 = {
 			NOT = { total_num_of_ports = 1 }
 		}
 		modifier = {
-			factor = 1.05
-			tech_school = navy_tech_school
-		}
-		modifier = {
 			factor = 1.25
 			total_num_of_ports = 20
 			rank = 12
@@ -697,10 +653,6 @@ heavy_ships_2 = {
 		modifier = {
 			factor = 0
 			NOT = { total_num_of_ports = 1 }
-		}
-		modifier = {
-			factor = 1.05
-			tech_school = navy_tech_school
 		}
 		modifier = {
 			factor = 1.25
@@ -764,10 +716,6 @@ heavy_ships_3 = {
 			NOT = { total_num_of_ports = 1 }
 		}
 		modifier = {
-			factor = 1.05
-			tech_school = navy_tech_school
-		}
-		modifier = {
 			factor = 1.25
 			total_num_of_ports = 20
 			rank = 12
@@ -826,10 +774,6 @@ heavy_ships_4 = {
 		modifier = {
 			factor = 0
 			NOT = { total_num_of_ports = 1 }
-		}
-		modifier = {
-			factor = 1.05
-			tech_school = navy_tech_school
 		}
 		modifier = {
 			factor = 1.25
@@ -893,10 +837,6 @@ heavy_ships_5 = {
 			NOT = { total_num_of_ports = 1 }
 		}
 		modifier = {
-			factor = 1.05
-			tech_school = navy_tech_school
-		}
-		modifier = {
 			factor = 1.25
 			total_num_of_ports = 20
 			rank = 12
@@ -951,10 +891,6 @@ naval_construction_1 = {
 			NOT = { total_num_of_ports = 1 }
 		}
 		modifier = {
-			factor = 1.05
-			tech_school = navy_tech_school
-		}
-		modifier = {
 			factor = 1.25
 			total_num_of_ports = 20
 			rank = 12
@@ -1006,10 +942,6 @@ naval_construction_2 = {
 		modifier = {
 			factor = 0
 			NOT = { total_num_of_ports = 1 }
-		}
-		modifier = {
-			factor = 1.05
-			tech_school = navy_tech_school
 		}
 		modifier = {
 			factor = 1.25
@@ -1082,10 +1014,6 @@ naval_construction_4 = {
 			NOT = { total_num_of_ports = 1 }
 		}
 		modifier = {
-			factor = 1.05
-			tech_school = navy_tech_school
-		}
-		modifier = {
 			factor = 1.25
 			total_num_of_ports = 20
 			rank = 12
@@ -1137,10 +1065,6 @@ naval_construction_5 = {
 		modifier = {
 			factor = 0
 			NOT = { total_num_of_ports = 1 }
-		}
-		modifier = {
-			factor = 1.05
-			tech_school = navy_tech_school
 		}
 		modifier = {
 			factor = 1.25

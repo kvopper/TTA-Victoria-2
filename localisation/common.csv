@@ -5891,8 +5891,8 @@ TOPBAR_DATE_IS_PAUSED;This is the current date of the Third Age.\n(click to unpa
 TOPBAR_PAUSE_INDICATOR;The game is currently paused.;x
 TOPBAR_SPEED_INDICATOR;The game is running at §Y$SPEED$§W.;x
 PLAYER_COUNTRY_TOPBAR_RANK;$NAME$ is a §Y$RANK$§W.;x
-HAS_TECH_SCHOOL;Currently §Y$TECH$§W.\n;x
-HAS_NOT_TECH_SCHOOL;Not embracing §Y$TECH$§W.\n;x
+HAS_TECH_SCHOOL;Current organization is §Y$TECH$§W.\n;x
+HAS_NOT_TECH_SCHOOL;Not part of organization §Y$TECH$§W.\n;x
 NEW_CORE_EFFECT_TAG;$TAG$ will gain §Yall§W as core.\n;x
 ANY_OWNED_LIMITED;For Any province that is\n;x
 TECH_MINE_SIZE;Mine Size;x
@@ -6025,7 +6025,7 @@ COLONIZE_CLOSEST_BASE_SPEC;Closest port is in §Y$PROV$§W.\n(Naval range: §G$N
 BUILDING_INFRASTRUCTURE;Infrastructure: §Y$VALUE$§W;x
 UNITVIEW_POP_INFO;§Y$TYPE$§W from §Y$LOC$§W.;x
 UNITVIEW_POP_INFO_FACTION;Part of §Y$FACTION$§W.;x
-SCHOOL_EFFECT;Change to §Y$NAME$§W!\n;x
+SCHOOL_EFFECT;SEE EVENT 110163 IN events/Alliance of Dwarves and Men.txt TO LOC CORRECTLY PLEASE\n;x
 SOCIAL_DESC2;The social spending budget goes towards funding your enacted social reforms. The amount of money to distribute depends on your §YRealm administrative efficiency§W;x
 HAVE_INDUSTRIAL_SCORE_MORE_THAN;Have a higher Industrial Score than: ;x
 STATE_NONCORES;Non-core provinces in state: §R$VALUE$§W;x

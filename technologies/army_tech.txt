@@ -17,11 +17,6 @@ infantry_tech_1 = {
 	
 	ai_chance = {
 		factor = 1
-		
-		modifier = {
-			factor = 1.05
-			tech_school = army_tech_school
-		}
 		modifier = {
 			factor = 1.1
 			has_country_flag = infantry_focused
@@ -76,11 +71,6 @@ infantry_tech_2 = {
 	
 	ai_chance = {
 		factor = 1
-		
-		modifier = {
-			factor = 1.05
-			tech_school = army_tech_school
-		}
 		modifier = {
 			factor = 1.1
 			has_country_flag = infantry_focused
@@ -135,11 +125,6 @@ infantry_tech_3 = {
 	
 	ai_chance = {
 		factor = 1
-		
-		modifier = {
-			factor = 1.05
-			tech_school = army_tech_school
-		}
 		modifier = {
 			factor = 1.1
 			has_country_flag = infantry_focused
@@ -194,11 +179,6 @@ infantry_tech_4 = {
 	
 	ai_chance = {
 		factor = 1
-		
-		modifier = {
-			factor = 1.05
-			tech_school = army_tech_school
-		}
 		modifier = {
 			factor = 1.1
 			has_country_flag = infantry_focused
@@ -253,11 +233,6 @@ infantry_tech_5 = {
 	
 	ai_chance = {
 		factor = 1
-		
-		modifier = {
-			factor = 1.05
-			tech_school = army_tech_school
-		}
 		modifier = {
 			factor = 1.1
 			has_country_flag = infantry_focused
@@ -307,11 +282,6 @@ archer_tech_1 = {
 	
 	ai_chance = {
 		factor = 1
-		
-		modifier = {
-			factor = 1.05
-			tech_school = army_tech_school
-		}
 		modifier = {
 			factor = 1.1
 			has_country_flag = ranged_focused
@@ -360,11 +330,6 @@ archer_tech_2 = {
 	
 	ai_chance = {
 		factor = 1
-		
-		modifier = {
-			factor = 1.05
-			tech_school = army_tech_school
-		}
 		modifier = {
 			factor = 1.1
 			has_country_flag = ranged_focused
@@ -413,11 +378,6 @@ archer_tech_3 = {
 	
 	ai_chance = {
 		factor = 1
-		
-		modifier = {
-			factor = 1.05
-			tech_school = army_tech_school
-		}
 		modifier = {
 			factor = 1.1
 			has_country_flag = ranged_focused
@@ -466,11 +426,6 @@ archer_tech_4 = {
 	
 	ai_chance = {
 		factor = 1
-		
-		modifier = {
-			factor = 1.05
-			tech_school = army_tech_school
-		}
 		modifier = {
 			factor = 1.1
 			has_country_flag = ranged_focused
@@ -519,11 +474,6 @@ archer_tech_5 = {
 	
 	ai_chance = {
 		factor = 1
-		
-		modifier = {
-			factor = 1.05
-			tech_school = army_tech_school
-		}
 		modifier = {
 			factor = 1.1
 			has_country_flag = ranged_focused
@@ -581,11 +531,6 @@ cavalry_tech_1 = {
 	
 	ai_chance = {
 		factor = 1
-		
-		modifier = {
-			factor = 1.05
-			tech_school = army_tech_school
-		}
 		modifier = {
 			factor = 1.1
 			has_country_flag = cavalry_focused
@@ -640,11 +585,6 @@ cavalry_tech_2 = {
 	
 	ai_chance = {
 		factor = 1
-		
-		modifier = {
-			factor = 1.05
-			tech_school = army_tech_school
-		}
 		modifier = {
 			factor = 1.1
 			has_country_flag = cavalry_focused
@@ -699,11 +639,6 @@ cavalry_tech_3 = {
 	
 	ai_chance = {
 		factor = 1
-		
-		modifier = {
-			factor = 1.05
-			tech_school = army_tech_school
-		}
 		modifier = {
 			factor = 1.1
 			has_country_flag = cavalry_focused
@@ -758,11 +693,6 @@ cavalry_tech_4 = {
 	
 	ai_chance = {
 		factor = 1
-		
-		modifier = {
-			factor = 1.05
-			tech_school = army_tech_school
-		}
 		modifier = {
 			factor = 1.1
 			has_country_flag = cavalry_focused
@@ -817,11 +747,6 @@ cavalry_tech_5 = {
 	
 	ai_chance = {
 		factor = 1
-		
-		modifier = {
-			factor = 1.05
-			tech_school = army_tech_school
-		}
 		modifier = {
 			factor = 1.1
 			has_country_flag = cavalry_focused
@@ -871,11 +796,6 @@ artillery_tech_1 = {
 	
 	ai_chance = {
 		factor = 1
-		
-		modifier = {
-			factor = 1.05
-			tech_school = army_tech_school
-		}
 		modifier = {
 			factor = 1.2
 			civilized = yes
@@ -920,11 +840,6 @@ artillery_tech_2 = {
 	
 	ai_chance = {
 		factor = 1
-		
-		modifier = {
-			factor = 1.05
-			tech_school = army_tech_school
-		}
 		modifier = {
 			factor = 1.2
 			civilized = yes
@@ -969,11 +884,6 @@ artillery_tech_3 = {
 	
 	ai_chance = {
 		factor = 1
-		
-		modifier = {
-			factor = 1.05
-			tech_school = army_tech_school
-		}
 		modifier = {
 			factor = 1.2
 			civilized = yes
@@ -1018,11 +928,6 @@ artillery_tech_4 = {
 	
 	ai_chance = {
 		factor = 1
-		
-		modifier = {
-			factor = 1.05
-			tech_school = army_tech_school
-		}
 		modifier = {
 			factor = 1.2
 			civilized = yes
@@ -1067,11 +972,6 @@ artillery_tech_5 = {
 	
 	ai_chance = {
 		factor = 1
-		
-		modifier = {
-			factor = 1.05
-			tech_school = army_tech_school
-		}
 		modifier = {
 			factor = 1.2
 			civilized = yes

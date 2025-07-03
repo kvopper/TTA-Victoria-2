@@ -19,7 +19,7 @@ upper_house = {
 penal_reform = hard_labor
 slavery = no_slavery
 
-schools = traditional_academic
+schools = no_organization
 
 #tech
 rgo_tech_1 = 1
