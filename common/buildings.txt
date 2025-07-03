@@ -421,7 +421,10 @@ railroad = {
 barracks = {
 	type = barracks
 	goods_cost = {
-		# TODO
+		lumber = 50
+		cut_stone = 100
+		melee_gear = 5
+		ranged_gear = 5
 	}
 	time = 365
 	visibility = yes
@@ -437,7 +440,8 @@ barracks = {
 scriptorium = {
 	type = scriptorium
 	goods_cost = {
-		# TODO
+		timber = 200
+		cut_stone = 200
 	}
 	time = 180
 	visibility = yes
@@ -455,7 +459,9 @@ scriptorium = {
 market_square = {
 	type = market_square
 	goods_cost = {
-		# TODO
+		timber = 200
+		lumber = 200
+		rock = 100
 	}
 	time = 180
 	visibility = yes
@@ -471,7 +477,9 @@ market_square = {
 public_house = {
 	type = public_house
 	goods_cost = {
-		# TODO
+		timber = 50
+		lumber = 50
+		rock = 100
 	}
 	time = 180
 	visibility = yes
