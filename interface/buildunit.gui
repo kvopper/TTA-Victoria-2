@@ -709,7 +709,7 @@ guiTypes = {
 		guiButtonType = {
 			name = "unit_folder_7"
 			position = { x = -206 y = 31 }
-			quadTextureSprite = "unit_folder_navy_4_corsair_ship"
+			quadTextureSprite = "GFX_unit_folder_navy_3_cog"
 		}
 		
 		listboxType = {
