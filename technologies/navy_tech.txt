@@ -275,14 +275,6 @@ light_ships_1 = {
 		hull = 1
 		gun_power = 3
 	}
-	galleass = {
-		hull = 1
-		gun_power = 3
-	}
-	galiot = {
-		hull = 1
-		gun_power = 3
-	}
 	
 	ai_chance = {
 		factor = 1
@@ -332,14 +324,6 @@ light_ships_2 = {
 	unciv_military = yes
 
 	galley = {
-		hull = 2
-		gun_power = 6
-	}
-	galleass = {
-		hull = 2
-		gun_power = 6
-	}
-	galiot = {
 		hull = 2
 		gun_power = 6
 	}
@@ -395,15 +379,6 @@ light_ships_3 = {
 		hull = 3
 		gun_power = 9
 	}
-	galleass = {
-		hull = 3
-		gun_power = 9
-	}
-	galiot = {
-		hull = 3
-		gun_power = 9
-	}
-	activate_unit = galleass
 	
 	ai_chance = {
 		factor = 1
@@ -453,14 +428,6 @@ light_ships_4 = {
 	unciv_military = yes
 
 	galley = {
-		hull = 4
-		gun_power = 12
-	}
-	galleass = {
-		hull = 4
-		gun_power = 12
-	}
-	galiot = {
 		hull = 4
 		gun_power = 12
 	}
@@ -516,15 +483,6 @@ light_ships_5 = {
 		hull = 5
 		gun_power = 15
 	}
-	galleass = {
-		hull = 5
-		gun_power = 15
-	}
-	galiot = {
-		hull = 5
-		gun_power = 15
-	}
-	activate_unit = galiot
 	
 	ai_chance = {
 		factor = 1
@@ -575,14 +533,6 @@ heavy_ships_1 = {
 	unciv_military = yes
 
 	cog = {
-		hull = 1
-		gun_power = 3
-	}
-	caravel = {
-		hull = 1
-		gun_power = 3
-	}
-	brigantine = {
 		hull = 1
 		gun_power = 3
 	}
@@ -638,14 +588,6 @@ heavy_ships_2 = {
 		hull = 2
 		gun_power = 6
 	}
-	caravel = {
-		hull = 2
-		gun_power = 6
-	}
-	brigantine = {
-		hull = 2
-		gun_power = 6
-	}
 	
 	ai_chance = {
 		factor = 1
@@ -698,15 +640,6 @@ heavy_ships_3 = {
 		hull = 3
 		gun_power = 9
 	}
-	caravel = {
-		hull = 3
-		gun_power = 9
-	}
-	brigantine = {
-		hull = 3
-		gun_power = 9
-	}
-	activate_unit = caravel
 	
 	ai_chance = {
 		factor = 1
@@ -756,14 +689,6 @@ heavy_ships_4 = {
 	unciv_military = yes
 
 	cog = {
-		hull = 4
-		gun_power = 12
-	}
-	caravel = {
-		hull = 4
-		gun_power = 12
-	}
-	brigantine = {
 		hull = 4
 		gun_power = 12
 	}
@@ -819,15 +744,6 @@ heavy_ships_5 = {
 		hull = 5
 		gun_power = 15
 	}
-	caravel = {
-		hull = 5
-		gun_power = 15
-	}
-	brigantine = {
-		hull = 5
-		gun_power = 15
-	}
-	activate_unit = brigantine
 	
 	ai_chance = {
 		factor = 1

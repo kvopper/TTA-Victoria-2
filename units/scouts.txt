@@ -5,7 +5,6 @@ scouts = {
 	sprite = Scouts
 	active = yes
 	unit_type = cavalry
-	primary_culture = yes
 	
 	#Avatar
 	sprite_override = Scouts
