@@ -1,4 +1,4 @@
-ents = {
+ents_unit = {
 	icon = 24
 	
 	type = land
