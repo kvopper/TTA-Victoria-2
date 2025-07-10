@@ -1,21 +1,22 @@
-heavy_cavalry = {
-	icon = 11
+elite_horse_archers = {
+	icon = 10
 	
 	type = land
-	sprite = HeavyCavalry
+	sprite = HorseArchers
 	active = yes
 	unit_type = cavalry
+	primary_culture = yes
 	
 	#Avatar
-	sprite_override = HeavyCavalry
-	sprite_mount = HeavyMount
+	sprite_override = HorseArchers
+	sprite_mount = GenericMount
 	sprite_mount_attach_node = Saddle_Node
 	floating_flag = yes
 
 	#Core Abilities
 	priority = 60
 	max_strength = 3
-	default_organisation = 40
+	default_organisation = 30
 	maximum_speed = 5.00
 	weighted_value = 4.0
 
@@ -23,24 +24,22 @@ heavy_cavalry = {
 	build_time = 50
 	build_cost = {
 		horses = 10
-		melee_gear = 10
-		clothes = 10
-		liquor = 10
+		ranged_gear = 10
 		food = 10
 	}
 	
 	supply_consumption = 1.0
 	supply_cost = {
 		horses = 0.05
-		melee_gear = 0.03
-		liquor = 0.1
+		ranged_gear = 0.03
+		food = 0.07
 	}
 	
 	#Land Abilties
 	reconnaissance = 0
-	attack = 5
-	defence = 1
-	discipline = 1.1
-	support = 0.0
+	attack = 3
+	defence = 3
+	discipline = 1.0
+	support = 1.0
 	maneuver = 2
 }

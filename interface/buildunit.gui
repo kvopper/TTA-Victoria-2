@@ -559,11 +559,11 @@ guiTypes = {
 		
 		### (new) FOLDER BUTTONS.
 		
-		# army.
+		# Army Row 1 (standard units)
 		guiButtonType = {
 			name = "unit_folder_14"
 			position = { x = -305 y = 31 }
-			quadTextureSprite = "GFX_unit_folder_army_5_levies"
+			quadTextureSprite = "GFX_unit_folder_army_10_levies"
 		}
 		guiButtonType = {
 			name = "unit_folder_1"
@@ -573,7 +573,7 @@ guiTypes = {
 		guiButtonType = {
 			name = "unit_folder_13"
 			position = { x = -239 y = 31 }
-			quadTextureSprite = "GFX_unit_folder_army_4_pikemen"
+			quadTextureSprite = "GFX_unit_folder_army_9_pikemen"
 		}
 		guiButtonType = {
 			name = "unit_folder_3"
@@ -593,7 +593,7 @@ guiTypes = {
 		guiButtonType = {
 			name = "unit_folder_15"
 			position = { x = -107 y = 31 }
-			quadTextureSprite = "GFX_unit_folder_army_6_horse_archers"
+			quadTextureSprite = "GFX_unit_folder_army_11_horse_archers"
 		}
 		guiButtonType = {
 			name = "unit_folder_12"
@@ -601,8 +601,96 @@ guiTypes = {
 			quadTextureSprite = "GFX_unit_folder_army_8_artillery"
 		}
 		
-		# navy.
+		# Army Row 2 (Elite Variants)
+		# guiButtonType = {
+			# name = "unit_folder_???"
+			# position = { x = -305 y = 67 }
+			# quadTextureSprite = "???"
+		# }
+		guiButtonType = {
+			name = "unit_folder_17"
+			position = { x = -272 y = 67 }
+			quadTextureSprite = "GFX_unit_folder_army_13_elite_swordsmen"
+		}
+		guiButtonType = {
+			name = "unit_folder_9"
+			position = { x = -239 y = 67 }
+			quadTextureSprite = "GFX_unit_folder_army_5_elite_pikemen"
+		}
+		guiButtonType = {
+			name = "unit_folder_16"
+			position = { x = -206 y = 67 }
+			quadTextureSprite = "GFX_unit_folder_army_12_elite_archers"
+		}
+		# guiButtonType = {
+			# name = "unit_folder_???"
+			# position = { x = -173 y = 67 }
+			# quadTextureSprite = "???"
+		# }
+		guiButtonType = {
+			name = "unit_folder_8"
+			position = { x = -140 y = 67 }
+			quadTextureSprite = "GFX_unit_folder_army_4_elite_heavy_cavalry"
+		}
+		guiButtonType = {
+			name = "unit_folder_10"
+			position = { x = -107 y = 67 }
+			quadTextureSprite = "GFX_unit_folder_army_6_elite_horse_archers"
+		}
+		guiButtonType = {
+			name = "unit_folder_18"
+			position = { x = -74 y = 67 }
+			quadTextureSprite = "GFX_unit_folder_army_14_elite_artillery"
+		}
 		
+		# Army Row 3 (Other Elite Units [not variants of standard units])
+		guiButtonType = {
+			name = "unit_folder_19"
+			position = { x = -305 y = 103 }
+			quadTextureSprite = "GFX_unit_folder_army_15_skirmishers"
+		}
+		guiButtonType = {
+			name = "unit_folder_20"
+			position = { x = -272 y = 103 }
+			quadTextureSprite = "GFX_unit_folder_army_16_royal_guard"
+		}
+		guiButtonType = {
+			name = "unit_folder_21"
+			position = { x = -239 y = 103 }
+			quadTextureSprite = "GFX_unit_folder_army_17_rangers"
+		}
+		guiButtonType = {
+			name = "unit_folder_22"
+			position = { x = -206 y = 103 }
+			quadTextureSprite = "GFX_unit_folder_army_18_berserkers"
+		}
+		guiButtonType = {
+			name = "unit_folder_23"
+			position = { x = -173 y = 103 }
+			quadTextureSprite = "GFX_unit_folder_army_19_mumakil"
+		}
+		guiButtonType = {
+			name = "unit_folder_24"
+			position = { x = -140 y = 103 }
+			quadTextureSprite = "GFX_unit_folder_army_20_ents"
+		}
+		guiButtonType = {
+			name = "unit_folder_25"
+			position = { x = -107 y = 103 }
+			quadTextureSprite = "GFX_unit_folder_army_21_eagles"
+		}
+		guiButtonType = {
+			name = "unit_folder_26"
+			position = { x = -74 y = 103 }
+			quadTextureSprite = "GFX_unit_folder_army_22_spiders"
+		}
+		guiButtonType = {
+			name = "unit_folder_27"
+			position = { x = -41 y = 103 }
+			quadTextureSprite = "GFX_unit_folder_army_23_wights"
+		}
+		
+		# Navy
 		guiButtonType = {
 			name = "unit_folder_6"
 			position = { x = -305 y = 31 }
@@ -614,29 +702,14 @@ guiTypes = {
 			quadTextureSprite = "GFX_unit_folder_navy_2_galley"
 		}
 		guiButtonType = {
-			name = "unit_folder_7"
-			position = { x = -239 y = 31 }
-			quadTextureSprite = "GFX_unit_folder_navy_3_galleass"
-		}
-		guiButtonType = {
-			name = "unit_folder_8"
-			position = { x = -206 y = 31 }
-			quadTextureSprite = "GFX_unit_folder_navy_4_galliot"
-		}
-		guiButtonType = {
 			name = "unit_folder_4"
-			position = { x = -173 y = 31 }
-			quadTextureSprite = "GFX_unit_folder_navy_5_cog"
+			position = { x = -239 y = 31 }
+			quadTextureSprite = "GFX_unit_folder_navy_3_cog"
 		}
 		guiButtonType = {
-			name = "unit_folder_9"
-			position = { x = -140 y = 31 }
-			quadTextureSprite = "GFX_unit_folder_navy_6_caravel"
-		}
-		guiButtonType = {
-			name = "unit_folder_10"
-			position = { x = -107 y = 31 }
-			quadTextureSprite = "GFX_unit_folder_navy_7_brigantine"
+			name = "unit_folder_7"
+			position = { x = -206 y = 31 }
+			quadTextureSprite = "GFX_unit_folder_navy_4_corsair_ship"
 		}
 		
 		listboxType = {

@@ -1,10 +1,11 @@
-heavy_cavalry = {
-	icon = 11
+eagles = {
+	icon = 25
 	
 	type = land
 	sprite = HeavyCavalry
 	active = yes
 	unit_type = cavalry
+	primary_culture = yes
 	
 	#Avatar
 	sprite_override = HeavyCavalry

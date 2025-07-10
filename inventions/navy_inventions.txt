@@ -41,10 +41,7 @@ ramming = {
 		base = 2
 	}
 	effect = {
-		galleass = {
-			torpedo_attack = 1
-		}
-		galiot = {
+		galley = {
 			torpedo_attack = 2
 		}
 	}
@@ -55,10 +52,7 @@ advanced_ramming = {
 		base = 2
 	}
 	effect = {
-		galleass = {
-			torpedo_attack = 2
-		}
-		galiot = {
+		galley = {
 			torpedo_attack = 8
 		}
 	}
@@ -75,12 +69,6 @@ boarding = {
 		cog = {
 			gun_power = 3
 		}
-		caravel = {
-			gun_power = 3
-		}
-		brigantine = {
-			gun_power = 3
-		}
 	}
 }
 boarding_bridges = {
@@ -90,12 +78,6 @@ boarding_bridges = {
 	}
 	effect = {
 		cog = {
-			gun_power = 5
-		}
-		caravel = {
-			gun_power = 5
-		}
-		brigantine = {
 			gun_power = 5
 		}
 	}
