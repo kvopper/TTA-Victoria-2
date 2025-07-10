@@ -31,7 +31,7 @@ elite_pikemen = {
 		liquor = 0.1
 	}
 	
-	#Land Abilties
+	#Land Abilities
 	reconnaissance = 0
 	attack = 1
 	defence = 5

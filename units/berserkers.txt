@@ -28,7 +28,7 @@ berserkers = {
 		melee_gear = 0.03
 	}
 	
-	#Land Abilties
+	#Land Abilities
 	reconnaissance = 0
 	attack = 3
 	defence = 3

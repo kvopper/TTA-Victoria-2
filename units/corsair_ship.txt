@@ -34,7 +34,7 @@ corsair_ship = {
 		artillery = 0.08 #0.16
 	}
 	
-	#Naval Abilties
+	#Naval Abilities
 	hull = 6
 	gun_power = 10
 	fire_range = 0.58

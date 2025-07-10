@@ -32,7 +32,7 @@ scouts = {
 		food = 0.07
 	}
 	
-	#Land Abilties
+	#Land Abilities
 	reconnaissance = 1
 	attack = 2
 	defence = 1

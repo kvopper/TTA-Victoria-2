@@ -37,7 +37,7 @@ elite_heavy_cavalry = {
 		liquor = 0.1
 	}
 	
-	#Land Abilties
+	#Land Abilities
 	reconnaissance = 0
 	attack = 5
 	defence = 1
