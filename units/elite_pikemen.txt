@@ -36,7 +36,7 @@ elite_pikemen = {
 	reconnaissance = 0
 	attack = 3
 	defence = 7
-	discipline = 1.1
+	discipline = 1.25
 	support = 0.0
 	maneuver = 1
 }

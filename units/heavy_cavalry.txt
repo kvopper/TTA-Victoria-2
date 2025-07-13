@@ -40,7 +40,7 @@ heavy_cavalry = {
 	reconnaissance = 0
 	attack = 5
 	defence = 1
-	discipline = 1.1
+	discipline = 1.0
 	support = 0.0
 	maneuver = 2
 }

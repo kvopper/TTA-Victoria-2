@@ -42,7 +42,7 @@ elite_heavy_cavalry = {
 	reconnaissance = 0
 	attack = 7
 	defence = 3
-	discipline = 1.1
+	discipline = 1.25
 	support = 0.0
 	maneuver = 2
 }

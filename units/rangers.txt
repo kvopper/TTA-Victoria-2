@@ -33,7 +33,7 @@ rangers = {
 	reconnaissance = 0
 	attack = 1
 	defence = 1
-	discipline = 1.0
+	discipline = 1.25
 	support = 2
 	maneuver = 1
 }

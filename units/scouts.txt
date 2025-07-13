@@ -36,7 +36,7 @@ scouts = {
 	reconnaissance = 1
 	attack = 2
 	defence = 1
-	discipline = 0.9
+	discipline = 1.0
 	support = 0.0
 	maneuver = 3
 }

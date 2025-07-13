@@ -33,7 +33,7 @@ berserkers = {
 	reconnaissance = 0
 	attack = 9
 	defence = 1
-	discipline = 1.0
+	discipline = 1.25
 	support = 0.0
 	maneuver = 1
 }

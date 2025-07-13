@@ -34,7 +34,7 @@ pikemen = {
 	reconnaissance = 0
 	attack = 1
 	defence = 5
-	discipline = 1.1
+	discipline = 1.0
 	support = 0.0
 	maneuver = 1
 }

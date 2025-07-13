@@ -33,7 +33,7 @@ skirmishers = {
 	reconnaissance = 0
 	attack = 3
 	defence = 3
-	discipline = 1.0
+	discipline = 1.25
 	support = 1.0
 	maneuver = 1
 }
