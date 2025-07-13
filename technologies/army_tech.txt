@@ -1,4 +1,5 @@
 #infantry_tech -- base 6, stat boost of 2, 4, 6, 8, 10 = 36 total stats (18 for levies [infantry])
+#elite infantry-- base 10,stat boost of 2, 4, 8, 10, 12 = 46 total stats
 infantry_tech_1 = {
 	area = infantry_tech
 	year = 2954
@@ -12,6 +13,12 @@ infantry_tech_1 = {
 		default_organisation = 2
 	}
 	infantry = {
+		default_organisation = 2
+	}
+	elite_pikemen = {
+		default_organisation = 2
+	}
+	elite_swordsmen = {
 		default_organisation = 2
 	}
 	
@@ -68,6 +75,12 @@ infantry_tech_2 = {
 	infantry = {
 		default_organisation = 3
 	}
+	elite_pikemen = {
+		default_organisation = 3
+	}
+	elite_swordsmen = {
+		default_organisation = 3
+	}
 	
 	ai_chance = {
 		factor = 1
@@ -120,6 +133,12 @@ infantry_tech_3 = {
 		default_organisation = 5
 	}
 	infantry = {
+		default_organisation = 5
+	}
+	elite_pikemen = {
+		default_organisation = 5
+	}
+	elite_swordsmen = {
 		default_organisation = 5
 	}
 	
@@ -176,6 +195,12 @@ infantry_tech_4 = {
 	infantry = {
 		default_organisation = 5
 	}
+	elite_pikemen = {
+		default_organisation = 5
+	}
+	elite_swordsmen = {
+		default_organisation = 5
+	}
 	
 	ai_chance = {
 		factor = 1
@@ -230,6 +255,12 @@ infantry_tech_5 = {
 	infantry = {
 		default_organisation = 5
 	}
+	elite_pikemen = {
+		default_organisation = 5
+	}
+	elite_swordsmen = {
+		default_organisation = 5
+	}
 	
 	ai_chance = {
 		factor = 1
@@ -270,6 +301,7 @@ infantry_tech_5 = {
 }
 
 #archer_tech -- base 2, stat boost of 1, 1.5, 1,5, 2, 3 = 11 total stats (500% support max, total backline 55)
+#elite archer-- base 4, stat boost of 1, 1.5, 1.5, 3, 4 = 14 total stats (500% support max, total backline of 75)
 archer_tech_1 = {
 	area = archer_tech
 	year = 2954
@@ -278,6 +310,9 @@ archer_tech_1 = {
 
 	archers = {
 		default_organisation = 2
+	}
+	elite_archers = {
+		default_organisation = 5
 	}
 	
 	ai_chance = {
@@ -327,6 +362,9 @@ archer_tech_2 = {
 	archers = {
 		default_organisation = 3
 	}
+	elite_archers = {
+		default_organisation = 5
+	}
 	
 	ai_chance = {
 		factor = 1
@@ -373,6 +411,9 @@ archer_tech_3 = {
 	unciv_military = yes
 
 	archers = {
+		default_organisation = 5
+	}
+	elite_archers = {
 		default_organisation = 5
 	}
 	
@@ -423,6 +464,9 @@ archer_tech_4 = {
 	archers = {
 		default_organisation = 5
 	}
+	elite_archers = {
+		default_organisation = 5
+	}
 	
 	ai_chance = {
 		factor = 1
@@ -471,6 +515,9 @@ archer_tech_5 = {
 	archers = {
 		default_organisation = 5
 	}
+	elite_archers = {
+		default_organisation = 5
+	}
 	
 	ai_chance = {
 		factor = 1
@@ -513,6 +560,8 @@ archer_tech_5 = {
 #cavalry_tech -- heavy cav 6, stat boost of 2, 4, 6, 8, 10 = 36 total stats
 			# -- horse arc 6, stat boost of 2, 2, 4, 4, 6 = 24 total stats (200% support max, total backline 48)
 			# -- scouts    3, stat boost of 2, 3, 4, 6, 8 = 26 total stats
+#Elite cavalry-- heavy cav 10,stat boost of 2, 4, 8, 10, 12 = 46 total stats
+#Elite cavalry-- horse ach 10, stat boost of 2, 2, 4, 6, 8 = 32 total status (200% support max, total back line of 64)
 cavalry_tech_1 = {
 	area = cavalry_tech
 	year = 2954
@@ -526,6 +575,12 @@ cavalry_tech_1 = {
 		default_organisation = 2
 	}
 	scouts = {
+		default_organisation = 2
+	}
+	elite_heavy_cavalry = {
+		default_organisation = 2
+	}
+	elite_horse_archers = {
 		default_organisation = 2
 	}
 	
@@ -582,6 +637,12 @@ cavalry_tech_2 = {
 	scouts = {
 		default_organisation = 3
 	}
+	elite_heavy_cavalry = {
+		default_organisation = 3
+	}
+	elite_horse_archers = {
+		default_organisation = 3
+	}
 	
 	ai_chance = {
 		factor = 1
@@ -634,6 +695,12 @@ cavalry_tech_3 = {
 		default_organisation = 5
 	}
 	scouts = {
+		default_organisation = 5
+	}
+	elite_heavy_cavalry = {
+		default_organisation = 5
+	}
+	elite_horse_archers = {
 		default_organisation = 5
 	}
 	
@@ -690,6 +757,12 @@ cavalry_tech_4 = {
 	scouts = {
 		default_organisation = 5
 	}
+	elite_heavy_cavalry = {
+		default_organisation = 5
+	}
+	elite_horse_archers = {
+		default_organisation = 5
+	}
 	
 	ai_chance = {
 		factor = 1
@@ -744,6 +817,12 @@ cavalry_tech_5 = {
 	scouts = {
 		default_organisation = 5
 	}
+	elite_heavy_cavalry = {
+		default_organisation = 5
+	}
+	elite_horse_archers = {
+		default_organisation = 5
+	}
 	
 	ai_chance = {
 		factor = 1
@@ -784,6 +863,7 @@ cavalry_tech_5 = {
 }
 
 #artillery_tech -- 2, stat boost of 2, 2, 4, 4, 6 = 20 (200% support max, total backline 40)
+#elite artillery-- 4, stat boost of 2, 2, 4, 6, 8 = 26 (200% support max, total backline of 52)
 artillery_tech_1 = {
 	area = artillery_tech
 	year = 2954
@@ -791,6 +871,9 @@ artillery_tech_1 = {
 	unciv_military = yes
 
 	artillery = {
+		default_organisation = 2
+	}
+	elite_artillery = {
 		default_organisation = 2
 	}
 	
@@ -837,6 +920,9 @@ artillery_tech_2 = {
 	artillery = {
 		default_organisation = 3
 	}
+	elite_artillery = {
+		default_organisation = 3
+	}
 	
 	ai_chance = {
 		factor = 1
@@ -879,6 +965,9 @@ artillery_tech_3 = {
 	unciv_military = yes
 
 	artillery = {
+		default_organisation = 5
+	}
+	elite_artillery = {
 		default_organisation = 5
 	}
 	
@@ -925,6 +1014,9 @@ artillery_tech_4 = {
 	artillery = {
 		default_organisation = 5
 	}
+	elite_artillery = {
+		default_organisation = 5
+	}
 	
 	ai_chance = {
 		factor = 1
@@ -967,6 +1059,9 @@ artillery_tech_5 = {
 	unciv_military = yes
 
 	artillery = {
+		default_organisation = 5
+	}
+	elite_artillery = {
 		default_organisation = 5
 	}
 	

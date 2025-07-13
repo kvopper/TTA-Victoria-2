@@ -22,6 +22,16 @@ infantry_tech_1_equipment = {
 			defence = 0.5
 			supply_consumption = 0.1
 		}
+		elite_pikemen = {
+			attack = 0.5
+			defence = 1.5
+			supply_consumption = 0.1
+		}
+		elite_swordsmen = {
+			attack = 1
+			defence = 1
+			supply_consumption = 0.1
+		}
 	}
 }
 infantry_tech_2_equipment = {
@@ -43,6 +53,16 @@ infantry_tech_2_equipment = {
 		infantry = {
 			attack = 1
 			defence = 1
+			supply_consumption = 0.1
+		}
+		elite_pikemen = {
+			attack = 1
+			defence = 3
+			supply_consumption = 0.1
+		}
+		elite_swordsmen = {
+			attack = 2
+			defence = 2
 			supply_consumption = 0.1
 		}
 	}
@@ -79,6 +99,16 @@ infantry_tech_3_equipment = {
 			defence = 1.5
 			supply_consumption = 0.2
 		}
+		elite_pikemen = {
+			attack = 3
+			defence = 5
+			supply_consumption = 0.2
+		}
+		elite_swordsmen = {
+			attack = 4
+			defence = 4
+			supply_consumption = 0.2
+		}
 	}
 }
 competition_infantry = {
@@ -111,6 +141,16 @@ infantry_tech_4_equipment = {
 			defence = 2
 			supply_consumption = 0.3
 		}
+		elite_pikemen = {
+			attack = 4
+			defence = 6
+			supply_consumption = 0.3
+		}
+		elite_swordsmen = {
+			attack = 5
+			defence = 5
+			supply_consumption = 0.3
+		}
 	}
 }
 infantry_tech_5_equipment = {
@@ -134,6 +174,16 @@ infantry_tech_5_equipment = {
 			defence = 2.5
 			supply_consumption = 0.3
 		}
+		elite_pikemen = {
+			attack = 4
+			defence = 8
+			supply_consumption = 0.3
+		}
+		elite_swordsmen = {
+			attack = 6
+			defence = 6
+			supply_consumption = 0.3
+		}
 	}
 }
 ##########################
@@ -146,6 +196,12 @@ archer_tech_1_equipment = {
 	}
 	effect = {
 		archers = {
+			attack = 0.25
+			defence = 0.25
+			support = 0.25
+			supply_consumption = 0.1
+		}
+		elite_archers = {
 			attack = 0.25
 			defence = 0.25
 			support = 0.25
@@ -164,6 +220,11 @@ short_bows = {
 			defence = 0.25
 			supply_consumption = 0.1
 		}
+		elite_archers = {
+			attack = 0.25
+			defence = 0.25
+			supply_consumption = 0.1
+		}
 	}
 }
 archer_tech_2_equipment = {
@@ -173,6 +234,12 @@ archer_tech_2_equipment = {
 	}
 	effect = {
 		archers = {
+			attack = 0.5
+			defence = 0.5
+			support = 0.25
+			supply_consumption = 0.1
+		}
+		elite_archers = {
 			attack = 0.5
 			defence = 0.5
 			support = 0.25
@@ -191,6 +258,11 @@ recurve_bows = {
 			defence = 0.25
 			supply_consumption = 0.1
 		}
+		elite_archers = {
+			attack = 0.25
+			defence = 0.25
+			supply_consumption = 0.1
+		}
 	}
 }
 barbed_arrows = {
@@ -200,6 +272,10 @@ barbed_arrows = {
 	}
 	effect = {
 		archers = {
+			support = 0.5
+			supply_consumption = 0.1
+		}
+		elite_archers = {
 			support = 0.5
 			supply_consumption = 0.1
 		}
@@ -228,6 +304,12 @@ archer_tech_3_equipment = {
 			support = 0.25
 			supply_consumption = 0.2
 		}
+		elite_archers = {
+			attack = 0.5
+			defence = 0.5
+			support = 0.25
+			supply_consumption = 0.2
+		}
 	}
 }
 long_bows = {
@@ -237,6 +319,11 @@ long_bows = {
 	}
 	effect = {
 		archers = {
+			attack = 0.25
+			defence = 0.25
+			supply_consumption = 0.2
+		}
+		elite_archers = {
 			attack = 0.25
 			defence = 0.25
 			supply_consumption = 0.2
@@ -264,6 +351,12 @@ archer_tech_4_equipment = {
 			support = 0.25
 			supply_consumption = 0.3
 		}
+		elite_archers = {
+			attack = 0.75
+			defence = 0.75
+			support = 0.25
+			supply_consumption = 0.3
+		}
 	}
 }
 composite_bows = {
@@ -277,6 +370,11 @@ composite_bows = {
 			defence = 0.25
 			supply_consumption = 0.3
 		}
+		elite_archers = {
+			attack = 0.75
+			defence = 0.75
+			supply_consumption = 0.3
+		}
 	}
 }
 bodkin_arrows = {
@@ -286,6 +384,10 @@ bodkin_arrows = {
 	}
 	effect = {
 		archers = {
+			support = 0.25
+			supply_consumption = 0.3
+		}
+		elite_archers = {
 			support = 0.25
 			supply_consumption = 0.3
 		}
@@ -303,6 +405,12 @@ archer_tech_5_equipment = {
 			support = 0.5
 			supply_consumption = 0.3
 		}
+		elite_archers = {
+			attack = 1.5
+			defence = 1.5
+			support = 0.5
+			supply_consumption = 0.3
+		}
 	}
 }
 war_bows = {
@@ -312,6 +420,11 @@ war_bows = {
 	}
 	effect = {
 		archers = {
+			attack = 0.5
+			defence = 0.5
+			supply_consumption = 0.3
+		}
+		elite_archers = {
 			attack = 0.5
 			defence = 0.5
 			supply_consumption = 0.3
@@ -328,6 +441,10 @@ war_arrows = {
 			support = 0.5
 			supply_consumption = 0.3
 		}
+		elite_archers = {
+			support = 0.5
+			supply_consumption = 0.3
+		}
 	}
 }
 fire_arrows = {
@@ -337,6 +454,10 @@ fire_arrows = {
 	}
 	effect = {
 		archers = {
+			support = 0.25
+			supply_consumption = 0.3
+		}
+		elite_archers = {
 			support = 0.25
 			supply_consumption = 0.3
 		}
@@ -365,6 +486,17 @@ cavalry_tech_1_equipment = {
 		scouts = {
 			attack = 1
 			defence = 1
+			supply_consumption = 0.1
+		}
+		elite_heavy_cavalry = {
+			attack = 1.5
+			defence = 0.5
+			supply_consumption = 0.1
+		}
+		elite_horse_archers = {
+			attack = 1
+			defence = 1
+			support = 0.2
 			supply_consumption = 0.1
 		}
 	}
@@ -400,6 +532,17 @@ cavalry_tech_2_equipment = {
 			defence = 1
 			supply_consumption = 0.1
 		}
+		elite_heavy_cavalry = {
+			attack = 3
+			defence = 1
+			supply_consumption = 0.1
+		}
+		elite_horse_archers = {
+			attack = 1
+			defence = 1
+			support = 0.2
+			supply_consumption = 0.1
+		}
 	}
 }
 standardised_horse_rearing = {
@@ -433,6 +576,17 @@ cavalry_tech_3_equipment = {
 		scouts = {
 			attack = 2
 			defence = 2
+			supply_consumption = 0.2
+		}
+		elite_heavy_cavalry = {
+			attack = 5
+			defence = 3
+			supply_consumption = 0.2
+		}
+		elite_horse_archers = {
+			attack = 2
+			defence = 2
+			support = 0.2
 			supply_consumption = 0.2
 		}
 	}
@@ -479,6 +633,17 @@ cavalry_tech_4_equipment = {
 			defence = 3
 			supply_consumption = 0.3
 		}
+		elite_heavy_cavalry = {
+			attack = 6
+			defence = 4
+			supply_consumption = 0.3
+		}
+		elite_horse_archers = {
+			attack = 3
+			defence = 3
+			support = 0.2
+			supply_consumption = 0.2
+		}
 	}
 }
 nomad_bows = {
@@ -514,6 +679,17 @@ cavalry_tech_5_equipment = {
 		scouts = {
 			attack = 4
 			defence = 4
+			supply_consumption = 0.3
+		}
+		elite_heavy_cavalry = {
+			attack = 8
+			defence = 4
+			supply_consumption = 0.3
+		}
+		elite_horse_archers = {
+			attack = 4
+			defence = 4
+			support = 0.2
 			supply_consumption = 0.3
 		}
 	}
@@ -554,6 +730,16 @@ maeras_riders = {
 			defence = 1
 			supply_consumption = 0.3
 		}
+		elite_heavy_cavalry = {
+			attack = 2
+			defence = 2
+			supply_consumption = 0.3
+		}
+		elite_horse_archers = {
+			attack = 2
+			defence = 2
+			supply_consumption = 0.3
+		}
 	}
 }
 #############################
@@ -570,6 +756,11 @@ artillery_tech_1_equipment = {
 			defence = 1
 			supply_consumption = 0.1
 		}
+		elite_artillery = {
+			attack = 1
+			defence = 1
+			supply_consumption = 0.1
+		}
 	}
 }
 artillery_tech_2_equipment = {
@@ -579,6 +770,11 @@ artillery_tech_2_equipment = {
 	}
 	effect = {
 		artillery = {
+			attack = 1
+			defence = 1
+			supply_consumption = 0.1
+		}
+		elite_artillery = {
 			attack = 1
 			defence = 1
 			supply_consumption = 0.1
@@ -608,6 +804,12 @@ artillery_tech_3_equipment = {
 			siege = 1
 			supply_consumption = 0.2
 		}
+		elite_artillery = {
+			attack = 2
+			defence = 2
+			siege = 1
+			supply_consumption = 0.2
+		}
 	}
 }
 competition_artillery = {
@@ -630,6 +832,11 @@ artillery_tech_4_equipment = {
 			defence = 2
 			supply_consumption = 0.3
 		}
+		elite_artillery = {
+			attack = 3
+			defence = 3
+			supply_consumption = 0.3
+		}
 	}
 }
 artillery_tech_5_equipment = {
@@ -641,6 +848,12 @@ artillery_tech_5_equipment = {
 		artillery = {
 			attack = 3
 			defence = 3
+			siege = 1
+			supply_consumption = 0.3
+		}
+		elite_artillery = {
+			attack = 4
+			defence = 4
 			siege = 1
 			supply_consumption = 0.3
 		}
