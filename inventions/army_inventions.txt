@@ -1,3 +1,10 @@
+# Army Speed
+# Very Slow (base 3): Artillery
+# Slow (base 4): Infantry and Archers
+# Medium (base 5): Berserkers and Rangers
+# Fast (base 6): Heavy Cavalry and Horse Archers
+# Very Fast (base 7): Scouts and Wights
+
 ############################
 # INFANTRY_TECH INVENTIONS #
 ############################
@@ -32,6 +39,27 @@ infantry_tech_1_equipment = {
 			defence = 1
 			supply_consumption = 0.1
 		}
+		skirmishers = {
+			attack = 1
+			defence = 1
+			support = 0.2
+			supply_consumption = 0.1
+		}
+		royal_guard = {
+			attack = 1
+			defence = 1
+			supply_consumption = 0.1
+		}
+		berserkers = {
+			attack = 1
+			defence = 1
+			supply_consumption = 0.1
+		}
+		wights = {
+			attack = 5
+			defence = 5
+			supply_consumption = 0.1
+		}
 	}
 }
 infantry_tech_2_equipment = {
@@ -63,6 +91,27 @@ infantry_tech_2_equipment = {
 		elite_swordsmen = {
 			attack = 2
 			defence = 2
+			supply_consumption = 0.1
+		}
+		skirmishers = {
+			attack = 2
+			defence = 2
+			support = 0.2
+			supply_consumption = 0.1
+		}
+		royal_guard = {
+			attack = 2
+			defence = 2
+			supply_consumption = 0.1
+		}
+		berserkers = {
+			attack = 3
+			defence = 1
+			supply_consumption = 0.1
+		}
+		wights = {
+			attack = 10
+			defence = 10
 			supply_consumption = 0.1
 		}
 	}
@@ -109,6 +158,27 @@ infantry_tech_3_equipment = {
 			defence = 4
 			supply_consumption = 0.2
 		}
+		skirmishers = {
+			attack = 3
+			defence = 3
+			support = 0.2
+			supply_consumption = 0.2
+		}
+		royal_guard = {
+			attack = 4
+			defence = 4
+			supply_consumption = 0.2
+		}
+		berserkers = {
+			attack = 6
+			defence = 2
+			supply_consumption = 0.2
+		}
+		wights = {
+			attack = 15
+			defence = 15
+			supply_consumption = 0.2
+		}
 	}
 }
 competition_infantry = {
@@ -151,6 +221,27 @@ infantry_tech_4_equipment = {
 			defence = 5
 			supply_consumption = 0.3
 		}
+		skirmishers = {
+			attack = 4
+			defence = 4
+			support = 0.2
+			supply_consumption = 0.3
+		}
+		royal_guard = {
+			attack = 5
+			defence = 5
+			supply_consumption = 0.3
+		}
+		berserkers = {
+			attack = 7
+			defence = 3
+			supply_consumption = 0.3
+		}
+		wights = {
+			attack = 20
+			defence = 20
+			supply_consumption = 0.3
+		}
 	}
 }
 infantry_tech_5_equipment = {
@@ -184,6 +275,27 @@ infantry_tech_5_equipment = {
 			defence = 6
 			supply_consumption = 0.3
 		}
+		skirmishers = {
+			attack = 5
+			defence = 5
+			support = 0.2
+			supply_consumption = 0.3
+		}
+		royal_guard = {
+			attack = 6
+			defence = 6
+			supply_consumption = 0.3
+		}
+		berserkers = {
+			attack = 9
+			defence = 3
+			supply_consumption = 0.3
+		}
+		wights = {
+			attack = 25
+			defence = 25
+			supply_consumption = 0.3
+		}
 	}
 }
 ##########################
@@ -207,6 +319,11 @@ archer_tech_1_equipment = {
 			support = 0.25
 			supply_consumption = 0.1
 		}
+		rangers = {
+			attack = 0.5
+			support = 0.25
+			supply_consumption = 0.1
+		}
 	}
 }
 short_bows = {
@@ -221,6 +338,11 @@ short_bows = {
 			supply_consumption = 0.1
 		}
 		elite_archers = {
+			attack = 0.25
+			defence = 0.25
+			supply_consumption = 0.1
+		}
+		rangers = {
 			attack = 0.25
 			defence = 0.25
 			supply_consumption = 0.1
@@ -245,6 +367,12 @@ archer_tech_2_equipment = {
 			support = 0.25
 			supply_consumption = 0.1
 		}
+		rangers = {
+			attack = 0.75
+			defence = 0.25
+			support = 0.25
+			supply_consumption = 0.1
+		}
 	}
 }
 recurve_bows = {
@@ -263,6 +391,11 @@ recurve_bows = {
 			defence = 0.25
 			supply_consumption = 0.1
 		}
+		rangers = {
+			attack = 0.25
+			defence = 0.25
+			supply_consumption = 0.1
+		}
 	}
 }
 barbed_arrows = {
@@ -276,6 +409,10 @@ barbed_arrows = {
 			supply_consumption = 0.1
 		}
 		elite_archers = {
+			support = 0.5
+			supply_consumption = 0.1
+		}
+		rangers = {
 			support = 0.5
 			supply_consumption = 0.1
 		}
@@ -310,6 +447,12 @@ archer_tech_3_equipment = {
 			support = 0.25
 			supply_consumption = 0.2
 		}
+		rangers = {
+			attack = 0.75
+			defence = 0.25
+			support = 0.25
+			supply_consumption = 0.2
+		}
 	}
 }
 long_bows = {
@@ -324,6 +467,11 @@ long_bows = {
 			supply_consumption = 0.2
 		}
 		elite_archers = {
+			attack = 0.25
+			defence = 0.25
+			supply_consumption = 0.2
+		}
+		rangers = {
 			attack = 0.25
 			defence = 0.25
 			supply_consumption = 0.2
@@ -357,6 +505,12 @@ archer_tech_4_equipment = {
 			support = 0.25
 			supply_consumption = 0.3
 		}
+		rangers = {
+			attack = 1
+			defence = 0.5
+			support = 0.25
+			supply_consumption = 0.3
+		}
 	}
 }
 composite_bows = {
@@ -375,6 +529,11 @@ composite_bows = {
 			defence = 0.75
 			supply_consumption = 0.3
 		}
+		rangers = {
+			attack = 0.75
+			defence = 0.75
+			supply_consumption = 0.3
+		}
 	}
 }
 bodkin_arrows = {
@@ -388,6 +547,10 @@ bodkin_arrows = {
 			supply_consumption = 0.3
 		}
 		elite_archers = {
+			support = 0.25
+			supply_consumption = 0.3
+		}
+		rangers = {
 			support = 0.25
 			supply_consumption = 0.3
 		}
@@ -411,6 +574,12 @@ archer_tech_5_equipment = {
 			support = 0.5
 			supply_consumption = 0.3
 		}
+		rangers = {
+			attack = 2.5
+			defence = 0.5
+			support = 0.5
+			supply_consumption = 0.3
+		}
 	}
 }
 war_bows = {
@@ -425,6 +594,11 @@ war_bows = {
 			supply_consumption = 0.3
 		}
 		elite_archers = {
+			attack = 0.5
+			defence = 0.5
+			supply_consumption = 0.3
+		}
+		rangers = {
 			attack = 0.5
 			defence = 0.5
 			supply_consumption = 0.3
@@ -445,6 +619,10 @@ war_arrows = {
 			support = 0.5
 			supply_consumption = 0.3
 		}
+		rangers = {
+			support = 0.5
+			supply_consumption = 0.3
+		}
 	}
 }
 fire_arrows = {
@@ -458,6 +636,10 @@ fire_arrows = {
 			supply_consumption = 0.3
 		}
 		elite_archers = {
+			support = 0.25
+			supply_consumption = 0.3
+		}
+		rangers = {
 			support = 0.25
 			supply_consumption = 0.3
 		}
@@ -497,6 +679,26 @@ cavalry_tech_1_equipment = {
 			attack = 1
 			defence = 1
 			support = 0.2
+			supply_consumption = 0.1
+		}
+		mumakil = {
+			attack = 5
+			defence = 5
+			supply_consumption = 0.1
+		}
+		ents_unit = {
+			attack = 5
+			defence = 5
+			supply_consumption = 0.1
+		}
+		eagles = {
+			attack = 5
+			defence = 5
+			supply_consumption = 0.1
+		}
+		spiders = {
+			attack = 5
+			defence = 5
 			supply_consumption = 0.1
 		}
 	}
@@ -541,6 +743,26 @@ cavalry_tech_2_equipment = {
 			attack = 1
 			defence = 1
 			support = 0.2
+			supply_consumption = 0.1
+		}
+		mumakil = {
+			attack = 10
+			defence = 10
+			supply_consumption = 0.1
+		}
+		ents_unit = {
+			attack = 10
+			defence = 10
+			supply_consumption = 0.1
+		}
+		eagles = {
+			attack = 10
+			defence = 10
+			supply_consumption = 0.1
+		}
+		spiders = {
+			attack = 10
+			defence = 10
 			supply_consumption = 0.1
 		}
 	}
@@ -589,6 +811,26 @@ cavalry_tech_3_equipment = {
 			support = 0.2
 			supply_consumption = 0.2
 		}
+		mumakil = {
+			attack = 15
+			defence = 15
+			supply_consumption = 0.2
+		}
+		ents_unit = {
+			attack = 15
+			defence = 15
+			supply_consumption = 0.2
+		}
+		eagles = {
+			attack = 15
+			defence = 15
+			supply_consumption = 0.2
+		}
+		spiders = {
+			attack = 15
+			defence = 15
+			supply_consumption = 0.2
+		}
 	}
 }
 outriders = {
@@ -626,7 +868,7 @@ cavalry_tech_4_equipment = {
 			attack = 2
 			defence = 2
 			support = 0.2
-			supply_consumption = 0.2
+			supply_consumption = 0.3
 		}
 		scouts = {
 			attack = 3
@@ -642,7 +884,27 @@ cavalry_tech_4_equipment = {
 			attack = 3
 			defence = 3
 			support = 0.2
-			supply_consumption = 0.2
+			supply_consumption = 0.3
+		}
+		mumakil = {
+			attack = 20
+			defence = 20
+			supply_consumption = 0.3
+		}
+		ents_unit = {
+			attack = 20
+			defence = 20
+			supply_consumption = 0.3
+		}
+		eagles = {
+			attack = 20
+			defence = 20
+			supply_consumption = 0.3
+		}
+		spiders = {
+			attack = 20
+			defence = 20
+			supply_consumption = 0.3
 		}
 	}
 }
@@ -690,6 +952,26 @@ cavalry_tech_5_equipment = {
 			attack = 4
 			defence = 4
 			support = 0.2
+			supply_consumption = 0.3
+		}
+		mumakil = {
+			attack = 25
+			defence = 25
+			supply_consumption = 0.3
+		}
+		ents_unit = {
+			attack = 25
+			defence = 25
+			supply_consumption = 0.3
+		}
+		eagles = {
+			attack = 25
+			defence = 25
+			supply_consumption = 0.3
+		}
+		spiders = {
+			attack = 25
+			defence = 25
 			supply_consumption = 0.3
 		}
 	}

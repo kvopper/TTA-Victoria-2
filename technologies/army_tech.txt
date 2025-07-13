@@ -1,5 +1,9 @@
 #infantry_tech -- base 6, stat boost of 2, 4, 6, 8, 10 = 36 total stats (18 for levies [infantry])
 #elite infantry-- base 10,stat boost of 2, 4, 8, 10, 12 = 46 total stats
+#skirmishers   -- base 6,stat boost of 2, 4, 6, 8, 10 = 36 (200% support max, total backline of 72)
+#royal_guard   -- base 10,stat boost of 2, 4, 8, 10, 12 = 46 (100% support max, total backline of 46)
+#berserkers    -- base 10,stat boost of 2, 4, 8, 10, 12 = 46 total stats
+#wights        -- base 10,stat boost of 10, 20, 30, 40, 50 = 160 total stats
 infantry_tech_1 = {
 	area = infantry_tech
 	year = 2954
@@ -19,6 +23,18 @@ infantry_tech_1 = {
 		default_organisation = 2
 	}
 	elite_swordsmen = {
+		default_organisation = 2
+	}
+	skirmishers = {
+		default_organisation = 2
+	}
+	royal_guard = {
+		default_organisation = 2
+	}
+	berserkers = {
+		default_organisation = 2
+	}
+	wights = {
 		default_organisation = 2
 	}
 	
@@ -81,6 +97,18 @@ infantry_tech_2 = {
 	elite_swordsmen = {
 		default_organisation = 3
 	}
+	skirmishers = {
+		default_organisation = 3
+	}
+	royal_guard = {
+		default_organisation = 3
+	}
+	berserkers = {
+		default_organisation = 3
+	}
+	wights = {
+		default_organisation = 3
+	}
 	
 	ai_chance = {
 		factor = 1
@@ -139,6 +167,18 @@ infantry_tech_3 = {
 		default_organisation = 5
 	}
 	elite_swordsmen = {
+		default_organisation = 5
+	}
+	skirmishers = {
+		default_organisation = 5
+	}
+	royal_guard = {
+		default_organisation = 5
+	}
+	berserkers = {
+		default_organisation = 5
+	}
+	wights = {
 		default_organisation = 5
 	}
 	
@@ -201,6 +241,18 @@ infantry_tech_4 = {
 	elite_swordsmen = {
 		default_organisation = 5
 	}
+	skirmishers = {
+		default_organisation = 5
+	}
+	royal_guard = {
+		default_organisation = 5
+	}
+	berserkers = {
+		default_organisation = 5
+	}
+	wights = {
+		default_organisation = 5
+	}
 	
 	ai_chance = {
 		factor = 1
@@ -261,6 +313,18 @@ infantry_tech_5 = {
 	elite_swordsmen = {
 		default_organisation = 5
 	}
+	skirmishers = {
+		default_organisation = 5
+	}
+	royal_guard = {
+		default_organisation = 5
+	}
+	berserkers = {
+		default_organisation = 5
+	}
+	wights = {
+		default_organisation = 5
+	}
 	
 	ai_chance = {
 		factor = 1
@@ -302,6 +366,7 @@ infantry_tech_5 = {
 
 #archer_tech -- base 2, stat boost of 1, 1.5, 1,5, 2, 3 = 11 total stats (500% support max, total backline 55)
 #elite archer-- base 4, stat boost of 1, 1.5, 1.5, 3, 4 = 14 total stats (500% support max, total backline of 75)
+#rangers     -- base 4, stat boost of 1, 1.5, 1.5, 3, 4 = 14 total stats (500% support max, total backline of 75)
 archer_tech_1 = {
 	area = archer_tech
 	year = 2954
@@ -312,7 +377,10 @@ archer_tech_1 = {
 		default_organisation = 2
 	}
 	elite_archers = {
-		default_organisation = 5
+		default_organisation = 2
+	}
+	rangers = {
+		default_organisation = 2
 	}
 	
 	ai_chance = {
@@ -363,7 +431,10 @@ archer_tech_2 = {
 		default_organisation = 3
 	}
 	elite_archers = {
-		default_organisation = 5
+		default_organisation = 3
+	}
+	rangers = {
+		default_organisation = 3
 	}
 	
 	ai_chance = {
@@ -414,6 +485,9 @@ archer_tech_3 = {
 		default_organisation = 5
 	}
 	elite_archers = {
+		default_organisation = 5
+	}
+	rangers = {
 		default_organisation = 5
 	}
 	
@@ -467,6 +541,9 @@ archer_tech_4 = {
 	elite_archers = {
 		default_organisation = 5
 	}
+	rangers = {
+		default_organisation = 5
+	}
 	
 	ai_chance = {
 		factor = 1
@@ -518,6 +595,9 @@ archer_tech_5 = {
 	elite_archers = {
 		default_organisation = 5
 	}
+	rangers = {
+		default_organisation = 5
+	}
 	
 	ai_chance = {
 		factor = 1
@@ -558,10 +638,11 @@ archer_tech_5 = {
 }
 
 #cavalry_tech -- heavy cav 6, stat boost of 2, 4, 6, 8, 10 = 36 total stats
-			# -- horse arc 6, stat boost of 2, 2, 4, 4, 6 = 24 total stats (200% support max, total backline 48)
-			# -- scouts    3, stat boost of 2, 3, 4, 6, 8 = 26 total stats
+#			  -- horse arc 6, stat boost of 2, 2, 4, 4, 6 = 24 total stats (200% support max, total backline 48)
+#			  -- scouts    3, stat boost of 2, 3, 4, 6, 8 = 26 total stats
 #Elite cavalry-- heavy cav 10,stat boost of 2, 4, 8, 10, 12 = 46 total stats
-#Elite cavalry-- horse ach 10, stat boost of 2, 2, 4, 6, 8 = 32 total status (200% support max, total back line of 64)
+#			  -- horse ach 10,stat boost of 2, 2, 4, 6, 8 = 32 total status (200% support max, total back line of 64)
+#OP nonhumanoids           10,stat boost of 10, 20, 30, 40, 50 = 160 total stats
 cavalry_tech_1 = {
 	area = cavalry_tech
 	year = 2954
@@ -581,6 +662,18 @@ cavalry_tech_1 = {
 		default_organisation = 2
 	}
 	elite_horse_archers = {
+		default_organisation = 2
+	}
+	mumakil = {
+		default_organisation = 2
+	}
+	ents_unit = {
+		default_organisation = 2
+	}
+	eagles = {
+		default_organisation = 2
+	}
+	spiders = {
 		default_organisation = 2
 	}
 	
@@ -643,6 +736,18 @@ cavalry_tech_2 = {
 	elite_horse_archers = {
 		default_organisation = 3
 	}
+	mumakil = {
+		default_organisation = 3
+	}
+	ents_unit = {
+		default_organisation = 3
+	}
+	eagles = {
+		default_organisation = 3
+	}
+	spiders = {
+		default_organisation = 3
+	}
 	
 	ai_chance = {
 		factor = 1
@@ -701,6 +806,18 @@ cavalry_tech_3 = {
 		default_organisation = 5
 	}
 	elite_horse_archers = {
+		default_organisation = 5
+	}
+	mumakil = {
+		default_organisation = 5
+	}
+	ents_unit = {
+		default_organisation = 5
+	}
+	eagles = {
+		default_organisation = 5
+	}
+	spiders = {
 		default_organisation = 5
 	}
 	
@@ -763,6 +880,18 @@ cavalry_tech_4 = {
 	elite_horse_archers = {
 		default_organisation = 5
 	}
+	mumakil = {
+		default_organisation = 5
+	}
+	ents_unit = {
+		default_organisation = 5
+	}
+	eagles = {
+		default_organisation = 5
+	}
+	spiders = {
+		default_organisation = 5
+	}
 	
 	ai_chance = {
 		factor = 1
@@ -821,6 +950,18 @@ cavalry_tech_5 = {
 		default_organisation = 5
 	}
 	elite_horse_archers = {
+		default_organisation = 5
+	}
+	mumakil = {
+		default_organisation = 5
+	}
+	ents_unit = {
+		default_organisation = 5
+	}
+	eagles = {
+		default_organisation = 5
+	}
+	spiders = {
 		default_organisation = 5
 	}
 	

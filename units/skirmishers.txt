@@ -22,7 +22,8 @@ skirmishers = {
 		melee_gear = 10
 	}
 	
-	supply_consumption = 1.0
+	# Double the supply cost of standard units
+	supply_consumption = 2.0
 	supply_cost = {
 		food = 0.07
 		melee_gear = 0.03
@@ -33,6 +34,6 @@ skirmishers = {
 	attack = 3
 	defence = 3
 	discipline = 1.0
-	support = 0.0
+	support = 1.0
 	maneuver = 1
 }
