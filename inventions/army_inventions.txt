@@ -1,9 +1,10 @@
 # Army Speed
-# Very Slow (base 3): Artillery
+# Very Slow (base 3): Artillery and Ents
 # Slow (base 4): Infantry and Archers
 # Medium (base 5): Berserkers and Rangers
-# Fast (base 6): Heavy Cavalry and Horse Archers
+# Fast (base 6): Heavy Cavalry, Horse Archers, Mumakil and Spiders
 # Very Fast (base 7): Scouts and Wights
+# As the crow flies (base 15): Eagles
 
 ############################
 # INFANTRY_TECH INVENTIONS #
