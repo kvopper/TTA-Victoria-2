@@ -4,7 +4,7 @@ elite_horse_archers = {
 	type = land
 	sprite = HorseArchers
 	active = yes
-	unit_type = cavalry
+	unit_type = support # for ai recruitment purposes
 	primary_culture = yes
 	
 	#Avatar

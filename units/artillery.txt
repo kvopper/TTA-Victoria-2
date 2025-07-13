@@ -4,7 +4,7 @@ artillery = {
 	type = land
 	sprite = Artillery
 	active = yes
-	unit_type = support
+	unit_type = special
 	floating_flag = no
 
 	#Core Abilities

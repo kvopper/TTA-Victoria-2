@@ -4,7 +4,7 @@ spiders = {
 	type = land
 	sprite = HeavyCavalry
 	active = yes
-	unit_type = cavalry
+	unit_type = infantry # for ai recruitment purposes
 	primary_culture = yes
 	
 	#Avatar

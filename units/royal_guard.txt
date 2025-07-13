@@ -4,7 +4,7 @@ royal_guard = {
 	type = land
 	sprite = Archers
 	active = yes
-	unit_type = support
+	unit_type = infantry # for ai recruitment purposes
 	floating_flag = no
 	primary_culture = yes
 
