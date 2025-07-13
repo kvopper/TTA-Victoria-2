@@ -19,6 +19,11 @@ All notable changes will be documented in this file.
    - Herblore
    - Scholarship
  - Replaced tech schools to allow displaying organizations (Alliance of Dwarves and Men, White Council and other future mechanics)
+ - Unit rework
+   - Existing units can now be recruited by any pop (not just accepted and primary pops)
+   - Elite variants of unit types added (accepted and primary pops only)
+   - OP monster/undead units added (accepted and primary pops only)
+     - Only recruitable via scripted events or for select tags
 
 ## [v0.5.1](https://github.com/The-Third-Age/TTA/releases/tag/v0.5.1) - 2025-05-11
 
