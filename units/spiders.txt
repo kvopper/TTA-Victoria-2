@@ -18,7 +18,7 @@ spiders = {
 	max_strength = 3
 	default_organisation = 40
 	maximum_speed = 6.00
-	weighted_value = 4.0
+	weighted_value = 99.0
 
 	#Building Costs
 	build_time = 50

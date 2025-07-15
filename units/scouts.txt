@@ -17,7 +17,7 @@ scouts = {
 	max_strength = 3
 	default_organisation = 20
 	maximum_speed = 7.00
-	weighted_value = 4.0
+	weighted_value = 1.0
 
 	#Building Costs
 	build_time = 25

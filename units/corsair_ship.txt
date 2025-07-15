@@ -16,7 +16,7 @@ corsair_ship = {
 	max_strength = 100
 	default_organisation = 30
 	maximum_speed = 5
-	weighted_value = 3.0
+	weighted_value = 99.0
 
 	#Building Costs
 	build_time = 360
