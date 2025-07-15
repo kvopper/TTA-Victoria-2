@@ -15,3 +15,7 @@ upper_house = {
 
 
 schools = no_organization
+
+infantry_tech_1 = 1
+infantry_tech_2 = 1
+infantry_tech_3 = 1

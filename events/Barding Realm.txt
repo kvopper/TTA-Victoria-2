@@ -933,16 +933,16 @@ country_event = {
 			}
 			
 			capital_scope = {
-				sub_unit = { type = archers value = current }
-				sub_unit = { type = archers value = current }
-				sub_unit = { type = archers value = current }
-				sub_unit = { type = archers value = current }
-				sub_unit = { type = pikemen value = current }
-				sub_unit = { type = pikemen value = current }
-				sub_unit = { type = pikemen value = current }
-				sub_unit = { type = pikemen value = current }
-				sub_unit = { type = scouts value = current }
-				sub_unit = { type = artillery value = current }
+				sub_unit = { type = wights value = current }
+				sub_unit = { type = wights value = current }
+				sub_unit = { type = wights value = current }
+				sub_unit = { type = wights value = current }
+				sub_unit = { type = wights value = current }
+				sub_unit = { type = wights value = current }
+				sub_unit = { type = wights value = current }
+				sub_unit = { type = wights value = current }
+				sub_unit = { type = wights value = current }
+				sub_unit = { type = wights value = current }
 			}
 		}
 		set_global_flag = DAL_marsh_wights_risen
