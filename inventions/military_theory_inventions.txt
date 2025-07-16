@@ -256,6 +256,93 @@ militias = {
 		}
 	}
 }
+ents_unit_unlock = {
+	limit = { training_1 = 1 }
+	chance = {
+		base = 0
+		modifier = {
+			factor = 100
+			is_culture_group = ents
+		}
+	}
+	effect = {
+		activate_unit = ents_unit
+	}
+}
+eagles_unit_unlock = {
+	limit = { training_1 = 1 }
+	chance = {
+		base = 0
+		modifier = {
+			factor = 100
+			primary_culture = great_eagle
+		}
+	}
+	effect = {
+		activate_unit = eagles
+	}
+}
+spiders_unlock = {
+	limit = { training_1 = 1 }
+	chance = {
+		base = 0
+		modifier = {
+			factor = 100
+			primary_culture = great_spider
+		}
+	}
+	effect = {
+		activate_unit = spiders
+	}
+}
+mumakil_unlock = {
+	limit = { training_1 = 1 }
+	chance = {
+		base = 0
+	}
+	effect = {
+		activate_unit = mumakil
+	}
+}
+barrow_wights_unlock = {
+	limit = { training_1 = 1 }
+	chance = {
+		base = 0
+		modifier = {
+			factor = 100
+			tag = BAR
+		}
+	}
+	effect = {
+		activate_unit = wights
+	}
+}
+marsh_wights_unlock = {
+	limit = { training_1 = 1 }
+	chance = {
+		base = 0
+		modifier = {
+			factor = 100
+			tag = LMW
+		}
+	}
+	effect = {
+		activate_unit = wights
+	}
+}
+oathbreakers_wights_unlock = {
+	limit = { training_1 = 1 }
+	chance = {
+		base = 0
+		modifier = {
+			factor = 100
+			tag = OBS
+		}
+	}
+	effect = {
+		activate_unit = wights
+	}
+}
 lance_retinues = {
 	limit = { training_2 = 1 }
 	chance = {

@@ -58,6 +58,20 @@ political_decisions = {
 				}
 			}
 			
+			# Adding here instead of via country history to prevent these tags from having access to all of the culture-specific units
+			any_country = {
+				limit = {
+					OR = {
+						is_culture_group = ents
+						is_culture_group = spiders
+						is_culture_group = eagles
+						is_culture_group = spiders
+						is_culture_group = undead
+					}
+				}
+				activate_technology = training_1
+			}
+			
 			# Research flags for infantry focused realms
 			any_country = {
 				limit = {

@@ -6,6 +6,7 @@ spiders = {
 	active = yes
 	unit_type = infantry # for ai recruitment purposes
 	primary_culture = yes
+	active = no
 	
 	#Avatar
 	sprite_override = HeavyCavalry
