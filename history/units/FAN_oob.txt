@@ -2,18 +2,18 @@ army = {
 	name = "Army of Fangorn"
 	location = 773
 	regiment = {
-		name = "1st Wellinghall Pikemen"
-		type = pikemen
+		name = "Birch Brigade"
+		type = ents_unit
 		home = 773
 	}
 	regiment = {
-		name = "2nd Wellinghall Pikemen"
-		type = pikemen
+		name = "Rowen Brigrade"
+		type = ents_unit
 		home = 773
 	}
 	regiment = {
-		name = "1st Derndingle Archers"
-		type = archers
+		name = "Pine Brigade"
+		type = ents_unit
 		home = 771
 	}
 }

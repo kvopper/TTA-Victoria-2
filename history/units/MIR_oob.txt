@@ -2,28 +2,28 @@ army = {
 	name = "Tauraelin Garrison"
 	location = 702
 	regiment = {
-		name = "1st Mirkwood Swordsmen"
-		type = swordsmen
+		name = "1st Mirkwood Spiders"
+		type = spiders
 		home = 705
 	}
 	regiment = {
-		name = "2nd Mirkwood Swordsmen"
-		type = swordsmen
+		name = "2nd Mirkwood Spiders"
+		type = spiders
 		home = 714
 	}
 	regiment = {
-		name = "1st Mirkwood Horse Archers"
-		type = horse_archers
+		name = "3rd Mirkwood Spiders"
+		type = spiders
 		home = 707
 	}
 	regiment = {
-		name = "2nd Mirkwood Horse Archers"
-		type = horse_archers
+		name = "4th Mirkwood Spiders"
+		type = spiders
 		home = 717
 	}
 	regiment = {
-		name = "1st Mirkwood Scouts"
-		type = scouts
+		name = "5th Mirkwood Spiders"
+		type = spiders
 		home = 1430
 	}
 }
