@@ -10,6 +10,7 @@ corsair_ship = {
 	unit_type = big_ship
 	capital = yes
 	floating_flag = yes
+	active = no
 
 	#Core Abilities
 	priority = 25

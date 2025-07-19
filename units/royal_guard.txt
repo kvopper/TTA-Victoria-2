@@ -7,6 +7,7 @@ royal_guard = {
 	unit_type = infantry # for ai recruitment purposes
 	floating_flag = no
 	primary_culture = yes
+	active = no
 
 	#Core Abilities
 	priority = 20

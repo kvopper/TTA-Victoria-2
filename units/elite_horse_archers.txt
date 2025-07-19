@@ -6,6 +6,7 @@ elite_horse_archers = {
 	active = yes
 	unit_type = support # for ai recruitment purposes
 	primary_culture = yes
+	active = no
 	
 	#Avatar
 	sprite_override = HorseArchers

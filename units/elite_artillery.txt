@@ -7,6 +7,7 @@ elite_artillery = {
 	unit_type = special
 	floating_flag = no
 	primary_culture = yes
+	active = no
 
 	#Core Abilities
 	priority = 20
