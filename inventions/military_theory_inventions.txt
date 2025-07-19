@@ -740,13 +740,14 @@ rhovanion_riders_unlock = {
 		activate_unit = elite_heavy_cavalry
 	}
 }
-elite_horse_archers_unlock = {
+riders_of_imladris_unlock = {
 	limit = { training_3 = 1 }
 	chance = {
 		base = 0
 		modifier = {
 			factor = 100
 			is_culture_group = eldar
+			owns = 865
 		}
 	}
 	effect = {

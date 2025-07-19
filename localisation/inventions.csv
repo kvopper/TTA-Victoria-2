@@ -130,12 +130,112 @@ minasdirith_invention;Minasdirith;x
 minasdirith_invention_desc;The Minasdirath, otherwise known as the Order of the Guard, is a military order that all beacon guards belong to. Besides remaining vigilant and protecting/lighting beacons, members of the Minasdirath also conscripts young men from nearby villages and trains them to be beacon-guards to help ease up on Gondor's soldier shortage.;x
 militias;Militias;x
 militias_desc;Conscripts pressed into service, militias lack many of the skills of a standing army. However, by employing militias, we can ensure that our troops have more training should we need to go to war.;x
+ents_unit_unlock;Ents;x
+ents_unit_unlock_desc;The Ents march to war! Rather than wielding any weapons, they themselves are the weapons.;x
+eagles_unit_unlock;Eagles (Unit);x
+eagles_unit_unlock_desc;The Eagles fly to war! Rather than wielding any weapons, that themselves are the weapons.;x
+spiders_unlock;Spiders;x
+spiders_unlock_desc;The Spiders march to war! Rather than wielding any weapons, that themselves are the weapons.;x
+mumakil_unlock;Mûmakil;x
+mumakil_unlock_desc;The Mûmakil march to war! Specifically trained for combat by the Haradrim, these great beasts are mounted by a battalion of men upon platforms on their backs.;x
+barrow_wights_unlock;Barrow-wights;x
+barrow_wights_unlock_desc;Sent to the Barrow-downs by the Witch-king of Angmar, the Barrow-wights inhabit the bodies of those entombed within the barrows. They then use those bodies to feed on living creatures in the area.;x
+marsh_wights_unlock;Marsh-wights;x
+marsh_wights_unlock_desc;The Marsh-wights are wights sent to Gramavuld by the Witch-king of Angmar following the slaying of Smaug. They live within the Long Marshes, and prey on travellors to boost their numbers.;x
+oathbreakers_wights_unlock;Oathbreakers;x
+oathbreakers_wights_unlock_desc;Formerly the Men of the Mountain, the Oathbreakers swore allegience to Isildur should Gondor go to war with Sauron. When they were called upon to honor the call to arms, they instead forsake their oath, and slowly began to fade, doomed to become undead roaming the White Mountains in the Paths of the Dead.;x
 lance_retinues;Lance Retinues;x
 lance_retinues_desc;Soldiers serving a knight, lance retinues remain the core of our standing armies.;x
 basic_training;Basic Training;x
 basic_training_desc;All soldiers need training before they can join the army. Basic training ensures that soldiers understand just that, the basics.;x
 snaga_skirmishers;Snaga Skirmishers;x
 snaga_skirmishers_desc;By arming our militias with javelins, we can press our numbers advantage.;x
+skinchangers_unlock;Skinchangers;x
+skinchangers_unlock_desc;A waning race of Men, Skinchangers are those who are able to wildshape into an animal. Generally taking the form of a bear, skinchangers are a boon in any battle.;x
+berserkers_unlock;Berserkers;x
+berserkers_unlock_desc;Offensive infantry leading the charge, Berserkers are lightly armored and wielding two-handed weapons, fantastic for thinning the front line to allow the mainline infantry to exploit gaps in the enemy line.;x
+raiders_unlock;Raiders;x
+raiders_unlock_desc;Driven from their homeland, the Wildmen have learned to eke a living off of rocks. During harder seasons, there are not enough resources to sustain their peoples, driving the various tribes to raid their neighbors.;x
+elvenkings_guard_unlock;Elvenking's Guard;x
+elvenkings_guard_unlock_desc;The most elite warriors of the Woodland Realm, the Elvenking's Guard's sole job is to protect the royal line.;x
+darkblades_unlock;Darkblades;x
+darkblades_unlock_desc;The elite vanguard of the Angmarrim armies, Darkblades function as the advance scouts of Angmar, ironically mimicking the abilities of their sworn enemy, the Northern Dúnedain.;x
+moriquendi_shadows_unlock;Moriquendi Shadows;x
+moriquendi_shadows_unlock_desc;
+adhalling_rangers_unlock;Adhalling Rangers;x
+adhalling_rangers_unlock_desc;Living along the northeastern Eaves of Mirkwood, the Adhallings have learned to use the terrain to their advantage.;x
+shirriffs_unlock;Shirriffs;x
+shirriffs_unlock_desc;
+snow_rangers_unlock;Snow Rangers;x
+snow_rangers_unlock_desc;
+dunedain_rangers_unlock;Dúnedain Rangers;x
+dunedain_rangers_unlock_desc;
+ithilien_rangers_unlock;Ithilien Rangers;x
+ithilien_rangers_unlock_desc;
+marchwardens_unlock;Marchwardens of Lothlórien;x
+marchwardens_unlock_desc;
+skirmishers_unlock;Skirmishers;x
+skirmishers_unlock_desc;
+eldarinwe_archers_unlock;Eldarinwë Archers;x
+eldarinwe_archers_unlock_desc;
+black_arrow_guildsmen_unlock;Black Arrow Guildsmen;x
+black_arrow_guildsmen_unlock_desc;
+bandobras_archers_unlock;Bandobras Archers;x
+bandobras_archers_unlock_desc;
+dwarven_catapults_unlock;Dwarven Catapults;x
+dwarven_catapults_unlock_desc;
+troll_catapults_unlock;Troll Catapults;x
+troll_catapults_unlock_desc;
+swan_knights_unlock;Swan Knights;x
+swan_knights_unlock_desc;
+serpent_guard_unlock;Serpent Guards;x
+serpent_guard_unlock_desc;
+variag_riders_unlock;Variag Riders;x
+variag_riders_unlock_desc;
+loke_innas_rim_unlock;Lôke-Innas Rim;x
+loke_innas_rim_unlock_desc;
+rohirrim_riders_unlock;Riders of Rohirrim;x
+rohirrim_riders_unlock_desc;
+rhovanion_riders_unlock;Rhovanion Riders;x
+rhovanion_riders_unlock_desc;
+riders_of_imladris_unlock;Riders of Imladris;x
+riders_of_imladris_unlock_desc;
+variag_archers_unlock;Variag Riders;x
+variag_archers_unlock_desc;
+vinter_guard_unlock;Vinter Guard;x
+vinter_guard_unlock_desc;
+eored_skirmishers_unlock;Éored Skirmishers;x
+eored_skirmishers_unlock_desc;
+dunedain_wardens_unlock;Dúnedain Wardens;x
+dunedain_wardens_unlock_desc;
+lindon_longspears_unlock;Lindon Longspears;x
+lindon_longspears_unlock_desc;
+orthanc_guard_unlock;Orthanc Guards;x
+orthanc_guard_unlock_desc;
+greenway_guard_unlock;Greenward Guards;x
+greenway_guard_unlock_desc;
+moriquendi_defenders_unlock;Moriqueni Defenders;x
+moriquendi_defenders_unlock_desc;
+corsairs_unlock;Corsairs;x
+corsairs_unlock_desc;
+loke_gamp_rim_unlock;Lôke-Gamp Rim;x
+loke_gamp_rim_unlock_desc;
+dains_guard_unlock;Dain's Guard;x
+dains_guard_unlock_desc;
+woodsmen_warriors_unlock;Woodsmen Warriors;x
+woodsmen_warriors_unlock_desc;
+morgul_uruks_unlock;Morgul Uruks;x
+morgul_uruks_unlock_desc;
+guldur_uruks_unlock;Guldur Uruks;x
+guldur_uruks_unlock_desc;
+moria_deep_dwellers_unlock;Moria Deep Dwellers;x
+moria_deep_dwellers_unloc_desc;
+witch_knights_unlock;Witch Knights;x
+witch_knights_unlock_desc;
+snow_guard_unlock;Snow Guard;x
+snow_guard_unlock_desc;
+merchant_guard_unlock;Merchant Guard;x
+merchant_guard_unlock_desc;
 military_drill;Military Drill;x
 military_drill_desc;Basic training isn't enough. Our troops need to have reoccurring training to ensure that they retain their skills.;x
 military_schools;Military Schools;x
@@ -157,6 +257,8 @@ boarding_bridges;Boarding Bridges;x
 boarding_bridges_desc;Sometimes, ships are too far apart to board easily. By placing a secured plank between two ships, we can more easily board the enemy.;x
 shipbuilding;Shipbuilding;x
 shipbuilding_desc;Commercial shipbuilding is key to ensuring a strong naval presence.;x
+corsair_ship_unlock;Corsair Ships;x
+corsair_ship_unlock_desc;Known for their black sails and ruthless efficiency, the Corsairs of Umbar use their own type of heavy ship to wreak havoc upon their foes.;x
 grand_shipyards;Grand Shipyards;x
 grand_shipyards_desc;Large harbors dedicated to ship constructure, allowing allowing more ships to be serviced and built at once.;x
 ###############################;x }
