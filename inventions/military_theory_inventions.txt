@@ -461,13 +461,17 @@ moriquendi_shadows_unlock = {
 		activate_unit = rangers
 	}
 }
-athala_rangers_unlock = {
+adhalling_rangers_unlock = {
 	limit = { training_3 = 1 }
 	chance = {
 		base = 0
 		modifier = {
 			factor = 100
 			is_culture_group = gramavuld_northmen
+			OR = {
+				primary_culture = adhalling
+				accepted_culture = adhalling
+			}
 		}
 	}
 	effect = {
@@ -535,6 +539,13 @@ ithilien_rangers_unlock = {
 				primary_culture = amrothian
 				accepted_culture = amrothian
 			}
+			any_owned_province = {
+				OR = {
+					region = GON_198 # Forithilien
+					region = GON_205 # Emyn Arnen
+					region = GON_212 # Harithilien
+				}
+			}
 			NOT = { invention = dunedain_rangers_unlock }
 		}
 	}
@@ -591,6 +602,7 @@ black_arrow_guildsmen_unlock = {
 		modifier = {
 			factor = 100
 			is_culture_group = gramavuld_northmen
+			owns = 652 # Dale
 		}
 	}
 	effect = {
@@ -656,6 +668,7 @@ swan_knights_unlock = {
 				primary_culture = amrothian
 				accepted_culture = amrothian
 			}
+			owns = 71 # Dol Amroth
 		}
 	}
 	effect = {
@@ -725,19 +738,6 @@ rhovanion_riders_unlock = {
 	}
 	effect = {
 		activate_unit = elite_heavy_cavalry
-	}
-}
-corsair_ship_unlock = {
-	limit = { training_3 = 1 }
-	chance = {
-		base = 0
-		modifier = {
-			factor = 100
-			is_culture_group = kingsmen
-		}
-	}
-	effect = {
-		activate_unit = corsair_ship
 	}
 }
 elite_horse_archers_unlock = {
@@ -930,6 +930,7 @@ morgul_uruks_unlock = {
 				primary_culture = mordor_uruk
 				accepted_culture = mordor_uruk
 			}
+			owns = 433 # Minas Morgul
 			NOT = { invention = guldur_uruks_unlock }
 		}
 	}
@@ -948,6 +949,7 @@ guldur_uruks_unlock = {
 				primary_culture = guldurrim
 				accepted_culture = guldurrim
 			}
+			owns = 727 # Dol Guldur
 			NOT = { invention = morgul_uruks_unlock }
 		}
 	}
@@ -962,6 +964,7 @@ moria_deep_dwellers_unlock = {
 		modifier = {
 			factor = 100
 			is_culture_group = northern_goblins
+			owns = 843 # Moria
 		}
 	}
 	effect = {

@@ -536,6 +536,10 @@ heavy_ships_1 = {
 		hull = 1
 		gun_power = 3
 	}
+	corsair_ship = {
+		hull = 1
+		gun_power = 3
+	}
 	
 	ai_chance = {
 		factor = 1
@@ -585,6 +589,10 @@ heavy_ships_2 = {
 	unciv_military = yes
 
 	cog = {
+		hull = 2
+		gun_power = 6
+	}
+	corsair_ship = {
 		hull = 2
 		gun_power = 6
 	}
@@ -640,6 +648,10 @@ heavy_ships_3 = {
 		hull = 3
 		gun_power = 9
 	}
+	corsair_ship = {
+		hull = 3
+		gun_power = 9
+	}
 	
 	ai_chance = {
 		factor = 1
@@ -692,6 +704,10 @@ heavy_ships_4 = {
 		hull = 4
 		gun_power = 12
 	}
+	corsair_ship = {
+		hull = 4
+		gun_power = 12
+	}
 	
 	ai_chance = {
 		factor = 1
@@ -741,6 +757,10 @@ heavy_ships_5 = {
 	unciv_military = yes
 
 	cog = {
+		hull = 5
+		gun_power = 15
+	}
+	corsair_ship = {
 		hull = 5
 		gun_power = 15
 	}
