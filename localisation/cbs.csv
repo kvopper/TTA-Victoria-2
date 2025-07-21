@@ -162,9 +162,9 @@ conquer_gramavuld_cb_desc;Acquire all provinces in §YGramavuld§!;x
 conquer_gramavuld_cb_setup;Acquire all provinces in §YGramavuld§! owned by §Y$RECIPIENT$§!;x
 conquer_gramavuld_cb_short;Acquire all provinces in §YGramavuld§! owned by §Y$RECIPIENT$§!;x
 establish_celduin_trading_post_cb;Establish Trading Post;x
-establish_celduin_trading_post_cb_desc;Establish a trading post;
-establish_celduin_trading_post_cb_setup;Establish a trading post in §Y$RECIPIENT$§!;
-establish_celduin_trading_post_cb_short;Establish a trading post in §Y$RECIPIENT$§!;
+establish_celduin_trading_post_cb_desc;Establish a trading post;x
+establish_celduin_trading_post_cb_setup;Establish a trading post in §Y$RECIPIENT$§!;x
+establish_celduin_trading_post_cb_short;Establish a trading post in §Y$RECIPIENT$§!;x
 #####################;x
 ##### WAR NAMES #####;x {
 #####################;x
@@ -184,8 +184,8 @@ NORMAL_WAR_TAKE_CORE_NAME;$ORDER$$FIRST$ Liberation of $STATE$;x
 AGRESSION_WAR_TAKE_CORE_NAME;$ORDER$$FIRST$ Aggression for $STATE$;x
 NORMAL_WAR_RESTORE_ORDER_NAME;$ORDER$$FIRST$ Restoration of Order to the $SECOND$ provinces;x
 AGRESSION_WAR_RESTORE_ORDER_NAME;$ORDER$$FIRST$ Restoration of Order to the $SECOND$ provinces;x
-NORMAL_WAR_TAKE_NAME;$ORDER$$FIRST$ Conquest of $STATE$;
-AGRESSION_WAR_TAKE_NAME;$ORDER$$FIRST$ War of $STATE$;
+NORMAL_WAR_TAKE_NAME;$ORDER$$FIRST$ Conquest of $STATE$;x
+AGRESSION_WAR_TAKE_NAME;$ORDER$$FIRST$ War of $STATE$;x
 NORMAL_WAR_COLONIAL_NAME;$ORDER$$FIRST$ Territorial Conquest of $STATE$;x
 AGRESSION_WAR_COLONIAL_NAME;$ORDER$$FIRST$ Territorial War for $STATE$;x
 NORMAL_WAR_FREE_NAME;$ORDER$$FIRST$ War of $COUNTRY_ADJ$ Freedom;x

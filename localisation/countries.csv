@@ -220,13 +220,13 @@ ELG_ADJ;Urgath;x
 EMB;Elves of Emyn Beraid;x
 EMB_ADJ;Beraidhrim;x
 ENE;United Tribes of Enedwaith;x
-ENE_ADJ;Enedwaithrim;x;
+ENE_ADJ;Enedwaithrim;x
 ERE;Kingdom of Erebor;x
 ERE_republic;Republic of Erebor;x
 ERE_merchant_republic;Republic of Erebor;x
 ERE_ADJ;Dwarvish;x
 ESG;Realm of Esgaroth-upon-the-Long-Lake;x
-ESG_ADJ;Lake-towner;x;
+ESG_ADJ;Lake-towner;x
 ETT;Troll-fells;x
 ETT_ADJ;Troll;x
 FAN;Ents of Fangorn;x
@@ -270,12 +270,12 @@ GRA_ADJ;Grammas;x
 GRM;Orcs of Mount Gram;x
 GRM_ADJ;Gram-goblin;x
 GUL;Realm of Dol Guldur;x
-GUL_ADJ;Guldurrim;x;
+GUL_ADJ;Guldurrim;x
 GUL_dominion_1;Nazgûl Realm of Dol Guldur;x
 GUN;Orcs of Gundabad;x
 GUN_ADJ;Gundabad Orc;x
 GWA;Gwathirim Tribe;x
-GWA_ADJ;Gwathirim;x;
+GWA_ADJ;Gwathirim;x
 HAR;Haradrim Tribes;x
 HAR_ADJ;Haradrim;x
 HEN;Tribes of Henlan;x
@@ -384,7 +384,7 @@ NUR_ADJ;Nûrniag;x
 OBS;Oathbreakers;x
 OBS_ADJ;Oathbreaker;x
 OTH;Men of Othlebed;x
-OTH_ADJ;Gadraught;x;
+OTH_ADJ;Gadraught;x
 OST;Orcs of Ost-in-Edhil;x
 OST_ADJ;Ost-in-Edhil Orc;x
 PEZ;Realm of Pezarsan;x
@@ -489,23 +489,23 @@ WRM_ADJ;Wood-elven;x
 #########################;x }
 ##### DOMINION TAGS #####;x {
 #########################;x
-D01;The Kingdom of $REGION$;;Das Königreich von $REGION$;;;;;;;;x;;;
-D01_ADJ;Kingsmen;;königstreu;;;;;;;;x;;;
-D02;The Confederation of $REGION$;;Die Konföderation von $REGION$;;;;;;;;x;;;
-D02_ADJ;Confederate;;konföderiert;;;;;;;;x;;;
-D03;Commonwealth of $REGION$;;Commonwealth von $REGION$;;;;;;;;x;;;
-D03_ADJ;Commonwealth;;Commonwealth-;;;;;;;;x;;;
-D04;The Republic of $REGION$;;Die Republik von $REGION$;;;;;;;;x;;;
-D04_ADJ;Republican;;republikanisch;;;;;;;;x;;;
-D05;The $REGION$ State;;Der $REGION$-Staat;;;;;;;;x;;;
-D05_ADJ;Stateite;;staatlich;;;;;;;;x;;;
-D06;The People's Republic of $REGION$;;Die Volksrepublik von $REGION$;;;;;;;;x;;;
-D06_ADJ;Republican;;republikanisch;;;;;;;;x;;;
-D07;The Free State of $REGION$;;Der Freistaat von $REGION$;;;;;;;;x;;;
-D07_ADJ;Freestator;;freistaatlich;;;;;;;;x;;;
-D08;The Grand State of $REGION$;;Der Grosstaat von $REGION$;;;;;;;;x;;;
-D08_ADJ;Grandstator;;grosstaatlich;;;;;;;;x;;;
-D09;The State of $REGION$;;Der Staat von $REGION$;;;;;;;;x;;;
-D09_ADJ;Stateite;;staatlich;;;;;;;;x;;;
-D10;The Principality of $REGION$;;Das Fürstentum von $REGION$;;;;;;;;x;;;
-D10_ADJ;Princely;;fürstlich;;;;;;;;x;;;
+D01;The Kingdom of $REGION$;;Das Königreich von $REGION$;x
+D01_ADJ;Kingsmen;;königstreu;x
+D02;The Confederation of $REGION$;;Die Konföderation von $REGION$;x
+D02_ADJ;Confederate;;konföderiert;x
+D03;Commonwealth of $REGION$;;Commonwealth von $REGION$;x
+D03_ADJ;Commonwealth;;Commonwealth-;x
+D04;The Republic of $REGION$;;Die Republik von $REGION$;x
+D04_ADJ;Republican;;republikanisch;x
+D05;The $REGION$ State;;Der $REGION$-Staat;x
+D05_ADJ;Stateite;;staatlich;x
+D06;The People's Republic of $REGION$;;Die Volksrepublik von $REGION$;x
+D06_ADJ;Republican;;republikanisch;x
+D07;The Free State of $REGION$;;Der Freistaat von $REGION$;x
+D07_ADJ;Freestator;;freistaatlich;x
+D08;The Grand State of $REGION$;;Der Grosstaat von $REGION$;x
+D08_ADJ;Grandstator;;grosstaatlich;x
+D09;The State of $REGION$;;Der Staat von $REGION$;x
+D09_ADJ;Stateite;;staatlich;x
+D10;The Principality of $REGION$;;Das Fürstentum von $REGION$;x
+D10_ADJ;Princely;;fürstlich;x

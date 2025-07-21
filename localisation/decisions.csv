@@ -234,7 +234,7 @@ become_gondor_title;Become Gondor;x
 become_gondor_desc;We have won, or at least drew, the Second Kin-Strife. Let's offically become Gondor again.\n\n§RBasically all flavor is locked to GON and RUN instead of GNR§!\n\n§RAdditionally, any substate relationships will be broken via this decision (assuming they weren't already broken), and will be replaced with vassal relationships§!;x
 ############################;x }
 ##### ANGMAR DECISIONS #####;x {
-############################;
+############################;x
 invite_witch_king_of_angmar_title;Invite the Witch King of Angmar;x
 invite_witch_king_of_angmar_desc;Since the Angmar War ended some one thousand years ago, the Men of Angmar have lived in destitution and poverty. Now, with our realm having been rebuilt and our nation centralised, we can recapture our prestige. The return of the Witch King to our realm and the forging of a new Kingdom will be the first steps to bring glory back to Angmar once more.;x
 ###########################;x }

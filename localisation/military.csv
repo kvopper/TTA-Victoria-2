@@ -181,7 +181,7 @@ NAVAL_COMBAT_DAMAGE_DESC_HULL;Reduced by opponent hull (§R$HULL$§!): §R$VAL$%
 NAVAL_COMBAT_DAMAGE_DESC_EXP;Reduced by opponent experience (§R$EXP$%§!): §R$VAL$%§!;x
 NAVAL_COMBAT_DAMAGE_DESC_NOORG;Opponent has no organization: §Y$VAL$%§!;x
 NAVAL_COMBAT_DAMAGE_DESC_STR;Reduced by our strength: §R$VAL$%§!;x
-NAVAL_COMBAT_HIT_CHANCE_DESC;Hitting chance: §Y$VAL$%§!;
+NAVAL_COMBAT_HIT_CHANCE_DESC;Hitting chance: §Y$VAL$%§!;x
 NAVAL_COMBAT_HIT_CHANCE_DESC_EVA;(reduced by opponent evasion §R$VAL$%§!);x
 TICKING_WARSCORE_DESC_GRACE;$VAL$ (§Y$DAY$§! days left).;x
 TICKING_WARSCORE_DESC_GRACE_EXPLAIN;Territorial war goals that are at least §G$MIN$%§! fulfilled will gradually add war score to the claimant.\nIf a war goal is not fulfilled after §Ygrace period of $DAYS$ days§! it will instead add war score to the owner. A goal occupied by the claimant and retaken by the owner will gradually revert to §Y0§! score to either side.;x

@@ -11,7 +11,7 @@ infantry_tech_3_equipment;Advanced Infantry Weapons;x
 infantry_tech_3_equipment_desc;Despite having recently developed new equipment for our army, it takes some time to craft and deploy the equipment.;x
 competition_infantry;Competition Infantry;x
 competition_infantry_desc;Tournaments have held competitions for infantry since men first equipped clubs. Melees were held, either with two competitors or a whole group, with the winners rewarded handsomely.;x
-infantry_tech_4_equipment;Elite Infantry Weapons;
+infantry_tech_4_equipment;Elite Infantry Weapons;x
 infantry_tech_4_equipment_desc;Despite having recently developed new equipment for our army, it takes some time to craft and deploy the equipment.;x
 infantry_tech_5_equipment;Supreme Infantry Weapons;x
 infantry_tech_5_equipment_desc;Despite having recently developed new equipment for our army, it takes some time to craft and deploy the equipment.;x
@@ -29,7 +29,7 @@ standardised_archery_equipment;Standrdised Archery Equipment;x
 standardised_archery_equipment_desc;Standardising the production output of our fletchers will make their production more efficient.;x
 archer_tech_3_equipment;Advanced Archer Equipment;x
 archer_tech_3_equipment_desc;Despite having recently developed new equipment for our army, it takes some time to craft and deploy the equipment.;x
-long_bows;Long Bows;
+long_bows;Long Bows;x
 long_bows_desc;Longer and bigger bows enable greater force to be stored in the bow when drawing the bowstring, and thus greater power to be transferred to the arrow.;x
 competition_archery;Competition Archery;x
 competition_archery_desc;Tournaments have held competitions for archers since time the bow was first picked up. Bowmen with the best accuracy against targets were often rewarded lavishly.;x
@@ -37,7 +37,7 @@ archer_tech_4_equipment;Elite Archer Equipment;x
 archer_tech_4_equipment_desc;Despite having recently developed new equipment for our army, it takes some time to craft and deploy the equipment.;x
 composite_bows;Composite Bows;x
 composite_bows_desc;As a devlopment of recurve bows, composite bows utilise two distinct materials in their construction, usually wood and horn. As the bowstring is drawn and stretched, and the horn on the bow is compressed, meaning greater energy can be stored in the bow and transferred to the arrow on release;x
-bodkin_arrows;Bodkin Arrows;
+bodkin_arrows;Bodkin Arrows;x
 bodkin_arrows_desc;Bodkin pointed arrows are a relatively simple squared metal spike designed primarily to pierce through mail armour, making them more effective against well-equipped foes.;x
 archer_tech_5_equipment;Supreme Archer Equipment;x
 archer_tech_5_equipment_desc;Despite having recently developed new equipment for our army, it takes some time to craft and deploy the equipment.;x
@@ -83,7 +83,7 @@ competition_artillery;Competition Artillery;x
 competition_artillery_desc;Engineering achievements must be rewarded and thus tournaments for the finest siege engines must be held to reward those in our service.;x
 artillery_tech_4_equipment;Elite Artillery Construction;x
 artillery_tech_4_equipment_desc;Despite having recently developed new equipment for our army, it takes some time to craft and deploy the equipment.;x
-artillery_tech_5_equipment;Supreme Artillery Construction;
+artillery_tech_5_equipment;Supreme Artillery Construction;x
 artillery_tech_5_equipment_desc;Despite having recently developed new equipment for our army, it takes some time to craft and deploy the equipment.;x
 ######################################;x }
 ##### MILITARY THEORY INVENTIONS #####;x {
@@ -161,81 +161,81 @@ elvenkings_guard_unlock_desc;The most elite warriors of the Woodland Realm, the 
 darkblades_unlock;Darkblades;x
 darkblades_unlock_desc;The elite vanguard of the Angmarrim armies, Darkblades function as the advance scouts of Angmar, ironically mimicking the abilities of their sworn enemy, the Northern Dúnedain.;x
 moriquendi_shadows_unlock;Moriquendi Shadows;x
-moriquendi_shadows_unlock_desc;
+moriquendi_shadows_unlock_desc;The Moriquendi are the elves who refused to undertake the great journey to Valinor. They instead chose to fully remain in Middle-earth, and became some of the first targets of Morgoth for corruption. Depending on the tale of the creation of the Orcs, some of the more unlucky Avari may have been transformed into the first Orcs. The shadows are those who have learned to pass without trace, even within the heartlands of the Enemy.;x
 adhalling_rangers_unlock;Adhalling Rangers;x
 adhalling_rangers_unlock_desc;Living along the northeastern Eaves of Mirkwood, the Adhallings have learned to use the terrain to their advantage.;x
 shirriffs_unlock;Shirriffs;x
-shirriffs_unlock_desc;
+shirriffs_unlock_desc;The law enforcement of the Shire, the Shirriffs protect the Shire from both troublesome Hobbitses and outside threats.;x
 snow_rangers_unlock;Snow Rangers;x
-snow_rangers_unlock_desc;
+snow_rangers_unlock_desc;Protectors and hunters of the north, the Snow Rangers of the Lossoth both protect their tribe and scout out the Enemy.;x
 dunedain_rangers_unlock;Dúnedain Rangers;x
-dunedain_rangers_unlock_desc;
+dunedain_rangers_unlock_desc;Descendents of the people of Arnor, the Dúnedain have sworn an oath to protect the Free Peoples of Eriador. The range among the Wild of Eriador, eliminating servants of the Dark Lord.;x
 ithilien_rangers_unlock;Ithilien Rangers;x
-ithilien_rangers_unlock_desc;
+ithilien_rangers_unlock_desc;Scouts, warriors and the descendents of the Gondorian of Ithilien, the Ithilien Rangers harass the servants of Mordor throughout the region.;x
 marchwardens_unlock;Marchwardens of Lothlórien;x
-marchwardens_unlock_desc;
+marchwardens_unlock_desc;Protectors of the woods of Lothlórien, the Marchwardens defend the forest from any threat.;x
 skirmishers_unlock;Skirmishers;x
-skirmishers_unlock_desc;
+skirmishers_unlock_desc;Javelinmen of the Middle Men, these men throw javelin before charging into melee.;x
 eldarinwe_archers_unlock;Eldarinwë Archers;x
-eldarinwe_archers_unlock_desc;
+eldarinwe_archers_unlock_desc;With hundreds of years of training and experience, the Eldarinwë Archers are the best of the best of the Ñoldor archers.;x
 black_arrow_guildsmen_unlock;Black Arrow Guildsmen;x
-black_arrow_guildsmen_unlock_desc;
+black_arrow_guildsmen_unlock_desc;The guardsmen of Esgaroth and Dale, the Black Arrow Guildsmen train to prevent the next threat to the great cities of Gramavuld.;x
 bandobras_archers_unlock;Bandobras Archers;x
-bandobras_archers_unlock_desc;
+bandobras_archers_unlock_desc;Hobbits generally are not considered great warriors. However, their stout courage and better-than-average aim makes them excellent archers.;x
 dwarven_catapults_unlock;Dwarven Catapults;x
-dwarven_catapults_unlock_desc;
+dwarven_catapults_unlock_desc;Dwarven catapults are sturdier and more flexible than those of the other Free People's.;x
 troll_catapults_unlock;Troll Catapults;x
-troll_catapults_unlock_desc;
+troll_catapults_unlock_desc;Standard artillery manned by Trolls, Troll Catapults are one of the strengths of the Servants of Sauron.;x
 swan_knights_unlock;Swan Knights;x
-swan_knights_unlock_desc;
+swan_knights_unlock_desc;The retinue of the Princes of Dol Amroth, the Swan Knights are the best trained knights in Gondor.;x
 serpent_guard_unlock;Serpent Guards;x
-serpent_guard_unlock_desc;
+serpent_guard_unlock_desc;The guards of the leader of Harad, the Serpent Guard are willing to lay down their lives to protect their lord.;x
 variag_riders_unlock;Variag Riders;x
-variag_riders_unlock_desc;
+variag_riders_unlock_desc;Living up to their ancestors, the Variags of Khand are master horsemen, dominating any battlefield.;x
 loke_innas_rim_unlock;Lôke-Innas Rim;x
-loke_innas_rim_unlock_desc;
+loke_innas_rim_unlock_desc;The heavy cavalry of the East, the Lôke-Innas Rim dominate all battlefields.;x
 rohirrim_riders_unlock;Riders of Rohirrim;x
-rohirrim_riders_unlock_desc;
+rohirrim_riders_unlock_desc;The descendents, both literally and figuratively, the Rohirrim inherited the riding traditions of their ancestors from Rhovanion.;x
 rhovanion_riders_unlock;Rhovanion Riders;x
-rhovanion_riders_unlock_desc;
+rhovanion_riders_unlock_desc;The predecessors to the Rohirrim, the men of Rhovanion have a history of riding and leading their armies to victory throughout the Third Age.;x
 riders_of_imladris_unlock;Riders of Imladris;x
-riders_of_imladris_unlock_desc;
+riders_of_imladris_unlock_desc;The elven rangers from Imladris, the fierce horse archers from the refuge rarely miss.;x
 variag_archers_unlock;Variag Riders;x
-variag_archers_unlock_desc;
+variag_archers_unlock_desc;Living up to their ancestors, the Variags of Khand are master horsemen, dominating any battlefield.;x
 vinter_guard_unlock;Vinter Guard;x
-vinter_guard_unlock_desc;
+vinter_guard_unlock_desc;Riders armed with crossbows, the Vinter Guard protected the vinelands of Dorwinion.;x
 eored_skirmishers_unlock;Éored Skirmishers;x
-eored_skirmishers_unlock_desc;
+eored_skirmishers_unlock_desc;Armed with bows, the horse archers of Rohan extend the riding tradition of the realm with their bows.;x
 dunedain_wardens_unlock;Dúnedain Wardens;x
-dunedain_wardens_unlock_desc;
+dunedain_wardens_unlock_desc;Descendents of the people of Arnor, the Dúnedain have sworn an oath to protect the Free Peoples of Eriador. The range among the Wild of Eriador, eliminating servants of the Dark Lord.;x
 lindon_longspears_unlock;Lindon Longspears;x
-lindon_longspears_unlock_desc;
+lindon_longspears_unlock_desc;Protectors of Lindon, the Lindon Longspears boast some of the longest pikes in Middle-earth.;x
 orthanc_guard_unlock;Orthanc Guards;x
-orthanc_guard_unlock_desc;
+orthanc_guard_unlock_desc;Defenders of the Tower of Orthanc, the Orthanc guard are the only organization in the West boasting pikes as long as those from Lindon.;x
 greenway_guard_unlock;Greenward Guards;x
-greenway_guard_unlock_desc;
+greenway_guard_unlock_desc;An organization dating back to the days of Arnor, the Greenway Guards protect the Greenway throughout Eriador.;x
 moriquendi_defenders_unlock;Moriqueni Defenders;x
-moriquendi_defenders_unlock_desc;
+moriquendi_defenders_unlock_desc;The Moriquendi are the elves who refused to undertake the great journey to Valinor. They instead chose to fully remain in Middle-earth, and became some of the first targets of Morgoth for corruption. Depending on the tale of the creation of the Orcs, some of the more unlucky Avari may have been transformed into the first Orcs. The defenders are those who have become protectors of their people, fully knowing the threat that the Great Evil presents.;x
 corsairs_unlock;Corsairs;x
-corsairs_unlock_desc;
+corsairs_unlock_desc;Elite infantry trained as the marines of Umbar, the Corsairs are fearsome both on the water, and on land.;x
 loke_gamp_rim_unlock;Lôke-Gamp Rim;x
-loke_gamp_rim_unlock_desc;
+loke_gamp_rim_unlock_desc;The mainline infantry of the Men of the East, the Lôke-Gamp Rim boast golden armor and shining arms to fight their enemies.;x
 dains_guard_unlock;Dain's Guard;x
-dains_guard_unlock_desc;
+dains_guard_unlock_desc;The most elite Dwarven warriors, Dain's Guard protect the King of Erebor with their lives.;x
 woodsmen_warriors_unlock;Woodsmen Warriors;x
-woodsmen_warriors_unlock_desc;
+woodsmen_warriors_unlock_desc;Armed with axes and greataxes, the Woodsmen of Rhovanion are willing to defend their villages to the bitter end.;x
 morgul_uruks_unlock;Morgul Uruks;x
-morgul_uruks_unlock_desc;
+morgul_uruks_unlock_desc;The most elite of Sauron's forces, the Morgul Uruks have trained under the personal supervision of the Witch-king of Angmar.;x
 guldur_uruks_unlock;Guldur Uruks;x
-guldur_uruks_unlock_desc;
-moria_deep_dwellers_unlock;Moria Deep Dwellers;x
-moria_deep_dwellers_unloc_desc;
-witch_knights_unlock;Witch Knights;x
-witch_knights_unlock_desc;
+guldur_uruks_unlock_desc;The most elite of Sauron's forces, the Morgul Uruks have trained under the personal supervision of Khamûl the Easterling.;x
+moria_deep_dwellers_unlock;Moria Deep-dwellers;x
+moria_deep_dwellers_unloc_desc;Highly trained infantry from Moria, the Moria Deep-dwellers erupt from the black pit to challenge those around the Vale of Anduin and Eriador.;x
+witch_knights_unlock;Witch-knights;x
+witch_knights_unlock_desc;The most elite forces of Angmar, the Witch-knights continue the proud elite tradition of the Men of Angmar. hoping for the return of their lord and namesake.;x
 snow_guard_unlock;Snow Guard;x
-snow_guard_unlock_desc;
+snow_guard_unlock_desc;Camp protectors of the Lossoth, the Snow Guard are willing to lay down their lives in service of their people.;x
 merchant_guard_unlock;Merchant Guard;x
-merchant_guard_unlock_desc;
+merchant_guard_unlock_desc;All travellors should have protection on the roads of Middle-earth, especially those travelling often.;x
 military_drill;Military Drill;x
 military_drill_desc;Basic training isn't enough. Our troops need to have reoccurring training to ensure that they retain their skills.;x
 military_schools;Military Schools;x
@@ -266,7 +266,7 @@ grand_shipyards_desc;Large harbors dedicated to ship constructure, allowing allo
 ###############################;x
 wilwarin;Wilwarin;x
 wilwarin_desc;Wilwarin, the Butterfly, is one of the constellations of Arda;x
-lembas_bread_invention;Lembas Bread;
+lembas_bread_invention;Lembas Bread;x
 lembas_bread_invention_desc;From Tolkien Gateway:\n\n"Lembas, Elvish Waybread were very nutritious, stayed fresh for months when wrapped in leaves, and were used for sustenance on long journeys. Lembas had a brownish colour on the outside and a cream colour on the inside.\n\nAccording to Gimli, it was a food of the same kind as Cram, although one of the Elves of Lothlórien commented that it was more pleasant, and more strengthening than any food made by Men.\n\nLike other products of the Elves, it was offensive to evil creatures; Gollum refused outright to eat of it. When Frodo was captured by Orcs in Mordor, the Orcs hated the look of the lembas even more than Gollum had.";x
 valacirca;Valacirca;x
 valacirca_desc;Valacirca, the Sickle of the Valar, is one of the constellations of Arda;x

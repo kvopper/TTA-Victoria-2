@@ -314,7 +314,7 @@ MAPMODE_NAVAL_TOOLTIP_LEVEL;Port level §G$LVL$§!;x
 MAPMODE_NAVAL_TOOLTIP_NO_BASE;There is not any port in this state.;x
 MAPMODE_NAVAL_TOOLTIP_CAP;This province §Ysailor capacity§! is §G$CAP$§Yk§! of total §G$TOT$§Yk§!.;x
 MAPMODE_NAVAL_TOOLTIP_IN_OTHER;A port already exists in this state, in §Y$PROV$§!.;x
-MAPMODE_NAVAL_TOOLTIP_UNDER_CON;A port is already under construction here.;
+MAPMODE_NAVAL_TOOLTIP_UNDER_CON;A port is already under construction here.;x
 SUPPLY_LOAD;Sailors required (in thousands);x
 SUPPLY_LOAD_STATUS_DESC_PENALTY;Our ships suffer $PEN$ penalty of supplying them.;x
 SUPPLY_LOAD_STATUS_DESC_HINT;Consider building ports, or disband some ships.;x
@@ -538,7 +538,7 @@ FE_PRIMARY_REALM_1;The Barding Realm;x
 FE_PRIMARY_REALM_DESCRIPTION_1;Rising like a phoenix out of the ashes of Smaug's desolation is the Barding Realm. Having united all Lakemen and their Adhalling brothers under one banner, the Bardings look east to unite with all of Gramavuld.\n\nTo the east, lies the lands of the leaderless Grammas and to the southeast along the Celdiun, lie the Rivermen. To unite Gramavuld, both culture will need to join the realm.\n\nFinally, to the south, lies the old Northmen home of Rhovanion. Depopulated and weak, a stronger realm could claim themselves the heir to Vidugavia and unite the Northmen of Rhovanion.\n\nWill you be able to bring justice to the Grammas, subjugate the Rivermen, and lay claim to Rhovanion?;;x
 FE_MECHANIC_1;The Alliance of Dwarves and Men;x
 FE_MECHANIC_DESCRIPTION_1;Starting off just containing the Dwarves of Erebor and the Barding Realm, the Alliance of Dwarves and Men in a new diplomatic mechanic for any good-aligned realm within Rhovanion, Mirkwood and the Anduin Vale.\n\nMembership brings a number of benefits, including the ability to tranfer cores, call alliance members into wars, unlock flavor specific to your realm, and even take steps towards a powerful unification tag, the Free Folk of the North!\n\nDespite the name, the alliance is not limited to just Dwarves and Men -- Elves and Hobbits can join too assuming they are good-aligned. Will you be able to expand the alliance across Rhovanion, and the unite them into the Free Folk of the North?;x
-FE_MEDIUM;Changelog;
+FE_MEDIUM;Changelog;x
 FE_CHANGELOG_HIGHLIGHTS;Highlights;x
 FE_CHANGELOG_HIGHLIGHTS_DESCRIPTION;• Ahistorical Barding Realm flavor\n• Political Rework;x
 FE_CHANGELOG_GRAPHICS_CONTENT;Graphics;x

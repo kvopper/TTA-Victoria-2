@@ -40,9 +40,9 @@ EVTDESC3624_NEWS_SHORT;The Grey Wanderer, Gandalf, has been seen visiting $COUNT
 EVTDESC3627_NEWS_LONG;News from Rhûn as a Blue Wizard, the one known as Pallando, has been sighted visiting $COUNTRY$. His motives are unknown, but the locals show increasing support for the evil in this world.;x
 EVTDESC3627_NEWS_MEDIUM;A Blue Wizard, the one known as Pallando, has been sighted visiting $COUNTRY$. The locals show increasing support for the evil in this world.;x
 EVTDESC3627_NEWS_SHORT;A Blue Wizard, the one known as Pallando, has been seen visiting $COUNTRY$.;x
-EVTDESC19002_NEWS_LONG;$CAPITAL$, $COUNTRY$: A Showcase of Glory has been announced by the leader of $COUNTRY$. The event will involve the $FROMCOUNTRY_ADJ$ army parading through the streets of $CAPITAL$ showing off their shiny armor, but also demonstrating new technological advancements in weaponry. Prestigious cultural paraphernalia will also be in evidence, and it cannot be denied that the $FROMCOUNTRY_ADJ$s do have a knack for literature, music and the arts. It is not yet known if foreign dignitaries will be invited to the event.;x;
-EVTDESC19002_NEWS_MEDIUM;$CAPITAL$: A Showcase of Glory has been announced by $COUNTRY$. The event will involve the $FROMCOUNTRY_ADJ$ military parading through $CAPITAL$ demonstrating technological advancements in weaponry. Prestigious cultural paraphernalia will also be in evidence.;x;
-EVTDESC19002_NEWS_SHORT;$CAPITAL$, $COUNTRY$: A Showcase of Glory has been announced by the government of $COUNTRY$. Sources say that it is not yet known if foreign dignitaries will be invited to the event.;x;
+EVTDESC19002_NEWS_LONG;$CAPITAL$, $COUNTRY$: A Showcase of Glory has been announced by the leader of $COUNTRY$. The event will involve the $FROMCOUNTRY_ADJ$ army parading through the streets of $CAPITAL$ showing off their shiny armor, but also demonstrating new technological advancements in weaponry. Prestigious cultural paraphernalia will also be in evidence, and it cannot be denied that the $FROMCOUNTRY_ADJ$s do have a knack for literature, music and the arts. It is not yet known if foreign dignitaries will be invited to the event.;x
+EVTDESC19002_NEWS_MEDIUM;$CAPITAL$: A Showcase of Glory has been announced by $COUNTRY$. The event will involve the $FROMCOUNTRY_ADJ$ military parading through $CAPITAL$ demonstrating technological advancements in weaponry. Prestigious cultural paraphernalia will also be in evidence.;x
+EVTDESC19002_NEWS_SHORT;$CAPITAL$, $COUNTRY$: A Showcase of Glory has been announced by the government of $COUNTRY$. Sources say that it is not yet known if foreign dignitaries will be invited to the event.;x
 EVTDESC50500_NEWS_LONG;Mount Doom has erupted after being dormant for thousands of years. Historically, the volcano has only been active while Sauron has resided in Mordor. As such, many speculate that this can mean only one thing: Sauron has returned!;x
 EVTDESC50500_NEWS_MEDIUM;Mount Doom has erupted after being dormant for thousands of years. Many speculate that this can mean only one thing: Sauron has returned!;x
 EVTDESC50500_NEWS_SHORT;Mount Doom has erupted after being dormant for thousands of years. This can mean only one thing: Sauron has returned!;x
@@ -54,10 +54,10 @@ EVTDESC50929_NEWS;King Bard I of the $COUNTRY$ has died! The $COUNTRY$ mourns, a
 EVTDESC50930_NEWS;Bain, son of Bard I, was coronated as King Bain I of the $COUNTRY$. May his reign be long and prosperous!;x
 EVTDESC50931_NEWS;King Bain I of the $COUNTRY$ has died! The $COUNTRY$ mourns, and prepares for the coronation of his son, Brand I.;x
 EVTDESC50932_NEWS;Brand, son of Bain I, was coronated as King Brand I of the $COUNTRY$. May his reign be long and prosperous!;x
-EVTDESC50933_NEWS;King Brand I of the $COUNTRY$ has died! The $COUNTRY$ mourns, and prepares for the coronation of his son, Bard II.;x;x
+EVTDESC50933_NEWS;King Brand I of the $COUNTRY$ has died! The $COUNTRY$ mourns, and prepares for the coronation of his son, Bard II.;x
 EVTDESC50934_NEWS;Bard, son of Brand I, was coronated as King Bard II of the $COUNTRY$. May his reign be long and prosperous!;x
 EVTDESC50935_NEWS;King Bard II of the $COUNTRY$ has died! The $COUNTRY$ mourns, and prepares for the coronation of his son, Girion II.;x
-EVTDESC50916_NEWS;Girion, son of Bard II, was coronated as King Girion II of the $COUNTRY$. May his reign be long and prosperous!;x;x
+EVTDESC50916_NEWS;Girion, son of Bard II, was coronated as King Girion II of the $COUNTRY$. May his reign be long and prosperous!;x
 EVTDESC50936_NEWS;Bain, son of Bard I, has wed! It's said that the $COUNTRY$ held week long celebration for this momentous event.;x
 EVTDESC50939_NEWS;Brand, son of Bain I, has wed! It's said that the $COUNTRY$ held week long celebration for this momentous event.;x
 EVTDESC50942_NEWS;Bard, son of Brand I, has wed! It's said that the $COUNTRY$ held week long celebration for this momentous event.;x
