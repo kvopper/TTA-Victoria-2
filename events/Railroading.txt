@@ -45,6 +45,13 @@ country_event = {
 		name = "I like my sandbox (turn off railroading)"
 		
 		set_global_flag = railroading_disabled
+		
+		any_country = {
+			limit = {
+				has_country_modifier = alliance_of_dwarves_and_men
+			}
+			set_country_flag = flavor_diplomacy_5
+		}
 	}
 }
 

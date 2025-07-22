@@ -2,12 +2,47 @@
 # Audax Validator "!" Ignore_1009
 
 # Harad Decisions: {
+#	Starting Decision (Unseen)
 #	Forming Harad
 #	Harondor colonization by Harnendor, Haruzan, Umbar and Chelkar
 #	Tribal Incorporation
 #	Core Adding/Removal
 #	Province Flavor }
 
+# Starting Decision (Unseen)
+political_decisions = {
+	# Audax Validator "." Ignore_1004
+	HAR_start_decision = {
+		potential = {
+			always = no
+		}
+		effect = {
+			any_country = {
+				limit = {
+					OR = {
+						is_culture_group = haradrim
+						is_culture_group = khandish
+						primary_culture = black_numenorean
+					}
+				}
+				set_country_flag = flavor_infrastructure_tech_1
+			}
+			
+			any_country = {
+				limit = {
+					OR = {
+						tag = UMB
+						tag = CHE
+						tag = HRU
+						tag = HRN
+					}
+				}
+				set_country_flag = flavor_expansion_1
+				set_country_flag = flavor_wilderness_1
+			}
+		}
+	}
+}
 
 # Forming Harad
 political_decisions = {
@@ -179,6 +214,8 @@ political_decisions = {
 				}
 				owner = { add_accepted_culture = arysian }
 			}
+			
+			set_country_flag = flavor_diplomacy_3
 		}
 	}
 	

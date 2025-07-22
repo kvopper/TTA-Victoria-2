@@ -18,6 +18,8 @@ political_decisions = {
 			set_country_flag = nobility_deactivated
 			
 			set_country_flag = ERE_content
+			
+			set_country_flag = flavor_diplomacy_3
 		}
 	}
 	RAV_start_decision = {

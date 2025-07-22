@@ -8,6 +8,8 @@ political_decisions = {
 			# Set content access
 			set_country_flag = LOR_content
 			
+			set_country_flag = flavor_rgo_tech_1
+			
 			# Set allowed leaders
 			set_country_flag = ideologies_house_of_finarfin_active
 			set_country_flag = nobility_deactivated

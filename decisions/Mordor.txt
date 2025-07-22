@@ -22,6 +22,12 @@ political_decisions = {
 			set_country_flag = MOR_content
 			add_country_modifier = { name = sauron_modifier duration = -1 }
 			
+			set_country_flag = flavor_population_1
+			set_country_flag = flavor_expansion_2
+			set_country_flag = flavor_expansion_5
+			set_country_flag = flavor_wilderness_1
+			set_country_flag = flavor_diplomacy_2
+			
 			# Set vassal allowed leaders
 			GUL = {
 				set_country_flag = ideologies_saurons_nine_active

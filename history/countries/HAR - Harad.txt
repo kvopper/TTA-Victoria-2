@@ -12,6 +12,8 @@ nationalvalue = no_heirloom
 literacy = 0
 civilized = yes
 
+decision = HAR_start_decision
+
 slavery = yes_slavery
 ruling_party = generic_nobility
 

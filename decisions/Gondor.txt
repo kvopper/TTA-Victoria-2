@@ -86,6 +86,26 @@ political_decisions = {
 			set_global_flag = ecthelion_ii_alive
 			set_global_flag = denethor_ii_alive
 			
+			set_country_flag = flavor_fortifications_2
+			set_country_flag = flavor_fortifications_1
+			set_country_flag = flavor_training_1
+			set_country_flag = flavor_training_2
+			set_country_flag = flavor_merchant_marine_2
+			set_country_flag = flavor_rgo_tech_3
+			set_country_flag = flavor_guilds_2
+			set_country_flag = flavor_infrastructure_tech_1
+			set_country_flag = flavor_population_1
+			set_country_flag = flavor_population_4
+			set_country_flag = flavor_education_3
+			set_country_flag = flavor_education_4
+			set_country_flag = flavor_diplomacy_1
+			set_country_flag = flavor_wilderness_1
+			set_country_flag = flavor_expansion_2
+			set_country_flag = flavor_expansion_3
+			set_country_flag = flavor_culture_2
+			set_country_flag = flavor_culture_3
+			set_country_flag = flavor_culture_4
+			
 			# Setting up starting leaders
 			set_country_flag = ideologies_house_of_stewards_active
 			set_country_flag = nobility_deactivated

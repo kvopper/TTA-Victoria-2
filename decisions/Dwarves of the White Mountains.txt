@@ -1,6 +1,20 @@
 # Dwarves of the White Mountains Decisions {
+#	Starting Decision (Unseen)
 #	Play As
 #	Expansion }
+
+# Starting Decision (Unseen)
+political_decisions = {
+	# Audax Validator "." Ignore_1004
+	DWM_start_decision = {
+		potential = {
+			always = no
+		}
+		effect = {
+			set_country_flag = flavor_expansion_1
+		}
+	}
+}
 
 # Play As
 political_decisions = {

@@ -2587,6 +2587,9 @@ country_event = {
 		
 		set_country_flag = locked_voting
 		
+		# Queue AI to focus on new flavor
+		set_country_flag = flavor_infrastructure_tech_3
+		
 		ai_chance = {
 			factor = 50
 		}
@@ -2712,6 +2715,9 @@ country_event = {
 		election = yes # Last thing that shows text because it doesn't have a newline for some reason
 		
 		set_country_flag = locked_voting
+		
+		# Queue AI to focus on new flavor
+		set_country_flag = flavor_rgo_tech_4
 		
 		ai_chance = {
 			factor = 50

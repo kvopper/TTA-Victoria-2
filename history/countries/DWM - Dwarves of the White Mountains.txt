@@ -11,6 +11,8 @@ is_releasable_vassal = no
 
 prestige = 60
 
+decision = DWM_start_decision
+
 ruling_party = generic_nobility
 upper_house = {
 	nobility = 100
