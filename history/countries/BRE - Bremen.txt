@@ -5,6 +5,7 @@ primary_culture = breelander
 culture = men_culture
 culture = harfoot
 culture = fallohide
+culture = siredain
 religion = men
 government = republic
 nationalvalue = no_heirloom

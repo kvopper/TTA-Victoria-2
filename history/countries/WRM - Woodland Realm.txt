@@ -2,6 +2,7 @@
 capital = 692
 primary_culture = silvan
 culture = elven_culture
+culture = avari
 religion = elven
 government = monarchy
 nationalvalue = no_heirloom
