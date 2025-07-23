@@ -23,8 +23,4 @@ serfdom = banned_serfdom
 schools = no_organization
 
 #technologies
-merchant_marine_1 = 1
-light_ships_1 = 1
-heavy_ships_1 = 1
-naval_construction_1 = 1
 magic_1 = 1

@@ -18,8 +18,3 @@ upper_house = {
 
 schools = no_organization
 #technologies
-guilds_1 = 1
-infrastructure_tech_1 = 1
-education_1 = 1
-fortifications_1 = 1
-army_tactics_1 = 1
