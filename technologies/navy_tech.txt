@@ -13,40 +13,58 @@ merchant_marine_1 = {
 	
 	ai_chance = {
 		factor = 1
-		
+		modifier = {
+			factor = 1.4
+			OR = {
+				has_country_flag = flavor_merchant_marine_1
+				has_country_flag = flavor_merchant_marine_2
+				has_country_flag = flavor_merchant_marine_3
+				AND = {
+					year = 2965
+					has_country_flag = flavor_merchant_marine_4
+				}
+				AND = {
+					year = 2980
+					has_country_flag = flavor_merchant_marine_5
+				}
+			}
+		}
 		modifier = {
 			factor = 0
 			NOT = { total_num_of_ports = 1 }
 		}
 		modifier = {
-			factor = 1.25
+			factor = 1.5
 			total_num_of_ports = 20
 			rank = 12
 		}
 		modifier = {
-			factor = 1.15
+			factor = 1.3
+
 			total_amount_of_ships = 20
 		}
 		modifier = {
-			factor = 1.15
+			factor = 1.3
+
 			total_amount_of_ships = 50
 		}
 		modifier = {
-			factor = 1.15
+			factor = 1.3
+
 			total_amount_of_ships = 100
 		}
 		modifier = {
-			factor = 1.2
+			factor = 1.4
 			total_num_of_ports = 10
 			NOT = { num_of_cities = 40 }
 		}
 		modifier = {
-			factor = 1.2
+			factor = 1.4
 			total_num_of_ports = 25
 			NOT = { num_of_cities = 100 }
 		}
 		modifier = {
-			factor = 1.1
+			factor = 1.25
 			year = 2960
 		}
 	}
@@ -66,40 +84,57 @@ merchant_marine_2 = {
 	
 	ai_chance = {
 		factor = 1
-		
+		modifier = {
+			factor = 1.4
+			OR = {
+				has_country_flag = flavor_merchant_marine_2
+				has_country_flag = flavor_merchant_marine_3
+				AND = {
+					year = 2965
+					has_country_flag = flavor_merchant_marine_4
+				}
+				AND = {
+					year = 2980
+					has_country_flag = flavor_merchant_marine_5
+				}
+			}
+		}
 		modifier = {
 			factor = 0
 			NOT = { total_num_of_ports = 1 }
 		}
 		modifier = {
-			factor = 1.25
+			factor = 1.5
 			total_num_of_ports = 20
 			rank = 12
 		}
 		modifier = {
-			factor = 1.15
+			factor = 1.3
+
 			total_amount_of_ships = 20
 		}
 		modifier = {
-			factor = 1.15
+			factor = 1.3
+
 			total_amount_of_ships = 50
 		}
 		modifier = {
-			factor = 1.15
+			factor = 1.3
+
 			total_amount_of_ships = 100
 		}
 		modifier = {
-			factor = 1.2
+			factor = 1.4
 			total_num_of_ports = 10
 			NOT = { num_of_cities = 40 }
 		}
 		modifier = {
-			factor = 1.2
+			factor = 1.4
 			total_num_of_ports = 25
 			NOT = { num_of_cities = 100 }
 		}
 		modifier = {
-			factor = 1.1
+			factor = 1.25
 			year = 2965
 		}
 	}
@@ -119,40 +154,56 @@ merchant_marine_3 = {
 	
 	ai_chance = {
 		factor = 1
-		
+		modifier = {
+			factor = 1.4
+			OR = {
+				has_country_flag = flavor_merchant_marine_3
+				AND = {
+					year = 2965
+					has_country_flag = flavor_merchant_marine_4
+				}
+				AND = {
+					year = 2980
+					has_country_flag = flavor_merchant_marine_5
+				}
+			}
+		}
 		modifier = {
 			factor = 0
 			NOT = { total_num_of_ports = 1 }
 		}
 		modifier = {
-			factor = 1.25
+			factor = 1.5
 			total_num_of_ports = 20
 			rank = 12
 		}
 		modifier = {
-			factor = 1.15
+			factor = 1.3
+
 			total_amount_of_ships = 20
 		}
 		modifier = {
-			factor = 1.15
+			factor = 1.3
+
 			total_amount_of_ships = 50
 		}
 		modifier = {
-			factor = 1.15
+			factor = 1.3
+
 			total_amount_of_ships = 100
 		}
 		modifier = {
-			factor = 1.2
+			factor = 1.4
 			total_num_of_ports = 10
 			NOT = { num_of_cities = 40 }
 		}
 		modifier = {
-			factor = 1.2
+			factor = 1.4
 			total_num_of_ports = 25
 			NOT = { num_of_cities = 100 }
 		}
 		modifier = {
-			factor = 1.1
+			factor = 1.25
 			year = 2980
 		}
 	}
@@ -172,40 +223,52 @@ merchant_marine_4 = {
 	
 	ai_chance = {
 		factor = 1
-		
+		modifier = {
+			factor = 1.4
+			OR = {
+				has_country_flag = flavor_merchant_marine_4
+				AND = {
+					year = 2980
+					has_country_flag = flavor_merchant_marine_5
+				}
+			}
+		}
 		modifier = {
 			factor = 0
 			NOT = { total_num_of_ports = 1 }
 		}
 		modifier = {
-			factor = 1.25
+			factor = 1.5
 			total_num_of_ports = 20
 			rank = 12
 		}
 		modifier = {
-			factor = 1.15
+			factor = 1.3
+
 			total_amount_of_ships = 20
 		}
 		modifier = {
-			factor = 1.15
+			factor = 1.3
+
 			total_amount_of_ships = 50
 		}
 		modifier = {
-			factor = 1.15
+			factor = 1.3
+
 			total_amount_of_ships = 100
 		}
 		modifier = {
-			factor = 1.2
+			factor = 1.4
 			total_num_of_ports = 10
 			NOT = { num_of_cities = 40 }
 		}
 		modifier = {
-			factor = 1.2
+			factor = 1.4
 			total_num_of_ports = 25
 			NOT = { num_of_cities = 100 }
 		}
 		modifier = {
-			factor = 1.1
+			factor = 1.25
 			year = 3000
 		}
 	}
@@ -225,40 +288,46 @@ merchant_marine_5 = {
 	
 	ai_chance = {
 		factor = 1
-		
+		modifier = {
+			factor = 1.4
+			has_country_flag = flavor_merchant_marine_5
+		}
 		modifier = {
 			factor = 0
 			NOT = { total_num_of_ports = 1 }
 		}
 		modifier = {
-			factor = 1.25
+			factor = 1.5
 			total_num_of_ports = 20
 			rank = 12
 		}
 		modifier = {
-			factor = 1.15
+			factor = 1.3
+
 			total_amount_of_ships = 20
 		}
 		modifier = {
-			factor = 1.15
+			factor = 1.3
+
 			total_amount_of_ships = 50
 		}
 		modifier = {
-			factor = 1.15
+			factor = 1.3
+
 			total_amount_of_ships = 100
 		}
 		modifier = {
-			factor = 1.2
+			factor = 1.4
 			total_num_of_ports = 10
 			NOT = { num_of_cities = 40 }
 		}
 		modifier = {
-			factor = 1.2
+			factor = 1.4
 			total_num_of_ports = 25
 			NOT = { num_of_cities = 100 }
 		}
 		modifier = {
-			factor = 1.1
+			factor = 1.25
 			year = 3010
 		}
 	}
@@ -278,40 +347,58 @@ light_ships_1 = {
 	
 	ai_chance = {
 		factor = 1
-		
+		modifier = {
+			factor = 1.4
+			OR = {
+				has_country_flag = flavor_light_ships_1
+				has_country_flag = flavor_light_ships_2
+				has_country_flag = flavor_light_ships_3
+				AND = {
+					year = 2965
+					has_country_flag = flavor_light_ships_4
+				}
+				AND = {
+					year = 2980
+					has_country_flag = flavor_light_ships_5
+				}
+			}
+		}
 		modifier = {
 			factor = 0
 			NOT = { total_num_of_ports = 1 }
 		}
 		modifier = {
-			factor = 1.25
+			factor = 1.5
 			total_num_of_ports = 20
 			rank = 12
 		}
 		modifier = {
-			factor = 1.15
+			factor = 1.3
+
 			total_amount_of_ships = 20
 		}
 		modifier = {
-			factor = 1.15
+			factor = 1.3
+
 			total_amount_of_ships = 50
 		}
 		modifier = {
-			factor = 1.15
+			factor = 1.3
+
 			total_amount_of_ships = 100
 		}
 		modifier = {
-			factor = 1.2
+			factor = 1.4
 			total_num_of_ports = 10
 			NOT = { num_of_cities = 40 }
 		}
 		modifier = {
-			factor = 1.2
+			factor = 1.4
 			total_num_of_ports = 25
 			NOT = { num_of_cities = 100 }
 		}
 		modifier = {
-			factor = 1.1
+			factor = 1.25
 			year = 2960
 		}
 	}
@@ -330,40 +417,57 @@ light_ships_2 = {
 	
 	ai_chance = {
 		factor = 1
-		
+		modifier = {
+			factor = 1.4
+			OR = {
+				has_country_flag = flavor_light_ships_2
+				has_country_flag = flavor_light_ships_3
+				AND = {
+					year = 2965
+					has_country_flag = flavor_light_ships_4
+				}
+				AND = {
+					year = 2980
+					has_country_flag = flavor_light_ships_5
+				}
+			}
+		}
 		modifier = {
 			factor = 0
 			NOT = { total_num_of_ports = 1 }
 		}
 		modifier = {
-			factor = 1.25
+			factor = 1.5
 			total_num_of_ports = 20
 			rank = 12
 		}
 		modifier = {
-			factor = 1.15
+			factor = 1.3
+
 			total_amount_of_ships = 20
 		}
 		modifier = {
-			factor = 1.15
+			factor = 1.3
+
 			total_amount_of_ships = 50
 		}
 		modifier = {
-			factor = 1.15
+			factor = 1.3
+
 			total_amount_of_ships = 100
 		}
 		modifier = {
-			factor = 1.2
+			factor = 1.4
 			total_num_of_ports = 10
 			NOT = { num_of_cities = 40 }
 		}
 		modifier = {
-			factor = 1.2
+			factor = 1.4
 			total_num_of_ports = 25
 			NOT = { num_of_cities = 100 }
 		}
 		modifier = {
-			factor = 1.1
+			factor = 1.25
 			year = 2965
 		}
 	}
@@ -382,40 +486,56 @@ light_ships_3 = {
 	
 	ai_chance = {
 		factor = 1
-		
+		modifier = {
+			factor = 1.4
+			OR = {
+				has_country_flag = flavor_light_ships_3
+				AND = {
+					year = 2965
+					has_country_flag = flavor_light_ships_4
+				}
+				AND = {
+					year = 2980
+					has_country_flag = flavor_light_ships_5
+				}
+			}
+		}
 		modifier = {
 			factor = 0
 			NOT = { total_num_of_ports = 1 }
 		}
 		modifier = {
-			factor = 1.25
+			factor = 1.5
 			total_num_of_ports = 20
 			rank = 12
 		}
 		modifier = {
-			factor = 1.15
+			factor = 1.3
+
 			total_amount_of_ships = 20
 		}
 		modifier = {
-			factor = 1.15
+			factor = 1.3
+
 			total_amount_of_ships = 50
 		}
 		modifier = {
-			factor = 1.15
+			factor = 1.3
+
 			total_amount_of_ships = 100
 		}
 		modifier = {
-			factor = 1.2
+			factor = 1.4
 			total_num_of_ports = 10
 			NOT = { num_of_cities = 40 }
 		}
 		modifier = {
-			factor = 1.2
+			factor = 1.4
 			total_num_of_ports = 25
 			NOT = { num_of_cities = 100 }
 		}
 		modifier = {
-			factor = 1.1
+			factor = 1.25
 			year = 2980
 		}
 	}
@@ -434,40 +554,52 @@ light_ships_4 = {
 	
 	ai_chance = {
 		factor = 1
-		
+		modifier = {
+			factor = 1.4
+			OR = {
+				has_country_flag = flavor_light_ships_4
+				AND = {
+					year = 2980
+					has_country_flag = flavor_light_ships_5
+				}
+			}
+		}
 		modifier = {
 			factor = 0
 			NOT = { total_num_of_ports = 1 }
 		}
 		modifier = {
-			factor = 1.25
+			factor = 1.5
 			total_num_of_ports = 20
 			rank = 12
 		}
 		modifier = {
-			factor = 1.15
+			factor = 1.3
+
 			total_amount_of_ships = 20
 		}
 		modifier = {
-			factor = 1.15
+			factor = 1.3
+
 			total_amount_of_ships = 50
 		}
 		modifier = {
-			factor = 1.15
+			factor = 1.3
+
 			total_amount_of_ships = 100
 		}
 		modifier = {
-			factor = 1.2
+			factor = 1.4
 			total_num_of_ports = 10
 			NOT = { num_of_cities = 40 }
 		}
 		modifier = {
-			factor = 1.2
+			factor = 1.4
 			total_num_of_ports = 25
 			NOT = { num_of_cities = 100 }
 		}
 		modifier = {
-			factor = 1.1
+			factor = 1.25
 			year = 3000
 		}
 	}
@@ -486,40 +618,46 @@ light_ships_5 = {
 	
 	ai_chance = {
 		factor = 1
-		
+		modifier = {
+			factor = 1.4
+			has_country_flag = flavor_light_ships_5
+		}
 		modifier = {
 			factor = 0
 			NOT = { total_num_of_ports = 1 }
 		}
 		modifier = {
-			factor = 1.25
+			factor = 1.5
 			total_num_of_ports = 20
 			rank = 12
 		}
 		modifier = {
-			factor = 1.15
+			factor = 1.3
+
 			total_amount_of_ships = 20
 		}
 		modifier = {
-			factor = 1.15
+			factor = 1.3
+
 			total_amount_of_ships = 50
 		}
 		modifier = {
-			factor = 1.15
+			factor = 1.3
+
 			total_amount_of_ships = 100
 		}
 		modifier = {
-			factor = 1.2
+			factor = 1.4
 			total_num_of_ports = 10
 			NOT = { num_of_cities = 40 }
 		}
 		modifier = {
-			factor = 1.2
+			factor = 1.4
 			total_num_of_ports = 25
 			NOT = { num_of_cities = 100 }
 		}
 		modifier = {
-			factor = 1.1
+			factor = 1.25
 			year = 3010
 		}
 	}
@@ -543,40 +681,58 @@ heavy_ships_1 = {
 	
 	ai_chance = {
 		factor = 1
-		
+		modifier = {
+			factor = 1.4
+			OR = {
+				has_country_flag = flavor_heavy_ships_1
+				has_country_flag = flavor_heavy_ships_2
+				has_country_flag = flavor_heavy_ships_3
+				AND = {
+					year = 2965
+					has_country_flag = flavor_heavy_ships_4
+				}
+				AND = {
+					year = 2980
+					has_country_flag = flavor_heavy_ships_5
+				}
+			}
+		}
 		modifier = {
 			factor = 0
 			NOT = { total_num_of_ports = 1 }
 		}
 		modifier = {
-			factor = 1.25
+			factor = 1.5
 			total_num_of_ports = 20
 			rank = 12
 		}
 		modifier = {
-			factor = 1.15
+			factor = 1.3
+
 			total_amount_of_ships = 20
 		}
 		modifier = {
-			factor = 1.15
+			factor = 1.3
+
 			total_amount_of_ships = 50
 		}
 		modifier = {
-			factor = 1.15
+			factor = 1.3
+
 			total_amount_of_ships = 100
 		}
 		modifier = {
-			factor = 1.2
+			factor = 1.4
 			total_num_of_ports = 10
 			NOT = { num_of_cities = 40 }
 		}
 		modifier = {
-			factor = 1.2
+			factor = 1.4
 			total_num_of_ports = 25
 			NOT = { num_of_cities = 100 }
 		}
 		modifier = {
-			factor = 1.1
+			factor = 1.25
 			year = 2960
 		}
 	}
@@ -599,40 +755,57 @@ heavy_ships_2 = {
 	
 	ai_chance = {
 		factor = 1
-		
+		modifier = {
+			factor = 1.4
+			OR = {
+				has_country_flag = flavor_heavy_ships_2
+				has_country_flag = flavor_heavy_ships_3
+				AND = {
+					year = 2965
+					has_country_flag = flavor_heavy_ships_4
+				}
+				AND = {
+					year = 2980
+					has_country_flag = flavor_heavy_ships_5
+				}
+			}
+		}
 		modifier = {
 			factor = 0
 			NOT = { total_num_of_ports = 1 }
 		}
 		modifier = {
-			factor = 1.25
+			factor = 1.5
 			total_num_of_ports = 20
 			rank = 12
 		}
 		modifier = {
-			factor = 1.15
+			factor = 1.3
+
 			total_amount_of_ships = 20
 		}
 		modifier = {
-			factor = 1.15
+			factor = 1.3
+
 			total_amount_of_ships = 50
 		}
 		modifier = {
-			factor = 1.15
+			factor = 1.3
+
 			total_amount_of_ships = 100
 		}
 		modifier = {
-			factor = 1.2
+			factor = 1.4
 			total_num_of_ports = 10
 			NOT = { num_of_cities = 40 }
 		}
 		modifier = {
-			factor = 1.2
+			factor = 1.4
 			total_num_of_ports = 25
 			NOT = { num_of_cities = 100 }
 		}
 		modifier = {
-			factor = 1.1
+			factor = 1.25
 			year = 2965
 		}
 	}
@@ -655,40 +828,56 @@ heavy_ships_3 = {
 	
 	ai_chance = {
 		factor = 1
-		
+		modifier = {
+			factor = 1.4
+			OR = {
+				has_country_flag = flavor_heavy_ships_3
+				AND = {
+					year = 2965
+					has_country_flag = flavor_heavy_ships_4
+				}
+				AND = {
+					year = 2980
+					has_country_flag = flavor_heavy_ships_5
+				}
+			}
+		}
 		modifier = {
 			factor = 0
 			NOT = { total_num_of_ports = 1 }
 		}
 		modifier = {
-			factor = 1.25
+			factor = 1.5
 			total_num_of_ports = 20
 			rank = 12
 		}
 		modifier = {
-			factor = 1.15
+			factor = 1.3
+
 			total_amount_of_ships = 20
 		}
 		modifier = {
-			factor = 1.15
+			factor = 1.3
+
 			total_amount_of_ships = 50
 		}
 		modifier = {
-			factor = 1.15
+			factor = 1.3
+
 			total_amount_of_ships = 100
 		}
 		modifier = {
-			factor = 1.2
+			factor = 1.4
 			total_num_of_ports = 10
 			NOT = { num_of_cities = 40 }
 		}
 		modifier = {
-			factor = 1.2
+			factor = 1.4
 			total_num_of_ports = 25
 			NOT = { num_of_cities = 100 }
 		}
 		modifier = {
-			factor = 1.1
+			factor = 1.25
 			year = 2980
 		}
 	}
@@ -711,40 +900,52 @@ heavy_ships_4 = {
 	
 	ai_chance = {
 		factor = 1
-		
+		modifier = {
+			factor = 1.4
+			OR = {
+				has_country_flag = flavor_heavy_ships_4
+				AND = {
+					year = 2980
+					has_country_flag = flavor_heavy_ships_5
+				}
+			}
+		}
 		modifier = {
 			factor = 0
 			NOT = { total_num_of_ports = 1 }
 		}
 		modifier = {
-			factor = 1.25
+			factor = 1.5
 			total_num_of_ports = 20
 			rank = 12
 		}
 		modifier = {
-			factor = 1.15
+			factor = 1.3
+
 			total_amount_of_ships = 20
 		}
 		modifier = {
-			factor = 1.15
+			factor = 1.3
+
 			total_amount_of_ships = 50
 		}
 		modifier = {
-			factor = 1.15
+			factor = 1.3
+
 			total_amount_of_ships = 100
 		}
 		modifier = {
-			factor = 1.2
+			factor = 1.4
 			total_num_of_ports = 10
 			NOT = { num_of_cities = 40 }
 		}
 		modifier = {
-			factor = 1.2
+			factor = 1.4
 			total_num_of_ports = 25
 			NOT = { num_of_cities = 100 }
 		}
 		modifier = {
-			factor = 1.1
+			factor = 1.25
 			year = 3000
 		}
 	}
@@ -767,40 +968,46 @@ heavy_ships_5 = {
 	
 	ai_chance = {
 		factor = 1
-		
+		modifier = {
+			factor = 1.4
+			has_country_flag = flavor_heavy_ships_5
+		}
 		modifier = {
 			factor = 0
 			NOT = { total_num_of_ports = 1 }
 		}
 		modifier = {
-			factor = 1.25
+			factor = 1.5
 			total_num_of_ports = 20
 			rank = 12
 		}
 		modifier = {
-			factor = 1.15
+			factor = 1.3
+
 			total_amount_of_ships = 20
 		}
 		modifier = {
-			factor = 1.15
+			factor = 1.3
+
 			total_amount_of_ships = 50
 		}
 		modifier = {
-			factor = 1.15
+			factor = 1.3
+
 			total_amount_of_ships = 100
 		}
 		modifier = {
-			factor = 1.2
+			factor = 1.4
 			total_num_of_ports = 10
 			NOT = { num_of_cities = 40 }
 		}
 		modifier = {
-			factor = 1.2
+			factor = 1.4
 			total_num_of_ports = 25
 			NOT = { num_of_cities = 100 }
 		}
 		modifier = {
-			factor = 1.1
+			factor = 1.25
 			year = 3010
 		}
 	}
@@ -821,40 +1028,58 @@ naval_construction_1 = {
 	
 	ai_chance = {
 		factor = 1
-		
+		modifier = {
+			factor = 1.4
+			OR = {
+				has_country_flag = flavor_naval_construction_1
+				has_country_flag = flavor_naval_construction_2
+				has_country_flag = flavor_naval_construction_3
+				AND = {
+					year = 2965
+					has_country_flag = flavor_naval_construction_4
+				}
+				AND = {
+					year = 2980
+					has_country_flag = flavor_naval_construction_5
+				}
+			}
+		}
 		modifier = {
 			factor = 0
 			NOT = { total_num_of_ports = 1 }
 		}
 		modifier = {
-			factor = 1.25
+			factor = 1.5
 			total_num_of_ports = 20
 			rank = 12
 		}
 		modifier = {
-			factor = 1.15
+			factor = 1.3
+
 			total_amount_of_ships = 20
 		}
 		modifier = {
-			factor = 1.15
+			factor = 1.3
+
 			total_amount_of_ships = 50
 		}
 		modifier = {
-			factor = 1.15
+			factor = 1.3
+
 			total_amount_of_ships = 100
 		}
 		modifier = {
-			factor = 1.2
+			factor = 1.4
 			total_num_of_ports = 10
 			NOT = { num_of_cities = 40 }
 		}
 		modifier = {
-			factor = 1.2
+			factor = 1.4
 			total_num_of_ports = 25
 			NOT = { num_of_cities = 100 }
 		}
 		modifier = {
-			factor = 1.1
+			factor = 1.25
 			year = 2960
 		}
 	}
@@ -874,40 +1099,57 @@ naval_construction_2 = {
 	
 	ai_chance = {
 		factor = 1
-		
+		modifier = {
+			factor = 1.4
+			OR = {
+				has_country_flag = flavor_naval_construction_2
+				has_country_flag = flavor_naval_construction_3
+				AND = {
+					year = 2965
+					has_country_flag = flavor_naval_construction_4
+				}
+				AND = {
+					year = 2980
+					has_country_flag = flavor_naval_construction_5
+				}
+			}
+		}
 		modifier = {
 			factor = 0
 			NOT = { total_num_of_ports = 1 }
 		}
 		modifier = {
-			factor = 1.25
+			factor = 1.5
 			total_num_of_ports = 20
 			rank = 12
 		}
 		modifier = {
-			factor = 1.15
+			factor = 1.3
+
 			total_amount_of_ships = 20
 		}
 		modifier = {
-			factor = 1.15
+			factor = 1.3
+
 			total_amount_of_ships = 50
 		}
 		modifier = {
-			factor = 1.15
+			factor = 1.3
+
 			total_amount_of_ships = 100
 		}
 		modifier = {
-			factor = 1.2
+			factor = 1.4
 			total_num_of_ports = 10
 			NOT = { num_of_cities = 40 }
 		}
 		modifier = {
-			factor = 1.2
+			factor = 1.4
 			total_num_of_ports = 25
 			NOT = { num_of_cities = 100 }
 		}
 		modifier = {
-			factor = 1.1
+			factor = 1.25
 			year = 2965
 		}
 	}
@@ -927,6 +1169,58 @@ naval_construction_3 = {
 	
 	ai_chance = {
 		factor = 1
+		modifier = {
+			factor = 1.4
+			OR = {
+				has_country_flag = flavor_naval_construction_3
+				AND = {
+					year = 2965
+					has_country_flag = flavor_naval_construction_4
+				}
+				AND = {
+					year = 2980
+					has_country_flag = flavor_naval_construction_5
+				}
+			}
+		}
+		modifier = {
+			factor = 0
+			NOT = { total_num_of_ports = 1 }
+		}
+		modifier = {
+			factor = 1.5
+			total_num_of_ports = 20
+			rank = 12
+		}
+		modifier = {
+			factor = 1.3
+
+			total_amount_of_ships = 20
+		}
+		modifier = {
+			factor = 1.3
+
+			total_amount_of_ships = 50
+		}
+		modifier = {
+			factor = 1.3
+
+			total_amount_of_ships = 100
+		}
+		modifier = {
+			factor = 1.4
+			total_num_of_ports = 10
+			NOT = { num_of_cities = 40 }
+		}
+		modifier = {
+			factor = 1.4
+			total_num_of_ports = 25
+			NOT = { num_of_cities = 100 }
+		}
+		modifier = {
+			factor = 1.25
+			year = 2980
+		}
 	}
 }
 
@@ -944,41 +1238,53 @@ naval_construction_4 = {
 	
 	ai_chance = {
 		factor = 1
-		
+		modifier = {
+			factor = 1.4
+			OR = {
+				has_country_flag = flavor_naval_construction_4
+				AND = {
+					year = 2980
+					has_country_flag = flavor_naval_construction_5
+				}
+			}
+		}
 		modifier = {
 			factor = 0
 			NOT = { total_num_of_ports = 1 }
 		}
 		modifier = {
-			factor = 1.25
+			factor = 1.5
 			total_num_of_ports = 20
 			rank = 12
 		}
 		modifier = {
-			factor = 1.15
+			factor = 1.3
+
 			total_amount_of_ships = 20
 		}
 		modifier = {
-			factor = 1.15
+			factor = 1.3
+
 			total_amount_of_ships = 50
 		}
 		modifier = {
-			factor = 1.15
+			factor = 1.3
+
 			total_amount_of_ships = 100
 		}
 		modifier = {
-			factor = 1.2
+			factor = 1.4
 			total_num_of_ports = 10
 			NOT = { num_of_cities = 40 }
 		}
 		modifier = {
-			factor = 1.2
+			factor = 1.4
 			total_num_of_ports = 25
 			NOT = { num_of_cities = 100 }
 		}
 		modifier = {
-			factor = 1.1
-			year = 2980
+			factor = 1.25
+			year = 3000
 		}
 	}
 }
@@ -997,41 +1303,47 @@ naval_construction_5 = {
 	
 	ai_chance = {
 		factor = 1
-		
+		modifier = {
+			factor = 1.4
+			has_country_flag = flavor_naval_construction_5
+		}
 		modifier = {
 			factor = 0
 			NOT = { total_num_of_ports = 1 }
 		}
 		modifier = {
-			factor = 1.25
+			factor = 1.5
 			total_num_of_ports = 20
 			rank = 12
 		}
 		modifier = {
-			factor = 1.15
+			factor = 1.3
+
 			total_amount_of_ships = 20
 		}
 		modifier = {
-			factor = 1.15
+			factor = 1.3
+
 			total_amount_of_ships = 50
 		}
 		modifier = {
-			factor = 1.15
+			factor = 1.3
+
 			total_amount_of_ships = 100
 		}
 		modifier = {
-			factor = 1.2
+			factor = 1.4
 			total_num_of_ports = 10
 			NOT = { num_of_cities = 40 }
 		}
 		modifier = {
-			factor = 1.2
+			factor = 1.4
 			total_num_of_ports = 25
 			NOT = { num_of_cities = 100 }
 		}
 		modifier = {
-			factor = 1.1
-			year = 3000
+			factor = 1.25
+			year = 3010
 		}
 	}
 }

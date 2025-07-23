@@ -7,25 +7,41 @@ taxes_1 = {
 	tax_eff = 5
 	
 	ai_chance = {
-		factor = 1
-		
+		factor = 5
 		modifier = {
-			factor = 1.5
+			factor = 1.4
 			OR = {
-				is_greater_power = yes
-				is_secondary_power = yes
+				has_country_flag = flavor_taxes_1
+				has_country_flag = flavor_taxes_2
+				has_country_flag = flavor_taxes_3
+				AND = {
+					year = 2965
+					has_country_flag = flavor_taxes_4
+				}
+				AND = {
+					year = 2980
+					has_country_flag = flavor_taxes_5
+				}
 			}
 		}
 		modifier = {
-			factor = 1.1
+			factor = 2
+			NOT = { money = 10000 }
+		}
+		modifier = {
+			factor = 0.01
+			money = 100000
+		}
+		modifier = {
+			factor = 1.25
 			literacy = 0.3
 		}
 		modifier = {
-			factor = 1.1
+			factor = 1.25
 			literacy = 0.6
 		}
 		modifier = {
-			factor = 1.1
+			factor = 1.25
 			year = 2960
 		}
 	}
@@ -39,25 +55,40 @@ taxes_2 = {
 	tax_eff = 5
 	
 	ai_chance = {
-		factor = 1
-		
+		factor = 5
 		modifier = {
-			factor = 1.5
+			factor = 1.4
 			OR = {
-				is_greater_power = yes
-				is_secondary_power = yes
+				has_country_flag = flavor_taxes_2
+				has_country_flag = flavor_taxes_3
+				AND = {
+					year = 2965
+					has_country_flag = flavor_taxes_4
+				}
+				AND = {
+					year = 2980
+					has_country_flag = flavor_taxes_5
+				}
 			}
 		}
 		modifier = {
-			factor = 1.1
+			factor = 2
+			NOT = { money = 25000 }
+		}
+		modifier = {
+			factor = 0.01
+			money = 250000
+		}
+		modifier = {
+			factor = 1.25
 			literacy = 0.3
 		}
 		modifier = {
-			factor = 1.1
+			factor = 1.25
 			literacy = 0.6
 		}
 		modifier = {
-			factor = 1.1
+			factor = 1.25
 			year = 2965
 		}
 	}
@@ -71,25 +102,39 @@ taxes_3 = {
 	tax_eff = 5
 	
 	ai_chance = {
-		factor = 1
-		
+		factor = 5
 		modifier = {
-			factor = 1.5
+			factor = 1.4
 			OR = {
-				is_greater_power = yes
-				is_secondary_power = yes
+				has_country_flag = flavor_taxes_3
+				AND = {
+					year = 2965
+					has_country_flag = flavor_taxes_4
+				}
+				AND = {
+					year = 2980
+					has_country_flag = flavor_taxes_5
+				}
 			}
 		}
 		modifier = {
-			factor = 1.1
+			factor = 2
+			NOT = { money = 50000 }
+		}
+		modifier = {
+			factor = 0.01
+			money = 500000
+		}
+		modifier = {
+			factor = 1.25
 			literacy = 0.3
 		}
 		modifier = {
-			factor = 1.1
+			factor = 1.25
 			literacy = 0.6
 		}
 		modifier = {
-			factor = 1.1
+			factor = 1.25
 			year = 2980
 		}
 	}
@@ -103,25 +148,35 @@ taxes_4 = {
 	tax_eff = 5
 	
 	ai_chance = {
-		factor = 1
-		
+		factor = 5
 		modifier = {
-			factor = 1.5
+			factor = 1.4
 			OR = {
-				is_greater_power = yes
-				is_secondary_power = yes
+				has_country_flag = flavor_taxes_4
+				AND = {
+					year = 2980
+					has_country_flag = flavor_taxes_5
+				}
 			}
 		}
 		modifier = {
-			factor = 1.1
+			factor = 2
+			NOT = { money = 100000 }
+		}
+		modifier = {
+			factor = 0.01
+			money = 1000000
+		}
+		modifier = {
+			factor = 1.25
 			literacy = 0.3
 		}
 		modifier = {
-			factor = 1.1
+			factor = 1.25
 			literacy = 0.6
 		}
 		modifier = {
-			factor = 1.1
+			factor = 1.25
 			year = 3000
 		}
 	}
@@ -135,25 +190,29 @@ taxes_5 = {
 	tax_eff = 5
 	
 	ai_chance = {
-		factor = 1
-		
+		factor = 5
 		modifier = {
-			factor = 1.5
-			OR = {
-				is_greater_power = yes
-				is_secondary_power = yes
-			}
+			factor = 1.4
+			has_country_flag = flavor_taxes_5
 		}
 		modifier = {
-			factor = 1.1
+			factor = 2
+			NOT = { money = 250000 }
+		}
+		modifier = {
+			factor = 0.01
+			money = 2500000
+		}
+		modifier = {
+			factor = 1.25
 			literacy = 0.3
 		}
 		modifier = {
-			factor = 1.1
+			factor = 1.25
 			literacy = 0.6
 		}
 		modifier = {
-			factor = 1.1
+			factor = 1.25
 			year = 3010
 		}
 	}
@@ -168,25 +227,41 @@ administration_tech_1 = {
 	administrative_efficiency = 0.05
 	
 	ai_chance = {
-		factor = 1
-		
+		factor = 5
 		modifier = {
-			factor = 1.5
+			factor = 1.4
 			OR = {
-				is_greater_power = yes
-				is_secondary_power = yes
+				has_country_flag = flavor_administration_tech_1
+				has_country_flag = flavor_administration_tech_2
+				has_country_flag = flavor_administration_tech_3
+				AND = {
+					year = 2965
+					has_country_flag = flavor_administration_tech_4
+				}
+				AND = {
+					year = 2980
+					has_country_flag = flavor_administration_tech_5
+				}
 			}
 		}
 		modifier = {
-			factor = 1.1
+			factor = 2
+			NOT = { money = 10000 }
+		}
+		modifier = {
+			factor = 0.01
+			money = 100000
+		}
+		modifier = {
+			factor = 1.25
 			literacy = 0.3
 		}
 		modifier = {
-			factor = 1.1
+			factor = 1.25
 			literacy = 0.6
 		}
 		modifier = {
-			factor = 1.1
+			factor = 1.25
 			year = 2960
 		}
 	}
@@ -200,25 +275,40 @@ administration_tech_2 = {
 	administrative_efficiency = 0.05
 	
 	ai_chance = {
-		factor = 1
-		
+		factor = 5
 		modifier = {
-			factor = 1.5
+			factor = 1.4
 			OR = {
-				is_greater_power = yes
-				is_secondary_power = yes
+				has_country_flag = flavor_administration_tech_2
+				has_country_flag = flavor_administration_tech_3
+				AND = {
+					year = 2965
+					has_country_flag = flavor_administration_tech_4
+				}
+				AND = {
+					year = 2980
+					has_country_flag = flavor_administration_tech_5
+				}
 			}
 		}
 		modifier = {
-			factor = 1.1
+			factor = 2
+			NOT = { money = 25000 }
+		}
+		modifier = {
+			factor = 0.01
+			money = 250000
+		}
+		modifier = {
+			factor = 1.25
 			literacy = 0.3
 		}
 		modifier = {
-			factor = 1.1
+			factor = 1.25
 			literacy = 0.6
 		}
 		modifier = {
-			factor = 1.1
+			factor = 1.25
 			year = 2965
 		}
 	}
@@ -232,25 +322,39 @@ administration_tech_3 = {
 	administrative_efficiency = 0.05
 	
 	ai_chance = {
-		factor = 1
-		
+		factor = 5
 		modifier = {
-			factor = 1.5
+			factor = 1.4
 			OR = {
-				is_greater_power = yes
-				is_secondary_power = yes
+				has_country_flag = flavor_administration_tech_3
+				AND = {
+					year = 2965
+					has_country_flag = flavor_administration_tech_4
+				}
+				AND = {
+					year = 2980
+					has_country_flag = flavor_administration_tech_5
+				}
 			}
 		}
 		modifier = {
-			factor = 1.1
+			factor = 2
+			NOT = { money = 50000 }
+		}
+		modifier = {
+			factor = 0.01
+			money = 500000
+		}
+		modifier = {
+			factor = 1.25
 			literacy = 0.3
 		}
 		modifier = {
-			factor = 1.1
+			factor = 1.25
 			literacy = 0.6
 		}
 		modifier = {
-			factor = 1.1
+			factor = 1.25
 			year = 2980
 		}
 	}
@@ -264,25 +368,35 @@ administration_tech_4 = {
 	administrative_efficiency = 0.05
 	
 	ai_chance = {
-		factor = 1
-		
+		factor = 5
 		modifier = {
-			factor = 1.5
+			factor = 1.4
 			OR = {
-				is_greater_power = yes
-				is_secondary_power = yes
+				has_country_flag = flavor_administration_tech_4
+				AND = {
+					year = 2980
+					has_country_flag = flavor_administration_tech_5
+				}
 			}
 		}
 		modifier = {
-			factor = 1.1
+			factor = 2
+			NOT = { money = 100000 }
+		}
+		modifier = {
+			factor = 0.01
+			money = 1000000
+		}
+		modifier = {
+			factor = 1.25
 			literacy = 0.3
 		}
 		modifier = {
-			factor = 1.1
+			factor = 1.25
 			literacy = 0.6
 		}
 		modifier = {
-			factor = 1.1
+			factor = 1.25
 			year = 3000
 		}
 	}
@@ -296,25 +410,29 @@ administration_tech_5 = {
 	administrative_efficiency = 0.05
 	
 	ai_chance = {
-		factor = 1
-		
+		factor = 5
 		modifier = {
-			factor = 1.5
-			OR = {
-				is_greater_power = yes
-				is_secondary_power = yes
-			}
+			factor = 1.4
+			has_country_flag = flavor_administration_tech_5
 		}
 		modifier = {
-			factor = 1.1
+			factor = 2
+			NOT = { money = 250000 }
+		}
+		modifier = {
+			factor = 0.01
+			money = 2500000
+		}
+		modifier = {
+			factor = 1.25
 			literacy = 0.3
 		}
 		modifier = {
-			factor = 1.1
+			factor = 1.25
 			literacy = 0.6
 		}
 		modifier = {
-			factor = 1.1
+			factor = 1.25
 			year = 3010
 		}
 	}
@@ -331,22 +449,29 @@ population_1 = {
 	plurality = -0.01
 	
 	ai_chance = {
-		factor = 1
-		
+		factor = 25
 		modifier = {
-			factor = 0
+			factor = 1.4
+			OR = {
+				has_country_flag = flavor_population_1
+				has_country_flag = flavor_population_2
+				has_country_flag = flavor_population_3
+				AND = {
+					year = 2965
+					has_country_flag = flavor_population_4
+				}
+				AND = {
+					year = 2980
+					has_country_flag = flavor_population_5
+				}
+			}
+		}
+		modifier = {
+			factor = 0.5
 			NOT = { total_pops = 800000 }
 		}
 		modifier = {
-			factor = 3
-			is_greater_power = yes
-		}
-		modifier = {
-			factor = 2
-			is_secondary_power = yes
-		}
-		modifier = {
-			factor = 1.1
+			factor = 1.25
 			year = 2960
 		}
 	}
@@ -362,22 +487,28 @@ population_2 = {
 	plurality = -0.02
 	
 	ai_chance = {
-		factor = 1
-		
+		factor = 25
 		modifier = {
-			factor = 0
+			factor = 1.4
+			OR = {
+				has_country_flag = flavor_population_2
+				has_country_flag = flavor_population_3
+				AND = {
+					year = 2965
+					has_country_flag = flavor_population_4
+				}
+				AND = {
+					year = 2980
+					has_country_flag = flavor_population_5
+				}
+			}
+		}
+		modifier = {
+			factor = 0.5
 			NOT = { total_pops = 1200000 }
 		}
 		modifier = {
-			factor = 3
-			is_greater_power = yes
-		}
-		modifier = {
-			factor = 2
-			is_secondary_power = yes
-		}
-		modifier = {
-			factor = 1.1
+			factor = 1.25
 			year = 2965
 		}
 	}
@@ -393,22 +524,27 @@ population_3 = {
 	plurality = -0.03
 	
 	ai_chance = {
-		factor = 1
-		
+		factor = 25
 		modifier = {
-			factor = 0
+			factor = 1.4
+			OR = {
+				has_country_flag = flavor_population_3
+				AND = {
+					year = 2965
+					has_country_flag = flavor_population_4
+				}
+				AND = {
+					year = 2980
+					has_country_flag = flavor_population_5
+				}
+			}
+		}
+		modifier = {
+			factor = 0.5
 			NOT = { total_pops = 1600000 }
 		}
 		modifier = {
-			factor = 3
-			is_greater_power = yes
-		}
-		modifier = {
-			factor = 2
-			is_secondary_power = yes
-		}
-		modifier = {
-			factor = 1.1
+			factor = 1.25
 			year = 2980
 		}
 	}
@@ -424,22 +560,23 @@ population_4 = {
 	plurality = -0.04
 	
 	ai_chance = {
-		factor = 1
-		
+		factor = 25
 		modifier = {
-			factor = 0
+			factor = 1.4
+			OR = {
+				has_country_flag = flavor_population_4
+				AND = {
+					year = 2980
+					has_country_flag = flavor_population_5
+				}
+			}
+		}
+		modifier = {
+			factor = 0.5
 			NOT = { total_pops = 2000000 }
 		}
 		modifier = {
-			factor = 3
-			is_greater_power = yes
-		}
-		modifier = {
-			factor = 2
-			is_secondary_power = yes
-		}
-		modifier = {
-			factor = 1.1
+			factor = 1.25
 			year = 3000
 		}
 	}
@@ -455,22 +592,17 @@ population_5 = {
 	plurality = -0.05
 	
 	ai_chance = {
-		factor = 1
-		
+		factor = 25
 		modifier = {
-			factor = 0
+			factor = 1.4
+			has_country_flag = flavor_population_5
+		}
+		modifier = {
+			factor = 0.5
 			NOT = { total_pops = 2800000 }
 		}
 		modifier = {
-			factor = 3
-			is_greater_power = yes
-		}
-		modifier = {
-			factor = 2
-			is_secondary_power = yes
-		}
-		modifier = {
-			factor = 1.1
+			factor = 1.25
 			year = 3010
 		}
 	}
@@ -486,21 +618,29 @@ entertainment_tech_1 = {
 	
 	ai_chance = {
 		factor = 1
-		
 		modifier = {
-			factor = 0
-			NOT = { total_pops = 800000 }
+			factor = 1.4
+			OR = {
+				has_country_flag = flavor_entertainment_tech_1
+				has_country_flag = flavor_entertainment_tech_2
+				has_country_flag = flavor_entertainment_tech_3
+				AND = {
+					year = 2965
+					has_country_flag = flavor_entertainment_tech_4
+				}
+				AND = {
+					year = 2980
+					has_country_flag = flavor_entertainment_tech_5
+				}
+			}
 		}
 		modifier = {
-			factor = 3
-			is_greater_power = yes
+			factor = 2.5
+
+			average_militancy = 4
 		}
 		modifier = {
-			factor = 2
-			is_secondary_power = yes
-		}
-		modifier = {
-			factor = 1.1
+			factor = 1.25
 			year = 2960
 		}
 	}
@@ -515,21 +655,28 @@ entertainment_tech_2 = {
 	
 	ai_chance = {
 		factor = 1
-		
 		modifier = {
-			factor = 0
-			NOT = { total_pops = 1200000 }
+			factor = 1.4
+			OR = {
+				has_country_flag = flavor_entertainment_tech_2
+				has_country_flag = flavor_entertainment_tech_3
+				AND = {
+					year = 2965
+					has_country_flag = flavor_entertainment_tech_4
+				}
+				AND = {
+					year = 2980
+					has_country_flag = flavor_entertainment_tech_5
+				}
+			}
 		}
 		modifier = {
-			factor = 3
-			is_greater_power = yes
+			factor = 2.5
+
+			average_militancy = 4
 		}
 		modifier = {
-			factor = 2
-			is_secondary_power = yes
-		}
-		modifier = {
-			factor = 1.1
+			factor = 1.25
 			year = 2965
 		}
 	}
@@ -544,21 +691,27 @@ entertainment_tech_3 = {
 	
 	ai_chance = {
 		factor = 1
-		
 		modifier = {
-			factor = 0
-			NOT = { total_pops = 1600000 }
+			factor = 1.4
+			OR = {
+				has_country_flag = flavor_entertainment_tech_3
+				AND = {
+					year = 2965
+					has_country_flag = flavor_entertainment_tech_4
+				}
+				AND = {
+					year = 2980
+					has_country_flag = flavor_entertainment_tech_5
+				}
+			}
 		}
 		modifier = {
-			factor = 3
-			is_greater_power = yes
+			factor = 2.5
+
+			average_militancy = 4
 		}
 		modifier = {
-			factor = 2
-			is_secondary_power = yes
-		}
-		modifier = {
-			factor = 1.1
+			factor = 1.25
 			year = 2980
 		}
 	}
@@ -573,21 +726,23 @@ entertainment_tech_4 = {
 	
 	ai_chance = {
 		factor = 1
-		
 		modifier = {
-			factor = 0
-			NOT = { total_pops = 2000000 }
+			factor = 1.4
+			OR = {
+				has_country_flag = flavor_entertainment_tech_4
+				AND = {
+					year = 2980
+					has_country_flag = flavor_entertainment_tech_5
+				}
+			}
 		}
 		modifier = {
-			factor = 3
-			is_greater_power = yes
+			factor = 2.5
+
+			average_militancy = 4
 		}
 		modifier = {
-			factor = 2
-			is_secondary_power = yes
-		}
-		modifier = {
-			factor = 1.1
+			factor = 1.25
 			year = 3000
 		}
 	}
@@ -602,21 +757,17 @@ entertainment_tech_5 = {
 	
 	ai_chance = {
 		factor = 1
-		
 		modifier = {
-			factor = 0
-			NOT = { total_pops = 2800000 }
+			factor = 1.4
+			has_country_flag = flavor_entertainment_tech_5
 		}
 		modifier = {
-			factor = 3
-			is_greater_power = yes
+			factor = 2.5
+
+			average_militancy = 4
 		}
 		modifier = {
-			factor = 2
-			is_secondary_power = yes
-		}
-		modifier = {
-			factor = 1.1
+			factor = 1.25
 			year = 3010
 		}
 	}

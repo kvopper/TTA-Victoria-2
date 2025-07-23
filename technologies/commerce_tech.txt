@@ -10,14 +10,34 @@ rgo_tech_1 = {
 	mine_rgo_eff = 0.05
 	
 	ai_chance = {
-		factor = 1
+		factor = 5
 		modifier = {
-			factor = 1.25
-			NOT = { industrial_score = 25 }
+			factor = 1.4
+			OR = {
+				has_country_flag = flavor_rgo_tech_1
+				has_country_flag = flavor_rgo_tech_2
+				has_country_flag = flavor_rgo_tech_3
+				AND = {
+					year = 2965
+					has_country_flag = flavor_rgo_tech_4
+				}
+				AND = {
+					year = 2980
+					has_country_flag = flavor_rgo_tech_5
+				}
+			}
 		}
 		modifier = {
-			factor = 1.1
+			factor = 1.25
 			year = 2960
+		}
+		modifier = {
+			factor = 1.75
+			NOT = { poor_strata_life_needs = 0.99 }
+		}
+		modifier = {
+			factor = 1.5
+			NOT = { poor_strata_life_needs = 0.50 }
 		}
 	}
 }
@@ -33,14 +53,33 @@ rgo_tech_2 = {
 	mine_rgo_eff = 0.1
 	
 	ai_chance = {
-		factor = 1
+		factor = 5
 		modifier = {
-			factor = 1.25
-			NOT = { industrial_score = 25 }
+			factor = 1.4
+			OR = {
+				has_country_flag = flavor_rgo_tech_2
+				has_country_flag = flavor_rgo_tech_3
+				AND = {
+					year = 2965
+					has_country_flag = flavor_rgo_tech_4
+				}
+				AND = {
+					year = 2980
+					has_country_flag = flavor_rgo_tech_5
+				}
+			}
 		}
 		modifier = {
-			factor = 1.1
+			factor = 1.25
 			year = 2965
+		}
+		modifier = {
+			factor = 1.75
+			NOT = { poor_strata_life_needs = 0.99 }
+		}
+		modifier = {
+			factor = 1.5
+			NOT = { poor_strata_life_needs = 0.50 }
 		}
 	}
 }
@@ -56,14 +95,32 @@ rgo_tech_3 = {
 	mine_rgo_eff = 0.15
 	
 	ai_chance = {
-		factor = 1
+		factor = 5
 		modifier = {
-			factor = 1.25
-			NOT = { industrial_score = 25 }
+			factor = 1.4
+			OR = {
+				has_country_flag = flavor_rgo_tech_3
+				AND = {
+					year = 2965
+					has_country_flag = flavor_rgo_tech_4
+				}
+				AND = {
+					year = 2980
+					has_country_flag = flavor_rgo_tech_5
+				}
+			}
 		}
 		modifier = {
-			factor = 1.1
+			factor = 1.25
 			year = 2980
+		}
+		modifier = {
+			factor = 1.75
+			NOT = { poor_strata_life_needs = 0.99 }
+		}
+		modifier = {
+			factor = 1.5
+			NOT = { poor_strata_life_needs = 0.50 }
 		}
 	}
 }
@@ -79,14 +136,28 @@ rgo_tech_4 = {
 	mine_rgo_eff = 0.2
 	
 	ai_chance = {
-		factor = 1
+		factor = 5
 		modifier = {
-			factor = 1.25
-			NOT = { industrial_score = 25 }
+			factor = 1.4
+			OR = {
+				has_country_flag = flavor_rgo_tech_4
+				AND = {
+					year = 2980
+					has_country_flag = flavor_rgo_tech_5
+				}
+			}
 		}
 		modifier = {
-			factor = 1.1
+			factor = 1.25
 			year = 3000
+		}
+		modifier = {
+			factor = 1.75
+			NOT = { poor_strata_life_needs = 0.99 }
+		}
+		modifier = {
+			factor = 1.5
+			NOT = { poor_strata_life_needs = 0.50 }
 		}
 	}
 }
@@ -102,14 +173,22 @@ rgo_tech_5 = {
 	mine_rgo_eff = 0.25
 	
 	ai_chance = {
-		factor = 1
+		factor = 5
 		modifier = {
-			factor = 1.25
-			NOT = { industrial_score = 25 }
+			factor = 1.4
+			has_country_flag = flavor_rgo_tech_5
 		}
 		modifier = {
-			factor = 1.1
+			factor = 1.25
 			year = 3010
+		}
+		modifier = {
+			factor = 1.75
+			NOT = { poor_strata_life_needs = 0.99 }
+		}
+		modifier = {
+			factor = 1.5
+			NOT = { poor_strata_life_needs = 0.50 }
 		}
 	}
 }
@@ -125,8 +204,23 @@ guilds_1 = {
 	factory_throughput = 0.03
 	
 	ai_chance = {
-		factor = 1
-		
+		factor = 5
+		modifier = {
+			factor = 1.4
+			OR = {
+				has_country_flag = flavor_guilds_1
+				has_country_flag = flavor_guilds_2
+				has_country_flag = flavor_guilds_3
+				AND = {
+					year = 2965
+					has_country_flag = flavor_guilds_4
+				}
+				AND = {
+					year = 2980
+					has_country_flag = flavor_guilds_5
+				}
+			}
+		}
 		modifier = {
 			factor = 0
 			OR = {
@@ -135,20 +229,28 @@ guilds_1 = {
 			}
 		}
 		modifier = {
-			factor = 1.05
+			factor = 1.1
 			literacy = 0.3
 		}
 		modifier = {
-			factor = 1.05
+			factor = 1.1
 			literacy = 0.6
 		}
 		modifier = {
-			factor = 1.25
+			factor = 1.5
 			industrial_score = 25
 		}
 		modifier = {
-			factor = 1.1
+			factor = 1.25
 			year = 2960
+		}
+		modifier = {
+			factor = 1.75
+			NOT = { poor_strata_life_needs = 0.99 }
+		}
+		modifier = {
+			factor = 1.5
+			NOT = { poor_strata_life_needs = 0.50 }
 		}
 	}
 }
@@ -163,8 +265,22 @@ guilds_2 = {
 	factory_throughput = 0.03
 	
 	ai_chance = {
-		factor = 1
-		
+		factor = 5
+		modifier = {
+			factor = 1.4
+			OR = {
+				has_country_flag = flavor_guilds_2
+				has_country_flag = flavor_guilds_3
+				AND = {
+					year = 2965
+					has_country_flag = flavor_guilds_4
+				}
+				AND = {
+					year = 2980
+					has_country_flag = flavor_guilds_5
+				}
+			}
+		}
 		modifier = {
 			factor = 0
 			OR = {
@@ -173,20 +289,28 @@ guilds_2 = {
 			}
 		}
 		modifier = {
-			factor = 1.05
+			factor = 1.1
 			literacy = 0.3
 		}
 		modifier = {
-			factor = 1.05
+			factor = 1.1
 			literacy = 0.6
 		}
 		modifier = {
-			factor = 1.25
+			factor = 1.5
 			industrial_score = 25
 		}
 		modifier = {
-			factor = 1.1
+			factor = 1.25
 			year = 2965
+		}
+		modifier = {
+			factor = 1.75
+			NOT = { poor_strata_life_needs = 0.99 }
+		}
+		modifier = {
+			factor = 1.5
+			NOT = { poor_strata_life_needs = 0.50 }
 		}
 	}
 }
@@ -201,8 +325,21 @@ guilds_3 = {
 	factory_throughput = 0.03
 	
 	ai_chance = {
-		factor = 1
-		
+		factor = 5
+		modifier = {
+			factor = 1.4
+			OR = {
+				has_country_flag = flavor_guilds_3
+				AND = {
+					year = 2965
+					has_country_flag = flavor_guilds_4
+				}
+				AND = {
+					year = 2980
+					has_country_flag = flavor_guilds_5
+				}
+			}
+		}
 		modifier = {
 			factor = 0
 			OR = {
@@ -211,20 +348,28 @@ guilds_3 = {
 			}
 		}
 		modifier = {
-			factor = 1.05
+			factor = 1.1
 			literacy = 0.3
 		}
 		modifier = {
-			factor = 1.05
+			factor = 1.1
 			literacy = 0.6
 		}
 		modifier = {
-			factor = 1.25
+			factor = 1.5
 			industrial_score = 25
 		}
 		modifier = {
-			factor = 1.1
+			factor = 1.25
 			year = 2980
+		}
+		modifier = {
+			factor = 1.75
+			NOT = { poor_strata_life_needs = 0.99 }
+		}
+		modifier = {
+			factor = 1.5
+			NOT = { poor_strata_life_needs = 0.50 }
 		}
 	}
 }
@@ -239,8 +384,17 @@ guilds_4 = {
 	factory_throughput = 0.03
 	
 	ai_chance = {
-		factor = 1
-		
+		factor = 5
+		modifier = {
+			factor = 1.4
+			OR = {
+				has_country_flag = flavor_guilds_4
+				AND = {
+					year = 2980
+					has_country_flag = flavor_guilds_5
+				}
+			}
+		}
 		modifier = {
 			factor = 0
 			OR = {
@@ -249,20 +403,28 @@ guilds_4 = {
 			}
 		}
 		modifier = {
-			factor = 1.05
+			factor = 1.1
 			literacy = 0.3
 		}
 		modifier = {
-			factor = 1.05
+			factor = 1.1
 			literacy = 0.6
 		}
 		modifier = {
-			factor = 1.25
+			factor = 1.5
 			industrial_score = 25
 		}
 		modifier = {
-			factor = 1.1
+			factor = 1.25
 			year = 3000
+		}
+		modifier = {
+			factor = 1.75
+			NOT = { poor_strata_life_needs = 0.99 }
+		}
+		modifier = {
+			factor = 1.5
+			NOT = { poor_strata_life_needs = 0.50 }
 		}
 	}
 }
@@ -277,8 +439,11 @@ guilds_5 = {
 	factory_throughput = 0.03
 	
 	ai_chance = {
-		factor = 1
-		
+		factor = 5
+		modifier = {
+			factor = 1.4
+			has_country_flag = flavor_guilds_5
+		}
 		modifier = {
 			factor = 0
 			OR = {
@@ -287,20 +452,28 @@ guilds_5 = {
 			}
 		}
 		modifier = {
-			factor = 1.05
+			factor = 1.1
 			literacy = 0.3
 		}
 		modifier = {
-			factor = 1.05
+			factor = 1.1
 			literacy = 0.6
 		}
 		modifier = {
-			factor = 1.25
+			factor = 1.5
 			industrial_score = 25
 		}
 		modifier = {
-			factor = 1.1
+			factor = 1.25
 			year = 3010
+		}
+		modifier = {
+			factor = 1.75
+			NOT = { poor_strata_life_needs = 0.99 }
+		}
+		modifier = {
+			factor = 1.5
+			NOT = { poor_strata_life_needs = 0.50 }
 		}
 	}
 }
@@ -315,14 +488,34 @@ trade_tech_1 = {
 	activate_building = market_square
 	
 	ai_chance = {
-		factor = 1
+		factor = 10
 		modifier = {
-			factor = 1.25
-			NOT = { industrial_score = 25 }
+			factor = 1.4
+			OR = {
+				has_country_flag = flavor_trade_tech_1
+				has_country_flag = flavor_trade_tech_2
+				has_country_flag = flavor_trade_tech_3
+				AND = {
+					year = 2965
+					has_country_flag = flavor_trade_tech_4
+				}
+				AND = {
+					year = 2980
+					has_country_flag = flavor_trade_tech_5
+				}
+			}
 		}
 		modifier = {
-			factor = 1.1
+			factor = 1.25
 			year = 2960
+		}
+		modifier = {
+			factor = 1.75
+			NOT = { poor_strata_life_needs = 0.99 }
+		}
+		modifier = {
+			factor = 1.5
+			NOT = { poor_strata_life_needs = 0.50 }
 		}
 	}
 }
@@ -336,14 +529,33 @@ trade_tech_2 = {
 	max_market_square = 1
 	
 	ai_chance = {
-		factor = 1
+		factor = 10
 		modifier = {
-			factor = 1.25
-			NOT = { industrial_score = 25 }
+			factor = 1.4
+			OR = {
+				has_country_flag = flavor_trade_tech_2
+				has_country_flag = flavor_trade_tech_3
+				AND = {
+					year = 2965
+					has_country_flag = flavor_trade_tech_4
+				}
+				AND = {
+					year = 2980
+					has_country_flag = flavor_trade_tech_5
+				}
+			}
 		}
 		modifier = {
-			factor = 1.1
+			factor = 1.25
 			year = 2965
+		}
+		modifier = {
+			factor = 1.75
+			NOT = { poor_strata_life_needs = 0.99 }
+		}
+		modifier = {
+			factor = 1.5
+			NOT = { poor_strata_life_needs = 0.50 }
 		}
 	}
 }
@@ -357,14 +569,32 @@ trade_tech_3 = {
 	max_market_square = 1
 	
 	ai_chance = {
-		factor = 1
+		factor = 5
 		modifier = {
-			factor = 1.25
-			NOT = { industrial_score = 25 }
+			factor = 1.4
+			OR = {
+				has_country_flag = flavor_trade_tech_3
+				AND = {
+					year = 2965
+					has_country_flag = flavor_trade_tech_4
+				}
+				AND = {
+					year = 2980
+					has_country_flag = flavor_trade_tech_5
+				}
+			}
 		}
 		modifier = {
-			factor = 1.1
+			factor = 1.25
 			year = 2980
+		}
+		modifier = {
+			factor = 1.75
+			NOT = { poor_strata_life_needs = 0.99 }
+		}
+		modifier = {
+			factor = 1.5
+			NOT = { poor_strata_life_needs = 0.50 }
 		}
 	}
 }
@@ -378,14 +608,28 @@ trade_tech_4 = {
 	max_market_square = 1
 	
 	ai_chance = {
-		factor = 1
+		factor = 5
 		modifier = {
-			factor = 1.25
-			NOT = { industrial_score = 25 }
+			factor = 1.4
+			OR = {
+				has_country_flag = flavor_trade_tech_4
+				AND = {
+					year = 2980
+					has_country_flag = flavor_trade_tech_5
+				}
+			}
 		}
 		modifier = {
-			factor = 1.1
+			factor = 1.25
 			year = 3000
+		}
+		modifier = {
+			factor = 1.75
+			NOT = { poor_strata_life_needs = 0.99 }
+		}
+		modifier = {
+			factor = 1.5
+			NOT = { poor_strata_life_needs = 0.50 }
 		}
 	}
 }
@@ -399,14 +643,22 @@ trade_tech_5 = {
 	max_market_square = 1
 	
 	ai_chance = {
-		factor = 1
+		factor = 5
 		modifier = {
-			factor = 1.25
-			NOT = { industrial_score = 25 }
+			factor = 1.4
+			has_country_flag = flavor_trade_tech_5
 		}
 		modifier = {
-			factor = 1.1
+			factor = 1.25
 			year = 3010
+		}
+		modifier = {
+			factor = 1.75
+			NOT = { poor_strata_life_needs = 0.99 }
+		}
+		modifier = {
+			factor = 1.5
+			NOT = { poor_strata_life_needs = 0.50 }
 		}
 	}
 }
@@ -420,17 +672,33 @@ infrastructure_tech_1 = {
 	activate_building = railroad
 	
 	ai_chance = {
-		factor = 1
+		factor = 5
 		modifier = {
-			factor = 1.5
+			factor = 1.4
+			OR = {
+				has_country_flag = flavor_infrastructure_tech_1
+				has_country_flag = flavor_infrastructure_tech_2
+				has_country_flag = flavor_infrastructure_tech_3
+				AND = {
+					year = 2965
+					has_country_flag = flavor_infrastructure_tech_4
+				}
+				AND = {
+					year = 2980
+					has_country_flag = flavor_infrastructure_tech_5
+				}
+			}
+		}
+		modifier = {
+			factor = 1.75
 			is_greater_power = yes
 		}
 		modifier = {
-			factor = 1.25
+			factor = 1.5
 			is_secondary_power = yes
 		}
 		modifier = {
-			factor = 1.1
+			factor = 1.25
 			year = 2960
 		}
 	}
@@ -444,18 +712,32 @@ infrastructure_tech_2 = {
 	max_railroad = 1
 	
 	ai_chance = {
-		factor = 1
-		
+		factor = 5
 		modifier = {
-			factor = 1.5
+			factor = 1.4
+			OR = {
+				has_country_flag = flavor_infrastructure_tech_2
+				has_country_flag = flavor_infrastructure_tech_3
+				AND = {
+					year = 2965
+					has_country_flag = flavor_infrastructure_tech_4
+				}
+				AND = {
+					year = 2980
+					has_country_flag = flavor_infrastructure_tech_5
+				}
+			}
+		}
+		modifier = {
+			factor = 1.75
 			is_greater_power = yes
 		}
 		modifier = {
-			factor = 1.25
+			factor = 1.5
 			is_secondary_power = yes
 		}
 		modifier = {
-			factor = 1.1
+			factor = 1.25
 			year = 2965
 		}
 	}
@@ -469,18 +751,31 @@ infrastructure_tech_3 = {
 	max_railroad = 1
 	
 	ai_chance = {
-		factor = 1
-		
+		factor = 5
 		modifier = {
-			factor = 1.5
+			factor = 1.4
+			OR = {
+				has_country_flag = flavor_infrastructure_tech_3
+				AND = {
+					year = 2965
+					has_country_flag = flavor_infrastructure_tech_4
+				}
+				AND = {
+					year = 2980
+					has_country_flag = flavor_infrastructure_tech_5
+				}
+			}
+		}
+		modifier = {
+			factor = 1.75
 			is_greater_power = yes
 		}
 		modifier = {
-			factor = 1.25
+			factor = 1.5
 			is_secondary_power = yes
 		}
 		modifier = {
-			factor = 1.1
+			factor = 1.25
 			year = 2980
 		}
 	}
@@ -494,18 +789,27 @@ infrastructure_tech_4 = {
 	max_railroad = 1
 	
 	ai_chance = {
-		factor = 1
-		
+		factor = 5
 		modifier = {
-			factor = 1.5
+			factor = 1.4
+			OR = {
+				has_country_flag = flavor_infrastructure_tech_4
+				AND = {
+					year = 2980
+					has_country_flag = flavor_infrastructure_tech_5
+				}
+			}
+		}
+		modifier = {
+			factor = 1.75
 			is_greater_power = yes
 		}
 		modifier = {
-			factor = 1.25
+			factor = 1.5
 			is_secondary_power = yes
 		}
 		modifier = {
-			factor = 1.1
+			factor = 1.25
 			year = 3000
 		}
 	}
@@ -519,18 +823,21 @@ infrastructure_tech_5 = {
 	max_railroad = 1
 	
 	ai_chance = {
-		factor = 1
-		
+		factor = 5
 		modifier = {
-			factor = 1.5
+			factor = 1.4
+			has_country_flag = flavor_infrastructure_tech_5
+		}
+		modifier = {
+			factor = 1.75
 			is_greater_power = yes
 		}
 		modifier = {
-			factor = 1.25
+			factor = 1.5
 			is_secondary_power = yes
 		}
 		modifier = {
-			factor = 1.1
+			factor = 1.25
 			year = 3010
 		}
 	}

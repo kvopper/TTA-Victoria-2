@@ -1,4 +1,4 @@
-#herblore
+#herblore_tech
 herblore_tech_1 = {
 	area = herblore_tech
 	year = 2954
@@ -9,18 +9,26 @@ herblore_tech_1 = {
 	soldier_to_pop_loss = 0.01
 	
 	ai_chance = {
-		factor = 10
-		
+		factor = 45
 		modifier = {
-			factor = 2
-			is_greater_power = yes
+			factor = 1.4
+
+			OR = {
+				has_country_flag = flavor_herblore_tech_1
+				has_country_flag = flavor_herblore_tech_2
+				has_country_flag = flavor_herblore_tech_3
+				AND = {
+					year = 2965
+					has_country_flag = flavor_herblore_tech_4
+				}
+				AND = {
+					year = 2980
+					has_country_flag = flavor_herblore_tech_5
+				}
+			}
 		}
 		modifier = {
-			factor = 1.5
-			is_secondary_power = yes
-		}
-		modifier = {
-			factor = 1.1
+			factor = 1.25
 			year = 2960
 		}
 	}
@@ -36,18 +44,25 @@ herblore_tech_2 = {
 	soldier_to_pop_loss = 0.02
 	
 	ai_chance = {
-		factor = 10
-		
+		factor = 45
 		modifier = {
-			factor = 2
-			is_greater_power = yes
+			factor = 1.4
+
+			OR = {
+				has_country_flag = flavor_herblore_tech_2
+				has_country_flag = flavor_herblore_tech_3
+				AND = {
+					year = 2965
+					has_country_flag = flavor_herblore_tech_4
+				}
+				AND = {
+					year = 2980
+					has_country_flag = flavor_herblore_tech_5
+				}
+			}
 		}
 		modifier = {
-			factor = 1.5
-			is_secondary_power = yes
-		}
-		modifier = {
-			factor = 1.1
+			factor = 1.25
 			year = 2965
 		}
 	}
@@ -63,18 +78,24 @@ herblore_tech_3 = {
 	soldier_to_pop_loss = 0.03
 	
 	ai_chance = {
-		factor = 10
-		
+		factor = 45
 		modifier = {
-			factor = 2
-			is_greater_power = yes
+			factor = 1.4
+
+			OR = {
+				has_country_flag = flavor_herblore_tech_3
+				AND = {
+					year = 2965
+					has_country_flag = flavor_herblore_tech_4
+				}
+				AND = {
+					year = 2980
+					has_country_flag = flavor_herblore_tech_5
+				}
+			}
 		}
 		modifier = {
-			factor = 1.5
-			is_secondary_power = yes
-		}
-		modifier = {
-			factor = 1.1
+			factor = 1.25
 			year = 2980
 		}
 	}
@@ -90,18 +111,20 @@ herblore_tech_4 = {
 	soldier_to_pop_loss = 0.04
 	
 	ai_chance = {
-		factor = 10
-		
+		factor = 45
 		modifier = {
-			factor = 2
-			is_greater_power = yes
+			factor = 1.4
+
+			OR = {
+				has_country_flag = flavor_herblore_tech_4
+				AND = {
+					year = 2980
+					has_country_flag = flavor_herblore_tech_5
+				}
+			}
 		}
 		modifier = {
-			factor = 1.5
-			is_secondary_power = yes
-		}
-		modifier = {
-			factor = 1.1
+			factor = 1.25
 			year = 3000
 		}
 	}
@@ -117,18 +140,14 @@ herblore_tech_5 = {
 	soldier_to_pop_loss = 0.05
 	
 	ai_chance = {
-		factor = 10
-		
+		factor = 45
 		modifier = {
-			factor = 2
-			is_greater_power = yes
+			factor = 1.4
+
+			has_country_flag = flavor_herblore_tech_5
 		}
 		modifier = {
-			factor = 1.5
-			is_secondary_power = yes
-		}
-		modifier = {
-			factor = 1.1
+			factor = 1.25
 			year = 3010
 		}
 	}
@@ -141,26 +160,46 @@ magic_1 = {
 	cost = 2500
 	
 	ai_chance = {
-		factor = 0.1
-		
+		factor = 1
+		modifier = {
+			factor = 1.4
+
+			OR = {
+				has_country_flag = flavor_magic_1
+				has_country_flag = flavor_magic_2
+				has_country_flag = flavor_magic_3
+				AND = {
+					year = 2965
+					has_country_flag = flavor_magic_4
+				}
+				AND = {
+					year = 2980
+					has_country_flag = flavor_magic_5
+				}
+			}
+		}
 		modifier = {
 			factor = 2
+
 			is_greater_power = yes
 		}
 		modifier = {
-			factor = 1.5
+			factor = 1.75
+
 			is_secondary_power = yes
 		}
 		modifier = {
-			factor = 10
+			factor = 3
+
 			government = istari_kingdom
 		}
 		modifier = {
-			factor = 10
+			factor = 3
+
 			government = sauron_dictatorship
 		}
 		modifier = {
-			factor = 1.1
+			factor = 1.25
 			year = 2960
 		}
 	}
@@ -172,26 +211,45 @@ magic_2 = {
 	cost = 3000
 	
 	ai_chance = {
-		factor = 0.1
-		
+		factor = 1
+		modifier = {
+			factor = 1.4
+
+			OR = {
+				has_country_flag = flavor_magic_2
+				has_country_flag = flavor_magic_3
+				AND = {
+					year = 2965
+					has_country_flag = flavor_magic_4
+				}
+				AND = {
+					year = 2980
+					has_country_flag = flavor_magic_5
+				}
+			}
+		}
 		modifier = {
 			factor = 2
+
 			is_greater_power = yes
 		}
 		modifier = {
-			factor = 1.5
+			factor = 1.75
+
 			is_secondary_power = yes
 		}
 		modifier = {
-			factor = 10
+			factor = 3
+
 			government = istari_kingdom
 		}
 		modifier = {
-			factor = 10
+			factor = 3
+
 			government = sauron_dictatorship
 		}
 		modifier = {
-			factor = 1.1
+			factor = 1.25
 			year = 2965
 		}
 	}
@@ -203,26 +261,44 @@ magic_3 = {
 	cost = 4000
 	
 	ai_chance = {
-		factor = 0.1
-		
+		factor = 1
+		modifier = {
+			factor = 1.4
+
+			OR = {
+				has_country_flag = flavor_magic_3
+				AND = {
+					year = 2965
+					has_country_flag = flavor_magic_4
+				}
+				AND = {
+					year = 2980
+					has_country_flag = flavor_magic_5
+				}
+			}
+		}
 		modifier = {
 			factor = 2
+
 			is_greater_power = yes
 		}
 		modifier = {
-			factor = 1.5
+			factor = 1.75
+
 			is_secondary_power = yes
 		}
 		modifier = {
-			factor = 10
+			factor = 3
+
 			government = istari_kingdom
 		}
 		modifier = {
-			factor = 10
+			factor = 3
+
 			government = sauron_dictatorship
 		}
 		modifier = {
-			factor = 1.1
+			factor = 1.25
 			year = 2980
 		}
 	}
@@ -234,26 +310,40 @@ magic_4 = {
 	cost = 5500
 	
 	ai_chance = {
-		factor = 0.1
-		
+		factor = 1
+		modifier = {
+			factor = 1.4
+
+			OR = {
+				has_country_flag = flavor_magic_4
+				AND = {
+					year = 2980
+					has_country_flag = flavor_magic_5
+				}
+			}
+		}
 		modifier = {
 			factor = 2
+
 			is_greater_power = yes
 		}
 		modifier = {
-			factor = 1.5
+			factor = 1.75
+
 			is_secondary_power = yes
 		}
 		modifier = {
-			factor = 10
+			factor = 3
+
 			government = istari_kingdom
 		}
 		modifier = {
-			factor = 10
+			factor = 3
+
 			government = sauron_dictatorship
 		}
 		modifier = {
-			factor = 1.1
+			factor = 1.25
 			year = 3000
 		}
 	}
@@ -265,26 +355,34 @@ magic_5 = {
 	cost = 7000
 	
 	ai_chance = {
-		factor = 0.1
-		
+		factor = 1
+		modifier = {
+			factor = 1.4
+
+			has_country_flag = flavor_magic_5
+		}
 		modifier = {
 			factor = 2
+
 			is_greater_power = yes
 		}
 		modifier = {
-			factor = 1.5
+			factor = 1.75
+
 			is_secondary_power = yes
 		}
 		modifier = {
-			factor = 10
+			factor = 3
+
 			government = istari_kingdom
 		}
 		modifier = {
-			factor = 10
+			factor = 3
+
 			government = sauron_dictatorship
 		}
 		modifier = {
-			factor = 1.1
+			factor = 1.25
 			year = 3010
 		}
 	}
@@ -299,22 +397,41 @@ education_1 = {
 	education_efficiency = 0.1
 	
 	ai_chance = {
-		factor = 10
-		
+		factor = 25
+		modifier = {
+			factor = 1.4
+
+			OR = {
+				has_country_flag = flavor_education_1
+				has_country_flag = flavor_education_2
+				has_country_flag = flavor_education_3
+				AND = {
+					year = 2965
+					has_country_flag = flavor_education_4
+				}
+				AND = {
+					year = 2980
+					has_country_flag = flavor_education_5
+				}
+			}
+		}
 		modifier = {
 			factor = 2
+
 			is_greater_power = yes
 		}
 		modifier = {
-			factor = 1.5
+			factor = 1.75
+
 			is_secondary_power = yes
 		}
 		modifier = {
-			factor = 3
-			NOT = { literacy = 0.3 }
+			factor = 2.5
+
+			NOT = { literacy = 0.5 }
 		}
 		modifier = {
-			factor = 1.1
+			factor = 1.25
 			year = 2960
 		}
 	}
@@ -328,22 +445,40 @@ education_2 = {
 	education_efficiency = 0.1
 	
 	ai_chance = {
-		factor = 10
-		
+		factor = 25
+		modifier = {
+			factor = 1.4
+
+			OR = {
+				has_country_flag = flavor_education_2
+				has_country_flag = flavor_education_3
+				AND = {
+					year = 2965
+					has_country_flag = flavor_education_4
+				}
+				AND = {
+					year = 2980
+					has_country_flag = flavor_education_5
+				}
+			}
+		}
 		modifier = {
 			factor = 2
+
 			is_greater_power = yes
 		}
 		modifier = {
-			factor = 1.5
+			factor = 1.75
+
 			is_secondary_power = yes
 		}
 		modifier = {
-			factor = 3
-			NOT = { literacy = 0.3 }
+			factor = 2.5
+
+			NOT = { literacy = 0.45 }
 		}
 		modifier = {
-			factor = 1.1
+			factor = 1.25
 			year = 2965
 		}
 	}
@@ -357,22 +492,39 @@ education_3 = {
 	education_efficiency = 0.2
 	
 	ai_chance = {
-		factor = 10
-		
+		factor = 25
+		modifier = {
+			factor = 1.4
+
+			OR = {
+				has_country_flag = flavor_education_3
+				AND = {
+					year = 2965
+					has_country_flag = flavor_education_4
+				}
+				AND = {
+					year = 2980
+					has_country_flag = flavor_education_5
+				}
+			}
+		}
 		modifier = {
 			factor = 2
+
 			is_greater_power = yes
 		}
 		modifier = {
-			factor = 1.5
+			factor = 1.75
+
 			is_secondary_power = yes
 		}
 		modifier = {
-			factor = 3
-			NOT = { literacy = 0.3 }
+			factor = 2.5
+
+			NOT = { literacy = 0.4 }
 		}
 		modifier = {
-			factor = 1.1
+			factor = 1.25
 			year = 2980
 		}
 	}
@@ -386,22 +538,35 @@ education_4 = {
 	education_efficiency = 0.3
 	
 	ai_chance = {
-		factor = 10
-		
+		factor = 25
+		modifier = {
+			factor = 1.4
+
+			OR = {
+				has_country_flag = flavor_education_4
+				AND = {
+					year = 2980
+					has_country_flag = flavor_education_5
+				}
+			}
+		}
 		modifier = {
 			factor = 2
+
 			is_greater_power = yes
 		}
 		modifier = {
-			factor = 1.5
+			factor = 1.75
+
 			is_secondary_power = yes
 		}
 		modifier = {
-			factor = 3
-			NOT = { literacy = 0.3 }
+			factor = 2.5
+
+			NOT = { literacy = 0.35 }
 		}
 		modifier = {
-			factor = 1.1
+			factor = 1.25
 			year = 3000
 		}
 	}
@@ -415,22 +580,29 @@ education_5 = {
 	education_efficiency = 0.3
 	
 	ai_chance = {
-		factor = 10
-		
+		factor = 25
+		modifier = {
+			factor = 1.4
+
+			has_country_flag = flavor_education_5
+		}
 		modifier = {
 			factor = 2
+
 			is_greater_power = yes
 		}
 		modifier = {
-			factor = 1.5
+			factor = 1.75
+
 			is_secondary_power = yes
 		}
 		modifier = {
-			factor = 3
+			factor = 2.5
+
 			NOT = { literacy = 0.3 }
 		}
 		modifier = {
-			factor = 1.1
+			factor = 1.25
 			year = 3010
 		}
 	}
@@ -446,18 +618,36 @@ scholarship_tech_1 = {
 	activate_building = scriptorium
 	
 	ai_chance = {
-		factor = 10
-		
+		factor = 99
+		modifier = {
+			factor = 1.4
+
+			OR = {
+				has_country_flag = flavor_scholarship_tech_1
+				has_country_flag = flavor_scholarship_tech_2
+				has_country_flag = flavor_scholarship_tech_3
+				AND = {
+					year = 2965
+					has_country_flag = flavor_scholarship_tech_4
+				}
+				AND = {
+					year = 2980
+					has_country_flag = flavor_scholarship_tech_5
+				}
+			}
+		}
 		modifier = {
 			factor = 2
+
 			is_greater_power = yes
 		}
 		modifier = {
-			factor = 1.5
+			factor = 1.75
+
 			is_secondary_power = yes
 		}
 		modifier = {
-			factor = 1.1
+			factor = 1.25
 			year = 2960
 		}
 	}
@@ -472,18 +662,35 @@ scholarship_tech_2 = {
 	max_scriptorium = 1
 	
 	ai_chance = {
-		factor = 10
-		
+		factor = 99
+		modifier = {
+			factor = 1.4
+
+			OR = {
+				has_country_flag = flavor_scholarship_tech_2
+				has_country_flag = flavor_scholarship_tech_3
+				AND = {
+					year = 2965
+					has_country_flag = flavor_scholarship_tech_4
+				}
+				AND = {
+					year = 2980
+					has_country_flag = flavor_scholarship_tech_5
+				}
+			}
+		}
 		modifier = {
 			factor = 2
+
 			is_greater_power = yes
 		}
 		modifier = {
-			factor = 1.5
+			factor = 1.75
+
 			is_secondary_power = yes
 		}
 		modifier = {
-			factor = 1.1
+			factor = 1.25
 			year = 2965
 		}
 	}
@@ -498,18 +705,34 @@ scholarship_tech_3 = {
 	max_scriptorium = 1
 	
 	ai_chance = {
-		factor = 10
-		
+		factor = 99
+		modifier = {
+			factor = 1.4
+
+			OR = {
+				has_country_flag = flavor_scholarship_tech_3
+				AND = {
+					year = 2965
+					has_country_flag = flavor_scholarship_tech_4
+				}
+				AND = {
+					year = 2980
+					has_country_flag = flavor_scholarship_tech_5
+				}
+			}
+		}
 		modifier = {
 			factor = 2
+
 			is_greater_power = yes
 		}
 		modifier = {
-			factor = 1.5
+			factor = 1.75
+
 			is_secondary_power = yes
 		}
 		modifier = {
-			factor = 1.1
+			factor = 1.25
 			year = 2980
 		}
 	}
@@ -524,18 +747,30 @@ scholarship_tech_4 = {
 	max_scriptorium = 1
 	
 	ai_chance = {
-		factor = 10
-		
+		factor = 99
+		modifier = {
+			factor = 1.4
+
+			OR = {
+				has_country_flag = flavor_scholarship_tech_4
+				AND = {
+					year = 2980
+					has_country_flag = flavor_scholarship_tech_5
+				}
+			}
+		}
 		modifier = {
 			factor = 2
+
 			is_greater_power = yes
 		}
 		modifier = {
-			factor = 1.5
+			factor = 1.75
+
 			is_secondary_power = yes
 		}
 		modifier = {
-			factor = 1.1
+			factor = 1.25
 			year = 3000
 		}
 	}
@@ -550,18 +785,24 @@ scholarship_tech_5 = {
 	max_scriptorium = 1
 	
 	ai_chance = {
-		factor = 10
-		
+		factor = 99
+		modifier = {
+			factor = 1.4
+
+			has_country_flag = flavor_scholarship_tech_5
+		}
 		modifier = {
 			factor = 2
+
 			is_greater_power = yes
 		}
 		modifier = {
-			factor = 1.5
+			factor = 1.75
+
 			is_secondary_power = yes
 		}
 		modifier = {
-			factor = 1.1
+			factor = 1.25
 			year = 3010
 		}
 	}

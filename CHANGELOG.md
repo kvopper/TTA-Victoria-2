@@ -19,11 +19,22 @@ All notable changes will be documented in this file.
    - Herblore
    - Scholarship
  - Replaced tech schools to allow displaying organizations (Alliance of Dwarves and Men, White Council and other future mechanics)
+ - Updated AI research choice weights
+   - The AI *should* research stronger techs first (pop growth, research points, military tactics, etc)
+   - The AI is more inclined to research techs that it needs for flavor
  - Unit rework
    - Existing units can now be recruited by any pop (not just accepted and primary pops)
    - Elite variants of unit types added (accepted and primary pops only)
    - OP monster/undead units added (accepted and primary pops only)
      - Only recruitable via scripted events or for select tags
+ - Province Building Addition
+   - Barracks: Supply Limit
+   - Scriptorium: Research Points
+   - Market Square: RGO Output
+   - Public House: Pop Militancy Reduction
+
+### Mechanics and Content
+ - Various bugfixes and small additions
 
 ## [v0.5.1](https://github.com/The-Third-Age/TTA/releases/tag/v0.5.1) - 2025-05-11
 
