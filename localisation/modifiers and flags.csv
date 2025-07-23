@@ -652,7 +652,7 @@ control_of_rhunaer;Control of Rhûnaer;x
 control_of_rhunaer_desc;We have control over the Sea of Rhûn!\n\nTo retain these bonuses, we must control Raivod, Scarakikot, Lest, Dourband, Dilgul, Mistrand, Larkar, Elgaer, Egil Dorn, Tset-Hedron, Burh Kuga and Winterion Iaur.;x
 men_culture_nation;Men Nation;x
 men_culture_nation_desc;These are the bonuses for our primary race being Men.;x
-elven_culture_nation;Elven Nation;x
+elven_culture_nation;Elven Nation\n\nMonthly Popular Anxiety Loss: §G0.25%§!;x
 elven_culture_nation_desc;These are the bonuses for our primary race being Elves.;x
 dwarven_culture_nation;Dwarven Nation;x
 dwarven_culture_nation_desc;These are the bonuses for our primary race being Dwarven.;x
@@ -686,6 +686,8 @@ money_hoarder_6;Insane Money Hoarder;x
 money_hoarder_6_desc;This modifier is put in place to prevent the late-game liquidity crisis caused by governments acquiring too much money.;x
 money_hoarder_7;Colossal Money Hoarder;x
 money_hoarder_7_desc;This modifier is put in place to prevent the late-game liquidity crisis caused by governments acquiring too much money.;x
+ai_boost_modifier;AI Boost;x
+ai_boost_modifier_desc;Let's be real: the AI sucks at this game, especially when compared to a player.;x
 #########################;x }
 ##### NATIONAL FOCI #####;x {
 #########################;x

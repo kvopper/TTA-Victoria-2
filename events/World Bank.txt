@@ -1250,6 +1250,22 @@ country_event = {
 			}
 			remove_country_modifier = money_hoarder_7
 		}
+		
+		# AI Boost
+		any_neighbor_country = {
+			limit = {
+				NOT = { has_country_modifier = ai_boost_modifier }
+				ai = yes
+			}
+			add_country_modifier = { name = ai_boost_modifier duration = -1 }
+		}
+		any_neighbor_country = {
+			limit = {
+				has_country_modifier = ai_boost_modifier
+				ai = no
+			}
+			remove_country_modifier = ai_boost_modifier
+		}
 		# }
 		
 		# Apply Acquire Claim CB
@@ -1561,6 +1577,12 @@ country_event = {
 				}
 				pop_type = labourers
 			}
+		}
+		
+		# Applying Upcoming Conquest
+		any_country = {
+			limit = { has_country_modifier = elven_culture_nation }
+			plurality = -0.25
 		}
 		
 		# Refire the cleanup event next month {
