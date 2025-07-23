@@ -131,7 +131,7 @@ party_issues = {
 				can_invest_in_pop_projects = yes
 				
 				# Pops touch factories
-				pop_build_factory = no
+				pop_build_factory = yes
 				pop_expand_factory = yes
 				pop_open_factory = yes
 				pop_build_factory_invest = yes
@@ -163,7 +163,7 @@ party_issues = {
 				can_invest_in_pop_projects = yes
 				
 				# Pops touch factories
-				pop_build_factory = no
+				pop_build_factory = yes
 				pop_expand_factory = yes
 				pop_open_factory = yes
 				pop_build_factory_invest = yes
