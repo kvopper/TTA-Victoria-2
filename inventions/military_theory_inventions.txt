@@ -173,7 +173,6 @@ eagles_invention = {
 		gas_attack = yes
 	}
 }
-
 fellbeasts_invention = {
 	limit = { army_tactics_5 = 1 }
 	chance = {
@@ -227,6 +226,7 @@ soronume = {
 #######################
 # TRAINING INVENTIONS #
 #######################
+# When adding/changing/removing unit unlock requirements, also update decisions/World Bank.txt research flags
 minasdirith_invention = {
 	limit = { training_1 = 1 }
 	chance = {
@@ -275,7 +275,7 @@ eagles_unit_unlock = {
 		base = 0
 		modifier = {
 			factor = 100
-			primary_culture = great_eagle
+			is_culture_group = eagles
 		}
 	}
 	effect = {
@@ -288,7 +288,7 @@ spiders_unlock = {
 		base = 0
 		modifier = {
 			factor = 100
-			primary_culture = great_spider
+			is_culture_group = spiders
 		}
 	}
 	effect = {
