@@ -87,7 +87,7 @@ political_decisions = {
 			set_global_flag = denethor_ii_alive
 			
 			set_country_flag = flavor_fortifications_2
-			set_country_flag = flavor_fortifications_1
+			set_country_flag = flavor_fortifications_3
 			set_country_flag = flavor_training_1
 			set_country_flag = flavor_training_2
 			set_country_flag = flavor_merchant_marine_2
@@ -2257,7 +2257,7 @@ political_decisions = {
 		}
 		
 		allow = {
-			fortifications_1 = 1
+			fortifications_2 = 1
 			OR = {
 				owns = 10 # Cair Andros
 				owns = 14 # West Osgiliath
@@ -2292,7 +2292,7 @@ political_decisions = {
 		}
 		
 		allow = {
-			fortifications_2 = 1
+			fortifications_3 = 1
 		}
 		
 		effect = {

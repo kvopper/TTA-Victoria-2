@@ -120,7 +120,6 @@ political_decisions = {
 			set_country_flag = flavor_merchant_marine_3
 			set_country_flag = flavor_guilds_3
 			set_country_flag = flavor_population_2
-			set_country_flag = flavor_expansion_1
 			set_country_flag = flavor_expansion_2
 			set_country_flag = flavor_expansion_4
 			set_country_flag = flavor_wilderness_1
@@ -902,7 +901,6 @@ political_decisions = {
 			OR = {
 				has_country_modifier = king_of_grammas
 				diplomacy_1 = 1
-				expansion_1 = 1
 			}
 			war = no
 			has_unclaimed_cores = no
