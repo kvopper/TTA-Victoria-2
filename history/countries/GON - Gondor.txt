@@ -27,9 +27,3 @@ penal_reform = hard_labor
 decision = gondor_start_decision
 
 schools = no_organization
-#technologies
-merchant_marine_1 = 1
-light_ships_1 = 1
-heavy_ships_1 = 1
-naval_construction_1 = 1
-infrastructure_tech_1 = 1

@@ -19,4 +19,3 @@ slavery = no_slavery
 vote_franschise = landed_voting
 
 schools = no_organization
-#technologies

@@ -24,7 +24,3 @@ slavery = no_slavery
 serfdom = banned_serfdom
 
 schools = no_organization
-#tech
-education_1 = 1
-rgo_tech_1 = 1
-magic_1 = 1

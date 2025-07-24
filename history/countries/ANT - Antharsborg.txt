@@ -15,4 +15,3 @@ penal_reform = hard_labor
 slavery = no_slavery
 
 schools = no_organization
-#technologies

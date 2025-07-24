@@ -17,4 +17,3 @@ upper_house = {
 }
 
 schools = no_organization
-#technologies
