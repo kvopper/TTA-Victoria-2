@@ -5476,7 +5476,7 @@ country_event = {
 			country_event = 40020
 		}
 		
-		# Anduinrim (Men)
+		# Anduinrim
 		any_country = {
 			limit = {
 				exists = yes
@@ -5559,7 +5559,7 @@ country_event = {
 			country_event = 40032
 		}
 		
-		# Angmarrim (Men)
+		# Angmarrim
 		any_country = {
 			limit = {
 				exists = yes
@@ -5585,7 +5585,7 @@ country_event = {
 			country_event = 40036
 		}
 		
-		# Breelander (men)
+		# Breelander
 		any_country = {
 			limit = {
 				exists = yes
@@ -5872,7 +5872,7 @@ country_event = {
 			country_event = 40021
 		}
 		
-		# Anduinrim (Men)
+		# Anduinrim
 		any_country = {
 			limit = {
 				exists = yes
@@ -5961,7 +5961,7 @@ country_event = {
 			country_event = 40033
 		}
 		
-		# Angmarrim (Men)
+		# Angmarrim
 		any_country = {
 			limit = {
 				exists = yes
@@ -5989,7 +5989,7 @@ country_event = {
 			country_event = 40037
 		}
 		
-		# Breelander (men)
+		# Breelander
 		any_country = {
 			limit = {
 				exists = yes
