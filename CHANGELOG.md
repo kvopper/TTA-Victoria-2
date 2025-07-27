@@ -32,6 +32,9 @@ All notable changes will be documented in this file.
    - Scriptorium: Research Points
    - Market Square: RGO Output
    - Public House: Pop Militancy Reduction
+ - General/Admiral Recruitment
+   - Recruitment events now come every 5 years, yielding 10 leaders of the associated type
+   - Recruitable leaders improve with the Military Schools invention
 
 ### Mechanics and Content
  - Various bugfixes and small additions

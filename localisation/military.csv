@@ -11,7 +11,7 @@ aggressive;Aggressive: §GAttack +1§!;x
 persistent;Persistent: §GAttack +1§!;x
 ballsy;Ballsy: §GAttack +1§!;x
 inspiring;Inspring: §GAttack +1§!;x
-relentless;Relentless: §GAttack +2 §RDefence -1§!;x
+relentless;Relentless: §GAttack +2§!;x
 cautious;Cautious: §GDefence +1§!;x
 mediocre;Mediocre: §GDefence +1§!;x
 ungallant;Ungallant: §GDefence +1§!;x
@@ -19,7 +19,7 @@ defensive;Defensive: §GDefence +1§!;x
 defiant;Defiant: §GDefence +1§!;x
 resolute;Resolute: §GDefence +1§!;x
 stout;Stout: §GDefence +1§!;x
-reserved;Reserved: §RAttack -1 §GDefence +2§!;x
+reserved;Reserved: §GDefence +2§!;x
 deliberate;Deliberate: §GAttack +1 §GDefence +1§!;x
 bigoted;Bigoted: §GAttack +1 §GDefence +1§!;x
 harsh;Harsh: §GAttack +1 §GDefence +1§!;x

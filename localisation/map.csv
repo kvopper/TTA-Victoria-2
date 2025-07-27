@@ -1620,6 +1620,7 @@ claim_status_owns_CAR_1204_loc;§YGirithlin§!: §GOwned§!§I;x
 add_claim_DAL_645_loc;§WWe will gain claims over §!§YNan Celduin§!§I;x
 DAL_king_of_the_northmen_currently_ruling_over_loc;§TWe currently rule over the following cultures§!|;x
 add_claim_GON_205_loc;§WWe will gain claims over §!§YEmyn Arnen§!§I;x
+recruit_generals_loc;We will recruit §G10§! generals. If we have the §YMilitary Schools§! invention from §YStanding Armies§!, these generals will not have negative attack or defence stats§I;x
 claim_status_doesnt_own_DAL_652_loc;§YDalelands§!: §RUnowned§!§I;x
 add_claim_RHU_859_loc;§WWe will gain claims over §!§YRann Gasta§!§I;x
 claim_status_owns_BLU_917_loc;§YSouthern Ered Luin§!: §GOwned§!§I;x
@@ -1834,6 +1835,7 @@ add_claim_SHI_1030_loc;§WWe will gain claims over §!§YWestmarch§!§I;x
 remove_claim_SHI_1040_loc;§WWe will lose claims over §!§YEastfarthing§!§I;x
 add_claim_RHU_632_loc;§WWe will gain claims over §!§YSouthern Gazar Gord§!§I;x
 add_claim_ROH_794_loc;§WWe will gain claims over §!§YFolde§!§I;x
+recruit_admirals_loc;We will recruit §G10§! admirals. If we have the §YMilitary Schools§! invention from §YStanding Armies§!, these admirals will not have negative attack or defence stats§I;x
 remove_claim_DAL_652_loc;§WWe will lose claims over §!§YDalelands§!§I;x
 claim_status_doesnt_own_MOR_449_loc;§YBauglith-en-Sauron§!: §RUnowned§!§I;x
 claim_status_owns_RHO_461_loc;§YThe Desolation§!: §GOwned§!§I;x

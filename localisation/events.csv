@@ -370,7 +370,7 @@ EVTDESC35044;There will be a list of bonuses that the $COUNTRY$ will or has to p
 ##################################;x }
 ##### MILITARY LEADER EVENTS #####;x {
 ##################################;x
-EVTDESC40000;We now have the a choice in front of us| do we want to be able to recruit more leaders sooner and take average leaders, or do we want to recruit better leaders now, and have to wait longer before recruiting again?\n\nIf you recruit average leaders, you will have to wait 2 years before being able to recruit again. However, if you recruit better leaders, you will have to wait 5 years.\n\nAdditionally, you recruit 5 leaders when choosing average leaders, compared to 3 better leaders.;x
+EVTDESC40000;A new crop of military leaders are ready answer the call of the $COUNTRY$. Who knows what future they hold?;x
 #########################;x }
 ##### GONDOR EVENTS #####;x {
 #########################;x

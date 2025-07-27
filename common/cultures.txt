@@ -161,11 +161,10 @@ dunedain = {
 		first_names = { Abonnen Adanedhel Adanel Adrahil Aegnor Aerandir Agarwaen Alphros Amarthan Amlaith Amras Amrod Amroth Amrothos Anardil Anárion Anborn Anfang Angbor Angolodh Angrod Annael Aradan Arador Araglas Aragorn Aragost Arahad Arahael Aramund Aranarth Aranel Araphant Araphor Aranuir Arassuil Arathorn Araval Aravir Aravorn Argeleb Argonui Arminas Arothir Arthad Arvedui Arvegil Arveleg Astoron Avarion Avaron Baragund Barahir Barahion Barahon Baramdir Baranor Baravorn Belecthor Beleg Belegorn Belegund Belegûr Belegurth Beregond Beregar Beren Bergil Boldog Bór Borgil Borlach Borlad Borlas Boromir Borondir Borthand Brandir Bregalad Bregolas Bronwë Camlost Caranthir Celebrindor Celeborn Celebrimbor Celegorm Celepharn Círdan Cirion Curufin Curunír Cúthalion Daeron Dagnir Dairuin Damrod Denethor Derufin Dervorin Dior Dírhael Duilin Duinhir Ecthelion Edennil Edhelharn Edrahil Egalmoth Eladar Eldacar Elladan Elphir Elrohir Eluchíl Eluréd Elurín Eradan Ereinion Erellont Erestor Estel Faenor Falathar Faramir Felagon Felagund Finarfin Findegil Findor Finellach Finglas Fingolfin Fingon Finrod Fladrif Fuinur Gaerdil Gaerys Galadhon Galador Galathil Galdor Gelennil Gelmir Gilbarad Gildor Gil-galad Glindûr Glirhuin Glorfindel Glórindol Goenor Gorthol Golasgil Guilin Gundor Gwaihir Gwindor Hador Halbarad Haldir Hallas Handir Hathaldir Hathol Hatholdir Henderch Herion Hirgon Hirluin Húrin Iarwain Ídher Ídhor Ídhorion Ídhoron Ídhror Ídhrion Ídhron Inglor Ingold Iorlas Ithilbor Lindir Lórindol Mablung Maedhros Maeglin Maglor Magor Malbeth Malgalad Mallor Malvegil Menelvagor Mithrandir Nellas Ohtar Orchaldor Orodreth Oropher Orophin Ornil Panthael Radhruin Ragnir Ragnor Rasmund Rodnor Rúmil Sador Saelon Serech Targon Tarmund Thorondir Tauron Tegilbor Telchar Thalion Thorongil Thranduil Thurin Thuringud Turamarth Turcomund Turgon Túrin Udalraph Uldor Ulfang Ulfast Ulwarth Urthel Yssion
 		}
 		
-		last_names = { "Anórienath" "Ithilienath" "Lebenninirath" "Lossarnachirath" "Belfalassiriath" "Lamedonirath" "Anfalassiriath" "Andrastirath"
+		last_names = { "of Arthedain" "of Cardolan" "of Rhudaur" "of the North" "of the King's Land" "of Evendim"
+		"of the Weather Hills" "of the Angle" "of the Baranduin" "of the Gwathló" "of Tyrn Formen"
 		
-		"Abonnenion" "Adanedhelion" "Adanelion" "Adrahiilion" "Aegnorion" "Inglorion" "Duillion" "Mallorion"
-		
-		"Erchamion" "Iarwain" "Ben-adar" "Ithilbor" "Thalion" "Udalraph" "Úmarth"
+		"of Annúminas" "of Amon Sul" "of Fornost" "of Tharbad" "of Lond Daer" "of Esteldín" "of Mitheithel"
 		}
 	}
 			
@@ -174,11 +173,13 @@ dunedain = {
 		first_names = { Adrahil Aglahad Aldamir Alphros Amrothos Anardil Anborn Angamaitë Angbor Angelimir Anárion Aragorn Aratan Arciryas Artamir Atanatar Barahir Baranor Belecthor Belegorn Beregond Berelach Beren Bergil Borlas Boromir Borondir Calimehtar Calimmacil Calmacil Castamir Cemendur Cirion Ciryandil Damrod Denethor Derufil Dervorin Dior Duilin Duinhir Ecthelion Egalmoth Elboron Eldacar Eldarion Elphir Erchirion Estelmo Eärendil Eärnil Eärnur Faramir Findegil Forlong Fíriel Galador Golasgil Hador Hallas Herion Hirgon Hirliun Hurin Hyarmendacil Húrin Imrahil Imrazôr Ingold Ioreth Iorlas Mablung Mardil Meneldil Minardil Minastan Minohtar Narmacil Ondoher Orodreth Ostoher Pelendur Rómendacil Saelon Siriondil Tarannon Tarciryan Targon Tarondor Tarostar Telemnar Telumehtar Thorondir Turambar Turgon Túrin Valacar Vorondil Arithir Dirhaborn Dorlad Dunhir Elegost Elgarain Halbaron Mallor
 		}
 		
-		last_names = { "of Anórien" "of Ithilien" "of Lebennin" "of Lossarnach" "of Belfalas" "of Lamedon"
-		"of Anfalas" "of Andrast" "of Pinnath Gelin"
+		last_names = { "Anórienath" "Ithilienath" "Lebenninirath" "Lossarnachirath" "Belfalassiriath" "Lamedonirath" "Anfalassiriath" "Andrastirath"
 		
-		"of Dol Amroth" "of Erech" "of Linhir" "of Pelargir" "of Calembel" "of Minas Tirith" "of Osgiliath"
-		"of Cair Andros" "of Edhellond" "of Ethring"
+		"Abonnenion" "Adanedhelion" "Adanelion" "Adrahiilion" "Aegnorion" "Inglorion" "Duillion" "Mallorion"
+		
+		"Erchamion" "Iarwain" "Ben-adar" "Ithilbor" "Thalion" "Udalraph" "Úmarth"
+		
+		"of Pinnath Gelin" "of Dol Amroth" "of Erech" "of Linhir" "of Pelargir" "of Calembel" "of Minas Tirith" "of Osgiliath" "of Cair Andros" "of Edhellond" "of Ethring"
 		
 		"of the Keys" "of the Hearth" "of the White Tower" "of the Fountain" "of the Tree" "of the City"
 		}

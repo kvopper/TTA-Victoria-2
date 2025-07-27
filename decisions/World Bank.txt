@@ -397,8 +397,8 @@ political_decisions = {
 			}
 			
 			# Start General/Admiral Generation event loops
-			country_event = { id = 40998 days = 4 }
-			country_event = { id = 40999 days = 4 }
+			country_event = { id = 99008 days = 4 }
+			country_event = { id = 99009 days = 4 }
 			add_country_modifier = { name = recruited_generals duration = -1 } # Just to make sure the events don't decide to try to fire for FOR
 			add_country_modifier = { name = recruited_admirals duration = -1 } # Just to make sure the events don't decide to try to fire for FOR
 			

@@ -604,6 +604,8 @@ evil_unlock_invention_fellbeasts_loc = { } # Unlocks invention §YFellbeasts§! 
 
 # Static Tooltip Locs - Random
 conversion_to_tribal_loc = { } # §RAny unaccepted soldier pop in the newly conquered lands will convert into tribals§!
+recruit_generals_loc = { } # We will recruit §G10§! generals. If we have the §YMilitary Schools§! invention from §YStanding Armies§!, these generals will not have negative attack or defence stats
+recruit_admirals_loc = { } # We will recruit §G10§! admirals. If we have the §YMilitary Schools§! invention from §YStanding Armies§!, these admirals will not have negative attack or defence stats
 
 # Static Tooltip Locs - Settings
 settings_disable_settings_loc = { } # The settings menu will close and the decision to reopen the menu will be disabled. §RThis cannot be undone§!
