@@ -1250,6 +1250,22 @@ country_event = {
 			}
 			remove_country_modifier = money_hoarder_7
 		}
+		
+		# AI Boost
+		any_neighbor_country = {
+			limit = {
+				NOT = { has_country_modifier = ai_boost_modifier }
+				ai = yes
+			}
+			add_country_modifier = { name = ai_boost_modifier duration = -1 }
+		}
+		any_neighbor_country = {
+			limit = {
+				has_country_modifier = ai_boost_modifier
+				ai = no
+			}
+			remove_country_modifier = ai_boost_modifier
+		}
 		# }
 		
 		# Apply Acquire Claim CB
@@ -1561,6 +1577,12 @@ country_event = {
 				}
 				pop_type = labourers
 			}
+		}
+		
+		# Applying Upcoming Conquest
+		any_country = {
+			limit = { has_country_modifier = elven_culture_nation }
+			plurality = -0.25
 		}
 		
 		# Refire the cleanup event next month {
@@ -5260,6 +5282,801 @@ country_event = {
 	}
 }
 
+# FOR Trigger Loop for Recruiting Generals
+country_event = {
+	id = 99008
+	picture = "supportwar"
+	title = "Trigger Recruit Generals"
+	desc = " "
+	is_triggered_only = yes
+	
+	option = {
+		name = "Trigger Recruitment"
+		# Southern Dúnedain and Gondorian
+		any_country = {
+			limit = {
+				exists = yes
+				NOT = {
+					has_country_modifier = observer_mode
+					has_country_modifier = recruited_generals
+				}
+				OR = {
+					AND = {
+						primary_culture = dunedain
+						OR = {
+							accepted_culture = gondorian
+							accepted_culture = amrothian
+							NOT = {
+								accepted_culture = gondorian
+								accepted_culture = amrothian
+								accepted_culture = arthedani
+								accepted_culture = cardolandrim
+								accepted_culture = haeranedain
+							}
+						}
+					}
+					primary_culture = gondorian
+					primary_culture = amrothian
+				}
+			}
+			country_event = 40000
+		}
+		
+		# Northern Dúnedain and Arnorian
+		any_country = {
+			limit = {
+				exists = yes
+				NOT = {
+					has_country_modifier = observer_mode
+					has_country_modifier = recruited_generals
+				}
+				OR = {
+					AND = {
+						primary_culture = dunedain
+						OR = {
+							accepted_culture = arthedani
+							accepted_culture = cardolandrim
+							accepted_culture = haeranedain
+						}
+					}
+					primary_culture = arthedani
+					primary_culture = cardolandrim
+					primary_culture = haeranedain
+				}
+			}
+			country_event = 40002
+		}
+		
+		# High Elves
+		any_country = {
+			limit = {
+				exists = yes
+				NOT = {
+					has_country_modifier = observer_mode
+					has_country_modifier = recruited_generals
+				}
+				OR = {
+					primary_culture = noldor
+					primary_culture = falathrim
+				}
+			}
+			country_event = 40004
+		}
+		
+		# Silvan Elves
+		any_country = {
+			limit = {
+				exists = yes
+				NOT = {
+					has_country_modifier = observer_mode
+					has_country_modifier = recruited_generals
+				}
+				OR = {
+					primary_culture = silvan
+					primary_culture = galadhrim
+				}
+			}
+			country_event = 40006
+		}
+		
+		# Avarin Elves
+		any_country = {
+			limit = {
+				exists = yes
+				NOT = {
+					has_country_modifier = observer_mode
+					has_country_modifier = recruited_generals
+				}
+				is_culture_group = avari
+			}
+			country_event = 40008
+		}
+		
+		# Haradrim
+		any_country = {
+			limit = {
+				exists = yes
+				NOT = {
+					has_country_modifier = observer_mode
+					has_country_modifier = recruited_generals
+				}
+				is_culture_group = haradrim
+			}
+			country_event = 40010
+		}
+		
+		# Kingsmen/Black Numenoreans
+		any_country = {
+			limit = {
+				exists = yes
+				NOT = {
+					has_country_modifier = observer_mode
+					has_country_modifier = recruited_generals
+				}
+				is_culture_group = kingsmen
+			}
+			country_event = 40012
+		}
+		
+		# Khandish
+		any_country = {
+			limit = {
+				exists = yes
+				NOT = {
+					has_country_modifier = observer_mode
+					has_country_modifier = recruited_generals
+				}
+				is_culture_group = khandish
+			}
+			country_event = 40014
+		}
+		
+		# Easterlings
+		any_country = {
+			limit = {
+				exists = yes
+				NOT = {
+					has_country_modifier = observer_mode
+					has_country_modifier = recruited_generals
+				}
+				is_culture_group = easterlings
+			}
+			country_event = 40016
+		}
+		
+		# Northmen
+		any_country = {
+			limit = {
+				exists = yes
+				NOT = {
+					has_country_modifier = observer_mode
+					has_country_modifier = recruited_generals
+				}
+				OR = {
+					is_culture_group = northmen
+					is_culture_group = gramavuld_northmen
+				}
+			}
+			country_event = 40018
+		}
+		
+		# Dwarves
+		any_country = {
+			limit = {
+				exists = yes
+				NOT = {
+					has_country_modifier = observer_mode
+					has_country_modifier = recruited_generals
+				}
+				OR = {
+					is_culture_group = dwarves
+					is_culture_group = wicked_dwarves
+				}
+			}
+			country_event = 40020
+		}
+		
+		# Anduinrim
+		any_country = {
+			limit = {
+				exists = yes
+				NOT = {
+					has_country_modifier = observer_mode
+					has_country_modifier = recruited_generals
+				}
+				is_culture_group = anduinrim
+			}
+			country_event = 40022
+		}
+		
+		# Ents
+		any_country = {
+			limit = {
+				exists = yes
+				NOT = {
+					has_country_modifier = observer_mode
+					has_country_modifier = recruited_generals
+				}
+				is_culture_group = ents
+			}
+			country_event = 40024
+		}
+		
+		# Druedain
+		any_country = {
+			limit = {
+				exists = yes
+				NOT = {
+					has_country_modifier = observer_mode
+					has_country_modifier = recruited_generals
+				}
+				primary_culture = druedain
+			}
+			country_event = 40026
+		}
+		
+		# Non-Druedain Wildmen
+		any_country = {
+			limit = {
+				exists = yes
+				NOT = {
+					has_country_modifier = observer_mode
+					has_country_modifier = recruited_generals
+				}
+				is_culture_group = wildmen
+				NOT = { primary_culture = druedain }
+			}
+			country_event = 40028
+		}
+		
+		# Rohirrim
+		any_country = {
+			limit = {
+				exists = yes
+				NOT = {
+					has_country_modifier = observer_mode
+					has_country_modifier = recruited_generals
+				}
+				is_culture_group = rohirrim
+			}
+			country_event = 40030
+		}
+		
+		# Orcs/Uruks
+		any_country = {
+			limit = {
+				exists = yes
+				NOT = {
+					has_country_modifier = observer_mode
+					has_country_modifier = recruited_generals
+				}
+				OR = {
+					is_culture_group = uruk_hai
+					is_culture_group = mordorian
+					is_culture_group = northern_goblins
+				}
+			}
+			country_event = 40032
+		}
+		
+		# Angmarrim
+		any_country = {
+			limit = {
+				exists = yes
+				NOT = {
+					has_country_modifier = observer_mode
+					has_country_modifier = recruited_generals
+				}
+				is_culture_group = angmarrim
+			}
+			country_event = 40034
+		}
+		
+		# Lossoth
+		any_country = {
+			limit = {
+				exists = yes
+				NOT = {
+					has_country_modifier = observer_mode
+					has_country_modifier = recruited_generals
+				}
+				is_culture_group = lossoth
+			}
+			country_event = 40036
+		}
+		
+		# Breelander
+		any_country = {
+			limit = {
+				exists = yes
+				NOT = {
+					has_country_modifier = observer_mode
+					has_country_modifier = recruited_generals
+				}
+				is_culture_group = breelander
+			}
+			country_event = 40038
+		}
+		
+		# Hobbit
+		any_country = {
+			limit = {
+				exists = yes
+				NOT = {
+					has_country_modifier = observer_mode
+					has_country_modifier = recruited_generals
+				}
+				is_culture_group = hobbits
+			}
+			country_event = 40040
+		}
+
+		# Trolls
+		any_country = {
+			limit = {
+				exists = yes
+				NOT = {
+					has_country_modifier = observer_mode
+					has_country_modifier = recruited_generals
+				}
+				is_culture_group = trolls
+			}
+			country_event = 40042
+		}
+
+		# Eagles
+		any_country = {
+			limit = {
+				exists = yes
+				NOT = {
+					has_country_modifier = observer_mode
+					has_country_modifier = recruited_generals
+				}
+				is_culture_group = eagles
+			}
+			country_event = 40044
+		}
+
+		# Spiders
+		any_country = {
+			limit = {
+				exists = yes
+				NOT = {
+					has_country_modifier = observer_mode
+					has_country_modifier = recruited_generals
+				}
+				is_culture_group = spiders
+			}
+			country_event = 40046
+		}
+
+		# Undead
+		any_country = {
+			limit = {
+				exists = yes
+				NOT = {
+					has_country_modifier = observer_mode
+					has_country_modifier = recruited_generals
+				}
+				is_culture_group = undead
+			}
+			country_event = 40048
+		}
+		
+		country_event = { id = 99008 days = 30 }
+	}
+}
+
+# FOR Trigger Loop for Recruiting Admirals
+country_event = {
+	id = 99009
+	picture = "supportwar"
+	title = "Trigger Recruit Admirals"
+	desc = " "
+	is_triggered_only = yes
+	
+	option = {
+		name = "Trigger Recruitment"
+		# Southern Dúnedain and Gondorian
+		any_country = {
+			limit = {
+				exists = yes
+				NOT = {
+					has_country_modifier = recruited_admirals
+					has_country_modifier = observer_mode
+				}
+				any_owned_province = { port = yes }
+				OR = {
+					AND = {
+						primary_culture = dunedain
+						OR = {
+							accepted_culture = gondorian
+							accepted_culture = amrothian
+							NOT = {
+								accepted_culture = gondorian
+								accepted_culture = amrothian
+								accepted_culture = arthedani
+								accepted_culture = cardolandrim
+								accepted_culture = haeranedain
+							}
+						}
+					}
+					primary_culture = gondorian
+					primary_culture = amrothian
+				}
+			}
+			country_event = 40001
+		}
+		
+		# Northern Dúnedain and Arnorian
+		any_country = {
+			limit = {
+				exists = yes
+				NOT = {
+					has_country_modifier = recruited_admirals
+					has_country_modifier = observer_mode
+				}
+				any_owned_province = { port = yes }
+				OR = {
+					AND = {
+						primary_culture = dunedain
+						OR = {
+							accepted_culture = arthedani
+							accepted_culture = cardolandrim
+							accepted_culture = haeranedain
+						}
+					}
+					primary_culture = arthedani
+					primary_culture = cardolandrim
+					primary_culture = haeranedain
+				}
+			}
+			country_event = 40003
+		}
+		
+		# High Elves
+		any_country = {
+			limit = {
+				exists = yes
+				NOT = {
+					has_country_modifier = recruited_admirals
+					has_country_modifier = observer_mode
+				}
+				any_owned_province = { port = yes }
+				OR = {
+					primary_culture = noldor
+					primary_culture = falathrim
+				}
+			}
+			country_event = 40005
+		}
+		
+		# Silvan Elves
+		any_country = {
+			limit = {
+				exists = yes
+				NOT = {
+					has_country_modifier = recruited_admirals
+					has_country_modifier = observer_mode
+				}
+				any_owned_province = { port = yes }
+				OR = {
+					primary_culture = silvan
+					primary_culture = galadhrim
+				}
+			}
+			country_event = 40007
+		}
+		
+		# Avarin Elves
+		any_country = {
+			limit = {
+				exists = yes
+				NOT = {
+					has_country_modifier = recruited_admirals
+					has_country_modifier = observer_mode
+				}
+				any_owned_province = { port = yes }
+				is_culture_group = avari
+			}
+			country_event = 40009
+		}
+		
+		# Haradrim
+		any_country = {
+			limit = {
+				exists = yes
+				NOT = {
+					has_country_modifier = recruited_admirals
+					has_country_modifier = observer_mode
+				}
+				any_owned_province = { port = yes }
+				is_culture_group = haradrim
+			}
+			country_event = 40011
+		}
+		
+		# Kingsmen/Black Numenoreans
+		any_country = {
+			limit = {
+				exists = yes
+				NOT = {
+					has_country_modifier = recruited_admirals
+					has_country_modifier = observer_mode
+				}
+				any_owned_province = { port = yes }
+				is_culture_group = kingsmen
+			}
+			country_event = 40013
+		}
+		
+		# Khandish
+		any_country = {
+			limit = {
+				exists = yes
+				NOT = {
+					has_country_modifier = recruited_admirals
+					has_country_modifier = observer_mode
+				}
+				any_owned_province = { port = yes }
+				is_culture_group = khandish
+			}
+			country_event = 40015
+		}
+		
+		# Easterlings
+		any_country = {
+			limit = {
+				exists = yes
+				NOT = {
+					has_country_modifier = recruited_admirals
+					has_country_modifier = observer_mode
+				}
+				any_owned_province = { port = yes }
+				is_culture_group = easterlings
+			}
+			country_event = 40017
+		}
+		
+		# Northmen
+		any_country = {
+			limit = {
+				exists = yes
+				NOT = {
+					has_country_modifier = recruited_admirals
+					has_country_modifier = observer_mode
+				}
+				any_owned_province = { port = yes }
+				OR = {
+					is_culture_group = northmen
+					is_culture_group = gramavuld_northmen
+				}
+			}
+			country_event = 40019
+		}
+		
+		# Dwarves
+		any_country = {
+			limit = {
+				exists = yes
+				NOT = {
+					has_country_modifier = recruited_admirals
+					has_country_modifier = observer_mode
+				}
+				any_owned_province = { port = yes }
+				OR = {
+					is_culture_group = dwarves
+					is_culture_group = wicked_dwarves
+				}
+			}
+			country_event = 40021
+		}
+		
+		# Anduinrim
+		any_country = {
+			limit = {
+				exists = yes
+				NOT = {
+					has_country_modifier = recruited_admirals
+					has_country_modifier = observer_mode
+				}
+				any_owned_province = { port = yes }
+				is_culture_group = anduinrim
+			}
+			country_event = 40023
+		}
+		
+		# Ents
+		any_country = {
+			limit = {
+				exists = yes
+				NOT = {
+					has_country_modifier = recruited_admirals
+					has_country_modifier = observer_mode
+				}
+				any_owned_province = { port = yes }
+				is_culture_group = ents
+			}
+			country_event = 40025
+		}
+		
+		# Druedain
+		any_country = {
+			limit = {
+				exists = yes
+				NOT = {
+					has_country_modifier = recruited_admirals
+					has_country_modifier = observer_mode
+				}
+				any_owned_province = { port = yes }
+				primary_culture = druedain
+			}
+			country_event = 40027
+		}
+		
+		# Non-Druedain Wildmen
+		any_country = {
+			limit = {
+				exists = yes
+				NOT = {
+					has_country_modifier = recruited_admirals
+					has_country_modifier = observer_mode
+				}
+				any_owned_province = { port = yes }
+				is_culture_group = wildmen
+				NOT = { primary_culture = druedain }
+			}
+			country_event = 40029
+		}
+		
+		# Rohirrim
+		any_country = {
+			limit = {
+				exists = yes
+				NOT = {
+					has_country_modifier = recruited_admirals
+					has_country_modifier = observer_mode
+				}
+				any_owned_province = { port = yes }
+				is_culture_group = rohirrim
+			}
+			country_event = 40031
+		}
+		
+		# Orcs/Uruks
+		any_country = {
+			limit = {
+				exists = yes
+				NOT = {
+					has_country_modifier = recruited_admirals
+					has_country_modifier = observer_mode
+				}
+				any_owned_province = { port = yes }
+				OR = {
+					is_culture_group = uruk_hai
+					is_culture_group = mordorian
+					is_culture_group = northern_goblins
+				}
+			}
+			country_event = 40033
+		}
+		
+		# Angmarrim
+		any_country = {
+			limit = {
+				exists = yes
+				NOT = {
+					has_country_modifier = recruited_admirals
+					has_country_modifier = observer_mode
+				}
+				any_owned_province = { port = yes }
+				is_culture_group = angmarrim
+			}
+			country_event = 40035
+		}
+		
+		# Lossoth
+		any_country = {
+			limit = {
+				exists = yes
+				NOT = {
+					has_country_modifier = recruited_admirals
+					has_country_modifier = observer_mode
+				}
+				any_owned_province = { port = yes }
+				is_culture_group = lossoth
+			}
+			country_event = 40037
+		}
+		
+		# Breelander
+		any_country = {
+			limit = {
+				exists = yes
+				NOT = {
+					has_country_modifier = recruited_admirals
+					has_country_modifier = observer_mode
+				}
+				any_owned_province = { port = yes }
+				is_culture_group = breelander
+			}
+			country_event = 40039
+		}
+		
+		# Hobbit
+		any_country = {
+			limit = {
+				exists = yes
+				NOT = {
+					has_country_modifier = recruited_admirals
+					has_country_modifier = observer_mode
+				}
+				any_owned_province = { port = yes }
+				is_culture_group = hobbits
+			}
+			country_event = 40041
+		}
+
+		# Trolls
+		any_country = {
+			limit = {
+				exists = yes
+				NOT = {
+					has_country_modifier = recruited_admirals
+					has_country_modifier = observer_mode
+				}
+				any_owned_province = { port = yes }
+				is_culture_group = trolls
+			}
+			country_event = 40043
+		}
+
+		# Eagles
+		any_country = {
+			limit = {
+				exists = yes
+				NOT = {
+					has_country_modifier = recruited_admirals
+					has_country_modifier = observer_mode
+				}
+				any_owned_province = { port = yes }
+				is_culture_group = eagles
+			}
+			country_event = 40045
+		}
+
+		# Spiders
+		any_country = {
+			limit = {
+				exists = yes
+				NOT = {
+					has_country_modifier = recruited_admirals
+					has_country_modifier = observer_mode
+				}
+				any_owned_province = { port = yes }
+				is_culture_group = spiders
+			}
+			country_event = 40047
+		}
+
+		# Undead
+		any_country = {
+			limit = {
+				exists = yes
+				NOT = {
+					has_country_modifier = recruited_admirals
+					has_country_modifier = observer_mode
+				}
+				any_owned_province = { port = yes }
+				is_culture_group = undead
+			}
+			country_event = 40049
+		}
+		
+		country_event = { id = 99009 days = 30 }
+	}
+}
+
 # Generic Daily Cleanup
 country_event = {
 	id = 99250
@@ -6657,6 +7474,7 @@ country_event = {
 				owner = {
 					remove_country_modifier = alliance_of_dwarves_and_men
 					add_country_modifier = { name = alliance_of_dwarves_and_men duration = -1 }
+					# No need to add the diplomacy text as it should be already added when the tag was added
 				}
 			}
 			# }

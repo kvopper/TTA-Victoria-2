@@ -2771,4 +2771,11 @@ money_hoarder_7 = {
 	
 	icon = 48
 }
+
+# Country Modifier
+ai_boost_modifier = {
+	pop_militancy_modifier = -0.05
+	
+	icon = 47
+}
 # }

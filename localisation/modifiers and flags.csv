@@ -40,8 +40,8 @@ bad_debter;Bad debter;x
 bad_debter_desc;Due to your realm's history of flaky economy banks will demand a higher interest on your loans;x
 great_power;Great Power;x
 second_power;Secondary Power;x
-civ_nation;Centralized Realm;Nation civilisee;Zivilisierte Nation;;Nacion civilizada;;;;;;;;;x;
-unciv_nation;Uncentralized Realm;Nation non civilisee;Unzivilisierte Nation;;Nacion sin civilizar;;;;;;;;;x;
+civ_nation;Centralized Realm;x
+unciv_nation;Uncentralized Realm;x
 average_literacy;Literacy;x
 plurality;Popular Anxiety;x
 generalised_debt_default;Generalised Debt Default;x
@@ -74,6 +74,8 @@ province_wealth_4;§OProvince Wealth:§! §GBountiful (+4)§!;x
 desc_province_wealth_4; ;x
 province_wealth_5;§OProvince Wealth:§! §GRich (+5)§!;x
 desc_province_wealth_5; ;x
+military_schools_effect;New Generals §Wand §YNew Admirals §Wevent will no longer give generals with negative stats;x
+alliance_dwarves_men_tag_unlock_effect;§WUnlocks the ability to form the §YFree Folk of the North §Wvia the §YAlliance of Dwarves and Men §Wmenu (requires §YRailroading §Wto be §Rturned off§W);x
 ##################################;x }
 ##### ORGANIZATION MODIFIERS #####;x {
 ##################################;x
@@ -387,17 +389,17 @@ silmaril;Silmaril;x
 silmaril_desc;We have acquired one of the jewels that captured the light of the Two Trees of Valinor.;x
 anor_palantir;Anor Palantir;x
 anor_palantir_desc;One of the great Seeing Stones, the Anor Palantir is housed in Minas Anor, now called Minas Tirith.;x
-orthanc_palantir;Orthanc Palantir;
+orthanc_palantir;Orthanc Palantir;x
 orthanc_palantir_desc;The Orthanc Seeing Stone was housed in Isengard. In recent decades it was all but forgotten by the Stewards of Gondor, though Saruman keenly remembered its existence and rediscovered it in the vaults of Isengard.;x
-ithil_palantir;Ithil Palantir;
+ithil_palantir;Ithil Palantir;x
 ithil_palantir_desc;The Ithil Seeing Stone was once housed in Minas Ithil. Upon that castle being captured by the Nazgul, the Palantir was moved to Barad-dûr and used exclusively by Sauron.;x
-elostirion_palantir;Elostirion Palantir;
+elostirion_palantir;Elostirion Palantir;x
 elostirion_palantir_desc;The Elostirion Seeing Stone was unique. It could not communicate with any of the other Palantiri in Middle Earth, instead looking only West to the Undying Lands. It is an object of pilgrimage for elves across Middle Earth.;x
-osgiliath_palantir;Osgiliath Palantir;
+osgiliath_palantir;Osgiliath Palantir;x
 osgiliath_palantir_desc;The Osgiliath Seeing Stone is the largest and most eminent of the Palantiri. It was lost during the Kin-strife, falling into the river Anduin to never be recovered.;x
-amonsul_palantir;Amon Sûl Palantir;
+amonsul_palantir;Amon Sûl Palantir;x
 amonsul_palantir_desc;One of the great Seeing Stones, the Amon Sûl Palantir was one of three in the Kingdom of Arnor. When the Witch-king sacked the Kingdom, the King fled with his heirlooms to the North. There, the Stone of Amon Sûl, along with that of Annúminas, was lost in a shipwreck, in the icy waters of Forochel.;x
-annuminas_palantir;Annúminas Palantir;
+annuminas_palantir;Annúminas Palantir;x
 annuminas_palantir_desc;One of the great Seeing Stones, the Annúminas Palantir was one of three in the Kingdom of Arnor. When the Witch-king sacked the Kingdom, the King fled with his heirlooms to the North. There, the Stone of Annúminas, along with that of Amon Sûl, was lost in a shipwreck, in the icy waters of Forochel.;x
 lesser_ring_of_might;Lesser Ring of Might;x
 lesser_ring_of_might_desc;The Lesser Rings were the series of rings created by Celebrimbor and Sauron as essays in the craft, before they created the Rings of Power. This Lesser Ring provides some meagre benefits.;x
@@ -523,10 +525,10 @@ AMO_upcoming_conquest_desc;When we first came to the Salenin Vale, our Khan invi
 ############################;x }
 ##### EREBOR MODIFIERS #####;x {
 ############################;x
-good_raven_influence;Raven influence;
-good_raven_influence_desc;Our friendship with the local ravens of the Lonely Mountain is giving us some diplomatic benefits.;
+good_raven_influence;Raven influence;x
+good_raven_influence_desc;Our friendship with the local ravens of the Lonely Mountain is giving us some diplomatic benefits.;x
 bad_raven_influence;Raven interference;x
-bad_raven_influence_desc;The ravens of the Lonely Mountain are interfering with our rule.;
+bad_raven_influence_desc;The ravens of the Lonely Mountain are interfering with our rule.;x
 ###################################;x }
 ##### BARDING REALM MODIFIERS #####;x {
 ###################################;x
@@ -650,7 +652,7 @@ control_of_rhunaer;Control of Rhûnaer;x
 control_of_rhunaer_desc;We have control over the Sea of Rhûn!\n\nTo retain these bonuses, we must control Raivod, Scarakikot, Lest, Dourband, Dilgul, Mistrand, Larkar, Elgaer, Egil Dorn, Tset-Hedron, Burh Kuga and Winterion Iaur.;x
 men_culture_nation;Men Nation;x
 men_culture_nation_desc;These are the bonuses for our primary race being Men.;x
-elven_culture_nation;Elven Nation;x
+elven_culture_nation;Elven Nation\n\nMonthly Popular Anxiety Loss: §G0.25%§!;x
 elven_culture_nation_desc;These are the bonuses for our primary race being Elves.;x
 dwarven_culture_nation;Dwarven Nation;x
 dwarven_culture_nation_desc;These are the bonuses for our primary race being Dwarven.;x
@@ -684,6 +686,8 @@ money_hoarder_6;Insane Money Hoarder;x
 money_hoarder_6_desc;This modifier is put in place to prevent the late-game liquidity crisis caused by governments acquiring too much money.;x
 money_hoarder_7;Colossal Money Hoarder;x
 money_hoarder_7_desc;This modifier is put in place to prevent the late-game liquidity crisis caused by governments acquiring too much money.;x
+ai_boost_modifier;AI Boost;x
+ai_boost_modifier_desc;Let's be real: the AI sucks at this game, especially when compared to a player.;x
 #########################;x }
 ##### NATIONAL FOCI #####;x {
 #########################;x
@@ -810,6 +814,11 @@ RAD_content;Original tag is RAD (Radagast of Rhosgobel);x
 RAV_content;Original tag is RAV (Ravens of Erebor);x
 SHE_content;Original tag is SHE (Shelob's Domain);x
 WRM_content;Original tag is WRM (Woodland Realm);x
+houses_of_healing_unlock;@GON §YGondor Flavor§!: Has taken decision §YHouses of Healing§!;x
+minasdirith_unlock;@GON §YGondor Flavor§!: Has taken decision §YExpand the Minasdirith§!;x
+lembas_bread_unlock;§YElven Flavor§!: Has taken decision §YLembas Bread§!;x
+eagles_unlock;§YAnti-Sauron Flavor§!: Has taken decision §YCall for help from the Eagles§!;x
+fellbeasts_unlock;§YSauronite Flavor§!: Has taken decision §YTame the Fellbeasts§!;x
 ##################################;x }
 ##### IDEOLOGY COUNTRY FLAGS #####;x {
 ##################################;x

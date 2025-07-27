@@ -48,6 +48,9 @@ political_decisions = {
 			add_accepted_culture = harfoot
 			add_accepted_culture = stoor
 			add_accepted_culture = fallohide
+			
+			set_country_flag = flavor_expansion_2
+			set_country_flag = flavor_diplomacy_1
 		}
 		ai_will_do = { factor = 1 }
 	}

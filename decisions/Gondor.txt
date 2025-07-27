@@ -86,6 +86,26 @@ political_decisions = {
 			set_global_flag = ecthelion_ii_alive
 			set_global_flag = denethor_ii_alive
 			
+			set_country_flag = flavor_fortifications_2
+			set_country_flag = flavor_fortifications_3
+			set_country_flag = flavor_training_1
+			set_country_flag = flavor_training_2
+			set_country_flag = flavor_merchant_marine_2
+			set_country_flag = flavor_rgo_tech_3
+			set_country_flag = flavor_guilds_2
+			set_country_flag = flavor_infrastructure_tech_1
+			set_country_flag = flavor_population_1
+			set_country_flag = flavor_population_4
+			set_country_flag = flavor_education_3
+			set_country_flag = flavor_education_4
+			set_country_flag = flavor_diplomacy_1
+			set_country_flag = flavor_wilderness_1
+			set_country_flag = flavor_expansion_2
+			set_country_flag = flavor_expansion_3
+			set_country_flag = flavor_culture_2
+			set_country_flag = flavor_culture_3
+			set_country_flag = flavor_culture_4
+			
 			# Setting up starting leaders
 			set_country_flag = ideologies_house_of_stewards_active
 			set_country_flag = nobility_deactivated
@@ -599,7 +619,7 @@ political_decisions = {
 			owns = 16
 			NOT = { 16 = { has_province_modifier = houses_of_healing } }
 			is_culture_group = dunedain
-			NOT = { flavor_1 = 1 }
+			NOT = { has_country_flag = houses_of_healing_unlock }
 		}
 		
 		allow = { population_1 = 1 }
@@ -612,7 +632,8 @@ political_decisions = {
 				}
 			}
 			
-			activate_technology = flavor_1
+			set_country_flag = houses_of_healing_unlock
+			GON_unlock_invention_houses_of_healing_loc = { }
 		}
 	}
 	
@@ -953,14 +974,14 @@ political_decisions = {
 				soldiers = 0.027
 				has_country_modifier = encouraging_outside_military_recruitment
 				AND = {
-					flavor_11 = 1
+					has_country_flag = minasdirith_unlock
 					soldiers = 0.025
 				}
 			}
 			OR = {
 				military_score = 25
 				AND = {
-					flavor_11 = 1
+					has_country_flag = minasdirith_unlock
 					military_score = 15
 				}
 			}
@@ -984,7 +1005,7 @@ political_decisions = {
 		picture = "expand_minasdirath"
 		potential = {
 			tag = GON
-			NOT = { flavor_11 = 1 }
+			NOT = { has_country_flag = minasdirith_unlock }
 		}
 		
 		allow = {
@@ -994,7 +1015,8 @@ political_decisions = {
 		
 		effect = {
 			treasury = -50000
-			activate_technology = flavor_11
+			set_country_flag = minasdirith_unlock
+			GON_unlock_invention_minasdirath_loc = { }
 		}
 	}
 }
@@ -1936,7 +1958,7 @@ political_decisions = {
 		}
 		
 		allow = {
-			farming_tech_3 = 1
+			rgo_tech_3 = 1
 			owns = 44
 		}
 		
@@ -2235,7 +2257,7 @@ political_decisions = {
 		}
 		
 		allow = {
-			fortifications_1 = 1
+			fortifications_2 = 1
 			OR = {
 				owns = 10 # Cair Andros
 				owns = 14 # West Osgiliath
@@ -2270,7 +2292,7 @@ political_decisions = {
 		}
 		
 		allow = {
-			fortifications_2 = 1
+			fortifications_3 = 1
 		}
 		
 		effect = {

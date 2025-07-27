@@ -181,6 +181,11 @@ country_event = {
 		HRN = {
 			prestige = 10
 			badboy = 2
+			
+			# Queue the AI to go get the next flavor
+			set_country_flag = flavor_diplomacy_2
+			set_country_flag = flavor_expansion_2
+			set_country_flag = flavor_population_1
 		}
 		HRU = {
 			prestige = -5
@@ -242,6 +247,11 @@ country_event = {
 		HRU = {
 			prestige = 10
 			badboy = 2
+			
+			# Queue the AI to go get the next flavor
+			set_country_flag = flavor_diplomacy_2
+			set_country_flag = flavor_expansion_2
+			set_country_flag = flavor_population_1
 		}
 		HRN = {
 			prestige = -5
@@ -303,6 +313,11 @@ country_event = {
 		CHE = {
 			prestige = 10
 			badboy = 2
+			
+			# Queue the AI to go get the next flavor
+			set_country_flag = flavor_diplomacy_2
+			set_country_flag = flavor_expansion_2
+			set_country_flag = flavor_population_1
 		}
 		HRU = {
 			prestige = -5
@@ -364,6 +379,11 @@ country_event = {
 		UMB = {
 			prestige = 10
 			badboy = 2
+			
+			# Queue the AI to go get the next flavor
+			set_country_flag = flavor_diplomacy_2
+			set_country_flag = flavor_expansion_2
+			set_country_flag = flavor_population_1
 		}
 		HRU = {
 			prestige = -5
@@ -497,6 +517,11 @@ country_event = {
 			value = -50
 		}
 		set_global_flag = MOR_established_HRD_vassal
+		
+		# Queueing AI to go down the subsequent flavor
+		set_country_flag = flavor_expansion_3
+		set_country_flag = flavor_population_2
+		set_country_flag = flavor_diplomacy_3
 		ai_chance = {
 			factor = 36
 			modifier = {
@@ -586,7 +611,14 @@ country_event = {
 				value = -50
 			}
 		}
-		FROM = { country_event = 50506 }
+		FROM = {
+			country_event = 50506
+			
+			# Queue "victor" to research the tech for the next set of flavor
+			set_country_flag = flavor_diplomacy_2
+			set_country_flag = flavor_expansion_2
+			set_country_flag = flavor_population_1
+		}
 		ai_chance = {
 			factor = 70
 			modifier = {

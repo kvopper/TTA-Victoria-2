@@ -1,5 +1,8 @@
+#################################
+# NAVAL CONSTRUCTION INVENTIONS #
+#################################
 shipbuilding = {
-	limit = { merchant_marine_1 = 1 }
+	limit = { naval_construction_1 = 1 }
 	chance = {
 		base = 0
 		
@@ -12,4 +15,91 @@ shipbuilding = {
 	}
 	
 	effect = { activate_building = clipper_shipyard }
+}
+corsair_ship_unlock = {
+	limit = { naval_construction_3 = 1 }
+	chance = {
+		base = 0
+		modifier = {
+			factor = 100
+			is_culture_group = kingsmen
+		}
+	}
+	effect = {
+		activate_unit = corsair_ship
+	}
+}
+grand_shipyards = {
+	limit = { naval_construction_5 = 1 }
+	chance = {
+		base = 0
+		
+		modifier = {
+			factor = 2
+			any_owned_province = {
+				is_coastal = yes
+			}
+		}
+	}
+	effect = {
+		max_naval_base = 1
+	}
+}
+#########################
+# LIGHT SHIP INVENTIONS #
+#########################
+ramming = {
+	limit = { light_ships_4 = 1 }
+	chance = {
+		base = 2
+	}
+	effect = {
+		galley = {
+			torpedo_attack = 2
+		}
+	}
+}
+advanced_ramming = {
+	limit = { light_ships_5 = 1 }
+	chance = {
+		base = 2
+	}
+	effect = {
+		galley = {
+			torpedo_attack = 8
+		}
+	}
+}
+#########################
+# HEAVY SHIP INVENTIONS #
+#########################
+boarding = {
+	limit = { heavy_ships_3 = 1 }
+	chance = {
+		base = 2
+	}
+	effect = {
+		cog = {
+			gun_power = 3
+		}
+		corsair_ship = {
+			gun_power = 3
+			torpedo_attack = 2
+		}
+	}
+}
+boarding_bridges = {
+	limit = { heavy_ships_5 = 1 }
+	chance = {
+		base = 2
+	}
+	effect = {
+		cog = {
+			gun_power = 5
+		}
+		corsair_ship = {
+			gun_power = 5
+			torpedo_attack = 8
+		}
+	}
 }

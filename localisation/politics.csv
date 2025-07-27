@@ -101,16 +101,16 @@ all_land_ownership;About 95%;x
 all_land_ownership_l;About 95%;x
 all_land_ownership_desc;Nearly all of the land in the realm is controlled by the central authority.;x
 movement_all_land_ownership;Movement to increase realm land control;x
-serfdom;Serfdom;
-enforced_serfdom;Enforced Serfdom;
+serfdom;Serfdom;x
+enforced_serfdom;Enforced Serfdom;x
 enforced_serfdom_l;Enforced Serfdom;x
 enforced_serfdom_desc;Serfdom is enforced. Serfs are bound to the land they work unless they are specifically granted leave or property by their master.\nPoor Pop Promotion Rate: §R1.0%§!;x
 movement_enforced_serfdom;Movement to enforce serfdom;x
-discouraged_serfdom;Discouraged Serfdom;
+discouraged_serfdom;Discouraged Serfdom;x
 discouraged_serfdom_l;Discouraged Serfdom;x
 discouraged_serfdom_desc;Serfdom is legal but discouraged. The rulers want to bring the realm on the way towards abolishing serfdom, be it because of the aspirations of their own or because of practical reasons. Serfdom appears to be a unliked institution that will mostly be replaced by a system of indentured servitude or through ownership of land by freeholding peasants.\nPoor Pop Promotion Rate: §R0.5%§!;x
 movement_discouraged_serfdom;Movement to restrict serfdom;x
-banned_serfdom;Serfdom Banned;
+banned_serfdom;Serfdom Banned;x
 banned_serfdom_l;Serfdom Banned;x
 banned_serfdom_desc;Serfdom is illegal. Those who practice it are punished. Every serf in the realm has been liberated and made a free person, who is not restricted by location and can move elsewhere to improve their chances. How it applies in practice is another matter.;x
 movement_banned_serfdom;Movement to abolish serfdom;x
@@ -656,7 +656,7 @@ MODIFIER_UNCIV_MILITARY_UH;Council of the Realm support;x
 ##### CENTRALIZATION TEXT #####;x {
 ###############################;x
 DIPLOMACY_CIVILIZEDNATION_STATUS;Centralized Realm;x
-DIPLOMACY_UNCIVILIZEDNATION_STATUS;Uncentralized Realm;x
+DIPLOMACY_UNCIVILIZEDNATION_STATUS;No Organizations;x
 DIPLOMACY_UNCIVILIZEDNATION_APPEND;(Uncentralized);x
 AIREASON_CIV_VS_UNCIV;Centralized vs Uncentralized;x
 MAPMODE_19;Centralization Level;x

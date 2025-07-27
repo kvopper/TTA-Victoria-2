@@ -62,7 +62,6 @@ personality = {
 	# Attack Trait - Tier 3
 	relentless = {
 		attack = 2
-		defence = -1
 	}
 	
 	##########################
@@ -113,7 +112,6 @@ personality = {
 	# Defense Trait - Tier 3
 	reserved = {
 		defence = 2
-		attack = -1
 	}
 	
 	########################

@@ -2,56 +2,69 @@
 merchant_marine_1 = {
 	area = merchant_marine
 	year = 2954
-	cost = 3600
+	cost = 2500
 	unciv_military = yes
 
 	transport = {
 		hull = 1
 	}
-	supply_range = 0.05
+	supply_range = 0.1
 	naval_attrition = -0.01
-	activate_building = naval_base
 	
 	ai_chance = {
 		factor = 1
-		
+		modifier = {
+			factor = 1.4
+			OR = {
+				has_country_flag = flavor_merchant_marine_1
+				has_country_flag = flavor_merchant_marine_2
+				has_country_flag = flavor_merchant_marine_3
+				AND = {
+					year = 2965
+					has_country_flag = flavor_merchant_marine_4
+				}
+				AND = {
+					year = 2980
+					has_country_flag = flavor_merchant_marine_5
+				}
+			}
+		}
 		modifier = {
 			factor = 0
 			NOT = { total_num_of_ports = 1 }
 		}
 		modifier = {
-			factor = 1.05
-			tech_school = navy_tech_school
-		}
-		modifier = {
-			factor = 1.25
+			factor = 1.5
 			total_num_of_ports = 20
 			rank = 12
 		}
 		modifier = {
-			factor = 1.15
+			factor = 1.3
+
 			total_amount_of_ships = 20
 		}
 		modifier = {
-			factor = 1.15
+			factor = 1.3
+
 			total_amount_of_ships = 50
 		}
 		modifier = {
-			factor = 1.15
+			factor = 1.3
+
 			total_amount_of_ships = 100
 		}
 		modifier = {
-			factor = 1.2
+			factor = 1.4
 			total_num_of_ports = 10
 			NOT = { num_of_cities = 40 }
 		}
 		modifier = {
-			factor = 1.2
+			factor = 1.4
 			total_num_of_ports = 25
 			NOT = { num_of_cities = 100 }
 		}
 		modifier = {
-			factor = 1.1
+			factor = 1.25
 			year = 2960
 		}
 	}
@@ -60,56 +73,68 @@ merchant_marine_1 = {
 merchant_marine_2 = {
 	area = merchant_marine
 	year = 2954
-	cost = 7200
+	cost = 3000
 	unciv_military = yes
 
 	transport = {
-		hull = 1
+		hull = 2
 	}
-	supply_range = 0.05
-	naval_attrition = -0.01
-	max_naval_base = 1
+	supply_range = 0.1
+	naval_attrition = -0.02
 	
 	ai_chance = {
 		factor = 1
-		
+		modifier = {
+			factor = 1.4
+			OR = {
+				has_country_flag = flavor_merchant_marine_2
+				has_country_flag = flavor_merchant_marine_3
+				AND = {
+					year = 2965
+					has_country_flag = flavor_merchant_marine_4
+				}
+				AND = {
+					year = 2980
+					has_country_flag = flavor_merchant_marine_5
+				}
+			}
+		}
 		modifier = {
 			factor = 0
 			NOT = { total_num_of_ports = 1 }
 		}
 		modifier = {
-			factor = 1.05
-			tech_school = navy_tech_school
-		}
-		modifier = {
-			factor = 1.25
+			factor = 1.5
 			total_num_of_ports = 20
 			rank = 12
 		}
 		modifier = {
-			factor = 1.15
+			factor = 1.3
+
 			total_amount_of_ships = 20
 		}
 		modifier = {
-			factor = 1.15
+			factor = 1.3
+
 			total_amount_of_ships = 50
 		}
 		modifier = {
-			factor = 1.15
+			factor = 1.3
+
 			total_amount_of_ships = 100
 		}
 		modifier = {
-			factor = 1.2
+			factor = 1.4
 			total_num_of_ports = 10
 			NOT = { num_of_cities = 40 }
 		}
 		modifier = {
-			factor = 1.2
+			factor = 1.4
 			total_num_of_ports = 25
 			NOT = { num_of_cities = 100 }
 		}
 		modifier = {
-			factor = 1.1
+			factor = 1.25
 			year = 2965
 		}
 	}
@@ -118,56 +143,67 @@ merchant_marine_2 = {
 merchant_marine_3 = {
 	area = merchant_marine
 	year = 2965
-	cost = 10800
+	cost = 4000
 	unciv_military = yes
 
 	transport = {
-		hull = 1
+		hull = 3
 	}
 	supply_range = 0.1
-	naval_attrition = -0.02
-	max_naval_base = 1
+	naval_attrition = -0.03
 	
 	ai_chance = {
 		factor = 1
-		
+		modifier = {
+			factor = 1.4
+			OR = {
+				has_country_flag = flavor_merchant_marine_3
+				AND = {
+					year = 2965
+					has_country_flag = flavor_merchant_marine_4
+				}
+				AND = {
+					year = 2980
+					has_country_flag = flavor_merchant_marine_5
+				}
+			}
+		}
 		modifier = {
 			factor = 0
 			NOT = { total_num_of_ports = 1 }
 		}
 		modifier = {
-			factor = 1.05
-			tech_school = navy_tech_school
-		}
-		modifier = {
-			factor = 1.25
+			factor = 1.5
 			total_num_of_ports = 20
 			rank = 12
 		}
 		modifier = {
-			factor = 1.15
+			factor = 1.3
+
 			total_amount_of_ships = 20
 		}
 		modifier = {
-			factor = 1.15
+			factor = 1.3
+
 			total_amount_of_ships = 50
 		}
 		modifier = {
-			factor = 1.15
+			factor = 1.3
+
 			total_amount_of_ships = 100
 		}
 		modifier = {
-			factor = 1.2
+			factor = 1.4
 			total_num_of_ports = 10
 			NOT = { num_of_cities = 40 }
 		}
 		modifier = {
-			factor = 1.2
+			factor = 1.4
 			total_num_of_ports = 25
 			NOT = { num_of_cities = 100 }
 		}
 		modifier = {
-			factor = 1.1
+			factor = 1.25
 			year = 2980
 		}
 	}
@@ -176,55 +212,63 @@ merchant_marine_3 = {
 merchant_marine_4 = {
 	area = merchant_marine
 	year = 2980
-	cost = 14400
+	cost = 5500
 	unciv_military = yes
 
 	transport = {
-		hull = 1
+		hull = 4
 	}
 	supply_range = 0.1
-	naval_attrition = -0.02
+	naval_attrition = -0.04
 	
 	ai_chance = {
 		factor = 1
-		
+		modifier = {
+			factor = 1.4
+			OR = {
+				has_country_flag = flavor_merchant_marine_4
+				AND = {
+					year = 2980
+					has_country_flag = flavor_merchant_marine_5
+				}
+			}
+		}
 		modifier = {
 			factor = 0
 			NOT = { total_num_of_ports = 1 }
 		}
 		modifier = {
-			factor = 1.05
-			tech_school = navy_tech_school
-		}
-		modifier = {
-			factor = 1.25
+			factor = 1.5
 			total_num_of_ports = 20
 			rank = 12
 		}
 		modifier = {
-			factor = 1.15
+			factor = 1.3
+
 			total_amount_of_ships = 20
 		}
 		modifier = {
-			factor = 1.15
+			factor = 1.3
+
 			total_amount_of_ships = 50
 		}
 		modifier = {
-			factor = 1.15
+			factor = 1.3
+
 			total_amount_of_ships = 100
 		}
 		modifier = {
-			factor = 1.2
+			factor = 1.4
 			total_num_of_ports = 10
 			NOT = { num_of_cities = 40 }
 		}
 		modifier = {
-			factor = 1.2
+			factor = 1.4
 			total_num_of_ports = 25
 			NOT = { num_of_cities = 100 }
 		}
 		modifier = {
-			factor = 1.1
+			factor = 1.25
 			year = 3000
 		}
 	}
@@ -233,55 +277,57 @@ merchant_marine_4 = {
 merchant_marine_5 = {
 	area = merchant_marine
 	year = 3000
-	cost = 18000
+	cost = 7000
 	unciv_military = yes
 
 	transport = {
-		hull = 1
+		hull = 5
 	}
-	supply_range = 0.2
-	naval_attrition = -0.04
+	supply_range = 0.1
+	naval_attrition = -0.05
 	
 	ai_chance = {
 		factor = 1
-		
+		modifier = {
+			factor = 1.4
+			has_country_flag = flavor_merchant_marine_5
+		}
 		modifier = {
 			factor = 0
 			NOT = { total_num_of_ports = 1 }
 		}
 		modifier = {
-			factor = 1.05
-			tech_school = navy_tech_school
-		}
-		modifier = {
-			factor = 1.25
+			factor = 1.5
 			total_num_of_ports = 20
 			rank = 12
 		}
 		modifier = {
-			factor = 1.15
+			factor = 1.3
+
 			total_amount_of_ships = 20
 		}
 		modifier = {
-			factor = 1.15
+			factor = 1.3
+
 			total_amount_of_ships = 50
 		}
 		modifier = {
-			factor = 1.15
+			factor = 1.3
+
 			total_amount_of_ships = 100
 		}
 		modifier = {
-			factor = 1.2
+			factor = 1.4
 			total_num_of_ports = 10
 			NOT = { num_of_cities = 40 }
 		}
 		modifier = {
-			factor = 1.2
+			factor = 1.4
 			total_num_of_ports = 25
 			NOT = { num_of_cities = 100 }
 		}
 		modifier = {
-			factor = 1.1
+			factor = 1.25
 			year = 3010
 		}
 	}
@@ -291,62 +337,68 @@ merchant_marine_5 = {
 light_ships_1 = {
 	area = light_ships
 	year = 2954
-	cost = 3600
+	cost = 2500
 	unciv_military = yes
 
 	galley = {
-		hull = 4
-		gun_power = 1
-	}
-	galleass = {
-		hull = 4
-		gun_power = 1
-	}
-	galiot = {
-		hull = 4
-		gun_power = 1
+		hull = 1
+		gun_power = 3
 	}
 	
 	ai_chance = {
 		factor = 1
-		
+		modifier = {
+			factor = 1.4
+			OR = {
+				has_country_flag = flavor_light_ships_1
+				has_country_flag = flavor_light_ships_2
+				has_country_flag = flavor_light_ships_3
+				AND = {
+					year = 2965
+					has_country_flag = flavor_light_ships_4
+				}
+				AND = {
+					year = 2980
+					has_country_flag = flavor_light_ships_5
+				}
+			}
+		}
 		modifier = {
 			factor = 0
 			NOT = { total_num_of_ports = 1 }
 		}
 		modifier = {
-			factor = 1.05
-			tech_school = navy_tech_school
-		}
-		modifier = {
-			factor = 1.25
+			factor = 1.5
 			total_num_of_ports = 20
 			rank = 12
 		}
 		modifier = {
-			factor = 1.15
+			factor = 1.3
+
 			total_amount_of_ships = 20
 		}
 		modifier = {
-			factor = 1.15
+			factor = 1.3
+
 			total_amount_of_ships = 50
 		}
 		modifier = {
-			factor = 1.15
+			factor = 1.3
+
 			total_amount_of_ships = 100
 		}
 		modifier = {
-			factor = 1.2
+			factor = 1.4
 			total_num_of_ports = 10
 			NOT = { num_of_cities = 40 }
 		}
 		modifier = {
-			factor = 1.2
+			factor = 1.4
 			total_num_of_ports = 25
 			NOT = { num_of_cities = 100 }
 		}
 		modifier = {
-			factor = 1.1
+			factor = 1.25
 			year = 2960
 		}
 	}
@@ -355,62 +407,67 @@ light_ships_1 = {
 light_ships_2 = {
 	area = light_ships
 	year = 2954
-	cost = 7200
+	cost = 3000
 	unciv_military = yes
 
 	galley = {
-		hull = 4
-		gun_power = 1
-	}
-	galleass = {
-		hull = 4
-		gun_power = 1
-	}
-	galiot = {
-		hull = 4
-		gun_power = 1
+		hull = 2
+		gun_power = 6
 	}
 	
 	ai_chance = {
 		factor = 1
-		
+		modifier = {
+			factor = 1.4
+			OR = {
+				has_country_flag = flavor_light_ships_2
+				has_country_flag = flavor_light_ships_3
+				AND = {
+					year = 2965
+					has_country_flag = flavor_light_ships_4
+				}
+				AND = {
+					year = 2980
+					has_country_flag = flavor_light_ships_5
+				}
+			}
+		}
 		modifier = {
 			factor = 0
 			NOT = { total_num_of_ports = 1 }
 		}
 		modifier = {
-			factor = 1.05
-			tech_school = navy_tech_school
-		}
-		modifier = {
-			factor = 1.25
+			factor = 1.5
 			total_num_of_ports = 20
 			rank = 12
 		}
 		modifier = {
-			factor = 1.15
+			factor = 1.3
+
 			total_amount_of_ships = 20
 		}
 		modifier = {
-			factor = 1.15
+			factor = 1.3
+
 			total_amount_of_ships = 50
 		}
 		modifier = {
-			factor = 1.15
+			factor = 1.3
+
 			total_amount_of_ships = 100
 		}
 		modifier = {
-			factor = 1.2
+			factor = 1.4
 			total_num_of_ports = 10
 			NOT = { num_of_cities = 40 }
 		}
 		modifier = {
-			factor = 1.2
+			factor = 1.4
 			total_num_of_ports = 25
 			NOT = { num_of_cities = 100 }
 		}
 		modifier = {
-			factor = 1.1
+			factor = 1.25
 			year = 2965
 		}
 	}
@@ -419,63 +476,66 @@ light_ships_2 = {
 light_ships_3 = {
 	area = light_ships
 	year = 2965
-	cost = 10800
+	cost = 4000
 	unciv_military = yes
 
 	galley = {
-		hull = 8
-		gun_power = 2
+		hull = 3
+		gun_power = 9
 	}
-	galleass = {
-		hull = 8
-		gun_power = 2
-	}
-	galiot = {
-		hull = 8
-		gun_power = 2
-	}
-	activate_unit = galleass
 	
 	ai_chance = {
 		factor = 1
-		
+		modifier = {
+			factor = 1.4
+			OR = {
+				has_country_flag = flavor_light_ships_3
+				AND = {
+					year = 2965
+					has_country_flag = flavor_light_ships_4
+				}
+				AND = {
+					year = 2980
+					has_country_flag = flavor_light_ships_5
+				}
+			}
+		}
 		modifier = {
 			factor = 0
 			NOT = { total_num_of_ports = 1 }
 		}
 		modifier = {
-			factor = 1.05
-			tech_school = navy_tech_school
-		}
-		modifier = {
-			factor = 1.25
+			factor = 1.5
 			total_num_of_ports = 20
 			rank = 12
 		}
 		modifier = {
-			factor = 1.15
+			factor = 1.3
+
 			total_amount_of_ships = 20
 		}
 		modifier = {
-			factor = 1.15
+			factor = 1.3
+
 			total_amount_of_ships = 50
 		}
 		modifier = {
-			factor = 1.15
+			factor = 1.3
+
 			total_amount_of_ships = 100
 		}
 		modifier = {
-			factor = 1.2
+			factor = 1.4
 			total_num_of_ports = 10
 			NOT = { num_of_cities = 40 }
 		}
 		modifier = {
-			factor = 1.2
+			factor = 1.4
 			total_num_of_ports = 25
 			NOT = { num_of_cities = 100 }
 		}
 		modifier = {
-			factor = 1.1
+			factor = 1.25
 			year = 2980
 		}
 	}
@@ -484,64 +544,62 @@ light_ships_3 = {
 light_ships_4 = {
 	area = light_ships
 	year = 2980
-	cost = 14400
+	cost = 5500
 	unciv_military = yes
 
 	galley = {
-		hull = 8
-		gun_power = 2
-	}
-	galleass = {
-		hull = 8
-		gun_power = 2
-		torpedo_attack = 2
-	}
-	galiot = {
-		hull = 8
-		gun_power = 2
-		torpedo_attack = 2
+		hull = 4
+		gun_power = 12
 	}
 	
 	ai_chance = {
 		factor = 1
-		
+		modifier = {
+			factor = 1.4
+			OR = {
+				has_country_flag = flavor_light_ships_4
+				AND = {
+					year = 2980
+					has_country_flag = flavor_light_ships_5
+				}
+			}
+		}
 		modifier = {
 			factor = 0
 			NOT = { total_num_of_ports = 1 }
 		}
 		modifier = {
-			factor = 1.05
-			tech_school = navy_tech_school
-		}
-		modifier = {
-			factor = 1.25
+			factor = 1.5
 			total_num_of_ports = 20
 			rank = 12
 		}
 		modifier = {
-			factor = 1.15
+			factor = 1.3
+
 			total_amount_of_ships = 20
 		}
 		modifier = {
-			factor = 1.15
+			factor = 1.3
+
 			total_amount_of_ships = 50
 		}
 		modifier = {
-			factor = 1.15
+			factor = 1.3
+
 			total_amount_of_ships = 100
 		}
 		modifier = {
-			factor = 1.2
+			factor = 1.4
 			total_num_of_ports = 10
 			NOT = { num_of_cities = 40 }
 		}
 		modifier = {
-			factor = 1.2
+			factor = 1.4
 			total_num_of_ports = 25
 			NOT = { num_of_cities = 100 }
 		}
 		modifier = {
-			factor = 1.1
+			factor = 1.25
 			year = 3000
 		}
 	}
@@ -550,65 +608,56 @@ light_ships_4 = {
 light_ships_5 = {
 	area = light_ships
 	year = 3000
-	cost = 18000
+	cost = 7000
 	unciv_military = yes
 
 	galley = {
-		hull = 16
-		gun_power = 4
+		hull = 5
+		gun_power = 15
 	}
-	galleass = {
-		hull = 16
-		gun_power = 4
-		torpedo_attack = 2
-	}
-	galiot = {
-		hull = 16
-		gun_power = 4
-		torpedo_attack = 8
-	}
-	activate_unit = galiot
 	
 	ai_chance = {
 		factor = 1
-		
+		modifier = {
+			factor = 1.4
+			has_country_flag = flavor_light_ships_5
+		}
 		modifier = {
 			factor = 0
 			NOT = { total_num_of_ports = 1 }
 		}
 		modifier = {
-			factor = 1.05
-			tech_school = navy_tech_school
-		}
-		modifier = {
-			factor = 1.25
+			factor = 1.5
 			total_num_of_ports = 20
 			rank = 12
 		}
 		modifier = {
-			factor = 1.15
+			factor = 1.3
+
 			total_amount_of_ships = 20
 		}
 		modifier = {
-			factor = 1.15
+			factor = 1.3
+
 			total_amount_of_ships = 50
 		}
 		modifier = {
-			factor = 1.15
+			factor = 1.3
+
 			total_amount_of_ships = 100
 		}
 		modifier = {
-			factor = 1.2
+			factor = 1.4
 			total_num_of_ports = 10
 			NOT = { num_of_cities = 40 }
 		}
 		modifier = {
-			factor = 1.2
+			factor = 1.4
 			total_num_of_ports = 25
 			NOT = { num_of_cities = 100 }
 		}
 		modifier = {
-			factor = 1.1
+			factor = 1.25
 			year = 3010
 		}
 	}
@@ -618,62 +667,72 @@ light_ships_5 = {
 heavy_ships_1 = {
 	area = heavy_ships
 	year = 2954
-	cost = 3600
+	cost = 2500
 	unciv_military = yes
 
 	cog = {
-		hull = 6
-		gun_power = 2
+		hull = 1
+		gun_power = 3
 	}
-	caravel = {
-		hull = 6
-		gun_power = 2
-	}
-	brigantine = {
-		hull = 6
-		gun_power = 2
+	corsair_ship = {
+		hull = 1
+		gun_power = 3
 	}
 	
 	ai_chance = {
 		factor = 1
-		
+		modifier = {
+			factor = 1.4
+			OR = {
+				has_country_flag = flavor_heavy_ships_1
+				has_country_flag = flavor_heavy_ships_2
+				has_country_flag = flavor_heavy_ships_3
+				AND = {
+					year = 2965
+					has_country_flag = flavor_heavy_ships_4
+				}
+				AND = {
+					year = 2980
+					has_country_flag = flavor_heavy_ships_5
+				}
+			}
+		}
 		modifier = {
 			factor = 0
 			NOT = { total_num_of_ports = 1 }
 		}
 		modifier = {
-			factor = 1.05
-			tech_school = navy_tech_school
-		}
-		modifier = {
-			factor = 1.25
+			factor = 1.5
 			total_num_of_ports = 20
 			rank = 12
 		}
 		modifier = {
-			factor = 1.15
+			factor = 1.3
+
 			total_amount_of_ships = 20
 		}
 		modifier = {
-			factor = 1.15
+			factor = 1.3
+
 			total_amount_of_ships = 50
 		}
 		modifier = {
-			factor = 1.15
+			factor = 1.3
+
 			total_amount_of_ships = 100
 		}
 		modifier = {
-			factor = 1.2
+			factor = 1.4
 			total_num_of_ports = 10
 			NOT = { num_of_cities = 40 }
 		}
 		modifier = {
-			factor = 1.2
+			factor = 1.4
 			total_num_of_ports = 25
 			NOT = { num_of_cities = 100 }
 		}
 		modifier = {
-			factor = 1.1
+			factor = 1.25
 			year = 2960
 		}
 	}
@@ -682,62 +741,71 @@ heavy_ships_1 = {
 heavy_ships_2 = {
 	area = heavy_ships
 	year = 2954
-	cost = 7200
+	cost = 3000
 	unciv_military = yes
 
 	cog = {
-		hull = 6
-		gun_power = 2
+		hull = 2
+		gun_power = 6
 	}
-	caravel = {
-		hull = 6
-		gun_power = 2
-	}
-	brigantine = {
-		hull = 6
-		gun_power = 2
+	corsair_ship = {
+		hull = 2
+		gun_power = 6
 	}
 	
 	ai_chance = {
 		factor = 1
-		
+		modifier = {
+			factor = 1.4
+			OR = {
+				has_country_flag = flavor_heavy_ships_2
+				has_country_flag = flavor_heavy_ships_3
+				AND = {
+					year = 2965
+					has_country_flag = flavor_heavy_ships_4
+				}
+				AND = {
+					year = 2980
+					has_country_flag = flavor_heavy_ships_5
+				}
+			}
+		}
 		modifier = {
 			factor = 0
 			NOT = { total_num_of_ports = 1 }
 		}
 		modifier = {
-			factor = 1.05
-			tech_school = navy_tech_school
-		}
-		modifier = {
-			factor = 1.25
+			factor = 1.5
 			total_num_of_ports = 20
 			rank = 12
 		}
 		modifier = {
-			factor = 1.15
+			factor = 1.3
+
 			total_amount_of_ships = 20
 		}
 		modifier = {
-			factor = 1.15
+			factor = 1.3
+
 			total_amount_of_ships = 50
 		}
 		modifier = {
-			factor = 1.15
+			factor = 1.3
+
 			total_amount_of_ships = 100
 		}
 		modifier = {
-			factor = 1.2
+			factor = 1.4
 			total_num_of_ports = 10
 			NOT = { num_of_cities = 40 }
 		}
 		modifier = {
-			factor = 1.2
+			factor = 1.4
 			total_num_of_ports = 25
 			NOT = { num_of_cities = 100 }
 		}
 		modifier = {
-			factor = 1.1
+			factor = 1.25
 			year = 2965
 		}
 	}
@@ -746,63 +814,70 @@ heavy_ships_2 = {
 heavy_ships_3 = {
 	area = heavy_ships
 	year = 2965
-	cost = 10800
+	cost = 4000
 	unciv_military = yes
 
 	cog = {
-		hull = 12
-		gun_power = 4
+		hull = 3
+		gun_power = 9
 	}
-	caravel = {
-		hull = 12
-		gun_power = 4
+	corsair_ship = {
+		hull = 3
+		gun_power = 9
 	}
-	brigantine = {
-		hull = 12
-		gun_power = 4
-	}
-	activate_unit = caravel
 	
 	ai_chance = {
 		factor = 1
-		
+		modifier = {
+			factor = 1.4
+			OR = {
+				has_country_flag = flavor_heavy_ships_3
+				AND = {
+					year = 2965
+					has_country_flag = flavor_heavy_ships_4
+				}
+				AND = {
+					year = 2980
+					has_country_flag = flavor_heavy_ships_5
+				}
+			}
+		}
 		modifier = {
 			factor = 0
 			NOT = { total_num_of_ports = 1 }
 		}
 		modifier = {
-			factor = 1.05
-			tech_school = navy_tech_school
-		}
-		modifier = {
-			factor = 1.25
+			factor = 1.5
 			total_num_of_ports = 20
 			rank = 12
 		}
 		modifier = {
-			factor = 1.15
+			factor = 1.3
+
 			total_amount_of_ships = 20
 		}
 		modifier = {
-			factor = 1.15
+			factor = 1.3
+
 			total_amount_of_ships = 50
 		}
 		modifier = {
-			factor = 1.15
+			factor = 1.3
+
 			total_amount_of_ships = 100
 		}
 		modifier = {
-			factor = 1.2
+			factor = 1.4
 			total_num_of_ports = 10
 			NOT = { num_of_cities = 40 }
 		}
 		modifier = {
-			factor = 1.2
+			factor = 1.4
 			total_num_of_ports = 25
 			NOT = { num_of_cities = 100 }
 		}
 		modifier = {
-			factor = 1.1
+			factor = 1.25
 			year = 2980
 		}
 	}
@@ -811,62 +886,66 @@ heavy_ships_3 = {
 heavy_ships_4 = {
 	area = heavy_ships
 	year = 2980
-	cost = 14400
+	cost = 5500
 	unciv_military = yes
 
 	cog = {
-		hull = 12
-		gun_power = 4
+		hull = 4
+		gun_power = 12
 	}
-	caravel = {
-		hull = 12
-		gun_power = 4
-	}
-	brigantine = {
-		hull = 12
-		gun_power = 4
+	corsair_ship = {
+		hull = 4
+		gun_power = 12
 	}
 	
 	ai_chance = {
 		factor = 1
-		
+		modifier = {
+			factor = 1.4
+			OR = {
+				has_country_flag = flavor_heavy_ships_4
+				AND = {
+					year = 2980
+					has_country_flag = flavor_heavy_ships_5
+				}
+			}
+		}
 		modifier = {
 			factor = 0
 			NOT = { total_num_of_ports = 1 }
 		}
 		modifier = {
-			factor = 1.05
-			tech_school = navy_tech_school
-		}
-		modifier = {
-			factor = 1.25
+			factor = 1.5
 			total_num_of_ports = 20
 			rank = 12
 		}
 		modifier = {
-			factor = 1.15
+			factor = 1.3
+
 			total_amount_of_ships = 20
 		}
 		modifier = {
-			factor = 1.15
+			factor = 1.3
+
 			total_amount_of_ships = 50
 		}
 		modifier = {
-			factor = 1.15
+			factor = 1.3
+
 			total_amount_of_ships = 100
 		}
 		modifier = {
-			factor = 1.2
+			factor = 1.4
 			total_num_of_ports = 10
 			NOT = { num_of_cities = 40 }
 		}
 		modifier = {
-			factor = 1.2
+			factor = 1.4
 			total_num_of_ports = 25
 			NOT = { num_of_cities = 100 }
 		}
 		modifier = {
-			factor = 1.1
+			factor = 1.25
 			year = 3000
 		}
 	}
@@ -875,63 +954,60 @@ heavy_ships_4 = {
 heavy_ships_5 = {
 	area = heavy_ships
 	year = 3000
-	cost = 18000
+	cost = 7000
 	unciv_military = yes
 
 	cog = {
-		hull = 24
-		gun_power = 8
+		hull = 5
+		gun_power = 15
 	}
-	caravel = {
-		hull = 24
-		gun_power = 8
+	corsair_ship = {
+		hull = 5
+		gun_power = 15
 	}
-	brigantine = {
-		hull = 24
-		gun_power = 8
-	}
-	activate_unit = brigantine
 	
 	ai_chance = {
 		factor = 1
-		
+		modifier = {
+			factor = 1.4
+			has_country_flag = flavor_heavy_ships_5
+		}
 		modifier = {
 			factor = 0
 			NOT = { total_num_of_ports = 1 }
 		}
 		modifier = {
-			factor = 1.05
-			tech_school = navy_tech_school
-		}
-		modifier = {
-			factor = 1.25
+			factor = 1.5
 			total_num_of_ports = 20
 			rank = 12
 		}
 		modifier = {
-			factor = 1.15
+			factor = 1.3
+
 			total_amount_of_ships = 20
 		}
 		modifier = {
-			factor = 1.15
+			factor = 1.3
+
 			total_amount_of_ships = 50
 		}
 		modifier = {
-			factor = 1.15
+			factor = 1.3
+
 			total_amount_of_ships = 100
 		}
 		modifier = {
-			factor = 1.2
+			factor = 1.4
 			total_num_of_ports = 10
 			NOT = { num_of_cities = 40 }
 		}
 		modifier = {
-			factor = 1.2
+			factor = 1.4
 			total_num_of_ports = 25
 			NOT = { num_of_cities = 100 }
 		}
 		modifier = {
-			factor = 1.1
+			factor = 1.25
 			year = 3010
 		}
 	}
@@ -941,57 +1017,69 @@ heavy_ships_5 = {
 naval_construction_1 = {
 	area = naval_construction
 	year = 2954
-	cost = 3600
+	cost = 2500
 	unciv_military = yes
 
 	navy_base = {
-		hull = 1
 		maximum_speed = 1
 		build_time = -10
 	}
-	supply_range = 0.1
-	naval_attrition = -0.02
+	activate_building = naval_base
 	
 	ai_chance = {
 		factor = 1
-		
+		modifier = {
+			factor = 1.4
+			OR = {
+				has_country_flag = flavor_naval_construction_1
+				has_country_flag = flavor_naval_construction_2
+				has_country_flag = flavor_naval_construction_3
+				AND = {
+					year = 2965
+					has_country_flag = flavor_naval_construction_4
+				}
+				AND = {
+					year = 2980
+					has_country_flag = flavor_naval_construction_5
+				}
+			}
+		}
 		modifier = {
 			factor = 0
 			NOT = { total_num_of_ports = 1 }
 		}
 		modifier = {
-			factor = 1.05
-			tech_school = navy_tech_school
-		}
-		modifier = {
-			factor = 1.25
+			factor = 1.5
 			total_num_of_ports = 20
 			rank = 12
 		}
 		modifier = {
-			factor = 1.15
+			factor = 1.3
+
 			total_amount_of_ships = 20
 		}
 		modifier = {
-			factor = 1.15
+			factor = 1.3
+
 			total_amount_of_ships = 50
 		}
 		modifier = {
-			factor = 1.15
+			factor = 1.3
+
 			total_amount_of_ships = 100
 		}
 		modifier = {
-			factor = 1.2
+			factor = 1.4
 			total_num_of_ports = 10
 			NOT = { num_of_cities = 40 }
 		}
 		modifier = {
-			factor = 1.2
+			factor = 1.4
 			total_num_of_ports = 25
 			NOT = { num_of_cities = 100 }
 		}
 		modifier = {
-			factor = 1.1
+			factor = 1.25
 			year = 2960
 		}
 	}
@@ -1000,57 +1088,68 @@ naval_construction_1 = {
 naval_construction_2 = {
 	area = naval_construction
 	year = 2954
-	cost = 7200
+	cost = 3000
 	unciv_military = yes
 
 	navy_base = {
-		hull = 1
-		maximum_speed = 1
+		maximum_speed = 2
 		build_time = -10
 	}
-	supply_range = 0.1
-	naval_attrition = -0.02
+	max_naval_base = 1
 	
 	ai_chance = {
 		factor = 1
-		
+		modifier = {
+			factor = 1.4
+			OR = {
+				has_country_flag = flavor_naval_construction_2
+				has_country_flag = flavor_naval_construction_3
+				AND = {
+					year = 2965
+					has_country_flag = flavor_naval_construction_4
+				}
+				AND = {
+					year = 2980
+					has_country_flag = flavor_naval_construction_5
+				}
+			}
+		}
 		modifier = {
 			factor = 0
 			NOT = { total_num_of_ports = 1 }
 		}
 		modifier = {
-			factor = 1.05
-			tech_school = navy_tech_school
-		}
-		modifier = {
-			factor = 1.25
+			factor = 1.5
 			total_num_of_ports = 20
 			rank = 12
 		}
 		modifier = {
-			factor = 1.15
+			factor = 1.3
+
 			total_amount_of_ships = 20
 		}
 		modifier = {
-			factor = 1.15
+			factor = 1.3
+
 			total_amount_of_ships = 50
 		}
 		modifier = {
-			factor = 1.15
+			factor = 1.3
+
 			total_amount_of_ships = 100
 		}
 		modifier = {
-			factor = 1.2
+			factor = 1.4
 			total_num_of_ports = 10
 			NOT = { num_of_cities = 40 }
 		}
 		modifier = {
-			factor = 1.2
+			factor = 1.4
 			total_num_of_ports = 25
 			NOT = { num_of_cities = 100 }
 		}
 		modifier = {
-			factor = 1.1
+			factor = 1.25
 			year = 2965
 		}
 	}
@@ -1059,77 +1158,133 @@ naval_construction_2 = {
 naval_construction_3 = {
 	area = naval_construction
 	year = 2965
-	cost = 10800
+	cost = 4000
 	unciv_military = yes
 
 	navy_base = {
-		hull = 2
-		maximum_speed = 2
+		maximum_speed = 3
 		build_time = -10
 	}
-	supply_range = 0.2
-	naval_attrition = -0.04
+	max_naval_base = 1
 	
 	ai_chance = {
 		factor = 1
+		modifier = {
+			factor = 1.4
+			OR = {
+				has_country_flag = flavor_naval_construction_3
+				AND = {
+					year = 2965
+					has_country_flag = flavor_naval_construction_4
+				}
+				AND = {
+					year = 2980
+					has_country_flag = flavor_naval_construction_5
+				}
+			}
+		}
+		modifier = {
+			factor = 0
+			NOT = { total_num_of_ports = 1 }
+		}
+		modifier = {
+			factor = 1.5
+			total_num_of_ports = 20
+			rank = 12
+		}
+		modifier = {
+			factor = 1.3
+
+			total_amount_of_ships = 20
+		}
+		modifier = {
+			factor = 1.3
+
+			total_amount_of_ships = 50
+		}
+		modifier = {
+			factor = 1.3
+
+			total_amount_of_ships = 100
+		}
+		modifier = {
+			factor = 1.4
+			total_num_of_ports = 10
+			NOT = { num_of_cities = 40 }
+		}
+		modifier = {
+			factor = 1.4
+			total_num_of_ports = 25
+			NOT = { num_of_cities = 100 }
+		}
+		modifier = {
+			factor = 1.25
+			year = 2980
+		}
 	}
 }
 
 naval_construction_4 = {
 	area = naval_construction
 	year = 2980
-	cost = 14400
+	cost = 5500
 	unciv_military = yes
 
 	navy_base = {
-		hull = 2
-		maximum_speed = 2
+		maximum_speed = 4
 		build_time = -10
 	}
-	supply_range = 0.2
-	naval_attrition = -0.04
+	max_naval_base = 1
 	
 	ai_chance = {
 		factor = 1
-		
+		modifier = {
+			factor = 1.4
+			OR = {
+				has_country_flag = flavor_naval_construction_4
+				AND = {
+					year = 2980
+					has_country_flag = flavor_naval_construction_5
+				}
+			}
+		}
 		modifier = {
 			factor = 0
 			NOT = { total_num_of_ports = 1 }
 		}
 		modifier = {
-			factor = 1.05
-			tech_school = navy_tech_school
-		}
-		modifier = {
-			factor = 1.25
+			factor = 1.5
 			total_num_of_ports = 20
 			rank = 12
 		}
 		modifier = {
-			factor = 1.15
+			factor = 1.3
+
 			total_amount_of_ships = 20
 		}
 		modifier = {
-			factor = 1.15
+			factor = 1.3
+
 			total_amount_of_ships = 50
 		}
 		modifier = {
-			factor = 1.15
+			factor = 1.3
+
 			total_amount_of_ships = 100
 		}
 		modifier = {
-			factor = 1.2
+			factor = 1.4
 			total_num_of_ports = 10
 			NOT = { num_of_cities = 40 }
 		}
 		modifier = {
-			factor = 1.2
+			factor = 1.4
 			total_num_of_ports = 25
 			NOT = { num_of_cities = 100 }
 		}
 		modifier = {
-			factor = 1.1
-			year = 2980
+			factor = 1.25
+			year = 3000
 		}
 	}
 }
@@ -1137,58 +1292,58 @@ naval_construction_4 = {
 naval_construction_5 = {
 	area = naval_construction
 	year = 3000
-	cost = 18000
+	cost = 7000
 	unciv_military = yes
 
 	navy_base = {
-		hull = 4
-		maximum_speed = 4
+		maximum_speed = 5
 		build_time = -10
 	}
-	supply_range = 0.4
-	naval_attrition = -0.08
+	max_naval_base = 1
 	
 	ai_chance = {
 		factor = 1
-		
+		modifier = {
+			factor = 1.4
+			has_country_flag = flavor_naval_construction_5
+		}
 		modifier = {
 			factor = 0
 			NOT = { total_num_of_ports = 1 }
 		}
 		modifier = {
-			factor = 1.05
-			tech_school = navy_tech_school
-		}
-		modifier = {
-			factor = 1.25
+			factor = 1.5
 			total_num_of_ports = 20
 			rank = 12
 		}
 		modifier = {
-			factor = 1.15
+			factor = 1.3
+
 			total_amount_of_ships = 20
 		}
 		modifier = {
-			factor = 1.15
+			factor = 1.3
+
 			total_amount_of_ships = 50
 		}
 		modifier = {
-			factor = 1.15
+			factor = 1.3
+
 			total_amount_of_ships = 100
 		}
 		modifier = {
-			factor = 1.2
+			factor = 1.4
 			total_num_of_ports = 10
 			NOT = { num_of_cities = 40 }
 		}
 		modifier = {
-			factor = 1.2
+			factor = 1.4
 			total_num_of_ports = 25
 			NOT = { num_of_cities = 100 }
 		}
 		modifier = {
-			factor = 1.1
-			year = 3000
+			factor = 1.25
+			year = 3010
 		}
 	}
 }

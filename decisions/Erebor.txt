@@ -9,7 +9,7 @@ political_decisions = {
 			always = no
 		}
 		effect = {
-			# Setup Alliance of Dwarves and Men
+			# Setup Alliance of Dwarves and Men -- no need to add the dipomacy text; handled by country history file
 			add_country_modifier = { name = alliance_of_dwarves_and_men duration = -1 }
 			DAL = { add_country_modifier = { name = alliance_of_dwarves_and_men duration = -1 } }
 			
@@ -18,6 +18,8 @@ political_decisions = {
 			set_country_flag = nobility_deactivated
 			
 			set_country_flag = ERE_content
+			
+			set_country_flag = flavor_diplomacy_3
 		}
 	}
 	RAV_start_decision = {

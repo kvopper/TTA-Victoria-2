@@ -6,6 +6,25 @@
 #	Core Adding/Removal
 #	Flavour }
 
+# Starting Decision (Unseen)
+political_decisions = {
+	# Audax Validator "." Ignore_1004
+	RHU_start_decision = {
+		potential = {
+			always = no
+		}
+		
+		effect = {
+			any_country = {
+				limit = { is_culture_group = easterlings }
+				set_country_flag = flavor_diplomacy_3
+				set_country_flag = flavor_army_tactics_3
+				set_country_flag = flavor_cavalry_tech_3
+			}
+		}
+	}
+}
+
 # Forming Rhun
 political_decisions = {
 	form_rhun = {

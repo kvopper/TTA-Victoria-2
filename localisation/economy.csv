@@ -16,7 +16,7 @@ BUDGET_TAX_RICH;Taxes & Tithes(Nobility);x
 ##### PRODUCTION TEXT #####;x {
 ###########################;x
 PRODUCTION_OUR_INVEST;Our investment: $AMOUNT$¤ ($PERCENTAGE$%);x
-INVEST_PROJECT_TITLE;Invest into project: "§Y$PROJ$§!" at §Y$LOC$§!;
+INVEST_PROJECT_TITLE;Invest into project: "§Y$PROJ$§!" at §Y$LOC$§!;x
 PROVINCEVIEW_GOODSINCOME;Sold §Y$GOODS$§! for §Y$VALUE$§! yesterday;x
 ######################;x }
 ##### TRADE TEXT #####;x {
@@ -59,6 +59,6 @@ TRADE_IN_DEMAND;In high demand;x
 TRADE_NOT_IN_DEMAND;Not in high demand;x
 ACTUAL_BOUGHT;Actual bought: §Y$VAL$§!;x
 SUPPLY;Supply: §Y$VAL$§!;x
-DEMAND;Demand: §Y$VAL$§!;
+DEMAND;Demand: §Y$VAL$§!;x
 TRADE_PRICE_TREND;Price change since yesterday: §Y$VALUE$§!;x
 TRADE_PRICE_TREND_UNCHANGED;Price unchanged since yesterday;x

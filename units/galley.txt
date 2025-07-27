@@ -15,7 +15,7 @@ galley = {
 	max_strength = 100
 	default_organisation = 30
 	maximum_speed = 8
-	weighted_value = 2.0
+	weighted_value = 1.0
 	can_build_overseas = yes
 
 	#Building Costs
@@ -32,7 +32,7 @@ galley = {
 		clipper_convoy = 0.08
 	}
 	
-	#Naval Abilties
+	#Naval Abilities
 	hull = 3
 	gun_power = 4
 	fire_range = 0.50

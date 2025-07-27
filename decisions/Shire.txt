@@ -2,8 +2,25 @@
 # Audax Validator "!" Ignore_1009
 
 # Shire Decisions: {
+#	Starting Decision (Unseen)
 #	Expansion
 #	Flavour }
+
+# Starting Decision (Unseen)
+political_decisions = {
+	# Audax Validator "." Ignore_1004
+	SHI_start_decision = {
+		potential = {
+			always = no
+		}
+		
+		effect = {
+			set_country_flag = flavor_fortifications_1
+			set_country_flag = flavor_expansion_2
+			set_country_flag = flavor_expansion_1
+		}
+	}
+}
 
 # Expansion
 political_decisions = {

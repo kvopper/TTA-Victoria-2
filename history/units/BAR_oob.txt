@@ -2,8 +2,8 @@ army = {
 	name = "Barrow-downs Garrison"
 	location = 884
 	regiment = {
-		name = "1st Barrow-wight Horse Archers"
-		type = horse_archers
+		name = "Barrow-wights"
+		type = wights
 		home = 884
 	}
 }

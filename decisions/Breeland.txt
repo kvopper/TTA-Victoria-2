@@ -2,7 +2,23 @@
 # Audax Validator "!" Ignore_1009
 
 # Breeland Decisions: {
+#	Starting Decision (Unseen)
 #	Province Flavor }
+
+# Starting Decision (Unseen)
+political_decisions = {
+	# Audax Validator "." Ignore_1004
+	SHI_start_decision = {
+		potential = {
+			always = no
+		}
+		
+		effect = {
+			set_country_flag = flavor_taxes_3
+			set_country_flag = flavor_expansion_1
+		}
+	}
+}
 
 # Province Flavor
 political_decisions = {

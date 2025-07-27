@@ -16,7 +16,7 @@ cog = {
 	max_strength = 100
 	default_organisation = 30
 	maximum_speed = 5
-	weighted_value = 3.0
+	weighted_value = 1.0
 
 	#Building Costs
 	build_time = 360
@@ -34,9 +34,9 @@ cog = {
 		artillery = 0.08 #0.16
 	}
 	
-	#Naval Abilties
-	hull = 4
-	gun_power = 8
+	#Naval Abilities
+	hull = 6
+	gun_power = 10
 	fire_range = 0.58
 	evasion = 0
 }

@@ -2,37 +2,39 @@
 expansion_1 = {
 	area = expansion
 	year = 2954
-	cost = 3600
+	cost = 2500
 	
 	colonial_points = 100
 	cb_creation_speed = 0.05
 	
 	ai_chance = {
 		factor = 1
-		
 		modifier = {
-			factor = 1.5
-			any_owned_province = { is_colonial = yes }
-		}
-		modifier = {
-			factor = 1.25
-			any_owned_province = { any_neighbor_province = { empty = yes } }
-		}
-		modifier = {
-			factor = 1.1
+			factor = 1.4
 			OR = {
+				has_country_flag = flavor_expansion_1
+				has_country_flag = flavor_expansion_2
+				has_country_flag = flavor_expansion_3
 				AND = {
-					good_evil_alignment = good_alignment
-					any_neighbor_country = { good_evil_alignment = evil_alignment }
+					year = 2965
+					has_country_flag = flavor_expansion_4
 				}
 				AND = {
-					good_evil_alignment = evil_alignment
-					any_neighbor_country = { good_evil_alignment = good_alignment }
+					year = 2980
+					has_country_flag = flavor_expansion_5
 				}
 			}
 		}
 		modifier = {
-			factor = 1.1
+			factor = 1.75
+			any_owned_province = { is_colonial = yes }
+		}
+		modifier = {
+			factor = 1.5
+			any_owned_province = { any_neighbor_province = { empty = yes } }
+		}
+		modifier = {
+			factor = 1.25
 			year = 2960
 		}
 	}
@@ -41,37 +43,37 @@ expansion_1 = {
 expansion_2 = {
 	area = expansion
 	year = 2954
-	cost = 7200
+	cost = 3000
 	
 	colonial_points = 100
 	cb_creation_speed = 0.05
 	
 	ai_chance = {
-		factor = 1
-		
 		modifier = {
-			factor = 1.5
-			any_owned_province = { is_colonial = yes }
-		}
-		modifier = {
-			factor = 1.25
-			any_owned_province = { any_neighbor_province = { empty = yes } }
-		}
-		modifier = {
-			factor = 1.1
+			factor = 1.4
 			OR = {
+				has_country_flag = flavor_expansion_2
+				has_country_flag = flavor_expansion_3
 				AND = {
-					good_evil_alignment = good_alignment
-					any_neighbor_country = { good_evil_alignment = evil_alignment }
+					year = 2965
+					has_country_flag = flavor_expansion_4
 				}
 				AND = {
-					good_evil_alignment = evil_alignment
-					any_neighbor_country = { good_evil_alignment = good_alignment }
+					year = 2980
+					has_country_flag = flavor_expansion_5
 				}
 			}
 		}
 		modifier = {
-			factor = 1.1
+			factor = 1.75
+			any_owned_province = { is_colonial = yes }
+		}
+		modifier = {
+			factor = 1.5
+			any_owned_province = { any_neighbor_province = { empty = yes } }
+		}
+		modifier = {
+			factor = 1.25
 			year = 2965
 		}
 	}
@@ -80,37 +82,37 @@ expansion_2 = {
 expansion_3 = {
 	area = expansion
 	year = 2965
-	cost = 10800
+	cost = 4000
 	
 	colonial_points = 200
-	cb_creation_speed = 0.1
+	cb_creation_speed = 0.05
 	
 	ai_chance = {
 		factor = 1
-		
 		modifier = {
-			factor = 1.5
-			any_owned_province = { is_colonial = yes }
-		}
-		modifier = {
-			factor = 1.25
-			any_owned_province = { any_neighbor_province = { empty = yes } }
-		}
-		modifier = {
-			factor = 1.1
+			factor = 1.4
 			OR = {
+				has_country_flag = flavor_expansion_3
 				AND = {
-					good_evil_alignment = good_alignment
-					any_neighbor_country = { good_evil_alignment = evil_alignment }
+					year = 2965
+					has_country_flag = flavor_expansion_4
 				}
 				AND = {
-					good_evil_alignment = evil_alignment
-					any_neighbor_country = { good_evil_alignment = good_alignment }
+					year = 2980
+					has_country_flag = flavor_expansion_5
 				}
 			}
 		}
 		modifier = {
-			factor = 1.1
+			factor = 1.75
+			any_owned_province = { is_colonial = yes }
+		}
+		modifier = {
+			factor = 1.5
+			any_owned_province = { any_neighbor_province = { empty = yes } }
+		}
+		modifier = {
+			factor = 1.25
 			year = 2980
 		}
 	}
@@ -119,37 +121,33 @@ expansion_3 = {
 expansion_4 = {
 	area = expansion
 	year = 2980
-	cost = 14400
+	cost = 5500
 	
-	colonial_points = 200
-	cb_creation_speed = 0.1
+	colonial_points = 300
+	cb_creation_speed = 0.05
 	
 	ai_chance = {
 		factor = 1
-		
 		modifier = {
-			factor = 1.5
-			any_owned_province = { is_colonial = yes }
-		}
-		modifier = {
-			factor = 1.25
-			any_owned_province = { any_neighbor_province = { empty = yes } }
-		}
-		modifier = {
-			factor = 1.1
+			factor = 1.4
 			OR = {
+				has_country_flag = flavor_expansion_4
 				AND = {
-					good_evil_alignment = good_alignment
-					any_neighbor_country = { good_evil_alignment = evil_alignment }
-				}
-				AND = {
-					good_evil_alignment = evil_alignment
-					any_neighbor_country = { good_evil_alignment = good_alignment }
+					year = 2980
+					has_country_flag = flavor_expansion_5
 				}
 			}
 		}
 		modifier = {
-			factor = 1.1
+			factor = 1.75
+			any_owned_province = { is_colonial = yes }
+		}
+		modifier = {
+			factor = 1.5
+			any_owned_province = { any_neighbor_province = { empty = yes } }
+		}
+		modifier = {
+			factor = 1.25
 			year = 3000
 		}
 	}
@@ -158,37 +156,27 @@ expansion_4 = {
 expansion_5 = {
 	area = expansion
 	year = 3000
-	cost = 18000
+	cost = 7000
 	
-	colonial_points = 400
-	cb_creation_speed = 0.2
+	colonial_points = 300
+	cb_creation_speed = 0.05
 	
 	ai_chance = {
 		factor = 1
-		
 		modifier = {
-			factor = 1.5
+			factor = 1.4
+			has_country_flag = flavor_expansion_5
+		}
+		modifier = {
+			factor = 1.75
 			any_owned_province = { is_colonial = yes }
 		}
 		modifier = {
-			factor = 1.25
+			factor = 1.5
 			any_owned_province = { any_neighbor_province = { empty = yes } }
 		}
 		modifier = {
-			factor = 1.1
-			OR = {
-				AND = {
-					good_evil_alignment = good_alignment
-					any_neighbor_country = { good_evil_alignment = evil_alignment }
-				}
-				AND = {
-					good_evil_alignment = evil_alignment
-					any_neighbor_country = { good_evil_alignment = good_alignment }
-				}
-			}
-		}
-		modifier = {
-			factor = 1.1
+			factor = 1.25
 			year = 3010
 		}
 	}
@@ -198,29 +186,35 @@ expansion_5 = {
 diplomacy_1 = {
 	area = diplomacy
 	year = 2954
-	cost = 3600
+	cost = 2500
 	
 	diplomatic_points = 0.05
 	influence = 0.05
-	loan_interest = -0.001
 	
 	ai_chance = {
 		factor = 1
-		
 		modifier = {
-			factor = 1.5
+			factor = 1.4
+			OR = {
+				has_country_flag = flavor_diplomacy_1
+				has_country_flag = flavor_diplomacy_2
+				has_country_flag = flavor_diplomacy_3
+				AND = {
+					year = 2965
+					has_country_flag = flavor_diplomacy_4
+				}
+				AND = {
+					year = 2980
+					has_country_flag = flavor_diplomacy_5
+				}
+			}
+		}
+		modifier = {
+			factor = 1.75
 			is_greater_power = yes
 		}
 		modifier = {
-			factor = 1.05
-			literacy = 0.1
-		}
-		modifier = {
-			factor = 1.05
-			literacy = 0.2
-		}
-		modifier = {
-			factor = 1.1
+			factor = 1.25
 			year = 2960
 		}
 	}
@@ -229,29 +223,34 @@ diplomacy_1 = {
 diplomacy_2 = {
 	area = diplomacy
 	year = 2954
-	cost = 7200
+	cost = 3000
 	
 	diplomatic_points = 0.05
 	influence = 0.05
-	loan_interest = -0.001
 	
 	ai_chance = {
 		factor = 1
-		
 		modifier = {
-			factor = 1.5
+			factor = 1.4
+			OR = {
+				has_country_flag = flavor_diplomacy_2
+				has_country_flag = flavor_diplomacy_3
+				AND = {
+					year = 2965
+					has_country_flag = flavor_diplomacy_4
+				}
+				AND = {
+					year = 2980
+					has_country_flag = flavor_diplomacy_5
+				}
+			}
+		}
+		modifier = {
+			factor = 1.75
 			is_greater_power = yes
 		}
 		modifier = {
-			factor = 1.05
-			literacy = 0.1
-		}
-		modifier = {
-			factor = 1.05
-			literacy = 0.2
-		}
-		modifier = {
-			factor = 1.1
+			factor = 1.25
 			year = 2965
 		}
 	}
@@ -260,29 +259,33 @@ diplomacy_2 = {
 diplomacy_3 = {
 	area = diplomacy
 	year = 2965
-	cost = 10800
+	cost = 4000
 	
-	diplomatic_points = 0.1
-	influence = 0.1
-	loan_interest = -0.002
+	diplomatic_points = 0.05
+	influence = 0.05
 	
 	ai_chance = {
 		factor = 1
-		
 		modifier = {
-			factor = 1.5
+			factor = 1.4
+			OR = {
+				has_country_flag = flavor_diplomacy_3
+				AND = {
+					year = 2965
+					has_country_flag = flavor_diplomacy_4
+				}
+				AND = {
+					year = 2980
+					has_country_flag = flavor_diplomacy_5
+				}
+			}
+		}
+		modifier = {
+			factor = 1.75
 			is_greater_power = yes
 		}
 		modifier = {
-			factor = 1.05
-			literacy = 0.1
-		}
-		modifier = {
-			factor = 1.05
-			literacy = 0.2
-		}
-		modifier = {
-			factor = 1.1
+			factor = 1.25
 			year = 2980
 		}
 	}
@@ -291,29 +294,29 @@ diplomacy_3 = {
 diplomacy_4 = {
 	area = diplomacy
 	year = 2980
-	cost = 14400
+	cost = 5500
 	
-	diplomatic_points = 0.1
-	influence = 0.1
-	loan_interest = -0.002
+	diplomatic_points = 0.05
+	influence = 0.05
 	
 	ai_chance = {
 		factor = 1
-		
 		modifier = {
-			factor = 1.5
+			factor = 1.4
+			OR = {
+				has_country_flag = flavor_diplomacy_4
+				AND = {
+					year = 2980
+					has_country_flag = flavor_diplomacy_5
+				}
+			}
+		}
+		modifier = {
+			factor = 1.75
 			is_greater_power = yes
 		}
 		modifier = {
-			factor = 1.05
-			literacy = 0.1
-		}
-		modifier = {
-			factor = 1.05
-			literacy = 0.2
-		}
-		modifier = {
-			factor = 1.1
+			factor = 1.25
 			year = 3000
 		}
 	}
@@ -322,29 +325,24 @@ diplomacy_4 = {
 diplomacy_5 = {
 	area = diplomacy
 	year = 3000
-	cost = 18000
+	cost = 7000
 	
-	diplomatic_points = 0.2
-	influence = 0.2
-	loan_interest = -0.004
+	diplomatic_points = 0.05
+	influence = 0.05
+	enable_crime = alliance_dwarves_men_tag_unlock_effect
 	
 	ai_chance = {
 		factor = 1
-		
 		modifier = {
-			factor = 1.5
+			factor = 1.4
+			has_country_flag = flavor_diplomacy_5
+		}
+		modifier = {
+			factor = 1.75
 			is_greater_power = yes
 		}
 		modifier = {
-			factor = 1.05
-			literacy = 0.1
-		}
-		modifier = {
-			factor = 1.05
-			literacy = 0.2
-		}
-		modifier = {
-			factor = 1.1
+			factor = 1.25
 			year = 3010
 		}
 	}
@@ -354,7 +352,7 @@ diplomacy_5 = {
 wilderness_1 = {
 	area = wilderness
 	year = 2954
-	cost = 3600
+	cost = 2500
 	
 	colonial_migration = 0.05
 	colonial_prestige = 0.05
@@ -362,9 +360,24 @@ wilderness_1 = {
 	
 	ai_chance = {
 		factor = 1
-		
 		modifier = {
-			factor = 1.5
+			factor = 1.4
+			OR = {
+				has_country_flag = flavor_wilderness_1
+				has_country_flag = flavor_wilderness_2
+				has_country_flag = flavor_wilderness_3
+				AND = {
+					year = 2965
+					has_country_flag = flavor_wilderness_4
+				}
+				AND = {
+					year = 2980
+					has_country_flag = flavor_wilderness_5
+				}
+			}
+		}
+		modifier = {
+			factor = 1.75
 			any_owned_province = {
 				is_colonial = yes
 				NOT = { is_accepted_culture = yes }
@@ -372,11 +385,11 @@ wilderness_1 = {
 			}
 		}
 		modifier = {
-			factor = 1.25
+			factor = 1.5
 			any_owned_province = { any_neighbor_province = { empty = yes } }
 		}
 		modifier = {
-			factor = 1.1
+			factor = 1.25
 			year = 2960
 		}
 	}
@@ -385,18 +398,31 @@ wilderness_1 = {
 wilderness_2 = {
 	area = wilderness
 	year = 2954
-	cost = 7200
+	cost = 3000
 	
-	colonial_life_rating = -5
 	colonial_migration = 0.05
 	colonial_prestige = 0.05
 	colonial_points = 100
 	
 	ai_chance = {
 		factor = 1
-		
 		modifier = {
-			factor = 1.5
+			factor = 1.4
+			OR = {
+				has_country_flag = flavor_wilderness_2
+				has_country_flag = flavor_wilderness_3
+				AND = {
+					year = 2965
+					has_country_flag = flavor_wilderness_4
+				}
+				AND = {
+					year = 2980
+					has_country_flag = flavor_wilderness_5
+				}
+			}
+		}
+		modifier = {
+			factor = 1.75
 			any_owned_province = {
 				is_colonial = yes
 				NOT = { is_accepted_culture = yes }
@@ -404,11 +430,11 @@ wilderness_2 = {
 			}
 		}
 		modifier = {
-			factor = 1.25
+			factor = 1.5
 			any_owned_province = { any_neighbor_province = { empty = yes } }
 		}
 		modifier = {
-			factor = 1.1
+			factor = 1.25
 			year = 2965
 		}
 	}
@@ -417,17 +443,31 @@ wilderness_2 = {
 wilderness_3 = {
 	area = wilderness
 	year = 2965
-	cost = 10800
+	cost = 4000
 	
-	colonial_migration = 0.1
-	colonial_prestige = 0.1
+	colonial_life_rating = -5
+	colonial_migration = 0.05
+	colonial_prestige = 0.05
 	colonial_points = 200
 	
 	ai_chance = {
 		factor = 1
-		
 		modifier = {
-			factor = 1.5
+			factor = 1.4
+			OR = {
+				has_country_flag = flavor_wilderness_3
+				AND = {
+					year = 2965
+					has_country_flag = flavor_wilderness_4
+				}
+				AND = {
+					year = 2980
+					has_country_flag = flavor_wilderness_5
+				}
+			}
+		}
+		modifier = {
+			factor = 1.75
 			any_owned_province = {
 				is_colonial = yes
 				NOT = { is_accepted_culture = yes }
@@ -435,11 +475,11 @@ wilderness_3 = {
 			}
 		}
 		modifier = {
-			factor = 1.25
+			factor = 1.5
 			any_owned_province = { any_neighbor_province = { empty = yes } }
 		}
 		modifier = {
-			factor = 1.1
+			factor = 1.25
 			year = 2980
 		}
 	}
@@ -448,18 +488,27 @@ wilderness_3 = {
 wilderness_4 = {
 	area = wilderness
 	year = 2980
-	cost = 14400
+	cost = 5500
 	
 	colonial_life_rating = -5
-	colonial_migration = 0.1
-	colonial_prestige = 0.1
-	colonial_points = 200
+	colonial_migration = 0.05
+	colonial_prestige = 0.05
+	colonial_points = 300
 	
 	ai_chance = {
 		factor = 1
-		
 		modifier = {
-			factor = 1.5
+			factor = 1.4
+			OR = {
+				has_country_flag = flavor_wilderness_4
+				AND = {
+					year = 2980
+					has_country_flag = flavor_wilderness_5
+				}
+			}
+		}
+		modifier = {
+			factor = 1.75
 			any_owned_province = {
 				is_colonial = yes
 				NOT = { is_accepted_culture = yes }
@@ -467,11 +516,11 @@ wilderness_4 = {
 			}
 		}
 		modifier = {
-			factor = 1.25
+			factor = 1.5
 			any_owned_province = { any_neighbor_province = { empty = yes } }
 		}
 		modifier = {
-			factor = 1.1
+			factor = 1.25
 			year = 3000
 		}
 	}
@@ -480,18 +529,21 @@ wilderness_4 = {
 wilderness_5 = {
 	area = wilderness
 	year = 3000
-	cost = 18000
+	cost = 7000
 	
 	colonial_life_rating = -5
-	colonial_migration = 0.2
-	colonial_prestige = 0.2
-	colonial_points = 400
+	colonial_migration = 0.05
+	colonial_prestige = 0.05
+	colonial_points = 300
 	
 	ai_chance = {
 		factor = 1
-		
 		modifier = {
-			factor = 1.5
+			factor = 1.4
+			has_country_flag = flavor_wilderness_5
+		}
+		modifier = {
+			factor = 1.75
 			any_owned_province = {
 				is_colonial = yes
 				NOT = { is_accepted_culture = yes }
@@ -499,11 +551,11 @@ wilderness_5 = {
 			}
 		}
 		modifier = {
-			factor = 1.25
+			factor = 1.5
 			any_owned_province = { any_neighbor_province = { empty = yes } }
 		}
 		modifier = {
-			factor = 1.1
+			factor = 1.25
 			year = 3010
 		}
 	}
@@ -513,28 +565,41 @@ wilderness_5 = {
 culture_1 = {
 	area = culture
 	year = 2954
-	cost = 3600
+	cost = 2500
 	
 	prestige = 0.05
 	permanent_prestige = 5
 	
 	ai_chance = {
 		factor = 1
-		
 		modifier = {
-			factor = 2
-			is_greater_power = yes
+			factor = 1.4
+			OR = {
+				has_country_flag = flavor_culture_1
+				has_country_flag = flavor_culture_2
+				has_country_flag = flavor_culture_3
+				AND = {
+					year = 2965
+					has_country_flag = flavor_culture_4
+				}
+				AND = {
+					year = 2980
+					has_country_flag = flavor_culture_5
+				}
+			}
 		}
 		modifier = {
-			factor = 1.5
+			factor = 2
 			is_secondary_power = yes
 		}
 		modifier = {
-			factor = 0.5
-			NOT = { literacy = 0.3 }
+			factor = 2.5
+
+			is_greater_power = no
+			is_secondary_power = no
 		}
 		modifier = {
-			factor = 1.1
+			factor = 1.25
 			year = 2960
 		}
 	}
@@ -543,28 +608,40 @@ culture_1 = {
 culture_2 = {
 	area = culture
 	year = 2954
-	cost = 7200
+	cost = 3000
 	
 	prestige = 0.05
 	permanent_prestige = 10
 	
 	ai_chance = {
 		factor = 1
-		
 		modifier = {
-			factor = 2
-			is_greater_power = yes
+			factor = 1.4
+			OR = {
+				has_country_flag = flavor_culture_2
+				has_country_flag = flavor_culture_3
+				AND = {
+					year = 2965
+					has_country_flag = flavor_culture_4
+				}
+				AND = {
+					year = 2980
+					has_country_flag = flavor_culture_5
+				}
+			}
 		}
 		modifier = {
-			factor = 1.5
+			factor = 2
 			is_secondary_power = yes
 		}
 		modifier = {
-			factor = 0.5
-			NOT = { literacy = 0.3 }
+			factor = 2.5
+
+			is_greater_power = no
+			is_secondary_power = no
 		}
 		modifier = {
-			factor = 1.1
+			factor = 1.25
 			year = 2965
 		}
 	}
@@ -573,28 +650,39 @@ culture_2 = {
 culture_3 = {
 	area = culture
 	year = 2965
-	cost = 10800
+	cost = 4000
 	
 	prestige = 0.05
 	permanent_prestige = 15
 	
 	ai_chance = {
 		factor = 1
-		
 		modifier = {
-			factor = 2
-			is_greater_power = yes
+			factor = 1.4
+			OR = {
+				has_country_flag = flavor_culture_3
+				AND = {
+					year = 2965
+					has_country_flag = flavor_culture_4
+				}
+				AND = {
+					year = 2980
+					has_country_flag = flavor_culture_5
+				}
+			}
 		}
 		modifier = {
-			factor = 1.5
+			factor = 2
 			is_secondary_power = yes
 		}
 		modifier = {
-			factor = 0.5
-			NOT = { literacy = 0.3 }
+			factor = 2.5
+
+			is_greater_power = no
+			is_secondary_power = no
 		}
 		modifier = {
-			factor = 1.1
+			factor = 1.25
 			year = 2980
 		}
 	}
@@ -603,28 +691,35 @@ culture_3 = {
 culture_4 = {
 	area = culture
 	year = 2980
-	cost = 14400
+	cost = 5500
 	
 	prestige = 0.05
 	permanent_prestige = 20
 	
 	ai_chance = {
 		factor = 1
-		
 		modifier = {
-			factor = 2
-			is_greater_power = yes
+			factor = 1.4
+			OR = {
+				has_country_flag = flavor_culture_4
+				AND = {
+					year = 2980
+					has_country_flag = flavor_culture_5
+				}
+			}
 		}
 		modifier = {
-			factor = 1.5
+			factor = 2
 			is_secondary_power = yes
 		}
 		modifier = {
-			factor = 0.5
-			NOT = { literacy = 0.3 }
+			factor = 2.5
+
+			is_greater_power = no
+			is_secondary_power = no
 		}
 		modifier = {
-			factor = 1.1
+			factor = 1.25
 			year = 3000
 		}
 	}
@@ -633,28 +728,29 @@ culture_4 = {
 culture_5 = {
 	area = culture
 	year = 3000
-	cost = 18000
+	cost = 7000
 	
 	prestige = 0.05
 	permanent_prestige = 25
 	
 	ai_chance = {
 		factor = 1
-		
 		modifier = {
-			factor = 2
-			is_greater_power = yes
+			factor = 1.4
+			has_country_flag = flavor_culture_5
 		}
 		modifier = {
-			factor = 1.5
+			factor = 2
 			is_secondary_power = yes
 		}
 		modifier = {
-			factor = 0.5
-			NOT = { literacy = 0.3 }
+			factor = 2.5
+
+			is_greater_power = no
+			is_secondary_power = no
 		}
 		modifier = {
-			factor = 1.1
+			factor = 1.25
 			year = 3010
 		}
 	}

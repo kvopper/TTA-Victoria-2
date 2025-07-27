@@ -2,6 +2,7 @@
 capital = 692
 primary_culture = silvan
 culture = elven_culture
+culture = avari
 religion = elven
 government = monarchy
 nationalvalue = no_heirloom
@@ -21,8 +22,4 @@ penal_reform = hard_labor
 slavery = no_slavery
 serfdom = banned_serfdom
 
-schools = traditional_academic
-#tech
-archer_tech_1 = 1
-education_1 = 1
-magic_1 = 1
+schools = no_organization

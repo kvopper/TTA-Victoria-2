@@ -15,6 +15,8 @@ oob = "SHI_oob.txt"
 
 prestige = 5
 
+decision = SHI_start_decision
+
 ruling_party = generic_nobility
 upper_house = {
 	nobility = 100
@@ -25,4 +27,4 @@ serfdom = banned_serfdom
 vote_franschise = wealth_weighted_voting
 cultural_rights = accepted_voting
 
-schools = traditional_academic
+schools = no_organization

@@ -40,36 +40,36 @@ clear_cores_from_DWM_desc;If you wish to make it as if Dwarves of the White Moun
 #####################################;x }
 ##### NATIONAL LEADER DECISIONS #####;x {
 #####################################;x
-steward_ecthelion_ii_title;§O$MONARCHTITLE$ Ecthelion II§!;x
-steward_ecthelion_ii_desc;Learn about §Y$MONARCHTITLE$ Ecthelion II§!!;x
-prince_angelimir_title;§O$MONARCHTITLE$ Angelimir§!;x
-prince_angelimir_desc;Learn about §Y$MONARCHTITLE$ Angelimir§!!;x
-dark_lord_sauron_title;§O$MONARCHTITLE$ Sauron§!;x
-dark_lord_sauron_desc;Learn about §Y$MONARCHTITLE$ Sauron§!!;x
-king_hegon_koldana_title;§O$MONARCHTITLE$ Hegon I§!;x
-king_hegon_koldana_desc;Learn about §Y$MONARCHTITLE$ Hegon I§!!;x
-king_dain_ironfoot_ii_title;§O$MONARCHTITLE$ Dain Ironfoot II§!;x
-king_dain_ironfoot_ii_desc;Learn about §Y$MONARCHTITLE$ Dain Ironfoot II§!!;x
-king_thranduil_title;§O$MONARCHTITLE$ Thranduil§!;x
-king_thranduil_desc;Learn about §Y$MONARCHTITLE$ Thranduil§!!;x
-lord_khamul_the_easterling_title;§O$MONARCHTITLE$ Khamûl the Easterling§!;x
-lord_khamul_the_easterling_desc;Learn about §Y$MONARCHTITLE$ Khamûl the Easterling§!!;x
-chief_beorn_title;§O$MONARCHTITLE$ Beorn§!;x
-chief_beorn_desc;Learn about §Y$MONARCHTITLE$ Beorn§!!;x
-lord_celeborn_n_lady_galadriel_title;§O$MONARCHTITLE$ of Lorien§!;x
-lord_celeborn_n_lady_galadriel_desc;Learn about §Y$MONARCHTITLE$ of Lorien§!!;x
-lord_treebeard_title;§O$MONARCHTITLE$ Treebeard§!;x
-lord_treebeard_desc;Learn about §Y$MONARCHTITLE$ Treebeard§!!;x
-king_thengel_title;§O$MONARCHTITLE$ Thengel§!;x
-king_thengel_desc;Learn about §Y$MONARCHTITLE$ Thengel§!!;x
-lord_saruman_title;§O$MONARCHTITLE$ Saruman§!;x
-lord_saruman_desc;Learn about §Y$MONARCHTITLE$ Saruman§!!;x
-chief_aragorn_title;§O$MONARCHTITLE$ Aragorn II§!;x
-chief_aragorn_desc;Learn about §Y$MONARCHTITLE$ Aragorn II§!!;x
-lord_elrond_title;§O$MONARCHTITLE$ Elrond§!;x
-lord_elrond_desc;Learn about §Y$MONARCHTITLE$ Elrond§!!;x
-lord_cirdan_title;§O$MONARCHTITLE$ Círdan§!;x
-lord_cirdan_desc;Learn about §Y$MONARCHTITLE$ Círdan§!!;x
+steward_ecthelion_ii_title;§OEcthelion II§!;x
+steward_ecthelion_ii_desc;Learn about §YEcthelion II§!!;x
+prince_angelimir_title;§OAngelimir§!;x
+prince_angelimir_desc;Learn about §YAngelimir§!!;x
+dark_lord_sauron_title;§OSauron§!;x
+dark_lord_sauron_desc;Learn about §YSauron§!!;x
+king_hegon_koldana_title;§OHegon I§!;x
+king_hegon_koldana_desc;Learn about §YHegon I§!!;x
+king_dain_ironfoot_ii_title;§ODain Ironfoot II§!;x
+king_dain_ironfoot_ii_desc;Learn about §YDain Ironfoot II§!!;x
+king_thranduil_title;§OThranduil§!;x
+king_thranduil_desc;Learn about §YThranduil§!!;x
+lord_khamul_the_easterling_title;§OKhamûl the Easterling§!;x
+lord_khamul_the_easterling_desc;Learn about §YKhamûl the Easterling§!!;x
+chief_beorn_title;§OBeorn§!;x
+chief_beorn_desc;Learn about §YBeorn§!!;x
+lord_celeborn_n_lady_galadriel_title;§Oof Lorien§!;x
+lord_celeborn_n_lady_galadriel_desc;Learn about §Yof Lorien§!!;x
+lord_treebeard_title;§OTreebeard§!;x
+lord_treebeard_desc;Learn about §YTreebeard§!!;x
+king_thengel_title;§OThengel§!;x
+king_thengel_desc;Learn about §YThengel§!!;x
+lord_saruman_title;§OSaruman§!;x
+lord_saruman_desc;Learn about §YSaruman§!!;x
+chief_aragorn_title;§OAragorn II§!;x
+chief_aragorn_desc;Learn about §YAragorn II§!!;x
+lord_elrond_title;§OElrond§!;x
+lord_elrond_desc;Learn about §YElrond§!!;x
+lord_cirdan_title;§OCírdan§!;x
+lord_cirdan_desc;Learn about §YCírdan§!!;x
 ##################################;x }
 ##### COUNTRY INFO DECISIONS #####;x {
 ##################################;x
@@ -234,7 +234,7 @@ become_gondor_title;Become Gondor;x
 become_gondor_desc;We have won, or at least drew, the Second Kin-Strife. Let's offically become Gondor again.\n\n§RBasically all flavor is locked to GON and RUN instead of GNR§!\n\n§RAdditionally, any substate relationships will be broken via this decision (assuming they weren't already broken), and will be replaced with vassal relationships§!;x
 ############################;x }
 ##### ANGMAR DECISIONS #####;x {
-############################;
+############################;x
 invite_witch_king_of_angmar_title;Invite the Witch King of Angmar;x
 invite_witch_king_of_angmar_desc;Since the Angmar War ended some one thousand years ago, the Men of Angmar have lived in destitution and poverty. Now, with our realm having been rebuilt and our nation centralised, we can recapture our prestige. The return of the Witch King to our realm and the forging of a new Kingdom will be the first steps to bring glory back to Angmar once more.;x
 ###########################;x }

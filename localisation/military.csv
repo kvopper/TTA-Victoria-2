@@ -11,7 +11,7 @@ aggressive;Aggressive: §GAttack +1§!;x
 persistent;Persistent: §GAttack +1§!;x
 ballsy;Ballsy: §GAttack +1§!;x
 inspiring;Inspring: §GAttack +1§!;x
-relentless;Relentless: §GAttack +2 §RDefence -1§!;x
+relentless;Relentless: §GAttack +2§!;x
 cautious;Cautious: §GDefence +1§!;x
 mediocre;Mediocre: §GDefence +1§!;x
 ungallant;Ungallant: §GDefence +1§!;x
@@ -19,7 +19,7 @@ defensive;Defensive: §GDefence +1§!;x
 defiant;Defiant: §GDefence +1§!;x
 resolute;Resolute: §GDefence +1§!;x
 stout;Stout: §GDefence +1§!;x
-reserved;Reserved: §RAttack -1 §GDefence +2§!;x
+reserved;Reserved: §GDefence +2§!;x
 deliberate;Deliberate: §GAttack +1 §GDefence +1§!;x
 bigoted;Bigoted: §GAttack +1 §GDefence +1§!;x
 harsh;Harsh: §GAttack +1 §GDefence +1§!;x
@@ -85,20 +85,44 @@ archers;Archers;x
 archers_sm;Archers;x
 artillery;Artillery;x
 artillery_sm;Artillery;x
+elite_swordsmen;Elite Swordsmen;x
+elite_swordsmen_sm;Elite Swordsmen;x
+elite_pikemen;Elite Pikemen;x
+elite_pikemen_sm;Elite Pikemen;x
+elite_horse_archers;Elite Horse Archers;x
+elite_horse_archers_sm;Elite Horse Archers;x
+elite_heavy_cavalry;Elite Heavy Cavalry;x
+elite_heavy_cavalry_sm;Elite Heavy Cavalry;x
+elite_archers;Elite Archers;x
+elite_archers_sm;Elite Archers;x
+elite_artillery;Elite Artillery;x
+elite_artillery_sm;Elite Artillery;x
+skirmishers;Skirmishers;x
+skirmishers_sm;Skirmishers;x
+royal_guard;Royal Guard;x
+royal_guard_sm;Royal Guard;x
+rangers;Rangers;x
+rangers_sm;Rangers;x
+berserkers;Berserkers;x
+berserkers_sm;Berserkers;x
+mumakil;Mûmakil;x
+mumakil_sm;Mûmakil;x
+ents_unit;Ents;x
+ents_unit_sm;Ents;x
+eagles;Eagles;x
+eagles_sm;Eagles;x
+spiders;Spiders;x
+spiders_sm;Spiders;x
+wights;Wights;x
+wights_sm;Wights;x
 transport;Merchantmen;x
 transport_short;MM;x
 galley;Galley;x
 galley_short;GY;x
-galleass;Galleass;x
-galleass_short;GS;x
-galiot;Galiot;x
-galiot_short;GT;x
 cog;Cog;x
 cog_short;CG;x
-caravel;Caravel;x
-caravel_short;CL;x
-brigantine;Brigantine;x
-brigantine_short;BR;x
+corsair_ship;Corsair Ship;x
+corsair_ship_short;CS;x
 ########################;x }
 ##### MOBILIZATION #####;x {
 ########################;x
@@ -157,7 +181,7 @@ NAVAL_COMBAT_DAMAGE_DESC_HULL;Reduced by opponent hull (§R$HULL$§!): §R$VAL$%
 NAVAL_COMBAT_DAMAGE_DESC_EXP;Reduced by opponent experience (§R$EXP$%§!): §R$VAL$%§!;x
 NAVAL_COMBAT_DAMAGE_DESC_NOORG;Opponent has no organization: §Y$VAL$%§!;x
 NAVAL_COMBAT_DAMAGE_DESC_STR;Reduced by our strength: §R$VAL$%§!;x
-NAVAL_COMBAT_HIT_CHANCE_DESC;Hitting chance: §Y$VAL$%§!;
+NAVAL_COMBAT_HIT_CHANCE_DESC;Hitting chance: §Y$VAL$%§!;x
 NAVAL_COMBAT_HIT_CHANCE_DESC_EVA;(reduced by opponent evasion §R$VAL$%§!);x
 TICKING_WARSCORE_DESC_GRACE;$VAL$ (§Y$DAY$§! days left).;x
 TICKING_WARSCORE_DESC_GRACE_EXPLAIN;Territorial war goals that are at least §G$MIN$%§! fulfilled will gradually add war score to the claimant.\nIf a war goal is not fulfilled after §Ygrace period of $DAYS$ days§! it will instead add war score to the owner. A goal occupied by the claimant and retaken by the owner will gradually revert to §Y0§! score to either side.;x

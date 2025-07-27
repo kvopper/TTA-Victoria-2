@@ -12,6 +12,8 @@ nationalvalue = no_heirloom
 literacy = 0
 civilized = yes
 
+decision = RHU_start_decision
+
 ruling_party = generic_nobility
 upper_house = {
 	nobility = 100
@@ -19,4 +21,4 @@ upper_house = {
 
 slavery = yes_slavery
 
-schools = traditional_academic
+schools = no_organization

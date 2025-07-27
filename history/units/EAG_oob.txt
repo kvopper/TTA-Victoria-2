@@ -26,8 +26,8 @@ army = {
 	name = "Eagles of the Eyrie"
 	location = 752
 	regiment = {
-		name = "1st Eagle's Eyrie Scouts"
-		type = scouts
+		name = "Eagles"
+		type = eagles
 		home = 752
 	}
 }

@@ -18,9 +18,4 @@ penal_reform = hard_labor
 slavery = no_slavery
 vote_franschise = landed_voting
 
-schools = army_tech_school
-#technologies
-merchant_marine_1 = 1
-light_ships_1 = 1
-heavy_ships_1 = 1
-naval_construction_1 = 1
+schools = no_organization

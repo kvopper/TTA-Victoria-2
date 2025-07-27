@@ -1,6 +1,72 @@
-############################
+#############################
+# FORTIFICATIONS INVENTIONS #
+#############################
+caltrops = {
+	limit = { fortifications_1 = 1 }
+	chance = {
+		base = 2
+	}
+	effect = {
+		dig_in_cap = 1
+	}
+}
+archer_towers = {
+	limit = { fortifications_2 = 1 }
+	chance = {
+		base = 2
+	}
+	effect = {
+		dig_in_cap = 1
+	}
+}
+flaming_bolts = {
+	limit = { fortifications_3 = 1 }
+	chance = {
+		base = 2
+	}
+	effect = {
+		dig_in_cap = 1
+	}
+}
+boiling_tar = {
+	limit = { fortifications_4 = 1 }
+	chance = {
+		base = 2
+	}
+	effect = {
+		dig_in_cap = 1
+	}
+}
+archers_stake = {
+	limit = { fortifications_5 = 1 }
+	chance = {
+		base = 2
+	}
+	effect = {
+		dig_in_cap = 1
+	}
+}
+chevaux_de_frise = {
+	limit = { fortifications_5 = 1 }
+	chance = {
+		base = 2
+	}
+	effect = {
+		dig_in_cap = 1
+	}
+}
+field_fortifications = {
+	limit = { fortifications_5 = 1 }
+	chance = {
+		base = 2
+	}
+	effect = {
+		max_fort = 1
+	}
+}
+###########################
 # ARMY_TACTICS INVENTIONS #
-############################
+###########################
 menelmacar = {
 	limit = { army_tactics_1 = 1 }
 	chance = {
@@ -13,3 +79,980 @@ menelmacar = {
 	
 	effect = { permanent_prestige = 1 }
 }
+forced_march = {
+	limit = { army_tactics_2 = 1 }
+	chance = {
+		base = 2
+	}
+	
+	effect = {
+		army_base = {
+			maximum_speed = 1
+		}
+	}
+}
+focused_attacks = {
+	limit = { army_tactics_3 = 1 }
+	chance = {
+		base = 2
+	}
+	effect = {
+		army_base = {
+			maneuver = 1
+		}
+	}
+}
+mountain_hordes = {
+	limit = { army_tactics_3 = 1 }
+	chance = {
+		base = 0
+		modifier = {
+			factor = 2
+			is_culture_group = northern_goblins
+		}
+	}
+	effect = {
+		mobilisation_size = 0.1
+	}
+}
+rapid_deployment = {
+	limit = { army_tactics_4 = 1 }
+	chance = {
+		base = 2
+	}
+	
+	effect = {
+		army_base = {
+			maximum_speed = 1
+		}
+	}
+}
+banners_of_command = {
+	limit = { army_tactics_4 = 1 }
+	chance = {
+		base = 2
+	}
+	
+	effect = {
+		morale = 0.25
+	}
+}
+battlefield_mobility = {
+	limit = { army_tactics_5 = 1 }
+	chance = {
+		base = 2
+	}
+	effect = {
+		army_base = {
+			maneuver = 1
+		}
+	}
+}
+rally_points = {
+	limit = { army_tactics_5 = 1 }
+	chance = {
+		base = 2
+	}
+	
+	effect = {
+		morale = 0.25
+	}
+}
+eagles_invention = {
+	limit = { army_tactics_5 = 1 }
+	chance = {
+		base = 0
+		modifier = {
+			factor = 100
+			has_country_flag = eagles_unlock
+			NOT = { invention = fellbeasts_invention }
+		}
+	}
+	effect = {
+		prestige = 0.05
+		gas_attack = yes
+	}
+}
+fellbeasts_invention = {
+	limit = { army_tactics_5 = 1 }
+	chance = {
+		base = 0
+		modifier = {
+			factor = 100
+			has_country_flag = fellbeasts_unlock
+			NOT = { invention = eagles_invention }
+		}
+	}
+	effect = {
+		prestige = 0.05
+		gas_attack = yes
+	}
+}
+aerial_combat = {
+	limit = { army_tactics_5 = 1 }
+	chance = {
+		base = 0
+		
+		modifier = {
+			factor = 1
+			war = yes
+			OR = {
+				invention = eagles_invention
+				invention = fellbeasts_invention
+			}
+			war_countries = {
+				OR = {
+					invention = eagles_invention
+					invention = fellbeasts_invention
+				}
+			}
+		}
+	}
+	
+	effect = { gas_defence = yes }
+}
+soronume = {
+	limit = { army_tactics_5 = 1 }
+	chance = {
+		base = 0
+		modifier = {
+			factor = 1
+			invention = astronomy
+		}
+	}
+	
+	effect = { permanent_prestige = 1 }
+}
+#######################
+# TRAINING INVENTIONS #
+#######################
+# When adding/changing/removing unit unlock requirements, also update decisions/World Bank.txt research flags
+minasdirith_invention = {
+	limit = { training_1 = 1 }
+	chance = {
+		base = 0
+		modifier = {
+			factor = 100
+			has_country_flag = minasdirith_unlock
+		}
+	}
+	
+	effect = {
+		rgo_output = 0.05
+		army_base = {
+			supply_consumption = -0.1
+		}
+	}
+}
+militias = {
+	limit = { training_1 = 1 }
+	chance = {
+		base = 2
+	}
+	effect = {
+		regular_experience_level = 2
+		army_base = {
+			discipline = 0.02
+		}
+	}
+}
+ents_unit_unlock = {
+	limit = { training_1 = 1 }
+	chance = {
+		base = 0
+		modifier = {
+			factor = 100
+			is_culture_group = ents
+		}
+	}
+	effect = {
+		activate_unit = ents_unit
+	}
+}
+eagles_unit_unlock = {
+	limit = { training_1 = 1 }
+	chance = {
+		base = 0
+		modifier = {
+			factor = 100
+			is_culture_group = eagles
+		}
+	}
+	effect = {
+		activate_unit = eagles
+	}
+}
+spiders_unlock = {
+	limit = { training_1 = 1 }
+	chance = {
+		base = 0
+		modifier = {
+			factor = 100
+			is_culture_group = spiders
+		}
+	}
+	effect = {
+		activate_unit = spiders
+	}
+}
+mumakil_unlock = {
+	limit = { training_1 = 1 }
+	chance = {
+		base = 0
+	}
+	effect = {
+		activate_unit = mumakil
+	}
+}
+barrow_wights_unlock = {
+	limit = { training_1 = 1 }
+	chance = {
+		base = 0
+		modifier = {
+			factor = 100
+			tag = BAR
+		}
+	}
+	effect = {
+		activate_unit = wights
+	}
+}
+marsh_wights_unlock = {
+	limit = { training_1 = 1 }
+	chance = {
+		base = 0
+		modifier = {
+			factor = 100
+			tag = LMW
+		}
+	}
+	effect = {
+		activate_unit = wights
+	}
+}
+oathbreakers_wights_unlock = {
+	limit = { training_1 = 1 }
+	chance = {
+		base = 0
+		modifier = {
+			factor = 100
+			tag = OBS
+		}
+	}
+	effect = {
+		activate_unit = wights
+	}
+}
+lance_retinues = {
+	limit = { training_2 = 1 }
+	chance = {
+		base = 2
+	}
+	effect = {
+		regular_experience_level = 3
+		army_base = {
+			discipline = 0.03
+		}
+	}
+}
+basic_training = {
+	limit = { training_3 = 1 }
+	chance = {
+		base = 2
+	}
+	effect = {
+		regular_experience_level = 5
+		army_base = {
+			discipline = 0.05
+		}
+	}
+}
+snaga_skirmishers = {
+	limit = { training_3 = 1 }
+	chance = {
+		base = 0
+		modifier = {
+			factor = 2
+			is_culture_group = northern_goblins
+		}
+	}
+	effect = {
+		infantry = {
+			support = 0.5
+			supply_consumption = 0.5
+		}
+	}
+}
+skinchangers_unlock = {
+	limit = { training_3 = 1 }
+	chance = {
+		base = 0
+		modifier = {
+			factor = 100
+			is_culture_group = anduinrim
+		}
+	}
+	effect = {
+		activate_unit = berserkers
+	}
+}
+berserkers_unlock = {
+	limit = { training_3 = 1 }
+	chance = {
+		base = 0
+		modifier = {
+			factor = 100
+			is_culture_group = uruk_hai
+		}
+	}
+	effect = {
+		activate_unit = berserkers
+	}
+}
+raiders_unlock = {
+	limit = { training_3 = 1 }
+	chance = {
+		base = 0
+		modifier = {
+			factor = 100
+			is_culture_group = wildmen
+		}
+	}
+	effect = {
+		activate_unit = berserkers
+	}
+}
+elvenkings_guard_unlock = {
+	limit = { training_3 = 1 }
+	chance = {
+		base = 0
+		modifier = {
+			factor = 100
+			tag = WRM
+		}
+	}
+	effect = {
+		activate_unit = royal_guard
+	}
+}
+darkblades_unlock = {
+	limit = { training_3 = 1 }
+	chance = {
+		base = 0
+		modifier = {
+			factor = 100
+			is_culture_group = angmarrim
+		}
+	}
+	effect = {
+		activate_unit = rangers
+	}
+}
+moriquendi_shadows_unlock = {
+	limit = { training_3 = 1 }
+	chance = {
+		base = 0
+		modifier = {
+			factor = 100
+			is_culture_group = avari
+		}
+	}
+	effect = {
+		activate_unit = rangers
+	}
+}
+adhalling_rangers_unlock = {
+	limit = { training_3 = 1 }
+	chance = {
+		base = 0
+		modifier = {
+			factor = 100
+			is_culture_group = gramavuld_northmen
+			OR = {
+				primary_culture = adhalling
+				accepted_culture = adhalling
+			}
+		}
+	}
+	effect = {
+		activate_unit = rangers
+	}
+}
+shirriffs_unlock = {
+	limit = { training_3 = 1 }
+	chance = {
+		base = 0
+		modifier = {
+			factor = 100
+			is_culture_group = hobbits
+		}
+	}
+	effect = {
+		activate_unit = rangers
+	}
+}
+snow_rangers_unlock = {
+	limit = { training_3 = 1 }
+	chance = {
+		base = 0
+		modifier = {
+			factor = 100
+			is_culture_group = lossoth
+		}
+	}
+	effect = {
+		activate_unit = rangers
+	}
+}
+dunedain_rangers_unlock = {
+	limit = { training_3 = 1 }
+	chance = {
+		base = 0
+		modifier = {
+			factor = 100
+			is_culture_group = dunedain
+			OR = {
+				primary_culture = arthedani
+				accepted_culture = arthedani
+				primary_culture = cardolandrim
+				accepted_culture = cardolandrim
+				primary_culture = haeranedain
+				accepted_culture = haeranedain
+			}
+			NOT = { invention = ithilien_rangers_unlock }
+		}
+	}
+	effect = {
+		activate_unit = rangers
+	}
+}
+ithilien_rangers_unlock = {
+	limit = { training_3 = 1 }
+	chance = {
+		base = 0
+		modifier = {
+			factor = 100
+			is_culture_group = dunedain
+			OR = {
+				primary_culture = gondorian
+				accepted_culture = gondorian
+				primary_culture = amrothian
+				accepted_culture = amrothian
+			}
+			any_owned_province = {
+				OR = {
+					region = GON_198 # Forithilien
+					region = GON_205 # Emyn Arnen
+					region = GON_212 # Harithilien
+				}
+			}
+			NOT = { invention = dunedain_rangers_unlock }
+		}
+	}
+	effect = {
+		activate_unit = rangers
+	}
+}
+marchwardens_unlock = {
+	limit = { training_3 = 1 }
+	chance = {
+		base = 0
+		modifier = {
+			factor = 100
+			tag = LOR
+		}
+	}
+	effect = {
+		activate_unit = rangers
+	}
+}
+skirmishers_unlock = {
+	limit = { training_3 = 1 }
+	chance = {
+		base = 0
+		modifier = {
+			factor = 100
+			is_culture_group = wildmen
+		}
+	}
+	effect = {
+		activate_unit = skirmishers
+	}
+}
+eldarinwe_archers_unlock = {
+	limit = { training_3 = 1 }
+	chance = {
+		base = 0
+		modifier = {
+			factor = 100
+			OR = {
+				is_culture_group = eldar
+				is_culture_group = teleri
+			}
+		}
+	}
+	effect = {
+		activate_unit = elite_archers
+	}
+}
+black_arrow_guildsmen_unlock = {
+	limit = { training_3 = 1 }
+	chance = {
+		base = 0
+		modifier = {
+			factor = 100
+			is_culture_group = gramavuld_northmen
+			owns = 652 # Dale
+		}
+	}
+	effect = {
+		activate_unit = elite_archers
+	}
+}
+bandobras_archers_unlock = {
+	limit = { training_3 = 1 }
+	chance = {
+		base = 0
+		modifier = {
+			factor = 100
+			is_culture_group = hobbits
+		}
+	}
+	effect = {
+		activate_unit = elite_archers
+	}
+}
+dwarven_catapults_unlock = {
+	limit = { training_3 = 1 }
+	chance = {
+		base = 0
+		modifier = {
+			factor = 100
+			OR = {
+				is_culture_group = dwarves
+				is_culture_group = wicked_dwarves
+			}
+		}
+	}
+	effect = {
+		activate_unit = elite_artillery
+	}
+}
+troll_catapults_unlock = {
+	limit = { training_3 = 1 }
+	chance = {
+		base = 0
+		modifier = {
+			factor = 100
+			OR = {
+				is_culture_group = mordorian
+				is_culture_group = northern_goblins
+				is_culture_group = trolls
+			}
+		}
+	}
+	effect = {
+		activate_unit = elite_artillery
+	}
+}
+swan_knights_unlock = {
+	limit = { training_3 = 1 }
+	chance = {
+		base = 0
+		modifier = {
+			factor = 100
+			is_culture_group = dunedain
+			OR = {
+				primary_culture = gondorian
+				accepted_culture = gondorian
+				primary_culture = amrothian
+				accepted_culture = amrothian
+			}
+			owns = 71 # Dol Amroth
+		}
+	}
+	effect = {
+		activate_unit = elite_heavy_cavalry
+	}
+}
+serpent_guard_unlock = {
+	limit = { training_3 = 1 }
+	chance = {
+		base = 0
+		modifier = {
+			factor = 100
+			is_culture_group = haradrim
+		}
+	}
+	effect = {
+		activate_unit = elite_heavy_cavalry
+	}
+}
+variag_riders_unlock = {
+	limit = { training_3 = 1 }
+	chance = {
+		base = 0
+		modifier = {
+			factor = 100
+			is_culture_group = khandish
+		}
+	}
+	effect = {
+		activate_unit = elite_heavy_cavalry
+	}
+}
+loke_innas_rim_unlock = {
+	limit = { training_3 = 1 }
+	chance = {
+		base = 0
+		modifier = {
+			factor = 100
+			is_culture_group = easterlings
+		}
+	}
+	effect = {
+		activate_unit = elite_heavy_cavalry
+	}
+}
+rohirrim_riders_unlock = {
+	limit = { training_3 = 1 }
+	chance = {
+		base = 0
+		modifier = {
+			factor = 100
+			is_culture_group = rohirrim
+		}
+	}
+	effect = {
+		activate_unit = elite_heavy_cavalry
+	}
+}
+rhovanion_riders_unlock = {
+	limit = { training_3 = 1 }
+	chance = {
+		base = 0
+		modifier = {
+			factor = 100
+			is_culture_group = northmen
+		}
+	}
+	effect = {
+		activate_unit = elite_heavy_cavalry
+	}
+}
+riders_of_imladris_unlock = {
+	limit = { training_3 = 1 }
+	chance = {
+		base = 0
+		modifier = {
+			factor = 100
+			is_culture_group = eldar
+			owns = 865
+		}
+	}
+	effect = {
+		activate_unit = elite_horse_archers
+	}
+}
+variag_archers_unlock = {
+	limit = { training_3 = 1 }
+	chance = {
+		base = 0
+		modifier = {
+			factor = 100
+			is_culture_group = khandish
+		}
+	}
+	effect = {
+		activate_unit = elite_horse_archers
+	}
+}
+vinter_guard_unlock = {
+	limit = { training_3 = 1 }
+	chance = {
+		base = 0
+		modifier = {
+			factor = 100
+			is_culture_group = northmen
+		}
+	}
+	effect = {
+		activate_unit = elite_horse_archers
+	}
+}
+eored_skirmishers_unlock = {
+	limit = { training_3 = 1 }
+	chance = {
+		base = 0
+		modifier = {
+			factor = 100
+			is_culture_group = rohirrim
+		}
+	}
+	effect = {
+		activate_unit = elite_horse_archers
+	}
+}
+dunedain_wardens_unlock = {
+	limit = { training_3 = 1 }
+	chance = {
+		base = 0
+		modifier = {
+			factor = 100
+			is_culture_group = dunedain
+			OR = {
+				primary_culture = arthedani
+				accepted_culture = arthedani
+				primary_culture = cardolandrim
+				accepted_culture = cardolandrim
+				primary_culture = haeranedain
+				accepted_culture = haeranedain
+			}
+		}
+	}
+	effect = {
+		activate_unit = elite_pikemen
+	}
+}
+lindon_longspears_unlock = {
+	limit = { training_3 = 1 }
+	chance = {
+		base = 0
+		modifier = {
+			factor = 100
+			tag = LIN
+		}
+	}
+	effect = {
+		activate_unit = elite_pikemen
+	}
+}
+orthanc_guard_unlock = {
+	limit = { training_3 = 1 }
+	chance = {
+		base = 0
+		modifier = {
+			factor = 100
+			is_culture_group = uruk_hai
+		}
+	}
+	effect = {
+		activate_unit = elite_pikemen
+	}
+}
+greenway_guard_unlock = {
+	limit = { training_3 = 1 }
+	chance = {
+		base = 0
+		modifier = {
+			factor = 100
+			is_culture_group = breelander
+		}
+	}
+	effect = {
+		activate_unit = elite_pikemen
+	}
+}
+moriquendi_defenders_unlock = {
+	limit = { training_3 = 1 }
+	chance = {
+		base = 0
+		modifier = {
+			factor = 100
+			is_culture_group = avari
+		}
+	}
+	effect = {
+		activate_unit = elite_swordsmen
+	}
+}
+corsairs_unlock = {
+	limit = { training_3 = 1 }
+	chance = {
+		base = 0
+		modifier = {
+			factor = 100
+			is_culture_group = kingsmen
+		}
+	}
+	effect = {
+		activate_unit = elite_swordsmen
+	}
+}
+loke_gamp_rim_unlock = {
+	limit = { training_3 = 1 }
+	chance = {
+		base = 0
+		modifier = {
+			factor = 100
+			is_culture_group = easterlings
+		}
+	}
+	effect = {
+		activate_unit = elite_swordsmen
+	}
+}
+dains_guard_unlock = {
+	limit = { training_3 = 1 }
+	chance = {
+		base = 0
+		modifier = {
+			factor = 100
+			is_culture_group = dwarves
+		}
+	}
+	effect = {
+		activate_unit = elite_swordsmen
+	}
+}
+woodsmen_warriors_unlock = {
+	limit = { training_3 = 1 }
+	chance = {
+		base = 0
+		modifier = {
+			factor = 100
+			is_culture_group = anduinrim
+		}
+	}
+	effect = {
+		activate_unit = elite_swordsmen
+	}
+}
+morgul_uruks_unlock = {
+	limit = { training_3 = 1 }
+	chance = {
+		base = 0
+		modifier = {
+			factor = 100
+			is_culture_group = mordorian
+			OR = {
+				primary_culture = mordor_orc
+				accepted_culture = mordor_orc
+				primary_culture = mordor_uruk
+				accepted_culture = mordor_uruk
+			}
+			owns = 433 # Minas Morgul
+			NOT = { invention = guldur_uruks_unlock }
+		}
+	}
+	effect = {
+		activate_unit = elite_swordsmen
+	}
+}
+guldur_uruks_unlock = {
+	limit = { training_3 = 1 }
+	chance = {
+		base = 0
+		modifier = {
+			factor = 100
+			is_culture_group = mordorian
+			OR = {
+				primary_culture = guldurrim
+				accepted_culture = guldurrim
+			}
+			owns = 727 # Dol Guldur
+			NOT = { invention = morgul_uruks_unlock }
+		}
+	}
+	effect = {
+		activate_unit = elite_swordsmen
+	}
+}
+moria_deep_dwellers_unlock = {
+	limit = { training_3 = 1 }
+	chance = {
+		base = 0
+		modifier = {
+			factor = 100
+			is_culture_group = northern_goblins
+			owns = 843 # Moria
+		}
+	}
+	effect = {
+		activate_unit = elite_swordsmen
+	}
+}
+witch_knights_unlock = {
+	limit = { training_3 = 1 }
+	chance = {
+		base = 0
+		modifier = {
+			factor = 100
+			is_culture_group = angmarrim
+		}
+	}
+	effect = {
+		activate_unit = elite_swordsmen
+	}
+}
+snow_guard_unlock = {
+	limit = { training_3 = 1 }
+	chance = {
+		base = 0
+		modifier = {
+			factor = 100
+			is_culture_group = lossoth
+		}
+	}
+	effect = {
+		activate_unit = elite_swordsmen
+	}
+}
+merchant_guard_unlock = {
+	limit = { training_3 = 1 }
+	chance = {
+		base = 0
+		modifier = {
+			factor = 100
+			is_culture_group = breelander
+		}
+	}
+	effect = {
+		activate_unit = elite_swordsmen
+	}
+}
+military_drill = {
+	limit = { training_4 = 1 }
+	chance = {
+		base = 2
+	}
+	effect = {
+		regular_experience_level = 5
+		army_base = {
+			discipline = 0.05
+		}
+	}
+}
+military_schools = {
+	limit = { training_4 = 1 }
+	chance = {
+		base = 2
+	}
+	effect = {
+		enable_crime = military_schools_effect
+	}
+}
+discipline_invention = {
+	limit = { training_5 = 1 }
+	chance = {
+		base = 2
+	}
+	effect = {
+		regular_experience_level = 5
+		army_base = {
+			discipline = 0.05
+		}
+	}
+}
+outposts = {
+	limit = { training_5 = 1 }
+	chance = {
+		base = 2
+	}
+	effect = {
+		max_barracks = 1
+	}
+}
+###########################
+# NAVAL THEORY INVENTIONS #
+###########################

@@ -14,4 +14,9 @@ upper_house = {
 }
 
 
-schools = traditional_academic
+schools = no_organization
+
+# Adding techonology via country history instead of World Bank to ensure LMW has the stat boosts for when they rise
+infantry_tech_1 = 1
+infantry_tech_2 = 1
+infantry_tech_3 = 1

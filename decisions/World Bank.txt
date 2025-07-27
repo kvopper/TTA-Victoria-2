@@ -58,72 +58,307 @@ political_decisions = {
 				}
 			}
 			
-			# Research flags for infantry focused realms
+			# Starting tech {
+			# Centralized tags have access to forts and roads
+			any_country = {
+				limit = { civilized = yes }
+				activate_technology = fortifications_1
+				activate_technology = infrastructure_tech_1
+			}
+			# Elves, older realms and GPs have access to miltary tactics
+			any_country = {
+				limit = {
+					OR = {
+						accepted_culture = elven_culture
+						is_greater_power = yes
+						tag = GON
+						AND = {
+							vassal_of = GON
+							NOT = { tag = ISE }
+						}
+						tag = RAD
+					}
+				}
+				activate_technology = army_tactics_1
+			}
+			# Only tags with access to the special troops get training 1 for free
+			any_country = {
+				limit = {
+					OR = {
+						is_culture_group = ents
+						is_culture_group = eagles
+						is_culture_group = spiders
+						is_culture_group = undead
+					}
+				}
+				activate_technology = training_1
+			}
+			# Borders the ocean
+			any_country = {
+				limit = {
+					OR = {
+						tag = UMB
+						tag = GON
+						AND = {
+							vassal_of = GON
+							NOT = { tag = ISE }
+						}
+						tag = LIN
+					}
+				}
+				activate_technology = naval_theory_1
+				activate_technology = merchant_marine_1
+				activate_technology = light_ships_1
+				activate_technology = heavy_ships_1
+				activate_technology = naval_construction_1
+			}
+			# Borders the Sea of Rhun/connected waterways
+			any_country = {
+				limit = {
+					OR = {
+						is_culture_group = northmen
+						is_culture_group = gramavuld_northmen
+						is_culture_group = easterlings
+					}
+				}
+				activate_technology = merchant_marine_1
+				activate_technology = light_ships_1
+				activate_technology = naval_construction_1
+			}
+			# Elves, Dwarves, Orcs and Hobbits get RGO boosts
+			any_country = {
+				limit = {
+					OR = {
+						accepted_culture = elven_culture
+						accepted_culture = dwarven_culture
+						accepted_culture = orc_culture
+						accepted_culture = hobbit_culture
+					}
+				}
+				activate_technology = rgo_tech_1
+			}
+			# GPs get guilds, taxes and focuses
+			any_country = {
+				limit = { is_greater_power = yes }
+				activate_technology = guilds_1
+				activate_technology = taxes_1
+				activate_technology = administration_tech_1
+				activate_technology = population_1
+			}
+			# Those with a strong trade culture or bordering a map "edge" get trade
+			any_country ={
+				limit = {
+					OR = {
+						is_culture_group = northmen
+						is_culture_group = gramavuld_northmen
+						is_culture_group = easterlings
+						is_culture_group = haradrim
+					}
+				}
+				activate_technology = trade_tech_1
+			}
+			# Hobbits and Breelanders get inns
+			any_country = {
+				limit = {
+					OR = {
+						is_culture_group = hobbits
+						is_culture_group = breelander
+					}
+				}
+				activate_technology = entertainment_tech_1
+			}
+			# Elves and Dunedain get herblore
 			any_country = {
 				limit = {
 					OR = {
 						is_culture_group = dunedain
-						is_culture_group = dwarves
+						accepted_culture = elven_culture
+					}
+				}
+				activate_technology = herblore_tech_1
+			}
+			# Elves, Wizards, Sauron and Nazgul get magic
+			any_country = {
+				limit = {
+					OR = {
+						accepted_culture = elven_culture
+						tag = ISE
+						tag = RAD
+						tag = MOR
+						tag = GUL
+					}
+				}
+				activate_technology = magic_1
+			}
+			# Wizards and Sauron get more magic
+			any_country = {
+				limit = {
+					OR = {
+						tag = ISE
+						tag = RAD
+						tag = MOR
+					}
+				}
+				activate_technology = magic_2
+			}
+			# No one gets awesome education and research point buffs
+			# Orcs and Men get expansion
+			any_country = {
+				limit = {
+					OR = {
+						accepted_culture = orc_culture
+						accepted_culture = men_culture
+					}
+				}
+				activate_technology = expansion_1
+			}
+			# Elves get diplomacy
+			any_country = {
+				limit = { accepted_culture = elven_culture }
+				activate_technology = diplomacy_1
+			}
+			# DND and puppets get wilderness
+			any_country = {
+				limit = {
+					OR = {
+						tag = DND
+						vassal_of = DND
+					}
+				}
+				activate_technology = wilderness_1
+			}
+			# Elves and GPs get culture
+			any_country = {
+				limit = {
+					OR = {
+						accepted_culture = elven_culture
+						is_greater_power = yes
+					}
+				}
+				activate_technology = culture_1
+			}
+			# }
+			
+			# Research flags for infantry focused realms
+			any_country = {
+				limit = {
+					OR = {
+						# Elite Pikemen
 						AND = {
-							is_culture_group = anduinrim
-							NOT = { tag = STO }
+							is_culture_group = dunedain
+							OR = {
+								primary_culture = arthedani
+								accepted_culture = arthedani
+								primary_culture = cardolandrim
+								accepted_culture = cardolandrim
+								primary_culture = haeranedain
+								accepted_culture = haeranedain
+							}
 						}
-						is_culture_group = ents
-						AND = {
-							is_culture_group = wildmen
-							tag = DUN
-						}
-						is_culture_group = lossoth
-						is_culture_group = breelander
-						is_culture_group = kingsmen
-						is_culture_group = mordorian
+						tag = LIN
 						is_culture_group = uruk_hai
+						is_culture_group = breelander
+						# Elite Swordsmen
+						is_culture_group = avari
+						is_culture_group = kingsmen
+						is_culture_group = easterlings
+						is_culture_group = dwarves
+						is_culture_group = anduinrim
+						is_culture_group = mordorian
 						is_culture_group = northern_goblins
 						is_culture_group = angmarrim
-						is_culture_group = trolls
+						is_culture_group = lossoth
+						is_culture_group = breelander
+						# Skirmishers
+						is_culture_group = wildmen
+						# Royal Guard
+						tag = WRM
+						# Berserkers
+						is_culture_group = anduinrim
+						is_culture_group = uruk_hai
+						is_culture_group = wildmen
+						# Wights
 						is_culture_group = undead
-						is_culture_group = eagles
-						is_culture_group = spiders
 					}
 				}
 				set_country_flag = infantry_focused
+				activate_technology = infantry_tech_1
 			}
 			
 			# Research flags for ranged focused realms
 			any_country = {
 				limit = {
 					OR = {
+						# Elite Archers
 						is_culture_group = eldar
 						is_culture_group = teleri
-						is_culture_group = avari
-						is_culture_group = northmen
 						is_culture_group = gramavuld_northmen
-						AND = {
-							is_culture_group = wildmen
-							NOT = { tag = DUN }
-						}
-						AND = {
-							is_culture_group = anduinrim
-							tag = STO
-						}
-						
 						is_culture_group = hobbits
+						# Rangers
+						is_culture_group = angmarrim
+						is_culture_group = avari
+						is_culture_group = gramavuld_northmen
+						is_culture_group = hobbits
+						is_culture_group = lossoth
+						is_culture_group = dunedain
+						tag = LOR
 					}
 				}
 				set_country_flag = ranged_focused
+				activate_technology = archer_tech_1
 			}
 			
 			# Research flags for cavalry focused realms
 			any_country = {
 				limit = {
 					OR = {
-						is_culture_group = rohirrim
+						# Elite Heavy Cavalry
+						AND = {
+							is_culture_group = dunedain
+							OR = {
+								primary_culture = gondorian
+								accepted_culture = gondorian
+								primary_culture = amrothian
+								accepted_culture = amrothian
+							}
+						}
 						is_culture_group = haradrim
 						is_culture_group = khandish
 						is_culture_group = easterlings
+						is_culture_group = rohirrim
+						is_culture_group = northmen
+						# Elite Horse Archers
+						is_culture_group = eldar
+						is_culture_group = khandish
+						is_culture_group = northmen
+						is_culture_group = rohirrim
+						# Mumakil, purposefully empty
+						# Ents
+						is_culture_group = ents
+						# Eagles
+						is_culture_group = eagles
+						# Spiders
+						is_culture_group = spiders
 					}
 				}
 				set_country_flag = cavalry_focused
+				activate_technology = cavalry_tech_1
+			}
+			
+			# Research flags for cavalry focused realms
+			any_country = {
+				limit = {
+					OR = {
+						# Elite Artillery
+						is_culture_group = dwarves
+						is_culture_group = wicked_dwarves
+						is_culture_group = mordorian
+						is_culture_group = northern_goblins
+						is_culture_group = trolls
+					}
+				}
+				set_country_flag = artillery_focused
+				activate_technology = artillery_tech_1
 			}
 			
 			# Set Bilbo as the One Ring controller
@@ -162,8 +397,8 @@ political_decisions = {
 			}
 			
 			# Start General/Admiral Generation event loops
-			country_event = { id = 40998 days = 4 }
-			country_event = { id = 40999 days = 4 }
+			country_event = { id = 99008 days = 4 }
+			country_event = { id = 99009 days = 4 }
 			add_country_modifier = { name = recruited_generals duration = -1 } # Just to make sure the events don't decide to try to fire for FOR
 			add_country_modifier = { name = recruited_admirals duration = -1 } # Just to make sure the events don't decide to try to fire for FOR
 			

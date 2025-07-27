@@ -4,8 +4,7 @@ heavy_cavalry = {
 	type = land
 	sprite = HeavyCavalry
 	active = yes
-	unit_type = cavalry
-	primary_culture = yes
+	unit_type = infantry # for ai recruitment purposes
 	
 	#Avatar
 	sprite_override = HeavyCavalry
@@ -17,8 +16,8 @@ heavy_cavalry = {
 	priority = 60
 	max_strength = 3
 	default_organisation = 40
-	maximum_speed = 5.00
-	weighted_value = 4.0
+	maximum_speed = 6.00
+	weighted_value = 1.0
 
 	#Building Costs
 	build_time = 50
@@ -37,11 +36,11 @@ heavy_cavalry = {
 		liquor = 0.1
 	}
 	
-	#Land Abilties
+	#Land Abilities
 	reconnaissance = 0
 	attack = 5
-	defence = 3
-	discipline = 1.1
+	defence = 1
+	discipline = 1.0
 	support = 0.0
 	maneuver = 2
 }

@@ -23,7 +23,4 @@ slavery = no_slavery
 
 decision = RAD_start_decision
 
-schools = traditional_academic
-
-#technologies
-magic_1 = 1
+schools = no_organization

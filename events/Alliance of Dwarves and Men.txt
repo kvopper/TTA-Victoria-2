@@ -55,10 +55,12 @@ country_event = {
 		}
 		
 		remove_country_modifier = alliance_of_dwarves_and_men
+		clr_country_flag = flavor_diplomacy_5 # Being overzealous due to the investment a level 5 tech will need
 		
 		any_country = {
 			limit = { vassal_of = THIS } # There shouldn't be any. But just in case
 			remove_country_modifier = alliance_of_dwarves_and_men
+			clr_country_flag = flavor_diplomacy_5 # Being overzealous due to the investment a level 5 tech will need
 		}
 		
 		# Clear out any sort of voting modifiers
@@ -497,10 +499,12 @@ country_event = {
 		}
 		
 		remove_country_modifier = alliance_of_dwarves_and_men
+		clr_country_flag = flavor_diplomacy_5 # Being overzealous due to the investment a level 5 tech will need
 		
 		any_country = {
 			limit = { vassal_of = THIS } # There shouldn't be any. But just in case
 			remove_country_modifier = alliance_of_dwarves_and_men
+			clr_country_flag = flavor_diplomacy_5 # Being overzealous due to the investment a level 5 tech will need
 		}
 		
 		# Clear out any sort of voting modifiers
@@ -1269,10 +1273,12 @@ country_event = {
 		}
 		
 		remove_country_modifier = alliance_of_dwarves_and_men
+		clr_country_flag = flavor_diplomacy_5 # Being overzealous due to the investment a level 5 tech will need
 		
 		any_country = {
 			limit = { vassal_of = THIS } # There shouldn't be any. But just in case
 			remove_country_modifier = alliance_of_dwarves_and_men
+			clr_country_flag = flavor_diplomacy_5 # Being overzealous due to the investment a level 5 tech will need
 		}
 		
 		# Clear out any sort of voting modifiers
@@ -2357,10 +2363,12 @@ country_event = {
 		}
 		
 		remove_country_modifier = alliance_of_dwarves_and_men
+		clr_country_flag = flavor_diplomacy_5 # Being overzealous due to the investment a level 5 tech will need
 		
 		any_country = {
 			limit = { vassal_of = THIS } # There shouldn't be any. But just in case
 			remove_country_modifier = alliance_of_dwarves_and_men
+			clr_country_flag = flavor_diplomacy_5 # Being overzealous due to the investment a level 5 tech will need
 		}
 		
 		# Clear out any sort of voting modifiers
@@ -3761,10 +3769,12 @@ country_event = {
 		}
 		
 		remove_country_modifier = alliance_of_dwarves_and_men
+		clr_country_flag = flavor_diplomacy_5 # Being overzealous due to the investment a level 5 tech will need
 		
 		any_country = {
 			limit = { vassal_of = THIS } # There shouldn't be any. But just in case
 			remove_country_modifier = alliance_of_dwarves_and_men
+			clr_country_flag = flavor_diplomacy_5 # Being overzealous due to the investment a level 5 tech will need
 		}
 		
 		# Clear out any sort of voting modifiers
@@ -5481,10 +5491,12 @@ country_event = {
 		}
 		
 		remove_country_modifier = alliance_of_dwarves_and_men
+		clr_country_flag = flavor_diplomacy_5 # Being overzealous due to the investment a level 5 tech will need
 		
 		any_country = {
 			limit = { vassal_of = THIS } # There shouldn't be any. But just in case
 			remove_country_modifier = alliance_of_dwarves_and_men
+			clr_country_flag = flavor_diplomacy_5 # Being overzealous due to the investment a level 5 tech will need
 		}
 		
 		# Clear out any sort of voting modifiers
@@ -7517,10 +7529,12 @@ country_event = {
 		}
 		
 		remove_country_modifier = alliance_of_dwarves_and_men
+		clr_country_flag = flavor_diplomacy_5 # Being overzealous due to the investment a level 5 tech will need
 		
 		any_country = {
 			limit = { vassal_of = THIS } # There shouldn't be any. But just in case
 			remove_country_modifier = alliance_of_dwarves_and_men
+			clr_country_flag = flavor_diplomacy_5 # Being overzealous due to the investment a level 5 tech will need
 		}
 		
 		# Clear out any sort of voting modifiers
@@ -20326,6 +20340,18 @@ country_event = {
 		name = "Yes, we accept"
 		add_country_modifier = { name = alliance_of_dwarves_and_men duration = -1 }
 		
+		random_owned = {
+			limit = { owner = { has_global_flag = railroading_disabled } }
+			owner = { set_country_flag = flavor_diplomacy_5 }
+		}
+		
+		set_global_flag = hidden_effects
+		random_owned = {
+			limit = { owner = { has_global_flag = hidden_effects } }
+			owner = { tech_school = member_alliance_dwarves_men }
+		}
+		clr_global_flag = hidden_effects
+		
 		ai_chance = { factor = 100 }
 	}
 	
@@ -20792,10 +20818,12 @@ country_event = {
 		}
 		
 		remove_country_modifier = alliance_of_dwarves_and_men
+		clr_country_flag = flavor_diplomacy_5 # Being overzealous due to the investment a level 5 tech will need
 		
 		any_country = {
 			limit = { vassal_of = THIS } # There shouldn't be any. But just in case
 			remove_country_modifier = alliance_of_dwarves_and_men
+			clr_country_flag = flavor_diplomacy_5 # Being overzealous due to the investment a level 5 tech will need
 		}
 		
 		# Clear out any sort of voting modifiers
@@ -20824,6 +20852,7 @@ country_event = {
 			limit = { owner = { has_country_modifier = alliance_of_dwarves_and_men } }
 			owner = {
 				remove_country_modifier = alliance_of_dwarves_and_men
+				clr_country_flag = flavor_diplomacy_5 # Being overzealous due to the investment a level 5 tech will need
 				any_owned = { remove_province_modifier = alliance_dwarves_men_selected_region }
 				clr_country_flag = alliance_dwarves_men_selected_country
 				clr_country_flag = alliance_dwarves_men_voting_initiator
@@ -20845,6 +20874,8 @@ country_event = {
 		name = "and into the history books it goes"
 		
 		remove_country_modifier = alliance_of_dwarves_and_men
+		clr_country_flag = flavor_diplomacy_5 # Being overzealous due to the investment a level 5 tech will need
+		
 		any_owned = { remove_province_modifier = alliance_dwarves_men_selected_region }
 		clr_country_flag = alliance_dwarves_men_selected_country
 		clr_country_flag = alliance_dwarves_men_voting_initiator

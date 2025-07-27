@@ -2,8 +2,8 @@ army = {
 	name = "Tum-i-Theryn Garrison"
 	location = 1160
 	regiment = {
-		name = "1st Ered Luin Horse Archers"
-		type = horse_archers
+		name = "Ered Luin Eagles"
+		type = eagles
 		home = 1160
 	}
 }

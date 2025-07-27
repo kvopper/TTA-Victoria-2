@@ -22,12 +22,4 @@ upper_house = {
 	house_of_finarfin = 100
 }
 
-schools = traditional_academic
-#technologies
-merchant_marine_1 = 1
-light_ships_1 = 1
-heavy_ships_1 = 1
-naval_construction_1 = 1
-archer_tech_1 = 1
-education_1 = 1
-magic_1 = 1
+schools = no_organization

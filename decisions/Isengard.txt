@@ -20,6 +20,9 @@ political_decisions = {
 			set_country_flag = nobility_deactivated
 			
 			set_country_flag = ISE_content
+			
+			set_country_flag = flavor_magic_3
+			set_country_flag = flavor_diplomacy_1
 		}
 	}
 	lord_of_isengard = {

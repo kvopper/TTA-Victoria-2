@@ -5,6 +5,7 @@ primary_culture = breelander
 culture = men_culture
 culture = harfoot
 culture = fallohide
+culture = siredain
 religion = men
 government = republic
 nationalvalue = no_heirloom
@@ -14,6 +15,8 @@ civilized = yes
 oob = "BRE_oob.txt"
 
 prestige = 1
+
+decision = BRE_start_decision
 
 ruling_party = generic_nobility
 upper_house = {
@@ -25,4 +28,4 @@ serfdom = banned_serfdom
 vote_franschise = wealth_weighted_voting
 cultural_rights = accepted_voting
 
-schools = traditional_academic
+schools = no_organization
