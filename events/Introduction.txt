@@ -201,8 +201,8 @@ country_event = {
 	}
 	
 	option = {
-		name = "EVTOPTC29000"
-		country_event = 29003
+		name = "EVTOPTI29000"
+		country_event = 29008
 	}
 	
 	option = {
@@ -278,5 +278,40 @@ country_event = {
 		triggered_event_railroading_loc = {}
 		
 		clr_global_flag = hidden_effects
+	}
+}
+
+# Elite Units
+country_event = {
+	id = 29008
+	title = "Military Changes"
+	desc = "EVTDESC29008"
+	picture = "introduction_military_3"
+	
+	major = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA29000"
+		country_event = 29000
+	}
+	
+	option = {
+		name = "EVTOPTB29000"
+		country_event = 29001
+	}
+	
+	option = {
+		name = "EVTOPTC29000"
+		country_event = 29003
+	}
+	
+	option = {
+		name = "EVTOPTD29000"
+		country_event = 29004
+	}
+	
+	option = {
+		name = "EVTOPTE29000"
 	}
 }
