@@ -6073,7 +6073,7 @@ country_event = {
 			country_event = 40049
 		}
 		
-		country_event = { id = 99007 days = 30 }
+		country_event = { id = 99009 days = 30 }
 	}
 }
 
