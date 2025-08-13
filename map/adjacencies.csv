@@ -1,6 +1,7 @@
 # From;To;Type;Through;Data;Comment
 
 # Straights
+196;808;sea;1514;0;Adornas Crossings
 9;10;sea;1092;0;Anduin Crossing
 14;198;sea;1093;0;Anduin Crossing
 15;50;sea;1099;0;Anduin Crossing
@@ -16,16 +17,45 @@
 754;736;sea;1082;0;Anduin Crossing
 754;1441;sea;1082;0;Anduin Crossing
 776;269;sea;1088;0;Anduin Crossing
+137;1178;sea;1489;0;Brandywine Crossings
+1026;1331;sea;1496;0;Brandywine Crossings
+1034;1207;sea;1492;0;Brandywine Crossings
+1039;365;sea;1494;0;Brandywine Crossings
+1250;1242;sea;1504;0;Bruinen Crossings
+446;636;sea;1529;0;Carnen Crossings
+643;629;sea;1529;0;Carnen Crossings
 140;648;sea;1068;0;Celduin Crossing
 524;629;sea;1072;0;Celduin Crossing
 526;647;sea;1069;0;Celduin Crossing
 544;1404;sea;1074;0;Celduin Crossing
+7;785;sea;1522;0;Entwash Crossings
+781;1175;sea;1522;0;Entwash Crossings
+785;1176;sea;1522;0;Entwash Crossings
+1175;1176;sea;1522;0;Entwash Crossings
+1175;785;sea;1522;0;Entwash Crossings
+1176;3;sea;1522;0;Entwash Crossings
+1176;4;sea;1522;0;Entwash Crossings
+1176;788;sea;1522;0;Entwash Crossings
+25;41;sea;1519;0;Erui Crossings
+52;57;sea;1516;0;Gilrain Crossings
+1471;874;sea;1507;0;Glanduin Crossings
 826;905;sea;1131;0;Gwathlo Crossing
 825;1186;sea;1131;0;Gwathló Crossing
+892;1462;sea;1135;0;Gwathló Crossings
+1230;861;sea;1500;0;Haorwell Crossings
+238;286;sea;1527;0;Harnen Crossings
+38;822;sea;1508;0;Isen Crossings
+99;1455;sea;1508;0;Isen Crossings
+804;1448;sea;1512;0;Isen Crossings
 358;360;sea;369;0;Khand Desert Crossings
 358;373;sea;369;0;Khand Desert Crossings
 358;368;sea;369;0;Khand Desert Crossings
 358;380;sea;369;0;Khand Desert Crossings
+143;162;sea;1515;0;Lefnui Crossings
+774;768;sea;1525;0;Limlight Crossings
+936;935;sea;1143;0;Lune Crossings
+941;1022;sea;1486;0;Lune Crossings
+973;975;sea;1488;0;Lune Crossings
 843;1445;sea;841;0;Misty Mountain Tunnels
 1444;1445;sea;841;0;Misty Mountain Tunnels
 1444;1443;sea;841;0;Misty Mountain Tunnels
@@ -44,6 +74,9 @@
 317;320;sea;328;0;Oases Crossings
 107;110;sea;796;0;Paths of the Dead
 795;110;sea;796;0;Paths of the Dead
+212;219;sea;1521;0;Poros Crossings
+27;37;sea;1518;0;Sirlith Crossings
+44;47;sea;1517;0;Sirlith Crossings
 
 # Impassables
 20;191;impassable;0;0;Andrast Mountains
@@ -439,6 +472,7 @@
 1467;846;impassable;0;0;Misty Mountains
 1471;846;impassable;0;0;Misty Mountains
 1472;846;impassable;0;0;Misty Mountains
+1507;846;impassable;0;0;Misty Mountains
 279;1050;impassable;0;0;Northern Wastes
 279;1049;impassable;0;0;Northern Wastes
 479;1050;impassable;0;0;Northern Wastes
@@ -1910,6 +1944,7 @@
 194;193;impassable;0;0;White Mountains
 194;796;impassable;0;0;White Mountains
 195;796;impassable;0;0;White Mountains
+195;807;impassable;0;0;White Mountains
 683;796;impassable;0;0;White Mountains
 787;116;impassable;0;0;White Mountains
 790;116;impassable;0;0;White Mountains

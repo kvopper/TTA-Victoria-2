@@ -1080,6 +1080,18 @@
 
 95 = {
     text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 615.130000
+            y = 1672.100000
+        }
+
+    }
+
+    building_rotation = {
+        naval_base = 0.810128
+    }
+
 } # Dï¿½nadab
 
 96 = {
@@ -2658,6 +2670,18 @@
 
 245 = {
     text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 626.393333
+            y = 1687.270000
+        }
+
+    }
+
+    building_rotation = {
+        naval_base = 3.972895
+    }
+
 } # Galenwath
 
 246 = {
@@ -3392,6 +3416,18 @@
 
 316 = {
     text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 738.560000
+            y = 1367.270000
+        }
+
+    }
+
+    building_rotation = {
+        naval_base = 4.732487
+    }
+
 } # Oasis of the Five Palms
 
 317 = {
@@ -4105,6 +4141,18 @@
 
 445 = {
     text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 687.550000
+            y = 1341.606667
+        }
+
+    }
+
+    building_rotation = {
+        naval_base = 3.976595
+    }
+
 } # Erland's Ferry
 
 446 = {
@@ -6647,23 +6695,48 @@
 
 785 = {
     text_position = {
-        x = 1667.810000
-        y = 905.555000
+        x = 1681.260000
+        y = 885.800000
     }
 
-    text_rotation = 5.430274
+    text_rotation = 5.951941
     text_scale = 3
     unit = {
-        x = 1674.335000
-        y = 898.885000
+        x = 1671.255000
+        y = 897.300000
     }
 
     city = {
-        x = 1663.025000
-        y = 913.675000
+        x = 1685.170000
+        y = 883.845000
+    }
+
+    factory = {
+        x = 1687.700000
+        y = 883.040000
+    }
+
+    building_construction = {
+        x = 1674.475000
+        y = 885.915000
+    }
+
+    military_construction = {
+        x = 1681.605000
+        y = 882.005000
     }
 
     building_position = {
+        fort = {
+            x = 1680.800000
+            y = 883.385000
+        }
+
+        railroad = {
+            x = 1678.270000
+            y = 886.490000
+        }
+
         naval_base = {
             x = 1679.255000
             y = 904.180000
@@ -7428,10 +7501,34 @@
 
 914 = {
     text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 789.360000
+            y = 1409.040000
+        }
+
+    }
+
+    building_rotation = {
+        naval_base = 3.466498
+    }
+
 } # Ost Dï¿½nen
 
 915 = {
     text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 812.233333
+            y = 1428.850000
+        }
+
+    }
+
+    building_rotation = {
+        naval_base = 4.495350
+    }
+
 } # Pinnath Luin
 
 916 = {
@@ -7457,8 +7554,16 @@
 
 920 = {
     text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 676.815000
+            y = 1317.740000
+        }
+
+    }
+
     building_rotation = {
-        naval_base = 3.997794
+        naval_base = 3.450726
     }
 
 } # Rast Duilwen
@@ -7681,6 +7786,18 @@
 
 939 = {
     text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 656.880000
+            y = 1758.440000
+        }
+
+    }
+
+    building_rotation = {
+        naval_base = 3.131593
+    }
+
 } # Tawarobel
 
 940 = {
@@ -7689,6 +7806,18 @@
 
 941 = {
     text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 636.700000
+            y = 1847.200000
+        }
+
+    }
+
+    building_rotation = {
+        naval_base = 3.141593
+    }
+
 } # Buzdï¿½m-Mazar
 
 942 = {
@@ -7729,10 +7858,34 @@
 
 945 = {
     text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 600.170000
+            y = 1963.040000
+        }
+
+    }
+
+    building_rotation = {
+        naval_base = 4.722439
+    }
+
 } # Talath Dï¿½neriador
 
 946 = {
     text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 581.816667
+            y = 1956.775000
+        }
+
+    }
+
+    building_rotation = {
+        naval_base = 2.232278
+    }
+
 } # Dronï¿½n-Dï¿½m
 
 947 = {
@@ -8028,6 +8181,18 @@
 
 973 = {
     text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 646.760000
+            y = 1874.903333
+        }
+
+    }
+
+    building_rotation = {
+        naval_base = 3.171584
+    }
+
 } # Eryn Nï¿½meriador
 
 974 = {
@@ -8047,10 +8212,34 @@
         y = 1970.810000
     }
 
+    building_position = {
+        naval_base = {
+            x = 581.350000
+            y = 1958.660000
+        }
+
+    }
+
+    building_rotation = {
+        naval_base = 4.125770
+    }
+
 } # Zigilgund
 
 975 = {
     text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 643.220000
+            y = 1939.350000
+        }
+
+    }
+
+    building_rotation = {
+        naval_base = 1.525827
+    }
+
 } # Jï¿½nis-Leiri
 
 976 = {
@@ -8260,10 +8449,26 @@
 
 1021 = {
     text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 665.430000
+            y = 1910.140000
+        }
+
+    }
+
 } # Enedhrond
 
 1022 = {
     text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 643.586667
+            y = 1841.100000
+        }
+
+    }
+
 } # Minas Gonngoth
 
 1023 = {
@@ -8276,10 +8481,34 @@
 
 1025 = {
     text_scale = 3
+    building_position = {
+        railroad = {
+            x = 817.440000
+            y = 1772.140000
+        }
+
+    }
+
+    building_rotation = {
+        naval_base = 5.333805
+    }
+
 } # Annï¿½minas
 
 1026 = {
     text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 810.700000
+            y = 1740.900000
+        }
+
+    }
+
+    building_rotation = {
+        naval_base = 2.289157
+    }
+
 } # Barad Garan
 
 1027 = {
@@ -8288,6 +8517,14 @@
 
 1028 = {
     text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 663.306667
+            y = 1751.146667
+        }
+
+    }
+
 } # Little Delving
 
 1029 = {
@@ -8308,14 +8545,50 @@
 
 1033 = {
     text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 861.920000
+            y = 1452.195000
+        }
+
+    }
+
+    building_rotation = {
+        naval_base = 4.029830
+    }
+
 } # Iach Sarn
 
 1034 = {
     text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 908.538333
+            y = 1488.111667
+        }
+
+    }
+
+    building_rotation = {
+        naval_base = 3.937591
+    }
+
 } # Deephallow
 
 1035 = {
     text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 904.900000
+            y = 1546.400000
+        }
+
+    }
+
+    building_rotation = {
+        naval_base = 3.181571
+    }
+
 } # Sackville
 
 1036 = {
@@ -8332,6 +8605,18 @@
 
 1039 = {
     text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 867.608333
+            y = 1614.926667
+        }
+
+    }
+
+    building_rotation = {
+        naval_base = 3.141593
+    }
+
 } # Hobbiton
 
 1040 = {
@@ -9132,20 +9417,96 @@
 
 1175 = {
     text_position = {
-        x = 1636.251667
-        y = 912.443333
+        x = 1643.550000
+        y = 908.350000
     }
 
     text_scale = 3
+    unit = {
+        x = 1643.750000
+        y = 916.750000
+    }
+
+    city = {
+        x = 1628.750000
+        y = 908.850000
+    }
+
+    factory = {
+        x = 1645.600000
+        y = 909.300000
+    }
+
+    building_construction = {
+        x = 1624.850000
+        y = 909.900000
+    }
+
+    military_construction = {
+        x = 1621.800000
+        y = 909.100000
+    }
+
+    building_position = {
+        fort = {
+            x = 1624.550000
+            y = 907.950000
+        }
+
+        railroad = {
+            x = 1642.250000
+            y = 909.250000
+        }
+
+    }
+
 } # Tor Welig
 
 1176 = {
     text_position = {
-        x = 1625.336667
-        y = 896.096667
+        x = 1640.050000
+        y = 897.800000
     }
 
     text_scale = 3
+    unit = {
+        x = 1659.100000
+        y = 889.600000
+    }
+
+    city = {
+        x = 1636.900000
+        y = 900.100000
+    }
+
+    factory = {
+        x = 1609.950000
+        y = 898.050000
+    }
+
+    building_construction = {
+        x = 1642.850000
+        y = 899.400000
+    }
+
+    military_construction = {
+        x = 1630.200000
+        y = 899.850000
+    }
+
+    building_position = {
+        fort = {
+            x = 1661.000000
+            y = 889.500000
+        }
+
+        railroad = {
+            x = 1640.200000
+            y = 899.950000
+        }
+
+    }
+
 } # Enedhriss
 
 1177 = {
@@ -9153,6 +9514,12 @@
 } # Caras Nï¿½rneledh
 
 1178 = {
+    text_position = {
+        x = 692.975000
+        y = 1319.305000
+    }
+
+    text_rotation = 0.757037
     text_scale = 3
     building_position = {
         naval_base = {
@@ -9745,6 +10112,18 @@
 
 1290 = {
     text_scale = 3
+    building_position = {
+        railroad = {
+            x = 919.360000
+            y = 1530.761667
+        }
+
+    }
+
+    building_rotation = {
+        naval_base = 2.335071
+    }
+
 } # Axley Hall
 
 1291 = {
@@ -9757,6 +10136,18 @@
 
 1293 = {
     text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 868.560000
+            y = 1584.360000
+        }
+
+    }
+
+    building_rotation = {
+        naval_base = 2.200326
+    }
+
 } # Longbottom
 
 1294 = {
@@ -9797,14 +10188,50 @@
 
 1303 = {
     text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 860.328333
+            y = 1648.800000
+        }
+
+    }
+
+    building_rotation = {
+        naval_base = 2.275101
+    }
+
 } # Norby
 
 1304 = {
     text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 854.726667
+            y = 1683.220000
+        }
+
+    }
+
+    building_rotation = {
+        naval_base = 3.972895
+    }
+
 } # Hirholt
 
 1305 = {
     text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 634.810000
+            y = 1687.135000
+        }
+
+    }
+
+    building_rotation = {
+        naval_base = 0.781865
+    }
+
 } # Tarmabar
 
 1306 = {
@@ -9825,6 +10252,14 @@
 
 1310 = {
     text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 661.326667
+            y = 1781.026667
+        }
+
+    }
+
 } # Nan Uialduin
 
 1311 = {
@@ -9837,6 +10272,18 @@
 
 1313 = {
     text_scale = 3
+    building_position = {
+        railroad = {
+            x = 653.325000
+            y = 1809.290000
+        }
+
+    }
+
+    building_rotation = {
+        naval_base = 5.709129
+    }
+
 } # Nan Himsiril
 
 1314 = {
@@ -9845,6 +10292,14 @@
 
 1315 = {
     text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 656.200000
+            y = 1881.325000
+        }
+
+    }
+
 } # Taur Faemar
 
 1316 = {
@@ -9865,6 +10320,23 @@
 
 1320 = {
     text_scale = 3
+    building_position = {
+        railroad = {
+            x = 813.093333
+            y = 1774.513333
+        }
+
+        naval_base = {
+            x = 813.093333
+            y = 1774.513333
+        }
+
+    }
+
+    building_rotation = {
+        naval_base = 4.702339
+    }
+
 } # Dol Bellas
 
 1321 = {
@@ -9873,22 +10345,88 @@
 
 1322 = {
     text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 783.541667
+            y = 1745.313333
+        }
+
+    }
+
+    building_rotation = {
+        naval_base = 4.011893
+    }
+
 } # Gobel Maeghoth
 
 1323 = {
     text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 776.348333
+            y = 1724.646667
+        }
+
+    }
+
+    building_rotation = {
+        naval_base = 1.837484
+    }
+
 } # Caurrain
 
 1324 = {
     text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 804.150000
+            y = 1731.650000
+        }
+
+    }
+
+    building_rotation = {
+        naval_base = 0.842075
+    }
+
 } # Calembar
 
 1325 = {
+    text_position = {
+        x = 844.000000
+        y = 1726.350000
+    }
+
+    text_rotation = 6.096605
     text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 839.900000
+            y = 1730.800000
+        }
+
+    }
+
+    building_rotation = {
+        naval_base = 1.510868
+    }
+
 } # Havirmarsh
 
 1326 = {
     text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 873.771667
+            y = 1700.418333
+        }
+
+    }
+
+    building_rotation = {
+        naval_base = 4.104944
+    }
+
 } # Pel Nelbal
 
 1327 = {
@@ -9909,6 +10447,14 @@
 
 1331 = {
     text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 820.210000
+            y = 1754.420000
+        }
+
+    }
+
 } # Barad Heledh
 
 1332 = {
@@ -10908,4 +11454,440 @@
         naval_base = 1.590794
     }
 
+} # Lune River
+
+1484 = {
+    text_position = {
+        x = 627.545000
+        y = 1683.490000
+    }
+
+    text_rotation = 0.813759
+    text_scale = 3
+} # Lune River
+
+1485 = {
+    text_position = {
+        x = 662.010000
+        y = 1743.713333
+    }
+
+    text_rotation = 1.555797
+    text_scale = 3
+} # Lune River
+
+1486 = {
+    text_position = {
+        x = 644.050000
+        y = 1822.700000
+    }
+
+    text_rotation = 1.515852
+    text_scale = 3
+} # Lune River
+
+1487 = {
+    text_position = {
+        x = 654.748333
+        y = 1883.535000
+    }
+
+    text_rotation = 1.207930
+    text_scale = 3
+} # Lune River
+
+1488 = {
+    text_position = {
+        x = 618.920000
+        y = 1957.560000
+    }
+
+    text_scale = 3
+} # Brandywine River
+
+1489 = {
+    text_position = {
+        x = 686.586667
+        y = 1329.950000
+    }
+
+    text_rotation = 1.116077
+    text_scale = 3
+} # Brandywine River
+
+1490 = {
+    text_position = {
+        x = 729.150000
+        y = 1365.550000
+    }
+
+    text_scale = 3
+} # Brandywine River
+
+1491 = {
+    text_position = {
+        x = 812.440000
+        y = 1425.240000
+    }
+
+    text_rotation = 0.483779
+    text_scale = 3
+} # Brandywine River
+
+1492 = {
+    text_position = {
+        x = 890.800000
+        y = 1466.760000
+    }
+
+    text_rotation = 0.739494
+    text_scale = 3
+} # Brandywine River
+
+1493 = {
+    text_position = {
+        x = 915.665000
+        y = 1534.380000
+    }
+
+    text_rotation = 5.586521
+    text_scale = 3
+} # Brandywine River
+
+1494 = {
+    text_position = {
+        x = 870.756667
+        y = 1594.980000
+    }
+
+    text_rotation = 1.560797
+    text_scale = 3
+} # Brandywine River
+
+1495 = {
+    text_position = {
+        x = 862.250000
+        y = 1686.590000
+    }
+
+    text_rotation = 0.788932
+    text_scale = 3
+} # Brandywine River
+
+1496 = {
+    text_position = {
+        x = 867.906667
+        y = 1734.600000
+    }
+
+    text_scale = 3
+} # Hoarwell River
+
+1497 = {
+    text_position = {
+        x = 1125.948333
+        y = 1422.773333
+    }
+
+    text_rotation = 0.696664
+    text_scale = 3
+} # Hoarwell River
+
+1498 = {
+    text_position = {
+        x = 1190.426667
+        y = 1464.760000
+    }
+
+    text_rotation = 0.434508
+    text_scale = 3
+} # Hoarwell River
+
+1499 = {
+    text_position = {
+        x = 1226.120000
+        y = 1528.980000
+    }
+
+    text_rotation = 1.405648
+    text_scale = 3
+} # Hoarwell River
+
+1500 = {
+    text_rotation = 1.293181
+    text_scale = 3
+} # Hoarwell River
+
+1501 = {
+    text_position = {
+        x = 1258.783333
+        y = 1683.733333
+    }
+
+    text_rotation = 1.098200
+    text_scale = 3
+} # Bruinen River
+
+1502 = {
+    text_position = {
+        x = 1243.280000
+        y = 1496.180000
+    }
+
+    text_rotation = 0.439044
+    text_scale = 3
+} # Bruinen River
+
+1503 = {
+    text_position = {
+        x = 1311.408333
+        y = 1555.508333
+    }
+
+    text_rotation = 0.831302
+    text_scale = 3
+} # Bruinen River
+
+1504 = {
+    text_position = {
+        x = 1346.095000
+        y = 1600.770000
+    }
+
+    text_rotation = 0.803064
+    text_scale = 3
+} # Bruinen River
+
+1505 = {
+    text_position = {
+        x = 1377.366667
+        y = 1642.230000
+    }
+
+    text_scale = 3
+} # Glanduin River
+
+1506 = {
+    text_position = {
+        x = 1147.090000
+        y = 1372.540000
+    }
+
+    text_scale = 3
+} # Glanduin River
+
+1507 = {
+    text_position = {
+        x = 1263.700000
+        y = 1361.000000
+    }
+
+    text_scale = 3
+} # Isen River
+
+1508 = {
+    text_position = {
+        x = 927.775000
+        y = 991.308333
+    }
+
+    text_rotation = 0.788932
+    text_scale = 3
+} # Isen River
+
+1509 = {
+    text_position = {
+        x = 1057.188333
+        y = 975.006667
+    }
+
+    text_scale = 3
+} # Isen River
+
+1510 = {
+    text_position = {
+        x = 1117.100000
+        y = 1008.800000
+    }
+
+    text_scale = 3
+} # Isen River
+
+1511 = {
+    text_position = {
+        x = 1223.700000
+        y = 1008.150000
+    }
+
+    text_scale = 3
+} # Isen River
+
+1512 = {
+    text_rotation = 1.390050
+    text_scale = 3
+} # Adornas River
+
+1513 = {
+    text_scale = 3
+} # Adornas River
+
+1514 = {
+    text_position = {
+        x = 1213.955000
+        y = 954.845000
+    }
+
+    text_rotation = 5.797070
+    text_scale = 3
+} # Lefnui River
+
+1515 = {
+    text_position = {
+        x = 1027.800000
+        y = 700.500000
+    }
+
+    text_rotation = 5.864451
+    text_scale = 3
+} # Gilrain River
+
+1516 = {
+    text_rotation = 0.479341
+    text_scale = 3
+} # Sirith River
+
+1517 = {
+    text_rotation = 1.460691
+    text_scale = 3
+} # Sirith River
+
+1518 = {
+    text_position = {
+        x = 1696.913333
+        y = 682.736667
+    }
+
+    text_rotation = 5.216555
+    text_scale = 3
+} # Erui River
+
+1519 = {
+    text_position = {
+        x = 1766.520000
+        y = 709.986667
+    }
+
+    text_rotation = 5.781440
+    text_scale = 3
+} # Poros River
+
+1520 = {
+    text_position = {
+        x = 1685.950000
+        y = 556.355000
+    }
+
+    text_rotation = 5.622583
+    text_scale = 3
+} # Poros River
+
+1521 = {
+    text_rotation = 0.546418
+    text_scale = 3
+} # Mouth of the Entwash
+
+1522 = {
+    text_position = {
+        x = 1637.200000
+        y = 889.450000
+    }
+
+    text_scale = 3
+} # Entwash River
+
+1523 = {
+    text_position = {
+        x = 1519.250000
+        y = 921.250000
+    }
+
+    text_rotation = 5.837473
+    text_scale = 3
+} # Gladden River
+
+1524 = {
+    text_position = {
+        x = 1512.150000
+        y = 1516.200000
+    }
+
+    text_scale = 3
+} # Limlight River
+
+1525 = {
+    text_position = {
+        x = 1508.308333
+        y = 1228.483333
+    }
+
+    text_scale = 3
+} # Harnen River
+
+1526 = {
+    text_position = {
+        x = 1667.525000
+        y = 282.473333
+    }
+
+    text_rotation = 0.412124
+    text_scale = 3
+} # Harnen River
+
+1527 = {
+    text_position = {
+        x = 1756.400000
+        y = 303.000000
+    }
+
+    text_scale = 3
+} # Harnen River
+
+1528 = {
+    text_position = {
+        x = 1865.653333
+        y = 284.655000
+    }
+
+    text_rotation = 0.423311
+    text_scale = 3
+} # Carnen River
+
+1529 = {
+    text_position = {
+        x = 2171.200000
+        y = 1562.683333
+    }
+
+    text_rotation = 1.181005
+    text_scale = 3
+} # Carnen River
+
+1530 = {
+    text_position = {
+        x = 2154.358333
+        y = 1667.791667
+    }
+
+    text_rotation = 0.959252
+    text_scale = 3
+} # Carnen River
+
+1531 = {
+    text_position = {
+        x = 2101.200000
+        y = 1730.100000
+    }
+
+    text_rotation = 5.629634
+    text_scale = 3
 }
