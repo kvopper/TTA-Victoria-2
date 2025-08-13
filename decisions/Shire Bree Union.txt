@@ -59,6 +59,7 @@ political_decisions = {
 		potential = {
 			tag = SBU
 			NOT = { has_country_flag = buckland_policy_decided }
+			exists = BCK
 		}
 		allow = {
 			war = no
