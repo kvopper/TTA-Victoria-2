@@ -776,7 +776,7 @@ political_decisions = {
 		}
 		
 		effect = {
-			money = -50000
+			treasury = -50000
 			prestige = 10
 			badboy = 1
 			MOR = { country_event = 50505 }
@@ -871,6 +871,7 @@ political_decisions = {
 					expansion_1 = 1
 				}
 			}
+			year = 2960
 		}
 		
 		effect = {
@@ -910,6 +911,8 @@ political_decisions = {
 			}
 			set_country_flag = colonizing_harondor
 		}
+		
+		ai_will_do = { factor = 0.25 }
 	}
 	
 	harnendor_question = {
