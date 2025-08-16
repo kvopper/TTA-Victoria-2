@@ -4145,6 +4145,18 @@
 
 446 = {
     text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 2170.570000
+            y = 1601.326667
+        }
+
+    }
+
+    building_rotation = {
+        naval_base = 3.121595
+    }
+
 } # Lag-Uyakdagï¿½l
 
 447 = {
@@ -5505,6 +5517,18 @@
 
 630 = {
     text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 2173.451667
+            y = 1563.100000
+        }
+
+    }
+
+    building_rotation = {
+        naval_base = 0.728721
+    }
+
 } # Szem Vale
 
 631 = {
@@ -5525,22 +5549,82 @@
 
 635 = {
     text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 2112.358333
+            y = 1722.010000
+        }
+
+    }
+
+    building_rotation = {
+        naval_base = 5.369917
+    }
+
 } # Kï¿½rk
 
 636 = {
     text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 2180.300000
+            y = 1586.258333
+        }
+
+    }
+
+    building_rotation = {
+        naval_base = 5.622583
+    }
+
 } # Carnentir
 
 637 = {
     text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 2168.080000
+            y = 1615.973333
+        }
+
+    }
+
+    building_rotation = {
+        naval_base = 5.511971
+    }
+
 } # Northwatch
 
 638 = {
     text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 2161.070000
+            y = 1705.930000
+        }
+
+    }
+
+    building_rotation = {
+        naval_base = 2.175395
+    }
+
 } # Lar-Huil
 
 639 = {
     text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 2102.615000
+            y = 1725.703333
+        }
+
+    }
+
+    building_rotation = {
+        naval_base = 2.229222
+    }
+
 } # Grasgarda
 
 640 = {
@@ -5553,6 +5637,18 @@
 
 642 = {
     text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 2141.033333
+            y = 1652.406667
+        }
+
+    }
+
+    building_rotation = {
+        naval_base = 3.181571
+    }
+
 } # Naertheiaborg
 
 643 = {
@@ -10933,6 +11029,18 @@
 
 1475 = {
     text_scale = 3
+    building_position = {
+        naval_base = {
+            x = 2085.450000
+            y = 1750.700000
+        }
+
+    }
+
+    building_rotation = {
+        naval_base = 4.061881
+    }
+
 } # Burh Sagra
 
 1476 = {
