@@ -38,6 +38,8 @@ All notable changes will be documented in this file.
 
 ### Mechanics and Content
  - Various bugfixes and small additions
+ - Many more navigable rivers added
+   - Most land provinces that newly border the "sea" will be unable to build naval bases
 
 ## [v0.5.1](https://github.com/The-Third-Age/TTA/releases/tag/v0.5.1) - 2025-05-11
 
