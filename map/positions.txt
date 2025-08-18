@@ -7670,18 +7670,6 @@
 
 925 = {
     text_scale = 3
-    building_position = {
-        naval_base = {
-            x = 411.070000
-            y = 1402.410000
-        }
-
-    }
-
-    building_rotation = {
-        naval_base = 4.717414
-    }
-
 } # Lildamar
 
 926 = {
