@@ -156,7 +156,7 @@ education_4;Private Schools;x
 education_5;Formal Education;x
 scholarship_tech_1;Scriptoria;x
 scholarship_tech_2;Archives;x
-scholarship_tech_3;Athenaea;x
+scholarship_tech_3;Scholarship;x
 scholarship_tech_4;Libraries;x
 scholarship_tech_5;Academies;x
 expansion_1;Territorial Ambitions;x
@@ -171,8 +171,8 @@ diplomacy_4;State Relations;x
 diplomacy_5;Majesty;x
 wilderness_1;Wilderness;x
 wilderness_2;Frontiers;x
-wilderness_3;Colonisation;x
-wilderness_4;Mandate;x
+wilderness_3;Settlement;x
+wilderness_4;Colonistion;x
 wilderness_5;Colonial Spirit;x
 culture_1;Cultural Music;x
 culture_2;Period Music;x
