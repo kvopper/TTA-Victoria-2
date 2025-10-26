@@ -4808,8 +4808,8 @@
     text_scale = 3
     building_position = {
         naval_base = {
-            x = 2289.986667
-            y = 1441.253333
+            x = 2267.250000
+            y = 1432.550000
         }
 
     }
