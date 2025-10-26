@@ -1106,7 +1106,7 @@ cavalry_tech_4 = {
 
 cavalry_tech_5 = {
 	area = cavalry_tech
-	year = 2954
+	year = 3000
 	cost = 7000
 	unciv_military = yes
 
