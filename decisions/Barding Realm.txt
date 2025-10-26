@@ -382,6 +382,7 @@ political_decisions = {
 		picture = "Rhun/logath_easterlings_marching"
 		potential = {
 			primary_culture = logath
+			NOT = { AMO = { has_country_flag = AMO_taking_gramavuld } }
 			NOT = { has_country_flag = supported_amov_clan }
 			exists = AMO
 			NOT = { tag = AMO }
