@@ -1,9 +1,9 @@
 # Audax Validator "!" Ignore_1009
 capital = 811
-primary_culture = gondorian
+primary_culture = dunnish
 culture = men_culture
-culture = dunedain
-culture = dunnish
+culture = gondorian
+culture = isenmen
 religion = men
 government = istari_kingdom
 nationalvalue = no_heirloom

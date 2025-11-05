@@ -33,11 +33,6 @@ ANF = {
 	level = 5
 	influence_value = 100
 }
-ISE = {
-	value = 200
-	level = 5
-	influence_value = 100
-}
 ROH = {
 	value = 75
 }

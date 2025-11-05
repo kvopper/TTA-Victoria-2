@@ -32,3 +32,6 @@ army = {
 		home = 764
 	}
 }
+ISE = {
+	value = -50
+}

@@ -17,3 +17,12 @@ army = {
 		home = 1447
 	}
 }
+IML = {
+	value = -50
+}
+LOR = {
+	value = -50
+}
+LIN = {
+	value = -50
+}

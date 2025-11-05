@@ -41,12 +41,6 @@ substate = {
 	start_date = 1.1.1
 	end_date = 9999.1.1
 }
-vassal = {
-	first = GON
-	second = ISE
-	start_date = 1.1.1
-	end_date = 9999.1.1
-}
 # Erebor
 substate = {
 	first = ERE
