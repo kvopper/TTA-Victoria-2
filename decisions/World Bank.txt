@@ -555,7 +555,7 @@ political_decisions = {
 			set_variable = { which = lower_saerlann_name value = 1 }
 			set_variable = { which = northern_nurza-shukh_name value = 1 }
 			set_variable = { which = enedbund_name value = 0 }
-			set_variable = { which = nan_curunir_name value = 2 }
+			set_variable = { which = wizards_vale_name value = 1 }
 			set_variable = { which = rammas_forod_name value = 0 }
 			set_variable = { which = old_anorien_name value = 2 }
 			set_variable = { which = talath_anor_name value = 1 }
@@ -585,7 +585,7 @@ political_decisions = {
 			set_variable = { which = dunfearn_name value = 1 }
 			set_variable = { which = rhuntir_name value = 0 }
 			set_variable = { which = taerdorath_rhunen_name value = 2 }
-			set_variable = { which = isendale_name value = 2 }
+			set_variable = { which = isendale_name value = 3 }
 			set_variable = { which = muzeida_vale_name value = 1 }
 			set_variable = { which = kajbah_name value = 0 }
 			set_variable = { which = dor_rewinion_name value = 2 }
