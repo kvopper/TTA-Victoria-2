@@ -5651,6 +5651,8 @@ political_decisions = {
 						owns = 1447
 						owns = 811
 						owns = 812
+						owns = 1532
+						owns = 1533
 					}
 				}
 				empty_line_decisions_loc = { }
@@ -5665,6 +5667,8 @@ political_decisions = {
 							NOT = { owns = 1447 }
 							NOT = { owns = 811 }
 							NOT = { owns = 812 }
+							NOT = { owns = 1532 }
+							NOT = { owns = 1533 }
 						}
 					}
 				}
@@ -7830,6 +7834,7 @@ political_decisions = {
 						owns = 1026
 						owns = 1324
 						owns = 1325
+						owns = 1326
 					}
 				}
 				empty_line_decisions_loc = { }
@@ -7843,6 +7848,7 @@ political_decisions = {
 							NOT = { owns = 1026 }
 							NOT = { owns = 1324 }
 							NOT = { owns = 1325 }
+							NOT = { owns = 1326 }
 						}
 					}
 				}
@@ -8645,7 +8651,6 @@ political_decisions = {
 						has_country_flag = claimed_DND_1328
 						owns = 1328
 						owns = 1329
-						owns = 1326
 						owns = 1327
 					}
 				}
@@ -8659,7 +8664,6 @@ political_decisions = {
 						OR = {
 							NOT = { owns = 1328 }
 							NOT = { owns = 1329 }
-							NOT = { owns = 1326 }
 							NOT = { owns = 1327 }
 						}
 					}

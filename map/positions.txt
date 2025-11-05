@@ -6,8 +6,9 @@
     }
 
     text_scale = 3
-} # Eryn Anwar Rhï¿½nen
+}
 
+# Eryn Anwar Rhúnen
 2 = {
     text_position = {
         x = 1566.885000
@@ -16,29 +17,35 @@
 
     text_rotation = 5.693794
     text_scale = 3
-} # Imardhath
+}
 
+# Imardhath
 3 = {
     text_rotation = 0.820844
     text_scale = 3
-} # Bar Astorion
+}
 
+# Bar Astorion
 4 = {
     text_scale = 3
-} # Queen's Ribbon
+}
 
+# Queen's Ribbon
 5 = {
     text_scale = 3
-} # Upburna
+}
 
+# Upburna
 6 = {
     text_scale = 3
-} # Bar Fordelin
+}
 
+# Bar Fordelin
 7 = {
     text_scale = 3
-} # Parth Lisc
+}
 
+# Parth Lisc
 8 = {
     text_scale = 3
     building_position = {
@@ -53,8 +60,9 @@
         naval_base = 2.296196
     }
 
-} # Cirithost
+}
 
+# Cirithost
 9 = {
     text_scale = 3
     building_position = {
@@ -69,8 +77,9 @@
         naval_base = 3.161590
     }
 
-} # Cair Andros
+}
 
+# Cair Andros
 10 = {
     text_rotation = 5.625657
     text_scale = 3
@@ -86,12 +95,14 @@
         naval_base = 4.727463
     }
 
-} # Tawar-in-Drï¿½edain
+}
 
+# Tawar-in-Drúedain
 11 = {
     text_scale = 3
-} # Royalfold
+}
 
+# Royalfold
 12 = {
     text_position = {
         x = 1405.533333
@@ -99,8 +110,9 @@
     }
 
     text_scale = 3
-} # Parth Forant
+}
 
+# Parth Forant
 13 = {
     text_scale = 3
     building_position = {
@@ -115,8 +127,9 @@
         naval_base = 3.141593
     }
 
-} # West Osgiliath
+}
 
+# West Osgiliath
 14 = {
     text_rotation = 0.877337
     text_scale = 3
@@ -132,8 +145,9 @@
         naval_base = 3.131593
     }
 
-} # Benish Armon
+}
 
+# Benish Armon
 15 = {
     text_position = {
         x = 1582.475000
@@ -154,12 +168,14 @@
         naval_base = 5.483604
     }
 
-} # Minas Tirith
+}
 
+# Minas Tirith
 16 = {
     text_scale = 3
-} # Pelennor
+}
 
+# Pelennor
 17 = {
     text_position = {
         x = 1773.980000
@@ -167,12 +183,14 @@
     }
 
     text_scale = 3
-} # Broadacres
+}
 
+# Broadacres
 18 = {
     text_scale = 3
-} # Harlond (Gondor)
+}
 
+# Harlond (Gondor)
 19 = {
     text_position = {
         x = 1792.660000
@@ -198,8 +216,9 @@
         naval_base = 3.912807
     }
 
-} # Bar Enqui
+}
 
+# Bar Enqui
 20 = {
     text_position = {
         x = 941.946667
@@ -220,8 +239,9 @@
         naval_base = 5.551117
     }
 
-} # Ost Norhï¿½r
+}
 
+# Ost Norhír
 21 = {
     text_position = {
         x = 1761.745000
@@ -242,8 +262,9 @@
         naval_base = 3.888141
     }
 
-} # Deeping-coomb
+}
 
+# Deeping-coomb
 22 = {
     text_position = {
         x = 1323.553333
@@ -252,12 +273,14 @@
 
     text_rotation = 5.158101
     text_scale = 3
-} # Imloth Melui
+}
 
+# Imloth Melui
 23 = {
     text_scale = 3
-} # Aegollant
+}
 
+# Aegollant
 24 = {
     text_scale = 3
     building_position = {
@@ -272,8 +295,9 @@
         naval_base = 3.146593
     }
 
-} # Galdir's Dell
+}
 
+# Galdir's Dell
 25 = {
     text_rotation = 5.536913
     text_scale = 3
@@ -289,8 +313,9 @@
         naval_base = 3.156592
     }
 
-} # Bar Luindol
+}
 
+# Bar Luindol
 26 = {
     text_position = {
         x = 1739.980000
@@ -299,25 +324,30 @@
 
     text_rotation = 0.468132
     text_scale = 3
-} # Minas Arnach
+}
 
+# Minas Arnach
 27 = {
     text_rotation = 0.795998
     text_scale = 3
-} # Minas Arthor
+}
 
+# Minas Arthor
 28 = {
     text_scale = 3
-} # Tumladen
+}
 
+# Tumladen
 29 = {
     text_scale = 3
-} # Bredford
+}
 
+# Bredford
 30 = {
     text_scale = 3
-} # Witegawic
+}
 
+# Witegawic
 31 = {
     text_position = {
         x = 1410.123333
@@ -325,20 +355,24 @@
     }
 
     text_scale = 3
-} # Iaurost
+}
 
+# Iaurost
 32 = {
     text_scale = 3
-} # Ost Anglebed
+}
 
+# Ost Anglebed
 33 = {
     text_scale = 3
-} # Amon Draug
+}
 
+# Amon Draug
 34 = {
     text_scale = 3
-} # Lanrain
+}
 
+# Lanrain
 35 = {
     text_position = {
         x = 1580.506667
@@ -346,16 +380,19 @@
     }
 
     text_scale = 3
-} # Bar Gilcï¿½dor
+}
 
+# Bar Gilcûdor
 36 = {
     text_scale = 3
-} # Minas Brethil
+}
 
+# Minas Brethil
 37 = {
     text_scale = 3
-} # Dinluchyn
+}
 
+# Dinluchyn
 38 = {
     text_scale = 3
     building_position = {
@@ -366,20 +403,24 @@
 
     }
 
-} # Erynos
+}
 
+# Erynos
 39 = {
     text_scale = 3
-} # Edenathrad
+}
 
+# Edenathrad
 40 = {
     text_scale = 3
-} # Minlos
+}
 
+# Minlos
 41 = {
     text_scale = 3
-} # Halach
+}
 
+# Halach
 42 = {
     text_position = {
         x = 1763.250000
@@ -400,8 +441,9 @@
         naval_base = 3.778101
     }
 
-} # Bar Dirnen
+}
 
+# Bar Dirnen
 43 = {
     text_position = {
         x = 1724.796667
@@ -422,8 +464,9 @@
         naval_base = 3.916391
     }
 
-} # Pelargir
+}
 
+# Pelargir
 44 = {
     text_position = {
         x = 1713.700000
@@ -444,8 +487,9 @@
         naval_base = 3.944657
     }
 
-} # Dol Calemir
+}
 
+# Dol Calemir
 45 = {
     text_position = {
         x = 1667.700000
@@ -454,12 +498,14 @@
 
     text_rotation = 0.445712
     text_scale = 3
-} # Bar Annï¿½naid
+}
 
+# Bar Annúnaid
 46 = {
     text_scale = 3
-} # Arnbï¿½d
+}
 
+# Arnbâd
 47 = {
     text_scale = 3
     building_position = {
@@ -474,8 +520,9 @@
         naval_base = 4.199454
     }
 
-} # Aerthir
+}
 
+# Aerthir
 48 = {
     text_scale = 3
     building_position = {
@@ -490,8 +537,9 @@
         naval_base = 4.591765
     }
 
-} # Ethir
+}
 
+# Ethir
 49 = {
     text_scale = 3
     building_position = {
@@ -506,8 +554,9 @@
         naval_base = 5.162615
     }
 
-} # Tol Forethir
+}
 
+# Tol Forethir
 50 = {
     text_position = {
         x = 1567.350000
@@ -523,8 +572,9 @@
 
     }
 
-} # Fanuilond
+}
 
+# Fanuilond
 51 = {
     text_scale = 3
     building_position = {
@@ -539,8 +589,9 @@
         naval_base = 4.762598
     }
 
-} # Sarnhad
+}
 
+# Sarnhad
 52 = {
     text_scale = 3
     building_position = {
@@ -555,8 +606,9 @@
         naval_base = 0.767732
     }
 
-} # Ethillorn
+}
 
+# Ethillorn
 53 = {
     text_position = {
         x = 1516.416667
@@ -576,8 +628,9 @@
         naval_base = 1.171791
     }
 
-} # Caras Tolfalas
+}
 
+# Caras Tolfalas
 54 = {
     text_position = {
         x = 1496.260000
@@ -598,8 +651,9 @@
         naval_base = 3.116598
     }
 
-} # Gilros
+}
 
+# Gilros
 55 = {
     text_position = {
         x = 1484.293333
@@ -620,8 +674,9 @@
         naval_base = 0.856202
     }
 
-} # Gobel Tolfalas
+}
 
+# Gobel Tolfalas
 56 = {
     text_position = {
         x = 1474.400000
@@ -642,8 +697,9 @@
         naval_base = 3.166587
     }
 
-} # Linhir
+}
 
+# Linhir
 57 = {
     text_position = {
         x = 1503.215000
@@ -664,8 +720,9 @@
         naval_base = 4.677228
     }
 
-} # Dol Brannor
+}
 
+# Dol Brannor
 58 = {
     text_position = {
         x = 1523.410000
@@ -673,8 +730,9 @@
     }
 
     text_scale = 3
-} # Angï¿½lien
+}
 
+# Angílien
 59 = {
     text_scale = 3
     building_position = {
@@ -685,8 +743,9 @@
 
     }
 
-} # Thï¿½nfalas
+}
 
+# Thônfalas
 60 = {
     text_position = {
         x = 1471.850000
@@ -706,8 +765,9 @@
         naval_base = 4.722439
     }
 
-} # Gwaelad
+}
 
+# Gwaelad
 61 = {
     text_scale = 3
     building_position = {
@@ -722,8 +782,9 @@
         naval_base = 2.110360
     }
 
-} # Eregost
+}
 
+# Eregost
 62 = {
     text_rotation = 1.266422
     text_scale = 3
@@ -739,8 +800,9 @@
         naval_base = 3.151592
     }
 
-} # Methrast
+}
 
+# Methrast
 63 = {
     text_position = {
         x = 1423.485000
@@ -760,12 +822,14 @@
         naval_base = 5.265683
     }
 
-} # Westmarch
+}
 
+# Westmarch
 64 = {
     text_scale = 3
-} # Endil
+}
 
+# Endil
 65 = {
     text_position = {
         x = 1394.066667
@@ -782,8 +846,9 @@
 
     }
 
-} # Bared Rillen
+}
 
+# Bared Rillen
 66 = {
     text_position = {
         x = 1386.330000
@@ -800,8 +865,9 @@
 
     }
 
-} # Nan Duilwen
+}
 
+# Nan Duilwen
 67 = {
     text_scale = 3
     building_position = {
@@ -816,12 +882,14 @@
         naval_base = 4.722439
     }
 
-} # Taur Iaur-en-Enyd
+}
 
+# Taur Iaur-en-Enyd
 68 = {
     text_scale = 3
-} # Rï¿½mamï¿½r
+}
 
+# Rámamár
 69 = {
     text_position = {
         x = 1373.450000
@@ -837,8 +905,9 @@
 
     }
 
-} # Woodhold
+}
 
+# Woodhold
 70 = {
     text_position = {
         x = 1388.013333
@@ -859,8 +928,9 @@
         naval_base = 0.970312
     }
 
-} # Dol Amroth
+}
 
+# Dol Amroth
 71 = {
     text_rotation = 1.020121
     text_scale = 3
@@ -876,8 +946,9 @@
         naval_base = 1.535811
     }
 
-} # Cirith Dudhrandir
+}
 
+# Cirith Dudhrandir
 72 = {
     text_position = {
         x = 1408.835000
@@ -885,12 +956,14 @@
     }
 
     text_scale = 3
-} # Galibur
+}
 
+# Galibur
 73 = {
     text_scale = 3
-} # Amrï¿½naur
+}
 
+# Amrûnaur
 74 = {
     text_position = {
         x = 1440.030000
@@ -899,13 +972,15 @@
 
     text_rotation = 5.763417
     text_scale = 3
-} # Cï¿½m Taran
+}
 
+# Cûm Taran
 75 = {
     text_rotation = 5.654758
     text_scale = 3
-} # Nan Rochben
+}
 
+# Nan Rochben
 76 = {
     text_position = {
         x = 1490.633333
@@ -914,8 +989,9 @@
 
     text_rotation = 5.697968
     text_scale = 3
-} # Ost Lonntir
+}
 
+# Ost Lonntir
 77 = {
     text_position = {
         x = 1394.830000
@@ -932,8 +1008,9 @@
 
     }
 
-} # Edhellond
+}
 
+# Edhellond
 78 = {
     text_rotation = 0.757037
     text_scale = 3
@@ -949,8 +1026,9 @@
         naval_base = 5.358902
     }
 
-} # Bar Uial
+}
 
+# Bar Uial
 79 = {
     text_position = {
         x = 1410.575000
@@ -972,13 +1050,15 @@
 
     }
 
-} # Tirith Faron
+}
 
+# Tirith Faron
 80 = {
     text_rotation = 0.795998
     text_scale = 3
-} # Spathlin
+}
 
+# Spathlin
 81 = {
     text_position = {
         x = 1485.070000
@@ -987,8 +1067,9 @@
 
     text_rotation = 6.080864
     text_scale = 3
-} # Eilendoth
+}
 
+# Eilendoth
 82 = {
     text_position = {
         x = 1511.201667
@@ -997,8 +1078,9 @@
 
     text_rotation = 0.494957
     text_scale = 3
-} # Tarnost
+}
 
+# Tarnost
 83 = {
     text_position = {
         x = 1531.195000
@@ -1007,8 +1089,9 @@
 
     text_rotation = 0.728721
     text_scale = 3
-} # Bar Luimen
+}
 
+# Bar Luimen
 84 = {
     text_position = {
         x = 1561.045000
@@ -1017,8 +1100,9 @@
 
     text_rotation = 5.561530
     text_scale = 3
-} # Pelin
+}
 
+# Pelin
 85 = {
     text_position = {
         x = 1550.110000
@@ -1027,8 +1111,9 @@
 
     text_rotation = 5.774624
     text_scale = 3
-} # Nan Gilrain
+}
 
+# Nan Gilrain
 86 = {
     text_position = {
         x = 1592.753333
@@ -1037,12 +1122,14 @@
 
     text_rotation = 1.035523
     text_scale = 3
-} # Eastremed
+}
 
+# Eastremed
 87 = {
     text_scale = 3
-} # Din-Lamedon
+}
 
+# Din-Lamedon
 88 = {
     text_position = {
         x = 1569.720000
@@ -1051,20 +1138,24 @@
 
     text_rotation = 0.618506
     text_scale = 3
-} # Ethring
+}
 
+# Ethring
 89 = {
     text_scale = 3
-} # Nan Tauron
+}
 
+# Nan Tauron
 90 = {
     text_scale = 3
-} # Stokesburg
+}
 
+# Stokesburg
 91 = {
     text_scale = 3
-} # Calembel
+}
 
+# Calembel
 92 = {
     text_position = {
         x = 1499.356667
@@ -1073,8 +1164,9 @@
 
     text_rotation = 5.853233
     text_scale = 3
-} # Bar Elir
+}
 
+# Bar Elir
 93 = {
     text_position = {
         x = 1476.560000
@@ -1083,13 +1175,15 @@
 
     text_rotation = 0.870300
     text_scale = 3
-} # Meadburg
+}
 
+# Meadburg
 94 = {
     text_rotation = 5.826264
     text_scale = 3
-} # Celondim
+}
 
+# Celondim
 95 = {
     text_scale = 3
     building_position = {
@@ -1104,21 +1198,25 @@
         naval_base = 5.511971
     }
 
-} # Dï¿½nadab
+}
 
+# Dínadab
 96 = {
     text_scale = 3
-} # Minas Anghen
+}
 
+# Minas Anghen
 97 = {
     text_scale = 3
-} # Glanhir
+}
 
+# Glanhir
 98 = {
     text_rotation = 0.315422
     text_scale = 3
-} # Cluddiorhath
+}
 
+# Cluddiorhath
 99 = {
     text_position = {
         x = 987.525000
@@ -1127,8 +1225,9 @@
 
     text_rotation = 5.686838
     text_scale = 3
-} # Tarlang's Neck
+}
 
+# Tarlang's Neck
 100 = {
     text_position = {
         x = 1422.466667
@@ -1137,8 +1236,9 @@
 
     text_rotation = 1.293181
     text_scale = 3
-} # Garth Lotheg
+}
 
+# Garth Lotheg
 101 = {
     text_position = {
         x = 1375.753333
@@ -1147,8 +1247,9 @@
 
     text_rotation = 5.785843
     text_scale = 3
-} # Sardol
+}
 
+# Sardol
 102 = {
     text_position = {
         x = 1394.040000
@@ -1157,8 +1258,9 @@
 
     text_rotation = 5.918536
     text_scale = 3
-} # Nineryn
+}
 
+# Nineryn
 103 = {
     text_position = {
         x = 1399.650000
@@ -1167,16 +1269,19 @@
 
     text_rotation = 5.792638
     text_scale = 3
-} # Mornen
+}
 
+# Mornen
 104 = {
     text_scale = 3
-} # Erech
+}
 
+# Erech
 105 = {
     text_scale = 3
-} # Dor-i-Gwendir
+}
 
+# Dor-i-Gwendir
 106 = {
     text_position = {
         x = 627.105000
@@ -1184,8 +1289,9 @@
     }
 
     text_scale = 3
-} # Tingobel
+}
 
+# Tingobel
 107 = {
     text_position = {
         x = 1415.760000
@@ -1194,8 +1300,9 @@
 
     text_rotation = 6.132062
     text_scale = 3
-} # Felagram
+}
 
+# Felagram
 108 = {
     text_scale = 3
     building_position = {
@@ -1210,16 +1317,19 @@
         naval_base = 5.268324
     }
 
-} # Gapholt
+}
 
+# Gapholt
 109 = {
     text_scale = 3
-} # Paths of the Dead
+}
 
+# Paths of the Dead
 110 = {
     text_scale = 3
-} # Sarn Athrad
+}
 
+# Sarn Athrad
 111 = {
     text_position = {
         x = 369.191667
@@ -1227,17 +1337,20 @@
     }
 
     text_scale = 3
-} # Cabed Angren
+}
 
+# Cabed Angren
 112 = {
     text_scale = 3
-} # Alagrant
+}
 
+# Alagrant
 113 = {
     text_rotation = 1.006368
     text_scale = 3
-} # Rendï¿½l
+}
 
+# Rendûl
 114 = {
     text_position = {
         x = 1348.093333
@@ -1246,20 +1359,24 @@
 
     text_rotation = 5.191730
     text_scale = 3
-} # Arnandath
+}
 
+# Arnandath
 115 = {
     text_scale = 3
-} # White Mountains
+}
 
+# White Mountains
 116 = {
     text_scale = 3
-} # Umb Estelwain
+}
 
+# Umb Estelwain
 117 = {
     text_scale = 3
-} # Rond Randir
+}
 
+# Rond Randir
 118 = {
     text_position = {
         x = 1266.705000
@@ -1268,12 +1385,14 @@
 
     text_rotation = 6.187996
     text_scale = 3
-} # Nan Lyghiril
+}
 
+# Nan Lyghiril
 119 = {
     text_scale = 3
-} # Annï¿½bad
+}
 
+# Annúbad
 120 = {
     text_position = {
         x = 1378.510000
@@ -1292,8 +1411,9 @@
         y = 752.596667
     }
 
-} # Tirith Cobas
+}
 
+# Tirith Cobas
 121 = {
     text_position = {
         x = 1353.321667
@@ -1312,38 +1432,46 @@
         y = 725.723333
     }
 
-} # Corgonin
+}
 
+# Corgonin
 122 = {
     text_scale = 3
-} # Calenhirost
+}
 
+# Calenhirost
 123 = {
     text_rotation = 6.071042
     text_scale = 3
-} # Rhuvel-cadlus
+}
 
+# Rhuvel-cadlus
 124 = {
     text_scale = 3
-} # Dun Morbet
+}
 
+# Dun Morbet
 125 = {
     text_scale = 3
-} # Archet
+}
 
+# Archet
 126 = {
     text_scale = 3
-} # Nobottle
+}
 
+# Nobottle
 127 = {
     text_scale = 3
-} # Eryn Laegol
+}
 
+# Eryn Laegol
 128 = {
     text_rotation = 5.891485
     text_scale = 3
-} # Barad Loï¿½n
+}
 
+# Barad Loën
 129 = {
     text_position = {
         x = 1357.733333
@@ -1363,8 +1491,9 @@
         naval_base = 4.712389
     }
 
-} # Rondalph
+}
 
+# Rondalph
 130 = {
     text_scale = 3
     building_position = {
@@ -1379,12 +1508,14 @@
         naval_base = 5.551117
     }
 
-} # Gwï¿½nos
+}
 
+# Gwânos
 131 = {
     text_scale = 3
-} # Iantras
+}
 
+# Iantras
 132 = {
     text_scale = 3
     building_position = {
@@ -1399,8 +1530,9 @@
         naval_base = 3.923457
     }
 
-} # Lond Galen
+}
 
+# Lond Galen
 133 = {
     text_scale = 3
     building_position = {
@@ -1415,8 +1547,9 @@
         naval_base = 5.586521
     }
 
-} # Serelond
+}
 
+# Serelond
 134 = {
     text_position = {
         x = 1208.033333
@@ -1437,8 +1570,9 @@
         naval_base = 3.990734
     }
 
-} # Ram Galen
+}
 
+# Ram Galen
 135 = {
     text_position = {
         x = 1172.226667
@@ -1447,12 +1581,14 @@
 
     text_rotation = 0.242551
     text_scale = 3
-} # Eredimar
+}
 
+# Eredimar
 136 = {
     text_scale = 3
-} # Bar-i-Dinuviel
+}
 
+# Bar-i-Dinuviel
 137 = {
     text_scale = 3
     building_position = {
@@ -1463,8 +1599,9 @@
 
     }
 
-} # Aerost
+}
 
+# Aerost
 138 = {
     text_scale = 3
     building_position = {
@@ -1479,8 +1616,9 @@
         naval_base = 4.029830
     }
 
-} # Lï¿½most
+}
 
+# Lómost
 139 = {
     text_scale = 3
     building_position = {
@@ -1495,8 +1633,9 @@
         naval_base = 3.979945
     }
 
-} # Holmgeirstadur
+}
 
+# Holmgeirstadur
 140 = {
     text_scale = 3
     building_position = {
@@ -1511,12 +1650,14 @@
         naval_base = 3.246731
     }
 
-} # Kotstï¿½
+}
 
+# Kotstó
 141 = {
     text_scale = 3
-} # Annon Drï¿½in
+}
 
+# Annon Drúin
 142 = {
     text_scale = 3
     building_position = {
@@ -1527,8 +1668,9 @@
 
     }
 
-} # Annï¿½lond
+}
 
+# Annúlond
 143 = {
     text_position = {
         x = 1058.320000
@@ -1549,8 +1691,9 @@
         naval_base = 5.131123
     }
 
-} # Nan Ferensiril
+}
 
+# Nan Ferensiril
 144 = {
     text_scale = 3
     building_position = {
@@ -1565,32 +1708,39 @@
         naval_base = 4.692291
     }
 
-} # Midgewater
+}
 
+# Midgewater
 145 = {
     text_scale = 3
-} # Adavalinda
+}
 
+# Adavalinda
 146 = {
     text_scale = 3
-} # Barad Narn
+}
 
+# Barad Narn
 147 = {
     text_scale = 3
-} # Crick
+}
 
+# Crick
 148 = {
     text_scale = 3
-} # Tir Eliant
+}
 
+# Tir Eliant
 149 = {
     text_scale = 3
-} # Gorbelgod
+}
 
+# Gorbelgod
 150 = {
     text_scale = 3
-} # Ered Mithrin
+}
 
+# Ered Mithrin
 151 = {
     text_position = {
         x = 1503.268333
@@ -1598,21 +1748,25 @@
     }
 
     text_scale = 3
-} # Nan Celgalen
+}
 
+# Nan Celgalen
 152 = {
     text_scale = 3
-} # Dol Gwaer
+}
 
+# Dol Gwaer
 153 = {
     text_scale = 3
-} # Saerthondost
+}
 
+# Saerthondost
 154 = {
     text_rotation = 0.771215
     text_scale = 3
-} # Pinnornost
+}
 
+# Pinnornost
 155 = {
     text_position = {
         x = 1145.628333
@@ -1621,8 +1775,9 @@
 
     text_rotation = 0.682559
     text_scale = 3
-} # Nan Haldanen
+}
 
+# Nan Haldanen
 156 = {
     text_position = {
         x = 1152.636667
@@ -1631,8 +1786,9 @@
 
     text_rotation = 0.181649
     text_scale = 3
-} # Bar Faroth
+}
 
+# Bar Faroth
 157 = {
     text_position = {
         x = 1178.365000
@@ -1641,20 +1797,24 @@
 
     text_rotation = 0.757037
     text_scale = 3
-} # Cirith Iaur
+}
 
+# Cirith Iaur
 158 = {
     text_scale = 3
-} # Tum-na-Ceryn
+}
 
+# Tum-na-Ceryn
 159 = {
     text_scale = 3
-} # Bar Caraghï¿½r
+}
 
+# Bar Caraghîr
 160 = {
     text_scale = 3
-} # Bar-en-Lilthor
+}
 
+# Bar-en-Lilthor
 161 = {
     text_scale = 3
     building_position = {
@@ -1665,8 +1825,9 @@
 
     }
 
-} # Hwï¿½lond
+}
 
+# Hwálond
 162 = {
     text_scale = 3
     building_position = {
@@ -1681,8 +1842,9 @@
         naval_base = 3.141593
     }
 
-} # Haerlond
+}
 
+# Haerlond
 163 = {
     text_position = {
         x = 1018.733333
@@ -1703,8 +1865,9 @@
         naval_base = 4.727463
     }
 
-} # Hwarï¿½n
+}
 
+# Hwarîn
 164 = {
     text_position = {
         x = 986.576667
@@ -1725,8 +1888,9 @@
         naval_base = 5.315711
     }
 
-} # Tharagrondost
+}
 
+# Tharagrondost
 165 = {
     text_position = {
         x = 911.460000
@@ -1747,12 +1911,14 @@
         naval_base = 3.937591
     }
 
-} # Cirith Aralanthir
+}
 
+# Cirith Aralanthir
 166 = {
     text_scale = 3
-} # Hï¿½rin's Tower
+}
 
+# Hórin's Tower
 167 = {
     text_position = {
         x = 878.951667
@@ -1773,8 +1939,9 @@
         naval_base = 3.849134
     }
 
-} # Tumbrui
+}
 
+# Tumbrui
 168 = {
     text_position = {
         x = 832.811667
@@ -1795,8 +1962,9 @@
         naval_base = 4.717414
     }
 
-} # Courc
+}
 
+# Courc
 169 = {
     text_position = {
         x = 790.550000
@@ -1817,8 +1985,9 @@
         naval_base = 3.156592
     }
 
-} # Rast Rangen
+}
 
+# Rast Rangen
 170 = {
     text_position = {
         x = 811.726667
@@ -1839,8 +2008,9 @@
         naval_base = 1.399891
     }
 
-} # Perth Maewrim
+}
 
+# Perth Maewrim
 171 = {
     text_position = {
         x = 860.058333
@@ -1861,8 +2031,9 @@
         naval_base = 5.519061
     }
 
-} # Rast Nimrais
+}
 
+# Rast Nimrais
 172 = {
     text_scale = 3
     building_position = {
@@ -1873,8 +2044,9 @@
 
     }
 
-} # Perth-i-Certï¿½mar
+}
 
+# Perth-i-Certémar
 173 = {
     text_scale = 3
     building_position = {
@@ -1889,8 +2061,9 @@
         naval_base = 1.002155
     }
 
-} # ï¿½ynd
+}
 
+# Ñynd
 174 = {
     text_scale = 3
     building_position = {
@@ -1901,8 +2074,9 @@
 
     }
 
-} # Nan Lhinnhir
+}
 
+# Nan Lhinnhir
 175 = {
     text_position = {
         x = 891.251667
@@ -1918,38 +2092,46 @@
 
     }
 
-} # Hollowcliff
+}
 
+# Hollowcliff
 176 = {
     text_scale = 3
-} # Nan Hwanhir
+}
 
+# Nan Hwanhir
 177 = {
     text_scale = 3
-} # Eryn-in-ï¿½anhoth
+}
 
+# Eryn-in-Úanhoth
 178 = {
     text_scale = 3
-} # Cirith Nimrais
+}
 
+# Cirith Nimrais
 179 = {
     text_rotation = 0.607445
     text_scale = 3
-} # Imlad Arheledh
+}
 
+# Imlad Arheledh
 180 = {
     text_scale = 3
-} # Cï¿½m Arelaidh
+}
 
+# Cûm Arelaidh
 181 = {
     text_scale = 3
-} # Annï¿½gar
+}
 
+# Annúgar
 182 = {
     text_rotation = 0.636508
     text_scale = 3
-} # Annogwain
+}
 
+# Annogwain
 183 = {
     text_position = {
         x = 1033.955000
@@ -1957,8 +2139,9 @@
     }
 
     text_scale = 3
-} # An Cï¿½sa Brï¿½s
+}
 
+# An Côsa Brâs
 184 = {
     text_position = {
         x = 906.833333
@@ -1975,8 +2158,9 @@
 
     }
 
-} # Nan Brilthor
+}
 
+# Nan Brilthor
 185 = {
     text_scale = 3
     building_position = {
@@ -1987,8 +2171,9 @@
 
     }
 
-} # Lower Nan Achasirith
+}
 
+# Lower Nan Achasirith
 186 = {
     text_position = {
         x = 906.808333
@@ -2005,8 +2190,9 @@
 
     }
 
-} # Hwalord
+}
 
+# Hwalord
 187 = {
     text_scale = 3
     building_position = {
@@ -2021,16 +2207,19 @@
         naval_base = 0.859467
     }
 
-} # Bar Elmar
+}
 
+# Bar Elmar
 188 = {
     text_scale = 3
-} # Perth Pï¿½kel
+}
 
+# Perth Pûkel
 189 = {
     text_scale = 3
-} # Upper Nan Achasirith
+}
 
+# Upper Nan Achasirith
 190 = {
     text_position = {
         x = 972.701667
@@ -2038,8 +2227,9 @@
     }
 
     text_scale = 3
-} # Andrast Mountains
+}
 
+# Andrast Mountains
 191 = {
     text_position = {
         x = 935.900000
@@ -2062,8 +2252,9 @@
         y = 742.105000
     }
 
-} # Geann a-Lish
+}
 
+# Geann a-Lish
 192 = {
     text_position = {
         x = 960.105000
@@ -2072,12 +2263,14 @@
 
     text_rotation = 5.792638
     text_scale = 3
-} # White Mountains
+}
 
+# White Mountains
 193 = {
     text_scale = 3
-} # Emyn Pï¿½kel
+}
 
+# Emyn Pûkel
 194 = {
     text_position = {
         x = 1138.390000
@@ -2085,20 +2278,24 @@
     }
 
     text_scale = 3
-} # Eryn Ain
+}
 
+# Eryn Ain
 195 = {
     text_scale = 3
-} # Eryn Tamlin
+}
 
+# Eryn Tamlin
 196 = {
     text_scale = 3
-} # Nan Lhyg
+}
 
+# Nan Lhyg
 197 = {
     text_scale = 3
-} # East Osgiliath
+}
 
+# East Osgiliath
 198 = {
     text_position = {
         x = 1802.800000
@@ -2115,8 +2312,9 @@
 
     }
 
-} # Taur Ithilien
+}
 
+# Taur Ithilien
 199 = {
     text_position = {
         x = 1806.926667
@@ -2133,8 +2331,9 @@
 
     }
 
-} # Cormalthen
+}
 
+# Cormalthen
 200 = {
     text_position = {
         x = 1776.351667
@@ -2155,8 +2354,9 @@
         naval_base = 5.558212
     }
 
-} # Henneth Annï¿½n
+}
 
+# Henneth Annûn
 201 = {
     text_position = {
         x = 1791.945000
@@ -2165,8 +2365,9 @@
 
     text_rotation = 5.590379
     text_scale = 3
-} # Ered Lithui
+}
 
+# Ered Lithui
 202 = {
     text_position = {
         x = 2340.025000
@@ -2174,8 +2375,9 @@
     }
 
     text_scale = 3
-} # Ephel Dï¿½ath
+}
 
+# Ephel Dúath
 203 = {
     text_position = {
         x = 2338.431667
@@ -2183,8 +2385,9 @@
     }
 
     text_scale = 3
-} # Ithilduin
+}
 
+# Ithilduin
 204 = {
     text_scale = 3
     building_position = {
@@ -2199,8 +2402,9 @@
         naval_base = 5.618624
     }
 
-} # Barad Othnir
+}
 
+# Barad Othnir
 205 = {
     text_scale = 3
     building_position = {
@@ -2215,8 +2419,9 @@
         naval_base = 0.795998
     }
 
-} # Adab Elenmir
+}
 
+# Adab Elenmir
 206 = {
     text_position = {
         x = 1781.491667
@@ -2242,12 +2447,14 @@
         naval_base = 3.141593
     }
 
-} # Ostithil
+}
 
+# Ostithil
 207 = {
     text_scale = 3
-} # Rianbar
+}
 
+# Rianbar
 208 = {
     text_scale = 3
     building_position = {
@@ -2262,8 +2469,9 @@
         naval_base = 3.131593
     }
 
-} # Tinnenost
+}
 
+# Tinnenost
 209 = {
     text_position = {
         x = 1810.333333
@@ -2283,8 +2491,9 @@
         naval_base = 0.530961
     }
 
-} # Thindamost
+}
 
+# Thindamost
 210 = {
     text_position = {
         x = 1779.418333
@@ -2305,12 +2514,14 @@
         naval_base = 0.831302
     }
 
-} # Barad Telagar
+}
 
+# Barad Telagar
 211 = {
     text_scale = 3
-} # Tir Ethraid
+}
 
+# Tir Ethraid
 212 = {
     text_position = {
         x = 1785.046667
@@ -2319,8 +2530,9 @@
 
     text_rotation = 0.501746
     text_scale = 3
-} # Hyarpendï¿½
+}
 
+# Hyarpendë
 213 = {
     text_position = {
         x = 1745.333333
@@ -2341,8 +2553,9 @@
         naval_base = 0.689607
     }
 
-} # Aludor
+}
 
+# Aludor
 214 = {
     text_scale = 3
     building_position = {
@@ -2357,12 +2570,14 @@
         naval_base = 0.835003
     }
 
-} # Gondraim
+}
 
+# Gondraim
 215 = {
     text_scale = 3
-} # Athrad Poros
+}
 
+# Athrad Poros
 216 = {
     text_position = {
         x = 1802.900000
@@ -2371,8 +2586,9 @@
 
     text_rotation = 5.902679
     text_scale = 3
-} # Dol Ereb
+}
 
+# Dol Ereb
 217 = {
     text_scale = 3
     building_position = {
@@ -2387,12 +2603,14 @@
         naval_base = 3.126594
     }
 
-} # Barad Hyarmentiï¿½
+}
 
+# Barad Hyarmentië
 218 = {
     text_scale = 3
-} # Andï¿½-Kadar
+}
 
+# Andâ-Kadar
 219 = {
     text_position = {
         x = 1764.025000
@@ -2401,8 +2619,9 @@
 
     text_rotation = 0.247403
     text_scale = 3
-} # Parth Morvegil
+}
 
+# Parth Morvegil
 220 = {
     text_position = {
         x = 1701.043333
@@ -2411,8 +2630,9 @@
 
     text_rotation = 5.826264
     text_scale = 3
-} # Ausk Laer
+}
 
+# Ausk Laer
 221 = {
     text_position = {
         x = 1720.106667
@@ -2420,8 +2640,9 @@
     }
 
     text_scale = 3
-} # Barad Laer
+}
 
+# Barad Laer
 222 = {
     text_position = {
         x = 1641.590000
@@ -2430,8 +2651,9 @@
 
     text_rotation = 6.050371
     text_scale = 3
-} # Pindos
+}
 
+# Pindos
 223 = {
     text_position = {
         x = 1610.510000
@@ -2440,12 +2662,14 @@
 
     text_rotation = 0.781865
     text_scale = 3
-} # Parth Forlindon
+}
 
+# Parth Forlindon
 224 = {
     text_scale = 3
-} # Glamorgarth
+}
 
+# Glamorgarth
 225 = {
     text_position = {
         x = 1641.110000
@@ -2466,8 +2690,9 @@
         naval_base = 0.870300
     }
 
-} # Methir
+}
 
+# Methir
 226 = {
     text_position = {
         x = 1588.646667
@@ -2488,8 +2713,9 @@
         naval_base = 0.920288
     }
 
-} # Eithel Tï¿½rin
+}
 
+# Eithel Túrin
 227 = {
     text_rotation = 5.913852
     text_scale = 3
@@ -2505,8 +2731,9 @@
         naval_base = 0.760668
     }
 
-} # Barad Harn
+}
 
+# Barad Harn
 228 = {
     text_scale = 3
     building_position = {
@@ -2521,8 +2748,9 @@
         naval_base = 3.141593
     }
 
-} # Nen Falastir
+}
 
+# Nen Falastir
 229 = {
     text_scale = 3
     building_position = {
@@ -2533,8 +2761,9 @@
 
     }
 
-} # Ausk Adï¿½nï¿½
+}
 
+# Ausk Adûnê
 230 = {
     text_position = {
         x = 1617.713333
@@ -2542,8 +2771,9 @@
     }
 
     text_scale = 3
-} # Has Adri
+}
 
+# Has Adri
 231 = {
     text_position = {
         x = 1559.520000
@@ -2563,8 +2793,9 @@
         naval_base = 3.141593
     }
 
-} # Kas Marzï¿½k
+}
 
+# Kas Marzúk
 232 = {
     text_rotation = 5.837473
     text_scale = 3
@@ -2580,8 +2811,9 @@
         naval_base = 4.712389
     }
 
-} # An Sakal
+}
 
+# An Sakal
 233 = {
     text_position = {
         x = 1587.640000
@@ -2598,8 +2830,9 @@
 
     }
 
-} # Has Yayb
+}
 
+# Has Yayb
 234 = {
     text_rotation = 5.844141
     text_scale = 3
@@ -2615,12 +2848,14 @@
         naval_base = 5.533233
     }
 
-} # Korb Ugarta
+}
 
+# Korb Ugarta
 235 = {
     text_scale = 3
-} # Has Sebiya
+}
 
+# Has Sebiya
 236 = {
     text_position = {
         x = 1688.333333
@@ -2629,8 +2864,9 @@
 
     text_rotation = 0.535274
     text_scale = 3
-} # Nan Lï¿½rnen
+}
 
+# Nan Lórnen
 237 = {
     text_position = {
         x = 413.328333
@@ -2638,17 +2874,20 @@
     }
 
     text_scale = 3
-} # Tharven
+}
 
+# Tharven
 238 = {
     text_rotation = 6.152619
     text_scale = 3
-} # Athrad Hingren
+}
 
+# Athrad Hingren
 239 = {
     text_scale = 3
-} # Tiras Amrï¿½n
+}
 
+# Tiras Amrûn
 240 = {
     text_position = {
         x = 1912.693333
@@ -2657,8 +2896,9 @@
 
     text_rotation = 0.707542
     text_scale = 3
-} # Ausk Harmaka
+}
 
+# Ausk Harmaka
 241 = {
     text_position = {
         x = 1871.500000
@@ -2672,8 +2912,9 @@
         y = 334.500000
     }
 
-} # Harmindon
+}
 
+# Harmindon
 242 = {
     text_position = {
         x = 1933.485000
@@ -2682,24 +2923,29 @@
 
     text_rotation = 1.060308
     text_scale = 3
-} # Karmï¿½h
+}
 
+# Karmâh
 243 = {
     text_scale = 3
-} # Pin Hingrin
+}
 
+# Pin Hingrin
 244 = {
     text_scale = 3
-} # Milome-i-Tarma
+}
 
+# Milome-i-Tarma
 245 = {
     text_scale = 3
-} # Galenwath
+}
 
+# Galenwath
 246 = {
     text_scale = 3
-} # Minas Menost
+}
 
+# Minas Menost
 247 = {
     text_position = {
         x = 1675.280000
@@ -2708,8 +2954,9 @@
 
     text_rotation = 6.024842
     text_scale = 3
-} # Parth Aegthelion
+}
 
+# Parth Aegthelion
 248 = {
     text_position = {
         x = 1670.750000
@@ -2718,8 +2965,9 @@
 
     text_rotation = 6.055257
     text_scale = 3
-} # Amon Eithel
+}
 
+# Amon Eithel
 249 = {
     text_position = {
         x = 1747.540000
@@ -2727,8 +2975,9 @@
     }
 
     text_scale = 3
-} # Bar Malduin
+}
 
+# Bar Malduin
 250 = {
     text_position = {
         x = 1811.750000
@@ -2736,16 +2985,19 @@
     }
 
     text_scale = 3
-} # Ausk Dubat
+}
 
+# Ausk Dubat
 251 = {
     text_scale = 3
-} # Makalkukhizdï¿½n
+}
 
+# Makalkukhizdín
 252 = {
     text_scale = 3
-} # Imlad Burï¿½s
+}
 
+# Imlad Burús
 253 = {
     text_position = {
         x = 1893.806667
@@ -2753,16 +3005,19 @@
     }
 
     text_scale = 3
-} # Kerghila
+}
 
+# Kerghila
 254 = {
     text_scale = 3
-} # Gilin
+}
 
+# Gilin
 255 = {
     text_scale = 3
-} # Abï¿½rloni
+}
 
+# Abârloni
 256 = {
     text_position = {
         x = 1584.851667
@@ -2787,8 +3042,9 @@
         naval_base = 0.810128
     }
 
-} # Sï¿½k ï¿½da
+}
 
+# Sûk Óda
 257 = {
     text_scale = 3
     building_position = {
@@ -2803,8 +3059,9 @@
         naval_base = 1.585795
     }
 
-} # Kï¿½s Shafrï¿½
+}
 
+# Kás Shafrá
 258 = {
     text_rotation = 0.571337
     text_scale = 3
@@ -2825,8 +3082,9 @@
         naval_base = 0.781865
     }
 
-} # Sï¿½kh an-Khï¿½r
+}
 
+# Sûkh an-Khôr
 259 = {
     text_rotation = 0.870300
     text_scale = 3
@@ -2842,8 +3100,9 @@
         naval_base = 0.774798
     }
 
-} # Sï¿½k Asnï¿½
+}
 
+# Sûk Asní
 260 = {
     text_scale = 3
     building_position = {
@@ -2858,8 +3117,9 @@
         naval_base = 0.824248
     }
 
-} # Dibï¿½s
+}
 
+# Dibís
 261 = {
     text_scale = 3
     building_position = {
@@ -2874,8 +3134,9 @@
         naval_base = 1.570796
     }
 
-} # Nï¿½meros
+}
 
+# Números
 262 = {
     text_position = {
         x = 1310.913333
@@ -2895,8 +3156,9 @@
         naval_base = 3.141593
     }
 
-} # Erelond
+}
 
+# Erelond
 263 = {
     text_position = {
         x = 1060.388333
@@ -2916,8 +3178,9 @@
         naval_base = 3.895199
     }
 
-} # Caldï¿½r
+}
 
+# Caldûr
 264 = {
     text_position = {
         x = 1295.826667
@@ -2938,8 +3201,9 @@
         naval_base = 4.727463
     }
 
-} # Eradas
+}
 
+# Eradas
 265 = {
     text_position = {
         x = 1332.686667
@@ -2960,8 +3224,9 @@
         naval_base = 3.842089
     }
 
-} # Isigir
+}
 
+# Isigir
 266 = {
     text_scale = 3
     building_position = {
@@ -2976,8 +3241,9 @@
         naval_base = 4.712389
     }
 
-} # Barazï¿½n
+}
 
+# Barazôn
 267 = {
     text_scale = 3
     building_position = {
@@ -2992,8 +3258,9 @@
         naval_base = 5.526148
     }
 
-} # Bï¿½r Anwarmen
+}
 
+# Bûr Anwarmen
 268 = {
     text_position = {
         x = 1422.466667
@@ -3013,8 +3280,9 @@
         naval_base = 3.141593
     }
 
-} # Undeeps
+}
 
+# Undeeps
 269 = {
     text_scale = 3
     building_position = {
@@ -3029,8 +3297,9 @@
         naval_base = 5.394948
     }
 
-} # Umbar
+}
 
+# Umbar
 270 = {
     text_scale = 3
     building_position = {
@@ -3045,8 +3314,9 @@
         naval_base = 0.831302
     }
 
-} # Batina
+}
 
+# Batina
 271 = {
     text_position = {
         x = 1441.708333
@@ -3067,8 +3337,9 @@
         naval_base = 0.884365
     }
 
-} # Pellardï¿½r
+}
 
+# Pellardûr
 272 = {
     text_scale = 3
     building_position = {
@@ -3083,8 +3354,9 @@
         naval_base = 1.570796
     }
 
-} # Ardï¿½mir
+}
 
+# Ardûmir
 273 = {
     text_position = {
         x = 1320.718333
@@ -3105,8 +3377,9 @@
         naval_base = 0.824248
     }
 
-} # Dol Annabrith
+}
 
+# Dol Annabrith
 274 = {
     text_position = {
         x = 1273.191667
@@ -3127,8 +3400,9 @@
         naval_base = 0.831302
     }
 
-} # Sarkï¿½na
+}
 
+# Sarkâna
 275 = {
     text_position = {
         x = 1368.520000
@@ -3136,8 +3410,9 @@
     }
 
     text_scale = 3
-} # Nan Salï¿½sso
+}
 
+# Nan Salásso
 276 = {
     text_position = {
         x = 1517.760000
@@ -3150,12 +3425,14 @@
         y = 69.315000
     }
 
-} # Horseman's Gap
+}
 
+# Horseman's Gap
 277 = {
     text_scale = 3
-} # Urdwaith
+}
 
+# Urdwaith
 278 = {
     text_scale = 3
     unit = {
@@ -3163,20 +3440,24 @@
         y = 106.193333
     }
 
-} # Tuwurdrog
+}
 
+# Tuwurdrog
 279 = {
     text_scale = 3
-} # An Pharaz
+}
 
+# An Pharaz
 280 = {
     text_scale = 3
-} # Coelagit
+}
 
+# Coelagit
 281 = {
     text_scale = 3
-} # An Ruilin
+}
 
+# An Ruilin
 282 = {
     text_position = {
         x = 1556.880000
@@ -3185,12 +3466,14 @@
 
     text_rotation = 0.517287
     text_scale = 3
-} # An Zalï¿½m
+}
 
+# An Zalím
 283 = {
     text_scale = 3
-} # Ausk Parch
+}
 
+# Ausk Parch
 284 = {
     text_position = {
         x = 1682.106667
@@ -3204,12 +3487,14 @@
         y = 253.293333
     }
 
-} # Blacksand Vale
+}
 
+# Blacksand Vale
 285 = {
     text_scale = 3
-} # Gobel Ancalimon
+}
 
+# Gobel Ancalimon
 286 = {
     text_position = {
         x = 1717.180000
@@ -3218,8 +3503,9 @@
 
     text_rotation = 0.232814
     text_scale = 3
-} # Sï¿½k Abï¿½rrim
+}
 
+# Sôk Abârrim
 287 = {
     text_position = {
         x = 1825.600000
@@ -3227,26 +3513,31 @@
     }
 
     text_scale = 3
-} # Muzdal Ifar
+}
 
+# Muzdal Ifar
 288 = {
     text_scale = 3
-} # Trihja Pek
+}
 
+# Trihja Pek
 289 = {
     text_rotation = 6.117214
     text_scale = 3
-} # Abrakhï¿½n
+}
 
+# Abrakhân
 290 = {
     text_rotation = 5.972528
     text_scale = 3
-} # Nï¿½r-Dï¿½m
+}
 
+# Nôr-Dûm
 291 = {
     text_scale = 3
-} # Feï¿½h
+}
 
+# Feäh
 292 = {
     text_position = {
         x = 2076.640000
@@ -3255,8 +3546,9 @@
 
     text_rotation = 6.172528
     text_scale = 3
-} # Upper Nun Gazir
+}
 
+# Upper Nun Gazir
 293 = {
     text_position = {
         x = 2064.070000
@@ -3275,8 +3567,9 @@
         y = 232.965000
     }
 
-} # Lower Nun Gazir
+}
 
+# Lower Nun Gazir
 294 = {
     text_position = {
         x = 2178.100000
@@ -3290,8 +3583,9 @@
         y = 160.200000
     }
 
-} # Haz Azuhmeda
+}
 
+# Haz Azuhmeda
 295 = {
     text_position = {
         x = 2192.858333
@@ -3299,12 +3593,14 @@
     }
 
     text_scale = 3
-} # Minered Luin
+}
 
+# Minered Luin
 296 = {
     text_scale = 3
-} # Tereze
+}
 
+# Tereze
 297 = {
     text_position = {
         x = 2278.760000
@@ -3318,8 +3614,9 @@
         y = 207.260000
     }
 
-} # Ausk Lï¿½rm
+}
 
+# Ausk Lûrm
 298 = {
     text_position = {
         x = 2306.323333
@@ -3327,37 +3624,45 @@
     }
 
     text_scale = 3
-} # Mikarin Peh
+}
 
+# Mikarin Peh
 299 = {
     text_rotation = 0.517287
     text_scale = 3
-} # Alag Rï¿½khbin
+}
 
+# Alag Rôkhbin
 300 = {
     text_scale = 3
-} # Parkhereb
+}
 
+# Parkhereb
 301 = {
     text_scale = 3
-} # Parth Peka
+}
 
+# Parth Peka
 302 = {
     text_scale = 3
-} # Krï¿½k Azbanna
+}
 
+# Krûk Azbanna
 303 = {
     text_scale = 3
-} # ï¿½vatharak
+}
 
+# Ôvatharak
 304 = {
     text_scale = 3
-} # Naur Imloth
+}
 
+# Naur Imloth
 305 = {
     text_scale = 3
-} # Ered Harmal
+}
 
+# Ered Harmal
 306 = {
     text_position = {
         x = 2700.788333
@@ -3365,16 +3670,19 @@
     }
 
     text_scale = 3
-} # Amon Sï¿½l
+}
 
+# Amon Sûl
 307 = {
     text_scale = 3
-} # Narumbulot
+}
 
+# Narumbulot
 308 = {
     text_scale = 3
-} # Layotan
+}
 
+# Layotan
 309 = {
     text_position = {
         x = 2662.020000
@@ -3383,8 +3691,9 @@
 
     text_rotation = 5.319834
     text_scale = 3
-} # Marï¿½sh
+}
 
+# Marêsh
 310 = {
     text_position = {
         x = 2626.320000
@@ -3393,13 +3702,15 @@
 
     text_rotation = 5.547392
     text_scale = 3
-} # Zhaneen
+}
 
+# Zhaneen
 311 = {
     text_rotation = 5.583292
     text_scale = 3
-} # Nan Kuvango
+}
 
+# Nan Kuvango
 312 = {
     text_position = {
         x = 2576.620000
@@ -3412,44 +3723,54 @@
         y = 174.833333
     }
 
-} # Brafenas
+}
 
+# Brafenas
 313 = {
     text_scale = 3
-} # Nan Belechir
+}
 
+# Nan Belechir
 314 = {
     text_scale = 3
-} # Ankruz
+}
 
+# Ankruz
 315 = {
     text_scale = 3
-} # Parth Aertirith
+}
 
+# Parth Aertirith
 316 = {
     text_scale = 3
-} # Oasis of the Five Palms
+}
 
+# Oasis of the Five Palms
 317 = {
     text_scale = 3
-} # Sicï¿½nna
+}
 
+# Sicánna
 318 = {
     text_scale = 3
-} # An Karagmir
+}
 
+# An Karagmir
 319 = {
     text_scale = 3
-} # Cynor
+}
 
+# Cynor
 320 = {
     text_scale = 3
-} # Marg Murak
+}
 
+# Marg Murak
 321 = {
     text_scale = 3
-} # Haradwaith
+}
 
+# Haradwaith
 322 = {
     text_position = {
         x = 1568.680000
@@ -3457,52 +3778,64 @@
     }
 
     text_scale = 3
-} # Haradwaith
+}
 
+# Haradwaith
 323 = {
     text_scale = 3
-} # Haradwaith
+}
 
+# Haradwaith
 324 = {
     text_scale = 3
-} # Haradwaith
+}
 
+# Haradwaith
 325 = {
     text_scale = 3
-} # Haradwaith
+}
 
+# Haradwaith
 326 = {
     text_scale = 3
-} # Haradwaith
+}
 
+# Haradwaith
 327 = {
     text_scale = 3
-} # Haradwaith
+}
 
+# Haradwaith
 328 = {
     text_scale = 3
-} # Haradwaith
+}
 
+# Haradwaith
 329 = {
     text_scale = 3
-} # Haradwaith
+}
 
+# Haradwaith
 330 = {
     text_scale = 3
-} # Haradwaith
+}
 
+# Haradwaith
 331 = {
     text_scale = 3
-} # Haradwaith
+}
 
+# Haradwaith
 332 = {
     text_scale = 3
-} # Haradwaith
+}
 
+# Haradwaith
 333 = {
     text_scale = 3
-} # Korb Traskal
+}
 
+# Korb Traskal
 334 = {
     text_position = {
         x = 1943.146667
@@ -3511,21 +3844,25 @@
 
     text_rotation = 5.853233
     text_scale = 3
-} # Kupsha
+}
 
+# Kupsha
 335 = {
     text_rotation = 1.445823
     text_scale = 3
-} # Kas Pezar
+}
 
+# Kas Pezar
 336 = {
     text_scale = 3
-} # Ausk Amrï¿½n
+}
 
+# Ausk Amrûn
 337 = {
     text_scale = 3
-} # Talath Amrï¿½n
+}
 
+# Talath Amrûn
 338 = {
     text_position = {
         x = 2009.616667
@@ -3539,13 +3876,15 @@
         y = 294.675000
     }
 
-} # Velsinir
+}
 
+# Velsinir
 339 = {
     text_rotation = 0.757037
     text_scale = 3
-} # Kï¿½rb Chelkar
+}
 
+# Kôrb Chelkar
 340 = {
     text_position = {
         x = 2037.506667
@@ -3553,8 +3892,9 @@
     }
 
     text_scale = 3
-} # Lugarlï¿½r
+}
 
+# Lugarlûr
 341 = {
     text_position = {
         x = 2032.125000
@@ -3568,8 +3908,9 @@
         y = 478.316667
     }
 
-} # Hï¿½k Saromis
+}
 
+# Hûk Saromis
 342 = {
     text_position = {
         x = 2042.620000
@@ -3578,8 +3919,9 @@
 
     text_rotation = 0.519768
     text_scale = 3
-} # Gizar
+}
 
+# Gizar
 343 = {
     text_position = {
         x = 2172.706667
@@ -3592,8 +3934,9 @@
         y = 403.413333
     }
 
-} # Bokhanï¿½z Pass
+}
 
+# Bokhanâz Pass
 344 = {
     text_position = {
         x = 2186.740000
@@ -3601,28 +3944,34 @@
     }
 
     text_scale = 3
-} # Ershawar
+}
 
+# Ershawar
 345 = {
     text_scale = 3
-} # Bogath
+}
 
+# Bogath
 346 = {
     text_scale = 3
-} # Pï¿½zghar
+}
 
+# Pâzghar
 347 = {
     text_scale = 3
-} # Krï¿½k Mahï¿½r
+}
 
+# Krûk Mahûr
 348 = {
     text_scale = 3
-} # Hatherbold
+}
 
+# Hatherbold
 349 = {
     text_scale = 3
-} # Korondaj
+}
 
+# Korondaj
 350 = {
     text_position = {
         x = 2139.780000
@@ -3631,8 +3980,9 @@
 
     text_rotation = 5.650706
     text_scale = 3
-} # Parzï¿½
+}
 
+# Parzû
 351 = {
     text_position = {
         x = 2195.116667
@@ -3641,8 +3991,9 @@
 
     text_rotation = 6.045497
     text_scale = 3
-} # Talazhan
+}
 
+# Talazhan
 352 = {
     text_position = {
         x = 2238.690000
@@ -3651,12 +4002,14 @@
 
     text_rotation = 0.326505
     text_scale = 3
-} # Barraq
+}
 
+# Barraq
 353 = {
     text_scale = 3
-} # Enmahadh
+}
 
+# Enmahadh
 354 = {
     text_position = {
         x = 2286.550000
@@ -3664,12 +4017,14 @@
     }
 
     text_scale = 3
-} # Flyiarstadur
+}
 
+# Flyiarstadur
 355 = {
     text_scale = 3
-} # Varnakh
+}
 
+# Varnakh
 356 = {
     text_position = {
         x = 2349.875000
@@ -3682,16 +4037,19 @@
         y = 232.565000
     }
 
-} # Ka'hae
+}
 
+# Ka'hae
 357 = {
     text_scale = 3
-} # Hrï¿½n Tï¿½mrakhi
+}
 
+# Hrôn Tûmrakhi
 358 = {
     text_scale = 3
-} # Resday
+}
 
+# Resday
 359 = {
     text_position = {
         x = 2461.025000
@@ -3704,8 +4062,9 @@
         y = 287.041667
     }
 
-} # Sharater
+}
 
+# Sharater
 360 = {
     text_position = {
         x = 2518.905000
@@ -3714,12 +4073,14 @@
 
     text_rotation = 5.966204
     text_scale = 3
-} # Desert of Khand
+}
 
+# Desert of Khand
 361 = {
     text_scale = 3
-} # Sturlï¿½rza Khand
+}
 
+# Sturlûrza Khand
 362 = {
     text_position = {
         x = 2617.033333
@@ -3728,8 +4089,9 @@
 
     text_rotation = 0.427869
     text_scale = 3
-} # Laï¿½rki
+}
 
+# Laôrki
 363 = {
     text_position = {
         x = 2644.500000
@@ -3737,53 +4099,65 @@
     }
 
     text_scale = 3
-} # Azagarbhun
+}
 
+# Azagarbhun
 364 = {
     text_scale = 3
-} # Buckland
+}
 
+# Buckland
 365 = {
     text_scale = 3
-} # Ammï¿½ Khand
+}
 
+# Ammû Khand
 366 = {
     text_scale = 3
-} # Alagoth
+}
 
+# Alagoth
 367 = {
     text_scale = 3
-} # Akhï¿½rn
+}
 
+# Akhârn
 368 = {
     text_scale = 3
-} # Desert of Khand
+}
 
+# Desert of Khand
 369 = {
     text_scale = 3
-} # Desert of Khand
+}
 
+# Desert of Khand
 370 = {
     text_scale = 3
-} # Desert of Khand
+}
 
+# Desert of Khand
 371 = {
     text_scale = 3
-} # Norhithe
+}
 
+# Norhithe
 372 = {
     text_scale = 3
-} # Plains of Khandur
+}
 
+# Plains of Khandur
 373 = {
     text_scale = 3
-} # Ala Plains
+}
 
+# Ala Plains
 374 = {
     text_rotation = 0.456921
     text_scale = 3
-} # Kharsï¿½m
+}
 
+# Kharsûm
 375 = {
     text_position = {
         x = 2261.925000
@@ -3791,13 +4165,15 @@
     }
 
     text_scale = 3
-} # Ikh'ahï¿½n
+}
 
+# Ikh'ahôn
 376 = {
     text_rotation = 0.632480
     text_scale = 3
-} # Engiz
+}
 
+# Engiz
 377 = {
     text_position = {
         x = 2384.441667
@@ -3806,34 +4182,41 @@
 
     text_rotation = 0.657528
     text_scale = 3
-} # ï¿½besï¿½sh
+}
 
+# Ûbesêsh
 378 = {
     text_rotation = 0.952290
     text_scale = 3
-} # ï¿½lbamarl Plains
+}
 
+# Ôlbamarl Plains
 379 = {
     text_scale = 3
-} # ï¿½lbamï¿½rl
+}
 
+# Ôlbamârl
 380 = {
     text_rotation = 0.757030
     text_scale = 3
-} # Valley of the Fell Beasts
+}
 
+# Valley of the Fell Beasts
 381 = {
     text_scale = 3
-} # Nan Ungol
+}
 
+# Nan Ungol
 382 = {
     text_scale = 3
-} # Hlastï¿½on
+}
 
+# Hlastûon
 383 = {
     text_scale = 3
-} # Ered Harmal
+}
 
+# Ered Harmal
 384 = {
     text_position = {
         x = 2725.090000
@@ -3841,12 +4224,14 @@
     }
 
     text_scale = 3
-} # Pashï¿½r
+}
 
+# Pashâr
 385 = {
     text_scale = 3
-} # Mï¿½rilak
+}
 
+# Mûrilak
 386 = {
     text_position = {
         x = 2559.800000
@@ -3854,12 +4239,14 @@
     }
 
     text_scale = 3
-} # Lagari ï¿½rath
+}
 
+# Lagari Ôrath
 387 = {
     text_scale = 3
-} # Eastern Plains
+}
 
+# Eastern Plains
 388 = {
     text_position = {
         x = 2739.433333
@@ -3867,8 +4254,9 @@
     }
 
     text_scale = 3
-} # Lhï¿½g
+}
 
+# Lhûg
 389 = {
     text_position = {
         x = 2755.546667
@@ -3876,44 +4264,54 @@
     }
 
     text_scale = 3
-} # Nebï¿½rkha
+}
 
+# Nebûrkha
 390 = {
     text_scale = 3
-} # Khandu Sï¿½bi
+}
 
+# Khandu Sûbi
 391 = {
     text_scale = 3
-} # Nï¿½rad
+}
 
+# Nûrad
 392 = {
     text_scale = 3
-} # Kudnï¿½vra
+}
 
+# Kudnûvra
 393 = {
     text_scale = 3
-} # Mï¿½ldin
+}
 
+# Mûldin
 394 = {
     text_scale = 3
-} # Lhugdol
+}
 
+# Lhugdol
 395 = {
     text_scale = 3
-} # Steinholl
+}
 
+# Steinholl
 396 = {
     text_scale = 3
-} # Lug-Ghurzï¿½n
+}
 
+# Lug-Ghurzûn
 397 = {
     text_scale = 3
-} # Virk-Ulgath
+}
 
+# Virk-Ulgath
 398 = {
     text_scale = 3
-} # Bï¿½th Ovaisa
+}
 
+# Bûth Ovaisa
 399 = {
     text_position = {
         x = 2460.840000
@@ -3922,16 +4320,19 @@
 
     text_rotation = 0.888237
     text_scale = 3
-} # Orduga Aivaisa
+}
 
+# Orduga Aivaisa
 400 = {
     text_scale = 3
-} # Zarï¿½k Ioriag
+}
 
+# Zarôk Ioriag
 401 = {
     text_scale = 3
-} # Kï¿½lez
+}
 
+# Kâlez
 402 = {
     text_position = {
         x = 2378.030000
@@ -3939,24 +4340,29 @@
     }
 
     text_scale = 3
-} # Bar Dï¿½ath
+}
 
+# Bar Dúath
 403 = {
     text_scale = 3
-} # Luglï¿½rak
+}
 
+# Luglûrak
 404 = {
     text_scale = 3
-} # Kï¿½l Tarkorï¿½l
+}
 
+# Kûl Tarkorûl
 405 = {
     text_scale = 3
-} # Cirith Nuraz-Shukh
+}
 
+# Cirith Nuraz-Shukh
 406 = {
     text_scale = 3
-} # Ephel Dï¿½ath
+}
 
+# Ephel Dúath
 407 = {
     text_position = {
         x = 2031.926667
@@ -3964,52 +4370,64 @@
     }
 
     text_scale = 3
-} # Mauhulakh
+}
 
+# Mauhulakh
 408 = {
     text_scale = 3
-} # Nï¿½rumurl
+}
 
+# Núrumurl
 409 = {
     text_scale = 3
-} # Lag-Wrashfhotak
+}
 
+# Lag-Wrashfhotak
 410 = {
     text_scale = 3
-} # Urlurzu Nï¿½rn
+}
 
+# Urlurzu Núrn
 411 = {
     text_scale = 3
-} # Shï¿½rlurza-nï¿½ru
+}
 
+# Shûrlurza-nûru
 412 = {
     text_scale = 3
-} # Caran
+}
 
+# Caran
 413 = {
     text_scale = 3
-} # Eastern Guard
+}
 
+# Eastern Guard
 414 = {
     text_scale = 3
-} # Nan Morlith
+}
 
+# Nan Morlith
 415 = {
     text_scale = 3
-} # Burkh Nï¿½rn
+}
 
+# Burkh Núrn
 416 = {
     text_scale = 3
-} # Nï¿½rngost
+}
 
+# Núrngost
 417 = {
     text_scale = 3
-} # Thaurband
+}
 
+# Thaurband
 418 = {
     text_scale = 3
-} # Ongrog
+}
 
+# Ongrog
 419 = {
     text_position = {
         x = 2162.133333
@@ -4017,28 +4435,34 @@
     }
 
     text_scale = 3
-} # Rï¿½l
+}
 
+# Rûl
 420 = {
     text_scale = 3
-} # Morigost
+}
 
+# Morigost
 421 = {
     text_scale = 3
-} # Kï¿½tot Vï¿½dï¿½k
+}
 
+# Kûtot Vâdôk
 422 = {
     text_scale = 3
-} # Seregost
+}
 
+# Seregost
 423 = {
     text_scale = 3
-} # Minas Dï¿½rlith
+}
 
+# Minas Dûrlith
 424 = {
     text_scale = 3
-} # Ered Lithui
+}
 
+# Ered Lithui
 425 = {
     text_position = {
         x = 2091.840000
@@ -4046,8 +4470,9 @@
     }
 
     text_scale = 3
-} # Plain of the Black Steeds
+}
 
+# Plain of the Black Steeds
 426 = {
     text_position = {
         x = 2096.065000
@@ -4055,60 +4480,74 @@
     }
 
     text_scale = 3
-} # Kirithgal
+}
 
+# Kirithgal
 427 = {
     text_scale = 3
-} # Mulbï¿½rz
+}
 
+# Mulbúrz
 428 = {
     text_scale = 3
-} # Lag-Digturmarr
+}
 
+# Lag-Digturmarr
 429 = {
     text_scale = 3
-} # Lag-Zayarzot
+}
 
+# Lag-Zayarzot
 430 = {
     text_scale = 3
-} # Nargroth
+}
 
+# Nargroth
 431 = {
     text_scale = 3
-} # Maegond Spur
+}
 
+# Maegond Spur
 432 = {
     text_scale = 3
-} # Minas Morgul
+}
 
+# Minas Morgul
 433 = {
     text_scale = 3
-} # Cirith Ungol
+}
 
+# Cirith Ungol
 434 = {
     text_scale = 3
-} # Barad Ungol
+}
 
+# Barad Ungol
 435 = {
     text_scale = 3
-} # Kra-Bï¿½rzum
+}
 
+# Kra-Búrzum
 436 = {
     text_scale = 3
-} # Mithram Spur
+}
 
+# Mithram Spur
 437 = {
     text_scale = 3
-} # Katund Akï¿½l
+}
 
+# Katund Akûl
 438 = {
     text_scale = 3
-} # Lag-Flaksharbtur
+}
 
+# Lag-Flaksharbtur
 439 = {
     text_scale = 3
-} # Durshatï¿½gum
+}
 
+# Durshatîgum
 440 = {
     text_position = {
         x = 1868.168333
@@ -4116,8 +4555,9 @@
     }
 
     text_scale = 3
-} # Tower of the Mouth
+}
 
+# Tower of the Mouth
 441 = {
     text_position = {
         x = 1901.885000
@@ -4125,24 +4565,29 @@
     }
 
     text_scale = 3
-} # Wagnuholl
+}
 
+# Wagnuholl
 442 = {
     text_scale = 3
-} # Torech Ungol
+}
 
+# Torech Ungol
 443 = {
     text_scale = 3
-} # Lugshar
+}
 
+# Lugshar
 444 = {
     text_scale = 3
-} # Nan Ilinlï¿½
+}
 
+# Nan Ilinló
 445 = {
     text_scale = 3
-} # Erland's Ferry
+}
 
+# Erland's Ferry
 446 = {
     text_scale = 3
     building_position = {
@@ -4157,8 +4602,9 @@
         naval_base = 3.121595
     }
 
-} # Lag-Uyakdagï¿½l
+}
 
+# Lag-Uyakdagûl
 447 = {
     text_position = {
         x = 1952.783333
@@ -4166,28 +4612,34 @@
     }
 
     text_scale = 3
-} # Orodruin
+}
 
+# Orodruin
 448 = {
     text_scale = 3
-} # Barad-dï¿½r
+}
 
+# Barad-dûr
 449 = {
     text_scale = 3
-} # Maur Tulhau
+}
 
+# Maur Tulhau
 450 = {
     text_scale = 3
-} # Long Marshes
+}
 
+# Long Marshes
 451 = {
     text_scale = 3
-} # Carach Angren
+}
 
+# Carach Angren
 452 = {
     text_scale = 3
-} # Ephel Dï¿½ath
+}
 
+# Ephel Dúath
 453 = {
     text_position = {
         x = 1840.916667
@@ -4195,16 +4647,19 @@
     }
 
     text_scale = 3
-} # Hayat-taim
+}
 
+# Hayat-taim
 454 = {
     text_scale = 3
-} # Morannon
+}
 
+# Morannon
 455 = {
     text_scale = 3
-} # Lag-Dagï¿½r
+}
 
+# Lag-Dagûr
 456 = {
     text_position = {
         x = 1870.010000
@@ -4250,8 +4705,9 @@
 
     }
 
-} # Thuringwathost
+}
 
+# Thuringwathost
 457 = {
     text_position = {
         x = 1881.738333
@@ -4259,8 +4715,9 @@
     }
 
     text_scale = 3
-} # Eithel Celebrin
+}
 
+# Eithel Celebrin
 458 = {
     text_position = {
         x = 1837.125000
@@ -4268,24 +4725,29 @@
     }
 
     text_scale = 3
-} # Dead Marshes
+}
 
+# Dead Marshes
 459 = {
     text_scale = 3
-} # Tirith Nindor
+}
 
+# Tirith Nindor
 460 = {
     text_scale = 3
-} # Caras Gwindor
+}
 
+# Caras Gwindor
 461 = {
     text_scale = 3
-} # Tel Verenear
+}
 
+# Tel Verenear
 462 = {
     text_scale = 3
-} # Gobel Dalrandil
+}
 
+# Gobel Dalrandil
 463 = {
     text_position = {
         x = 1702.586667
@@ -4305,8 +4767,9 @@
         naval_base = 5.547392
     }
 
-} # Tel Belarin
+}
 
+# Tel Belarin
 464 = {
     text_position = {
         x = 1715.773333
@@ -4314,8 +4777,9 @@
     }
 
     text_scale = 3
-} # Amon Lhaw
+}
 
+# Amon Lhaw
 465 = {
     text_scale = 3
     building_position = {
@@ -4330,8 +4794,9 @@
         naval_base = 0.000000
     }
 
-} # Sarn Gebir
+}
 
+# Sarn Gebir
 466 = {
     text_scale = 3
     building_position = {
@@ -4346,16 +4811,19 @@
         naval_base = 5.707227
     }
 
-} # Tirith Ingon
+}
 
+# Tirith Ingon
 467 = {
     text_scale = 3
-} # Duinmenos
+}
 
+# Duinmenos
 468 = {
     text_scale = 3
-} # Nan Lothanduin
+}
 
+# Nan Lothanduin
 469 = {
     text_scale = 3
     building_position = {
@@ -4370,8 +4838,9 @@
         naval_base = 0.635074
     }
 
-} # Barandor
+}
 
+# Barandor
 470 = {
     text_scale = 3
     building_position = {
@@ -4386,20 +4855,24 @@
         naval_base = 5.423193
     }
 
-} # Stainringo
+}
 
+# Stainringo
 471 = {
     text_scale = 3
-} # Rï¿½menost
+}
 
+# Rómenost
 472 = {
     text_scale = 3
-} # Tol Malbor
+}
 
+# Tol Malbor
 473 = {
     text_scale = 3
-} # Tirith Nimmen
+}
 
+# Tirith Nimmen
 474 = {
     text_position = {
         x = 1826.180000
@@ -4412,204 +4885,254 @@
         y = 1090.475000
     }
 
-} # Burh Anthar
+}
 
+# Burh Anthar
 475 = {
     text_scale = 3
-} # Kravod
+}
 
+# Kravod
 476 = {
     text_scale = 3
-} # Ursh Lanna
+}
 
+# Ursh Lanna
 477 = {
     text_scale = 3
-} # Kleinibriost
+}
 
+# Kleinibriost
 478 = {
     text_scale = 3
-} # Dï¿½rnost
+}
 
+# Dúrnost
 479 = {
     text_scale = 3
-} # Burh Rilagad
+}
 
+# Burh Rilagad
 480 = {
     text_scale = 3
-} # Nan Thorn Sï¿½r
+}
 
+# Nan Thorn Sîr
 481 = {
     text_scale = 3
-} # Lag-Hundur
+}
 
+# Lag-Hundur
 482 = {
     text_scale = 3
-} # Ashkirir
+}
 
+# Ashkirir
 483 = {
     text_scale = 3
-} # Hidruvotar
+}
 
+# Hidruvotar
 484 = {
     text_scale = 3
-} # Western Horse Plains
+}
 
+# Western Horse Plains
 485 = {
     text_scale = 3
-} # Eastern Horse Plains
+}
 
+# Eastern Horse Plains
 486 = {
     text_scale = 3
-} # Carvarad
+}
 
+# Carvarad
 487 = {
     text_scale = 3
-} # Lag-Ulurikon
+}
 
+# Lag-Ulurikon
 488 = {
     text_scale = 3
-} # Burh Padareiks
+}
 
+# Burh Padareiks
 489 = {
     text_scale = 3
-} # Amarthost
+}
 
+# Amarthost
 490 = {
     text_scale = 3
-} # Burh Ermanarikis
+}
 
+# Burh Ermanarikis
 491 = {
     text_scale = 3
-} # Stainah Westa
+}
 
+# Stainah Westa
 492 = {
     text_scale = 3
-} # Fiskost
+}
 
+# Fiskost
 493 = {
     text_scale = 3
-} # Talath Sagath
+}
 
+# Talath Sagath
 494 = {
     text_scale = 3
-} # Talath Urï¿½s
+}
 
+# Talath Urés
 495 = {
     text_scale = 3
-} # Othir
+}
 
+# Othir
 496 = {
     text_scale = 3
-} # Emyn Rhain
+}
 
+# Emyn Rhain
 497 = {
     text_scale = 3
-} # Orod-na-Thon
+}
 
+# Orod-na-Thon
 498 = {
     text_scale = 3
-} # Talath Rewinion
+}
 
+# Talath Rewinion
 499 = {
     text_scale = 3
-} # Burh Gadraughts
+}
 
+# Burh Gadraughts
 500 = {
     text_scale = 3
-} # Burh Beorills
+}
 
+# Burh Beorills
 501 = {
     text_scale = 3
-} # Emyn Rewinion
+}
 
+# Emyn Rewinion
 502 = {
     text_scale = 3
-} # Anawunung
+}
 
+# Anawunung
 503 = {
     text_scale = 3
-} # Brunnaborg
+}
 
+# Brunnaborg
 504 = {
     text_scale = 3
-} # Waysendstede
+}
 
+# Waysendstede
 505 = {
     text_scale = 3
-} # Skalkerborg
+}
 
+# Skalkerborg
 506 = {
     text_scale = 3
-} # Othlebed
+}
 
+# Othlebed
 507 = {
     text_scale = 3
-} # Burh Szes
+}
 
+# Burh Szes
 508 = {
     text_scale = 3
-} # Taur Devana
+}
 
+# Taur Devana
 509 = {
     text_scale = 3
-} # Esegel
+}
 
+# Esegel
 510 = {
     text_scale = 3
-} # Bereg
+}
 
+# Bereg
 511 = {
     text_scale = 3
-} # Burh Vise
+}
 
+# Burh Vise
 512 = {
     text_scale = 3
-} # Dobok Bron
+}
 
+# Dobok Bron
 513 = {
     text_scale = 3
-} # Nan Sorna
+}
 
+# Nan Sorna
 514 = {
     text_scale = 3
-} # Askal
+}
 
+# Askal
 515 = {
     text_scale = 3
-} # Mael
+}
 
+# Mael
 516 = {
     text_scale = 3
-} # Skatturborg
+}
 
+# Skatturborg
 517 = {
     text_scale = 3
-} # Mekeilaist
+}
 
+# Mekeilaist
 518 = {
     text_scale = 3
-} # Vidusborg
+}
 
+# Vidusborg
 519 = {
     text_scale = 3
-} # Hleiborg
+}
 
+# Hleiborg
 520 = {
     text_scale = 3
-} # Waldmearborg
+}
 
+# Waldmearborg
 521 = {
     text_scale = 3
-} # Waldlesborg
+}
 
+# Waldlesborg
 522 = {
     text_scale = 3
-} # Sauthborg
+}
 
+# Sauthborg
 523 = {
     text_scale = 3
-} # Merrborg
+}
 
+# Merrborg
 524 = {
     text_scale = 3
     building_position = {
@@ -4624,12 +5147,14 @@
         naval_base = 2.805625
     }
 
-} # Eolborg
+}
 
+# Eolborg
 525 = {
     text_scale = 3
-} # Fulginhaim
+}
 
+# Fulginhaim
 526 = {
     text_scale = 3
     building_position = {
@@ -4644,12 +5169,14 @@
         naval_base = 2.342572
     }
 
-} # Alanborg
+}
 
+# Alanborg
 527 = {
     text_scale = 3
-} # Baulaborg
+}
 
+# Baulaborg
 528 = {
     text_position = {
         x = 2011.600000
@@ -4669,12 +5196,14 @@
         naval_base = 1.570796
     }
 
-} # Talath Dunheath
+}
 
+# Talath Dunheath
 529 = {
     text_scale = 3
-} # Ardruiga Vale
+}
 
+# Ardruiga Vale
 530 = {
     text_scale = 3
     building_position = {
@@ -4689,12 +5218,14 @@
         naval_base = 2.530727
     }
 
-} # Taur Arkran
+}
 
+# Taur Arkran
 531 = {
     text_scale = 3
-} # Ilanin
+}
 
+# Ilanin
 532 = {
     text_scale = 3
     building_position = {
@@ -4709,16 +5240,19 @@
         naval_base = 3.141593
     }
 
-} # Haradruin
+}
 
+# Haradruin
 533 = {
     text_scale = 3
-} # Nan Dï¿½nu
+}
 
+# Nan Dónu
 534 = {
     text_scale = 3
-} # Karfas
+}
 
+# Karfas
 535 = {
     text_position = {
         x = 2113.933333
@@ -4726,8 +5260,9 @@
     }
 
     text_scale = 3
-} # Far Bank
+}
 
+# Far Bank
 536 = {
     text_scale = 3
     building_position = {
@@ -4742,8 +5277,9 @@
         naval_base = 3.141593
     }
 
-} # Tretoborg
+}
 
+# Tretoborg
 537 = {
     text_scale = 3
     building_position = {
@@ -4758,8 +5294,9 @@
         naval_base = 2.592567
     }
 
-} # Halies
+}
 
+# Halies
 538 = {
     text_scale = 3
     building_position = {
@@ -4774,12 +5311,14 @@
         naval_base = 1.585795
     }
 
-} # Sant Annui
+}
 
+# Sant Annui
 539 = {
     text_scale = 3
-} # Nagy
+}
 
+# Nagy
 540 = {
     text_scale = 3
     building_position = {
@@ -4794,16 +5333,19 @@
         naval_base = 1.555797
     }
 
-} # Gyula
+}
 
+# Gyula
 541 = {
     text_scale = 3
-} # Mariborg
+}
 
+# Mariborg
 542 = {
     text_scale = 3
-} # Pardfan
+}
 
+# Pardfan
 543 = {
     text_scale = 3
     building_position = {
@@ -4818,8 +5360,9 @@
         naval_base = 1.570796
     }
 
-} # Szrel-Kain
+}
 
+# Szrel-Kain
 544 = {
     text_scale = 3
     building_position = {
@@ -4834,8 +5377,9 @@
         naval_base = 2.590917
     }
 
-} # Riavod
+}
 
+# Riavod
 545 = {
     text_scale = 3
     building_position = {
@@ -4850,12 +5394,14 @@
         naval_base = 3.141593
     }
 
-} # Peloborg
+}
 
+# Peloborg
 546 = {
     text_scale = 3
-} # Velenborg
+}
 
+# Velenborg
 547 = {
     text_scale = 3
     building_position = {
@@ -4870,8 +5416,9 @@
         naval_base = 3.724047
     }
 
-} # Gweletha Vale
+}
 
+# Gweletha Vale
 548 = {
     text_scale = 3
     building_position = {
@@ -4886,8 +5433,9 @@
         naval_base = 3.111602
     }
 
-} # Scarakikot
+}
 
+# Scarakikot
 549 = {
     text_scale = 3
     building_position = {
@@ -4902,8 +5450,9 @@
         naval_base = 3.116598
     }
 
-} # Dradorny-Arnas
+}
 
+# Dradorny-Arnas
 550 = {
     text_scale = 3
     building_position = {
@@ -4918,8 +5467,9 @@
         naval_base = 3.116598
     }
 
-} # Eastern Hills
+}
 
+# Eastern Hills
 551 = {
     text_position = {
         x = 2287.600000
@@ -4927,16 +5477,19 @@
     }
 
     text_scale = 3
-} # Galgorin
+}
 
+# Galgorin
 552 = {
     text_scale = 3
-} # Uldonavan
+}
 
+# Uldonavan
 553 = {
     text_scale = 3
-} # Szrel-Arkasa
+}
 
+# Szrel-Arkasa
 554 = {
     text_scale = 3
     building_position = {
@@ -4951,16 +5504,19 @@
         naval_base = 1.565796
     }
 
-} # Nurunk Khizdï¿½n
+}
 
+# Nurunk Khizdín
 555 = {
     text_scale = 3
-} # Kheled-nï¿½la
+}
 
+# Kheled-nâla
 556 = {
     text_scale = 3
-} # Naigos
+}
 
+# Naigos
 557 = {
     text_position = {
         x = 2264.810000
@@ -4993,12 +5549,14 @@
         y = 1142.065000
     }
 
-} # Ebnathiudaborg
+}
 
+# Ebnathiudaborg
 558 = {
     text_scale = 3
-} # Lest
+}
 
+# Lest
 559 = {
     text_scale = 3
     building_position = {
@@ -5013,8 +5571,9 @@
         naval_base = 2.377318
     }
 
-} # Dourband
+}
 
+# Dourband
 560 = {
     text_scale = 3
     building_position = {
@@ -5029,8 +5588,9 @@
         naval_base = 1.192145
     }
 
-} # Sumna
+}
 
+# Sumna
 561 = {
     text_scale = 3
     building_position = {
@@ -5045,8 +5605,9 @@
         naval_base = 0.604598
     }
 
-} # Severna
+}
 
+# Severna
 562 = {
     text_scale = 3
     building_position = {
@@ -5061,8 +5622,9 @@
         naval_base = 0.611544
     }
 
-} # Or-sarn
+}
 
+# Or-sarn
 563 = {
     text_scale = 3
     building_position = {
@@ -5077,8 +5639,9 @@
         naval_base = 2.498092
     }
 
-} # Dilgul
+}
 
+# Dilgul
 564 = {
     text_scale = 3
     building_position = {
@@ -5093,12 +5656,14 @@
         naval_base = 0.657528
     }
 
-} # Radimich
+}
 
+# Radimich
 565 = {
     text_scale = 3
-} # Mistrand
+}
 
+# Mistrand
 566 = {
     text_scale = 3
     building_position = {
@@ -5113,132 +5678,164 @@
         naval_base = 2.615665
     }
 
-} # Luts
+}
 
+# Luts
 567 = {
     text_scale = 3
-} # Burh Pris
+}
 
+# Burh Pris
 568 = {
     text_scale = 3
-} # Burh Boro
+}
 
+# Burh Boro
 569 = {
     text_scale = 3
-} # Ulichi
+}
 
+# Ulichi
 570 = {
     text_scale = 3
-} # Sharukan
+}
 
+# Sharukan
 571 = {
     text_scale = 3
-} # Lower Ros Vale
+}
 
+# Lower Ros Vale
 572 = {
     text_scale = 3
-} # Berendi
+}
 
+# Berendi
 573 = {
     text_scale = 3
-} # Kovui
+}
 
+# Kovui
 574 = {
     text_scale = 3
-} # Kahar
+}
 
+# Kahar
 575 = {
     text_scale = 3
-} # Hallorn
+}
 
+# Hallorn
 576 = {
     text_scale = 3
-} # Khurvasagh
+}
 
+# Khurvasagh
 577 = {
     text_scale = 3
-} # Togrul-para
+}
 
+# Togrul-para
 578 = {
     text_scale = 3
-} # Upper Ros Vale
+}
 
+# Upper Ros Vale
 579 = {
     text_scale = 3
-} # Torkil
+}
 
+# Torkil
 580 = {
     text_scale = 3
-} # Dauma-para
+}
 
+# Dauma-para
 581 = {
     text_scale = 3
-} # Meladunya
+}
 
+# Meladunya
 582 = {
     text_scale = 3
-} # Saraï¿½
+}
 
+# Saraï
 583 = {
     text_scale = 3
-} # Vï¿½rfest
+}
 
+# Várfest
 584 = {
     text_scale = 3
-} # Rhï¿½kan
+}
 
+# Rhûkan
 585 = {
     text_scale = 3
-} # Ciranthir
+}
 
+# Ciranthir
 586 = {
     text_scale = 3
-} # Asdriagien Lï¿½tto
+}
 
+# Asdriagien Lîtto
 587 = {
     text_scale = 3
-} # Tuaremindon
+}
 
+# Tuaremindon
 588 = {
     text_scale = 3
-} # Zolotaja Orda
+}
 
+# Zolotaja Orda
 589 = {
     text_scale = 3
-} # Burh Von
+}
 
+# Burh Von
 590 = {
     text_scale = 3
-} # Burh Bozor
+}
 
+# Burh Bozor
 591 = {
     text_scale = 3
-} # Burh Pol
+}
 
+# Burh Pol
 592 = {
     text_scale = 3
-} # Burh Usor
+}
 
+# Burh Usor
 593 = {
     text_scale = 3
-} # Burh Chern
+}
 
+# Burh Chern
 594 = {
     text_scale = 3
-} # Karoda
+}
 
+# Karoda
 595 = {
     text_scale = 3
-} # Taur Urgov
+}
 
+# Taur Urgov
 596 = {
     text_scale = 3
-} # Lhanzaghad
+}
 
+# Lhanzaghad
 597 = {
     text_scale = 3
-} # Larkar
+}
 
+# Larkar
 598 = {
     text_scale = 3
     building_position = {
@@ -5253,8 +5850,9 @@
         naval_base = 5.934414
     }
 
-} # Sura
+}
 
+# Sura
 599 = {
     text_scale = 3
     building_position = {
@@ -5269,8 +5867,9 @@
         naval_base = 0.542138
     }
 
-} # Tset-Habaor
+}
 
+# Tset-Habaor
 600 = {
     text_scale = 3
     building_position = {
@@ -5285,8 +5884,9 @@
         naval_base = 0.707542
     }
 
-} # Egil Dorn
+}
 
+# Egil Dorn
 601 = {
     text_scale = 3
     building_position = {
@@ -5301,8 +5901,9 @@
         naval_base = 5.209732
     }
 
-} # Tset-Hedren
+}
 
+# Tset-Hedren
 602 = {
     text_scale = 3
     building_position = {
@@ -5313,12 +5914,14 @@
 
     }
 
-} # Ulkaram
+}
 
+# Ulkaram
 603 = {
     text_scale = 3
-} # Burh Kuga
+}
 
+# Burh Kuga
 604 = {
     text_scale = 3
     building_position = {
@@ -5329,8 +5932,9 @@
 
     }
 
-} # Burh Toro
+}
 
+# Burh Toro
 605 = {
     text_scale = 3
     building_position = {
@@ -5345,72 +5949,89 @@
         naval_base = 4.712389
     }
 
-} # Burh Cherno
+}
 
+# Burh Cherno
 606 = {
     text_scale = 3
-} # Veche
+}
 
+# Veche
 607 = {
     text_scale = 3
-} # Sugï¿½l
+}
 
+# Sugûl
 608 = {
     text_scale = 3
-} # Ulvas
+}
 
+# Ulvas
 609 = {
     text_scale = 3
-} # Kaldarak
+}
 
+# Kaldarak
 610 = {
     text_scale = 3
-} # Suzdal
+}
 
+# Suzdal
 611 = {
     text_scale = 3
-} # Parth Syrnac
+}
 
+# Parth Syrnac
 612 = {
     text_scale = 3
-} # Lusraig
+}
 
+# Lusraig
 613 = {
     text_scale = 3
-} # Bï¿½r-Shï¿½al
+}
 
+# Bár-Shûal
 614 = {
     text_scale = 3
-} # Yardir
+}
 
+# Yardir
 615 = {
     text_scale = 3
-} # Miracaron
+}
 
+# Miracaron
 616 = {
     text_scale = 3
-} # Scarn
+}
 
+# Scarn
 617 = {
     text_scale = 3
-} # Azjan
+}
 
+# Azjan
 618 = {
     text_scale = 3
-} # Calterc Sart
+}
 
+# Calterc Sart
 619 = {
     text_scale = 3
-} # Forodim
+}
 
+# Forodim
 620 = {
     text_scale = 3
-} # Delik
+}
 
+# Delik
 621 = {
     text_scale = 3
-} # Winterion Iaur
+}
 
+# Winterion Iaur
 622 = {
     text_scale = 3
     building_position = {
@@ -5425,8 +6046,9 @@
         naval_base = 5.383995
     }
 
-} # Berestye
+}
 
+# Berestye
 623 = {
     text_scale = 3
     building_position = {
@@ -5441,12 +6063,14 @@
         naval_base = 4.717414
     }
 
-} # Burh Spev
+}
 
+# Burh Spev
 624 = {
     text_scale = 3
-} # Ilpar
+}
 
+# Ilpar
 625 = {
     text_scale = 3
     building_position = {
@@ -5461,8 +6085,9 @@
         naval_base = 4.727463
     }
 
-} # Sarad
+}
 
+# Sarad
 626 = {
     text_scale = 3
     building_position = {
@@ -5477,12 +6102,14 @@
         naval_base = 5.061160
     }
 
-} # Burh Zuti
+}
 
+# Burh Zuti
 627 = {
     text_scale = 3
-} # Kardavan
+}
 
+# Kardavan
 628 = {
     text_scale = 3
     building_position = {
@@ -5497,8 +6124,9 @@
         naval_base = 5.426984
     }
 
-} # Lar-Sagra
+}
 
+# Lar-Sagra
 629 = {
     text_scale = 3
     building_position = {
@@ -5513,8 +6141,9 @@
         naval_base = 5.319834
     }
 
-} # Carnost
+}
 
+# Carnost
 630 = {
     text_scale = 3
     building_position = {
@@ -5529,24 +6158,29 @@
         naval_base = 0.728721
     }
 
-} # Szem Vale
+}
 
+# Szem Vale
 631 = {
     text_scale = 3
-} # Sadvar
+}
 
+# Sadvar
 632 = {
     text_scale = 3
-} # Yad-shatan
+}
 
+# Yad-shatan
 633 = {
     text_scale = 3
-} # Lower Sarkar Vale
+}
 
+# Lower Sarkar Vale
 634 = {
     text_scale = 3
-} # Redhall
+}
 
+# Redhall
 635 = {
     text_scale = 3
     building_position = {
@@ -5561,8 +6195,9 @@
         naval_base = 5.369917
     }
 
-} # Kï¿½rk
+}
 
+# Kûrk
 636 = {
     text_scale = 3
     building_position = {
@@ -5577,8 +6212,9 @@
         naval_base = 5.622583
     }
 
-} # Carnentir
+}
 
+# Carnentir
 637 = {
     text_scale = 3
     building_position = {
@@ -5593,8 +6229,9 @@
         naval_base = 5.511971
     }
 
-} # Northwatch
+}
 
+# Northwatch
 638 = {
     text_scale = 3
     building_position = {
@@ -5609,8 +6246,9 @@
         naval_base = 2.175395
     }
 
-} # Lar-Huil
+}
 
+# Lar-Huil
 639 = {
     text_scale = 3
     building_position = {
@@ -5625,16 +6263,19 @@
         naval_base = 2.229222
     }
 
-} # Grasgarda
+}
 
+# Grasgarda
 640 = {
     text_scale = 3
-} # Klï¿½fnakot
+}
 
+# Klófnakot
 641 = {
     text_scale = 3
-} # Burh Austris
+}
 
+# Burh Austris
 642 = {
     text_scale = 3
     building_position = {
@@ -5649,8 +6290,9 @@
         naval_base = 3.181571
     }
 
-} # Naertheiaborg
+}
 
+# Naertheiaborg
 643 = {
     text_position = {
         x = 2132.093333
@@ -5695,8 +6337,9 @@
         naval_base = 5.169310
     }
 
-} # Myrrborg
+}
 
+# Myrrborg
 644 = {
     text_scale = 3
     building_position = {
@@ -5711,8 +6354,9 @@
         naval_base = 4.737509
     }
 
-} # Kaupaborg
+}
 
+# Kaupaborg
 645 = {
     text_position = {
         x = 1960.728333
@@ -5757,8 +6401,9 @@
         naval_base = 4.722439
     }
 
-} # Dokkavin
+}
 
+# Dokkavin
 646 = {
     text_scale = 3
     building_position = {
@@ -5773,8 +6418,9 @@
         naval_base = 5.469426
     }
 
-} # Riverrun
+}
 
+# Riverrun
 647 = {
     text_scale = 3
     building_position = {
@@ -5789,8 +6435,9 @@
         naval_base = 5.462341
     }
 
-} # Londaroth
+}
 
+# Londaroth
 648 = {
     text_scale = 3
     building_position = {
@@ -5805,8 +6452,9 @@
         naval_base = 3.121595
     }
 
-} # Elliborg
+}
 
+# Elliborg
 649 = {
     text_scale = 3
     building_position = {
@@ -5821,20 +6469,24 @@
         naval_base = 3.111602
     }
 
-} # Odriksdï¿½n
+}
 
+# Odriksdún
 650 = {
     text_scale = 3
-} # Withibord
+}
 
+# Withibord
 651 = {
     text_scale = 3
-} # Dale
+}
 
+# Dale
 652 = {
     text_scale = 3
-} # Hafborg
+}
 
+# Hafborg
 653 = {
     text_scale = 3
     building_position = {
@@ -5849,8 +6501,9 @@
         naval_base = 4.043893
     }
 
-} # Esgaroth
+}
 
+# Esgaroth
 654 = {
     text_scale = 3
     building_position = {
@@ -5865,80 +6518,99 @@
         naval_base = 4.159095
     }
 
-} # Felagsgard
+}
 
+# Felagsgard
 655 = {
     text_scale = 3
-} # Alduringard
+}
 
+# Alduringard
 656 = {
     text_scale = 3
-} # Thurasigborg
+}
 
+# Thurasigborg
 657 = {
     text_scale = 3
-} # Setborg
+}
 
+# Setborg
 658 = {
     text_scale = 3
-} # Vargurat
+}
 
+# Vargurat
 659 = {
     text_scale = 3
-} # Erebor
+}
 
+# Erebor
 660 = {
     text_scale = 3
-} # Pennstï¿½
+}
 
+# Pennstó
 661 = {
     text_scale = 3
-} # Cirith Faedin
+}
 
+# Cirith Faedin
 662 = {
     text_scale = 3
-} # Skessasholur
+}
 
+# Skessasholur
 663 = {
     text_scale = 3
-} # Weniaborg
+}
 
+# Weniaborg
 664 = {
     text_scale = 3
-} # Lar-Huz
+}
 
+# Lar-Huz
 665 = {
     text_scale = 3
-} # Lar-Engrin
+}
 
+# Lar-Engrin
 666 = {
     text_scale = 3
-} # Urdharkonur
+}
 
+# Urdharkonur
 667 = {
     text_scale = 3
-} # Nahald-Kï¿½dan
+}
 
+# Nahald-Kûdan
 668 = {
     text_scale = 3
-} # Azanï¿½linbar-Dï¿½m
+}
 
+# Azanûlinbar-Dûm
 669 = {
     text_scale = 3
-} # Barukkizdï¿½n
+}
 
+# Barukkizdîn
 670 = {
     text_scale = 3
-} # Lag Auris
+}
 
+# Lag Auris
 671 = {
     text_scale = 3
-} # Surgax Ukog
+}
 
+# Surgax Ukog
 672 = {
     text_scale = 3
-} # Black Heart
+}
 
+# Black Heart
 673 = {
     text_position = {
         x = 1436.360000
@@ -5946,120 +6618,149 @@
     }
 
     text_scale = 3
-} # Mearaspï¿½l
+}
 
+# Mearaspól
 674 = {
     text_scale = 3
-} # Harwick
+}
 
+# Harwick
 675 = {
     text_scale = 3
-} # Kala Dularkurth
+}
 
+# Kala Dularkurth
 676 = {
     text_scale = 3
-} # Feldburg
+}
 
+# Feldburg
 677 = {
     text_scale = 3
-} # Danuk-Khizdï¿½n
+}
 
+# Danuk-Khizdín
 678 = {
     text_scale = 3
-} # Dyrn Sï¿½il
+}
 
+# Dyrn Sûil
 679 = {
     text_scale = 3
-} # Thollakar
+}
 
+# Thollakar
 680 = {
     text_scale = 3
-} # Azagkhizdï¿½n
+}
 
+# Azagkhizdín
 681 = {
     text_scale = 3
-} # Dain-dï¿½m
+}
 
+# Dain-dûm
 682 = {
     text_scale = 3
-} # ï¿½odunburg
+}
 
+# Éodunburg
 683 = {
     text_scale = 3
-} # Nordinbad
+}
 
+# Nordinbad
 684 = {
     text_scale = 3
-} # Dï¿½m Goru
+}
 
+# Dôm Goru
 685 = {
     text_scale = 3
-} # Beornotham
+}
 
+# Beornotham
 686 = {
     text_scale = 3
-} # Bairaldrinno's Gate
+}
 
+# Bairaldrinno's Gate
 687 = {
     text_scale = 3
-} # Beroacra
+}
 
+# Beroacra
 688 = {
     text_scale = 3
-} # Elrungagard
+}
 
+# Elrungagard
 689 = {
     text_scale = 3
-} # Taur Edhel
+}
 
+# Taur Edhel
 690 = {
     text_scale = 3
-} # Celebannon
+}
 
+# Celebannon
 691 = {
     text_scale = 3
-} # Elvenking's Halls
+}
 
+# Elvenking's Halls
 692 = {
     text_scale = 3
-} # Loeglond
+}
 
+# Loeglond
 693 = {
     text_scale = 3
-} # Whiterock
+}
 
+# Whiterock
 694 = {
     text_scale = 3
-} # Upper Nan Taurduin
+}
 
+# Upper Nan Taurduin
 695 = {
     text_scale = 3
-} # Celebrynd
+}
 
+# Celebrynd
 696 = {
     text_scale = 3
-} # Caras Amarth
+}
 
+# Caras Amarth
 697 = {
     text_scale = 3
-} # Celeth Iauravarion
+}
 
+# Celeth Iauravarion
 698 = {
     text_scale = 3
-} # Enchanted Vale
+}
 
+# Enchanted Vale
 699 = {
     text_scale = 3
-} # Tir Bendburn
+}
 
+# Tir Bendburn
 700 = {
     text_scale = 3
-} # Foldbold
+}
 
+# Foldbold
 701 = {
     text_scale = 3
-} # Tauraelin
+}
 
+# Tauraelin
 702 = {
     text_scale = 3
     building_position = {
@@ -6074,108 +6775,134 @@
         naval_base = 2.827716
     }
 
-} # Shirklunamat
+}
 
+# Shirklunamat
 703 = {
     text_scale = 3
-} # Sarn Goriwig
+}
 
+# Sarn Goriwig
 704 = {
     text_scale = 3
-} # Arta Ilmaryen
+}
 
+# Arta Ilmaryen
 705 = {
     text_scale = 3
-} # Galadbrynd
+}
 
+# Galadbrynd
 706 = {
     text_scale = 3
-} # Tumsarn
+}
 
+# Tumsarn
 707 = {
     text_scale = 3
-} # Burgenstath
+}
 
+# Burgenstath
 708 = {
     text_scale = 3
-} # Woodmen-town
+}
 
+# Woodmen-town
 709 = {
     text_scale = 3
-} # Leodholt
+}
 
+# Leodholt
 710 = {
     text_scale = 3
-} # Heart of Mirkwood
+}
 
+# Heart of Mirkwood
 711 = {
     text_scale = 3
-} # Aelinpï¿½d
+}
 
+# Aelinpâd
 712 = {
     text_scale = 3
-} # Galbrethin
+}
 
+# Galbrethin
 713 = {
     text_scale = 3
-} # Taurost Iaur
+}
 
+# Taurost Iaur
 714 = {
     text_scale = 3
-} # Brugath Thaim
+}
 
+# Brugath Thaim
 715 = {
     text_scale = 3
-} # Darnibaurg
+}
 
+# Darnibaurg
 716 = {
     text_scale = 3
-} # Cor Tauraglor
+}
 
+# Cor Tauraglor
 717 = {
     text_scale = 3
-} # Dolni Keep
+}
 
+# Dolni Keep
 718 = {
     text_scale = 3
-} # Cor Anglahadh
+}
 
+# Cor Anglahadh
 719 = {
     text_scale = 3
-} # Uruk-torg
+}
 
+# Uruk-torg
 720 = {
     text_scale = 3
-} # Ceber Fanuifuin
+}
 
+# Ceber Fanuifuin
 721 = {
     text_scale = 3
-} # Ost Galadh
+}
 
+# Ost Galadh
 722 = {
     text_scale = 3
-} # Dolentir
+}
 
+# Dolentir
 723 = {
     text_scale = 3
-} # Lughï¿½sh
+}
 
+# Lughâsh
 724 = {
     text_scale = 3
-} # Lugdï¿½m
+}
 
+# Lugdûm
 725 = {
     text_scale = 3
-} # Smalug
+}
 
+# Smalug
 726 = {
     text_scale = 3
-} # Dol Guldur
+}
 
+# Dol Guldur
 727 = {
     text_scale = 3
-} # Warnelanth
+}
 
+# Warnelanth
 728 = {
     text_scale = 3
     building_position = {
@@ -6190,8 +6917,9 @@
         naval_base = 5.423193
     }
 
-} # Blï¿½mgard
+}
 
+# Blómgard
 729 = {
     text_scale = 3
     building_position = {
@@ -6206,8 +6934,9 @@
         naval_base = 0.767732
     }
 
-} # Sarn Lothduin
+}
 
+# Sarn Lothduin
 730 = {
     text_scale = 3
     building_position = {
@@ -6222,16 +6951,19 @@
         naval_base = 0.927295
     }
 
-} # Radagast's Girdle
+}
 
+# Radagast's Girdle
 731 = {
     text_scale = 3
-} # Rhosgobel
+}
 
+# Rhosgobel
 732 = {
     text_scale = 3
-} # Sairthiudabaurg
+}
 
+# Sairthiudabaurg
 733 = {
     text_scale = 3
     building_position = {
@@ -6242,8 +6974,9 @@
 
     }
 
-} # Leovidukas
+}
 
+# Leovidukas
 734 = {
     text_scale = 3
     building_position = {
@@ -6254,8 +6987,9 @@
 
     }
 
-} # Carrock Ford
+}
 
+# Carrock Ford
 735 = {
     text_scale = 3
     building_position = {
@@ -6266,8 +7000,9 @@
 
     }
 
-} # Old Ford
+}
 
+# Old Ford
 736 = {
     text_scale = 3
     building_position = {
@@ -6282,8 +7017,9 @@
         naval_base = 6.080864
     }
 
-} # Beorn's House
+}
 
+# Beorn's House
 737 = {
     text_scale = 3
     building_position = {
@@ -6298,8 +7034,9 @@
         naval_base = 6.080864
     }
 
-} # Isle of Bears
+}
 
+# Isle of Bears
 738 = {
     text_scale = 3
     building_position = {
@@ -6314,8 +7051,9 @@
         naval_base = 4.737509
     }
 
-} # Limlï¿½k
+}
 
+# Limlók
 739 = {
     text_scale = 3
     building_position = {
@@ -6326,8 +7064,9 @@
 
     }
 
-} # Annï¿½k-khurfu
+}
 
+# Annâk-khurfu
 740 = {
     text_scale = 3
     building_position = {
@@ -6342,12 +7081,14 @@
         naval_base = 5.565300
     }
 
-} # Tharrazhï¿½r
+}
 
+# Tharrazhâr
 741 = {
     text_scale = 3
-} # Zarkul-sulï¿½n
+}
 
+# Zarkul-sulûn
 742 = {
     text_scale = 3
     building_position = {
@@ -6362,16 +7103,19 @@
         naval_base = 5.444457
     }
 
-} # Thisledow
+}
 
+# Thisledow
 743 = {
     text_scale = 3
-} # Langwell Vale
+}
 
+# Langwell Vale
 744 = {
     text_scale = 3
-} # Framsburg
+}
 
+# Framsburg
 745 = {
     text_scale = 3
     building_position = {
@@ -6386,12 +7130,14 @@
         naval_base = 4.712389
     }
 
-} # Parth Hithrim
+}
 
+# Parth Hithrim
 746 = {
     text_scale = 3
-} # Northern Fells
+}
 
+# Northern Fells
 747 = {
     text_scale = 3
     building_position = {
@@ -6406,8 +7152,9 @@
         naval_base = 2.303241
     }
 
-} # Mathleisbaurg
+}
 
+# Mathleisbaurg
 748 = {
     text_scale = 3
     building_position = {
@@ -6422,12 +7169,14 @@
         naval_base = 3.141593
     }
 
-} # Thingastathbaurg
+}
 
+# Thingastathbaurg
 749 = {
     text_scale = 3
-} # Lone Fells
+}
 
+# Lone Fells
 750 = {
     text_scale = 3
     building_position = {
@@ -6442,8 +7191,9 @@
         naval_base = 3.141593
     }
 
-} # Wibastath
+}
 
+# Wibastath
 751 = {
     text_scale = 3
     building_position = {
@@ -6458,12 +7208,14 @@
         naval_base = 3.141593
     }
 
-} # Amon Thyryn
+}
 
+# Amon Thyryn
 752 = {
     text_scale = 3
-} # Dungirith
+}
 
+# Dungirith
 753 = {
     text_scale = 3
     building_position = {
@@ -6478,8 +7230,9 @@
         naval_base = 3.141593
     }
 
-} # Gobbleswell Vale
+}
 
+# Gobbleswell Vale
 754 = {
     text_scale = 3
     building_position = {
@@ -6494,16 +7247,19 @@
         naval_base = 3.141593
     }
 
-} # Stillwalk
+}
 
+# Stillwalk
 755 = {
     text_scale = 3
-} # Gladden Vale
+}
 
+# Gladden Vale
 756 = {
     text_scale = 3
-} # Stoor Harbor
+}
 
+# Stoor Harbor
 757 = {
     text_scale = 3
     building_position = {
@@ -6518,8 +7274,9 @@
         naval_base = 3.141593
     }
 
-} # Dundok
+}
 
+# Dundok
 758 = {
     text_scale = 3
     building_position = {
@@ -6534,12 +7291,14 @@
         naval_base = 3.881190
     }
 
-} # Fenbaurg
+}
 
+# Fenbaurg
 759 = {
     text_scale = 3
-} # Triugardabaurg
+}
 
+# Triugardabaurg
 760 = {
     text_scale = 3
     building_position = {
@@ -6554,20 +7313,24 @@
         naval_base = 3.934083
     }
 
-} # Tussarlonn
+}
 
+# Tussarlonn
 761 = {
     text_scale = 3
-} # Nan Nimrodel
+}
 
+# Nan Nimrodel
 762 = {
     text_scale = 3
-} # Naith
+}
 
+# Naith
 763 = {
     text_scale = 3
-} # Cerin Amroth
+}
 
+# Cerin Amroth
 764 = {
     text_scale = 3
     building_position = {
@@ -6582,8 +7345,9 @@
         naval_base = 3.493350
     }
 
-} # Caras Galadhon
+}
 
+# Caras Galadhon
 765 = {
     text_scale = 3
     building_position = {
@@ -6598,8 +7362,9 @@
         naval_base = 3.434960
     }
 
-} # Hobas
+}
 
+# Hobas
 766 = {
     text_scale = 3
     building_position = {
@@ -6614,8 +7379,9 @@
         naval_base = 2.810348
     }
 
-} # Lï¿½rrï¿½w
+}
 
+# Lórrîw
 767 = {
     text_scale = 3
     building_position = {
@@ -6630,36 +7396,44 @@
         naval_base = 2.381100
     }
 
-} # Achnod Iaun
+}
 
+# Achnod Iaun
 768 = {
     text_scale = 3
-} # Haldirith
+}
 
+# Haldirith
 769 = {
     text_scale = 3
-} # Balewood
+}
 
+# Balewood
 770 = {
     text_scale = 3
-} # Derndingle
+}
 
+# Derndingle
 771 = {
     text_scale = 3
-} # Lind-or-Burum
+}
 
+# Lind-or-Burum
 772 = {
     text_scale = 3
-} # Wellinghall
+}
 
+# Wellinghall
 773 = {
     text_scale = 3
-} # Langhold
+}
 
+# Langhold
 774 = {
     text_scale = 3
-} # Tirith Limlight
+}
 
+# Tirith Limlight
 775 = {
     text_scale = 3
     building_position = {
@@ -6674,8 +7448,9 @@
         naval_base = 3.141593
     }
 
-} # Tirith Anduin
+}
 
+# Tirith Anduin
 776 = {
     text_scale = 3
     building_position = {
@@ -6690,8 +7465,9 @@
         naval_base = 1.962496
     }
 
-} # Woldberg
+}
 
+# Woldberg
 777 = {
     text_scale = 3
     building_position = {
@@ -6706,12 +7482,14 @@
         naval_base = 2.150512
     }
 
-} # Eaworth
+}
 
+# Eaworth
 778 = {
     text_scale = 3
-} # Riverwatch
+}
 
+# Riverwatch
 779 = {
     text_scale = 3
     building_position = {
@@ -6726,20 +7504,24 @@
         naval_base = 3.640939
     }
 
-} # Stowburg
+}
 
+# Stowburg
 780 = {
     text_scale = 3
-} # Sutcrofts
+}
 
+# Sutcrofts
 781 = {
     text_scale = 3
-} # Gwanlend
+}
 
+# Gwanlend
 782 = {
     text_scale = 3
-} # Eastwall
+}
 
+# Eastwall
 783 = {
     text_scale = 3
     unit = {
@@ -6759,8 +7541,9 @@
         naval_base = 2.566379
     }
 
-} # Amon Hen
+}
 
+# Amon Hen
 784 = {
     text_scale = 3
     building_position = {
@@ -6775,8 +7558,9 @@
         naval_base = 2.236206
     }
 
-} # Mistham
+}
 
+# Mistham
 785 = {
     text_position = {
         x = 1681.260000
@@ -6832,16 +7616,19 @@
         naval_base = 2.236206
     }
 
-} # Fenmarch
+}
 
+# Fenmarch
 786 = {
     text_scale = 3
-} # Western Firienholt
+}
 
+# Western Firienholt
 787 = {
     text_scale = 3
-} # Mering Marsh
+}
 
+# Mering Marsh
 788 = {
     text_position = {
         x = 1592.800000
@@ -6850,8 +7637,9 @@
 
     text_rotation = 5.604523
     text_scale = 3
-} # ï¿½odic
+}
 
+# Éodic
 789 = {
     text_position = {
         x = 1581.766667
@@ -6859,136 +7647,169 @@
     }
 
     text_scale = 3
-} # Aclea Reach
+}
 
+# Aclea Reach
 790 = {
     text_scale = 3
-} # Aldburg
+}
 
+# Aldburg
 791 = {
     text_scale = 3
-} # Snowbourne Forest
+}
 
+# Snowbourne Forest
 792 = {
     text_scale = 3
-} # Snowbourne Vale
+}
 
+# Snowbourne Vale
 793 = {
     text_scale = 3
-} # Edoras
+}
 
+# Edoras
 794 = {
     text_scale = 3
-} # Dunharrow
+}
 
+# Dunharrow
 795 = {
     text_scale = 3
-} # White Mountains
+}
 
+# White Mountains
 796 = {
     text_scale = 3
-} # Glittering Caves
+}
 
+# Glittering Caves
 797 = {
     text_scale = 3
-} # Hornburg
+}
 
+# Hornburg
 798 = {
     text_scale = 3
-} # Grimsburg
+}
 
+# Grimsburg
 799 = {
     text_scale = 3
-} # Dunlostir
+}
 
+# Dunlostir
 800 = {
     text_scale = 3
-} # Kingsteade
+}
 
+# Kingsteade
 801 = {
     text_scale = 3
-} # Stonedeans
+}
 
+# Stonedeans
 802 = {
     text_scale = 3
-} # Foldburg
+}
 
+# Foldburg
 803 = {
     text_scale = 3
-} # Penmark
+}
 
+# Penmark
 804 = {
     text_scale = 3
-} # Gineard
+}
 
+# Gineard
 805 = {
     text_scale = 3
-} # Gramburg
+}
 
+# Gramburg
 806 = {
     text_scale = 3
-} # Frecasburg
+}
 
+# Frecasburg
 807 = {
     text_scale = 3
-} # Hardscadu
+}
 
+# Hardscadu
 808 = {
     text_scale = 3
-} # Adornas
+}
 
+# Adornas
 809 = {
     text_scale = 3
-} # Frï¿½aham
+}
 
+# Fréaham
 810 = {
     text_scale = 3
-} # Angrenost
+}
 
+# Isengard
 811 = {
     text_scale = 3
-} # Mines of Methedras
+}
 
+# Mines of Methedras
 812 = {
     text_scale = 3
-} # Misty Mountains
+}
 
+# Misty Mountains
 813 = {
     text_scale = 3
-} # Riverwatch
+}
 
+# Riverwatch
 814 = {
     text_scale = 3
-} # Brï¿½ntrig
+}
 
+# Brôntrig
 815 = {
     text_scale = 3
-} # Dun Claddauc
+}
 
+# Dun Claddauc
 816 = {
     text_scale = 3
-} # Hariantryn
+}
 
+# Hariantryn
 817 = {
     text_scale = 3
-} # Lhan Colvarn
+}
 
+# Lhan Colvarn
 818 = {
     text_scale = 3
-} # Enedhir
+}
 
+# Enedhir
 819 = {
     text_scale = 3
-} # Bannerton
+}
 
+# Bannerton
 820 = {
     text_scale = 3
-} # Eryn Waith
+}
 
+# Eryn Waith
 821 = {
     text_scale = 3
-} # Lond Angren
+}
 
+# Lond Angren
 822 = {
     text_scale = 3
     building_position = {
@@ -7003,8 +7824,9 @@
         naval_base = 4.742531
     }
 
-} # Fisherton
+}
 
+# Fisherton
 823 = {
     text_scale = 3
     building_position = {
@@ -7015,8 +7837,9 @@
 
     }
 
-} # Tor Duinair
+}
 
+# Tor Duinair
 824 = {
     text_scale = 3
     building_position = {
@@ -7031,8 +7854,9 @@
         naval_base = 0.707542
     }
 
-} # Lond Daer
+}
 
+# Lond Daer
 825 = {
     text_scale = 3
     building_position = {
@@ -7047,8 +7871,9 @@
         naval_base = 5.119916
     }
 
-} # Alcfud
+}
 
+# Alcfud
 826 = {
     text_scale = 3
     building_position = {
@@ -7063,8 +7888,9 @@
         naval_base = 0.934288
     }
 
-} # Barad Colgrin
+}
 
+# Barad Colgrin
 827 = {
     text_scale = 3
     building_position = {
@@ -7079,40 +7905,49 @@
         naval_base = 1.013255
     }
 
-} # Ajalion
+}
 
+# Ajalion
 828 = {
     text_scale = 3
-} # Dunhallow
+}
 
+# Dunhallow
 829 = {
     text_scale = 3
-} # Anccruag
+}
 
+# Anccruag
 830 = {
     text_scale = 3
-} # Avardin
+}
 
+# Avardin
 831 = {
     text_scale = 3
-} # Lhan Rhos
+}
 
+# Lhan Rhos
 832 = {
     text_scale = 3
-} # Duneard
+}
 
+# Duneard
 833 = {
     text_scale = 3
-} # Dinum
+}
 
+# Dinum
 834 = {
     text_scale = 3
-} # Dun Larach
+}
 
+# Dun Larach
 835 = {
     text_scale = 3
-} # Barad Vin
+}
 
+# Barad Vin
 836 = {
     text_scale = 3
     building_position = {
@@ -7127,8 +7962,9 @@
         naval_base = 0.970312
     }
 
-} # Dun Andhas
+}
 
+# Dun Andhas
 837 = {
     text_scale = 3
     building_position = {
@@ -7143,144 +7979,179 @@
         naval_base = 0.788932
     }
 
-} # Forthunn
+}
 
+# Forthunn
 838 = {
     text_scale = 3
-} # Byrig
+}
 
+# Byrig
 839 = {
     text_scale = 3
-} # Rhaeniadoc
+}
 
+# Rhaeniadoc
 840 = {
     text_scale = 3
-} # Misty Mountains
+}
 
+# Misty Mountains
 841 = {
     text_scale = 3
-} # Azanulbizar
+}
 
+# Azanulbizar
 842 = {
     text_scale = 3
-} # Moria
+}
 
+# Moria
 843 = {
     text_scale = 3
-} # Hollin Gate
+}
 
+# Hollin Gate
 844 = {
     text_scale = 3
-} # Kibil-nala
+}
 
+# Kibil-nala
 845 = {
     text_scale = 3
-} # Misty Mountains
+}
 
+# Misty Mountains
 846 = {
     text_scale = 3
-} # Brï¿½ighe Cuic
+}
 
+# Bráighe Cuic
 847 = {
     text_scale = 3
-} # Front Porch
+}
 
+# Front Porch
 848 = {
     text_scale = 3
-} # Goblin Town
+}
 
+# Goblin Town
 849 = {
     text_scale = 3
-} # Misty Mountains
+}
 
+# Misty Mountains
 850 = {
     text_scale = 3
-} # Gongi-Dï¿½raz
+}
 
+# Gongi-Dôraz
 851 = {
     text_scale = 3
-} # Cnocc Mag Cï¿½o
+}
 
+# Cnocc Mag Céo
 852 = {
     text_scale = 3
-} # Cenn Mï¿½in
+}
 
+# Cenn Móin
 853 = {
     text_scale = 3
-} # Cnocc Tostluach
+}
 
+# Cnocc Tostluach
 854 = {
     text_scale = 3
-} # Mï¿½in Dï¿½ldachd
+}
 
+# Móin Dúldachd
 855 = {
     text_scale = 3
-} # Glenn Lï¿½ath
+}
 
+# Glenn Líath
 856 = {
     text_scale = 3
-} # Crocenn ï¿½acht
+}
 
+# Crocenn Úacht
 857 = {
     text_scale = 3
-} # Sï¿½t Taitnem
+}
 
+# Sét Taitnem
 858 = {
     text_scale = 3
-} # Cromm Brï¿½ighe
+}
 
+# Cromm Bráighe
 859 = {
     text_scale = 3
-} # Caill Olc
+}
 
+# Caill Olc
 860 = {
     text_scale = 3
-} # Tirthon
+}
 
+# Tirthon
 861 = {
     text_scale = 3
-} # Minas Brethil
+}
 
+# Minas Brethil
 862 = {
     text_scale = 3
-} # Fennas Drï¿½nin
+}
 
+# Fennas Drúnin
 863 = {
     text_scale = 3
-} # Bardol
+}
 
+# Bardol
 864 = {
     text_scale = 3
-} # Imladris
+}
 
+# Imladris
 865 = {
     text_scale = 3
-} # Bruinost
+}
 
+# Bruinost
 866 = {
     text_scale = 3
-} # Sirtathar
+}
 
+# Sirtathar
 867 = {
     text_scale = 3
-} # Reedhaven
+}
 
+# Reedhaven
 868 = {
     text_scale = 3
-} # Daergil
+}
 
+# Daergil
 869 = {
     text_scale = 3
-} # Hollin Ridge
+}
 
+# Hollin Ridge
 870 = {
     text_scale = 3
-} # Minas Melosse
+}
 
+# Minas Melosse
 871 = {
     text_scale = 3
-} # Barnas
+}
 
+# Barnas
 872 = {
     text_position = {
         x = 1269.830000
@@ -7298,64 +8169,79 @@
         y = 1410.595000
     }
 
-} # Amon Lind
+}
 
+# Amon Lind
 873 = {
     text_scale = 3
-} # Ost-en-Edhil
+}
 
+# Ost-en-Edhil
 874 = {
     text_scale = 3
-} # Barad Morlas
+}
 
+# Barad Morlas
 875 = {
     text_scale = 3
-} # Nï¿½dadabath
+}
 
+# Nîdadabath
 876 = {
     text_scale = 3
-} # Flincbar
+}
 
+# Flincbar
 877 = {
     text_scale = 3
-} # Bar-en-Athpaur
+}
 
+# Bar-en-Athpaur
 878 = {
     text_scale = 3
-} # Baudhrach
+}
 
+# Baudhrach
 879 = {
     text_scale = 3
-} # Hellion
+}
 
+# Hellion
 880 = {
     text_scale = 3
-} # Ningliros
+}
 
+# Ningliros
 881 = {
     text_scale = 3
-} # Faelond
+}
 
+# Faelond
 882 = {
     text_scale = 3
-} # Minas Malloth
+}
 
+# Minas Malloth
 883 = {
     text_scale = 3
-} # Barrow-downs
+}
 
+# Barrow-downs
 884 = {
     text_scale = 3
-} # Old Forest
+}
 
+# Old Forest
 885 = {
     text_scale = 3
-} # Seren
+}
 
+# Seren
 886 = {
     text_scale = 3
-} # Andrath
+}
 
+# Andrath
 887 = {
     text_position = {
         x = 1007.975000
@@ -7373,24 +8259,29 @@
         y = 1530.891667
     }
 
-} # Harbarist
+}
 
+# Harbarist
 888 = {
     text_scale = 3
-} # Arnach
+}
 
+# Arnach
 889 = {
     text_scale = 3
-} # Gobel Gwaelinn
+}
 
+# Gobel Gwaelinn
 890 = {
     text_scale = 3
-} # Metraith
+}
 
+# Metraith
 891 = {
     text_scale = 3
-} # Tharbad
+}
 
+# Tharbad
 892 = {
     text_scale = 3
     building_position = {
@@ -7405,8 +8296,9 @@
         naval_base = 5.322703
     }
 
-} # Benglaras
+}
 
+# Benglaras
 893 = {
     text_scale = 3
     building_position = {
@@ -7421,36 +8313,44 @@
         naval_base = 3.976595
     }
 
-} # Argond
+}
 
+# Argond
 894 = {
     text_scale = 3
-} # Silanir
+}
 
+# Silanir
 895 = {
     text_scale = 3
-} # Thalion
+}
 
+# Thalion
 896 = {
     text_scale = 3
-} # Thaendor
+}
 
+# Thaendor
 897 = {
     text_scale = 3
-} # Carnethel
+}
 
+# Carnethel
 898 = {
     text_scale = 3
-} # Cirthiel
+}
 
+# Cirthiel
 899 = {
     text_scale = 3
-} # Gobel Helegnel
+}
 
+# Gobel Helegnel
 900 = {
     text_scale = 3
-} # Daelmoth
+}
 
+# Daelmoth
 901 = {
     text_scale = 3
     building_position = {
@@ -7465,8 +8365,9 @@
         naval_base = 4.490464
     }
 
-} # Talsir
+}
 
+# Talsir
 902 = {
     text_scale = 3
     building_position = {
@@ -7481,16 +8382,19 @@
         naval_base = 4.018929
     }
 
-} # Bregnas
+}
 
+# Bregnas
 903 = {
     text_scale = 3
-} # Minas Emrys
+}
 
+# Minas Emrys
 904 = {
     text_scale = 3
-} # Sï¿½thure
+}
 
+# Súthure
 905 = {
     text_scale = 3
     building_position = {
@@ -7505,8 +8409,9 @@
         naval_base = 3.670026
     }
 
-} # Ilfin
+}
 
+# Ilfin
 906 = {
     text_scale = 3
     building_position = {
@@ -7521,8 +8426,9 @@
         naval_base = 4.444384
     }
 
-} # Nadior
+}
 
+# Nadior
 907 = {
     text_scale = 3
     building_position = {
@@ -7537,16 +8443,18 @@
         naval_base = 5.007205
     }
 
-} # Oyer
+}
 
+# Oyer
 908 = {
     text_scale = 3
     building_rotation = {
         naval_base = 5.158101
     }
 
-} # Eryn Vorn
+}
 
+# Eryn Vorn
 909 = {
     text_scale = 3
     building_position = {
@@ -7561,40 +8469,48 @@
         naval_base = 0.995258
     }
 
-} # Dol Vorn
+}
 
+# Dol Vorn
 910 = {
     text_scale = 3
-} # Galathilval
+}
 
+# Galathilval
 911 = {
     text_scale = 3
-} # Annon Baran
+}
 
+# Annon Baran
 912 = {
     text_scale = 3
     building_rotation = {
         naval_base = 5.119916
     }
 
-} # Buzra-Dï¿½m
+}
 
+# Buzra-Dûm
 913 = {
     text_scale = 3
-} # Gebir Luin
+}
 
+# Gebir Luin
 914 = {
     text_scale = 3
-} # Ost Dï¿½nen
+}
 
+# Ost Dínen
 915 = {
     text_scale = 3
-} # Pinnath Luin
+}
 
+# Pinnath Luin
 916 = {
     text_scale = 3
-} # Khazad-zahar
+}
 
+# Khazad-zahar
 917 = {
     text_position = {
         x = 543.130000
@@ -7602,20 +8518,24 @@
     }
 
     text_scale = 3
-} # Nogothï¿½r Vale
+}
 
+# Nogothîr Vale
 918 = {
     text_scale = 3
-} # Orod Elu
+}
 
+# Orod Elu
 919 = {
     text_scale = 3
-} # Dor Tinï¿½viel
+}
 
+# Dor Tinúviel
 920 = {
     text_scale = 3
-} # Rast Duilwen
+}
 
+# Rast Duilwen
 921 = {
     text_scale = 3
     building_position = {
@@ -7630,12 +8550,14 @@
         naval_base = 5.142341
     }
 
-} # Amon Dior
+}
 
+# Amon Dior
 922 = {
     text_scale = 3
-} # Nan Dior
+}
 
+# Nan Dior
 923 = {
     text_scale = 3
     building_position = {
@@ -7650,8 +8572,9 @@
         naval_base = 4.717414
     }
 
-} # Roshiril
+}
 
+# Roshiril
 924 = {
     text_scale = 3
     building_position = {
@@ -7666,12 +8589,14 @@
         naval_base = 5.358902
     }
 
-} # Nan Legossel
+}
 
+# Nan Legossel
 925 = {
     text_scale = 3
-} # Lildamar
+}
 
+# Lildamar
 926 = {
     text_scale = 3
     building_position = {
@@ -7686,8 +8611,9 @@
         naval_base = 4.712389
     }
 
-} # Falastir
+}
 
+# Falastir
 927 = {
     text_scale = 3
     building_position = {
@@ -7702,8 +8628,9 @@
         naval_base = 1.545802
     }
 
-} # Arkemar
+}
 
+# Arkemar
 928 = {
     text_scale = 3
     building_position = {
@@ -7714,8 +8641,9 @@
 
     }
 
-} # Harlond
+}
 
+# Harlond
 929 = {
     text_scale = 3
     building_position = {
@@ -7730,8 +8658,9 @@
         naval_base = 1.046684
     }
 
-} # Lond-in-Telerrim
+}
 
+# Lond-in-Telerrim
 930 = {
     text_scale = 3
     building_position = {
@@ -7746,28 +8675,33 @@
         naval_base = 0.817190
     }
 
-} # Aerossï¿½r Vale
+}
 
+# Aerossîr Vale
 931 = {
     text_scale = 3
     building_rotation = {
         naval_base = 0.849141
     }
 
-} # Ivrostirion
+}
 
+# Ivrostirion
 932 = {
     text_scale = 3
-} # Elostirion
+}
 
+# Elostirion
 933 = {
     text_scale = 3
-} # Arestirion
+}
 
+# Arestirion
 934 = {
     text_scale = 3
-} # Mithrï¿½nlond
+}
 
+# Mithrûnlond
 935 = {
     text_scale = 3
     building_position = {
@@ -7782,8 +8716,9 @@
         naval_base = 0.898390
     }
 
-} # Mithlond
+}
 
+# Mithlond
 936 = {
     text_scale = 3
     building_position = {
@@ -7798,8 +8733,9 @@
         naval_base = 3.930524
     }
 
-} # Nuindhae-en-Ered
+}
 
+# Nuindhae-en-Ered
 937 = {
     text_scale = 3
     building_position = {
@@ -7814,28 +8750,34 @@
         naval_base = 4.712389
     }
 
-} # Imladorn
+}
 
+# Imladorn
 938 = {
     text_scale = 3
-} # Eruimar
+}
 
+# Eruimar
 939 = {
     text_scale = 3
-} # Tawarobel
+}
 
+# Tawarobel
 940 = {
     text_scale = 3
-} # Annï¿½duin Vale
+}
 
+# Annúduin Vale
 941 = {
     text_scale = 3
-} # Buzdï¿½m-Mazar
+}
 
+# Buzdûm-Mazar
 942 = {
     text_scale = 3
-} # Kibilzahar
+}
 
+# Kibilzahar
 943 = {
     text_scale = 3
     building_position = {
@@ -7850,8 +8792,9 @@
         naval_base = 2.525973
     }
 
-} # Mulkan Kaupunki
+}
 
+# Mulkan Kaupunki
 944 = {
     text_scale = 3
     building_position = {
@@ -7866,20 +8809,24 @@
         naval_base = 2.444305
     }
 
-} # Fahamgathol
+}
 
+# Fahamgathol
 945 = {
     text_scale = 3
-} # Talath Dï¿½neriador
+}
 
+# Talath Dûneriador
 946 = {
     text_scale = 3
-} # Dronï¿½n-Dï¿½m
+}
 
+# Dronûn-Dûm
 947 = {
     text_scale = 3
-} # Lond Thalos
+}
 
+# Lond Thalos
 948 = {
     text_scale = 3
     building_position = {
@@ -7894,8 +8841,9 @@
         naval_base = 4.697315
     }
 
-} # Rhomros
+}
 
+# Rhomros
 949 = {
     text_scale = 3
     building_position = {
@@ -7910,8 +8858,9 @@
         naval_base = 5.061160
     }
 
-} # Eryn Luin
+}
 
+# Eryn Luin
 950 = {
     text_position = {
         x = 440.435000
@@ -7919,12 +8868,14 @@
     }
 
     text_scale = 3
-} # Cerin Haleth
+}
 
+# Cerin Haleth
 951 = {
     text_scale = 3
-} # Annost
+}
 
+# Annost
 952 = {
     text_position = {
         x = 392.745000
@@ -7932,8 +8883,9 @@
     }
 
     text_scale = 3
-} # Forlond
+}
 
+# Forlond
 953 = {
     text_scale = 3
     building_position = {
@@ -7948,8 +8900,9 @@
         naval_base = 4.772618
     }
 
-} # Mirimar
+}
 
+# Mirimar
 954 = {
     text_scale = 3
     building_position = {
@@ -7964,8 +8917,9 @@
         naval_base = 5.416119
     }
 
-} # Barad Annï¿½n
+}
 
+# Barad Annún
 955 = {
     text_scale = 3
     building_position = {
@@ -7976,12 +8930,14 @@
 
     }
 
-} # Emyn Cï¿½n
+}
 
+# Emyn Cûn
 956 = {
     text_scale = 3
-} # Estemar
+}
 
+# Estemar
 957 = {
     text_scale = 3
     building_position = {
@@ -7996,8 +8952,9 @@
         naval_base = 1.590794
     }
 
-} # Nadhron i-Nachar
+}
 
+# Nadhron i-Nachar
 958 = {
     text_scale = 3
     building_position = {
@@ -8012,12 +8969,14 @@
         naval_base = 1.520838
     }
 
-} # Sandariand
+}
 
+# Sandariand
 959 = {
     text_scale = 3
-} # Meneltarma
+}
 
+# Meneltarma
 960 = {
     text_scale = 3
     building_position = {
@@ -8032,8 +8991,9 @@
         naval_base = 3.141593
     }
 
-} # Tol Morwen
+}
 
+# Tol Morwen
 961 = {
     text_scale = 3
     building_position = {
@@ -8048,8 +9008,9 @@
         naval_base = 4.029830
     }
 
-} # Tol Fuin
+}
 
+# Tol Fuin
 962 = {
     text_scale = 3
     building_position = {
@@ -8064,8 +9025,9 @@
         naval_base = 4.717414
     }
 
-} # Tol Himling
+}
 
+# Tol Himling
 963 = {
     text_scale = 3
     building_position = {
@@ -8080,8 +9042,9 @@
         naval_base = 5.131123
     }
 
-} # Urunobel
+}
 
+# Urunobel
 964 = {
     text_scale = 3
     building_position = {
@@ -8092,8 +9055,9 @@
 
     }
 
-} # Mirilos
+}
 
+# Mirilos
 965 = {
     text_scale = 3
     building_position = {
@@ -8108,8 +9072,9 @@
         naval_base = 4.697315
     }
 
-} # Aamukuu
+}
 
+# Aamukuu
 966 = {
     text_scale = 3
     building_position = {
@@ -8124,8 +9089,9 @@
         naval_base = 1.020121
     }
 
-} # Kuusila
+}
 
+# Kuusila
 967 = {
     text_scale = 3
     building_position = {
@@ -8140,8 +9106,9 @@
         naval_base = 3.445967
     }
 
-} # Ered Luin
+}
 
+# Ered Luin
 968 = {
     text_position = {
         x = 489.400000
@@ -8149,28 +9116,34 @@
     }
 
     text_scale = 3
-} # Azakhuzd
+}
 
+# Azakhuzd
 969 = {
     text_scale = 3
-} # Zagragathol
+}
 
+# Zagragathol
 970 = {
     text_scale = 3
-} # Zirakbhund
+}
 
+# Zirakbhund
 971 = {
     text_scale = 3
-} # Mindon Bron
+}
 
+# Mindon Bron
 972 = {
     text_scale = 3
-} # Talath Rhï¿½nï¿½meriador
+}
 
+# Talath Rhûnúmeriador
 973 = {
     text_scale = 3
-} # Eryn Nï¿½meriador
+}
 
+# Eryn Númeriador
 974 = {
     text_position = {
         x = 563.800000
@@ -8188,16 +9161,19 @@
         y = 1970.810000
     }
 
-} # Zigilgund
+}
 
+# Zigilgund
 975 = {
     text_scale = 3
-} # Jï¿½nis-Leiri
+}
 
+# Jänis-Leiri
 976 = {
     text_scale = 3
-} # Nan Anghir
+}
 
+# Nan Anghir
 977 = {
     text_scale = 3
     building_position = {
@@ -8208,8 +9184,9 @@
 
     }
 
-} # Ruskea Vene
+}
 
+# Ruskea Vene
 978 = {
     text_scale = 3
     building_position = {
@@ -8224,44 +9201,54 @@
         naval_base = 1.500910
     }
 
-} # Tyhjï¿½ Karhuntaloh
+}
 
+# Tyhjä Karhuntaloh
 979 = {
     text_scale = 3
-} # Siida
+}
 
+# Siida
 980 = {
     text_scale = 3
-} # Pitkï¿½ranta
+}
 
+# Pitkäranta
 981 = {
     text_scale = 3
-} # Talath Himgar
+}
 
+# Talath Himgar
 982 = {
     text_scale = 3
-} # Kuska
+}
 
+# Kuska
 983 = {
     text_scale = 3
-} # Ahï¿½s
+}
 
+# Ahûs
 984 = {
     text_scale = 3
-} # Angsï¿½l
+}
 
+# Angsûl
 985 = {
     text_scale = 3
-} # Nan Anghï¿½ril
+}
 
+# Nan Anghîril
 986 = {
     text_scale = 3
-} # Dun Cairn
+}
 
+# Dun Cairn
 987 = {
     text_scale = 3
-} # Phaluran
+}
 
+# Phaluran
 988 = {
     text_position = {
         x = 1215.870000
@@ -8269,252 +9256,314 @@
     }
 
     text_scale = 3
-} # Nan Lï¿½ke
+}
 
+# Nan Lóke
 989 = {
     text_scale = 3
-} # Den Lï¿½ke
+}
 
+# Den Lóke
 990 = {
     text_scale = 3
-} # Durkandar
+}
 
+# Durkandar
 991 = {
     text_scale = 3
-} # Ashkandur
+}
 
+# Ashkandur
 992 = {
     text_scale = 3
-} # Gundabad
+}
 
+# Gundabad
 993 = {
     text_scale = 3
-} # Malenhad
+}
 
+# Malenhad
 994 = {
     text_scale = 3
-} # Parth Gurthil
+}
 
+# Parth Gurthil
 995 = {
     text_scale = 3
-} # Litash
+}
 
+# Litash
 996 = {
     text_scale = 3
-} # Ravda
+}
 
+# Ravda
 997 = {
     text_scale = 3
-} # Shedï¿½n
+}
 
+# Shedûn
 998 = {
     text_scale = 3
-} # Mount Gram
+}
 
+# Mount Gram
 999 = {
     text_scale = 3
-} # Kala Uruk-Lï¿½gï¿½t
+}
 
+# Kala Uruk-Lûgât
 1000 = {
     text_scale = 3
-} # Mindil Cargash
+}
 
+# Mindil Cargash
 1001 = {
     text_scale = 3
-} # Aradhras
+}
 
+# Aradhras
 1002 = {
     text_scale = 3
-} # Dol Gormaen
+}
 
+# Dol Gormaen
 1003 = {
     text_scale = 3
-} # Barad Eldanar
+}
 
+# Barad Eldanar
 1004 = {
     text_scale = 3
-} # Minas Galanna
+}
 
+# Minas Galanna
 1005 = {
     text_scale = 3
-} # Esteldï¿½n
+}
 
+# Esteldín
 1006 = {
     text_scale = 3
-} # Net Riagaill
+}
 
+# Net Riagaill
 1007 = {
     text_scale = 3
-} # Minas Nen
+}
 
+# Minas Nen
 1008 = {
     text_scale = 3
-} # Iant Methed
+}
 
+# Iant Methed
 1009 = {
     text_scale = 3
-} # Combe
+}
 
+# Combe
 1010 = {
     text_scale = 3
-} # Staddle
+}
 
+# Staddle
 1011 = {
     text_scale = 3
-} # Girdley
+}
 
+# Girdley
 1012 = {
     text_scale = 3
-} # Bree
+}
 
+# Bree
 1013 = {
     text_scale = 3
-} # Iant Baranduin
+}
 
+# Iant Baranduin
 1014 = {
     text_scale = 3
-} # Fornost Erain
+}
 
+# Fornost Erain
 1015 = {
     text_scale = 3
-} # Bar-i-Dongorath
+}
 
+# Bar-i-Dongorath
 1016 = {
     text_scale = 3
-} # Gobel Anglor
+}
 
+# Gobel Anglor
 1017 = {
     text_scale = 3
-} # Maentiros
+}
 
+# Maentiros
 1018 = {
     text_scale = 3
-} # Emyn Gelin
+}
 
+# Emyn Gelin
 1019 = {
     text_scale = 3
-} # Amon Losthoron
+}
 
+# Amon Losthoron
 1020 = {
     text_scale = 3
-} # Talath Muil
+}
 
+# Talath Muil
 1021 = {
     text_scale = 3
-} # Enedhrond
+}
 
+# Enedhrond
 1022 = {
     text_scale = 3
-} # Minas Gonngoth
+}
 
+# Minas Gonngoth
 1023 = {
     text_scale = 3
-} # Gobel Paurruin
+}
 
+# Gobel Paurruin
 1024 = {
     text_scale = 3
-} # Bar Eketya
+}
 
+# Bar Eketya
 1025 = {
     text_scale = 3
-} # Annï¿½minas
+}
 
+# Annúminas
 1026 = {
     text_scale = 3
-} # Barad Garan
+}
 
+# Barad Garan
 1027 = {
     text_scale = 3
-} # Caras Celairnan
+}
 
+# Caras Celairnan
 1028 = {
     text_scale = 3
-} # Little Delving
+}
 
+# Little Delving
 1029 = {
     text_scale = 3
-} # Greenholm
+}
 
+# Greenholm
 1030 = {
     text_scale = 3
-} # Michel Delving
+}
 
+# Michel Delving
 1031 = {
     text_scale = 3
-} # Cottonbottom
+}
 
+# Cottonbottom
 1032 = {
     text_scale = 3
-} # Cor Wilishar
+}
 
+# Cor Wilishar
 1033 = {
     text_scale = 3
-} # Iach Sarn
+}
 
+# Iach Sarn
 1034 = {
     text_scale = 3
-} # Deephallow
+}
 
+# Deephallow
 1035 = {
     text_scale = 3
-} # Sackville
+}
 
+# Sackville
 1036 = {
     text_scale = 3
-} # Waymeet
+}
 
+# Waymeet
 1037 = {
     text_scale = 3
-} # Tuckborough
+}
 
+# Tuckborough
 1038 = {
     text_scale = 3
-} # Frogmorton
+}
 
+# Frogmorton
 1039 = {
     text_scale = 3
-} # Hobbiton
+}
 
+# Hobbiton
 1040 = {
     text_scale = 3
-} # Greenfields
+}
 
+# Greenfields
 1041 = {
     text_scale = 3
-} # Forodwaith
+}
 
+# Forodwaith
 1042 = {
     text_scale = 3
-} # Forodwaith
+}
 
+# Forodwaith
 1043 = {
     text_scale = 3
-} # Forodwaith
+}
 
+# Forodwaith
 1044 = {
     text_scale = 3
-} # Forodwaith
+}
 
+# Forodwaith
 1045 = {
     text_scale = 3
-} # Forodwaith
+}
 
+# Forodwaith
 1046 = {
     text_scale = 3
-} # Forodwaith
+}
 
+# Forodwaith
 1047 = {
     text_scale = 3
-} # Forodwaith
+}
 
+# Forodwaith
 1048 = {
     text_scale = 3
-} # Forodwaith
+}
 
+# Forodwaith
 1049 = {
     text_scale = 3
-} # Forodwaith
+}
 
+# Forodwaith
 1050 = {
     text_position = {
         x = 1392.223333
@@ -8522,56 +9571,69 @@
     }
 
     text_scale = 3
-} # Forodwaith
+}
 
+# Forodwaith
 1051 = {
     text_scale = 3
-} # Forodwaith
+}
 
+# Forodwaith
 1052 = {
     text_scale = 3
-} # Forodwaith
+}
 
+# Forodwaith
 1053 = {
     text_scale = 3
-} # Forodwaith
+}
 
+# Forodwaith
 1054 = {
     text_scale = 3
-} # Forodwaith (Uruk)
+}
 
+# Forodwaith (Uruk)
 1055 = {
     text_scale = 3
-} # Forodwaith
+}
 
+# Forodwaith
 1056 = {
     text_scale = 3
-} # Forodwaith
+}
 
+# Forodwaith
 1057 = {
     text_scale = 3
-} # Forodwaith
+}
 
+# Forodwaith
 1058 = {
     text_scale = 3
-} # Forodwaith
+}
 
+# Forodwaith
 1059 = {
     text_scale = 3
-} # Forodwaith
+}
 
+# Forodwaith
 1060 = {
     text_scale = 3
-} # Forodwaith
+}
 
+# Forodwaith
 1061 = {
     text_scale = 3
-} # Forodwaith
+}
 
+# Forodwaith
 1062 = {
     text_scale = 3
-} # Forodwaith
+}
 
+# Forodwaith
 1063 = {
     text_position = {
         x = 987.180000
@@ -8579,25 +9641,30 @@
     }
 
     text_scale = 3
-} # Forodwaith
+}
 
+# Forodwaith
 1064 = {
     text_scale = 3
-} # Forodwaith
+}
 
+# Forodwaith
 1065 = {
     text_scale = 3
-} # Lake Evendim
+}
 
+# Lake Evendim
 1066 = {
     text_scale = 3
-} # Long Lake
+}
 
+# Long Lake
 1067 = {
     text_rotation = 0.941266
     text_scale = 3
-} # Celdiun River
+}
 
+# Celdiun River
 1068 = {
     text_position = {
         x = 1848.436667
@@ -8606,8 +9673,9 @@
 
     text_rotation = 5.214135
     text_scale = 3
-} # Celduin River
+}
 
+# Celduin River
 1069 = {
     text_position = {
         x = 1906.560000
@@ -8616,8 +9684,9 @@
 
     text_rotation = 5.936124
     text_scale = 3
-} # Celduin River
+}
 
+# Celduin River
 1070 = {
     text_position = {
         x = 1996.145000
@@ -8625,8 +9694,9 @@
     }
 
     text_scale = 3
-} # Celduin River
+}
 
+# Celduin River
 1071 = {
     text_position = {
         x = 2093.221667
@@ -8634,8 +9704,9 @@
     }
 
     text_scale = 3
-} # Celduin River
+}
 
+# Celduin River
 1072 = {
     text_position = {
         x = 2166.020000
@@ -8644,8 +9715,9 @@
 
     text_rotation = 5.153568
     text_scale = 3
-} # Celduin River
+}
 
+# Celduin River
 1073 = {
     text_position = {
         x = 2205.200000
@@ -8653,8 +9725,9 @@
     }
 
     text_scale = 3
-} # Celduin River
+}
 
+# Celduin River
 1074 = {
     text_position = {
         x = 2353.800000
@@ -8663,28 +9736,34 @@
 
     text_rotation = 5.376950
     text_scale = 3
-} # Rhï¿½naer
+}
 
+# Rhúnaer
 1075 = {
     text_scale = 3
-} # Rhï¿½naer
+}
 
+# Rhúnaer
 1076 = {
     text_scale = 3
-} # Rhï¿½naer
+}
 
+# Rhúnaer
 1077 = {
     text_scale = 3
-} # Rhï¿½naer
+}
 
+# Rhúnaer
 1078 = {
     text_scale = 3
-} # Sea of Nï¿½rnen
+}
 
+# Sea of Núrnen
 1079 = {
     text_scale = 3
-} # Anduin River
+}
 
+# Anduin River
 1080 = {
     text_position = {
         x = 1520.906667
@@ -8693,13 +9772,15 @@
 
     text_rotation = 5.146897
     text_scale = 3
-} # Anduin River
+}
 
+# Anduin River
 1081 = {
     text_rotation = 5.061160
     text_scale = 3
-} # Anduin River
+}
 
+# Anduin River
 1082 = {
     text_position = {
         x = 1573.693333
@@ -8708,8 +9789,9 @@
 
     text_rotation = 4.976877
     text_scale = 3
-} # Anduin River
+}
 
+# Anduin River
 1083 = {
     text_position = {
         x = 1570.325000
@@ -8718,13 +9800,15 @@
 
     text_rotation = 4.807578
     text_scale = 3
-} # Anduin River
+}
 
+# Anduin River
 1084 = {
     text_rotation = 0.767732
     text_scale = 3
-} # Anduin River
+}
 
+# Anduin River
 1085 = {
     text_position = {
         x = 1506.333333
@@ -8733,8 +9817,9 @@
 
     text_rotation = 5.225324
     text_scale = 3
-} # Anduin River
+}
 
+# Anduin River
 1086 = {
     text_position = {
         x = 1547.500000
@@ -8743,8 +9828,9 @@
 
     text_rotation = 5.579456
     text_scale = 3
-} # Anduin River
+}
 
+# Anduin River
 1087 = {
     text_position = {
         x = 1601.860000
@@ -8752,8 +9838,9 @@
     }
 
     text_scale = 3
-} # Anduin River
+}
 
+# Anduin River
 1088 = {
     text_position = {
         x = 1633.920000
@@ -8762,8 +9849,9 @@
 
     text_rotation = 0.735793
     text_scale = 3
-} # Anduin River
+}
 
+# Anduin River
 1089 = {
     text_position = {
         x = 1642.625000
@@ -8772,12 +9860,14 @@
 
     text_rotation = 0.941266
     text_scale = 3
-} # Nen Hithoel
+}
 
+# Nen Hithoel
 1090 = {
     text_scale = 3
-} # Anduin River
+}
 
+# Anduin River
 1091 = {
     text_position = {
         x = 1680.290000
@@ -8786,8 +9876,9 @@
 
     text_rotation = 5.597456
     text_scale = 3
-} # Anduin River
+}
 
+# Anduin River
 1092 = {
     text_position = {
         x = 1786.580000
@@ -8795,8 +9886,9 @@
     }
 
     text_scale = 3
-} # Anduin River
+}
 
+# Anduin River
 1093 = {
     text_position = {
         x = 1803.073333
@@ -8805,12 +9897,14 @@
 
     text_rotation = 5.283726
     text_scale = 3
-} # Anduin River
+}
 
+# Anduin River
 1094 = {
     text_scale = 3
-} # Anduin River
+}
 
+# Anduin River
 1095 = {
     text_position = {
         x = 1778.940000
@@ -8819,8 +9913,9 @@
 
     text_rotation = 0.686432
     text_scale = 3
-} # Anduin River
+}
 
+# Anduin River
 1096 = {
     text_position = {
         x = 1761.133333
@@ -8829,13 +9924,15 @@
 
     text_rotation = 0.863255
     text_scale = 3
-} # Anduin River
+}
 
+# Anduin River
 1097 = {
     text_rotation = 0.593543
     text_scale = 3
-} # Anduin River
+}
 
+# Anduin River
 1098 = {
     text_position = {
         x = 1667.493333
@@ -8844,8 +9941,9 @@
 
     text_rotation = 0.321751
     text_scale = 3
-} # Ethir Anduin
+}
 
+# Ethir Anduin
 1099 = {
     text_position = {
         x = 1609.400000
@@ -8853,24 +9951,29 @@
     }
 
     text_scale = 3
-} # Bay of Belfalas
+}
 
+# Bay of Belfalas
 1100 = {
     text_scale = 3
-} # Bay of Belfalas
+}
 
+# Bay of Belfalas
 1101 = {
     text_scale = 3
-} # Bay of Belfalas
+}
 
+# Bay of Belfalas
 1102 = {
     text_scale = 3
-} # Bay of Belfalas
+}
 
+# Bay of Belfalas
 1103 = {
     text_scale = 3
-} # Ethir Harnen
+}
 
+# Ethir Harnen
 1104 = {
     text_position = {
         x = 1503.103333
@@ -8878,112 +9981,139 @@
     }
 
     text_scale = 3
-} # Red Cliff Coast
+}
 
+# Red Cliff Coast
 1105 = {
     text_scale = 3
-} # Sea of Belegaer
+}
 
+# Sea of Belegaer
 1106 = {
     text_scale = 3
-} # Bay of Umbar
+}
 
+# Bay of Umbar
 1107 = {
     text_scale = 3
-} # Sea of Belegaer
+}
 
+# Sea of Belegaer
 1108 = {
     text_scale = 3
-} # Sea of Belegaer
+}
 
+# Sea of Belegaer
 1109 = {
     text_scale = 3
-} # Sea of Belegaer
+}
 
+# Sea of Belegaer
 1110 = {
     text_scale = 3
-} # Sea of Belegaer
+}
 
+# Sea of Belegaer
 1111 = {
     text_scale = 3
-} # Sea of Belegaer
+}
 
+# Sea of Belegaer
 1112 = {
     text_scale = 3
-} # Lond Cobas
+}
 
+# Lond Cobas
 1113 = {
     text_scale = 3
-} # Sea of Belegaer
+}
 
+# Sea of Belegaer
 1114 = {
     text_scale = 3
-} # Lond Feren
+}
 
+# Lond Feren
 1115 = {
     text_scale = 3
-} # Sea of Belegaer
+}
 
+# Sea of Belegaer
 1116 = {
     text_scale = 3
-} # Sea of Belegaer
+}
 
+# Sea of Belegaer
 1117 = {
     text_scale = 3
-} # Sea of Belegaer
+}
 
+# Sea of Belegaer
 1118 = {
     text_scale = 3
-} # Sea of Belegaer
+}
 
+# Sea of Belegaer
 1119 = {
     text_scale = 3
-} # Sea of Belegaer
+}
 
+# Sea of Belegaer
 1120 = {
     text_scale = 3
-} # Sea of Belegaer
+}
 
+# Sea of Belegaer
 1121 = {
     text_scale = 3
-} # Sea of Belegaer
+}
 
+# Sea of Belegaer
 1122 = {
     text_scale = 3
-} # Sea of Belegaer
+}
 
+# Sea of Belegaer
 1123 = {
     text_scale = 3
-} # Sea of Belegaer
+}
 
+# Sea of Belegaer
 1124 = {
     text_scale = 3
-} # Mar-nu-Falmar
+}
 
+# Mar-nu-Falmar
 1125 = {
     text_scale = 3
-} # Sea of Belegaer
+}
 
+# Sea of Belegaer
 1126 = {
     text_scale = 3
-} # Sea of Belegaer
+}
 
+# Sea of Belegaer
 1127 = {
     text_scale = 3
-} # Sea of Belegaer
+}
 
+# Sea of Belegaer
 1128 = {
     text_scale = 3
-} # Sea of Belegaer
+}
 
+# Sea of Belegaer
 1129 = {
     text_scale = 3
-} # Ethir Gwathlï¿½
+}
 
+# Ethir Gwathló
 1130 = {
     text_scale = 3
-} # Gwathlï¿½ River
+}
 
+# Gwathló River
 1131 = {
     text_position = {
         x = 864.616667
@@ -8992,8 +10122,9 @@
 
     text_rotation = 0.959252
     text_scale = 3
-} # Gwathlï¿½ River
+}
 
+# Gwathló River
 1132 = {
     text_position = {
         x = 921.086667
@@ -9002,8 +10133,9 @@
 
     text_rotation = 0.707542
     text_scale = 3
-} # Gwathlï¿½ River
+}
 
+# Gwathló River
 1133 = {
     text_position = {
         x = 962.705000
@@ -9012,8 +10144,9 @@
 
     text_rotation = 0.542138
     text_scale = 3
-} # Gwathlï¿½ River
+}
 
+# Gwathló River
 1134 = {
     text_position = {
         x = 1015.666667
@@ -9022,61 +10155,75 @@
 
     text_rotation = 0.483779
     text_scale = 3
-} # Gwathlï¿½ River
+}
 
+# Gwathló River
 1135 = {
     text_rotation = 0.501746
     text_scale = 3
-} # Sea of Belegaer
+}
 
+# Sea of Belegaer
 1136 = {
     text_scale = 3
-} # Sea of Belegaer
+}
 
+# Sea of Belegaer
 1137 = {
     text_scale = 3
-} # Sea of Belegaer
+}
 
+# Sea of Belegaer
 1138 = {
     text_scale = 3
-} # Sea of Belegaer
+}
 
+# Sea of Belegaer
 1139 = {
     text_scale = 3
-} # Sea of Belegaer
+}
 
+# Sea of Belegaer
 1140 = {
     text_scale = 3
-} # Sea of Belegaer
+}
 
+# Sea of Belegaer
 1141 = {
     text_scale = 3
-} # Sea of Belegaer
+}
 
+# Sea of Belegaer
 1142 = {
     text_scale = 3
-} # Gulf of Lhï¿½n
+}
 
+# Gulf of Lhún
 1143 = {
     text_scale = 3
-} # Sea of Belegaer
+}
 
+# Sea of Belegaer
 1144 = {
     text_scale = 3
-} # Hï¿½b Conath
+}
 
+# Hûb Conath
 1145 = {
     text_scale = 3
-} # Sea of Belegaer
+}
 
+# Sea of Belegaer
 1146 = {
     text_scale = 3
-} # Icebay of Forochel
+}
 
+# Icebay of Forochel
 1147 = {
     text_scale = 3
-} # Lake Ata
+}
 
+# Lake Ata
 1148 = {
     text_position = {
         x = 2662.960000
@@ -9084,8 +10231,9 @@
     }
 
     text_scale = 3
-} # Iovithil
+}
 
+# Iovithil
 1149 = {
     text_scale = 3
     building_position = {
@@ -9096,12 +10244,14 @@
 
     }
 
-} # Mï¿½ril
+}
 
+# Móril
 1150 = {
     text_scale = 3
-} # Talath Annï¿½i
+}
 
+# Talath Annûi
 1151 = {
     text_position = {
         x = 352.875000
@@ -9109,8 +10259,9 @@
     }
 
     text_scale = 3
-} # Mï¿½noriand
+}
 
+# Mänoriand
 1152 = {
     text_scale = 3
     building_position = {
@@ -9125,8 +10276,9 @@
         naval_base = 1.046684
     }
 
-} # Gondlorthil
+}
 
+# Gondlorthil
 1153 = {
     text_scale = 3
     building_position = {
@@ -9137,8 +10289,9 @@
 
     }
 
-} # Rast Elmoth
+}
 
+# Rast Elmoth
 1154 = {
     text_scale = 3
     building_position = {
@@ -9153,8 +10306,9 @@
         naval_base = 4.772618
     }
 
-} # Dor Maglor
+}
 
+# Dor Maglor
 1155 = {
     text_scale = 3
     building_position = {
@@ -9169,16 +10323,19 @@
         naval_base = 0.835003
     }
 
-} # Nan Forgelion
+}
 
+# Nan Forgelion
 1156 = {
     text_scale = 3
-} # Kuru-Leiri
+}
 
+# Kuru-Leiri
 1157 = {
     text_scale = 3
-} # Nï¿½ky-kolo
+}
 
+# Näky-kolo
 1158 = {
     text_scale = 3
     building_position = {
@@ -9193,8 +10350,9 @@
         naval_base = 3.817115
     }
 
-} # Barad Caranthir
+}
 
+# Barad Caranthir
 1159 = {
     text_scale = 3
     building_position = {
@@ -9209,68 +10367,84 @@
         naval_base = 0.682559
     }
 
-} # Tum-i-Theryn
+}
 
+# Tum-i-Theryn
 1160 = {
     text_scale = 3
-} # Gabilgathol
+}
 
+# Gabilgathol
 1161 = {
     text_scale = 3
-} # Azelanduzur
+}
 
+# Azelanduzur
 1162 = {
     text_scale = 3
-} # Nogrod
+}
 
+# Nogrod
 1163 = {
     text_scale = 3
-} # Annon Luin
+}
 
+# Annon Luin
 1164 = {
     text_scale = 3
-} # Burkï¿½l
+}
 
+# Burkûl
 1165 = {
     text_scale = 3
-} # Emyn Engrin
+}
 
+# Emyn Engrin
 1166 = {
     text_scale = 3
-} # Avor Taul
+}
 
+# Avor Taul
 1167 = {
     text_scale = 3
-} # Barad Draug
+}
 
+# Barad Draug
 1168 = {
     text_scale = 3
-} # Shieldwall
+}
 
+# Shieldwall
 1169 = {
     text_scale = 3
-} # Mordolt
+}
 
+# Mordolt
 1170 = {
     text_scale = 3
-} # Entwater Ford
+}
 
+# Entwater Ford
 1171 = {
     text_scale = 3
-} # Holgrund Hyll
+}
 
+# Holgrund Hyll
 1172 = {
     text_scale = 3
-} # Norcrofts
+}
 
+# Norcrofts
 1173 = {
     text_scale = 3
-} # Garsfeld
+}
 
+# Garsfeld
 1174 = {
     text_scale = 3
-} # Overwash
+}
 
+# Overwash
 1175 = {
     text_position = {
         x = 1643.550000
@@ -9316,8 +10490,9 @@
 
     }
 
-} # Tor Welig
+}
 
+# Tor Welig
 1176 = {
     text_position = {
         x = 1640.050000
@@ -9363,12 +10538,14 @@
 
     }
 
-} # Enedhriss
+}
 
+# Enedhriss
 1177 = {
     text_scale = 3
-} # Caras Nï¿½rneledh
+}
 
+# Caras Núrneledh
 1178 = {
     text_position = {
         x = 692.975000
@@ -9389,8 +10566,9 @@
         naval_base = 5.187272
     }
 
-} # Caer Gurgust
+}
 
+# Caer Gurgust
 1179 = {
     text_scale = 3
     building_position = {
@@ -9405,8 +10583,9 @@
         naval_base = 5.448182
     }
 
-} # Iengin
+}
 
+# Iengin
 1180 = {
     text_scale = 3
     building_position = {
@@ -9417,12 +10596,14 @@
 
     }
 
-} # Thuilwaen
+}
 
+# Thuilwaen
 1181 = {
     text_scale = 3
-} # Carmalehaute
+}
 
+# Carmalehaute
 1182 = {
     text_scale = 3
     building_position = {
@@ -9437,8 +10618,9 @@
         naval_base = 0.877337
     }
 
-} # Bras Cuan
+}
 
+# Bras Cuan
 1183 = {
     text_scale = 3
     building_position = {
@@ -9453,8 +10635,9 @@
         naval_base = 5.430274
     }
 
-} # Dï¿½l Bralran
+}
 
+# Dôl Bralran
 1184 = {
     text_scale = 3
     building_position = {
@@ -9469,12 +10652,14 @@
         naval_base = 3.874037
     }
 
-} # Calthaiel
+}
 
+# Calthaiel
 1185 = {
     text_scale = 3
-} # Minas Mellon
+}
 
+# Minas Mellon
 1186 = {
     text_scale = 3
     building_position = {
@@ -9489,12 +10674,14 @@
         naval_base = 4.170251
     }
 
-} # Clotrad
+}
 
+# Clotrad
 1187 = {
     text_scale = 3
-} # Amralaur
+}
 
+# Amralaur
 1188 = {
     text_scale = 3
     building_position = {
@@ -9509,20 +10696,24 @@
         naval_base = 4.043893
     }
 
-} # Iarrond
+}
 
+# Iarrond
 1189 = {
     text_scale = 3
-} # Torr
+}
 
+# Torr
 1190 = {
     text_scale = 3
-} # Amlaslo
+}
 
+# Amlaslo
 1191 = {
     text_scale = 3
-} # Altil
+}
 
+# Altil
 1192 = {
     text_scale = 3
     building_position = {
@@ -9537,8 +10728,9 @@
         naval_base = 4.530740
     }
 
-} # Gwaehï¿½lmoth
+}
 
+# Gwaehîlmoth
 1193 = {
     text_scale = 3
     building_position = {
@@ -9553,12 +10745,14 @@
         naval_base = 4.183955
     }
 
-} # Cï¿½ban
+}
 
+# Cûban
 1194 = {
     text_scale = 3
-} # Tharamauth
+}
 
+# Tharamauth
 1195 = {
     text_scale = 3
     building_position = {
@@ -9573,152 +10767,189 @@
         naval_base = 4.692291
     }
 
-} # Dondril
+}
 
+# Dondril
 1196 = {
     text_scale = 3
-} # Gobel Brildil
+}
 
+# Gobel Brildil
 1197 = {
     text_scale = 3
-} # Delvarad
+}
 
+# Delvarad
 1198 = {
     text_scale = 3
-} # Ninepin
+}
 
+# Ninepin
 1199 = {
     text_scale = 3
-} # Fangoth
+}
 
+# Fangoth
 1200 = {
     text_scale = 3
-} # Arading
+}
 
+# Arading
 1201 = {
     text_scale = 3
-} # Annethir
+}
 
+# Annethir
 1202 = {
     text_scale = 3
-} # Barad Eden
+}
 
+# Barad Eden
 1203 = {
     text_scale = 3
-} # Minas Girithlin
+}
 
+# Minas Girithlin
 1204 = {
     text_scale = 3
-} # Cirindor
+}
 
+# Cirindor
 1205 = {
     text_scale = 3
-} # Dol Nendin
+}
 
+# Dol Nendin
 1206 = {
     text_scale = 3
-} # Iach Mardi
+}
 
+# Iach Mardi
 1207 = {
     text_scale = 3
-} # Pinnath Nimren
+}
 
+# Pinnath Nimren
 1208 = {
     text_scale = 3
-} # Tiramarth
+}
 
+# Tiramarth
 1209 = {
     text_scale = 3
-} # Clearwater Wells
+}
 
+# Clearwater Wells
 1210 = {
     text_scale = 3
-} # Pinel
+}
 
+# Pinel
 1211 = {
     text_scale = 3
-} # Maerian
+}
 
+# Maerian
 1212 = {
     text_scale = 3
-} # Nan Hensir
+}
 
+# Nan Hensir
 1213 = {
     text_scale = 3
-} # Girwing
+}
 
+# Girwing
 1214 = {
     text_scale = 3
-} # Bar Hirwen
+}
 
+# Bar Hirwen
 1215 = {
     text_scale = 3
-} # Dinach
+}
 
+# Dinach
 1216 = {
     text_scale = 3
-} # Caras Gwanoth
+}
 
+# Caras Gwanoth
 1217 = {
     text_scale = 3
-} # Bondorn
+}
 
+# Bondorn
 1218 = {
     text_scale = 3
-} # Brasshold
+}
 
+# Brasshold
 1219 = {
     text_scale = 3
-} # Freemain
+}
 
+# Freemain
 1220 = {
     text_scale = 3
-} # Bar-en-Dindol
+}
 
+# Bar-en-Dindol
 1221 = {
     text_scale = 3
-} # Denerond
+}
 
+# Denerond
 1222 = {
     text_scale = 3
-} # Gobel Erenï¿½r
+}
 
+# Gobel Erenír
 1223 = {
     text_scale = 3
-} # Mindolï¿½riel
+}
 
+# Mindolíriel
 1224 = {
     text_scale = 3
-} # ï¿½dhras
+}
 
+# Îdhras
 1225 = {
     text_scale = 3
-} # Cardhath Tawaren
+}
 
+# Cardhath Tawaren
 1226 = {
     text_scale = 3
-} # Gondogod
+}
 
+# Gondogod
 1227 = {
     text_scale = 3
-} # Tharceleb
+}
 
+# Tharceleb
 1228 = {
     text_scale = 3
-} # Ost Mablorn
+}
 
+# Ost Mablorn
 1229 = {
     text_scale = 3
-} # Nan Hoarwell
+}
 
+# Nan Hoarwell
 1230 = {
     text_scale = 3
-} # Nï¿½n-in-Eilph
+}
 
+# Nîn-in-Eilph
 1231 = {
     text_scale = 3
-} # Bannog Cadlus
+}
 
+# Bannog Cadlus
 1232 = {
     text_position = {
         x = 1171.800000
@@ -9736,376 +10967,469 @@
         y = 1405.100000
     }
 
-} # Mirobel
+}
 
+# Mirobel
 1233 = {
     text_scale = 3
-} # Celebmar
+}
 
+# Celebmar
 1234 = {
     text_scale = 3
-} # Sï¿½d-Thareg
+}
 
+# Sâd-Thareg
 1235 = {
     text_scale = 3
-} # Echad Eregion
+}
 
+# Echad Eregion
 1236 = {
     text_scale = 3
-} # Gwingris
+}
 
+# Gwingris
 1237 = {
     text_scale = 3
-} # Geann-a-Sruth
+}
 
+# Geann-a-Sruth
 1238 = {
     text_scale = 3
-} # Glin-ar Faich
+}
 
+# Glin-ar Faich
 1239 = {
     text_scale = 3
-} # Carcheres
+}
 
+# Carcheres
 1240 = {
     text_scale = 3
-} # Oreth-Erhil
+}
 
+# Oreth-Erhil
 1241 = {
     text_scale = 3
-} # Barad Cam
+}
 
+# Barad Cam
 1242 = {
     text_scale = 3
-} # Iach Bruinen
+}
 
+# Iach Bruinen
 1243 = {
     text_scale = 3
-} # Lï¿½thaglad
+}
 
+# Lúthaglad
 1244 = {
     text_scale = 3
-} # Etraim
+}
 
+# Etraim
 1245 = {
     text_scale = 3
-} # Tum Dincelon
+}
 
+# Tum Dincelon
 1246 = {
     text_scale = 3
-} # Smallforge
+}
 
+# Smallforge
 1247 = {
     text_scale = 3
-} # Galadharn
+}
 
+# Galadharn
 1248 = {
     text_scale = 3
-} # Harnalda
+}
 
+# Harnalda
 1249 = {
     text_scale = 3
-} # Andring
+}
 
+# Andring
 1250 = {
     text_scale = 3
-} # Tor Rï¿½tlu
+}
 
+# Tor Rétlu
 1251 = {
     text_scale = 3
-} # Ceann Uisge
+}
 
+# Ceann Uisge
 1252 = {
     text_scale = 3
-} # Cnocc Dergfine
+}
 
+# Cnocc Dergfine
 1253 = {
     text_scale = 3
-} # Cnocc Dï¿½t
+}
 
+# Cnocc Dét
 1254 = {
     text_scale = 3
-} # Uireas Brï¿½ighe
+}
 
+# Uireas Bráighe
 1255 = {
     text_scale = 3
-} # Tï¿½ir ï¿½rfine
+}
 
+# Túir Órfine
 1256 = {
     text_scale = 3
-} # Ost Belegram
+}
 
+# Ost Belegram
 1257 = {
     text_scale = 3
-} # Talamh Dairireach
+}
 
+# Talamh Dairireach
 1258 = {
     text_scale = 3
-} # Carrac Lir
+}
 
+# Carrac Lir
 1259 = {
     text_scale = 3
-} # Dorn Brigit
+}
 
+# Dorn Brigit
 1260 = {
     text_scale = 3
-} # Asstai Derg
+}
 
+# Asstai Derg
 1261 = {
     text_scale = 3
-} # Cauldburgh
+}
 
+# Cauldburgh
 1262 = {
     text_scale = 3
-} # Ardh Monada
+}
 
+# Ardh Monada
 1263 = {
     text_scale = 3
-} # Cnocc Ceï¿½
+}
 
+# Cnocc Ceó
 1264 = {
     text_scale = 3
-} # Torc Ceï¿½
+}
 
+# Torc Ceó
 1265 = {
     text_scale = 3
-} # Storugoruz
+}
 
+# Storugoruz
 1266 = {
     text_scale = 3
-} # Dol Elril
+}
 
+# Dol Elril
 1267 = {
     text_scale = 3
-} # Rugamba
+}
 
+# Rugamba
 1268 = {
     text_scale = 3
-} # Garth Agarwen
+}
 
+# Garth Agarwen
 1269 = {
     text_scale = 3
-} # Ost Guruth
+}
 
+# Ost Guruth
 1270 = {
     text_scale = 3
-} # Talath Gaun
+}
 
+# Talath Gaun
 1271 = {
     text_scale = 3
-} # Nain Enidh
+}
 
+# Nain Enidh
 1272 = {
     text_scale = 3
-} # Cos Riagaill
+}
 
+# Cos Riagaill
 1273 = {
     text_scale = 3
-} # Gersebroc
+}
 
+# Gersebroc
 1274 = {
     text_scale = 3
-} # Cenn Badb
+}
 
+# Cenn Badb
 1275 = {
     text_scale = 3
-} # Dï¿½n Branmï¿½r
+}
 
+# Dún Branmór
 1276 = {
     text_scale = 3
-} # Cnocc Rï¿½t
+}
 
+# Cnocc Rét
 1277 = {
     text_scale = 3
-} # Barad Thoron
+}
 
+# Barad Thoron
 1278 = {
     text_scale = 3
-} # Barad Ever
+}
 
+# Barad Ever
 1279 = {
     text_scale = 3
-} # Chetwood
+}
 
+# Chetwood
 1280 = {
     text_scale = 3
-} # Nothrimos
+}
 
+# Nothrimos
 1281 = {
     text_scale = 3
-} # Nyss-en-Rossiel
+}
 
+# Nyss-en-Rossiel
 1282 = {
     text_scale = 3
-} # Trestlebridge
+}
 
+# Trestlebridge
 1283 = {
     text_scale = 3
-} # Norwarden
+}
 
+# Norwarden
 1284 = {
     text_scale = 3
-} # Overwine Hall
+}
 
+# Overwine Hall
 1285 = {
     text_scale = 3
-} # Bar Enedhil
+}
 
+# Bar Enedhil
 1286 = {
     text_scale = 3
-} # Rood
+}
 
+# Rood
 1287 = {
     text_scale = 3
-} # Gistfell
+}
 
+# Gistfell
 1288 = {
     text_scale = 3
-} # Fï¿½nduin
+}
 
+# Fânduin
 1289 = {
     text_scale = 3
-} # Wibbleham
+}
 
+# Wibbleham
 1290 = {
     text_scale = 3
-} # Axley Hall
+}
 
+# Axley Hall
 1291 = {
     text_scale = 3
-} # Digby
+}
 
+# Digby
 1292 = {
     text_scale = 3
-} # Willowbottom
+}
 
+# Willowbottom
 1293 = {
     text_scale = 3
-} # Longbottom
+}
 
+# Longbottom
 1294 = {
     text_scale = 3
-} # Hard-Bottle
+}
 
+# Hard-Bottle
 1295 = {
     text_scale = 3
-} # Waincott
+}
 
+# Waincott
 1296 = {
     text_scale = 3
-} # Nielros
+}
 
+# Nielros
 1297 = {
     text_scale = 3
-} # Foxrun
+}
 
+# Foxrun
 1298 = {
     text_scale = 3
-} # Boulder-Cross
+}
 
+# Boulder-Cross
 1299 = {
     text_scale = 3
-} # Tighfield
+}
 
+# Tighfield
 1300 = {
     text_scale = 3
-} # Longcleeve
+}
 
+# Longcleeve
 1301 = {
     text_scale = 3
-} # Bindbale
+}
 
+# Bindbale
 1302 = {
     text_scale = 3
-} # Oatbarton
+}
 
+# Oatbarton
 1303 = {
     text_scale = 3
-} # Norby
+}
 
+# Norby
 1304 = {
     text_scale = 3
-} # Hirholt
+}
 
+# Hirholt
 1305 = {
     text_scale = 3
-} # Tarmabar
+}
 
+# Tarmabar
 1306 = {
     text_scale = 3
-} # Rond Hyar
+}
 
+# Rond Hyar
 1307 = {
     text_scale = 3
-} # Lalmhoth
+}
 
+# Lalmhoth
 1308 = {
     text_scale = 3
-} # Bar-en-Nï¿½lbï¿½rath
+}
 
+# Bar-en-Nêlbórath
 1309 = {
     text_scale = 3
-} # Dor Lammenfirith
+}
 
+# Dor Lammenfirith
 1310 = {
     text_scale = 3
-} # Nan Uialduin
+}
 
+# Nan Uialduin
 1311 = {
     text_scale = 3
-} # Rimazan
+}
 
+# Rimazan
 1312 = {
     text_scale = 3
-} # Rildolach
+}
 
+# Rildolach
 1313 = {
     text_scale = 3
-} # Nan Himsiril
+}
 
+# Nan Himsiril
 1314 = {
     text_scale = 3
-} # Larad
+}
 
+# Larad
 1315 = {
     text_scale = 3
-} # Taur Faemar
+}
 
+# Taur Faemar
 1316 = {
     text_scale = 3
-} # Lucun
+}
 
+# Lucun
 1317 = {
     text_scale = 3
-} # Tharanin
+}
 
+# Tharanin
 1318 = {
     text_scale = 3
-} # Rond Morvin
+}
 
+# Rond Morvin
 1319 = {
     text_scale = 3
-} # Felemgil
+}
 
+# Felemgil
 1320 = {
     text_scale = 3
-} # Dol Bellas
+}
 
+# Dol Bellas
 1321 = {
     text_scale = 3
-} # Cornalas
+}
 
+# Cornalas
 1322 = {
     text_scale = 3
-} # Gobel Maeghoth
+}
 
+# Gobel Maeghoth
 1323 = {
     text_scale = 3
-} # Caurrain
+}
 
+# Caurrain
 1324 = {
     text_scale = 3
-} # Calembar
+}
 
+# Calembar
 1325 = {
     text_position = {
         x = 844.000000
@@ -10114,72 +11438,89 @@
 
     text_rotation = 6.096605
     text_scale = 3
-} # Havirmarsh
+}
 
+# Havirmarsh
 1326 = {
     text_scale = 3
-} # Pel Nelbal
+}
 
+# Pel Nelbal
 1327 = {
     text_scale = 3
-} # Barad Tharsir
+}
 
+# Barad Tharsir
 1328 = {
     text_scale = 3
-} # Nan Nï¿½n Erain
+}
 
+# Nan Nîn Erain
 1329 = {
     text_scale = 3
-} # Oakley
+}
 
+# Oakley
 1330 = {
     text_scale = 3
-} # Lakehead
+}
 
+# Lakehead
 1331 = {
     text_scale = 3
-} # Barad Heledh
+}
 
+# Barad Heledh
 1332 = {
     text_scale = 3
-} # Bar Baranorn
+}
 
+# Bar Baranorn
 1333 = {
     text_scale = 3
-} # Enedhroth
+}
 
+# Enedhroth
 1334 = {
     text_scale = 3
-} # Caras Fornen
+}
 
+# Caras Fornen
 1335 = {
     text_scale = 3
-} # Cerin Balgrist
+}
 
+# Cerin Balgrist
 1336 = {
     text_scale = 3
-} # Minas Arawruin
+}
 
+# Minas Arawruin
 1337 = {
     text_scale = 3
-} # Cardh Finraen
+}
 
+# Cardh Finraen
 1338 = {
     text_scale = 3
-} # Taur Orthon
+}
 
+# Taur Orthon
 1339 = {
     text_scale = 3
-} # Foros
+}
 
+# Foros
 1340 = {
     text_scale = 3
-} # Ost Faraneldir
+}
 
+# Ost Faraneldir
 1341 = {
     text_scale = 3
-} # Vesi-paistï¿½
+}
 
+# Vesi-paistâ
 1342 = {
     text_scale = 3
     building_position = {
@@ -10194,8 +11535,9 @@
         naval_base = 1.665512
     }
 
-} # Pynti-Peldot
+}
 
+# Pynti-Peldot
 1343 = {
     text_scale = 3
     building_position = {
@@ -10210,12 +11552,14 @@
         naval_base = 1.580796
     }
 
-} # Voi-teltta
+}
 
+# Voi-teltta
 1344 = {
     text_scale = 3
-} # Karhu-Leiri
+}
 
+# Karhu-Leiri
 1345 = {
     text_scale = 3
     building_position = {
@@ -10230,8 +11574,9 @@
         naval_base = 1.585795
     }
 
-} # Sï¿½ri-Kylï¿½
+}
 
+# Sûri-Kylä
 1346 = {
     text_scale = 3
     building_position = {
@@ -10246,16 +11591,19 @@
         naval_base = 4.712389
     }
 
-} # Emyn Nimbrith
+}
 
+# Emyn Nimbrith
 1347 = {
     text_scale = 3
-} # Parth Mewlip
+}
 
+# Parth Mewlip
 1348 = {
     text_scale = 3
-} # Homela
+}
 
+# Homela
 1349 = {
     text_scale = 3
     building_position = {
@@ -10270,8 +11618,9 @@
         naval_base = 1.900421
     }
 
-} # Puohlimisten Satama
+}
 
+# Puohlimisten Satama
 1350 = {
     text_scale = 3
     building_position = {
@@ -10282,100 +11631,124 @@
 
     }
 
-} # Kï¿½ï¿½ntyvï¿½ Tie
+}
 
+# Kääntyvä Tie
 1351 = {
     text_scale = 3
-} # Reodh Fuil
+}
 
+# Reodh Fuil
 1352 = {
     text_scale = 3
-} # Pynti-Leiri
+}
 
+# Pynti-Leiri
 1353 = {
     text_scale = 3
-} # Highmoor
+}
 
+# Highmoor
 1354 = {
     text_scale = 3
-} # Cangï¿½lhad
+}
 
+# Cangûlhad
 1355 = {
     text_scale = 3
-} # Wash Tundra
+}
 
+# Wash Tundra
 1356 = {
     text_scale = 3
-} # Taur Neffin
+}
 
+# Taur Neffin
 1357 = {
     text_scale = 3
-} # Barkil
+}
 
+# Barkil
 1358 = {
     text_scale = 3
-} # Fulachtar
+}
 
+# Fulachtar
 1359 = {
     text_scale = 3
-} # Mindil Kepich
+}
 
+# Mindil Kepich
 1360 = {
     text_scale = 3
-} # Gï¿½rzgawar
+}
 
+# Gûrzgawar
 1361 = {
     text_scale = 3
-} # Kul-Murkai
+}
 
+# Kul-Murkai
 1362 = {
     text_scale = 3
-} # Shartap-Krï¿½al
+}
 
+# Shartap-Krûal
 1363 = {
     text_scale = 3
-} # Shartap-Srï¿½fos
+}
 
+# Shartap-Srûfos
 1364 = {
     text_scale = 3
-} # Maethad
+}
 
+# Maethad
 1365 = {
     text_scale = 3
-} # Rhï¿½nendin
+}
 
+# Rhûnendin
 1366 = {
     text_scale = 3
-} # Kalazoshk
+}
 
+# Kalazoshk
 1367 = {
     text_scale = 3
-} # Dublaigit
+}
 
+# Dublaigit
 1368 = {
     text_scale = 3
-} # Zarak Dï¿½m
+}
 
+# Zarak Dûm
 1369 = {
     text_scale = 3
-} # Nan Lhï¿½chir
+}
 
+# Nan Lhúchir
 1370 = {
     text_scale = 3
-} # Kosh-Madh
+}
 
+# Kosh-Madh
 1371 = {
     text_scale = 3
-} # Kosh-Vor
+}
 
+# Kosh-Vor
 1372 = {
     text_scale = 3
-} # Kosh-Largat
+}
 
+# Kosh-Largat
 1373 = {
     text_scale = 3
-} # Ephel Angmar
+}
 
+# Ephel Angmar
 1374 = {
     text_position = {
         x = 1287.933333
@@ -10383,20 +11756,24 @@
     }
 
     text_scale = 3
-} # Hï¿½b Helcharaes
+}
 
+# Hûb Helcharaes
 1375 = {
     text_scale = 3
-} # Hï¿½b Helchui
+}
 
+# Hûb Helchui
 1376 = {
     text_scale = 3
-} # Thliuhanastath
+}
 
+# Thliuhanastath
 1377 = {
     text_scale = 3
-} # Etheburg
+}
 
+# Etheburg
 1378 = {
     text_scale = 3
     building_position = {
@@ -10411,12 +11788,14 @@
         naval_base = 5.826264
     }
 
-} # Burh Urï¿½s
+}
 
+# Burh Urés
 1379 = {
     text_scale = 3
-} # Nan Fiskataiga
+}
 
+# Nan Fiskataiga
 1380 = {
     text_position = {
         x = 2240.880000
@@ -10449,64 +11828,79 @@
         y = 1124.666667
     }
 
-} # Vothisvatos Brunna
+}
 
+# Vothisvatos Brunna
 1381 = {
     text_scale = 3
-} # Forodim
+}
 
+# Forodim
 1382 = {
     text_scale = 3
-} # Vadran
+}
 
+# Vadran
 1383 = {
     text_scale = 3
-} # Kaerst
+}
 
+# Kaerst
 1384 = {
     text_scale = 3
-} # Gyagasorag
+}
 
+# Gyagasorag
 1385 = {
     text_scale = 3
-} # Joghul
+}
 
+# Joghul
 1386 = {
     text_scale = 3
-} # Palcana
+}
 
+# Palcana
 1387 = {
     text_scale = 3
-} # Khorgulkan
+}
 
+# Khorgulkan
 1388 = {
     text_scale = 3
-} # Kï¿½nrand
+}
 
+# Kânrand
 1389 = {
     text_scale = 3
-} # Ulkar
+}
 
+# Ulkar
 1390 = {
     text_scale = 3
-} # Koloda
+}
 
+# Koloda
 1391 = {
     text_scale = 3
-} # Burh Oda
+}
 
+# Burh Oda
 1392 = {
     text_scale = 3
-} # Togaï¿½
+}
 
+# Togaï
 1393 = {
     text_scale = 3
-} # Burh Mokba
+}
 
+# Burh Mokba
 1394 = {
     text_scale = 3
-} # Elgaer
+}
 
+# Elgaer
 1395 = {
     text_scale = 3
     building_position = {
@@ -10521,8 +11915,9 @@
         naval_base = 0.714595
     }
 
-} # Kelepar
+}
 
+# Kelepar
 1396 = {
     text_scale = 3
     building_position = {
@@ -10533,20 +11928,24 @@
 
     }
 
-} # Karlogul
+}
 
+# Karlogul
 1397 = {
     text_scale = 3
-} # Kolomok
+}
 
+# Kolomok
 1398 = {
     text_scale = 3
-} # Burh Brena
+}
 
+# Burh Brena
 1399 = {
     text_scale = 3
-} # Lotan
+}
 
+# Lotan
 1400 = {
     text_scale = 3
     building_position = {
@@ -10561,8 +11960,9 @@
         naval_base = 5.886852
     }
 
-} # Fokerdo
+}
 
+# Fokerdo
 1401 = {
     text_scale = 3
     building_position = {
@@ -10577,16 +11977,19 @@
         naval_base = 3.717131
     }
 
-} # Burh Dragu
+}
 
+# Burh Dragu
 1402 = {
     text_scale = 3
-} # Burh Elya
+}
 
+# Burh Elya
 1403 = {
     text_scale = 3
-} # Tundera Var
+}
 
+# Tundera Var
 1404 = {
     text_scale = 3
     building_position = {
@@ -10601,8 +12004,9 @@
         naval_base = 5.558212
     }
 
-} # Burh Salenin
+}
 
+# Burh Salenin
 1405 = {
     text_scale = 3
     building_position = {
@@ -10617,8 +12021,9 @@
         naval_base = 4.722439
     }
 
-} # Durannon
+}
 
+# Durannon
 1406 = {
     text_scale = 3
     building_position = {
@@ -10629,104 +12034,129 @@
 
     }
 
-} # Athorn Vale
+}
 
+# Athorn Vale
 1407 = {
     text_scale = 3
-} # Felbuzad
+}
 
+# Felbuzad
 1408 = {
     text_scale = 3
-} # Althrith
+}
 
+# Althrith
 1409 = {
     text_scale = 3
-} # Weld
+}
 
+# Weld
 1410 = {
     text_scale = 3
-} # Upper Sarkar Vale
+}
 
+# Upper Sarkar Vale
 1411 = {
     text_scale = 3
-} # Endyr
+}
 
+# Endyr
 1412 = {
     text_scale = 3
-} # Linimer
+}
 
+# Linimer
 1413 = {
     text_scale = 3
-} # ï¿½ster
+}
 
+# Ûster
 1414 = {
     text_scale = 3
-} # Kryl
+}
 
+# Kryl
 1415 = {
     text_scale = 3
-} # Burh Dilin
+}
 
+# Burh Dilin
 1416 = {
     text_scale = 3
-} # Ulumur
+}
 
+# Ulumur
 1417 = {
     text_scale = 3
-} # Lygar
+}
 
+# Lygar
 1418 = {
     text_scale = 3
-} # Kargagis
+}
 
+# Kargagis
 1419 = {
     text_scale = 3
-} # Kosang
+}
 
+# Kosang
 1420 = {
     text_scale = 3
-} # Darshan-zar
+}
 
+# Darshan-zar
 1421 = {
     text_scale = 3
-} # Velike Suzdal
+}
 
+# Velike Suzdal
 1422 = {
     text_scale = 3
-} # Vitorog
+}
 
+# Vitorog
 1423 = {
     text_scale = 3
-} # Aitar
+}
 
+# Aitar
 1424 = {
     text_scale = 3
-} # Kusir
+}
 
+# Kusir
 1425 = {
     text_scale = 3
-} # Lower Nan Taurduin
+}
 
+# Lower Nan Taurduin
 1426 = {
     text_scale = 3
-} # Celon Glossgond
+}
 
+# Celon Glossgond
 1427 = {
     text_scale = 3
-} # Haudh-en-Avarrim
+}
 
+# Haudh-en-Avarrim
 1428 = {
     text_scale = 3
-} # Haudh-en-Aiganaur
+}
 
+# Haudh-en-Aiganaur
 1429 = {
     text_scale = 3
-} # Flahoz-Blogrï¿½m
+}
 
+# Flahoz-Blogrûm
 1430 = {
     text_scale = 3
-} # Esgaldor
+}
 
+# Esgaldor
 1431 = {
     text_scale = 3
     building_position = {
@@ -10741,36 +12171,44 @@
         naval_base = 3.146593
     }
 
-} # Gulch Hill
+}
 
+# Gulch Hill
 1432 = {
     text_scale = 3
-} # Hrigg Vidukuni
+}
 
+# Hrigg Vidukuni
 1433 = {
     text_scale = 3
-} # Emyn Lï¿½m
+}
 
+# Emyn Lûm
 1434 = {
     text_scale = 3
-} # Emyn Guldur
+}
 
+# Emyn Guldur
 1435 = {
     text_scale = 3
-} # Dur-Lun
+}
 
+# Dur-Lun
 1436 = {
     text_scale = 3
-} # Meonid's Watch
+}
 
+# Meonid's Watch
 1437 = {
     text_scale = 3
-} # Sonathor's Mound
+}
 
+# Sonathor's Mound
 1438 = {
     text_scale = 3
-} # Rushdown Vale
+}
 
+# Rushdown Vale
 1439 = {
     text_scale = 3
     building_position = {
@@ -10785,8 +12223,9 @@
         naval_base = 3.176578
     }
 
-} # Vegbï¿½r
+}
 
+# Vegbár
 1440 = {
     text_scale = 3
     building_position = {
@@ -10801,8 +12240,9 @@
         naval_base = 3.146593
     }
 
-} # Hultvï¿½s
+}
 
+# Hultvís
 1441 = {
     text_scale = 3
     building_position = {
@@ -10817,8 +12257,9 @@
         naval_base = 4.737509
     }
 
-} # Thinglad
+}
 
+# Thinglad
 1442 = {
     text_scale = 3
     building_position = {
@@ -10833,64 +12274,79 @@
         naval_base = 2.884523
     }
 
-} # Gollum's Cave
+}
 
+# Gollum's Cave
 1443 = {
     text_scale = 3
-} # Zagh Kala
+}
 
+# Zagh Kala
 1444 = {
     text_scale = 3
-} # Helvorn
+}
 
+# Helvorn
 1445 = {
     text_scale = 3
-} # Lag Sharak
+}
 
+# Lag Sharak
 1446 = {
     text_scale = 3
-} # Tir Morbad
+}
 
+# Tir Morbad
 1447 = {
     text_scale = 3
-} # Isen Vale
+}
 
+# Isen Vale
 1448 = {
     text_scale = 3
-} # Guayutir
+}
 
+# Guayutir
 1449 = {
     text_scale = 3
-} # Druwaur
+}
 
+# Druwaur
 1450 = {
     text_scale = 3
-} # Dun Arailt
+}
 
+# Dun Arailt
 1451 = {
     text_scale = 3
-} # Dunstrem Vale
+}
 
+# Dunstrem Vale
 1452 = {
     text_scale = 3
-} # Carnach
+}
 
+# Carnach
 1453 = {
     text_scale = 3
-} # Daithen
+}
 
+# Daithen
 1454 = {
     text_scale = 3
-} # Maes Hen
+}
 
+# Maes Hen
 1455 = {
     text_scale = 3
-} # Maes Coed
+}
 
+# Maes Coed
 1456 = {
     text_scale = 3
-} # Brolgwig
+}
 
+# Brolgwig
 1457 = {
     text_scale = 3
     building_position = {
@@ -10901,16 +12357,19 @@
 
     }
 
-} # New Maresh
+}
 
+# New Maresh
 1458 = {
     text_scale = 3
-} # Gwen Coit
+}
 
+# Gwen Coit
 1459 = {
     text_scale = 3
-} # Corcenis
+}
 
+# Corcenis
 1460 = {
     text_scale = 3
     building_position = {
@@ -10925,12 +12384,14 @@
         naval_base = 0.838352
     }
 
-} # Iolair
+}
 
+# Iolair
 1461 = {
     text_scale = 3
-} # Vindacil
+}
 
+# Vindacil
 1462 = {
     text_scale = 3
     building_position = {
@@ -10945,48 +12406,59 @@
         naval_base = 0.707542
     }
 
-} # Harthunn
+}
 
+# Harthunn
 1463 = {
     text_scale = 3
-} # Caramathaon
+}
 
+# Caramathaon
 1464 = {
     text_scale = 3
-} # Dun Fidach
+}
 
+# Dun Fidach
 1465 = {
     text_scale = 3
-} # Coit Cerdd
+}
 
+# Coit Cerdd
 1466 = {
     text_scale = 3
-} # Fearachas
+}
 
+# Fearachas
 1467 = {
     text_scale = 3
-} # Dun Bhainnan
+}
 
+# Dun Bhainnan
 1468 = {
     text_scale = 3
-} # Craig-y-Din
+}
 
+# Craig-y-Din
 1469 = {
     text_scale = 3
-} # Cartrev Matho
+}
 
+# Cartrev Matho
 1470 = {
     text_scale = 3
-} # Lhanuch
+}
 
+# Lhanuch
 1471 = {
     text_scale = 3
-} # Dun Firdach
+}
 
+# Dun Firdach
 1472 = {
     text_scale = 3
-} # Altheiborg
+}
 
+# Altheiborg
 1473 = {
     text_scale = 3
     building_position = {
@@ -11001,8 +12473,9 @@
         naval_base = 4.697315
     }
 
-} # Bridgethorp
+}
 
+# Bridgethorp
 1474 = {
     text_scale = 3
     building_position = {
@@ -11013,8 +12486,9 @@
 
     }
 
-} # Ironhold
+}
 
+# Ironhold
 1475 = {
     text_scale = 3
     building_position = {
@@ -11029,8 +12503,9 @@
         naval_base = 4.061881
     }
 
-} # Burh Sagra
+}
 
+# Burh Sagra
 1476 = {
     text_scale = 3
     building_position = {
@@ -11041,8 +12516,9 @@
 
     }
 
-} # Burh Dacranamel
+}
 
+# Burh Dacranamel
 1477 = {
     text_scale = 3
     building_position = {
@@ -11057,8 +12533,9 @@
         naval_base = 0.870300
     }
 
-} # Burh Athorn
+}
 
+# Burh Athorn
 1478 = {
     text_scale = 3
     building_position = {
@@ -11073,8 +12550,9 @@
         naval_base = 4.742531
     }
 
-} # Vindorborg
+}
 
+# Vindorborg
 1479 = {
     text_scale = 3
     building_position = {
@@ -11089,8 +12567,9 @@
         naval_base = 1.049178
     }
 
-} # Burh Ibar
+}
 
+# Burh Ibar
 1480 = {
     text_scale = 3
     building_position = {
@@ -11105,8 +12584,9 @@
         naval_base = 5.409053
     }
 
-} # Burh Agasha
+}
 
+# Burh Agasha
 1481 = {
     text_scale = 3
     building_position = {
@@ -11121,8 +12601,9 @@
         naval_base = 5.504879
     }
 
-} # Burh Lyst
+}
 
+# Burh Lyst
 1482 = {
     text_scale = 3
     building_position = {
@@ -11133,8 +12614,9 @@
 
     }
 
-} # Burh Sï¿½rï¿½beki
+}
 
+# Burh Sûrûbeki
 1483 = {
     text_scale = 3
     building_position = {
@@ -11149,8 +12631,9 @@
         naval_base = 1.590794
     }
 
-} # Lune River
+}
 
+# Lune River
 1484 = {
     text_position = {
         x = 627.545000
@@ -11159,8 +12642,9 @@
 
     text_rotation = 0.813759
     text_scale = 3
-} # Lune River
+}
 
+# Lune River
 1485 = {
     text_position = {
         x = 662.010000
@@ -11169,8 +12653,9 @@
 
     text_rotation = 1.555797
     text_scale = 3
-} # Lune River
+}
 
+# Lune River
 1486 = {
     text_position = {
         x = 644.050000
@@ -11179,8 +12664,9 @@
 
     text_rotation = 1.515852
     text_scale = 3
-} # Lune River
+}
 
+# Lune River
 1487 = {
     text_position = {
         x = 654.748333
@@ -11189,8 +12675,9 @@
 
     text_rotation = 1.207930
     text_scale = 3
-} # Lune River
+}
 
+# Lune River
 1488 = {
     text_position = {
         x = 618.920000
@@ -11198,8 +12685,9 @@
     }
 
     text_scale = 3
-} # Brandywine River
+}
 
+# Brandywine River
 1489 = {
     text_position = {
         x = 686.586667
@@ -11208,8 +12696,9 @@
 
     text_rotation = 1.116077
     text_scale = 3
-} # Brandywine River
+}
 
+# Brandywine River
 1490 = {
     text_position = {
         x = 729.150000
@@ -11217,8 +12706,9 @@
     }
 
     text_scale = 3
-} # Brandywine River
+}
 
+# Brandywine River
 1491 = {
     text_position = {
         x = 812.440000
@@ -11227,8 +12717,9 @@
 
     text_rotation = 0.483779
     text_scale = 3
-} # Brandywine River
+}
 
+# Brandywine River
 1492 = {
     text_position = {
         x = 890.800000
@@ -11237,8 +12728,9 @@
 
     text_rotation = 0.739494
     text_scale = 3
-} # Brandywine River
+}
 
+# Brandywine River
 1493 = {
     text_position = {
         x = 915.665000
@@ -11247,8 +12739,9 @@
 
     text_rotation = 5.586521
     text_scale = 3
-} # Brandywine River
+}
 
+# Brandywine River
 1494 = {
     text_position = {
         x = 870.756667
@@ -11257,8 +12750,9 @@
 
     text_rotation = 1.560797
     text_scale = 3
-} # Brandywine River
+}
 
+# Brandywine River
 1495 = {
     text_position = {
         x = 862.250000
@@ -11267,8 +12761,9 @@
 
     text_rotation = 0.788932
     text_scale = 3
-} # Brandywine River
+}
 
+# Brandywine River
 1496 = {
     text_position = {
         x = 867.906667
@@ -11276,8 +12771,9 @@
     }
 
     text_scale = 3
-} # Hoarwell River
+}
 
+# Hoarwell River
 1497 = {
     text_position = {
         x = 1125.948333
@@ -11286,8 +12782,9 @@
 
     text_rotation = 0.696664
     text_scale = 3
-} # Hoarwell River
+}
 
+# Hoarwell River
 1498 = {
     text_position = {
         x = 1190.426667
@@ -11296,8 +12793,9 @@
 
     text_rotation = 0.434508
     text_scale = 3
-} # Hoarwell River
+}
 
+# Hoarwell River
 1499 = {
     text_position = {
         x = 1226.120000
@@ -11306,13 +12804,15 @@
 
     text_rotation = 1.405648
     text_scale = 3
-} # Hoarwell River
+}
 
+# Hoarwell River
 1500 = {
     text_rotation = 1.293181
     text_scale = 3
-} # Hoarwell River
+}
 
+# Hoarwell River
 1501 = {
     text_position = {
         x = 1258.783333
@@ -11321,8 +12821,9 @@
 
     text_rotation = 1.098200
     text_scale = 3
-} # Bruinen River
+}
 
+# Bruinen River
 1502 = {
     text_position = {
         x = 1243.280000
@@ -11331,8 +12832,9 @@
 
     text_rotation = 0.439044
     text_scale = 3
-} # Bruinen River
+}
 
+# Bruinen River
 1503 = {
     text_position = {
         x = 1311.408333
@@ -11341,8 +12843,9 @@
 
     text_rotation = 0.831302
     text_scale = 3
-} # Bruinen River
+}
 
+# Bruinen River
 1504 = {
     text_position = {
         x = 1346.095000
@@ -11351,8 +12854,9 @@
 
     text_rotation = 0.803064
     text_scale = 3
-} # Bruinen River
+}
 
+# Bruinen River
 1505 = {
     text_position = {
         x = 1377.366667
@@ -11360,8 +12864,9 @@
     }
 
     text_scale = 3
-} # Glanduin River
+}
 
+# Glanduin River
 1506 = {
     text_position = {
         x = 1147.090000
@@ -11369,8 +12874,9 @@
     }
 
     text_scale = 3
-} # Glanduin River
+}
 
+# Glanduin River
 1507 = {
     text_position = {
         x = 1263.700000
@@ -11378,8 +12884,9 @@
     }
 
     text_scale = 3
-} # Isen River
+}
 
+# Isen River
 1508 = {
     text_position = {
         x = 927.775000
@@ -11388,8 +12895,9 @@
 
     text_rotation = 0.788932
     text_scale = 3
-} # Isen River
+}
 
+# Isen River
 1509 = {
     text_position = {
         x = 1057.188333
@@ -11397,8 +12905,9 @@
     }
 
     text_scale = 3
-} # Isen River
+}
 
+# Isen River
 1510 = {
     text_position = {
         x = 1117.100000
@@ -11406,8 +12915,9 @@
     }
 
     text_scale = 3
-} # Isen River
+}
 
+# Isen River
 1511 = {
     text_position = {
         x = 1223.700000
@@ -11415,17 +12925,20 @@
     }
 
     text_scale = 3
-} # Isen River
+}
 
+# Isen River
 1512 = {
     text_rotation = 1.390050
     text_scale = 3
-} # Adornas River
+}
 
+# Adornas River
 1513 = {
     text_scale = 3
-} # Adornas River
+}
 
+# Adornas River
 1514 = {
     text_position = {
         x = 1213.955000
@@ -11434,8 +12947,9 @@
 
     text_rotation = 5.797070
     text_scale = 3
-} # Lefnui River
+}
 
+# Lefnui River
 1515 = {
     text_position = {
         x = 1027.800000
@@ -11444,18 +12958,21 @@
 
     text_rotation = 5.864451
     text_scale = 3
-} # Gilrain River
+}
 
+# Gilrain River
 1516 = {
     text_rotation = 0.479341
     text_scale = 3
-} # Sirith River
+}
 
+# Sirith River
 1517 = {
     text_rotation = 1.460691
     text_scale = 3
-} # Sirith River
+}
 
+# Sirith River
 1518 = {
     text_position = {
         x = 1696.913333
@@ -11464,8 +12981,9 @@
 
     text_rotation = 5.216555
     text_scale = 3
-} # Erui River
+}
 
+# Erui River
 1519 = {
     text_position = {
         x = 1766.520000
@@ -11474,8 +12992,9 @@
 
     text_rotation = 5.781440
     text_scale = 3
-} # Poros River
+}
 
+# Poros River
 1520 = {
     text_position = {
         x = 1685.950000
@@ -11484,13 +13003,15 @@
 
     text_rotation = 5.622583
     text_scale = 3
-} # Poros River
+}
 
+# Poros River
 1521 = {
     text_rotation = 0.546418
     text_scale = 3
-} # Mouth of the Entwash
+}
 
+# Mouth of the Entwash
 1522 = {
     text_position = {
         x = 1637.200000
@@ -11498,8 +13019,9 @@
     }
 
     text_scale = 3
-} # Entwash River
+}
 
+# Entwash River
 1523 = {
     text_position = {
         x = 1519.250000
@@ -11508,8 +13030,9 @@
 
     text_rotation = 5.837473
     text_scale = 3
-} # Gladden River
+}
 
+# Gladden River
 1524 = {
     text_position = {
         x = 1512.150000
@@ -11517,8 +13040,9 @@
     }
 
     text_scale = 3
-} # Limlight River
+}
 
+# Limlight River
 1525 = {
     text_position = {
         x = 1508.308333
@@ -11526,8 +13050,9 @@
     }
 
     text_scale = 3
-} # Harnen River
+}
 
+# Harnen River
 1526 = {
     text_position = {
         x = 1667.525000
@@ -11536,8 +13061,9 @@
 
     text_rotation = 0.412124
     text_scale = 3
-} # Harnen River
+}
 
+# Harnen River
 1527 = {
     text_position = {
         x = 1756.400000
@@ -11545,8 +13071,9 @@
     }
 
     text_scale = 3
-} # Harnen River
+}
 
+# Harnen River
 1528 = {
     text_position = {
         x = 1865.653333
@@ -11555,8 +13082,9 @@
 
     text_rotation = 0.423311
     text_scale = 3
-} # Carnen River
+}
 
+# Carnen River
 1529 = {
     text_position = {
         x = 2171.200000
@@ -11565,8 +13093,9 @@
 
     text_rotation = 1.181005
     text_scale = 3
-} # Carnen River
+}
 
+# Carnen River
 1530 = {
     text_position = {
         x = 2154.358333
@@ -11575,8 +13104,9 @@
 
     text_rotation = 0.959252
     text_scale = 3
-} # Carnen River
+}
 
+# Carnen River
 1531 = {
     text_position = {
         x = 2101.200000
@@ -11586,3 +13116,14 @@
     text_rotation = 5.629634
     text_scale = 3
 }
+
+# Blackmarch Fort
+1532 = {
+    text_scale = 3
+}
+
+# Fangorn Pass
+1533 = {
+    text_scale = 3
+}
+

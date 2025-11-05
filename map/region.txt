@@ -245,7 +245,7 @@ ROH_808 = { 808 372 683 807 809 810 } # West-march
 GON_110 = { 110 } # Paths of the Dead
 GON_796 = { 796 116 191 193 } # White Mountains
 
-ISE_811 = { 811 812 1446 1447 } # Nan Curunír
+ISE_811 = { 811 812 1446 1447 1532 1533 } # Wizard’s Vale
 DUN_1448 = { 1448 814 815 816 1449 } # Isendale
 DUN_833 = { 833 817 818 831 832 } # Carreglyn
 DUN_1450 = { 1450 124 1451 } # Gravenwood

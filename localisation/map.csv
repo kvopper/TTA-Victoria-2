@@ -811,7 +811,7 @@ PROV807;Frecasburg;x
 PROV808;Hardscadu;x
 PROV809;Adornas;x
 PROV810;Fréaham;x
-PROV811;Angrenost;x
+PROV811;Isengard;x
 PROV812;Mines of Methedras;x
 PROV813;Misty Mountains;x
 PROV814;Riverwatch;x
@@ -1532,6 +1532,8 @@ PROV1528;Harnen River;x
 PROV1529;Carnen River;x
 PROV1530;Carnen River;x
 PROV1531;Carnen River;x
+PROV1532;Blackmarch Fort;x
+PROV1533;Fangorn Pass;x
 ###################;x }
 ##### REGIONS #####;x {
 ###################;x
@@ -3241,7 +3243,7 @@ ROH_801;Lower West Emnet;x
 ROH_802;Upper West Emnet;x
 ROH_805;Gap of Rohan;x
 ROH_808;West-march;x
-ISE_811;Nan Curunír;x
+ISE_811;Wizard’s Vale;x
 ENE_822;Angrast;x
 ENE_825;Magur;x
 ENE_830;Dor Wathui;x

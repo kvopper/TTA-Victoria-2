@@ -37,6 +37,8 @@
 1176;4;sea;1522;0;Entwash Crossings
 1176;788;sea;1522;0;Entwash Crossings
 25;41;sea;1519;0;Erui Crossings
+772;1533;sea;813;0;Fangorn Pass
+1446;1533;sea;813;0;Fangorn Pass
 52;57;sea;1516;0;Gilrain Crossings
 1471;874;sea;1507;0;Glanduin Crossings
 826;905;sea;1131;0;Gwathlo Crossing
@@ -1904,6 +1906,8 @@
 1481;1060;impassable;0;0;Utility Tag Adjacencies
 1482;1060;impassable;0;0;Utility Tag Adjacencies
 1483;1060;impassable;0;0;Utility Tag Adjacencies
+1532;1060;impassable;0;0;Utility Tag Adjacencies
+1533;1060;impassable;0;0;Utility Tag Adjacencies
 1;796;impassable;0;0;White Mountains
 2;116;impassable;0;0;White Mountains
 4;116;impassable;0;0;White Mountains
@@ -1957,6 +1961,8 @@
 805;796;impassable;0;0;White Mountains
 806;796;impassable;0;0;White Mountains
 807;796;impassable;0;0;White Mountains
+813;1533;impassable;0;0;White Mountains
+813;1532;impassable;0;0;White Mountains
 657;678;impassable;0;0;Withered Heath
 657;291;impassable;0;0;Withered Heath
 659;291;impassable;0;0;Withered Heath

@@ -155,12 +155,17 @@
 	}
 }
 
-# Angrenost
+# Isengard
 811 = {
 	aristocrats = {
-		culture = dunedain
+		culture = gondorian
 		religion = men
-		size = 400
+		size = 200
+	}
+	aristocrats = {
+		culture = isenmen
+		religion = men
+		size = 200
 	}
 	artisans = {
 		culture = dunnish
@@ -170,7 +175,12 @@
 	artisans = {
 		culture = gondorian
 		religion = men
-		size = 6400
+		size = 4800
+	}
+	artisans = {
+		culture = isenmen
+		religion = men
+		size = 1600
 	}
 	bureaucrats = {
 		culture = dunnish
@@ -180,7 +190,12 @@
 	bureaucrats = {
 		culture = gondorian
 		religion = men
-		size = 320
+		size = 240
+	}
+	bureaucrats = {
+		culture = isenmen
+		religion = men
+		size = 80
 	}
 	clergymen = {
 		culture = dunnish
@@ -190,36 +205,56 @@
 	clergymen = {
 		culture = gondorian
 		religion = men
-		size = 192
+		size = 144
+	}
+	clergymen = {
+		culture = isenmen
+		religion = men
+		size = 48
 	}
 	labourers = {
 		culture = dunnish
 		religion = men
-		size = 64372
+		size = 57596
 	}
 	labourers = {
 		culture = gondorian
+		religion = men
+		size = 6776
+	}
+	labourers = {
+		culture = isenmen
 		religion = men
 		size = 3388
 	}
 	soldiers = {
 		culture = dunnish
 		religion = men
-		size = 1600
+		size = 800
 	}
 	soldiers = {
 		culture = gondorian
 		religion = men
 		size = 1600
 	}
+	soldiers = {
+		culture = isenmen
+		religion = men
+		size = 800
+	}
 }
 
 # Mines of Methedras
 812 = {
 	aristocrats = {
-		culture = dunedain
+		culture = gondorian
 		religion = men
-		size = 5
+		size = 2
+	}
+	aristocrats = {
+		culture = isenmen
+		religion = men
+		size = 2
 	}
 	artisans = {
 		culture = dunnish
@@ -229,7 +264,12 @@
 	artisans = {
 		culture = gondorian
 		religion = men
-		size = 80
+		size = 60
+	}
+	artisans = {
+		culture = isenmen
+		religion = men
+		size = 20
 	}
 	bureaucrats = {
 		culture = dunnish
@@ -239,7 +279,12 @@
 	bureaucrats = {
 		culture = gondorian
 		religion = men
-		size = 12
+		size = 9
+	}
+	bureaucrats = {
+		culture = isenmen
+		religion = men
+		size = 3
 	}
 	clergymen = {
 		culture = dunnish
@@ -249,27 +294,42 @@
 	clergymen = {
 		culture = gondorian
 		religion = men
-		size = 12
+		size = 9
+	}
+	clergymen = {
+		culture = isenmen
+		religion = men
+		size = 3
 	}
 	labourers = {
 		culture = dunnish
 		religion = men
-		size = 4431
+		size = 3965
 	}
 	labourers = {
 		culture = gondorian
+		religion = men
+		size = 466
+	}
+	labourers = {
+		culture = isenmen
 		religion = men
 		size = 233
 	}
 	soldiers = {
 		culture = dunnish
 		religion = men
-		size = 100
+		size = 50
 	}
 	soldiers = {
 		culture = gondorian
 		religion = men
 		size = 100
+	}
+	soldiers = {
+		culture = isenmen
+		religion = men
+		size = 50
 	}
 }
 
@@ -1379,9 +1439,14 @@
 # Lag Sharak
 1446 = {
 	aristocrats = {
-		culture = dunedain
+		culture = gondorian
 		religion = men
-		size = 5
+		size = 2
+	}
+	aristocrats = {
+		culture = isenmen
+		religion = men
+		size = 2
 	}
 	artisans = {
 		culture = dunnish
@@ -1391,7 +1456,12 @@
 	artisans = {
 		culture = gondorian
 		religion = men
-		size = 80
+		size = 60
+	}
+	artisans = {
+		culture = isenmen
+		religion = men
+		size = 20
 	}
 	bureaucrats = {
 		culture = dunnish
@@ -1401,7 +1471,12 @@
 	bureaucrats = {
 		culture = gondorian
 		religion = men
-		size = 12
+		size = 9
+	}
+	bureaucrats = {
+		culture = isenmen
+		religion = men
+		size = 3
 	}
 	clergymen = {
 		culture = dunnish
@@ -1411,36 +1486,56 @@
 	clergymen = {
 		culture = gondorian
 		religion = men
-		size = 12
+		size = 9
+	}
+	clergymen = {
+		culture = isenmen
+		religion = men
+		size = 3
 	}
 	labourers = {
 		culture = dunnish
 		religion = men
-		size = 4431
+		size = 3965
 	}
 	labourers = {
 		culture = gondorian
+		religion = men
+		size = 466
+	}
+	labourers = {
+		culture = isenmen
 		religion = men
 		size = 233
 	}
 	soldiers = {
 		culture = dunnish
 		religion = men
-		size = 100
+		size = 50
 	}
 	soldiers = {
 		culture = gondorian
 		religion = men
 		size = 100
 	}
+	soldiers = {
+		culture = isenmen
+		religion = men
+		size = 50
+	}
 }
 
 # Tir Morbad
 1447 = {
 	aristocrats = {
-		culture = dunedain
+		culture = gondorian
 		religion = men
-		size = 30
+		size = 15
+	}
+	aristocrats = {
+		culture = isenmen
+		religion = men
+		size = 15
 	}
 	artisans = {
 		culture = dunnish
@@ -1450,7 +1545,12 @@
 	artisans = {
 		culture = gondorian
 		religion = men
-		size = 1200
+		size = 900
+	}
+	artisans = {
+		culture = isenmen
+		religion = men
+		size = 300
 	}
 	bureaucrats = {
 		culture = dunnish
@@ -1460,7 +1560,12 @@
 	bureaucrats = {
 		culture = gondorian
 		religion = men
-		size = 120
+		size = 90
+	}
+	bureaucrats = {
+		culture = isenmen
+		religion = men
+		size = 30
 	}
 	clergymen = {
 		culture = dunnish
@@ -1470,27 +1575,42 @@
 	clergymen = {
 		culture = gondorian
 		religion = men
-		size = 72
+		size = 54
+	}
+	clergymen = {
+		culture = isenmen
+		religion = men
+		size = 18
 	}
 	labourers = {
 		culture = dunnish
 		religion = men
-		size = 25678
+		size = 22975
 	}
 	labourers = {
 		culture = gondorian
+		religion = men
+		size = 2703
+	}
+	labourers = {
+		culture = isenmen
 		religion = men
 		size = 1351
 	}
 	soldiers = {
 		culture = dunnish
 		religion = men
-		size = 600
+		size = 300
 	}
 	soldiers = {
 		culture = gondorian
 		religion = men
 		size = 600
+	}
+	soldiers = {
+		culture = isenmen
+		religion = men
+		size = 300
 	}
 }
 
@@ -2511,6 +2631,189 @@
 		culture = dunnish
 		religion = men
 		size = 500
+	}
+}
+
+# Blackmarch Fort
+1532 = {
+	aristocrats = {
+		culture = gondorian
+		religion = men
+		size = 10
+	}
+	aristocrats = {
+		culture = isenmen
+		religion = men
+		size = 10
+	}
+	artisans = {
+		culture = dunnish
+		religion = men
+		size = 200
+	}
+	artisans = {
+		culture = gondorian
+		religion = men
+		size = 600
+	}
+	artisans = {
+		culture = isenmen
+		religion = men
+		size = 200
+	}
+	bureaucrats = {
+		culture = dunnish
+		religion = men
+		size = 20
+	}
+	bureaucrats = {
+		culture = gondorian
+		religion = men
+		size = 60
+	}
+	bureaucrats = {
+		culture = isenmen
+		religion = men
+		size = 20
+	}
+	clergymen = {
+		culture = dunnish
+		religion = men
+		size = 12
+	}
+	clergymen = {
+		culture = gondorian
+		religion = men
+		size = 36
+	}
+	clergymen = {
+		culture = isenmen
+		religion = men
+		size = 12
+	}
+	labourers = {
+		culture = dunnish
+		religion = men
+		size = 15317
+	}
+	labourers = {
+		culture = gondorian
+		religion = men
+		size = 1802
+	}
+	labourers = {
+		culture = isenmen
+		religion = men
+		size = 901
+	}
+	soldiers = {
+		culture = dunnish
+		religion = men
+		size = 200
+	}
+	soldiers = {
+		culture = gondorian
+		religion = men
+		size = 400
+	}
+	soldiers = {
+		culture = isenmen
+		religion = men
+		size = 200
+	}
+}
+
+# Fangorn Pass
+1533 = {
+	aristocrats = {
+		culture = gondorian
+		religion = men
+		size = 5
+	}
+	aristocrats = {
+		culture = isenmen
+		religion = men
+		size = 5
+	}
+	artisans = {
+		culture = dunnish
+		religion = men
+		size = 40
+	}
+	artisans = {
+		culture = gondorian
+		religion = men
+		size = 120
+	}
+	artisans = {
+		culture = isenmen
+		religion = men
+		size = 40
+	}
+	bureaucrats = {
+		culture = dunnish
+		religion = men
+		size = 6
+	}
+	bureaucrats = {
+		culture = gondorian
+		religion = men
+		size = 18
+	}
+	bureaucrats = {
+		culture = isenmen
+		religion = men
+		size = 6
+	}
+	clergymen = {
+		culture = dunnish
+		religion = men
+		size = 6
+	}
+	clergymen = {
+		culture = gondorian
+		religion = men
+		size = 18
+	}
+	clergymen = {
+		culture = isenmen
+		religion = men
+		size = 6
+	}
+	labourers = {
+		culture = dunnish
+		religion = men
+		size = 6064
+	}
+	labourers = {
+		culture = ent
+		religion = ent
+		size = 1866
+	}
+	labourers = {
+		culture = gondorian
+		religion = men
+		size = 933
+	}
+	labourers = {
+		culture = isenmen
+		religion = men
+		size = 466
+	}
+	soldiers = {
+		culture = dunnish
+		religion = men
+		size = 100
+	}
+	soldiers = {
+		culture = gondorian
+		religion = men
+		size = 200
+	}
+	soldiers = {
+		culture = isenmen
+		religion = men
+		size = 100
 	}
 }
 
