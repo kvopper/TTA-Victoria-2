@@ -302,8 +302,8 @@ rebuilt_city;Rebuilt City;x
 rebuilt_city_5;Rebuilt City;x
 dome_of_stars;Dome of Stars;x
 stonewain_valley_modifier;Stonewain Valley;x
-outlaws;Outlaws§!\n\nMonthly Raid Chance: §R0.8%§!\nNeighbor Province Monthly Raid Chance: §R0.8%§!;x
-hunting_outlaws;Hunting Outlaws§!\n\nMonthly Outlaw Removal Chance:§G1.6%§!;x
+outlaws;Outlaws§!\nMonthly Raid Chance: §R0.8%§!\nNeighbor Province Monthly Raid Chance: §R0.8%§!;x
+hunting_outlaws;Hunting Outlaws§!\nMonthly Outlaw Removal Chance:§G1.6%§!;x
 ##############################;x }
 ##### COLONIAL MODIFIERS #####;x {
 ##############################;x
@@ -516,11 +516,11 @@ major_slave_hub;Major Slave Hub;x
 ##### RHUN MODIFIERS #####;x {
 ##########################;x
 legacy_of_the_wainriders;Legacy of the Wainriders;x
-AMO_easterling_war_camp;Amov War Camp§!\n\nMonthly Logath Immigration Chance: §G12.5%§!;x
+AMO_easterling_war_camp;Amov War Camp§!\nMonthly Logath Immigration Chance: §G12.5%§!;x
 AMO_established_clan_guard;Amov Clan Guard;x
 AMO_established_clan_guard_desc;With the bolstered Logath population within our realm, we have begun to field militias in our camps -- a guard not loyal to any city or lord, but the clan itself.;x
-AMO_easterling_raiders;Amov Raiders§!\n\nMonthly Amov Raid Chance: §R2%§!;x
-AMO_upcoming_conquest;The Call to War§!\n\nMonthly Popular Anxiety Gain: §R0.50%§!;x
+AMO_easterling_raiders;Amov Raiders§!\nMonthly Amov Raid Chance: §R2%§!;x
+AMO_upcoming_conquest;The Call to War§!\nMonthly Popular Anxiety Gain: §R0.50%§!;x
 AMO_upcoming_conquest_desc;When we first came to the Salenin Vale, our Khan invited all other Logath to join in the upcoming conquest of Gramavuld. As new migrants come, the people become more and more unruly and uncertain of the future. While we may grow our strength, the longer our Khan waits to fulfill the promise of riches and glory, the greater the risk of societal collapse.;x
 ############################;x }
 ##### EREBOR MODIFIERS #####;x {
@@ -602,13 +602,13 @@ DAL_guild_power_10;Guild Power (+10);x
 DAL_guild_power_10_desc;The Guild has a distinct power advantage over the merchants -- the merchant's power is negligible. At this point, they reasonably could lobby to get the support of the realm (assuming the realm has not already supported them).;x
 marsh_wights;Marsh Wight Infestation;x
 hunting_marsh_wights;Hunting Marsh Wights;x
-celduin_pirates;Celduin Pirates§!\n\nMonthly Pirate Raid Chance: §R2%§!;x
+celduin_pirates;Celduin Pirates§!\nMonthly Pirate Raid Chance: §R2%§!;x
 smaugs_desolation;Smaug's Desolation;x
 smaugs_desolation_country;Smaug's Desolation;x
 smaugs_desolation_country_desc;We have at least one province with the province modifier §YSmaug's Desolation§!. Increase the province wealth to at least §WAverage§! to clear the modifier;x
-unfinished_vidugavia_successorship;Unfulfilled Claim to Vidugavia's Legacy§!\n\nMonthly Popular Anxiety Gain: §R0.25§!;x
+unfinished_vidugavia_successorship;Unfulfilled Claim to Vidugavia's Legacy§!\nMonthly Popular Anxiety Gain: §R0.25§!;x
 unfinished_vidugavia_successorship_desc;We have proclaimed ourselves heir to Vidugavia, but the promise of a united Northmen Kingdom has not yet come into fruition.;x
-vidugavia_successorship;Vidugavia's Legacy§!\n\nMonthly Popular Anxiety Loss: §G0.1§!;x
+vidugavia_successorship;Vidugavia's Legacy§!\nMonthly Popular Anxiety Loss: §G0.1§!;x
 vidugavia_successorship_desc;We have successfully fulfilled Vidugavia's legacy and reunited the Northmen of Rhovanion.;x
 erebor_relations_modifier;Barding - Erebor Relations;x
 erebor_relations_modifier_desc;Since the founding of the Kingdom in TA 2944, the Barding Realm has had a strong relationship with Erebor. At some point in the future, it may be possible to strengthen this relationship to the point that Dwarves are accepted within our borders.\n\n§RThis modifier is present to inform you of what is needed to get Longbeard accepted. Every year that we are allied to Erebor, our "alliance points" increases by 1. Additionally, there is other flavor that may increase or decrease these alliance points.\n\nIn order to accept Longbeard, we need to have at least 100 alliance points and Bard II (the Dwarf-friend) needs to be our leader. You can check Bard II's entry in the leaders fluff event to see what the point value is.;x
@@ -625,6 +625,9 @@ friggin_bree_mod;Friggin' Bree;x
 ##############################;x
 breeding_uruk_hai;Breeding Uruk Hai;x
 breeding_uruk_hai_desc;We are breeding Uruk Hai and will soon have a fierce population of strong warriors.;x
+renounced_white_council;Renounced the White Council;x
+renounced_white_council_desc;In T.A. 2953, Saruman renounced the White Council repeated his claim that the One Ring of Power was lost to the Anduin and washed down to the Belegaer, despite knowing that this was a falsehood. From here, he all but stated that the White Council would not be able to weather the coming storm, and left for Isengard.;x
+pillar_white_hand;Piller of the White Hand§!\nMonthly Surveillance Gain: §G1§!;x
 #################################;x }
 ##### OATHBREAKER MODIFIERS #####;x {
 #################################;x
@@ -652,7 +655,7 @@ control_of_rhunaer;Control of Rhûnaer;x
 control_of_rhunaer_desc;We have control over the Sea of Rhûn!\n\nTo retain these bonuses, we must control Raivod, Scarakikot, Lest, Dourband, Dilgul, Mistrand, Larkar, Elgaer, Egil Dorn, Tset-Hedron, Burh Kuga and Winterion Iaur.;x
 men_culture_nation;Men Nation;x
 men_culture_nation_desc;These are the bonuses for our primary race being Men.;x
-elven_culture_nation;Elven Nation\n\nMonthly Popular Anxiety Loss: §G0.25%§!;x
+elven_culture_nation;Elven Nation\nMonthly Popular Anxiety Loss: §G0.25%§!;x
 elven_culture_nation_desc;These are the bonuses for our primary race being Elves.;x
 dwarven_culture_nation;Dwarven Nation;x
 dwarven_culture_nation_desc;These are the bonuses for our primary race being Dwarven.;x

@@ -69,6 +69,7 @@
 # Green Leader				58						60
 # Red Leader				59						61
 # Yellow Leader				60						62
+# Saruman Icon				61						63
 
 #############################
 ##### VANILLA MODIFIERS ##### {
@@ -2061,6 +2062,20 @@ friggin_bree_mod = {
 # Country Modifier
 breeding_uruk_hai = {
 	icon = 11
+}
+
+# Country Modifier
+renounced_white_council = {
+	influence_modifier = -0.5
+	diplomatic_points_modifier = -0.5
+	badboy = 0.01
+	prestige = 0.01
+	icon = 8
+}
+
+# Province Modifier
+pillar_white_hand = {
+	icon = 63
 }
 # }
 ##### OATHBREAKERS ##### {
