@@ -2060,6 +2060,42 @@ friggin_bree_mod = {
 # }
 ##### ISENGARD ##### {
 # Country Modifier
+ISE_has_great_power = {
+	research_points = 0.15
+	icon = 15
+}
+
+# Country Modifier
+ISE_delving_into_ringmaking = {
+	tax_efficiency = -0.05
+	icon = 20
+}
+
+# Country Modifier
+ISE_barrow_forgotten_king_spoils = {
+	army_tech_research_bonus = 0.03
+	
+	icon = 15
+}
+
+# Country Modifier
+ISE_ring_of_saruman = {
+	global_pop_militancy_modifier = -0.05
+	diplomatic_points_modifier = 0.5
+	influence_modifier = 0.5
+	land_organisation = 0.25
+	min_military_spending = 1
+	non_accepted_pop_militancy_modifier = 0.05
+	org_regain = 0.25
+	prestige = 0.5
+	suppression_points_modifier = 0.5
+	badboy = 0.1
+	cb_generation_speed_modifier = 0.25
+	
+	icon = 19
+}
+
+# Country Modifier
 breeding_uruk_hai = {
 	icon = 11
 }

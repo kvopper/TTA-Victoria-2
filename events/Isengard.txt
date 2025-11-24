@@ -4,6 +4,221 @@
 # Isengard Events: {
 # 50100 - 50199 }
 
+# Ringmaking {
+# Invitation to the Greatest Smiths
+country_event = {
+	id = 50100
+	title = "Invitation to the Greatest Smiths"
+	desc = "EVTDESC50100"
+	picture = "isengard/ringmaking"
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = ISE
+		ruling_party = ISE_saruman
+		has_country_modifier = ISE_delving_into_ringmaking
+	}
+	
+	mean_time_to_happen = {
+		months = 3
+	}
+	
+	option = {
+		name = "We shall see what they can do"
+		
+		random_owned = {
+			limit = { owner = { ai = no } }
+			owner = { treasury = -50000 }
+		}
+		
+		set_country_flag = ISE_smiths_invited
+	}
+}
+
+# Crafting Failures
+country_event = {
+	id = 50101
+	title = "Crafting Failures"
+	desc = "EVTDESC50101"
+	picture = "isengard/ringmaking"
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = ISE
+		ruling_party = ISE_saruman
+		has_country_modifier = ISE_delving_into_ringmaking
+		has_country_flag = ISE_smiths_invited
+	}
+	
+	mean_time_to_happen = {
+		months = 60
+	}
+	
+	option = {
+		name = "Of course it couldn't be that easy"
+		
+		random_owned = {
+			limit = { owner = { ai = no } }
+			owner = { treasury = -100000 }
+		}
+		
+		set_country_flag = ISE_smiths_failed
+	}
+}
+
+# The Knowledge of the Archives of Orthanc
+country_event = {
+	id = 50102
+	title = "The Knowledge of the Archives of Orthanc"
+	desc = "EVTDESC50102"
+	picture = "isengard/researching"
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = ISE
+		ruling_party = ISE_saruman
+		has_country_modifier = ISE_delving_into_ringmaking
+		has_country_flag = ISE_smiths_failed
+	}
+	
+	mean_time_to_happen = {
+		months = 60
+	}
+	
+	option = {
+		name = "We have some knowledge now, but it's not enough. We need to access other archives"
+		
+		set_country_flag = ISE_researched_orthanc_archives
+	}
+}
+
+# Dispatch Parties to the Ruins of Ost-en-Edhil
+country_event = {
+	id = 50103
+	title = "Dispatch Parties to the Ruins of Ost-en-Edhil"
+	desc = "EVTDESC50103"
+	picture = "isengard/search_party"
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = ISE
+		ruling_party = ISE_saruman
+		has_country_modifier = ISE_delving_into_ringmaking
+		has_country_flag = ISE_smiths_failed
+	}
+	
+	mean_time_to_happen = {
+		months = 3
+	}
+	
+	option = {
+		name = "Perhaps some hidden knowledge survived the sacking in the Second Age"
+		
+		random_owned = {
+			limit = { owner = { ai = no } }
+			owner = { treasury = -50000 }
+		}
+		
+		set_country_flag = ISE_dispatched_search_parties_to_ost_en_edhil
+	}
+}
+
+# Barrow of the Forgotten King
+country_event = {
+	id = 50104
+	title = "Barrow of the Forgotten King"
+	desc = "EVTDESC50104"
+	picture = "isengard/search_party"
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = ISE
+		ruling_party = ISE_saruman
+		has_country_modifier = ISE_delving_into_ringmaking
+		has_country_flag = ISE_dispatched_search_parties_to_ost_en_edhil
+	}
+	
+	mean_time_to_happen = {
+		months = 12
+	}
+	
+	option = {
+		name = "At least the effort wasn't fruitless"
+		add_country_modifier = { name = ISE_barrow_forgotten_king_spoils duration = -1 }
+	}
+}
+
+# The Travels of Saruman
+country_event = {
+	id = 50105
+	title = "The Travels of Saruman"
+	desc = "EVTDESC50105"
+	picture = "isengard/researching"
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = ISE
+		ruling_party = ISE_saruman
+		has_country_modifier = ISE_delving_into_ringmaking
+		has_country_flag = ISE_researched_orthanc_archives
+	}
+	
+	mean_time_to_happen = {
+		months = 120
+	}
+	
+	option = {
+		name = "The creation is near"
+		
+		random_owned = {
+			limit = { owner = { ai = no } }
+			owner = { treasury = -100000 }
+		}
+		
+		set_country_flag = ISE_saruman_travelling_for_ringmaking_knowledge
+	}
+}
+
+# The Ring of Saruman
+country_event = {
+	id = 50106
+	title = "The Ring of Saruman"
+	desc = "EVTDESC50106"
+	picture = "isengard/ring"
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = ISE
+		ruling_party = ISE_saruman
+		has_country_modifier = ISE_delving_into_ringmaking
+		has_country_flag = ISE_saruman_travelling_for_ringmaking_knowledge
+	}
+	
+	mean_time_to_happen = {
+		months = 24
+	}
+	
+	option = {
+		name = "Now there is one to rival the One"
+		
+		random_owned = {
+			limit = { owner = { ai = no } }
+			owner = { treasury = -100000 }
+		}
+		
+		remove_country_modifier = ISE_delving_into_ringmaking
+		add_country_modifier = { name = ISE_ring_of_saruman duration = -1 }
+	}
+}
+# }
+
 # Alliance with Draig Luth
 country_event = {
 	id = 50110

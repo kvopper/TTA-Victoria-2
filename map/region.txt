@@ -692,6 +692,9 @@ DAL_unlock_establish_celduin_trading_post_cb_loc = { } # Activates §YEstablish 
 GON_unlock_invention_houses_of_healing_loc = { } # Unlocks invention §YHouses of Healing§! at the §Ystart of the next month§!, giving the following effects:\nMilitary Hospitals: §G+1.00%§!
 GON_unlock_invention_minasdirath_loc = { } # Unlocks invention §YMinasdirith§! at the §Ystart of the next month§!, giving the following effects:\nArmies: Build Time §G-3§! Days\nReg. Experience: §G+5.00§!
 
+# Static Tooltip Locs - Isengard
+ISE_delving_into_ringmaking_loc = { } # We will begin researching the lost art of ringmaking, and should expect various updates and results from our endeavors. This will be an expensive effort and will take years to complete. §RTo avoid bankruptcy, you will want to have 100k on hand at any given point§!
+
 # Static Tooltip Locs - Lothlorien
 LOR_unlock_invention_lembas_bread_loc = { } # Unlocks invention §YLembas Bread§! at the §Ystart of the next month§!, giving the following effects:\nArmies: Supply Consumption: §G-10%§!\nRGO output efficiency tech: §G+5.0%§!
 

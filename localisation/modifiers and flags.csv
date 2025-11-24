@@ -623,6 +623,14 @@ friggin_bree_mod;Friggin' Bree;x
 ##############################;x }
 ##### ISENGARD MODIFIERS #####;x {
 ##############################;x
+ISE_has_great_power;The Great Power of Isengard;x
+ISE_has_great_power_desc;Isengard's strength does not lie in an endless horde of troops or a stout population, but it its knowledge and archives.;x
+ISE_delving_into_ringmaking;Delving into Ringmaking;x
+ISE_delving_into_ringmaking_desc;We are researching the lost art of magical ringmaking!\n\n§RTo avoid bankruptcy, you will want to have 100k on hand at any given point§!;x
+ISE_barrow_forgotten_king_spoils;The Spoils of the Barrow of the Forgotten King;x
+ISE_barrow_forgotten_king_spoils_desc;While searching for knowledge on ringmaking, we came across a forgotten crypt in the Misty Mountains. While not containing anything related to ringmaking, the artefacts within are undboutedly magical.;x
+ISE_ring_of_saruman;The Ring of Saruman;x
+ISE_ring_of_saruman_desc;Made to be a rival to the One Ring the Ring of Saruman only answers to Saruman.;x
 breeding_uruk_hai;Breeding Uruk Hai;x
 breeding_uruk_hai_desc;We are breeding Uruk Hai and will soon have a fierce population of strong warriors.;x
 renounced_white_council;Renounced the White Council;x

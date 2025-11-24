@@ -24,37 +24,49 @@ political_decisions = {
 			set_country_flag = flavor_magic_3
 			set_country_flag = flavor_diplomacy_1
 			
+			add_country_modifier = { name = saruman_modifier duration = -1 }
 			add_country_modifier = { name = renounced_white_council duration = 7300 }
 			1447 = { add_province_modifier = { name = pillar_white_hand duration = -1 } }
 			
 			set_variable = { which = ISE_surveillance value = 0 }
 		}
 	}
-	lord_of_isengard = {
-		picture = "lord_of_isengard"
+}
+
+# The Search for Power
+political_decisions = {
+	ISE_great_power_combats_sauron = {
+		picture = "Isengard/ISE_great_power"
 		potential = {
 			tag = ISE
-			vassal_of = GON
+			NOT = { has_country_modifier = ISE_has_great_power }
 			ruling_party = ISE_saruman
 		}
 		allow = {
-			NOT = { year = 2955 }
 			OR = {
-				ai = no
-				month = 1
+				military_score = 50
+				industrial_score = 10
+				prestige = 200
 			}
 		}
 		effect = {
-			GON = {
-				diplomatic_influence = {
-					who = ISE
-					value = -200
-				}
-				release_vassal = ISE
-				country_event = 50100
-			}
-			add_country_modifier = { name = saruman_modifier duration = -1 }
-			any_pop = { dominant_issue = { value = neutral_alignment factor = 0.4 } }
+			add_country_modifier = { name = ISE_has_great_power duration = -1 }
+		}
+	}
+	ISE_delve_into_ringmaking = {
+		picture = "Isengard/ISE_ringmaking"
+		potential = {
+			tag = ISE
+			NOT = { has_country_modifier = ISE_delving_into_ringmaking }
+			NOT = { has_country_modifier = ISE_ring_of_saruman }
+			ruling_party = ISE_saruman
+		}
+		allow = {
+			magic_3 = 1
+		}
+		effect = {
+			add_country_modifier = { name = ISE_delving_into_ringmaking duration = -1 }
+			ISE_delving_into_ringmaking_loc = { }
 		}
 	}
 }
