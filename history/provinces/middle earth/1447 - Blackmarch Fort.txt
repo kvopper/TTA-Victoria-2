@@ -4,3 +4,6 @@ add_core = ISE
 trade_goods = food
 life_rating = 30
 terrain = nan_curunir
+fort = 1
+railroad = 1
+barracks = 1
