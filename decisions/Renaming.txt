@@ -18204,8 +18204,9 @@ political_decisions = {
 					}
 				}
 				1446 = { state_scope = { change_region_name = "Wizard’s Vale" } }
+				1447 = { change_province_name = "Blackmarch Fort" }
 				811 = { change_province_name = "Isengard" }
-				1532 = { change_province_name = "Blackmarch Fort" }
+				1532 = { change_province_name = "Eastwatch" }
 				owner = { FOR = { set_variable = { which = wizards_vale_name value = 1 } } }
 			}
 			# [northmen, anduinrim, gramavuld_northmen, rohirrim] - Wizard’s Vale
@@ -18244,8 +18245,9 @@ political_decisions = {
 						owner = { FOR = { check_variable = { which = wizards_vale_name value = 3.1 } } }
 					}
 				}
+				1447 = { change_province_name = "Tir Morbad" }
 				811 = { change_province_name = "Isengard" }
-				1532 = { change_province_name = "Tir Morrîm" }
+				1532 = { change_province_name = "Tir Rhûn" }
 				owner = { FOR = { set_variable = { which = wizards_vale_name value = 3 } } }
 			}
 		}
