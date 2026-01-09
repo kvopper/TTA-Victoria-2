@@ -291,12 +291,12 @@ fangorn;§gFangorn Forest§!\n\nThe Forest of Fangorn, known as the Entwood to t
 glittering_caves;§gGlittering Caves§!\n\nLocated behind Helm's Deep, the Glittering Caves, known in Sindarin as Aglarond and Glaemscrafu in Rohirric, were a network of jewelled caverns with many passageways and vaults beneath the White Mountains.;x
 helms_deep;§gHelm's Deep§!\n\nHelm's Deep is a deep gorge beneath the Thrihyrne, the northernmost arm of the White Mountains. In ancient days past, the Númenórean sea-kings built the great Fortress of Algarond at the entrance to the gorge, which guarded the passage to the Glittering Caves. Now, the Rohirrim call that fortress Súthburg, or the Hornburg. The Rohirrim gave the gorge the name Helm's Deep, named after Helm Hammerhand, who held out under siege against the Dunlendings and the usuruper Wulf during the Long Winter of 2758 to 2759.;x
 paths_of_the_dead;§gPaths of the Dead§!\n\nAlso known as Fui ’Ngorthrim in Sindarin, the Paths of the Dead are a passageway between Gondor and Rohan through the White Mountains. They are known for being the haunts of the spirits of the Men of the Mountains, who in the Second Age refused to honour their oath to Isildur.;x
-rohan_plains;§gPlains of Rohan§!;x
-rohan_woods;§gWoods of Rohan§!;x
-the_folde;§gPlains of the Folde§!;x
-the_wold;§gHills of the Wold§!;x
-the_wold_plains;§gPlains of the Wold§!;x
-westfold;§gPlains of the Westfold§!;x
+rohan_plains;§gPlains of Rohan§!\n\nRohan, known as Calenardhon to the Dúnedain, is a windswept land of pastures and lush tall grassland.;x
+rohan_woods;§gWoods of Rohan§!\n\nRohan, known as Calenardhon to the Dúnedain, is a windswept land of pastures and lush tall grassland.;x
+the_folde;§gPlains of the Folde§!\n\nThe Folde is a grassy plain region in central Rohan, serving as part of the royal demense of the kings of Rohan.;x
+the_wold;§gHills of the Wold§!\n\nThe Wolde is a windy upland region in northern Rohan. It is known for its fertile grasses which make it popular among herdsmen and horse breeders.;x
+the_wold_plains;§gPlains of the Wold§!\n\nThe Wolde is a windy upland region in northern Rohan. It is known for its fertile grasses which make it popular among herdsmen and horse breeders.;x
+westfold;§gPlains of the Westfold§!\n\nThe Westfold is a grassy plains region located on the western edge of Rohan's traditional borders. Its status as a border region made it important to the defence of Rohan, with the commanding officer, Second Marshal of the Mark, being a vitally important position in the military of Rohan, tasked with watching the Westfold and ensuring the realm's defence from Dunlendings.;x
 ##############################;x }
 ##### ENEDWAITH TERRAINS #####;x {
 ##############################;x
@@ -305,10 +305,10 @@ dunland_woods;§gWoods of Dunland§!;x
 dunland_hills;§gHills of Dunland§!;x
 enedwaith_plains;§gPlains of Enedwaith§!;x
 enedwaith_woods;§gHills of Enedwaith§!;x
-isengard;§gIsengard§!;x
+isengard;§gIsengard§!\n\nIsengard, known as Angrenost in Sindarin, is a great fortress in the valley of Nan Curunír. The huge tower of Orthanc stands in the middle of a plain surrounded by a large circular ring wall. The fortress was built some time in the S.A. 3320s by the Dúnedain, marking the most noth westernly point of the Kingdom of Gondor.;x
 lond_daer;§gLond Daer§!;x
-misty_mountain_mine;§gMisty Mountain Mine§!;x
-nan_curunir;§gNan Curunír§!;x
+misty_mountain_mine;§gSlopes of the Misty Mountains§!\n\nMany passages up into the mountains can be found on either side of the Misty Mountains. They can often be dangerous, with narrow winding passages up to where ice and snow can be found.;x
+nan_curunir;§gNan Curunír§!\n\nNan Curunír is a valley between the two southern arms of the Misty Mountains.;x
 ############################;x }
 ##### ERIADOR TERRAINS #####;x {
 ############################;x
