@@ -656,7 +656,7 @@ MODIFIER_UNCIV_MILITARY_UH;Council of the Realm support;x
 ##### CENTRALIZATION TEXT #####;x {
 ###############################;x
 DIPLOMACY_CIVILIZEDNATION_STATUS;Centralized Realm;x
-DIPLOMACY_UNCIVILIZEDNATION_STATUS;No Organizations;x
+DIPLOMACY_UNCIVILIZEDNATION_STATUS;Uncentralized Realm;x
 DIPLOMACY_UNCIVILIZEDNATION_APPEND;(Uncentralized);x
 AIREASON_CIV_VS_UNCIV;Centralized vs Uncentralized;x
 MAPMODE_19;Centralization Level;x
@@ -675,8 +675,8 @@ MODIFIER_CIVILIZATION_PROGRESS;Centralization Progress;x
 SPHERE_SHARE_CIV;Centralized country, will make §Y$PERCENTAGE$%§! of all resources available on leaders market (Base: §Y$BASE_PERCENTAGE$%§!);x
 SPHERE_SHARE_UNCIV;Uncentralized country, will make §Y$PERCENTAGE$%§! of all resources available on leaders market;x
 SPHERE_SHARE_2NDRANK;Second rank country, will make §Y$PERCENTAGE$%§! of all resources available on leaders market (Base: §Y$BASE_PERCENTAGE$%§!);x
-DIPLOMACY_ALMOST_WESTERN_NATION_STATUS;Partially Centralized Nation;x
-DIPLOMACY_PRIMITIVENATION_STATUS;Uncentralized Nation;x
+DIPLOMACY_ALMOST_WESTERN_NATION_STATUS;Partially Centralized Realm;x
+DIPLOMACY_PRIMITIVENATION_STATUS;Uncentralized Realm;x
 UNCIV_CANT_RESEARCH;Centralize to be able to research;x
 NO_CIV_PROGRESS;We have made no progress towards centralization. We need to enact military or economic reforms to centralize.;x
 REMOVEFROMSPHERE_COST_NO_INFAMY;This will cost §R$PRESTIGE$§! prestige;x
