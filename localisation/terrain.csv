@@ -318,9 +318,9 @@ angmar_mountains;§gMountains of Angmar§!;x
 carn_dum;§gCarn Dûm§!;x
 mount_gram;§gMount Gram§!;x
 annuminas;§gAnnúminas§!;x
-arthedain_plains;§gPlains of Arthedain§!;x
-arthedain_woods;§gWoods of Arthedain§!;x
-arthedain_marshes;§gMarshes of Arthedain§!;x
+arthedain_plains;§gPlains of Arthedain§!\n\nArthedain is a vast area of eastern Eriador stretching from the Southern Blue Mountains through Rhûlindon and the Shire and north to Annúminas and Fornost Erain. It was once part of the Kingdom of Arnor, but became a separate realm in T.A. 861. The kingdom lasted until T.A. 1975, where wars with Angmar led to its destruction.;x
+arthedain_woods;§gWoods of Arthedain§!\n\nArthedain is a vast area of eastern Eriador stretching from the Southern Blue Mountains through Rhûlindon and the Shire and north to Annúminas and Fornost Erain. It was once part of the Kingdom of Arnor, but became a separate realm in T.A. 861. The kingdom lasted until T.A. 1975, where wars with Angmar led to its destruction.;x
+arthedain_marshes;§gMarshes of Arthedain§!\n\nArthedain is a vast area of eastern Eriador stretching from the Southern Blue Mountains through Rhûlindon and the Shire and north to Annúminas and Fornost Erain. It was once part of the Kingdom of Arnor, but became a separate realm in T.A. 861. The kingdom lasted until T.A. 1975, where wars with Angmar led to its destruction.;x
 emyn_sul;§gHills of Emyn Sûl§!;x
 emyn_uial;§gEmyn Uial§!;x
 fornost;§gFornost Erain§!;x
@@ -342,7 +342,7 @@ cardolan_plains;§gPlains of Cardolan§!\n\nSindarin for Land of Red Hills, Card
 cardolan_woods;§gWoods of Cardolan§!\n\nSindarin for Land of Red Hills, Cardolan is a vast area of plains and downland between the Brandywine and Gwathló rivers. Once part of the Kingdom of Arnor, Cardolan was split off into a separate kingdom in T.A. 861. The kingdom lasted until wars with Angmar extinguished the royal bloodline, and the men of the region suffered in the instability that followed.;x
 cardolan_hills;§gHills of Cardolan§!\n\nSindarin for Land of Red Hills, Cardolan is a vast area of plains and downland between the Brandywine and Gwathló rivers. Once part of the Kingdom of Arnor, Cardolan was split off into a separate kingdom in T.A. 861. The kingdom lasted until wars with Angmar extinguished the royal bloodline, and the men of the region suffered in the instability that followed.;x
 eryn_vorn;§gEryn Vorn§!\n\nEryn Vorn, Sindarin for Blackwood, is all the remains of the ancient woodland that once covered vasts areas across Eriador.;x
-old_forest;§gOld Forest§!;x
+old_forest;§gOld Forest§!\n\nThe Old Forest is a small wooded area sandiwched between the Brandywine river and the Barrow-downs. It is all that remains in Eriador of a vast primordial forest. This great forest was destroyed by Númenoreans and in the many wars fought across Eriador. One of the most notable trees still in the Old Forest is Old Man Willow, a gnarled and old willow tree said to harbour an evil spirit. Another resident of the Old Forest, less tree-like though by no means less confusing, is Tom Bombadil, who is said to have made his home in Arda before there were even trees or rivers.;x
 sarn_ford;§gSarn Ford§!;x
 south_downs;§gSouth Downs§!;x
 tharbad;§gTharbad§!\n\nTharbad was a fortified town and ford over the River Gwathló, which served as a major port and trade destination for the Kingdom of Arnor during the Second Age. The long causeway across the river is the most important crossing of the Gwathló, and serves as a key landmark on the Royal Road connecting the north of Middle Earth to the south. After Arnor split, and Cardolan fell, the city suffered, though the crossing survived under the watchful eye of the Rangers of the North.;x
