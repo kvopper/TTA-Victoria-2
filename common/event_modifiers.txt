@@ -2096,6 +2096,11 @@ ISE_ring_of_saruman = {
 }
 
 # Country Modifier
+ISE_dunland_enedwaith_cooldown = {
+	icon = 61
+}
+
+# Country Modifier
 breeding_uruk_hai = {
 	icon = 11
 }

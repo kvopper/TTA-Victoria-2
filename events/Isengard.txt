@@ -219,7 +219,7 @@ country_event = {
 }
 # }
 
-# Alliance with Draig Luth
+# Alliance with Dunlending/Enedwaithrim Tribe
 country_event = {
 	id = 50110
 	title = "An alliance with the White Wizard?"
@@ -230,7 +230,7 @@ country_event = {
 
 	option = {
 		name = "Acceptable"
-		prestige = 5
+		prestige = -5
 		FROM = {
 			country_event = 50111
 		}
@@ -250,7 +250,7 @@ country_event = {
 country_event = {
 	id = 50111
 	title = "Alliance accepted"
-	desc = "They have accepted our offer."
+	desc = "The $FROMCOUNTRY$ has accepted our offer."
 	picture = lord_of_isengard
 	
 	is_triggered_only = yes
@@ -267,7 +267,7 @@ country_event = {
 country_event = {
 	id = 50112
 	title = "Alliance Refused"
-	desc = "They have rejected our offer."
+	desc = "The $FROMCOUNTRY$ has rejected our offer."
 	picture = lord_of_isengard
 	
 	is_triggered_only = yes

@@ -694,6 +694,9 @@ GON_unlock_invention_minasdirath_loc = { } # Unlocks invention §YMinasdirith§!
 
 # Static Tooltip Locs - Isengard
 ISE_delving_into_ringmaking_loc = { } # We will begin researching the lost art of ringmaking, and should expect various updates and results from our endeavors. This will be an expensive effort and will take years to complete. §RTo avoid bankruptcy, you will want to have 100k on hand at any given point§!
+ISE_expanding_into_dunland_enedwaith_loc = { } # We can take this decision once every 2 years. It will target a random Dunlending or Enedwaithrim tribe adjacent to us or one of our vassals. If the target declines, we gain a cb to puppet them§!
+ISE_uniting_dunland_loc = { } # If we have already accepted Enedwaithrim, we will also annex our Enedwaithrim vassals§!
+ISE_uniting_enedwaith_loc = { } # If we have already taken the decision §YUnite Dunland§!, we will also annex our Enedwaithrim vassals§!
 
 # Static Tooltip Locs - Lothlorien
 LOR_unlock_invention_lembas_bread_loc = { } # Unlocks invention §YLembas Bread§! at the §Ystart of the next month§!, giving the following effects:\nArmies: Supply Consumption: §G-10%§!\nRGO output efficiency tech: §G+5.0%§!

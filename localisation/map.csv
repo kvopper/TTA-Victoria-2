@@ -1584,6 +1584,7 @@ claim_status_doesnt_own_MOR_411_loc;§YMaegond§!: §RUnowned§!§I;x
 claim_status_doesnt_own_GON_228_loc;§YHarfalas§!: §RUnowned§!§I;x
 claim_status_owns_AND_732_loc;§YNan Anduin§!: §GOwned§!§I;x
 claim_status_doesnt_own_CAR_1179_loc;§YHenlan§!: §RUnowned§!§I;x
+ISE_expanding_into_dunland_enedwaith_loc;We can take this decision once every 2 years. It will target a random Dunlending or Enedwaithrim tribe adjacent to us or one of our vassals. If the target declines, we gain a cb to puppet them§!§I;x
 claim_status_doesnt_own_ROH_808_loc;§YWest-march§!: §RUnowned§!§I;x
 add_claim_BLU_917_loc;§WWe will gain claims over §!§YSouthern Ered Luin§!§I;x
 remove_claim_RHO_472_loc;§WWe will lose claims over §!§YBrown Lands§!§I;x
@@ -1722,6 +1723,7 @@ claim_status_owns_UMB_270_loc;§YMarös§!: §GOwned§!§I;x
 claim_status_doesnt_own_RHU_590_loc;§YMenelothriand§!: §RUnowned§!§I;x
 remove_claim_RHU_580_loc;§WWe will lose claims over §!§YEastern Gathod§!§I;x
 remove_claim_DND_863_loc;§WWe will lose claims over §!§YDor-en-Egladil§!§I;x
+ISE_uniting_dunland_loc;If we have already accepted Enedwaithrim, we will also annex our Enedwaithrim vassals§!§I;x
 DAL_bard_i_reforms_desc_loc;A balance between security and freedom, Bard's reforms strive to keep the realm strong, while supporting the wellbeing of his people.;x
 DAL_military_leaders_lodin_loc;§LLodin, §MCaptain of the Royal Archers§!|;x
 claim_status_doesnt_own_DAL_645_loc;§YNan Celduin§!: §RUnowned§!§I;x
@@ -2581,6 +2583,7 @@ claim_status_owns_ERE_681_loc;§YCirith Gondmaeglorn§!: §GOwned§!§I;x
 claim_status_owns_GON_114_loc;§YUpper Morthond Vale§!: §GOwned§!§I;x
 claim_status_doesnt_own_KHA_366_loc;§YKhandu Amú§!: §RUnowned§!§I;x
 remove_claim_KHA_362_loc;§WWe will lose claims over §!§YKhandu Itakh§!§I;x
+ISE_uniting_enedwaith_loc;If we have already taken the decision §YUnite Dunland§!, we will also annex our Enedwaithrim vassals§!§I;x
 claim_status_owns_LOR_765_loc;§YLothlórien§!: §GOwned§!§I;x
 claim_status_doesnt_own_RHO_474_loc;§YUvanwaith§!: §RUnowned§!§I;x
 claim_status_owns_ANG_987_loc;§YKanclemas§!: §GOwned§!§I;x

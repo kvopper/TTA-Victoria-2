@@ -3,7 +3,8 @@
 
 # Isengard Decisions:
 #	Starting Decision (Unseen)
-#	Dunland Shenanigans
+#	The Search for Power
+#	Aligning Dunland, Enedwaith and their neighbors
 #	Uruk Hai
 
 # Starting Decision
@@ -21,8 +22,11 @@ political_decisions = {
 			
 			set_country_flag = ISE_content
 			
+			set_country_flag = flavor_population_3
+			set_country_flag = flavor_population_4
 			set_country_flag = flavor_magic_3
-			set_country_flag = flavor_diplomacy_1
+			set_country_flag = flavor_diplomacy_2
+			set_country_flag = flavor_expansion_2
 			
 			add_country_modifier = { name = saruman_modifier duration = -1 }
 			add_country_modifier = { name = renounced_white_council duration = 7300 }
@@ -38,7 +42,7 @@ political_decisions = {
 	ISE_great_power_combats_sauron = {
 		picture = "Isengard/ISE_great_power"
 		potential = {
-			tag = ISE
+			has_country_flag = ISE_content
 			NOT = { has_country_modifier = ISE_has_great_power }
 			ruling_party = ISE_saruman
 		}
@@ -56,7 +60,7 @@ political_decisions = {
 	ISE_delve_into_ringmaking = {
 		picture = "Isengard/ISE_ringmaking"
 		potential = {
-			tag = ISE
+			has_country_flag = ISE_content
 			NOT = { has_country_modifier = ISE_delving_into_ringmaking }
 			NOT = { has_country_modifier = ISE_ring_of_saruman }
 			ruling_party = ISE_saruman
@@ -71,37 +75,195 @@ political_decisions = {
 	}
 }
 
-# Dunland Shenanigans
+# Aligning Dunland, Enedwaith and their neighbors
 political_decisions = {
-	alliance_with_draig_luth = {
+	ISE_expand_into_dunland_enedwaith = {
+		picture = "Isengard/ISE_disunited_clans"
 		potential = {
-			tag = ISE
+			has_country_flag = ISE_content
 			is_vassal = no
 			ruling_party = ISE_saruman
-			814 = {
-				owner = {
+			FOR = {
+				any_neighbor_country = {
+					OR = {
+						primary_culture = dunnish
+						primary_culture = enedwaithrim
+					}
 					is_vassal = no
+					OR = {
+						neighbour = THIS
+						any_neighbor_country = { vassal_of = THIS }
+					}
+					NOT = { tag = THIS }
 				}
 			}
 		}
 		allow = {
-			diplomacy_1 = 1
+			diplomacy_2 = 1
+			expansion_2 = 1
 			war = no
-			814 = {
-				owner = {
-					war = no
-					civilized = no
-					primary_culture = dunnish
+			NOT = { has_country_modifier = ISE_dunland_enedwaith_cooldown }
+		}
+		effect = {
+			random_country = {
+				limit = {
+					OR = {
+						primary_culture = dunnish
+						primary_culture = enedwaithrim
+					}
 					is_vassal = no
+					OR = {
+						neighbour = THIS
+						any_neighbor_country = { vassal_of = THIS }
+					}
+				}
+				country_event = 50110
+			}
+			
+			set_country_flag = hidden_effects
+			
+			random_owned = {
+				limit = { owner = { has_country_flag = hidden_effects } }
+				owner = {
+					add_country_modifier = { name = ISE_dunland_enedwaith_cooldown duration = 730 }
+					clr_country_flag = hidden_effects
+				}
+			}
+			
+			set_country_flag = ISE_expanding_into_dunland_enedwaith
+			
+			ISE_expanding_into_dunland_enedwaith_loc = { }
+		}
+	}
+	
+	ISE_unite_dunland = {
+		picture = "Isengard/ISE_unite_dunland"
+		potential = {
+			has_country_flag = ISE_content
+			ruling_party = ISE_saruman
+			has_country_flag = ISE_expanding_into_dunland_enedwaith
+			NOT = { has_country_flag = ISE_united_dunland }
+		}
+		allow = {
+			population_3 = 1
+			war = no
+			DUN = {
+				all_core = {
+					OR = {
+						owned_by = THIS
+						owner = { vassal_of = THIS }
+					}
+				}
+			}
+			ENE = {
+				all_core = {
+					OR = {
+						owned_by = THIS
+						owner = { vassal_of = THIS }
+					}
 				}
 			}
 		}
 		effect = {
-			814 = {
-				owner = {
-					country_event = 50110
+			any_country = {
+				limit = {
+					vassal_of = THIS
+					primary_culture = dunnish
+				}
+				annex_to = THIS
+			}
+			
+			DUN = {
+				all_core = {
+					limit = {
+						owned_by = THIS
+						NOT = { is_core = THIS }
+					}
+					add_province_modifier = { name = cultural_core_integration duration = -1 } # Average of 5 years to get a core per province
+					any_pop = { ideology = { factor = 0.05 value = lords_of_isengard } }
 				}
 			}
+			
+			random_owned = {
+				limit = { owner = { has_country_flag = ISE_turned_enedwaith } }
+				owner = {
+					any_country = {
+						limit = {
+							vassal_of = THIS
+							primary_culture = enedwaithrim
+						}
+						annex_to = THIS
+					}
+					
+					ENE = {
+						all_core = {
+							limit = {
+								owned_by = THIS
+								NOT = { is_core = THIS }
+							}
+							add_province_modifier = { name = cultural_core_integration duration = -1 } # Average of 5 years to get a core per province
+							any_pop = { ideology = { factor = 0.05 value = lords_of_isengard } }
+						}
+					}
+				}
+			}
+			
+			set_country_flag = ISE_united_dunland
+			
+			ISE_uniting_dunland_loc = { }
+		}
+	}
+	
+	ISE_turn_the_enedwaithrim = {
+		picture = "Isengard/ISE_unite_enedwaith"
+		potential = {
+			has_country_flag = ISE_content
+			ruling_party = ISE_saruman
+			has_country_flag = ISE_expanding_into_dunland_enedwaith
+			NOT = { has_country_flag = ISE_turned_enedwaith }
+		}
+		allow = {
+			population_4 = 1
+			war = no
+			ENE = {
+				all_core = {
+					OR = {
+						owned_by = THIS
+						owner = { vassal_of = THIS }
+					}
+				}
+			}
+		}
+		effect = {
+			add_accepted_culture = enedwaithrim
+			
+			random_owned = {
+				limit = { owner = { has_country_flag = ISE_united_dunland } }
+				owner = {
+					any_country = {
+						limit = {
+							vassal_of = THIS
+							primary_culture = enedwaithrim
+						}
+						annex_to = THIS
+					}
+					
+					ENE = {
+						all_core = {
+							limit = {
+								owned_by = THIS
+								NOT = { is_core = THIS }
+							}
+							add_province_modifier = { name = cultural_core_integration duration = -1 } # Average of 5 years to get a core per province
+							any_pop = { ideology = { factor = 0.05 value = lords_of_isengard } }
+						}
+					}
+				}
+			}
+			
+			set_country_flag = ISE_turned_enedwaith
+			
+			ISE_uniting_enedwaith_loc = { }
 		}
 	}
 }

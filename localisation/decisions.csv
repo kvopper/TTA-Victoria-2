@@ -447,8 +447,12 @@ ISE_great_power_combats_sauron_title;Only Great Power Combats the Enemy;
 ISE_great_power_combats_sauron_desc;With the power Sauron is amassing in the East, only those of great strength will be able withstand the coming storm. We must do all we can to prepare.;x
 ISE_delve_into_ringmaking_title;Delve into the Lost Art of Ringmaking;x
 ISE_delve_into_ringmaking_desc;Ever searching for artefacts of great power, the art of Ringmaking has always piqued the interest of Lord Saruman. Perhaps the best way to fight Sauron is to make one of our own...;x
-alliance_with_draig_luth_title;Ally with the Dunnish;x
-alliance_with_draig_luth_desc;Having now secured our independence from Gondor, it is wise to seek allies closer to Isengard. The Dunnish of Isendale will make a fine vassal.;x
+ISE_expand_into_dunland_enedwaith_title;Ally with the Wildmen;x
+ISE_expand_into_dunland_enedwaith_desc;While the Dunlendings and Enedwaithrim do not yet know it, together they are strong. However, with the amount of infighting between clans, only a strong outside influence could possibly unite them.;x
+ISE_unite_dunland_title;Unite Dunland;x
+ISE_unite_dunland_desc;With the tribes of Dunland now fully subservient to us, it is time to abolish the old clan structure. No longer are the people of Dunland tribesmen. They are servants of the Lord of Isengard!;x
+ISE_turn_the_enedwaithrim_title;Turn the Enedwaithrim;x
+ISE_turn_the_enedwaithrim_desc;With the tribes of Enedwaith now fully subservient to us, it is time to abolish the old clan structure. No longer are the people of Enedwaith tribesmen. They are servants of the Lord of Isengard!;x
 breed_uruk_hai_title;Breed Uruk Hai;x
 breed_uruk_hai_desc;A dark lord of Isengard cannot hope to subjagate those who refuse to submit without an army to enforce their will. By cross-breeding half-orcs and goblin-men, a new race of stronger and more intelligent orcs can birth themselves from the ground and submit themselves to the Lord of Isengard. This program may take many months to bear fruit.;x
 ############################;x }
