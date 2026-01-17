@@ -1556,6 +1556,7 @@ country_event = {
 			limit = { slavery = non_accepted_slavery }
 			any_pop = {
 				limit = {
+					type = slaves
 					OR = {
 						is_primary_culture = yes
 						is_accepted_culture = yes
