@@ -11,10 +11,6 @@ AMO = {
 	truce_until = 2960.1.1
 }
 
-LGV = {
-	value = -100
-}
-
 leader = {
 	name = "§LElstan, §MFirst Captain of Dale§!"
 	date = 2934.1.1
@@ -63,14 +59,14 @@ army = {
 		home = 652
 	}
 	regiment = {
-		name = "1st Esgaroth Archers"
-		type = archers
+		name = "Black Arrow Guildsmen"
+		type = elite_archers
 		home = 654
 	}
 	regiment = {
-		name = "2nd Esgaroth Archers"
-		type = archers
-		home = 654
+		name = "Adhalling Rangers"
+		type = rangers
+		home = 655
 	}
 	regiment = {
 		name = "1st Esgaroth Scouts"
