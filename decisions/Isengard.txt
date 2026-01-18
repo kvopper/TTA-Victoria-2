@@ -130,6 +130,8 @@ political_decisions = {
 				}
 			}
 			
+			badboy = 2
+			
 			set_country_flag = ISE_expanding_into_dunland_enedwaith
 			
 			ISE_expanding_into_dunland_enedwaith_loc = { }
