@@ -2426,7 +2426,7 @@ empty_line_loc;\n;x
 add_claim_ANG_987_loc;§WWe will gain claims over §!§YKanclemas§!§I;x
 add_claim_ERE_669_loc;§WWe will gain claims over §!§YIron Hills§!§I;x
 claim_status_doesnt_own_KHA_342_loc;§YMuzeida Vale§!: §RUnowned§!§I;x
-settings_borders_race_loc;Migration between realms is limiteed to migrations between the same race -- Orcs pops will migrate to orc realms, Elves will migrate to elven realms, etc§I;x
+settings_borders_race_loc;Migration between realms is limited to migrations between the same race -- Orcs pops will migrate to orc realms, Elves will migrate to elven realms, etc§I;x
 add_claim_ERE_660_loc;§WWe will gain claims over §!§YMountainlands§!§I;x
 remove_claim_ROH_802_loc;§WWe will lose claims over §!§YUpper West Emnet§!§I;x
 add_claim_DND_1269_loc;§WWe will gain claims over §!§YEn Eredoriath§!§I;x
