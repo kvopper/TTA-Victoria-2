@@ -697,6 +697,27 @@ ioreths_song = {
 	
 	effect = { shared_prestige = 10 }
 }
+fish_song = {
+	limit = { culture_2 = 1 }
+	
+	chance = {
+		base = 0
+		modifier = {
+			factor = 2
+			any_owned_province = {
+				is_coastal = yes
+			}
+		}
+		modifier = {
+			factor = 1
+			any_neighbor_country = {
+				invention = fish_song
+			}
+		}
+	}
+	
+	effect = { shared_prestige = 10 }
+}
 
 ######################
 # CULTURE INVENTIONS #
