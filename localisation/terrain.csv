@@ -317,7 +317,7 @@ angmar_hills;§gHills of Angmar§!;x
 angmar_mountains;§gMountains of Angmar§!;x
 carn_dum;§gCarn Dûm§!;x
 mount_gram;§gMount Gram§!;x
-annuminas;§gAnnúminas§!;x
+annuminas;§gAnnúminas§!\n\nAmmúminas, meaning Tower of the West in Sindarin, is an ancient city located on Lake Nenuial, surrounded by the Hills of Evendim, in western Eriador. It was founded in S.A. 3320 by Elendil, becoming the capital of the Kingdom of Arnor and the seat of the Ammúminas-stone, one of the Palantíri. With the fall of Arnor, it became part of the Kingdom of Arthedain, though its importance waned as Fornost Edain became that kingdom's capital.;x
 arthedain_plains;§gPlains of Arthedain§!\n\nArthedain is a vast area of eastern Eriador stretching from the Southern Blue Mountains through Rhûlindon and the Shire and north to Annúminas and Fornost Erain. It was once part of the Kingdom of Arnor, but became a separate realm in T.A. 861. The kingdom lasted until T.A. 1975, where wars with Angmar led to its destruction.;x
 arthedain_woods;§gWoods of Arthedain§!\n\nArthedain is a vast area of eastern Eriador stretching from the Southern Blue Mountains through Rhûlindon and the Shire and north to Annúminas and Fornost Erain. It was once part of the Kingdom of Arnor, but became a separate realm in T.A. 861. The kingdom lasted until T.A. 1975, where wars with Angmar led to its destruction.;x
 arthedain_marshes;§gMarshes of Arthedain§!\n\nArthedain is a vast area of eastern Eriador stretching from the Southern Blue Mountains through Rhûlindon and the Shire and north to Annúminas and Fornost Erain. It was once part of the Kingdom of Arnor, but became a separate realm in T.A. 861. The kingdom lasted until T.A. 1975, where wars with Angmar led to its destruction.;x
@@ -334,7 +334,7 @@ bree;§gBree§!\n\nBree is a major town and capital of the Breeland region, loca
 breeland;§gPlains of Breeland§!\n\nBreeland is an area of centarl Eriador surrounded by the South Downs, Weather Hills, North Downs, and the Brandywine River. It is a relatievly fertile plain land that has been inhabited by Men since the First Age who were joined by Hobbits in the 1300s of the Third Age.;x
 chetwood;§gChetwood§!\n\nChetwood is a small wooded area of Breeland.;x
 combe;§gCombe§!\n\nCombe is a town in Breeland. It is located in a gentle valley.;x
-iach_brandywine;§gCrossings of the Brandywine§!;x
+iach_brandywine;§gIant Baranduin§!\n\nThe Brandywine, or Baranduin, Sindarin for golden-brown river, is a river in western Eriador that flows from Lake Evendim southwards. Its course defines the eastern borders of the Shire. Many crossings exist across the river, the most prominent being the bridge at Buckland and the Sarn Ford, as well as a few ferries here and there.;x
 midgewater;§gMidgewater§!\n\nThe Midgewater Marshes are a dank, fly-infested region of marshland in central Eriador. The bogland is home to Neekerbreekers, overgrown cousins of the cricket who make loud shrilling shrieks in the night.;x
 staddle;§gStaddle§!\n\nStaddle is a town in Breeland. It is most known for the family of Underhill who resides there, Hobbits known for their trade and cutlivation of pipeweed.;x
 barrow_downs;§gBarrow Downs§!\n\nThe Barrow Downs, also called Tyrn Gorthad in Sindarin, are a region of downland littered with barrows - burial mounds belonging to men who fought against evil foes when the world was still young. The barrows contain many Dúnedain heroes, lords, and kings from the First Age onwards. In T.A. 1636, the Witch-king of Angmar sent evil spirits to the Barrow Downs, and the province has been considered haunted by those shadowy undead wights ever since.;x
@@ -363,18 +363,18 @@ rhudaur_woods;§gWoods of Rhudaur§!;x
 trollshaws_woods;§gForest of the Trollshaws§!;x
 trollshaws_plains;§gPlains of the Trollshaws§!;x
 buckland;§gBuckland§!\n\nSandwiched between the Old Forest and the Brandywine River, Buckland is a fertile strip of land led semi-independently by the Brandybuck family. It was originally colonised by the Hobbits in 2340 T.A. by Gorhendad Oldbuck, who began building Brandy Hall on Buck Hill. Bucklanders are braver than their shire-folk cousins, and are the only Hobbits west of the Misty Mountains who use boats.;x
-frogmorton;§gFrogmorton§!;x
-hardbottle;§gHardbottle§!;x
-hobbiton;§gHobbiton§!;x
-little_delving;§gLittle Delving§!;x
-longbottom;§gLongbottom§!;x
-michel_delving;§gMichel Delving§!;x
-nobottle;§gNobottle§!;x
-oatbarton;§gOatbarton§!;x
-shire_plains;§gPlains of the Shire§!;x
-shire_hills;§gHills of the Shire§!;x
-tighfield;§gTighfield§!;x
-tuckborough;§gTuckborough§!;x
+frogmorton;§gFrogmorton§!\n\nFrogmorton is a town in the Shire. It is the easternmost town in the Shire, bordering the Brandywine river, and many frogs can be found on the riverbanks near the town. It is known for the inn The Floating Log which sits almost exactly halfway between Hobbiton and the Brandywine bridge.;x
+hardbottle;§gHardbottle§!\n\nHardbotle, meaning rocky large dwelling in Old Hobbitish, is a town in the shire. It is known for being the ancestral home of the Bracegirdle family, who were known for being quite rotund.;x
+hobbiton;§gHobbiton§!\n\nHobbiton, meaning Town of Hobbits from the Old Hobbitsih, is a town in the Shire. It is built on both sides of a small stream called the Shire-water. It is perhaps most known for being the residence of Bilbo Baggins, who journeyed on King Thorin's Quest of Erebor and returned a very wealthy Hobbit famous for his outrageous parties and frightening stories of adventures.;x
+little_delving;§gLittle Delving§!\n\nLittle Delving, coming from the Old Hobbitish for Small Digging, is a town in the Shire.;x
+longbottom;§gLongbottom§!\n\nLongbottom is a town in the Shire, its name coming from the Old Hobbitish for Long Valley. It is most famous for its pipeweed cultivation, with Longbottom Leaf being the most prestigious variety of pipeweed, being cultivated for centuries by the Hornblower family since T.A. 2670.;x
+michel_delving;§gMichel Delving§!\n\nMichel Delving, meaning Large Excavation in Old Hobbitish, is the capital and chief town of the Shire. It is located on a series of gentle hills called the White Downs. At the centre of the town is two statues dedicated to Marcho and Blanco, who in 1601 T.A. travelled from Bree westwards across the Brandywine, founding the Shire as we know it from former hunting grounds of the Kingdom of Arthedain. Michel Delving also boasts the largest tavern found in the Shire - the Bird and Baby Inn.;x
+nobottle;§gNobottle§!\n\nNobottle, possibly deriving from the Old Hobbitish for new dwelling, is a town in the north of the Shire. It is famous for its brewing.;x
+oatbarton;§gOatbarton§!\n\nOatbarton is a town in the Shire, known for its fertile farmland.;x
+shire_plains;§gPlains of the Shire§!\n\nThe Shire is a region in western Eriador bounded by the Brandywine river to the east, the Hills of Evendim to the north, and the Tower Hills in the west. It is a green and pleasant land, with bountiful soil cultivated to provide grains, fruits, and pipeweed. It was once part of the Kingdom of Arnor, and later the Kingdom of Arthedain, but was settled by Hobbits from Bree with the King's permission. The Hobbits turned what was once the scarely populated hunting grounds of Arthedain into a thriving and peaceful land.;x
+shire_hills;§gHills of the Shire§!\n\nThe Shire is a region in western Eriador bounded by the Brandywine river to the east, the Hills of Evendim to the north, and the Tower Hills in the west. It is a green and pleasant land, with bountiful soil cultivated to provide grains, fruits, and pipeweed. It was once part of the Kingdom of Arnor, and later the Kingdom of Arthedain, but was settled by Hobbits from Bree with the King's permission. The Hobbits turned what was once the scarely populated hunting grounds of Arthedain into a thriving and peaceful land.;x
+tighfield;§gTighfield§!\n\nTighfield is a town in the Shire, known for its rope manufacturing industry. It is the home of several Hobbit clans such as the Gamwich and Roper families, who both have esteemed rope makers in their lineages.;x
+tuckborough;§gTuckborough§!\n\nTuckborough is an old town in the Shire, and one of the most important Hobbitish settlements. It is the location of Great Smials, the ancestral seat of the Took clan, the hereditary Thains of the Shire.;x
 ##########################;x }
 ##### OTHER TERRAINS #####;x {
 ##########################;x
