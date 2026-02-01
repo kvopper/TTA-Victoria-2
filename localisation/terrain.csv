@@ -254,11 +254,11 @@ upper_anduin_vale_marsh;§gMarshes of the Upper Anduin Vale§\n\nFrom the Gates 
 #######################################;x }
 ##### LINDON & ERED LUIN TERRAINS #####;x {
 #######################################;x
-ered_luin;§gMountains of Ered Luin§!;x
-belegost;§gBelegost§!;x
-thorins_halls;§gThorin's Halls§!;x
-ered_luin_foothills;§gEred Luin Foothills§!;x
-nogrod;§gNogrod§!;x
+ered_luin;§gMountains of Ered Luin§!\n\nEred Luin, literally meaning Blue Mountains in Sindarin, are a large divided mountain range in the west of Eriador. In the First Age, they were one continuous mountain range, but in the War of Wrath and with the sinking of Beleriand, the mountain range was split in two and the Gulf of Lune was formed between the two halves. Even in those earliest days, the mountains were the home to dwarves - who built great cities into the stone - and elves - who dwelled in the valleys around the mountains.;x
+ered_luin_foothills;§gEred Luin Foothills§!\n\nEred Luin, literally meaning Blue Mountains in Sindarin, are a large divided mountain range in the west of Eriador. In the First Age, they were one continuous mountain range, but in the War of Wrath and with the sinking of Beleriand, the mountain range was split in two and the Gulf of Lune was formed between the two halves. Even in those earliest days, the mountains were the home to dwarves - who built great cities into the stone - and elves - who dwelled in the valleys around the mountains.;x;x
+belegost;§gBelegost§!\n\nBelegost, meaning Great Fortress in Sindarin and known to the dwarves as Gabilgathol, is a dwarven settlement in the Blue Mountains and is one of the oldest dwarven cities in Middle Earth, founded in F.A. 587. It is the ancestral home of the Broadbeam dwarves. The Lords of Belegost wear a crown featuring the Nimphelos, a huge pearl gifted to them by Cirdan, about the size of a dove egg.;x
+thorins_halls;§gThorin's Halls§!\n\nThorin's Halls is a dwarven settlement in the Blue Mountains, founded by Durin's Folk in T.A. 2802 after the Sack of Erebor sent the Longbeard dwarves into exile. Thráin II initially settled the halls, but madness drew him back to Erebor and he was captured by the Necromancer on his journey. He was succeeded by Thorin II, called Oakenshield, who led the Quest for Erebor and retook the Lonely Mountain in T.A. 2941. Many dwarves from Thorin's Halls returned to Erebor, but others still remained behind.;x
+nogrod;§gNogrod§!\n\nNogrod, meaning Hollow Delving in Sindarin and known to the dwarves as Tumunzahar, is a dwarven settlement in the Blue Mountains and is one of the oldest dwarven cities in Middle Earth, founded in F.A. 587. It is the ancestral home of the Firebream dwarves. Nogrod, like many dwarven cities, is famed for its blacksmiths, the most notable of which being Telchar, who is the First Age forged the great sword Narsil, which would go on to cut the One Ring from Sauron's finger in the Siege of Barad-dûr of S.A. 3441.;x
 forlond;§gForlond§!;x
 harlond;§gHarlond§!;x
 mithlond;§gMithlond§!;x
