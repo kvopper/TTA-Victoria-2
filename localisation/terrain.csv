@@ -262,10 +262,10 @@ nogrod;§gNogrod§!\n\nNogrod, meaning Hollow Delving in Sindarin and known to t
 forlond;§gForlond§!;x
 harlond;§gHarlond§!;x
 mithlond;§gMithlond§!;x
-lindon_plains;§gPlains of Lindon§!;x
-lindon_hills;§gHills of Lindon§!;x
-lindon_woods;§gForests of Lindon§!;x
-emyn_beriad;§gEmyn Beraid§!;x
+lindon_plains;§gPlains of Lindon§!\n\nLindon, meaning Land of Music, is the westernmost land of Middle Earth, located west of Eriador and the Blue Mountains. Lindon is a land of lush forests, rolling hills, and beauitfufl coastline separated by the Gulf of Lune into two parts - Forlindon in the north, and Harlindon in the south. It has been inhabited by elves since the First Age, when the land was known as Ossiriand and still connected to the rest of Beleriand. It took its current shape at the start of the Second Age, when the Blue Mountains were split in two and the sea overflowed the land.;x
+lindon_hills;§gHills of Lindon§!\n\nLindon, meaning Land of Music, is the westernmost land of Middle Earth, located west of Eriador and the Blue Mountains. Lindon is a land of lush forests, rolling hills, and beauitfufl coastline separated by the Gulf of Lune into two parts - Forlindon in the north, and Harlindon in the south. It has been inhabited by elves since the First Age, when the land was known as Ossiriand and still connected to the rest of Beleriand. It took its current shape at the start of the Second Age, when the Blue Mountains were split in two and the sea overflowed the land.;x
+lindon_woods;§gForests of Lindon§!\n\nLindon, meaning Land of Music, is the westernmost land of Middle Earth, located west of Eriador and the Blue Mountains. Lindon is a land of lush forests, rolling hills, and beauitfufl coastline separated by the Gulf of Lune into two parts - Forlindon in the north, and Harlindon in the south. It has been inhabited by elves since the First Age, when the land was known as Ossiriand and still connected to the rest of Beleriand. It took its current shape at the start of the Second Age, when the Blue Mountains were split in two and the sea overflowed the land.;x
+emyn_beriad;§gEmyn Beraid§!\n\nEmyn Beraid, or the Tower Hills, are a range of hills between Eriador and Lindon famous for being the location of the White Towers. These three towers contained one of the palantíri which was ever focussed westward towards Valinor and were built as a gift by Gil-galad to the Kingdom of Arnor around S.A. 3320. The towers serve as a pilgrimage sight for wandering companies of elves wishing to gaze to Valinor through the palantir.;x
 ###########################################;x }
 ##### GREY MOUNTAIN & EREBOR TERRAINS #####;x {
 ###########################################;x
