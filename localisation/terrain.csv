@@ -222,14 +222,14 @@ rhun_steppe;§gSteppes of Rhûn§!;x
 #############################;x }
 ##### MIRKWOOD TERRAINS #####;x {
 #############################;x
-dol_guldur;§gDol Guldur§!;x
-elvenkings_halls;§gElvenking's Halls§!;x
-enchanted_vale;§gEnchanted Vale§!;x
-guldur_outerlands;§gGuldur Outerlands§!;x
-mirkwood_forest;§gForest of Mirkwood§!;x
-mirkwood_hills;§gHills of Mirkwood§!;x
-woodland_realm;§gForest of the Woodland Realm§!;x
-woodmen_town;§gWoodmen-town§!;x
+dol_guldur;§gDol Guldur§!\n\nDol Guldur, Sindarin for the Hill of Sorcery, is a stronghold located on the highest point in southern Mirkwood. It was originally a Silvan elven settlement, called Amon Lane, the Naked Hill, because trees did not grow on its summit, but it was abandoned by the elves in the Second Age. In around 1000 of the Third Age, a shadow fell on Mirkwood, and Dol Guldur became the host to the Necromancer, who was ousted from Dol Guldur by Gandalf in 2063, but a dark presence lingered in Mirkwood. In 2951, the Nazgûl, Khamûl the Easterling, was sent by Sauron to Dol Guldur to rule in his stead.;x
+elvenkings_halls;§gElvenking's Halls§!\n\nThe Elvenking's Halls, also known as Felegoth, is the great underground stronghold of the Silvan elves in northern Mirkwood. It was constructed in the early 1000s of the Third Age by King Thranduil, who was inspired by Thingol's halls of Menegroth in Doriath during the First Age. The halls of the cavern are said to be brightly illuminated and has gardens with natural beauty aplenty.;x
+enchanted_vale;§gEnchanted Vale§!\n\nThe Enchanted River flows north from the Mountains of Mirkwood, meeting the Forest River near the Halls of the Elvenking. The river, also called the Rhachló, is said to be cursed - any who touches its black waters immediately falls into a long and deep sleep. ;x
+guldur_outerlands;§gGuldur Outerlands§!\n\nCorrupted by the presence of evil emanating from Dol Guldur, the region of Mirkwood surrounding the fortress has a particularly dark aura.;x
+mirkwood_forest;§gForest of Mirkwood§!\n\nMirkwood, known in Sindarin as Taur e-Ndaedelos, is a great forest in Rhovanion lying east of the River Anduin. It is a deep, thick, and dark forest home to many races and creatures criss-crossed with roads and rivers. It was once known as Greenwood the Great, or Eryn Galen, until a dark shadow fell upon it in the early 1000s of the Third Age.;x
+mirkwood_hills;§gHills of Mirkwood§!\n\nMirkwood, known in Sindarin as Taur e-Ndaedelos, is a great forest in Rhovanion lying east of the River Anduin. It is a deep, thick, and dark forest home to many races and creatures criss-crossed with roads and rivers. It was once known as Greenwood the Great, or Eryn Galen, until a dark shadow fell upon it in the early 1000s of the Third Age.;x
+woodland_realm;§gForest of the Woodland Realm§!\n\nThe northern most reaches of Mirkwood retain some of the splendour of the days of Greenwood, even as the rest of the forest fell into darkness.;x
+woodmen_town;§gWoodmen-town§!\n\nThe Woodmen are a hardy folk of Northmen who dwell on the western edges of Mirkwood. The Woodmen witnessed the transformation of Greenwood the Great into Mirkwood over the centuries and have grown into deeply superstitious people as a result.;x
 #######################################;x }
 ##### UPPER ANDIUN VALES TERRAINS #####;x {
 #######################################;x
