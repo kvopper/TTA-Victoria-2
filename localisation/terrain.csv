@@ -212,13 +212,13 @@ nurunk_khizdin;§gNurunk Khizdín§!;x
 #########################;x }
 ##### RHUN TERRAINS #####;x {
 #########################;x
-mistrand;§gMistrand§!;x
-lest;§gLest§!;x
-dourband;§gDourband§!;x
-rhun_plains;§gPlains of Rhûn§!;x
-rhun_hills;§gHills of Rhûn§!;x
-rhun_forest;§gForests of Rhûn§!;x
-rhun_steppe;§gSteppes of Rhûn§!;x
+mistrand;§gMistrand§!\n\nMistrand, meaning Merged Waters to the Easterlings, is a city in Rhûn located on a bay of the same name on the Sea of Rhûn.;x
+lest;§gLest§!\n\nLest is a city in Rhûn located at the mouth of Othnen river where it meets the Sea of Rhûn.;x
+dourband;§gDourband§!\n\nDourband is a city on the coast of the Sea of Rhûn. It is known for its vineyards and fruit orchards.;x
+rhun_plains;§gPlains of Rhûn§!\n\nRhûn is a vast land lying to the east of Rhovanion and reaching as far east as the Yellow Mountains. It is known for its endless steppes of empty grasslands and rolling hills. The men of Rhûn, also known as Easterlings, have been living in these lands since the First Age and are famous for their charioteers.;x
+rhun_hills;§gHills of Rhûn§!\n\nRhûn is a vast land lying to the east of Rhovanion and reaching as far east as the Yellow Mountains. It is known for its endless steppes of empty grasslands and rolling hills. The men of Rhûn, also known as Easterlings, have been living in these lands since the First Age and are famous for their charioteers.;x
+rhun_forest;§gForests of Rhûn§!\n\nRhûn is a vast land lying to the east of Rhovanion and reaching as far east as the Yellow Mountains. It is known for its endless steppes of empty grasslands and rolling hills. The men of Rhûn, also known as Easterlings, have been living in these lands since the First Age and are famous for their charioteers.;x
+rhun_steppe;§gSteppes of Rhûn§!\n\nRhûn is a vast land lying to the east of Rhovanion and reaching as far east as the Yellow Mountains. It is known for its endless steppes of empty grasslands and rolling hills. The men of Rhûn, also known as Easterlings, have been living in these lands since the First Age and are famous for their charioteers.;x
 #############################;x }
 ##### MIRKWOOD TERRAINS #####;x {
 #############################;x
