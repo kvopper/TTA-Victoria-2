@@ -268,6 +268,149 @@ political_decisions = {
 			ISE_uniting_enedwaith_loc = { }
 		}
 	}
+	
+	ISE_influence_saerlann = {
+		picture = "saerlann"
+		potential = {
+			has_country_flag = ISE_content
+			FOR = {
+				any_neighbor_country = {
+					primary_culture = saerlanner
+					is_vassal = no
+					is_greater_power = no
+				}
+			}
+			NOT = { has_country_flag = ISE_influenced_saerlann }
+		}
+		allow = {
+			is_greater_power = yes
+			OR = {
+				owns = 825 # Lond Daer
+				825 = { owner = { vassal_of = THIS } }
+				owns = 826 # Alcfud
+				826 = { owner = { vassal_of = THIS } }
+			}
+		}
+		effect = {
+			set_country_flag = hidden_effects
+			
+			random_owned = {
+				limit = {
+					owner = {
+						has_country_flag = hidden_effects
+						FOR = {
+							any_neighbor_country = {
+								in_sphere = THIS
+								is_vassal = no
+								ai = yes
+								primary_culture = saerlanner
+							}
+						}
+					}
+				}
+				owner = {
+					any_country = {
+						limit = {
+							in_sphere = THIS
+							is_vassal = no
+							ai = yes
+							primary_culture = saerlanner
+						}
+						country_event = 2510
+					}
+				}
+			}
+			
+			# Cosmetic
+			random_owned = {
+				limit = {
+					owner = {
+						FOR = {
+							any_neighbor_country = {
+								in_sphere = THIS
+								is_vassal = no
+								ai = yes
+								primary_culture = saerlanner
+							}
+						}
+					}
+				}
+				owner = {
+					any_country = {
+						limit = {
+							in_sphere = THIS
+							is_vassal = no
+							ai = yes
+							primary_culture = saerlanner
+						}
+						ISE_puppet_saerlanners_loc = { }
+						end_color_loc = { }
+						empty_line_loc = { }
+					}
+				}
+			}
+			
+			random_owned = {
+				limit = {
+					owner = {
+						has_country_flag = hidden_effects
+						FOR = {
+							any_neighbor_country = {
+								part_of_sphere = no
+								is_vassal = no
+								ai = yes
+								primary_culture = saerlanner
+							}
+						}
+					}
+				}
+				owner = {
+					any_country = {
+						limit = {
+							part_of_sphere = no
+							is_vassal = no
+							ai = yes
+							primary_culture = saerlanner
+						}
+						country_event = 3505
+					}
+				}
+			}
+			
+			# Cosmetic
+			random_owned = {
+				limit = {
+					owner = {
+						FOR = {
+							any_neighbor_country = {
+								part_of_sphere = no
+								is_vassal = no
+								ai = yes
+								primary_culture = saerlanner
+							}
+						}
+					}
+				}
+				owner = {
+					any_country = {
+						limit = {
+							part_of_sphere = no
+							is_vassal = no
+							ai = yes
+							primary_culture = saerlanner
+						}
+						ISE_sphere_saerlanners_loc = { }
+						end_color_loc = { }
+						empty_line_loc = { }
+					}
+				}
+			}
+			
+			ISE_influence_saerlann_loc = { }
+			clr_country_flag = hidden_effects
+			set_country_flag = ISE_influenced_saerlann
+		}
+	}
 }
 
 # Uruk Hai
