@@ -207,8 +207,8 @@ dorwinion_plains;§gPlains of Dorwinion§!;x
 dorwinion_hills;§gHills of Dorwinion§!;x
 dorwinion_forest;§gForests of Dorwinion§!;x
 szrel_kain;§gSzrel Kain§!;x
-pinnon_rhun;§gPinnon Rhûn§!;x
-nurunk_khizdin;§gNurunk Khizdín§!;x
+pinnon_rhun;§gPinnon Rhûn§!\n\nThe Eastern Hills, known as Pinnon Rhûn in Sindarin, are a range of highlands west of the Sea of Rhûn.;x
+nurunk_khizdin;§gNurunk Khizdín§!\n\nNurunk Khizdín is a dwarven settlement in the Eastern Hills. It was founded by the king of the Ironfists, Buldin, in S.A. 2797.;x
 #########################;x }
 ##### RHUN TERRAINS #####;x {
 #########################;x
