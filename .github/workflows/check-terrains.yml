@@ -7,7 +7,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  check-encoding:
+  check-terrains:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -16,5 +16,5 @@ jobs:
         with:
           python-version: '3.x'
       
-      - name: Run terrain check
+      - name: Run terrains check
         run: python scripts/check-terrains.py
