@@ -111,7 +111,9 @@ def get_terrains_from_terrain_txt_file():
             # Up until ocean1
             if found_start_line and line.startswith('ocean1'):
                 break
-            found_start_line = True
+            if not found_start_line:
+                found_start_line = True
+                continue
             # Lines will be of the form "<name> = {", so check if line ends with " = {"
             if line.endswith(' = {'):
                 terrain = line[:-len(' = {')].strip()
