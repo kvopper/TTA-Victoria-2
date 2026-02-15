@@ -16,5 +16,5 @@ jobs:
         with:
           python-version: '3.x'
       
-      - name: Run encoding check
+      - name: Run terrain check
         run: python scripts/check-terrains.py
