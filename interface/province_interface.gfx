@@ -296,12 +296,6 @@ spriteTypes = {
 	}
 
 	spriteType = {
-		name = "GFX_terrainimg_urban"
-		texturefile = "gfx\\interface\\terrain_farmlands.tga"
-		norefcount = yes
-	}
-
-	spriteType = {
 		name = "GFX_terrainimg_hills"
 		texturefile = "gfx\\interface\\terrain_hills.tga"
 		norefcount = yes
@@ -338,12 +332,6 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_terrainimg_white_mountains"
 		texturefile = "gfx\\interface\\terrain\\terrain_white_mountains.tga"
-		norefcount = yes
-	}
-
-	spriteType = {
-		name = "GFX_terrainimg_conifer_forest"
-		texturefile = "gfx\\interface\\terrain\\terrain_conifer_forest.tga"
 		norefcount = yes
 	}
 
@@ -1318,12 +1306,6 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_terrainimg_paths_of_the_dead"
 		texturefile = "gfx\\interface\\terrain\\rohan\\terrain_paths_of_the_dead.tga"
-		norefcount = yes
-	}
-
-	spriteType = {
-		name = "GFX_terrainimg_rohan"
-		texturefile = "gfx\\interface\\terrain\\rohan\\terrain_rohan.tga"
 		norefcount = yes
 	}
 
