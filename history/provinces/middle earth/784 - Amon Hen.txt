@@ -1,4 +1,4 @@
 add_core = ROH
 trade_goods = rock
 life_rating = 25
-terrain = emyn_muil
+terrain = amon_hen

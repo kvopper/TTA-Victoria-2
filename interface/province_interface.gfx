@@ -1284,7 +1284,12 @@ spriteTypes = {
 	##########################
 	##### ROHAN TERRAINS #####
 	##########################
-
+	spriteType = {
+		name = "GFX_terrainimg_amon_hen"
+		texturefile = "gfx\\interface\\terrain\\rohan\\terrain_amon_hen.tga"
+		norefcount = yes
+	}
+	
 	spriteType = {
 		name = "GFX_terrainimg_dunharrow"
 		texturefile = "gfx\\interface\\terrain\\rohan\\terrain_dunharrow.tga"

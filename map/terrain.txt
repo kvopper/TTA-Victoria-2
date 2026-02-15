@@ -3247,6 +3247,24 @@ categories = {
 	##########################
 	
 	# hills
+	amon_hen = {
+		movement_cost = 1.2
+		
+		defence = 1
+		combat_width = -0.25
+		
+		color = { 135 70 0 }
+
+		farm_rgo_size = -0.1
+		farm_rgo_eff = -0.1
+		mine_rgo_size = 0.1
+		mine_rgo_eff = 0.1
+		
+		supply_limit = 3
+		min_build_railroad = 1
+	}
+	
+	# hills
 	dunharrow = {
 		movement_cost = 1.2
 		
