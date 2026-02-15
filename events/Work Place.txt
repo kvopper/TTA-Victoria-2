@@ -3609,6 +3609,7 @@ province_event = {
 						terrain = numenor
 						# Rhovanion + Rhun
 						terrain = amon_lhaw
+						terrain = amon_hen
 						terrain = emyn_muil
 						terrain = uvanwaith_hills
 						terrain = gramavuld_hills
