@@ -1,4 +1,4 @@
-name: Check encoding
+name: Check terrains
 on:
   push:
     branches: [main]
