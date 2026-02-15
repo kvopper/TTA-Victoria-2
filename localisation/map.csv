@@ -2425,7 +2425,7 @@ claim_status_doesnt_own_CAR_894_loc;§YDol Caledir§!: §RUnowned§!§I;x
 empty_line_loc;\n;x
 add_claim_ANG_987_loc;§WWe will gain claims over §!§YKanclemas§!§I;x
 add_claim_ERE_669_loc;§WWe will gain claims over §!§YIron Hills§!§I;x
-ISE_puppet_saerlanners_loc;Become a vassal of §YIsengard§W§I;x
+ISE_puppet_saerlanners_loc;Become a vassal of §YIsengard§!§I;x
 claim_status_doesnt_own_KHA_342_loc;§YMuzeida Vale§!: §RUnowned§!§I;x
 settings_borders_race_loc;Migration between realms is limited to migrations between the same race -- Orcs pops will migrate to orc realms, Elves will migrate to elven realms, etc§I;x
 add_claim_ERE_660_loc;§WWe will gain claims over §!§YMountainlands§!§I;x
@@ -3029,7 +3029,7 @@ claim_status_owns_CAR_902_loc;§YUpper Saerlann§!: §GOwned§!§I;x
 claim_status_owns_GON_165_loc;§YAngast§!: §GOwned§!§I;x
 add_claim_LOR_765_loc;§WWe will gain claims over §!§YLothlórien§!§I;x
 claim_status_owns_HAR_310_loc;§YSiakan§!: §GOwned§!§I;x
-ISE_sphere_saerlanners_loc;Become a sphereling of §YIsengard§W§I;x
+ISE_sphere_saerlanners_loc;Become a sphereling of §YIsengard§!§I;x
 add_claim_CAR_878_loc;§WWe will gain claims over §!§YFaerdor§!§I;x
 claim_status_owns_LIN_964_loc;§YForthargelion§!: §GOwned§!§I;x
 remove_claim_IML_871_loc;§WWe will lose claims over §!§YTalath Dindal§!§I;x

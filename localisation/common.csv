@@ -4620,8 +4620,8 @@ POP_PROMOTE_INFO_ON_SEL;$VAL$ have signed up to be $WHO$ in $WHERE$ recently.;x
 POP_LEAVE_INFO_ON_SEL;$VAL$ have stopped being $WHO$ in $WHERE$ recently.;x
 DOMINION;Dominion;x
 SATELLITE;Vassal;x
-DOMINION_OF_NOCOLOR;Dominion of:;x
-SATELLITE_OF_NOCOLOR;Vassal of:;x
+DOMINION_OF_NOCOLOR;Dominion of;x
+SATELLITE_OF_NOCOLOR;Vassal of;x
 DIPLOMACY_CANNOT_SET_PRIO_MYVASSAL;They are a §Y$TYPE$§W of ours and are always in our §YSphere of Influence§W;x
 DIPLOMACY_TRUCE_WITH;Truce with:;x
 DIPLOMACY_CASUSBELLIS;Casus bellis:;x

@@ -35,4 +35,59 @@ political_decisions = {
 			}
 		}
 	}
+	
+	reunify_SAE_ISE = {
+		picture = "saerlann"
+		potential = {
+			has_country_flag = ISE_content
+			is_greater_power = yes
+			has_country_flag = ISE_influenced_saerlann
+			NOT = { exists = SAE }
+		}
+		allow = {
+			war = no
+			SAE = {
+				all_core = {
+					OR = {
+						owner = { tag = THIS }
+						owner = { vassal_of = THIS }
+					}
+				}
+			}
+		}
+		effect = {
+			prestige = 10
+			badboy = 2
+			
+			SAE = {
+				all_core = {
+					remove_core = FON
+					remove_core = HEN
+					remove_core = LSR
+					remove_core = USR
+				}
+			}
+			
+			any_core = {
+				limit = { is_core = SAE }
+				remove_core = SAE
+			}
+			
+			# Don't know why
+			THIS = {
+				inherit = FON
+				inherit = HEN
+				inherit = LSR
+				inherit = USR
+				
+				release_vassal = SAE
+			}
+			
+			
+			SAE = {
+				government = dominion_2
+				country_event = 3505
+			}
+		}
+	}
 }

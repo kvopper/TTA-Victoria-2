@@ -273,6 +273,8 @@ high_hay_desc;The High Hay, known locally as just the Hedge, is a barrier along 
 ################################;x
 reunify_SAE_title;Reform the Kingdom of Saerlann;x
 reunify_SAE_desc;The Kingdom of Saerlann has been fallen for almost a thousand years. Now, however, with our prominent position within its former territories, we can reform the old Kingdom, and put an end to the chaos that now plagues this land.;x
+reunify_SAE_ISE_title;Reunite the Saerlann;x
+reunify_SAE_ISE_desc;The Kingdom of Saerlann has been fallen for almost a thousand years. Now, however, with our prominent position within its former territories, we can reform the old Kingdom as our vassal, forming a bulwark to the north.;x
 ####################################################;x }
 ##### DWARVES OF THE WHITE MOUNTAINS DECISIONS #####;x {
 ####################################################;x

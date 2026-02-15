@@ -1406,6 +1406,11 @@ country_event = {
 						vassal_of = ROH
 						tag = FRA
 					}
+					# Isengard
+					AND = {
+						vassal_of = ISE
+						tag = SAE
+					}
 				}
 			}
 			government = dominion_2
