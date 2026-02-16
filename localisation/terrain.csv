@@ -78,7 +78,6 @@ desert_hills;Desert Hills;;x
 ##### AREA TERRAINS #####;x {
 #########################;x
 white_mountains;§gWhite Mountains§!\n\nAlso known as the Ered Nimrais, meaning 'Mountains of the White Horns', the snow-capped mountain range reaches from the tip of Andrast in the West to the height of the Mindolluin in the East and makes up a impenetrable barrier between the populated parts of Gondor and the Lands of Calenardhon to the North. Many of Gondors and Rohans freshwater streams originate in the fringes of these peaks to flow into the Sea of Belegaer or become a tributary of the Great River Anduin;x
-conifer_forest;§gConifer Forest§!;x
 anduin_wetlands;§gMarshes of the Anduin§!\n\nAlong the shores of the Great River there are many marshes. These marshes make movement and civilization difficult, and are generally avoided except by outlaws and those hunting said outlaws.;x
 ##########################;x }
 ##### GONDOR TERRAINS #####;x {
