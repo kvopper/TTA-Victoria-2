@@ -1,5 +1,6 @@
 graphical_culture = WildmenGC
 color = { 255 199 71 }
+dominion_2 = { 130 125 120 } # Isengard vassal
 
 party = {
 	name = "generic_nobility"
