@@ -1409,7 +1409,10 @@ country_event = {
 					# Isengard
 					AND = {
 						vassal_of = ISE
-						tag = SAE
+						OR = {
+							tag = SAE
+							tag = MAU
+						}
 					}
 				}
 			}

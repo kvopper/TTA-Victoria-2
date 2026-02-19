@@ -411,6 +411,38 @@ political_decisions = {
 			set_country_flag = ISE_influenced_saerlann
 		}
 	}
+	
+	ISE_decide_stoor_policy = {
+		picture = "Isengard/ISE_maur_tulhau"
+		potential = {
+			has_country_flag = ISE_content
+			exists = MAU
+			MAU = {
+				is_vassal = no
+				NOT = { in_sphere = THIS }
+				ai = yes
+			}
+			NOT = { has_country_flag = ISE_decided_stoor_policy }
+		}
+		allow = {
+			is_greater_power = yes
+			diplomacy_4 = 1
+			MAU = {
+				any_neighbor_country = {
+					OR = {
+						vassal_of = THIS
+						tag = THIS
+					}
+				}
+			}
+		}
+		effect = {
+			country_event = 50107
+			
+			ISE_decide_stoor_policy_loc = { }
+			set_country_flag = ISE_decided_stoor_policy
+		}
+	}
 }
 
 # Uruk Hai

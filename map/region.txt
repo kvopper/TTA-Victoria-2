@@ -701,6 +701,10 @@ ISE_puppet_saerlanners_loc = { } # Become a vassal of §YIsengard§!
 ISE_sphere_saerlanners_loc = { } # Become a sphereling of §YIsengard§!
 ISE_influence_saerlann_loc = { } # We will sphere all unsphered Saerlanner minors, and puppet any that we have already sphered§!
 ISE_reunify_SAE_loc = { } # We will unite all Saerlanner realms under one puppet with a unique name and flag§!
+ISE_decide_stoor_policy_loc = { } # We can decide to ignore, sphere, puppet or annex the @MAU §YStoors of Maur Tulhau§!
+ISE_stoor_policy_sphere_loc = { } # We will send an ultimatum to the Stoors of Maur Tulhau requesting that they join our sphere. If they refuse, we gain an §YAdd to Sphere§W casus belli against them§!
+ISE_stoor_policy_puppet_loc = { } # We will send an ultimatum to the Stoors of Maur Tulhau requesting that they become our puppet with a unique color and flag. If they refuse, we gain a §YMake Vassal§W casus belli against them§!
+ISE_stoor_policy_annex_loc = { } # We will send an ultimatum to the Stoors of Maur Tulhau requesting that they join our realm. If they refuse, we gain a §YConquest§W casus belli against them§!
 
 # Static Tooltip Locs - Lothlorien
 LOR_unlock_invention_lembas_bread_loc = { } # Unlocks invention §YLembas Bread§! at the §Ystart of the next month§!, giving the following effects:\nArmies: Supply Consumption: §G-10%§!\nRGO output efficiency tech: §G+5.0%§!

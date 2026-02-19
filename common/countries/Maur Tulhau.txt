@@ -1,5 +1,6 @@
 graphical_culture = HobbitGC
 color = { 236 151 0 }
+dominion_2 = { 75 75 75 } # Isengard vassal
 
 party = {
 	name = "generic_nobility"

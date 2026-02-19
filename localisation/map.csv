@@ -1561,6 +1561,7 @@ claim_status_doesnt_own_KHA_361_loc;§YDesert of Khand§!: §RUnowned§!§I;x
 remove_claim_DUN_1448_loc;§WWe will lose claims over §!§YIsendale§!§I;x
 good_unlock_invention_eagles_loc;Unlocks invention §YEagles§! at the §Ystart of the next month§!, giving the following effects:\nPrestige gain: §G+5.0%§!\nCan use Aerial Support§I;x
 claim_status_doesnt_own_RHU_1253_loc;§YCaill na Trowe§!: §RUnowned§!§I;x
+ISE_stoor_policy_sphere_loc;We will send an ultimatum to the Stoors of Maur Tulhau requesting that they join our sphere. If they refuse, we gain an §YAdd to Sphere§W casus belli against them§!§I;x
 claim_status_owns_BLU_940_loc;§YDor Lelvin§!: §GOwned§!§I;x
 add_claim_RHO_1382_loc;§WWe will gain claims over §!§YEhwathrumavuld§!§I;x
 claim_status_owns_BLU_915_loc;§YOld Sylvana§!: §GOwned§!§I;x
@@ -1622,6 +1623,7 @@ claim_status_owns_DOR_550_loc;§YParta Rokantha§!: §GOwned§!§I;x
 invite_realm_loc;Invite Realm;x
 remove_claim_GON_72_loc;§WWe will lose claims over §!§YEred Tarthonion§!§I;x
 add_claim_ROH_801_loc;§WWe will gain claims over §!§YLower West Emnet§!§I;x
+ISE_decide_stoor_policy_loc;We can decide to ignore, sphere, puppet or annex the @MAU §YStoors of Maur Tulhau§!§I;x
 claim_status_doesnt_own_DND_1015_loc;§YTyrn Formen§!: §RUnowned§!§I;x
 DAL_northman_generals_rivermen_gotten_loc;§TWe have recruited the following Rivermen Thegans§!|;x
 claim_status_doesnt_own_MOR_404_loc;§YSouthern Nurza-Shukh§!: §RUnowned§!§I;x
@@ -1868,6 +1870,7 @@ claim_status_doesnt_own_GON_27_loc;§YLossarnach§!: §RUnowned§!§I;x
 claim_status_owns_CAR_365_loc;§YTyrn Gorthad§!: §GOwned§!§I;x
 claim_status_owns_MOR_408_loc;§YEphel Dûath§!: §GOwned§!§I;x
 claim_status_owns_GON_102_loc;§YBlackroot Vale§!: §GOwned§!§I;x
+ISE_stoor_policy_puppet_loc;We will send an ultimatum to the Stoors of Maur Tulhau requesting that they become our puppet with a unique color and flag. If they refuse, we gain a §YMake Vassal§W casus belli against them§!§I;x
 remove_claim_LOS_1343_loc;§WWe will lose claims over §!§YItä-mâ§!§I;x
 claim_status_owns_RHO_535_loc;§YDeneral§!: §GOwned§!§I;x
 add_claim_DUN_840_loc;§WWe will gain claims over §!§YFordirith§!§I;x
@@ -3030,6 +3033,7 @@ claim_status_owns_CAR_902_loc;§YUpper Saerlann§!: §GOwned§!§I;x
 claim_status_owns_GON_165_loc;§YAngast§!: §GOwned§!§I;x
 add_claim_LOR_765_loc;§WWe will gain claims over §!§YLothlórien§!§I;x
 claim_status_owns_HAR_310_loc;§YSiakan§!: §GOwned§!§I;x
+ISE_stoor_policy_annex_loc;We will send an ultimatum to the Stoors of Maur Tulhau requesting that they join our realm. If they refuse, we gain a §YConquest§W casus belli against them§!§I;x
 ISE_sphere_saerlanners_loc;Become a sphereling of §YIsengard§!§I;x
 add_claim_CAR_878_loc;§WWe will gain claims over §!§YFaerdor§!§I;x
 claim_status_owns_LIN_964_loc;§YForthargelion§!: §GOwned§!§I;x

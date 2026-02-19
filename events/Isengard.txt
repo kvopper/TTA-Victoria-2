@@ -219,6 +219,266 @@ country_event = {
 }
 # }
 
+# Stoors of Maur Tulhau Handling {
+# Decide the policy against the Stoors
+country_event = {
+	id = 50107
+	title = "The Fate of the §YStoors of Maur Tulhau§!"
+	desc = "EVTDESC50107"
+	picture = "isengard/maur_tulhau"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "They are not worth our time"
+		
+		badboy = -5
+		
+		ai_chance = { factor = 25 }
+	}
+	
+	option = {
+		name = "Send a request to create an alliance"
+		
+		badboy = -2
+		
+		set_global_flag = hidden_effects
+		set_global_flag = ISE_sphere_MAU
+		
+		random_country = {
+			limit = {
+				tag = MAU
+				has_global_flag = hidden_effects
+			}
+			country_event = 50108
+		}
+		
+		clr_global_flag = hidden_effects
+		ISE_stoor_policy_sphere_loc = { }
+		
+		ai_chance = { factor = 25 }
+	}
+	
+	option = {
+		name = "Demand that they become a vassal state"
+		
+		badboy = 2
+		
+		set_global_flag = hidden_effects
+		set_global_flag = ISE_puppet_MAU
+		
+		random_country = {
+			limit = {
+				tag = MAU
+				has_global_flag = hidden_effects
+			}
+			country_event = 50108
+		}
+		
+		clr_global_flag = hidden_effects
+		ISE_stoor_policy_puppet_loc = { }
+		
+		ai_chance = { factor = 25 }
+	}
+	
+	option = {
+		name = "All land in Enedwaith belongs to $COUNTRY$. Send a demand to transfer titleship of their land"
+		
+		badboy = 5
+		
+		set_global_flag = hidden_effects
+		set_global_flag = ISE_annex_MAU
+		
+		random_country = {
+			limit = {
+				tag = MAU
+				has_global_flag = hidden_effects
+			}
+			country_event = 50108
+		}
+		
+		clr_global_flag = hidden_effects
+		ISE_stoor_policy_annex_loc = { }
+		
+		ai_chance = { factor = 25 }
+	}
+}
+
+# Stoor Response
+country_event = {
+	id = 50108
+	title = "The $FROMCOUNTRY$ Ultimatum"
+	desc = "EVTDESC50108"
+	picture = "isengard/maur_tulhau"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "We have no choice"
+		
+		FROM = { country_event = 50109 }
+		
+		ai_chance = {
+			factor = 50
+			
+			modifier = {
+				factor = 0
+				has_global_flag = railroading_enabled
+			}
+		}
+	}
+	
+	option = {
+		name = "Never!"
+		
+		set_global_flag = ISE_MAU_refuse
+		FROM = { country_event = 50109 }
+		
+		ai_chance = { factor = 50 }
+	}
+}
+
+# Letting ISE know the response
+country_event = {
+	id = 50109
+	title = "The Response of $FROMCOUNTRY$"
+	desc = "EVTDESC50109"
+	picture = "isengard/maur_tulhau"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Our path is now set"
+		
+		random_owned = {
+			limit = {
+				owner = {
+					has_global_flag = ISE_sphere_MAU
+					NOT = { has_global_flag = ISE_MAU_refuse }
+				}
+			}
+			owner = {
+				relation = {
+					who = FROM
+					value = 400
+				}
+				create_alliance = FROM
+				diplomatic_influence = {
+					who = FROM
+					value = 400
+				}
+			}
+		}
+		
+		random_owned = {
+			limit = {
+				owner = {
+					has_global_flag = ISE_sphere_MAU
+					has_global_flag = ISE_MAU_refuse
+				}
+			}
+			owner = {
+				relation = {
+					who = FROM
+					value = -50
+				}
+				casus_belli = {
+					target = FROM
+					type = add_to_sphere
+					months = 24
+				}
+			}
+		}
+		
+		random_owned = {
+			limit = {
+				owner = {
+					has_global_flag = ISE_puppet_MAU
+					NOT = { has_global_flag = ISE_MAU_refuse }
+				}
+			}
+			owner = {
+				relation = {
+					who = FROM
+					value = 400
+				}
+				create_alliance = FROM
+				diplomatic_influence = {
+					who = FROM
+					value = 400
+				}
+				create_vassal = FROM
+				FROM = { government = dominion_2 }
+			}
+		}
+		
+		random_owned = {
+			limit = {
+				owner = {
+					has_global_flag = ISE_puppet_MAU
+					has_global_flag = ISE_MAU_refuse
+				}
+			}
+			owner = {
+				relation = {
+					who = FROM
+					value = -50
+				}
+				casus_belli = {
+					target = FROM
+					type = make_puppet
+					months = 24
+				}
+			}
+		}
+		
+		random_owned = {
+			limit = {
+				owner = {
+					has_global_flag = ISE_annex_MAU
+					NOT = { has_global_flag = ISE_MAU_refuse }
+				}
+			}
+			owner = {
+				inherit = FROM
+				MAU = { all_core = { any_pop = { ideology = { factor = 0.05 value = lords_of_isengard } } } }
+			}
+		}
+		
+		random_owned = {
+			limit = {
+				owner = {
+					has_global_flag = ISE_annex_MAU
+					has_global_flag = ISE_MAU_refuse
+				}
+			}
+			owner = {
+				relation = {
+					who = FROM
+					value = -50
+				}
+				# Adding all 3 variants to account for the size of the tag
+				casus_belli = {
+					target = FROM
+					type = conquest_tiny
+					months = 24
+				}
+				casus_belli = {
+					target = FROM
+					type = conquest_small
+					months = 24
+				}
+				casus_belli = {
+					target = FROM
+					type = conquest
+					months = 24
+				}
+			}
+		}
+	}
+}
+# }
+
 # Alliance with Dunlending/Enedwaithrim Tribe
 country_event = {
 	id = 50110
