@@ -270,7 +270,7 @@ political_decisions = {
 	}
 	
 	ISE_influence_saerlann = {
-		picture = "saerlann"
+		picture = "Isengard/saerlann_isengard"
 		potential = {
 			has_country_flag = ISE_content
 			FOR = {

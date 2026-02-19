@@ -37,7 +37,7 @@ political_decisions = {
 	}
 	
 	reunify_SAE_ISE = {
-		picture = "saerlann"
+		picture = "Isengard/saerlann_isengard"
 		potential = {
 			has_country_flag = ISE_content
 			is_greater_power = yes
@@ -73,21 +73,21 @@ political_decisions = {
 				remove_core = SAE
 			}
 			
-			# Don't know why
-			THIS = {
-				inherit = FON
-				inherit = HEN
-				inherit = LSR
-				inherit = USR
-				
-				release_vassal = SAE
-			}
+			inherit = FON
+			inherit = HEN
+			inherit = LSR
+			inherit = USR
+			
+			release_vassal = SAE
 			
 			
-			SAE = {
+			random_country = {
+				limit = { tag = SAE }
 				government = dominion_2
 				country_event = 3505
 			}
+			
+			ISE_reunify_SAE_loc = { }
 		}
 	}
 }

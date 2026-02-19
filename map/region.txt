@@ -700,6 +700,7 @@ ISE_uniting_enedwaith_loc = { } # If we have already taken the decision §YUnite
 ISE_puppet_saerlanners_loc = { } # Become a vassal of §YIsengard§!
 ISE_sphere_saerlanners_loc = { } # Become a sphereling of §YIsengard§!
 ISE_influence_saerlann_loc = { } # We will sphere all unsphered Saerlanner minors, and puppet any that we have already sphered§!
+ISE_reunify_SAE_loc = { } # We will unite all Saerlanner realms under one puppet with a unique name and flag§!
 
 # Static Tooltip Locs - Lothlorien
 LOR_unlock_invention_lembas_bread_loc = { } # Unlocks invention §YLembas Bread§! at the §Ystart of the next month§!, giving the following effects:\nArmies: Supply Consumption: §G-10%§!\nRGO output efficiency tech: §G+5.0%§!
