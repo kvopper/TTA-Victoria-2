@@ -443,6 +443,50 @@ political_decisions = {
 			set_country_flag = ISE_decided_stoor_policy
 		}
 	}
+	
+	ISE_puppet_mirobel = {
+		picture = "Isengard/ISE_mirobel"
+		potential = {
+			has_country_flag = ISE_content
+			exists = MRB
+			MRB = {
+				is_vassal = no
+				ai = yes
+			}
+			NOT = { has_country_flag = ISE_vassalized_MRB }
+		}
+		allow = {
+			is_greater_power = yes
+			diplomacy_3 = 1
+			MRB = {
+				any_neighbor_country = {
+					OR = {
+						vassal_of = THIS
+						tag = THIS
+					}
+				}
+				in_sphere = THIS
+			}
+		}
+		effect = {
+			create_vassal = MRB
+			
+			set_global_flag = hidden_effects
+			random_country = {
+				limit = {
+					tag = MRB
+					has_global_flag = hidden_effects
+				}
+				government = dominion_2
+				country_event = 3505
+			}
+			
+			clr_global_flag = hidden_effects
+			set_country_flag = ISE_vassalized_MRB
+			
+			ISE_puppet_mirobel_loc = { }
+		}
+	}
 }
 
 # Uruk Hai

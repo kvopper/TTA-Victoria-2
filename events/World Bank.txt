@@ -1412,6 +1412,7 @@ country_event = {
 						OR = {
 							tag = SAE
 							tag = MAU
+							tag = MRB
 						}
 					}
 				}

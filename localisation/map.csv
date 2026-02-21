@@ -1709,6 +1709,7 @@ remove_claim_RHU_625_loc;§WWe will lose claims over §!§YEastern Gazar Barak§
 claim_status_owns_GUL_1436_loc;§YSouthern Mirkwood§!: §GOwned§!§I;x
 claim_status_owns_MOR_411_loc;§YMaegond§!: §GOwned§!§I;x
 claim_status_owns_GON_183_loc;§YHaerawreigion§!: §GOwned§!§I;x
+ISE_puppet_mirobel_loc;We will vassalize the @MRB §YDunlendings of Mirobel§W with a unique name and flag§!§I;x
 remove_claim_CAR_890_loc;§WWe will lose claims over §!§YRohwaen§!§I;x
 claim_status_owns_GON_228_loc;§YHarfalas§!: §GOwned§!§I;x
 claim_status_doesnt_own_GUL_1436_loc;§YSouthern Mirkwood§!: §RUnowned§!§I;x
@@ -1870,7 +1871,7 @@ claim_status_doesnt_own_GON_27_loc;§YLossarnach§!: §RUnowned§!§I;x
 claim_status_owns_CAR_365_loc;§YTyrn Gorthad§!: §GOwned§!§I;x
 claim_status_owns_MOR_408_loc;§YEphel Dûath§!: §GOwned§!§I;x
 claim_status_owns_GON_102_loc;§YBlackroot Vale§!: §GOwned§!§I;x
-ISE_stoor_policy_puppet_loc;We will send an ultimatum to the Stoors of Maur Tulhau requesting that they become our puppet with a unique color and flag. If they refuse, we gain a §YMake Vassal§W casus belli against them§!§I;x
+ISE_stoor_policy_puppet_loc;We will send an ultimatum to the Stoors of Maur Tulhau requesting that they become our puppet with a unique color, name and flag. If they refuse, we gain a §YMake Vassal§W casus belli against them§!§I;x
 remove_claim_LOS_1343_loc;§WWe will lose claims over §!§YItä-mâ§!§I;x
 claim_status_owns_RHO_535_loc;§YDeneral§!: §GOwned§!§I;x
 add_claim_DUN_840_loc;§WWe will gain claims over §!§YFordirith§!§I;x
