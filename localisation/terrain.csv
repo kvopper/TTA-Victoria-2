@@ -269,19 +269,19 @@ emyn_beriad;§gEmyn Beraid§!\n\nEmyn Beraid, or the Tower Hills, are a range of
 ###########################################;x }
 ##### GREY MOUNTAIN & EREBOR TERRAINS #####;x {
 ###########################################;x
-ered_mithrin;§gMountains of Ered Mithrin§!;x
-ered_mithrin_hills;§gEred Mithrin Foothills§!;x
-nordinbad;§gNordinbad§!;x
-dains_halls;§gDain's Halls§!;x
-grey_mountains_narrows;§gEred Mithrin Narrows§!;x
-withered_heath;§gHills of Withered Heath§!;x
-withered_heath_plains;§gPlains of Withered Heath§!;x
-iron_hills;§gMountains of Emyn Engrin§!;x
-iron_hills_hills;§gEmyn Engrin Foothills§!;x
-iron_hills_plains;§gPlains of Emyn Engrin§!;x
-erebor_lands;§gPlains of the Lonely Mountain§!;x
-erebor_lands_hills;§gHills of the Lonely Mountain§!;x
-erebor_terrain;§gThe Lonely Mountain§!;x
+ered_mithrin;§gMountains of Ered Mithrin§!\n\nEredn Mithrin, meaning the Grey Mountains in Sindarin, are a large mountain range marking the boundary between Rhovanion and the Northern Waste. They have long been the home of many dwarves and orcs with numerous strongholds throughout the mountain's peaks and valleys.;x
+ered_mithrin_hills;§gEred Mithrin Foothills§!\n\nEredn Mithrin, meaning the Grey Mountains in Sindarin, are a large mountain range marking the boundary between Rhovanion and the Northern Waste. They have long been the home of many dwarves and orcs with numerous strongholds throughout the mountain's peaks and valleys.;x
+grey_mountains_narrows;§gEred Mithrin Narrows§!\n\nEredn Mithrin, meaning the Grey Mountains in Sindarin, are a large mountain range marking the boundary between Rhovanion and the Northern Waste. They have long been the home of many dwarves and orcs with numerous strongholds throughout the mountain's peaks and valleys.;x
+nordinbad;§gNordinbad§!\n\nNordinbad is an ancient dwarven fortress in the Grey Mountains. Known for its beauty, the stronghold is built around a hidden underground lake called Azan-zâram.;x
+dains_halls;§gDáin's Halls§!\n\nDáin's Halls, also called Thikil-gundu, meaning Steel Keep, is a dwarven stronghold in the Grey Mountains. It was once the capital of the Longbeard dwarves before it was destroyed in T.A. 2589 by a great Cold-drake.;x
+withered_heath;§gHills of Withered Heath§!\n\nThe Withered Heath is a valley on the eastern end of the Grey Mountains, where they fork into two ranges. The burned and blackened shrubland that mades up the valley is the breeding ground of dragons.;x
+withered_heath_plains;§gPlains of Withered Heath§!\n\nThe Withered Heath is a valley on the eastern end of the Grey Mountains, where they fork into two ranges. The burned and blackened shrubland that mades up the valley is the breeding ground of dragons.;x
+iron_hills;§gMountains of Emyn Engrin§!\n\nThe Iron Hills, or Emyn Engrin in Sindarin, are a hill range in north east Rhovanion. They have been the home of Longbeard dwarves since the First Age and are famous for their bountiful iron mines.;x
+iron_hills_hills;§gEmyn Engrin Foothills§!\n\nThe Iron Hills, or Emyn Engrin in Sindarin, are a hill range in north east Rhovanion. They have been the home of Longbeard dwarves since the First Age and are famous for their bountiful iron mines.;x
+iron_hills_plains;§gPlains of Emyn Engrin§!\n\nThe Iron Hills, or Emyn Engrin in Sindarin, are a hill range in north east Rhovanion. They have been the home of Longbeard dwarves since the First Age and are famous for their bountiful iron mines.;x
+erebor_lands;§gPlains of the Lonely Mountain§!\n\nThe Lonely Mountain, also known as Erebor in Sindarin, is a large, isolated mountain in northern Rhovanion. It has been a colony of the Longbeard dwarves since the Second Age and became their capital after the fall of Khazad-dûm. In 2770 of the Third Age, it was lain to waste and became the personal domain of the dragon Smaug, sending the dwarves in to exile until the Quest for Erebor in 2941 led to the death of Smaug and the return of King Thorin Oakenshield.;x
+erebor_lands_hills;§gHills of the Lonely Mountain§!\n\nThe Lonely Mountain, also known as Erebor in Sindarin, is a large, isolated mountain in northern Rhovanion. It has been a colony of the Longbeard dwarves since the Second Age and became their capital after the fall of Khazad-dûm. In 2770 of the Third Age, it was lain to waste and became the personal domain of the dragon Smaug, sending the dwarves in to exile until the Quest for Erebor in 2941 led to the death of Smaug and the return of King Thorin Oakenshield.;x
+erebor_terrain;§gThe Lonely Mountain§!\n\nThe Lonely Mountain, also known as Erebor in Sindarin, is a large, isolated mountain in northern Rhovanion. It has been a colony of the Longbeard dwarves since the Second Age and became their capital after the fall of Khazad-dûm. In 2770 of the Third Age, it was lain to waste and became the personal domain of the dragon Smaug, sending the dwarves in to exile until the Quest for Erebor in 2941 led to the death of Smaug and the return of King Thorin Oakenshield.;x
 ##########################;x }
 ##### ROHAN TERRAINS #####;x {
 ##########################;x
