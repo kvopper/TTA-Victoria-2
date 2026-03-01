@@ -2,7 +2,6 @@
 capital = 811
 primary_culture = dunnish
 culture = men_culture
-culture = gondorian
 culture = isenmen
 religion = men
 government = istari_kingdom
