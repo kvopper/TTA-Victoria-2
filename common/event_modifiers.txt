@@ -2118,6 +2118,13 @@ renounced_white_council = {
 pillar_white_hand = {
 	icon = 63
 }
+
+# Province Modifier
+crebain_of_dunland = {
+	tax_efficiency = -0.01
+	
+	icon = 63
+}
 # }
 ##### OATHBREAKERS ##### {
 # Province Modifier

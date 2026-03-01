@@ -1,6 +1,7 @@
 owner = ROH
 controller = ROH
 add_core = ROH
+add_core = CRE
 trade_goods = timber
 life_rating = 25
 terrain = rohan_woods

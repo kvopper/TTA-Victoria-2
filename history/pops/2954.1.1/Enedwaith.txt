@@ -37,9 +37,14 @@
 		size = 10038
 	}
 	labourers = {
+		culture = crebain
+		religion = eagle
+		size = 1338
+	}
+	labourers = {
 		culture = dunnish
 		religion = men
-		size = 56882
+		size = 55543
 	}
 	soldiers = {
 		culture = dunnish
@@ -1381,9 +1386,14 @@
 		size = 100
 	}
 	labourers = {
+		culture = crebain
+		religion = eagle
+		size = 956
+	}
+	labourers = {
 		culture = dunnish
 		religion = men
-		size = 47800
+		size = 46844
 	}
 	soldiers = {
 		culture = dunnish
@@ -1525,7 +1535,7 @@
 	}
 }
 
-# Tir Morbad
+# Blackmarch Fort
 1447 = {
 	aristocrats = {
 		culture = gondorian
@@ -1735,9 +1745,14 @@
 		size = 140
 	}
 	labourers = {
+		culture = crebain
+		religion = eagle
+		size = 1338
+	}
+	labourers = {
 		culture = dunnish
 		religion = men
-		size = 66920
+		size = 65581
 	}
 	soldiers = {
 		culture = dunnish
@@ -1769,9 +1784,14 @@
 		size = 60
 	}
 	labourers = {
+		culture = crebain
+		religion = eagle
+		size = 573
+	}
+	labourers = {
 		culture = dunnish
 		religion = men
-		size = 28680
+		size = 28106
 	}
 	soldiers = {
 		culture = dunnish
@@ -2404,9 +2424,14 @@
 		size = 60
 	}
 	labourers = {
+		culture = crebain
+		religion = eagle
+		size = 573
+	}
+	labourers = {
 		culture = dunnish
 		religion = men
-		size = 28680
+		size = 28106
 	}
 	soldiers = {
 		culture = dunnish
@@ -2438,9 +2463,14 @@
 		size = 60
 	}
 	labourers = {
+		culture = crebain
+		religion = eagle
+		size = 573
+	}
+	labourers = {
 		culture = dunnish
 		religion = men
-		size = 28680
+		size = 28106
 	}
 	soldiers = {
 		culture = dunnish
@@ -2472,9 +2502,14 @@
 		size = 80
 	}
 	labourers = {
+		culture = crebain
+		religion = eagle
+		size = 764
+	}
+	labourers = {
 		culture = dunnish
 		religion = men
-		size = 38240
+		size = 37475
 	}
 	soldiers = {
 		culture = dunnish
@@ -2623,9 +2658,14 @@
 		size = 50
 	}
 	labourers = {
+		culture = crebain
+		religion = eagle
+		size = 478
+	}
+	labourers = {
 		culture = dunnish
 		religion = men
-		size = 23900
+		size = 23422
 	}
 	soldiers = {
 		culture = dunnish
@@ -2634,7 +2674,7 @@
 	}
 }
 
-# Blackmarch Fort
+# Eastwatch
 1532 = {
 	aristocrats = {
 		culture = gondorian

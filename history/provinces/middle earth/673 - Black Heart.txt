@@ -1,6 +1,7 @@
 owner = FAN
 controller = FAN
 add_core = FAN
+add_core = CRE
 trade_goods = food
 life_rating = 25
 terrain = fangorn

@@ -5,6 +5,7 @@
 #	Starting Decision (Unseen)
 #	The Search for Power
 #	Aligning Dunland, Enedwaith and their neighbors
+#	Surveillance
 #	Uruk Hai
 
 # Starting Decision
@@ -26,6 +27,7 @@ political_decisions = {
 			set_country_flag = flavor_population_4
 			set_country_flag = flavor_magic_3
 			set_country_flag = flavor_diplomacy_2
+			set_country_flag = flavor_diplomacy_3
 			set_country_flag = flavor_expansion_2
 			
 			add_country_modifier = { name = saruman_modifier duration = -1 }
@@ -488,6 +490,32 @@ political_decisions = {
 			set_country_flag = ISE_vassalized_MRB
 			
 			ISE_puppet_mirobel_loc = { }
+		}
+	}
+}
+
+# Surveillance
+political_decisions = {
+	ISE_engage_crebain_dunland = {
+		picture = "Isengard/ISE_crebain"
+		potential = {
+			has_country_flag = ISE_content
+			ruling_party = ISE_saruman
+			NOT = { has_country_modifier = crebain_of_dunland }
+			has_country_flag = ISE_united_dunland
+		}
+		allow = {
+			NOT = {
+				any_owned_province = {
+					culture = crebain
+					average_militancy = 2
+				}
+			}
+			magic_3 = 1
+			diplomacy_3 = 1
+		}
+		effect = {
+			add_country_modifier = { name = crebain_of_dunland duration = -1 }
 		}
 	}
 }

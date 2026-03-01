@@ -161,6 +161,7 @@ AGR		= "countries/Angrast.txt"
 MAG		= "countries/Magur.txt"
 
 MAU		= "countries/Maur Tulhau.txt"
+CRE		= "countries/Crebain.txt"
 
 # Angmar
 RHR		= "countries/Hillmen of Rhudaur.txt"

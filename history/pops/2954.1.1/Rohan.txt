@@ -344,9 +344,14 @@
 		size = 120
 	}
 	labourers = {
+		culture = crebain
+		religion = eagle
+		size = 370
+	}
+	labourers = {
 		culture = rohirrim
 		religion = men
-		size = 18540
+		size = 18169
 	}
 	soldiers = {
 		culture = rohirrim
@@ -554,6 +559,11 @@
 		size = 50
 	}
 	labourers = {
+		culture = crebain
+		religion = eagle
+		size = 877
+	}
+	labourers = {
 		culture = ent
 		religion = ent
 		size = 8770
@@ -561,7 +571,7 @@
 	labourers = {
 		culture = huorn
 		religion = ent
-		size = 35080
+		size = 34203
 	}
 	soldiers = {
 		culture = ent
@@ -769,6 +779,11 @@
 		size = 120
 	}
 	labourers = {
+		culture = crebain
+		religion = eagle
+		size = 1147
+	}
+	labourers = {
 		culture = ent
 		religion = ent
 		size = 11472
@@ -776,7 +791,7 @@
 	labourers = {
 		culture = huorn
 		religion = ent
-		size = 45888
+		size = 44740
 	}
 	soldiers = {
 		culture = ent
@@ -808,6 +823,11 @@
 		size = 300
 	}
 	labourers = {
+		culture = crebain
+		religion = eagle
+		size = 1694
+	}
+	labourers = {
 		culture = ent
 		religion = ent
 		size = 16940
@@ -815,7 +835,7 @@
 	labourers = {
 		culture = huorn
 		religion = ent
-		size = 67760
+		size = 66066
 	}
 	soldiers = {
 		culture = ent
@@ -847,6 +867,11 @@
 		size = 100
 	}
 	labourers = {
+		culture = crebain
+		religion = eagle
+		size = 956
+	}
+	labourers = {
 		culture = ent
 		religion = ent
 		size = 9560
@@ -854,7 +879,7 @@
 	labourers = {
 		culture = huorn
 		religion = ent
-		size = 38240
+		size = 37284
 	}
 	soldiers = {
 		culture = ent
@@ -886,6 +911,11 @@
 		size = 480
 	}
 	labourers = {
+		culture = crebain
+		religion = eagle
+		size = 2710
+	}
+	labourers = {
 		culture = ent
 		religion = ent
 		size = 27104
@@ -893,7 +923,7 @@
 	labourers = {
 		culture = huorn
 		religion = ent
-		size = 108416
+		size = 105705
 	}
 	soldiers = {
 		culture = ent

@@ -6119,6 +6119,15 @@ country_event = {
 			}
 			change_variable = { which = ISE_surveillance value = 1 }
 		}
+		
+		# Gain from the Crebain of Dunland
+		random_country = {
+			limit = {
+				has_country_flag = ISE_content
+				has_country_modifier = crebain_of_dunland
+			}
+			change_variable = { which = ISE_surveillance value = 1 }
+		}
 		# }
 		
 		# Refire the cleanup event next month {
