@@ -6087,6 +6087,106 @@ country_event = {
 	}
 }
 
+# ISE Flavor Cleanup
+country_event = {
+	id = 99010
+	title = "ISE Flavor Cleanup"
+	desc = "EVTDESC99010"
+	picture = "production"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Fix it please"
+		
+		# Surveillance Gain {
+		random_owned = {
+			limit = {
+				any_neighbor_province = {
+					province_id = 1447
+					owner = { has_country_flag = ISE_content }
+					NOT = { has_province_modifier = pillar_white_hand }
+				}
+			}
+			owner = { 1447 = { add_province_modifier = { name = pillar_white_hand duration = -1 } } }
+		}
+		
+		# Gain from the Piller of the White Hand
+		random_country = {
+			limit = {
+				has_country_flag = ISE_content
+				owns = 1447
+			}
+			change_variable = { which = ISE_surveillance value = 1 }
+		}
+		# }
+		
+		# Refire the cleanup event next month {
+		random_owned = {
+			limit = {
+				OR = {
+					# January
+					NOT = { month = 1 }
+					AND = { # March
+						month = 2
+						NOT = { month = 3 }
+					}
+					AND = { # May
+						month = 4
+						NOT = { month = 5 }
+					}
+					AND = { # July
+						month = 6
+						NOT = { month = 7 }
+					}
+					AND = { # August
+						month = 7
+						NOT = { month = 8 }
+					}
+					AND = { # October
+						month = 9
+						NOT = { month = 10 }
+					}
+					# December
+					month = 11
+				}
+			}
+			owner = { country_event = { id = 99010 days = 31 } }
+		}
+		random_owned = {
+			limit = { # February
+				month = 1
+				NOT = { month = 2 }
+			}
+			owner = { country_event = { id = 99010 days = 28 } }
+		}
+		random_owned = {
+			limit = {
+				OR = {
+					AND = { # April
+						month = 3
+						NOT = { month = 4 }
+					}
+					AND = { # June
+						month = 5
+						NOT = { month = 6 }
+					}
+					AND = { # September
+						month = 8
+						NOT = { month = 9 }
+					}
+					AND = { # November
+						month = 10
+						NOT = { month = 11 }
+					}
+				}
+			}
+			owner = { country_event = { id = 99010 days = 30 } }
+		}
+		# }
+	}
+}
+
 # Generic Daily Cleanup
 country_event = {
 	id = 99250
