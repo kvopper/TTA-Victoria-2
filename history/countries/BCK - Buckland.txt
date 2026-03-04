@@ -11,10 +11,12 @@ civilized = yes
 
 oob = "BCK_oob.txt"
 
-ruling_party = generic_servants
+decision = BCK_start_decision
+
+ruling_party = SHI_brandybuck_family
 
 upper_house = {
-	nobility = 100
+	brandybuck_family = 100
 }
 penal_reform = hard_labor
 slavery = no_slavery

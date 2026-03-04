@@ -8,7 +8,7 @@
 # Starting Decision (Unseen)
 political_decisions = {
 	# Audax Validator "." Ignore_1004
-	SHI_start_decision = {
+	BRE_start_decision = {
 		potential = {
 			always = no
 		}
@@ -16,6 +16,11 @@ political_decisions = {
 		effect = {
 			set_country_flag = flavor_taxes_3
 			set_country_flag = flavor_expansion_1
+
+			# Set allowed leaders
+			set_country_flag = ideologies_brandybuck_family_active
+			set_country_flag = ideologies_underhill_family_active
+			set_country_flag = nobility_deactivated
 		}
 	}
 }

@@ -18,6 +18,50 @@ political_decisions = {
 			set_country_flag = flavor_fortifications_1
 			set_country_flag = flavor_expansion_2
 			set_country_flag = flavor_expansion_1
+
+			# Set allowed leaders
+			set_country_flag = ideologies_took_family_active
+			set_country_flag = ideologies_brandybuck_family_active
+			set_country_flag = ideologies_fairbairn_family_active
+			set_country_flag = ideologies_underhill_family_active
+			set_country_flag = nobility_deactivated
+		}
+	}
+	BCK_start_decision = {
+		potential = {
+			always = no
+		}
+		
+		effect = {
+			# Set allowed leaders
+			set_country_flag = ideologies_brandybuck_family_active
+			set_country_flag = ideologies_brockhouse_family_active
+			set_country_flag = ideologies_underhill_family_active
+			set_country_flag = nobility_deactivated
+		}
+	}
+	MAU_start_decision = {
+		potential = {
+			always = no
+		}
+		
+		effect = {
+			# Set allowed leaders
+			set_country_flag = ideologies_brandybuck_family_active
+			set_country_flag = ideologies_brockhouse_family_active
+			set_country_flag = nobility_deactivated
+		}
+	}
+	STO_start_decision = {
+		potential = {
+			always = no
+		}
+		
+		effect = {
+			# Set allowed leaders
+			set_country_flag = ideologies_brandybuck_family_active
+			set_country_flag = ideologies_brockhouse_family_active
+			set_country_flag = nobility_deactivated
 		}
 	}
 }

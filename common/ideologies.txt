@@ -130,6 +130,59 @@ dunedain_nobility = {
 	}
 }
 
+hobbit_nobility = {
+	took_family = {
+		color = { 0 212 72 }
+		
+		add_political_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = took_family } }
+		remove_political_reform = { base = 0 }
+		add_social_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = took_family } }
+		remove_social_reform = { base = 0 }
+		add_military_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = took_family } }
+		add_economic_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = took_family } }
+	}
+	brandybuck_family = {
+		color = { 28 184 81 }
+		
+		add_political_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = brandybuck_family } }
+		remove_political_reform = { base = 0 }
+		add_social_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = brandybuck_family } }
+		remove_social_reform = { base = 0 }
+		add_military_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = brandybuck_family } }
+		add_economic_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = brandybuck_family } }
+	}
+	fairbairn_family = {
+		color = { 0 165 0 }
+		
+		add_political_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = fairbairn_family } }
+		remove_political_reform = { base = 0 }
+		add_social_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = fairbairn_family } }
+		remove_social_reform = { base = 0 }
+		add_military_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = fairbairn_family } }
+		add_economic_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = fairbairn_family } }
+	}
+	underhill_family = {
+		color = { 0 158 68 }
+		
+		add_political_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = underhill_family } }
+		remove_political_reform = { base = 0 }
+		add_social_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = underhill_family } }
+		remove_social_reform = { base = 0 }
+		add_military_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = underhill_family } }
+		add_economic_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = underhill_family } }
+	}
+	brockhouse_family = {
+		color = { 131 168 45 }
+		
+		add_political_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = underhill_family } }
+		remove_political_reform = { base = 0 }
+		add_social_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = underhill_family } }
+		remove_social_reform = { base = 0 }
+		add_military_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = underhill_family } }
+		add_economic_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = underhill_family } }
+	}
+}
+
 noldor_nobility = {
 	house_half_elven = {
 		color = { 0 0 139 }

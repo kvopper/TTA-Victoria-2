@@ -738,6 +738,11 @@ promote_loremaster;Promote Loremaster;x
 promote_line_of_isildur;Promote Line of Isildur;x
 promote_house_of_stewards;Promote House of Stewards;x
 promote_house_of_dol_amroth;Promote House of Dol Amroth;x
+promote_underhill_family;Promote Underhill Family;x
+promote_brockhouse_family;Promote Brockhouse Family;x
+promote_fairbairn_family;Promote Fairbairn Family;x
+promote_brandybuck_family;Promote Brandybuck Family;x
+promote_took_family;Promote Took Family;x
 promote_house_half_elven;Promote House Half Elven;x
 promote_lords_of_mithlond;Promote Lords of Mithlond;x
 promote_house_of_oropher;Promote House of Oropher;x
@@ -861,6 +866,11 @@ ideologies_lords_of_isengard_active;Lords of Isengard Active;x
 ideologies_lords_of_rhosgobel_active;Lords of Rhosgobel Active;x
 ideologies_lords_of_mordor_active;Lords of Mordor Active;x
 ideologies_saurons_nine_active;Sauron's Nine Active;x
+ideologies_underhill_family_active;Underhill Family Active;x
+ideologies_brockhouse_family_active;Brockhouse Family Active;x
+ideologies_fairbairn_family_active;Fairbairn Family Active;x
+ideologies_brandybuck_family_active;Brandybuck Family Active;x
+ideologies_took_family_active;Took Family Active;x
 nobility_deactivated;Nobility Deactivated;x
 burgher_deactivated;Burghers Deactivated;x
 loremaster_deactivated;Loremasters Deactivated;x

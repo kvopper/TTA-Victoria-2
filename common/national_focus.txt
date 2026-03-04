@@ -187,6 +187,26 @@ promotion_ideologies = {
 		ideology = house_of_dol_amroth
 		loyalty_value = 0.005
 	}
+	promote_underhill_family = {
+		ideology = underhill_family
+		loyalty_value = 0.005
+	}
+	promote_brockhouse_family = {
+		ideology = brockhouse_family
+		loyalty_value = 0.005
+	}
+	promote_fairbairn_family = {
+		ideology = fairbairn_family
+		loyalty_value = 0.005
+	}
+	promote_brandybuck_family = {
+		ideology = brandybuck_family
+		loyalty_value = 0.005
+	}
+	promote_took_family = {
+		ideology = took_family
+		loyalty_value = 0.005
+	}
 	promote_house_half_elven = {
 		ideology = house_half_elven
 		loyalty_value = 0.005
@@ -295,6 +315,26 @@ demotion_ideologies = {
 	}
 	demote_house_of_dol_amroth = {
 		ideology = house_of_dol_amroth
+		loyalty_value = -0.005
+	}
+	demote_underhill_family = {
+		ideology = underhill_family
+		loyalty_value = -0.005
+	}
+	demote_brockhouse_family = {
+		ideology = brockhouse_family
+		loyalty_value = -0.005
+	}
+	demote_fairbairn_family = {
+		ideology = fairbairn_family
+		loyalty_value = -0.005
+	}
+	demote_brandybuck_family = {
+		ideology = brandybuck_family
+		loyalty_value = -0.005
+	}
+	demote_took_family = {
+		ideology = took_family
 		loyalty_value = -0.005
 	}
 	demote_house_half_elven = {

@@ -2,6 +2,66 @@ graphical_culture = Generic
 color = { 62 180 0 }
 
 party = {
+	name = "SHI_took_family"
+	start_date = 2954.1.1
+	end_date = 4000.1.1
+	
+	ideology = took_family
+	
+	trade_policy = protectionism
+	tax_policy = interventionism
+	language_policy = regional_autonomy
+	diplomatic_policy = reactive
+	war_policy = pro_military
+	good_evil_alignment = good_alignment
+}
+
+party = {
+	name = "SHI_brandybuck_family"
+	start_date = 2954.1.1
+	end_date = 4000.1.1
+	
+	ideology = brandybuck_family
+	
+	trade_policy = protectionism
+	tax_policy = state_capitalism
+	language_policy = regional_autonomy
+	diplomatic_policy = reactive
+	war_policy = anti_military
+	good_evil_alignment = good_alignment
+}
+
+party = {
+	name = "SHI_fairbairn_family"
+	start_date = 2954.1.1
+	end_date = 4000.1.1
+	
+	ideology = fairbairn_family
+	
+	trade_policy = protectionism
+	tax_policy = interventionism
+	language_policy = minority_toleration
+	diplomatic_policy = reactive
+	war_policy = anti_military
+	good_evil_alignment = good_alignment
+}
+
+party = {
+	name = "SHI_underhill_family"
+	start_date = 2954.1.1
+	end_date = 4000.1.1
+	
+	ideology = underhill_family
+	
+	trade_policy = free_trade
+	tax_policy = laissez_faire
+	language_policy = regional_autonomy
+	diplomatic_policy = isolationist
+	war_policy = pacifism
+	good_evil_alignment = neutral_alignment
+}
+
+party = {
 	name = "generic_nobility"
 	start_date = 2954.1.1
 	end_date = 4000.1.1

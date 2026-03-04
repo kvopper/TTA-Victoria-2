@@ -1435,6 +1435,10 @@ country_event = {
 				limit = { has_country_flag = DAL_content }
 				owner = { ruling_party_ideology = house_of_bard }
 			}
+			random_owned = {
+				limit = { tag = BCK }
+				owner = { ruling_party_ideology = brandybuck_family }
+			}
 		}
 		# Republics without voting become monarchies
 		any_country = {

@@ -17,9 +17,12 @@ prestige = 5
 
 decision = SHI_start_decision
 
-ruling_party = generic_nobility
+ruling_party = SHI_took_family
 upper_house = {
-	nobility = 100
+	took_family = 45
+	brandybuck_family = 25
+	fairbairn_family_family = 20
+	underhill_family = 10
 }
 penal_reform = hard_labor
 slavery = no_slavery

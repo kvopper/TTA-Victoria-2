@@ -1073,6 +1073,122 @@ ideologies = {
 			ruling_party_ideology = house_of_dol_amroth
 		}
 	}
+	underhill_family = {
+		factor = 1
+		# Must be active in the realm
+		modifier = {
+			factor = 0
+			NOT = { country = { has_country_flag = ideologies_underhill_family_active } }
+		}
+		modifier = {
+			factor = 2
+			has_pop_religion = hobbit
+		}
+		modifier = {
+			factor = 2
+			is_culture_group = hobbits
+		}
+		modifier = {
+			factor = 2
+			has_pop_culture = fallohide
+		}
+		modifier = {
+			factor = 2
+			has_pop_culture = harfoot
+		}
+	}
+	brockhouse_family = {
+		factor = 1
+		# Must be active in the realm
+		modifier = {
+			factor = 0
+			NOT = { country = { has_country_flag = ideologies_brockhouse_family_active } }
+		}
+		modifier = {
+			factor = 2
+			has_pop_religion = hobbit
+		}
+		modifier = {
+			factor = 2
+			is_culture_group = hobbits
+		}
+		modifier = {
+			factor = 2
+			has_pop_culture = stoor
+		}
+	}
+	fairbairn_family = {
+		factor = 1
+		# Must be active in the realm
+		modifier = {
+			factor = 0
+			NOT = { country = { has_country_flag = ideologies_fairbairn_family_active } }
+		}
+		modifier = {
+			factor = 2
+			has_pop_religion = hobbit
+		}
+		modifier = {
+			factor = 2
+			is_culture_group = hobbits
+		}
+		modifier = {
+			factor = 2
+			has_pop_culture = fallohide
+		}
+		modifier = {
+			factor = 2
+			has_pop_culture = harfoot
+		}
+	}
+	brandybuck_family = {
+		factor = 1
+		# Must be active in the realm
+		modifier = {
+			factor = 0
+			NOT = { country = { has_country_flag = ideologies_brandybuck_family_active } }
+		}
+		modifier = {
+			factor = 2
+			has_pop_religion = hobbit
+		}
+		modifier = {
+			factor = 2
+			is_culture_group = hobbits
+		}
+		modifier = {
+			factor = 2
+			has_pop_culture = fallohide
+		}
+		modifier = {
+			factor = 2
+			has_pop_culture = stoor
+		}
+	}
+	took_family = {
+		factor = 1
+		# Must be active in the realm
+		modifier = {
+			factor = 0
+			NOT = { country = { has_country_flag = ideologies_took_family_active } }
+		}
+		modifier = {
+			factor = 2
+			has_pop_religion = hobbit
+		}
+		modifier = {
+			factor = 2
+			is_culture_group = hobbits
+		}
+		modifier = {
+			factor = 2
+			has_pop_culture = fallohide
+		}
+		modifier = {
+			factor = 2
+			has_pop_culture = harfoot
+		}
+	}
 	
 	house_half_elven = {
 		factor = 1
