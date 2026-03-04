@@ -2,6 +2,36 @@ graphical_culture = DunedainGC
 color = { 21 156 0 }
 
 party = {
+	name = "BRE_tenderlarch_family"
+	start_date = 2954.1.1
+	end_date = 4000.1.1
+	
+	ideology = tenderlarch_family
+	
+	trade_policy = free_trade
+	tax_policy = interventionism
+	language_policy = regional_autonomy
+	diplomatic_policy = reactive
+	war_policy = pro_military
+	good_evil_alignment = good_alignment
+}
+
+party = {
+	name = "BRE_butterbur_family"
+	start_date = 2954.1.1
+	end_date = 4000.1.1
+	
+	ideology = butterbur_family
+	
+	trade_policy = free_trade
+	tax_policy = interventionism
+	language_policy = regional_autonomy
+	diplomatic_policy = reactive
+	war_policy = anti_military
+	good_evil_alignment = good_alignment
+}
+
+party = {
 	name = "SHI_brandybuck_family"
 	start_date = 2954.1.1
 	end_date = 4000.1.1

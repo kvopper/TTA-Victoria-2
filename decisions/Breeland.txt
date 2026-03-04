@@ -18,6 +18,8 @@ political_decisions = {
 			set_country_flag = flavor_expansion_1
 
 			# Set allowed leaders
+			set_country_flag = ideologies_tenderlarch_family_active
+			set_country_flag = ideologies_butterbur_family_active
 			set_country_flag = ideologies_brandybuck_family_active
 			set_country_flag = ideologies_underhill_family_active
 			set_country_flag = nobility_deactivated

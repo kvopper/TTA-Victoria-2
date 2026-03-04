@@ -738,6 +738,8 @@ promote_loremaster;Promote Loremaster;x
 promote_line_of_isildur;Promote Line of Isildur;x
 promote_house_of_stewards;Promote House of Stewards;x
 promote_house_of_dol_amroth;Promote House of Dol Amroth;x
+demote_butterbur_family;Slander Butterbur Family;x
+demote_tenderlarch_family;Slander Tenderlarch Family;x
 promote_underhill_family;Promote Underhill Family;x
 promote_brockhouse_family;Promote Brockhouse Family;x
 promote_fairbairn_family;Promote Fairbairn Family;x
@@ -771,6 +773,13 @@ demote_loremaster;Slander Loremaster;x
 demote_line_of_isildur;Slander Line of Isildur;x
 demote_house_of_stewards;Slander House of Stewards;x
 demote_house_of_dol_amroth;Slander House of Dol Amroth;x
+demote_butterbur_family;Slander Butterbur Family;x
+demote_tenderlarch_family;Slander Tenderlarch Family;x
+demote_underhill_family;Promote Underhill Family;x
+demote_brockhouse_family;Promote Brockhouse Family;x
+demote_fairbairn_family;Promote Fairbairn Family;x
+demote_brandybuck_family;Promote Brandybuck Family;x
+demote_took_family;Promote Took Family;x
 demote_house_half_elven;Slander House Half Elven;x
 demote_lords_of_mithlond;Slander Lords of Mithlond;x
 demote_house_of_oropher;Slander House of Oropher;x
@@ -871,6 +880,8 @@ ideologies_brockhouse_family_active;Brockhouse Family Active;x
 ideologies_fairbairn_family_active;Fairbairn Family Active;x
 ideologies_brandybuck_family_active;Brandybuck Family Active;x
 ideologies_took_family_active;Took Family Active;x
+ideologies_tenderlarch_family_active;Tenderlarch Family Active;x
+ideologies_butterbur_family_active;Butterbur Family Active;x
 nobility_deactivated;Nobility Deactivated;x
 burgher_deactivated;Burghers Deactivated;x
 loremaster_deactivated;Loremasters Deactivated;x

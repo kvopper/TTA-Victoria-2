@@ -52,6 +52,8 @@ political_decisions = {
 			set_country_flag = flavor_expansion_2
 			set_country_flag = flavor_diplomacy_1
 
+			set_country_flag = ideologies_tenderlarch_family_active
+			set_country_flag = ideologies_butterbur_family_active
 			set_country_flag = ideologies_brandybuck_family_active
 			set_country_flag = ideologies_underhill_family_active
 			set_country_flag = ideologies_took_family_active

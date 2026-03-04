@@ -18,9 +18,10 @@ prestige = 1
 
 decision = BRE_start_decision
 
-ruling_party = generic_burgher
+ruling_party = BRE_tenderlarch_family
 upper_house = {
-	burgher = 100
+	tenderlarch_family = 75
+	butterbur_family = 25
 }
 penal_reform = hard_labor
 slavery = no_slavery

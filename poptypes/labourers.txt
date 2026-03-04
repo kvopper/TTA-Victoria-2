@@ -1124,6 +1124,50 @@ ideologies = {
 			ruling_party_ideology = house_of_dol_amroth
 		}
 	}
+	tenderlarch_family = {
+		factor = 1
+		# Must be active in the realm
+		modifier = {
+			factor = 0
+			NOT = { country = { has_country_flag = ideologies_tenderlarch_family_active } }
+		}
+		modifier = {
+			factor = 2
+			has_pop_religion = men
+		}
+		modifier = {
+			factor = 2
+			is_culture_group = breelander
+		}
+		modifier = {
+			factor = 2
+			has_pop_culture = breelander
+		}
+		modifier = {
+			factor = 2
+			has_pop_culture = siredain
+		}
+	}
+	butterbur_family = {
+		factor = 1
+		# Must be active in the realm
+		modifier = {
+			factor = 0
+			NOT = { country = { has_country_flag = ideologies_butterbur_family_active } }
+		}
+		modifier = {
+			factor = 2
+			has_pop_religion = men
+		}
+		modifier = {
+			factor = 2
+			is_culture_group = breelander
+		}
+		modifier = {
+			factor = 2
+			has_pop_culture = breelander
+		}
+	}
 	underhill_family = {
 		factor = 1
 		# Must be active in the realm

@@ -130,6 +130,29 @@ dunedain_nobility = {
 	}
 }
 
+breelander_nobility = {
+	butterbur_family = {
+		color = { 50 150 150 }
+		
+		add_political_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = butterbur_family } }
+		remove_political_reform = { base = 0 }
+		add_social_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = butterbur_family } }
+		remove_social_reform = { base = 0 }
+		add_military_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = butterbur_family } }
+		add_economic_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = butterbur_family } }
+	}
+	tenderlarch_family = {
+		color = { 50 150 20 }
+		
+		add_political_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = butterbur_family } }
+		remove_political_reform = { base = 0 }
+		add_social_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = butterbur_family } }
+		remove_social_reform = { base = 0 }
+		add_military_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = butterbur_family } }
+		add_economic_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = butterbur_family } }
+	}
+}
+
 hobbit_nobility = {
 	took_family = {
 		color = { 0 212 72 }
