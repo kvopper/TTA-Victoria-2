@@ -86,7 +86,16 @@ SHI_underhill_family;Underhill Family;x
 SHI_brockhouse_family;Brockhouse Family;x
 SHI_fairbairn_family;Fairbairn Family;x
 SHI_brandybuck_family;Brandybuck Family;x
-SHI_took_family;Took Family;x
+SHI_gorbadoc_brandybuck;Gorbadoc Brandybuck;x
+SHI_rorimac_brandybuck;Rorimac Brandybuck;x
+SHI_saradoc_brandybuck;Saradoc Brandybuck;x
+SHI_meriadoc_i_brandybuck;Meriadoc I Brandybuck;x
+SHI_meriadoc_ii_brandybuck;Meriadoc II Brandybuck;x
+SHI_fortinbras_ii_took;Fortinbras II Took;x
+SHI_ferumbras_iii_took;Ferumbras III Took;x
+SHI_paladin_ii_took;Paladin II Took;x
+SHI_peregrin_i_took;Peregrin I Took;x
+SHI_faramir_i_took;Faramir I Took;x
 TOL_nobles_of_tolfalas;Nobles of Tolfalas;x
 WRM_thranduil;Thranduil;x
 #####################;x }

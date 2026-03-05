@@ -17,7 +17,7 @@ prestige = 5
 
 decision = SHI_start_decision
 
-ruling_party = SHI_took_family
+ruling_party = SHI_fortinbras_ii_took
 upper_house = {
 	took_family = 45
 	brandybuck_family = 25

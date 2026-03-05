@@ -2,8 +2,68 @@ graphical_culture = HobbitGC
 color = { 170 240 0 }
 
 party = {
-	name = "SHI_brandybuck_family"
-	start_date = 2954.1.1
+	name = "SHI_gorbadoc_brandybuck"
+	start_date = 2910.1.1
+	end_date = 2964.1.1
+	
+	ideology = brandybuck_family
+	
+	trade_policy = protectionism
+	tax_policy = state_capitalism
+	language_policy = regional_autonomy
+	diplomatic_policy = reactive
+	war_policy = anti_military
+	good_evil_alignment = good_alignment
+}
+
+party = {
+	name = "SHI_rorimac_brandybuck"
+	start_date = 2964.1.1
+	end_date = 3008.1.1
+	
+	ideology = brandybuck_family
+	
+	trade_policy = protectionism
+	tax_policy = state_capitalism
+	language_policy = regional_autonomy
+	diplomatic_policy = reactive
+	war_policy = anti_military
+	good_evil_alignment = good_alignment
+}
+
+party = {
+	name = "SHI_saradoc_brandybuck"
+	start_date = 3008.1.1
+	end_date = 3032.1.1
+	
+	ideology = brandybuck_family
+	
+	trade_policy = protectionism
+	tax_policy = state_capitalism
+	language_policy = regional_autonomy
+	diplomatic_policy = reactive
+	war_policy = anti_military
+	good_evil_alignment = good_alignment
+}
+
+party = {
+	name = "SHI_meriadoc_i_brandybuck"
+	start_date = 3032.1.1
+	end_date = 3084.1.1
+	
+	ideology = brandybuck_family
+	
+	trade_policy = protectionism
+	tax_policy = state_capitalism
+	language_policy = regional_autonomy
+	diplomatic_policy = reactive
+	war_policy = anti_military
+	good_evil_alignment = good_alignment
+}
+
+party = {
+	name = "SHI_meriadoc_ii_brandybuck"
+	start_date = 3084.1.1
 	end_date = 4000.1.1
 	
 	ideology = brandybuck_family

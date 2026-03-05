@@ -32,18 +32,18 @@ party = {
 }
 
 party = {
-	name = "SHI_brandybuck_family"
+	name = "SHI_brockhouse_family"
 	start_date = 2954.1.1
 	end_date = 4000.1.1
 	
-	ideology = brandybuck_family
+	ideology = brockhouse_family
 	
-	trade_policy = protectionism
+	trade_policy = free_trade
 	tax_policy = state_capitalism
 	language_policy = regional_autonomy
 	diplomatic_policy = reactive
 	war_policy = anti_military
-	good_evil_alignment = good_alignment
+	good_evil_alignment = neutral_alignment
 }
 
 party = {
