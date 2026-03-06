@@ -1096,6 +1096,10 @@ ideologies = {
 			factor = 2
 			has_pop_culture = siredain
 		}
+		modifier = {
+			factor = 2
+			ruling_party_ideology = tenderlarch_family
+		}
 	}
 	butterbur_family = {
 		factor = 1
@@ -1115,6 +1119,10 @@ ideologies = {
 		modifier = {
 			factor = 2
 			has_pop_culture = breelander
+		}
+		modifier = {
+			factor = 2
+			ruling_party_ideology = butterbur_family
 		}
 	}
 	underhill_family = {
@@ -1140,6 +1148,10 @@ ideologies = {
 			factor = 2
 			has_pop_culture = harfoot
 		}
+		modifier = {
+			factor = 2
+			ruling_party_ideology = underhill_family
+		}
 	}
 	brockhouse_family = {
 		factor = 1
@@ -1159,6 +1171,10 @@ ideologies = {
 		modifier = {
 			factor = 2
 			has_pop_culture = stoor
+		}
+		modifier = {
+			factor = 2
+			ruling_party_ideology = brockhouse_family
 		}
 	}
 	fairbairn_family = {
@@ -1184,6 +1200,10 @@ ideologies = {
 			factor = 2
 			has_pop_culture = harfoot
 		}
+		modifier = {
+			factor = 2
+			ruling_party_ideology = fairbairn_family
+		}
 	}
 	brandybuck_family = {
 		factor = 1
@@ -1208,6 +1228,19 @@ ideologies = {
 			factor = 2
 			has_pop_culture = stoor
 		}
+		modifier = {
+			factor = 2
+			ruling_party_ideology = brandybuck_family
+		}
+		modifier = {
+			factor = 2
+			tag = BCK
+		}
+		modifier = {
+			factor = -2
+			exists = BCK
+			NOT = {  tag = BCK }
+		}
 	}
 	took_family = {
 		factor = 1
@@ -1231,6 +1264,10 @@ ideologies = {
 		modifier = {
 			factor = 2
 			has_pop_culture = harfoot
+		}
+		modifier = {
+			factor = 2
+			ruling_party_ideology = took_family
 		}
 	}
 	
