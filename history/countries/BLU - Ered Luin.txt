@@ -10,7 +10,7 @@ nationalvalue = no_heirloom
 literacy = 0.3
 civilized = yes
 prestige = 50
-ruling_party = generic_nobility
+ruling_party = BLU_uri_vi
 upper_house = {
 	nobility = 100
 }
@@ -18,3 +18,5 @@ penal_reform = hard_labor
 slavery = no_slavery
 
 schools = no_organization
+
+decision = blue_mountains_start_decision

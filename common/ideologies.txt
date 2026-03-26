@@ -320,13 +320,24 @@ northmen_nobility = {
 dwarves_nobility = {
 	line_of_durin = {
 		color = { 25 25 112 }
-		
+
 		add_political_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = line_of_durin } }
 		remove_political_reform = { base = 0 }
 		add_social_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = line_of_durin } }
 		remove_social_reform = { base = 0 }
 		add_military_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = line_of_durin } }
 		add_economic_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = line_of_durin } }
+	}
+
+	line_of_uri = {
+		color = { 46 43 180 }
+
+		add_political_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = line_of_uri } }
+		remove_political_reform = { base = 0 }
+		add_social_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = line_of_uri } }
+		remove_social_reform = { base = 0 }
+		add_military_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = line_of_uri } }
+		add_economic_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = line_of_uri } }
 	}
 }
 

@@ -1,0 +1,17 @@
+# Ered Luin Decisions:
+#	Starting Decision (Unseen)
+
+# Starting Decision
+political_decisions = {
+	# Audax Validator "." Ignore_1004
+	blue_mountains_start_decision = {
+		potential = {
+			always = no
+		}
+		effect = {
+			# Set allowed leaders
+			set_country_flag = ideologies_line_of_uri_active
+			set_country_flag = nobility_deactivated
+		}
+	}
+}

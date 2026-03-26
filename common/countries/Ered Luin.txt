@@ -61,6 +61,21 @@ party = {
 	good_evil_alignment = vassal_alignment
 }
 
+party = {
+	name = "BLU_uri_vi"
+	start_date = 2954.1.1
+	end_date = 4000.1.1
+
+	ideology = line_of_uri
+
+	trade_policy = protectionism
+	tax_policy = interventionism
+	language_policy = official_only
+	diplomatic_policy = reactive
+	war_policy = pro_military
+	good_evil_alignment = good_alignment
+}
+
 unit_names = {
 	#example = {
 	#	name "multi word name"

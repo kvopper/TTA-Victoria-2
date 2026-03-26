@@ -8,7 +8,7 @@ government = monarchy
 nationalvalue = no_heirloom
 literacy = 0.3
 civilized = yes
-ruling_party = generic_nobility
+ruling_party = BLU_uri_vi
 oob = "KHZ_oob.txt"
 
 prestige = 1
@@ -20,3 +20,5 @@ penal_reform = hard_labor
 slavery = no_slavery
 
 schools = no_organization
+
+decision = blue_mountains_start_decision
