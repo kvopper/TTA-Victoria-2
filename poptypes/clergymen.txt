@@ -1651,6 +1651,10 @@ ideologies = {
 		}
 		modifier = {
 			factor = 2
+			has_pop_culture = longbeard
+		}
+		modifier = {
+			factor = 2
 			location = { any_core = { has_country_flag = ERE_content } }
 		}
 		modifier = {
@@ -1673,6 +1677,10 @@ ideologies = {
 		modifier = {
 			factor = 2
 			is_culture_group = dwarves
+		}
+		modifier = {
+			factor = 2
+			has_pop_culture = firebeard
 		}
 		modifier = {
 			factor = 2

@@ -10,13 +10,16 @@ nationalvalue = durins_axe
 literacy = 0.3
 civilized = yes
 prestige = 50
-ruling_party = generic_nobility
+ruling_party = ERE_dain_ii
 oob = "THO_oob.txt"
 
 upper_house = {
-	nobility = 100
+	line_of_durin = 45
+	line_of_uri = 55
 }
 penal_reform = hard_labor
 slavery = no_slavery
 
 schools = no_organization
+
+decision = thorins_halls_start_decision
