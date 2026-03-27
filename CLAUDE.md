@@ -22,6 +22,8 @@ These also run automatically in CI on push/PR to `main`. Most content (events, d
 
 **All localisation CSV files must be Windows-1252 encoded** (not UTF-8). Victoria 2 requires this. The `check-encoding.py` script enforces it. When editing localisation files, ensure your editor saves in Windows-1252 / cp1252.
 
+**CLAUDE.md must use ASCII characters only** (no em-dashes, accented letters, curly quotes, or other non-ASCII). All modders have their workstations configured to read files as Windows-1252, so any UTF-8 multi-byte sequences in this file will be misread.
+
 ## Architecture
 
 ### Victoria 2 Mod File Format
@@ -58,14 +60,34 @@ Comments use `#`. String values use `"quotes"` or bare words.
 
 ### Ideology System
 
-When adding a new ideology, it must be registered in **all** of the following (the `check-ideologies.py` script enforces this):
-1. `common/ideologies.txt` -definition
-2. `common/countries/*.txt` -party entries for each country
-3. `localisation/politics.csv` -display name and upper house (`_uh`) variant
-4. `common/national_focus.txt` -`promote_<ideology>` and `demote_<ideology>` entries
-5. `events/Election.txt` -events 14006 and 14007
-6. `localisation/modifiers and flags.csv` -`ideologies_<ideology>_active` entry
-7. Every `poptypes/*.txt` file (except slaves, tribals, bankers)
+When adding a new ideology, it must be registered in **all** of the following (the `check-ideologies.py` script enforces items 1-3, 5-7, and 9):
+1. `common/ideologies.txt` - definition in the appropriate group (e.g. `dwarves_nobility`)
+2. `common/countries/*.txt` - `party = { name = "TAG_partyname" ideology = <ideology> ... }` block for each affected country
+3. `localisation/politics.csv` - display name and `_uh` (upper house tooltip) variant
+4. `localisation/countries.csv` - party display name (`TAG_partyname;Party Name;x`)
+5. `common/national_focus.txt` - `promote_<ideology>` and `demote_<ideology>` entries
+6. `events/Election.txt` - events 14006 and 14007
+7. `localisation/modifiers and flags.csv` - `promote_<ideology>`, `demote_<ideology>`, and `ideologies_<ideology>_active` entries
+8. Every `poptypes/*.txt` file (except slaves, tribals, bankers)
+9. A hidden start decision (`potential = { always = no }`) that calls `set_country_flag = ideologies_<ideology>_active` and usually `set_country_flag = nobility_deactivated` - add to the relevant country's decisions file (e.g. `decisions/Ered Luin.txt`)
+10. Each affected country's `history/countries/` file - set `ruling_party`, update `upper_house`, and fire the start decision with `decision = <decision_name>`
+
+#### Localisation files and special characters
+
+**Items 3, 4, and 7 (all `localisation/*.csv` files) must be written as Windows-1252**, not UTF-8. The Edit tool writes UTF-8 and will silently corrupt any non-ASCII characters (e.g. accented letters in party names). Always use a Python script to modify these files:
+
+```python
+path = 'localisation/politics.csv'
+with open(path, 'rb') as f:
+    content = f.read().decode('cp1252')
+anchor = 'existing_key;Existing Text;x\n'
+insert = 'new_key;New Text with \u00fa (u-acute);x\n'  # \u00fa = cp1252 0xFA
+content = content.replace(anchor, anchor + insert, 1)
+with open(path, 'wb') as f:
+    f.write(content.encode('cp1252'))
+```
+
+Common cp1252 code points used in this mod: capital U-acute = `\u00da` (0xDA), lowercase u-acute = `\u00fa` (0xFA).
 
 ### Terrain System
 
