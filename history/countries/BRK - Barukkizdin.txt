@@ -8,11 +8,13 @@ nationalvalue = no_heirloom
 literacy = 0.3
 civilized = yes
 
-ruling_party = generic_nobility
+ruling_party = BLG_onur
 upper_house = {
-	nobility = 100
+	line_of_linnar = 100
 }
 penal_reform = hard_labor
 slavery = no_slavery
 
 schools = no_organization
+
+decision = broadbeam_start_decision

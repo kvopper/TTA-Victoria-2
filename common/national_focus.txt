@@ -259,6 +259,10 @@ promotion_ideologies = {
 		ideology = line_of_uri
 		loyalty_value = 0.005
 	}
+	promote_line_of_linnar = {
+		ideology = line_of_linnar
+		loyalty_value = 0.005
+	}
 	promote_house_of_beorn = {
 		ideology = house_of_beorn
 		loyalty_value = 0.005
@@ -399,6 +403,10 @@ demotion_ideologies = {
 	}
 	demote_line_of_uri = {
 		ideology = line_of_uri
+		loyalty_value = -0.005
+	}
+	demote_line_of_linnar = {
+		ideology = line_of_linnar
 		loyalty_value = -0.005
 	}
 	demote_house_of_beorn = {

@@ -17,6 +17,21 @@ party = {
 }
 
 party = {
+	name = "RAV_roac"
+	start_date = 2954.1.1
+	end_date = 4000.1.1
+	
+	ideology = lords_of_ravens
+	
+	trade_policy = protectionism
+	tax_policy = interventionism
+	language_policy = regional_autonomy
+	diplomatic_policy = reactive
+	war_policy = jingoism
+	good_evil_alignment = good_alignment
+}
+
+party = {
 	name = "generic_nobility"
 	start_date = 2954.1.1
 	end_date = 4000.1.1

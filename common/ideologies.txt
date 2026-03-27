@@ -339,6 +339,17 @@ dwarves_nobility = {
 		add_military_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = line_of_uri } }
 		add_economic_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = line_of_uri } }
 	}
+
+	line_of_linnar = {
+		color = { 180 120 40 }
+
+		add_political_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = line_of_linnar } }
+		remove_political_reform = { base = 0 }
+		add_social_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = line_of_linnar } }
+		remove_social_reform = { base = 0 }
+		add_military_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = line_of_linnar } }
+		add_economic_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = line_of_linnar } }
+	}
 }
 
 anduinrim_nobility = {

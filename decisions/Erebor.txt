@@ -15,12 +15,23 @@ political_decisions = {
 			
 			# Set allowed leaders
 			set_country_flag = ideologies_line_of_durin_active
+			set_country_flag = ideologies_lords_of_ravens_active
 			set_country_flag = nobility_deactivated
 			
 			set_country_flag = ERE_content
 			
 			set_country_flag = flavor_diplomacy_3
 		}
+	}
+	IRO_start_decision = {
+		potential = {
+			always = no
+		}
+		effect = {
+			# Set allowed leaders
+			set_country_flag = ideologies_line_of_durin_active
+			set_country_flag = ideologies_line_of_linnar_active
+			set_country_flag = nobility_deactivated
 	}
 	RAV_start_decision = {
 		potential = {

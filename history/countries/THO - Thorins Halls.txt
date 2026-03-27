@@ -15,7 +15,8 @@ oob = "THO_oob.txt"
 
 upper_house = {
 	line_of_durin = 45
-	line_of_uri = 55
+	line_of_uri = 30
+	line_of_linnar = 25
 }
 penal_reform = hard_labor
 slavery = no_slavery
