@@ -1882,6 +1882,31 @@ ideologies = {
 		}
 	}
 
+	line_of_sindri = {
+		factor = 1
+		# Must be active in the realm
+		modifier = {
+			factor = 0
+			NOT = { country = { has_country_flag = ideologies_line_of_sindri_active } }
+		}
+		modifier = {
+			factor = 2
+			has_pop_religion = dwarven
+		}
+		modifier = {
+			factor = 2
+			is_culture_group = dwarves
+		}
+		modifier = {
+			factor = 2
+			has_pop_culture = ironfist
+		}
+		modifier = {
+			factor = 2
+			ruling_party_ideology = line_of_sindri
+		}
+	}
+
 	house_of_beorn = {
 		factor = 1
 		# Must be active in the realm

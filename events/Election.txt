@@ -1063,6 +1063,19 @@ province_event = {
 		}
 		state_scope = {
 			random_owned = {
+				limit = { owner = { ruling_party_ideology = line_of_sindri } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = 0.1
+							value = line_of_sindri
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
 				limit = { owner = { ruling_party_ideology = house_of_beorn } }
 				state_scope = {
 					any_pop = {
@@ -1584,6 +1597,19 @@ province_event = {
 						ideology = {
 							factor = -0.1
 							value = line_of_linnar
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = line_of_sindri } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = -0.1
+							value = line_of_sindri
 						}
 					}
 				}

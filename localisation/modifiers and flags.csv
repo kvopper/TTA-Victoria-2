@@ -757,6 +757,7 @@ promote_house_of_koldana;Promote House of Koldana;x
 promote_line_of_durin;Promote Line of Durin;x
 promote_line_of_uri;Promote Line of Úri;x
 promote_line_of_linnar;Promote Line of Linnar;x
+promote_line_of_sindri;Promote Line of Sindri;x
 promote_house_of_beorn;Promote House of Beorn;x
 promote_lords_of_fangorn;Promote Lords of Fangorn;x
 promote_house_of_eorl;Promote House of Eorl;x
@@ -794,6 +795,7 @@ demote_house_of_koldana;Slander House of Koldana;x
 demote_line_of_durin;Slander Line of Durin;x
 demote_line_of_uri;Slander Line of Úri;x
 demote_line_of_linnar;Slander Line of Linnar;x
+demote_line_of_sindri;Slander Line of Sindri;x
 demote_house_of_beorn;Slander House of Beorn;x
 demote_lords_of_fangorn;Slander Lords of Fangorn;x
 demote_house_of_eorl;Slander House of Eorl;x
@@ -870,6 +872,7 @@ ideologies_house_of_koldana_active;House of Koldana Active;x
 ideologies_line_of_durin_active;Line of Durin Active;x
 ideologies_line_of_uri_active;Line of Úri Active;x
 ideologies_line_of_linnar_active;Line of Linnar Active;x
+ideologies_line_of_sindri_active;Line of Sindri Active;x
 ideologies_house_of_beorn_active;House of Beorn Active;x
 ideologies_lords_of_fangorn_active;Lords of Fangorn Active;x
 ideologies_house_of_eorl_active;House of Eorl Active;x

@@ -12,11 +12,14 @@ oob = "BSH_oob.txt"
 
 prestige = 0
 
-ruling_party = generic_nobility
+ruling_party = BSH_thelor
 upper_house = {
-	nobility = 100
+	line_of_sindri = 100
 }
 penal_reform = hard_labor
 slavery = no_slavery
 
 schools = no_organization
+
+decision = ironfist_start_decision
+
