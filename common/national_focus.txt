@@ -267,6 +267,10 @@ promotion_ideologies = {
 		ideology = line_of_sindri
 		loyalty_value = 0.005
 	}
+	promote_dourhand_clan = {
+		ideology = dourhand_clan
+		loyalty_value = 0.005
+	}
 	promote_house_of_beorn = {
 		ideology = house_of_beorn
 		loyalty_value = 0.005
@@ -415,6 +419,10 @@ demotion_ideologies = {
 	}
 	demote_line_of_sindri = {
 		ideology = line_of_sindri
+		loyalty_value = -0.005
+	}
+	demote_dourhand_clan = {
+		ideology = dourhand_clan
 		loyalty_value = -0.005
 	}
 	demote_house_of_beorn = {

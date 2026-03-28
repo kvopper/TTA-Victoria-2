@@ -15,6 +15,17 @@ political_decisions = {
 			set_country_flag = nobility_deactivated
 		}
 	}
+	
+	dourhand_start_decision = {
+		potential = {
+			always = no
+		}
+		effect = {
+			# Set allowed leaders
+			set_country_flag = ideologies_dourhand_clan_active
+			set_country_flag = nobility_deactivated
+		}
+	}
 
 	thorins_halls_start_decision = {
 		potential = {

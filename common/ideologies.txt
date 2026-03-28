@@ -361,6 +361,17 @@ dwarves_nobility = {
 		add_military_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = line_of_sindri } }
 		add_economic_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = line_of_sindri } }
 	}
+
+	dourhand_clan = {
+		color = { 80 80 90 }
+
+		add_political_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = dourhand_clan } }
+		remove_political_reform = { base = 0 }
+		add_social_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = dourhand_clan } }
+		remove_social_reform = { base = 0 }
+		add_military_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = dourhand_clan } }
+		add_economic_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = dourhand_clan } }
+	}
 }
 
 anduinrim_nobility = {

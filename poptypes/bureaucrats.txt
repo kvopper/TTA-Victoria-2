@@ -1817,6 +1817,31 @@ ideologies = {
 		}
 	}
 
+	dourhand_clan = {
+		factor = 1
+		# Must be active in the realm
+		modifier = {
+			factor = 0
+			NOT = { country = { has_country_flag = ideologies_dourhand_clan_active } }
+		}
+		modifier = {
+			factor = 2
+			has_pop_religion = dwarven
+		}
+		modifier = {
+			factor = 2
+			is_culture_group = dwarves
+		}
+		modifier = {
+			factor = 2
+			has_pop_culture = dourhand
+		}
+		modifier = {
+			factor = 2
+			ruling_party_ideology = dourhand_clan
+		}
+	}
+
 	house_of_beorn = {
 		factor = 1
 		# Must be active in the realm

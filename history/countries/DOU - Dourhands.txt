@@ -7,13 +7,15 @@ government = monarchy
 nationalvalue = no_heirloom
 literacy = 0.3
 civilized = yes
-ruling_party = generic_nobility
+ruling_party = DOU_skorgrim
 prestige = 1
 
 upper_house = {
-	nobility = 100
+	dourhand_clan = 100
 }
 penal_reform = hard_labor
 slavery = no_slavery
 
 schools = no_organization
+
+decision = dourhand_start_decision
