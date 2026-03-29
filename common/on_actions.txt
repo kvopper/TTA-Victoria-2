@@ -29,6 +29,7 @@ on_yearly_pulse = {
 	10 = 3626
 	10 = 3627
 	10 = 3628
+	10 = 3629
 }
 
 on_quarterly_pulse = {

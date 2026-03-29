@@ -1174,3 +1174,155 @@ country_event = {
 		any_pop = { militancy = -1 }
 	}
 }
+
+# Kindred spirits
+country_event = {
+	id = 3629
+	title = "Kindred Spirits"
+	desc = "EVTDESC3629"
+	picture = administration
+
+	is_triggered_only = yes
+
+	trigger = {
+		NOT = { has_country_modifier = observer_mode }
+		OR = {
+			good_evil_alignment = good_alignment
+			good_evil_alignment = evil_alignment
+		}
+	}
+
+	option = {
+		name = "Strengthen these bonds"
+		random_country = {
+			limit = {
+				exists = yes
+				NOT = { tag = THIS }
+				THIS = { accepted_culture = men_culture }
+				accepted_culture = men_culture
+				OR = {
+					AND = { THIS = { good_evil_alignment = good_alignment } NOT = { good_evil_alignment = evil_alignment } }
+					AND = { THIS = { good_evil_alignment = evil_alignment } NOT = { good_evil_alignment = good_alignment } }
+				}
+			}
+			relation = { who = THIS value = 15 }
+		}
+		random_country = {
+			limit = {
+				exists = yes
+				NOT = { tag = THIS }
+				THIS = { accepted_culture = elven_culture }
+				accepted_culture = elven_culture
+				OR = {
+					AND = { THIS = { good_evil_alignment = good_alignment } NOT = { good_evil_alignment = evil_alignment } }
+					AND = { THIS = { good_evil_alignment = evil_alignment } NOT = { good_evil_alignment = good_alignment } }
+				}
+			}
+			relation = { who = THIS value = 15 }
+		}
+		random_country = {
+			limit = {
+				exists = yes
+				NOT = { tag = THIS }
+				THIS = { accepted_culture = dwarven_culture }
+				accepted_culture = dwarven_culture
+				OR = {
+					AND = { THIS = { good_evil_alignment = good_alignment } NOT = { good_evil_alignment = evil_alignment } }
+					AND = { THIS = { good_evil_alignment = evil_alignment } NOT = { good_evil_alignment = good_alignment } }
+				}
+			}
+			relation = { who = THIS value = 15 }
+		}
+		random_country = {
+			limit = {
+				exists = yes
+				NOT = { tag = THIS }
+				THIS = { accepted_culture = orc_culture }
+				accepted_culture = orc_culture
+				OR = {
+					AND = { THIS = { good_evil_alignment = good_alignment } NOT = { good_evil_alignment = evil_alignment } }
+					AND = { THIS = { good_evil_alignment = evil_alignment } NOT = { good_evil_alignment = good_alignment } }
+				}
+			}
+			relation = { who = THIS value = 15 }
+		}
+		random_country = {
+			limit = {
+				exists = yes
+				NOT = { tag = THIS }
+				THIS = { accepted_culture = hobbit_culture }
+				accepted_culture = hobbit_culture
+				OR = {
+					AND = { THIS = { good_evil_alignment = good_alignment } NOT = { good_evil_alignment = evil_alignment } }
+					AND = { THIS = { good_evil_alignment = evil_alignment } NOT = { good_evil_alignment = good_alignment } }
+				}
+			}
+			relation = { who = THIS value = 15 }
+		}
+		random_country = {
+			limit = {
+				exists = yes
+				NOT = { tag = THIS }
+				THIS = { accepted_culture = ent_culture }
+				accepted_culture = ent_culture
+				OR = {
+					AND = { THIS = { good_evil_alignment = good_alignment } NOT = { good_evil_alignment = evil_alignment } }
+					AND = { THIS = { good_evil_alignment = evil_alignment } NOT = { good_evil_alignment = good_alignment } }
+				}
+			}
+			relation = { who = THIS value = 15 }
+		}
+		random_country = {
+			limit = {
+				exists = yes
+				NOT = { tag = THIS }
+				THIS = { accepted_culture = troll_culture }
+				accepted_culture = troll_culture
+				OR = {
+					AND = { THIS = { good_evil_alignment = good_alignment } NOT = { good_evil_alignment = evil_alignment } }
+					AND = { THIS = { good_evil_alignment = evil_alignment } NOT = { good_evil_alignment = good_alignment } }
+				}
+			}
+			relation = { who = THIS value = 15 }
+		}
+		random_country = {
+			limit = {
+				exists = yes
+				NOT = { tag = THIS }
+				THIS = { accepted_culture = eagle_culture }
+				accepted_culture = eagle_culture
+				OR = {
+					AND = { THIS = { good_evil_alignment = good_alignment } NOT = { good_evil_alignment = evil_alignment } }
+					AND = { THIS = { good_evil_alignment = evil_alignment } NOT = { good_evil_alignment = good_alignment } }
+				}
+			}
+			relation = { who = THIS value = 15 }
+		}
+		random_country = {
+			limit = {
+				exists = yes
+				NOT = { tag = THIS }
+				THIS = { accepted_culture = spider_culture }
+				accepted_culture = spider_culture
+				OR = {
+					AND = { THIS = { good_evil_alignment = good_alignment } NOT = { good_evil_alignment = evil_alignment } }
+					AND = { THIS = { good_evil_alignment = evil_alignment } NOT = { good_evil_alignment = good_alignment } }
+				}
+			}
+			relation = { who = THIS value = 15 }
+		}
+		random_country = {
+			limit = {
+				exists = yes
+				NOT = { tag = THIS }
+				THIS = { accepted_culture = undead_culture }
+				accepted_culture = undead_culture
+				OR = {
+					AND = { THIS = { good_evil_alignment = good_alignment } NOT = { good_evil_alignment = evil_alignment } }
+					AND = { THIS = { good_evil_alignment = evil_alignment } NOT = { good_evil_alignment = good_alignment } }
+				}
+			}
+			relation = { who = THIS value = 15 }
+		}
+	}
+}
