@@ -601,6 +601,7 @@ become_sauron_vassal_loc = { } # We will start the path to becoming §RSauron's 
 strong_leader_beats_saurons_will_loc = { } # Due to our leader's strong will, we will completely avert the chance to become §RSauron's vassal§!. However, we will not avoid the after-effects of the contest of wills...
 good_unlock_invention_eagles_loc = { } # Unlocks invention §YEagles§! at the §Ystart of the next month§!, giving the following effects:\nPrestige gain: §G+5.0%§!\nCan use Aerial Support
 evil_unlock_invention_fellbeasts_loc = { } # Unlocks invention §YFellbeasts§! at the §Ystart of the next month§!, giving the following effects:\nPrestige gain: §G+5.0%§!\nCan use Aerial Support
+use_palantiri_loc = { } # Activates events and flavor related to Palantíri.\n\nBe wary! Using a Palantír can be dangerous and one never knows where the other lost ones are and who might be using them...§!
 
 # Static Tooltip Locs - Random
 conversion_to_tribal_loc = { } # §RAny unaccepted soldier pop in the newly conquered lands will convert into tribals§!
@@ -706,6 +707,9 @@ ISE_stoor_policy_sphere_loc = { } # We will send an ultimatum to the Stoors of M
 ISE_stoor_policy_puppet_loc = { } # We will send an ultimatum to the Stoors of Maur Tulhau requesting that they become our puppet with a unique color, name and flag. If they refuse, we gain a §YMake Vassal§W casus belli against them§!
 ISE_stoor_policy_annex_loc = { } # We will send an ultimatum to the Stoors of Maur Tulhau requesting that they join our realm. If they refuse, we gain a §YConquest§W casus belli against them§!
 ISE_puppet_mirobel_loc = { } # We will vassalize the @MRB §YDunlendings of Mirobel§W with a unique name and flag§!
+ISE_alliance_of_two_towers_loc = { } # If accepted, we will enter a permanent alliance with the @MOR §YShadow of Mordor$!
+
+MOR_alliance_of_two_towers_loc = { } # We will enter a permanent alliance with the @ISE §YRealm of Isengard§!
 
 # Static Tooltip Locs - Lothlorien
 LOR_unlock_invention_lembas_bread_loc = { } # Unlocks invention §YLembas Bread§! at the §Ystart of the next month§!, giving the following effects:\nArmies: Supply Consumption: §G-10%§!\nRGO output efficiency tech: §G+5.0%§!

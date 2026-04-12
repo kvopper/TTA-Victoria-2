@@ -60,6 +60,8 @@ political_decisions = {
 		}
 		effect = {
 			set_country_flag = using_palantiri
+			
+			use_palantiri_loc = { }
 		}
 		
 		ai_will_do = {

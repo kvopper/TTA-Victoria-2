@@ -6134,6 +6134,17 @@ country_event = {
 		}
 		# }
 		
+		# Alliance of Two Towers {
+		random_country = {
+			limit = {
+				has_global_flag = alliance_of_two_towers
+				has_country_flag = ISE_content
+			}
+			create_alliance = MOR
+			end_war = MOR
+			relation = { who = MOR value = 400 }
+		}
+		
 		# Refire the cleanup event next month {
 		random_owned = {
 			limit = {

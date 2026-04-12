@@ -1937,6 +1937,7 @@ claim_status_doesnt_own_ROH_775_loc;§YThe Wold§!: §RUnowned§!§I;x
 add_claim_SHI_1031_loc;§WWe will gain claims over §!§YWestfarthing§!§I;x
 remove_claim_CAR_886_loc;§WWe will lose claims over §!§YPinnath Ceren§!§I;x
 admiral_loc;§TAdmirals§!;x
+ISE_alliance_of_two_towers_loc;If accepted, we will enter a permanent alliance with the @MOR §YShadow of Mordor$!§I;x
 claim_status_owns_GON_232_loc;§YForethir§!: §GOwned§!§I;x
 GON_unlock_invention_minasdirath_loc;Unlocks invention §YMinasdirith§! at the §Ystart of the next month§!, giving the following effects:\nArmies: Build Time §G-3§! Days\nReg. Experience: §G+5.00§!§I;x
 remove_claim_RHU_602_loc;§WWe will lose claims over §!§YLeshen§!§I;x
@@ -1947,6 +1948,7 @@ remove_claim_LIN_921_loc;§WWe will lose claims over §!§YDânwaith§!§I;x
 claim_status_owns_LOS_1343_loc;§YItä-mâ§!: §GOwned§!§I;x
 add_claim_GON_154_loc;§WWe will gain claims over §!§YNan-i-Faroth§!§I;x
 remove_claim_SHI_1031_loc;§WWe will lose claims over §!§YWestfarthing§!§I;x
+use_palantiri_loc;Activates events and flavor related to Palantíri.\n\nBe wary! Using a Palantír can be dangerous and one never knows where the other lost ones are and who might be using them...§!§I;x
 dynamic_loc_slot_1;§I;x
 DAL_merchant_guild_bop_merchants_lead_loc;Currently the §TMerchants§! lead (+;x
 DAL_leader_traits_productive_loc;§TProductive§!| Guild Output §G+10.0%§!, RGO Output §G+10.0%§!, Administrative Efficiency §G+10.0%§!;x
@@ -2293,6 +2295,7 @@ remove_claim_GON_123_loc;§WWe will lose claims over §!§YPinnath Gelin§!§I;x
 remove_claim_LIN_953_loc;§WWe will lose claims over §!§YGalfalas§!§I;x
 add_claim_RHO_462_loc;§WWe will gain claims over §!§YNindalf§!§I;x
 remove_claim_DAL_1377_loc;§WWe will lose claims over §!§YMedes§!§I;x
+MOR_alliance_of_two_towers_loc;We will enter a permanent alliance with the @ISE §YRealm of Isengard§!§I;x
 settings_annex_all_loc;This option annexes all of colonizable Middle Earth to your realm. §RThis cannot be undone§!§I;x
 claim_status_owns_DND_1005_loc;§YUilad§!: §GOwned§!§I;x
 add_claim_BRE_1284_loc;§WWe will gain claims over §!§YUimirrildor§!§I;x

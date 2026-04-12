@@ -603,126 +603,280 @@ country_event = {
 	}
 }
 
-# Gaze in the Palantir - Start
+# The Alliance of Two Towers {
+# The Presence of the White Wizard (Mordor event)
+country_event = {
+	id = 50129
+	title = "The Presence of the White Wizard"
+	desc = "EVTDESC50129"
+	picture = "palantir_saruman"
+
+	fire_only_once = yes
+
+	trigger = {
+		has_country_flag = MOR_content
+		has_country_flag = using_palantiri
+		
+		ISE = {
+			ruling_party = ISE_saruman
+			has_country_flag = using_palantiri
+			is_vassal = no
+			war = no
+			NOT = { good_evil_alignment = good_alignment }
+		}
+	}
+
+	mean_time_to_happen = { months = 48 }
+
+	option = {
+		name = "He will make a fruitful ally"
+		
+		prestige = 5
+		ISE = { country_event = 50130 }
+		
+	}
+
+	option = {
+		name = "We have no need for wizards"
+		
+		prestige = -5
+		
+		ai_chance = { factor = 0 }
+	}
+}
+
+# Gaze in the Palantir
 country_event = {
 	id = 50130
 	title = "Gaze in to the Palantir"
 	desc = "EVTDESC50130"
 	picture = "palantir_saruman"
 
-	trigger = {
-		ruling_party = ISE_saruman
-		has_country_modifier = orthanc_palantir
-		MOR = {
-			has_country_modifier = ithil_palantir
-		}
-		is_vassal = no
-		war = no
-		NOT = { good_evil_alignment = good_alignment }
-		NOT = { has_country_flag = saruman_has_palantired_with_mordor}
-	}
-
-	mean_time_to_happen = { months = 6 }
-
-	option = {
-		name = "Cast your gaze..."
-		country_event = {
-			id = 50131
-			days = 7
-		}
-		prestige = 5
-		set_country_flag = saruman_has_palantired_with_mordor
-
-		ai_chance = { factor = 100 }
-	}
-
-	option = {
-		name = "It's too dangerous!"
-		prestige = -5
-		set_country_flag = saruman_has_palantired_with_mordor
-
-		ai_chance = { factor = 0 }
-	}
-}
-
-# Gaze in the Palantir - Offer Alliance
-country_event = {
-	id = 50131
-	title = "Gaze in to the Palantir"
-	desc = "EVTDESC50131"
-	picture = "palantir_saruman"
-
 	is_triggered_only = yes
 
 	option = {
-		name = "Yes, an alliance would suit our interests..."
-		MOR = {
-			country_event = {
-				id = 50132
-				days = 1
+		name = "I am not afraid of what I saw. Let us speak again."
+		
+		prestige = 5
+		set_global_flag = ISE_correspondence_with_mordor
+		
+		any_pop = {
+			scaled_militancy = {
+				factor = 10
+				good_evil_alignment = good_alignment
 			}
 		}
-		prestige = 2
+		
+		any_pop = {
+			scaled_militancy = {
+				factor = -10
+				good_evil_alignment = evil_alignment
+			}
+		}
+
+		ai_chance = { factor = 75 }
+	}
+
+	option = {
+		name = "Close the stone away. This is too dangerous."
+		prestige = -5
+
+		ai_chance = {
+			factor = 25
+			
+			modifier = {
+				factor = 0
+				has_global_flag = railroading_enabled
+			}
+		}
+	}
+}
+
+# Correspondence via Palantir
+country_event = {
+	id = 50131
+	title = "Correspondence via Palantir"
+	desc = "EVTDESC50131"
+	picture = "palantir_saruman"
+	
+	trigger = {
+		OR = {
+			has_country_flag = ISE_content
+			has_country_flag = MOR_content
+		}
+		has_global_flag = ISE_correspondence_with_mordor
+	}
+	
+	mean_time_to_happen = { months = 12 }
+	
+	option = {
+		name = "The relations grow"
+		
+		random_owned = {
+			limit = { owner = { tag = ISE } }
+			owner = {
+				relation = {
+					who = MOR
+					value = 25
+				}
+			}
+		}
+		
+		random_owned = {
+			limit = { owner = { tag = MOR } }
+			owner = {
+				relation = {
+					who = ISE
+					value = 25
+				}
+			}
+		}
+	}
+}
+
+# The Alliance of the Two Towers
+country_event = {
+	id = 50132
+	title = "The Alliance of the Two Towers"
+	desc = "EVTDESC50132"
+	picture = "palantir_saruman"
+
+	trigger = {
+		has_country_flag = ISE_content
+		has_global_flag = ISE_correspondence_with_mordor
+		OR = {
+			relation = {
+				who = MOR
+				value = 190
+			}
+			alliance_with = MOR
+		}
+	}
+	
+	mean_time_to_happen = { months = 6 }
+
+	option = {
+		name = "Yes, an alliance would suit our interests"
+		
+		MOR = { country_event = 50133 }
+		
+		clr_global_flag = ISE_correspondence_with_mordor
+		
+		ISE_alliance_of_two_towers_loc = { }
+		
 		ai_chance = { factor = 100 }
 	}
 
 	option = {
-		name = "Resist"
-		prestige = 1
+		name = "No, we are done here"
+		
+		relation = {
+			who = MOR
+			value = -400
+		}
+		
+		leave_alliance = MOR
+		
+		random_country = {
+			limit = {
+				tag = MOR
+				is_greater_power = yes
+				THIS = { is_greater_power = no }
+			}
+			diplomatic_influence = {
+				who = THIS
+				value = -400
+			}
+		}
+		
+		MOR = { country_event = 50134 }
+		
+		clr_global_flag = ISE_correspondence_with_mordor
+		
 		ai_chance = { factor = 0 }
 	}
 }
 
-# Gaze in the Palantir - Mordor receives an alliance offer from Isengard
+# The Alliance of the Two Towers (Mordor)
 country_event = {
-	id = 50132
-	title = "An alliance with Isengard?"
-	desc = "EVTDESC50132"
+	id = 50133
+	title = "The Alliance of the Two Towers"
+	desc = "EVTDESC50133"
 	picture = "palantir"
 
 	is_triggered_only = yes
 
 	option = {
 		name = "All according to plan"
-		FROM = {
-			country_event = {
-				id = 50133
-				days = 1
+		
+		create_alliance = FROM
+		
+		relation = {
+			who = FROM
+			value = 400
+		}
+		
+		random_country = {
+			limit = {
+				tag = FROM
+				is_greater_power = no
+				THIS = { is_greater_power = yes }
+			}
+			THIS = {
+				diplomatic_influence = {
+					who = FROM
+					value = 400
+				}
 			}
 		}
+		
+		MOR_alliance_of_two_towers_loc = { }
+		
+		set_global_flag = alliance_of_two_towers
+		
+		FROM = { country_event = 50135 }
+		
 		ai_chance = { factor = 100 }
 	}
 
 	option = {
 		name = "No way"
+		
+		FROM = { country_event = 50134 }
+		
 		ai_chance = { factor = 0 }
 	}
 }
 
-# Gaze in the Palantir - Alliance Accepted
+# A Failed Alliance
 country_event = {
-	id = 50133
-	title = "Alliance accepted"
-	desc = "EVTDESC50133"
+	id = 50134
+	title = "A Failed Alliance"
+	desc = "EVTDESC50134"
 	picture = "palantir_saruman"
 
 	is_triggered_only = yes
 
 	option = {
-		name = "Excellent"
-		MOR = {
-			relation = {
-				who = THIS
-				value = 200
-			}
-			create_alliance = THIS
-			diplomatic_influence = {
-				who = THIS
-				value = 200
-			}
-		}
-		ruling_party_ideology = servants
-		prestige = 2
-		ai_chance = { factor = 100 }
+		name = "This was not the plan"
+		
+		prestige = -10
 	}
 }
+
+# A Successful Alliance
+country_event = {
+	id = 50135
+	title = "The Alliance of the Two Towers"
+	desc = "EVTDESC50135"
+	picture = "palantir_saruman"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Good"
+	}
+}
+
+# TODO: Alliance-related flavor (e.g. the breaking of the alliance if Saruman goes after the ring, Sauron's "requests" for various types of support), create custom event background with emblem and a country modifier using the same emblem
+# }
