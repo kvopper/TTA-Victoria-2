@@ -875,6 +875,7 @@ eagles = {
 		color = { 45 25 20 }
 		first_names = { Carc Roäc Carh Caw Coo Kraa Krac Rorc }
 		last_names = { "Ashened One" "Black Winged" "Broad Winged" "the Fast" "the Great" "the Heavenly" "the Snowcrest" "the Swift" "the Windlord" }
+	}
 }
 
 # Spiders
