@@ -22,7 +22,7 @@ These also run automatically in CI on push/PR to `main`. Most content (events, d
 
 **All localisation CSV files must be Windows-1252 encoded** (not UTF-8). Victoria 2 requires this. The `check-encoding.py` script enforces it. When editing localisation files, ensure your editor saves in Windows-1252 / cp1252.
 
-**CLAUDE.md must use ASCII characters only** (no em-dashes, accented letters, curly quotes, or other non-ASCII). All modders have their workstations configured to read files as Windows-1252, so any UTF-8 multi-byte sequences in this file will be misread.
+**CLAUDE.md and all `.claude/skills/` files must use ASCII characters only** (no em-dashes, accented letters, curly quotes, or other non-ASCII), and must be saved as Windows-1252. All modders have their workstations configured to read files as Windows-1252, so any UTF-8 multi-byte sequences in these files will be misread.
 
 ## Architecture
 
