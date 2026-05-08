@@ -770,6 +770,8 @@ promote_lords_of_isengard;Promote Lords of Isengard;x
 promote_lords_of_rhosgobel;Promote Lords of Rhosgobel;x
 promote_lords_of_mordor;Promote Lords of Mordor;x
 promote_saurons_nine;Promote Saurons Nine;x
+promote_mouth_of_sauron;Promote Mouth of Sauron;x
+promote_mordor_clans;Promote Mordor Clans;x
 demotion_ideologies;Reduce Interest Groups (only affects election results)
 demote_nobility;Slander Nobility;x
 demote_burgher;Slander Burgher;x
@@ -809,6 +811,8 @@ demote_lords_of_isengard;Slander Lords of Isengard;x
 demote_lords_of_rhosgobel;Slander Lords of Rhosgobel;x
 demote_lords_of_mordor;Slander Lords of Mordor;x
 demote_saurons_nine;Slander Saurons Nine;x
+demote_mouth_of_sauron;Slander Mouth of Sauron;x
+demote_mordor_clans;Slander Mordor Clans;x
 #########################;x }
 ##### COUNTRY FLAGS #####;x {
 #########################;x
@@ -887,6 +891,8 @@ ideologies_lords_of_isengard_active;Lords of Isengard Active;x
 ideologies_lords_of_rhosgobel_active;Lords of Rhosgobel Active;x
 ideologies_lords_of_mordor_active;Lords of Mordor Active;x
 ideologies_saurons_nine_active;Sauron's Nine Active;x
+ideologies_mouth_of_sauron_active;Mouth of Sauron Active;x
+ideologies_mordor_clans_active;Mordor Clans Active;x
 ideologies_underhill_family_active;Underhill Family Active;x
 ideologies_brockhouse_family_active;Brockhouse Family Active;x
 ideologies_fairbairn_family_active;Fairbairn Family Active;x

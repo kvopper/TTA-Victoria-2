@@ -17,6 +17,8 @@ political_decisions = {
 		effect = {
 			# Set allowed leaders
 			set_country_flag = ideologies_lords_of_mordor_active
+			set_country_flag = ideologies_mouth_of_sauron_active
+			set_country_flag = ideologies_mordor_clans_active
 			set_country_flag = nobility_deactivated
 			
 			set_country_flag = MOR_content

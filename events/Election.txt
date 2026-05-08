@@ -1230,6 +1230,32 @@ province_event = {
 				}
 			}
 		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = mouth_of_sauron } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = 0.1
+							value = mouth_of_sauron
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = mordor_clans } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = 0.1
+							value = mordor_clans
+						}
+					}
+				}
+			}
+		}
 	}
 }
 
@@ -1779,6 +1805,32 @@ province_event = {
 						ideology = {
 							factor = -0.1
 							value = saurons_nine
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = mouth_of_sauron } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = -0.1
+							value = mouth_of_sauron
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = mordor_clans } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = -0.1
+							value = mordor_clans
 						}
 					}
 				}

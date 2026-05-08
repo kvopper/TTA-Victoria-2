@@ -387,6 +387,32 @@ anduinrim_nobility = {
 	}
 }
 
+numenorean_nobility = {
+	mouth_of_sauron = {
+		color = { 70 60 50 }
+
+		add_political_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = mouth_of_sauron } }
+		remove_political_reform = { base = 0 }
+		add_social_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = mouth_of_sauron } }
+		remove_social_reform = { base = 0 }
+		add_military_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = mouth_of_sauron } }
+		add_economic_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = mouth_of_sauron } }
+	}
+}
+
+orc_nobility = {
+	mordor_clans = {
+		color = { 60 80 30 }
+
+		add_political_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = mordor_clans } }
+		remove_political_reform = { base = 0 }
+		add_social_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = mordor_clans } }
+		remove_social_reform = { base = 0 }
+		add_military_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = mordor_clans } }
+		add_economic_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = mordor_clans } }
+	}
+}
+
 ents_nobility = {
 	lords_of_fangorn = {
 		color = { 0 75 0 }

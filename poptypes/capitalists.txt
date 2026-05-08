@@ -2168,6 +2168,48 @@ ideologies = {
 			ruling_party_ideology = saurons_nine
 		}
 	}
+
+	mouth_of_sauron = {
+		factor = 1
+		# Must be active in the realm
+		modifier = {
+			factor = 0
+			NOT = { country = { has_country_flag = ideologies_mouth_of_sauron_active } }
+		}
+		modifier = {
+			factor = 2
+			has_pop_culture = black_numenorean
+		}
+		modifier = {
+			factor = 2
+			is_culture_group = mordorian
+		}
+		modifier = {
+			factor = 2
+			ruling_party_ideology = mouth_of_sauron
+		}
+	}
+
+	mordor_clans = {
+		factor = 1
+		# Must be active in the realm
+		modifier = {
+			factor = 0
+			NOT = { country = { has_country_flag = ideologies_mordor_clans_active } }
+		}
+		modifier = {
+			factor = 2
+			has_pop_religion = orc
+		}
+		modifier = {
+			factor = 2
+			is_culture_group = mordorian
+		}
+		modifier = {
+			factor = 2
+			ruling_party_ideology = mordor_clans
+		}
+	}
 }
 
 issues = {

@@ -315,6 +315,14 @@ promotion_ideologies = {
 		ideology = saurons_nine
 		loyalty_value = 0.005
 	}
+	promote_mouth_of_sauron = {
+		ideology = mouth_of_sauron
+		loyalty_value = 0.005
+	}
+	promote_mordor_clans = {
+		ideology = mordor_clans
+		loyalty_value = 0.005
+	}
 }
 demotion_ideologies = {
 	demote_nobility = {
@@ -467,6 +475,14 @@ demotion_ideologies = {
 	}
 	demote_saurons_nine = {
 		ideology = saurons_nine
+		loyalty_value = -0.005
+	}
+	demote_mouth_of_sauron = {
+		ideology = mouth_of_sauron
+		loyalty_value = -0.005
+	}
+	demote_mordor_clans = {
+		ideology = mordor_clans
 		loyalty_value = -0.005
 	}
 }

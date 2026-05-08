@@ -2,6 +2,36 @@ graphical_culture = Generic
 color = { 110 10 30 }
 
 party = {
+	name = "MOR_mouth_of_sauron"
+	start_date = 2954.1.1
+	end_date = 4000.1.1
+
+	ideology = mouth_of_sauron
+
+	trade_policy = free_trade
+	tax_policy = state_capitalism
+	language_policy = regional_autonomy
+	diplomatic_policy = proactive
+	war_policy = pro_military
+	good_evil_alignment = evil_alignment
+}
+
+party = {
+	name = "MOR_grishnakh"
+	start_date = 2954.1.1
+	end_date = 4000.1.1
+
+	ideology = mordor_clans
+
+	trade_policy = protectionism
+	tax_policy = laissez_faire
+	language_policy = regional_autonomy
+	diplomatic_policy = reactive
+	war_policy = jingoism
+	good_evil_alignment = evil_alignment
+}
+
+party = {
 	name = "MOR_sauron"
 	start_date = 2954.1.1
 	end_date = 4000.1.1
