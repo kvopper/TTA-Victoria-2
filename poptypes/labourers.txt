@@ -2173,6 +2173,10 @@ ideologies = {
 			NOT = { country = { has_country_flag = ideologies_lords_of_mordor_active } }
 		}
 		modifier = {
+			factor = 0
+			has_global_flag = fourth_age_flag
+		}
+		modifier = {
 			factor = 2
 			has_pop_religion = men
 		}
@@ -2210,6 +2214,10 @@ ideologies = {
 			NOT = { country = { has_country_flag = ideologies_saurons_nine_active } }
 		}
 		modifier = {
+			factor = 0
+			has_global_flag = fourth_age_flag
+		}
+		modifier = {
 			factor = 2
 			has_pop_religion = orc
 		}
@@ -2236,11 +2244,11 @@ ideologies = {
 		}
 		modifier = {
 			factor = 2
-			has_pop_culture = black_numenorean
+			has_pop_religion = men
 		}
 		modifier = {
 			factor = 2
-			is_culture_group = mordorian
+			has_pop_culture = black_numenorean
 		}
 		modifier = {
 			factor = 2

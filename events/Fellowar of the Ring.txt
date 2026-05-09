@@ -1741,6 +1741,7 @@ country_event = {
 	
 	option = {
 		name = "The Dark Lord has fallen"
+		clr_country_flag = ideologies_lords_of_mordor_active
 		
 		# Return cores to existing realms
 		any_country = {
@@ -1774,7 +1775,7 @@ country_event = {
 				owner = { ruling_party = MOR_sauron }
 			}
 			owner = {
-				ruling_party_ideology = generic_nobility
+				ruling_party_ideology = mouth_of_sauron
 			}
 		}
 		
@@ -1807,6 +1808,8 @@ country_event = {
 	
 	option = {
 		name = "Peace"
+		clr_country_flag = ideologies_saurons_nine_active
+
 		# Return cores to existing realms
 		any_country = {
 			limit = {
