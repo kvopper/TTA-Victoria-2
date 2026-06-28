@@ -21,7 +21,7 @@ party = {
 	start_date = 2995.1.1
 	end_date = 4000.1.1
 	
-	ideology = lords_of_isengard
+	ideology = lords_of_isengard_sauronite
 	
 	trade_policy = protectionism
 	tax_policy = interventionism
