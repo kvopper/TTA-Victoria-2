@@ -17,6 +17,21 @@ party = {
 }
 
 party = {
+	name = "ISE_saruman_sauronite"
+	start_date = 2995.1.1
+	end_date = 4000.1.1
+	
+	ideology = lords_of_isengard
+	
+	trade_policy = protectionism
+	tax_policy = interventionism
+	language_policy = regional_autonomy
+	diplomatic_policy = proactive
+	war_policy = jingoism
+	good_evil_alignment = evil_alignment
+}
+
+party = {
 	name = "generic_nobility"
 	start_date = 2954.1.1
 	end_date = 4000.1.1
