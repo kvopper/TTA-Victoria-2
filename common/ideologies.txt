@@ -501,6 +501,17 @@ immortal_beings = {
 		add_economic_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = lords_of_isengard } }
 	}
 	
+	lords_of_isengard_sauronite = {
+		color = { 32 32 32 }
+		
+		add_political_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = lords_of_isengard } }
+		remove_political_reform = { base = 0 }
+		add_social_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = lords_of_isengard } }
+		remove_social_reform = { base = 0 }
+		add_military_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = lords_of_isengard } }
+		add_economic_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = lords_of_isengard } }
+	}
+	
 	lords_of_rhosgobel = {
 		color = { 86 46 19 }
 		
