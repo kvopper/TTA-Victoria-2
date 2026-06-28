@@ -1193,6 +1193,19 @@ province_event = {
 		}
 		state_scope = {
 			random_owned = {
+				limit = { owner = { ruling_party_ideology = lords_of_isengard_sauronite } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = 0.1
+							value = lords_of_isengard_sauronite
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
 				limit = { owner = { ruling_party_ideology = lords_of_rhosgobel } }
 				state_scope = {
 					any_pop = {
@@ -1766,6 +1779,19 @@ province_event = {
 						ideology = {
 							factor = -0.1
 							value = lords_of_isengard
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = lords_of_isengard_sauronite } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = -0.1
+							value = lords_of_isengard_sauronite
 						}
 					}
 				}

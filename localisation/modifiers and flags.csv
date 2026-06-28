@@ -636,7 +636,7 @@ ISE_dunland_enedwaith_cooldown_desc;We have recently offered an Alliance to a Wi
 breeding_uruk_hai;Breeding Uruk Hai;x
 breeding_uruk_hai_desc;We are breeding Uruk Hai and will soon have a fierce population of strong warriors.;x
 renounced_white_council;Renounced the White Council;x
-renounced_white_council_desc;In T.A. 2953, Saruman renounced the White Council repeated his claim that the One Ring of Power was lost to the Anduin and washed down to the Belegaer, despite knowing that this was a falsehood. From here, he all but stated that the White Council would not be able to weather the coming storm, and left for Isengard.;x
+renounced_white_council_desc;In T.A. 2953, Saruman renounced the White Council, repeating his claim that the One Ring of Power was lost to the Anduin and washed down to the Belegaer, despite knowing that this was a falsehood. From here, he all but stated that the White Council would not be able to weather the coming storm, and left for Isengard.;x
 pillar_white_hand;Piller of the White Hand§!\nMonthly Surveillance Gain: §G1§!;x
 crebain_of_dunland;Crebain of Dunland§!\nMonthly Surveillance Gain: §G1§!;x
 crebain_of_dunland_desc;Like the Ravens of Erebor, the Crebain are an intelligent Avian species. By extension of their ability to fly long range they make the perfect spies.;x
@@ -767,6 +767,7 @@ promote_lords_of_ravens;Promote Lords of Ravens;x
 promote_great_brood_mothers;Promote Great Brood Mothers;x
 promote_kings_of_the_dead;Promote Kings of the Dead;x
 promote_lords_of_isengard;Promote Lords of Isengard;x
+promote_lords_of_isengard_sauronite;Promote Lords of Isengard (Sauronite);x
 promote_lords_of_rhosgobel;Promote Lords of Rhosgobel;x
 promote_lords_of_mordor;Promote Lords of Mordor;x
 promote_saurons_nine;Promote Saurons Nine;x
@@ -808,6 +809,7 @@ demote_lords_of_ravens;Slander Lords of Ravens;x
 demote_great_brood_mothers;Slander Great Brood Mothers;x
 demote_kings_of_the_dead;Slander Kings of the Dead;x
 demote_lords_of_isengard;Slander Lords of Isengard;x
+demote_lords_of_isengard_sauronite;Slander Lords of Isengard (Sauronite);x
 demote_lords_of_rhosgobel;Slander Lords of Rhosgobel;x
 demote_lords_of_mordor;Slander Lords of Mordor;x
 demote_saurons_nine;Slander Saurons Nine;x
@@ -888,6 +890,7 @@ ideologies_lords_of_ravens_active;Lords of the Ravens Active;x
 ideologies_great_brood_mothers_active;Great Brood Mothers Active;x
 ideologies_kings_of_the_dead_active;Kings of the Dead Active;x
 ideologies_lords_of_isengard_active;Lords of Isengard Active;x
+ideologies_lords_of_isengard_sauronite_active;Lords of Isengard (Sauronite) Active;x
 ideologies_lords_of_rhosgobel_active;Lords of Rhosgobel Active;x
 ideologies_lords_of_mordor_active;Lords of Mordor Active;x
 ideologies_saurons_nine_active;Sauron's Nine Active;x

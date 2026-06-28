@@ -596,7 +596,7 @@ country_event = {
 # Exceptional painter
 country_event = {
 	id = 3613
-	title = "Exception Court Painter"
+	title = "Exceptional Court Painter"
 	desc = "EVTDESC3613"
 	picture = administration
 

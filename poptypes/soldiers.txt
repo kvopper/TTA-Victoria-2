@@ -1657,6 +1657,39 @@ ideologies = {
 		}
 	}
 	
+	lords_of_isengard_sauronite = {
+		factor = 1
+		# Must be active in the realm or the pop culture
+		modifier = {
+			factor = 0
+			NOT = { country = { has_country_flag = ideologies_lords_of_isengard_sauronite_active } }
+		}
+		modifier = {
+			factor = 2
+			has_pop_religion = orc
+		}
+		modifier = {
+			factor = 2
+			is_culture_group = uruk_hai
+		}
+		modifier = {
+			factor = 2
+			has_pop_religion = men
+		}
+		modifier = {
+			factor = 2
+			is_culture_group = wildmen
+		}
+		modifier = {
+			factor = 2
+			location = { any_core = { has_country_flag = ISE_content } }
+		}
+		modifier = {
+			factor = 2
+			ruling_party_ideology = lords_of_isengard_sauronite
+		}
+	}
+	
 	lords_of_rhosgobel = {
 		factor = 1
 		# Must be active in the realm or the pop culture
