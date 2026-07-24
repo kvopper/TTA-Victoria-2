@@ -502,7 +502,7 @@ immortal_beings = {
 	}
 	
 	lords_of_isengard_sauronite = {
-		color = { 32 32 32 }
+		color = { 16 16 16 }
 		
 		add_political_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = lords_of_isengard_sauronite } }
 		remove_political_reform = { base = 0 }
