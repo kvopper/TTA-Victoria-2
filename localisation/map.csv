@@ -1589,6 +1589,7 @@ ISE_expanding_into_dunland_enedwaith_loc;We can take this decision once every 2 
 claim_status_doesnt_own_ROH_808_loc;§YWest-march§!: §RUnowned§!§I;x
 add_claim_BLU_917_loc;§WWe will gain claims over §!§YSouthern Ered Luin§!§I;x
 remove_claim_RHO_472_loc;§WWe will lose claims over §!§YBrown Lands§!§I;x
+ISE_betrayal_counter_description_loc;There's only so many times that we can refuse Sauron's demands before he considers it a betrayal§I;x
 remove_claim_DOR_545_loc;§WWe will lose claims over §!§YDobok Rhín§!§I;x
 remove_claim_RHU_560_loc;§WWe will lose claims over §!§YRiav§!§I;x
 add_claim_RHO_528_loc;§WWe will gain claims over §!§YEast Dunheath§!§I;x
@@ -1761,6 +1762,7 @@ claim_status_owns_LIN_929_loc;§YHarlindon§!: §GOwned§!§I;x
 add_claim_ANG_988_loc;§WWe will gain claims over §!§YTulban§!§I;x
 FFN_sphere_annex_description_loc;§GAny Anti-Sauron or Opportunistic ai Hobbit, Northmen, Anduinmen or Elven realm with a capital in Rhovanion that never joined the Alliance of Dwarves and Men will join us if we sphere them!§I;x
 triggered_event_alliance_of_dwarves_and_men_specific_flavor_northan_core_dispute_loc;get the 'Alliance of Dwarves and Men - Northmen Core Dispute' event.§I;x
+ISE_send_soldiers_to_mordor_loc;A random soldier pop will be sent to the Morannon and permanently live there. Since there is no way to guarantee a randomly targeted pop between two events, the chosen pop will only be displayed for Mordor.§I;x
 add_claim_HAR_322_loc;§WWe will gain claims over §!§YHaradwaith§!§I;x
 claim_status_doesnt_own_WOO_709_loc;§YWoodman's Realm§!: §RUnowned§!§I;x
 add_claim_IML_875_loc;§WWe will gain claims over §!§YSruth Líath Marches§!§I;x

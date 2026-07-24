@@ -2131,6 +2131,94 @@ crebain_of_dunland = {
 	
 	icon = 63
 }
+
+# Country Modifier
+ISE_demands_of_mordor_industry = {
+	factory_output = -0.5
+	
+	icon = 12
+}
+
+# Country Modifier
+ISE_demands_of_mordor_money = {
+	icon = 10
+}
+
+# Country Modifier
+ISE_demands_of_mordor_soldiers = {
+	icon = 16
+}
+
+# Country Modifier
+ISE_demands_of_mordor_military_advisors = {
+	land_organisation = -0.25
+	org_regain = -0.5
+	unit_start_experience = -10
+	
+	icon = 16
+}
+
+# Country Modifier
+ISE_demands_of_mordor_research = {
+	research_points = -0.5
+	
+	icon = 4
+}
+
+# Country Modifier
+ISE_demands_of_mordor_raw_materials = {
+	rgo_output = -0.5
+	
+	icon = 12
+}
+
+# Country Modifier
+MOR_isengards_tribute_industry = {
+	factory_output = 0.5
+	
+	icon = 11
+}
+
+# Country Modifier
+MOR_isengards_tribute_money = {
+	tax_efficiency = 0.05
+	
+	icon = 9
+}
+
+# Country Modifier
+MOR_isengards_tribute_soldiers = {
+	icon = 15
+}
+
+# Country Modifier
+MOR_isengards_tribute_military_advisors = {
+	land_organisation = 0.25
+	org_regain = 0.5
+	unit_start_experience = 10
+	
+	icon = 15
+}
+
+# Country Modifier
+MOR_isengards_tribute_research = {
+	research_points = 0.5
+	
+	icon = 3
+}
+
+# Country Modifier
+MOR_isengards_tribute_raw_materials = {
+	rgo_output = 0.5
+	
+	icon = 11
+}
+
+# Country Modifier
+MOR_demands_of_mordor_cooldown = {
+	icon = 61
+}
+
 # }
 ##### OATHBREAKERS ##### {
 # Province Modifier

@@ -642,6 +642,32 @@ renounced_white_council_desc;In T.A. 2953, Saruman renounced the White Council, 
 pillar_white_hand;Piller of the White Hand§!\nMonthly Surveillance Gain: §G1§!;x
 crebain_of_dunland;Crebain of Dunland§!\nMonthly Surveillance Gain: §G1§!;x
 crebain_of_dunland_desc;Like the Ravens of Erebor, the Crebain are an intelligent Avian species. By extension of their ability to fly long range they make the perfect spies.;x
+ISE_demands_of_mordor_industry;The Demands of Mordor;x
+ISE_demands_of_mordor_industry_desc;Mordor demanded a tribute from our guilds.;x
+ISE_demands_of_mordor_money;The Demands of Mordor;x
+ISE_demands_of_mordor_money_desc;Mordor demanded a tribute from our treasury.;x
+ISE_demands_of_mordor_soldiers;The Demands of Mordor;x
+ISE_demands_of_mordor_soldiers_desc;Mordor demanded a tribute from our soldiers.;x
+ISE_demands_of_mordor_military_advisors;The Demands of Mordor;x
+ISE_demands_of_mordor_military_advisors_desc;Mordor demanded a tribute from our military advisors.;x
+ISE_demands_of_mordor_research;The Demands of Mordor;x
+ISE_demands_of_mordor_research_desc;Mordor demanded a tribute from our loremasters.;x
+ISE_demands_of_mordor_raw_materials;The Demands of Mordor;x
+ISE_demands_of_mordor_raw_materials_desc;Mordor demanded a tribute from our RGOs.;x
+MOR_isengards_tribute_industry;Isengard's Tribute;x
+MOR_isengards_tribute_industry_desc;Isengard has delivered tribute from their guilds.;x
+MOR_isengards_tribute_money;Isengard's Tribute;x
+MOR_isengards_tribute_money_desc;Isengard has delivered tribute from their treasury.;x
+MOR_isengards_tribute_soldiers;Isengard's Tribute;x
+MOR_isengards_tribute_soldiers_desc;Isengard has delivered tribute from their soldiers.;x
+MOR_isengards_tribute_military_advisors;Isengard's Tribute;x
+MOR_isengards_tribute_military_advisors_desc;Isengard has delivered tribute from their military advisors.;x
+MOR_isengards_tribute_research;Isengard's Tribute;x
+MOR_isengards_tribute_research_desc;Isengard has delivered tribute from their research.;x
+MOR_isengards_tribute_raw_materials;Isengard's Tribute;x
+MOR_isengards_tribute_raw_materials_desc;Isengard has delivered tribute from their RGOs.;x
+MOR_demands_of_mordor_cooldown;Demanded Tribute from Isengard;x
+MOR_demands_of_mordor_cooldown_desc;We have recently demanded tribute from Isengard, and should wait before demanding more.;x
 #################################;x }
 ##### OATHBREAKER MODIFIERS #####;x {
 #################################;x

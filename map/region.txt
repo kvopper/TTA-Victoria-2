@@ -713,6 +713,8 @@ ISE_puppet_mirobel_loc = { } # We will vassalize the @MRB §YDunlendings of Miro
 ISE_alliance_of_two_towers_loc = { } # If accepted, we will enter a permanent alliance with the @MOR §YShadow of Mordor$!
 
 MOR_alliance_of_two_towers_loc = { } # We will enter a permanent alliance with the @ISE §YRealm of Isengard§!
+ISE_betrayal_counter_description_loc = { } # There's only so many times that we can refuse Sauron's demands before he considers it a betrayal
+ISE_send_soldiers_to_mordor_loc = { } # A random soldier pop will be sent to the Morannon and permanently live there. Since there is no way to guarantee a randomly targeted pop between two events, the chosen pop will only be displayed for Mordor.
 
 # Static Tooltip Locs - Lothlorien
 LOR_unlock_invention_lembas_bread_loc = { } # Unlocks invention §YLembas Bread§! at the §Ystart of the next month§!, giving the following effects:\nArmies: Supply Consumption: §G-10%§!\nRGO output efficiency tech: §G+5.0%§!

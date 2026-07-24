@@ -807,7 +807,7 @@ country_event = {
 # The Alliance of the Two Towers (Mordor)
 country_event = {
 	id = 50133
-	title = "The Alliance of the Two Towers"
+	title = "  The Alliance of the Two Towers"
 	desc = "EVTDESC50133"
 	picture = "organizations/saruman_palantir_alliance_of_two_towers"
 
@@ -849,6 +849,8 @@ country_event = {
 		
 		set_global_flag = alliance_of_two_towers_flag
 		
+		set_variable = { which = MOR_isengard_betrayal_counter value = 0 }
+		
 		FROM = { country_event = 50135 }
 		
 		ai_chance = { factor = 100 }
@@ -882,7 +884,7 @@ country_event = {
 # A Successful Alliance
 country_event = {
 	id = 50135
-	title = "The Alliance of the Two Towers"
+	title = "T  he Alliance of the Two Towers"
 	desc = "EVTDESC50135"
 	picture = "organizations/saruman_palantir_alliance_of_two_towers"
 	
@@ -905,7 +907,7 @@ country_event = {
 # Manual End of the Alliance
 country_event = {
 	id = 50136
-	title = "The End of The Alliance of the Two Towers"
+	title = "  The End of The Alliance of the Two Towers"
 	desc = "EVTDESC50136"
 	picture = "organizations/saruman_palantir_alliance_of_two_towers"
 	
@@ -995,5 +997,457 @@ country_event = {
 	}
 }
 
-# TODO: Alliance-related flavor (e.g. the breaking of the alliance if Saruman goes after the ring, Sauron's "requests" for various types of support), create custom event background with emblem and a country modifier using the same emblem
+# The Demands of Mordor {
+
+# The Demands of Mordor - Industry
+country_event = {
+	id = 50138
+	title = "  The Demands of the Dark Lord"
+	desc = "EVTDESC50138"
+	picture = "organizations/saruman_palantir_alliance_of_two_towers"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "And the Lord of Middle Earth shall have them!"
+		
+		any_pop = {
+			ideology = {
+				factor = 0.05
+				value = lords_of_isengard_sauronite
+			}
+			
+			dominant_issue = {
+				value = evil_alignment
+				factor = 0.1
+			}
+		}
+		
+		plurality = -0.5
+		add_country_modifier = { name = ISE_demands_of_mordor_industry duration = 365 }
+		FROM = { country_event = 50144 }
+		
+		ai_chance = { factor = 75 }
+	}
+	
+	option = {
+		name = "These are needed in $COUNTRY$"
+		
+		prestige = 5
+		FROM = { country_event = 50143 }
+		
+		ISE_betrayal_counter_description_loc = {}
+		
+		ai_chance = { factor = 25 }
+	}
+}
+
+# The Demands of Mordor - Money
+country_event = {
+	id = 50139
+	title = "  The Demands of the Dark Lord"
+	desc = "EVTDESC50138"
+	picture = "organizations/saruman_palantir_alliance_of_two_towers"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "And the Lord of Middle Earth shall have them!"
+		
+		any_pop = {
+			ideology = {
+				factor = 0.05
+				value = lords_of_isengard_sauronite
+			}
+			
+			dominant_issue = {
+				value = evil_alignment
+				factor = 0.1
+			}
+		}
+		
+		plurality = -0.5
+		add_tax_relative_income = -5
+		add_country_modifier = { name = ISE_demands_of_mordor_money duration = 365 }
+		
+		FROM = { country_event = 50144 }
+		
+		ai_chance = { factor = 75 }
+	}
+	
+	option = {
+		name = "These are needed in $COUNTRY$"
+		
+		prestige = 5
+		FROM = { country_event = 50143 }
+		
+		ISE_betrayal_counter_description_loc = {}
+		
+		ai_chance = { factor = 25 }
+	}
+}
+
+# The Demands of Mordor - Soldiers
+country_event = {
+	id = 50140
+	title = "  The Demands of the Dark Lord"
+	desc = "EVTDESC50138"
+	picture = "organizations/saruman_palantir_alliance_of_two_towers"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "And the Lord of Middle Earth shall have them!"
+		
+		any_pop = {
+			ideology = {
+				factor = 0.05
+				value = lords_of_isengard_sauronite
+			}
+			
+			dominant_issue = {
+				value = evil_alignment
+				factor = 0.1
+			}
+		}
+		
+		plurality = -0.5
+		add_country_modifier = { name = ISE_demands_of_mordor_soldiers duration = 365 }
+		
+		FROM = { country_event = 50144 }
+		
+		ISE_send_soldiers_to_mordor_loc = {}
+		
+		ai_chance = { factor = 75 }
+	}
+	
+	option = {
+		name = "These are needed in $COUNTRY$"
+		
+		prestige = 5
+		FROM = { country_event = 50143 }
+		
+		ISE_betrayal_counter_description_loc = {}
+		
+		ai_chance = { factor = 25 }
+	}
+}
+
+# The Demands of Mordor - Military Advisors
+country_event = {
+	id = 50141
+	title = "  The Demands of the Dark Lord"
+	desc = "EVTDESC50138"
+	picture = "organizations/saruman_palantir_alliance_of_two_towers"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "And the Lord of Middle Earth shall have them!"
+		
+		any_pop = {
+			ideology = {
+				factor = 0.05
+				value = lords_of_isengard_sauronite
+			}
+			
+			dominant_issue = {
+				value = evil_alignment
+				factor = 0.1
+			}
+		}
+		
+		plurality = -0.5
+		add_country_modifier = { name = ISE_demands_of_mordor_military_advisors duration = 365 }
+		FROM = { country_event = 50144 }
+		
+		ai_chance = { factor = 75 }
+	}
+	
+	option = {
+		name = "These are needed in $COUNTRY$"
+		
+		prestige = 5
+		FROM = { country_event = 50143 }
+		
+		ISE_betrayal_counter_description_loc = {}
+		
+		ai_chance = { factor = 25 }
+	}
+}
+
+# The Demands of Mordor - Research
+country_event = {
+	id = 50142
+	title = "  The Demands of the Dark Lord"
+	desc = "EVTDESC50138"
+	picture = "organizations/saruman_palantir_alliance_of_two_towers"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "And the Lord of Middle Earth shall have them!"
+		
+		any_pop = {
+			ideology = {
+				factor = 0.05
+				value = lords_of_isengard_sauronite
+			}
+			
+			dominant_issue = {
+				value = evil_alignment
+				factor = 0.1
+			}
+		}
+		
+		plurality = -0.5
+		add_country_modifier = { name = ISE_demands_of_mordor_research duration = 365 }
+		FROM = { country_event = 50144 }
+		
+		ai_chance = { factor = 75 }
+	}
+	
+	option = {
+		name = "These are needed in $COUNTRY$"
+		
+		prestige = 5
+		FROM = { country_event = 50143 }
+		
+		ISE_betrayal_counter_description_loc = {}
+		
+		ai_chance = { factor = 25 }
+	}
+}
+
+# The Demands of Mordor - Isengard's Refusal
+country_event = {
+	id = 50143
+	title = "  Refusal!"
+	desc = "EVTDESC50143"
+	picture = "organizations/saruman_palantir_alliance_of_two_towers"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "We will remember this betrayal"
+		
+		prestige = -2
+		change_variable = { which = MOR_isengard_betrayal_counter value = 1 }
+	}
+}
+
+# The Demands of Mordor - Isengard's Acceptance
+country_event = {
+	id = 50144
+	title = "  $FROMCOUNTRY$ Yields!"
+	desc = "EVTDESC50144"
+	picture = "organizations/saruman_palantir_alliance_of_two_towers"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "As a pawn does"
+		
+		random_country = {
+			limit = {
+				tag = FROM
+				has_country_modifier = ISE_demands_of_mordor_industry
+			}
+			THIS = { add_country_modifier = { name = MOR_isengards_tribute_industry duration = 365 } }
+		}
+		
+		random_country = {
+			limit = {
+				tag = FROM
+				has_country_modifier = ISE_demands_of_mordor_money
+			}
+			THIS = { add_country_modifier = { name = MOR_isengards_tribute_money duration = 365 } }
+		}
+		
+		random_country = {
+			limit = {
+				tag = FROM
+				has_country_modifier = ISE_demands_of_mordor_soldiers
+			}
+			
+			set_global_flag = hidden_effects
+			
+			# To prevent pops merging incorrectly
+			THIS = {
+				random_owned = {
+					limit = {
+						province_id = 455
+						owner = { has_global_flag = hidden_effects }
+					}
+					any_pop = {
+						limit = { pop_type = soldiers }
+						pop_type = bankers
+					}
+				}
+			}
+			
+			# Move the pop
+			random_pop = {
+				limit = { pop_type = soldiers }
+				move_pop = 455
+			}
+			
+			# Undo the damage done to prevent incorrect pop merging
+			THIS = {
+				add_country_modifier = { name = MOR_isengards_tribute_soldiers duration = 365 }
+				random_owned = {
+					limit = {
+						province_id = 455
+						owner = { has_global_flag = hidden_effects }
+					}
+					any_pop = {
+						limit = { pop_type = bankers }
+						pop_type = soldiers
+					}
+				}
+			}
+			
+			clr_global_flag = hidden_effects
+		}
+		
+		random_country = {
+			limit = {
+				tag = FROM
+				has_country_modifier = ISE_demands_of_mordor_military_advisors
+			}
+			THIS = { add_country_modifier = { name = MOR_isengards_tribute_military_advisors duration = 365 } }
+		}
+		
+		random_country = {
+			limit = {
+				tag = FROM
+				has_country_modifier = ISE_demands_of_mordor_research
+			}
+			THIS = { add_country_modifier = { name = MOR_isengards_tribute_research duration = 365 } }
+		}
+		
+		random_country = {
+			limit = {
+				tag = FROM
+				has_country_modifier = ISE_demands_of_mordor_raw_materials
+			}
+			THIS = { add_country_modifier = { name = MOR_isengards_tribute_raw_materials duration = 365 } }
+		}
+	}
+}
+
+# The Demands of Mordor - Raw Materials
+country_event = {
+	id = 50145
+	title = "  The Demands of the Dark Lord"
+	desc = "EVTDESC50138"
+	picture = "organizations/saruman_palantir_alliance_of_two_towers"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "And the Lord of Middle Earth shall have them!"
+		
+		any_pop = {
+			ideology = {
+				factor = 0.05
+				value = lords_of_isengard_sauronite
+			}
+			
+			dominant_issue = {
+				value = evil_alignment
+				factor = 0.1
+			}
+		}
+		
+		plurality = -0.5
+		add_country_modifier = { name = ISE_demands_of_mordor_raw_materials duration = 365 }
+		FROM = { country_event = 50144 }
+		
+		ai_chance = { factor = 75 }
+	}
+	
+	option = {
+		name = "These are needed in $COUNTRY$"
+		
+		prestige = 5
+		FROM = { country_event = 50143 }
+		
+		ISE_betrayal_counter_description_loc = {}
+		
+		ai_chance = { factor = 25 }
+	}
+}
+
+# The Demands of Mordor - Triggering Event
+country_event = {
+	id = 50146
+	title = "  Our Demands of Isengard"
+	desc = "EVTDESC50146"
+	picture = "organizations/saruman_palantir_alliance_of_two_towers_6"
+	
+	trigger = {
+		has_country_flag = MOR_content
+		has_country_modifier = alliance_of_two_towers
+		ISE = { has_country_modifier = alliance_of_two_towers }
+		NOT = { has_country_modifier = MOR_demands_of_mordor_cooldown }
+	}
+	
+	option = {
+		name = "We require their industry"
+		
+		ISE = { country_event = 50138 }
+		add_country_modifier = { name =  MOR_demands_of_mordor_cooldown duration = 365 }
+		
+		ai_chance = { factor = 17 }
+	}
+	
+	option = {
+		name = "We require their treasury"
+		
+		ISE = { country_event = 50139 }
+		add_country_modifier = { name =  MOR_demands_of_mordor_cooldown duration = 365 }
+		
+		ai_chance = { factor = 16 }
+	}
+	
+	option = {
+		name = "We require their soldiers"
+		
+		ISE = { country_event = 50140 }
+		add_country_modifier = { name =  MOR_demands_of_mordor_cooldown duration = 365 }
+		
+		ai_chance = { factor = 17 }
+	}
+	
+	option = {
+		name = "We require their military advisors"
+		
+		ISE = { country_event = 50141 }
+		add_country_modifier = { name =  MOR_demands_of_mordor_cooldown duration = 365 }
+		
+		ai_chance = { factor = 16 }
+	}
+	
+	option = {
+		name = "We require their research"
+		
+		ISE = { country_event = 50142 }
+		add_country_modifier = { name =  MOR_demands_of_mordor_cooldown duration = 365 }
+		
+		ai_chance = { factor = 17 }
+	}
+	
+	option = {
+		name = "We require their raw materials"
+		
+		ISE = { country_event = 50145 }
+		add_country_modifier = { name =  MOR_demands_of_mordor_cooldown duration = 365 }
+		
+		ai_chance = { factor = 16 }
+	}
+}
+
+# }
+
 # }
