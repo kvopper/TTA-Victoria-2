@@ -884,7 +884,7 @@ country_event = {
 # A Successful Alliance
 country_event = {
 	id = 50135
-	title = "T  he Alliance of the Two Towers"
+	title = "  The Alliance of the Two Towers"
 	desc = "EVTDESC50135"
 	picture = "organizations/saruman_palantir_alliance_of_two_towers"
 	
@@ -894,6 +894,7 @@ country_event = {
 		name = "Good"
 		
 		add_country_modifier = { name = alliance_of_two_towers duration = -1 }
+		set_country_flag = ideologies_lords_of_isengard_sauronite_active
 		
 		set_global_flag = hidden_effects
 		random_owned = {
