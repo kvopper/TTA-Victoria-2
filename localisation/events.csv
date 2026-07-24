@@ -452,9 +452,9 @@ EVTDESC50134;Our attempts at creating the alliance with the $FROMCOUNTRY$ have f
 EVTDESC50135;The $FROMCOUNTRY$ has accepted our alliance. We will not be able to break this alliance without extraordinary circumstances.;x
 EVTDESC50136;The $FROMCOUNTRY$ has betrayed us! They have decided to end the Alliance of the Two Towers. It may take some time, but we will have our revenge.;x
 EVTDESC50137;The Alliance of the Two Towers has ended!;x
-EVTDESC50138;The @MOR §Y$FROMCOUNTRY$§! has requested that we provide them with support. The demand is steep, undoubtedly curtained to made us dependent upon our ally.;x
-EVTDESC50143;The @ISE §Y$FROMCOUNTRY$§! has refused our request! No one can speculate as to why they would reject a reasonable request.;x
-EVTDESC50144;As expected, the @ISE §Y$FROMCOUNTRY$§! have bent the knee and delivered our us what was promised.;x
+EVTDESC50138;The @MOR §M$FROMCOUNTRY$§! has requested that we provide them with support. The demand is steep, undoubtedly curtained to made us dependent upon our ally.;x
+EVTDESC50143;The @ISE §M$FROMCOUNTRY$§! has refused our request! No one can speculate as to why they would reject a reasonable request.;x
+EVTDESC50144;As expected, the @ISE §M$FROMCOUNTRY$§! have bent the knee and delivered our us what was promised.;x
 EVTDESC50146;It's that time of year to demand tribute from Saruman. What should we be requesting?;x
 #######################################;x }
 ##### FELLOWAR OF THE RING EVENTS #####;x {
