@@ -5136,6 +5136,15 @@ country_event = {
 			country_event = 110177
 		}
 		
+		# Clear out the tech school -- I'm too lazy go back through and update the various items that remove the modifier
+		any_country = {
+			limit = {
+				tech_school = member_alliance_dwarves_men
+				NOT = { has_country_modifier = alliance_of_dwarves_and_men }
+			}
+			tech_school = no_organization
+		}
+		
 		# Refire the cleanup event next month {
 		random_owned = {
 			limit = { owner = { NOT = { has_global_flag = end_of_the_alliance_of_dwarves_and_men } } }
@@ -6175,6 +6184,15 @@ country_event = {
 			}
 		}
 		# }
+		
+		# Clear out the tech school -- shouldn't be hit as of 7/24/2026, but just in case
+		any_country = {
+			limit = {
+				tech_school = member_alliance_two_towers
+				NOT = { has_country_modifier = alliance_of_two_towers }
+			}
+			tech_school = no_organization
+		}
 		
 		# }
 		
