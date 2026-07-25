@@ -5,6 +5,7 @@ All notable changes will be documented in this file.
 
 ### Highlights
  - Tech Rework
+ - Isengard Flavor
 
 ### Tech Rework
  - Rebalanced tech effects
@@ -36,10 +37,20 @@ All notable changes will be documented in this file.
    - Recruitment events now come every 5 years, yielding 10 leaders of the associated type
    - Recruitable leaders improve with the Military Schools invention
 
+### Isengard Flavor
+ - Alliance of the Two Towers
+   - Forces an alliance between Isengard and Mordor
+     - Will be required to give tribute to Mordor
+	 - May result in vassalization
+	 - Ensures the protection of Mordor
+	 - May be rejected or betrayed at the ire of Mordor
+ - "Alignment" of Dunland, Enedwaith, and other like-realms
+
 ### Mechanics and Content
  - Various bugfixes and small additions
  - Many more navigable rivers added
    - Most land provinces that newly border the "sea" will be unable to build naval bases
+   - River crossings denoted by "islands"
 
 ## [v0.5.1](https://github.com/The-Third-Age/TTA/releases/tag/v0.5.1) - 2025-05-11
 
