@@ -799,6 +799,9 @@ country_event = {
 		MOR = { country_event = 50134 }
 		
 		clr_global_flag = ISE_correspondence_with_mordor
+		set_global_flag = ISE_rejected_mordor_alliance
+		
+		ISE_no_alliance_with_mordor_loc = {}
 		
 		ai_chance = { factor = 0 }
 	}

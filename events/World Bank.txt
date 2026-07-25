@@ -6185,6 +6185,17 @@ country_event = {
 		}
 		# }
 		
+		# If the Alliance of the Two Towers is rejected, ISE cannot ally MOR
+		random_country = {
+			limit = {
+				tag = ISE
+				alliance_with = MOR
+				has_global_flag = ISE_rejected_mordor_alliance
+			}
+			leave_alliance = MOR
+			relation = { who = MOR value = -400 }
+		}
+		
 		# Clear out the tech school -- shouldn't be hit as of 7/24/2026, but just in case
 		any_country = {
 			limit = {
