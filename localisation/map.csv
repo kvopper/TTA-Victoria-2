@@ -1589,7 +1589,7 @@ ISE_expanding_into_dunland_enedwaith_loc;We can take this decision once every 2 
 claim_status_doesnt_own_ROH_808_loc;§YWest-march§!: §RUnowned§!§I;x
 add_claim_BLU_917_loc;§WWe will gain claims over §!§YSouthern Ered Luin§!§I;x
 remove_claim_RHO_472_loc;§WWe will lose claims over §!§YBrown Lands§!§I;x
-ISE_betrayal_counter_description_loc;There's only so many times that we can refuse Sauron's demands before he considers it a betrayal§I;x
+ISE_betrayal_counter_description_loc;There's only so many times that we can refuse Sauron's demands before he considers it a betrayal$!§I;x
 remove_claim_DOR_545_loc;§WWe will lose claims over §!§YDobok Rhín§!§I;x
 remove_claim_RHU_560_loc;§WWe will lose claims over §!§YRiav§!§I;x
 add_claim_RHO_528_loc;§WWe will gain claims over §!§YEast Dunheath§!§I;x
@@ -1625,6 +1625,7 @@ invite_realm_loc;Invite Realm;x
 remove_claim_GON_72_loc;§WWe will lose claims over §!§YEred Tarthonion§!§I;x
 add_claim_ROH_801_loc;§WWe will gain claims over §!§YLower West Emnet§!§I;x
 ISE_decide_stoor_policy_loc;We can decide to ignore, sphere, puppet or annex the @MAU §YStoors of Maur Tulhau§!§I;x
+ISE_sauronite_deactivation_loc;§YLords of Isengard (Sauronite)§! will become inactive$!§I;x
 claim_status_doesnt_own_DND_1015_loc;§YTyrn Formen§!: §RUnowned§!§I;x
 DAL_northman_generals_rivermen_gotten_loc;§TWe have recruited the following Rivermen Thegans§!|;x
 claim_status_doesnt_own_MOR_404_loc;§YSouthern Nurza-Shukh§!: §RUnowned§!§I;x
@@ -1762,7 +1763,7 @@ claim_status_owns_LIN_929_loc;§YHarlindon§!: §GOwned§!§I;x
 add_claim_ANG_988_loc;§WWe will gain claims over §!§YTulban§!§I;x
 FFN_sphere_annex_description_loc;§GAny Anti-Sauron or Opportunistic ai Hobbit, Northmen, Anduinmen or Elven realm with a capital in Rhovanion that never joined the Alliance of Dwarves and Men will join us if we sphere them!§I;x
 triggered_event_alliance_of_dwarves_and_men_specific_flavor_northan_core_dispute_loc;get the 'Alliance of Dwarves and Men - Northmen Core Dispute' event.§I;x
-ISE_send_soldiers_to_mordor_loc;A random soldier pop will be sent to the Morannon and permanently live there. Since there is no way to guarantee a randomly targeted pop between two events, the chosen pop will only be displayed for Mordor.§I;x
+ISE_send_soldiers_to_mordor_loc;A random soldier pop will be sent to the Morannon and permanently live there. Since there is no way to guarantee a randomly targeted pop between two events, the chosen pop will only be displayed for Mordor$!§I;x
 add_claim_HAR_322_loc;§WWe will gain claims over §!§YHaradwaith§!§I;x
 claim_status_doesnt_own_WOO_709_loc;§YWoodman's Realm§!: §RUnowned§!§I;x
 add_claim_IML_875_loc;§WWe will gain claims over §!§YSruth Líath Marches§!§I;x
@@ -2042,6 +2043,7 @@ add_claim_RHU_590_loc;§WWe will gain claims over §!§YMenelothriand§!§I;x
 add_claim_ENE_830_loc;§WWe will gain claims over §!§YDor Wathui§!§I;x
 add_claim_ENE_822_loc;§WWe will gain claims over §!§YAngrast§!§I;x
 add_claim_LIN_1153_loc;§WWe will gain claims over §!§YThargelion§!§I;x
+ISE_sauronite_activation_loc;§YLords of Isengard (Sauronite)§! will become active$!§I;x
 claim_status_owns_GON_160_loc;§YNan Lefnui§!: §GOwned§!§I;x
 add_claim_ROH_779_loc;§WWe will gain claims over §!§YCentral East Emnet§!§I;x
 claim_status_owns_BLU_972_loc;§YNúmeriador§!: §GOwned§!§I;x
@@ -2623,7 +2625,7 @@ remove_claim_HAR_356_loc;§WWe will lose claims over §!§YLûrmsakûn§!§I;x
 claim_status_owns_MOR_423_loc;§YLithlad§!: §GOwned§!§I;x
 claim_status_owns_BRE_1013_loc;§YBree-land§!: §GOwned§!§I;x
 resolve_conflicting_cores_loc;Resolve Conflicting Cores;x
-manual_end_alliance_two_towers_loc;\nThe other power will gain a §Rpermanent§! §YHumiliate§! CB on us, and if we are not a Great Power, they will also receive a §Rpermanent§! §YCreate Vassal§! CB§I;x
+manual_end_alliance_two_towers_loc;\nThe other power will gain a §Rpermanent§! §YHumiliate§! CB on us, and if we are not a Great Power, they will also receive a §Rpermanent§! §YCreate Vassal§! CB\n\n§I;x
 GON_unlock_invention_houses_of_healing_loc;Unlocks invention §YHouses of Healing§! at the §Ystart of the next month§!, giving the following effects:\nMilitary Hospitals: §G+1.00%§!§I;x
 claim_status_doesnt_own_ENE_825_loc;§YMagur§!: §RUnowned§!§I;x
 add_claim_ROH_780_loc;§WWe will gain claims over §!§YLower East Emnet§!§I;x

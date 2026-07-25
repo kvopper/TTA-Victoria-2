@@ -659,7 +659,9 @@ FFN_sphere_annex_description_loc = { } # §GAny Anti-Sauron or Opportunistic ai 
 FFN_join_alliance_dwarves_men_loc = { } # If the pass the conditions on this decision (ignoring the always false), we will almost be eligible to be invited to the Alliance of Dwarves and Men -- we also need to be allied to realm that is currently in the alliance. From here, the ai will always attempt to send an invite, however, §Rit is possible for the rest of the alliance to reject the invite proposal§!.\n\nThe full list of conditions is:\nWe are §GAnti-Sauron§! or §POpportunistic§!\nWe are not a vassal\nWe are either a Dwarven realm, a Northman realm, a secondary power or a great power\nOur capital is in Rhovanion
 
 # Static Tooltips Locs - Alliance of the Two Towers
-manual_end_alliance_two_towers_loc = { } # \nThe other power will gain a §Rpermanent§! §YHumiliate§! CB on us, and if we are not a Great Power, they will also receive a §Rpermanent§! §YCreate Vassal§! CB
+manual_end_alliance_two_towers_loc = { } # \nThe other power will gain a §Rpermanent§! §YHumiliate§! CB on us, and if we are not a Great Power, they will also receive a §Rpermanent§! §YCreate Vassal§! CB\n\n
+ISE_betrayal_counter_description_loc = { } # There's only so many times that we can refuse Sauron's demands before he considers it a betrayal$!
+ISE_send_soldiers_to_mordor_loc = { } # A random soldier pop will be sent to the Morannon and permanently live there. Since there is no way to guarantee a randomly targeted pop between two events, the chosen pop will only be displayed for Mordor$!
 
 # Static Tooltip Locs - Amov Clan
 AMO_sent_out_raiders_loc = { } # §GWe will send out raiding parties, occasionally decreasing the affected provinces wealth, and increasing our own
@@ -710,11 +712,11 @@ ISE_stoor_policy_sphere_loc = { } # We will send an ultimatum to the Stoors of M
 ISE_stoor_policy_puppet_loc = { } # We will send an ultimatum to the Stoors of Maur Tulhau requesting that they become our puppet with a unique color, name and flag. If they refuse, we gain a §YMake Vassal§W casus belli against them§!
 ISE_stoor_policy_annex_loc = { } # We will send an ultimatum to the Stoors of Maur Tulhau requesting that they join our realm. If they refuse, we gain a §YConquest§W casus belli against them§!
 ISE_puppet_mirobel_loc = { } # We will vassalize the @MRB §YDunlendings of Mirobel§W with a unique name and flag§!
-ISE_alliance_of_two_towers_loc = { } # If accepted, we will enter a permanent alliance with the @MOR §YShadow of Mordor$!
 
+ISE_alliance_of_two_towers_loc = { } # If accepted, we will enter a permanent alliance with the @MOR §YShadow of Mordor$!
 MOR_alliance_of_two_towers_loc = { } # We will enter a permanent alliance with the @ISE §YRealm of Isengard§!
-ISE_betrayal_counter_description_loc = { } # There's only so many times that we can refuse Sauron's demands before he considers it a betrayal
-ISE_send_soldiers_to_mordor_loc = { } # A random soldier pop will be sent to the Morannon and permanently live there. Since there is no way to guarantee a randomly targeted pop between two events, the chosen pop will only be displayed for Mordor.
+ISE_sauronite_activation_loc = { } # §YLords of Isengard (Sauronite)§! will become active$!
+ISE_sauronite_deactivation_loc = { } # §YLords of Isengard (Sauronite)§! will become inactive$!
 
 # Static Tooltip Locs - Lothlorien
 LOR_unlock_invention_lembas_bread_loc = { } # Unlocks invention §YLembas Bread§! at the §Ystart of the next month§!, giving the following effects:\nArmies: Supply Consumption: §G-10%§!\nRGO output efficiency tech: §G+5.0%§!

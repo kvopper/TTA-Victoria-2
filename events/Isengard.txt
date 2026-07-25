@@ -902,6 +902,8 @@ country_event = {
 			owner = { tech_school = member_alliance_two_towers }
 		}
 		clr_global_flag = hidden_effects
+		
+		ISE_sauronite_activation_loc = { }
 	}
 }
 
@@ -918,6 +920,15 @@ country_event = {
 		name = "They will pay"
 		
 		remove_country_modifier = alliance_of_two_towers
+		
+		random_owned = {
+			limit = { owner = { has_country_flag = ISE_content } }
+			owner = {
+				clr_country_flag = ideologies_lords_of_isengard_sauronite_active
+				ruling_party_ideology = lords_of_isengard
+				ISE_sauronite_deactivation_loc = {}
+			}
+		}
 		
 		set_global_flag = hidden_effects
 		random_owned = {
@@ -987,6 +998,15 @@ country_event = {
 		random_owned = {
 			limit = { owner = { has_country_modifier = alliance_of_two_towers } }
 			owner = { remove_country_modifier = alliance_of_two_towers }
+		}
+		
+		random_owned = {
+			limit = { owner = { has_country_flag = ISE_content } }
+			owner = {
+				clr_country_flag = ideologies_lords_of_isengard_sauronite_active
+				ruling_party_ideology = lords_of_isengard
+				ISE_sauronite_deactivation_loc = {}
+			}
 		}
 		
 		set_global_flag = hidden_effects
