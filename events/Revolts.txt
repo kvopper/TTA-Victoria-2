@@ -413,3 +413,68 @@ country_event = {
 	}
 }
 # }
+
+# Sauronite Rebel Victory
+country_event = {
+	id = 3009
+	title = "Sauronite Rebel Victory"
+	desc = "EVTDESC3009"
+	picture = administration
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Damn"
+		
+		random_owned = {
+			limit = {
+				owner = {
+					has_country_flag = ISE_content
+					has_country_flag = ideologies_lords_of_isengard_sauronite_active
+				}
+			}
+			owner = { MOR = { country_event = 50148 } }
+		}
+		
+		set_global_flag = blocked_effects
+		random_owned = {
+			limit = {
+				owner = {
+					has_country_flag = ISE_content
+					has_country_flag = ideologies_lords_of_isengard_sauronite_active
+					ai = no
+					NOT = { has_global_flag = blocked_effects }
+				}
+			}
+			owner = {
+				ruling_party_ideology = lords_of_isengard_sauronite
+				MOR = { create_vassal = THIS }
+				government = dominion_1
+			}
+		}
+		clr_global_flag = blocked_effects
+		
+		any_pop = {
+			limit = {
+				OR = {
+					pop_majority_ideology = lords_of_isengard_sauronite
+					pop_majority_issue = evil_alignment
+				}
+			}
+			militancy = -10
+			consciousness = -10
+		}
+		
+		any_pop = {
+			limit = {
+				NOT = {
+					pop_majority_ideology = lords_of_isengard_sauronite
+					pop_majority_issue = evil_alignment
+				}
+			}
+			consciousness = 2
+		}
+		
+		any_owned = { remove_province_modifier = sauronite_agitation }
+	}
+}

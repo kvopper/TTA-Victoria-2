@@ -716,8 +716,9 @@ ISE_puppet_mirobel_loc = { } # We will vassalize the @MRB §YDunlendings of Miro
 ISE_alliance_of_two_towers_loc = { } # If accepted, we will enter a permanent alliance with the @MOR §YShadow of Mordor§!
 MOR_alliance_of_two_towers_loc = { } # We will enter a permanent alliance with the @ISE §YRealm of Isengard§!
 ISE_sauronite_activation_loc = { } # §YLords of Isengard (Sauronite)§! will become active§!
-ISE_sauronite_deactivation_loc = { } # §YLords of Isengard (Sauronite)§! will become inactive§!
+ISE_sauronite_deactivation_loc = { } # §YLords of Isengard (Sauronite)§! and §YSauronite Rebels§! will become inactive§!
 ISE_no_alliance_with_mordor_loc = { } # We will be unable to make an alliance with the @MOR §YShadow of Mordor§!. The @MOR §YShadow of Mordor§! may see us as a target when the Great War starts§!
+ISE_activate_sauronite_rebels_loc = { } # Activates §YSauronite Rebels§!
 
 # Static Tooltip Locs - Lothlorien
 LOR_unlock_invention_lembas_bread_loc = { } # Unlocks invention §YLembas Bread§! at the §Ystart of the next month§!, giving the following effects:\nArmies: Supply Consumption: §G-10%§!\nRGO output efficiency tech: §G+5.0%§!

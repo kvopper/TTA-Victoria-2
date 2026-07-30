@@ -1625,7 +1625,7 @@ invite_realm_loc;Invite Realm;x
 remove_claim_GON_72_loc;§WWe will lose claims over §!§YEred Tarthonion§!§I;x
 add_claim_ROH_801_loc;§WWe will gain claims over §!§YLower West Emnet§!§I;x
 ISE_decide_stoor_policy_loc;We can decide to ignore, sphere, puppet or annex the @MAU §YStoors of Maur Tulhau§!§I;x
-ISE_sauronite_deactivation_loc;§YLords of Isengard (Sauronite)§! will become inactive§!§I;x
+ISE_sauronite_deactivation_loc;§YLords of Isengard (Sauronite)§! and §YSauronite Rebels§! will become inactive§!§I;x
 claim_status_doesnt_own_DND_1015_loc;§YTyrn Formen§!: §RUnowned§!§I;x
 DAL_northman_generals_rivermen_gotten_loc;§TWe have recruited the following Rivermen Thegans§!|;x
 claim_status_doesnt_own_MOR_404_loc;§YSouthern Nurza-Shukh§!: §RUnowned§!§I;x
@@ -3059,6 +3059,7 @@ remove_claim_GON_46_loc;§WWe will lose claims over §!§YLower Lebennin§!§I;x
 add_claim_RHU_580_loc;§WWe will gain claims over §!§YEastern Gathod§!§I;x
 remove_claim_GON_89_loc;§WWe will lose claims over §!§YCentral Gondor§!§I;x
 remove_claim_RHU_629_loc;§WWe will lose claims over §!§YSouthern Gazar Narkad§!§I;x
+ISE_activate_sauronite_rebels_loc;Activates §YSauronite Rebels§!§I;x
 claim_status_doesnt_own_MOR_440_loc;§YMorgai§!: §RUnowned§!§I;x
 add_claim_DND_307_loc;§WWe will gain claims over §!§YEmyn Sûl§!§I;x
 remove_claim_ERE_668_loc;§WWe will lose claims over §!§YNan Morsereg§!§I;x

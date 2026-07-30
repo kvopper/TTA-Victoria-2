@@ -61,6 +61,7 @@ political_decisions = {
 				limit = { owner = { has_country_flag = ISE_content } }
 				owner = {
 					clr_country_flag = ideologies_lords_of_isengard_sauronite_active
+					clr_country_flag = sauronite_rebels_active
 					ruling_party_ideology = lords_of_isengard
 					ISE_sauronite_deactivation_loc = {}
 				}

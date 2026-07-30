@@ -26,6 +26,7 @@ EVTDESC3000;To our leadership's dismay, the army was overwhelmed by the Republic
 EVTDESC3001;To our former ruler's dismay, the so-called pretenders have occupied $CAPITAL$ and siezed leadership of $COUNTRY$.;x
 EVTDESC3006;$COUNTRY_ADJ$ patriots have risen up in a neighboring realm, and have gained sufficient control that they have sent word they wish to bring the province back to $COUNTRY$. Agreeing would mean risking war, but refusing would mean angering our people.;x
 EVTDESC3008;With the patriot rebellion now over, our provinces have now been brought under control and $COUNTRY_ADJ$ nobility are once again in command;x
+EVTDESC3009;To our former ruler's dismay, the so-called pretenders have occupied $CAPITAL$ and siezed leadership of $COUNTRY$.;x
 ######################################;x }
 ##### TRIGGERED FUNCTIONS EVENTS #####;x {
 ######################################;x
@@ -456,6 +457,8 @@ EVTDESC50138;The @MOR §M$FROMCOUNTRY$§! has requested that we provide them wit
 EVTDESC50143;The @ISE §M$FROMCOUNTRY$§! has refused our request! No one can speculate as to why they would reject a reasonable request.;x
 EVTDESC50144;As expected, the @ISE §M$FROMCOUNTRY$§! have bent the knee and delivered our us what was promised.;x
 EVTDESC50146;It's that time of year to demand tribute from Saruman. What should we be requesting?;x
+EVTDESC50147;With the ever-growing support for fully aligning ourselves with Sauron, what began as a conversation, became an idea and a marching movement which has made its way to $CAPITAL$. The demands are simple: drop all pretenses of independence on the Dark Lord and become his vassal.;x
+EVTDESC50148;Reports have arrived of a coup in $FROM$. We have received an emissary from them requesting admission to into our Dark Pact.;x
 #######################################;x }
 ##### FELLOWAR OF THE RING EVENTS #####;x {
 #######################################;x

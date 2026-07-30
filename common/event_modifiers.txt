@@ -1216,6 +1216,18 @@ hunting_outlaws = {
 }
 
 # }
+##### IDEOLOGICAL MODIFIERS ##### {
+# Province Modifier
+sauronite_agitation = {
+	pop_militancy_modifier = 0.25
+	local_RGO_output = -0.1
+	local_factory_output = -0.1
+	immigrant_push = 0.5
+	
+	icon = 23
+}
+
+# }
 ##### COLONIAL MODIFIERS ##### {
 # Province Modifier
 colonial_push = {
