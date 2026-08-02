@@ -68,7 +68,7 @@ political_decisions = {
 			has_country_flag = ISE_content
 			NOT = { has_country_modifier = ISE_delving_into_ringmaking }
 			NOT = { has_country_modifier = ISE_ring_of_saruman }
-			ruling_party = ISE_saruman
+			ruling_party = ISE_saruman # Need to be non-Sauronite Saruman to start ringmaking, but either can finish it
 		}
 		allow = {
 			magic_3 = 1
@@ -87,7 +87,10 @@ political_decisions = {
 		potential = {
 			has_country_flag = ISE_content
 			is_vassal = no
-			ruling_party = ISE_saruman
+			OR = {
+				ruling_party = ISE_saruman
+				ruling_party = ISE_saruman_sauronite
+			}
 			FOR = {
 				any_neighbor_country = {
 					OR = {
@@ -147,7 +150,10 @@ political_decisions = {
 		picture = "Isengard/ISE_unite_dunland"
 		potential = {
 			has_country_flag = ISE_content
-			ruling_party = ISE_saruman
+			OR = {
+				ruling_party = ISE_saruman
+				ruling_party = ISE_saruman_sauronite
+			}
 			has_country_flag = ISE_expanding_into_dunland_enedwaith
 			NOT = { has_country_flag = ISE_united_dunland }
 		}
@@ -225,7 +231,10 @@ political_decisions = {
 		picture = "Isengard/ISE_unite_enedwaith"
 		potential = {
 			has_country_flag = ISE_content
-			ruling_party = ISE_saruman
+			OR = {
+				ruling_party = ISE_saruman
+				ruling_party = ISE_saruman_sauronite
+			}
 			has_country_flag = ISE_expanding_into_dunland_enedwaith
 			NOT = { has_country_flag = ISE_turned_enedwaith }
 		}
@@ -500,7 +509,10 @@ political_decisions = {
 		picture = "Isengard/ISE_crebain"
 		potential = {
 			has_country_flag = ISE_content
-			ruling_party = ISE_saruman
+			OR = {
+				ruling_party = ISE_saruman
+				ruling_party = ISE_saruman_sauronite
+			}
 			NOT = { has_country_modifier = crebain_of_dunland }
 			has_country_flag = ISE_united_dunland
 		}
@@ -521,12 +533,16 @@ political_decisions = {
 }
 
 # Uruk Hai
+# TODO REWORK
 political_decisions = {
 	breed_uruk_hai = {
 		potential = {
 			tag = ISE
 			is_vassal = no
-			ruling_party = ISE_saruman
+			OR = {
+				ruling_party = ISE_saruman
+				ruling_party = ISE_saruman_sauronite
+			}
 			NOT = { has_country_modifier = breeding_uruk_hai }
 			NOT = { has_global_flag = bred_uruk_hai }
 		}

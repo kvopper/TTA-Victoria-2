@@ -16,7 +16,10 @@ country_event = {
 	
 	trigger = {
 		tag = ISE
-		ruling_party = ISE_saruman
+		OR = {
+			ruling_party = ISE_saruman
+			ruling_party = ISE_saruman_sauronite
+		}
 		has_country_modifier = ISE_delving_into_ringmaking
 	}
 	
@@ -47,7 +50,10 @@ country_event = {
 	
 	trigger = {
 		tag = ISE
-		ruling_party = ISE_saruman
+		OR = {
+			ruling_party = ISE_saruman
+			ruling_party = ISE_saruman_sauronite
+		}
 		has_country_modifier = ISE_delving_into_ringmaking
 		has_country_flag = ISE_smiths_invited
 	}
@@ -79,7 +85,10 @@ country_event = {
 	
 	trigger = {
 		tag = ISE
-		ruling_party = ISE_saruman
+		OR = {
+			ruling_party = ISE_saruman
+			ruling_party = ISE_saruman_sauronite
+		}
 		has_country_modifier = ISE_delving_into_ringmaking
 		has_country_flag = ISE_smiths_failed
 	}
@@ -106,7 +115,10 @@ country_event = {
 	
 	trigger = {
 		tag = ISE
-		ruling_party = ISE_saruman
+		OR = {
+			ruling_party = ISE_saruman
+			ruling_party = ISE_saruman_sauronite
+		}
 		has_country_modifier = ISE_delving_into_ringmaking
 		has_country_flag = ISE_smiths_failed
 	}
@@ -138,7 +150,10 @@ country_event = {
 	
 	trigger = {
 		tag = ISE
-		ruling_party = ISE_saruman
+		OR = {
+			ruling_party = ISE_saruman
+			ruling_party = ISE_saruman_sauronite
+		}
 		has_country_modifier = ISE_delving_into_ringmaking
 		has_country_flag = ISE_dispatched_search_parties_to_ost_en_edhil
 	}
@@ -164,7 +179,10 @@ country_event = {
 	
 	trigger = {
 		tag = ISE
-		ruling_party = ISE_saruman
+		OR = {
+			ruling_party = ISE_saruman
+			ruling_party = ISE_saruman_sauronite
+		}
 		has_country_modifier = ISE_delving_into_ringmaking
 		has_country_flag = ISE_researched_orthanc_archives
 	}
@@ -196,7 +214,10 @@ country_event = {
 	
 	trigger = {
 		tag = ISE
-		ruling_party = ISE_saruman
+		OR = {
+			ruling_party = ISE_saruman
+			ruling_party = ISE_saruman_sauronite
+		}
 		has_country_modifier = ISE_delving_into_ringmaking
 		has_country_flag = ISE_saruman_travelling_for_ringmaking_knowledge
 	}
@@ -545,6 +566,7 @@ country_event = {
 }
 
 # The Age of the Uruk Hai
+# TODO rework
 country_event = {
 	id = 50120
 	title = "The Age of the Uruk Hai"

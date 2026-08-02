@@ -318,6 +318,7 @@ country_event = {
 		NOT = { ruling_party = MOR_sauron } # Why would Mordor be communing with itself?
 		NOT = { has_country_modifier = palantir_madness }
 		NOT = { ruling_party = ISE_saruman } # Saruman has their own flavor that doesn't use the generic meeting of Mordor
+		NOT = { ruling_party = ISE_saruman_sauronite } # Saruman has their own flavor that doesn't use the generic meeting of Mordor
 	}
 	
 	mean_time_to_happen = { months = 108 }

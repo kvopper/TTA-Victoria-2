@@ -391,9 +391,11 @@ political_decisions = {
 			has_global_flag = fellowship_passed_through_lothlorien
 			NOT = { has_global_flag = fellowship_has_failed }
 			NOT = { has_global_flag = fellowship_passed_through_ithilien }
-			good_evil_alignment = evil_alignment
 			primary_culture = uruk_hai
-			ruling_party = ISE_saruman
+			OR = {
+				ruling_party = ISE_saruman
+				ruling_party = ISE_saruman_sauronite
+			}
 			FOR = { check_variable = { which = ring_controller value = 1.9 } } # Fellowship
 			FOR = { NOT = { check_variable = { which = ring_controller value = 2.1 } } } # Fellowship
 			NOT = { has_country_flag = unleashed_uruk_hai_raiders }
@@ -401,8 +403,10 @@ political_decisions = {
 		
 		allow = {
 			money = 100000
-			ruling_party = ISE_saruman
-			good_evil_alignment = evil_alignment
+			OR = {
+				ruling_party = ISE_saruman
+				ruling_party = ISE_saruman_sauronite
+			}
 		}
 		
 		effect = {
@@ -637,7 +641,10 @@ political_decisions = {
 			modifier = {
 				factor = 0
 				tag = ISE
-				ruling_party = ISE_saruman
+				OR = {
+					ruling_party = ISE_saruman
+					ruling_party = ISE_saruman_sauronite
+				}
 			}
 		}
 	}

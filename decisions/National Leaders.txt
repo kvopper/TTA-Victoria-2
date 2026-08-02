@@ -140,7 +140,10 @@ political_decisions = {
 		picture = "lord_saruman"
 		potential = {
 			ai = no
-			ruling_party = ISE_saruman
+			OR = {
+				ruling_party = ISE_saruman
+				ruling_party = ISE_saruman_sauronite
+			}
 			NOT = { has_global_flag = fluff_disabled }
 		}
 		effect = {
