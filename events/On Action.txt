@@ -1538,6 +1538,30 @@ province_event = {
 							unemployment_by_type = { value = 1 type = labourers }
 							any_pop = {
 								type = soldiers
+								has_pop_culture = goblin_men
+								country = {
+									NOT = { accepted_culture = goblin_men }
+									NOT = { primary_culture = goblin_men }
+								}
+							}
+						}
+						any_pop = {
+							limit = {
+								type = soldiers
+								has_pop_culture = goblin_men
+							}
+							pop_type = tribals
+							ideology = {
+								factor = 99
+								value = tribal_ideology
+							}
+						}
+					}
+					any_owned = {
+						limit = {
+							unemployment_by_type = { value = 1 type = labourers }
+							any_pop = {
+								type = soldiers
 								has_pop_culture = hollin_folk
 								country = {
 									NOT = { accepted_culture = hollin_folk }
@@ -1741,6 +1765,30 @@ province_event = {
 							limit = {
 								type = soldiers
 								has_pop_culture = uruk_hai
+							}
+							pop_type = tribals
+							ideology = {
+								factor = 99
+								value = tribal_ideology
+							}
+						}
+					}
+					any_owned = {
+						limit = {
+							unemployment_by_type = { value = 1 type = labourers }
+							any_pop = {
+								type = soldiers
+								has_pop_culture = half_orc
+								country = {
+									NOT = { accepted_culture = half_orc }
+									NOT = { primary_culture = half_orc }
+								}
+							}
+						}
+						any_pop = {
+							limit = {
+								type = soldiers
+								has_pop_culture = half_orc
 							}
 							pop_type = tribals
 							ideology = {
@@ -1981,6 +2029,30 @@ province_event = {
 							limit = {
 								type = soldiers
 								has_pop_culture = blue_mountain_goblin
+							}
+							pop_type = tribals
+							ideology = {
+								factor = 99
+								value = tribal_ideology
+							}
+						}
+					}
+					any_owned = {
+						limit = {
+							unemployment_by_type = { value = 1 type = labourers }
+							any_pop = {
+								type = soldiers
+								has_pop_culture = isengard_orc
+								country = {
+									NOT = { accepted_culture = isengard_orc }
+									NOT = { primary_culture = isengard_orc }
+								}
+							}
+						}
+						any_pop = {
+							limit = {
+								type = soldiers
+								has_pop_culture = isengard_orc
 							}
 							pop_type = tribals
 							ideology = {

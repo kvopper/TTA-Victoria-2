@@ -854,6 +854,7 @@ assimilation_chance = {
 					accepted_culture = herimundi
 					accepted_culture = druedain
 					accepted_culture = dunnish
+					accepted_culture = goblin_men
 					accepted_culture = hollin_folk
 					accepted_culture = enedwaithrim
 					accepted_culture = saerlanner
@@ -940,6 +941,7 @@ assimilation_chance = {
 			country = {
 				OR = {
 					accepted_culture = uruk_hai
+					accepted_culture = half_orc
 					accepted_culture = mordor_orc
 					accepted_culture = mordor_uruk
 					accepted_culture = guldurrim
@@ -951,6 +953,7 @@ assimilation_chance = {
 					# Purposefully commenting out the Wild Goblins
 					# accepted_culture = white_mountain_goblin
 					# accepted_culture = blue_mountain_goblin
+					accepted_culture = isengard_orc
 				}
 			}
 			location = {
