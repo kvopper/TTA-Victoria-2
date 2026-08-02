@@ -32,6 +32,7 @@ political_decisions = {
 			set_country_flag = ideologies_line_of_durin_active
 			set_country_flag = ideologies_line_of_linnar_active
 			set_country_flag = nobility_deactivated
+		}
 	}
 	RAV_start_decision = {
 		potential = {
