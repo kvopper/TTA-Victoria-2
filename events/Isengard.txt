@@ -500,6 +500,7 @@ country_event = {
 }
 # }
 
+# Dunland/Enedwaith Diplomacy {
 # Alliance with Dunlending/Enedwaithrim Tribe
 country_event = {
 	id = 50110
@@ -564,6 +565,209 @@ country_event = {
 		}
 	}
 }
+# }
+
+# Orcs and Experimentation {
+# Orc Pops
+country_event = {
+	id = 50113
+	title = "The Call of Power"
+	desc = "EVTDESC50113"
+	picture = isengard/isengard
+	
+	trigger = {
+		has_country_flag = ISE_content
+		OR = {
+			ruling_party = ISE_saruman_sauronite
+			AND = {
+				ruling_party = ISE_saruman
+				has_country_modifier = ISE_ring_of_saruman
+			}
+		}
+		OR = {
+			year = 2985
+			AND = {
+				year = 2975
+				has_global_flag = railroading_disabled
+			}
+		}
+	}
+	
+	mean_time_to_happen = { months = 12 }
+	
+	option = {
+		name = "We accept their offer"
+		
+		any_pop = {
+			limit = { NOT = { has_pop_religion = orc } }
+			militancy = 2
+		}
+		
+		plurality = 5
+		
+		1509 = {
+			random_pop = {
+				limit = {
+					pop_type = labourers
+					has_pop_culture = isengard_orc
+				}
+				move_pop = 811 # Isengard
+			}
+			random_pop = {
+				limit = {
+					pop_type = craftsmen
+					has_pop_culture = isengard_orc
+				}
+				move_pop = 811 # Isengard
+			}
+			random_pop = {
+				limit = {
+					pop_type = soldiers
+					has_pop_culture = isengard_orc
+				}
+				move_pop = 811 # Isengard
+			}
+		}
+		1510 = {
+			random_pop = {
+				limit = {
+					pop_type = labourers
+					has_pop_culture = isengard_orc
+				}
+				move_pop = 1447 # Blackmarch Fort
+			}
+			random_pop = {
+				limit = {
+					pop_type = craftsmen
+					has_pop_culture = isengard_orc
+				}
+				move_pop = 1447 # Blackmarch Fort
+			}
+			random_pop = {
+				limit = {
+					pop_type = soldiers
+					has_pop_culture = isengard_orc
+				}
+				move_pop = 1447 # Blackmarch Fort
+			}
+		}
+		1511 = {
+			random_pop = {
+				limit = {
+					pop_type = labourers
+					has_pop_culture = isengard_orc
+				}
+				move_pop = 1532 # Eastwatch
+			}
+			random_pop = {
+				limit = {
+					pop_type = craftsmen
+					has_pop_culture = isengard_orc
+				}
+				move_pop = 1532 # Eastwatch
+			}
+			random_pop = {
+				limit = {
+					pop_type = soldiers
+					has_pop_culture = isengard_orc
+				}
+				move_pop = 1532 # Eastwatch
+			}
+		}
+		1512 = {
+			random_pop = {
+				limit = {
+					pop_type = labourers
+					has_pop_culture = isengard_orc
+				}
+				move_pop = 1446 # Lag Sharak
+			}
+			random_pop = {
+				limit = {
+					pop_type = craftsmen
+					has_pop_culture = isengard_orc
+				}
+				move_pop = 1446 # Lag Sharak
+			}
+			random_pop = {
+				limit = {
+					pop_type = soldiers
+					has_pop_culture = isengard_orc
+				}
+				move_pop = 1446 # Lag Sharak
+			}
+		}
+		1513 = {
+			random_pop = {
+				limit = {
+					pop_type = labourers
+					has_pop_culture = isengard_orc
+				}
+				move_pop = 812 # Mines of Methedras
+			}
+			random_pop = {
+				limit = {
+					pop_type = craftsmen
+					has_pop_culture = isengard_orc
+				}
+				move_pop = 812 # Mines of Methedras
+			}
+			random_pop = {
+				limit = {
+					pop_type = soldiers
+					has_pop_culture = isengard_orc
+				}
+				move_pop = 812 # Mines of Methedras
+			}
+		}
+		1514 = {
+			random_pop = {
+				limit = {
+					pop_type = labourers
+					has_pop_culture = isengard_orc
+				}
+				move_pop = 1533 # Fangorn Pass
+			}
+			random_pop = {
+				limit = {
+					pop_type = craftsmen
+					has_pop_culture = isengard_orc
+				}
+				move_pop = 1533 # Fangorn Pass
+			}
+			random_pop = {
+				limit = {
+					pop_type = soldiers
+					has_pop_culture = isengard_orc
+				}
+				move_pop = 1533 # Fangorn Pass
+			}
+		}
+		
+		add_accepted_culture = isengard_orc
+		
+		ai_chance = { factor = 90 }
+	}
+	
+	option = {
+		name = "We have no need for orcs"
+		
+		any_pop = {
+			limit = { NOT = { has_pop_religion = orc } }
+			militancy = -1
+		}
+		
+		plurality = -2
+		
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_global_flag = railroading_enabled
+			}
+		}
+	}
+}
 
 # The Age of the Uruk Hai
 # TODO rework
@@ -624,6 +828,7 @@ country_event = {
 		ai_chance = { factor = 0 }
 	}
 }
+# }
 
 # The Alliance of Two Towers {
 # The Presence of the White Wizard (Mordor event)

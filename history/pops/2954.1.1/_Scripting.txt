@@ -30,3 +30,114 @@
 		size = 5000
 	}
 }
+
+# Isen River
+# Isengard Orcs, Half-orcs, Goblin-men and Uruk Hai for ISE experimentation {
+1509 = { # Isengard
+	labourers = {
+		culture = isengard_orc
+		religion = orc
+		size = 6000
+	}
+	craftsmen = {
+		culture = isengard_orc
+		religion = orc
+		size = 2000
+	}
+	soldiers = {
+		culture = isengard_orc
+		religion = orc
+		size = 3000 # Enough for 2 units
+	}
+}
+
+1510 = { # Blackmarch Fort
+	labourers = {
+		culture = isengard_orc
+		religion = orc
+		size = 1500
+	}
+	craftsmen = {
+		culture = isengard_orc
+		religion = orc
+		size = 500
+	}
+	soldiers = {
+		culture = isengard_orc
+		religion = orc
+		size = 1000 # Enough for 1 unit
+	}
+}
+
+1511 = { # Eastwatch
+	labourers = {
+		culture = isengard_orc
+		religion = orc
+		size = 1000
+	}
+	craftsmen = {
+		culture = isengard_orc
+		religion = orc
+		size = 500
+	}
+	soldiers = {
+		culture = isengard_orc
+		religion = orc
+		size = 500 # Enough for 0 units
+	}
+}
+
+1512 = { # Lag Sharak
+	labourers = {
+		culture = isengard_orc
+		religion = orc
+		size = 3000 # More per starting capital due being in the mountains
+	}
+	craftsmen = {
+		culture = isengard_orc
+		religion = orc
+		size = 1000
+	}
+	soldiers = {
+		culture = isengard_orc
+		religion = orc
+		size = 3000 # Enough for 2 units
+	}
+}
+
+1513 = { # Mines of Methedras
+	labourers = {
+		culture = isengard_orc
+		religion = orc
+		size = 3000 # More per starting capital due being in the mountains
+	}
+	craftsmen = {
+		culture = isengard_orc
+		religion = orc
+		size = 1000
+	}
+	soldiers = {
+		culture = isengard_orc
+		religion = orc
+		size = 3000 # Enough for 2 units
+	}
+}
+
+1514 = { # Fangorn Pass
+	labourers = {
+		culture = isengard_orc
+		religion = orc
+		size = 3000 # More per starting capital due being in the mountains
+	}
+	craftsmen = {
+		culture = isengard_orc
+		religion = orc
+		size = 1000
+	}
+	soldiers = {
+		culture = isengard_orc
+		religion = orc
+		size = 3000 # Enough for 2 units
+	}
+}
+# }
