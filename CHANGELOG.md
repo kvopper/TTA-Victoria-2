@@ -45,6 +45,7 @@ All notable changes will be documented in this file.
 	 - Ensures the protection of Mordor
 	 - May be rejected or betrayed at the ire of Mordor
  - "Alignment" of Dunland, Enedwaith, and other like-realms
+ - Rework of the creation of the Uruk-hai
 
 ### Mechanics and Content
  - Various bugfixes and small additions

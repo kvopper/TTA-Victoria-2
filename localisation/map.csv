@@ -1597,6 +1597,7 @@ add_claim_MOR_397_loc;§WWe will gain claims over §!§YEastern Desolation§!§I
 claim_status_doesnt_own_ERE_682_loc;§YCirith Himninond§!: §RUnowned§!§I;x
 claim_status_doesnt_own_CAR_1204_loc;§YGirithlin§!: §RUnowned§!§I;x
 DAL_appoint_bards_diplomats_erland_desc_loc;Erland was a great diplomat of Dale, working under the rule of Bard, Bain, Brand and Bard II's rule. He would be the primary negotiator with the Grammas, and would go onto lead the Barding delegation to the Council of Elrond.;x
+ISE_uruk_hai_soldiers_3000_fangorn_pass_loc;\nCreates a new pop of §Y3000 Orc Uruk Hai Soldiers§! in §YFangorn Pass§!§I;x
 claim_status_doesnt_own_DND_307_loc;§YEmyn Sûl§!: §RUnowned§!§I;x
 remove_claim_MOR_408_loc;§WWe will lose claims over §!§YEphel Dûath§!§I;x
 add_claim_GON_16_loc;§WWe will gain claims over §!§YOld Anórien§!§I;x
@@ -1625,6 +1626,7 @@ invite_realm_loc;Invite Realm;x
 remove_claim_GON_72_loc;§WWe will lose claims over §!§YEred Tarthonion§!§I;x
 add_claim_ROH_801_loc;§WWe will gain claims over §!§YLower West Emnet§!§I;x
 ISE_decide_stoor_policy_loc;We can decide to ignore, sphere, puppet or annex the @MAU §YStoors of Maur Tulhau§!§I;x
+ISE_isengard_orc_labourers_3000_lag_sharak_loc;\nCreates a new pop of §Y3000 Orc Isengard Orc Labourers§! in §YLag Sharak§!§I;x
 ISE_sauronite_deactivation_loc;§YLords of Isengard (Sauronite)§! and §YSauronite Rebels§! will become inactive§!§I;x
 claim_status_doesnt_own_DND_1015_loc;§YTyrn Formen§!: §RUnowned§!§I;x
 DAL_northman_generals_rivermen_gotten_loc;§TWe have recruited the following Rivermen Thegans§!|;x
@@ -1683,6 +1685,7 @@ claim_status_owns_BLU_942_loc;§YKhazadbizar§!: §GOwned§!§I;x
 claim_status_owns_IML_875_loc;§YSruth Líath Marches§!: §GOwned§!§I;x
 expand_culture_reach_loc;Expand Cultural Reach;x
 claim_status_doesnt_own_GON_23_loc;§YEthir Erui§!: §RUnowned§!§I;x
+ISE_uruk_hai_soldiers_3000_lag_sharak_loc;\nCreates a new pop of §Y3000 Orc Uruk Hai Soldiers§! in §YLag Sharak§!§I;x
 DAL_merchant_guild_bop_merchants_permanent_loc;§TThe realm has chosen to officially support the Merchants§! (+10);x
 add_claim_DOR_545_loc;§WWe will gain claims over §!§YDobok Rhín§!§I;x
 claim_status_doesnt_own_RHO_515_loc;§YUpper Sekelavuld§!: §RUnowned§!§I;x
@@ -1715,6 +1718,8 @@ ISE_puppet_mirobel_loc;We will vassalize the @MRB §YDunlendings of Mirobel§W w
 remove_claim_CAR_890_loc;§WWe will lose claims over §!§YRohwaen§!§I;x
 claim_status_owns_GON_228_loc;§YHarfalas§!: §GOwned§!§I;x
 claim_status_doesnt_own_GUL_1436_loc;§YSouthern Mirkwood§!: §RUnowned§!§I;x
+ISE_isengard_orc_craftsmen_1000_lag_sharak_loc;\nCreates a new pop of §Y1000 Orc Isengard Orc Guild Artisans§! in §YLag Sharak§!§I;x
+ISE_uruk_hai_soldiers_3000_blackmarch_fort_loc;\nCreates a new pop of §Y3000 Orc Uruk Hai Soldiers§! in §YBlackmarch Fort§!§I;x
 claim_status_doesnt_own_RHU_578_loc;§YKara Kalpak§!: §RUnowned§!§I;x
 claim_status_doesnt_own_RHU_1264_loc;§YCoiced Caradaingen§!: §RUnowned§!§I;x
 claim_status_doesnt_own_SHI_1036_loc;§YSouthfarthing§!: §RUnowned§!§I;x
@@ -1751,6 +1756,7 @@ remove_claim_DND_1023_loc;§WWe will lose claims over §!§YEmyn Uial§!§I;x
 add_claim_GON_165_loc;§WWe will gain claims over §!§YAngast§!§I;x
 DAL_barding_erebor_relations_loc;Barding-Erebor Relations;x
 claim_status_doesnt_own_GON_14_loc;§YTalath Anór§!: §RUnowned§!§I;x
+ISE_half_orc_labourers_10000_isengard_loc;Creates a new pop of §Y10000 Orc Half Orc Labourers§! in §YIsengard§!§I;x
 remove_claim_UMB_270_loc;§WWe will lose claims over §!§YMarös§!§I;x
 settings_toggle_infamy_removal_loc;This option effectively removes infamy. When disabled, at the start of the next month, every realm will get a modifier that increases infamy reduction to 999 per month.§I;x
 claim_status_owns_HAR_277_loc;§YTalath Naur§!: §GOwned§!§I;x
@@ -1784,6 +1790,7 @@ remove_claim_RHO_458_loc;§WWe will lose claims over §!§YDagorlad§!§I;x
 claim_status_owns_MOR_433_loc;§YImlad Morgûl§!: §GOwned§!§I;x
 add_claim_RHO_465_loc;§WWe will gain claims over §!§YEmyn Muil§!§I;x
 claim_status_doesnt_own_CAR_891_loc;§YNimiand§!: §RUnowned§!§I;x
+ISE_half_orc_labourers_3000_eastwatch_loc;\nCreates a new pop of §Y3000 Orc Half Orc Labourers§! in §YEastwatch§!§I;x
 remove_claim_AND_732_loc;§WWe will lose claims over §!§YNan Anduin§!§I;x
 claim_status_owns_ERE_682_loc;§YCirith Himninond§!: §GOwned§!§I;x
 claim_status_doesnt_own_GON_183_loc;§YHaerawreigion§!: §RUnowned§!§I;x
@@ -1791,7 +1798,9 @@ claim_status_owns_RHO_520_loc;§YAustrabuht§!: §GOwned§!§I;x
 add_claim_RHO_1379_loc;§WWe will gain claims over §!§YTaj-Urés§!§I;x
 claim_status_doesnt_own_IML_868_loc;§YForeregion§!: §RUnowned§!§I;x
 claim_status_owns_ERE_1166_loc;§YEmyn Engrin§!: §GOwned§!§I;x
+ISE_isengard_orc_soldiers_500_eastwatch_loc;\nCreates a new pop of §Y500 Orc Isengard Orc Soldiers§! in §YEastwatch§!§I;x
 settings_guild_autonomy_independent_loc;You will not be able to build guilds nor province-level buildings. Your economy will be at the mercy of the pops§I;x
+ISE_isengard_orc_craftsmen_1000_fangorn_pass_loc;\nCreates a new pop of §Y1000 Orc Isengard Orc Guild Artisans§! in §YFangorn Pass§!§I;x
 remove_claim_GON_165_loc;§WWe will lose claims over §!§YAngast§!§I;x
 claim_status_doesnt_own_CAR_1202_loc;§YGirithlin Highlands§!: §RUnowned§!§I;x
 claim_status_doesnt_own_LIN_137_loc;§YDor Leithan§!: §RUnowned§!§I;x
@@ -1823,6 +1832,7 @@ DAL_merchant_guild_bop_title_loc;Merchants and Fisher's Guild;x
 remove_claim_MOR_404_loc;§WWe will lose claims over §!§YSouthern Nurza-Shukh§!§I;x
 claim_status_doesnt_own_BRE_1014_loc;§YNan Turnath§!: §RUnowned§!§I;x
 add_claim_LOS_1158_loc;§WWe will gain claims over §!§YTalvi-mûri§!§I;x
+ISE_isengard_orc_labourers_1000_eastwatch_loc;\nCreates a new pop of §Y1000 Orc Isengard Orc Labourers§! in §YEastwatch§!§I;x
 settings_pop_management_loc;This option enables/disables access to the pop management events (accesible via decision). These events allow you to have access to some basic "cheats", or help facilitate the craftsmen glitch§I;x
 remove_claim_DAL_654_loc;§WWe will lose claims over §!§YNan Annen§!§I;x
 claim_status_doesnt_own_MOR_408_loc;§YEphel Dûath§!: §RUnowned§!§I;x
@@ -1847,6 +1857,7 @@ general_loc;§TGenerals§!;x
 remove_claim_UMB_256_loc;§WWe will lose claims over §!§YSakal an-Khar§!§I;x
 remove_claim_GON_253_loc;§WWe will lose claims over §!§YCarnentir§!§I;x
 remove_claim_ISE_811_loc;§WWe will lose claims over §!§YNan Curunír§!§I;x
+ISE_half_orc_labourers_3000_blackmarch_fort_loc;\nCreates a new pop of §Y3000 Orc Half Orc Labourers§! in §YBlackmarch Fort§!§I;x
 claim_status_owns_DND_307_loc;§YEmyn Sûl§!: §GOwned§!§I;x
 claim_status_doesnt_own_DOR_555_loc;§YAustronei Hallus§!: §RUnowned§!§I;x
 claim_status_owns_DUN_833_loc;§YCarreglyn§!: §GOwned§!§I;x
@@ -1882,6 +1893,7 @@ claim_status_doesnt_own_DND_1022_loc;§YGondpinnath§!: §RUnowned§!§I;x
 add_claim_HAR_293_loc;§WWe will gain claims over §!§YPezarsan§!§I;x
 claim_status_owns_GOB_847_loc;§YHithaeglir§!: §GOwned§!§I;x
 remove_claim_BLU_942_loc;§WWe will lose claims over §!§YKhazadbizar§!§I;x
+ISE_isengard_orc_craftsmen_2000_isengard_loc;\nCreates a new pop of §Y2000 Orc Isengard Orc Guild Artisans§! in §YIsengard§!§I;x
 remove_claim_MIR_718_loc;§WWe will lose claims over §!§YMirkwood Narrows§!§I;x
 claim_status_owns_GON_98_loc;§YTarlang§!: §GOwned§!§I;x
 claim_status_doesnt_own_DND_862_loc;§YNan Brethil§!: §RUnowned§!§I;x
@@ -1906,6 +1918,7 @@ add_claim_IML_1239_loc;§WWe will gain claims over §!§YCirith Narugorch§!§I;
 claim_status_owns_RHU_1260_loc;§YCoiced Cíall§!: §GOwned§!§I;x
 claim_status_doesnt_own_ROH_802_loc;§YUpper West Emnet§!: §RUnowned§!§I;x
 add_claim_ERE_686_loc;§WWe will gain claims over §!§YThe Narrows§!§I;x
+ISE_half_orc_labourers_3000_lag_sharak_loc;\nCreates a new pop of §Y3000 Orc Half Orc Labourers§! in §YLag Sharak§!§I;x
 add_claim_DND_1358_loc;§WWe will gain claims over §!§YCilab§!§I;x
 add_claim_GON_4_loc;§WWe will gain claims over §!§YFar Anórien§!§I;x
 claim_status_doesnt_own_BLU_917_loc;§YSouthern Ered Luin§!: §RUnowned§!§I;x
@@ -1979,6 +1992,7 @@ remove_claim_ERE_665_loc;§WWe will lose claims over §!§YTalath Huz§!§I;x
 triggered_event_alliance_of_dwarves_and_men_region_selection_loc;get the 'Alliance of Dwarves and Men - Region Selection' event.§I;x
 nine_loc;9;x
 claim_status_owns_DND_863_loc;§YDor-en-Egladil§!: §GOwned§!§I;x
+ISE_isengard_orc_labourers_6000_isengard_loc;Creates a new pop of §Y6000 Orc Isengard Orc Labourers§! in §YIsengard§!§I;x
 claim_status_owns_RHU_580_loc;§YEastern Gathod§!: §GOwned§!§I;x
 claim_status_owns_GON_4_loc;§YFar Anórien§!: §GOwned§!§I;x
 claim_status_doesnt_own_ANG_985_loc;§YNan Angmar§!: §RUnowned§!§I;x
@@ -2012,6 +2026,7 @@ add_claim_MIR_718_loc;§WWe will gain claims over §!§YMirkwood Narrows§!§I;x
 remove_claim_LOS_1346_loc;§WWe will lose claims over §!§YHyvämetsästyksen Maa§!§I;x
 claim_status_owns_RHO_1379_loc;§YTaj-Urés§!: §GOwned§!§I;x
 DAL_leader_traits_first_king_of_dale_loc;§TFirst King of Dale§!| Prestige §G+0.010§!, Pop Militancy §G-0.01§!, Pop Consciousness §G-0.01§!, Organization Regain Rate §G+5.0%§!;x
+ISE_goblin_men_craftsmen_3000_lag_sharak_loc;\nCreates a new pop of §Y3000 Men Goblin Men Guild Artisans§! in §YLag Sharak§!§I;x
 five_loc;5;x
 remove_claim_LOS_979_loc;§WWe will lose claims over §!§YTalath Uichel§!§I;x
 claim_status_owns_HAR_356_loc;§YLûrmsakûn§!: §GOwned§!§I;x
@@ -2054,6 +2069,7 @@ claim_status_doesnt_own_ENE_836_loc;§YReedwater Vale§!: §RUnowned§!§I;x
 add_claim_HAR_312_loc;§WWe will gain claims over §!§YVelarith§!§I;x
 DAL_military_leaders_brestir_loc;§LBrestir the Old§!|;x
 add_claim_IML_865_loc;§WWe will gain claims over §!§YElven Fells§!§I;x
+ISE_isengard_orc_labourers_1500_blackmarch_fort_loc;\nCreates a new pop of §Y1500 Orc Isengard Orc Labourers§! in §YBlackmarch Fort§!§I;x
 claim_status_doesnt_own_GON_123_loc;§YPinnath Gelin§!: §RUnowned§!§I;x
 remove_claim_KHA_361_loc;§WWe will lose claims over §!§YDesert of Khand§!§I;x
 add_claim_FOR_1042_loc;§WWe will gain claims over §!§YNorthern Wastes§!§I;x
@@ -2068,6 +2084,7 @@ claim_status_owns_RHU_1264_loc;§YCoiced Caradaingen§!: §GOwned§!§I;x
 DAL_trade_with_other_realms_desc_loc;Gain trade agreements with allied or sphere realms! When a realm accepts, both you and your trade partner may get a small economic boost. Esgaroth will display your current level of economic boost.;x
 claim_status_doesnt_own_ERE_151_loc;§YEred Mithrin§!: §RUnowned§!§I;x
 remove_claim_RHO_489_loc;§WWe will lose claims over §!§YLower Othnen Vale§!§I;x
+ISE_isengard_orc_soldiers_3000_mines_of_methedras_loc;\nCreates a new pop of §Y3000 Orc Isengard Orc Soldiers§! in §YMines of Methedras§!§I;x
 claim_status_doesnt_own_GON_194_loc;§YRhûndrúwaith Iaur§!: §RUnowned§!§I;x
 shire_reckoning_loc;The year is 0 by Shire Reckoning§I;x
 claim_status_doesnt_own_RHU_598_loc;§YSouthern Telaith Lyst§!: §RUnowned§!§I;x
@@ -2115,6 +2132,7 @@ claim_status_owns_GON_123_loc;§YPinnath Gelin§!: §GOwned§!§I;x
 claim_status_owns_GON_212_loc;§YHarithilien§!: §GOwned§!§I;x
 claim_status_doesnt_own_GON_160_loc;§YNan Lefnui§!: §RUnowned§!§I;x
 claim_status_owns_ROH_798_loc;§YWestfold§!: §GOwned§!§I;x
+ISE_isengard_orc_soldiers_3000_fangorn_pass_loc;\nCreates a new pop of §Y3000 Orc Isengard Orc Soldiers§! in §YFangorn Pass§!§I;x
 add_claim_RHO_458_loc;§WWe will gain claims over §!§YDagorlad§!§I;x
 claim_status_owns_GON_44_loc;§YTalath Lothen§!: §GOwned§!§I;x
 add_claim_GON_102_loc;§WWe will gain claims over §!§YBlackroot Vale§!§I;x
@@ -2190,6 +2208,7 @@ claim_status_owns_SHI_1030_loc;§YWestmarch§!: §GOwned§!§I;x
 claim_status_doesnt_own_UMB_263_loc;§YTol Uialgaer§!: §RUnowned§!§I;x
 remove_claim_ANG_1004_loc;§WWe will lose claims over §!§YEn Udanoriath§!§I;x
 DAL_send_ultimatum_to_rivermen_loc;§GAn ultimatum will be sent to each of the Rivermen minors. If they accept, they will become our puppets. If they refuse, we will declare war to annex them.§!§I;x
+ISE_uruk_hai_soldiers_3000_eastwatch_loc;\nCreates a new pop of §Y3000 Orc Uruk Hai Soldiers§! in §YEastwatch§!§I;x
 claim_status_owns_GON_89_loc;§YCentral Gondor§!: §GOwned§!§I;x
 claim_status_owns_GON_46_loc;§YLower Lebennin§!: §GOwned§!§I;x
 claim_status_owns_KHA_362_loc;§YKhandu Itakh§!: §GOwned§!§I;x
@@ -2303,6 +2322,7 @@ MOR_alliance_of_two_towers_loc;We will enter a permanent alliance with the @ISE 
 settings_annex_all_loc;This option annexes all of colonizable Middle Earth to your realm. §RThis cannot be undone§!§I;x
 claim_status_owns_DND_1005_loc;§YUilad§!: §GOwned§!§I;x
 add_claim_BRE_1284_loc;§WWe will gain claims over §!§YUimirrildor§!§I;x
+ISE_uruk_hai_soldiers_3000_mines_of_methedras_loc;\nCreates a new pop of §Y3000 Orc Uruk Hai Soldiers§! in §YMines of Methedras§!§I;x
 remove_claim_RHU_1257_loc;§WWe will lose claims over §!§YGlenn Crec§!§I;x
 remove_claim_KHA_391_loc;§WWe will lose claims over §!§YKhandu Ylâ§!§I;x
 claim_status_doesnt_own_DND_1007_loc;§YTír Or§!: §RUnowned§!§I;x
@@ -2375,6 +2395,7 @@ claim_status_doesnt_own_RHU_611_loc;§YGovedalend§!: §RUnowned§!§I;x
 claim_status_doesnt_own_CAR_905_loc;§YLower Saerlann§!: §RUnowned§!§I;x
 add_claim_MOR_396_loc;§WWe will gain claims over §!§YEred Lithui§!§I;x
 claim_status_owns_LOS_980_loc;§YEmyn Helch§!: §GOwned§!§I;x
+ISE_half_orc_labourers_3000_fangorn_pass_loc;\nCreates a new pop of §Y3000 Orc Half Orc Labourers§! in §YFangorn Pass§!§I;x
 claim_status_doesnt_own_ERE_681_loc;§YCirith Gondmaeglorn§!: §RUnowned§!§I;x
 add_claim_MOR_418_loc;§WWe will gain claims over §!§YNorthern Nurza-Shukh§!§I;x
 claim_status_owns_DND_1309_loc;§YHyarmenyaména§!: §GOwned§!§I;x
@@ -2387,6 +2408,7 @@ claim_status_owns_DND_1341_loc;§YNorthern March§!: §GOwned§!§I;x
 settings_borders_open_loc;There are no restrictions placed on migration§I;x
 claim_status_owns_MIR_704_loc;§YTaur-nu-Fuin§!: §GOwned§!§I;x
 add_claim_GON_89_loc;§WWe will gain claims over §!§YCentral Gondor§!§I;x
+ISE_isengard_orc_labourers_3000_mines_of_methedras_loc;\nCreates a new pop of §Y3000 Orc Isengard Orc Labourers§! in §YMines of Methedras§!§I;x
 claim_status_doesnt_own_GON_238_loc;§YRhuntir§!: §RUnowned§!§I;x
 alliance_of_dwarves_and_men_country_selection_return_cores_loc;We will cede the chosen region to this realm§I;x
 claim_status_owns_BLU_914_loc;§YHarvaneth§!: §GOwned§!§I;x
@@ -2418,6 +2440,7 @@ claim_status_doesnt_own_GON_110_loc;§YPaths of the Dead§!: §RUnowned§!§I;x
 remove_claim_DOR_553_loc;§WWe will lose claims over §!§YUldona Vale§!§I;x
 remove_claim_GON_114_loc;§WWe will lose claims over §!§YUpper Morthond Vale§!§I;x
 add_claim_WRM_696_loc;§WWe will gain claims over §!§YForeryn Galen§!§I;x
+ISE_isengard_orc_craftsmen_500_eastwatch_loc;\nCreates a new pop of §Y500 Orc Isengard Orc Guild Artisans§! in §YEastwatch§!§I;x
 add_claim_ERE_151_loc;§WWe will gain claims over §!§YEred Mithrin§!§I;x
 claim_status_owns_ANV_740_loc;§YGreylin Vale§!: §GOwned§!§I;x
 claim_status_owns_DUN_839_loc;§YMournshaws§!: §GOwned§!§I;x
@@ -2436,6 +2459,7 @@ remove_claim_MIR_706_loc;§WWe will lose claims over §!§YEmyn-i-Thang§!§I;x
 claim_status_doesnt_own_CAR_894_loc;§YDol Caledir§!: §RUnowned§!§I;x
 empty_line_loc;\n;x
 add_claim_ANG_987_loc;§WWe will gain claims over §!§YKanclemas§!§I;x
+ISE_isengard_orc_soldiers_3000_isengard_loc;\nCreates a new pop of §Y3000 Orc Isengard Orc Soldiers§! in §YIsengard§!§I;x
 add_claim_ERE_669_loc;§WWe will gain claims over §!§YIron Hills§!§I;x
 ISE_puppet_saerlanners_loc;Become a vassal of §YIsengard§!§I;x
 claim_status_doesnt_own_KHA_342_loc;§YMuzeida Vale§!: §RUnowned§!§I;x
@@ -2452,6 +2476,7 @@ military_leader_started_with_loc;§GWe started with this military leader§!;x
 claim_status_owns_MOR_396_loc;§YEred Lithui§!: §GOwned§!§I;x
 remove_claim_RHO_525_loc;§WWe will lose claims over §!§YWest Dunheath§!§I;x
 claim_status_owns_IML_874_loc;§YSouth Hollin§!: §GOwned§!§I;x
+ISE_isengard_orc_labourers_3000_fangorn_pass_loc;\nCreates a new pop of §Y3000 Orc Isengard Orc Labourers§! in §YFangorn Pass§!§I;x
 claim_status_doesnt_own_RHU_1416_loc;§YNorthern Gazar Gord§!: §RUnowned§!§I;x
 claim_status_doesnt_own_KHA_364_loc;§YWizard's Wanderings§!: §RUnowned§!§I;x
 add_claim_LOR_769_loc;§WWe will gain claims over §!§YParth Celebrant§!§I;x
@@ -2634,9 +2659,11 @@ claim_status_owns_LIN_1153_loc;§YThargelion§!: §GOwned§!§I;x
 claim_status_owns_RHO_462_loc;§YNindalf§!: §GOwned§!§I;x
 LOR_unlock_invention_lembas_bread_loc;Unlocks invention §YLembas Bread§! at the §Ystart of the next month§!, giving the following effects:\nArmies: Supply Consumption: §G-10%§!\nRGO output efficiency tech: §G+5.0%§!§I;x
 claim_status_owns_SHI_1040_loc;§YEastfarthing§!: §GOwned§!§I;x
+ISE_goblin_men_craftsmen_10000_isengard_loc;Creates a new pop of §Y10000 Men Goblin Men Guild Artisans§! in §YIsengard§!§I;x
 add_claim_GON_78_loc;§WWe will gain claims over §!§YDor-en-Edhel§!§I;x
 claim_status_owns_GON_188_loc;§YCentral Drúwaith Iaur§!: §GOwned§!§I;x
 remove_claim_ERE_660_loc;§WWe will lose claims over §!§YMountainlands§!§I;x
+ISE_isengard_orc_craftsmen_500_blackmarch_fort_loc;\nCreates a new pop of §Y500 Orc Isengard Orc Guild Artisans§! in §YBlackmarch Fort§!§I;x
 remove_claim_GON_226_loc;§WWe will lose claims over §!§YLaergaladrín§!§I;x
 remove_claim_BLU_914_loc;§WWe will lose claims over §!§YHarvaneth§!§I;x
 remove_claim_GON_796_loc;§WWe will lose claims over §!§YWhite Mountains§!§I;x
@@ -2657,6 +2684,8 @@ add_claim_DUN_1450_loc;§WWe will gain claims over §!§YGravenwood§!§I;x
 claim_status_owns_KHA_342_loc;§YMuzeida Vale§!: §GOwned§!§I;x
 claim_status_doesnt_own_GON_98_loc;§YTarlang§!: §RUnowned§!§I;x
 claim_status_owns_RHO_507_loc;§YDor Rhúnen§!: §GOwned§!§I;x
+ISE_goblin_men_craftsmen_3000_eastwatch_loc;\nCreates a new pop of §Y3000 Men Goblin Men Guild Artisans§! in §YEastwatch§!§I;x
+ISE_goblin_men_craftsmen_3000_mines_of_methedras_loc;\nCreates a new pop of §Y3000 Men Goblin Men Guild Artisans§! in §YMines of Methedras§!§I;x
 claim_status_owns_ANG_999_loc;§YDur-Lûgata§!: §GOwned§!§I;x
 DAL_appoint_bards_diplomats_erland_loc;Erland the Diplomat;x
 claim_status_owns_DAL_642_loc;§YSalenin Vale§!: §GOwned§!§I;x
@@ -2673,6 +2702,7 @@ claim_status_doesnt_own_KHA_380_loc;§YKhandu Prakhod§!: §RUnowned§!§I;x
 remove_claim_RHO_500_loc;§WWe will lose claims over §!§YDor Rewinion§!§I;x
 claim_status_owns_LIN_111_loc;§YForlindon§!: §GOwned§!§I;x
 remove_claim_BRE_1014_loc;§WWe will lose claims over §!§YNan Turnath§!§I;x
+ISE_isengard_orc_craftsmen_1000_mines_of_methedras_loc;\nCreates a new pop of §Y1000 Orc Isengard Orc Guild Artisans§! in §YMines of Methedras§!§I;x
 remove_claim_MOR_418_loc;§WWe will lose claims over §!§YNorthern Nurza-Shukh§!§I;x
 claim_status_owns_RHO_476_loc;§YTalath Harroch§!: §GOwned§!§I;x
 FFN_join_alliance_dwarves_men_loc;If the pass the conditions on this decision (ignoring the always false), we will almost be eligible to be invited to the Alliance of Dwarves and Men -- we also need to be allied to realm that is currently in the alliance. From here, the ai will always attempt to send an invite, however, §Rit is possible for the rest of the alliance to reject the invite proposal§!.\n\nThe full list of conditions is:\nWe are §GAnti-Sauron§! or §POpportunistic§!\nWe are not a vassal\nWe are either a Dwarven realm, a Northman realm, a secondary power or a great power\nOur capital is in Rhovanion§I;x
@@ -2759,6 +2789,7 @@ claim_status_doesnt_own_LIN_953_loc;§YGalfalas§!: §RUnowned§!§I;x
 claim_status_doesnt_own_RHU_619_loc;§YNorthern Gazar Utal§!: §RUnowned§!§I;x
 claim_status_doesnt_own_GON_56_loc;§YTolfalas§!: §RUnowned§!§I;x
 claim_status_owns_RHO_458_loc;§YDagorlad§!: §GOwned§!§I;x
+ISE_goblin_men_craftsmen_3000_blackmarch_fort_loc;\nCreates a new pop of §Y3000 Men Goblin Men Guild Artisans§! in §YBlackmarch Fort§!§I;x
 remove_claim_ANV_740_loc;§WWe will lose claims over §!§YGreylin Vale§!§I;x
 claim_status_doesnt_own_RHO_465_loc;§YEmyn Muil§!: §RUnowned§!§I;x
 settings_disable_settings_loc;The settings menu will close and the decision to reopen the menu will be disabled. §RThis cannot be undone§!§I;x
@@ -2860,6 +2891,7 @@ claim_status_owns_CAR_882_loc;§YTyrn Harn§!: §GOwned§!§I;x
 add_claim_GON_253_loc;§WWe will gain claims over §!§YCarnentir§!§I;x
 claim_status_doesnt_own_RHU_634_loc;§YNorthern Gazar Narkad§!: §RUnowned§!§I;x
 add_claim_ISE_811_loc;§WWe will gain claims over §!§YNan Curunír§!§I;x
+ISE_goblin_men_craftsmen_3000_fangorn_pass_loc;\nCreates a new pop of §Y3000 Men Goblin Men Guild Artisans§! in §YFangorn Pass§!§I;x
 add_claim_RHO_491_loc;§WWe will gain claims over §!§YSagathavuld§!§I;x
 claim_status_doesnt_own_BEO_751_loc;§YMiddle Vales§!: §RUnowned§!§I;x
 claim_status_owns_ANG_1371_loc;§YDur-Kosha§!: §GOwned§!§I;x
@@ -2867,6 +2899,7 @@ claim_status_doesnt_own_GON_92_loc;§YLamedon§!: §RUnowned§!§I;x
 add_claim_GON_146_loc;§WWe will gain claims over §!§YParth Feren§!§I;x
 add_claim_GON_81_loc;§WWe will gain claims over §!§YTarnost§!§I;x
 add_claim_ERE_682_loc;§WWe will gain claims over §!§YCirith Himninond§!§I;x
+ISE_uruk_hai_soldiers_12000_isengard_loc;Creates a new pop of §Y12000 Orc Uruk Hai Soldiers§! in §YIsengard§!§I;x
 remove_claim_ERE_657_loc;§WWe will lose claims over §!§YDádhrik's Gap§!§I;x
 add_claim_KHA_387_loc;§WWe will gain claims over §!§YKhandu Khûrvesra§!§I;x
 add_claim_RHU_578_loc;§WWe will gain claims over §!§YKara Kalpak§!§I;x
@@ -2916,6 +2949,7 @@ DAL_king_of_the_northmen_desc_loc;Rule each Northman culture within Gramavuld!;x
 claim_status_owns_ENE_837_loc;§YGreyflood Vale§!: §GOwned§!§I;x
 remove_claim_RHU_1253_loc;§WWe will lose claims over §!§YCaill na Trowe§!§I;x
 add_claim_RHO_507_loc;§WWe will gain claims over §!§YDor Rhúnen§!§I;x
+ISE_isengard_orc_soldiers_1000_blackmarch_fort_loc;\nCreates a new pop of §Y1000 Orc Isengard Orc Soldiers§! in §YBlackmarch Fort§!§I;x
 claim_status_owns_LOS_1346_loc;§YHyvämetsästyksen Maa§!: §GOwned§!§I;x
 claim_status_owns_RHO_528_loc;§YEast Dunheath§!: §GOwned§!§I;x
 DAL_constructing_meres_end_boat_lift_money_loc;§GIf we do not have the necessary technology to rebuilt the boatlift, but Erebor does, this decision will cost 100,000 pounds instead of 50,000, with 50,000 of those pounds being sent to Erebor§!\n§I;x
@@ -2993,6 +3027,7 @@ add_claim_SHI_1036_loc;§WWe will gain claims over §!§YSouthfarthing§!§I;x
 remove_claim_LIN_957_loc;§WWe will lose claims over §!§YEstoriand§!§I;x
 claim_status_doesnt_own_GON_105_loc;§YLower Morthond Vale§!: §RUnowned§!§I;x
 add_claim_ROH_805_loc;§WWe will gain claims over §!§YGap of Rohan§!§I;x
+ISE_half_orc_labourers_3000_mines_of_methedras_loc;\nCreates a new pop of §Y3000 Orc Half Orc Labourers§! in §YMines of Methedras§!§I;x
 add_claim_RHU_1416_loc;§WWe will gain claims over §!§YNorthern Gazar Gord§!§I;x
 claim_status_doesnt_own_SHI_1030_loc;§YWestmarch§!: §RUnowned§!§I;x
 claim_status_owns_CAR_1208_loc;§YDol Tinereb§!: §GOwned§!§I;x
@@ -3033,6 +3068,7 @@ remove_claim_SHI_1034_loc;§WWe will lose claims over §!§YSarn Marches§!§I;x
 province_wealth_decrease_2_loc;§OProvince Wealth§! §Rdecreases by 2§!;x
 add_claim_GON_57_loc;§WWe will gain claims over §!§YEmyn Ernil§!§I;x
 add_claim_GON_14_loc;§WWe will gain claims over §!§YTalath Anór§!§I;x
+ISE_isengard_orc_soldiers_3000_lag_sharak_loc;\nCreates a new pop of §Y3000 Orc Isengard Orc Soldiers§! in §YLag Sharak§!§I;x
 DAL_northman_generals_grammas_desc_loc;The Lords of Riding will only spawn if Grammas is accepted, and if any conditions in parenthesis are met.;x
 add_claim_ERE_291_loc;§WWe will gain claims over §!§YWithered Heath§!§I;x
 claim_status_owns_LIN_936_loc;§YRhûlindon§!: §GOwned§!§I;x

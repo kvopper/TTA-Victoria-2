@@ -49,6 +49,21 @@
 		religion = orc
 		size = 3000 # Enough for 2 units
 	}
+	labourers = {
+		culture = half_orc
+		religion = orc
+		size = 10000
+	}
+	craftsmen = {
+		culture = goblin_men
+		religion = men
+		size = 10000
+	}
+	soldiers = {
+		culture = uruk_hai
+		religion = orc
+		size = 12000 # Enough for 5 units
+	}
 }
 
 1510 = { # Blackmarch Fort
@@ -66,6 +81,21 @@
 		culture = isengard_orc
 		religion = orc
 		size = 1000 # Enough for 1 unit
+	}
+	labourers = {
+		culture = half_orc
+		religion = orc
+		size = 3000
+	}
+	craftsmen = {
+		culture = goblin_men
+		religion = men
+		size = 3000
+	}
+	soldiers = {
+		culture = uruk_hai
+		religion = orc
+		size = 3000 # Enough for 2 units
 	}
 }
 
@@ -85,6 +115,21 @@
 		religion = orc
 		size = 500 # Enough for 0 units
 	}
+	labourers = {
+		culture = half_orc
+		religion = orc
+		size = 3000
+	}
+	craftsmen = {
+		culture = goblin_men
+		religion = men
+		size = 3000
+	}
+	soldiers = {
+		culture = uruk_hai
+		religion = orc
+		size = 3000 # Enough for 2 units
+	}
 }
 
 1512 = { # Lag Sharak
@@ -100,6 +145,21 @@
 	}
 	soldiers = {
 		culture = isengard_orc
+		religion = orc
+		size = 3000 # Enough for 2 units
+	}
+	labourers = {
+		culture = half_orc
+		religion = orc
+		size = 3000
+	}
+	craftsmen = {
+		culture = goblin_men
+		religion = men
+		size = 3000
+	}
+	soldiers = {
+		culture = uruk_hai
 		religion = orc
 		size = 3000 # Enough for 2 units
 	}
@@ -121,6 +181,21 @@
 		religion = orc
 		size = 3000 # Enough for 2 units
 	}
+	labourers = {
+		culture = half_orc
+		religion = orc
+		size = 3000
+	}
+	craftsmen = {
+		culture = goblin_men
+		religion = men
+		size = 3000
+	}
+	soldiers = {
+		culture = uruk_hai
+		religion = orc
+		size = 3000 # Enough for 2 units
+	}
 }
 
 1514 = { # Fangorn Pass
@@ -136,6 +211,21 @@
 	}
 	soldiers = {
 		culture = isengard_orc
+		religion = orc
+		size = 3000 # Enough for 2 units
+	}
+	labourers = {
+		culture = half_orc
+		religion = orc
+		size = 3000
+	}
+	craftsmen = {
+		culture = goblin_men
+		religion = men
+		size = 3000
+	}
+	soldiers = {
+		culture = uruk_hai
 		religion = orc
 		size = 3000 # Enough for 2 units
 	}

@@ -573,7 +573,9 @@ country_event = {
 	id = 50113
 	title = "The Call of Power"
 	desc = "EVTDESC50113"
-	picture = isengard/isengard
+	picture = "isengard/isengard"
+	
+	fire_only_once = yes
 	
 	trigger = {
 		has_country_flag = ISE_content
@@ -605,144 +607,263 @@ country_event = {
 		
 		plurality = 5
 		
-		1509 = {
-			random_pop = {
-				limit = {
-					pop_type = labourers
-					has_pop_culture = isengard_orc
+		ISE_isengard_orc_labourers_6000_isengard_loc = {}
+		end_color_loc = {}
+		ISE_isengard_orc_craftsmen_2000_isengard_loc = {}
+		end_color_loc = {}
+		ISE_isengard_orc_soldiers_3000_isengard_loc = {}
+		end_color_loc = {}
+		ISE_isengard_orc_labourers_1500_blackmarch_fort_loc = {}
+		end_color_loc = {}
+		ISE_isengard_orc_craftsmen_500_blackmarch_fort_loc = {}
+		end_color_loc = {}
+		ISE_isengard_orc_soldiers_1000_blackmarch_fort_loc = {}
+		end_color_loc = {}
+		ISE_isengard_orc_labourers_1000_eastwatch_loc = {}
+		end_color_loc = {}
+		ISE_isengard_orc_craftsmen_500_eastwatch_loc = {}
+		end_color_loc = {}
+		ISE_isengard_orc_soldiers_500_eastwatch_loc = {}
+		end_color_loc = {}
+		ISE_isengard_orc_labourers_3000_lag_sharak_loc = {}
+		end_color_loc = {}
+		ISE_isengard_orc_craftsmen_1000_lag_sharak_loc = {}
+		end_color_loc = {}
+		ISE_isengard_orc_soldiers_3000_lag_sharak_loc = {}
+		end_color_loc = {}
+		ISE_isengard_orc_labourers_3000_mines_of_methedras_loc = {}
+		end_color_loc = {}
+		ISE_isengard_orc_craftsmen_1000_mines_of_methedras_loc = {}
+		end_color_loc = {}
+		ISE_isengard_orc_soldiers_3000_mines_of_methedras_loc = {}
+		end_color_loc = {}
+		ISE_isengard_orc_labourers_3000_fangorn_pass_loc = {}
+		end_color_loc = {}
+		ISE_isengard_orc_craftsmen_1000_fangorn_pass_loc = {}
+		end_color_loc = {}
+		ISE_isengard_orc_soldiers_3000_fangorn_pass_loc = {}
+		end_color_loc = {}
+		empty_line_loc = {}
+		
+		set_global_flag = hidden_effects
+		random_owned = {
+			limit = { owner = { has_global_flag = hidden_effects } }
+			owner = {
+				primary_culture = isengard_orc
+				
+				ISE_811 = {
+					any_pop = {
+						limit = { pop_type = labourers }
+						pop_type = bankers
+					}
 				}
-				move_pop = 811 # Isengard
-			}
-			random_pop = {
-				limit = {
-					pop_type = craftsmen
-					has_pop_culture = isengard_orc
+				
+				1509 = {
+					random_pop = {
+						limit = {
+							pop_type = labourers
+							is_culture_group = THIS
+						}
+						move_pop = 811 # Isengard
+					}
 				}
-				move_pop = 811 # Isengard
-			}
-			random_pop = {
-				limit = {
-					pop_type = soldiers
-					has_pop_culture = isengard_orc
+				1510 = {
+					random_pop = {
+						limit = {
+							pop_type = labourers
+							is_culture_group = THIS
+						}
+						move_pop = 1447 # Blackmarch Fort
+					}
 				}
-				move_pop = 811 # Isengard
+				1511 = {
+					random_pop = {
+						limit = {
+							pop_type = labourers
+							is_culture_group = THIS
+						}
+						move_pop = 1532 # Eastwatch
+					}
+				}
+				1512 = {
+					random_pop = {
+						limit = {
+							pop_type = labourers
+							is_culture_group = THIS
+						}
+						move_pop = 1446 # Lag Sharak
+					}
+				}
+				1513 = {
+					random_pop = {
+						limit = {
+							pop_type = labourers
+							is_culture_group = THIS
+						}
+						move_pop = 812 # Mines of Methedras
+					}
+				}
+				1514 = {
+					random_pop = {
+						limit = {
+							pop_type = labourers
+							is_culture_group = THIS
+						}
+						move_pop = 1533 # Fangorn Pass
+					}
+				}
+				
+				ISE_811 = {
+					any_pop = {
+						limit = { pop_type = bankers }
+						pop_type = labourers
+					}
+				}
+				
+				ISE_811 = {
+					any_pop = {
+						limit = { pop_type = craftsmen }
+						pop_type = bankers
+					}
+				}
+				
+				1509 = {
+					random_pop = {
+						limit = {
+							pop_type = craftsmen
+							is_culture_group = THIS
+						}
+						move_pop = 811 # Isengard
+					}
+				}
+				1510 = {
+					random_pop = {
+						limit = {
+							pop_type = craftsmen
+							is_culture_group = THIS
+						}
+						move_pop = 1447 # Blackmarch Fort
+					}
+				}
+				1511 = {
+					random_pop = {
+						limit = {
+							pop_type = craftsmen
+							is_culture_group = THIS
+						}
+						move_pop = 1532 # Eastwatch
+					}
+				}
+				1512 = {
+					random_pop = {
+						limit = {
+							pop_type = craftsmen
+							is_culture_group = THIS
+						}
+						move_pop = 1446 # Lag Sharak
+					}
+				}
+				1513 = {
+					random_pop = {
+						limit = {
+							pop_type = craftsmen
+							is_culture_group = THIS
+						}
+						move_pop = 812 # Mines of Methedras
+					}
+				}
+				1514 = {
+					random_pop = {
+						limit = {
+							pop_type = craftsmen
+							is_culture_group = THIS
+						}
+						move_pop = 1533 # Fangorn Pass
+					}
+				}
+				
+				ISE_811 = {
+					any_pop = {
+						limit = { pop_type = bankers }
+						pop_type = craftsmen
+					}
+				}
+				
+				ISE_811 = {
+					any_pop = {
+						limit = { pop_type = soldiers }
+						pop_type = bankers
+					}
+				}
+				
+				1509 = {
+					random_pop = {
+						limit = {
+							pop_type = soldiers
+							is_culture_group = THIS
+						}
+						move_pop = 811 # Isengard
+					}
+				}
+				1510 = {
+					random_pop = {
+						limit = {
+							pop_type = soldiers
+							is_culture_group = THIS
+						}
+						move_pop = 1447 # Blackmarch Fort
+					}
+				}
+				1511 = {
+					random_pop = {
+						limit = {
+							pop_type = soldiers
+							is_culture_group = THIS
+						}
+						move_pop = 1532 # Eastwatch
+					}
+				}
+				1512 = {
+					random_pop = {
+						limit = {
+							pop_type = soldiers
+							is_culture_group = THIS
+						}
+						move_pop = 1446 # Lag Sharak
+					}
+				}
+				1513 = {
+					random_pop = {
+						limit = {
+							pop_type = soldiers
+							is_culture_group = THIS
+						}
+						move_pop = 812 # Mines of Methedras
+					}
+				}
+				1514 = {
+					random_pop = {
+						limit = {
+							pop_type = soldiers
+							is_culture_group = THIS
+						}
+						move_pop = 1533 # Fangorn Pass
+					}
+				}
+				
+				ISE_811 = {
+					any_pop = {
+						limit = { pop_type = bankers }
+						pop_type = soldiers
+					}
+				}
 			}
 		}
-		1510 = {
-			random_pop = {
-				limit = {
-					pop_type = labourers
-					has_pop_culture = isengard_orc
-				}
-				move_pop = 1447 # Blackmarch Fort
-			}
-			random_pop = {
-				limit = {
-					pop_type = craftsmen
-					has_pop_culture = isengard_orc
-				}
-				move_pop = 1447 # Blackmarch Fort
-			}
-			random_pop = {
-				limit = {
-					pop_type = soldiers
-					has_pop_culture = isengard_orc
-				}
-				move_pop = 1447 # Blackmarch Fort
-			}
+		random_owned = {
+			limit = { owner = { has_global_flag = hidden_effects } }
+			owner = { primary_culture = dunnish }
 		}
-		1511 = {
-			random_pop = {
-				limit = {
-					pop_type = labourers
-					has_pop_culture = isengard_orc
-				}
-				move_pop = 1532 # Eastwatch
-			}
-			random_pop = {
-				limit = {
-					pop_type = craftsmen
-					has_pop_culture = isengard_orc
-				}
-				move_pop = 1532 # Eastwatch
-			}
-			random_pop = {
-				limit = {
-					pop_type = soldiers
-					has_pop_culture = isengard_orc
-				}
-				move_pop = 1532 # Eastwatch
-			}
-		}
-		1512 = {
-			random_pop = {
-				limit = {
-					pop_type = labourers
-					has_pop_culture = isengard_orc
-				}
-				move_pop = 1446 # Lag Sharak
-			}
-			random_pop = {
-				limit = {
-					pop_type = craftsmen
-					has_pop_culture = isengard_orc
-				}
-				move_pop = 1446 # Lag Sharak
-			}
-			random_pop = {
-				limit = {
-					pop_type = soldiers
-					has_pop_culture = isengard_orc
-				}
-				move_pop = 1446 # Lag Sharak
-			}
-		}
-		1513 = {
-			random_pop = {
-				limit = {
-					pop_type = labourers
-					has_pop_culture = isengard_orc
-				}
-				move_pop = 812 # Mines of Methedras
-			}
-			random_pop = {
-				limit = {
-					pop_type = craftsmen
-					has_pop_culture = isengard_orc
-				}
-				move_pop = 812 # Mines of Methedras
-			}
-			random_pop = {
-				limit = {
-					pop_type = soldiers
-					has_pop_culture = isengard_orc
-				}
-				move_pop = 812 # Mines of Methedras
-			}
-		}
-		1514 = {
-			random_pop = {
-				limit = {
-					pop_type = labourers
-					has_pop_culture = isengard_orc
-				}
-				move_pop = 1533 # Fangorn Pass
-			}
-			random_pop = {
-				limit = {
-					pop_type = craftsmen
-					has_pop_culture = isengard_orc
-				}
-				move_pop = 1533 # Fangorn Pass
-			}
-			random_pop = {
-				limit = {
-					pop_type = soldiers
-					has_pop_culture = isengard_orc
-				}
-				move_pop = 1533 # Fangorn Pass
-			}
-		}
+		clr_global_flag = hidden_effects
 		
 		add_accepted_culture = isengard_orc
 		
@@ -766,6 +887,409 @@ country_event = {
 				has_global_flag = railroading_enabled
 			}
 		}
+	}
+}
+
+# The Half-orcs
+country_event = {
+	id = 50114
+	title = "The Half-orcs"
+	desc = "EVTDESC50114" # TODO: write
+	picture = "isengard/isengard"
+	
+	fire_only_once = yes
+	
+	# TODO Configure once trigger is decided
+	trigger = {
+		has_country_flag = ISE_content
+		OR = {
+			ruling_party = ISE_saruman_sauronite
+			AND = {
+				ruling_party = ISE_saruman
+				has_country_modifier = ISE_ring_of_saruman
+			}
+		}
+		OR = {
+			year = 2985
+			AND = {
+				year = 2975
+				has_global_flag = railroading_disabled
+			}
+		}
+	}
+	
+	# TODO Configure once trigger is decided
+	mean_time_to_happen = { months = 12 }
+	
+	option = {
+		name = "A failure always has their usages"
+		
+		prestige = -5 # Since this is technically a failure
+		
+		ISE_half_orc_labourers_10000_isengard_loc = {}
+		end_color_loc = {}
+		ISE_half_orc_labourers_3000_blackmarch_fort_loc = {}
+		end_color_loc = {}
+		ISE_half_orc_labourers_3000_eastwatch_loc = {}
+		end_color_loc = {}
+		ISE_half_orc_labourers_3000_lag_sharak_loc = {}
+		end_color_loc = {}
+		ISE_half_orc_labourers_3000_mines_of_methedras_loc = {}
+		end_color_loc = {}
+		ISE_half_orc_labourers_3000_fangorn_pass_loc = {}
+		end_color_loc = {}
+		empty_line_loc = {}
+		
+		set_global_flag = hidden_effects
+		random_owned = {
+			limit = { owner = { has_global_flag = hidden_effects } }
+			owner = {
+				primary_culture = half_orc
+				
+				ISE_811 = {
+					any_pop = {
+						limit = { pop_type = labourers }
+						pop_type = bankers
+					}
+				}
+				
+				1509 = {
+					random_pop = {
+						limit = {
+							pop_type = labourers
+							is_culture_group = THIS
+						}
+						move_pop = 811 # Isengard
+					}
+				}
+				1510 = {
+					random_pop = {
+						limit = {
+							pop_type = labourers
+							is_culture_group = THIS
+						}
+						move_pop = 1447 # Blackmarch Fort
+					}
+				}
+				1511 = {
+					random_pop = {
+						limit = {
+							pop_type = labourers
+							is_culture_group = THIS
+						}
+						move_pop = 1532 # Eastwatch
+					}
+				}
+				1512 = {
+					random_pop = {
+						limit = {
+							pop_type = labourers
+							is_culture_group = THIS
+						}
+						move_pop = 1446 # Lag Sharak
+					}
+				}
+				1513 = {
+					random_pop = {
+						limit = {
+							pop_type = labourers
+							is_culture_group = THIS
+						}
+						move_pop = 812 # Mines of Methedras
+					}
+				}
+				1514 = {
+					random_pop = {
+						limit = {
+							pop_type = labourers
+							is_culture_group = THIS
+						}
+						move_pop = 1533 # Fangorn Pass
+					}
+				}
+			}
+				
+				ISE_811 = {
+					any_pop = {
+						limit = { pop_type = bankers }
+						pop_type = labourers
+					}
+				}
+		}
+		random_owned = {
+			limit = { owner = { has_global_flag = hidden_effects } }
+			owner = { primary_culture = dunnish }
+		}
+		clr_global_flag = hidden_effects
+		
+		add_accepted_culture = half_orc
+	}
+}
+
+# The Goblin-men
+country_event = {
+	id = 50115
+	title = "The Goblin-men"
+	desc = "EVTDESC50115" # TODO: write
+	picture = "isengard/isengard"
+	
+	fire_only_once = yes
+	
+	# TODO Configure once trigger is decided
+	trigger = {
+		has_country_flag = ISE_content
+		OR = {
+			ruling_party = ISE_saruman_sauronite
+			AND = {
+				ruling_party = ISE_saruman
+				has_country_modifier = ISE_ring_of_saruman
+			}
+		}
+		OR = {
+			year = 2985
+			AND = {
+				year = 2975
+				has_global_flag = railroading_disabled
+			}
+		}
+	}
+	
+	# TODO Configure once trigger is decided
+	mean_time_to_happen = { months = 12 }
+	
+	option = {
+		name = "A failure always has their usages"
+		
+		prestige = -5 # Since this is technically a failure
+		
+		ISE_goblin_men_craftsmen_10000_isengard_loc = {}
+		end_color_loc = {}
+		ISE_goblin_men_craftsmen_3000_blackmarch_fort_loc = {}
+		end_color_loc = {}
+		ISE_goblin_men_craftsmen_3000_eastwatch_loc = {}
+		end_color_loc = {}
+		ISE_goblin_men_craftsmen_3000_lag_sharak_loc = {}
+		end_color_loc = {}
+		ISE_goblin_men_craftsmen_3000_mines_of_methedras_loc = {}
+		end_color_loc = {}
+		ISE_goblin_men_craftsmen_3000_fangorn_pass_loc = {}
+		end_color_loc = {}
+		empty_line_loc = {}
+		
+		set_global_flag = hidden_effects
+		random_owned = {
+			limit = { owner = { has_global_flag = hidden_effects } }
+			owner = {
+				primary_culture = goblin_men
+				
+				ISE_811 = {
+					any_pop = {
+						limit = { pop_type = craftsmen }
+						pop_type = bankers
+					}
+				}
+				
+				1509 = {
+					random_pop = {
+						limit = {
+							pop_type = craftsmen
+							is_culture_group = THIS
+						}
+						move_pop = 811 # Isengard
+					}
+				}
+				1510 = {
+					random_pop = {
+						limit = {
+							pop_type = craftsmen
+							is_culture_group = THIS
+						}
+						move_pop = 1447 # Blackmarch Fort
+					}
+				}
+				1511 = {
+					random_pop = {
+						limit = {
+							pop_type = craftsmen
+							is_culture_group = THIS
+						}
+						move_pop = 1532 # Eastwatch
+					}
+				}
+				1512 = {
+					random_pop = {
+						limit = {
+							pop_type = craftsmen
+							is_culture_group = THIS
+						}
+						move_pop = 1446 # Lag Sharak
+					}
+				}
+				1513 = {
+					random_pop = {
+						limit = {
+							pop_type = craftsmen
+							is_culture_group = THIS
+						}
+						move_pop = 812 # Mines of Methedras
+					}
+				}
+				1514 = {
+					random_pop = {
+						limit = {
+							pop_type = craftsmen
+							is_culture_group = THIS
+						}
+						move_pop = 1533 # Fangorn Pass
+					}
+				}
+				
+				ISE_811 = {
+					any_pop = {
+						limit = { pop_type = bankers }
+						pop_type = craftsmen
+					}
+				}
+			}
+		}
+		random_owned = {
+			limit = { owner = { has_global_flag = hidden_effects } }
+			owner = { primary_culture = dunnish }
+		}
+		clr_global_flag = hidden_effects
+		
+		add_accepted_culture = goblin_men
+	}
+}
+
+# The Uruk-hai
+country_event = {
+	id = 50116
+	title = "The Uruk-hai"
+	desc = "EVTDESC50116" # TODO: write
+	picture = "isengard/isengard"
+	
+	fire_only_once = yes
+	
+	# TODO Configure once trigger is decided
+	trigger = {
+		has_country_flag = ISE_content
+		OR = {
+			ruling_party = ISE_saruman_sauronite
+			AND = {
+				ruling_party = ISE_saruman
+				has_country_modifier = ISE_ring_of_saruman
+			}
+		}
+		OR = {
+			year = 2985
+			AND = {
+				year = 2975
+				has_global_flag = railroading_disabled
+			}
+		}
+	}
+	
+	# TODO Configure once trigger is decided
+	mean_time_to_happen = { months = 12 }
+	
+	option = {
+		name = "A failure always has their usages"
+		
+		prestige = -5 # Since this is technically a failure
+		
+		ISE_uruk_hai_soldiers_12000_isengard_loc = {}
+		end_color_loc = {}
+		ISE_uruk_hai_soldiers_3000_blackmarch_fort_loc = {}
+		end_color_loc = {}
+		ISE_uruk_hai_soldiers_3000_eastwatch_loc = {}
+		end_color_loc = {}
+		ISE_uruk_hai_soldiers_3000_lag_sharak_loc = {}
+		end_color_loc = {}
+		ISE_uruk_hai_soldiers_3000_mines_of_methedras_loc = {}
+		end_color_loc = {}
+		ISE_uruk_hai_soldiers_3000_fangorn_pass_loc = {}
+		end_color_loc = {}
+		empty_line_loc = {}
+		
+		primary_culture = uruk_hai
+		
+		set_global_flag = hidden_effects
+		random_owned = {
+			limit = { owner = { has_global_flag = hidden_effects } }
+			owner = {
+				ISE_811 = {
+					any_pop = {
+						limit = { pop_type = soldiers }
+						pop_type = bankers
+					}
+				}
+				1509 = {
+					random_pop = {
+						limit = {
+							pop_type = soldiers
+							is_culture_group = THIS
+						}
+						move_pop = 811 # Isengard
+					}
+				}
+				1510 = {
+					random_pop = {
+						limit = {
+							pop_type = soldiers
+							is_culture_group = THIS
+						}
+						move_pop = 1447 # Blackmarch Fort
+					}
+				}
+				1511 = {
+					random_pop = {
+						limit = {
+							pop_type = soldiers
+							is_culture_group = THIS
+						}
+						move_pop = 1532 # Eastwatch
+					}
+				}
+				1512 = {
+					random_pop = {
+						limit = {
+							pop_type = soldiers
+							is_culture_group = THIS
+						}
+						move_pop = 1446 # Lag Sharak
+					}
+				}
+				1513 = {
+					random_pop = {
+						limit = {
+							pop_type = soldiers
+							is_culture_group = THIS
+						}
+						move_pop = 812 # Mines of Methedras
+					}
+				}
+				1514 = {
+					random_pop = {
+						limit = {
+							pop_type = soldiers
+							is_culture_group = THIS
+						}
+						move_pop = 1533 # Fangorn Pass
+					}
+				}
+				
+				ISE_811 = {
+					any_pop = {
+						limit = { pop_type = bankers }
+						pop_type = soldiers
+					}
+				}
+			}
+		}
+		clr_global_flag = hidden_effects
+		
+		add_accepted_culture = dunnish
 	}
 }
 
