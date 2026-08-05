@@ -6,7 +6,7 @@
 #	The Search for Power
 #	Aligning Dunland, Enedwaith and their neighbors
 #	Surveillance
-#	Uruk Hai
+#	Uruk-hai
 
 # Starting Decision
 political_decisions = {
@@ -532,7 +532,7 @@ political_decisions = {
 	}
 }
 
-# Uruk Hai
+# Uruk-hai
 # TODO REWORK
 political_decisions = {
 	breed_uruk_hai = {

@@ -1293,11 +1293,11 @@ country_event = {
 	}
 }
 
-# The Age of the Uruk Hai
+# The Age of the Uruk-hai
 # TODO rework
 country_event = {
 	id = 50120
-	title = "The Age of the Uruk Hai"
+	title = "The Age of the Uruk-hai"
 	desc = "EVTDESC50120"
 	picture = lord_of_isengard
 

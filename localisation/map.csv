@@ -1597,7 +1597,7 @@ add_claim_MOR_397_loc;§WWe will gain claims over §!§YEastern Desolation§!§I
 claim_status_doesnt_own_ERE_682_loc;§YCirith Himninond§!: §RUnowned§!§I;x
 claim_status_doesnt_own_CAR_1204_loc;§YGirithlin§!: §RUnowned§!§I;x
 DAL_appoint_bards_diplomats_erland_desc_loc;Erland was a great diplomat of Dale, working under the rule of Bard, Bain, Brand and Bard II's rule. He would be the primary negotiator with the Grammas, and would go onto lead the Barding delegation to the Council of Elrond.;x
-ISE_uruk_hai_soldiers_3000_fangorn_pass_loc;\nCreates a new pop of §Y3000 Orc Uruk Hai Soldiers§! in §YFangorn Pass§!§I;x
+ISE_uruk_hai_soldiers_3000_fangorn_pass_loc;\nCreates a new pop of §Y3000 Orc Uruk-hai Soldiers§! in §YFangorn Pass§!§I;x
 claim_status_doesnt_own_DND_307_loc;§YEmyn Sûl§!: §RUnowned§!§I;x
 remove_claim_MOR_408_loc;§WWe will lose claims over §!§YEphel Dûath§!§I;x
 add_claim_GON_16_loc;§WWe will gain claims over §!§YOld Anórien§!§I;x
@@ -1685,7 +1685,7 @@ claim_status_owns_BLU_942_loc;§YKhazadbizar§!: §GOwned§!§I;x
 claim_status_owns_IML_875_loc;§YSruth Líath Marches§!: §GOwned§!§I;x
 expand_culture_reach_loc;Expand Cultural Reach;x
 claim_status_doesnt_own_GON_23_loc;§YEthir Erui§!: §RUnowned§!§I;x
-ISE_uruk_hai_soldiers_3000_lag_sharak_loc;\nCreates a new pop of §Y3000 Orc Uruk Hai Soldiers§! in §YLag Sharak§!§I;x
+ISE_uruk_hai_soldiers_3000_lag_sharak_loc;\nCreates a new pop of §Y3000 Orc Uruk-hai Soldiers§! in §YLag Sharak§!§I;x
 DAL_merchant_guild_bop_merchants_permanent_loc;§TThe realm has chosen to officially support the Merchants§! (+10);x
 add_claim_DOR_545_loc;§WWe will gain claims over §!§YDobok Rhín§!§I;x
 claim_status_doesnt_own_RHO_515_loc;§YUpper Sekelavuld§!: §RUnowned§!§I;x
@@ -1719,7 +1719,7 @@ remove_claim_CAR_890_loc;§WWe will lose claims over §!§YRohwaen§!§I;x
 claim_status_owns_GON_228_loc;§YHarfalas§!: §GOwned§!§I;x
 claim_status_doesnt_own_GUL_1436_loc;§YSouthern Mirkwood§!: §RUnowned§!§I;x
 ISE_isengard_orc_craftsmen_1000_lag_sharak_loc;\nCreates a new pop of §Y1000 Orc Isengard Orc Guild Artisans§! in §YLag Sharak§!§I;x
-ISE_uruk_hai_soldiers_3000_blackmarch_fort_loc;\nCreates a new pop of §Y3000 Orc Uruk Hai Soldiers§! in §YBlackmarch Fort§!§I;x
+ISE_uruk_hai_soldiers_3000_blackmarch_fort_loc;\nCreates a new pop of §Y3000 Orc Uruk-hai Soldiers§! in §YBlackmarch Fort§!§I;x
 claim_status_doesnt_own_RHU_578_loc;§YKara Kalpak§!: §RUnowned§!§I;x
 claim_status_doesnt_own_RHU_1264_loc;§YCoiced Caradaingen§!: §RUnowned§!§I;x
 claim_status_doesnt_own_SHI_1036_loc;§YSouthfarthing§!: §RUnowned§!§I;x
@@ -2208,7 +2208,7 @@ claim_status_owns_SHI_1030_loc;§YWestmarch§!: §GOwned§!§I;x
 claim_status_doesnt_own_UMB_263_loc;§YTol Uialgaer§!: §RUnowned§!§I;x
 remove_claim_ANG_1004_loc;§WWe will lose claims over §!§YEn Udanoriath§!§I;x
 DAL_send_ultimatum_to_rivermen_loc;§GAn ultimatum will be sent to each of the Rivermen minors. If they accept, they will become our puppets. If they refuse, we will declare war to annex them.§!§I;x
-ISE_uruk_hai_soldiers_3000_eastwatch_loc;\nCreates a new pop of §Y3000 Orc Uruk Hai Soldiers§! in §YEastwatch§!§I;x
+ISE_uruk_hai_soldiers_3000_eastwatch_loc;\nCreates a new pop of §Y3000 Orc Uruk-hai Soldiers§! in §YEastwatch§!§I;x
 claim_status_owns_GON_89_loc;§YCentral Gondor§!: §GOwned§!§I;x
 claim_status_owns_GON_46_loc;§YLower Lebennin§!: §GOwned§!§I;x
 claim_status_owns_KHA_362_loc;§YKhandu Itakh§!: §GOwned§!§I;x
@@ -2322,7 +2322,7 @@ MOR_alliance_of_two_towers_loc;We will enter a permanent alliance with the @ISE 
 settings_annex_all_loc;This option annexes all of colonizable Middle Earth to your realm. §RThis cannot be undone§!§I;x
 claim_status_owns_DND_1005_loc;§YUilad§!: §GOwned§!§I;x
 add_claim_BRE_1284_loc;§WWe will gain claims over §!§YUimirrildor§!§I;x
-ISE_uruk_hai_soldiers_3000_mines_of_methedras_loc;\nCreates a new pop of §Y3000 Orc Uruk Hai Soldiers§! in §YMines of Methedras§!§I;x
+ISE_uruk_hai_soldiers_3000_mines_of_methedras_loc;\nCreates a new pop of §Y3000 Orc Uruk-hai Soldiers§! in §YMines of Methedras§!§I;x
 remove_claim_RHU_1257_loc;§WWe will lose claims over §!§YGlenn Crec§!§I;x
 remove_claim_KHA_391_loc;§WWe will lose claims over §!§YKhandu Ylâ§!§I;x
 claim_status_doesnt_own_DND_1007_loc;§YTír Or§!: §RUnowned§!§I;x
@@ -2899,7 +2899,7 @@ claim_status_doesnt_own_GON_92_loc;§YLamedon§!: §RUnowned§!§I;x
 add_claim_GON_146_loc;§WWe will gain claims over §!§YParth Feren§!§I;x
 add_claim_GON_81_loc;§WWe will gain claims over §!§YTarnost§!§I;x
 add_claim_ERE_682_loc;§WWe will gain claims over §!§YCirith Himninond§!§I;x
-ISE_uruk_hai_soldiers_12000_isengard_loc;Creates a new pop of §Y12000 Orc Uruk Hai Soldiers§! in §YIsengard§!§I;x
+ISE_uruk_hai_soldiers_12000_isengard_loc;Creates a new pop of §Y12000 Orc Uruk-hai Soldiers§! in §YIsengard§!§I;x
 remove_claim_ERE_657_loc;§WWe will lose claims over §!§YDádhrik's Gap§!§I;x
 add_claim_KHA_387_loc;§WWe will gain claims over §!§YKhandu Khûrvesra§!§I;x
 add_claim_RHU_578_loc;§WWe will gain claims over §!§YKara Kalpak§!§I;x

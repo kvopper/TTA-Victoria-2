@@ -32,7 +32,7 @@
 }
 
 # Isen River
-# Isengard Orcs, Half-orcs, Goblin-men and Uruk Hai for ISE experimentation {
+# Isengard Orcs, Half-orcs, Goblin-men and Uruk-hai for ISE experimentation {
 1509 = { # Isengard
 	labourers = {
 		culture = isengard_orc
