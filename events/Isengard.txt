@@ -1213,6 +1213,10 @@ country_event = {
 		empty_line_loc = {}
 		
 		primary_culture = uruk_hai
+		remove_accepted_culture = men_culture
+		remove_country_modifier = men_culture_nation
+		add_accepted_culture = orc_culture
+		add_country_modifier = { name = orc_culture_nation duration = -1 }
 		
 		set_global_flag = hidden_effects
 		random_owned = {
