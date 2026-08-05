@@ -1,6 +1,6 @@
 nationalist_rebels_title;Nationalist Rebels;x
 nationalist_rebels_name;$INDEP$ Nationalists;x
-nationalist_rebels_desc;Nationalist rebels seek freedom for their people. They are well led and equipped, and they will focus on achieving independence for their countrz.;x
+nationalist_rebels_desc;Nationalist rebels seek freedom for their people. They are well led and equipped, and they will focus on achieving independence for their realm.;x
 nationalist_rebels_army;$INDEP$ Nationalists;x
 patriot_rebels_title;Separatist Rebels;x
 patriot_rebels_name;$CULTURE$ Separatists;x
@@ -12,7 +12,7 @@ slave_revolt_desc;Slave revolters seek to free all slaves in $COUNTRY$.;x
 slave_revolt_army;Slave Revolters;x
 republican_rebels_title;Militant Republicans;x
 republican_rebels_name;Militant Republican Reformists;x
-republican_rebels_desc;Militant Republican Reformists seek to improve or introduce the voting franschise in a realm.;x
+republican_rebels_desc;Militant Republican Reformists seek to improve or introduce the voting franchise in a realm.;x
 republican_rebels_army;Militant Republican Reformists;x
 pretender_rebels_title;Pretender Rebels;x
 pretender_rebels_name;Pretender Rebels;x

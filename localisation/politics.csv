@@ -108,7 +108,7 @@ enforced_serfdom_desc;Serfdom is enforced. Serfs are bound to the land they work
 movement_enforced_serfdom;Movement to enforce serfdom;x
 discouraged_serfdom;Discouraged Serfdom;x
 discouraged_serfdom_l;Discouraged Serfdom;x
-discouraged_serfdom_desc;Serfdom is legal but discouraged. The rulers want to bring the realm on the way towards abolishing serfdom, be it because of the aspirations of their own or because of practical reasons. Serfdom appears to be a unliked institution that will mostly be replaced by a system of indentured servitude or through ownership of land by freeholding peasants.\nPoor Pop Promotion Rate: §R0.5%§!;x
+discouraged_serfdom_desc;Serfdom is legal but discouraged. The rulers want to bring the realm on the way towards abolishing serfdom, be it because of the aspirations of their own or because of practical reasons. Serfdom appears to be an unliked institution that will mostly be replaced by a system of indentured servitude or through ownership of land by freeholding peasants.\nPoor Pop Promotion Rate: §R0.5%§!;x
 movement_discouraged_serfdom;Movement to restrict serfdom;x
 banned_serfdom;Serfdom Banned;x
 banned_serfdom_l;Serfdom Banned;x
@@ -256,7 +256,7 @@ privileged_state_supplies_desc;The monopoly on the sale of state supplies, rangi
 movement_privileged_state_supplies;Movement to increase state supply privileges;x
 restricted_state_supplies;Restricted;x
 restricted_state_supplies_l;Restricted State Supplies;x
-restricted_state_supplies_desc;There are no restrictions on the sale of goods to the state and it is determined only by the demand of such and nothing else. The state employs their own suppliers to guarantee the independence from private enterprises. The monopoly on the sale however is partially transferred to the state as it tries to maintain self-sufficiency.;x
+restricted_state_supplies_desc;There are no restrictions on the sale of goods to the state and it is determined only by the demand of such and nothing else. The state employs its own suppliers to guarantee the independence from private enterprises. The monopoly on the sale however is partially transferred to the state as it tries to maintain self-sufficiency.;x
 movement_restricted_state_supplies;Movement to decrease state supply privileges;x
 allowed_state_supplies;Allowed;x
 allowed_state_supplies_l;Allowed State Supplies;x
@@ -671,7 +671,7 @@ mordor_clans_uh;Mordor Clans supporters will vote for all reforms while in power
 #####################################;x
 POLITICS_SUPPORT_REFORM;$IDEOLOGY$: §G$POSITIVE$% votes yes§!, §R$NEGATIVE$% votes no§!.(§Y$PERCENT$%§! of Council of the Realm)\n;x
 POLITICS_UPPERHOUSE_CHART_TOOLTIP;$PERCENT$% of the Council of the Realm are $IDEOLOGY$\n;x
-POLITICS_IN_FAVOR_TOOLTIP;($PERCENT$% of of Council of the Realm in favor of reforms);x
+POLITICS_IN_FAVOR_TOOLTIP;($PERCENT$% of the Council of the Realm in favor of reforms);x
 POLITICS_UPPERHOUSE;Council of the Realm;x
 UPPERHOUSE_SETUP;When our Council of the Realm have assembled.;x
 UPPERHOUSE_1;Council of the Realm changed;x

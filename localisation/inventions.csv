@@ -18,7 +18,7 @@ infantry_tech_5_equipment_desc;Despite having recently developed new equipment f
 archer_tech_1_equipment;Basic Archer Equipment;x
 archer_tech_1_equipment_desc;Despite having recently developed new equipment for our army, it takes some time to craft and deploy the equipment.;x
 short_bows;Short Bows;x
-short_bows_desc;The simple bow is a omnipresent tool in society with vast military potential.;x
+short_bows_desc;The simple bow is an omnipresent tool in society with vast military potential.;x
 archer_tech_2_equipment;Improved Archer Equipment;x
 archer_tech_2_equipment_desc;Despite having recently developed new equipment for our army, it takes some time to craft and deploy the equipment.;x
 recurve_bows;Recurve Bows;x
@@ -60,7 +60,7 @@ cavalry_tech_3_equipment_desc;Despite having recently developed new equipment fo
 outriders;Outriders;x
 outriders_desc;The forward soldiers of an army, outriders perform key operations primarily as scouts and messangers.;x
 competition_cavalry;Competition Cavalry;x
-competition_cavalry_desc;Tournaments have held competitions for cavalry since man first rode. Jousts, pitting the finest horsemen against either other in fierce and deadly combat, were fought, with the winners rewarded handsomely.;x
+competition_cavalry_desc;Tournaments have held competitions for cavalry since man first rode. Jousts, pitting the finest horsemen against each other in fierce and deadly combat, were fought, with the winners rewarded handsomely.;x
 cavalry_tech_4_equipment;Elite Rider Equipment;x
 cavalry_tech_4_equipment_desc;Despite having recently developed new equipment for our army, it takes some time to craft and deploy the equipment.;x
 nomad_bows;Nomad Bows;x
@@ -68,7 +68,7 @@ nomad_bows_desc;A type of recurve bow, the nomad bow has been made specifically 
 cavalry_tech_5_equipment;Supreme Rider Equipment;x
 cavalry_tech_5_equipment_desc;Despite having recently developed new equipment for our army, it takes some time to craft and deploy the equipment.;x
 scout_waystations;Scout Waystations;x
-scout_waystations_desc;Sometimes, messages are too important to stop to rest, and horses to not have the strength to continue riding. By establishing a series of waystations, scouts and messangers can switch their horses for a fresh one to avoid resting.;x
+scout_waystations_desc;Sometimes, messages are too important to stop to rest, and horses do not have the strength to continue riding. By establishing a series of waystations, scouts and messangers can switch their horses for a fresh one to avoid resting.;x
 maeras_riders;Maeras Riders;x
 maeras_riders_desc;The Maeras are the horses descended from Felaróf, one of the horses of Eorl, the first King of Rohan. These horses are bred specifically for their size, speed and strength, and bear none other than the royalty of the Mark.;x
 artillery_tech_1_equipment;Basic Artillery Construction;x
@@ -127,7 +127,7 @@ aerial_combat_desc;Our enemy's aerial support can now be countered.;x
 soronume;Soronúmë;x
 soronume_desc;Soronúmë, the Eagle of the West, is one of the constellations of Arda;x
 minasdirith_invention;Minasdirith;x
-minasdirith_invention_desc;The Minasdirath, otherwise known as the Order of the Guard, is a military order that all beacon guards belong to. Besides remaining vigilant and protecting/lighting beacons, members of the Minasdirath also conscripts young men from nearby villages and trains them to be beacon-guards to help ease up on Gondor's soldier shortage.;x
+minasdirith_invention_desc;The Minasdirath, otherwise known as the Order of the Guard, is a military order that all beacon guards belong to. Besides remaining vigilant and protecting/lighting beacons, members of the Minasdirath also conscript young men from nearby villages and trains them to be beacon-guards to help ease up on Gondor's soldier shortage.;x
 militias;Militias;x
 militias_desc;Conscripts pressed into service, militias lack many of the skills of a standing army. However, by employing militias, we can ensure that our troops have more training should we need to go to war.;x
 ents_unit_unlock;Ents;x
@@ -141,9 +141,9 @@ mumakil_unlock_desc;The Mûmakil march to war! Specifically trained for combat b
 barrow_wights_unlock;Barrow-wights;x
 barrow_wights_unlock_desc;Sent to the Barrow-downs by the Witch-king of Angmar, the Barrow-wights inhabit the bodies of those entombed within the barrows. They then use those bodies to feed on living creatures in the area.;x
 marsh_wights_unlock;Marsh-wights;x
-marsh_wights_unlock_desc;The Marsh-wights are wights sent to Gramavuld by the Witch-king of Angmar following the slaying of Smaug. They live within the Long Marshes, and prey on travellors to boost their numbers.;x
+marsh_wights_unlock_desc;The Marsh-wights are wights sent to Gramavuld by the Witch-king of Angmar following the slaying of Smaug. They live within the Long Marshes, and prey on travellers to boost their numbers.;x
 oathbreakers_wights_unlock;Oathbreakers;x
-oathbreakers_wights_unlock_desc;Formerly the Men of the Mountain, the Oathbreakers swore allegience to Isildur should Gondor go to war with Sauron. When they were called upon to honor the call to arms, they instead forsake their oath, and slowly began to fade, doomed to become undead roaming the White Mountains in the Paths of the Dead.;x
+oathbreakers_wights_unlock_desc;Formerly the Men of the Mountain, the Oathbreakers swore allegiance to Isildur should Gondor go to war with Sauron. When they were called upon to honor the call to arms, they instead forsook their oath, and slowly began to fade, doomed to become undead roaming the White Mountains in the Paths of the Dead.;x
 lance_retinues;Lance Retinues;x
 lance_retinues_desc;Soldiers serving a knight, lance retinues remain the core of our standing armies.;x
 basic_training;Basic Training;x
@@ -169,7 +169,7 @@ shirriffs_unlock_desc;The law enforcement of the Shire, the Shirriffs protect th
 snow_rangers_unlock;Snow Rangers;x
 snow_rangers_unlock_desc;Protectors and hunters of the north, the Snow Rangers of the Lossoth both protect their tribe and scout out the Enemy.;x
 dunedain_rangers_unlock;Dúnedain Rangers;x
-dunedain_rangers_unlock_desc;Descendents of the people of Arnor, the Dúnedain have sworn an oath to protect the Free Peoples of Eriador. The range among the Wild of Eriador, eliminating servants of the Dark Lord.;x
+dunedain_rangers_unlock_desc;Descendents of the people of Arnor, the Dúnedain have sworn an oath to protect the Free Peoples of Eriador. They range among the Wild of Eriador, eliminating servants of the Dark Lord.;x
 ithilien_rangers_unlock;Ithilien Rangers;x
 ithilien_rangers_unlock_desc;Scouts, warriors and the descendents of the Gondorian of Ithilien, the Ithilien Rangers harass the servants of Mordor throughout the region.;x
 marchwardens_unlock;Marchwardens of Lothlórien;x
@@ -207,7 +207,7 @@ vinter_guard_unlock_desc;Riders armed with crossbows, the Vinter Guard protected
 eored_skirmishers_unlock;Éored Skirmishers;x
 eored_skirmishers_unlock_desc;Armed with bows, the horse archers of Rohan extend the riding tradition of the realm with their bows.;x
 dunedain_wardens_unlock;Dúnedain Wardens;x
-dunedain_wardens_unlock_desc;Descendents of the people of Arnor, the Dúnedain have sworn an oath to protect the Free Peoples of Eriador. The range among the Wild of Eriador, eliminating servants of the Dark Lord.;x
+dunedain_wardens_unlock_desc;Descendents of the people of Arnor, the Dúnedain have sworn an oath to protect the Free Peoples of Eriador. They range among the Wild of Eriador, eliminating servants of the Dark Lord.;x
 lindon_longspears_unlock;Lindon Longspears;x
 lindon_longspears_unlock_desc;Protectors of Lindon, the Lindon Longspears boast some of the longest pikes in Middle-earth.;x
 orthanc_guard_unlock;Orthanc Guards;x
@@ -260,14 +260,14 @@ shipbuilding_desc;Commercial shipbuilding is key to ensuring a strong naval pres
 corsair_ship_unlock;Corsair Ships;x
 corsair_ship_unlock_desc;Known for their black sails and ruthless efficiency, the Corsairs of Umbar use their own type of heavy ship to wreak havoc upon their foes.;x
 grand_shipyards;Grand Shipyards;x
-grand_shipyards_desc;Large harbors dedicated to ship constructure, allowing allowing more ships to be serviced and built at once.;x
+grand_shipyards_desc;Large harbors dedicated to ship constructure, allowing more ships to be serviced and built at once.;x
 ###############################;x }
 ##### COMMERCE INVENTIONS #####;x {
 ###############################;x
 wilwarin;Wilwarin;x
 wilwarin_desc;Wilwarin, the Butterfly, is one of the constellations of Arda;x
 lembas_bread_invention;Lembas Bread;x
-lembas_bread_invention_desc;From Tolkien Gateway:\n\n"Lembas, Elvish Waybread were very nutritious, stayed fresh for months when wrapped in leaves, and were used for sustenance on long journeys. Lembas had a brownish colour on the outside and a cream colour on the inside.\n\nAccording to Gimli, it was a food of the same kind as Cram, although one of the Elves of Lothlórien commented that it was more pleasant, and more strengthening than any food made by Men.\n\nLike other products of the Elves, it was offensive to evil creatures; Gollum refused outright to eat of it. When Frodo was captured by Orcs in Mordor, the Orcs hated the look of the lembas even more than Gollum had.";x
+lembas_bread_invention_desc;From Tolkien Gateway:\n\n"Lembas, Elvish Waybread were very nutritious, stayed fresh for months when wrapped in leaves, and were used for sustenance on long journeys. Lembas had a brownish colour on the outside and a cream colour on the inside.\n\nAccording to Gimli, it was a food of the same kind as Cram, although one of the Elves of Lothlórien commented that it was more pleasant, and more strengthening than any food made by Men.\n\nLike other products of the Elves, it was offensive to evil creatures; Gollum refused outright to eat of it. When Frodo was captured by Orcs in Mordor, the Orcs hated the look of the lembas even more than Gollum had."";x
 valacirca;Valacirca;x
 valacirca_desc;Valacirca, the Sickle of the Valar, is one of the constellations of Arda;x
 stone_sense;Stone Sense;x
@@ -277,7 +277,7 @@ fires_of_industry_desc;Streamlining guilds into "industries" will undoubtedly yi
 centers_of_trade;Centers of Trade;x
 centers_of_trade_desc;Large cities with even larger markets bring merchants from far and wide.;x
 mobilization_planning;Mobilization Planning;x
-mobilization_planning_desc;Raising militias is no easy task. Movements need to be coordinated, supplies need to be moved, and rally points need to be deterimed. By making plans ahead of time, we can streamline this process.;x
+mobilization_planning_desc;Raising militias is no easy task. Movements need to be coordinated, supplies need to be moved, and rally points need to be determined. By making plans ahead of time, we can streamline this process.;x
 caravans;Caravans;x
 caravans_desc;By moving reinforcements and supplies together in caravans, we can more easily reinforce the front.;x
 supply_lines;Supply Lines;x
@@ -313,7 +313,7 @@ orc_draught_desc;Potent and invegorating, Orc Draught gives the drinker a burnin
 magical_secrets;Magical Secrets;x
 magical_secrets_desc;The world is awash with magical secrets of the past, what is there to discover in the world?;x
 astronomy;Astronomy;x
-astronomy_desc;The stars were put in to formations by Varda, "the Firstborn shall come in the darkness, and shall look first upon the stars - to Varda ever shall they call at need". What shall we make of the stars above?;x
+astronomy_desc;The stars were put into to formations by Varda, "the Firstborn shall come in the darkness, and shall look first upon the stars - to Varda ever shall they call at need". What shall we make of the stars above?;x
 first_lesser_ring;A Lesser Ring;x
 first_lesser_ring_desc;Before Sauron and Celebrimbor forged the One Ring, they created dozens or perhaps hundreds of lesser rings - essays in the craft of ring making to perfect their expertise. Acquiring one of these rings may prove fruitful.;x
 palantiri;Palantiri;x
@@ -325,7 +325,7 @@ entwives_desc;What became of the Entwives?;x
 second_lesser_ring;Another Lesser Ring;x
 second_lesser_ring_desc;Before Sauron and Celebrimbor forged the One Ring, they created dozens or perhaps hundreds of lesser rings - essays in the craft of ring making to perfect their expertise. Acquiring another one of these rings may prove fruitful.;x
 silmarils;Silmarils;x
-silmarils_desc;The three greatest gemstones of all time, the three Silmarils are lost - one casted down into the chasms of the earth, one lies at the depth of the ocean, one hangs in the sky as the Star of Eärendil.;x
+silmarils_desc;The three greatest gemstones of all time, the three Silmarils are lost - one cast down into the chasms of the earth, one lies at the depth of the ocean, one hangs in the sky as the Star of Eärendil.;x
 magical_crafting;Magical Crafting;x
 magical_crafting_desc;With great knowledge of the ancients, we can utilise magical auras and enchant our own artefacts, tools, and weapons.;x
 magical_crafting_warriors;Enchanted Warriors' Weapons;x

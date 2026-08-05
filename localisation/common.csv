@@ -81,7 +81,7 @@ MODIFIER_CORE_POP_MILITANCY_MODIFIER;Militancy in Non-Territorial;x
 MODIFIER_CORE_POP_CONSCIOUSNESS_MODIFIER;Consciousness in Non-Territorial;x
 BUILD_COLONIAL;Non-territorial state;x
 COLONY_SUCCESS_LOG;We successfully settled $TARGET$.;x
-COLONY_FAIL_LOG;$OTHER$ managed to to settle $TARGET$ before us.;x
+COLONY_FAIL_LOG;$OTHER$ managed to settle $TARGET$ before us.;x
 PW_COLONY_NO_STATE;At least §Y$NUM$§!% of the population need to be Bureaucrats of an accepted Culture in order to convert this territorial possession into a state with full civilian administration. Current ratio is §Y$CURR$§!%;x
 PW_CANTCOLONIZE;Not possible to settle here yet.;x
 IS_COLONIAL_STATE_POPVIEW;Territorial State;x
@@ -2312,7 +2312,7 @@ ADD_BUILDING;Gain §Y$NAME$§W in §Y$WHERE$§W.\n;x
 REM_BUILDING;Lose §R$NAME$§W in §Y$WHERE$§W.\n;x
 SECEDE_PROVINCE;Cede §Y$WHERE$§W to §Y$WHO$§W.\n;x
 INHERIT;Inherit §Y$WHO$§W.\n;x
-RELEASE;Release §Y$WHO$§W as a independent state.\n;x
+RELEASE;Release §Y$WHO$§W as an independent state.\n;x
 RELATION_CHANGE_SHORT;Relation with §Y$PASSIVE$§W changed by $MUCH$.\n;x
 IDEOLOGY_ENABLED;Enable §Y$NAME$§W in the world.\n;x
 CHANGE_GOODS;Change tradegoods in §Y$PROV$§W to §Y$GOOD$§W.\n;x
@@ -4409,7 +4409,7 @@ CRISIS_BACK_DOWN_OTHER_ACCEPT_BTN1;Fine!;x
 CRISIS_BACK_DOWN_OTHER_ACCEPT_BTN2;Fine!;x
 CRISIS_BACK_DOWN_OTHER_ACCEPT_BTN3;Goto;x
 CRISIS_BACK_DOWN_OTHER_ACCEPT_MAP;*;x
-CRISIS_BACK_DOWN_WE_DECLINE_SETUP;When we decline a offer to resolve a crisis;x
+CRISIS_BACK_DOWN_WE_DECLINE_SETUP;When we decline an offer to resolve a crisis;x
 CRISIS_BACK_DOWN_WE_DECLINE_HEADER;$MESSENGER$;x
 CRISIS_BACK_DOWN_WE_DECLINE_1;$ACTOR$;x
 CRISIS_BACK_DOWN_WE_DECLINE_2;We have declined the peaceoffer from;x
@@ -4821,8 +4821,8 @@ ALL_COUNTRIES_THAT_EFF;All realms that;x
 GETTING_ONLY_NEEDS;Getting only $NEED$: §Y$VAL$%§W;x
 ISSUE_MOVE_EFFECT;§Y$PERCENTAGE$%§W of pops move from §YFROM§W to §YTO§W;x
 ADD_WARGOAL_EFFECT;When we add this war goal, we will gain:;x
-ADD_WARGOAL_SUCCESS;If we achive this war goal, we will gain:;x
-ADD_WARGOAL_FAILURE;If we fail to achive this war goal, we will gain:;x
+ADD_WARGOAL_SUCCESS;If we achieve this war goal, we will gain:;x
+ADD_WARGOAL_FAILURE;If we fail to achieve this war goal, we will gain:;x
 WARDIALOG_TRUCE;Truce: ;x
 WARDIALOG_NOCB;No casus belli: ;x
 DIPLOMACY_INFAMY2;Infamy: $VALUE$;x
@@ -6155,8 +6155,8 @@ ATWAR;The realm is at war;x
 ADD_WARGOAL_DESC;Require $COST$ war score to demand;x
 ADD_WARGOAL_PEACE_COST;Costs $COST$ war score to demand in a peace deal;x
 ADD_WARGOAL_INFAMY;If we add this war goal to our war, we will gain $COST$ §Yinfamy§W;x
-ADD_WARGOAL_PRESTIGE;If we achive this war goal, we will gain $COST$ §Yprestige§W;x
-ADD_WARGOAL_MILITANCY;If we fail to achive this war goal, our entire population will gain $MILITANCY$ §YMilitancy§W;x
+ADD_WARGOAL_PRESTIGE;If we achieve this war goal, we will gain $COST$ §Yprestige§W;x
+ADD_WARGOAL_MILITANCY;If we fail to achieve this war goal, our entire population will gain $MILITANCY$ §YMilitancy§W;x
 ADD_WARGOAL_WARGOAL;War goal: §Y$GOAL$§W;x
 PROVINCEVIEW_FROM_LOCAL_TAX;From State administrative efficiency: §Y+;x
 INCREASERELATIONTITLE;Increase Relations;x

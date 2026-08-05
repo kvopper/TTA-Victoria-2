@@ -5,24 +5,24 @@ new_union_NEWS_TITLE;New Union Realm!;x
 shire_bree_unification_NEWS_LONG;The lands of the Shire and Bree have come together to form the Shire Bree Union. Seen in the major towns across both sides of the Brandywine, Men and Hobbits alike were reportedly holding festivals for many weeks as the news spread. Tremendous food was in abundance, and activities such as pipe smoking were enjoyed by all. This is undoubtedly the start of a new era for the north.;x
 shire_bree_unification_NEWS_MEDIUM;The lands of the Shire and Bree have come together to form the Shire Bree Union. Men and Hobbits alike across the region rejoiced with a tremendous week long fete, with food in abundance, and activities enjoyed by all.;x
 shire_bree_unification_NEWS_SHORT;The lands of the Shire and Bree have come together to form the Shire Bree Union. Men and Hobbits alike across the region rejoiced with a tremendous multi-day feast.;x
-form_rivermen_NEWS_LONG;The tribes of the Rivermen have united under one banner! Many outsiders speculate as to the reason, but our council believes it is due to the invasions. from the north and east. Despite the grave threat from two different peoples, the Rivermen still held a celebration in their capital.;x
-form_rivermen_NEWS_MEDIUM;The tribes of the Rivermen have united under one banner! Many outsiders speculate as to the reason, but our council believes it is due to the invasions. from the north and east. Despite the grave threat from two different peoples, the Rivermen still held a celebration in their capital.;x
+form_rivermen_NEWS_LONG;The tribes of the Rivermen have united under one banner! Many outsiders speculate as to the reason, but our council believes it is due to the invasions from the north and east. Despite the grave threat from two different peoples, the Rivermen still held a celebration in their capital.;x
+form_rivermen_NEWS_MEDIUM;The tribes of the Rivermen have united under one banner! Many outsiders speculate as to the reason, but our council believes it is due to the invasions from the north and east. Despite the grave threat from two different peoples, the Rivermen still held a celebration in their capital.;x
 form_rivermen_NEWS_SHORT;The Rivermen tribes have united! Reports of their celebration have reached us, and many wonder if they should be celebrating considering the threat from the Lakemen and Easterlings.;x
 DAL_dissolution_amov_clan_NEWS_TITLE;The Dissolution of the Amov Clan;x
-DAL_dissolution_amov_clan_NEWS_LONG;Ever since being conquered by the Lakemen, the Amov Clan has existed as an internal political construct for the Easterlings living in the $COUNTRY$. That is no more -- word has reached us that the Amov Clan has been fully dissolved, with the Easterlings being told to held back east, or adopt the rituals and traditions of the Lakemen.;x
-DAL_dissolution_amov_clan_NEWS_MEDIUM;Despite being conqered, the Amov Clan has still existed as an internal political construct within the $COUNTRY$. That is no more -- word has reached us that the Amov Clan has been fully dissolved.
-DAL_dissolution_amov_clan_NEWS_SHORT;Despite being conqered, the Amov Clan has still existed as an internal political construct within the $COUNTRY$. Word has reached us that the Amov Clan has been fully dissolved.
+DAL_dissolution_amov_clan_NEWS_LONG;Ever since being conquered by the Lakemen, the Amov Clan has existed as an internal political construct for the Easterlings living in the $COUNTRY$. That is no more -- word has reached us that the Amov Clan has been fully dissolved, with the Easterlings being told to head back east, or adopt the rituals and traditions of the Lakemen.;x
+DAL_dissolution_amov_clan_NEWS_MEDIUM;Despite being conquered, the Amov Clan has still existed as an internal political construct within the $COUNTRY$. That is no more -- word has reached us that the Amov Clan has been fully dissolved.
+DAL_dissolution_amov_clan_NEWS_SHORT;Despite being conquered, the Amov Clan has still existed as an internal political construct within the $COUNTRY$. Word has reached us that the Amov Clan has been fully dissolved.
 exterminate_the_wights_NEWS_TITLE;The End of the Marsh-wights;x
-exterminate_the_wights_NEWS_LONG;After a sudden rising, the $COUNTRY$ has defeated the Marsh-wights. So thorough has been the campaign, that the Marsh-wights are all but eliminated, their hollows destroy, bodies burned, and crypts exposed to daily sunlight.;x
-exterminate_the_wights_NEWS_MEDIUM;After a sudden rising, the $COUNTRY$ has defeated the Marsh-wights. So thorough has been the campaign, that the Marsh-wights are all but eliminated, their hollows destroy, bodies burned, and crypts exposed to daily sunlight.;x
+exterminate_the_wights_NEWS_LONG;After a sudden rising, the $COUNTRY$ has defeated the Marsh-wights. So thorough has been the campaign, that the Marsh-wights are all but eliminated, their hollows destroyed, bodies burned, and crypts exposed to daily sunlight.;x
+exterminate_the_wights_NEWS_MEDIUM;After a sudden rising, the $COUNTRY$ has defeated the Marsh-wights. So thorough has been the campaign, that the Marsh-wights are all but eliminated, their hollows destroyed, bodies burned, and crypts exposed to daily sunlight.;x
 exterminate_the_wights_NEWS_SHORT;The $COUNTRY$ has defeated the Marsh-wights, destroying their hollows, burning their bodies, and exposing their crypts to daily sunlight.;x
 proclaim_lordship_over_the_grammas_NEWS_TITLE;$COUNTRY$ unites with the Grammas!;x
 proclaim_lordship_over_the_grammas_NEWS;The $COUNTRY$ has fully integrated the Grammas! Their lands now stretch from the eaves of Mirkwood to the shores of the Carnen.;x
 proclaim_lordship_over_the_rivermen_NEWS_TITLE;$COUNTRY$ unites with the Rivermen!;x
 proclaim_lordship_over_the_rivermen_NEWS;The $COUNTRY$ has fully integrated the Rivermen! Their lands now stretch across the northern shores of the Celduin until the confluence with the Carnen.;x
 gramavuld_united_NEWS_TITLE;A United Gramavuld;x
-gramavuld_united_NEWS_LONG;After years of diplomacy with between the Adhallings, Lakemen and Grammas, and even more years of wars with the Rivermen and Easterlings, Gramavuld is united under one banner. A week-long celebration was held in Dale, said to have fine wines, fresh fish and ornate decorations supplied by the artisans of Erebor.;x
-gramavuld_united_NEWS_MEDIUM;After years of diplomacy with between the Adhallings, Lakemen and Grammas, and even more years of wars with the Rivermen and Easterlings, Gramavuld is united under one banner. A week-long celebration was held in Dale, said to have fine wines, fresh fish and ornate decorations supplied by the artisans of Erebor.;x
+gramavuld_united_NEWS_LONG;After years of diplomacy between the Adhallings, Lakemen and Grammas, and even more years of wars with the Rivermen and Easterlings, Gramavuld is united under one banner. A week-long celebration was held in Dale, said to have fine wines, fresh fish and ornate decorations supplied by the artisans of Erebor.;x
+gramavuld_united_NEWS_MEDIUM;After years of diplomacy between the Adhallings, Lakemen and Grammas, and even more years of wars with the Rivermen and Easterlings, Gramavuld is united under one banner. A week-long celebration was held in Dale, said to have fine wines, fresh fish and ornate decorations supplied by the artisans of Erebor.;x
 gramavuld_united_NEWS_SHORT;Gramavuld is united under the banner of the Lakemen! After years of diplomacy and war, the $COUNTRY$ has achieved its goal of uniting the Northmen of Gramavuld under one banner.;x
 DAL_break_treaty_with_erebor_NEWS_TITLE;War in the North!;x
 DAL_break_treaty_with_erebor_NEWS_LONG;The Lakemen have decided to break their millenia-old treaty with the Dwarves of Erebor. The Lakemen-Longbeard Treaty of TA 2008 ceded many of the lands north of Dale to the Kingdom of Erebor, to exist as a tributary state to the then-new Dwarven realm. Many speculate as to the reason, but the wise believe it's related to the ever-growing political differences between the realms.;x
@@ -46,7 +46,7 @@ EVTDESC19002_NEWS_SHORT;$CAPITAL$, $COUNTRY$: A Showcase of Glory has been annou
 EVTDESC50500_NEWS_LONG;Mount Doom has erupted after being dormant for thousands of years. Historically, the volcano has only been active while Sauron has resided in Mordor. As such, many speculate that this can mean only one thing: Sauron has returned!;x
 EVTDESC50500_NEWS_MEDIUM;Mount Doom has erupted after being dormant for thousands of years. Many speculate that this can mean only one thing: Sauron has returned!;x
 EVTDESC50500_NEWS_SHORT;Mount Doom has erupted after being dormant for thousands of years. This can mean only one thing: Sauron has returned!;x
-EVTDESC70005_NEWS_LONG;$COUNTRY$ has thrown off its tribal roots and centralised into a modern state. Her old traditions no longer serve as they used to, and she has faced increased influence from abroad. Now the country, bouyed on by her class of intellectual elite, has finally taken control of her own destiny. We may see this nation play a greater role in international affairs.;x
+EVTDESC70005_NEWS_LONG;$COUNTRY$ has thrown off its tribal roots and centralised into a modern state. Her old traditions no longer serve as they used to, and she has faced increased influence from abroad. Now the country, buoyed by her class of intellectual elite, has finally taken control of her own destiny. We may see this nation play a greater role in international affairs.;x
 EVTDESC70005_NEWS_MEDIUM;$COUNTRY$ has thrown off its tribal roots and centralised into a modern state. Her old traditions no longer serve as they used to, and she has faced increased influence from abroad. We may see it play a greater role in international affairs.;x
 EVTDESC70005_NEWS_SHORT;$COUNTRY$ has thrown off its tribal roots and centralised into a modern state. We may see it play a greater role in international affairs.;x
 EVTDESC50910_NEWS;A local fisherman has found a large amount of gold in Long Lake! Some surmise it was on Smaug's body when he died, or fell off while he flew and burned Lake Town. Others say that it's from the Master's attempt to smuggle the wealth of the city out during the attack.;x
@@ -69,7 +69,7 @@ EVTDESC50963_NEWS;The Fisher's Guild has gained lots of political power in the $
 some_fake_ANY_title_1;The Third Breakfast;x
 some_fake_ANY_1;Researchers in the Shire have discovered the Third Breakfast! Hobbits everywhere are in shock and are celebrating.;x
 some_fake_ANY_title_2;Salted Pork;x
-some_fake_ANY_2;Reports of deliciousness are coming from Isengard. The reports, written by a pair of hobbit connoisseurs, claim that "the salted pork is especially good". Dwarves espeecially may be interested in learning more.;x
+some_fake_ANY_2;Reports of deliciousness are coming from Isengard. The reports, written by a pair of hobbit connoisseurs, claim that "the salted pork is especially good". Dwarves especially may be interested in learning more.;x
 some_fake_ANY_title_3;Grond!;x
 some_fake_ANY_3;Grond! Grond! Grond! Grond! Grond! Grond!;x
 some_fake_ANY_title_4;Trebuchets;x
@@ -81,7 +81,7 @@ some_fake_ANY_6;An interesting theory that Grima Wormtongue had his own ring cre
 some_fake_ANY_title_7;The Identity of Tom Bombadil;x
 some_fake_ANY_7;One may ask, who is Tom Bombadil? Some believe he is E√§, a force of creation. Others believe that he is a much more sinister person, the Witch-King of Angmar himself.;x
 some_fake_ANY_title_8;The Personality of Gollum;x
-some_fake_ANY_8;You have heard of the creature of Gollum and his Precious. In the past, Gollum was called Smeagol. Those who have had the Precious for long periods of time have started to display the behaviours and mannerisms of Gollum, suggesting that Gollum may be a personailty that travels with the Precious.;x
+some_fake_ANY_8;You have heard of the creature of Gollum and his Precious. In the past, Gollum was called Smeagol. Those who have had the Precious for long periods of time have started to display the behaviours and mannerisms of Gollum, suggesting that Gollum may be a personality that travels with the Precious.;x
 some_fake_ANY_title_9;The Question of Frodo's Parents Death;x
 some_fake_ANY_9;When Frodo was young, his parents died in a boating accident, and he came into the care of his uncle Bilbo, who took Gollum's Precious. All Gollum knew about Bilbo was that his name was Baggins, and that he was a Hobbit of the Shire. Knowing the actions of Gollum, he probably would have killed any Baggins he encountered.;x
 some_fake_ANY_title_10;Potato recipes;x
@@ -92,8 +92,8 @@ some_fake_ANY_title_12;Second Breakfast;x
 some_fake_ANY_12;Reportedly, a pair of Hobbits were travelling with a Man. When they failed to stop for Second Breakfast, the Hobbits were understandably confused.;x
 some_fake_ANY_title_13;There and Back Again;x
 some_fake_ANY_13;In the Shire, a Hobbit by the name of Bilbo Baggins has published a book called There and Back Again. Normally this would not be noteworthy, but this book talks about the adventure in which he took part in. That's odd for a Hobbit.;x
-some_fake_ANY_title_14;The Arkenstone, or a Simaril;x
-some_fake_ANY_14;According to legend, the Arkenstone is no ordinary special gemstone. Rather, it is the Simaril that Maedhros threw into a volcano. The Dwarves, with their most skilled craftsmen, were able to reshape it into the Arkenstone, the King's Jewel.;x
+some_fake_ANY_title_14;The Arkenstone, or a Silmaril;x
+some_fake_ANY_14;According to legend, the Arkenstone is no ordinary special gemstone. Rather, it is the Silmaril that Maedhros threw into a volcano. The Dwarves, with their most skilled craftsmen, were able to reshape it into the Arkenstone, the King's Jewel.;x
 some_fake_ANY_title_15;A New Trade Route;x
 some_fake_ANY_15;With the opening of the new route between Hobbiton and Isengard, the Shire and the Wizard's Domain are better connected than ever, allowing for easier taking the Hobbits to Isengard!;x
 some_fake_ANY_title_16;Tarlang the Giant;x
@@ -109,7 +109,7 @@ some_fake_ANY_20;Recently there has been an uptick in Demen-men sightings in Dr√
 some_fake_ANY_title_21;Is it Racist to Criticize Orcs for eating Man-flesh?;x
 some_fake_ANY_21;Is it racist to criticize orcs for eating Man-flesh? Clearly it is. The oppression of the Elves has led to starvation across Orc settlements, and out of desperation, many Orcs have turned to alternative food sources. For those who find it atrocious that some Orcs live this way, the best way to solve this is to stop the oppression of the Elves!;x
 some_fake_ANY_title_22;Apologies from the editor;x
-some_fake_ANY_22;The editor of this fine publications offers its sincere apologies for the mistake in last week's issue. When we said "Turd Age", we meant "Third Age". We offer our sincerest regrets.;x
+some_fake_ANY_22;The editor of this fine publication offers its sincere apologies for the mistake in last week's issue. When we said "Turd Age", we meant "Third Age". We offer our sincerest regrets.;x
 some_fake_ANY_title_23;Baseless speculation on noble families;x
 some_fake_ANY_23;It's a slow news day so we're going to baselessly speculate on the marriages and relationships of our nation's nobles. Who hates who? Who is marrying who? Who is planning on fleeing the country? More inside.;x
 some_fake_ANY_title_24;Dog bites a child;x
@@ -149,11 +149,11 @@ some_fake_ANY_40;A rave of dancing and debauchery held recently during a festiva
 some_fake_ANY_title_41;Noise complaint;x
 some_fake_ANY_41;Authorities in $ANYPROVINCE$ have received noise complaints after riders have been seen and heard charging around screaming "DEATH". Officials are investigating.;x
 some_fake_ANY_title_42;Penguins must pay;x
-some_fake_ANY_42;A government official has declared 10% tariffs will be placed on an cold, desolate, uninhabited island on the other side of the world. Apparently, the calculated trade balance was too one sided.;x
+some_fake_ANY_42;A government official has declared 10% tariffs will be placed on a cold, desolate, uninhabited island on the other side of the world. Apparently, the calculated trade balance was too one sided.;x
 some_fake_ANY_title_43;Small time scandal;x
 some_fake_ANY_43;News from a $ANYPROVINCE$ of a scandal involving local government officials. More on this story as it developers.;x
 some_fake_ANY_title_44;ROBBERY!;x
-some_fake_ANY_44;Businesses in $ANYPROVINCE$ have been hit by a string of robberies by a masked gang of ne'er-do-wells. The police are searching for the criminals and is granting a reward for any information leading to their capture.;x
+some_fake_ANY_44;Businesses in $ANYPROVINCE$ have been hit by a string of robberies by a masked gang of ne'er-do-wells. The police are searching for the criminals and are granting a reward for any information leading to their capture.;x
 some_fake_ANY_title_45;Storm unlikely;x
 some_fake_ANY_45;Incoming weather reports indicate that a storm is unlikely to hit $OURCOUNTRY$ because the weather system does not support it.;x
 some_fake_ANY_title_46;Masked vigilante strikes;x

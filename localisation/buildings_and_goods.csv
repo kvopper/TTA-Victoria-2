@@ -64,7 +64,7 @@ luxury_furniture_factory;Luxury Carpenters' Guild;x
 luxury_furniture_factory_desc;When supplied with dye, lumber and fabric, the employed guild artisans produce luxury furniture coveted by any person for their quality and comfort.;x
 clothes;Clothes;x
 clothes_factory;Tailors' Guild;x
-clothes_factory_desc;Fabric is used in a Tailor's Guild to produce clothes.;x
+clothes_factory_desc;Fabric is used in a Tailors' Guild to produce clothes.;x
 luxury_clothes;Luxury Clothes;x
 luxury_clothes_factory;Luxury Tailors' Guild;x
 luxury_clothes_factory_desc;Guild artisans with a particular talent use dye and fabric to produce luxury clothes coveted by any person for their quality and comfort.;x
@@ -107,7 +107,7 @@ province_selector_short;Province Selector;x
 POP_REOPEN_STATE_FACTORY;Investing in guild reopening;x
 POP_EXPAND_STATE_FACTORY;Investing in guild expansion;x
 PRODUCTION_FACTORIES;Guilds;;Zünfte;x
-PRODUCTION_TOGGLE_FILTER_TOOLTIP;Shows/hides guilds which relies on or produce $GOODS$;x
+PRODUCTION_TOGGLE_FILTER_TOOLTIP;Shows/hides guilds which rely on or produce $GOODS$;x
 PRODUCTION_SHOW_EMPTY_TOOLTIP;Shows/hides states with no displayed guilds;x
 SUBSIDIZE_ALL_TOOLTIP;Subsidize all guilds on the list.;x
 UNSUBSIDIZE_ALL_TOOLTIP;Cancel subsidies for all guilds on the list.;x
@@ -125,7 +125,7 @@ PRODUCTION_OPEN_FACTORY_TOOLTIP;§YOpen guild§W;x
 PRODUCTION_CLOSE_FACTORY_TOOLTIP;§YShutdown guild§W;x
 PRODUCTION_EXPAND_FACTORY_TOOLTIP;§YExpand guild§W;x
 PRODUCTION_DESTROY_FACTORY_BECAUSE_TOOLTIP;We are allowed to destroy this guild because:\n;x
-PRODUCTION_NOT_DESTROY_FACTORY_BECAUSE_TOOLTIP;We are allowed to destroy this guild because:\n;x
+PRODUCTION_NOT_DESTROY_FACTORY_BECAUSE_TOOLTIP;We are §RNOT§W allowed to destroy this guild because:\n;x
 PRODUCTION_OPEN_FACTORY_BECAUSE_TOOLTIP;We are allowed to open this guild because:\n;x
 PRODUCTION_CLOSE_FACTORY_BECAUSE_TOOLTIP;We are allowed to close this guild because:\n;x
 PRODUCTION_EXPAND_FACTORY_BECAUSE_TOOLTIP;We are allowed to expand this guild because:\n;x
