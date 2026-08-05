@@ -4,3 +4,8 @@ add_core = SHI
 trade_goods = timber
 life_rating = 25
 terrain = tuckborough
+
+party_loyalty = {
+	ideology = took_family
+	loyalty_value = 20.0
+}

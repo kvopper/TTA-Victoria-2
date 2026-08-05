@@ -4,3 +4,8 @@ add_core = SHI
 trade_goods = iron
 life_rating = 25
 terrain = michel_delving
+
+party_loyalty = {
+	ideology = took_family
+	loyalty_value = 5.0
+}

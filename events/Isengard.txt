@@ -1315,7 +1315,7 @@ country_event = {
 		name = "A new power is rising, it's victory is at hand."
 		1055 = {
 			any_pop = {
-				move_pop = 811
+				# move_pop = 811 depricated, but cannot yet remove the event
 			}
 		}
 		political_reform = yes_slavery

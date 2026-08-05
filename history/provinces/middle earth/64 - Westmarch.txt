@@ -4,3 +4,8 @@ add_core = SHI
 trade_goods = food
 life_rating = 30
 terrain = shire_plains
+
+party_loyalty = {
+	ideology = fairbairn_family
+	loyalty_value = 5.0
+}

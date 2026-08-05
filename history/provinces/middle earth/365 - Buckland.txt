@@ -4,3 +4,8 @@ add_core = BCK
 trade_goods = food
 life_rating = 30
 terrain = buckland
+
+party_loyalty = {
+	ideology = brandybuck_family
+	loyalty_value = 5.0
+}

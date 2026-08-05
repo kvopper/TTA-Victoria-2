@@ -4,3 +4,8 @@ add_core = SHI
 trade_goods = rock
 life_rating = 25
 terrain = shire_hills
+
+party_loyalty = {
+	ideology = took_family
+	loyalty_value = 10.0
+}
