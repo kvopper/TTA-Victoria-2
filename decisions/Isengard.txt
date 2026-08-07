@@ -6,7 +6,6 @@
 #	The Search for Power
 #	Aligning Dunland, Enedwaith and their neighbors
 #	Surveillance
-#	Uruk-hai
 
 # Starting Decision
 political_decisions = {
@@ -76,6 +75,29 @@ political_decisions = {
 		effect = {
 			add_country_modifier = { name = ISE_delving_into_ringmaking duration = -1 }
 			ISE_delving_into_ringmaking_loc = { }
+		}
+	}
+	ISE_of_men_and_orcs = {
+		picture = "Isengard/ISE_uruk_hai_army"
+		potential = {
+			has_country_flag = ISE_content
+			OR = {
+				ruling_party = ISE_saruman
+				ruling_party = ISE_saruman_sauronite
+			}
+			NOT = { has_global_flag = ISE_rejected_orcs }
+			NOT = { has_country_modifier = ISE_hybrid_research }
+			NOT = { has_country_flag = ISE_bred_uruk_hai }
+		}
+		allow = {
+			magic_4 = 1
+			accepted_culture = isengard_orc
+			war = no
+		}
+		effect = {
+			prestige = 5
+			badboy = 3
+			add_country_modifier = { name = ISE_hybrid_research duration = -1 }
 		}
 	}
 }
@@ -528,37 +550,6 @@ political_decisions = {
 		}
 		effect = {
 			add_country_modifier = { name = crebain_of_dunland duration = -1 }
-		}
-	}
-}
-
-# Uruk-hai
-# TODO REWORK
-political_decisions = {
-	breed_uruk_hai = {
-		potential = {
-			tag = ISE
-			is_vassal = no
-			OR = {
-				ruling_party = ISE_saruman
-				ruling_party = ISE_saruman_sauronite
-			}
-			NOT = { has_country_modifier = breeding_uruk_hai }
-			NOT = { has_global_flag = bred_uruk_hai }
-		}
-		allow = {
-			magic_3 = 1
-			good_evil_alignment = evil_alignment
-			war = no
-		}
-		effect = {
-			prestige = 5
-			badboy = 3
-			add_country_modifier = {
-				name = breeding_uruk_hai
-				duration = -1
-			}
-			any_pop = { dominant_issue = { value = evil_alignment factor = 0.4 } }
 		}
 	}
 }

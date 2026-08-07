@@ -880,6 +880,8 @@ country_event = {
 		
 		plurality = -2
 		
+		set_global_flag = ISE_rejected_orcs
+		
 		ai_chance = {
 			factor = 10
 			modifier = {
@@ -894,32 +896,27 @@ country_event = {
 country_event = {
 	id = 50114
 	title = "The Half-orcs"
-	desc = "EVTDESC50114" # TODO: write
+	desc = "EVTDESC50114"
 	picture = "isengard/isengard"
 	
 	fire_only_once = yes
 	
-	# TODO Configure once trigger is decided
 	trigger = {
 		has_country_flag = ISE_content
-		OR = {
-			ruling_party = ISE_saruman_sauronite
-			AND = {
-				ruling_party = ISE_saruman
-				has_country_modifier = ISE_ring_of_saruman
-			}
-		}
-		OR = {
-			year = 2985
-			AND = {
-				year = 2975
-				has_global_flag = railroading_disabled
-			}
-		}
+		accepted_culture = isengard_orc
 	}
 	
-	# TODO Configure once trigger is decided
-	mean_time_to_happen = { months = 12 }
+	mean_time_to_happen = {
+		months = 90
+		factor = {
+			modifier = 0.5
+			year = 2990
+		}
+		factor = {
+			modifier = 0.01
+			year = 3000
+		}
+	}
 	
 	option = {
 		name = "A failure always has their usages"
@@ -1030,37 +1027,35 @@ country_event = {
 country_event = {
 	id = 50115
 	title = "The Goblin-men"
-	desc = "EVTDESC50115" # TODO: write
+	desc = "EVTDESC50115"
 	picture = "isengard/isengard"
 	
 	fire_only_once = yes
 	
-	# TODO Configure once trigger is decided
 	trigger = {
 		has_country_flag = ISE_content
-		OR = {
-			ruling_party = ISE_saruman_sauronite
-			AND = {
-				ruling_party = ISE_saruman
-				has_country_modifier = ISE_ring_of_saruman
-			}
-		}
-		OR = {
-			year = 2985
-			AND = {
-				year = 2975
-				has_global_flag = railroading_disabled
-			}
-		}
+		accepted_culture = half_orc
+		year = 2990
 	}
 	
-	# TODO Configure once trigger is decided
-	mean_time_to_happen = { months = 12 }
+	mean_time_to_happen = {
+		months = 90
+		factor = {
+			modifier = 0.5
+			year = 3000
+		}
+		factor = {
+			modifier = 0.01
+			year = 3005
+		}
+	}
 	
 	option = {
 		name = "A failure always has their usages"
 		
 		prestige = -5 # Since this is technically a failure
+		
+		# TODO: Add surveillance gain modifier
 		
 		ISE_goblin_men_craftsmen_10000_isengard_loc = {}
 		end_color_loc = {}
@@ -1166,37 +1161,33 @@ country_event = {
 country_event = {
 	id = 50116
 	title = "The Uruk-hai"
-	desc = "EVTDESC50116" # TODO: write
-	picture = "isengard/isengard"
+	desc = "EVTDESC50116"
+	picture = "isengard/uruk_hai"
 	
 	fire_only_once = yes
 	
-	# TODO Configure once trigger is decided
 	trigger = {
 		has_country_flag = ISE_content
-		OR = {
-			ruling_party = ISE_saruman_sauronite
-			AND = {
-				ruling_party = ISE_saruman
-				has_country_modifier = ISE_ring_of_saruman
-			}
+		accepted_culture = goblin_men
+		year = 3000
+	}
+	
+	mean_time_to_happen = {
+		months = 90
+		factor = {
+			modifier = 0.5
+			year = 3005
 		}
-		OR = {
-			year = 2985
-			AND = {
-				year = 2975
-				has_global_flag = railroading_disabled
-			}
+		factor = {
+			modifier = 0.01
+			year = 3010
 		}
 	}
 	
-	# TODO Configure once trigger is decided
-	mean_time_to_happen = { months = 12 }
-	
 	option = {
-		name = "A failure always has their usages"
+		name = "The Age of the Uruk-hai is upon us"
 		
-		prestige = -5 # Since this is technically a failure
+		prestige = 25
 		
 		ISE_uruk_hai_soldiers_12000_isengard_loc = {}
 		end_color_loc = {}
@@ -1294,66 +1285,8 @@ country_event = {
 		clr_global_flag = hidden_effects
 		
 		add_accepted_culture = dunnish
-	}
-}
-
-# The Age of the Uruk-hai
-# TODO rework
-country_event = {
-	id = 50120
-	title = "The Age of the Uruk-hai"
-	desc = "EVTDESC50120"
-	picture = lord_of_isengard
-
-	trigger = {
-		tag = ISE
-		ruling_party = ISE_saruman
-		good_evil_alignment = evil_alignment
-		has_country_modifier = breeding_uruk_hai
-		NOT = { has_global_flag = bred_uruk_hai }
-	}
-	
-	mean_time_to_happen = { months = 24 }
-
-	option = {
-		name = "A new power is rising, it's victory is at hand."
-		1055 = {
-			any_pop = {
-				# move_pop = 811 depricated, but cannot yet remove the event
-			}
-		}
-		political_reform = yes_slavery
-		any_owned = {
-			limit = {
-				is_core = THIS
-			}
-			any_pop = {
-				limit = {
-					culture = gondorian
-				}
-				militancy = 6
-				consciousness = 6
-				pop_type = slaves
-			}
-		}
-		primary_culture = uruk_hai
-		add_accepted_culture = dunnish
-		remove_accepted_culture = gondorian
-		remove_country_modifier = breeding_uruk_hai
-		set_global_flag = bred_uruk_hai
 		
-		prestige = 5
-		badboy = 3
-
-		ai_chance = { factor = 100 }
-	}
-	option = {
-		name = "On second thoughts, no."
-		
-		prestige = 5
-		badboy = -5
-		
-		ai_chance = { factor = 0 }
+		set_global_flag = ISE_bred_uruk_hai
 	}
 }
 # }
