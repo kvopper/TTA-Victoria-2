@@ -442,6 +442,13 @@ propose_trade_with_realm_desc;There is an allied or sphere realm to which we hav
 ##############################;x
 destroy_the_world_title;Destroy Arda;x
 destroy_the_world_desc;Tom Bombadil is one of the most powerful beings, more powerful than the greatest realms of Middle Earth, more powerful than the Maiar: Wizards, Balrogs, or otherwise, and more powerful than even the Valar. Tom is an aspect of Eru himself, the representation of his love and of the imperishability of goodness in the world. Middle Earth is but Tom's playground. Because of this awesome power, Tom Bombadil can choose to end Arda at any time. He wouldn't, of course, but he could. §RMousing over this decision ends the game§!.;x
+#############################;x }
+##### FANGORN DECISIONS #####;x {
+#############################;x
+FAN_burn_forest_title;Logging Operations in Fangorn Forest;x
+FAN_burn_forest_desc;The massive forest of Fangorn is now within our borders. It is a land ripe for logging opportunities, regardless of who or what lives in it.;x
+FAN_restore_forest_title;Restore Fangorn Forest;x
+FAN_restore_forest_desc;The owners of the logging operations in our forest have fled. It is time to dismantle what was left behind and allow the land and trees to heal.;x
 ##############################;x }
 ##### ISENGARD DECISIONS #####;x {
 ##############################;x

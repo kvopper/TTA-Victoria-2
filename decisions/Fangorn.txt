@@ -1,5 +1,6 @@
 # Fangorn Decisions: {
 #	Starting Decisions (Unseen)
+#	Forest RGOs
 #	}
 
 # Starting Decisions (Unseen)
@@ -12,6 +13,73 @@ political_decisions = {
 			set_country_flag = nobility_deactivated
 			
 			set_country_flag = FAN_content
+		}
+	}
+}
+
+# Forest RGOs
+political_decisions = {
+	FAN_burn_forest = {
+		picture = "Fangorn/fangorn_forest"
+		potential = {
+			NOT = { is_culture_group = ents }
+			any_owned_province = {
+				region = FAN_773
+				trade_goods = food
+			}
+		}
+		allow = {
+			war = no
+			FAN = { exists = no }
+			NOT = { FAN_773 = { NOT = { owned_by = THIS } } }
+		}
+		effect = {
+			badboy = 1
+			FAN_773 = {
+				limit = { trade_goods = food }
+				trade_goods = timber
+				add_province_modifier = { name = FAN_forest_logging duration = -1 }
+			}
+		}
+		
+		# AI is stupid and doesn't check the effects to see if it would break the infamy limit
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 0
+				OR = {
+					AND = {
+						NOT = { good_evil_alignment = evil_alignment }
+						has_global_flag = railroading_enabled
+					}
+					badboy = 0.95
+					NOT = { num_of_cities = 10 } # Don't want the AI to cripple itself
+				}
+				
+			}
+		}
+	}
+	
+	FAN_restore_forest = {
+		picture = "Fangorn/fangorn_forest"
+		potential = {
+			is_culture_group = ents
+			any_owned_province = {
+				region = FAN_773
+				trade_goods = timber
+			}
+		}
+		allow = {
+			war = no
+			NOT = { FAN_773 = { NOT = { owned_by = THIS } } }
+		}
+		effect = {
+			FAN_773 = {
+				limit = { trade_goods = timber }
+				trade_goods = food
+				remove_province_modifier = FAN_forest_logging # shouldn't be applied, but if it somehow is, remove it
+			}
 		}
 	}
 }

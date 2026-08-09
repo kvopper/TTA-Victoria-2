@@ -2240,6 +2240,16 @@ MOR_demands_of_mordor_cooldown = {
 }
 
 # }
+##### FANGORN ##### {
+# Province Modifier
+FAN_forest_logging = {
+	pop_militancy_modifier = 0.1
+	population_growth = -0.001
+	local_RGO_output = 1
+	
+	icon = 20
+}
+# }
 ##### OATHBREAKERS ##### {
 # Province Modifier
 haunted_by_oathbreakers = {
