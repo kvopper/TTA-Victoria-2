@@ -1665,7 +1665,7 @@ country_event = {
 	}
 }
 
-# DAL Flavor Cleanup
+# DAL Flavor Monthly Cleanup
 country_event = {
 	id = 99001
 	title = "DAL Flavor Cleanup"
@@ -6100,7 +6100,7 @@ country_event = {
 	}
 }
 
-# ISE Flavor + Alliance of the Two Towers Cleanup
+# ISE Flavor + Alliance of the Two Towers Monthly Cleanup
 country_event = {
 	id = 99010
 	title = "ISE Flavor Cleanup"
@@ -6138,6 +6138,15 @@ country_event = {
 			limit = {
 				has_country_flag = ISE_content
 				has_country_modifier = crebain_of_dunland
+			}
+			change_variable = { which = ISE_surveillance value = 1 }
+		}
+		
+		# Gain from the Goblin-men
+		random_country = {
+			limit = {
+				has_country_flag = ISE_content
+				has_country_modifier = ISE_goblin_men_modifier
 			}
 			change_variable = { which = ISE_surveillance value = 1 }
 		}
@@ -7029,6 +7038,14 @@ country_event = {
 			
 			random_owned = {
 				limit = { owner = { has_country_modifier = renounced_white_council } }
+				owner = {
+					change_variable = { which = modifier_count value = 1 }
+					change_variable = { which = total_modifier_count value = 1 }
+				}
+			}
+			
+			random_owned = {
+				limit = { owner = { has_country_modifier = ISE_goblin_men_modifier } }
 				owner = {
 					change_variable = { which = modifier_count value = 1 }
 					change_variable = { which = total_modifier_count value = 1 }

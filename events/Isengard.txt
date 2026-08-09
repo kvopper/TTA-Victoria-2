@@ -1055,7 +1055,7 @@ country_event = {
 		
 		prestige = -5 # Since this is technically a failure
 		
-		# TODO: Add surveillance gain modifier
+		add_country_modifier = { name = ISE_goblin_men_modifier duration = -1 }
 		
 		ISE_goblin_men_craftsmen_10000_isengard_loc = {}
 		end_color_loc = {}

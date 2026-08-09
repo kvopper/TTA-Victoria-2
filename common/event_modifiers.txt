@@ -2148,6 +2148,11 @@ crebain_of_dunland = {
 }
 
 # Country Modifier
+ISE_goblin_men_modifier = {
+	icon = 17
+}
+
+# Country Modifier
 ISE_demands_of_mordor_industry = {
 	factory_output = -0.5
 	
