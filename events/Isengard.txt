@@ -904,6 +904,7 @@ country_event = {
 	trigger = {
 		has_country_flag = ISE_content
 		accepted_culture = isengard_orc
+		has_country_modifier = ISE_hybrid_research
 	}
 	
 	mean_time_to_happen = {
@@ -1036,6 +1037,7 @@ country_event = {
 		has_country_flag = ISE_content
 		accepted_culture = half_orc
 		year = 2990
+		has_country_modifier = ISE_hybrid_research
 	}
 	
 	mean_time_to_happen = {
@@ -1170,6 +1172,7 @@ country_event = {
 		has_country_flag = ISE_content
 		accepted_culture = goblin_men
 		year = 3000
+		has_country_modifier = ISE_hybrid_research
 	}
 	
 	mean_time_to_happen = {
@@ -1206,6 +1209,7 @@ country_event = {
 		primary_culture = uruk_hai
 		remove_accepted_culture = men_culture
 		remove_country_modifier = men_culture_nation
+		remove_country_modifier = ISE_hybrid_research
 		add_accepted_culture = orc_culture
 		add_country_modifier = { name = orc_culture_nation duration = -1 }
 		
