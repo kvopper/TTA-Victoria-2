@@ -760,6 +760,8 @@ ISE_uruk_hai_soldiers_3000_lag_sharak_loc = { } # \nCreates a new pop of §Y3000
 ISE_uruk_hai_soldiers_3000_mines_of_methedras_loc = { } # \nCreates a new pop of §Y3000 Orc Uruk-hai Soldiers§! in §YMines of Methedras§!
 ISE_uruk_hai_soldiers_3000_fangorn_pass_loc = { } # \nCreates a new pop of §Y3000 Orc Uruk-hai Soldiers§! in §YFangorn Pass§!
 
+ISE_surveillance_for_sphereling_loc = { } # Spends §R12 Surveillance§! to sphere and ally one of the Northern Goblin realms
+
 # Static Tooltip Locs - Lothlorien
 LOR_unlock_invention_lembas_bread_loc = { } # Unlocks invention §YLembas Bread§! at the §Ystart of the next month§!, giving the following effects:\nArmies: Supply Consumption: §G-10%§!\nRGO output efficiency tech: §G+5.0%§!
 

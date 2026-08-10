@@ -1701,6 +1701,7 @@ add_claim_DUN_1448_loc;§WWe will gain claims over §!§YIsendale§!§I;x
 claim_status_doesnt_own_GON_796_loc;§YWhite Mountains§!: §RUnowned§!§I;x
 claim_status_owns_HAR_322_loc;§YHaradwaith§!: §GOwned§!§I;x
 triggered_event_alliance_of_dwarves_and_men_economic_union_loc;get the 'Alliance of Dwarves and Men Economic Union' event.§I;x
+ISE_surveillance_for_sphereling_loc;Spends §R12 Surveillance§! to sphere and ally one of the Northern Goblin realms§I;x
 claim_status_doesnt_own_DND_1328_loc;§YNengaren§!: §RUnowned§!§I;x
 triggered_event_alliance_of_dwarves_and_men_specific_flavor_loc;get the 'Alliance of Dwarves and Men - Specific Flavor' event.§I;x
 remove_claim_MOR_440_loc;§WWe will lose claims over §!§YMorgai§!§I;x

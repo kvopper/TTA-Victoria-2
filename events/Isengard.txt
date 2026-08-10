@@ -1293,6 +1293,77 @@ country_event = {
 		set_global_flag = ISE_bred_uruk_hai
 	}
 }
+
+# Allies to the North?
+country_event = {
+	id = 50117
+	title = "Allies to the North?"
+	desc = "EVTDESC50117"
+	picture = "Administration"
+	
+	trigger = {
+		has_country_flag = ISE_content
+		is_greater_power = yes
+		accepted_culture = isengard_orc
+		check_variable = { which = ISE_surveillance value = 11.9 }
+		FOR = {
+			any_neighbor_country = {
+				is_culture_group = northern_goblins
+				is_greater_power = no
+				part_of_sphere  = no
+				is_vassal = no
+				NOT = { war_with = THIS }
+				ai = yes
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 120
+	}
+	
+	option = {
+		name = "We can always use more snaga"
+		
+		change_variable = { which = ISE_surveillance value = -12 }
+		prestige = 5
+		
+		random_country = {
+			limit = {
+				is_culture_group = northern_goblins
+				is_greater_power = no
+				part_of_sphere  = no
+				is_vassal = no
+				NOT = { war_with = THIS }
+				ai = yes
+			}
+			country_event = 50118
+		}
+		
+		ISE_surveillance_for_sphereling_loc = {}
+	}
+	
+	option = {
+		name = "We do not need them"
+	}
+}
+
+country_event = {
+	id = 50118
+	title = "Sphered by $FROMCOUNTRY$"
+	desc = "EVTDESC50118"
+	picture = "Administration"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "They are our allies now"
+		
+		create_alliance = FROM
+		FROM = { diplomatic_influence = { who = THIS value = 400 } }
+		relation = { who = FROM value = 400 }
+	}
+}
 # }
 
 # The Alliance of Two Towers {
