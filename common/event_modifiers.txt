@@ -2239,6 +2239,15 @@ MOR_demands_of_mordor_cooldown = {
 	icon = 61
 }
 
+# Province Modifier
+ISE_breeding_pits = {
+	population_growth = 0.01
+	local_RGO_output = 0.5
+	local_factory_throughput = 0.5
+	
+	icon = 19
+}
+
 # }
 ##### FANGORN ##### {
 # Province Modifier

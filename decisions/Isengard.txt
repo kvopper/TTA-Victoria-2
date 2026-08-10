@@ -100,6 +100,26 @@ political_decisions = {
 			add_country_modifier = { name = ISE_hybrid_research duration = -1 }
 		}
 	}
+	ISE_establish_breeding_pits = {
+		picture = "Isengard/ISE_isengard"
+		potential = {
+			has_country_flag = ISE_content
+			OR = {
+				has_country_flag = ISE_bred_uruk_hai
+				has_country_modifier = ISE_hybrid_research
+			}
+			NOT = { has_global_flag = ISE_established_breeding_pits }
+		}
+		allow = {
+			invention = breeding_pits
+			owns = 811
+		}
+		effect = {
+			811 = { add_province_modifier = { name = ISE_breeding_pits duration = -1 } }
+			
+			set_global_flag = ISE_established_breeding_pits
+		}
+	}
 }
 
 # Aligning Dunland, Enedwaith and their neighbors

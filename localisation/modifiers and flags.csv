@@ -671,6 +671,7 @@ MOR_isengards_tribute_raw_materials;Isengard's Tribute;x
 MOR_isengards_tribute_raw_materials_desc;Isengard has delivered tribute from their RGOs.;x
 MOR_demands_of_mordor_cooldown;Demanded Tribute from Isengard;x
 MOR_demands_of_mordor_cooldown_desc;We have recently demanded tribute from Isengard, and should wait before demanding more.;x
+ISE_breeding_pits;Pits of Isengard;x
 #############################;x }
 ##### FANGORN MODIFIERS #####;x {
 #############################;x
