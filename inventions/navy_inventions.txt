@@ -1,3 +1,18 @@
+##############################
+# MERCHANT MARINE INVENTIONS #
+##############################
+roundships = {
+	limit = { merchant_marine_4 = 1 }
+	chance = {
+		base = 5
+	}
+	
+	effect = {
+		transport = {
+			gun_power = 2
+		}
+	}
+}
 #################################
 # NAVAL CONSTRUCTION INVENTIONS #
 #################################
@@ -100,6 +115,73 @@ boarding_bridges = {
 		corsair_ship = {
 			gun_power = 5
 			torpedo_attack = 8
+		}
+	}
+}
+
+######################
+# SYNERGY INVENTIONS #
+######################
+navy_tech_invention_1 = {
+	limit = {
+		merchant_marine_1 = 1
+		light_ships_1 = 1
+		heavy_ships_1 = 1
+		naval_construction_1 = 1
+	}
+	chance = { base = 100 }
+	effect = {
+		supply_range = 0.1
+	}
+}
+navy_tech_invention_2 = {
+	limit = {
+		merchant_marine_2 = 1
+		light_ships_2 = 1
+		heavy_ships_2 = 1
+		naval_construction_2 = 1
+	}
+	chance = { base = 100 }
+	effect = {
+		naval_attrition = -0.02
+	}
+}
+navy_tech_invention_3 = {
+	limit = {
+		merchant_marine_3 = 1
+		light_ships_3 = 1
+		heavy_ships_3 = 1
+		naval_construction_3 = 1
+	}
+	chance = { base = 100 }
+	effect = {
+		naval_attrition = -0.03
+	}
+}
+navy_tech_invention_4 = {
+	limit = {
+		merchant_marine_4 = 1
+		light_ships_4 = 1
+		heavy_ships_4 = 1
+		naval_construction_4 = 1
+	}
+	chance = { base = 100 }
+	effect = {
+		supply_range = 0.1
+	}
+}
+navy_tech_invention_5 = {
+	limit = {
+		merchant_marine_5 = 1
+		light_ships_5 = 1
+		heavy_ships_5 = 1
+		naval_construction_5 = 1
+	}
+	chance = { base = 100 }
+	effect = {
+		navy_base = {
+			maximum_speed = 5
+			build_time = -10
 		}
 	}
 }

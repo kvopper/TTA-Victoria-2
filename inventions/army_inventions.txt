@@ -1142,3 +1142,82 @@ artillery_tech_5_equipment = {
 		}
 	}
 }
+
+######################
+# SYNERGY INVENTIONS #
+######################
+army_invention_1 = {
+	limit = {
+		infantry_tech_1 = 1
+		archer_tech_1 = 1
+		cavalry_tech_1 = 1
+		artillery_tech_1 = 1
+	}
+	chance = { base = 100 }
+	effect = {
+		army_base = {
+			default_organisation = 2
+			supply_consumption = -0.05
+		}
+	}
+}
+army_invention_2 = {
+	limit = {
+		infantry_tech_2 = 1
+		archer_tech_2 = 1
+		cavalry_tech_2 = 1
+		artillery_tech_2 = 1
+	}
+	chance = { base = 100 }
+	effect = {
+		army_base = {
+			default_organisation = 2
+			supply_consumption = -0.05
+		}
+	}
+}
+army_invention_3 = {
+	limit = {
+		infantry_tech_3 = 1
+		archer_tech_3 = 1
+		cavalry_tech_3 = 1
+		artillery_tech_3 = 1
+	}
+	chance = { base = 100 }
+	effect = {
+		army_base = {
+			default_organisation = 2
+			supply_consumption = -0.05
+		}
+	}
+}
+army_invention_4 = {
+	limit = {
+		infantry_tech_4 = 1
+		archer_tech_4 = 1
+		cavalry_tech_4 = 1
+		artillery_tech_4 = 1
+	}
+	chance = { base = 100 }
+	effect = {
+		army_base = {
+			default_organisation = 2
+			supply_consumption = -0.05
+		}
+	}
+}
+army_invention_5 = {
+	limit = {
+		infantry_tech_5 = 1
+		archer_tech_5 = 1
+		cavalry_tech_5 = 1
+		artillery_tech_5 = 1
+	}
+	chance = { base = 100 }
+	effect = {
+		army_base = {
+			default_organisation = 2
+			supply_consumption = -0.05
+		}
+	}
+}

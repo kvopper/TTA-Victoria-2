@@ -77,3 +77,73 @@ inns = {
 		max_public_house = 1
 	}
 }
+
+######################
+# SYNERGY INVENTIONS #
+######################
+population_invention_1 = {
+	limit = {
+		taxes_1 = 1
+		administration_tech_1 = 1
+		population_1 = 1
+		entertainment_tech_1 = 1
+	}
+	chance = { base = 100 }
+	effect = {
+		administrative_efficiency = 0.05
+		plurality = -0.05
+	}
+}
+population_invention_2 = {
+	limit = {
+		taxes_2 = 1
+		administration_tech_2 = 1
+		population_2 = 1
+		entertainment_tech_2 = 1
+	}
+	chance = { base = 100 }
+	effect = {
+		tax_eff = 5
+		plurality = -0.05
+	}
+}
+population_invention_3 = {
+	limit = {
+		taxes_3 = 1
+		administration_tech_3 = 1
+		population_3 = 1
+		entertainment_tech_3 = 1
+	}
+	chance = { base = 100 }
+	effect = {
+		max_national_focus = 1
+		plurality = -0.05
+	}
+}
+population_invention_4 = {
+	limit = {
+		taxes_4 = 1
+		administration_tech_4 = 1
+		population_4 = 1
+		entertainment_tech_4 = 1
+	}
+	chance = { base = 100 }
+	effect = {
+		administrative_efficiency = 0.05
+		plurality = -0.05
+	}
+}
+population_invention_5 = {
+	limit = {
+		taxes_5 = 1
+		administration_tech_5 = 1
+		population_5 = 1
+		entertainment_tech_5 = 1
+	}
+	chance = { base = 100 }
+	effect = {
+		tax_eff = 5
+		max_national_focus = 1
+		plurality = -0.05
+	}
+}

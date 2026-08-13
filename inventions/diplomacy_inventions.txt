@@ -1153,3 +1153,72 @@ the_road_goes_ever_on = {
 	
 	effect = { shared_prestige = 25 }
 }
+
+######################
+# SYNERGY INVENTIONS #
+######################
+diplomacy_invention_1 = {
+	limit = {
+		expansion_1 = 1
+		diplomacy_1 = 1
+		wilderness_1 = 1
+		culture_1 = 1
+	}
+	chance = { base = 100 }
+	effect = {
+		influence = 0.05
+		shared_prestige = 5
+	}
+}
+diplomacy_invention_2 = {
+	limit = {
+		expansion_2 = 1
+		diplomacy_2 = 1
+		wilderness_2 = 1
+		culture_2 = 1
+	}
+	chance = { base = 100 }
+	effect = {
+		colonial_migration = 0.05
+		shared_prestige = 10
+	}
+}
+diplomacy_invention_3 = {
+	limit = {
+		expansion_3 = 1
+		diplomacy_3 = 1
+		wilderness_3 = 1
+		culture_3 = 1
+	}
+	chance = { base = 100 }
+	effect = {
+		colonial_points = 250
+		shared_prestige = 15
+	}
+}
+diplomacy_invention_4 = {
+	limit = {
+		expansion_4 = 1
+		diplomacy_4 = 1
+		wilderness_4 = 1
+		culture_4 = 1
+	}
+	chance = { base = 100 }
+	effect = {
+		colonial_migration = 0.05
+		shared_prestige = 20
+	}
+}
+diplomacy_invention_5 = {
+	limit = {
+		expansion_5 = 1
+		diplomacy_5 = 1
+		wilderness_5 = 1
+		culture_5 = 1
+	}
+	chance = { base = 100 }
+	effect = {
+		colonial_points = 250
+		shared_prestige = 25
+	}
+}

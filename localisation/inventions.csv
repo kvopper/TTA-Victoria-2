@@ -85,6 +85,16 @@ artillery_tech_4_equipment;Elite Artillery Construction;x
 artillery_tech_4_equipment_desc;Despite having recently developed new equipment for our army, it takes some time to craft and deploy the equipment.;x
 artillery_tech_5_equipment;Supreme Artillery Construction;x
 artillery_tech_5_equipment_desc;Despite having recently developed new equipment for our army, it takes some time to craft and deploy the equipment.;x
+army_invention_1;Army I;x
+army_invention_1_desc;Here's a bonus for finishing all techs in the row!;x
+army_invention_2;Army II;x
+army_invention_2_desc;Here's a bonus for finishing all techs in the row!;x
+army_invention_3;Army III;x
+army_invention_3_desc;Here's a bonus for finishing all techs in the row!;x
+army_invention_4;Army IV;x
+army_invention_4_desc;Here's a bonus for finishing all techs in the row!;x
+army_invention_5;Army V;x
+army_invention_5_desc;Here's a bonus for finishing all techs in the row!;x
 ######################################;x }
 ##### MILITARY THEORY INVENTIONS #####;x {
 ######################################;x
@@ -244,9 +254,21 @@ discipline_invention;Discipline;x
 discipline_invention_desc;If our troops rout from combat, it doesnt matter how effective they are with a blade.;x
 outposts;Outposts;x
 outposts_desc;By establishing outposts in border territory, we can better defend out lands.;x
+military_theory_tech_invention_1;Military Theory I;x
+military_theory_tech_invention_1_desc;Here's a bonus for finishing all techs in the row!;x
+military_theory_tech_invention_2;Military Theory II;x
+military_theory_tech_invention_2_desc;Here's a bonus for finishing all techs in the row!;x
+military_theory_tech_invention_3;Military Theory III;x
+military_theory_tech_invention_3_desc;Here's a bonus for finishing all techs in the row!;x
+military_theory_tech_invention_4;Military Theory IV;x
+military_theory_tech_invention_4_desc;Here's a bonus for finishing all techs in the row!;x
+military_theory_tech_invention_5;Military Theory V;x
+military_theory_tech_invention_5_desc;Here's a bonus for finishing all techs in the row!;x
 ###########################;x }
 ##### NAVY INVENTIONS #####;x {
 ###########################;x
+roundships;Armed Roundships;x
+roundships_desc;As trade routes grow perilous with corsairs and raiders, shipwrights across many realms have begun reinforcing the humble roundship — broadening its hull, raising fighting platforms fore and aft, and arming its crew with spear, bow, and grapple-axe. Some vessels bear mounted torsion-engines capable of holing a pursuing ship, while stores of pitch and oil stand ready to be loosed burning upon any who dare come alongside. Slower and less laden than before, the armed roundship trades cargo space for survival — a bargain that merchant captains, and the realms that depend on them, have judged well worth the making.;x
 ramming;Ramming;x
 ramming_desc;Sometimes, the best way to defeat an enemy navy is to sink each ship.;x
 advanced_ramming;Advanced Ramming;x
@@ -261,6 +283,16 @@ corsair_ship_unlock;Corsair Ships;x
 corsair_ship_unlock_desc;Known for their black sails and ruthless efficiency, the Corsairs of Umbar use their own type of heavy ship to wreak havoc upon their foes.;x
 grand_shipyards;Grand Shipyards;x
 grand_shipyards_desc;Large harbors dedicated to ship constructure, allowing more ships to be serviced and built at once.;x
+navy_tech_invention_1;Navy I;x
+navy_tech_invention_1_desc;Here's a bonus for finishing all techs in the row!;x
+navy_tech_invention_2;Navy II;x
+navy_tech_invention_2_desc;Here's a bonus for finishing all techs in the row!;x
+navy_tech_invention_3;Navy III;x
+navy_tech_invention_3_desc;Here's a bonus for finishing all techs in the row!;x
+navy_tech_invention_4;Navy IV;x
+navy_tech_invention_4_desc;Here's a bonus for finishing all techs in the row!;x
+navy_tech_invention_5;Navy V;x
+navy_tech_invention_5_desc;Here's a bonus for finishing all techs in the row!;x
 ###############################;x }
 ##### COMMERCE INVENTIONS #####;x {
 ###############################;x
@@ -288,6 +320,16 @@ great_roads;Great Roads;x
 great_roads_desc;The most well-traversed roads in Middle-Earth are known as "Great Roads". These roads are larger and more well maintained than other roads, allowing more goods to flow across them.;x
 distribution_channels;Distribution Channels;x
 distribution_channels_desc;By working with guilds directly, we can ensure that military goods are shipped directly to armies.;x
+commerce_invention_1;Commerce I;x
+commerce_invention_1_desc;Here's a bonus for finishing all techs in the row!;x
+commerce_invention_2;Commerce II;x
+commerce_invention_2_desc;Here's a bonus for finishing all techs in the row!;x
+commerce_invention_3;Commerce III;x
+commerce_invention_3_desc;Here's a bonus for finishing all techs in the row!;x
+commerce_invention_4;Commerce IV;x
+commerce_invention_4_desc;Here's a bonus for finishing all techs in the row!;x
+commerce_invention_5;Commerce V;x
+commerce_invention_5_desc;Here's a bonus for finishing all techs in the row!;x
 #################################;x }
 ##### POPULATION INVENTIONS #####;x {
 #################################;x
@@ -303,6 +345,16 @@ breeding_pits;Breeding Pits;x
 breeding_pits_desc;"Ashes and dust and thirst there is, and pits, pits, pits. And Orcses, thousands of Orcses."
 inns;Inns;x
 inns_desc;Large accommodations for travellors, inns also house regular bards and other entertainment.;x
+population_invention_1;Society I;x
+population_invention_1_desc;Here's a bonus for finishing all techs in the row!;x
+population_invention_2;Society II;x
+population_invention_2_desc;Here's a bonus for finishing all techs in the row!;x
+population_invention_3;Society III;x
+population_invention_3_desc;Here's a bonus for finishing all techs in the row!;x
+population_invention_4;Society IV;x
+population_invention_4_desc;Here's a bonus for finishing all techs in the row!;x
+population_invention_5;Society V;x
+population_invention_5_desc;Here's a bonus for finishing all techs in the row!;x
 ################################;x }
 ##### KNOWLEDGE INVENTIONS #####;x {
 ################################;x
@@ -338,6 +390,16 @@ third_lesser_ring;Yet another Lesser Ring;x
 third_lesser_ring_desc;Before Sauron and Celebrimbor forged the One Ring, they created dozens or perhaps hundreds of lesser rings - essays in the craft of ring making to perfect their expertise. Acquiring another one of these rings may prove fruitful.;x
 universities;Universities;x
 universities_desc;By establishing higher education for those who can afford it, we can more easily push our realm forward.;x
+knowledge_invention_1;Knowledge I;x
+knowledge_invention_1_desc;Here's a bonus for finishing all techs in the row!;x
+knowledge_invention_2;Knowledge II;x
+knowledge_invention_2_desc;Here's a bonus for finishing all techs in the row!;x
+knowledge_invention_3;Knowledge III;x
+knowledge_invention_3_desc;Here's a bonus for finishing all techs in the row!;x
+knowledge_invention_4;Knowledge IV;x
+knowledge_invention_4_desc;Here's a bonus for finishing all techs in the row!;x
+knowledge_invention_5;Knowledge V;x
+knowledge_invention_5_desc;Here's a bonus for finishing all techs in the row!;x
 ################################;x }
 ##### DIPLOMACY INVENTIONS #####;x {
 ################################;x
@@ -457,3 +519,13 @@ fires_of_war;Fires of War;x
 fires_of_war_desc;Stone by stone... Cracked, crushed, fallen... Beauty burned, erased... But not forgotten... I’ll take your melodies... May your last breath... Fill the air with embers... I... inhale. In their blood, I will stand! Let the waning light of Man, Cast my shadow on the Fires of War, Till our time burns away, Till our embers fade to grey, Cast my shadow on the Fires of War!;x
 fish_song;Fish Song;x
 fish_song_desc;The rock and pool, So nice and cool, So juicy sweet! Our only wish, To catch a fish, So juicy sweet!;x
+diplomacy_invention_1;Diplomacy I;x
+diplomacy_invention_1_desc;Here's a bonus for finishing all techs in the row!;x
+diplomacy_invention_2;Diplomacy II;x
+diplomacy_invention_2_desc;Here's a bonus for finishing all techs in the row!;x
+diplomacy_invention_3;Diplomacy III;x
+diplomacy_invention_3_desc;Here's a bonus for finishing all techs in the row!;x
+diplomacy_invention_4;Diplomacy IV;x
+diplomacy_invention_4_desc;Here's a bonus for finishing all techs in the row!;x
+diplomacy_invention_5;Diplomacy V;x
+diplomacy_invention_5_desc;Here's a bonus for finishing all techs in the row!;x

@@ -194,3 +194,67 @@ universities = {
 	
 	effect = { max_scriptorium = 1 }
 }
+
+######################
+# SYNERGY INVENTIONS #
+######################
+knowledge_invention_1 = {
+	limit = {
+		herblore_tech_1 = 1
+		magic_1 = 1
+		education_1 = 1
+		scholarship_tech_1 = 1
+	}
+	chance = { base = 100 }
+	effect = {
+		pop_growth = 0.0001
+	}
+}
+knowledge_invention_2 = {
+	limit = {
+		herblore_tech_2 = 1
+		magic_2 = 1
+		education_2 = 1
+		scholarship_tech_2 = 1
+	}
+	chance = { base = 100 }
+	effect = {
+		education_efficiency = 0.25
+	}
+}
+knowledge_invention_3 = {
+	limit = {
+		herblore_tech_3 = 1
+		magic_3 = 1
+		education_3 = 1
+		scholarship_tech_3 = 1
+	}
+	chance = { base = 100 }
+	effect = {
+		pop_growth = 0.0001
+	}
+}
+knowledge_invention_4 = {
+	limit = {
+		herblore_tech_4 = 1
+		magic_4 = 1
+		education_4 = 1
+		scholarship_tech_4 = 1
+	}
+	chance = { base = 100 }
+	effect = {
+		increase_research = 0.25
+	}
+}
+knowledge_invention_5 = {
+	limit = {
+		herblore_tech_5 = 1
+		magic_5 = 1
+		education_5 = 1
+		scholarship_tech_5 = 1
+	}
+	chance = { base = 100 }
+	effect = {
+		soldier_to_pop_loss = 0.05
+	}
+}

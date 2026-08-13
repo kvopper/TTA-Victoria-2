@@ -88,7 +88,7 @@ mobilization_planning = {
 	effect = {
 		supply_limit = 0.1
 		mobilisation_economy_impact = -0.01
-		reinforce_rate = 0.01
+		reinforce_rate = 0.05
 	}
 }
 caravans = {
@@ -99,7 +99,7 @@ caravans = {
 	effect = {
 		supply_limit = 0.1
 		mobilisation_economy_impact = -0.01
-		reinforce_rate = 0.02
+		reinforce_rate = 0.05
 	}
 }
 supply_lines = {
@@ -110,7 +110,7 @@ supply_lines = {
 	effect = {
 		supply_limit = 0.2
 		mobilisation_economy_impact = -0.01
-		reinforce_rate = 0.03
+		reinforce_rate = 0.05
 	}
 }
 planned_logistics = {
@@ -121,7 +121,7 @@ planned_logistics = {
 	effect = {
 		supply_limit = 0.3
 		mobilisation_economy_impact = -0.01
-		reinforce_rate = 0.04
+		reinforce_rate = 0.05
 	}
 }
 great_roads = {
@@ -142,5 +142,71 @@ distribution_channels = {
 		supply_limit = 0.3
 		mobilisation_economy_impact = -0.01
 		reinforce_rate = 0.05
+	}
+}
+
+######################
+# SYNERGY INVENTIONS #
+######################
+commerce_invention_1 = {
+	limit = {
+		rgo_tech_1 = 1
+		guilds_1 = 1
+		trade_tech_1 = 1
+		infrastructure_tech_1 = 1
+	}
+	chance = { base = 100 }
+	effect = {
+		farm_rgo_eff = 0.1
+		mine_rgo_eff = 0.1
+	}
+}
+commerce_invention_2 = {
+	limit = {
+		rgo_tech_2 = 1
+		guilds_2 = 1
+		trade_tech_2 = 1
+		infrastructure_tech_2 = 1
+	}
+	chance = { base = 100 }
+	effect = {
+		reinforce_rate = 0.05
+	}
+}
+commerce_invention_3 = {
+	limit = {
+		rgo_tech_3 = 1
+		guilds_3 = 1
+		trade_tech_3 = 1
+		infrastructure_tech_3 = 1
+	}
+	chance = { base = 100 }
+	effect = {
+		factory_output = 0.01
+		factory_input = -0.01
+	}
+}
+commerce_invention_4 = {
+	limit = {
+		rgo_tech_4 = 1
+		guilds_4 = 1
+		trade_tech_4 = 1
+		infrastructure_tech_4 = 1
+	}
+	chance = { base = 100 }
+	effect = {
+		loan_interest = -0.05
+	}
+}
+commerce_invention_5 = {
+	limit = {
+		rgo_tech_5 = 1
+		guilds_5 = 1
+		trade_tech_5 = 1
+		infrastructure_tech_5 = 1
+	}
+	chance = { base = 100 }
+	effect = {
+		supply_limit = 0.5
 	}
 }

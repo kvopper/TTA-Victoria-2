@@ -1053,6 +1053,72 @@ outposts = {
 		max_barracks = 1
 	}
 }
-###########################
-# NAVAL THEORY INVENTIONS #
-###########################
+
+######################
+# SYNERGY INVENTIONS #
+######################
+military_theory_tech_invention_1 = {
+	limit = {
+		fortifications_1 = 1
+		army_tactics_1 = 1
+		training_1 = 1
+		naval_theory_1 = 1
+	}
+	chance = { base = 100 }
+	effect = {
+		army_base = {
+			supply_consumption = -0.05
+		}
+	}
+}
+military_theory_tech_invention_2 = {
+	limit = {
+		fortifications_2 = 1
+		army_tactics_2 = 1
+		training_2 = 1
+		naval_theory_2 = 1
+	}
+	chance = { base = 100 }
+	effect = {
+		mobilisation_size = 0.05
+		morale = 0.25
+	}
+}
+military_theory_tech_invention_3 = {
+	limit = {
+		fortifications_3 = 1
+		army_tactics_3 = 1
+		training_3 = 1
+		naval_theory_3 = 1
+	}
+	chance = { base = 100 }
+	effect = {
+		military_tactics = 0.25
+	}
+}
+military_theory_tech_invention_4 = {
+	limit = {
+		fortifications_4 = 1
+		army_tactics_4 = 1
+		training_4 = 1
+		naval_theory_4 = 1
+	}
+	chance = { base = 100 }
+	effect = {
+		army_base = {
+			supply_consumption = -0.05
+		}
+	}
+}
+military_theory_tech_invention_5 = {
+	limit = {
+		fortifications_5 = 1
+		army_tactics_5 = 1
+		training_5 = 1
+		naval_theory_5 = 1
+	}
+	chance = { base = 100 }
+	effect = {
+		military_tactics = 0.25
+	}
+}
