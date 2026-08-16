@@ -15,7 +15,7 @@ overseers_lash = {
 	}
 	
 	effect = {
-		factory_input = -0.01
+		factory_input = 0.01
 		factory_throughput = 0.05
 	}
 }
@@ -33,8 +33,33 @@ second_breakfast_economics = {
 	}
 	
 	effect = {
-		global_pop_militancy_modifier = -0.01
 		tax_eff = -0.05
+	}
+	core_pop_militancy_modifier = -0.01
+}
+watch_and_ward = {
+	limit = {
+		administration_tech_2 = 1
+	}
+	chance = {
+		base = 2
+	}
+	
+	effect = {
+		administrative_efficiency = -0.02
+	}
+	core_pop_militancy_modifier = -0.01
+}
+reeves_court = {
+	limit = {
+		administration_tech_3 = 1
+	}
+	chance = {
+		base = 2
+	}
+	
+	effect = {
+		administrative_efficiency = 0.02
 	}
 }
 #########################

@@ -390,6 +390,8 @@ planned_logistics;Planned Logistics;x
 planned_logistics_desc;Before starting an offensive, if we can determine where we will establish supply lines, the better our offensive will perform.;x
 great_roads;Great Roads;x
 great_roads_desc;The most well-traversed roads in Middle-Earth are known as "Great Roads". These roads are larger and more well maintained than other roads, allowing more goods to flow across them.;x
+highwaymen;Highwaymen;x
+highwaymen_desc;The very roads that speed honest trade also speed the men who prey on it — the newly-built highways spawn a generation of bandits who know the routes better than the patrols sent to catch them.;x
 distribution_channels;Distribution Channels;x
 distribution_channels_desc;By working with guilds directly, we can ensure that military goods are shipped directly to armies.;x
 commerce_invention_1;Commerce I;x
@@ -409,6 +411,10 @@ overseers_lash;The Overseer's Lash;x
 overseers_lash_desc;Orc-work is driven less by skill than by fear of punishment, but fear is a reliable motivator when applied without pause.;x
 second_breakfast_economics;Second Breakfast Economics;x
 second_breakfast_economics_desc;Hobbit communities organize the working day around frequent, generous meals, and find — counter to outsider assumptions — that well-fed workers get more done.;x
+watch_and_ward;Watch and Ward;x
+watch_and_ward_desc;In response to rising brigandage, towns organize formal night-watches and toll-gate guards to keep the new roads safe.;x
+reeves_court;The Reeve's Court;x
+reeves_court_desc;Local reeves are granted formal authority to try petty crimes without waiting for a travelling magistrate, speeding justice in the provinces.;x
 province_selector_unlock;Province Selectors;x
 province_selector_unlock_desc;A debug building that can be built to access the province menu.;x
 anarrima;Anarríma;x
@@ -440,6 +446,8 @@ athelas;Athelas;x
 athelas_desc;"Kingsfoil, aye, it's a weed."\n\nA sweet smelling herb that helps cure wounds and poison.;x
 orc_draught;Orc Draught;x
 orc_draught_desc;Potent and invegorating, Orc Draught gives the drinker a burning sensation to revitalize strength and relieve pain.;x
+healers_copendium;The Herbalists' Compendium;x
+healers_copendium_desc;Physicians and herb-wives begin comparing notes across realms, compiling what works for fever, wound, and plague into a shared body of knowledge.;x
 magical_secrets;Magical Secrets;x
 magical_secrets_desc;The world is awash with magical secrets of the past, what is there to discover in the world?;x
 astronomy;Astronomy;x
@@ -466,6 +474,8 @@ magical_crafting_workers;Enchanted Workers' Tools;x
 magical_crafting_workers_desc;Our workers benefit from enchanted tools.;x
 third_lesser_ring;Yet another Lesser Ring;x
 third_lesser_ring_desc;Before Sauron and Celebrimbor forged the One Ring, they created dozens or perhaps hundreds of lesser rings - essays in the craft of ring making to perfect their expertise. Acquiring another one of these rings may prove fruitful.;x
+realm_chronicles;Chronicles of the Realm;x
+realm_chronicles_desc;Court scribes begin formally recording the deeds of kings and the history of the realm, rather than relying on oral memory alone.;x
 universities;Universities;x
 universities_desc;By establishing higher education for those who can afford it, we can more easily push our realm forward.;x
 knowledge_invention_1;Knowledge I;x

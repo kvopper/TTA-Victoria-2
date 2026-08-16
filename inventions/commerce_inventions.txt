@@ -628,6 +628,20 @@ great_roads = {
 		max_railroad = 1
 	}
 }
+highwaymen = {
+	limit = { infrastructure_tech_4 = 1 }
+	chance = {
+		base = 0
+		modifier = {
+			factor = 2
+			invention = great_roads
+		}
+	}
+	effect = {
+		administrative_efficiency = -0.05
+	}
+	global_pop_militancy_modifier = 0.01
+}
 distribution_channels = {
 	limit = { infrastructure_tech_5 = 1 }
 	chance = {

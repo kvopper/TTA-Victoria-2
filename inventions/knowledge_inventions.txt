@@ -33,6 +33,18 @@ orc_draught = {
 		pop_growth = 0.0001
 	}
 }
+healers_copendium = {
+	limit = {
+		herblore_tech_5 = 1
+	}
+	chance = {
+		base = 2
+	}
+	effect = {
+		pop_growth = 0.0001
+		land_attrition = -0.05
+	}
+}
 ##############################
 # MAGICAL SECRETS INVENTIONS #
 ##############################
@@ -195,6 +207,15 @@ third_lesser_ring = { # Search and find a lesser ring
 ##########################
 # SCHOLARSHIP INVENTIONS #
 ##########################
+realm_chronicles = {
+	limit = { scholarship_tech_2 = 1 }
+	
+	chance = {
+		base = 2
+	}
+	
+	effect = { permanent_prestige = 5 }
+}
 universities = {
 	limit = { scholarship_tech_5 = 1 }
 	
