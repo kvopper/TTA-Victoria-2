@@ -22,6 +22,15 @@ couriers = {
 		influence = 0.1
 	}
 }
+rite_of_oaths = {
+	limit = { diplomacy_4 = 1 }
+	chance = {
+		base = 2
+	}
+	effect = {
+		plurality = -0.05
+	}
+}
 ######################
 # CULTURE INVENTIONS #
 ######################

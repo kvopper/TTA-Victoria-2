@@ -138,7 +138,10 @@ rationing = {
 	}
 }
 breeding_pits = {
-	limit = { population_3 = 1 }
+	limit = {
+		population_3 = 1
+		accepted_culture = orc_culture
+	}
 	chance = {
 		base = 0
 		modifier = {
