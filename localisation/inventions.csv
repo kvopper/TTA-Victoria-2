@@ -51,6 +51,8 @@ cavalry_tech_1_equipment;Basic Rider Equipment;x
 cavalry_tech_1_equipment_desc;Despite having recently developed new equipment for our army, it takes some time to craft and deploy the equipment.;x
 animal_husbandry;Animal Husbandry;x
 animal_husbandry_desc;The use of pack and draft animals will make our farms significantly more efficient.;x
+selective_breeding;Selective Breeding;x
+selective_breeding_desc;Stable-masters begin keeping careful bloodline records, breeding for strength and temperament rather than leaving it to chance.;x
 cavalry_tech_2_equipment;Improved Rider Equipment;x
 cavalry_tech_2_equipment_desc;Despite having recently developed new equipment for our army, it takes some time to craft and deploy the equipment.;x
 standardised_horse_rearing;Standardised Horse Rearing;x
@@ -300,12 +302,76 @@ wilwarin;Wilwarin;x
 wilwarin_desc;Wilwarin, the Butterfly, is one of the constellations of Arda;x
 lembas_bread_invention;Lembas Bread;x
 lembas_bread_invention_desc;From Tolkien Gateway:\n\n"Lembas, Elvish Waybread were very nutritious, stayed fresh for months when wrapped in leaves, and were used for sustenance on long journeys. Lembas had a brownish colour on the outside and a cream colour on the inside.\n\nAccording to Gimli, it was a food of the same kind as Cram, although one of the Elves of Lothlórien commented that it was more pleasant, and more strengthening than any food made by Men.\n\nLike other products of the Elves, it was offensive to evil creatures; Gollum refused outright to eat of it. When Frodo was captured by Orcs in Mordor, the Orcs hated the look of the lembas even more than Gollum had."";x
+sun_fire_seams;Sun-fire Seams;x
+sun_fire_seams_desc;Prospectors learn to read surface tells — blackened soil, sulfurous springs — that mark rich coal seams beneath.;x
+two_man_saws;Two-man Saws;x
+two_man_saws_desc;The long two-handed saw lets woodcutters fell and section trees far faster than axe-work alone.;x
+placer_panning_techniques;Placer Panning Techniques;x
+placer_panning_techniques_desc;Riverbed panning and simple sluice-boxes let prospectors recover fine gold and silver that once washed away unnoticed.;x
 valacirca;Valacirca;x
 valacirca_desc;Valacirca, the Sickle of the Valar, is one of the constellations of Arda;x
+quarrymans_wedges;Quarrymen's Wedges;x
+quarrymans_wedges_desc;Iron wedges and feather-and-plug splitting techniques let quarrymen free larger blocks of stone with less wasted rock.;x
+carding_combs;Carding Combs;x
+carding_combs_desc;Iron-toothed carding combs speed the cleaning and aligning of raw wool before it ever reaches the loom.;x
+river_delta_cotton_fields;River-Delta Cotton Fields;x
+river_delta_cotton_fields_desc;Farmers along slow, silt-rich rivers learn to flood and drain fields on a cycle suited to cotton.;x
+woad_and_madder_cultivation;Woad and Madder Cultivation;x
+woad_and_madder_cultivation_desc;Dedicated dye-crop fields of woad and madder replace foraged, inconsistent wild dye sources.;x
+terraced_tea_gardens;Terraced Tea Gardens;x
+terraced_tea_gardens_desc;Growers learn to plant tea in staggered terraces that catch morning mist, extending the harvest window.;x
+gem_cutters_loupes;Gem-cutters' Loupes;x
+gem_cutters_loupes_desc;Simple lens-and-frame loupes let gem-cutters spot flaws and grain lines before a stone is wasted in the cutting.;x
 stone_sense;Stone Sense;x
 stone_sense_desc;Dwarves have an innate connection with the earth, and with enough practice, can hear the stone singing. These melodies more quickly lead them to ore veins and gemstones.;x
+vein_prospecting;Vein Prospecting;x
+vein_prospecting_desc;Systematic surveying methods help prospectors identify richer veins before committing labor to a dig.;x
+pipeleaf_curing_sheds;Pipeleaf Curing Sheds;x
+pipeleaf_curing_sheds_desc;Purpose-built curing sheds with slow-controlled airflow let growers cure pipeweed leaf evenly instead of relying on open-air chance.;x
+three_field_rotation;Three-field Rotation;x
+three_field_rotation_desc;Wandering reeves and hedge-wizards spread the fallow-field method, letting farmers work more of their land each season without exhausting the soil.;x
+terraced_hillfarms;Terraced Hillfarms;x
+terraced_hillfarms_desc;Highland communities carve terraces into hillsides, bringing marginal mountain and foothill land under the plow.;x
+dwarven_bellows;Dwarven Bellows;x
+dwarven_bellows_desc;The great forges of the Dwarves are larger and run hotter than those of any other race.;x
+guildhall_charters;Guildhall Charters;x
+guildhall_charters_desc;Free towns formalize craft guilds, standardizing tools and apprenticeship so factories run with fewer wasted motions.;x
+journeymen;Journeymen;x
+journeymen_desc;Guilds formalize the journeyman rank, letting trained workers move between towns and spread best practice.;x
+iron_chisels_and_plumb_lines;Iron Chisels and Plumb-lines;x
+iron_chisels_and_plumb_lines_desc;Hardened iron chisels and true plumb-lines let masons dress stone to finer tolerances with less discarded material.;x
+sandmelt_furnaces;Sand-melt Furnaces;x
+sandmelt_furnaces_desc;Improved furnace design holds a steadier, hotter melt, letting glassworkers pour larger and clearer panes and vessels.;x
+crucible_steel_method;Crucible Steel Method;x
+crucible_steel_method_desc;Sealed crucibles let smiths melt iron and carbon together fully, producing steel of far more consistent quality.;x
+copper_still_improvements;Copper Still Improvements;x
+copper_still_improvements_desc;Coiled copper stills and better sealing let brewers distill spirits with fewer failed batches and less lost vapor.;x
+rag_pulp_papermaking;Rag-pulp Papermaking;x
+rag_pulp_papermaking_desc;Papermakers learn to pulp rags and old cloth rather than relying solely on costly, slow-grown fiber sources.;x
+illuminators_guilds;Illuminator's Guilds;x
+illuminators_guilds_desc;Scriptoria formalize training for copyists and illuminators, letting texts be reproduced faster without losing accuracy.;x
+joiners_guild_standards;Joiner's Guild Standards;x
+joiners_guild_standards_desc;Joiners standardize mortise-and-tenon and dovetail techniques, letting workshops turn out sturdy furniture at greater scale.;x
+inlay_and_marquetry_techniques;Inlay and Marquetry Techniques;x
+inlay_and_marquetry_techniques_desc;Fine inlay work — wood, bone, and metal set into furniture panels — becomes a codified craft rather than a rare individual skill.;x
+standardized_pattern_cutting;Standardized Pattern-Cutting;x
+standardized_pattern_cutting_desc;Tailors adopt reusable cloth patterns and standard sizing, cutting waste and speeding up basic garment work.;x
+pattern_welded_blades;Pattern-welded Blades;x
+pattern_welded_blades_desc;Smiths learn to fold and weld strips of iron and steel together, producing stronger blades from otherwise middling ore.;x
+improved_bowcraft;Improved Bowcraft;x
+improved_bowcraft_desc;Layered wood, horn, and sinew construction lets bowyers produce powerful bows without relying on rare, perfectly-grown staves.;x
+windmills_and_watermills;Windmills and Watermills;x
+windmills_and_watermills_desc;Mechanical mills powered by wind and water begin replacing hand-milling and hand-sawing across the river valleys.;x
+treadle_looms;Treadle Looms;x
+treadle_looms_desc;Foot-treadle looms free a weaver's hands for finer work, sharply increasing the pace of cloth production.;x
 fires_of_industry;Fires of Industry;x
 fires_of_industry_desc;Streamlining guilds into "industries" will undoubtedly yield high outputs over time.;x
+master_craftsmen;Master Craftsmen;x
+master_craftsmen_desc;The guilds' highest rank is codified, with master craftsmen required to train apprentices to a fixed standard before a workshop can bear their mark.;x
+brocade_and_fine_weave_trade;Brocade and Fine-Weave Trade;x
+brocade_and_fine_weave_trade_desc;Techniques for weaving metallic thread and complex brocade patterns spread among the finer tailoring houses.;x
+great_cartularies;Great Cartularies;x
+great_cartularies_desc;Merchant leagues compile standardized ledgers and weight-measures, cutting the waste and disputes that once ate into every trade.;x
 centers_of_trade;Centers of Trade;x
 centers_of_trade_desc;Large cities with even larger markets bring merchants from far and wide.;x
 mobilization_planning;Mobilization Planning;x
@@ -339,6 +405,8 @@ anarrima;Anarríma;x
 anarrima_desc;Anarríma, Sun-border, is one of the constellations of Arda;x
 houses_of_healing_invention;Houses of Healing;x
 houses_of_healing_invention_desc;From Tolkien Gateway:\n\n"The Houses of Healing was an infirmary in Minas Tirith.\n\nThe Houses were surrounded by lawns and trees, set near to the Citadel-gate and the southward wall in the sixth circle of Minas Tirith. The chief healer was the Warden of the Houses of Healing.";x
+fallow_right_reforms;Fallow-right Reforms;x
+fallow_right_reforms_desc;Village councils formalize common-land and fallow-rotation rights, resolving disputes that once left fields under-worked.;x
 rationing;Rationing;x
 rationing_desc;By appropriately rationing food, we can ensure that our armies can function even with supply loss.;x
 breeding_pits;Breeding Pits;x

@@ -31,6 +31,45 @@ lembas_bread_invention = {
 		}
 	}
 }
+sun_fire_seams = {
+	limit = { rgo_tech_1 = 1 }
+	chance = {
+		base = 1
+		modifier = {
+			factor = 4
+			big_producer = coal
+		}
+	}
+	effect = {
+		rgo_goods_output = { coal = 0.20 }
+	}
+}
+two_man_saws = {
+	limit = { rgo_tech_1 = 1 }
+	chance = {
+		base = 1
+		modifier = {
+			factor = 4
+			big_producer = timber
+		}
+	}
+	effect = {
+		rgo_goods_output = { timber = 0.20 }
+	}
+}
+placer_panning_techniques = {
+	limit = { rgo_tech_1 = 1 }
+	chance = {
+		base = 1
+		modifier = {
+			factor = 4
+			any_owned_province = { trade_goods = precious_metal }
+		}
+	}
+	effect = {
+		rgo_goods_output = { precious_metal = 0.20 }
+	}
+}
 valacirca = {
 	limit = { rgo_tech_2 = 1 }
 	chance = {
@@ -41,6 +80,84 @@ valacirca = {
 		}
 	}
 	effect = { permanent_prestige = 1 }
+}
+quarrymans_wedges = {
+	limit = { rgo_tech_2 = 1 }
+	chance = {
+		base = 1
+		modifier = {
+			factor = 4
+			big_producer = rock
+		}
+	}
+	effect = {
+		rgo_goods_output = { rock = 0.20 }
+	}
+}
+carding_combs = {
+	limit = { rgo_tech_2 = 1 }
+	chance = {
+		base = 1
+		modifier = {
+			factor = 4
+			big_producer = wool
+		}
+	}
+	effect = {
+		rgo_goods_output = { wool = 0.20 }
+	}
+}
+river_delta_cotton_fields = {
+	limit = { rgo_tech_2 = 1 }
+	chance = {
+		base = 1
+		modifier = {
+			factor = 4
+			big_producer = cotton
+		}
+	}
+	effect = {
+		rgo_goods_output = { cotton = 0.20 }
+	}
+}
+woad_and_madder_cultivation = {
+	limit = { rgo_tech_2 = 1 }
+	chance = {
+		base = 1
+		modifier = {
+			factor = 4
+			big_producer = dye
+		}
+	}
+	effect = {
+		rgo_goods_output = { dye = 0.20 }
+	}
+}
+terraced_tea_gardens = {
+	limit = { rgo_tech_2 = 1 }
+	chance = {
+		base = 1
+		modifier = {
+			factor = 4
+			big_producer = tea
+		}
+	}
+	effect = {
+		rgo_goods_output = { tea = 0.20 }
+	}
+}
+gem_cutters_loupes = {
+	limit = { rgo_tech_2 = 1 }
+	chance = {
+		base = 1
+		modifier = {
+			factor = 4
+			any_owned_province = { trade_goods = precious_metal }
+		}
+	}
+	effect = {
+		rgo_goods_output = { precious_metal = 0.20 }
+	}
 }
 stone_sense = {
 	limit = {
@@ -56,14 +173,87 @@ stone_sense = {
 	}
 	effect = {
 		mine_rgo_size = 0.25
+	}
+}
+vein_prospecting = {
+	limit = { rgo_tech_3 = 1 }
+	chance = {
+		base = 2
+		modifier = {
+			factor = 10
+			accepted_culture = dwarven_culture
+			invention = stone_sense
+		}
+		modifier = {
+			factor = 2
+			any_owned_province = { trade_goods = precious_metal }
+		}
+	}
+	effect = {
+		mine_rgo_eff = 0.10
+		rgo_goods_output = { precious_metal = 0.15 }
+	}
+}
+pipeleaf_curing_sheds = {
+	limit = { rgo_tech_3 = 1 }
+	chance = {
+		base = 1
+		modifier = {
+			factor = 4
+			big_producer = tobacco
+		}
+	}
+	effect = {
+		rgo_goods_output = { tobacco = 0.20 }
+	}
+}
+three_field_rotation = {
+	limit = { rgo_tech_4 = 1 }
+	chance = {
+		base = 2
+		modifier = {
+			factor = 5
+			any_neighbor_country = { invention = three_field_rotation }
+		}
+	}
+	effect = {
+		farm_rgo_eff = 0.15
+	}
+}
+terraced_hillfarms = {
+	limit = { rgo_tech_5 = 1 }
+	chance = {
+		base = 2
+		modifier = {
+			factor = 5
+			any_neighbor_country = { invention = three_field_rotation }
+		}
+	}
+	effect = {
+		rgo_goods_output = { food = 0.05 }
+	}
+}
+dwarven_bellows = {
+	limit = {
+		rgo_tech_5 = 1
+		accepted_culture = dwarven_culture
+	}
+	chance = {
+		base = 0
+		modifier = {
+			factor = 2
+			accepted_culture = dwarven_culture
+		}
+	}
+	effect = {
 		mine_rgo_eff = 0.25
 	}
 }
 #####################
 # GUILDS INVENTIONS #
 #####################
-fires_of_industry = {
-	limit = { guilds_5 = 1 }
+guildhall_charters = {
+	limit = { guilds_1 = 1 }
 	chance = {
 		base = 2
 	}
@@ -71,9 +261,255 @@ fires_of_industry = {
 		factory_throughput = 0.05
 	}
 }
+journeymen = {
+	limit = { guilds_3 = 1 }
+	chance = {
+		base = 2
+		modifier = {
+			factor = 2
+			invention = guildhall_charters
+		}
+	}
+	effect = {
+		factory_throughput = 0.05
+	}
+}
+iron_chisels_and_plumb_lines = {
+	limit = { guilds_3 = 1 }
+	chance = {
+		base = 2
+		modifier = {
+			factor = 4
+			big_producer = cut_stone
+		}
+	}
+	effect = {
+		factory_goods_output = { cut_stone = 0.20 }
+	}
+}
+sandmelt_furnaces = {
+	limit = { guilds_3 = 1 }
+	chance = {
+		base = 2
+		modifier = {
+			factor = 4
+			big_producer = glass
+		}
+	}
+	effect = {
+		factory_goods_output = { glass = 0.20 }
+	}
+}
+crucible_steel_method = {
+	limit = { guilds_3 = 1 }
+	chance = {
+		base = 2
+		modifier = {
+			factor = 4
+			big_producer = steel
+		}
+	}
+	effect = {
+		factory_goods_output = { steel = 0.20 }
+	}
+}
+copper_still_improvements = {
+	limit = { guilds_3 = 1 }
+	chance = {
+		base = 2
+		modifier = {
+			factor = 4
+			big_producer = liquor
+		}
+	}
+	effect = {
+		factory_goods_output = { liquor = 0.20 }
+	}
+}
+rag_pulp_papermaking = {
+	limit = { guilds_3 = 1 }
+	chance = {
+		base = 2
+		modifier = {
+			factor = 4
+			big_producer = paper
+		}
+	}
+	effect = {
+		factory_goods_output = { paper = 0.20 }
+	}
+}
+illuminators_guilds = {
+	limit = { guilds_3 = 1 }
+	chance = {
+		base = 2
+		modifier = {
+			factor = 4
+			big_producer = literature
+		}
+	}
+	effect = {
+		factory_goods_output = { literature = 0.20 }
+	}
+}
+joiners_guild_standards = {
+	limit = { guilds_3 = 1 }
+	chance = {
+		base = 2
+		modifier = {
+			factor = 4
+			OR = {
+				big_producer = furniture
+				big_producer = luxury_furniture
+			}
+		}
+	}
+	effect = {
+		factory_goods_output = { furniture = 0.10 }
+		factory_goods_output = { luxury_furniture = 0.10 }
+	}
+}
+inlay_and_marquetry_techniques = {
+	limit = { guilds_3 = 1 }
+	chance = {
+		base = 2
+		modifier = {
+			factor = 4
+			OR = {
+				big_producer = furniture
+				big_producer = luxury_furniture
+			}
+		}
+	}
+	effect = {
+		factory_goods_output = { furniture = 0.10 }
+		factory_goods_output = { luxury_furniture = 0.10 }
+	}
+}
+standardized_pattern_cutting = {
+	limit = { guilds_3 = 1 }
+	chance = {
+		base = 2
+		modifier = {
+			factor = 4
+			OR = {
+				big_producer = clothes
+				big_producer = luxury_clothes
+			}
+		}
+	}
+	effect = {
+		factory_goods_output = { clothes = 0.10 }
+		factory_goods_output = { luxury_clothes = 0.10 }
+	}
+}
+pattern_welded_blades = {
+	limit = { guilds_3 = 1 }
+	chance = {
+		base = 2
+		modifier = {
+			factor = 4
+			big_producer = melee_gear
+		}
+	}
+	effect = {
+		factory_goods_output = { melee_gear = 0.20 }
+	}
+}
+improved_bowcraft = {
+	limit = { guilds_3 = 1 }
+	chance = {
+		base = 2
+		modifier = {
+			factor = 4
+			big_producer = ranged_gear
+		}
+	}
+	effect = {
+		factory_goods_output = { ranged_gear = 0.20 }
+	}
+}
+windmills_and_watermills = {
+	limit = { guilds_4 = 1 }
+	chance = {
+		base = 2
+		modifier = {
+			factor = 4
+			OR = {
+				big_producer = lumber
+				big_producer = food
+			}
+		}
+	}
+	effect = {
+		factory_goods_output = { lumber = 0.20 }
+		rgo_goods_output = { food = 0.10 }
+	}
+}
+treadle_looms = {
+	limit = { guilds_4 = 1 }
+	chance = {
+		base = 2
+		modifier = {
+			factor = 4
+			big_producer = fabric
+		}
+	}
+	effect = {
+		factory_goods_output = { fabric = 0.20 }
+	}
+}
+fires_of_industry = {
+	limit = { guilds_5 = 1 }
+	chance = {
+		base = 2
+	}
+	effect = {
+		factory_throughput = 0.10
+	}
+}
+master_craftsmen = {
+	limit = { guilds_5 = 1 }
+	chance = {
+		base = 2
+		modifier = {
+			factor = 8
+			industrial_score = 500
+		}
+	}
+	effect = {
+		factory_throughput = 0.10
+	}
+}
 ####################
 # TRADE INVENTIONS #
 ####################
+brocade_and_fine_weave_trade = {
+	limit = { trade_tech_3 = 1 }
+	chance = {
+		base = 2
+		modifier = {
+			factor = 4
+			OR = {
+				big_producer = clothes
+				big_producer = luxury_clothes
+			}
+		}
+	}
+	effect = {
+		factory_goods_output = { clothes = 0.10 }
+		factory_goods_output = { luxury_clothes = 0.10 }
+	}
+}
+great_cartularies = {
+	limit = { trade_tech_3 = 1 }
+	chance = {
+		base = 2
+	}
+	effect = {
+		factory_output = 0.02
+	}
+}
 centers_of_trade = {
 	limit = { trade_tech_5 = 1 }
 	chance = {

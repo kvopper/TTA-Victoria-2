@@ -41,6 +41,24 @@ houses_of_healing_invention = {
 		soldier_to_pop_loss = 0.01
 	}
 }
+fallow_right_reforms = {
+	limit = { population_2 = 1 }
+	chance = {
+		base = 2
+		modifier = {
+			factor = 10
+			average_militancy = 4
+		}
+		modifier = {
+			factor = 15
+			plurality = 25
+		}
+	}
+	effect = {
+		plurality = -0.05
+		farm_rgo_eff = 0.10
+	}
+}
 rationing = {
 	limit = { population_3 = 1 }
 	chance = {

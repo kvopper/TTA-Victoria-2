@@ -713,6 +713,24 @@ animal_husbandry = {
 		farm_rgo_eff = 0.05
 	}
 }
+selective_breeding = {
+	limit = { cavalry_tech_1 = 1 }
+	chance = {
+		base = 0
+		modifier = {
+			factor = 1
+			invention = animal_husbandry
+		}
+		modifier = {
+			factor = 4
+			invention = animal_husbandry
+			big_producer = horses
+		}
+	}
+	effect = {
+		rgo_goods_output = { horses = 0.20 }
+	}
+}
 cavalry_tech_2_equipment = {
 	limit = { cavalry_tech_2 = 1 }
 	chance = {
