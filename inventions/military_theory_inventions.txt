@@ -103,12 +103,15 @@ focused_attacks = {
 	}
 }
 mountain_hordes = {
-	limit = { army_tactics_3 = 1 }
+	limit = {
+		army_tactics_3 = 1
+		has_country_flag = culture_group_northern_goblins
+	}
 	chance = {
 		base = 0
 		modifier = {
 			factor = 2
-			is_culture_group = northern_goblins
+			has_country_flag = culture_group_northern_goblins
 		}
 	}
 	effect = {
@@ -159,7 +162,10 @@ rally_points = {
 	}
 }
 eagles_invention = {
-	limit = { army_tactics_5 = 1 }
+	limit = {
+		army_tactics_5 = 1
+		NOT = { invention = fellbeasts_invention }
+	}
 	chance = {
 		base = 0
 		modifier = {
@@ -174,7 +180,10 @@ eagles_invention = {
 	}
 }
 fellbeasts_invention = {
-	limit = { army_tactics_5 = 1 }
+	limit = {
+		army_tactics_5 = 1
+		NOT = { invention = eagles_invention }
+	}
 	chance = {
 		base = 0
 		modifier = {
@@ -228,7 +237,10 @@ soronume = {
 #######################
 # When adding/changing/removing unit unlock requirements, also update decisions/World Bank.txt research flags
 minasdirith_invention = {
-	limit = { training_1 = 1 }
+	limit = {
+		training_1 = 1
+		has_country_flag = minasdirith_unlock
+	}
 	chance = {
 		base = 0
 		modifier = {
@@ -257,12 +269,15 @@ militias = {
 	}
 }
 ents_unit_unlock = {
-	limit = { training_1 = 1 }
+	limit = {
+		training_1 = 1
+		has_country_flag = culture_group_ents
+	}
 	chance = {
 		base = 0
 		modifier = {
 			factor = 100
-			is_culture_group = ents
+			has_country_flag = culture_group_ents
 		}
 	}
 	effect = {
@@ -270,12 +285,15 @@ ents_unit_unlock = {
 	}
 }
 eagles_unit_unlock = {
-	limit = { training_1 = 1 }
+	limit = {
+		training_1 = 1
+		has_country_flag = culture_group_eagles
+	}
 	chance = {
 		base = 0
 		modifier = {
 			factor = 100
-			is_culture_group = eagles
+			has_country_flag = culture_group_eagles
 		}
 	}
 	effect = {
@@ -283,12 +301,15 @@ eagles_unit_unlock = {
 	}
 }
 spiders_unlock = {
-	limit = { training_1 = 1 }
+	limit = {
+		training_1 = 1
+		has_country_flag = culture_group_spiders
+	}
 	chance = {
 		base = 0
 		modifier = {
 			factor = 100
-			is_culture_group = spiders
+			has_country_flag = culture_group_spiders
 		}
 	}
 	effect = {
@@ -305,7 +326,10 @@ mumakil_unlock = {
 	}
 }
 barrow_wights_unlock = {
-	limit = { training_1 = 1 }
+	limit = {
+		training_1 = 1
+		tag = BAR
+	}
 	chance = {
 		base = 0
 		modifier = {
@@ -318,7 +342,10 @@ barrow_wights_unlock = {
 	}
 }
 marsh_wights_unlock = {
-	limit = { training_1 = 1 }
+	limit = {
+		training_1 = 1
+		tag = LMW
+	}
 	chance = {
 		base = 0
 		modifier = {
@@ -331,7 +358,10 @@ marsh_wights_unlock = {
 	}
 }
 oathbreakers_wights_unlock = {
-	limit = { training_1 = 1 }
+	limit = {
+		training_1 = 1
+		tag = OBS
+	}
 	chance = {
 		base = 0
 		modifier = {
@@ -368,12 +398,15 @@ basic_training = {
 	}
 }
 snaga_skirmishers = {
-	limit = { training_3 = 1 }
+	limit = {
+		training_3 = 1
+		has_country_flag = culture_group_northern_goblins
+	}
 	chance = {
 		base = 0
 		modifier = {
 			factor = 2
-			is_culture_group = northern_goblins
+			has_country_flag = culture_group_northern_goblins
 		}
 	}
 	effect = {
@@ -384,12 +417,15 @@ snaga_skirmishers = {
 	}
 }
 skinchangers_unlock = {
-	limit = { training_3 = 1 }
+	limit = {
+		training_3 = 1
+		has_country_flag = culture_group_anduinrim
+	}
 	chance = {
 		base = 0
 		modifier = {
 			factor = 100
-			is_culture_group = anduinrim
+			has_country_flag = culture_group_anduinrim
 		}
 	}
 	effect = {
@@ -397,12 +433,15 @@ skinchangers_unlock = {
 	}
 }
 berserkers_unlock = {
-	limit = { training_3 = 1 }
+	limit = {
+		training_3 = 1
+		has_country_flag = culture_group_uruk_hai
+	}
 	chance = {
 		base = 0
 		modifier = {
 			factor = 100
-			is_culture_group = uruk_hai
+			has_country_flag = culture_group_uruk_hai
 		}
 	}
 	effect = {
@@ -410,12 +449,15 @@ berserkers_unlock = {
 	}
 }
 raiders_unlock = {
-	limit = { training_3 = 1 }
+	limit = {
+		training_3 = 1
+		has_country_flag = culture_group_wildmen
+	}
 	chance = {
 		base = 0
 		modifier = {
 			factor = 100
-			is_culture_group = wildmen
+			has_country_flag = culture_group_wildmen
 		}
 	}
 	effect = {
@@ -423,7 +465,10 @@ raiders_unlock = {
 	}
 }
 elvenkings_guard_unlock = {
-	limit = { training_3 = 1 }
+	limit = {
+		training_3 = 1
+		tag = WRM
+	}
 	chance = {
 		base = 0
 		modifier = {
@@ -436,12 +481,15 @@ elvenkings_guard_unlock = {
 	}
 }
 darkblades_unlock = {
-	limit = { training_3 = 1 }
+	limit = {
+		training_3 = 1
+		has_country_flag = culture_group_angmarrim
+	}
 	chance = {
 		base = 0
 		modifier = {
 			factor = 100
-			is_culture_group = angmarrim
+			has_country_flag = culture_group_angmarrim
 		}
 	}
 	effect = {
@@ -449,12 +497,15 @@ darkblades_unlock = {
 	}
 }
 moriquendi_shadows_unlock = {
-	limit = { training_3 = 1 }
+	limit = {
+		training_3 = 1
+		has_country_flag = culture_group_avari
+	}
 	chance = {
 		base = 0
 		modifier = {
 			factor = 100
-			is_culture_group = avari
+			has_country_flag = culture_group_avari
 		}
 	}
 	effect = {
@@ -462,12 +513,15 @@ moriquendi_shadows_unlock = {
 	}
 }
 adhalling_rangers_unlock = {
-	limit = { training_3 = 1 }
+	limit = {
+		training_3 = 1
+		has_country_flag = culture_group_gramavuld_northmen
+	}
 	chance = {
 		base = 0
 		modifier = {
 			factor = 100
-			is_culture_group = gramavuld_northmen
+			has_country_flag = culture_group_gramavuld_northmen
 			OR = {
 				primary_culture = adhalling
 				accepted_culture = adhalling
@@ -479,12 +533,15 @@ adhalling_rangers_unlock = {
 	}
 }
 shirriffs_unlock = {
-	limit = { training_3 = 1 }
+	limit = {
+		training_3 = 1
+		has_country_flag = culture_group_hobbits
+	}
 	chance = {
 		base = 0
 		modifier = {
 			factor = 100
-			is_culture_group = hobbits
+			has_country_flag = culture_group_hobbits
 		}
 	}
 	effect = {
@@ -492,12 +549,15 @@ shirriffs_unlock = {
 	}
 }
 snow_rangers_unlock = {
-	limit = { training_3 = 1 }
+	limit = {
+		training_3 = 1
+		has_country_flag = culture_group_lossoth
+	}
 	chance = {
 		base = 0
 		modifier = {
 			factor = 100
-			is_culture_group = lossoth
+			has_country_flag = culture_group_lossoth
 		}
 	}
 	effect = {
@@ -505,12 +565,24 @@ snow_rangers_unlock = {
 	}
 }
 dunedain_rangers_unlock = {
-	limit = { training_3 = 1 }
+	limit = {
+		training_3 = 1
+		has_country_flag = culture_group_dunedain
+		OR = {
+			primary_culture = arthedani
+			accepted_culture = arthedani
+			primary_culture = cardolandrim
+			accepted_culture = cardolandrim
+			primary_culture = haeranedain
+			accepted_culture = haeranedain
+		}
+		NOT = { invention = ithilien_rangers_unlock }
+	}
 	chance = {
 		base = 0
 		modifier = {
 			factor = 100
-			is_culture_group = dunedain
+			has_country_flag = culture_group_dunedain
 			OR = {
 				primary_culture = arthedani
 				accepted_culture = arthedani
@@ -527,12 +599,29 @@ dunedain_rangers_unlock = {
 	}
 }
 ithilien_rangers_unlock = {
-	limit = { training_3 = 1 }
+	limit = {
+		training_3 = 1
+		has_country_flag = culture_group_dunedain
+		OR = {
+			primary_culture = gondorian
+			accepted_culture = gondorian
+			primary_culture = amrothian
+			accepted_culture = amrothian
+		}
+		any_owned_province = {
+			OR = {
+				region = GON_198 # Forithilien
+				region = GON_205 # Emyn Arnen
+				region = GON_212 # Harithilien
+			}
+		}
+		NOT = { invention = dunedain_rangers_unlock }
+	}
 	chance = {
 		base = 0
 		modifier = {
 			factor = 100
-			is_culture_group = dunedain
+			has_country_flag = culture_group_dunedain
 			OR = {
 				primary_culture = gondorian
 				accepted_culture = gondorian
@@ -554,7 +643,10 @@ ithilien_rangers_unlock = {
 	}
 }
 marchwardens_unlock = {
-	limit = { training_3 = 1 }
+	limit = {
+		training_3 = 1
+		tag = LOR
+	}
 	chance = {
 		base = 0
 		modifier = {
@@ -567,12 +659,15 @@ marchwardens_unlock = {
 	}
 }
 skirmishers_unlock = {
-	limit = { training_3 = 1 }
+	limit = {
+		training_3 = 1
+		has_country_flag = culture_group_wildmen
+	}
 	chance = {
 		base = 0
 		modifier = {
 			factor = 100
-			is_culture_group = wildmen
+			has_country_flag = culture_group_wildmen
 		}
 	}
 	effect = {
@@ -580,14 +675,20 @@ skirmishers_unlock = {
 	}
 }
 eldarinwe_archers_unlock = {
-	limit = { training_3 = 1 }
+	limit = {
+		training_3 = 1
+		OR = {
+			has_country_flag = culture_group_eldar
+			has_country_flag = culture_group_teleri
+		}
+	}
 	chance = {
 		base = 0
 		modifier = {
 			factor = 100
 			OR = {
-				is_culture_group = eldar
-				is_culture_group = teleri
+				has_country_flag = culture_group_eldar
+				has_country_flag = culture_group_teleri
 			}
 		}
 	}
@@ -596,12 +697,15 @@ eldarinwe_archers_unlock = {
 	}
 }
 black_arrow_guildsmen_unlock = {
-	limit = { training_3 = 1 }
+	limit = {
+		training_3 = 1
+		has_country_flag = culture_group_gramavuld_northmen
+	}
 	chance = {
 		base = 0
 		modifier = {
 			factor = 100
-			is_culture_group = gramavuld_northmen
+			has_country_flag = culture_group_gramavuld_northmen
 			owns = 652 # Dale
 		}
 	}
@@ -610,12 +714,15 @@ black_arrow_guildsmen_unlock = {
 	}
 }
 bandobras_archers_unlock = {
-	limit = { training_3 = 1 }
+	limit = {
+		training_3 = 1
+		has_country_flag = culture_group_hobbits
+	}
 	chance = {
 		base = 0
 		modifier = {
 			factor = 100
-			is_culture_group = hobbits
+			has_country_flag = culture_group_hobbits
 		}
 	}
 	effect = {
@@ -623,14 +730,20 @@ bandobras_archers_unlock = {
 	}
 }
 dwarven_catapults_unlock = {
-	limit = { training_3 = 1 }
+	limit = {
+		training_3 = 1
+		OR = {
+			has_country_flag = culture_group_dwarves
+			has_country_flag = culture_group_wicked_dwarves
+		}
+	}
 	chance = {
 		base = 0
 		modifier = {
 			factor = 100
 			OR = {
-				is_culture_group = dwarves
-				is_culture_group = wicked_dwarves
+				has_country_flag = culture_group_dwarves
+				has_country_flag = culture_group_wicked_dwarves
 			}
 		}
 	}
@@ -639,15 +752,22 @@ dwarven_catapults_unlock = {
 	}
 }
 troll_catapults_unlock = {
-	limit = { training_3 = 1 }
+	limit = {
+		training_3 = 1
+		OR = {
+			has_country_flag = culture_group_mordorian
+			has_country_flag = culture_group_northern_goblins
+			has_country_flag = culture_group_trolls
+		}
+	}
 	chance = {
 		base = 0
 		modifier = {
 			factor = 100
 			OR = {
-				is_culture_group = mordorian
-				is_culture_group = northern_goblins
-				is_culture_group = trolls
+				has_country_flag = culture_group_mordorian
+				has_country_flag = culture_group_northern_goblins
+				has_country_flag = culture_group_trolls
 			}
 		}
 	}
@@ -656,12 +776,21 @@ troll_catapults_unlock = {
 	}
 }
 swan_knights_unlock = {
-	limit = { training_3 = 1 }
+	limit = {
+		training_3 = 1
+		has_country_flag = culture_group_dunedain
+		OR = {
+			primary_culture = gondorian
+			accepted_culture = gondorian
+			primary_culture = amrothian
+			accepted_culture = amrothian
+		}
+	}
 	chance = {
 		base = 0
 		modifier = {
 			factor = 100
-			is_culture_group = dunedain
+			has_country_flag = culture_group_dunedain
 			OR = {
 				primary_culture = gondorian
 				accepted_culture = gondorian
@@ -676,12 +805,15 @@ swan_knights_unlock = {
 	}
 }
 serpent_guard_unlock = {
-	limit = { training_3 = 1 }
+	limit = {
+		training_3 = 1
+		has_country_flag = culture_group_haradrim
+	}
 	chance = {
 		base = 0
 		modifier = {
 			factor = 100
-			is_culture_group = haradrim
+			has_country_flag = culture_group_haradrim
 		}
 	}
 	effect = {
@@ -689,12 +821,15 @@ serpent_guard_unlock = {
 	}
 }
 variag_riders_unlock = {
-	limit = { training_3 = 1 }
+	limit = {
+		training_3 = 1
+		has_country_flag = culture_group_khandish
+	}
 	chance = {
 		base = 0
 		modifier = {
 			factor = 100
-			is_culture_group = khandish
+			has_country_flag = culture_group_khandish
 		}
 	}
 	effect = {
@@ -702,12 +837,15 @@ variag_riders_unlock = {
 	}
 }
 loke_innas_rim_unlock = {
-	limit = { training_3 = 1 }
+	limit = {
+		training_3 = 1
+		has_country_flag = culture_group_easterlings
+	}
 	chance = {
 		base = 0
 		modifier = {
 			factor = 100
-			is_culture_group = easterlings
+			has_country_flag = culture_group_easterlings
 		}
 	}
 	effect = {
@@ -715,12 +853,15 @@ loke_innas_rim_unlock = {
 	}
 }
 rohirrim_riders_unlock = {
-	limit = { training_3 = 1 }
+	limit = {
+		training_3 = 1
+		has_country_flag = culture_group_rohirrim
+	}
 	chance = {
 		base = 0
 		modifier = {
 			factor = 100
-			is_culture_group = rohirrim
+			has_country_flag = culture_group_rohirrim
 		}
 	}
 	effect = {
@@ -728,12 +869,15 @@ rohirrim_riders_unlock = {
 	}
 }
 rhovanion_riders_unlock = {
-	limit = { training_3 = 1 }
+	limit = {
+		training_3 = 1
+		has_country_flag = culture_group_northmen
+	}
 	chance = {
 		base = 0
 		modifier = {
 			factor = 100
-			is_culture_group = northmen
+			has_country_flag = culture_group_northmen
 		}
 	}
 	effect = {
@@ -741,12 +885,15 @@ rhovanion_riders_unlock = {
 	}
 }
 riders_of_imladris_unlock = {
-	limit = { training_3 = 1 }
+	limit = {
+		training_3 = 1
+		has_country_flag = culture_group_eldar
+	}
 	chance = {
 		base = 0
 		modifier = {
 			factor = 100
-			is_culture_group = eldar
+			has_country_flag = culture_group_eldar
 			owns = 865
 		}
 	}
@@ -755,12 +902,15 @@ riders_of_imladris_unlock = {
 	}
 }
 variag_archers_unlock = {
-	limit = { training_3 = 1 }
+	limit = {
+		training_3 = 1
+		has_country_flag = culture_group_khandish
+	}
 	chance = {
 		base = 0
 		modifier = {
 			factor = 100
-			is_culture_group = khandish
+			has_country_flag = culture_group_khandish
 		}
 	}
 	effect = {
@@ -768,12 +918,15 @@ variag_archers_unlock = {
 	}
 }
 vinter_guard_unlock = {
-	limit = { training_3 = 1 }
+	limit = {
+		training_3 = 1
+		has_country_flag = culture_group_northmen
+	}
 	chance = {
 		base = 0
 		modifier = {
 			factor = 100
-			is_culture_group = northmen
+			has_country_flag = culture_group_northmen
 		}
 	}
 	effect = {
@@ -781,12 +934,15 @@ vinter_guard_unlock = {
 	}
 }
 eored_skirmishers_unlock = {
-	limit = { training_3 = 1 }
+	limit = {
+		training_3 = 1
+		has_country_flag = culture_group_rohirrim
+	}
 	chance = {
 		base = 0
 		modifier = {
 			factor = 100
-			is_culture_group = rohirrim
+			has_country_flag = culture_group_rohirrim
 		}
 	}
 	effect = {
@@ -794,12 +950,23 @@ eored_skirmishers_unlock = {
 	}
 }
 dunedain_wardens_unlock = {
-	limit = { training_3 = 1 }
+	limit = {
+		training_3 = 1
+		has_country_flag = culture_group_dunedain
+		OR = {
+			primary_culture = arthedani
+			accepted_culture = arthedani
+			primary_culture = cardolandrim
+			accepted_culture = cardolandrim
+			primary_culture = haeranedain
+			accepted_culture = haeranedain
+		}
+	}
 	chance = {
 		base = 0
 		modifier = {
 			factor = 100
-			is_culture_group = dunedain
+			has_country_flag = culture_group_dunedain
 			OR = {
 				primary_culture = arthedani
 				accepted_culture = arthedani
@@ -815,7 +982,10 @@ dunedain_wardens_unlock = {
 	}
 }
 lindon_longspears_unlock = {
-	limit = { training_3 = 1 }
+	limit = {
+		training_3 = 1
+		tag = LIN
+	}
 	chance = {
 		base = 0
 		modifier = {
@@ -828,12 +998,15 @@ lindon_longspears_unlock = {
 	}
 }
 orthanc_guard_unlock = {
-	limit = { training_3 = 1 }
+	limit = {
+		training_3 = 1
+		has_country_flag = culture_group_uruk_hai
+	}
 	chance = {
 		base = 0
 		modifier = {
 			factor = 100
-			is_culture_group = uruk_hai
+			has_country_flag = culture_group_uruk_hai
 		}
 	}
 	effect = {
@@ -841,12 +1014,15 @@ orthanc_guard_unlock = {
 	}
 }
 greenway_guard_unlock = {
-	limit = { training_3 = 1 }
+	limit = {
+		training_3 = 1
+		has_country_flag = culture_group_breelander
+	}
 	chance = {
 		base = 0
 		modifier = {
 			factor = 100
-			is_culture_group = breelander
+			has_country_flag = culture_group_breelander
 		}
 	}
 	effect = {
@@ -854,12 +1030,15 @@ greenway_guard_unlock = {
 	}
 }
 moriquendi_defenders_unlock = {
-	limit = { training_3 = 1 }
+	limit = {
+		training_3 = 1
+		has_country_flag = culture_group_avari
+	}
 	chance = {
 		base = 0
 		modifier = {
 			factor = 100
-			is_culture_group = avari
+			has_country_flag = culture_group_avari
 		}
 	}
 	effect = {
@@ -867,12 +1046,15 @@ moriquendi_defenders_unlock = {
 	}
 }
 corsairs_unlock = {
-	limit = { training_3 = 1 }
+	limit = {
+		training_3 = 1
+		has_country_flag = culture_group_kingsmen
+	}
 	chance = {
 		base = 0
 		modifier = {
 			factor = 100
-			is_culture_group = kingsmen
+			has_country_flag = culture_group_kingsmen
 		}
 	}
 	effect = {
@@ -880,12 +1062,15 @@ corsairs_unlock = {
 	}
 }
 loke_gamp_rim_unlock = {
-	limit = { training_3 = 1 }
+	limit = {
+		training_3 = 1
+		has_country_flag = culture_group_easterlings
+	}
 	chance = {
 		base = 0
 		modifier = {
 			factor = 100
-			is_culture_group = easterlings
+			has_country_flag = culture_group_easterlings
 		}
 	}
 	effect = {
@@ -893,12 +1078,15 @@ loke_gamp_rim_unlock = {
 	}
 }
 dains_guard_unlock = {
-	limit = { training_3 = 1 }
+	limit = {
+		training_3 = 1
+		has_country_flag = culture_group_dwarves
+	}
 	chance = {
 		base = 0
 		modifier = {
 			factor = 100
-			is_culture_group = dwarves
+			has_country_flag = culture_group_dwarves
 		}
 	}
 	effect = {
@@ -906,12 +1094,15 @@ dains_guard_unlock = {
 	}
 }
 woodsmen_warriors_unlock = {
-	limit = { training_3 = 1 }
+	limit = {
+		training_3 = 1
+		has_country_flag = culture_group_anduinrim
+	}
 	chance = {
 		base = 0
 		modifier = {
 			factor = 100
-			is_culture_group = anduinrim
+			has_country_flag = culture_group_anduinrim
 		}
 	}
 	effect = {
@@ -919,12 +1110,22 @@ woodsmen_warriors_unlock = {
 	}
 }
 morgul_uruks_unlock = {
-	limit = { training_3 = 1 }
+	limit = {
+		training_3 = 1
+		has_country_flag = culture_group_mordorian
+		OR = {
+			primary_culture = mordor_orc
+			accepted_culture = mordor_orc
+			primary_culture = mordor_uruk
+			accepted_culture = mordor_uruk
+		}
+		NOT = { invention = guldur_uruks_unlock }
+	}
 	chance = {
 		base = 0
 		modifier = {
 			factor = 100
-			is_culture_group = mordorian
+			has_country_flag = culture_group_mordorian
 			OR = {
 				primary_culture = mordor_orc
 				accepted_culture = mordor_orc
@@ -940,12 +1141,20 @@ morgul_uruks_unlock = {
 	}
 }
 guldur_uruks_unlock = {
-	limit = { training_3 = 1 }
+	limit = {
+		training_3 = 1
+		has_country_flag = culture_group_mordorian
+		OR = {
+			primary_culture = guldurrim
+			accepted_culture = guldurrim
+		}
+		NOT = { invention = morgul_uruks_unlock }
+	}
 	chance = {
 		base = 0
 		modifier = {
 			factor = 100
-			is_culture_group = mordorian
+			has_country_flag = culture_group_mordorian
 			OR = {
 				primary_culture = guldurrim
 				accepted_culture = guldurrim
@@ -959,12 +1168,15 @@ guldur_uruks_unlock = {
 	}
 }
 moria_deep_dwellers_unlock = {
-	limit = { training_3 = 1 }
+	limit = {
+		training_3 = 1
+		has_country_flag = culture_group_northern_goblins
+	}
 	chance = {
 		base = 0
 		modifier = {
 			factor = 100
-			is_culture_group = northern_goblins
+			has_country_flag = culture_group_northern_goblins
 			owns = 843 # Moria
 		}
 	}
@@ -973,12 +1185,15 @@ moria_deep_dwellers_unlock = {
 	}
 }
 witch_knights_unlock = {
-	limit = { training_3 = 1 }
+	limit = {
+		training_3 = 1
+		has_country_flag = culture_group_angmarrim
+	}
 	chance = {
 		base = 0
 		modifier = {
 			factor = 100
-			is_culture_group = angmarrim
+			has_country_flag = culture_group_angmarrim
 		}
 	}
 	effect = {
@@ -986,12 +1201,15 @@ witch_knights_unlock = {
 	}
 }
 snow_guard_unlock = {
-	limit = { training_3 = 1 }
+	limit = {
+		training_3 = 1
+		has_country_flag = culture_group_lossoth
+	}
 	chance = {
 		base = 0
 		modifier = {
 			factor = 100
-			is_culture_group = lossoth
+			has_country_flag = culture_group_lossoth
 		}
 	}
 	effect = {
@@ -999,12 +1217,15 @@ snow_guard_unlock = {
 	}
 }
 merchant_guard_unlock = {
-	limit = { training_3 = 1 }
+	limit = {
+		training_3 = 1
+		has_country_flag = culture_group_breelander
+	}
 	chance = {
 		base = 0
 		modifier = {
 			factor = 100
-			is_culture_group = breelander
+			has_country_flag = culture_group_breelander
 		}
 	}
 	effect = {

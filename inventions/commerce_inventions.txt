@@ -13,7 +13,10 @@ wilwarin = {
 	effect = { permanent_prestige = 1 }
 }
 lembas_bread_invention = {
-	limit = { rgo_tech_1 = 1 }
+	limit = {
+		rgo_tech_1 = 1
+		has_country_flag = lembas_bread_unlock
+	}
 	chance = {
 		base = 0
 		modifier = {
@@ -40,7 +43,10 @@ valacirca = {
 	effect = { permanent_prestige = 1 }
 }
 stone_sense = {
-	limit = { rgo_tech_3 = 1 }
+	limit = {
+		rgo_tech_3 = 1
+		accepted_culture = dwarven_culture
+	}
 	chance = {
 		base = 0
 		modifier = {

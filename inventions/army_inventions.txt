@@ -989,12 +989,15 @@ scout_waystations = {
 	}
 }
 maeras_riders = {
-	limit = { cavalry_tech_5 = 1 }
+	limit = {
+		cavalry_tech_5 = 1
+		has_country_flag = culture_group_rohirrim
+	}
 	chance = {
 		base = 0
 		modifier = {
 			factor = 2
-			is_culture_group = rohirrim
+			has_country_flag = culture_group_rohirrim
 		}
 	}
 	effect = {

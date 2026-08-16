@@ -17,7 +17,12 @@ roundships = {
 # NAVAL CONSTRUCTION INVENTIONS #
 #################################
 shipbuilding = {
-	limit = { naval_construction_1 = 1 }
+	limit = {
+		naval_construction_1 = 1
+		any_owned_province = {
+			is_coastal = yes
+		}
+	}
 	chance = {
 		base = 0
 		
@@ -32,12 +37,15 @@ shipbuilding = {
 	effect = { activate_building = clipper_shipyard }
 }
 corsair_ship_unlock = {
-	limit = { naval_construction_3 = 1 }
+	limit = {
+		naval_construction_3 = 1
+		has_country_flag = culture_group_kingsmen
+	}
 	chance = {
 		base = 0
 		modifier = {
 			factor = 100
-			is_culture_group = kingsmen
+			has_country_flag = culture_group_kingsmen
 		}
 	}
 	effect = {
@@ -45,7 +53,12 @@ corsair_ship_unlock = {
 	}
 }
 grand_shipyards = {
-	limit = { naval_construction_5 = 1 }
+	limit = {
+		naval_construction_5 = 1
+		any_owned_province = {
+			is_coastal = yes
+		}
+	}
 	chance = {
 		base = 0
 		

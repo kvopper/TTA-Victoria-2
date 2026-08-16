@@ -259,6 +259,8 @@ the_king_beneath_the_mountains = {
 			factor = 2
 			OR = {
 				accepted_culture = dwarven_culture
+				primary_culture = lakemen
+				owns = 652 # Dale
 				owns = 654 # Esgaroth/Lake-town
 			}
 		}

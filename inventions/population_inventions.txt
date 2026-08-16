@@ -2,7 +2,10 @@
 # GOVERNMENT INVENTIONS #
 #########################
 province_selector_unlock = {
-	limit = { population_1 = 1 }
+	limit = {
+		population_1 = 1
+		ai = no
+	}
 	chance = {
 		base = 0
 		modifier = {

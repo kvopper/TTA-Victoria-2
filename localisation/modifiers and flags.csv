@@ -942,3 +942,33 @@ ideologies_butterbur_family_active;Butterbur Family Active;x
 nobility_deactivated;Nobility Deactivated;x
 burgher_deactivated;Burghers Deactivated;x
 loremaster_deactivated;Loremasters Deactivated;x
+#######################################;x }
+##### CULTURE GROUP COUNTRY FLAGS #####;x {
+#######################################;x
+culture_group_dunedain;§!Primary Culture is §YDúnedain§!;x
+culture_group_eldar;§!Primary Culture is §YEldar§!;x
+culture_group_teleri;§!Primary Culture is §YTeleri§!;x
+culture_group_avari;§!Primary Culture is §YAvari§!;x
+culture_group_haradrim;§!Primary Culture is §YHaradrim§!;x
+culture_group_kingsmen;§!Primary Culture is §YKingsmen§!;x
+culture_group_khandish;§!Primary Culture is §YKhandish§!;x
+culture_group_easterlings;§!Primary Culture is §YEasterlings§!;x
+culture_group_gramavuld_northmen;§!Primary Culture is §YGramavuld Northmen§!;x
+culture_group_northmen;§!Primary Culture is §YNorthmen§!;x
+culture_group_dwarves;§!Primary Culture is §YDwarvish§!;x
+culture_group_wicked_dwarves;§!Primary Culture is §YWicked Dwarves§!;x
+culture_group_anduinrim;§!Primary Culture is §YAnduinrim§!;x
+culture_group_ents;§!Primary Culture is §YEntish§!;x
+culture_group_wildmen;§!Primary Culture is §YWildmen§!;x
+culture_group_rohirrim;§!Primary Culture is §YRohirrim§!;x
+culture_group_uruk_hai;§!Primary Culture is §YUruk-hai§!;x
+culture_group_mordorian;§!Primary Culture is §YMordorian§!;x
+culture_group_northern_goblins;§!Primary Culture is §YNorthern Goblins§!;x
+culture_group_angmarrim;§!Primary Culture is §YAngmarrim§!;x
+culture_group_lossoth;§!Primary Culture is §YLossoth§!;x
+culture_group_breelander;§!Primary Culture is §YBreelander§!;x
+culture_group_hobbits;§!Primary Culture is §YHobbits§!;x
+culture_group_trolls;§!Primary Culture is §YTroll§!;x
+culture_group_eagles;§!Primary Culture is §YEagle§!;x
+culture_group_spiders;§!Primary Culture is §YSpider§!;x
+culture_group_undead;§!Primary Culture is §YUndead§!;x

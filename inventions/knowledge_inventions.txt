@@ -2,7 +2,10 @@
 # HERBLORE INVENTIONS #
 #######################
 athelas = {
-	limit = { herblore_tech_2 = 1 }
+	limit = {
+		herblore_tech_2 = 1
+		NOT = { accepted_culture = orc_culture }
+	}
 	chance = {
 		base = 0
 		modifier = {
@@ -15,7 +18,10 @@ athelas = {
 	}
 }
 orc_draught = {
-	limit = { herblore_tech_2 = 1 }
+	limit = {
+		herblore_tech_2 = 1
+		accepted_culture = orc_culture
+	}
 	chance = {
 		base = 0
 		modifier = {
@@ -76,13 +82,17 @@ blue_wizards = { # Search for the blue wizards
 	effect = { shared_prestige = 5 }
 }
 entwives = { # Search for the entwives
-	limit = { magic_3 = 1 }
+	limit = {
+		magic_3 = 1
+		has_country_flag = culture_group_ents
+	}
 	
 	chance = {
 		base = 0
 		modifier = {
 			factor = 1
 			owns = 773
+			has_country_flag = culture_group_ents
 		}
 	}
 	
