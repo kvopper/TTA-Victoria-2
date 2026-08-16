@@ -46,6 +46,8 @@ All notable changes will be documented in this file.
 	 - May be rejected or betrayed at the ire of Mordor
  - "Alignment" of Dunland, Enedwaith, and other like-realms
  - Rework of the creation of the Uruk-hai
+   - Creates Half Orcs and Goblin-men in addition to the Uruk-hai
+   - Need to work through the consequences of bringing in Orcs from advisors
 
 ### Mechanics and Content
  - Various bugfixes and small additions
