@@ -107,7 +107,7 @@ steel_factory = {
 		trigger = {
 			OR = {
 				trade_goods_in_state = iron
-				state_id = 449
+				state_id = 449 # Barad-dur
 			}
 		}
 		value = 0.2
@@ -116,13 +116,13 @@ steel_factory = {
 		trigger = {
 			OR = {
 				trade_goods_in_state = coal
-				state_id = 449
+				state_id = 449 # Barad-dur
 			}
 		}
 		value = 0.05
 	}
 	bonus = {
-		trigger = { state_id = 449 }
+		trigger = { state_id = 449 } # Barad-dur
 		value = 0.1
 	}
 }
@@ -177,7 +177,7 @@ fabric_factory = {
 		trigger = {
 			OR = {
 				trade_goods_in_state = cotton
-				state_id = 16
+				state_id = 16 # Minas Tirith
 			}
 		}
 		value = 0.2
@@ -186,13 +186,13 @@ fabric_factory = {
 		trigger = {
 			OR = {
 				trade_goods_in_state = dye
-				state_id = 16
+				state_id = 16 # Minas Tirith
 			}
 		}
 		value = 0.05
 	}
 	bonus = {
-		trigger = { state_id = 16 }
+		trigger = { state_id = 16 } # Minas Tirith
 		value = 0.1
 	}
 }
@@ -212,7 +212,7 @@ liquor_distillery = {
 		trigger = {
 			OR = {
 				has_building = glass_factory
-				state_id = 545
+				state_id = 545 # Riavod
 			}
 		}
 		value = 0.15
@@ -221,13 +221,13 @@ liquor_distillery = {
 		trigger = {
 			OR = {
 				trade_goods_in_state = food
-				state_id = 545
+				state_id = 545 # Riavod
 			}
 		}
 		value = 0.1
 	}
 	bonus = {
-		trigger = { state_id = 545 }
+		trigger = { state_id = 545 } # Riavod
 		value = 0.1
 	}
 }
@@ -259,7 +259,7 @@ literature_factory = {
 		trigger = {
 			OR = {
 				trade_goods_in_state = dye
-				state_id = 865
+				state_id = 865 # Imladris
 			}
 		}
 		value = 0.05
@@ -268,13 +268,13 @@ literature_factory = {
 		trigger = {
 			OR = {
 				has_building = paper_mill
-				state_id = 865
+				state_id = 865 # Imladris
 			}
 		}
 		value = 0.2
 	}
 	bonus = {
-		trigger = { state_id = 865 }
+		trigger = { state_id = 865 } # Imladris
 		value = 0.1
 	}
 }
@@ -339,13 +339,13 @@ clothes_factory = {
 			OR = {
 				has_building = fabric_factory
 				has_building = fabric_factory_wool
-				state_id = 16
+				state_id = 16 # Minas Tirith
 			}
 		}
 		value = 0.25
 	}
 	bonus = {
-		trigger = { state_id = 16 }
+		trigger = { state_id = 16 } # Minas Tirith
 		value = 0.1
 	}
 }
@@ -363,7 +363,7 @@ luxury_clothes_factory = {
 		trigger = {
 			OR = {
 				trade_goods_in_state = dye
-				state_id = 16
+				state_id = 16 # Minas Tirith
 			}
 		}
 		value = 0.05
@@ -373,13 +373,13 @@ luxury_clothes_factory = {
 			OR = {
 				has_building = fabric_factory
 				has_building = fabric_factory_wool
-				state_id = 16
+				state_id = 16 # Minas Tirith
 			}
 		}
 		value = 0.2
 	}
 	bonus = {
-		trigger = { state_id = 16 }
+		trigger = { state_id = 16 } # Minas Tirith
 		value = 0.1
 	}
 }
@@ -398,13 +398,13 @@ melee_gear_factory = {
 		trigger = {
 			OR = {
 				has_building = steel_factory
-				state_id = 449
+				state_id = 449 # Barad-dur
 			}
 		}
 		value = 0.25
 	}
 	bonus = {
-		trigger = { state_id = 449 }
+		trigger = { state_id = 449 } # Barad-dur
 		value = 0.1
 	}
 }
@@ -464,9 +464,9 @@ clipper_shipyard = {
 			OR = {
 				has_building = fabric_factory
 				has_building = fabric_factory_wool
-				state_id = 44
-				state_id = 270
-				state_id = 936
+				state_id = 44 # Pelargir
+				state_id = 270 # Umbar
+				state_id = 936 # Mithlond
 			}
 		}
 		value = 0.1
@@ -475,9 +475,9 @@ clipper_shipyard = {
 		trigger = {
 			OR = {
 				has_building = lumber_mill
-				state_id = 44
-				state_id = 270
-				state_id = 936
+				state_id = 44 # Pelargir
+				state_id = 270 # Umbar
+				state_id = 936 # Mithlond
 			}
 		}
 		value = 0.15
@@ -485,9 +485,9 @@ clipper_shipyard = {
 	bonus = {
 		trigger = {
 			OR = {
-				state_id = 44
-				state_id = 270
-				state_id = 936
+				state_id = 44 # Pelargir
+				state_id = 270 # Umbar
+				state_id = 936 # Mithlond
 			}
 		}
 		value = 0.1

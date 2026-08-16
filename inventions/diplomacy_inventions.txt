@@ -25,6 +25,22 @@ couriers = {
 ######################
 # CULTURE INVENTIONS #
 ######################
+working_songs = {
+	limit = {
+		culture_1 = 1
+		accepted_culture = elven_culture
+	}
+	chance = {
+		base = 0
+		modifier = {
+			factor = 2
+			accepted_culture = elven_culture
+		}
+	}
+	effect = {
+		factory_throughput = 0.10
+	}
+}
 all_that_is_gold = {
 	limit = { culture_1 = 1 }
 	

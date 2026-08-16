@@ -1,3 +1,42 @@
+#############################
+# ADMINISTRATION INVENTIONS #
+#############################
+overseers_lash = {
+	limit = {
+		administration_tech_1 = 1
+		accepted_culture = orc_culture
+	}
+	chance = {
+		base = 0
+		modifier = {
+			factor = 2
+			accepted_culture = orc_culture
+		}
+	}
+	
+	effect = {
+		factory_input = -0.01
+		factory_throughput = 0.05
+	}
+}
+second_breakfast_economics = {
+	limit = {
+		administration_tech_1 = 1
+		accepted_culture = hobbit_culture
+	}
+	chance = {
+		base = 0
+		modifier = {
+			factor = 2
+			accepted_culture = hobbit_culture
+		}
+	}
+	
+	effect = {
+		global_pop_militancy_modifier = -0.01
+		tax_eff = -0.05
+	}
+}
 #########################
 # GOVERNMENT INVENTIONS #
 #########################

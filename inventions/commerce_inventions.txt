@@ -70,6 +70,22 @@ placer_panning_techniques = {
 		rgo_goods_output = { precious_metal = 0.20 }
 	}
 }
+spiders_silk = {
+	limit = {
+		rgo_tech_1 = 1
+		accepted_culture = spider_culture
+	}
+	chance = {
+		base = 0
+		modifier = {
+			factor = 2
+			accepted_culture = spider_culture
+		}
+	}
+	effect = {
+		factory_goods_output = { fabric = 0.20 }
+	}
+}
 valacirca = {
 	limit = { rgo_tech_2 = 1 }
 	chance = {
@@ -200,6 +216,27 @@ pipeleaf_curing_sheds = {
 		base = 1
 		modifier = {
 			factor = 4
+			big_producer = tobacco
+		}
+	}
+	effect = {
+		rgo_goods_output = { tobacco = 0.20 }
+	}
+}
+smial_larder_traditions = {
+	limit = {
+		rgo_tech_3 = 1
+		accepted_culture = hobbit_culture
+	}
+	chance = {
+		base = 0
+		modifier = {
+			factor = 1
+			accepted_culture = hobbit_culture
+		}
+		modifier = {
+			factor = 4
+			accepted_culture = hobbit_culture
 			big_producer = tobacco
 		}
 	}
@@ -517,6 +554,22 @@ centers_of_trade = {
 	}
 	effect = {
 		max_market_square = 1
+	}
+}
+skill_of_firstborn = {
+	limit = {
+		trade_tech_5 = 1
+		accepted_culture = elven_culture
+	}
+	chance = {
+		base = 0
+		modifier = {
+			factor = 2
+			accepted_culture = elven_culture
+		}
+	}
+	effect = {
+		factory_input = -0.10
 	}
 }
 #############################
