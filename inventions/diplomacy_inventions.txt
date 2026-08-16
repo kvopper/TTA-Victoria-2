@@ -1,4 +1,16 @@
 ########################
+# EXPANSION INVENTIONS #
+########################
+rights_of_conquest = {
+	limit = { expansion_3 = 1 }
+	chance = {
+		base = 2
+	}
+	effect = {
+	}
+	badboy = -0.02
+}
+########################
 # DIPLOMACY INVENTIONS #
 ########################
 telumendil = {
@@ -29,6 +41,92 @@ rite_of_oaths = {
 	}
 	effect = {
 		plurality = -0.05
+	}
+}
+#########################
+# WILDERNESS INVENTIONS #
+#########################
+wilderness_guides = {
+	limit = { wilderness_2 = 1 }
+	chance = {
+		base = 2
+	}
+	effect = {
+		colonial_points = 100
+	}
+}
+northern_waste_expeditions = {
+	limit = {
+		wilderness_2 = 1
+		any_owned_province = {
+			OR = {
+				continent = north_america
+				continent = europe
+				continent = asia
+			}
+		}
+	}
+	chance = {
+		base = 0
+		modifier = {
+			factor = 2
+			invention = wilderness_guides
+			any_owned_province = {
+				OR = {
+					continent = north_america
+					continent = europe
+					continent = asia
+				}
+			}
+		}
+	}
+	effect = {
+		enable_crime = northern_waste_expedition_unlock_effect
+	}
+}
+rhun_expeditions = {
+	limit = {
+		wilderness_2 = 1
+		any_owned_province = {
+			continent = asia
+		}
+	}
+	chance = {
+		base = 0
+		modifier = {
+			factor = 2
+			invention = wilderness_guides
+			any_owned_province = {
+				continent = asia
+			}
+		}
+	}
+	effect = {
+		enable_crime = rhun_expedition_unlock_effect
+	}
+}
+harad_expeditions = {
+	limit = {
+		wilderness_2 = 1
+		OR = {
+			total_num_of_ports = 10
+			any_owned_province = { continent = oceania }
+		}
+	}
+	chance = {
+		base = 0
+		modifier = {
+			factor = 2
+			invention = wilderness_guides
+			any_owned_province = { continent = oceania }
+		}
+		modifier = {
+			factor = 2
+			total_num_of_ports = 10
+		}
+	}
+	effect = {
+		enable_crime = harad_expedition_unlock_effect
 	}
 }
 ######################
