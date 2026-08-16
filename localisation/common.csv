@@ -3015,10 +3015,12 @@ HAVE_CONTROL_OVER;Control ;x
 HAVENT_CONTROL_OVER;Do NOT control ;x
 HAVENT_CORE;Do NOT have a core in ;x
 HAVE_CORE_IN;Have a core in ;x
-HAVE_LESS_CITIES_THAN;Have less cities than ;x
+HAVE_LESS_CITIES_THAN;Have fewer cities than ;x
 HAVE_MORE_CITIES_THAN;Number of cities at least ;x
-HAVE_LESS_PORTS_THAN;Have less home ports than ;x
+HAVE_LESS_PORTS_THAN;Have fewer home ports than ;x
 HAVE_MORE_PORTS_THAN;Number of home ports at least ;x
+HAVE_LESS_TOTAL_PORTS_THAN;Have fewer home ports than ;x
+HAVE_MORE_TOTAL_PORTS_THAN;Number of ports at least ;x
 HAVE_LESS_ALLIES_THAN;Have fewer allies than ;x
 HAVE_MORE_ALLIES_THAN;Number of allies at least ;x
 IS_ENABLED; is enabled;x
