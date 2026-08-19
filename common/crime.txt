@@ -72,7 +72,7 @@ province_wealth_1 = {
 	farm_rgo_size = 0.05
 	mine_rgo_size = 0.05
 	local_ruling_party_support = 0.1
-	local_ship_build = 0.05
+	local_ship_build = -0.05
 	immigrant_attract = 0.05
 	pop_militancy_modifier = -0.01
 }
@@ -84,7 +84,7 @@ province_wealth_2 = {
 	farm_rgo_size = 0.1
 	mine_rgo_size = 0.1
 	local_ruling_party_support = 0.2
-	local_ship_build = 0.1
+	local_ship_build = -0.1
 	immigrant_attract = 0.1
 	pop_militancy_modifier = -0.02
 }
@@ -96,7 +96,7 @@ province_wealth_3 = {
 	farm_rgo_size = 0.15
 	mine_rgo_size = 0.15
 	local_ruling_party_support = 0.2
-	local_ship_build = 0.15
+	local_ship_build = -0.15
 	immigrant_attract = 0.15
 	pop_militancy_modifier = -0.02
 }
@@ -108,7 +108,7 @@ province_wealth_4 = {
 	farm_rgo_size = 0.2
 	mine_rgo_size = 0.2
 	local_ruling_party_support = 0.4
-	local_ship_build = 0.2
+	local_ship_build = -0.2
 	immigrant_attract = 0.2
 	pop_militancy_modifier = -0.04
 }
@@ -120,7 +120,7 @@ province_wealth_5 = {
 	farm_rgo_size = 0.25
 	mine_rgo_size = 0.25
 	local_ruling_party_support = 0.5
-	local_ship_build = 0.25
+	local_ship_build = -0.25
 	immigrant_attract = 0.25
 	pop_militancy_modifier = -0.05
 }
