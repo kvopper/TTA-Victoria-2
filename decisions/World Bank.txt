@@ -101,7 +101,6 @@ political_decisions = {
 						tag = GON
 						AND = {
 							vassal_of = GON
-							NOT = { tag = ISE }
 						}
 						tag = LIN
 					}
