@@ -72,10 +72,7 @@ political_decisions = {
 						accepted_culture = elven_culture
 						is_greater_power = yes
 						tag = GON
-						AND = {
-							vassal_of = GON
-							NOT = { tag = ISE }
-						}
+						vassal_of = GON
 						tag = RAD
 					}
 				}
@@ -99,10 +96,7 @@ political_decisions = {
 					OR = {
 						tag = UMB
 						tag = GON
-						AND = {
-							vassal_of = GON
-							NOT = { tag = ISE }
-						}
+						vassal_of = GON
 						tag = LIN
 					}
 				}
